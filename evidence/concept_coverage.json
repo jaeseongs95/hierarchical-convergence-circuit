@@ -1,0 +1,792 @@
+{
+  "schema": "hcr-concept-coverage-v1",
+  "assessment_basis": "source_review_not_research_proof",
+  "sources": [
+    {
+      "id": "S01",
+      "title": "intuition_to_physical_neural_circuit_architecture-1(1).md",
+      "sha256": "945220763f29848a9fc5e89382b1ea0397b600fb6f559cf2d88f455f37b53738",
+      "scope": "사용자 첨부 원문. 생물학·선행연구의 외부 사실을 이번 패치에서 재검증한 자료는 아님"
+    },
+    {
+      "id": "S02",
+      "title": "human_intuition_llm_neuromorphic_hypothesis_20260916(1)(1).md",
+      "sha256": "e4bf787f4eb9d693c10bf3121eaa4134b9aec61a10fa365d79dc9097a1330c7a",
+      "scope": "사용자 첨부 원문. 생물학·선행연구의 외부 사실을 이번 패치에서 재검증한 자료는 아님"
+    },
+    {
+      "id": "S03",
+      "title": "AI_논문_핵심_및_실험결과_요약_2026-09-16(2)(1).md",
+      "sha256": "046492e3c45c127d1c1b5588bf40a1d04b9b11e0cc478886b18efb6365898e7e",
+      "scope": "사용자 첨부 원문. 생물학·선행연구의 외부 사실을 이번 패치에서 재검증한 자료는 아님"
+    },
+    {
+      "id": "S04",
+      "title": "ADM_Circuit_통합가설_진짜혼합본_2026-09-16(1).md",
+      "sha256": "c749bae59eb4bf761ebfde9587da548ca64ae91e62c18c6c2a384e46fc2ad5f4",
+      "scope": "사용자 첨부 원문. 생물학·선행연구의 외부 사실을 이번 패치에서 재검증한 자료는 아님"
+    },
+    {
+      "id": "S05",
+      "title": "직관_감각_착시_공통계산가설_2026-09-16(2).md",
+      "sha256": "6c9b7a446d605527976b6713fcc7698abd6d02b598ad79b2699f715a14c3c2a5",
+      "scope": "사용자 첨부 원문. 생물학·선행연구의 외부 사실을 이번 패치에서 재검증한 자료는 아님"
+    },
+    {
+      "id": "S06",
+      "title": "계층적_수렴_회로_통합가설_감각_착시_ADM_2026-09-16(2).md",
+      "sha256": "fa8aaa32675d1f6ee427b5072e8372d71c86ab635b6afd84fdbec0b89d9fefd5",
+      "scope": "사용자 첨부 원문. 생물학·선행연구의 외부 사실을 이번 패치에서 재검증한 자료는 아님"
+    }
+  ],
+  "required_concepts": [
+    "HCR-K01",
+    "HCR-K02",
+    "HCR-K03",
+    "HCR-K04",
+    "HCR-K05",
+    "HCR-K06",
+    "HCR-K07",
+    "HCR-K08",
+    "HCR-K09",
+    "HCR-K10",
+    "HCR-K11",
+    "HCR-K12",
+    "HCR-K13",
+    "HCR-K14",
+    "HCR-K15",
+    "HCR-K16",
+    "HCR-K17",
+    "HCR-K18",
+    "HCR-K19",
+    "HCR-K20",
+    "HCR-K21",
+    "HCR-K22",
+    "HCR-K23",
+    "HCR-K24"
+  ],
+  "concepts": [
+    {
+      "id": "HCR-K01",
+      "title": "Dynamic Graph ↔ Compiled Circuit",
+      "status": "implemented_scoped",
+      "scope": "길이 2·3 path motif의 역할화·재사용과 오류 뒤 primitive 재확장.",
+      "remaining": "임의 graph 압축과 모든 상황의 비용 감소를 뜻하지 않음.",
+      "stages": [
+        "R0.2",
+        "R0.4"
+      ],
+      "sources": [
+        "S04",
+        "S06"
+      ],
+      "anchors": [
+        {
+          "path": "src/hcr/runtime.py",
+          "kind": "code",
+          "symbol": "AdaptiveEngine.infer",
+          "normalized_sha256": "08db9cf363072f9980020cb2c37310ddf8c54be60249adedd04aee16e2ec6e73"
+        },
+        {
+          "path": "architecture/r02-engine.ko.md",
+          "kind": "design",
+          "contains": "R0.2"
+        }
+      ]
+    },
+    {
+      "id": "HCR-K02",
+      "title": "Binding Continuity와 Node/Semantic/Role Identity",
+      "status": "implemented_scoped",
+      "scope": "관측 digest·revision·role의 결합 검사. B는 네 번째 A/D/M 축이 아님.",
+      "remaining": "학습된 의미 표현이 binding 성능을 높이는 인과 비교는 별도.",
+      "stages": [
+        "R0.2",
+        "EXP-04"
+      ],
+      "sources": [
+        "S03",
+        "S04",
+        "S06"
+      ],
+      "anchors": [
+        {
+          "path": "src/hcr/identity.py",
+          "kind": "code",
+          "symbol": "NodeRef",
+          "normalized_sha256": "1e0e950af9c7c3bcc47d076c4d501cbfbf8a9e2367dce2578a013a7011a8c49c"
+        },
+        {
+          "path": "src/hcr/identity.py",
+          "kind": "code",
+          "symbol": "RoleBinding.check",
+          "normalized_sha256": "1e0e950af9c7c3bcc47d076c4d501cbfbf8a9e2367dce2578a013a7011a8c49c"
+        },
+        {
+          "path": "src/hcr/identity.py",
+          "kind": "code",
+          "symbol": "bind_path",
+          "normalized_sha256": "1e0e950af9c7c3bcc47d076c4d501cbfbf8a9e2367dce2578a013a7011a8c49c"
+        }
+      ]
+    },
+    {
+      "id": "HCR-K03",
+      "title": "semantic vs opaque binding 실험",
+      "status": "partial",
+      "scope": "EXP-04 초안과 재명명/순서·stale-binding 검사가 존재.",
+      "remaining": "이름을 이해하지 않는 결정적 HCR에 의미 ID 효과를 억지로 만들지 않음. learned binder는 독립 조건.",
+      "stages": [
+        "EXP-04",
+        "R0.7"
+      ],
+      "sources": [
+        "S03",
+        "S04"
+      ],
+      "anchors": [
+        {
+          "path": "experiments/exp-04-binding-continuity/design.md",
+          "kind": "design",
+          "contains": "EXP-04"
+        },
+        {
+          "path": "src/hcr/identity.py",
+          "kind": "code",
+          "symbol": "bind_path",
+          "normalized_sha256": "1e0e950af9c7c3bcc47d076c4d501cbfbf8a9e2367dce2578a013a7011a8c49c"
+        }
+      ]
+    },
+    {
+      "id": "HCR-K04",
+      "title": "primitive proof D와 runtime 비용의 분리",
+      "status": "implemented_scoped",
+      "scope": "proof depth와 expansion/tick/binding/proof 복원 카운터 분리.",
+      "remaining": "요구 D를 선택하는 LLM 실험과 D-expansion 정책은 같은 검증이 아님.",
+      "stages": [
+        "R0.2",
+        "EXP-09",
+        "R0.7"
+      ],
+      "sources": [
+        "S03",
+        "S04",
+        "S06"
+      ],
+      "anchors": [
+        {
+          "path": "src/hcr/proof.py",
+          "kind": "code",
+          "symbol": "reconstruct",
+          "normalized_sha256": "b95af178a4894c2a36ae13d971c0e003fe6ba18794e0ddbbc041ab28e06c831d"
+        },
+        {
+          "path": "src/hcr/model.py",
+          "kind": "code",
+          "symbol": "AdaptiveCost.snapshot",
+          "normalized_sha256": "b10e41146036bbbe6e155cee84f3c03711d9bfdeef26c54439d679cc36d590dd"
+        }
+      ]
+    },
+    {
+      "id": "HCR-K05",
+      "title": "같은 kernel을 두 A 수준에 사용",
+      "status": "implemented_scoped",
+      "scope": "A0 feature/A1 relation에 같은 수치 갱신식을 적용하는 toy engine.",
+      "remaining": "다른 감각·인지 과제의 일반 재사용까지 검증된 것은 아님.",
+      "stages": [
+        "R0.2",
+        "EXP-05"
+      ],
+      "sources": [
+        "S05",
+        "S06"
+      ],
+      "anchors": [
+        {
+          "path": "src/hcr/dynamics.py",
+          "kind": "code",
+          "symbol": "tick",
+          "normalized_sha256": "a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc"
+        },
+        {
+          "path": "src/hcr/model.py",
+          "kind": "code",
+          "symbol": "Group",
+          "normalized_sha256": "b10e41146036bbbe6e155cee84f3c03711d9bfdeef26c54439d679cc36d590dd"
+        },
+        {
+          "path": "theory/core-hypothesis.md",
+          "kind": "theory",
+          "contains": "common computational primitive"
+        }
+      ]
+    },
+    {
+      "id": "HCR-K06",
+      "title": "낮은 A의 수렴 결과 → 높은 A의 node",
+      "status": "partial",
+      "scope": "theory와 EXP-05에는 명시됨. 고정 feature/relation 구성이 실행 기반.",
+      "remaining": "수렴 결과 승격·근거 대응·되돌림을 가진 일반 cross-A contract 필요.",
+      "stages": [
+        "EXP-05",
+        "R0.6"
+      ],
+      "sources": [
+        "S05",
+        "S06"
+      ],
+      "anchors": [
+        {
+          "path": "theory/core-hypothesis.md",
+          "kind": "theory",
+          "contains": "A converged state"
+        },
+        {
+          "path": "experiments/exp-05-cross-abstraction-primitive/design.md",
+          "kind": "design",
+          "contains": "EXP-05"
+        }
+      ]
+    },
+    {
+      "id": "HCR-K07",
+      "title": "bottom-up / top-down recurrence",
+      "status": "implemented_scoped",
+      "scope": "support/top_down links와 하위 activation 변화 시험.",
+      "remaining": "자동 cross-A 계층 생성이나 감각 왜곡 전부의 모델은 아님.",
+      "stages": [
+        "R0.2",
+        "EXP-05"
+      ],
+      "sources": [
+        "S05",
+        "S06"
+      ],
+      "anchors": [
+        {
+          "path": "src/hcr/dynamics.py",
+          "kind": "code",
+          "symbol": "tick",
+          "normalized_sha256": "a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc"
+        },
+        {
+          "path": "tests/test_contracts_dynamics.py",
+          "kind": "test_definition",
+          "symbol": "Dynamics.test_top_down_changes_actual_lower_state",
+          "normalized_sha256": "3413f39ee5e46c7970c563cea0583ef796451457bb444fccadf7f09e47282905"
+        }
+      ]
+    },
+    {
+      "id": "HCR-K08",
+      "title": "Candidate Competition / Inhibition",
+      "status": "implemented_scoped",
+      "scope": "같은 커널 안에서 복수 path 회로 후보가 경쟁.",
+      "remaining": "서로 다른 전문화된 M 처리기 또는 물리적 병렬 실행과 구별.",
+      "stages": [
+        "R0.2",
+        "R0.3"
+      ],
+      "sources": [
+        "S01",
+        "S04",
+        "S06"
+      ],
+      "anchors": [
+        {
+          "path": "src/hcr/activation.py",
+          "kind": "code",
+          "symbol": "CircuitActivationPool.activate_candidates",
+          "normalized_sha256": "c35fadb824de51563c03fb23b0656564f7d4d3ea8c228ac74ee803a419e64df5"
+        },
+        {
+          "path": "src/hcr/activation.py",
+          "kind": "code",
+          "symbol": "instantiate_pool",
+          "normalized_sha256": "c35fadb824de51563c03fb23b0656564f7d4d3ea8c228ac74ee803a419e64df5"
+        }
+      ]
+    },
+    {
+      "id": "HCR-K09",
+      "title": "Misconvergence와 수정 가능성",
+      "status": "implemented_scoped",
+      "scope": "정상 학습 prior의 안정 오답, feedback 뒤 새 관측·재계산을 개발 fixture로 구현.",
+      "remaining": "retention 재오답 원인은 미확정. 새 episode 일반화는 EXP-09에서 분리.",
+      "stages": [
+        "R0.2",
+        "EXP-03",
+        "EXP-09"
+      ],
+      "sources": [
+        "S05",
+        "S06"
+      ],
+      "anchors": [
+        {
+          "path": "src/hcr/runtime.py",
+          "kind": "code",
+          "symbol": "AdaptiveEngine.feedback",
+          "normalized_sha256": "08db9cf363072f9980020cb2c37310ddf8c54be60249adedd04aee16e2ec6e73"
+        },
+        {
+          "path": "src/hcr/runtime.py",
+          "kind": "code",
+          "symbol": "AdaptiveEngine.request_revision",
+          "normalized_sha256": "08db9cf363072f9980020cb2c37310ddf8c54be60249adedd04aee16e2ec6e73"
+        },
+        {
+          "path": "docs/R02_BASELINE_PROTOCOL.ko.md",
+          "kind": "design",
+          "contains": "EXP-09"
+        }
+      ]
+    },
+    {
+      "id": "HCR-K10",
+      "title": "다중안정과 시간 내 자발적 전환",
+      "status": "partial",
+      "scope": "다른 초기 상태에서 두 attractor가 생기는 단위시험이 이미 존재.",
+      "remaining": "한 지속 trajectory에서 동일 입력의 전환·체류시간은 아직 별도 실험.",
+      "stages": [
+        "EXP-03",
+        "R0.5a"
+      ],
+      "sources": [
+        "S05",
+        "S06"
+      ],
+      "anchors": [
+        {
+          "path": "tests/test_contracts_dynamics.py",
+          "kind": "test_definition",
+          "symbol": "Dynamics.test_same_input_can_have_two_stable_states_in_explicit_unit_fixture",
+          "normalized_sha256": "3413f39ee5e46c7970c563cea0583ef796451457bb444fccadf7f09e47282905"
+        },
+        {
+          "path": "src/hcr/dynamics.py",
+          "kind": "code",
+          "symbol": "settle",
+          "normalized_sha256": "a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc"
+        }
+      ]
+    },
+    {
+      "id": "HCR-K11",
+      "title": "Decision Generation ≠ Explanation Reconstruction",
+      "status": "partial",
+      "scope": "R0.1 독립 이벤트·시험 및 R0.2 값 계산 뒤 proof 재구성. EXP-06 초안 존재.",
+      "remaining": "R0.2 별도 readout/explanation 시점·latency 기록 없음. 신규 reviewer는 기존 포함 관계만 분석.",
+      "stages": [
+        "EXP-06",
+        "R0.2.1"
+      ],
+      "sources": [
+        "S02",
+        "S04",
+        "S05",
+        "S06"
+      ],
+      "anchors": [
+        {
+          "path": "src/hcr/runtime.py",
+          "kind": "code",
+          "symbol": "Engine.infer",
+          "normalized_sha256": "08db9cf363072f9980020cb2c37310ddf8c54be60249adedd04aee16e2ec6e73"
+        },
+        {
+          "path": "src/hcr/runtime.py",
+          "kind": "code",
+          "symbol": "AdaptiveEngine.infer",
+          "normalized_sha256": "08db9cf363072f9980020cb2c37310ddf8c54be60249adedd04aee16e2ec6e73"
+        },
+        {
+          "path": "src/hcr/proof.py",
+          "kind": "code",
+          "symbol": "reconstruct",
+          "normalized_sha256": "b95af178a4894c2a36ae13d971c0e003fe6ba18794e0ddbbc041ab28e06c831d"
+        },
+        {
+          "path": "experiments/exp-06-decision-vs-explanation/design.md",
+          "kind": "design",
+          "contains": "EXP-06"
+        }
+      ]
+    },
+    {
+      "id": "HCR-K12",
+      "title": "학습 = 구조 형성·강화·가지치기·재구성",
+      "status": "partial",
+      "scope": "path pattern 신규 등록·강화·약화·현재 routing 변경은 구현.",
+      "remaining": "일반 Fork/Join 및 회로 간 연결의 학습·pruning은 R0.4.",
+      "stages": [
+        "R0.2",
+        "R0.4"
+      ],
+      "sources": [
+        "S01",
+        "S04",
+        "S06"
+      ],
+      "anchors": [
+        {
+          "path": "architecture/r02-engine.ko.md",
+          "kind": "design",
+          "contains": "R0.2"
+        },
+        {
+          "path": "docs/HCR_MASTER_ROADMAP.ko.md",
+          "kind": "design",
+          "contains": "R0.4"
+        }
+      ]
+    },
+    {
+      "id": "HCR-K13",
+      "title": "전문화 방법 회로 / M adaptation",
+      "status": "planned",
+      "scope": "현재 path 후보를 서로 다른 전문 처리기로 과장하지 않음.",
+      "remaining": "같은 총예산에서 policy·메시지·통합의 행동 차이 구현.",
+      "stages": [
+        "R0.3"
+      ],
+      "sources": [
+        "S04",
+        "S06"
+      ],
+      "anchors": [
+        {
+          "path": "docs/HCR_MASTER_ROADMAP.ko.md",
+          "kind": "design",
+          "contains": "Specialized Method Circuits"
+        }
+      ]
+    },
+    {
+      "id": "HCR-K14",
+      "title": "지속 활성·readout·여러 시간 규모",
+      "status": "partial",
+      "scope": "settle(initial=...) 제공. 장기 memory와 기록은 존재.",
+      "remaining": "상태 전달 어댑터, session 생명주기, idle ticks/readout 및 학습 시간축 분리.",
+      "stages": [
+        "R0.2.1",
+        "R0.5a",
+        "B1"
+      ],
+      "sources": [
+        "S01",
+        "S02",
+        "S06"
+      ],
+      "anchors": [
+        {
+          "path": "src/hcr/dynamics.py",
+          "kind": "code",
+          "symbol": "settle",
+          "normalized_sha256": "a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc"
+        },
+        {
+          "path": "src/hcr/dynamics.py",
+          "kind": "code",
+          "symbol": "settle_recorded",
+          "normalized_sha256": "a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc"
+        },
+        {
+          "path": "docs/HCR_MASTER_ROADMAP.ko.md",
+          "kind": "design",
+          "contains": "ReadoutGate"
+        }
+      ]
+    },
+    {
+      "id": "HCR-K15",
+      "title": "비지정 후보·기존 구조의 새 조합",
+      "status": "planned",
+      "scope": "현재는 start/goal 도달성 계약.",
+      "remaining": "goal=None만 허용하지 않고 program/readout/평가를 함께 분리.",
+      "stages": [
+        "R0.5b"
+      ],
+      "sources": [
+        "S04",
+        "S06"
+      ],
+      "anchors": [
+        {
+          "path": "src/hcr/model.py",
+          "kind": "code",
+          "symbol": "Observation",
+          "normalized_sha256": "b10e41146036bbbe6e155cee84f3c03711d9bfdeef26c54439d679cc36d590dd"
+        },
+        {
+          "path": "src/hcr/model.py",
+          "kind": "code",
+          "symbol": "Program.validate",
+          "normalized_sha256": "b10e41146036bbbe6e155cee84f3c03711d9bfdeef26c54439d679cc36d590dd"
+        },
+        {
+          "path": "docs/HCR_MASTER_ROADMAP.ko.md",
+          "kind": "design",
+          "contains": "비지정 출력 후보"
+        }
+      ]
+    },
+    {
+      "id": "HCR-K16",
+      "title": "A adaptation과 A/D/M 조합",
+      "status": "planned",
+      "scope": "고정 A 수준의 존재와 적응 선택은 다름.",
+      "remaining": "A 단독·두 축·세 축을 지원 정보/예산 통제하에 비교.",
+      "stages": [
+        "R0.6",
+        "R0.7"
+      ],
+      "sources": [
+        "S03",
+        "S04",
+        "S06"
+      ],
+      "anchors": [
+        {
+          "path": "docs/HCR_MASTER_ROADMAP.ko.md",
+          "kind": "design",
+          "contains": "A adaptation을 독립적으로 검증"
+        }
+      ]
+    },
+    {
+      "id": "HCR-K17",
+      "title": "감각·개념·직관의 공통 계산 비교",
+      "status": "partial",
+      "scope": "원 theory, EXP-05, 고정 두 수준 커널에 포함.",
+      "remaining": "symbolic low/mid/high task adapter를 먼저 비교. 생물학적 시각/후각과 동일시하지 않음.",
+      "stages": [
+        "EXP-05",
+        "R0.6"
+      ],
+      "sources": [
+        "S05",
+        "S06"
+      ],
+      "anchors": [
+        {
+          "path": "experiments/exp-05-cross-abstraction-primitive/design.md",
+          "kind": "design",
+          "contains": "EXP-05"
+        },
+        {
+          "path": "theory/core-hypothesis.md",
+          "kind": "theory",
+          "contains": "perception and high-level reasoning"
+        }
+      ]
+    },
+    {
+      "id": "HCR-K18",
+      "title": "오류 taxonomy",
+      "status": "partial",
+      "scope": "Status·외부 평가에 관측 상태 일부가 있음. 신규 offline reviewer에서 현상만 표준화.",
+      "remaining": "activation/binding/competition/over-compression/expansion 원인은 필요한 증거가 있을 때만 확정.",
+      "stages": [
+        "X-FAIL",
+        "R0.2.1"
+      ],
+      "sources": [
+        "S06"
+      ],
+      "anchors": [
+        {
+          "path": "src/hcr/model.py",
+          "kind": "code",
+          "symbol": "Status",
+          "normalized_sha256": "b10e41146036bbbe6e155cee84f3c03711d9bfdeef26c54439d679cc36d590dd"
+        },
+        {
+          "path": "formalism/failure-taxonomy.ko.md",
+          "kind": "design",
+          "contains": "관측 상태와 원인"
+        }
+      ]
+    },
+    {
+      "id": "HCR-K19",
+      "title": "고정 자원 풀 + 가변 연결",
+      "status": "planned",
+      "scope": "현재 CPU 자료구조를 물리 fabric 구현으로 세지 않음.",
+      "remaining": "자원 슬롯·지역 연결·재할당·용량 부족·ID 수명 계약부터 모델링.",
+      "stages": [
+        "B0",
+        "B2"
+      ],
+      "sources": [
+        "S01",
+        "S02",
+        "S04"
+      ],
+      "anchors": [
+        {
+          "path": "architecture/substrate-contract.ko.md",
+          "kind": "design",
+          "contains": "고정 자원 풀"
+        }
+      ]
+    },
+    {
+      "id": "HCR-K20",
+      "title": "Physical system IS the network",
+      "status": "planned",
+      "scope": "가설의 최종 물리 구현 지향을 별도 backend gate로 보존.",
+      "remaining": "전압/전류/소자 dynamics 등 실제 소자 구현·학습성을 평가하는 후속 단계.",
+      "stages": [
+        "B2"
+      ],
+      "sources": [
+        "S01",
+        "S02",
+        "S04"
+      ],
+      "anchors": [
+        {
+          "path": "architecture/substrate-contract.ko.md",
+          "kind": "design",
+          "contains": "Physical system IS the network"
+        }
+      ]
+    },
+    {
+      "id": "HCR-K21",
+      "title": "Plasticity/I/F 및 control/execution 분리",
+      "status": "partial",
+      "scope": "소프트웨어 compiler/feedback/kernel의 역할 분리는 존재.",
+      "remaining": "configuration과 local execution의 권한·통신·재구성 비용 계약이 필요.",
+      "stages": [
+        "R0.4",
+        "B0",
+        "B1",
+        "B2"
+      ],
+      "sources": [
+        "S01",
+        "S02",
+        "S04",
+        "S06"
+      ],
+      "anchors": [
+        {
+          "path": "src/hcr/runtime.py",
+          "kind": "code",
+          "symbol": "AdaptiveEngine.feedback",
+          "normalized_sha256": "08db9cf363072f9980020cb2c37310ddf8c54be60249adedd04aee16e2ec6e73"
+        },
+        {
+          "path": "src/hcr/dynamics.py",
+          "kind": "code",
+          "symbol": "tick",
+          "normalized_sha256": "a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc"
+        },
+        {
+          "path": "architecture/substrate-contract.ko.md",
+          "kind": "design",
+          "contains": "Configuration"
+        }
+      ]
+    },
+    {
+      "id": "HCR-K22",
+      "title": "Sparse / local / event-driven / asynchronous",
+      "status": "planned",
+      "scope": "append-only event trace는 이벤트 구동 계산이 아님. 현재 tick은 동기 전체 갱신.",
+      "remaining": "변경된 활성만 처리하는 backend 및 다른 스케줄의 오차·비용을 독립 대조.",
+      "stages": [
+        "B1"
+      ],
+      "sources": [
+        "S01",
+        "S02",
+        "S06"
+      ],
+      "anchors": [
+        {
+          "path": "src/hcr/dynamics.py",
+          "kind": "code",
+          "symbol": "tick",
+          "normalized_sha256": "a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc"
+        },
+        {
+          "path": "architecture/substrate-contract.ko.md",
+          "kind": "design",
+          "contains": "event-driven"
+        }
+      ]
+    },
+    {
+      "id": "HCR-K23",
+      "title": "External correctness와 내부 정합성",
+      "status": "implemented_scoped",
+      "scope": "reference 평가와 엔진 분리. stable/valid proof와 실제 가정 정확성을 별도 측정.",
+      "remaining": "가설 전체 입증과 기록 검산을 혼동하지 않음.",
+      "stages": [
+        "R0.2",
+        "전 단계"
+      ],
+      "sources": [
+        "S03",
+        "S06"
+      ],
+      "anchors": [
+        {
+          "path": "src/hcr/evaluation/reference.py",
+          "kind": "code",
+          "symbol": "Assessment",
+          "normalized_sha256": "3f9a5d3e9b984d0756a429a1bf88c1b54ef83e442c20e02d9ee0e2e749281378"
+        },
+        {
+          "path": "evidence/current-boundary.md",
+          "kind": "design",
+          "contains": "Not established"
+        }
+      ]
+    },
+    {
+      "id": "HCR-K24",
+      "title": "회로 학습의 효율·간섭·유연성 대조",
+      "status": "partial",
+      "scope": "Familiarity/Novelty/Training3·9 fixture 및 비용·baseline 도구 존재.",
+      "remaining": "전역 가속·에너지·간섭·망각은 미측정. 임의 카운터 합산 금지.",
+      "stages": [
+        "EXP-01",
+        "EXP-07",
+        "EXP-09",
+        "R0.7",
+        "B1"
+      ],
+      "sources": [
+        "S01",
+        "S04",
+        "S06"
+      ],
+      "anchors": [
+        {
+          "path": "src/hcr/model.py",
+          "kind": "code",
+          "symbol": "AdaptiveCost.snapshot",
+          "normalized_sha256": "b10e41146036bbbe6e155cee84f3c03711d9bfdeef26c54439d679cc36d590dd"
+        },
+        {
+          "path": "docs/R02_BASELINE_PROTOCOL.ko.md",
+          "kind": "design",
+          "contains": "EXP-09"
+        },
+        {
+          "path": "experiments/exp-07-attractor-revisability/design.md",
+          "kind": "design",
+          "contains": "EXP-07"
+        }
+      ]
+    }
+  ],
+  "remote_head_verified": false,
+  "baseline": "R0.2 release + baseline overlay recovered from conversation artifacts"
+}

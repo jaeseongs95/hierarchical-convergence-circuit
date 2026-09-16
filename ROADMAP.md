@@ -1,30 +1,33 @@
-# 현재 기준선 — R0.2 실행 완료 / 기준선 정리
+# HCR 현재 기준선과 개발·연구 로드맵
 
-2026-09-16 사용자가 제공한 Windows 11 · Python 3.12.10 실행 로그에서 `136/136 passed`, R0.2 `demo complete=true`, `verify verified=true`, `differences=[]`를 확인했다. 이는 배포 당시의 정적 검사 이후에 발생한 실행이다.
+## 현재 상태
 
-- 현재 수용·한계: `docs/R02_BASELINE.ko.md`
-- 원시 증거 동결·실행 방법: `docs/R02_BASELINE_USAGE.ko.md`
-- EXP-09 비교 명세: `docs/R02_BASELINE_PROTOCOL.ko.md`
-- 사용자 실행 수용 기록: `evidence/implementation/r02_execution_acceptance_20260916.json`
-- 후속 전체 로드맵: `docs/reference/R02_PLUS_ROADMAP_20260916.ko.md`
+R0.2 Windows/Python 3.12.10 사용자 실행: 136/136 테스트, demo complete, audit verified/differences=[] 보고. 이후 기준선 패키지 적용, 보조 도구 16/16 테스트, capture 생성 완료도 보고됐다. capture에는 실행 소스 30개와 run 파일 11개가 있으며 원본 변경/새 inference는 없었다.
 
-이번 정리는 엔진 0.2.0의 동작을 바꾸지 않는다. `r02_status.json`, `r02_static_review.json`, `docs/R02_ACCEPTANCE.ko.md`는 **소스 배포 당시 기록**으로 그대로 두고, 현재 상태는 위의 별도 기록에 둔다. 과거 문서의 “실행 전”을 현재 상태로 다시 해석하지 않는다.
+이는 사용자 로그로 수용한 범위다. 이 패치 작성 환경에서 원시 capture를 읽거나 EXP-09 새 비교를 실행한 것은 아니다. 상세 비용·재오답 원인은 아직 그 자료와 대조 실험으로 분석한다.
 
-## 현재 완료와 남은 자료
+## 기준 문서
 
-기준선 문서, 사용자 실행 수용, 소스 경계 검토, 후속 비교 명세와 보조 도구 작성을 완료했다. 원시 `runs/r02_first`의 동결·비용 분석은 로컬 수집기가 수행하며, 새 paired 진단은 별도의 명시적 실행이 필요하다. 이미 통과한 R0.2 실행을 다시 미완료로 되돌리는 뜻은 아니다.
+- [현재 전체 로드맵](docs/HCR_MASTER_ROADMAP.ko.md)
+- [24개 개념 추적표](docs/CONCEPT_COVERAGE.ko.md)
+- [소스 대조와 수정 이유](docs/CONCEPT_PATCH_REVIEW.ko.md)
+- [기준선 수용](docs/R02_BASELINE.ko.md) / [EXP-09](docs/R02_BASELINE_PROTOCOL.ko.md)
+- [substrate/I/F 계약](architecture/substrate-contract.ko.md)
+- [오류 taxonomy](formalism/failure-taxonomy.ko.md)
 
-## 이후 순서
+## 구현 순서
 
-1. R0.2.1: 기존 dependency 계산의 시간·상태 계약과 snapshot/restore/resume.
-2. R0.3: 제한된 M specialization과 처리 결과 통합.
-3. R0.4: 작은 fork/join motif와 회로 간 구조 학습.
-4. R0.5a/b: 지속 activation/readout와 제한된 새 후보 조합.
-5. R0.6: A adaptation.
-6. R0.7: A/D/M 단독·조합과 일반화.
+| 단계 | 구현 | 동시에 유지할 연구 과제 |
+|---|---|---|
+| R0.2 baseline | 기존 실행·capture 보존, 원시 분석 | EXP-09와 기존 trace의 설명 포함 관계 관찰 |
+| R0.2.1 | 시간·state·snapshot/restore/resume | 오류 근거와 readout/설명 계측 계약 |
+| R0.3 | 제한된 M specialization/통합 | 같은 총예산·근거 중복·선택/실행 구별 |
+| R0.4 | Fork/Join, 회로 간 연결·학습·pruning | binding·현실 검증·revisability |
+| R0.5a/b | 지속 activation/readout / 제한된 새 조합 | 다중안정의 basin과 trajectory switching 구별 |
+| R0.6 | A adaptation, cross-A 승격·재귀 | EXP-05 공통 primitive/low-mid-high symbolic 과제 |
+| R0.7 | A/D/M 단독·두 축·세 축 일반화 | 지원 정보·LLM/HCR evidence 분리 |
+| B0/B1/B2 | 자원·I/F 계약 / local event backend / 물리 prototype | 동기 reference·비용·소자/측정 경계 |
 
-버전 순서와 실제 선행 의존성은 전체 로드맵을 따른다. R0.2 기준선 정리에서 R0.2.1 기능을 먼저 넣지 않는다.
+EXP-03·04·05·06은 이미 존재하던 초안이며 관련 버전과 함께 수행한다. 별도 R0.8/0.9 뒤로 미뤄서 현재 기반과 분리하지 않는다. B0는 설계 계약이고 B1/B2 착수는 실제 선행 조건에 따른다.
 
-## 기록 보존
-
-변경 직전 로드맵과 release manifest는 `docs/reference/r02_pre_baseline_*`에 보존했다. 기존 인계의 연구 원칙과 초기 제안은 삭제하지 않는다. 원본 run을 덮어쓰거나 현재 source hash를 과거 plan에 다시 써 넣지 않는다.
+다음 기능 구현은 R0.2.1이다. 이번 패치는 개념 누락/오독을 막는 문서·정적 추적·기존 기록 분석만 추가하며 엔진 버전 0.2.0과 실행 의미를 유지한다. 과거 로드맵·배포 당시 정적검사·source/run hash는 변경하지 않는다.

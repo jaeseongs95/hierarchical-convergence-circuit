@@ -1,3 +1,18 @@
+# 현재 상태 — R0.2 + 기준선 캡처 + 개념 추적 보강
+
+사용자 실행 보고에서 R0.2 `136/136` 테스트·demo·audit 통과, 기준선 보조 도구 `16/16` 테스트와 capture 생성 완료가 확인됐다. 아래 '소스 작성·정적 검사'는 **배포 당시 기록**이며 현재 실행 상태를 되돌리지 않는다.
+
+- 최신 전체 계획: [HCR Master Roadmap](docs/HCR_MASTER_ROADMAP.ko.md)
+- 24개 개념/구현/명세 연결: [개념 대조](docs/CONCEPT_COVERAGE.ko.md)
+- 이번 수정 근거·한계: [소스 검토](docs/CONCEPT_PATCH_REVIEW.ko.md)
+- 새 도구: [사용법](docs/CONCEPT_PATCH_USAGE.ko.md)
+
+이번 개념 보강은 `src/hcr`, `configs`, 기존 회귀시험을 변경하지 않는다. R0.2.1이나 물리 하드웨어를 구현한 패치가 아니다. 원격 HEAD는 연결에서 확인되지 않았으므로 적용기는 적용 완료가 보고된 로컬 기준 파일과 비교한다. 실행·커밋·push는 사용자가 수행한다.
+
+---
+
+## 아래는 R0.2 최초 배포와 R0.1의 보존 기록
+
 # R0.2 추가 — Adaptive Graph/Circuit Engine
 
 이 배포는 기존 R0.1을 보존하면서 `--engine r02`로 선택하는 D-expansion/부분회로 경로를 추가한다. **소스 작성·정적 검사 상태이며, 배포 세션에서 테스트나 실험을 실행하지 않았다.**

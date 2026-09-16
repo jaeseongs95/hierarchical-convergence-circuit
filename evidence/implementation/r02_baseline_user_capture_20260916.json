@@ -1,0 +1,24 @@
+{
+  "schema": "hcr-baseline-user-receipt-v1",
+  "evidence_kind": "user_supplied_console_transcription",
+  "test_result": {
+    "tests_run": 16,
+    "passed": 16,
+    "seconds": 0.029
+  },
+  "capture": {
+    "state": "complete",
+    "schema": "hcr-r02-baseline-capture-v1",
+    "source_files": 30,
+    "run_files": 11,
+    "source_plan_sha256": "5c29e442a66ee944c87b7eb54af5a727d526833b144a0c4f4d3258efc48bfce0",
+    "run_manifest_sha256": "4386745d4e5c5db176dc3b9fc4fcb2000847f9bfdbae2d880d30c7f1057e9d8e",
+    "repository_modified": false,
+    "original_run_modified": false,
+    "inference_executed": false,
+    "integrity_and_aggregation_checked": true
+  },
+  "raw_capture_read_in_patch_session": false,
+  "exp09_executed_in_patch_session": false,
+  "remote_head_verified": false
+}
