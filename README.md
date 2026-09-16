@@ -63,32 +63,99 @@ python -X utf8 -B hcr.py infer --input configs/example_observation.json --memory
 
 `infer`는 truth/label/scenario 필드를 허용하지 않으며 정답을 판정하지 않는다. `verify --run`은 전체 demo 기록용이고 단독 infer 폴더에 대한 평가기를 실행하지 않는다. 프로그램 API는 `hcr.runtime.Engine`, `hcr.model.Observation`, `hcr.circuits.Memory`다.
 
-## 구조 결정
+## 현재 프로젝트 구조
 
-첨부안의 연구 저장소 바깥 틀을 채택했고, 이전 HCR R0.1 계획의 작은 단일 엔진을 안에 배치했다. 초깃단계부터 공통 엔진을 src에 두며, 실험/시뮬레이션별로 복제하지 않는다.
+아래 구조는 **현재 `main` 브랜치에 실제로 추적되어 올라가 있는 항목**을 기준으로 정리한다. 실행 시 생성되는 `runs/`는 `.gitignore` 대상이므로 현재 저장소 트리에는 포함하지 않는다.
 
 ```text
 hierarchical-convergence-circuit/
-├─ theory/                 # 원 가설과 변경 없는 원문 snapshot
-├─ formalism/              # 정의·불변식·R0.1 구체 수식
-├─ evidence/               # 원 주장 목록 + 별도 구현 상태
-├─ architecture/           # 이전 설계와 최종 실행 경계
-├─ docs/decisions/         # 두 구조의 비교·선택 근거
-├─ experiments/exp-00-.../ # 지금 실행하는 개발 통합 fixture
-├─ experiments/exp-01~07/  # 기존 draft 연구 계획, 완료 처리하지 않음
-├─ src/hcr/                # 한 공통 kernel과 한 실행 엔진
-├─ tests/                  # 단위·경계·학습순환·감사/위변조 검사
-├─ configs/                # 개발 설정과 공개 관측 예시
-├─ scripts/                # selftest·calibration·기존 저장소 도구
-├─ simulations/            # 향후 탐색 연구 구획; 별도 엔진 없음
-├─ related-work/, papers/  # 원 제안의 후속 연구 구획
-├─ hcr.py, Run-HCR.ps1     # 로컬 실행 진입점
-└─ runs/                   # 실행 출력. Git 기본 제외
+├─ .github/
+│  ├─ ISSUE_TEMPLATE/             # 실험 제안·이론 변경용 이슈 템플릿
+│  └─ pull_request_template.md     # PR 검토 템플릿
+├─ theory/
+│  ├─ source/                     # 변경하지 않는 원 가설/source snapshot
+│  ├─ core-hypothesis.md          # 현재 파생된 핵심 가설 정리
+│  └─ versioning.md               # 이론 문서 버전 관리 원칙
+├─ formalism/                     # 변수·불변식·실패 분류·계산 정의
+├─ architecture/                  # HCR 계산/실행 아키텍처와 substrate 계약
+├─ evidence/
+│  ├─ claims.yaml                 # 주장 상태의 기준 registry
+│  ├─ concept_coverage.json       # 개념↔구현/명세 대응 상태
+│  └─ implementation/             # R0.1/R0.2 구현·실행·baseline 상태 기록
+├─ experiments/
+│  ├─ exp-00-r01-integration/     # R0.1 개발 통합 fixture
+│  ├─ exp-01-... ~ exp-07-...     # 연구 가설별 실험 설계 draft
+│  └─ exp-08-r02-adaptive-integration/ # R0.2 통합 개발 protocol
+├─ src/
+│  └─ hcr/
+│     ├─ evaluation/              # 독립 reference·protocol·audit 계층
+│     ├─ tasks/                   # 합성 task/world 정의
+│     └─ *.py                     # activation/binding/circuit/graph/runtime 등 공통 엔진
+├─ tests/                         # 공통 엔진, R0.1/R0.2, trace/audit 회귀시험
+├─ configs/                       # R0.1/R0.2 설정과 공개 관측 입력 예시
+├─ scripts/                       # selftest·calibration·구조/릴리스 검증·초기화 보조
+├─ tools/
+│  ├─ r02_baseline/               # R0.2 baseline/EXP09 측정·probe·audit·복구 도구
+│  │  └─ tests/                   # baseline/EXP09 도구 자체 검증과 fixture
+│  └─ r02_concepts/               # 개념 coverage 정적 검사·review 도구와 시험
+├─ simulations/
+│  ├─ cognitive/                  # 추상 candidate/graph/circuit dynamics 탐색 구획
+│  └─ neural-circuit/             # 향후 sparse recurrent/event-driven 대응 탐색 구획
+├─ related-work/                  # 선행연구 비교·차이·판별 실험 기록 구획
+├─ papers/
+│  └─ working-paper/              # 논문 초안/working paper 작성 구획
+├─ docs/
+│  ├─ AI chat/                    # 연구 대화 기반 정리·통합가설·설계검토 원자료
+│  ├─ decisions/                  # 구조 선택 등 ADR
+│  ├─ reference/                  # 초기 문서·과거 release/roadmap snapshot 보존
+│  └─ *.md                        # 사용법·acceptance·baseline·EXP09·master roadmap
+├─ HCR-Evidence/
+│  ├─ exp09/                      # EXP09 복구 결과, 재검산·분석, 원자료 묶음
+│  ├─ hcr-r02-baseline-capture-20260916/ # R0.2 baseline capture와 분석 산출물
+│  ├─ hcr-r02-concept-review-20260916/    # 개념 추적 review 산출물
+│  ├─ hierarchical-convergence-circuit-before-r02-*/ # 단계별 변경 전 snapshot
+│  └─ r02-diagnostic-01/          # 원 진단 run과 도구 source 보존
+├─ hcr.py                         # Python CLI 진입점
+├─ Run-HCR.ps1                    # 기본 실행 PowerShell 진입점
+├─ Run-HCR-R02.ps1                # R0.2 실행 PowerShell 진입점
+├─ pyproject.toml                 # Python 프로젝트/패키지 설정
+├─ RELEASE_MANIFEST.json          # 현재 release 파일 manifest
+├─ ROADMAP.md                     # 저장소 수준 roadmap
+├─ HCR_통합_개발연구_로드맵_R02이후_2026-09-16.md # 통합 개발·연구 계획 원문
+├─ CHANGELOG.md                   # 변경 이력
+├─ CONTRIBUTING.md                # 기여/연구 작업 규칙
+├─ README.md / README.ko.md       # 프로젝트 진입 문서
+└─ .editorconfig / .gitattributes / .gitignore
 ```
 
-상세 비교: [ADR-001](docs/decisions/ADR-001-project-structure.ko.md)  
-실제 아키텍처: [architecture/r01-engine.ko.md](architecture/r01-engine.ko.md)  
-범위·조건: [EXP-00](experiments/exp-00-r01-integration/design.md)
+### 폴더별 역할과 담는 자료
+
+| 경로 | 역할 | 주로 담는 자료 |
+|---|---|---|
+| `.github/` | GitHub 협업 절차 표준화 | 실험 제안·이론 변경 이슈 템플릿, PR 템플릿 |
+| `theory/` | HCC/HCR 가설 자체와 그 버전 경계 관리 | 핵심 가설, 버전 규칙, 변경하지 않는 원문 snapshot |
+| `formalism/` | 서술적 가설을 측정 가능한 계산 정의로 변환 | A/D/M/B, 상태전이, 불변식, 실패 taxonomy, R0.1 계산 정의 |
+| `architecture/` | 이론을 실행 구조로 옮긴 설계 경계 정의 | R0.1/R0.2 엔진 구조, 최소 계산 아키텍처, substrate 계약, 원 설계안 |
+| `evidence/` | **무엇을 주장하고 현재 어디까지 지지되는지** 관리하는 증거 메타 계층 | `claims.yaml`, 현재 경계, concept coverage, 구현/실행/baseline 상태 JSON |
+| `experiments/` | 실험 조건과 판별 논리를 고정하는 protocol 구획 | EXP-00~08의 `design.md`; 개발 fixture와 아직 미실행인 연구 draft를 구분 |
+| `src/hcr/` | 모든 실험이 공유하는 단일 HCR 실행 엔진 | graph expansion, binding, activation, dynamics, circuit memory/compile, learning, runtime, trace, evaluation |
+| `tests/` | 공통 엔진과 감사 경계의 회귀 검증 | 계약·학습순환·R0.2 runtime·audit/trace CLI 테스트와 helper |
+| `configs/` | 실행 조건과 공개 입력 정의 | `r01.toml`, `r02.toml`, `example_observation.json` |
+| `scripts/` | 저장소 전반의 개발/검증 보조 | selftest, calibration, release/structure 검증, 초기화 스크립트 |
+| `tools/r02_baseline/` | R0.2 baseline 및 EXP09 계측을 생산 엔진과 분리 | collect/probe, 독립 audit, cost 분석, measurement journal, memory equivalence, 실패 run 복구 도구와 자체 테스트 |
+| `tools/r02_concepts/` | 가설 개념과 현재 코드/명세의 연결 상태를 정적으로 점검 | concept check/review 코드와 회귀시험 |
+| `simulations/` | 동결된 실험 계약 이전의 탐색적 시뮬레이션 구획 | cognitive 추상 모델과 향후 neural-circuit mapping용 문서/코드 |
+| `related-work/` | 기존 연구와 HCC의 중복·차이·판별 가능성 관리 | predictive coding, attractor, binding, neuromorphic 등 선행연구 비교 기록 |
+| `papers/` | 연구 결과를 논문화하는 작업 공간 | working paper 초안과 논문 구성 자료 |
+| `docs/` | 실행법·설계결정·로드맵·분석 문서의 중앙 문서 구획 | acceptance/usage/baseline/EXP09 문서, ADR, master roadmap, 초기 snapshot, AI 대화 기반 연구 정리 |
+| `HCR-Evidence/` | **실제 실행에서 나온 원시·가공 evidence bundle과 복구/분석 산출물을 보존** | run/event/episode, memory snapshot, 비용 CSV, audit/receipt/manifest, source snapshot, EXP09 복구 결과와 재검산 자료 |
+
+`evidence/`와 `HCR-Evidence/`는 역할이 다르다. 전자는 **claim·구현 상태·증거 경계를 구조화해서 관리하는 계층**이고, 후자는 **실제 실행 및 분석에서 생성되어 보존한 evidence artifact**를 담는다. EXP09 역시 현재 `experiments/exp-09-*` 폴더로 존재하는 것이 아니라, 비교 명세는 `docs/`, 측정·복구 코드는 `tools/r02_baseline/`, 실제 결과는 `HCR-Evidence/exp09/`에 분리되어 있다.
+
+상세 구조 결정: [ADR-001](docs/decisions/ADR-001-project-structure.ko.md)  
+현재 구조 원칙: [docs/repository-structure.md](docs/repository-structure.md)  
+실제 아키텍처: [architecture/r01-engine.ko.md](architecture/r01-engine.ko.md), [architecture/r02-engine.ko.md](architecture/r02-engine.ko.md)  
+최신 전체 계획: [HCR Master Roadmap](docs/HCR_MASTER_ROADMAP.ko.md)
 
 ## 실제 구현한 최소 순환
 
