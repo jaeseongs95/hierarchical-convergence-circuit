@@ -1,0 +1,48 @@
+{
+  "input_zip_sha256": "2b216fb05984c3eb3a64616a7bdae7e2ff09ecff75195273e283826ea82d7445",
+  "original_zip_sha256": "ec03a6e1b50ce6dfe1f8261fc2c6fde0cfcfeb78d4f37df823706c264ea933a9",
+  "archive_crc_ok": true,
+  "recovery_manifest_files_verified": 56,
+  "source_plan_files_verified": 30,
+  "original_snapshot_files_equal_to_previous_upload": 12,
+  "original_tool_files": 4,
+  "recovery_tool_files_verified": 6,
+  "event_chain_count": 4473,
+  "event_head": "42367f1328834e2dd0b136cce55654af521f0ea87d1317a41af33d3962760fd4",
+  "rows": 60,
+  "inference_outcomes": {
+    "correct": 51,
+    "incorrect": 9,
+    "unresolved": 0
+  },
+  "every_record_is_stable": true,
+  "every_proof_recorded_valid": true,
+  "candidate_rows": 72,
+  "recovered_auditor_rerun": {
+    "schema": "hcr-exp09-recovery-verification-v1",
+    "state": "complete",
+    "verified": true,
+    "records": 60,
+    "events": 4473,
+    "scalar_ticks_replayed": 3496,
+    "memory_updates_checked": 10,
+    "proofs_reassessed": 60,
+    "cost_pairs": 20,
+    "original_run_state": "failed",
+    "new_inferences": 0,
+    "baseline_capture_reverified": false,
+    "full_runtime_graph_audit": false
+  },
+  "supplied_auditor_reused": true,
+  "baseline_capture_available_in_current_analysis": false,
+  "baseline_capture_verified_by_user_recovery": true,
+  "source_production_inference_modules_imported": false,
+  "new_inferences_performed": 0,
+  "input_modified": false,
+  "csv_60_rows_exactly_matches_summary": true,
+  "limits": [
+    "Entire frontier policy not replayed",
+    "No independent wall-time measurement",
+    "Full baseline capture not provided in this attachment"
+  ]
+}

@@ -1,0 +1,524 @@
+{
+  "basis": "recomputed_from_uploaded_recovery_and_preserved_original_records",
+  "new_inferences": 0,
+  "phases": [
+    {
+      "phase": "adaptation",
+      "records": 10,
+      "correct": 5,
+      "incorrect": 5,
+      "unresolved": 0
+    },
+    {
+      "phase": "persistence",
+      "records": 2,
+      "correct": 0,
+      "incorrect": 2,
+      "unresolved": 0
+    },
+    {
+      "phase": "factorial",
+      "records": 8,
+      "correct": 6,
+      "incorrect": 2,
+      "unresolved": 0
+    },
+    {
+      "phase": "cost_pairs",
+      "records": 40,
+      "correct": 40,
+      "incorrect": 0,
+      "unresolved": 0
+    }
+  ],
+  "recovery_vs_previous": "All 12 original files are byte-identical to the previous failure ZIP; not new experimental samples.",
+  "persistence": {
+    "assessment_equal": true,
+    "behavior_equal": true,
+    "both_correct": [
+      false,
+      false
+    ],
+    "direct_id": "r02-d-137-f6a605af6b2c3c31",
+    "load_seconds": null,
+    "memory_digest": "721066e3ca2bcf555850d0e58041e4f7d5abebab0faef497a28d2612ad3e2ab3",
+    "memory_equal": true,
+    "note": "direct/reload 전체 memory hash 검사 유지. 별도 arm의 ID 대응과 혼용하지 않는다.",
+    "reload_id": "r02-d-242-f6a605af6b2c3c31",
+    "save_seconds": null,
+    "timing_status": "not_recorded_before_original_failure"
+  },
+  "revision_memory_comparison": {
+    "before_document_equal": true,
+    "contract": "paired-first-error-provenance-v1",
+    "exact_document_equal": false,
+    "excluded_fields": [],
+    "execution_state_equal": true,
+    "full_document_equal_after_correspondence": true,
+    "id_correspondence": {
+      "decision": [
+        "r02-d-965-7efe62384f814d1e",
+        "r02-d-1-7efe62384f814d1e"
+      ],
+      "feedback": [
+        "f-r02-d-965-7efe62384f814d1e",
+        "f-r02-d-1-7efe62384f814d1e"
+      ]
+    },
+    "left_first_decision_id": "r02-d-965-7efe62384f814d1e",
+    "left_memory_sha256": "25bdbbeb75306d690f631137fbe0c7b72c83bf843c4128623993d2b0705eaddd",
+    "original_documents_modified": false,
+    "provenance_correspondence_valid": true,
+    "raw_difference_paths": [
+      "/circuits/1/feedback_ids/6",
+      "/consumed_feedback/6",
+      "/patches/6/decision_id",
+      "/patches/6/feedback_id"
+    ],
+    "remapped_reference_paths": [
+      "/circuits/1/feedback_ids/6",
+      "/consumed_feedback/6",
+      "/patches/6/decision_id",
+      "/patches/6/feedback_id"
+    ],
+    "right_first_decision_id": "r02-d-1-7efe62384f814d1e",
+    "right_memory_sha256": "6d8ddd8dd3da7ff05f0dfa31de27a145df81c262e50abd1c4bec18c142ee791c",
+    "scope": "첫 오류 전이의 ID 대응 포함 상태 동등성. direct/reload는 전체 문서·hash 동일성 검사 유지."
+  },
+  "factorial": [
+    {
+      "arm": "before/weak/circuits",
+      "decision_id": "r02-d-347-f6a605af6b2c3c31",
+      "value": true,
+      "correct": false,
+      "ticks": 75,
+      "pool_ticks": 36,
+      "decision_ticks": 39,
+      "proof_D": 3,
+      "first_edge_state": 0.5642279598521303,
+      "goal_state": 0.9991392215648365,
+      "selected": [
+        {
+          "pattern_length": 3,
+          "strength": 0.81015625,
+          "prior": 1.3055089285714285,
+          "mismatch": 0.06,
+          "failures": 0,
+          "edge_order": [
+            0,
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "arm": "before/weak/graph_only",
+      "decision_id": "r02-d-435-f6a605af6b2c3c31",
+      "value": false,
+      "correct": true,
+      "ticks": 39,
+      "pool_ticks": 0,
+      "decision_ticks": 39,
+      "proof_D": 2,
+      "first_edge_state": 0.19543747611212314,
+      "goal_state": 0.012257280154944206,
+      "selected": []
+    },
+    {
+      "arm": "before/measured/circuits",
+      "decision_id": "r02-d-489-3a1188039724c442",
+      "value": false,
+      "correct": true,
+      "ticks": 96,
+      "pool_ticks": 67,
+      "decision_ticks": 29,
+      "proof_D": 2,
+      "first_edge_state": 0.00012569104871913963,
+      "goal_state": 0.015499151248198187,
+      "selected": [
+        {
+          "pattern_length": 2,
+          "strength": 0.81015625,
+          "prior": 0.11110714285714281,
+          "mismatch": 0.0,
+          "failures": 0,
+          "edge_order": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "arm": "before/measured/graph_only",
+      "decision_id": "r02-d-605-3a1188039724c442",
+      "value": false,
+      "correct": true,
+      "ticks": 28,
+      "pool_ticks": 0,
+      "decision_ticks": 28,
+      "proof_D": 2,
+      "first_edge_state": 0.00012570109600955304,
+      "goal_state": 0.012251797257014224,
+      "selected": []
+    },
+    {
+      "arm": "after/weak/circuits",
+      "decision_id": "r02-d-648-f6a605af6b2c3c31",
+      "value": true,
+      "correct": false,
+      "ticks": 88,
+      "pool_ticks": 49,
+      "decision_ticks": 39,
+      "proof_D": 3,
+      "first_edge_state": 0.5642279227774991,
+      "goal_state": 0.9991011794344352,
+      "selected": [
+        {
+          "pattern_length": 2,
+          "strength": 0.81015625,
+          "prior": 1.3055089285714285,
+          "mismatch": 0.06,
+          "failures": 0,
+          "edge_order": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "arm": "after/weak/graph_only",
+      "decision_id": "r02-d-753-f6a605af6b2c3c31",
+      "value": false,
+      "correct": true,
+      "ticks": 39,
+      "pool_ticks": 0,
+      "decision_ticks": 39,
+      "proof_D": 2,
+      "first_edge_state": 0.19543747611212314,
+      "goal_state": 0.012257280154944206,
+      "selected": []
+    },
+    {
+      "arm": "after/measured/circuits",
+      "decision_id": "r02-d-807-3a1188039724c442",
+      "value": false,
+      "correct": true,
+      "ticks": 95,
+      "pool_ticks": 66,
+      "decision_ticks": 29,
+      "proof_D": 2,
+      "first_edge_state": 0.00012569104871913963,
+      "goal_state": 0.015499151248198187,
+      "selected": [
+        {
+          "pattern_length": 2,
+          "strength": 0.81015625,
+          "prior": 0.11110714285714281,
+          "mismatch": 0.0,
+          "failures": 0,
+          "edge_order": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "arm": "after/measured/graph_only",
+      "decision_id": "r02-d-922-3a1188039724c442",
+      "value": false,
+      "correct": true,
+      "ticks": 28,
+      "pool_ticks": 0,
+      "decision_ticks": 28,
+      "proof_D": 2,
+      "first_edge_state": 0.00012570109600955304,
+      "goal_state": 0.012251797257014224,
+      "selected": []
+    }
+  ],
+  "weak_pair_final_network": {
+    "same_final_program": true,
+    "same_program_digest": true,
+    "same_top_down": true,
+    "same_public_observation": true,
+    "same_memory": true,
+    "changed_drives": {
+      "p:0:0": {
+        "graph": 0,
+        "circuits": 1.3055089285714285
+      },
+      "goal": {
+        "graph": 0.0,
+        "circuits": 1.3055089285714285
+      },
+      "p:0:1": {
+        "graph": 0,
+        "circuits": 1.3055089285714285
+      },
+      "p:0:2": {
+        "graph": 0,
+        "circuits": 1.3055089285714285
+      }
+    },
+    "graph_state_e0": 0.19543747611212314,
+    "circuit_state_e0": 0.5642279598521303
+  },
+  "benchmark": [
+    {
+      "case": "branched_composition",
+      "pairs": 4,
+      "graph_median_ms": 3.07589999999891,
+      "circuit_median_ms": 9.604450000040288,
+      "time_ratio": 3.1224844761025037,
+      "median_paired_difference_ms": 6.574150000062673,
+      "graph_expansions": 2,
+      "circuit_expansions": 1,
+      "graph_ticks": 33,
+      "circuit_ticks": 63,
+      "pool_ticks": 31,
+      "circuit_decision_ticks": 32,
+      "graph_signals": 264,
+      "circuit_signals": 938,
+      "pool_signals": 682,
+      "circuit_decision_signals": 256,
+      "pool_share_pct": 72.70788912579957,
+      "graph_bindings": 0,
+      "circuit_bindings": 24,
+      "primitive_D_graph": 2,
+      "primitive_D_circuit": 2,
+      "first_arm_counts": {
+        "circuits": 2,
+        "graph_only": 2
+      },
+      "all_pairs_correct": true,
+      "operation_deltas_constant": true
+    },
+    {
+      "case": "counterfactual",
+      "pairs": 4,
+      "graph_median_ms": 2.9744999999934407,
+      "circuit_median_ms": 13.370750000035514,
+      "time_ratio": 4.495125231153135,
+      "median_paired_difference_ms": 10.380849999990005,
+      "graph_expansions": 3,
+      "circuit_expansions": 2,
+      "graph_ticks": 28,
+      "circuit_ticks": 96,
+      "pool_ticks": 67,
+      "circuit_decision_ticks": 29,
+      "graph_signals": 336,
+      "circuit_signals": 1546,
+      "pool_signals": 1198,
+      "circuit_decision_signals": 348,
+      "pool_share_pct": 77.49029754204399,
+      "graph_bindings": 0,
+      "circuit_bindings": 27,
+      "primitive_D_graph": 2,
+      "primitive_D_circuit": 2,
+      "first_arm_counts": {
+        "circuits": 2,
+        "graph_only": 2
+      },
+      "all_pairs_correct": true,
+      "operation_deltas_constant": true
+    },
+    {
+      "case": "longer_composition",
+      "pairs": 4,
+      "graph_median_ms": 4.183249999982763,
+      "circuit_median_ms": 15.23259999999027,
+      "time_ratio": 3.6413315006401805,
+      "median_paired_difference_ms": 11.026600000036524,
+      "graph_expansions": 4,
+      "circuit_expansions": 2,
+      "graph_ticks": 38,
+      "circuit_ticks": 105,
+      "pool_ticks": 68,
+      "circuit_decision_ticks": 37,
+      "graph_signals": 608,
+      "circuit_signals": 1816,
+      "pool_signals": 1224,
+      "circuit_decision_signals": 592,
+      "pool_share_pct": 67.40088105726872,
+      "graph_bindings": 0,
+      "circuit_bindings": 28,
+      "primitive_D_graph": 4,
+      "primitive_D_circuit": 4,
+      "first_arm_counts": {
+        "circuits": 2,
+        "graph_only": 2
+      },
+      "all_pairs_correct": true,
+      "operation_deltas_constant": true
+    },
+    {
+      "case": "renamed_reordered",
+      "pairs": 4,
+      "graph_median_ms": 3.3815999999546875,
+      "circuit_median_ms": 10.654399999964426,
+      "time_ratio": 3.150697894519515,
+      "median_paired_difference_ms": 7.246399999985442,
+      "graph_expansions": 3,
+      "circuit_expansions": 2,
+      "graph_ticks": 36,
+      "circuit_ticks": 69,
+      "pool_ticks": 34,
+      "circuit_decision_ticks": 35,
+      "graph_signals": 432,
+      "circuit_signals": 1304,
+      "pool_signals": 884,
+      "circuit_decision_signals": 420,
+      "pool_share_pct": 67.79141104294479,
+      "graph_bindings": 0,
+      "circuit_bindings": 18,
+      "primitive_D_graph": 3,
+      "primitive_D_circuit": 3,
+      "first_arm_counts": {
+        "circuits": 2,
+        "graph_only": 2
+      },
+      "all_pairs_correct": true,
+      "operation_deltas_constant": true
+    },
+    {
+      "case": "same_structure",
+      "pairs": 4,
+      "graph_median_ms": 3.394549999939045,
+      "circuit_median_ms": 10.408700000027693,
+      "time_ratio": 3.0662974474421056,
+      "median_paired_difference_ms": 7.039850000012393,
+      "graph_expansions": 3,
+      "circuit_expansions": 2,
+      "graph_ticks": 36,
+      "circuit_ticks": 69,
+      "pool_ticks": 34,
+      "circuit_decision_ticks": 35,
+      "graph_signals": 432,
+      "circuit_signals": 1304,
+      "pool_signals": 884,
+      "circuit_decision_signals": 420,
+      "pool_share_pct": 67.79141104294479,
+      "graph_bindings": 0,
+      "circuit_bindings": 18,
+      "primitive_D_graph": 3,
+      "primitive_D_circuit": 3,
+      "first_arm_counts": {
+        "circuits": 2,
+        "graph_only": 2
+      },
+      "all_pairs_correct": true,
+      "operation_deltas_constant": true
+    }
+  ],
+  "training": [
+    {
+      "training_count": 3,
+      "strength": 0.55,
+      "prior": 0.7755,
+      "first_correct": false,
+      "first_pool_ticks": 41,
+      "first_decision_ticks": 51,
+      "first_total_ticks": 92,
+      "revision_correct": true,
+      "revision_ticks": 28,
+      "revision_circuits": []
+    },
+    {
+      "training_count": 6,
+      "strength": 0.81015625,
+      "prior": 1.3055089285714285,
+      "first_correct": false,
+      "first_pool_ticks": 36,
+      "first_decision_ticks": 39,
+      "first_total_ticks": 75,
+      "revision_correct": true,
+      "revision_ticks": 28,
+      "revision_circuits": []
+    },
+    {
+      "training_count": 9,
+      "strength": 0.9199096679687501,
+      "prior": 1.556487158203125,
+      "first_correct": false,
+      "first_pool_ticks": 35,
+      "first_decision_ticks": 37,
+      "first_total_ticks": 72,
+      "revision_correct": true,
+      "revision_ticks": 28,
+      "revision_circuits": []
+    }
+  ],
+  "learning": {
+    "feedback_updates": 10,
+    "updates_with_circuit_state_change": 5,
+    "correct_negative_feedbacks": 5,
+    "correct_negative_circuit_changes": 0
+  },
+  "correction": {
+    "available": true,
+    "caveat": "동일 점수 revision은 추가 정보 없는 공개 입력 대조다. 실제 정밀 측정으로 보고하지 않는다.",
+    "circuits_disabled_in_both": true,
+    "extra_measurement_needed_in_this_pair": false,
+    "measured_correct": true,
+    "measured_output": false,
+    "measured_revision_id": "r02-d-92-725307a6055bdd61",
+    "memory_comparison": {
+      "before_document_equal": true,
+      "contract": "paired-first-error-provenance-v1",
+      "exact_document_equal": false,
+      "excluded_fields": [],
+      "execution_state_equal": true,
+      "full_document_equal_after_correspondence": true,
+      "id_correspondence": {
+        "decision": [
+          "r02-d-965-7efe62384f814d1e",
+          "r02-d-1-7efe62384f814d1e"
+        ],
+        "feedback": [
+          "f-r02-d-965-7efe62384f814d1e",
+          "f-r02-d-1-7efe62384f814d1e"
+        ]
+      },
+      "left_first_decision_id": "r02-d-965-7efe62384f814d1e",
+      "left_memory_sha256": "25bdbbeb75306d690f631137fbe0c7b72c83bf843c4128623993d2b0705eaddd",
+      "original_documents_modified": false,
+      "provenance_correspondence_valid": true,
+      "raw_difference_paths": [
+        "/circuits/1/feedback_ids/6",
+        "/consumed_feedback/6",
+        "/patches/6/decision_id",
+        "/patches/6/feedback_id"
+      ],
+      "remapped_reference_paths": [
+        "/circuits/1/feedback_ids/6",
+        "/consumed_feedback/6",
+        "/patches/6/decision_id",
+        "/patches/6/feedback_id"
+      ],
+      "right_first_decision_id": "r02-d-1-7efe62384f814d1e",
+      "right_memory_sha256": "6d8ddd8dd3da7ff05f0dfa31de27a145df81c262e50abd1c4bec18c142ee791c",
+      "scope": "첫 오류 전이의 ID 대응 포함 상태 동등성. direct/reload는 전체 문서·hash 동일성 검사 유지."
+    },
+    "memory_equal_at_revision": false,
+    "memory_execution_state_equal": true,
+    "provenance_correspondence_valid": true,
+    "same_score_correct": true,
+    "same_score_output": false,
+    "same_score_revision_id": "r02-d-1056-4c72b323eb06decf"
+  },
+  "measurement_gaps": [
+    "engine initialization time",
+    "save/load time",
+    "probe end-to-end time"
+  ],
+  "source_files": {
+    "learning": "source/src/hcr/learning.py:update_adaptive",
+    "runtime": "source/src/hcr/runtime.py:AdaptiveEngine.infer",
+    "prior": "source/src/hcr/workspace.py:adaptive_network",
+    "proof": "source/src/hcr/proof.py:reconstruct"
+  }
+}
