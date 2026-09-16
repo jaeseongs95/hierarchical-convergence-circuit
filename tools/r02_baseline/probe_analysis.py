@@ -4,6 +4,7 @@ from collections import Counter, defaultdict
 from copy import deepcopy
 from statistics import median
 from collect import BaselineError, canonical, canonical_cost, pattern_id, require, sha
+from memory_equivalence import compare_revision_memory
 
 
 def semantic_decision(raw: dict) -> dict:
@@ -190,15 +191,19 @@ def summarize(rows: list[dict], events: list[dict], persistence: dict) -> dict:
     if correction['available']:
         r,m=repeat[1],measured[1]
         require(input_content(repeat[0]['observation']) == input_content(r['observation']), '같은 점수 대조의 입력 변경')
-        require(r['memory_before'] == m['memory_before'], '재시도 대조의 memory 불일치')
+        memory_comparison = compare_revision_memory(repeat[0], r, measured[0], m, events)
         require(not r['decision']['circuit_ids'] and not m['decision']['circuit_ids'], '재시도에 회로가 사용됨')
         correction.update(same_score_correct=r['assessment']['correct'], measured_correct=m['assessment']['correct'],
             same_score_output=r['decision']['value'], measured_output=m['decision']['value'],
             extra_measurement_needed_in_this_pair=(m['assessment']['correct'] is True and r['assessment']['correct'] is not True),
             same_score_revision_id=r['decision']['id'], measured_revision_id=m['decision']['id'],
-            memory_equal_at_revision=True, circuits_disabled_in_both=True,
+            memory_equal_at_revision=memory_comparison['exact_document_equal'],
+            memory_execution_state_equal=memory_comparison['execution_state_equal'],
+            provenance_correspondence_valid=memory_comparison['provenance_correspondence_valid'],
+            memory_comparison=memory_comparison, circuits_disabled_in_both=True,
             caveat='동일 점수 revision은 추가 정보 없는 공개 입력 대조다. 실제 정밀 측정으로 보고하지 않는다.')
-    return dict(schema='hcr-r02-exp09-summary-v2', inferences=len(rows), persistence=persistence,
+    return dict(schema='hcr-r02-exp09-summary-v2', summary_contract='paired-provenance-v1',
+        inferences=len(rows), persistence=persistence,
         factorial=[dict(condition=r['arm'], value=r['decision']['value'], correct=r['assessment']['correct'],
             circuit_ids=r['decision']['circuit_ids'], memory_digest=r['memory_before']) for r in factorial],
         contrasts=contrasts, trajectories=trajectory_results, correction_controls=correction,

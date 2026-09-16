@@ -1,3 +1,5 @@
+> **요약 오류 후속 수정:** `r02-diagnostic-01` 원본은 실패 상태로 남긴다. 기존 60회는 재추론하지 않고 [복구 안내](EXP09_RECOVERY.ko.md)에 따라 별도 재검산한다. 새 실행은 최초 상태/학습 동작을 유지한 채 ID 대응 비교와 조기 측정 journal을 사용한다.
+
 # EXP-09 r2 — 재오답 원인분리와 비용 분해
 
 기준: `jaeseongs95/hierarchical-convergence-circuit`의 `99e052ee3d27a3958bd741ad10ede36f6e90306d`.

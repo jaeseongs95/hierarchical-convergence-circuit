@@ -75,22 +75,13 @@ def audit_pairs(rows: list[dict], plan: dict, seeds: dict, weak: dict, measured:
     return dict(factorial_cells=8,persistence_cells=2,cost_pairs=len(pairs),adaptation_arms=5)
 
 
-def verify_probe(bundle: Path, root: Path) -> dict:
-    for p in (bundle,root):
-        require(all(not linked(q) for q in (p.absolute(),*p.absolute().parents)),'링크/junction 금지')
-    bundle,root=bundle.resolve(),root.resolve()
-    manifest=verify_files(root);verify_bundle(bundle)
-    plan=loads(read(root/'plan.json'))
-    require(plan['schema']=='hcr-r02-exp09-plan-v2' and plan['protocol']=='exp09-paired-correction-cost-r2','plan schema')
-    require(plan['baseline_bundle_manifest_sha256']==sha(read(bundle/'bundle_manifest.json'))==manifest['source_bundle_manifest_sha256'],'입력 capture 교체')
-    original=loads(read(bundle/'run/plan.json'))
-    require(plan['original_plan_sha256']==sha(read(bundle/'run/plan.json')), '원 plan hash 변경')
-    require(plan['source_hashes']==original['source_hashes'] and plan['config']==original['config']
-            and plan['config_signature']==original['config_signature'],'기준선 실행 설정 변경')
-    for name,h in plan['tool_source_hashes'].items():
-        require(sha(read(safe(root,'tool_source/'+name)))==h,'실행 도구 snapshot hash')
-    source=bundle/'source'
-    for name,h in plan['source_hashes'].items():require(sha(read(safe(source,name)))==h,'동결 실행 소스 hash')
+def audit_record_data(source: Path, root: Path, plan: dict, rows: list[dict], events: list[dict],
+                      seed_docs: dict, weak: dict, measured: dict, cases: dict,
+                      status: dict | None = None) -> tuple[dict, dict]:
+    """완료 run/실패 run에 공통으로 적용하는 읽기 전용 기록 검산. 새 추론은 하지 않는다."""
+    rows=deepcopy(rows)
+    for name,h in plan['source_hashes'].items():
+        require(sha(read(safe(source,name)))==h,'동결 실행 소스 hash: '+name)
     sys.dont_write_bytecode=True
     if 'hcr' in sys.modules:
         require(Path(sys.modules['hcr'].__file__).resolve().is_relative_to(source),'다른 HCR가 로드됨')
@@ -103,16 +94,13 @@ def verify_probe(bundle: Path, root: Path) -> dict:
     from hcr.evaluation.adaptive_audit_support import expected_learning
     from hcr.evaluation.reference import assess
     config=codec.adaptive_config_from(plan['config'])
-    status=loads(read(root/'status.json'))
-    require(status['schema']=='hcr-r02-exp09-status-v2' and status['state']=='complete','probe 상태')
-    rows=[loads(x) for x in read(root/'episodes.jsonl').splitlines() if x.strip()]
-    events=[loads(x) for x in read(root/'events.jsonl').splitlines() if x.strip()]
+    for document in seed_docs.values(): AdaptiveMemory.from_document(document,config)
+    if status is None:
+        require(bool(events), '빈 event trace')
+        status=dict(event_count=len(events),event_head=events[-1]['sha256'],inferences=len(rows))
     check_chain(events,status)
     rowmap={r['decision']['id']:r for r in rows}
     require(len(rowmap)==len(rows)==status['inferences'],'record 수/중복')
-    seed_files={'before':'memory_after_training.json','after':'memory_after_adaptation.json',
-                'training_3':'memory_training_3.json','training_9':'memory_training_9.json'}
-    seed_docs={k:AdaptiveMemory.load(bundle/'run'/n,config).document() for k,n in seed_files.items()}
     known={fingerprint(x) for x in seed_docs.values()}
     seeds={k:fingerprint(v) for k,v in seed_docs.items()}
     live=AdaptiveMemory.load(root/'live_after_adaptation.json',config)
@@ -241,6 +229,62 @@ def verify_probe(bundle: Path, root: Path) -> dict:
         error_memory=AdaptiveMemory.load(root/'memory_after_error.json',config)
         require(error_memory.document()==memory_after_feedback[first_id], '최초 오류 직후 memory checkpoint 불일치')
     else: require(not (root/'memory_after_error.json').exists(), '오류가 없는데 오류 checkpoint가 있음')
+    # 마지막 측정 전달이 다음 판단으로 실제 소비되었는지도 확인한다.
+    consumed={v['payload']['revision_of'] for v in starts.values() if v['payload']['revision_of'] is not None}
+    require(set(delivered)==consumed,'소비되지 않은 재시도/측정')
+    for arm in ('measured_replay','same_score_control','training_3','training_6','training_9'):
+        group=sorted((r for r in rows if r['phase']=='adaptation' and r['arm']==arm),key=lambda r:r['decision']['attempt'])
+        require(bool(group),'adaptation arm 누락')
+        require([r['decision']['attempt'] for r in group]==list(range(1,len(group)+1)),'adaptation 순번 누락')
+        require(all(r['assessment']['correct'] is False for r in group[:-1]),'종료 뒤 재시도')
+        last=group[-1]
+        if last['assessment']['correct'] is False:
+            max_attempts=2 if arm=='same_score_control' else 1+config.kernel.max_observation_requests
+            requestable=any(e['score'] is None or abs(e['score'])<.9 for e in last['observation']['edges'])
+            require(len(group)>=max_attempts or not requestable,'끝나지 않은 adaptation 기록')
+    pairing=audit_pairs(rows,plan,seeds,weak,measured,cases)
+    direct=next(r for r in rows if r['phase']=='persistence' and r['arm']=='direct')
+    reload=next(r for r in rows if r['phase']=='persistence' and r['arm']=='reload')
+    persistence=dict(memory_equal=direct['memory_before']==reload['memory_before']==seeds['live'],
+        behavior_equal=semantic_decision(direct['decision'])==semantic_decision(reload['decision']),
+        assessment_equal=direct['assessment']==reload['assessment'],
+        both_correct=[direct['assessment']['correct'],reload['assessment']['correct']],
+        direct_id=direct['decision']['id'],reload_id=reload['decision']['id'],memory_digest=seeds['live'])
+    audit=dict(schema='hcr-r02-exp09-audit-v2',state='complete',verified=True,differences=[],
+        records=len(rows),events=len(events),scalar_ticks_replayed=steps,memory_updates_checked=updates,
+        proofs_reassessed=len(rows),**pairing,
+        independent_checks=['numerical recurrence','external proof/reference assessment','memory transition','paired input and conditions'],
+        shared_components=['frozen R0.2 independent audit helpers','JSON/data contracts','probe summary aggregation'],
+        full_runtime_graph_audit=False,frontier_policy_replayed=False,timing_replayed=False,
+        inference_executed=False,original_capture_modified=False,
+        limitations=['전체 frontier 선택은 독립 재생하지 않는다.',
+                     '기록의 내부 검산이며 외부 실행 인증/가설 증명이 아니다.'])
+    return audit,persistence
+
+
+def verify_probe(bundle: Path, root: Path) -> dict:
+    for p in (bundle,root):
+        require(all(not linked(q) for q in (p.absolute(),*p.absolute().parents)),'링크/junction 금지')
+    bundle,root=bundle.resolve(),root.resolve()
+    manifest=verify_files(root);verify_bundle(bundle)
+    plan=loads(read(root/'plan.json'))
+    require(plan['schema']=='hcr-r02-exp09-plan-v2' and plan['protocol']=='exp09-paired-correction-cost-r2','plan schema')
+    require(plan['baseline_bundle_manifest_sha256']==sha(read(bundle/'bundle_manifest.json'))==manifest['source_bundle_manifest_sha256'],'입력 capture 교체')
+    original=loads(read(bundle/'run/plan.json'))
+    require(plan['original_plan_sha256']==sha(read(bundle/'run/plan.json')), '원 plan hash 변경')
+    require(plan['source_hashes']==original['source_hashes'] and plan['config']==original['config']
+            and plan['config_signature']==original['config_signature'],'기준선 실행 설정 변경')
+    for name,h in plan['tool_source_hashes'].items():
+        require(sha(read(safe(root,'tool_source/'+name)))==h,'실행 도구 snapshot hash')
+    source=bundle/'source'
+    for name,h in plan['source_hashes'].items():require(sha(read(safe(source,name)))==h,'동결 실행 소스 hash')
+    status=loads(read(root/'status.json'))
+    require(status['schema']=='hcr-r02-exp09-status-v2' and status['state']=='complete','probe 상태')
+    rows=[loads(x) for x in read(root/'episodes.jsonl').splitlines() if x.strip()]
+    events=[loads(x) for x in read(root/'events.jsonl').splitlines() if x.strip()]
+    seed_files={'before':'memory_after_training.json','after':'memory_after_adaptation.json',
+                'training_3':'memory_training_3.json','training_9':'memory_training_9.json'}
+    seed_docs={k:loads(read(bundle/'run'/n))['document'] for k,n in seed_files.items()}
     original_rows=[loads(x) for x in read(bundle/'run/episodes.jsonl').splitlines() if x.strip()]
     conflict=sorted((r for r in original_rows if r['phase']=='misconvergence' and r['arm']=='full'),key=lambda r:r['decision']['attempt'])
     weak,measured=deepcopy(conflict[0]['observation']),deepcopy(conflict[-1]['observation'])
@@ -249,28 +293,20 @@ def verify_probe(bundle: Path, root: Path) -> dict:
     for case in plan['cost_cases']:
         rs=[r for r in original_rows if r['case']==case and r['arm'] in ('cold','graph_only')]
         require(len(rs)==1,'기준 비용 입력');cases[case]=rs[0]
-    pairing=audit_pairs(rows,plan,seeds,weak,measured,cases)
-    direct=next(r for r in rows if r['phase']=='persistence' and r['arm']=='direct')
-    reload=next(r for r in rows if r['phase']=='persistence' and r['arm']=='reload')
+    audit,persistence=audit_record_data(source,root,plan,rows,events,seed_docs,weak,measured,cases,status)
     summary=loads(read(root/'summary.json'));p=summary['persistence']
-    require(p['memory_equal'] is True and p['memory_digest']==seeds['live'],'persistence digest')
-    require(p['behavior_equal'] is (semantic_decision(direct['decision'])==semantic_decision(reload['decision']))
-            and p['assessment_equal'] is (direct['assessment']==reload['assessment'])
-            and p['both_correct']==[direct['assessment']['correct'],reload['assessment']['correct']],'persistence 집계')
-    # 집계 코드는 공유한다. 이 부분을 독립 알고리즘 검산이라고 표시하지 않는다.
+    require(all(p[k]==v for k,v in persistence.items()),'persistence 집계')
     recalculated=summarize(rows,events,p)
     require(all(summary[k]==v for k,v in recalculated.items()),'probe 요약 집계 변경')
     require(loads(read(root/'candidate_trace.json'))==recalculated['details']['candidates'],'후보 표 불일치')
     require(loads(read(root/'feedback_changes.json'))==recalculated['details']['feedback'],'학습 표 불일치')
+    if plan.get('measurement_journal'):
+        from measurement_journal import validate_measurements
+        journal=[loads(x) for x in read(root/plan['measurement_journal']).splitlines() if x.strip()]
+        measured_values=validate_measurements(journal,events,p)
+        require(summary['initializations']==measured_values['initializations'],'초기화 측정 집계')
     verify_files(root);verify_bundle(bundle)
-    return dict(schema='hcr-r02-exp09-audit-v2',state='complete',verified=True,differences=[],
-        records=len(rows),scalar_ticks_replayed=steps,memory_updates_checked=updates,proofs_reassessed=len(rows),**pairing,
-        independent_checks=['numerical recurrence','external proof/reference assessment','memory transition','paired input and conditions'],
-        shared_components=['frozen R0.2 independent audit helpers','JSON/data contracts','probe summary aggregation'],
-        full_runtime_graph_audit=False,frontier_policy_replayed=False,timing_replayed=False,
-        inference_executed=False,original_capture_modified=False,
-        limitations=['프로토콜 전체 graph/frontier 선택은 독립 재생하지 않는다.',
-                     '완료 기록의 내부 검산이며 외부 실행 인증/가설 증명이 아니다.'])
+    return audit
 
 
 def main(argv=None):

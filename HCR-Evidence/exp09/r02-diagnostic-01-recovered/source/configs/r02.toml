@@ -1,0 +1,35 @@
+# R0.2: 두 A 수준과 common kernel은 유지하고 D/dependency expansion만 적응시킨다.
+# R0.1 개발 기본값. 외부 성능 실험용 사전등록 설정은 아니다.
+[engine]
+evidence_gain = 4.0
+relation_gain = 2.0
+top_down_gain = 0.35
+prior_gain = 2.0
+self_excitation = 0.25
+inhibition = 0.2
+damping = 0.45
+temperature = 1.0
+residual_tolerance = 1e-06
+margin_threshold = 0.3
+patience = 4
+max_ticks = 160
+max_edges = 8
+max_paths = 4
+max_path_length = 4
+max_groups = 32
+max_search = 2048
+min_valid_episodes = 3
+max_circuits = 16
+weakening = 0.2
+learning_rate = 0.25
+max_observation_requests = 2
+
+[adaptive]
+pattern_lengths = [2, 3]
+max_expansions = 64
+max_frontier = 32
+max_binding_checks = 1024
+max_pool_candidates = 4
+activation_threshold = 0.55
+mismatch_threshold = 0.80
+circuit_inhibition = 0.15

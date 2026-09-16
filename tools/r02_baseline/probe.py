@@ -13,8 +13,10 @@ from time import perf_counter
 from collect import (BaselineError, require, loads, read, canonical, sha, safe, inventory,
                      verify_bundle, canonical_cost, check_chain, write_json, write_csv, linked, examine, analyze)
 from probe_analysis import semantic_decision, memory_content, summarize, render
+from measurement_journal import MeasurementJournal
 
-TOOLS = ('probe.py', 'probe_analysis.py', 'audit_probe.py', 'collect.py')
+TOOLS = ('probe.py', 'probe_analysis.py', 'audit_probe.py', 'collect.py',
+         'memory_equivalence.py', 'measurement_journal.py')
 PROTOCOL = 'exp09-paired-correction-cost-r2'
 
 
@@ -38,6 +40,8 @@ def make_plan(bundle: Path, repeats: int = 4) -> dict:
     original = loads(read(bundle / 'run/plan.json'))
     require(original['schema'] == 'hcr-plan-r02', 'R0.2 capture 필요')
     return dict(schema='hcr-r02-exp09-plan-v2', protocol=PROTOCOL,
+        tool_revision='r2-recovery1', memory_comparison='paired-first-error-provenance-v1',
+        measurement_journal='measurements.jsonl',
         baseline_bundle_manifest_sha256=sha(read(bundle / 'bundle_manifest.json')),
         original_plan_sha256=sha(read(bundle / 'run/plan.json')),
         source_hashes=original['source_hashes'], config=original['config'], config_signature=original['config_signature'],
@@ -109,7 +113,7 @@ def execute(bundle: Path, out: Path, plan: dict) -> dict:
         r=rs[0]
         benchmarks.append((case,World(codec.observation_from(r['observation']),tuple(sorted(r['external_truth'].items())))))
     out.mkdir(parents=True,exist_ok=False)
-    trace=None
+    trace=None; journal=None
     rows,initializations=[],[]
     began=perf_counter()
     try:
@@ -121,12 +125,16 @@ def execute(bundle: Path, out: Path, plan: dict) -> dict:
             dest=out/'tool_source'/name; dest.parent.mkdir(exist_ok=True)
             dest.write_bytes(read(Path(__file__).with_name(name)))
         trace=Trace(out/'events.jsonl')
+        journal=MeasurementJournal(out/'measurements.jsonl')
 
         def make_engine(mem,key,**switches):
             t=perf_counter();cloned=deepcopy(mem);copy_seconds=perf_counter()-t
+            start_seq=trace.count
             t=perf_counter();engine=AdaptiveEngine(config,cloned,trace,**switches)
-            initializations.append(dict(key=key,memory_digest=mem.digest,memory_copy_seconds=copy_seconds,
-                                        engine_init_seconds=perf_counter()-t))
+            initialization=dict(key=key,memory_digest=mem.digest,memory_copy_seconds=copy_seconds,
+                engine_init_seconds=perf_counter()-t,trace_start_seq=start_seq,trace_end_seq=trace.count)
+            journal.append('engine_initialized',initialization)
+            initializations.append(initialization)
             return engine
 
         def record(engine,item,phase,arm,case,mode=Mode.FROZEN_EVAL,revision_of=None,**meta):
@@ -166,8 +174,13 @@ def execute(bundle: Path, out: Path, plan: dict) -> dict:
         live,after_error=adapt(memory['before'],'measured_replay')
         if after_error is not None:after_error.save(out/'memory_after_error.json')
         live_doc=deepcopy(live.memory.document());t=perf_counter()
-        live.memory.save(out/'live_after_adaptation.json');save_seconds=perf_counter()-t;t=perf_counter()
+        live.memory.save(out/'live_after_adaptation.json');save_seconds=perf_counter()-t
+        journal.append('memory_saved',dict(checkpoint='live_after_adaptation.json',
+            memory_digest=live.memory.digest,elapsed_seconds=save_seconds))
+        t=perf_counter()
         restored=AdaptiveMemory.load(out/'live_after_adaptation.json',config);load_seconds=perf_counter()-t
+        journal.append('memory_loaded',dict(checkpoint='live_after_adaptation.json',
+            memory_digest=restored.digest,elapsed_seconds=load_seconds))
         require(live_doc==restored.document(),'저장·복원 memory 문서 불일치')
         _,_,direct=record(make_engine(live.memory,'persistence/direct'),retest_weak,'persistence','direct','new_weak')
         _,_,reloaded=record(make_engine(restored,'persistence/reload'),retest_weak,'persistence','reload','new_weak')
@@ -194,8 +207,11 @@ def execute(bundle: Path, out: Path, plan: dict) -> dict:
                         'cost_pairs',arm,case,replicate=repeat,order_in_pair=order)
         trace.close()
         check_chain(trace.records,dict(event_count=trace.count,event_head=trace.head))
+        measured_seconds=perf_counter()-began
+        journal.append('probe_records_finished',dict(inferences=len(rows),elapsed_seconds=measured_seconds))
+        journal.close()
         summary=summarize(rows,trace.records,persistence)
-        summary.update(initializations=initializations,measured_probe_seconds=perf_counter()-began,
+        summary.update(initializations=initializations,measured_probe_seconds=measured_seconds,
                        execution_complete=True,new_independent_task_samples=0)
         write_json(out/'summary.json',summary)
         write_json(out/'candidate_trace.json',summary['details']['candidates'])
@@ -224,6 +240,7 @@ def execute(bundle: Path, out: Path, plan: dict) -> dict:
                     audit_verified=audit['verified'],full_runtime_graph_audit=False)
     except BaseException as error:
         if trace is not None:trace.close()
+        if journal is not None:journal.close()
         # 완료 manifest가 있어도 audit 실패는 별도 FAILED 기록으로 완료 bundle의 수용을 막는다.
         if not (out/'FAILED.json').exists():
             write_json(out/'FAILED.json',dict(state='failed',error=type(error).__name__+': '+str(error),inferences=len(rows)))
