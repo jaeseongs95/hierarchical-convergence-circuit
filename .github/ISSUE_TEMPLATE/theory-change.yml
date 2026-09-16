@@ -1,0 +1,29 @@
+name: Theory change
+description: Propose a change to the hypothesis or formalism.
+title: "[THEORY] "
+labels: ["theory"]
+body:
+  - type: input
+    id: claims
+    attributes:
+      label: Affected claim IDs
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: Proposed change
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Evidence or reasoning
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Falsifiability / experiment impact
+    validations:
+      required: true

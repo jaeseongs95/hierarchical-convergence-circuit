@@ -1,0 +1,54 @@
+{
+  "schema": "hcr-implementation-status-r01",
+  "date": "2026-09-16",
+  "status": "functional_reference_implemented_validation_record_separate",
+  "original_claim_registry_changed": false,
+  "claim_status_promotions": [],
+  "entries": [
+    {
+      "id": "IMP-R01-01",
+      "related_claims": [
+        "HCC-H01",
+        "HCC-H02"
+      ],
+      "implemented": "같은 수식의 A0 feature/A1 relation recurrence",
+      "limit": "수작업 표현·topology, 2수준 한 도메인; 광범위 cross-A 가설 검증 아님"
+    },
+    {
+      "id": "IMP-R01-02",
+      "related_claims": [
+        "HCC-H03",
+        "HCC-H05"
+      ],
+      "implemented": "검증된 role Program 저장·binding·현재 입력 재실행",
+      "limit": "whole small graph 구조 재사용; general subgraph compression/D 감소 아님"
+    },
+    {
+      "id": "IMP-R01-03",
+      "related_claims": [
+        "HCC-H04",
+        "HCC-H06",
+        "HCC-H07"
+      ],
+      "implemented": "learned prior 오수렴, 외부 오류후 약화·새 관측·재확장·영속성",
+      "limit": "합성 예외와 명시적 측정 가능성 및 수작업 credit 정책"
+    },
+    {
+      "id": "IMP-R01-04",
+      "related_claims": [
+        "HCC-H08"
+      ],
+      "implemented": "readout event 이후 proof 복원, 근거와 실제 signal trace 구분",
+      "limit": "자연어 설명이나 뇌의 설명 생성 기제를 검증하지 않음"
+    }
+  ],
+  "not_implemented": [
+    "real sensors",
+    "LLM integration",
+    "CUDA/neuromorphic/distributed backend",
+    "learned encoder",
+    "general subgraph mining",
+    "arbitrary A-level/method discovery",
+    "population generalization study"
+  ]
+}

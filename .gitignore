@@ -1,0 +1,60 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+
+# Local environment
+.env
+.env.*
+!.env.example
+
+# Experiment runtime outputs
+**/runs/
+**/results/
+**/artifacts/
+**/cache/
+**/*.evidence.zip
+**/*_evidence.zip
+**/*_independent.json
+**/response.raw.json
+**/request.wire.json
+
+# Large/model files
+*.gguf
+*.safetensors
+*.bin
+*.ckpt
+*.pt
+*.pth
+*.onnx
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.log
+~$*

@@ -1,0 +1,36 @@
+name: Experiment proposal
+description: Propose a controlled experiment tied to one or more HCC claims.
+title: "[EXP] "
+labels: ["experiment"]
+body:
+  - type: input
+    id: claims
+    attributes:
+      label: Claim IDs
+      description: Example — HCC-H03, HCC-H04
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Research question
+    validations:
+      required: true
+  - type: textarea
+    id: falsification
+    attributes:
+      label: Falsification condition
+    validations:
+      required: true
+  - type: textarea
+    id: controls
+    attributes:
+      label: Controls and baselines
+    validations:
+      required: true
+  - type: textarea
+    id: measures
+    attributes:
+      label: Primary measures
+    validations:
+      required: true

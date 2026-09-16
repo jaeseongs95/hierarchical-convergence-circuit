@@ -1,0 +1,79 @@
+schema_version: 1
+updated: 2026-09-16
+status_legend:
+  observed: directly reported by the current experimental record
+  partially-supported: evidence supports a narrower form than the full claim
+  hypothesis: proposed mechanism requiring direct tests
+  derived-prediction: falsifiable consequence derived from the model
+
+claims:
+  - id: HCC-C01
+    statement: "The same logical task can show materially different success depending on representation and execution structure."
+    status: observed
+    scope: "Existing LLM reasoning experiments only"
+    evidence: ["thought-graph-simulator v086-v090 family as summarized in the 2026-09-16 source document"]
+
+  - id: HCC-C02
+    statement: "Path selection and graph generation are separable execution problems."
+    status: observed
+    scope: "Existing LLM reasoning experiments only"
+    evidence: ["Current source-document experimental summary"]
+
+  - id: HCC-C03
+    statement: "Nominal D alone does not determine execution failure."
+    status: observed
+    scope: "Existing controlled LLM experiments summarized by the source document"
+    evidence: ["D=5 and related depth experiments summarized in the source document"]
+
+  - id: HCC-C04
+    statement: "Generating an identity and later rebinding to the same identity are distinct problems."
+    status: observed
+    scope: "Existing LLM graph-generation experiments"
+    evidence: ["v087-v090 family as summarized in the source document"]
+
+  - id: HCC-C05
+    statement: "Semantic identity can improve binding continuity relative to opaque identity under the tested LLM conditions."
+    status: partially-supported
+    scope: "Specific current LLM graph-generation conditions; not a biological claim"
+    evidence: ["v089/v090 summary in the source document"]
+
+  - id: HCC-H01
+    statement: "A common activation-binding-competition-recurrence-convergence primitive can operate across multiple abstraction levels."
+    status: hypothesis
+    experiments: ["EXP-05"]
+    falsification: "A shared primitive fails systematically across representation levels while level-specific mechanisms succeed under matched capacity/control conditions."
+
+  - id: HCC-H02
+    statement: "A converged state at abstraction level A_n can function as a candidate node at A_(n+1)."
+    status: hypothesis
+    experiments: ["EXP-05"]
+
+  - id: HCC-H03
+    statement: "Repeatedly successful dynamic graphs can be compressed into reusable circuits with lower effective computation and no unacceptable accuracy loss."
+    status: hypothesis
+    experiments: ["EXP-01"]
+
+  - id: HCC-H04
+    statement: "Novelty, contradiction, or mismatch can trigger circuit-to-graph expansion and A/D/M adaptation."
+    status: hypothesis
+    experiments: ["EXP-02"]
+
+  - id: HCC-H05
+    statement: "Fast intuition and explicit reasoning can be two execution regimes of one system: compiled-circuit convergence versus dynamic graph expansion."
+    status: hypothesis
+    experiments: ["EXP-01", "EXP-02", "EXP-06"]
+
+  - id: HCC-H06
+    statement: "Illusion-like and bad-intuition-like errors can share the higher-level form of stable misconvergence."
+    status: hypothesis
+    experiments: ["EXP-03"]
+
+  - id: HCC-H07
+    statement: "Increasing attractor strength improves familiar inference efficiency but can reduce revisability under distribution shift or contradiction."
+    status: derived-prediction
+    experiments: ["EXP-07"]
+
+  - id: HCC-H08
+    statement: "Decision generation and explanation reconstruction can diverge because explanations may reconstruct a graph after the decision path has already converged."
+    status: hypothesis
+    experiments: ["EXP-06"]
