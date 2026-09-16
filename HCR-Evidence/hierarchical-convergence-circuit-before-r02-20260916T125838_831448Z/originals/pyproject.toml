@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hierarchical-convergence-circuit"
+version = "0.1.0"
+description = "HCR R0.1 functional graph-circuit learning reference engine"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+hcr = "hcr.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

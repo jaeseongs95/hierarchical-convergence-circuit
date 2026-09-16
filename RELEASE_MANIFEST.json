@@ -1,5 +1,22 @@
 {
   "base_source_zip_sha256": "c69ba87af591fa508f9d9cfd9b42e5515aef5206034e78b89e801f56e43d50b0",
+  "concept_patch": {
+    "engine_semantics_changed": false,
+    "existing_capture_review_executed": false,
+    "new_contract_tests_defined": 39,
+    "project_tests_executed_in_patch_session": false,
+    "remote_head_verified": false,
+    "schema": "hcr-concept-traceability-patch-v1",
+    "source_baseline": "r02_plus_baseline_overlay"
+  },
+  "documentation_revision": "r02-baseline-20260916-v1",
+  "engine_behavior_changed": false,
+  "execution_receipt": "evidence/implementation/r02_execution_acceptance_20260916.json",
+  "exp09_r2": {
+    "description": "paired correction / cost diagnostic source; not R0.2.1 runtime",
+    "reference_commit": "99e052ee3d27a3958bd741ad10ede36f6e90306d",
+    "runtime_changed": false
+  },
   "files": {
     ".editorconfig": "fbcf8c2f30a0103592d05d4939ea26a726674d1c9cdec36b86d01edd561b3796",
     ".gitattributes": "57b47417f6c466cc2f1d28dabd49686b83dd834899e6b2364d0b71da420aaa69",
@@ -11,7 +28,7 @@
     "CONTRIBUTING.md": "7f3c2739a97a502a3739bc09b5c51af912b873ca4487148acaf8c3978b314eff",
     "README.ko.md": "6f6a5a345f62b8e73fb5a5e66e0364a364cce54fcf3df8c1ae61e87fb3d5aa2d",
     "README.md": "6f6a5a345f62b8e73fb5a5e66e0364a364cce54fcf3df8c1ae61e87fb3d5aa2d",
-    "ROADMAP.md": "2b90a17b212db87dfa846f0cf6847ef09e589cfd06a37ce3cca5e39ae8c530d2",
+    "ROADMAP.md": "0026ddccdec197ba67b4a1e321f291e068c4c40d72fe37f1c5ab9321254b08fe",
     "Run-HCR-R02.ps1": "699fe74d3c481c9e691683b4a8bc37aa94ab5904d214686f8488d552033e3235",
     "Run-HCR.ps1": "53403b1ad87875f84d4d484880f71c899728c3957662b35e692086c21deb1f9c",
     "architecture/HCR_R01_original_plan.ko.md": "5252f2a37cb8c51d8de3faa489e95644de6d4836193109e29cf00b2095b5e630",
@@ -26,12 +43,13 @@
     "docs/CONCEPT_COVERAGE.ko.md": "38b89c942ba6bb7f9e323f9252e276ae0a92ca254bb8a46eb0fe01d1556b2cb5",
     "docs/CONCEPT_PATCH_REVIEW.ko.md": "a670f2db355835365a516737d750d562a67c1146a5b926d83138d57ce107afd2",
     "docs/CONCEPT_PATCH_USAGE.ko.md": "7b5df8cebc744c2396ea03b1b2b680798f06483862873cab28df125259cf95e1",
+    "docs/EXP09_R2.ko.md": "8fed120c4855875b5454f7b57bd1a0bde1621832f86000ca7d8b672390120e54",
     "docs/HCR_MASTER_ROADMAP.ko.md": "aa879663dfd3809e1335c8946679e11cff9492c9d10f081a053dcc83e432288e",
     "docs/R01_ACCEPTANCE.ko.md": "2d95da97ea804d94d9ec8199525cedf90e65089b7c2dec7e9870f12df709b789",
     "docs/R02_ACCEPTANCE.ko.md": "7ce341d12e1aae792a10164ed89970b9f5ee11c194a2e875061555c1bd9dd214",
     "docs/R02_BASELINE.ko.md": "75edfcae5c419821882d34070179fb4211f729b3b1f0a6179a965856590e9739",
     "docs/R02_BASELINE_PROTOCOL.ko.md": "5bb54bd660bccb7941a061dcfd23c16fab6aec2adc0b69dfc367eb483259540d",
-    "docs/R02_BASELINE_USAGE.ko.md": "6d2ee2f4a877029f7a2b30ecfc547402c947769a0db8c4c9a789576f68aa182a",
+    "docs/R02_BASELINE_USAGE.ko.md": "f60a94a3b1daab66d8242094888a528cec8b20b073a60d98f88ab77cd64ad66e",
     "docs/R02_USAGE.ko.md": "75c6291d2c7cbae9e32f07e54c8ff005e32f4ec9b5b818600c3936f0f3df47f3",
     "docs/USAGE.ko.md": "9b527b46c7abe00dca74021bfc42aee8300c7a373bb1f748c69ddb81a48b1f67",
     "docs/decisions/ADR-001-project-structure.ko.md": "955a0ceec6a28897ce40becd83bc8d8a36dd9ad492ce52ac49077c1988c3643e",
@@ -132,28 +150,19 @@
     "theory/core-hypothesis.md": "d1b735eee8f72c092c847c04e81a34972fa919be906311255faa797e58ec9302",
     "theory/source/2026-09-16-integrated-hypothesis-ko.md": "fa8aaa32675d1f6ee427b5072e8372d71c86ab635b6afd84fdbec0b89d9fefd5",
     "theory/versioning.md": "f24ee36981cef7a6554c2d8eb4f4d1618664b8b8d2d91425d24798ffc9a9c9d8",
+    "tools/r02_baseline/audit_probe.py": "30b05b5349256a8b3026710fde8c75e7c7020c3002d5146b8207461978b0b4b5",
     "tools/r02_baseline/collect.py": "eb65fc4b349fbc9c647f04424fcd0f5aa0559f290089cb3dc0c00234f6073759",
-    "tools/r02_baseline/probe.py": "c6cf043470cca8987f7d2c6c546025cc1d3bfc025c330faa4f1e78b43c6e4237",
+    "tools/r02_baseline/probe.py": "051adbacbdd77ad5b251ce1c819ca86428656fbd936d798d4062ba35615a00bc",
+    "tools/r02_baseline/probe_analysis.py": "66ea798f5c0dbdf7efbc74d6671dfefb421a6d31deb4f8ceabb2427bf007291d",
     "tools/r02_baseline/tests/test_baseline_tools.py": "3e7c8346f251747f90e21172013158e83458f02d60b94e99f35bde5db476d714",
+    "tools/r02_baseline/tests/test_exp09_r2.py": "2e68a2d0742b81e91a84b113c442a17372b6a3d0b54c95925f764212aef01228",
     "tools/r02_concepts/check.py": "ff908bd534b8c87940605fda9fc7801f3503360e9528abfcbc9dca4840035261",
     "tools/r02_concepts/review.py": "a00e98844afb3b8e1c623c499005264d71b23ca5b7323ce799ba4f024531212e",
-    "tools/r02_concepts/tests/test_concepts.py": "d7e6c0691baff2e018e4c6cefb06e0f0033cfacf08c40ec68bd948068bc30182"
+    "tools/r02_concepts/tests/test_concepts.py": "d07efaffcd51b71986f1ac6e9f26871ed6bb3c364ff4c6a3a473b63eaca057fb"
   },
+  "historical_manifest": "docs/reference/r02_pre_baseline_RELEASE_MANIFEST.json",
   "release": "0.2.0",
   "remote_head_verified": false,
   "schema": "hcr-release-manifest-r02",
-  "status": "r02_user_execution_received_baseline_documentation_added",
-  "documentation_revision": "r02-baseline-20260916-v1",
-  "historical_manifest": "docs/reference/r02_pre_baseline_RELEASE_MANIFEST.json",
-  "execution_receipt": "evidence/implementation/r02_execution_acceptance_20260916.json",
-  "engine_behavior_changed": false,
-  "concept_patch": {
-    "schema": "hcr-concept-traceability-patch-v1",
-    "engine_semantics_changed": false,
-    "remote_head_verified": false,
-    "source_baseline": "r02_plus_baseline_overlay",
-    "new_contract_tests_defined": 39,
-    "project_tests_executed_in_patch_session": false,
-    "existing_capture_review_executed": false
-  }
+  "status": "r02_user_execution_received_baseline_documentation_added"
 }

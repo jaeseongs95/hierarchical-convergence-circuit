@@ -1,0 +1,29 @@
+{
+  "schema": "hcr-r02-concepts-backup",
+  "repository": "D:\\codex\\진짜미친짓\\hierarchical-convergence-circuit",
+  "baseline_release_manifest_sha256": "58c0f90fbcd56dd14bba538f3cc876de75f2c11416ceff7a36969b05fedf7cc4",
+  "old_files": {
+    "README.ko.md": "9ce6a0c2546159d1c79ebf38ebf3d7ed7ac7319338d1988fc2522b12526168df",
+    "README.md": "9ce6a0c2546159d1c79ebf38ebf3d7ed7ac7319338d1988fc2522b12526168df",
+    "RELEASE_MANIFEST.json": "58c0f90fbcd56dd14bba538f3cc876de75f2c11416ceff7a36969b05fedf7cc4",
+    "ROADMAP.md": "793bae01b8142097d931d2c1abb0d8a32f39fa6d716dfe59fead566c296af950",
+    "experiments/README.md": "3240909416c3fb94ed82210416677cadf76b721507c6b51db67d2259e947f8a1",
+    "experiments/exp-03-misconvergence/design.md": "424d0cbb00b15eaded5bac15f8f823aa99e76829ede33123ec20e7a584483109",
+    "experiments/exp-04-binding-continuity/design.md": "588b3d6eb062ee66ab945cb7cd619798880cadbc602e4acd579ac6b7100a9217",
+    "experiments/exp-05-cross-abstraction-primitive/design.md": "c35e50cb060ddc6a414658f0ae7282a1ec110cd82736ce4a0dff797c44ffcbac",
+    "experiments/exp-06-decision-vs-explanation/design.md": "09f2b8fc2744e377a7a5474dc10c96d813840b92e46c08d63efd7abe78381daa"
+  },
+  "created_files": [
+    "architecture/substrate-contract.ko.md",
+    "docs/CONCEPT_COVERAGE.ko.md",
+    "docs/CONCEPT_PATCH_REVIEW.ko.md",
+    "docs/CONCEPT_PATCH_USAGE.ko.md",
+    "docs/HCR_MASTER_ROADMAP.ko.md",
+    "evidence/concept_coverage.json",
+    "evidence/implementation/r02_baseline_user_capture_20260916.json",
+    "formalism/failure-taxonomy.ko.md",
+    "tools/r02_concepts/check.py",
+    "tools/r02_concepts/review.py",
+    "tools/r02_concepts/tests/test_concepts.py"
+  ]
+}

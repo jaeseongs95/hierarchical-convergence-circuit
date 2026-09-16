@@ -1,0 +1,23 @@
+{
+  "schema": "hcr-r02-baseline-backup",
+  "repository": "D:\\codex\\진짜미친짓\\hierarchical-convergence-circuit",
+  "baseline_release_manifest_sha256": "820d7028134ce0fd34016fa62113430908557bad87bf7c32f91c1d8b63b2c45f",
+  "old_files": {
+    "RELEASE_MANIFEST.json": "820d7028134ce0fd34016fa62113430908557bad87bf7c32f91c1d8b63b2c45f",
+    "ROADMAP.md": "52c03efbb3e40a0a7d65a7b6a4f2d30a4a8ee30ada39d89c9cec557c4597ff43"
+  },
+  "created_files": [
+    "docs/R02_BASELINE.ko.md",
+    "docs/R02_BASELINE_PROTOCOL.ko.md",
+    "docs/R02_BASELINE_USAGE.ko.md",
+    "docs/reference/R02_PLUS_ROADMAP_20260916.ko.md",
+    "docs/reference/r02_pre_baseline_RELEASE_MANIFEST.json",
+    "docs/reference/r02_pre_baseline_ROADMAP.md",
+    "evidence/implementation/r02_baseline_source_review.json",
+    "evidence/implementation/r02_baseline_status.json",
+    "evidence/implementation/r02_execution_acceptance_20260916.json",
+    "tools/r02_baseline/collect.py",
+    "tools/r02_baseline/probe.py",
+    "tools/r02_baseline/tests/test_baseline_tools.py"
+  ]
+}

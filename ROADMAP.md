@@ -1,3 +1,15 @@
+# EXP-09 r2 — 기준선 원인분리·비용 계측 후속 소스
+
+현재 R0.2 engine 동작은 유지한다. 다음 실행은 기존 `probe.py`의 후속 비교이며 R0.2.1 구현과 구분한다.
+
+- 실행·결과 위치·검산 범위: [EXP-09 r2](docs/EXP09_R2.ko.md)
+- 비교: direct/reload, memory × 측정 × routing, 동일 점수 revision, training 3/6/9, 순서 교대 비용쌍.
+- 관측할 것: 회로 약화/재선택, 음의 정답 이후 학습 내용, pool/decision 연산.
+- 순수 도구 시험 51개는 작성 환경에서 통과했다. 실제 새 probe는 사용자 실행 후 판정한다.
+- R0.2.1 session/snapshot/restore/resume은 이 결과를 기준선에 기록한 뒤 이어간다.
+
+---
+
 # HCR 현재 기준선과 개발·연구 로드맵
 
 ## 현재 상태
