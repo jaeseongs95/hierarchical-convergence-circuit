@@ -1,0 +1,15 @@
+{
+  "schema": "hcr-r02-baseline-status-v1",
+  "date": "2026-09-16",
+  "engine_version": "0.2.0",
+  "original_execution": "user_log_136_passed_demo_complete_audit_passed",
+  "baseline_documentation": "completed",
+  "paired_evaluation_spec": "frozen_v1",
+  "collection_and_probe_tools": "authored_not_runtime_executed",
+  "original_raw_evidence_capture": "pending_user_local_collect",
+  "paired_diagnostic_results": "pending_user_execute",
+  "r021_implementation_started": false,
+  "engine_behavior_changed": false,
+  "historical_static_review_files_preserved": true,
+  "implementation_complete_and_research_results_separated": true
+}

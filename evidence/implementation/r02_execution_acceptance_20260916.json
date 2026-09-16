@@ -1,0 +1,299 @@
+{
+  "schema": "hcr-r02-user-execution-acceptance-v1",
+  "date": "2026-09-16",
+  "basis": "user_provided_console_log_not_direct_access_to_original_run",
+  "source_log": {
+    "filename": "붙여넣은 텍스트 (1)(20260916-130428).txt",
+    "sha256": "48e1cb3b443d810dc9577873fa6fc8421815ca66bf42cd4377172443872603cd",
+    "line_ranges": {
+      "apply": "56-145",
+      "check": "286-290",
+      "demo": "291-292",
+      "verify": "293-294"
+    }
+  },
+  "applied": {
+    "state": "applied",
+    "baseline_checked": 38,
+    "written_files_count": 38,
+    "backup_reported": true
+  },
+  "selftest": {
+    "actual_llm_calls": 0,
+    "actual_network_calls": 0,
+    "errors": 0,
+    "failure_details": [],
+    "failures": 0,
+    "hypothesis_proved": false,
+    "passed": 136,
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "schema": "hcr-selftest-r02",
+    "seconds": 6.73397259999183,
+    "skip_details": [],
+    "skipped": 0,
+    "suites": [
+      "r01-regression",
+      "r02-adaptive"
+    ],
+    "tests_run": 136
+  },
+  "demo": {
+    "actual_llm_calls": 0,
+    "actual_network_calls": 0,
+    "adaptation": {
+      "misconvergence/full": {
+        "attempts": 2,
+        "final": {
+          "actual_primitive_depth": 2,
+          "assumption_correct": true,
+          "correct": true,
+          "error": null,
+          "proof_valid": true,
+          "verification_checks": 18,
+          "wrong_stable": false
+        },
+        "final_decision": "r02-d-1265-c0e3e4890f19bbef",
+        "initial": {
+          "actual_primitive_depth": 3,
+          "assumption_correct": false,
+          "correct": false,
+          "error": null,
+          "proof_valid": true,
+          "verification_checks": 12,
+          "wrong_stable": true
+        },
+        "initial_decision": "r02-d-1174-d77a981fac668ae7"
+      },
+      "misconvergence/no_reexpansion": {
+        "attempts": 1,
+        "final": {
+          "actual_primitive_depth": 3,
+          "assumption_correct": false,
+          "correct": false,
+          "error": null,
+          "proof_valid": true,
+          "verification_checks": 12,
+          "wrong_stable": true
+        },
+        "final_decision": "r02-d-1311-d77a981fac668ae7",
+        "initial": {
+          "actual_primitive_depth": 3,
+          "assumption_correct": false,
+          "correct": false,
+          "error": null,
+          "proof_valid": true,
+          "verification_checks": 12,
+          "wrong_stable": true
+        },
+        "initial_decision": "r02-d-1311-d77a981fac668ae7"
+      },
+      "tradeoff/training_3": {
+        "attempts": 2,
+        "final": {
+          "actual_primitive_depth": 2,
+          "assumption_correct": true,
+          "correct": true,
+          "error": null,
+          "proof_valid": true,
+          "verification_checks": 18,
+          "wrong_stable": false
+        },
+        "final_decision": "r02-d-1780-2f487e9d3e1ea8f6",
+        "initial": {
+          "actual_primitive_depth": 3,
+          "assumption_correct": false,
+          "correct": false,
+          "error": null,
+          "proof_valid": true,
+          "verification_checks": 12,
+          "wrong_stable": true
+        },
+        "initial_decision": "r02-d-1672-046b1a5012c9b675"
+      },
+      "tradeoff/training_9": {
+        "attempts": 2,
+        "final": {
+          "actual_primitive_depth": 2,
+          "assumption_correct": true,
+          "correct": true,
+          "error": null,
+          "proof_valid": true,
+          "verification_checks": 18,
+          "wrong_stable": false
+        },
+        "final_decision": "r02-d-2602-39b6cedb832f2f4a",
+        "initial": {
+          "actual_primitive_depth": 3,
+          "assumption_correct": false,
+          "correct": false,
+          "error": null,
+          "proof_valid": true,
+          "verification_checks": 12,
+          "wrong_stable": true
+        },
+        "initial_decision": "r02-d-2514-357571e2d41761d8"
+      }
+    },
+    "complete": true,
+    "engine": "r02",
+    "groups": {
+      "familiarity/cold": {
+        "attempts": 3,
+        "circuit_reuse": 0,
+        "correct": 3,
+        "incorrect": 0,
+        "strict_correct": 3,
+        "unresolved": 0,
+        "wrong_stable": 0
+      },
+      "familiarity/warm": {
+        "attempts": 3,
+        "circuit_reuse": 3,
+        "correct": 3,
+        "incorrect": 0,
+        "strict_correct": 3,
+        "unresolved": 0,
+        "wrong_stable": 0
+      },
+      "misconvergence/full": {
+        "attempts": 2,
+        "circuit_reuse": 1,
+        "correct": 1,
+        "incorrect": 1,
+        "strict_correct": 1,
+        "unresolved": 0,
+        "wrong_stable": 1
+      },
+      "misconvergence/no_reexpansion": {
+        "attempts": 1,
+        "circuit_reuse": 1,
+        "correct": 0,
+        "incorrect": 1,
+        "strict_correct": 0,
+        "unresolved": 0,
+        "wrong_stable": 1
+      },
+      "novelty/full": {
+        "attempts": 2,
+        "circuit_reuse": 2,
+        "correct": 2,
+        "incorrect": 0,
+        "strict_correct": 2,
+        "unresolved": 0,
+        "wrong_stable": 0
+      },
+      "novelty/graph_only": {
+        "attempts": 2,
+        "circuit_reuse": 0,
+        "correct": 2,
+        "incorrect": 0,
+        "strict_correct": 2,
+        "unresolved": 0,
+        "wrong_stable": 0
+      },
+      "retention/reload": {
+        "attempts": 1,
+        "circuit_reuse": 1,
+        "correct": 0,
+        "incorrect": 1,
+        "strict_correct": 0,
+        "unresolved": 0,
+        "wrong_stable": 1
+      },
+      "tradeoff/training_3": {
+        "attempts": 2,
+        "circuit_reuse": 1,
+        "correct": 1,
+        "incorrect": 1,
+        "strict_correct": 1,
+        "unresolved": 0,
+        "wrong_stable": 1
+      },
+      "tradeoff/training_9": {
+        "attempts": 2,
+        "circuit_reuse": 1,
+        "correct": 1,
+        "incorrect": 1,
+        "strict_correct": 1,
+        "unresolved": 0,
+        "wrong_stable": 1
+      },
+      "tradeoff_training/training_3": {
+        "attempts": 3,
+        "circuit_reuse": 0,
+        "correct": 3,
+        "incorrect": 0,
+        "strict_correct": 3,
+        "unresolved": 0,
+        "wrong_stable": 0
+      },
+      "tradeoff_training/training_9": {
+        "attempts": 9,
+        "circuit_reuse": 6,
+        "correct": 9,
+        "incorrect": 0,
+        "strict_correct": 9,
+        "unresolved": 0,
+        "wrong_stable": 0
+      },
+      "training/full": {
+        "attempts": 6,
+        "circuit_reuse": 3,
+        "correct": 6,
+        "incorrect": 0,
+        "strict_correct": 6,
+        "unresolved": 0,
+        "wrong_stable": 0
+      }
+    }
+  },
+  "audit_reported_by_user": {
+    "binding_scans_checked": 355,
+    "checkpoints": 4,
+    "decisions_reassessed": 36,
+    "differences": [],
+    "events": 2646,
+    "file_hashes": 10,
+    "graph_steps_checked": 84,
+    "hypothesis_proved": false,
+    "independent_of_runtime": [
+      "tick numerical calculation",
+      "bounded role binding scans",
+      "candidate ranking",
+      "macro side-branch preservation",
+      "decision readout",
+      "learning transitions",
+      "operation counts",
+      "summary aggregation"
+    ],
+    "limitations": [
+      "기록의 내부 일관성을 검산하며, 제삼자의 실행 인증은 아니다.",
+      "wall_seconds는 부호·유한성·집계만 확인하며 실측 시간을 재현하지 않는다."
+    ],
+    "memory_updates_checked": 25,
+    "scalar_ticks_replayed": 2006,
+    "schema": "hcr-independent-audit-r02",
+    "shared_components": [
+      "JSON/data contracts",
+      "memory structural certificate loader",
+      "external proof/reference validator"
+    ],
+    "source_checked": true,
+    "state": "complete",
+    "verified": true
+  },
+  "original_run_raw_files_available_in_authoring_session": false,
+  "new_runtime_execution_performed_in_baseline_step": false,
+  "new_tests_executed": false,
+  "original_user_run_complete": true,
+  "original_user_run_audit_passed": true,
+  "standalone_manual_r01_after_r02_run_receipt_available": false,
+  "source_identification": {
+    "reconstructed_release_files_verified": 114,
+    "release_manifest_sha256": "820d7028134ce0fd34016fa62113430908557bad87bf7c32f91c1d8b63b2c45f",
+    "runtime_scope_files": 30,
+    "github_head_verified": false
+  },
+  "redaction": "사용자 로컬 절대 경로는 결과 수치와 분리해 제외했다. 로그 전체의 hash만 보존한다."
+}

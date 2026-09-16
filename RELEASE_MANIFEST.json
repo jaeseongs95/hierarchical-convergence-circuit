@@ -11,7 +11,7 @@
     "CONTRIBUTING.md": "7f3c2739a97a502a3739bc09b5c51af912b873ca4487148acaf8c3978b314eff",
     "README.ko.md": "9ce6a0c2546159d1c79ebf38ebf3d7ed7ac7319338d1988fc2522b12526168df",
     "README.md": "9ce6a0c2546159d1c79ebf38ebf3d7ed7ac7319338d1988fc2522b12526168df",
-    "ROADMAP.md": "52c03efbb3e40a0a7d65a7b6a4f2d30a4a8ee30ada39d89c9cec557c4597ff43",
+    "ROADMAP.md": "793bae01b8142097d931d2c1abb0d8a32f39fa6d716dfe59fead566c296af950",
     "Run-HCR-R02.ps1": "699fe74d3c481c9e691683b4a8bc37aa94ab5904d214686f8488d552033e3235",
     "Run-HCR.ps1": "53403b1ad87875f84d4d484880f71c899728c3957662b35e692086c21deb1f9c",
     "architecture/HCR_R01_original_plan.ko.md": "5252f2a37cb8c51d8de3faa489e95644de6d4836193109e29cf00b2095b5e630",
@@ -114,10 +114,26 @@
     "theory/README.md": "76a2165ba7acb59f1fef4bec64bd82133997cc315410fb3592416a9aa6027b11",
     "theory/core-hypothesis.md": "d1b735eee8f72c092c847c04e81a34972fa919be906311255faa797e58ec9302",
     "theory/source/2026-09-16-integrated-hypothesis-ko.md": "fa8aaa32675d1f6ee427b5072e8372d71c86ab635b6afd84fdbec0b89d9fefd5",
-    "theory/versioning.md": "f24ee36981cef7a6554c2d8eb4f4d1618664b8b8d2d91425d24798ffc9a9c9d8"
+    "theory/versioning.md": "f24ee36981cef7a6554c2d8eb4f4d1618664b8b8d2d91425d24798ffc9a9c9d8",
+    "docs/R02_BASELINE.ko.md": "75edfcae5c419821882d34070179fb4211f729b3b1f0a6179a965856590e9739",
+    "docs/R02_BASELINE_PROTOCOL.ko.md": "5bb54bd660bccb7941a061dcfd23c16fab6aec2adc0b69dfc367eb483259540d",
+    "docs/R02_BASELINE_USAGE.ko.md": "6d2ee2f4a877029f7a2b30ecfc547402c947769a0db8c4c9a789576f68aa182a",
+    "docs/reference/R02_PLUS_ROADMAP_20260916.ko.md": "c5cfa42008611bd8848def9253680a3a956b178981402828822b1142c7651824",
+    "docs/reference/r02_pre_baseline_RELEASE_MANIFEST.json": "820d7028134ce0fd34016fa62113430908557bad87bf7c32f91c1d8b63b2c45f",
+    "docs/reference/r02_pre_baseline_ROADMAP.md": "52c03efbb3e40a0a7d65a7b6a4f2d30a4a8ee30ada39d89c9cec557c4597ff43",
+    "evidence/implementation/r02_baseline_source_review.json": "0eb1fdb6de887dd37c9852ba26d71c3776f8e44e8477901a72229817eb003449",
+    "evidence/implementation/r02_baseline_status.json": "976b252e14504b5e22560ea8047060b5d84a59390783e5144a61db092c44d381",
+    "evidence/implementation/r02_execution_acceptance_20260916.json": "29748692ebf7d34cb8c629456f6aec8b650b1d2070031ccf4e7b46ea9fafc2ad",
+    "tools/r02_baseline/collect.py": "eb65fc4b349fbc9c647f04424fcd0f5aa0559f290089cb3dc0c00234f6073759",
+    "tools/r02_baseline/probe.py": "c6cf043470cca8987f7d2c6c546025cc1d3bfc025c330faa4f1e78b43c6e4237",
+    "tools/r02_baseline/tests/test_baseline_tools.py": "3e7c8346f251747f90e21172013158e83458f02d60b94e99f35bde5db476d714"
   },
   "release": "0.2.0",
   "remote_head_verified": false,
   "schema": "hcr-release-manifest-r02",
-  "status": "source_authored_runtime_not_executed"
+  "status": "r02_user_execution_received_baseline_documentation_added",
+  "documentation_revision": "r02-baseline-20260916-v1",
+  "historical_manifest": "docs/reference/r02_pre_baseline_RELEASE_MANIFEST.json",
+  "execution_receipt": "evidence/implementation/r02_execution_acceptance_20260916.json",
+  "engine_behavior_changed": false
 }
