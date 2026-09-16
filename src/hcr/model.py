@@ -260,3 +260,99 @@ class ObservationRequest:
     revision: int
     edge_ids: tuple[str, ...]
     reason: str
+
+
+# R0.2 계약. R0.1 Config/Decision/Cost의 필드와 기본 동작은 변경하지 않는다.
+@dataclass(frozen=True)
+class AdaptiveConfig:
+    """고정된 두 A 수준/한 계산법에서 D 확장만 적응시킨다."""
+    kernel: Config = field(default_factory=Config)
+    pattern_lengths: tuple[int, ...] = (2, 3)
+    max_expansions: int = 64
+    max_frontier: int = 32
+    max_binding_checks: int = 1024
+    max_pool_candidates: int = 4
+    activation_threshold: float = 0.55
+    mismatch_threshold: float = 0.80
+    circuit_inhibition: float = 0.15
+
+    def __post_init__(self) -> None:
+        if not isinstance(self.kernel, Config):
+            raise ContractError('adaptive.kernel must be Config')
+        for name in ('max_expansions', 'max_frontier', 'max_binding_checks', 'max_pool_candidates'):
+            value = getattr(self, name)
+            if type(value) is not int or not 1 <= value <= 65536:
+                raise ContractError('bounded positive adaptive integer: ' + name)
+        if self.max_pool_candidates > self.kernel.max_paths:
+            raise ContractError('pool candidates exceed the common kernel path bound')
+        if (not isinstance(self.pattern_lengths, tuple) or not self.pattern_lengths
+                or any(type(n) is not int or not 2 <= n <= self.kernel.max_path_length for n in self.pattern_lengths)
+                or tuple(sorted(set(self.pattern_lengths))) != self.pattern_lengths):
+            raise ContractError('pattern_lengths must be sorted distinct lengths within the primitive path bound')
+        for name in ('activation_threshold', 'mismatch_threshold', 'circuit_inhibition'):
+            value = getattr(self, name)
+            if type(value) not in (int, float) or not isfinite(value) or not 0 <= value <= 1:
+                raise ContractError('adaptive probability/gain range: ' + name)
+        if not .5 <= self.activation_threshold < 1:
+            raise ContractError('activation_threshold must be in [0.5, 1)')
+
+    @property
+    def signature(self) -> str:
+        return fingerprint(asdict(self))
+
+
+@dataclass
+class AdaptiveCost(Cost):
+    """단위가 다른 카운터는 합산하지 않는다. 별칭은 중복 합산 대상이 아니다."""
+    graph_nodes_created: int = 0
+    graph_edges_created: int = 0
+    expansions: int = 0
+    frontier_retirements: int = 0
+    topology_edge_checks: int = 0
+    candidate_circuits: int = 0
+    binding_operations: int = 0
+    pool_calls: int = 0
+    circuit_reuses: int = 0
+    primitive_candidates: int = 0
+    learning_updates: int = 0
+    storage_bytes: int = 0
+
+    def snapshot(self) -> dict:
+        result = asdict(self)
+        result.update(signal_events=self.signal_transmissions,
+                      convergence_ticks=self.kernel_ticks,
+                      proof_reconstruction_cost=self.proof_nodes_reconstructed,
+                      storage_cost=self.storage_bytes)
+        return result
+
+
+@dataclass(frozen=True)
+class ExpansionBudget:
+    remaining_expansions: int
+    remaining_binding_checks: int
+    max_frontier: int
+
+    def __post_init__(self) -> None:
+        if any(type(v) is not int or v < 0 for v in asdict(self).values()) or self.max_frontier < 1:
+            raise ContractError('invalid expansion budget')
+
+
+@dataclass(frozen=True)
+class MismatchSignal:
+    kind: str
+    magnitude: float = 0.0
+    detail: str = ''
+
+    def __post_init__(self) -> None:
+        if not identifier(self.kind) or not isfinite(self.magnitude) or not 0 <= self.magnitude <= 1:
+            raise ContractError('invalid mismatch signal')
+
+
+@dataclass(frozen=True)
+class AdaptiveDecision(Decision):
+    circuit_ids: tuple[str, ...] = ()
+    expanded_paths: tuple[tuple[int, ...], ...] = ()
+    graph_complete: bool = False
+    failure_reason: str | None = None
+    adaptive_config_signature: str = ''
+    schema: str = 'hcr-decision-r02'

@@ -47,3 +47,19 @@ def settle(program: Program, drives: dict[str,float], config: Config, cost: Cost
             return nxt,Convergence(Status.OSCILLATING,i,residual,margin,stable)
         history.append(state);history=history[-3:];state=nxt
     return state,Convergence(Status.BUDGET_EXHAUSTED,config.max_ticks,residual,abs(2*state['goal']-1),stable)
+
+
+def settle_recorded(program, drives, config, cost, trace, decision_id, kind, metadata, *, top_down=True):
+    """R0.2 pool과 판단 graph가 공유하는 기록 어댑터. 갱신식은 위 settle/tick 한 곳뿐이다."""
+    from .codec import plain
+    network_id = 'network-' + str(trace.count)
+    trace.emit('r02_network', dict(network_id=network_id, decision_id=decision_id, kind=kind,
+                                  program=plain(program), program_digest=program.digest,
+                                  drives=drives, top_down=top_down, metadata=metadata))
+    state, convergence = settle(program, drives, config, cost, top_down=top_down,
+        observe=lambda number, values, residual, stable: trace.emit('r02_tick', dict(
+            network_id=network_id, decision_id=decision_id, tick=number,
+            state=values, residual=residual, stable_steps=stable)))
+    trace.emit('r02_settled', dict(network_id=network_id, decision_id=decision_id,
+                                  state=state, convergence=plain(convergence)))
+    return state, convergence, network_id

@@ -1,3 +1,9 @@
+# R0.2 현재 상태 — 소스 작성, 실행 전
+
+D/dependency 확장, bounded partial path compiler, 회로 후보 경쟁, binding identity, 비용 계측과 개발 실험을 추가했다. 실제 수용 여부는 `docs/R02_ACCEPTANCE.ko.md`의 사용자 실행 결과로 결정한다. R0.3 M adaptation / R0.4 A adaptation은 구현하지 않았다.
+
+---
+
 # 현재 개발·연구 로드맵
 
 원 제안은 `docs/reference/initial_ROADMAP.md`에 보존했다.

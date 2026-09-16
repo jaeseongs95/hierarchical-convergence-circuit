@@ -119,3 +119,134 @@ class Memory:
         if len({c.id for c in circuits})!=len(circuits) or len(set(d['consumed_feedback']))!=len(d['consumed_feedback']):
             raise ContractError('duplicate memory records')
         return cls(d['version'],circuits,pending,d['consumed_feedback'],d['patches'])
+
+
+# R0.2는 부분 회로용 명시적 schema를 사용한다. R0.1 memory를 자동 변환하지 않는다.
+from .patterns import CircuitPattern, pattern_from
+from .model import AdaptiveConfig, identifier
+
+
+@dataclass
+class PatternCircuit:
+    pattern: CircuitPattern
+    strength: float
+    evidence_episodes: list[str]
+    feedback_ids: list[str]
+    proof_digests: list[str]
+    version: int = 1
+    failures: int = 0
+    active: bool = True
+
+    @property
+    def id(self) -> str:
+        return self.pattern.id
+
+    @property
+    def balance(self) -> float:
+        # R0.2에서는 externally verified positive path motif만 등록한다.
+        return len(self.evidence_episodes) / (len(self.evidence_episodes) + 1)
+
+
+@dataclass
+class PatternPending:
+    pattern: CircuitPattern
+    evidence_episodes: list[str] = field(default_factory=list)
+    feedback_ids: list[str] = field(default_factory=list)
+    proof_digests: list[str] = field(default_factory=list)
+
+
+@dataclass
+class AdaptiveMemory:
+    config_signature: str
+    version: int = 0
+    circuits: list[PatternCircuit] = field(default_factory=list)
+    pending: list[PatternPending] = field(default_factory=list)
+    consumed_feedback: list[str] = field(default_factory=list)
+    patches: list[dict] = field(default_factory=list)
+
+    @classmethod
+    def empty(cls, config: AdaptiveConfig) -> 'AdaptiveMemory':
+        return cls(config.signature)
+
+    def document(self) -> dict:
+        return dict(schema='hcr-memory-r02', config_signature=self.config_signature, version=self.version,
+                    circuits=codec.plain(self.circuits), pending=codec.plain(self.pending),
+                    consumed_feedback=list(self.consumed_feedback), patches=codec.plain(self.patches))
+
+    @property
+    def digest(self) -> str:
+        return fingerprint(self.document())
+
+    def save(self, path: Path, *, replace: bool = False) -> None:
+        document = self.document()
+        codec.save(path, dict(document=document, sha256=fingerprint(document)), replace=replace)
+
+    @classmethod
+    def load(cls, path: Path, config: AdaptiveConfig) -> 'AdaptiveMemory':
+        return cls.from_packet(codec.loads(Path(path).read_bytes()), config)
+
+    @classmethod
+    def from_packet(cls, packet: dict, config: AdaptiveConfig) -> 'AdaptiveMemory':
+        if (not isinstance(packet, dict) or set(packet) != {'document', 'sha256'}
+                or fingerprint(packet['document']) != packet['sha256']):
+            raise ContractError('R0.2 memory integrity')
+        return cls.from_document(packet['document'], config)
+
+    @classmethod
+    def from_document(cls, document: dict, config: AdaptiveConfig) -> 'AdaptiveMemory':
+        required = {'schema', 'config_signature', 'version', 'circuits', 'pending', 'consumed_feedback', 'patches'}
+        if not isinstance(document, dict) or set(document) != required or document['schema'] != 'hcr-memory-r02':
+            raise ContractError('R0.2 memory schema; R0.1 memory must stay on the R0.1 path')
+        d = codec.loads(codec.dumps(document))
+        if d['config_signature'] != config.signature:
+            raise ContractError('R0.2 memory/config mismatch')
+        if any(not isinstance(d[k], list) for k in ('circuits', 'pending', 'consumed_feedback', 'patches')):
+            raise ContractError('R0.2 memory arrays')
+        if (type(d['version']) is not int or d['version'] < 0
+                or d['version'] != len(d['consumed_feedback']) or d['version'] != len(d['patches'])
+                or len(set(d['consumed_feedback'])) != d['version']
+                or any(not identifier(x) for x in d['consumed_feedback'])
+                or len(d['circuits']) > config.kernel.max_circuits
+                or len(d['pending']) > config.kernel.max_circuits):
+            raise ContractError('R0.2 memory history/bounds')
+        for i, patch in enumerate(d['patches']):
+            if (not isinstance(patch, dict) or patch.get('version') != i + 1
+                    or patch.get('previous_version') != i or patch.get('feedback_id') != d['consumed_feedback'][i]):
+                raise ContractError('R0.2 memory patch chain')
+        circuits = []
+        pending = []
+        try:
+            for raw, compiled in [(r, True) for r in d['circuits']] + [(r, False) for r in d['pending']]:
+                pattern = pattern_from(raw['pattern'], config.kernel)
+                if pattern.length not in config.pattern_lengths:
+                    raise ContractError('unregistered pattern length')
+                if any(not isinstance(raw[k], list) for k in ('evidence_episodes', 'feedback_ids', 'proof_digests')):
+                    raise ContractError('pattern evidence arrays')
+                episodes, feedbacks, proofs = (raw[k] for k in ('evidence_episodes', 'feedback_ids', 'proof_digests'))
+                if (not episodes or len(set(episodes)) != len(episodes)
+                        or any(not identifier(e) for e in episodes)
+                        or len(proofs) != len(episodes) or len(feedbacks) < len(episodes)
+                        or len(set(feedbacks)) != len(feedbacks)
+                        or not set(feedbacks) <= set(d['consumed_feedback'])
+                        or any(not isinstance(h, str) or len(h) != 64 or any(c not in '0123456789abcdef' for c in h) for h in proofs)):
+                    raise ContractError('pattern evidence provenance')
+                kwargs = dict(raw, pattern=pattern)
+                if compiled:
+                    item = PatternCircuit(**kwargs)
+                    if (type(item.strength) not in (int, float) or not 0 <= item.strength <= 1
+                            or type(item.version) is not int or item.version < 1
+                            or type(item.failures) is not int or item.failures < 0
+                            or type(item.active) is not bool
+                            or len(episodes) < config.kernel.min_valid_episodes):
+                        raise ContractError('compiled pattern state')
+                    circuits.append(item)
+                else:
+                    if len(episodes) >= config.kernel.min_valid_episodes:
+                        raise ContractError('pending threshold was not compiled')
+                    pending.append(PatternPending(**kwargs))
+        except (KeyError, TypeError, ValueError) as error:
+            raise ContractError('invalid R0.2 memory records') from error
+        ids = [c.id for c in circuits] + [p.pattern.id for p in pending]
+        if len(ids) != len(set(ids)):
+            raise ContractError('duplicate R0.2 pattern')
+        return cls(d['config_signature'], d['version'], circuits, pending, d['consumed_feedback'], d['patches'])

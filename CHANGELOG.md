@@ -1,3 +1,13 @@
+# 0.2.0 — 2026-09-16 (실행 전 소스)
+
+- 기존 src/hcr 구조에 deterministic ExpansionPolicy, 부분 경로 compiler, common-kernel CircuitActivationPool을 추가했다.
+- Node/Semantic/Role binding과 revision 분리, 독립 비용 카운터, primitive proof 보존을 추가했다.
+- 별도 R0.2 memory schema와 feedback/re-expansion/persistence 경로를 추가했다.
+- R0.2 개발 protocol, 독립 수치/경로/학습/집계 audit 및 신규 시험을 추가했다.
+- R0.1의 72개 시험과 기존 알고리즘 정의는 보존했다. 실제 R0.2 테스트/실험/커밋은 수행하지 않았다.
+
+---
+
 # Changelog
 
 All notable theory, evidence, experiment-design, and architecture changes should be recorded here.

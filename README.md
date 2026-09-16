@@ -1,3 +1,19 @@
+# R0.2 추가 — Adaptive Graph/Circuit Engine
+
+이 배포는 기존 R0.1을 보존하면서 `--engine r02`로 선택하는 D-expansion/부분회로 경로를 추가한다. **소스 작성·정적 검사 상태이며, 배포 세션에서 테스트나 실험을 실행하지 않았다.**
+
+```powershell
+python -X utf8 -B hcr.py check
+python -X utf8 -B hcr.py demo --engine r02 --config configs/r02.toml --out runs/r02_first
+python -X utf8 -B hcr.py verify --run runs/r02_first
+```
+
+[적용·실행](docs/R02_USAGE.ko.md) · [R0.2 구조](architecture/r02-engine.ko.md) · [수용 기준](docs/R02_ACCEPTANCE.ko.md) · [개발 protocol](experiments/exp-08-r02-adaptive-integration/design.md)
+
+기존 R0.1 API/설정/시험은 유지한다. 아래 R0.1 설명과 과거 실행 기록은 R0.2 실행 결과가 아니다. 부분 컴파일 범위는 길이2·3 directed path motifs이며, dependency 탐색 감소와 총 연산 감소를 분리해서 측정한다.
+
+---
+
 # Hierarchical Convergence Circuit — HCR R0.1
 
 **상태: 실행 가능한 소규모 CPU reference.** 이론·증거·실험을 분리한 연구 저장소에, 두 A 수준에서 graph↔circuit 학습 순환을 수행하는 하나의 `src/hcr` 엔진을 추가했다. 실제 뇌/LLM/뉴로모픽 구현이나 가설의 실증으로 주장하지 않는다.

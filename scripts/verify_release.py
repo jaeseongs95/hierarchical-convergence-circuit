@@ -15,7 +15,7 @@ def verify(root:Path) -> dict:
         if not path.is_file() or path.is_symlink() or hashlib.sha256(path.read_bytes()).hexdigest()!=expected:
             failures.append(name)
     if failures:raise ValueError('release file mismatch: '+', '.join(failures))
-    return {'schema':'hcr-release-check-r01','verified':True,'files_checked':len(manifest['files']),
+    return {'schema':'hcr-release-check-r02','verified':True,'files_checked':len(manifest['files']),
             'release':manifest['release'],'differences':[],
             'scope':'registered release files only; local run/IDE/Git/unregistered development files are not certified'}
 

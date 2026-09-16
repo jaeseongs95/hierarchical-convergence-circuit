@@ -81,3 +81,34 @@ def decision_from(value):
                                state=tuple(tuple(p) for p in value['state'])))
     except (TypeError, KeyError, ValueError) as exc:
         raise ContractError('invalid decision record') from exc
+
+
+def adaptive_config_from(value):
+    from .model import Config, AdaptiveConfig
+    try:
+        if not isinstance(value, dict) or 'kernel' not in value:
+            raise ContractError('R0.2 config document')
+        raw = dict(value)
+        raw['kernel'] = Config(**raw['kernel'])
+        if 'pattern_lengths' in raw:
+            raw['pattern_lengths'] = tuple(raw['pattern_lengths'])
+        return AdaptiveConfig(**raw)
+    except (TypeError, KeyError) as error:
+        raise ContractError('invalid R0.2 configuration') from error
+
+
+def adaptive_decision_from(value):
+    from .model import AdaptiveDecision
+    fields = ('circuit_ids', 'expanded_paths', 'graph_complete', 'failure_reason',
+              'adaptive_config_signature', 'schema')
+    try:
+        if value.get('schema') != 'hcr-decision-r02':
+            raise ContractError('R0.2 decision schema')
+        extras = {key: value[key] for key in fields}
+        raw = {key: entry for key, entry in value.items() if key not in fields}
+        old = decision_from(raw)
+        extras['circuit_ids'] = tuple(extras['circuit_ids'])
+        extras['expanded_paths'] = tuple(tuple(p) for p in extras['expanded_paths'])
+        return AdaptiveDecision(**old.__dict__, **extras)
+    except (KeyError, TypeError, ValueError) as error:
+        raise ContractError('invalid R0.2 decision packet') from error

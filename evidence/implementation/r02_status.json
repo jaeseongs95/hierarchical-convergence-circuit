@@ -1,0 +1,32 @@
+{
+  "schema": "hcr-implementation-status-r02",
+  "version": "0.2.0",
+  "date": "2026-09-16",
+  "status": "source_authored_static_review_only",
+  "runtime_executed": false,
+  "tests_executed": false,
+  "experiments_executed": false,
+  "remote_commit_written": false,
+  "remote_push_performed": false,
+  "remote_head_verified": false,
+  "basis": "recovered actual R0.1 source release; GitHub connector returned 404",
+  "baseline_zip_sha256": "c69ba87af591fa508f9d9cfd9b42e5515aef5206034e78b89e801f56e43d50b0",
+  "hypothesis_proved": false,
+  "scope": [
+    "deterministic D expansion",
+    "bounded directed path motif compiler",
+    "common-kernel circuit candidate pool",
+    "revision-bound role identity",
+    "operation accounting",
+    "external development evaluation",
+    "independent audit source"
+  ],
+  "out_of_scope": [
+    "A/M autonomous adaptation",
+    "arbitrary subgraph learning",
+    "LLM",
+    "CUDA",
+    "neuromorphic hardware",
+    "sensory encoder"
+  ]
+}
