@@ -1,0 +1,7 @@
+scope,arm,permutations,native_ticks_min,native_ticks_max,native_ticks_spread,distinct_completion_orders,distinct_ID_aligned_trajectories,final_outcome_invariant,native_tick_order_effect_observed,support_completion_ranks,claims_ID_irrelevance
+legacy,native,6,170,170,0,2,2,True,False,"[2, 2, 2, 3, 3, 3]",False
+legacy,posthoc_support,6,170,170,0,2,2,True,False,"[2, 2, 2, 3, 3, 3]",False
+legacy,online_support,6,102,170,68,2,2,True,True,"[2, 2, 2, 3, 3, 3]",False
+route_only,native,6,164,262,98,2,2,True,True,"[2, 2, 2, 3, 3, 3]",False
+route_only,posthoc_support,6,164,262,98,2,2,True,True,"[2, 2, 2, 3, 3, 3]",False
+route_only,online_support,6,164,262,98,2,2,True,True,"[2, 2, 2, 3, 3, 3]",False
