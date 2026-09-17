@@ -1,0 +1,7 @@
+{
+  "verified": true,
+  "release": "R0.3.4 additive EXP-15",
+  "files_checked": 19,
+  "scope": "registered additive files only; legacy files are checked separately",
+  "basis_commit": "54330d01c979cb942b39558186c206b4373b758e"
+}

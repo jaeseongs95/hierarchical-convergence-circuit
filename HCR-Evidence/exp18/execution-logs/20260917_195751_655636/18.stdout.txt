@@ -1,0 +1,28 @@
+{
+  "schema": "hcr-exp18-audit-v1",
+  "verified": true,
+  "raw_manifest_sha256": "8fb1e88ac4c57daeaa0296ec67172c250b7e7c7bc86eb8874ebcb230f3d899c3",
+  "native_trials": 32,
+  "native_readouts": 34,
+  "stream_records": 412,
+  "seed_training": {
+    "schema": "hcr-session-audit-r021-v1",
+    "verified": true,
+    "generation": 33,
+    "events": 422,
+    "decisions_checked": 6,
+    "scalar_ticks_replayed": 316,
+    "graph_steps_checked": 15,
+    "binding_scans_checked": 54,
+    "memory_updates_checked": 6,
+    "checkpoint_state_replayed": true,
+    "new_inferences": 0,
+    "external_truth_evaluated": false,
+    "scope": "independent event/state/counter replay; declared seed memory and feedback are inputs; timing is range-checked only"
+  },
+  "native_sessions_independently_replayed": true,
+  "online_control_independently_recomputed": true,
+  "proof_DAGs_independently_checked": true,
+  "first_decisions_preserved": true,
+  "correctness_or_improvement_required": false
+}

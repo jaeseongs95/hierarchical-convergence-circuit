@@ -1,0 +1,15 @@
+{
+  "schema": "hcr-exp17-audit-v1",
+  "verified": true,
+  "raw_manifest_sha256": "75c8a65e3aaffe093d840cb18e28805f45d7f4a01ea613a6c826c005c5684e3f",
+  "native_trials": 128,
+  "native_readouts": 136,
+  "streamed_actions": 2160,
+  "native_sessions_independently_replayed": true,
+  "seed_training_independently_replayed": true,
+  "input_transforms_independently_checked": true,
+  "first_decisions_preserved": true,
+  "selectors_compared_on_same_native_state": true,
+  "proof_DAGs_independently_checked": true,
+  "correctness_or_invariance_required": false
+}

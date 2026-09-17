@@ -1,0 +1,12 @@
+test_all_native_sessions_independently_audited (test_native_integration.NativeIntegrationTests.test_all_native_sessions_independently_audited) ... ok
+test_frozen_memory_preserved (test_native_integration.NativeIntegrationTests.test_frozen_memory_preserved) ... ok
+test_native_saved_matches_exp17_raw_views (test_native_integration.NativeIntegrationTests.test_native_saved_matches_exp17_raw_views) ... ok
+test_raw_value_never_flipped_by_proof_selection (test_native_integration.NativeIntegrationTests.test_raw_value_never_flipped_by_proof_selection) ... ok
+test_same_native_first_input_before_policy (test_native_integration.NativeIntegrationTests.test_same_native_first_input_before_policy) ... ok
+test_tampered_adoption_rejected (test_native_integration.NativeIntegrationTests.test_tampered_adoption_rejected) ... ok
+test_unknown_parent_not_repaired (test_native_integration.NativeIntegrationTests.test_unknown_parent_not_repaired) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 4.549s
+
+OK

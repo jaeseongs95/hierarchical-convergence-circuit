@@ -1,0 +1,44 @@
+test_changed_source_hash_rejected (test_concepts.CoverageContracts.test_changed_source_hash_rejected) ... ok
+test_crlf_normalized_for_source_anchor (test_concepts.CoverageContracts.test_crlf_normalized_for_source_anchor) ... ok
+test_does_not_claim_execution_or_semantics (test_concepts.CoverageContracts.test_does_not_claim_execution_or_semantics) ... ok
+test_duplicate_concept_rejected (test_concepts.CoverageContracts.test_duplicate_concept_rejected) ... ok
+test_duplicate_json_rejected (test_concepts.CoverageContracts.test_duplicate_json_rejected) ... ok
+test_git_and_runs_not_anchors (test_concepts.CoverageContracts.test_git_and_runs_not_anchors) ... ok
+test_implemented_needs_code_anchor (test_concepts.CoverageContracts.test_implemented_needs_code_anchor) ... ok
+test_missing_design_anchor_rejected (test_concepts.CoverageContracts.test_missing_design_anchor_rejected) ... ok
+test_missing_required_concept_rejected (test_concepts.CoverageContracts.test_missing_required_concept_rejected) ... ok
+test_missing_symbol_rejected (test_concepts.CoverageContracts.test_missing_symbol_rejected) ... ok
+test_nonfinite_json_rejected (test_concepts.CoverageContracts.test_nonfinite_json_rejected) ... ok
+test_path_traversal_rejected (test_concepts.CoverageContracts.test_path_traversal_rejected) ... ok
+test_planned_accepts_design (test_concepts.CoverageContracts.test_planned_accepts_design) ... ok
+test_registry_checks_do_not_write (test_concepts.CoverageContracts.test_registry_checks_do_not_write) ... ok
+test_unknown_source_rejected (test_concepts.CoverageContracts.test_unknown_source_rejected) ... ok
+test_unknown_status_rejected (test_concepts.CoverageContracts.test_unknown_status_rejected) ... ok
+test_valid_catalog (test_concepts.CoverageContracts.test_valid_catalog) ... ok
+test_windows_path_rejected (test_concepts.CoverageContracts.test_windows_path_rejected) ... ok
+test_assumption_mismatch_kept_separate (test_concepts.ReviewContracts.test_assumption_mismatch_kept_separate) ... ok
+test_assumption_outside_input_reported (test_concepts.ReviewContracts.test_assumption_outside_input_reported) ... ok
+test_boolean_contract_not_integer (test_concepts.ReviewContracts.test_boolean_contract_not_integer) ... ok
+test_budget_is_not_proven_nonconvergence (test_concepts.ReviewContracts.test_budget_is_not_proven_nonconvergence) ... ok
+test_correct_value_is_not_a_failure (test_concepts.ReviewContracts.test_correct_value_is_not_a_failure) ... ok
+test_duplicate_rows_rejected (test_concepts.ReviewContracts.test_duplicate_rows_rejected) ... ok
+test_duplicated_decision_rejected (test_concepts.ReviewContracts.test_duplicated_decision_rejected) ... ok
+test_existing_output_rejected_before_reading_capture (test_concepts.ReviewContracts.test_existing_output_rejected_before_reading_capture) ... ok
+test_explanation_is_containment_not_causal_audit (test_concepts.ReviewContracts.test_explanation_is_containment_not_causal_audit) ... ok
+test_extra_explored_branch_not_missing_proof (test_concepts.ReviewContracts.test_extra_explored_branch_not_missing_proof) ... ok
+test_missing_settled_event_rejected (test_concepts.ReviewContracts.test_missing_settled_event_rejected) ... ok
+test_missing_time_is_not_fabricated (test_concepts.ReviewContracts.test_missing_time_is_not_fabricated) ... ok
+test_multirow_aggregation_does_not_count_new_samples (test_concepts.ReviewContracts.test_multirow_aggregation_does_not_count_new_samples) ... ok
+test_no_candidate_is_not_activation_failure (test_concepts.ReviewContracts.test_no_candidate_is_not_activation_failure) ... ok
+test_oscillation_is_separate_observation (test_concepts.ReviewContracts.test_oscillation_is_separate_observation) ... ok
+test_program_digest_mismatch_rejected (test_concepts.ReviewContracts.test_program_digest_mismatch_rejected) ... ok
+test_proof_path_outside_program_reported (test_concepts.ReviewContracts.test_proof_path_outside_program_reported) ... ok
+test_row_observation_mismatch_rejected (test_concepts.ReviewContracts.test_row_observation_mismatch_rejected) ... ok
+test_stable_wrong_observed_not_cause (test_concepts.ReviewContracts.test_stable_wrong_observed_not_cause) ... ok
+test_tools_have_no_hcr_imports (test_concepts.ReviewContracts.test_tools_have_no_hcr_imports) ... ok
+test_wrong_stable_inconsistency_rejected (test_concepts.ReviewContracts.test_wrong_stable_inconsistency_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 39 tests in 0.065s
+
+OK

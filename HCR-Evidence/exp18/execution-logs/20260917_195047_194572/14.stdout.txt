@@ -1,0 +1,16 @@
+setUpClass (test_native_integration.NativeIntegrationTests) ... ERROR
+
+======================================================================
+ERROR: setUpClass (test_native_integration.NativeIntegrationTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\codex\진짜미친짓\hierarchical-convergence-circuit\tools\r037_online_selection\native_tests\test_native_integration.py", line 19, in setUpClass
+    from hcr.evaluation.selection_audit import source_view
+  File "D:\codex\진짜미친짓\hierarchical-convergence-circuit\hcr.py", line 9, in <module>
+    from hcr.cli import main
+ModuleNotFoundError: No module named 'hcr.cli'; 'hcr' is not a package
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.001s
+
+FAILED (errors=1)

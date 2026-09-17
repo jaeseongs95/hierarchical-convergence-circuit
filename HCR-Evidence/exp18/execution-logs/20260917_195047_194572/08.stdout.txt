@@ -1,0 +1,421 @@
+{
+  "schema": "hcr-concept-coverage-check-v1",
+  "state": "complete",
+  "concepts": 24,
+  "files_checked": 30,
+  "anchors_checked": 67,
+  "status_counts": {
+    "implemented_scoped": 9,
+    "partial": 10,
+    "planned": 5
+  },
+  "anchors": [
+    {
+      "concept_id": "HCR-K01",
+      "path": "src/hcr/runtime.py",
+      "line": 172,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K01",
+      "path": "architecture/r02-engine.ko.md",
+      "line": 1,
+      "kind": "design"
+    },
+    {
+      "concept_id": "HCR-K02",
+      "path": "src/hcr/identity.py",
+      "line": 13,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K02",
+      "path": "src/hcr/identity.py",
+      "line": 33,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K02",
+      "path": "src/hcr/identity.py",
+      "line": 53,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K03",
+      "path": "experiments/exp-04-binding-continuity/design.md",
+      "line": 1,
+      "kind": "design"
+    },
+    {
+      "concept_id": "HCR-K03",
+      "path": "src/hcr/identity.py",
+      "line": 53,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K04",
+      "path": "src/hcr/proof.py",
+      "line": 6,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K04",
+      "path": "src/hcr/model.py",
+      "line": 320,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K05",
+      "path": "src/hcr/dynamics.py",
+      "line": 7,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K05",
+      "path": "src/hcr/model.py",
+      "line": 128,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K05",
+      "path": "theory/core-hypothesis.md",
+      "line": 5,
+      "kind": "theory"
+    },
+    {
+      "concept_id": "HCR-K06",
+      "path": "theory/core-hypothesis.md",
+      "line": 15,
+      "kind": "theory"
+    },
+    {
+      "concept_id": "HCR-K06",
+      "path": "experiments/exp-05-cross-abstraction-primitive/design.md",
+      "line": 1,
+      "kind": "design"
+    },
+    {
+      "concept_id": "HCR-K07",
+      "path": "src/hcr/dynamics.py",
+      "line": 7,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K07",
+      "path": "tests/test_contracts_dynamics.py",
+      "line": 106,
+      "kind": "test_definition"
+    },
+    {
+      "concept_id": "HCR-K08",
+      "path": "src/hcr/activation.py",
+      "line": 69,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K08",
+      "path": "src/hcr/activation.py",
+      "line": 23,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K09",
+      "path": "src/hcr/runtime.py",
+      "line": 347,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K09",
+      "path": "src/hcr/runtime.py",
+      "line": 372,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K09",
+      "path": "docs/R02_BASELINE_PROTOCOL.ko.md",
+      "line": 1,
+      "kind": "design"
+    },
+    {
+      "concept_id": "HCR-K09",
+      "path": "src/hcr/review.py",
+      "line": 206,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K10",
+      "path": "tests/test_contracts_dynamics.py",
+      "line": 118,
+      "kind": "test_definition"
+    },
+    {
+      "concept_id": "HCR-K10",
+      "path": "src/hcr/dynamics.py",
+      "line": 32,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K11",
+      "path": "src/hcr/runtime.py",
+      "line": 29,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K11",
+      "path": "src/hcr/runtime.py",
+      "line": 172,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K11",
+      "path": "src/hcr/proof.py",
+      "line": 6,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K11",
+      "path": "experiments/exp-06-decision-vs-explanation/design.md",
+      "line": 1,
+      "kind": "design"
+    },
+    {
+      "concept_id": "HCR-K11",
+      "path": "src/hcr/runtime.py",
+      "line": 321,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K12",
+      "path": "architecture/r02-engine.ko.md",
+      "line": 1,
+      "kind": "design"
+    },
+    {
+      "concept_id": "HCR-K12",
+      "path": "docs/HCR_MASTER_ROADMAP.ko.md",
+      "line": 14,
+      "kind": "design"
+    },
+    {
+      "concept_id": "HCR-K13",
+      "path": "docs/HCR_MASTER_ROADMAP.ko.md",
+      "line": 332,
+      "kind": "design"
+    },
+    {
+      "concept_id": "HCR-K13",
+      "path": "src/hcr/methods.py",
+      "line": 95,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K13",
+      "path": "src/hcr/integration.py",
+      "line": 13,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K13",
+      "path": "experiments/exp-11-method-interleaving/design.md",
+      "line": 1,
+      "kind": "design"
+    },
+    {
+      "concept_id": "HCR-K14",
+      "path": "src/hcr/dynamics.py",
+      "line": 32,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K14",
+      "path": "src/hcr/dynamics.py",
+      "line": 52,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K14",
+      "path": "docs/HCR_MASTER_ROADMAP.ko.md",
+      "line": 31,
+      "kind": "design"
+    },
+    {
+      "concept_id": "HCR-K14",
+      "path": "src/hcr/sessions.py",
+      "line": 67,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K14",
+      "path": "src/hcr/sessions.py",
+      "line": 158,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K15",
+      "path": "src/hcr/model.py",
+      "line": 103,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K15",
+      "path": "src/hcr/model.py",
+      "line": 149,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K15",
+      "path": "docs/HCR_MASTER_ROADMAP.ko.md",
+      "line": 225,
+      "kind": "design"
+    },
+    {
+      "concept_id": "HCR-K16",
+      "path": "docs/HCR_MASTER_ROADMAP.ko.md",
+      "line": 480,
+      "kind": "design"
+    },
+    {
+      "concept_id": "HCR-K17",
+      "path": "experiments/exp-05-cross-abstraction-primitive/design.md",
+      "line": 1,
+      "kind": "design"
+    },
+    {
+      "concept_id": "HCR-K17",
+      "path": "theory/core-hypothesis.md",
+      "line": 23,
+      "kind": "theory"
+    },
+    {
+      "concept_id": "HCR-K18",
+      "path": "src/hcr/model.py",
+      "line": 24,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K18",
+      "path": "formalism/failure-taxonomy.ko.md",
+      "line": 1,
+      "kind": "design"
+    },
+    {
+      "concept_id": "HCR-K18",
+      "path": "src/hcr/grounding.py",
+      "line": 195,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K19",
+      "path": "architecture/substrate-contract.ko.md",
+      "line": 5,
+      "kind": "design"
+    },
+    {
+      "concept_id": "HCR-K20",
+      "path": "architecture/substrate-contract.ko.md",
+      "line": 7,
+      "kind": "design"
+    },
+    {
+      "concept_id": "HCR-K21",
+      "path": "src/hcr/runtime.py",
+      "line": 347,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K21",
+      "path": "src/hcr/dynamics.py",
+      "line": 7,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K21",
+      "path": "architecture/substrate-contract.ko.md",
+      "line": 20,
+      "kind": "design"
+    },
+    {
+      "concept_id": "HCR-K22",
+      "path": "src/hcr/dynamics.py",
+      "line": 7,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K22",
+      "path": "architecture/substrate-contract.ko.md",
+      "line": 24,
+      "kind": "design"
+    },
+    {
+      "concept_id": "HCR-K23",
+      "path": "src/hcr/evaluation/reference.py",
+      "line": 8,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K23",
+      "path": "evidence/current-boundary.md",
+      "line": 12,
+      "kind": "design"
+    },
+    {
+      "concept_id": "HCR-K23",
+      "path": "src/hcr/grounding.py",
+      "line": 59,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K23",
+      "path": "src/hcr/evaluation/grounding_audit.py",
+      "line": 31,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K23",
+      "path": "tests/test_r032_grounding.py",
+      "line": 163,
+      "kind": "test_definition"
+    },
+    {
+      "concept_id": "HCR-K23",
+      "path": "src/hcr/evaluation/review_audit.py",
+      "line": 86,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K24",
+      "path": "src/hcr/model.py",
+      "line": 320,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K24",
+      "path": "docs/R02_BASELINE_PROTOCOL.ko.md",
+      "line": 1,
+      "kind": "design"
+    },
+    {
+      "concept_id": "HCR-K24",
+      "path": "experiments/exp-07-attractor-revisability/design.md",
+      "line": 1,
+      "kind": "design"
+    },
+    {
+      "concept_id": "HCR-K24",
+      "path": "src/hcr/prior_policy.py",
+      "line": 21,
+      "kind": "code"
+    },
+    {
+      "concept_id": "HCR-K24",
+      "path": "experiments/exp-12-prior-scope/design.md",
+      "line": 17,
+      "kind": "design"
+    }
+  ],
+  "anchor_consistency_checked": true,
+  "semantics_proved": false,
+  "project_imported": false,
+  "tests_executed": false,
+  "inference_executed": false
+}

@@ -1,0 +1,8 @@
+{
+  "plan": "D:\\codex\\진짜미친짓\\hierarchical-convergence-circuit\\HCR-Evidence\\exp18\\r037-first.plan.json",
+  "plan_sha256": "9e5439c390691ad72b3b60ca713c66a6aee84e290f7adb4340bea2526b006900",
+  "native_trials": 32,
+  "base_cases": 8,
+  "new_training": false,
+  "automatic_retry": false
+}
