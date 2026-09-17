@@ -1,0 +1,12 @@
+test_eight_input_variants_replay (test_native_integration.NativeIntegrationTests.test_eight_input_variants_replay) ... ok
+test_frozen_memory_preserved (test_native_integration.NativeIntegrationTests.test_frozen_memory_preserved) ... ok
+test_identity_matches_historical_first_semantics (test_native_integration.NativeIntegrationTests.test_identity_matches_historical_first_semantics) ... ok
+test_identity_native_and_controller_audit (test_native_integration.NativeIntegrationTests.test_identity_native_and_controller_audit) ... ok
+test_real_three_way_readout_audit (test_native_integration.NativeIntegrationTests.test_real_three_way_readout_audit) ... ok
+test_route_only_replay (test_native_integration.NativeIntegrationTests.test_route_only_replay) ... ok
+test_zero_initial_budget_no_fake_first (test_native_integration.NativeIntegrationTests.test_zero_initial_budget_no_fake_first) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 4.881s
+
+OK

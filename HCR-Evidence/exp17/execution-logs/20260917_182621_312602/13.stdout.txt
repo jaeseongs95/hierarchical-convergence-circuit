@@ -1,0 +1,15 @@
+native trial 16/128 raw 보존
+native trial 32/128 raw 보존
+native trial 48/128 raw 보존
+native trial 64/128 raw 보존
+native trial 80/128 raw 보존
+native trial 96/128 raw 보존
+native trial 112/128 raw 보존
+native trial 128/128 raw 보존
+{
+  "raw_complete": true,
+  "native_trials": 128,
+  "native_readouts": 136,
+  "proof_policy_evaluations": 408,
+  "independent_audit_pending": true
+}

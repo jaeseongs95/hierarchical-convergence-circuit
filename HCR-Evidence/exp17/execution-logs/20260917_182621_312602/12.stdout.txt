@@ -1,0 +1,7 @@
+{
+  "plan": "D:\\codex\\진짜미친짓\\hierarchical-convergence-circuit\\HCR-Evidence\\exp17\\r036-first.plan.json",
+  "native_trials": 128,
+  "readouts": "data dependent: first native decision and every actual continuation readout",
+  "proof_policies_per_readout": 3,
+  "source_native_audited_in_this_step": false
+}

@@ -1,0 +1,7 @@
+{
+  "verified": true,
+  "release": "R0.3.6 / EXP-17",
+  "dependencies_checked": 95,
+  "addon_files_checked": 29,
+  "native_source_modified": false
+}

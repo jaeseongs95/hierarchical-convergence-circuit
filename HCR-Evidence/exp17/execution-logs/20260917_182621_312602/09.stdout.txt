@@ -1,0 +1,112 @@
+test_activation_gap (test_diagnostics.DiagnosticTests.test_activation_gap) ... ok
+test_budget_unresolved_separate_reason (test_diagnostics.DiagnosticTests.test_budget_unresolved_separate_reason) ... ok
+test_canonical_does_not_mutate (test_diagnostics.DiagnosticTests.test_canonical_does_not_mutate) ... ok
+test_canonical_route_after_valid_posthoc_fixture_transform (test_diagnostics.DiagnosticTests.test_canonical_route_after_valid_posthoc_fixture_transform) ... ok
+test_hidden_world_wrong_type_rejected (test_diagnostics.DiagnosticTests.test_hidden_world_wrong_type_rejected) ... ok
+test_identifiability_matches_all_completions (test_diagnostics.DiagnosticTests.test_identifiability_matches_all_completions) ... ok
+test_identifiable_alternative (test_diagnostics.DiagnosticTests.test_identifiable_alternative) ... ok
+test_information_underdetermined_label (test_diagnostics.DiagnosticTests.test_information_underdetermined_label) ... ok
+test_missing_information (test_diagnostics.DiagnosticTests.test_missing_information) ... ok
+test_negative_cut (test_diagnostics.DiagnosticTests.test_negative_cut) ... ok
+test_proposal_partial_or_cycle_not_complete (test_diagnostics.DiagnosticTests.test_proposal_partial_or_cycle_not_complete) ... ok
+test_proposed_is_not_completed (test_diagnostics.DiagnosticTests.test_proposed_is_not_completed) ... ok
+test_raw_nonpositive_not_named_prior_cause (test_diagnostics.DiagnosticTests.test_raw_nonpositive_not_named_prior_cause) ... ok
+test_threshold_boundary_unknown (test_diagnostics.DiagnosticTests.test_threshold_boundary_unknown) ... ok
+test_unknown_proof_is_not_global_information_gap (test_diagnostics.DiagnosticTests.test_unknown_proof_is_not_global_information_gap) ... ok
+test_unproposed_not_completed (test_diagnostics.DiagnosticTests.test_unproposed_not_completed) ... ok
+test_zero_is_unknown (test_diagnostics.DiagnosticTests.test_zero_is_unknown) ... ok
+test_auditor_does_not_call_production (test_entrypoints.EntrypointTests.test_auditor_does_not_call_production) ... ok
+test_cli_help (test_entrypoints.EntrypointTests.test_cli_help) ... ok
+test_cli_requires_source (test_entrypoints.EntrypointTests.test_cli_requires_source) ... ok
+test_current_files_parse_python312 (test_entrypoints.EntrypointTests.test_current_files_parse_python312) ... ok
+test_no_generate_without_plan (test_entrypoints.EntrypointTests.test_no_generate_without_plan) ... ok
+test_no_native_mutating_output_transform (test_entrypoints.EntrypointTests.test_no_native_mutating_output_transform) ... ok
+test_producer_does_not_import_diagnostics_or_truth (test_entrypoints.EntrypointTests.test_producer_does_not_import_diagnostics_or_truth) ... ok
+test_runner_help (test_entrypoints.EntrypointTests.test_runner_help) ... Exception in thread Thread-7 (_readerthread):
+Traceback (most recent call last):
+  File "C:\Users\sjs95\AppData\Local\Programs\Python\Python312\Lib\threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "C:\Users\sjs95\AppData\Local\Programs\Python\Python312\Lib\threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\sjs95\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 1599, in _readerthread
+    buffer.append(fh.read())
+                  ^^^^^^^^^
+  File "<frozen codecs>", line 322, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb1 in position 108: invalid start byte
+ok
+test_separate_process_stages (test_entrypoints.EntrypointTests.test_separate_process_stages) ... ok
+test_alias_only_preserves_edge_position (test_input_transform.TransformTests.test_alias_only_preserves_edge_position) ... ok
+test_all_variants_audit (test_input_transform.TransformTests.test_all_variants_audit) ... ok
+test_bool_score_rejected (test_input_transform.TransformTests.test_bool_score_rejected) ... ok
+test_duplicate_edge_rejected (test_input_transform.TransformTests.test_duplicate_edge_rejected) ... ok
+test_eight_unique_variants (test_input_transform.TransformTests.test_eight_unique_variants) ... ok
+test_episode_and_revision_preserved (test_input_transform.TransformTests.test_episode_and_revision_preserved) ... ok
+test_hidden_truth_rejected (test_input_transform.TransformTests.test_hidden_truth_rejected) ... ok
+test_identity_exact (test_input_transform.TransformTests.test_identity_exact) ... ok
+test_integer_variant_flag_rejected (test_input_transform.TransformTests.test_integer_variant_flag_rejected) ... ok
+test_matrix_128 (test_input_transform.TransformTests.test_matrix_128) ... ok
+test_matrix_does_not_receive_world (test_input_transform.TransformTests.test_matrix_does_not_receive_world) ... ok
+test_mutated_endpoint_fails (test_input_transform.TransformTests.test_mutated_endpoint_fails) ... ok
+test_mutated_map_fails (test_input_transform.TransformTests.test_mutated_map_fails) ... ok
+test_mutated_score_fails_independent_audit (test_input_transform.TransformTests.test_mutated_score_fails_independent_audit) ... ok
+test_no_independent_path_order_factor (test_input_transform.TransformTests.test_no_independent_path_order_factor) ... ok
+test_no_posthoc_state (test_input_transform.TransformTests.test_no_posthoc_state) ... ok
+test_nonfinite_score_rejected (test_input_transform.TransformTests.test_nonfinite_score_rejected) ... ok
+test_selfloop_rejected (test_input_transform.TransformTests.test_selfloop_rejected) ... ok
+test_unknown_variant_rejected (test_input_transform.TransformTests.test_unknown_variant_rejected) ... ok
+test_world_reachability_preserved_all_assignments (test_input_transform.TransformTests.test_world_reachability_preserved_all_assignments) ... ok
+test_bool_integer_confusion_rejected (test_plan_and_sources.PlanTests.test_bool_integer_confusion_rejected) ... ok
+test_conditions_drift_rejected (test_plan_and_sources.PlanTests.test_conditions_drift_rejected) ... ok
+test_matrix_drift_rejected (test_plan_and_sources.PlanTests.test_matrix_drift_rejected) ... ok
+test_memory_hash_change_rejected (test_plan_and_sources.PlanTests.test_memory_hash_change_rejected) ... ok
+test_plan_has_no_world_in_worker_cases (test_plan_and_sources.PlanTests.test_plan_has_no_world_in_worker_cases) ... ok
+test_plan_not_inside_source (test_plan_and_sources.PlanTests.test_plan_not_inside_source) ... ok
+test_plan_population_128 (test_plan_and_sources.PlanTests.test_plan_population_128) ... ok
+test_plan_writes_only_new_path (test_plan_and_sources.PlanTests.test_plan_writes_only_new_path) ... ok
+test_seed_checksum_rejected (test_plan_and_sources.PlanTests.test_seed_checksum_rejected) ... ok
+test_source_change_rejected (test_plan_and_sources.PlanTests.test_source_change_rejected) ... ok
+test_tool_change_rejected (test_plan_and_sources.PlanTests.test_tool_change_rejected) ... ok
+test_verify_plan_does_not_need_original_source_path (test_plan_and_sources.PlanTests.test_verify_plan_does_not_need_original_source_path) ... ok
+test_analysis_not_overwritten (test_protocol.ProtocolTests.test_analysis_not_overwritten) ... ok
+test_empty_population_not_hidden (test_protocol.ProtocolTests.test_empty_population_not_hidden) ... ok
+test_existing_run_not_overwritten (test_protocol.ProtocolTests.test_existing_run_not_overwritten) ... ok
+test_extra_file_rejected (test_protocol.ProtocolTests.test_extra_file_rejected) ... ok
+test_failure_preserves_partial_and_does_not_retry (test_protocol.ProtocolTests.test_failure_preserves_partial_and_does_not_retry) ... ok
+test_generate_audit_verify_pipeline (test_protocol.ProtocolTests.test_generate_audit_verify_pipeline) ... ok
+test_manifest_missing_raw_rejected (test_protocol.ProtocolTests.test_manifest_missing_raw_rejected) ... ok
+test_native_receives_only_public_observation (test_protocol.ProtocolTests.test_native_receives_only_public_observation) ... ok
+test_nested_output_rejected (test_protocol.ProtocolTests.test_nested_output_rejected) ... ok
+test_raw_first_attempts_present (test_protocol.ProtocolTests.test_raw_first_attempts_present) ... ok
+test_rehashed_bad_selector_detected (test_protocol.ProtocolTests.test_rehashed_bad_selector_detected) ... ok
+test_rehashed_bad_stream_detected (test_protocol.ProtocolTests.test_rehashed_bad_stream_detected) ... ok
+test_rehashed_bad_transform_detected (test_protocol.ProtocolTests.test_rehashed_bad_transform_detected) ... ok
+test_source_untouched (test_protocol.ProtocolTests.test_source_untouched) ... ok
+test_summary_tampering_detected (test_protocol.ProtocolTests.test_summary_tampering_detected) ... ok
+test_actual_selector_independent_proof_audit (test_readout_audit.ReadoutAuditTests.test_actual_selector_independent_proof_audit) ... ok
+test_cost_inventory (test_readout_audit.ReadoutAuditTests.test_cost_inventory) ... ok
+test_extra_readout_rejected (test_readout_audit.ReadoutAuditTests.test_extra_readout_rejected) ... ok
+test_first_and_last_markers_do_not_duplicate_rows (test_readout_audit.ReadoutAuditTests.test_first_and_last_markers_do_not_duplicate_rows) ... ok
+test_input_corruption_rejected (test_readout_audit.ReadoutAuditTests.test_input_corruption_rejected) ... ok
+test_missing_policy_rejected (test_readout_audit.ReadoutAuditTests.test_missing_policy_rejected) ... ok
+test_native_rebuild_wrong_choice_rejected (test_readout_audit.ReadoutAuditTests.test_native_rebuild_wrong_choice_rejected) ... ok
+test_original_gate_disagreement_rejected (test_readout_audit.ReadoutAuditTests.test_original_gate_disagreement_rejected) ... ok
+test_parent_corruption_rejected (test_readout_audit.ReadoutAuditTests.test_parent_corruption_rejected) ... ok
+test_rehashed_changed_value_rejected (test_readout_audit.ReadoutAuditTests.test_rehashed_changed_value_rejected) ... ok
+test_source_candidate_corruption_rejected (test_readout_audit.ReadoutAuditTests.test_source_candidate_corruption_rejected) ... ok
+test_wrong_depth_rejected (test_readout_audit.ReadoutAuditTests.test_wrong_depth_rejected) ... ok
+test_wrong_world_does_not_invalidate_audit (test_readout_audit.ReadoutAuditTests.test_wrong_world_does_not_invalidate_audit) ... ok
+test_actual_activation_difference (test_reporting.ReportingTests.test_actual_activation_difference) ... ok
+test_initial_no_readout_separate (test_reporting.ReportingTests.test_initial_no_readout_separate) ... ok
+test_missing_variant_reported (test_reporting.ReportingTests.test_missing_variant_reported) ... ok
+test_native_unmeasured_not_zero (test_reporting.ReportingTests.test_native_unmeasured_not_zero) ... ok
+test_native_work_not_tripled_by_policies (test_reporting.ReportingTests.test_native_work_not_tripled_by_policies) ... ok
+test_no_activation_is_unmeasured (test_reporting.ReportingTests.test_no_activation_is_unmeasured) ... ok
+test_noninvariance_kept_not_failure (test_reporting.ReportingTests.test_noninvariance_kept_not_failure) ... ok
+test_output_and_route_invariance_differ (test_reporting.ReportingTests.test_output_and_route_invariance_differ) ... ok
+test_render_and_csv (test_reporting.ReportingTests.test_render_and_csv) ... ok
+test_worlds_not_counted_as_independent_states (test_reporting.ReportingTests.test_worlds_not_counted_as_independent_states) ... ok
+
+----------------------------------------------------------------------
+Ran 96 tests in 21.076s
+
+OK
