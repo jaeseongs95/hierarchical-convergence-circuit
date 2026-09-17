@@ -1,0 +1,34 @@
+[
+  {
+    "file": "R037_MANIFEST.json",
+    "git_blob": "68050e726232796f7c6a1f2be2d1a51f64a32442",
+    "files_checked": 34,
+    "verified": true
+  },
+  {
+    "file": "R038_MANIFEST.json",
+    "git_blob": "6905f5c48cf257d1088f7bf605e18b2eb1421d58",
+    "files_checked": 34,
+    "verified": true
+  },
+  {
+    "file": "tools/r035_frozen_selection/__init__.py",
+    "git_blob": "cdf2ecbb33cb7336249b07edab0ab4109ba922f6",
+    "verified": true
+  },
+  {
+    "file": "tools/r035_frozen_selection/contracts.py",
+    "git_blob": "b22321250f729450cc04917321a49fbae5df4970",
+    "verified": true
+  },
+  {
+    "file": "tools/r035_frozen_selection/selection.py",
+    "git_blob": "e5b83efa7126cfdfff22cedbdef8635fbd294b7a",
+    "verified": true
+  },
+  {
+    "file": "tools/r035_frozen_selection/audit.py",
+    "git_blob": "b01f6e9fb6f9c81bfbb6b9e9cbef8174a89d0527",
+    "verified": true
+  }
+]

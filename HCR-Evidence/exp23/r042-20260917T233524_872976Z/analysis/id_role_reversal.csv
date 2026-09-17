@@ -1,0 +1,7 @@
+branch_order,identity_max_minus_min_ticks,renamed_max_minus_min_ticks,strict_cost_order_reversed,exact_cost_exchange,all_four_outcomes_equal
+SMD,68,-68,True,True,True
+SDM,68,-68,True,True,True
+MSD,68,-68,True,True,True
+MDS,68,-68,True,True,True
+DSM,68,-68,True,True,True
+DMS,68,-68,True,True,True

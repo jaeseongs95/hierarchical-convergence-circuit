@@ -1,0 +1,22 @@
+{
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "test_method_counts": {
+    "r041_unit": 115,
+    "r040_regression": 75,
+    "r038_regression": 72,
+    "r037_regression": 93
+  },
+  "unique_test_methods": 355,
+  "synthetic_control_and_reporting": true,
+  "native_integration_executed": false,
+  "native_integration_planned_sessions": 61,
+  "main_experiment_executed": false,
+  "main_experiment_planned_sessions": 108,
+  "windows_CMD_PowerShell_executed": false,
+  "python312_interpreter_executed": false,
+  "python312_syntax_checked": true,
+  "git_write_performed": false,
+  "development_failures": "두 로그는 복제한 테스트의 이전 기준 커밋/버전 기대값 잔존. 테스트 명세를 EXP21로 갱신함. native 실패가 아님.",
+  "actual_limit": "이 컨테이너에 전체 src/hcr 및 EXP21 원자료 사본이 없으며 직접 GitHub 네트워크 접근도 연결되지 않음."
+}

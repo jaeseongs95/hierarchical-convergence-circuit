@@ -1,0 +1,5 @@
+id_variant,scheduler,permutations,min_native_ticks,max_native_ticks,tick_spread,total_native_ticks,mean_native_ticks,unique_outcomes,unique_canonical_completion_orders,unique_canonical_readout_trajectories
+identity,edge_id_min,6,102,102,0,612,102.0,1,1,1
+identity,edge_id_max,6,170,170,0,1020,170.0,1,1,1
+swap_SD,edge_id_min,6,170,170,0,1020,170.0,1,1,1
+swap_SD,edge_id_max,6,102,102,0,612,102.0,1,1,1

@@ -1,0 +1,31 @@
+{
+  "python_files": 24,
+  "python_3_12_grammar_passed": true,
+  "current_interpreter_compile_passed": true,
+  "files": [
+    "Run-HCR-R042.py",
+    "scripts/r042_cli.py",
+    "scripts/verify_r042.py",
+    "tools/r042_id_role_isolation/__init__.py",
+    "tools/r042_id_role_isolation/audit.py",
+    "tools/r042_id_role_isolation/baseline_audit.py",
+    "tools/r042_id_role_isolation/cli.py",
+    "tools/r042_id_role_isolation/contracts.py",
+    "tools/r042_id_role_isolation/input_audit.py",
+    "tools/r042_id_role_isolation/native_tests/test_native_integration.py",
+    "tools/r042_id_role_isolation/protocol.py",
+    "tools/r042_id_role_isolation/reporting.py",
+    "tools/r042_id_role_isolation/runtime.py",
+    "tools/r042_id_role_isolation/sources.py",
+    "tools/r042_id_role_isolation/spec.py",
+    "tools/r042_id_role_isolation/storage.py",
+    "tools/r042_id_role_isolation/tests/__init__.py",
+    "tools/r042_id_role_isolation/tests/fixtures.py",
+    "tools/r042_id_role_isolation/tests/test_input_contract.py",
+    "tools/r042_id_role_isolation/tests/test_reporting.py",
+    "tools/r042_id_role_isolation/tests/test_source_lineage.py",
+    "tools/r042_id_role_isolation/tests/test_storage_and_pipeline.py",
+    "tools/r042_id_role_isolation/trajectory.py",
+    "tools/r042_id_role_isolation/transform.py"
+  ]
+}
