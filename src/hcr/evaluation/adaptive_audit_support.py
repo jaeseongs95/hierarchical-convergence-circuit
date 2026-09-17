@@ -118,7 +118,8 @@ def pool_network(obs, records, memory, config):
     return dict(groups=groups, links=links, paths=paths, edge_count=len(obs.edges)), drives, metadata, instantiated
 
 
-def decision_network(obs, routes, config):
+def decision_network(obs, routes, config, *, judgment_prior="legacy"):
+    require(judgment_prior in ("legacy", "route_only"), "unknown judgment policy")
     program = chain_program(len(obs.edges), [r['path'] for r in routes], config.kernel)
     drives = {'e:' + str(i): config.kernel.evidence_gain * (e.score or 0.0) for i, e in enumerate(obs.edges)}
     priors = []
@@ -128,8 +129,8 @@ def decision_network(obs, routes, config):
             require(route['path'][use['offset']:use['offset'] + len(slots)] == slots, 'circuit route span')
             for j in range(use['offset'], use['offset'] + len(slots)):
                 key = f'p:{pi}:{j}'
-                drives[key] = drives.get(key, 0.0) + use['prior']
-            priors.append(use['prior'])
+                drives[key] = drives.get(key, 0.0) + (use['prior'] if judgment_prior == 'legacy' else 0.0)
+            priors.append(use['prior'] if judgment_prior == 'legacy' else 0.0)
     drives['goal'] = max(priors, default=0.0)
     return program, drives
 

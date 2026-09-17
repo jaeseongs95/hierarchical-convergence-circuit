@@ -33,10 +33,13 @@ class ExecutionState:
     failure_reason: str | None = None
     ready: bool = False
     active_seconds: float = 0.0
+    judgment_prior: str = "legacy"
 
     def document(self):
         data = {f.name: codec.plain(getattr(self, f.name)) for f in fields(self)
-                if f.name not in ('workspace', 'cost')}
+                if f.name not in ('workspace', 'cost', 'judgment_prior')}
+        from .prior_policy import policy_fields
+        data.update(policy_fields(self.judgment_prior))
         ws = self.workspace
         data['cost'] = self.cost.snapshot()
         data['workspace'] = dict(frontier=codec.plain(ws.frontier), routes=codec.plain(ws.routes),
@@ -46,7 +49,9 @@ class ExecutionState:
 
 def engine_document(engine):
     """Trace는 별도 보존한다. 반환 객체를 수정해도 실행 객체는 바뀌지 않는다."""
+    from .prior_policy import policy_fields
     return dict(config=codec.plain(engine.config), memory=engine.memory.document(),
+        **policy_fields(engine.judgment_prior),
         switches=dict(use_circuits=engine.use_circuits, top_down=engine.top_down,
                       allow_reexpansion=engine.allow_reexpansion), attempts=dict(engine._attempts),
         held={k: dict(observation=codec.plain(v[0]), decision=codec.plain(v[1]),
@@ -69,7 +74,9 @@ def restore_engine(document, records):
     from .workspace import AdaptiveWorkspace
     from .model import Group, Link
     from .trace import Trace
+    from .prior_policy import read_scope
     engine = AdaptiveEngine.__new__(AdaptiveEngine)
+    engine._judgment_prior = read_scope(document)
     engine.config = codec.adaptive_config_from(document['config'])
     engine.memory = AdaptiveMemory.from_document(document['memory'], engine.config)
     engine.trace = Trace()
@@ -86,7 +93,10 @@ def restore_engine(document, records):
                         for k, v in document['requests'].items()}
     engine._pending = None
     if document['pending'] is not None:
-        raw = document['pending']
+        raw = dict(document['pending'])
+        pending_scope = read_scope(raw)
+        raw.pop('prior_policy', None)
+        raw['judgment_prior'] = pending_scope
         obs = codec.observation_from(raw['observation'])
         cost = AdaptiveCost(**{f.name: raw['cost'][f.name] for f in fields(AdaptiveCost)})
         ws = AdaptiveWorkspace.__new__(AdaptiveWorkspace)

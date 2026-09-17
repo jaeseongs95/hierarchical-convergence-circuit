@@ -202,8 +202,10 @@ class AdaptiveWorkspace:
                                             complete=self.complete))
 
 
-def adaptive_network(workspace: AdaptiveWorkspace):
+def adaptive_network(workspace: AdaptiveWorkspace, *, judgment_prior="legacy"):
     """이미 도달한 후보 경로만 신호 graph로 만든다. 미탐색 경로를 정답기로 채우지 않는다."""
+    from .prior_policy import validate_scope, policy_fields
+    validate_scope(judgment_prior)
     obs, config, cost = workspace.observation, workspace.config.kernel, workspace.cost
     paths = tuple(prefix.path for prefix in workspace.routes)
     program = make_program(len(obs.edges), paths, config, cost)
@@ -217,7 +219,8 @@ def adaptive_network(workspace: AdaptiveWorkspace):
                 raise ContractError('applied circuit no longer binds to its route span')
             for j in range(use.offset, use.offset + len(use.binding.edge_order)):
                 key = f'p:{pi}:{j}'
-                drives[key] = drives.get(key, 0.0) + use.prior
-            priors.append(use.prior)
+                drives[key] = drives.get(key, 0.0) + (use.prior if judgment_prior == 'legacy' else 0.0)
+            priors.append(use.prior if judgment_prior == 'legacy' else 0.0)
     drives['goal'] = max(priors, default=0.0)
-    return program, drives, dict(routes=plain(workspace.routes), graph_complete=workspace.complete)
+    return program, drives, dict(routes=plain(workspace.routes), graph_complete=workspace.complete,
+                                **policy_fields(judgment_prior))

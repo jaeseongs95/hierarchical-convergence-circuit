@@ -10,14 +10,15 @@ from .state import engine_document, restore_engine
 
 SCHEMA = 'hcr-session-checkpoint-r021-v1'
 METHOD_SCHEMA = 'hcr-session-checkpoint-r03-v1'
+PRIOR_SCHEMA = 'hcr-session-checkpoint-r031-v1'
 
 
 def verify_packet(packet, *, check_source=True, expected_ref=None, expected_observation=None,
-                  expected_memory_hash=None, expected_program_digest=None):
+                  expected_memory_hash=None, expected_program_digest=None, expected_judgment_prior=None):
     try:
         return _verify_packet(packet, check_source=check_source, expected_ref=expected_ref,
                               expected_observation=expected_observation, expected_memory_hash=expected_memory_hash,
-                              expected_program_digest=expected_program_digest)
+                              expected_program_digest=expected_program_digest, expected_judgment_prior=expected_judgment_prior)
     except ContractError:
         raise
     except (KeyError, TypeError, ValueError, IndexError, AttributeError) as exc:
@@ -25,18 +26,22 @@ def verify_packet(packet, *, check_source=True, expected_ref=None, expected_obse
 
 
 def _verify_packet(packet, *, check_source=True, expected_ref=None, expected_observation=None,
-                   expected_memory_hash=None, expected_program_digest=None):
+                   expected_memory_hash=None, expected_program_digest=None, expected_judgment_prior=None):
     """기본 복원에서는 source 검사를 끌 수 없다. 검산 CLI에서만 과거 문서 범위를 제한해 읽는다."""
     from .evaluation.session_audit import verify_document
     if (not isinstance(packet, dict) or set(packet) != {'schema','document','sha256'}
-            or packet['schema'] not in (SCHEMA, METHOD_SCHEMA) or fingerprint(packet['document']) != packet['sha256']):
+            or packet['schema'] not in (SCHEMA, METHOD_SCHEMA, PRIOR_SCHEMA) or fingerprint(packet['document']) != packet['sha256']):
         raise ContractError('R0.2.1 checkpoint schema/checksum')
     doc = packet['document']
-    expected_schema = METHOD_SCHEMA if any(t['operation']=='prioritize_frontier' for t in doc['transitions']) else SCHEMA
+    expected_schema = (PRIOR_SCHEMA if 'prior_policy' in doc['engine'] else
+                       METHOD_SCHEMA if any(t['operation']=='prioritize_frontier' for t in doc['transitions']) else SCHEMA)
     if packet['schema'] != expected_schema:
         raise ContractError('session operation/schema version mismatch')
     if check_source and doc['source_hashes'] != session_io.source_hashes():
         raise ContractError('checkpoint/source differs; keep original source, do not rewrite old hashes')
+    from .prior_policy import read_scope, validate_scope
+    if expected_judgment_prior is not None and read_scope(doc['engine']) != validate_scope(expected_judgment_prior):
+        raise ContractError('resume judgment policy mismatch')
     result = verify_document(doc)
     last = doc['transitions'][-1]
     ref = dict(session_id=doc['session_id'], generation=last['generation'], state_hash=last['after_state'],
@@ -64,14 +69,14 @@ class AdaptiveSession:
     save/load는 generation도 기존 engine event ID도 바꾸지 않는다.
     """
     def __init__(self, config=None, memory=None, *, session_id=None, use_circuits=True,
-                 top_down=True, allow_reexpansion=True):
+                 top_down=True, allow_reexpansion=True, judgment_prior="legacy"):
         from .runtime import AdaptiveEngine
         self.session_id = session_id or 'session-' + uuid4().hex
         if not identifier(self.session_id):
             raise ContractError('session identity')
         self._sources = session_io.source_hashes()
         self._engine = AdaptiveEngine(config or AdaptiveConfig(), deepcopy(memory), use_circuits=use_circuits,
-                                      top_down=top_down, allow_reexpansion=allow_reexpansion)
+                                      top_down=top_down, allow_reexpansion=allow_reexpansion, judgment_prior=judgment_prior)
         self._transitions = []
         self._append('init', {}, 0, None)
         self.last_io = None
@@ -166,7 +171,8 @@ class AdaptiveSession:
             raise ContractError('uncommitted session state')
         doc = dict(session_id=self.session_id, source_hashes=dict(self._sources), engine=engine_document(self._engine),
                    events=self.events, transitions=deepcopy(self._transitions))
-        schema = METHOD_SCHEMA if any(t['operation']=='prioritize_frontier' for t in self._transitions) else SCHEMA
+        schema = (PRIOR_SCHEMA if 'prior_policy' in doc['engine'] else
+                  METHOD_SCHEMA if any(t['operation']=='prioritize_frontier' for t in self._transitions) else SCHEMA)
         return dict(schema=schema, document=doc, sha256=fingerprint(doc))
 
     def save(self, path: Path):

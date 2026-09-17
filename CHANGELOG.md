@@ -1,3 +1,11 @@
+# 0.3.1 — Judgment prior scope
+
+- legacy 기본 동작 유지, route_only의 최종 judgment drive 분리.
+- policy-bound checkpoint와 별도 expected-drive 검산.
+- EXP-12: 학습 3/6/9, 13개 공개 입력, 3조건, fixed network 진단.
+- 후보 단계·결측·관측 0점·외부 truth 대응·비용 분해 기록.
+- PowerShell 정책 변경 없는 Python 실행기.
+
 # 0.3.0 — 제한된 M 전문화
 
 - 기존 R0.2.1 기본 계산·학습·prior 보존.

@@ -17,6 +17,7 @@ def main(argv=None):
     start.add_argument('--memory', type=Path)
     start.add_argument('--session-id')
     start.add_argument('--graph-only', action='store_true')
+    start.add_argument('--judgment-prior', choices=('legacy','route_only'), default='legacy')
     start.add_argument('--steps', type=int, default=1)
     resume = commands.add_parser('resume', help='checkpoint 복원 후 계속 진행; 기존 파일은 보존')
     resume.add_argument('--checkpoint', type=Path, required=True)
@@ -56,7 +57,7 @@ def main(argv=None):
                 memory = AdaptiveMemory.load(args.memory, config) if args.memory else None
                 obs = codec.observation_from(codec.loads(session_io.read_bytes(args.input)))
                 session = AdaptiveSession(config, memory, session_id=args.session_id,
-                                           use_circuits=not args.graph_only)
+                                           use_circuits=not args.graph_only, judgment_prior=args.judgment_prior)
                 session.begin(obs, Mode.FROZEN_EVAL)
             else:
                 packet = codec.loads(session_io.read_bytes(args.checkpoint))

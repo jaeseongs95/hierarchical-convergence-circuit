@@ -136,8 +136,10 @@ class AdaptiveEngine:
     전체 topology 정답 solver, 실험 label에 의한 경로 분기는 없다.
     """
     def __init__(self, config=None, memory=None, trace=None, *, use_circuits=True,
-                 top_down=True, allow_reexpansion=True):
+                 top_down=True, allow_reexpansion=True, judgment_prior="legacy"):
         from .model import AdaptiveConfig
+        from .prior_policy import validate_scope, policy_fields
+        self._judgment_prior = validate_scope(judgment_prior)
         from .circuits import AdaptiveMemory
         self.config = config or AdaptiveConfig()
         if not isinstance(self.config, AdaptiveConfig):
@@ -159,7 +161,13 @@ class AdaptiveEngine:
         self._requests = {}
         self.trace.emit('r02_engine_created', dict(config=plain(self.config), config_signature=self.config.signature,
             memory_hash=self.memory.digest, memory_document=self.memory.document(),
-            use_circuits=use_circuits, top_down=top_down, allow_reexpansion=allow_reexpansion))
+            use_circuits=use_circuits, top_down=top_down, allow_reexpansion=allow_reexpansion,
+            **policy_fields(self.judgment_prior)))
+
+    @property
+    def judgment_prior(self):
+        """한 engine 수명 동안 불변인 정책. 변경 조건은 새 engine/session으로 실행한다."""
+        return self._judgment_prior
 
     def infer(self, obs: Observation, mode: Mode = Mode.FROZEN_EVAL, *, revision_of=None):
         """기존 API. 동일한 진행 코드를 끝까지 실행하는 편의 호출이다."""
@@ -171,6 +179,8 @@ class AdaptiveEngine:
     def begin(self, obs: Observation, mode: Mode = Mode.FROZEN_EVAL, *, revision_of=None):
         """R0.2.1: 새 시도 시작. 아직 dependency를 전개하지 않는다."""
         from .state import ExecutionState
+        from .prior_policy import validate_scope
+        validate_scope(self.judgment_prior)
         from .model import AdaptiveCost, MismatchSignal
         from .workspace import AdaptiveWorkspace
         if self._pending is not None or self.trace._closed:
@@ -206,7 +216,8 @@ class AdaptiveEngine:
         workspace = AdaptiveWorkspace(obs, self.config, cost, self.trace, did)
         self._pending = ExecutionState(obs, mode, revision_of, attempt, did, memory_hash, memory_version,
             self.config.signature, (self.use_circuits, self.top_down, self.allow_reexpansion), cost, workspace,
-            MismatchSignal('feedback_reopen' if forced else 'new_input', float(forced)))
+            MismatchSignal('feedback_reopen' if forced else 'new_input', float(forced)),
+            judgment_prior=self.judgment_prior)
         self._pending.active_seconds = perf_counter() - started
         return did
 
@@ -216,6 +227,7 @@ class AdaptiveEngine:
             raise ContractError('no active attempt or closed trace')
         if (p.memory_hash != self.memory.digest or p.memory_version != self.memory.version
                 or p.config_signature != self.config.signature
+                or p.judgment_prior != self.judgment_prior
                 or p.switches != (self.use_circuits, self.top_down, self.allow_reexpansion)):
             raise ContractError('active attempt configuration/memory changed')
         return p
@@ -260,14 +272,14 @@ class AdaptiveEngine:
                     ws.retire()
                 paths = tuple(r.path for r in ws.routes)
                 if paths and paths != p.settled_paths:
-                    p.program, drives, metadata = adaptive_network(ws)
+                    p.program, drives, metadata = adaptive_network(ws, judgment_prior=p.judgment_prior)
                     p.state, p.convergence, p.network_id = settle_recorded(
                         p.program, drives, self.config.kernel, cost, self.trace, p.decision_id,
                         'decision', metadata, top_down=self.top_down)
                     p.settled_paths = paths
                 candidate_value = ((p.state['goal'] >= .5) if p.program is not None
                                    and p.convergence.status == Status.STABLE_DECISION else None)
-                has_prior = any(use.prior != 0 for path in ws.routes for use in path.uses)
+                has_prior = p.judgment_prior == 'legacy' and any(use.prior != 0 for path in ws.routes for use in path.uses)
                 if not has_prior and all(e.score is None or e.score == 0 for e in obs.edges):
                     candidate_value = None
                     if p.program is not None and p.convergence.status == Status.STABLE_DECISION:

@@ -1,3 +1,11 @@
+# 진행 갱신 — R0.3.1 (2026-09-17)
+
+EXP-11 후속 분석에 따라 **prior 역할 분리**를 먼저 구현했다. [설계](R031_DESIGN.ko.md), [실행](R031_USAGE.ko.md), [EXP-12](../experiments/exp-12-prior-scope/design.md)를 따른다.
+legacy 기본 정책·학습·pool·M 교대 정책은 유지하고, route_only의 최종 learned drive 조작을 별도 조건으로 추가했다.
+R0.3.2 수정 저항/충돌 진단, R0.4 공유 dependency/consolidation을 완료한 것은 아니다. 아래 이력과 원문은 수정하지 않았다.
+
+---
+
 # 진행 갱신 — R0.3 최소 구현 (2026-09-17)
 
 8절의 제한된 M 비교를 [구현 설계](../architecture/r03-methods.ko.md)와 [EXP-11](../experiments/exp-11-method-interleaving/design.md)로 연결했다.

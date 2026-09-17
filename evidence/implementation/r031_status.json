@@ -1,0 +1,11 @@
+{
+  "schema": "hcr-r031-implementation-v1",
+  "reference_commit": "7803ec250efc950e848298ba79c141946d89c2df",
+  "scope": "judgment-prior scope and EXP-12; no change to pool, learning or M scheduler",
+  "legacy_default_preserved": true,
+  "route_only_policy_added": true,
+  "rigidity_or_consolidation_implemented": false,
+  "user_windows_run_verified_in_this_patch_session": false,
+  "validation_receipt": "see delivery VALIDATION.json",
+  "status_note": "코드/개발 검증과 사용자 실행 증거는 별도이며 테스트·실험 수용은 실제 로그를 따른다."
+}

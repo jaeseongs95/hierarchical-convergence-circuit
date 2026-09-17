@@ -32,11 +32,15 @@ def main(argv:list[str]|None=None) -> int:
     if argv and argv[0] == 'methods':
         from .method_cli import main as method_main
         return method_main(argv[1:])
+    if argv and argv[0] == 'priors':
+        from .prior_cli import main as prior_main
+        return prior_main(argv[1:])
     if argv and argv[0] == 'session':
         from .session_cli import main as session_main
         return session_main(argv[1:])
     parser=argparse.ArgumentParser(prog='hcr',description='HCR: R0.1 기준선 / R0.2 adaptive graph↔circuit 개발 엔진')
     commands=parser.add_subparsers(dest='command',required=True)
+    commands.add_parser('priors', help='R0.3.1: plan/demo/verify -- hcr priors --help')
     commands.add_parser('session', help='R0.2.1: start/resume/verify/demo — hcr session --help')
     commands.add_parser('methods', help='R0.3: demo/verify/infer — hcr methods --help')
     check=commands.add_parser('check',help='소스·단위·통합 시험. 실제 네트워크 접속 금지.')

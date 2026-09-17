@@ -11,6 +11,7 @@ from math import isfinite
 from .. import codec
 from ..model import AdaptiveCost, ContractError, Feedback, fingerprint
 from ..circuits import AdaptiveMemory
+from ..prior_policy import read_scope, policy_fields
 from ..trace import check_chain
 from .reference import validate_proof
 from .audit import require, independent_step
@@ -28,7 +29,7 @@ def _pending(s, networks, config, seconds):
             value = state['goal'] >= .5
             if value is False and s['frontier']:
                 value = None
-        unsupported = (not any(u['prior'] != 0 for r in s['routes'] for u in r['uses'])
+        unsupported = (not (read_scope(s['engine']) == 'legacy' and any(u['prior'] != 0 for r in s['routes'] for u in r['uses']))
                        and all(e.score is None or e.score == 0 for e in s['obs'].edges))
         if unsupported:
             value = None
@@ -38,6 +39,7 @@ def _pending(s, networks, config, seconds):
         value, cv['status'] = None, 'budget_exhausted'
     p, flags = s['payload'], s['engine']
     return dict(observation=codec.plain(s['obs']), mode=p['mode'], revision_of=p['revision_of'],
+        **policy_fields(read_scope(flags)),
         attempt=p['attempt'], decision_id=p['decision_id'], memory_hash=p['memory_hash'],
         memory_version=p['memory_version'], config_signature=config.signature,
         switches=[flags[k] for k in ('use_circuits', 'top_down', 'allow_reexpansion')],
@@ -65,7 +67,8 @@ def _verify_document(document, *, state_observer=None):
     require(isinstance(events, list) and 0 < len(events) <= 100000 and isinstance(journal, list)
             and 0 < len(journal) <= 10000, 'session event/generation budget')
     check_chain(events, len(events), events[-1]['sha256'])
-    require(set(core) == {'config','memory','switches','attempts','held','feedback','requests','pending'}, 'engine state fields')
+    scope = read_scope(core)
+    require(set(core) == {'config','memory','switches','attempts','held','feedback','requests','pending'} | set(policy_fields(scope)), 'engine state fields')
     config = codec.adaptive_config_from(core['config'])
     starts, decisions, networks, feedbacks, requests, attempts = {}, {}, {}, {}, {}, {}
     known_memory = set()
@@ -136,6 +139,7 @@ def _verify_document(document, *, state_observer=None):
             did = p.get('decision_id')
             if name == 'r02_engine_created':
                 require(engine is None and pending_feedback is None, 'duplicate engine initialization')
+                require(read_scope(p) == scope, 'engine/packet judgment policy mismatch')
                 require(p['config'] == codec.plain(config) and p['config_signature'] == config.signature, 'engine config')
                 require(all(type(p[k]) is bool for k in ('use_circuits', 'top_down', 'allow_reexpansion')), 'engine flag types')
                 loaded = AdaptiveMemory.from_document(p['memory_document'], config)
@@ -226,8 +230,8 @@ def _verify_document(document, *, state_observer=None):
                     s['cost'].pool_calls += 1
                 elif p['kind'] == 'decision':
                     require(bool(s['routes']), 'goal network before a goal route')
-                    expected, drives = decision_network(obs, s['routes'], config)
-                    require(p['metadata'] == dict(routes=s['routes'], graph_complete=not s['frontier']), 'decision network routes')
+                    expected, drives = decision_network(obs, s['routes'], config, judgment_prior=read_scope(s['engine']))
+                    require(p['metadata'] == dict(routes=s['routes'], graph_complete=not s['frontier'], **policy_fields(read_scope(s['engine']))), 'decision network routes')
                     s['cost'].dynamic_groups_created += len(expected['groups'])
                     s['cost'].dynamic_links_created += len(expected['links'])
                     s['last_network'] = nid
@@ -342,7 +346,7 @@ def _verify_document(document, *, state_observer=None):
                 require(p['network_id'] == s['last_network'] and p['graph_complete'] is (not s['frontier'])
                         and p['completed_paths'] == [r['path'] for r in s['routes']], 'progress state')
                 n = networks.get(s['last_network'])
-                unsupported = not any(u['prior'] != 0 for r in s['routes'] for u in r['uses']) and all(e.score is None or e.score == 0 for e in s['obs'].edges)
+                unsupported = not (read_scope(s['engine']) == 'legacy' and any(u['prior'] != 0 for r in s['routes'] for u in r['uses'])) and all(e.score is None or e.score == 0 for e in s['obs'].edges)
                 negative = n is not None and n['convergence']['status'] == 'stable_decision' and n['state']['goal'] < .5 and not unsupported
                 expected = dict(kind='negative_requires_dependency_coverage' if negative else 'unresolved_or_no_goal_candidate', magnitude=1.0, detail='')
                 require(p['mismatch'] == expected, 'mismatch did not follow the observed state')
@@ -384,7 +388,7 @@ def _verify_document(document, *, state_observer=None):
                         value = state['goal'] >= .5
                         if value is False and s['frontier']:
                             value = None
-                    unsupported = not any(u['prior'] != 0 for r in s['routes'] for u in r['uses']) and all(e.score is None or e.score == 0 for e in obs.edges)
+                    unsupported = not (read_scope(s['engine']) == 'legacy' and any(u['prior'] != 0 for r in s['routes'] for u in r['uses'])) and all(e.score is None or e.score == 0 for e in obs.edges)
                     if unsupported:
                         value = None
                         if cv['status'] == 'stable_decision':
@@ -456,7 +460,7 @@ def _verify_document(document, *, state_observer=None):
         else:
             require(seconds is None, 'idle state has active timing')
             active = None
-        current_core = dict(config=codec.plain(config), memory=memory,
+        current_core = dict(config=codec.plain(config), memory=memory, **policy_fields(scope),
             switches={k:engine[k] for k in ('use_circuits','top_down','allow_reexpansion')}, attempts=attempts,
             held={did:dict(observation=codec.plain(starts[did]['obs']), decision=d, recorded_hash=fingerprint(d),
                           memory_hash=starts[did]['payload']['memory_hash']) for did,d in decisions.items()},

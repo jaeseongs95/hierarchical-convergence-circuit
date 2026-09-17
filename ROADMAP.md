@@ -1,3 +1,11 @@
+# R0.3.1 — Prior 적용 범위 비교 (2026-09-17)
+
+R0.3 위에 legacy/route_only/graph_only 비교와 EXP-12를 추가했다. [설계](docs/R031_DESIGN.ko.md) · [실행](docs/R031_USAGE.ko.md).
+이 단계는 학습·pool·M 정책을 바꾸지 않는다. 이후 수정 정책·공유 dependency·consolidation은 직전 설계의 R0.3.2/R0.4 단계로 남긴다.
+기존 EXP-09/10/11 raw와 분석은 재작성하지 않는다.
+
+---
+
 # 현재 진행 — R0.3 최소 방법 비교
 
 EXP-10의 상태 보존 결과를 이어받아 memory 내 interleaving·typed 경로 교환·같은 총상한 대조를 추가했다.

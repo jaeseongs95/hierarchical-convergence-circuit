@@ -1,3 +1,15 @@
+# 현재 단계 — R0.3.1: prior 역할 분리 (2026-09-17)
+
+회로 선택용 prior는 유지하고, 최종 relation/goal 판단에 전달하는 learned prior만 독립 조작한다.
+기본 API는 기존 legacy 동작이다. `route_only`와 `graph_only`는 EXP-12의 명시적 대조 조건이다.
+- [구현·검증 범위](docs/R031_DESIGN.ko.md) · [적용 후 실행](docs/R031_USAGE.ko.md)
+- Windows에서는 `python -X utf8 -B Run-HCR-R031.py --out HCR-Evidence/exp12/r031-first`를 사용한다.
+- 기존 실험 증거는 유지한다. rigidity·부정 예외 학습·pool 최적화는 이 변경에 포함하지 않는다.
+
+이하 본문은 사용자의 기존 내용을 보존한 기록이다.
+
+---
+
 # 현재 상태 — R0.3 Method Interleaving / Typed Route Hints
 
 R0.2.1 상태 보존 기반 위에 제한된 M 전문화와 중간 경로 교환을 추가한다.

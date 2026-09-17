@@ -85,7 +85,7 @@
           "path": "src/hcr/runtime.py",
           "kind": "code",
           "symbol": "AdaptiveEngine.infer",
-          "normalized_sha256": "5e9ee32f6e07a56e9b31fc36a621c606d1c6ad90ec8bbf293c092a6b51de9aab"
+          "normalized_sha256": "0543ac778e9f348b845ad6a080f6ae14c92f6b0e12e8329ec52b51aa56b31fd3"
         },
         {
           "path": "architecture/r02-engine.ko.md",
@@ -329,13 +329,13 @@
           "path": "src/hcr/runtime.py",
           "kind": "code",
           "symbol": "AdaptiveEngine.feedback",
-          "normalized_sha256": "5e9ee32f6e07a56e9b31fc36a621c606d1c6ad90ec8bbf293c092a6b51de9aab"
+          "normalized_sha256": "0543ac778e9f348b845ad6a080f6ae14c92f6b0e12e8329ec52b51aa56b31fd3"
         },
         {
           "path": "src/hcr/runtime.py",
           "kind": "code",
           "symbol": "AdaptiveEngine.request_revision",
-          "normalized_sha256": "5e9ee32f6e07a56e9b31fc36a621c606d1c6ad90ec8bbf293c092a6b51de9aab"
+          "normalized_sha256": "0543ac778e9f348b845ad6a080f6ae14c92f6b0e12e8329ec52b51aa56b31fd3"
         },
         {
           "path": "docs/R02_BASELINE_PROTOCOL.ko.md",
@@ -394,13 +394,13 @@
           "path": "src/hcr/runtime.py",
           "kind": "code",
           "symbol": "Engine.infer",
-          "normalized_sha256": "5e9ee32f6e07a56e9b31fc36a621c606d1c6ad90ec8bbf293c092a6b51de9aab"
+          "normalized_sha256": "0543ac778e9f348b845ad6a080f6ae14c92f6b0e12e8329ec52b51aa56b31fd3"
         },
         {
           "path": "src/hcr/runtime.py",
           "kind": "code",
           "symbol": "AdaptiveEngine.infer",
-          "normalized_sha256": "5e9ee32f6e07a56e9b31fc36a621c606d1c6ad90ec8bbf293c092a6b51de9aab"
+          "normalized_sha256": "0543ac778e9f348b845ad6a080f6ae14c92f6b0e12e8329ec52b51aa56b31fd3"
         },
         {
           "path": "src/hcr/proof.py",
@@ -417,7 +417,7 @@
           "path": "src/hcr/runtime.py",
           "kind": "code",
           "symbol": "AdaptiveEngine.finish",
-          "normalized_sha256": "5e9ee32f6e07a56e9b31fc36a621c606d1c6ad90ec8bbf293c092a6b51de9aab"
+          "normalized_sha256": "0543ac778e9f348b845ad6a080f6ae14c92f6b0e12e8329ec52b51aa56b31fd3"
         }
       ]
     },
@@ -526,7 +526,7 @@
           "path": "src/hcr/sessions.py",
           "kind": "code",
           "symbol": "AdaptiveSession",
-          "normalized_sha256": "907005cfd3722ff3eb614fabbc6c2aa057099b6321f79ae341204eca784b70d3"
+          "normalized_sha256": "28c05c61a2742dd82b787160220260d6c6e802b7defdd2d0a838f1a23165b7e7"
         }
       ]
     },
@@ -708,7 +708,7 @@
           "path": "src/hcr/runtime.py",
           "kind": "code",
           "symbol": "AdaptiveEngine.feedback",
-          "normalized_sha256": "5e9ee32f6e07a56e9b31fc36a621c606d1c6ad90ec8bbf293c092a6b51de9aab"
+          "normalized_sha256": "0543ac778e9f348b845ad6a080f6ae14c92f6b0e12e8329ec52b51aa56b31fd3"
         },
         {
           "path": "src/hcr/dynamics.py",
@@ -790,7 +790,8 @@
         "EXP-07",
         "EXP-09",
         "R0.7",
-        "B1"
+        "B1",
+        "R0.3.1"
       ],
       "sources": [
         "S01",
@@ -813,6 +814,17 @@
           "path": "experiments/exp-07-attractor-revisability/design.md",
           "kind": "design",
           "contains": "EXP-07"
+        },
+        {
+          "path": "src/hcr/prior_policy.py",
+          "kind": "code",
+          "symbol": "PriorPolicy",
+          "normalized_sha256": "6191c43b7d6cfe471a3bf0c0f6c182e08c284094cfe6100a5089e817cfe3ef2d"
+        },
+        {
+          "path": "experiments/exp-12-prior-scope/design.md",
+          "kind": "design",
+          "contains": "route_only"
         }
       ]
     }

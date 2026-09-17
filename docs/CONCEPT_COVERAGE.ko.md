@@ -1,3 +1,10 @@
+# R0.3.1 반영
+
+K09/K24에 prior 적용 범위 비교 구현을 연결했다. 기존 지위는 유지하며 습관/rigidity/consolidation을 입증된 개념으로 승격하지 않는다.
+기본 runtime·session anchor는 대응 정의를 재검토하고 현재 hash로 갱신했다. 관련 설계는 [R0.3.1](R031_DESIGN.ko.md)이다.
+
+---
+
 # R0.3 반영
 
 HCR-K13은 **implemented_scoped**로 갱신한다. 범위는 두 수작업 M profile, 메모리 내 교대,
