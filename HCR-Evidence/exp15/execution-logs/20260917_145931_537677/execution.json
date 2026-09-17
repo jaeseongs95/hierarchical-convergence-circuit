@@ -1,0 +1,99 @@
+{
+  "completed": [
+    {
+      "command": [
+        "scripts/verify_release.py"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "scripts/verify_r034.py"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "hcr.py",
+        "check"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/r02_baseline/tests",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/r02_concepts/tests",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "tools/r02_concepts/check.py",
+        "--repo",
+        "D:\\codex\\진짜미친짓\\hierarchical-convergence-circuit"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "scripts/r034_cli.py",
+        "prepare",
+        "--out",
+        "D:\\codex\\진짜미친짓\\hierarchical-convergence-circuit\\HCR-Evidence\\exp15\\r034-first.plan.json"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "scripts/r034_cli.py",
+        "execute",
+        "--plan",
+        "D:\\codex\\진짜미친짓\\hierarchical-convergence-circuit\\HCR-Evidence\\exp15\\r034-first.plan.json",
+        "--out",
+        "D:\\codex\\진짜미친짓\\hierarchical-convergence-circuit\\HCR-Evidence\\exp15\\r034-first"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "scripts/r034_cli.py",
+        "audit",
+        "--run",
+        "D:\\codex\\진짜미친짓\\hierarchical-convergence-circuit\\HCR-Evidence\\exp15\\r034-first"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "scripts/r034_cli.py",
+        "verify",
+        "--run",
+        "D:\\codex\\진짜미친짓\\hierarchical-convergence-circuit\\HCR-Evidence\\exp15\\r034-first"
+      ],
+      "returncode": 0
+    }
+  ],
+  "returncode": 0,
+  "automatic_retry": false,
+  "check_only": false,
+  "out": "D:\\codex\\진짜미친짓\\hierarchical-convergence-circuit\\HCR-Evidence\\exp15\\r034-first"
+}

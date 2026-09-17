@@ -1,0 +1,33 @@
+{
+  "repo": "D:\\codex\\진짜미친짓\\hierarchical-convergence-circuit",
+  "basis_commit": "54330d01c979cb942b39558186c206b4373b758e",
+  "head": "54330d01c979cb942b39558186c206b4373b758e",
+  "baseline_sources_checked": 54,
+  "pending": [
+    "R034_MANIFEST.json",
+    "R034_README.ko.md",
+    "Run-HCR-R034.py",
+    "docs/R034_ACCEPTANCE.ko.md",
+    "docs/R034_DESIGN.ko.md",
+    "docs/R034_USAGE.ko.md",
+    "experiments/exp-15-proof-selection/design.md",
+    "scripts/r034_cli.py",
+    "scripts/verify_r034.py",
+    "src/hcr/evaluation/selection_audit.py",
+    "src/hcr/evaluation/selection_protocol.py",
+    "src/hcr/evaluation/selection_spec.py",
+    "src/hcr/selection.py",
+    "src/hcr/selection_cli.py",
+    "src/hcr/selection_control.py",
+    "src/hcr/selection_io.py",
+    "src/hcr/selection_runtime.py",
+    "tests/test_r034_selection.py",
+    "tests/test_r034_selection_control.py",
+    "tests/test_r034_selection_integration.py"
+  ],
+  "already_present": [],
+  "dry_run": false,
+  "applied": true,
+  "legacy_sources_modified": false,
+  "git_modified": false
+}

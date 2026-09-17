@@ -1,0 +1,1 @@
+{"baselines":18,"controller_replayed":true,"final_correctness_not_required":true,"original_native_readouts_independently_audited":true,"raw_manifest_sha256":"7547c772257e7bd23a2c035dcadfb027e898f1cd2602c65180f184f25caf4849","rollouts":194,"schema":"hcr-exp15-audit-v1","selection_DAGs_independently_checked":true,"source_checked":true,"streamed_action_rows":263,"verified":true}
