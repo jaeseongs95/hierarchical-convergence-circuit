@@ -1,0 +1,6 @@
+{
+  "plan": "D:\\codex\\진짜미친짓\\hierarchical-convergence-circuit\\HCR-Evidence\\exp16\\r035-first.plan.json",
+  "snapshots": 17,
+  "planned_conditions": 884,
+  "source_verified_by_native_auditor": false
+}

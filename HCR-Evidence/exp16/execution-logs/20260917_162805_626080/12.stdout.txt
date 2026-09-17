@@ -1,0 +1,14 @@
+{
+  "schema": "hcr-exp16-audit-v1",
+  "verified": true,
+  "raw_manifest_sha256": "919442744b26635291022d1755cd3e2eb5969eb27ce13bc9a2cf0c9c9051386c",
+  "source_native_reaudited": true,
+  "snapshots": 17,
+  "conditions": 884,
+  "streamed_actions": 1768,
+  "original_proof_preserved": true,
+  "proof_DAGs_independently_checked": true,
+  "transforms_independently_checked": true,
+  "identity_native_rebuild_parity_checked": true,
+  "final_correctness_not_required": true
+}

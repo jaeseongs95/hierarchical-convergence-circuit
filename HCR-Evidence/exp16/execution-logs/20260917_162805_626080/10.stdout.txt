@@ -1,0 +1,16 @@
+선택 조건 100개 raw 보존
+선택 조건 200개 raw 보존
+선택 조건 300개 raw 보존
+선택 조건 400개 raw 보존
+선택 조건 500개 raw 보존
+선택 조건 600개 raw 보존
+선택 조건 700개 raw 보존
+선택 조건 800개 raw 보존
+{
+  "raw_complete": true,
+  "snapshots": 17,
+  "conditions": 884,
+  "independent_audit_pending": true,
+  "new_native_kernel_ticks": 0,
+  "source": "D:\\codex\\진짜미친짓\\hierarchical-convergence-circuit\\HCR-Evidence\\exp15\\r034-first"
+}

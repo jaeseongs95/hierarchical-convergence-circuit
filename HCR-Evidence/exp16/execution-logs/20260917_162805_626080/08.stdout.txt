@@ -1,0 +1,13 @@
+{
+  "schema": "hcr-exp15-audit-v1",
+  "verified": true,
+  "raw_manifest_sha256": "7547c772257e7bd23a2c035dcadfb027e898f1cd2602c65180f184f25caf4849",
+  "baselines": 18,
+  "rollouts": 194,
+  "streamed_action_rows": 263,
+  "source_checked": true,
+  "original_native_readouts_independently_audited": true,
+  "selection_DAGs_independently_checked": true,
+  "controller_replayed": true,
+  "final_correctness_not_required": true
+}
