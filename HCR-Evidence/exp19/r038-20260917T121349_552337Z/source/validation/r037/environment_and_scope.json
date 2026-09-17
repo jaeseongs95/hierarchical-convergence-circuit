@@ -1,0 +1,27 @@
+{
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "syntax_target": "3.12",
+  "syntax_files_checked": 25,
+  "syntax_verified": true,
+  "native_engine_executed": false,
+  "native_regression_executed": false,
+  "exp18_production_executed": false,
+  "unit_tests": 93,
+  "synthetic_boundary_scenarios_within_unit_tests": 200,
+  "actual_baseline_selector_tests": 16,
+  "baseline_commit": "b6b57589e18cc4be97cea10515f90ffbf100218f",
+  "reference_selector_blob_checks": {
+    "contracts.py": {
+      "expected": "b22321250f729450cc04917321a49fbae5df4970",
+      "actual": "b22321250f729450cc04917321a49fbae5df4970",
+      "matched": true,
+      "included_in_additive_package": false
+    },
+    "selection.py": {
+      "expected": "e5b83efa7126cfdfff22cedbdef8635fbd294b7a",
+      "actual": "e5b83efa7126cfdfff22cedbdef8635fbd294b7a",
+      "matched": true,
+      "included_in_additive_package": false
+    }
+  }
+}
