@@ -1,0 +1,26 @@
+{
+  "schema": "hcr-r034-additive-release-v1",
+  "release": "R0.3.4",
+  "basis_commit": "54330d01c979cb942b39558186c206b4373b758e",
+  "files": {
+    "R034_README.ko.md": "d317ca8333b400f4d274fa82bae3c0760f8780e8cc38d290b5746dc3796659e2",
+    "Run-HCR-R034.py": "8732f2afc806b6fd58fa4d092b93f995d8de80b207fc537441203889ef611142",
+    "docs/R034_ACCEPTANCE.ko.md": "0d8303631369a1a6b29f11d1d5b8747f8e49ad9633a94e0eeb17e07cc5ba7491",
+    "docs/R034_DESIGN.ko.md": "fd54fb427c333749d243e18cd0e8ddd3bcf7b79681426f8485a25e6a00bc2a3c",
+    "docs/R034_USAGE.ko.md": "3a42b9f958f7c3e0e81632911b4f3d19c81e4e9d42dbc35a0d9f82899390768f",
+    "experiments/exp-15-proof-selection/design.md": "62b577f19b2ef2064dd79fb1dbe48f1c0d3d036991b716c14feb072ac19d3e60",
+    "scripts/r034_cli.py": "b806af5d1632c7d637e99cd1fbed9b0e6d74d26f362806551e26ae6a31e39e2b",
+    "scripts/verify_r034.py": "b7cbbae7b7f5bbdfaadc811534f8ac01cddb8232fe5231e228431250676b1fbc",
+    "src/hcr/evaluation/selection_audit.py": "8c1f1db8a2b92142308a2f6a79956dcc532514210651280cc302848f2c72b567",
+    "src/hcr/evaluation/selection_protocol.py": "f79b43b4da18e0bc459bef096e55cfb4432313a474145d198ca2fcce0038a48b",
+    "src/hcr/evaluation/selection_spec.py": "1d97cc1c84a6f8441db7f07b1a432fd6ab0dbb942dac19158b4642ad05e4abbc",
+    "src/hcr/selection.py": "c1cfe4dae9b4994b31d762f744e004ab57c8486b646b8223ea9966dda8358b80",
+    "src/hcr/selection_cli.py": "643a3c31b6c9080e7edf7168e209c51d3ca0a8f3993ba8d53c58e102d8a8aa08",
+    "src/hcr/selection_control.py": "8f830c8ea46be24ac415d3d992d2322a7cd1cf903d0120b3e4f6118cf91e92dc",
+    "src/hcr/selection_io.py": "54cde05eb7b6d8ab0452b5856ec801e9e701791056706a5005fe509e8873dccc",
+    "src/hcr/selection_runtime.py": "919de4f477f56dcf186201789338376ed97dfc3dafdad469dddba74e638bef19",
+    "tests/test_r034_selection.py": "6b3dcf594cd09acf78f023330af456999f72aeea4d2ae8782db4dbf54bc2b4e4",
+    "tests/test_r034_selection_control.py": "f886df36ff65c79c9e2b83480529f797f6b772bbf2d8efb4d78920c59b82007a",
+    "tests/test_r034_selection_integration.py": "2ccf21babbdb160460e504bc19cb9b76d0ce18e23b3f6530b92ddaa443be7caf"
+  }
+}

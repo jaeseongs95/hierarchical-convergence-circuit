@@ -1,0 +1,7 @@
+scope,arm,input_order_tick_spread,edge_id_min_tick_spread,tick_spread_reduction,input_order_completion_orders,edge_id_min_completion_orders,input_order_trajectories,edge_id_min_trajectories,all_paired_final_outcomes_equal,finding,interpretation
+legacy,native,0,0,0,2,1,2,1,True,no_input_order_tick_gap,controlled_scheduler_intervention; not_complete_causal_mediation_proof
+legacy,posthoc_support,0,0,0,2,1,2,1,True,no_input_order_tick_gap,controlled_scheduler_intervention; not_complete_causal_mediation_proof
+legacy,online_support,68,0,68,2,1,2,1,True,tick_gap_removed,controlled_scheduler_intervention; not_complete_causal_mediation_proof
+route_only,native,98,0,98,2,1,2,1,True,tick_gap_removed,controlled_scheduler_intervention; not_complete_causal_mediation_proof
+route_only,posthoc_support,98,0,98,2,1,2,1,True,tick_gap_removed,controlled_scheduler_intervention; not_complete_causal_mediation_proof
+route_only,online_support,98,0,98,2,1,2,1,True,tick_gap_removed,controlled_scheduler_intervention; not_complete_causal_mediation_proof

@@ -1,0 +1,4 @@
+Python: 3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]
+Python 3.12 grammar parse: 25 / 25 PASS
+Compile: 25 / 25 PASS
+Execution of whole native engine: NOT PERFORMED

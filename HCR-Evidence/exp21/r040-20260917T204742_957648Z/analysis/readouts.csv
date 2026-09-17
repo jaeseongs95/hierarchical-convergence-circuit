@@ -1,0 +1,136 @@
+scheduler,trial_id,scope,arm,branch_order,ordinal,native_ticks,raw_value,native_accepted,policy_accepted,native_D_DAG,policy_D_DAG,frontier_count,differential_opportunity,completed_paths_edge_ids,supported_completed_edge_ids
+input_order,t0000,legacy,native,SMD,0,68,True,False,False,2,2,2,False,"[[""e2"", ""e3""]]",[]
+input_order,t0000,legacy,native,SMD,1,102,True,False,False,2,2,1,True,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+input_order,t0000,legacy,native,SMD,2,170,True,False,False,2,2,0,False,"[[""e2"", ""e3""], [""e0"", ""e1""], [""e4"", ""e5"", ""e6""]]","[[""e0"", ""e1""]]"
+input_order,t0001,legacy,posthoc_support,SMD,0,68,True,False,False,2,2,2,False,"[[""e2"", ""e3""]]",[]
+input_order,t0001,legacy,posthoc_support,SMD,1,102,True,False,False,2,2,1,True,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+input_order,t0001,legacy,posthoc_support,SMD,2,170,True,False,False,2,2,0,False,"[[""e2"", ""e3""], [""e0"", ""e1""], [""e4"", ""e5"", ""e6""]]","[[""e0"", ""e1""]]"
+input_order,t0002,legacy,online_support,SMD,0,68,True,False,False,2,,2,False,"[[""e2"", ""e3""]]",[]
+input_order,t0002,legacy,online_support,SMD,1,102,True,False,True,2,2,1,True,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+input_order,t0006,route_only,posthoc_support,SMD,0,164,True,True,True,2,2,1,False,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+input_order,t0007,route_only,online_support,SMD,0,164,True,True,True,2,2,1,False,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+input_order,t0011,route_only,native,SMD,0,164,True,True,True,2,2,1,False,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+input_order,t0012,legacy,posthoc_support,SDM,0,68,True,False,False,2,2,2,False,"[[""e2"", ""e3""]]",[]
+input_order,t0012,legacy,posthoc_support,SDM,1,102,True,False,False,2,2,1,True,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+input_order,t0012,legacy,posthoc_support,SDM,2,170,True,False,False,2,2,0,False,"[[""e2"", ""e3""], [""e0"", ""e1""], [""e4"", ""e5"", ""e6""]]","[[""e0"", ""e1""]]"
+input_order,t0013,legacy,online_support,SDM,0,68,True,False,False,2,,2,False,"[[""e2"", ""e3""]]",[]
+input_order,t0013,legacy,online_support,SDM,1,102,True,False,True,2,2,1,True,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+input_order,t0017,legacy,native,SDM,0,68,True,False,False,2,2,2,False,"[[""e2"", ""e3""]]",[]
+input_order,t0017,legacy,native,SDM,1,102,True,False,False,2,2,1,True,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+input_order,t0017,legacy,native,SDM,2,170,True,False,False,2,2,0,False,"[[""e2"", ""e3""], [""e0"", ""e1""], [""e4"", ""e5"", ""e6""]]","[[""e0"", ""e1""]]"
+input_order,t0018,route_only,online_support,SDM,0,164,True,True,True,2,2,1,False,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+input_order,t0022,route_only,native,SDM,0,164,True,True,True,2,2,1,False,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+input_order,t0023,route_only,posthoc_support,SDM,0,164,True,True,True,2,2,1,False,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+input_order,t0024,legacy,online_support,MSD,0,68,True,False,False,2,,2,False,"[[""e2"", ""e3""]]",[]
+input_order,t0024,legacy,online_support,MSD,1,102,True,False,True,2,2,1,True,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+input_order,t0028,legacy,native,MSD,0,68,True,False,False,2,2,2,False,"[[""e2"", ""e3""]]",[]
+input_order,t0028,legacy,native,MSD,1,102,True,False,False,2,2,1,True,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+input_order,t0028,legacy,native,MSD,2,170,True,False,False,2,2,0,False,"[[""e2"", ""e3""], [""e0"", ""e1""], [""e4"", ""e5"", ""e6""]]","[[""e0"", ""e1""]]"
+input_order,t0029,legacy,posthoc_support,MSD,0,68,True,False,False,2,2,2,False,"[[""e2"", ""e3""]]",[]
+input_order,t0029,legacy,posthoc_support,MSD,1,102,True,False,False,2,2,1,True,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+input_order,t0029,legacy,posthoc_support,MSD,2,170,True,False,False,2,2,0,False,"[[""e2"", ""e3""], [""e0"", ""e1""], [""e4"", ""e5"", ""e6""]]","[[""e0"", ""e1""]]"
+input_order,t0033,route_only,native,MSD,0,164,True,True,True,2,2,1,False,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+input_order,t0034,route_only,posthoc_support,MSD,0,164,True,True,True,2,2,1,False,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+input_order,t0035,route_only,online_support,MSD,0,164,True,True,True,2,2,1,False,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+input_order,t0039,legacy,native,MDS,0,68,True,False,False,2,2,2,False,"[[""e2"", ""e3""]]",[]
+input_order,t0039,legacy,native,MDS,1,136,True,False,False,2,2,1,False,"[[""e2"", ""e3""], [""e4"", ""e5"", ""e6""]]",[]
+input_order,t0039,legacy,native,MDS,2,170,True,False,False,2,2,0,False,"[[""e2"", ""e3""], [""e4"", ""e5"", ""e6""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+input_order,t0040,legacy,posthoc_support,MDS,0,68,True,False,False,2,2,2,False,"[[""e2"", ""e3""]]",[]
+input_order,t0040,legacy,posthoc_support,MDS,1,136,True,False,False,2,2,1,False,"[[""e2"", ""e3""], [""e4"", ""e5"", ""e6""]]",[]
+input_order,t0040,legacy,posthoc_support,MDS,2,170,True,False,False,2,2,0,False,"[[""e2"", ""e3""], [""e4"", ""e5"", ""e6""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+input_order,t0041,legacy,online_support,MDS,0,68,True,False,False,2,,2,False,"[[""e2"", ""e3""]]",[]
+input_order,t0041,legacy,online_support,MDS,1,136,True,False,False,2,,1,False,"[[""e2"", ""e3""], [""e4"", ""e5"", ""e6""]]",[]
+input_order,t0041,legacy,online_support,MDS,2,170,True,False,True,2,2,0,False,"[[""e2"", ""e3""], [""e4"", ""e5"", ""e6""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+input_order,t0044,route_only,native,MDS,0,262,True,True,True,2,2,0,False,"[[""e2"", ""e3""], [""e4"", ""e5"", ""e6""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+input_order,t0045,route_only,posthoc_support,MDS,0,262,True,True,True,2,2,0,False,"[[""e2"", ""e3""], [""e4"", ""e5"", ""e6""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+input_order,t0046,route_only,online_support,MDS,0,262,True,True,True,2,2,0,False,"[[""e2"", ""e3""], [""e4"", ""e5"", ""e6""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+input_order,t0050,legacy,native,DSM,0,68,True,False,False,2,2,2,False,"[[""e2"", ""e3""]]",[]
+input_order,t0050,legacy,native,DSM,1,136,True,False,False,2,2,1,False,"[[""e2"", ""e3""], [""e4"", ""e5"", ""e6""]]",[]
+input_order,t0050,legacy,native,DSM,2,170,True,False,False,2,2,0,False,"[[""e2"", ""e3""], [""e4"", ""e5"", ""e6""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+input_order,t0051,legacy,posthoc_support,DSM,0,68,True,False,False,2,2,2,False,"[[""e2"", ""e3""]]",[]
+input_order,t0051,legacy,posthoc_support,DSM,1,136,True,False,False,2,2,1,False,"[[""e2"", ""e3""], [""e4"", ""e5"", ""e6""]]",[]
+input_order,t0051,legacy,posthoc_support,DSM,2,170,True,False,False,2,2,0,False,"[[""e2"", ""e3""], [""e4"", ""e5"", ""e6""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+input_order,t0052,legacy,online_support,DSM,0,68,True,False,False,2,,2,False,"[[""e2"", ""e3""]]",[]
+input_order,t0052,legacy,online_support,DSM,1,136,True,False,False,2,,1,False,"[[""e2"", ""e3""], [""e4"", ""e5"", ""e6""]]",[]
+input_order,t0052,legacy,online_support,DSM,2,170,True,False,True,2,2,0,False,"[[""e2"", ""e3""], [""e4"", ""e5"", ""e6""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+input_order,t0055,route_only,native,DSM,0,262,True,True,True,2,2,0,False,"[[""e2"", ""e3""], [""e4"", ""e5"", ""e6""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+input_order,t0056,route_only,posthoc_support,DSM,0,262,True,True,True,2,2,0,False,"[[""e2"", ""e3""], [""e4"", ""e5"", ""e6""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+input_order,t0057,route_only,online_support,DSM,0,262,True,True,True,2,2,0,False,"[[""e2"", ""e3""], [""e4"", ""e5"", ""e6""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+input_order,t0061,legacy,native,DMS,0,68,True,False,False,2,2,2,False,"[[""e2"", ""e3""]]",[]
+input_order,t0061,legacy,native,DMS,1,136,True,False,False,2,2,1,False,"[[""e2"", ""e3""], [""e4"", ""e5"", ""e6""]]",[]
+input_order,t0061,legacy,native,DMS,2,170,True,False,False,2,2,0,False,"[[""e2"", ""e3""], [""e4"", ""e5"", ""e6""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+input_order,t0062,legacy,posthoc_support,DMS,0,68,True,False,False,2,2,2,False,"[[""e2"", ""e3""]]",[]
+input_order,t0062,legacy,posthoc_support,DMS,1,136,True,False,False,2,2,1,False,"[[""e2"", ""e3""], [""e4"", ""e5"", ""e6""]]",[]
+input_order,t0062,legacy,posthoc_support,DMS,2,170,True,False,False,2,2,0,False,"[[""e2"", ""e3""], [""e4"", ""e5"", ""e6""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+input_order,t0063,legacy,online_support,DMS,0,68,True,False,False,2,,2,False,"[[""e2"", ""e3""]]",[]
+input_order,t0063,legacy,online_support,DMS,1,136,True,False,False,2,,1,False,"[[""e2"", ""e3""], [""e4"", ""e5"", ""e6""]]",[]
+input_order,t0063,legacy,online_support,DMS,2,170,True,False,True,2,2,0,False,"[[""e2"", ""e3""], [""e4"", ""e5"", ""e6""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+input_order,t0066,route_only,native,DMS,0,262,True,True,True,2,2,0,False,"[[""e2"", ""e3""], [""e4"", ""e5"", ""e6""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+input_order,t0067,route_only,posthoc_support,DMS,0,262,True,True,True,2,2,0,False,"[[""e2"", ""e3""], [""e4"", ""e5"", ""e6""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+input_order,t0068,route_only,online_support,DMS,0,262,True,True,True,2,2,0,False,"[[""e2"", ""e3""], [""e4"", ""e5"", ""e6""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0003,legacy,native,SMD,0,68,True,False,False,2,2,2,False,"[[""e2"", ""e3""]]",[]
+edge_id_min,t0003,legacy,native,SMD,1,102,True,False,False,2,2,1,True,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0003,legacy,native,SMD,2,170,True,False,False,2,2,0,False,"[[""e2"", ""e3""], [""e0"", ""e1""], [""e4"", ""e5"", ""e6""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0004,legacy,posthoc_support,SMD,0,68,True,False,False,2,2,2,False,"[[""e2"", ""e3""]]",[]
+edge_id_min,t0004,legacy,posthoc_support,SMD,1,102,True,False,False,2,2,1,True,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0004,legacy,posthoc_support,SMD,2,170,True,False,False,2,2,0,False,"[[""e2"", ""e3""], [""e0"", ""e1""], [""e4"", ""e5"", ""e6""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0005,legacy,online_support,SMD,0,68,True,False,False,2,,2,False,"[[""e2"", ""e3""]]",[]
+edge_id_min,t0005,legacy,online_support,SMD,1,102,True,False,True,2,2,1,True,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0008,route_only,native,SMD,0,164,True,True,True,2,2,1,False,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0009,route_only,posthoc_support,SMD,0,164,True,True,True,2,2,1,False,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0010,route_only,online_support,SMD,0,164,True,True,True,2,2,1,False,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0014,legacy,native,SDM,0,68,True,False,False,2,2,2,False,"[[""e2"", ""e3""]]",[]
+edge_id_min,t0014,legacy,native,SDM,1,102,True,False,False,2,2,1,True,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0014,legacy,native,SDM,2,170,True,False,False,2,2,0,False,"[[""e2"", ""e3""], [""e0"", ""e1""], [""e4"", ""e5"", ""e6""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0015,legacy,posthoc_support,SDM,0,68,True,False,False,2,2,2,False,"[[""e2"", ""e3""]]",[]
+edge_id_min,t0015,legacy,posthoc_support,SDM,1,102,True,False,False,2,2,1,True,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0015,legacy,posthoc_support,SDM,2,170,True,False,False,2,2,0,False,"[[""e2"", ""e3""], [""e0"", ""e1""], [""e4"", ""e5"", ""e6""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0016,legacy,online_support,SDM,0,68,True,False,False,2,,2,False,"[[""e2"", ""e3""]]",[]
+edge_id_min,t0016,legacy,online_support,SDM,1,102,True,False,True,2,2,1,True,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0019,route_only,native,SDM,0,164,True,True,True,2,2,1,False,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0020,route_only,posthoc_support,SDM,0,164,True,True,True,2,2,1,False,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0021,route_only,online_support,SDM,0,164,True,True,True,2,2,1,False,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0025,legacy,native,MSD,0,68,True,False,False,2,2,2,False,"[[""e2"", ""e3""]]",[]
+edge_id_min,t0025,legacy,native,MSD,1,102,True,False,False,2,2,1,True,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0025,legacy,native,MSD,2,170,True,False,False,2,2,0,False,"[[""e2"", ""e3""], [""e0"", ""e1""], [""e4"", ""e5"", ""e6""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0026,legacy,posthoc_support,MSD,0,68,True,False,False,2,2,2,False,"[[""e2"", ""e3""]]",[]
+edge_id_min,t0026,legacy,posthoc_support,MSD,1,102,True,False,False,2,2,1,True,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0026,legacy,posthoc_support,MSD,2,170,True,False,False,2,2,0,False,"[[""e2"", ""e3""], [""e0"", ""e1""], [""e4"", ""e5"", ""e6""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0027,legacy,online_support,MSD,0,68,True,False,False,2,,2,False,"[[""e2"", ""e3""]]",[]
+edge_id_min,t0027,legacy,online_support,MSD,1,102,True,False,True,2,2,1,True,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0030,route_only,native,MSD,0,164,True,True,True,2,2,1,False,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0031,route_only,posthoc_support,MSD,0,164,True,True,True,2,2,1,False,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0032,route_only,online_support,MSD,0,164,True,True,True,2,2,1,False,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0036,legacy,native,MDS,0,68,True,False,False,2,2,2,False,"[[""e2"", ""e3""]]",[]
+edge_id_min,t0036,legacy,native,MDS,1,102,True,False,False,2,2,1,True,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0036,legacy,native,MDS,2,170,True,False,False,2,2,0,False,"[[""e2"", ""e3""], [""e0"", ""e1""], [""e4"", ""e5"", ""e6""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0037,legacy,posthoc_support,MDS,0,68,True,False,False,2,2,2,False,"[[""e2"", ""e3""]]",[]
+edge_id_min,t0037,legacy,posthoc_support,MDS,1,102,True,False,False,2,2,1,True,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0037,legacy,posthoc_support,MDS,2,170,True,False,False,2,2,0,False,"[[""e2"", ""e3""], [""e0"", ""e1""], [""e4"", ""e5"", ""e6""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0038,legacy,online_support,MDS,0,68,True,False,False,2,,2,False,"[[""e2"", ""e3""]]",[]
+edge_id_min,t0038,legacy,online_support,MDS,1,102,True,False,True,2,2,1,True,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0042,route_only,posthoc_support,MDS,0,164,True,True,True,2,2,1,False,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0043,route_only,online_support,MDS,0,164,True,True,True,2,2,1,False,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0047,route_only,native,MDS,0,164,True,True,True,2,2,1,False,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0048,legacy,posthoc_support,DSM,0,68,True,False,False,2,2,2,False,"[[""e2"", ""e3""]]",[]
+edge_id_min,t0048,legacy,posthoc_support,DSM,1,102,True,False,False,2,2,1,True,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0048,legacy,posthoc_support,DSM,2,170,True,False,False,2,2,0,False,"[[""e2"", ""e3""], [""e0"", ""e1""], [""e4"", ""e5"", ""e6""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0049,legacy,online_support,DSM,0,68,True,False,False,2,,2,False,"[[""e2"", ""e3""]]",[]
+edge_id_min,t0049,legacy,online_support,DSM,1,102,True,False,True,2,2,1,True,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0053,legacy,native,DSM,0,68,True,False,False,2,2,2,False,"[[""e2"", ""e3""]]",[]
+edge_id_min,t0053,legacy,native,DSM,1,102,True,False,False,2,2,1,True,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0053,legacy,native,DSM,2,170,True,False,False,2,2,0,False,"[[""e2"", ""e3""], [""e0"", ""e1""], [""e4"", ""e5"", ""e6""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0054,route_only,online_support,DSM,0,164,True,True,True,2,2,1,False,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0058,route_only,native,DSM,0,164,True,True,True,2,2,1,False,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0059,route_only,posthoc_support,DSM,0,164,True,True,True,2,2,1,False,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0060,legacy,online_support,DMS,0,68,True,False,False,2,,2,False,"[[""e2"", ""e3""]]",[]
+edge_id_min,t0060,legacy,online_support,DMS,1,102,True,False,True,2,2,1,True,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0064,legacy,native,DMS,0,68,True,False,False,2,2,2,False,"[[""e2"", ""e3""]]",[]
+edge_id_min,t0064,legacy,native,DMS,1,102,True,False,False,2,2,1,True,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0064,legacy,native,DMS,2,170,True,False,False,2,2,0,False,"[[""e2"", ""e3""], [""e0"", ""e1""], [""e4"", ""e5"", ""e6""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0065,legacy,posthoc_support,DMS,0,68,True,False,False,2,2,2,False,"[[""e2"", ""e3""]]",[]
+edge_id_min,t0065,legacy,posthoc_support,DMS,1,102,True,False,False,2,2,1,True,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0065,legacy,posthoc_support,DMS,2,170,True,False,False,2,2,0,False,"[[""e2"", ""e3""], [""e0"", ""e1""], [""e4"", ""e5"", ""e6""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0069,route_only,native,DMS,0,164,True,True,True,2,2,1,False,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0070,route_only,posthoc_support,DMS,0,164,True,True,True,2,2,1,False,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"
+edge_id_min,t0071,route_only,online_support,DMS,0,164,True,True,True,2,2,1,False,"[[""e2"", ""e3""], [""e0"", ""e1""]]","[[""e0"", ""e1""]]"

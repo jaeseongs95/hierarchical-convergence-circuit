@@ -1,0 +1,30 @@
+{
+  "python_runtime": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "python312_grammar_checked": true,
+  "python_files": 23,
+  "files": [
+    "Run-HCR-R039.py",
+    "scripts/install_r039.py",
+    "scripts/r039_cli.py",
+    "scripts/verify_r039.py",
+    "tools/r039_order_isolation/__init__.py",
+    "tools/r039_order_isolation/audit.py",
+    "tools/r039_order_isolation/cli.py",
+    "tools/r039_order_isolation/contracts.py",
+    "tools/r039_order_isolation/input_audit.py",
+    "tools/r039_order_isolation/native_tests/test_native_integration.py",
+    "tools/r039_order_isolation/protocol.py",
+    "tools/r039_order_isolation/reporting.py",
+    "tools/r039_order_isolation/sources.py",
+    "tools/r039_order_isolation/spec.py",
+    "tools/r039_order_isolation/tests/__init__.py",
+    "tools/r039_order_isolation/tests/_fixtures.py",
+    "tools/r039_order_isolation/tests/test_audit_pipeline.py",
+    "tools/r039_order_isolation/tests/test_input_isolation.py",
+    "tools/r039_order_isolation/tests/test_installer.py",
+    "tools/r039_order_isolation/tests/test_protocol_and_bootstrap.py",
+    "tools/r039_order_isolation/tests/test_reporting.py",
+    "tools/r039_order_isolation/tests/test_selector_and_trajectory.py",
+    "tools/r039_order_isolation/trajectory.py"
+  ]
+}
