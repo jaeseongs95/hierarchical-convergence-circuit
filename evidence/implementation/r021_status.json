@@ -1,0 +1,159 @@
+{
+  "schema": "hcr-r021-implementation-status-v1",
+  "version": "0.2.1",
+  "reference_commit": "2e67f71804b172673212822291b15885ca64f729",
+  "scope": "dependency-boundary state/save/restore/resume; R0.2 policy preserved",
+  "source_verified_against_remote": true,
+  "baseline_provenance": {
+    "commit": "2e67f71804b172673212822291b15885ca64f729",
+    "checks": {
+      "src": {
+        "actual": "ee138d8b56f9a9d0b95902c5d73b055823e0acd5",
+        "remote": "ee138d8b56f9a9d0b95902c5d73b055823e0acd5",
+        "equal": true
+      },
+      "tests": {
+        "actual": "e7ac55341c15de14f0b4670677fdc31fc7ff5dc1",
+        "remote": "e7ac55341c15de14f0b4670677fdc31fc7ff5dc1",
+        "equal": true
+      },
+      "tools": {
+        "actual": "6b4034472a0ea0dee6b007dd0b5f4b8f87ae5ec2",
+        "remote": "6b4034472a0ea0dee6b007dd0b5f4b8f87ae5ec2",
+        "equal": true
+      },
+      "configs": {
+        "actual": "addcef28cccb088d05b5eee4caf190d890cb56ea",
+        "remote": "addcef28cccb088d05b5eee4caf190d890cb56ea",
+        "equal": true
+      },
+      "architecture": {
+        "actual": "226ecebea57b467ca6507ed0e5c472d37a348d2b",
+        "remote": "226ecebea57b467ca6507ed0e5c472d37a348d2b",
+        "equal": true
+      },
+      "evidence": {
+        "actual": "5c99b7f218cce1518536dc20cc58fcb498cef432",
+        "remote": "5c99b7f218cce1518536dc20cc58fcb498cef432",
+        "equal": true
+      },
+      "experiments": {
+        "actual": "267803daa36f64b7b9188a606cf6101bd0d95b66",
+        "remote": "267803daa36f64b7b9188a606cf6101bd0d95b66",
+        "equal": true
+      },
+      "formalism": {
+        "actual": "10c2273cc06d9d3511044191d0fa50b3a532ffd5",
+        "remote": "10c2273cc06d9d3511044191d0fa50b3a532ffd5",
+        "equal": true
+      },
+      "scripts": {
+        "actual": "74f06b7b91edd9e624b00b8c174a3d93b0dd54c1",
+        "remote": "74f06b7b91edd9e624b00b8c174a3d93b0dd54c1",
+        "equal": true
+      },
+      "theory": {
+        "actual": "e02656f7793ff94d82ef9abc46785cf9d33e2301",
+        "remote": "e02656f7793ff94d82ef9abc46785cf9d33e2301",
+        "equal": true
+      },
+      "ROADMAP.md": {
+        "actual": "730b8cea37795fc46d58a954c8b8b0171a217e75",
+        "remote": "730b8cea37795fc46d58a954c8b8b0171a217e75",
+        "equal": true
+      },
+      "RELEASE_MANIFEST.json": {
+        "actual": "d2e13c791a3484dd1326c3dbcdebad80d5bf732c",
+        "remote": "d2e13c791a3484dd1326c3dbcdebad80d5bf732c",
+        "equal": true
+      },
+      "README.md": {
+        "actual": "f94f8336f083848a794c3090e3331f5fcd3b6d71",
+        "remote": "f94f8336f083848a794c3090e3331f5fcd3b6d71",
+        "equal": true
+      }
+    }
+  },
+  "implementation": {
+    "session_generation": true,
+    "atomic_in_memory_transitions": true,
+    "exclusive_json_checkpoints": true,
+    "independent_state_event_replay": true,
+    "actual_separate_process_resume_test": true,
+    "mid_kernel_pause": false,
+    "background_dynamics": false,
+    "prior_policy_changed": false,
+    "negative_exception_learning_added": false,
+    "pool_optimized": false
+  },
+  "validation": {
+    "core_tests": {
+      "run": 215,
+      "passed": 212,
+      "skipped": 3,
+      "failures": 0,
+      "errors": 0
+    },
+    "tool_tests": {
+      "baseline": 90,
+      "concept": 39,
+      "failures": 0,
+      "errors": 0
+    },
+    "concept_registry": {
+      "concepts": 24,
+      "anchors": 55,
+      "files": 20
+    },
+    "old_new_engine_comparison": {
+      "reference_commit": "2e67f71804b172673212822291b15885ca64f729",
+      "different_processes": true,
+      "pre_refactor_engine_vs_post_refactor_engine": true,
+      "profiles": 12,
+      "comparison_decisions": 78,
+      "training_inferences_per_version": 18,
+      "event_records_compared": 5870,
+      "decisions_memory_counters_events_equal": true,
+      "excluded": [
+        "cost.wall_seconds",
+        "derived event SHA chain"
+      ],
+      "canonical_result_sha256": "671fa9fcbbada76b3378d4aa3dae53c6f55724e4efbf17bee4173a1b7a0686da",
+      "scope": "개발 회귀 비교. 기존 코드를 배포 엔진에 복제/import하지 않음."
+    },
+    "standalone_demo": {
+      "actual_llm_calls": 0,
+      "actual_network_calls": 0,
+      "checkpoint_count": 52,
+      "comparison_inferences": 30,
+      "directory": "/mnt/data/hcr_r021_work/project/HCR-Evidence/exp10/dev-final-01",
+      "equivalent": true,
+      "state": "complete",
+      "training_inferences": 6,
+      "verified": true
+    },
+    "standalone_verify": {
+      "checkpoint_count": 52,
+      "external_decisions_checked": 36,
+      "final_engine_events_checked": 1624,
+      "limitations": [
+        "현재 R0.2 정책의 중단/복원 동등성 개발 검증이다.",
+        "동일한 감사 함수를 재사용한다. feedback/seed의 외부 타당성은 제시한 toy world에 대해서만 평가한다.",
+        "기록 시간은 범위·연결만 검산하며 실제 측정 시간을 재현하지 않는다."
+      ],
+      "new_inferences": 0,
+      "r02_policy_changed": false,
+      "schema": "hcr-exp10-audit-r021-v1",
+      "source_checked": true,
+      "verified": true
+    },
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "windows_execution_performed": false,
+    "powershell_native_parser_available": false,
+    "user_execution_pending": true,
+    "note": "자체시험에도 synthetic engine 실행이 포함된다. standalone demo 36회는 전체 시험의 총 추론 횟수가 아니다. EXP-09 새 연구 표본으로 합산하지 않는다."
+  },
+  "git_commit_or_push_performed": false,
+  "original_experiment_evidence_modified": false
+}

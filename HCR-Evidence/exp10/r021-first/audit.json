@@ -1,0 +1,1 @@
+{"checkpoint_count":52,"external_decisions_checked":36,"final_engine_events_checked":1624,"limitations":["현재 R0.2 정책의 중단/복원 동등성 개발 검증이다.","동일한 감사 함수를 재사용한다. feedback/seed의 외부 타당성은 제시한 toy world에 대해서만 평가한다.","기록 시간은 범위·연결만 검산하며 실제 측정 시간을 재현하지 않는다."],"new_inferences":0,"r02_policy_changed":false,"schema":"hcr-exp10-audit-r021-v1","source_checked":true,"verified":true}

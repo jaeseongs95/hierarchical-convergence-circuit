@@ -28,8 +28,13 @@ def adaptive_config_from(path: Path | None):
     return codec.adaptive_config_from(dict(kernel=data['engine'], **data['adaptive']))
 
 def main(argv:list[str]|None=None) -> int:
+    argv = list(sys.argv[1:] if argv is None else argv)
+    if argv and argv[0] == 'session':
+        from .session_cli import main as session_main
+        return session_main(argv[1:])
     parser=argparse.ArgumentParser(prog='hcr',description='HCR: R0.1 기준선 / R0.2 adaptive graph↔circuit 개발 엔진')
     commands=parser.add_subparsers(dest='command',required=True)
+    commands.add_parser('session', help='R0.2.1: start/resume/verify/demo — hcr session --help')
     check=commands.add_parser('check',help='소스·단위·통합 시험. 실제 네트워크 접속 금지.')
     check.add_argument('--out',type=Path,help='선택: 시험 영수증 JSON. 기존 파일 덮어쓰기 없음.')
     demo=commands.add_parser('demo',help='학습·동결평가·오수렴·재확장·재시작 개발 실행')

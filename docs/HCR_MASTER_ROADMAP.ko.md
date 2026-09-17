@@ -1,3 +1,12 @@
+# 진행 갱신 — R0.2.1 (2026-09-17)
+
+7절의 dependency 경계 상태 계약을 코드로 추가했다. 상세 구현·한계는 [R0.2.1 설계](../architecture/r021-session.ko.md),
+실행 상태는 [검증 기록](R021_ACCEPTANCE.ko.md), 실험은 [EXP-10](../experiments/exp-10-session-continuity/design.md)을 따른다.
+지속 latent dynamics·ReadoutGate·M 전문화·A 이동은 이 구현으로 완료된 것이 아니다.
+아래는 원래 설계 내용이며 이미 관찰된 EXP-09 결과의 현재 해석은 [기준선](R02_EXP09_OBSERVED_BASELINE.ko.md)을 우선한다.
+
+---
+
 # HCR 통합 개발·연구 로드맵
 ## R0.2에서 공통 primitive·전문화·계층·회로 학습·물리 substrate까지
 

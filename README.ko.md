@@ -1,3 +1,20 @@
+# 현재 상태 — R0.2.1 Session / Snapshot / Restore / Resume
+
+기준 commit: `2e67f71804b172673212822291b15885ca64f729`. R0.2의 실제 동작을 보존하면서 dependency 단위 중단·복원을 추가했다.
+EXP-09 요약 오류 복구는 이미 완료된 연구 기준선이며, R0.2.1은 prior/학습/효율 정책을 변경하지 않는다.
+
+- [적용·실행 명령](docs/R021_USAGE.ko.md)
+- [설계·검산 범위](architecture/r021-session.ko.md)
+- [EXP-10 동작 보존 실험](experiments/exp-10-session-continuity/design.md)
+- [작성 환경 검증과 Windows 실행 상태](docs/R021_ACCEPTANCE.ko.md)
+
+새 결과는 저장소 내부 `HCR-Evidence/exp10/새폴더`에 누적할 수 있다. 기존 run/capture/recovery와 배포 이력은 수정하지 않는다.
+`hcr.py session`으로 새 기능을 선택하며 기존 `hcr.py demo --engine r02`와 R0.1 기본 명령은 유지한다.
+
+---
+
+## 아래는 앞 단계의 기록
+
 # 현재 상태 — R0.2 + 기준선 캡처 + 개념 추적 보강
 
 사용자 실행 보고에서 R0.2 `136/136` 테스트·demo·audit 통과, 기준선 보조 도구 `16/16` 테스트와 capture 생성 완료가 확인됐다. 아래 '소스 작성·정적 검사'는 **배포 당시 기록**이며 현재 실행 상태를 되돌리지 않는다.

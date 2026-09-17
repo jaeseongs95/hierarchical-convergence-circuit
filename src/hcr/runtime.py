@@ -152,6 +152,7 @@ class AdaptiveEngine:
         self.use_circuits = use_circuits
         self.top_down = top_down
         self.allow_reexpansion = allow_reexpansion
+        self._pending = None
         self._attempts = {}
         self._held = {}
         self._feedback = {}
@@ -161,10 +162,19 @@ class AdaptiveEngine:
             use_circuits=use_circuits, top_down=top_down, allow_reexpansion=allow_reexpansion))
 
     def infer(self, obs: Observation, mode: Mode = Mode.FROZEN_EVAL, *, revision_of=None):
-        from .model import (AdaptiveCost, AdaptiveDecision, ExpansionBudget, MismatchSignal)
-        from .workspace import AdaptiveWorkspace, adaptive_network
-        from .expansion import DeterministicExpansionPolicy
-        from .dynamics import settle_recorded
+        """기존 API. 동일한 진행 코드를 끝까지 실행하는 편의 호출이다."""
+        self.begin(obs, mode, revision_of=revision_of)
+        while not self._pending.ready:
+            self.advance()
+        return self.finish()
+
+    def begin(self, obs: Observation, mode: Mode = Mode.FROZEN_EVAL, *, revision_of=None):
+        """R0.2.1: 새 시도 시작. 아직 dependency를 전개하지 않는다."""
+        from .state import ExecutionState
+        from .model import AdaptiveCost, MismatchSignal
+        from .workspace import AdaptiveWorkspace
+        if self._pending is not None or self.trace._closed:
+            raise ContractError('active attempt or closed trace')
         if not isinstance(obs, Observation) or not isinstance(mode, Mode):
             raise ContractError('typed public observation/mode required')
         if len(obs.edges) > self.config.kernel.max_edges:
@@ -194,76 +204,107 @@ class AdaptiveEngine:
         self.trace.emit('r02_attempt_started', dict(decision_id=did, observation=plain(obs), mode=mode.value,
             attempt=attempt, memory_hash=memory_hash, memory_version=memory_version, revision_of=revision_of))
         workspace = AdaptiveWorkspace(obs, self.config, cost, self.trace, did)
+        self._pending = ExecutionState(obs, mode, revision_of, attempt, did, memory_hash, memory_version,
+            self.config.signature, (self.use_circuits, self.top_down, self.allow_reexpansion), cost, workspace,
+            MismatchSignal('feedback_reopen' if forced else 'new_input', float(forced)))
+        self._pending.active_seconds = perf_counter() - started
+        return did
+
+    def _guard_pending(self):
+        p = self._pending
+        if p is None or self.trace._closed:
+            raise ContractError('no active attempt or closed trace')
+        if (p.memory_hash != self.memory.digest or p.memory_version != self.memory.version
+                or p.config_signature != self.config.signature
+                or p.switches != (self.use_circuits, self.top_down, self.allow_reexpansion)):
+            raise ContractError('active attempt configuration/memory changed')
+        return p
+
+    def advance(self):
+        """dependency step 한 개. pool/settle 내부 tick에서는 중단하지 않는다."""
+        from .model import ExpansionBudget, MismatchSignal
+        from .workspace import adaptive_network
+        from .expansion import DeterministicExpansionPolicy
+        from .dynamics import settle_recorded
+        p = self._guard_pending()
+        if p.ready:
+            raise ContractError('attempt is readout-ready; call finish')
+        started = perf_counter()
+        ws, cost, obs = p.workspace, p.cost, p.observation
         policy = DeterministicExpansionPolicy(self.config, self.memory,
-                    use_circuits=self.use_circuits and not forced, top_down=self.top_down)
-        mismatch = MismatchSignal('feedback_reopen' if forced else 'new_input', float(forced))
-        program = None
-        state = {}
-        conv = Convergence(Status.NO_CANDIDATE, 0, 0.0, 0.0, 0)
-        value = None
-        network_id = None
-        settled_paths = ()
-        failure_reason = None
+            use_circuits=self.use_circuits and p.revision_of is None, top_down=self.top_down)
         try:
-            while workspace.frontier:
+            if ws.frontier:
                 budget = ExpansionBudget(self.config.max_expansions - cost.expansions,
                     max(0, self.config.max_binding_checks - cost.binding_operations), self.config.max_frontier)
-                candidates = policy.propose(workspace, mismatch, budget)
+                candidates = policy.propose(ws, p.mismatch, budget)
                 if candidates:
-                    workspace.apply(candidates[0])
+                    ws.apply(candidates[0])
                 else:
-                    workspace.retire()
-                paths = tuple(p.path for p in workspace.routes)
-                if paths and paths != settled_paths:
-                    program, drives, metadata = adaptive_network(workspace)
-                    state, conv, network_id = settle_recorded(program, drives, self.config.kernel, cost,
-                        self.trace, did, 'decision', metadata, top_down=self.top_down)
-                    settled_paths = paths
-                candidate_value = ((state['goal'] >= .5) if program is not None
-                                   and conv.status == Status.STABLE_DECISION else None)
-                has_prior = any(use.prior != 0 for path in workspace.routes for use in path.uses)
+                    ws.retire()
+                paths = tuple(r.path for r in ws.routes)
+                if paths and paths != p.settled_paths:
+                    p.program, drives, metadata = adaptive_network(ws)
+                    p.state, p.convergence, p.network_id = settle_recorded(
+                        p.program, drives, self.config.kernel, cost, self.trace, p.decision_id,
+                        'decision', metadata, top_down=self.top_down)
+                    p.settled_paths = paths
+                candidate_value = ((p.state['goal'] >= .5) if p.program is not None
+                                   and p.convergence.status == Status.STABLE_DECISION else None)
+                has_prior = any(use.prior != 0 for path in ws.routes for use in path.uses)
                 if not has_prior and all(e.score is None or e.score == 0 for e in obs.edges):
                     candidate_value = None
-                    if program is not None and conv.status == Status.STABLE_DECISION:
-                        conv = replace(conv, status=Status.UNSUPPORTED)
-                if candidate_value is True:
-                    value = True
-                    break
-                if candidate_value is False and workspace.complete:
-                    value = False
-                    break
-                if candidate_value is False:
-                    mismatch = MismatchSignal('negative_requires_dependency_coverage', 1.0)
+                    if p.program is not None and p.convergence.status == Status.STABLE_DECISION:
+                        p.convergence = replace(p.convergence, status=Status.UNSUPPORTED)
+                if candidate_value is True or (candidate_value is False and ws.complete):
+                    p.value, p.ready = candidate_value, True
                 else:
-                    mismatch = MismatchSignal('unresolved_or_no_goal_candidate', 1.0)
-                self.trace.emit('r02_progress', dict(decision_id=did, mismatch=plain(mismatch),
-                    graph_complete=workspace.complete, completed_paths=paths, network_id=network_id))
+                    p.mismatch = MismatchSignal('negative_requires_dependency_coverage' if candidate_value is False
+                                               else 'unresolved_or_no_goal_candidate', 1.0)
+                    self.trace.emit('r02_progress', dict(decision_id=p.decision_id, mismatch=plain(p.mismatch),
+                        graph_complete=ws.complete, completed_paths=paths, network_id=p.network_id))
+                p.ready = p.ready or ws.complete
+            else:
+                p.ready = True
         except ExpansionLimit as error:
-            failure_reason = str(error)
-            value = None
-            conv = replace(conv, status=Status.BUDGET_EXHAUSTED)
-            self.trace.emit('r02_expansion_exhausted', dict(decision_id=did, reason=failure_reason))
-        if program is None and failure_reason is None:
-            conv = Convergence(Status.NO_CANDIDATE, 0, 0.0, 0.0, 0)
+            p.failure_reason = str(error)
+            p.value, p.ready = None, True
+            p.convergence = replace(p.convergence, status=Status.BUDGET_EXHAUSTED)
+            self.trace.emit('r02_expansion_exhausted', dict(decision_id=p.decision_id, reason=p.failure_reason))
+        if p.program is None and p.failure_reason is None:
+            p.convergence = Convergence(Status.NO_CANDIDATE, 0, 0.0, 0.0, 0)
+        p.active_seconds += perf_counter() - started
+        return p.ready
+
+    def finish(self):
+        """이미 정해진 readout을 proof와 묶어 완료한다. readout 값 보정은 하지 않는다."""
+        from .model import AdaptiveDecision
+        p = self._guard_pending()
+        if not p.ready:
+            raise ContractError('dependency computation is not readout-ready')
+        started = perf_counter()
+        obs, cost, ws = p.observation, p.cost, p.workspace
         binding = Binding(obs.digest, obs.revision, tuple(range(len(obs.edges))))
-        proof = (Proof((), None, None, (), False) if program is None else
-                 reconstruct(obs, program, binding, state, value, cost))
-        circuits = tuple(sorted({use.circuit_id for path in workspace.routes for use in path.uses}))
-        cost.wall_seconds = perf_counter() - started
-        decision = AdaptiveDecision(did, obs.episode_id, obs.digest, obs.revision, attempt, mode, value,
-            conv, memory_version, circuits[0] if len(circuits) == 1 else None,
+        proof = (Proof((), None, None, (), False) if p.program is None else
+                 reconstruct(obs, p.program, binding, p.state, p.value, cost))
+        circuits = tuple(sorted({use.circuit_id for path in ws.routes for use in path.uses}))
+        cost.wall_seconds = p.active_seconds + perf_counter() - started
+        decision = AdaptiveDecision(p.decision_id, obs.episode_id, obs.digest, obs.revision, p.attempt, p.mode,
+            p.value, p.convergence, p.memory_version, circuits[0] if len(circuits) == 1 else None,
             'adaptive_graph_circuit' if circuits else 'adaptive_graph', proof, cost.snapshot(),
-            program.digest if program is not None else None, tuple(sorted(state.items())),
-            circuit_ids=circuits, expanded_paths=tuple(path.path for path in workspace.routes),
-            graph_complete=workspace.complete, failure_reason=failure_reason,
-            adaptive_config_signature=self.config.signature)
-        if self.memory.digest != memory_hash:
+            p.program.digest if p.program is not None else None, tuple(sorted(p.state.items())),
+            circuit_ids=circuits, expanded_paths=tuple(path.path for path in ws.routes),
+            graph_complete=ws.complete, failure_reason=p.failure_reason, adaptive_config_signature=self.config.signature)
+        if self.memory.digest != p.memory_hash:
             raise ContractError('R0.2 inference mutated persistent memory')
         self.trace.emit('r02_decision', plain(decision))
-        self._held[did] = (obs, decision, fingerprint(plain(decision)), memory_hash)
+        self._held[p.decision_id] = (obs, decision, fingerprint(plain(decision)), p.memory_hash)
+        self._pending = None
         return decision
 
     def feedback(self, feedback: Feedback) -> dict:
+        if self._pending is not None or self.trace._closed:
+            raise ContractError('feedback during active attempt or closed trace')
         from .model import AdaptiveCost
         from .learning import update_adaptive
         if not isinstance(feedback, Feedback) or feedback.decision_id not in self._held:
@@ -287,6 +328,8 @@ class AdaptiveEngine:
         return plain(patch)
 
     def request_revision(self, decision_id: str) -> ObservationRequest | None:
+        if self._pending is not None or self.trace._closed:
+            raise ContractError('revision request during active attempt or closed trace')
         if decision_id not in self._feedback or self._feedback[decision_id].correct is not False:
             raise ContractError('R0.2 revision requires external error feedback')
         obs, decision, _, _ = self._held[decision_id]

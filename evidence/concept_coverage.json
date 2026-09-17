@@ -85,7 +85,7 @@
           "path": "src/hcr/runtime.py",
           "kind": "code",
           "symbol": "AdaptiveEngine.infer",
-          "normalized_sha256": "08db9cf363072f9980020cb2c37310ddf8c54be60249adedd04aee16e2ec6e73"
+          "normalized_sha256": "8c9d5b90c60fffc29050200f0fb3d30694591cb6707d49393d27959d95cdd5ab"
         },
         {
           "path": "architecture/r02-engine.ko.md",
@@ -329,13 +329,13 @@
           "path": "src/hcr/runtime.py",
           "kind": "code",
           "symbol": "AdaptiveEngine.feedback",
-          "normalized_sha256": "08db9cf363072f9980020cb2c37310ddf8c54be60249adedd04aee16e2ec6e73"
+          "normalized_sha256": "8c9d5b90c60fffc29050200f0fb3d30694591cb6707d49393d27959d95cdd5ab"
         },
         {
           "path": "src/hcr/runtime.py",
           "kind": "code",
           "symbol": "AdaptiveEngine.request_revision",
-          "normalized_sha256": "08db9cf363072f9980020cb2c37310ddf8c54be60249adedd04aee16e2ec6e73"
+          "normalized_sha256": "8c9d5b90c60fffc29050200f0fb3d30694591cb6707d49393d27959d95cdd5ab"
         },
         {
           "path": "docs/R02_BASELINE_PROTOCOL.ko.md",
@@ -377,8 +377,8 @@
       "id": "HCR-K11",
       "title": "Decision Generation ≠ Explanation Reconstruction",
       "status": "partial",
-      "scope": "R0.1 독립 이벤트·시험 및 R0.2 값 계산 뒤 proof 재구성. EXP-06 초안 존재.",
-      "remaining": "R0.2 별도 readout/explanation 시점·latency 기록 없음. 신규 reviewer는 기존 포함 관계만 분석.",
+      "scope": "R0.1 기존 이벤트, R0.2 값 계산 뒤 proof 복원. R0.2.1에서는 readout_ready와 finish가 별도 generation이다.",
+      "remaining": "자연어 설명/실제 인과 경로 비교와 개별 latency는 여전히 별도 EXP-06. 과거 기록은 변경하지 않음.",
       "stages": [
         "EXP-06",
         "R0.2.1"
@@ -394,13 +394,13 @@
           "path": "src/hcr/runtime.py",
           "kind": "code",
           "symbol": "Engine.infer",
-          "normalized_sha256": "08db9cf363072f9980020cb2c37310ddf8c54be60249adedd04aee16e2ec6e73"
+          "normalized_sha256": "8c9d5b90c60fffc29050200f0fb3d30694591cb6707d49393d27959d95cdd5ab"
         },
         {
           "path": "src/hcr/runtime.py",
           "kind": "code",
           "symbol": "AdaptiveEngine.infer",
-          "normalized_sha256": "08db9cf363072f9980020cb2c37310ddf8c54be60249adedd04aee16e2ec6e73"
+          "normalized_sha256": "8c9d5b90c60fffc29050200f0fb3d30694591cb6707d49393d27959d95cdd5ab"
         },
         {
           "path": "src/hcr/proof.py",
@@ -412,6 +412,12 @@
           "path": "experiments/exp-06-decision-vs-explanation/design.md",
           "kind": "design",
           "contains": "EXP-06"
+        },
+        {
+          "path": "src/hcr/runtime.py",
+          "kind": "code",
+          "symbol": "AdaptiveEngine.finish",
+          "normalized_sha256": "8c9d5b90c60fffc29050200f0fb3d30694591cb6707d49393d27959d95cdd5ab"
         }
       ]
     },
@@ -468,8 +474,8 @@
       "id": "HCR-K14",
       "title": "지속 활성·readout·여러 시간 규모",
       "status": "partial",
-      "scope": "settle(initial=...) 제공. 장기 memory와 기록은 존재.",
-      "remaining": "상태 전달 어댑터, session 생명주기, idle ticks/readout 및 학습 시간축 분리.",
+      "scope": "settle(initial=...), 장기 memory와 별개인 session/generation, dependency 경계의 JSON save/load/resume 구현.",
+      "remaining": "kernel 중간 정지·idle ticks·지속 latent activation·새 readout gate는 R0.5a. 이번 체크포인트와 동일시하지 않음.",
       "stages": [
         "R0.2.1",
         "R0.5a",
@@ -497,6 +503,12 @@
           "path": "docs/HCR_MASTER_ROADMAP.ko.md",
           "kind": "design",
           "contains": "ReadoutGate"
+        },
+        {
+          "path": "src/hcr/sessions.py",
+          "kind": "code",
+          "symbol": "AdaptiveSession",
+          "normalized_sha256": "d3325818f8450056b7e2c22ec1e3d90f9bbb2275bcf4f31a2e3cb18f610436eb"
         }
       ]
     },
@@ -678,7 +690,7 @@
           "path": "src/hcr/runtime.py",
           "kind": "code",
           "symbol": "AdaptiveEngine.feedback",
-          "normalized_sha256": "08db9cf363072f9980020cb2c37310ddf8c54be60249adedd04aee16e2ec6e73"
+          "normalized_sha256": "8c9d5b90c60fffc29050200f0fb3d30694591cb6707d49393d27959d95cdd5ab"
         },
         {
           "path": "src/hcr/dynamics.py",

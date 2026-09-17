@@ -1,3 +1,13 @@
+# 0.2.1 — 2026-09-17
+
+- AdaptiveEngine.infer를 단일 begin/advance/finish 실행으로 분해. prior·학습 정책은 유지.
+- AdaptiveSession의 generation·원자적 전이·JSON snapshot·독립 복원 검산 추가.
+- session CLI와 EXP-10, Windows fail-fast 실행기, 79개 신규 계약/동작 시험 추가.
+- 결과는 HCR-Evidence 하위 새 폴더 허용. 기존 원시 증거는 읽기 전용.
+- 작성 환경 검증과 사용자 Windows 검증을 구분. 세부 결과는 docs/R021_ACCEPTANCE.ko.md.
+
+---
+
 # 0.2.0 — 2026-09-16 (실행 전 소스)
 
 - 기존 src/hcr 구조에 deterministic ExpansionPolicy, 부분 경로 compiler, common-kernel CircuitActivationPool을 추가했다.
