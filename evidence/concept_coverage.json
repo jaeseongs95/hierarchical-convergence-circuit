@@ -637,6 +637,12 @@
           "path": "formalism/failure-taxonomy.ko.md",
           "kind": "design",
           "contains": "관측 상태와 원인"
+        },
+        {
+          "path": "src/hcr/grounding.py",
+          "kind": "code",
+          "symbol": "compare_diagnostics",
+          "normalized_sha256": "673bc1e3cfb7f1109d0070c1b37137e844fdd678b2be08b98292a26b8a2b885d"
         }
       ]
     },
@@ -776,6 +782,24 @@
           "path": "evidence/current-boundary.md",
           "kind": "design",
           "contains": "Not established"
+        },
+        {
+          "path": "src/hcr/grounding.py",
+          "kind": "code",
+          "symbol": "diagnose",
+          "normalized_sha256": "673bc1e3cfb7f1109d0070c1b37137e844fdd678b2be08b98292a26b8a2b885d"
+        },
+        {
+          "path": "src/hcr/evaluation/grounding_audit.py",
+          "kind": "code",
+          "symbol": "verify_diagnostic",
+          "normalized_sha256": "0f29eb4b0c87396e4fa1e6f9e6f568de9ff0d17c02cc2150c27e4859d77d1454"
+        },
+        {
+          "path": "tests/test_r032_grounding.py",
+          "kind": "test_definition",
+          "symbol": "GroundingBehavior.test_formal_proof_and_support_are_separate",
+          "normalized_sha256": "be7d387c0ab8ae3a0e4fb697f385c60e1f2d602373dee9ab9ffdb088a7f64c79"
         }
       ]
     },

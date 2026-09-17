@@ -1,3 +1,12 @@
+# 진행 갱신 — R0.3.2 최소 진단/보류 개입
+
+[R0.3.2 설계](R032_DESIGN.ko.md), [EXP-13](../experiments/exp-13-evidence-grounding/design.md).
+R0.3.1의 prior 역할 분리 이후 부분 결측에서 남은 과도한 확정을 진단한다.
+선택 proof의 관측 지지, 형식적 유효성, 외부 정확도를 분리한다.
+이 단계는 진단 및 opt-in 보류 비교까지이며 자율적인 수정/관측 행동이나 Rigidity/Consolidation 실험은 아니다.
+
+---
+
 # 진행 갱신 — R0.3.1 (2026-09-17)
 
 EXP-11 후속 분석에 따라 **prior 역할 분리**를 먼저 구현했다. [설계](R031_DESIGN.ko.md), [실행](R031_USAGE.ko.md), [EXP-12](../experiments/exp-12-prior-scope/design.md)를 따른다.

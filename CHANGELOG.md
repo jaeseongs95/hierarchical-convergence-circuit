@@ -1,3 +1,13 @@
+# R0.3.2 — 근거 진단·명시적 readout 대조
+
+- 기존 runtime/학습/pool/세션 동작을 보존하고 별도 grounding 진단 추가.
+- 선택 proof의 결측·0·방향충돌과 actual drive/binding 출처 기록.
+- diagnostic-only/dependency gate/blanket unknown gate를 별도 정책 view로 보존.
+- EXP-13과 독립 진단 검산·위변조·원본 보존 시험 추가.
+- Python 실행기 사용, 프로젝트 내부 HCR-Evidence 누적 출력 유지.
+
+---
+
 # 0.3.1 — Judgment prior scope
 
 - legacy 기본 동작 유지, route_only의 최종 judgment drive 분리.

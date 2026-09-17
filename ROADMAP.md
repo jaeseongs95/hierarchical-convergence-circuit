@@ -1,3 +1,11 @@
+# 진행 갱신 — R0.3.2 근거 진단
+
+EXP-12 뒤의 부분 결측 문제를 [근거 진단](docs/R032_DESIGN.ko.md)과 [EXP-13](experiments/exp-13-evidence-grounding/design.md)으로 연결한다.
+기존 판단을 보존한 diagnostic-only와 명시적 보류 두 정책을 비교한다.
+실제 관측요청·추가 전개·학습 수정은 후속이며, R0.4 공유 dependency 계획을 완료 처리하지 않는다.
+
+---
+
 # R0.3.1 — Prior 적용 범위 비교 (2026-09-17)
 
 R0.3 위에 legacy/route_only/graph_only 비교와 EXP-12를 추가했다. [설계](docs/R031_DESIGN.ko.md) · [실행](docs/R031_USAGE.ko.md).

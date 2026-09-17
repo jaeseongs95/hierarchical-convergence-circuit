@@ -1,0 +1,22 @@
+{
+  "schema": "hcr-r032-status-v1",
+  "reference_commit": "14c1b0f42a9babc6b82d879e5f57be2421030c18",
+  "version": "0.3.2",
+  "scope": "diagnosis + explicit readout policy views",
+  "raw_runtime_policy_changed": false,
+  "learning_changed": false,
+  "pool_changed": false,
+  "source_tree_checked": true,
+  "development_tests": {
+    "core_run": 404,
+    "passed": 400,
+    "skipped": 4,
+    "errors": 0,
+    "failures": 0,
+    "baseline_tools": 90,
+    "concept_tools": 39
+  },
+  "environment": "Linux / Python 3.13.5; native Windows execution not performed",
+  "next_stage": "actual observation/recomputation actions are not implemented",
+  "completed_user_experiment": false
+}

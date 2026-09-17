@@ -1,3 +1,15 @@
+# 현재 상태 — R0.3.2 근거 진단·명시적 readout 대조
+
+EXP-12 분석 이후 부분 결측의 과도한 확정을 진단하는 계층을 추가했다.
+기존 판단/proof를 보존하고 선택 proof의 관측 지지와 외부 정확도를 분리한다.
+진단 전용과 두 보류 정책은 별도 view이며 내부 정답 수정이나 새 학습이 아니다.
+
+- [R0.3.2 설계](docs/R032_DESIGN.ko.md) · [실행](docs/R032_USAGE.ko.md)
+- [EXP-13](experiments/exp-13-evidence-grounding/design.md)
+- 실행: `python -X utf8 -B Run-HCR-R032.py --out HCR-Evidence/exp13/r032-first`
+
+---
+
 # 현재 단계 — R0.3.1: prior 역할 분리 (2026-09-17)
 
 회로 선택용 prior는 유지하고, 최종 relation/goal 판단에 전달하는 learned prior만 독립 조작한다.
