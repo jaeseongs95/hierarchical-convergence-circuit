@@ -1,0 +1,19 @@
+scheduler,scope,arm,permutations,native_ticks_min,native_ticks_max,native_ticks_spread,distinct_completion_orders,distinct_ID_aligned_trajectories,final_outcome_invariant,native_tick_order_effect_observed,support_completion_ranks,claims_ID_irrelevance,priority_transitions_min,priority_transitions_max,event_seq_excluded_from_computational_signature
+input_order,legacy,native,6,170,170,0,2,2,True,False,"[2, 2, 2, 3, 3, 3]",False,0,0,True
+input_order,legacy,posthoc_support,6,170,170,0,2,2,True,False,"[2, 2, 2, 3, 3, 3]",False,0,0,True
+input_order,legacy,online_support,6,102,170,68,2,2,True,True,"[2, 2, 2, 3, 3, 3]",False,0,0,True
+input_order,route_only,native,6,164,262,98,2,2,True,True,"[2, 2, 2, 3, 3, 3]",False,0,0,True
+input_order,route_only,posthoc_support,6,164,262,98,2,2,True,True,"[2, 2, 2, 3, 3, 3]",False,0,0,True
+input_order,route_only,online_support,6,164,262,98,2,2,True,True,"[2, 2, 2, 3, 3, 3]",False,0,0,True
+edge_id_min,legacy,native,6,170,170,0,1,1,True,False,"[2, 2, 2, 2, 2, 2]",False,0,1,True
+edge_id_min,legacy,posthoc_support,6,170,170,0,1,1,True,False,"[2, 2, 2, 2, 2, 2]",False,0,1,True
+edge_id_min,legacy,online_support,6,102,102,0,1,1,True,False,"[2, 2, 2, 2, 2, 2]",False,0,1,True
+edge_id_min,route_only,native,6,164,164,0,1,1,True,False,"[2, 2, 2, 2, 2, 2]",False,0,1,True
+edge_id_min,route_only,posthoc_support,6,164,164,0,1,1,True,False,"[2, 2, 2, 2, 2, 2]",False,0,1,True
+edge_id_min,route_only,online_support,6,164,164,0,1,1,True,False,"[2, 2, 2, 2, 2, 2]",False,0,1,True
+edge_id_max,legacy,native,6,170,170,0,1,1,True,False,"[3, 3, 3, 3, 3, 3]",False,0,1,True
+edge_id_max,legacy,posthoc_support,6,170,170,0,1,1,True,False,"[3, 3, 3, 3, 3, 3]",False,0,1,True
+edge_id_max,legacy,online_support,6,170,170,0,1,1,True,False,"[3, 3, 3, 3, 3, 3]",False,0,1,True
+edge_id_max,route_only,native,6,262,262,0,1,1,True,False,"[3, 3, 3, 3, 3, 3]",False,0,1,True
+edge_id_max,route_only,posthoc_support,6,262,262,0,1,1,True,False,"[3, 3, 3, 3, 3, 3]",False,0,1,True
+edge_id_max,route_only,online_support,6,262,262,0,1,1,True,False,"[3, 3, 3, 3, 3, 3]",False,0,1,True

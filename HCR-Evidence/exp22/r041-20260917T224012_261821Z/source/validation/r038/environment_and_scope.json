@@ -1,0 +1,67 @@
+{
+  "schema": "hcr-r038-release-validation-v1",
+  "basis_commit": "d25f4bd4e3bd8c8aae763e3ee6542dbfd590900f",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "grammar_compatibility_checked": "3.12",
+  "actual_execution_python": "3.13.5",
+  "tests": [
+    {
+      "scope": "신규 wrapper·계약·I/O·보고서 / 합성 경계 테스트",
+      "tests": 72,
+      "status": "passed",
+      "log": "unit_tests.txt"
+    },
+    {
+      "scope": "실제 R035 selector + 합성 Graph 연결 테스트",
+      "tests": 14,
+      "status": "passed",
+      "log": "selector_tests.txt"
+    },
+    {
+      "scope": "기존 R037 단위 회귀 / 합성 backend",
+      "tests": 93,
+      "status": "passed",
+      "log": "r037_unit_regression.txt"
+    },
+    {
+      "scope": "기존 R037 selector 연결 회귀 / 실제 R035 + 합성 Graph",
+      "tests": 16,
+      "status": "passed",
+      "log": "r037_selector_regression.txt"
+    }
+  ],
+  "total_test_methods_passed": 195,
+  "synthetic_boundary_subcases": 300,
+  "subcases_are_inside_one_test_method": true,
+  "new_python_files_parsed_and_compiled": 22,
+  "source_git_blob_pins_checked": {
+    "tools/r035_frozen_selection/contracts.py": "b22321250f729450cc04917321a49fbae5df4970",
+    "tools/r035_frozen_selection/selection.py": "e5b83efa7126cfdfff22cedbdef8635fbd294b7a",
+    "R037_MANIFEST.json": "68050e726232796f7c6a1f2be2d1a51f64a32442"
+  },
+  "r037_release_files_rechecked": 34,
+  "old_release_files_modified": false,
+  "only_additive_paths_delivered": true,
+  "native_integration": {
+    "status": "not_executed",
+    "provided_test_methods": 8,
+    "planned_old_control_sessions": 12,
+    "reason": "전체 src/hcr·R036 및 EXP18 native raw capsule이 이 작업 컨테이너에 없음"
+  },
+  "exp19": {
+    "status": "not_executed",
+    "planned_trials": 84,
+    "baseline_cases": 8,
+    "new_cases": 6
+  },
+  "full_exp18_independent_replay": {
+    "status": "not_executed_in_build_environment",
+    "required_before_user_experiment": true
+  },
+  "windows_python312_execution": "not_executed",
+  "remote_repository_modified": false,
+  "test_results_are_not_native_experiment_evidence": true,
+  "runner_requires_native_preflight_before_exp19": true,
+  "build_source_scope": "R037 원 배포 + import hotfix를 현재 manifest와 대조; 실제 R035 selector 2개 파일 Git blob 대조. 전체 native repository 미확보."
+}

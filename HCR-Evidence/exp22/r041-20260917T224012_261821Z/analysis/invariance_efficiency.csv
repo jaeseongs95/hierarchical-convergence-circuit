@@ -1,0 +1,7 @@
+scope,arm,permutations,min_tick_spread,max_tick_spread,both_native_tick_invariant,both_completion_order_invariant,both_ID_aligned_trajectory_invariant,all_paired_final_outcomes_equal,both_correct_in_declared_worlds,min_total_native_ticks,max_total_native_ticks,min_mean_native_ticks,max_mean_native_ticks,max_minus_min_total_native_ticks,max_is_more_expensive_pairs,max_is_less_expensive_pairs,equal_native_cost_pairs,finding,not_accuracy_or_total_runtime_superiority
+legacy,native,6,0,0,True,True,True,True,False,1020,1020,170.0,170.0,0,0,0,6,invariant_same_outcome_equal_native_cost,True
+legacy,posthoc_support,6,0,0,True,True,True,True,True,1020,1020,170.0,170.0,0,0,0,6,invariant_same_outcome_equal_native_cost,True
+legacy,online_support,6,0,0,True,True,True,True,True,612,1020,102.0,170.0,408,6,0,0,invariant_same_outcome_different_native_cost,True
+route_only,native,6,0,0,True,True,True,True,True,984,1572,164.0,262.0,588,6,0,0,invariant_same_outcome_different_native_cost,True
+route_only,posthoc_support,6,0,0,True,True,True,True,True,984,1572,164.0,262.0,588,6,0,0,invariant_same_outcome_different_native_cost,True
+route_only,online_support,6,0,0,True,True,True,True,True,984,1572,164.0,262.0,588,6,0,0,invariant_same_outcome_different_native_cost,True
