@@ -1,0 +1,200 @@
+{
+  "basis": "commit 189d3ffcf491b6068b64dfe788c3b973e3aba6b7",
+  "path": "HCR-Evidence/exp10/r021-first/main/resumed/checkpoint_io.jsonl",
+  "method": "커넥터로 읽은 원시 journal 1~60행의 generation/bytes/wall_seconds를 전사 후 Python 재집계. 전체 파일 재다운로드/해시 대조 아님.",
+  "save_count": 30,
+  "load_count": 30,
+  "saved_bytes": 9280292,
+  "loaded_bytes": 9280292,
+  "save_seconds": 1.6731780999962211,
+  "load_seconds": 1.9424833999928524,
+  "save_and_load_seconds": 3.6156614999890735,
+  "first_checkpoint_bytes": 24202,
+  "last_checkpoint_bytes": 537873,
+  "first_pair_seconds": 0.028081700000257115,
+  "last_pair_seconds": 0.2024574000006396,
+  "checkpoint_growth_ratio": 22.2243203041071,
+  "rows": [
+    {
+      "generation": 1,
+      "bytes": 24202,
+      "save_seconds": 0.01246520000131568,
+      "load_seconds": 0.015616499998941435
+    },
+    {
+      "generation": 2,
+      "bytes": 59256,
+      "save_seconds": 0.017264599999180064,
+      "load_seconds": 0.021363500000006752
+    },
+    {
+      "generation": 3,
+      "bytes": 86443,
+      "save_seconds": 0.024062200000116718,
+      "load_seconds": 0.02505609999934677
+    },
+    {
+      "generation": 4,
+      "bytes": 88807,
+      "save_seconds": 0.020848199999818462,
+      "load_seconds": 0.02579400000104215
+    },
+    {
+      "generation": 5,
+      "bytes": 92335,
+      "save_seconds": 0.021670599999197293,
+      "load_seconds": 0.025983800000176416
+    },
+    {
+      "generation": 6,
+      "bytes": 124421,
+      "save_seconds": 0.02649589999964519,
+      "load_seconds": 0.03176109999913024
+    },
+    {
+      "generation": 7,
+      "bytes": 171120,
+      "save_seconds": 0.03296950000003562,
+      "load_seconds": 0.03989019999971788
+    },
+    {
+      "generation": 8,
+      "bytes": 172898,
+      "save_seconds": 0.03362129999914032,
+      "load_seconds": 0.03973210000003746
+    },
+    {
+      "generation": 9,
+      "bytes": 176569,
+      "save_seconds": 0.03475500000058673,
+      "load_seconds": 0.04141250000066066
+    },
+    {
+      "generation": 10,
+      "bytes": 212964,
+      "save_seconds": 0.039516300001196214,
+      "load_seconds": 0.04660359999979846
+    },
+    {
+      "generation": 11,
+      "bytes": 270507,
+      "save_seconds": 0.04726899999877787,
+      "load_seconds": 0.05504259999906935
+    },
+    {
+      "generation": 12,
+      "bytes": 272464,
+      "save_seconds": 0.046949199999289704,
+      "load_seconds": 0.06012809999992896
+    },
+    {
+      "generation": 13,
+      "bytes": 276074,
+      "save_seconds": 0.04899180000029446,
+      "load_seconds": 0.05606859999898006
+    },
+    {
+      "generation": 14,
+      "bytes": 329715,
+      "save_seconds": 0.05621190000056231,
+      "load_seconds": 0.06626089999917895
+    },
+    {
+      "generation": 15,
+      "bytes": 331763,
+      "save_seconds": 0.056779399999868474,
+      "load_seconds": 0.06423740000172984
+    },
+    {
+      "generation": 16,
+      "bytes": 335281,
+      "save_seconds": 0.05818299999918963,
+      "load_seconds": 0.06702670000049693
+    },
+    {
+      "generation": 17,
+      "bytes": 396336,
+      "save_seconds": 0.06572570000025735,
+      "load_seconds": 0.07955659999970521
+    },
+    {
+      "generation": 18,
+      "bytes": 398633,
+      "save_seconds": 0.06845359999897482,
+      "load_seconds": 0.07689199999913399
+    },
+    {
+      "generation": 19,
+      "bytes": 409722,
+      "save_seconds": 0.06819419999919774,
+      "load_seconds": 0.08114109999951324
+    },
+    {
+      "generation": 20,
+      "bytes": 410761,
+      "save_seconds": 0.0702277000000322,
+      "load_seconds": 0.08097739999902842
+    },
+    {
+      "generation": 21,
+      "bytes": 414173,
+      "save_seconds": 0.07583150000027672,
+      "load_seconds": 0.08367769999858865
+    },
+    {
+      "generation": 22,
+      "bytes": 416425,
+      "save_seconds": 0.0728519000003871,
+      "load_seconds": 0.08286129999942204
+    },
+    {
+      "generation": 23,
+      "bytes": 418716,
+      "save_seconds": 0.07320809999873745,
+      "load_seconds": 0.08520119999957387
+    },
+    {
+      "generation": 24,
+      "bytes": 444797,
+      "save_seconds": 0.07783799999924668,
+      "load_seconds": 0.0966841999997996
+    },
+    {
+      "generation": 25,
+      "bytes": 446960,
+      "save_seconds": 0.07834530000036466,
+      "load_seconds": 0.08926689999861992
+    },
+    {
+      "generation": 26,
+      "bytes": 457970,
+      "save_seconds": 0.08134509999945294,
+      "load_seconds": 0.09286509999947157
+    },
+    {
+      "generation": 27,
+      "bytes": 461506,
+      "save_seconds": 0.08227470000019821,
+      "load_seconds": 0.09592180000072403
+    },
+    {
+      "generation": 28,
+      "bytes": 506099,
+      "save_seconds": 0.09249210000052699,
+      "load_seconds": 0.10216110000146728
+    },
+    {
+      "generation": 29,
+      "bytes": 535502,
+      "save_seconds": 0.09337789999881352,
+      "load_seconds": 0.10580110000046261
+    },
+    {
+      "generation": 30,
+      "bytes": 537873,
+      "save_seconds": 0.09495920000154001,
+      "load_seconds": 0.1074981999990996
+    }
+  ],
+  "scope": "main/resumed 전이별 30개 저장/복원 기록만. seed, final 저장, 전이 복사, 추론, 전체 run audit 시간 포함하지 않음. wall_seconds에는 파일 I/O뿐 아니라 해당 함수의 검산/직렬화 관리가 포함된다."
+}

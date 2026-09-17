@@ -1,0 +1,23 @@
+{
+  "budget_hash_checks": {
+    "legacy": {
+      "sha256": "3c3f1d78a122455f375efbfaa752e95e50fc694789eb97979959d75651215088",
+      "git_blob": "60abf26c41437b05a84c228ebfadd28176af5c5e",
+      "matched_remote_hashes": true
+    },
+    "resumed": {
+      "sha256": "f606d39119a6cc47e02d62c8d7f0f65a9f8d1abf3dbaa455d1d10d9505487877",
+      "git_blob": "d62def1f451db1f7d5f8bfed4f86694834099813",
+      "matched_remote_hashes": true
+    }
+  },
+  "budget_semantics_equal": true,
+  "exclusions": [
+    "arm",
+    "decision.cost.wall_seconds",
+    "event hash chain derived from elapsed time"
+  ],
+  "inference_executed": false,
+  "full_run_audit_executed": false,
+  "scope": "2 budget records only; byte reconstruction accepted only after both manifest SHA-256 and Git blob SHA matched retrieved remote values"
+}

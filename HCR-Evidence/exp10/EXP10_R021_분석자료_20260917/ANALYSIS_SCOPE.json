@@ -1,0 +1,14 @@
+{
+  "basis_commit": "189d3ffcf491b6068b64dfe788c3b973e3aba6b7",
+  "full_run_audit_reexecuted": false,
+  "new_hcr_inferences": 0,
+  "repository_modified": false,
+  "scope": "원격 결과/소스 열람 + main I/O 수치 재집계 + budget 2개 원시 기록 의미 비교",
+  "files": {
+    "EXP10_R021_커밋결과_분석.md": "05b941435912504ed6e7cacb6f3696e89eb85d005d0815962331c8df7d73aa3b",
+    "checkpoint_cost_recount.json": "462add9865eaa5e79a62ef8fcf865a43fdf0b316f367cc4f9d6687dfd841c5a6",
+    "budget_comparison.json": "365671319794bad89fdde1e22a0d5de48048a680c8ef06db27a7a962b0245639",
+    "recalculate.py": "1d35b7354b589ec99eea6b46a54949b73812067c1e3e8b00794d0fc26b3ddcaa",
+    "check_budget_records.py": "4f606d18426dff30c4cdd47bc7a140fa49094cd0f7fc7ef37bff83bda05dea1e"
+  }
+}
