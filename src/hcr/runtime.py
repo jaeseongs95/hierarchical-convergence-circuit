@@ -220,6 +220,22 @@ class AdaptiveEngine:
             raise ContractError('active attempt configuration/memory changed')
         return p
 
+    def prioritize_frontier(self, path):
+        """R0.3: 이미 생성된 frontier의 순서만 변경한다. 근거/후보를 생성하지 않는다."""
+        p = self._guard_pending()
+        if p.ready or not isinstance(path, (tuple, list)) or any(type(i) is not int for i in path):
+            raise ContractError('frontier priority requires a running attempt and an integer path')
+        key = tuple(path)
+        matches = [i for i, prefix in enumerate(p.workspace.frontier) if prefix.path == key]
+        if len(matches) != 1:
+            raise ContractError('priority path is not an existing frontier')
+        index = matches[0]
+        prefix = p.workspace.frontier[index]
+        p.workspace.frontier = [prefix] + p.workspace.frontier[:index] + p.workspace.frontier[index + 1:]
+        self.trace.emit('r03_frontier_prioritized', dict(decision_id=p.decision_id,
+            path=list(key), previous_index=index, node=plain(prefix.node)))
+        return index
+
     def advance(self):
         """dependency step 한 개. pool/settle 내부 tick에서는 중단하지 않는다."""
         from .model import ExpansionBudget, MismatchSignal

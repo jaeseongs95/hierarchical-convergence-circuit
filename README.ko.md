@@ -1,3 +1,12 @@
+# 현재 상태 — R0.3 Method Interleaving / Typed Route Hints
+
+R0.2.1 상태 보존 기반 위에 제한된 M 전문화와 중간 경로 교환을 추가한다.
+[적용·실행](docs/R03_USAGE.ko.md) · [설계](architecture/r03-methods.ko.md) · [개발 검증](docs/R03_ACCEPTANCE.ko.md).
+결과는 `HCR-Evidence/exp11/`의 새 폴더에 누적한다. 기존 학습·prior 규칙은 변경하지 않는다.
+아래 내용은 사용자가 관리한 기존 본문과 이전 버전의 기록이다.
+
+---
+
 # 현재 상태 — R0.2.1 Session / Snapshot / Restore / Resume
 
 기준 commit: `2e67f71804b172673212822291b15885ca64f729`. R0.2의 실제 동작을 보존하면서 dependency 단위 중단·복원을 추가했다.

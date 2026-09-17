@@ -1,3 +1,12 @@
+# 진행 갱신 — R0.3 최소 구현 (2026-09-17)
+
+8절의 제한된 M 비교를 [구현 설계](../architecture/r03-methods.ko.md)와 [EXP-11](../experiments/exp-11-method-interleaving/design.md)로 연결했다.
+두 profile, 메모리 내 교대, typed 경로 힌트, 공통 총예산, 충돌 보류까지 구현한다.
+범용 M 학습·두 처리기 전체의 checkpoint·회로 간 영구 연결은 미구현이다.
+이하 R0.2/R0.2.1 서술은 시점별 이력이다. 현재 상태는 위 연결 문서를 우선한다.
+
+---
+
 # 진행 갱신 — R0.2.1 (2026-09-17)
 
 7절의 dependency 경계 상태 계약을 코드로 추가했다. 상세 구현·한계는 [R0.2.1 설계](../architecture/r021-session.ko.md),

@@ -16,7 +16,7 @@ def run_tests(root:Path) -> dict:
     start=time.perf_counter()
     with patch.object(socket.socket,'connect',denied),patch.object(socket.socket,'connect_ex',denied),patch.object(socket,'create_connection',denied):
         result=unittest.TextTestRunner(verbosity=2).run(suite)
-    return {'schema':'hcr-selftest-r021','suites':['r01-regression','r02-adaptive','r021-session'],'tests_run':result.testsRun,
+    return {'schema':'hcr-selftest-r03','suites':['r01-regression','r02-adaptive','r021-session','r03-methods'],'tests_run':result.testsRun,
             'passed':result.testsRun-len(result.failures)-len(result.errors)-len(result.skipped),
             'failures':len(result.failures),'errors':len(result.errors),'skipped':len(result.skipped),
             'skip_details':[{'test':t.id(),'reason':reason} for t,reason in result.skipped],

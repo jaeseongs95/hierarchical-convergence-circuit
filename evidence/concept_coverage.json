@@ -85,7 +85,7 @@
           "path": "src/hcr/runtime.py",
           "kind": "code",
           "symbol": "AdaptiveEngine.infer",
-          "normalized_sha256": "8c9d5b90c60fffc29050200f0fb3d30694591cb6707d49393d27959d95cdd5ab"
+          "normalized_sha256": "5e9ee32f6e07a56e9b31fc36a621c606d1c6ad90ec8bbf293c092a6b51de9aab"
         },
         {
           "path": "architecture/r02-engine.ko.md",
@@ -329,13 +329,13 @@
           "path": "src/hcr/runtime.py",
           "kind": "code",
           "symbol": "AdaptiveEngine.feedback",
-          "normalized_sha256": "8c9d5b90c60fffc29050200f0fb3d30694591cb6707d49393d27959d95cdd5ab"
+          "normalized_sha256": "5e9ee32f6e07a56e9b31fc36a621c606d1c6ad90ec8bbf293c092a6b51de9aab"
         },
         {
           "path": "src/hcr/runtime.py",
           "kind": "code",
           "symbol": "AdaptiveEngine.request_revision",
-          "normalized_sha256": "8c9d5b90c60fffc29050200f0fb3d30694591cb6707d49393d27959d95cdd5ab"
+          "normalized_sha256": "5e9ee32f6e07a56e9b31fc36a621c606d1c6ad90ec8bbf293c092a6b51de9aab"
         },
         {
           "path": "docs/R02_BASELINE_PROTOCOL.ko.md",
@@ -394,13 +394,13 @@
           "path": "src/hcr/runtime.py",
           "kind": "code",
           "symbol": "Engine.infer",
-          "normalized_sha256": "8c9d5b90c60fffc29050200f0fb3d30694591cb6707d49393d27959d95cdd5ab"
+          "normalized_sha256": "5e9ee32f6e07a56e9b31fc36a621c606d1c6ad90ec8bbf293c092a6b51de9aab"
         },
         {
           "path": "src/hcr/runtime.py",
           "kind": "code",
           "symbol": "AdaptiveEngine.infer",
-          "normalized_sha256": "8c9d5b90c60fffc29050200f0fb3d30694591cb6707d49393d27959d95cdd5ab"
+          "normalized_sha256": "5e9ee32f6e07a56e9b31fc36a621c606d1c6ad90ec8bbf293c092a6b51de9aab"
         },
         {
           "path": "src/hcr/proof.py",
@@ -417,7 +417,7 @@
           "path": "src/hcr/runtime.py",
           "kind": "code",
           "symbol": "AdaptiveEngine.finish",
-          "normalized_sha256": "8c9d5b90c60fffc29050200f0fb3d30694591cb6707d49393d27959d95cdd5ab"
+          "normalized_sha256": "5e9ee32f6e07a56e9b31fc36a621c606d1c6ad90ec8bbf293c092a6b51de9aab"
         }
       ]
     },
@@ -452,11 +452,12 @@
     {
       "id": "HCR-K13",
       "title": "전문화 방법 회로 / M adaptation",
-      "status": "planned",
-      "scope": "현재 path 후보를 서로 다른 전문 처리기로 과장하지 않음.",
-      "remaining": "같은 총예산에서 policy·메시지·통합의 행동 차이 구현.",
+      "status": "implemented_scoped",
+      "scope": "R0.3의 두 수작업 M profile, memory 내 교대, 실제 경로 메시지, 총상한과 충돌 보류.",
+      "remaining": "범용 방법 발견, profile 하위변수 독립성, coordinator 전체 resume, 장기 회로 간 연결 학습은 별도.",
       "stages": [
-        "R0.3"
+        "R0.3",
+        "EXP-11"
       ],
       "sources": [
         "S04",
@@ -467,6 +468,23 @@
           "path": "docs/HCR_MASTER_ROADMAP.ko.md",
           "kind": "design",
           "contains": "Specialized Method Circuits"
+        },
+        {
+          "path": "src/hcr/methods.py",
+          "kind": "code",
+          "symbol": "MethodEngine",
+          "normalized_sha256": "25549b5557e62225d8580f7fe9c7bd07263495b677d824d94fab80c9ef993d6a"
+        },
+        {
+          "path": "src/hcr/integration.py",
+          "kind": "code",
+          "symbol": "RouteHint",
+          "normalized_sha256": "9fdd6009bc4ec4a58b2baf39edda233bcf95243ab03c0b79449ec8a2ca78019a"
+        },
+        {
+          "path": "experiments/exp-11-method-interleaving/design.md",
+          "kind": "design",
+          "contains": "# EXP-11"
         }
       ]
     },
@@ -508,7 +526,7 @@
           "path": "src/hcr/sessions.py",
           "kind": "code",
           "symbol": "AdaptiveSession",
-          "normalized_sha256": "d3325818f8450056b7e2c22ec1e3d90f9bbb2275bcf4f31a2e3cb18f610436eb"
+          "normalized_sha256": "907005cfd3722ff3eb614fabbc6c2aa057099b6321f79ae341204eca784b70d3"
         }
       ]
     },
@@ -690,7 +708,7 @@
           "path": "src/hcr/runtime.py",
           "kind": "code",
           "symbol": "AdaptiveEngine.feedback",
-          "normalized_sha256": "8c9d5b90c60fffc29050200f0fb3d30694591cb6707d49393d27959d95cdd5ab"
+          "normalized_sha256": "5e9ee32f6e07a56e9b31fc36a621c606d1c6ad90ec8bbf293c092a6b51de9aab"
         },
         {
           "path": "src/hcr/dynamics.py",

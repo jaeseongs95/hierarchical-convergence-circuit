@@ -1,3 +1,11 @@
+# R0.3 반영
+
+HCR-K13은 **implemented_scoped**로 갱신한다. 범위는 두 수작업 M profile, 메모리 내 교대,
+typed 경로 hint, 총상한, 충돌 보류다. 범용 M 학습·영구 circuit link를 완료 처리하지 않는다.
+변경한 코드 anchor hash는 현재 구현과 대조했다. 아래 표의 과거 상태는 이력이며 최신 기계 판독 상태는 `evidence/concept_coverage.json`이다.
+
+---
+
 # R0.2.1 반영
 
 기존 24개 개념과 상태 분류는 유지했다. HCR-K11에 `AdaptiveEngine.finish`의 구현 경계,

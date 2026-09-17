@@ -1,3 +1,11 @@
+# 현재 진행 — R0.3 최소 방법 비교
+
+EXP-10의 상태 보존 결과를 이어받아 memory 내 interleaving·typed 경로 교환·같은 총상한 대조를 추가했다.
+[설계](architecture/r03-methods.ko.md) · [실행](docs/R03_USAGE.ko.md) · [EXP-11](experiments/exp-11-method-interleaving/design.md).
+새 정책의 사용자 실행 결과는 EXP-11에서 별도로 분석한다. 아래 과거 계획은 이력으로 보존한다.
+
+---
+
 # R0.2.1 진행 반영 — 2026-09-17
 
 현재: dependency 경계의 session, generation, snapshot/restore/resume, EXP-10 비교를 추가했다.

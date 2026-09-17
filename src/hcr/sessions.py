@@ -9,6 +9,7 @@ from .model import AdaptiveConfig, Mode, ContractError, fingerprint, identifier
 from .state import engine_document, restore_engine
 
 SCHEMA = 'hcr-session-checkpoint-r021-v1'
+METHOD_SCHEMA = 'hcr-session-checkpoint-r03-v1'
 
 
 def verify_packet(packet, *, check_source=True, expected_ref=None, expected_observation=None,
@@ -28,9 +29,12 @@ def _verify_packet(packet, *, check_source=True, expected_ref=None, expected_obs
     """기본 복원에서는 source 검사를 끌 수 없다. 검산 CLI에서만 과거 문서 범위를 제한해 읽는다."""
     from .evaluation.session_audit import verify_document
     if (not isinstance(packet, dict) or set(packet) != {'schema','document','sha256'}
-            or packet['schema'] != SCHEMA or fingerprint(packet['document']) != packet['sha256']):
+            or packet['schema'] not in (SCHEMA, METHOD_SCHEMA) or fingerprint(packet['document']) != packet['sha256']):
         raise ContractError('R0.2.1 checkpoint schema/checksum')
     doc = packet['document']
+    expected_schema = METHOD_SCHEMA if any(t['operation']=='prioritize_frontier' for t in doc['transitions']) else SCHEMA
+    if packet['schema'] != expected_schema:
+        raise ContractError('session operation/schema version mismatch')
     if check_source and doc['source_hashes'] != session_io.source_hashes():
         raise ContractError('checkpoint/source differs; keep original source, do not rewrite old hashes')
     result = verify_document(doc)
@@ -138,6 +142,9 @@ class AdaptiveSession:
     def advance(self):
         return self._apply('advance', {})
 
+    def prioritize_frontier(self, path):
+        return self._apply('prioritize_frontier', dict(path=codec.plain(path)), path)
+
     def finish(self):
         return self._apply('finish', {})
 
@@ -159,7 +166,8 @@ class AdaptiveSession:
             raise ContractError('uncommitted session state')
         doc = dict(session_id=self.session_id, source_hashes=dict(self._sources), engine=engine_document(self._engine),
                    events=self.events, transitions=deepcopy(self._transitions))
-        return dict(schema=SCHEMA, document=doc, sha256=fingerprint(doc))
+        schema = METHOD_SCHEMA if any(t['operation']=='prioritize_frontier' for t in self._transitions) else SCHEMA
+        return dict(schema=schema, document=doc, sha256=fingerprint(doc))
 
     def save(self, path: Path):
         started = perf_counter()

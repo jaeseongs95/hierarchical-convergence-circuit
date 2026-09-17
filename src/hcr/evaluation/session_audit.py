@@ -49,16 +49,16 @@ def _pending(s, networks, config, seconds):
         active_seconds=seconds)
 
 
-def verify_document(document):
+def verify_document(document, *, state_observer=None):
     try:
-        return _verify_document(document)
+        return _verify_document(document, state_observer=state_observer)
     except ContractError:
         raise
     except (KeyError, TypeError, ValueError, IndexError, AttributeError) as exc:
         raise ContractError('malformed R0.2.1 checkpoint: ' + str(exc)) from exc
 
 
-def _verify_document(document):
+def _verify_document(document, *, state_observer=None):
     require(set(document) == {'session_id', 'source_hashes', 'engine', 'events', 'transitions'}, 'session document fields')
     require(isinstance(document['session_id'], str) and 0 < len(document['session_id']) <= 128, 'session identity')
     core, events, journal = document['engine'], document['events'], document['transitions']
@@ -108,6 +108,11 @@ def _verify_document(document):
                         and any(n in ('r02_expansion','r02_dead_end','r02_expansion_exhausted') for n in names)
                         and not set(names) & {'r02_engine_created','r02_attempt_started','r02_decision','r02_feedback','r02_memory_updated','r02_observation_requested'},
                         'one dependency step per generation')
+            elif op == 'prioritize_frontier':
+                require(pending is not None and pending['ready'] is False
+                        and names == ['r03_frontier_prioritized']
+                        and set(args) == {'path'}
+                        and args['path'] == segment[0]['payload']['path'], 'frontier priority boundary')
             elif op == 'finish':
                 require(pending is not None and pending['ready'] is True and names == ['r02_decision'] and args == {}, 'finish phase')
             elif op == 'feedback':
@@ -174,6 +179,18 @@ def _verify_document(document):
                 require(s['frontier'] is None and p['initial'] == initial, 'initial node/semantic identity')
                 s['frontier'], s['known'] = [initial], {()}
                 s['cost'].graph_nodes_created += 1
+            elif name == 'r03_frontier_prioritized':
+                require(op == 'prioritize_frontier', 'priority outside an explicit transition')
+                s = starts[did]
+                path = p['path']
+                require(isinstance(path, list) and all(type(i) is int for i in path), 'priority path type')
+                indices = [i for i, prefix in enumerate(s['frontier']) if prefix['path'] == path]
+                require(len(indices) == 1 and type(p['previous_index']) is int
+                        and p['previous_index'] == indices[0], 'unexecuted frontier imported as evidence')
+                index = indices[0]
+                prefix = s['frontier'][index]
+                require(p['node'] == prefix['node'], 'priority node/reference changed')
+                s['frontier'] = [prefix] + s['frontier'][:index] + s['frontier'][index + 1:]
             elif name == 'r02_binding_scan':
                 s = starts[did]
                 require(s['engine']['use_circuits'] and s['payload']['revision_of'] is None, 'disabled circuit scan')
@@ -431,6 +448,8 @@ def _verify_document(document):
         seconds = transition['active_seconds']
         if active_did is not None:
             require(type(seconds) in (int,float) and isfinite(seconds) and seconds >= 0, 'active timing contract')
+            if op == 'prioritize_frontier':
+                require(seconds == current_core['pending']['active_seconds'], 'priority changed engine active time')
             if op == 'advance':
                 require(seconds >= current_core['pending']['active_seconds'], 'active elapsed time moved backwards')
             active = _pending(starts[active_did], networks, config, seconds)
@@ -443,6 +462,8 @@ def _verify_document(document):
                           memory_hash=starts[did]['payload']['memory_hash']) for did,d in decisions.items()},
             feedback=feedbacks, requests=requests, pending=active)
         require(fingerprint(current_core) == transition['after_state'], 'snapshot state/counter differs from independent event replay')
+        if state_observer is not None:
+            state_observer(generation, deepcopy(current_core))
         previous_core, previous_transition = transition['after_state'], transition['sha256']
         offset = end
     require(offset == len(events) and core == current_core, 'snapshot payload does not match generation tip')

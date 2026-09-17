@@ -1,0 +1,19 @@
+{
+  "schema": "hcr-r03-status-v1",
+  "release": "0.3.0",
+  "reference_commit": "309828118509340572b946dfa60e8cde1f16e452",
+  "state": "development_validated_pending_user_run",
+  "production_code_created": true,
+  "local_development_execution": true,
+  "user_windows_execution": false,
+  "legacy_semantics_preserved_in_differential": true,
+  "hypothesis_proved": false,
+  "scope": "limited M profiles / in-memory interleaving / typed path hints / shared caps / conservative integration",
+  "not_implemented": [
+    "joint coordinator resume",
+    "negative exception learning",
+    "new prior policy",
+    "OS parallelism",
+    "general M learning"
+  ]
+}

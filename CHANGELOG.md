@@ -1,3 +1,13 @@
+# 0.3.0 — 제한된 M 전문화
+
+- 기존 R0.2.1 기본 계산·학습·prior 보존.
+- breadth-first primitive / depth-first macro 처리기와 fixed/adaptive memory interleaving.
+- 실제 sender 경로만 전달하는 typed hint; 기존 receiver frontier 우선순위 변경.
+- 합계 advance/tick/message 상한, 충돌/미완료 보류, 독립 replay 및 EXP-11.
+- 프로젝트 내부 HCR-Evidence/exp11의 새 폴더로 결과 누적. 기존 결과는 변경하지 않음.
+
+---
+
 # 0.2.1 — 2026-09-17
 
 - AdaptiveEngine.infer를 단일 begin/advance/finish 실행으로 분해. prior·학습 정책은 유지.
