@@ -11,6 +11,7 @@ from .state import engine_document, restore_engine
 SCHEMA = 'hcr-session-checkpoint-r021-v1'
 METHOD_SCHEMA = 'hcr-session-checkpoint-r03-v1'
 PRIOR_SCHEMA = 'hcr-session-checkpoint-r031-v1'
+REVIEW_SCHEMA = 'hcr-session-checkpoint-r033-v1'
 
 
 def verify_packet(packet, *, check_source=True, expected_ref=None, expected_observation=None,
@@ -30,10 +31,11 @@ def _verify_packet(packet, *, check_source=True, expected_ref=None, expected_obs
     """기본 복원에서는 source 검사를 끌 수 없다. 검산 CLI에서만 과거 문서 범위를 제한해 읽는다."""
     from .evaluation.session_audit import verify_document
     if (not isinstance(packet, dict) or set(packet) != {'schema','document','sha256'}
-            or packet['schema'] not in (SCHEMA, METHOD_SCHEMA, PRIOR_SCHEMA) or fingerprint(packet['document']) != packet['sha256']):
+            or packet['schema'] not in (SCHEMA, METHOD_SCHEMA, PRIOR_SCHEMA, REVIEW_SCHEMA) or fingerprint(packet['document']) != packet['sha256']):
         raise ContractError('R0.2.1 checkpoint schema/checksum')
     doc = packet['document']
-    expected_schema = (PRIOR_SCHEMA if 'prior_policy' in doc['engine'] else
+    expected_schema = (REVIEW_SCHEMA if any(t['operation']=='continue_dependency' for t in doc['transitions']) else
+                       PRIOR_SCHEMA if 'prior_policy' in doc['engine'] else
                        METHOD_SCHEMA if any(t['operation']=='prioritize_frontier' for t in doc['transitions']) else SCHEMA)
     if packet['schema'] != expected_schema:
         raise ContractError('session operation/schema version mismatch')
@@ -153,6 +155,22 @@ class AdaptiveSession:
     def finish(self):
         return self._apply('finish', {})
 
+    def continue_dependency(self):
+        return self._apply('continue_dependency', {})
+
+    def fork_readout(self):
+        """현재 경계의 정상 finish를 복사 branch에서 실행하고 본 branch는 유지한다.
+
+        반환한 decision/packet이 실제 계산 결과다. 후속 읽기마다 proof 생성 비용이
+        발생하므로 review ledger가 별도 합산한다. engine-local ID는 그대로 두고,
+        review의 전역 candidate ID가 branch/generation/packet hash를 결속한다.
+        """
+        if self.phase != 'readout_ready':
+            raise ContractError('fork_readout requires a ready boundary')
+        branch = deepcopy(self)
+        decision = branch.finish()
+        return decision, branch.packet()
+
     def complete(self):
         if self.phase == 'idle':
             raise ContractError('no active attempt')
@@ -171,7 +189,8 @@ class AdaptiveSession:
             raise ContractError('uncommitted session state')
         doc = dict(session_id=self.session_id, source_hashes=dict(self._sources), engine=engine_document(self._engine),
                    events=self.events, transitions=deepcopy(self._transitions))
-        schema = (PRIOR_SCHEMA if 'prior_policy' in doc['engine'] else
+        schema = (REVIEW_SCHEMA if any(t['operation']=='continue_dependency' for t in self._transitions) else
+                  PRIOR_SCHEMA if 'prior_policy' in doc['engine'] else
                   METHOD_SCHEMA if any(t['operation']=='prioritize_frontier' for t in self._transitions) else SCHEMA)
         return dict(schema=schema, document=doc, sha256=fingerprint(doc))
 

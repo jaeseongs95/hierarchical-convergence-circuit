@@ -1,0 +1,15 @@
+{
+  "schema": "hcr-r033-implementation-status-v1",
+  "reference_commit": "a51bedb2340f82abc44dc12c8cede0aa7361e6ef",
+  "scope": "grounded_review_continuation_and_selective_simulated_observation",
+  "default_infer_changed": false,
+  "runtime_continuation_explicit": true,
+  "learning_changed": false,
+  "pool_changed": false,
+  "readout_gate_changed": false,
+  "initial_results_preserved": true,
+  "whole_controller_resume": false,
+  "source_execution_in_writing_environment": true,
+  "user_exp14_result_accepted": false,
+  "development_data_not_added_to_user_research_samples": true
+}

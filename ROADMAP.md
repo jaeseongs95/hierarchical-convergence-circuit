@@ -1,3 +1,11 @@
+# 진행 갱신 — R0.3.3 근거 기반 작업 선택
+
+EXP-13의 gate 이후를 [실행 설계](docs/R033_DESIGN.ko.md), [가설 범위](docs/R033_HYPOTHESES.ko.md), [EXP-14](experiments/exp-14-grounded-review/design.md)로 연결한다.
+같은 상태의 추가 전개, 선택적 모의 관측, 명시적 prior 재검토를 서로 분리한다.
+장기 학습·공유 dependency·consolidation은 결과를 확인한 뒤 후속으로 유지한다.
+
+---
+
 # 진행 갱신 — R0.3.2 근거 진단
 
 EXP-12 뒤의 부분 결측 문제를 [근거 진단](docs/R032_DESIGN.ko.md)과 [EXP-13](experiments/exp-13-evidence-grounding/design.md)으로 연결한다.

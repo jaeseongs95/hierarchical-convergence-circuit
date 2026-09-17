@@ -29,6 +29,9 @@ def adaptive_config_from(path: Path | None):
 
 def main(argv:list[str]|None=None) -> int:
     argv = list(sys.argv[1:] if argv is None else argv)
+    if argv and argv[0] == 'review':
+        from .review_cli import main as review_main
+        return review_main(argv[1:])
     if argv and argv[0] == 'methods':
         from .method_cli import main as method_main
         return method_main(argv[1:])
@@ -47,6 +50,7 @@ def main(argv:list[str]|None=None) -> int:
     commands.add_parser('session', help='R0.2.1: start/resume/verify/demo — hcr session --help')
     commands.add_parser('methods', help='R0.3: demo/verify/infer — hcr methods --help')
     commands.add_parser('grounding', help='R0.3.2: plan/demo/verify — hcr grounding --help')
+    commands.add_parser('review', help='R0.3.3: plan/execute/demo/verify — hcr review --help')
     check=commands.add_parser('check',help='소스·단위·통합 시험. 실제 네트워크 접속 금지.')
     check.add_argument('--out',type=Path,help='선택: 시험 영수증 JSON. 기존 파일 덮어쓰기 없음.')
     demo=commands.add_parser('demo',help='학습·동결평가·오수렴·재확장·재시작 개발 실행')

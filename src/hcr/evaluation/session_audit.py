@@ -38,7 +38,7 @@ def _pending(s, networks, config, seconds):
     if s['failed']:
         value, cv['status'] = None, 'budget_exhausted'
     p, flags = s['payload'], s['engine']
-    return dict(observation=codec.plain(s['obs']), mode=p['mode'], revision_of=p['revision_of'],
+    result = dict(observation=codec.plain(s['obs']), mode=p['mode'], revision_of=p['revision_of'],
         **policy_fields(read_scope(flags)),
         attempt=p['attempt'], decision_id=p['decision_id'], memory_hash=p['memory_hash'],
         memory_version=p['memory_version'], config_signature=config.signature,
@@ -49,6 +49,9 @@ def _pending(s, networks, config, seconds):
         network_id=s['last_network'], settled_paths=program['paths'] if program else [],
         failure_reason=s['failed'], ready=bool(s['failed'] or not s['frontier'] or value is not None),
         active_seconds=seconds)
+    if s.get('review_open', False):
+        result['value'], result['ready'] = None, False
+    return result
 
 
 def verify_document(document, *, state_observer=None):
@@ -116,6 +119,10 @@ def _verify_document(document, *, state_observer=None):
                         and names == ['r03_frontier_prioritized']
                         and set(args) == {'path'}
                         and args['path'] == segment[0]['payload']['path'], 'frontier priority boundary')
+            elif op == 'continue_dependency':
+                require(pending is not None and pending['ready'] is True and pending['mode'] == 'frozen_eval'
+                        and pending['failure_reason'] is None and pending['workspace']['frontier']
+                        and names == ['r033_dependency_continued'] and args == {}, 'review continuation boundary')
             elif op == 'finish':
                 require(pending is not None and pending['ready'] is True and names == ['r02_decision'] and args == {}, 'finish phase')
             elif op == 'feedback':
@@ -134,6 +141,8 @@ def _verify_document(document, *, state_observer=None):
                     require(segment[0]['payload']['decision_id'] == target, 'request target')
             else:
                 raise ContractError('unknown generation operation ' + str(op))
+        if op == 'advance':
+            starts[active_did]['review_open'] = False
         for event in segment:
             name, p = event['event'], event['payload']
             did = p.get('decision_id')
@@ -183,6 +192,12 @@ def _verify_document(document, *, state_observer=None):
                 require(s['frontier'] is None and p['initial'] == initial, 'initial node/semantic identity')
                 s['frontier'], s['known'] = [initial], {()}
                 s['cost'].graph_nodes_created += 1
+            elif name == 'r033_dependency_continued':
+                require(op == 'continue_dependency' and did == active_did, 'unbound review continuation')
+                s = starts[did]
+                require(p == dict(decision_id=did, frontier_count=len(s['frontier']),
+                    reason='explicit_review_without_new_information'), 'review continuation payload')
+                s['review_open'] = True
             elif name == 'r03_frontier_prioritized':
                 require(op == 'prioritize_frontier', 'priority outside an explicit transition')
                 s = starts[did]
@@ -452,7 +467,7 @@ def _verify_document(document, *, state_observer=None):
         seconds = transition['active_seconds']
         if active_did is not None:
             require(type(seconds) in (int,float) and isfinite(seconds) and seconds >= 0, 'active timing contract')
-            if op == 'prioritize_frontier':
+            if op in ('prioritize_frontier', 'continue_dependency'):
                 require(seconds == current_core['pending']['active_seconds'], 'priority changed engine active time')
             if op == 'advance':
                 require(seconds >= current_core['pending']['active_seconds'], 'active elapsed time moved backwards')

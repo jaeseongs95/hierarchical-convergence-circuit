@@ -304,6 +304,20 @@ class AdaptiveEngine:
         p.active_seconds += perf_counter() - started
         return p.ready
 
+    def continue_dependency(self):
+        """R0.3.3 명시적 개입: 완료하지 않은 frontier를 유지하며 readout 경계를 연다.
+
+        정답/feedback을 받지 않는다. 관측·prior·가정·network·누적 비용을 바꾸지 않는다.
+        최초 판단은 호출자가 fork_readout()의 불변 packet으로 먼저 보존한다.
+        """
+        p = self._guard_pending()
+        if (p.mode != Mode.FROZEN_EVAL or not p.ready or p.failure_reason is not None
+                or not p.workspace.frontier):
+            raise ContractError('review continuation needs a frozen ready boundary with remaining frontier')
+        self.trace.emit('r033_dependency_continued', dict(decision_id=p.decision_id,
+            frontier_count=len(p.workspace.frontier), reason='explicit_review_without_new_information'))
+        p.ready, p.value = False, None
+
     def finish(self):
         """이미 정해진 readout을 proof와 묶어 완료한다. readout 값 보정은 하지 않는다."""
         from .model import AdaptiveDecision

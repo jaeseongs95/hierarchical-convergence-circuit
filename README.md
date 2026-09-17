@@ -1,3 +1,13 @@
+# R0.3.3 — 근거 기반 재검토 / EXP-14
+
+[실행 안내](docs/R033_USAGE.ko.md) · [설계](docs/R033_DESIGN.ko.md) · [가설 범위](docs/R033_HYPOTHESES.ko.md)
+
+최초 판단을 보존하고 보류·남은 frontier 전개·선택적 모의 관측·명시적 prior 재계산을 비교한다.
+`python -X utf8 -B Run-HCR-R033.py --out HCR-Evidence/exp14/r033-first`
+기본 infer/학습/pool 정책은 유지하며, 가설에 맞지 않는 실패도 기록한다.
+
+---
+
 # 현재 상태 — R0.3.2 근거 진단·명시적 readout 대조
 
 EXP-12 분석 이후 부분 결측의 과도한 확정을 진단하는 계층을 추가했다.

@@ -1,3 +1,11 @@
+## 0.3.3 — EXP-14 근거 기반 재검토
+
+- 기존 frontier를 이어가는 명시적 continuation과 정상 finish branch의 readout 보존.
+- 보류/전개/관측/정책 재계산을 분리하고 최초 비용·실패를 유지.
+- 모의 관측의 요청/revision/provenance 계약, 무변화/불가/예산 통제.
+- controller·관측·segment·가정·비용을 독립적으로 검산.
+- 기본 infer, 학습, pool, proof 선택은 변경하지 않음.
+
 # R0.3.2 — 근거 진단·명시적 readout 대조
 
 - 기존 runtime/학습/pool/세션 동작을 보존하고 별도 grounding 진단 추가.

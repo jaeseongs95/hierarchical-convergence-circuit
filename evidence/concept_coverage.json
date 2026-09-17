@@ -85,7 +85,7 @@
           "path": "src/hcr/runtime.py",
           "kind": "code",
           "symbol": "AdaptiveEngine.infer",
-          "normalized_sha256": "0543ac778e9f348b845ad6a080f6ae14c92f6b0e12e8329ec52b51aa56b31fd3"
+          "normalized_sha256": "1f71a2a2d5469f8c9532de421b71f16b8e62ec6bc8aa6184146f41a7990f34eb"
         },
         {
           "path": "architecture/r02-engine.ko.md",
@@ -329,18 +329,24 @@
           "path": "src/hcr/runtime.py",
           "kind": "code",
           "symbol": "AdaptiveEngine.feedback",
-          "normalized_sha256": "0543ac778e9f348b845ad6a080f6ae14c92f6b0e12e8329ec52b51aa56b31fd3"
+          "normalized_sha256": "1f71a2a2d5469f8c9532de421b71f16b8e62ec6bc8aa6184146f41a7990f34eb"
         },
         {
           "path": "src/hcr/runtime.py",
           "kind": "code",
           "symbol": "AdaptiveEngine.request_revision",
-          "normalized_sha256": "0543ac778e9f348b845ad6a080f6ae14c92f6b0e12e8329ec52b51aa56b31fd3"
+          "normalized_sha256": "1f71a2a2d5469f8c9532de421b71f16b8e62ec6bc8aa6184146f41a7990f34eb"
         },
         {
           "path": "docs/R02_BASELINE_PROTOCOL.ko.md",
           "kind": "design",
           "contains": "EXP-09"
+        },
+        {
+          "path": "src/hcr/review.py",
+          "kind": "code",
+          "symbol": "ReviewFlow",
+          "normalized_sha256": "7a14ce4a9111224c2fed722e740692dae0c94360b30897a17c0cd83d9eca61c2"
         }
       ]
     },
@@ -394,13 +400,13 @@
           "path": "src/hcr/runtime.py",
           "kind": "code",
           "symbol": "Engine.infer",
-          "normalized_sha256": "0543ac778e9f348b845ad6a080f6ae14c92f6b0e12e8329ec52b51aa56b31fd3"
+          "normalized_sha256": "1f71a2a2d5469f8c9532de421b71f16b8e62ec6bc8aa6184146f41a7990f34eb"
         },
         {
           "path": "src/hcr/runtime.py",
           "kind": "code",
           "symbol": "AdaptiveEngine.infer",
-          "normalized_sha256": "0543ac778e9f348b845ad6a080f6ae14c92f6b0e12e8329ec52b51aa56b31fd3"
+          "normalized_sha256": "1f71a2a2d5469f8c9532de421b71f16b8e62ec6bc8aa6184146f41a7990f34eb"
         },
         {
           "path": "src/hcr/proof.py",
@@ -417,7 +423,7 @@
           "path": "src/hcr/runtime.py",
           "kind": "code",
           "symbol": "AdaptiveEngine.finish",
-          "normalized_sha256": "0543ac778e9f348b845ad6a080f6ae14c92f6b0e12e8329ec52b51aa56b31fd3"
+          "normalized_sha256": "1f71a2a2d5469f8c9532de421b71f16b8e62ec6bc8aa6184146f41a7990f34eb"
         }
       ]
     },
@@ -526,7 +532,13 @@
           "path": "src/hcr/sessions.py",
           "kind": "code",
           "symbol": "AdaptiveSession",
-          "normalized_sha256": "28c05c61a2742dd82b787160220260d6c6e802b7defdd2d0a838f1a23165b7e7"
+          "normalized_sha256": "b3bb379d4d7ec5b8afa835d9d3c349f3b7ef908383a51880ae7e9cd2de10f844"
+        },
+        {
+          "path": "src/hcr/sessions.py",
+          "kind": "code",
+          "symbol": "AdaptiveSession.continue_dependency",
+          "normalized_sha256": "b3bb379d4d7ec5b8afa835d9d3c349f3b7ef908383a51880ae7e9cd2de10f844"
         }
       ]
     },
@@ -714,7 +726,7 @@
           "path": "src/hcr/runtime.py",
           "kind": "code",
           "symbol": "AdaptiveEngine.feedback",
-          "normalized_sha256": "0543ac778e9f348b845ad6a080f6ae14c92f6b0e12e8329ec52b51aa56b31fd3"
+          "normalized_sha256": "1f71a2a2d5469f8c9532de421b71f16b8e62ec6bc8aa6184146f41a7990f34eb"
         },
         {
           "path": "src/hcr/dynamics.py",
@@ -800,6 +812,12 @@
           "kind": "test_definition",
           "symbol": "GroundingBehavior.test_formal_proof_and_support_are_separate",
           "normalized_sha256": "be7d387c0ab8ae3a0e4fb697f385c60e1f2d602373dee9ab9ffdb088a7f64c79"
+        },
+        {
+          "path": "src/hcr/evaluation/review_audit.py",
+          "kind": "code",
+          "symbol": "audit_rollout",
+          "normalized_sha256": "111338ca12fa7e48f71b3e78a6ed960483617febca237caca9979bccf73e4da8"
         }
       ]
     },
