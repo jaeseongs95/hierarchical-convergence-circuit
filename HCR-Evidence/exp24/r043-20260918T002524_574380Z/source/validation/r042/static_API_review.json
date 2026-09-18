@@ -1,0 +1,33 @@
+{
+  "baseline_commit": "11f43790c0cb1b4732199ae4fb17c5bbbed4cd5b",
+  "method": "connected_GitHub_source_read_and_static_interface_review",
+  "runtime_file": "tools/r041_scheduler_direction/runtime.py",
+  "runtime_git_blob": "c156af15da7db2b23bb3cb81f6dd357b961a043f",
+  "runtime_constructor": [
+    "observation",
+    "config",
+    "memory",
+    "scope",
+    "arm",
+    "budget=None",
+    "scheduler=input_order",
+    "backend=None",
+    "event_sink=None"
+  ],
+  "trial_auditor_file": "tools/r041_scheduler_direction/trial_audit.py",
+  "trial_auditor_git_blob": "3d5e0150b6dca3970830add32f38a13300ff7121",
+  "trial_auditor_arguments": [
+    "run",
+    "trial",
+    "case",
+    "seed",
+    "conditions"
+  ],
+  "seed_auditor_file": "tools/r036_input_representation/audit.py",
+  "seed_auditor_arguments": [
+    "root",
+    "plan"
+  ],
+  "old_production_functions_modified": false,
+  "actual_native_import_or_execution_confirmed": false
+}

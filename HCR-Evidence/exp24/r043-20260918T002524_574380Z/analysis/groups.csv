@@ -1,0 +1,3 @@
+id_variant,scheduler,permutations,min_native_ticks,max_native_ticks,tick_spread,mean_native_ticks,across_order_invariance_predicted
+identity,input_order,6,102,170,68,136.0,False
+swap_SD,input_order,6,102,170,68,136.0,False

@@ -1,0 +1,19 @@
+{
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "basis_commit": "8713f17eedf684b8392f3d07d9d67a3b8f8f61cd",
+  "unit_test_methods_passed": 114,
+  "r038_unit_methods_passed": 72,
+  "r038_selector_methods_passed": 14,
+  "r037_unit_methods_passed": 93,
+  "r037_selector_methods_passed": 16,
+  "total_test_methods_passed": 309,
+  "native_integration_executed_here": false,
+  "exp20_native_trials_executed_here": 0,
+  "windows_cmd_powershell_executed_here": false,
+  "scope": "Linux unit/synthetic selector/installer/provenance tests only. Not native EXP20 evidence.",
+  "native_integration_methods_packaged": 8,
+  "native_integration_control_trials_on_user_run": 12,
+  "full_repository_and_parent_evidence_available_here": false,
+  "external_model_called": false
+}

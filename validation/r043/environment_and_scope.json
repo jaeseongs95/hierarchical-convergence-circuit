@@ -1,0 +1,20 @@
+{
+  "basis_commit": "eedb04f90f02cf3c55693d493d33db18f96a23b5",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "unit_tests": 60,
+  "unit_passed": 60,
+  "unit_failed": 0,
+  "unit_skipped": 0,
+  "syntax_files": 27,
+  "R042_archive_manifest_matches_GitHub_blob": true,
+  "R042_files_hash_verified": 41,
+  "full_native_dependency_check": "blocked_missing_r038_early_adoption_in_generation_environment",
+  "native_trials_executed": 0,
+  "native_integration_tests_executed": 0,
+  "Windows_CMD_PowerShell_executed": false,
+  "LLM_calls": 0,
+  "git_commit_push_performed": false,
+  "spec_hypothesis_result": null,
+  "note": "Synthetic unit/fault-injection tests are not EXP24 native research results."
+}
