@@ -1,0 +1,119 @@
+A saved: s00__identity
+A saved: s00__fresh_ids
+A saved: s01__identity
+A saved: s01__fresh_ids
+A saved: s02__identity
+A saved: s02__fresh_ids
+A saved: s03__identity
+A saved: s03__fresh_ids
+A saved: s04__identity
+A saved: s04__fresh_ids
+A saved: s05__identity
+A saved: s05__fresh_ids
+A saved: s06__identity
+A saved: s06__fresh_ids
+B saved: 1/98 t0000
+B saved: 2/98 t0001
+B saved: 3/98 t0002
+B saved: 4/98 t0003
+B saved: 5/98 t0004
+B saved: 6/98 t0005
+B saved: 7/98 t0006
+B saved: 8/98 t0007
+B saved: 9/98 t0008
+B saved: 10/98 t0009
+B saved: 11/98 t0010
+B saved: 12/98 t0011
+B saved: 13/98 t0012
+B saved: 14/98 t0013
+B saved: 15/98 t0014
+B saved: 16/98 t0015
+B saved: 17/98 t0016
+B saved: 18/98 t0017
+B saved: 19/98 t0018
+B saved: 20/98 t0019
+B saved: 21/98 t0020
+B saved: 22/98 t0021
+B saved: 23/98 t0022
+B saved: 24/98 t0023
+B saved: 25/98 t0024
+B saved: 26/98 t0025
+B saved: 27/98 t0026
+B saved: 28/98 t0027
+B saved: 29/98 t0028
+B saved: 30/98 t0029
+B saved: 31/98 t0030
+B saved: 32/98 t0031
+B saved: 33/98 t0032
+B saved: 34/98 t0033
+B saved: 35/98 t0034
+B saved: 36/98 t0035
+B saved: 37/98 t0036
+B saved: 38/98 t0037
+B saved: 39/98 t0038
+B saved: 40/98 t0039
+B saved: 41/98 t0040
+B saved: 42/98 t0041
+B saved: 43/98 t0042
+B saved: 44/98 t0043
+B saved: 45/98 t0044
+B saved: 46/98 t0045
+B saved: 47/98 t0046
+B saved: 48/98 t0047
+B saved: 49/98 t0048
+B saved: 50/98 t0049
+B saved: 51/98 t0050
+B saved: 52/98 t0051
+B saved: 53/98 t0052
+B saved: 54/98 t0053
+B saved: 55/98 t0054
+B saved: 56/98 t0055
+B saved: 57/98 t0056
+B saved: 58/98 t0057
+B saved: 59/98 t0058
+B saved: 60/98 t0059
+B saved: 61/98 t0060
+B saved: 62/98 t0061
+B saved: 63/98 t0062
+B saved: 64/98 t0063
+B saved: 65/98 t0064
+B saved: 66/98 t0065
+B saved: 67/98 t0066
+B saved: 68/98 t0067
+B saved: 69/98 t0068
+B saved: 70/98 t0069
+B saved: 71/98 t0070
+B saved: 72/98 t0071
+B saved: 73/98 t0072
+B saved: 74/98 t0073
+B saved: 75/98 t0074
+B saved: 76/98 t0075
+B saved: 77/98 t0076
+B saved: 78/98 t0077
+B saved: 79/98 t0078
+B saved: 80/98 t0079
+B saved: 81/98 t0080
+B saved: 82/98 t0081
+B saved: 83/98 t0082
+B saved: 84/98 t0083
+B saved: 85/98 t0084
+B saved: 86/98 t0085
+B saved: 87/98 t0086
+B saved: 88/98 t0087
+B saved: 89/98 t0088
+B saved: 90/98 t0089
+B saved: 91/98 t0090
+B saved: 92/98 t0091
+B saved: 93/98 t0092
+B saved: 94/98 t0093
+B saved: 95/98 t0094
+B saved: 96/98 t0095
+B saved: 97/98 t0096
+B saved: 98/98 t0097
+{
+  "population": "research",
+  "sources": 14,
+  "followups": 98,
+  "queries": 112,
+  "automatic_retry": false
+}

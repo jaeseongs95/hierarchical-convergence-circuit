@@ -1,0 +1,13 @@
+scenario,arm,outcome_equal,operation_counts_equal,effective_program_equal,numeric_trajectory_equal,export_byte_difference,prediction,byte_invariance_predicted
+extend,cold,True,True,True,True,0,supported,False
+extend,state_carry,True,True,True,True,24,supported,False
+extend,proof_memo,True,True,True,True,24,supported,False
+extend,relation_carry,True,True,True,True,24,supported,False
+different_subject,cold,True,True,True,True,0,supported,False
+different_subject,state_carry,True,True,True,True,24,supported,False
+different_subject,proof_memo,True,True,True,True,24,supported,False
+different_subject,relation_carry,True,True,True,True,24,supported,False
+premise_changed,cold,True,True,True,True,0,supported,False
+premise_changed,state_carry,True,False,True,True,24,falsified,False
+premise_changed,proof_memo,True,False,True,True,24,falsified,False
+premise_changed,relation_carry,True,False,True,True,24,falsified,False

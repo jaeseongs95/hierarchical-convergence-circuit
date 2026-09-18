@@ -1,0 +1,7 @@
+scenario,variant,outcome_equal,proof_graph_equal,kernel_ticks_equal,delta_new_proof_nodes,delta_export_bytes,unique_HCC_advantage_established
+extend,identity,True,True,True,0,18,False
+extend,fresh_ids,True,True,True,0,18,False
+different_subject,identity,True,True,True,0,18,False
+different_subject,fresh_ids,True,True,True,0,18,False
+premise_changed,identity,True,True,True,0,18,False
+premise_changed,fresh_ids,True,True,True,0,18,False

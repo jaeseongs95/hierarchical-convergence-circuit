@@ -1,0 +1,104 @@
+{
+  "created": "HCR-Evidence/exp29/.gitattributes",
+  "sha256": "dd33120e684e810bbf3830072944ed7ecb2050d33e091c2e1af334f511d4b1ba"
+}
+{
+  "created": "HCR-Evidence/exp29/.gitignore",
+  "sha256": "5a421de0cea4e0aafee2fb92d5c48f1d1cdffaf52eff3ab4f3f0f6ab6b759920"
+}
+{
+  "created": "R048_MANIFEST.json",
+  "sha256": "d4f0c8831978dd022c8796584289d445bebab156863a36498a81cd9ec094267a"
+}
+{
+  "created": "R048_README.ko.md",
+  "sha256": "dcd31c7b7d4f69e05618b0712ea2b7c4b9338ae3bfd9a61da2334070cce87a48"
+}
+{
+  "created": "Run-HCR-R048.cmd",
+  "sha256": "aa80085a238e0726d1b43e4a5d1c279f8c9c0dd7d4accfc3d387783ed826bab4"
+}
+{
+  "created": "Run-HCR-R048.py",
+  "sha256": "459533dab977801be0bc6d6ef96eda89b896c17d8015822feeaf90e5ddc9d8b1"
+}
+{
+  "created": "docs/R048_DESIGN.ko.md",
+  "sha256": "ac057adb436826a4cd330280cb7867fc64dce680b7fc38635bb2fc28ad8b8a47"
+}
+{
+  "created": "docs/R048_FROZEN_DESIGN.json",
+  "sha256": "6b1dc92a0a27f56aba054d5b94d62dc586f8f33fa05631ee513c13414ed3d315"
+}
+{
+  "created": "docs/R048_SELFTEST.txt",
+  "sha256": "51debc10bb9feab147d288540497ef331c01541d8d1d183c8e558a51e5d246b5"
+}
+{
+  "created": "docs/R048_VALIDATION.json",
+  "sha256": "27a1f8612d117c86af1b39a59c16e7de79bc080d53becae45d86efde52a0a4e2"
+}
+{
+  "created": "scripts/r048_cli.py",
+  "sha256": "085bd4c11125c2fbbb827033969b4258c5eae775478545e1092f1dc3c9d35795"
+}
+{
+  "created": "scripts/r048_install.py",
+  "sha256": "b553079c528224ecc51101a143beeb92cb41c933b305d900cd520cf0042f3118"
+}
+{
+  "created": "scripts/r048_launch.ps1",
+  "sha256": "66cd8835962b16d4bd01e40cc00e297c71797246c9233941f7bcd1648ff9e61e"
+}
+{
+  "created": "scripts/r048_tests.py",
+  "sha256": "56b80aaab1d387637c0f42100ddb427d6019528566f69cd38b32ae81a50a117e"
+}
+{
+  "created": "scripts/r048_verify_bundle.cmd",
+  "sha256": "0237d63bec4ffbbb14af9e960ef6329b0f69c187eec02711c882989acdc8a7bc"
+}
+{
+  "created": "tools/r048_precision/__init__.py",
+  "sha256": "5faf439fa6af8495d53c4bb05ba79a096f9c7917f0136e983c37d91c1e5979f4"
+}
+{
+  "created": "tools/r048_precision/device.py",
+  "sha256": "aaf78df67b851ede551194bf8dd1cda5a4bf695d37f9d5bfe6797346005cc71d"
+}
+{
+  "created": "tools/r048_precision/evaluate.py",
+  "sha256": "21b7550ed77ea9f6a3996b10e12bb5023a646617e8b8e887627a0935d70c509e"
+}
+{
+  "created": "tools/r048_precision/io.py",
+  "sha256": "cc500818f540ad9bdfc3ed406344c405f193e507c130aaffd92b1a2cd7a84331"
+}
+{
+  "created": "tools/r048_precision/pipeline.py",
+  "sha256": "33b714c415f86c6a656c7e188f92914f70a011f9235729d548248845684f72ee"
+}
+{
+  "created": "tools/r048_precision/provenance.py",
+  "sha256": "0f86da6524c59f5f24187748f0bb108105c2a29c1b84d7f8730e27a848a33c7f"
+}
+{
+  "created": "tools/r048_precision/reporting.py",
+  "sha256": "01e05a8e5636ae2a98a98831605832b2b2c9d6d1831f58b22d6e567dad2674ed"
+}
+{
+  "created": "tools/r048_precision/spec.py",
+  "sha256": "eb6586ab513a372f924b613cc4047f7941bab5a42b8dc6004011dd0f81ed3251"
+}
+{
+  "created": "tools/r048_precision/tests/__init__.py",
+  "sha256": "e3d84914fd06a316041a6965c645323147589e92a180b737227e307cd19056bb"
+}
+{
+  "created": "tools/r048_precision/tests/test_r048_artifacts.py",
+  "sha256": "01416d65be0d1afc24042e8ed67e0381aed7de12e5e68bf02113cfb1f588b49b"
+}
+{
+  "created": "tools/r048_precision/tests/test_r048_device.py",
+  "sha256": "6855cbf92683be61fef19aa047e9ff4078acd5b27ade725f63efcfa5a0e824c2"
+}

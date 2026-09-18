@@ -1,0 +1,32 @@
+{
+  "head": "b10f571eb02e296b2ccb3f16eaf727da7d0e4d45",
+  "planned_new_files": [
+    "HCR-Evidence/exp29/.gitattributes",
+    "HCR-Evidence/exp29/.gitignore",
+    "R048_MANIFEST.json",
+    "R048_README.ko.md",
+    "Run-HCR-R048.cmd",
+    "Run-HCR-R048.py",
+    "docs/R048_DESIGN.ko.md",
+    "docs/R048_FROZEN_DESIGN.json",
+    "docs/R048_SELFTEST.txt",
+    "docs/R048_VALIDATION.json",
+    "scripts/r048_cli.py",
+    "scripts/r048_install.py",
+    "scripts/r048_launch.ps1",
+    "scripts/r048_tests.py",
+    "scripts/r048_verify_bundle.cmd",
+    "tools/r048_precision/__init__.py",
+    "tools/r048_precision/device.py",
+    "tools/r048_precision/evaluate.py",
+    "tools/r048_precision/io.py",
+    "tools/r048_precision/pipeline.py",
+    "tools/r048_precision/provenance.py",
+    "tools/r048_precision/reporting.py",
+    "tools/r048_precision/spec.py",
+    "tools/r048_precision/tests/__init__.py",
+    "tools/r048_precision/tests/test_r048_artifacts.py",
+    "tools/r048_precision/tests/test_r048_device.py"
+  ],
+  "unchanged_files": 0
+}

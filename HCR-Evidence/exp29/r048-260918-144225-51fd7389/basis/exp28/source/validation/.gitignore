@@ -1,0 +1,2 @@
+# Preserve research logs when git add is requested by the user.
+!*.log

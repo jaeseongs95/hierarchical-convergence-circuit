@@ -1,0 +1,161 @@
+{
+  "mode": "previous_EXP26_regression_not_new_research",
+  "commit": "3f07c81e27984e712f8cf3dc4b52ab2194dfbc53",
+  "kernel_config_signature": "fbcf0e379d6754661e709744355fde55a0840c06882294d60f7ea68d4bd4c80e",
+  "reference_blobs": {
+    "trials.csv": "42245146207931d20782192a43e63a51ad2424d0",
+    "decision_networks.csv": "87737de1bb3f11a33624e5722964035df9304045"
+  },
+  "rows": [
+    {
+      "trial_id": "t0001",
+      "observation": {
+        "episode_id": "exp26-fixed-path",
+        "revision": 0,
+        "start": "v0",
+        "goal": "v2",
+        "edges": [
+          {
+            "id": "e0",
+            "source": "v0",
+            "target": "v1",
+            "score": 0.92
+          },
+          {
+            "id": "e1",
+            "source": "v1",
+            "target": "v2",
+            "score": 0.92
+          }
+        ]
+      },
+      "dynamics_sha256": "118b900dd5a5de219917ab2a9e1d54c1d0c74c73c5a7c1b1f7b190077b26cc55",
+      "ticks": 33,
+      "value": true,
+      "accepted": true
+    },
+    {
+      "trial_id": "t0002",
+      "observation": {
+        "episode_id": "exp26-fixed-path",
+        "revision": 0,
+        "start": "v0",
+        "goal": "v2",
+        "edges": [
+          {
+            "id": "alias_Z9",
+            "source": "v0",
+            "target": "v1",
+            "score": 0.92
+          },
+          {
+            "id": "alias_A1",
+            "source": "v1",
+            "target": "v2",
+            "score": 0.92
+          }
+        ]
+      },
+      "dynamics_sha256": "118b900dd5a5de219917ab2a9e1d54c1d0c74c73c5a7c1b1f7b190077b26cc55",
+      "ticks": 33,
+      "value": true,
+      "accepted": true
+    },
+    {
+      "trial_id": "t0005",
+      "observation": {
+        "episode_id": "exp26-fixed-path",
+        "revision": 0,
+        "start": "v0",
+        "goal": "v2",
+        "edges": [
+          {
+            "id": "alias_Z9",
+            "source": "v0",
+            "target": "v2",
+            "score": 0.92
+          }
+        ]
+      },
+      "dynamics_sha256": "cf7ef5f252cbcd6eb4d5f51bc37f98bdf1a263d2c4749144b3372bf66fb4d702",
+      "ticks": 29,
+      "value": true,
+      "accepted": true
+    },
+    {
+      "trial_id": "t0006",
+      "observation": {
+        "episode_id": "exp26-fixed-path",
+        "revision": 0,
+        "start": "v0",
+        "goal": "v2",
+        "edges": [
+          {
+            "id": "e0",
+            "source": "v0",
+            "target": "v2",
+            "score": 0.92
+          }
+        ]
+      },
+      "dynamics_sha256": "cf7ef5f252cbcd6eb4d5f51bc37f98bdf1a263d2c4749144b3372bf66fb4d702",
+      "ticks": 29,
+      "value": true,
+      "accepted": true
+    },
+    {
+      "trial_id": "t0009",
+      "observation": {
+        "episode_id": "exp26-fixed-path",
+        "revision": 0,
+        "start": "v0",
+        "goal": "v2",
+        "edges": [
+          {
+            "id": "e0",
+            "source": "v0",
+            "target": "v1",
+            "score": 0.92
+          },
+          {
+            "id": "e1",
+            "source": "v1",
+            "target": "v2",
+            "score": -0.92
+          }
+        ]
+      },
+      "dynamics_sha256": "8f56dbd23840696ddeaeac97d1a9f6f090aafe326c419b66ca750effb9a2d8f2",
+      "ticks": 28,
+      "value": false,
+      "accepted": true
+    },
+    {
+      "trial_id": "t0010",
+      "observation": {
+        "episode_id": "exp26-fixed-path",
+        "revision": 0,
+        "start": "v0",
+        "goal": "v2",
+        "edges": [
+          {
+            "id": "alias_Z9",
+            "source": "v0",
+            "target": "v1",
+            "score": 0.92
+          },
+          {
+            "id": "alias_A1",
+            "source": "v1",
+            "target": "v2",
+            "score": -0.92
+          }
+        ]
+      },
+      "dynamics_sha256": "8f56dbd23840696ddeaeac97d1a9f6f090aafe326c419b66ca750effb9a2d8f2",
+      "ticks": 28,
+      "value": false,
+      "accepted": true
+    }
+  ]
+}

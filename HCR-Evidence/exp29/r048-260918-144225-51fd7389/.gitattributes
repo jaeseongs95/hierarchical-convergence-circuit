@@ -1,0 +1,2 @@
+# Immutable experiment evidence: preserve exact bytes.
+* -text -filter -ident !working-tree-encoding

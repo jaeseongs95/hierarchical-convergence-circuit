@@ -1,0 +1,15 @@
+{
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "tests": 96,
+  "skip": 0,
+  "native_core_sources_blob_verified": 8,
+  "new_carry_smoke_score": 0.85,
+  "new_formal_EXP27_executed": false,
+  "older_full_AdaptiveSession_pipeline_executed": false,
+  "windows_executed": false,
+  "dependencies_downloaded_or_installed": false,
+  "prior_OFF_regression_conditions": 6,
+  "fresh_zip_install_without_pythonpath_tests_passed": 96,
+  "development_failure_logs_preserved": 2
+}
