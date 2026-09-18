@@ -1,0 +1,13 @@
+branch_order,use_circuits,identity_trial,swap_trial,native_ticks_equal,canonical_readout_trajectory_equal,observed_count_vector_equal,prediction,first_readout_difference,across_array_orders_invariance_predicted
+SMD,True,t0000,t0003,True,True,True,supported_in_pair,"{""comparable"":true,""fields"":[],""ordinal"":null,""reason"":""equal""}",False
+SMD,False,t0001,t0002,True,True,True,supported_in_pair,"{""comparable"":true,""fields"":[],""ordinal"":null,""reason"":""equal""}",False
+SDM,True,t0007,t0004,True,True,True,supported_in_pair,"{""comparable"":true,""fields"":[],""ordinal"":null,""reason"":""equal""}",False
+SDM,False,t0006,t0005,True,True,True,supported_in_pair,"{""comparable"":true,""fields"":[],""ordinal"":null,""reason"":""equal""}",False
+MSD,True,t0008,t0011,True,True,True,supported_in_pair,"{""comparable"":true,""fields"":[],""ordinal"":null,""reason"":""equal""}",False
+MSD,False,t0009,t0010,True,True,True,supported_in_pair,"{""comparable"":true,""fields"":[],""ordinal"":null,""reason"":""equal""}",False
+MDS,True,t0015,t0012,True,True,True,supported_in_pair,"{""comparable"":true,""fields"":[],""ordinal"":null,""reason"":""equal""}",False
+MDS,False,t0014,t0013,True,True,True,supported_in_pair,"{""comparable"":true,""fields"":[],""ordinal"":null,""reason"":""equal""}",False
+DSM,True,t0016,t0019,True,True,True,supported_in_pair,"{""comparable"":true,""fields"":[],""ordinal"":null,""reason"":""equal""}",False
+DSM,False,t0017,t0018,True,True,True,supported_in_pair,"{""comparable"":true,""fields"":[],""ordinal"":null,""reason"":""equal""}",False
+DMS,True,t0023,t0020,True,True,True,supported_in_pair,"{""comparable"":true,""fields"":[],""ordinal"":null,""reason"":""equal""}",False
+DMS,False,t0022,t0021,True,True,True,supported_in_pair,"{""comparable"":true,""fields"":[],""ordinal"":null,""reason"":""equal""}",False

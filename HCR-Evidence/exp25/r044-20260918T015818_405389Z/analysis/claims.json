@@ -1,0 +1,27 @@
+{
+  "scope": "native_toy_frozen_memory_total_circuit_branch_gate",
+  "registered_predictions": {
+    "H_expansion": {
+      "falsified_in_pair": 4,
+      "supported_in_pair": 8
+    },
+    "H_kernel": {
+      "falsified_in_pair": 12
+    },
+    "H_outcome": {
+      "supported_in_pair": 12
+    }
+  },
+  "ID_relabel_controls": {
+    "supported_in_pair": 12
+  },
+  "new_learning_tested": false,
+  "compression_learning_gain_tested": false,
+  "retention_tested": false,
+  "full_HCC_cycle_confirmed": false,
+  "macro_application_isolated_from_pool": false,
+  "lower_ticks_is_lower_energy": false,
+  "minimum_goal_proof_DAG_identity_measured": false,
+  "old_parent_raw_recounted_as_new": false,
+  "interpretation": "prediction status is per pair, not whole-theory falsification; count fields are not independent samples"
+}

@@ -1,0 +1,32 @@
+{
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "grammar_target": "Python 3.12",
+  "actual_execution_version": "3.13.5",
+  "parsed_and_compiled_files": 22,
+  "all_passed": true,
+  "files": [
+    "Run-HCR-R038.py",
+    "scripts/r038_cli.py",
+    "scripts/verify_r038.py",
+    "tools/r038_early_adoption/__init__.py",
+    "tools/r038_early_adoption/audit.py",
+    "tools/r038_early_adoption/cli.py",
+    "tools/r038_early_adoption/contracts.py",
+    "tools/r038_early_adoption/errata.py",
+    "tools/r038_early_adoption/metrics.py",
+    "tools/r038_early_adoption/native_tests/test_native_integration.py",
+    "tools/r038_early_adoption/protocol.py",
+    "tools/r038_early_adoption/reporting.py",
+    "tools/r038_early_adoption/runtime.py",
+    "tools/r038_early_adoption/selector_tests/test_selector_timing.py",
+    "tools/r038_early_adoption/sources.py",
+    "tools/r038_early_adoption/spec.py",
+    "tools/r038_early_adoption/tests/__init__.py",
+    "tools/r038_early_adoption/tests/_support.py",
+    "tools/r038_early_adoption/tests/test_metrics_spec.py",
+    "tools/r038_early_adoption/tests/test_protocol_io.py",
+    "tools/r038_early_adoption/tests/test_reporting.py",
+    "tools/r038_early_adoption/tests/test_runtime.py"
+  ]
+}

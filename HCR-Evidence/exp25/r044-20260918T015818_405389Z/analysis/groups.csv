@@ -1,0 +1,5 @@
+id_variant,use_circuits,conditions,min_native_ticks,max_native_ticks,tick_spread,mean_native_ticks,accepted,correct_in_declared_worlds
+identity,True,6,164,262,98,213.0,6,6
+identity,False,6,33,194,161,101.83333333333333,6,6
+swap_SD,True,6,164,262,98,213.0,6,6
+swap_SD,False,6,33,194,161,101.83333333333333,6,6

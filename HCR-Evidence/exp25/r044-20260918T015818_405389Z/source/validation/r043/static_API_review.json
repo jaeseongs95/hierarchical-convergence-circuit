@@ -1,0 +1,29 @@
+{
+  "repository": "jaeseongs95/hierarchical-convergence-circuit",
+  "commit": "eedb04f90f02cf3c55693d493d33db18f96a23b5",
+  "connector_files_read": [
+    {
+      "path": "tools/r041_scheduler_direction/runtime.py",
+      "blob_sha": "c156af15da7db2b23bb3cb81f6dd357b961a043f"
+    },
+    {
+      "path": "tools/r041_scheduler_direction/scheduler.py",
+      "blob_sha": "bf4184133812240d9f07af2dd1262de7e80e68c2"
+    },
+    {
+      "path": "tools/r041_scheduler_direction/contracts.py",
+      "blob_sha": "78d2c418ce088955f234f28de5f02895881f2b7e"
+    },
+    {
+      "path": "tools/r041_scheduler_direction/trial_audit.py",
+      "blob_sha": "3d5e0150b6dca3970830add32f38a13300ff7121"
+    }
+  ],
+  "checks": [
+    "ScheduledTimingTrial accepts scheduler=input_order",
+    "input_order selects first frontier slot and retains selected ID logging reads",
+    "trial_audit accepts arbitrary ID-preserving cases via observation/worlds",
+    "R042 evaluator-only trajectory helper retained without native input projection"
+  ],
+  "scope": "API source inspection; not native end-to-end execution"
+}

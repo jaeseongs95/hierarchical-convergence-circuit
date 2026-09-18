@@ -1,0 +1,16 @@
+{
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "actual_checks": [
+    "offline_unit_contract_tests_72",
+    "python_3_12_grammar",
+    "current_interpreter_compile",
+    "source_API_static_review"
+  ],
+  "actual_native_exp23_executed": false,
+  "actual_native_integration_executed": false,
+  "full_exp22_raw_replay_executed": false,
+  "windows_bat_executed": false,
+  "synthetic_fixtures_are_research_evidence": false,
+  "baseline_commit": "11f43790c0cb1b4732199ae4fb17c5bbbed4cd5b"
+}
