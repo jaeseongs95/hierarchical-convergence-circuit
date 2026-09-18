@@ -1,0 +1,8 @@
+usage: Run-HCR-R046.py [-h] [--parent PARENT] [--check-only]
+                       [--output-base OUTPUT_BASE]
+
+options:
+  -h, --help            show this help message and exit
+  --parent PARENT
+  --check-only
+  --output-base OUTPUT_BASE

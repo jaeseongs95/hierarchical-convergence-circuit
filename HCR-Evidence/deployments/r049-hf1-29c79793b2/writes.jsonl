@@ -1,0 +1,12 @@
+{"path":"docs/R049_HF1_CHANGE.json","sha256":"113af15b2ce267f763f18760e9ccd0b2adda318fbb9d829f7c1ca0a744f6abeb"}
+{"path":"docs/R049_HF1_EXPLORATION.json","sha256":"525432b15b4320a6d8615919a7f22246ffd659f859c6e5058a4970e5516ce44e"}
+{"path":"docs/R049_HF1_README.ko.md","sha256":"aa10d9b0bca77c2dacb434c6821b3e4f53d4d8268359977536bec33d752a0e21"}
+{"path":"scripts/r049_hf1_launch.ps1","sha256":"8d554472cad436f5fb37f99acfc5d6eb2f3e7aad96fcebfc4955c25fb63b416f"}
+{"path":"scripts/r049_hf1_probe.py","sha256":"4750338e723b648e05d0e34373390f085c7e515e8b596a14558aefd27a883833"}
+{"path":"scripts/r049_hf1_repair.py","sha256":"cd487778c3827a4771e1133234d1607224844cd5bab42980dde1d096557d0f58"}
+{"path":"tools/r049_signal_boundary/evaluate.py","sha256":"e683305bd3c9ea6db86b5c7a73d6cafe1ab18ca4bd87261c21652c069e5aa11b"}
+{"path":"tools/r049_signal_boundary/regression.py","sha256":"a18233c6db307404e9cd5666b89b0089f74bb2356f61f8a04f97bfba3c384446"}
+{"path":"tools/r049_signal_boundary/reporting.py","sha256":"107f33c79047e9bc85457b4100d0c9d21b1891a72b5539115f569352ac7aec2b"}
+{"path":"tools/r049_signal_boundary/tests/test_r049_device.py","sha256":"8d99590e4066babcf2dfc7437932fb20d42754483a463e618b6cdc84ab3ba0c1"}
+{"path":"tools/r049_signal_boundary/tests/test_r049_hf1.py","sha256":"bb6bdb58b6ac697a299e5a07325df6bec0960b48d98d4894f64b7ba4d085b729"}
+{"path":"R049_MANIFEST.json","sha256":"c647ac53e8cc162dee118648799b8c6973ebf1a78b5ee3008cb4557a9c5394ac"}

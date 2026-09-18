@@ -1,0 +1,112 @@
+{
+  "created": "HCR-Evidence/exp30/.gitattributes",
+  "sha256": "dd33120e684e810bbf3830072944ed7ecb2050d33e091c2e1af334f511d4b1ba"
+}
+{
+  "created": "HCR-Evidence/exp30/.gitignore",
+  "sha256": "5a421de0cea4e0aafee2fb92d5c48f1d1cdffaf52eff3ab4f3f0f6ab6b759920"
+}
+{
+  "created": "R049_MANIFEST.json",
+  "sha256": "dbb99206ebb9254f3f833d55678b061d6e49460258c7b0665ae0ccba2c50a11b"
+}
+{
+  "created": "R049_README.ko.md",
+  "sha256": "33210135f3393b986534d262e7195aed55ee44fa56854427c5a1a797ed47c02a"
+}
+{
+  "created": "Run-HCR-R049.cmd",
+  "sha256": "dc55c34324c8f79e9dbb04680e81e5eac06248e2aba28aa98633e33e9485d0a3"
+}
+{
+  "created": "Run-HCR-R049.py",
+  "sha256": "4a0f1be24c22f80931bece04b64050ab4f2de75fcfe8f6383b5f7b69f15b5806"
+}
+{
+  "created": "docs/R049_DESIGN.ko.md",
+  "sha256": "7742e0bb413781288f3ea01986bf8da443695a7f25a188b3be7ea936fef47a8b"
+}
+{
+  "created": "docs/R049_DEVELOPMENT_TESTS.txt",
+  "sha256": "56f3d33e4e39718a4b4680436f67eeb5ed04e15ac3047d58d8578c5aec71f144"
+}
+{
+  "created": "docs/R049_FROZEN_DESIGN.json",
+  "sha256": "fd542d42a2e8e0fff2fb2910afdef9d11d841f6971b5a593dabfe4bb632cbf16"
+}
+{
+  "created": "docs/R049_PRIOR_EXPLORATION.json",
+  "sha256": "ff13c22bff5a03e38acba5ce8f07b419cd778f4f10e834834e29589f186ff1cc"
+}
+{
+  "created": "docs/R049_VALIDATION_SCOPE.json",
+  "sha256": "a02c95d0db3b1b1e446d8d4529533c6942785a8634ca8e38cb8e84932a3fda07"
+}
+{
+  "created": "scripts/r049_cli.py",
+  "sha256": "a2513c91b67b38204a0704a79a6cb9d4b4e6d46ecbee90b357934a4aba0ee522"
+}
+{
+  "created": "scripts/r049_install.py",
+  "sha256": "121b14293e521533b4a1440a441146373302980c002ecaf2ca83f8c782b30965"
+}
+{
+  "created": "scripts/r049_launch.ps1",
+  "sha256": "f528a6ecd0a310c12607b3ab7ac5bd4e0b0bd87ee253880ac29b5bcc645951ed"
+}
+{
+  "created": "scripts/r049_tests.py",
+  "sha256": "8060d60885943bc3295afd6be9b94e262e7c4d8b60fca3efd03ef1f09a0c2c13"
+}
+{
+  "created": "scripts/r049_verify_bundle.cmd",
+  "sha256": "a846291c09f6a3d0edb59ebfa8521ebff418f4afb561a7d314f57afd5f42c403"
+}
+{
+  "created": "tools/r049_signal_boundary/__init__.py",
+  "sha256": "bab75f53dd6cfafd3ead26b3668dc77c193fbaa5ea911b58c1f2ddf820d96277"
+}
+{
+  "created": "tools/r049_signal_boundary/audit.py",
+  "sha256": "56a10b79a8b813bd02cc4f618cf93596b9839fdc1daab0eff4f3a60d85d202af"
+}
+{
+  "created": "tools/r049_signal_boundary/device.py",
+  "sha256": "9113142e37de65fad7dbbb668e07a335009c1bf738039cee2a512ca311d4c485"
+}
+{
+  "created": "tools/r049_signal_boundary/diagnostics.py",
+  "sha256": "6e574f803bbb60362f8b8bb1c49df1fe10393521097f855c9f2f43d939541aa1"
+}
+{
+  "created": "tools/r049_signal_boundary/evaluate.py",
+  "sha256": "76f185c58403cd6aca94b175c9896dc40072fe0d98833f9231918b61828ad92d"
+}
+{
+  "created": "tools/r049_signal_boundary/pipeline.py",
+  "sha256": "37704146d50bf0d38c371a169f5f78ae8f06f289cb9a5c7862a981abb52b33a3"
+}
+{
+  "created": "tools/r049_signal_boundary/provenance.py",
+  "sha256": "0f3ff6d47ac12372a686f1b2095013032ce1039dda11d98b91c15893aeb1f8b8"
+}
+{
+  "created": "tools/r049_signal_boundary/reporting.py",
+  "sha256": "270a2d9babbc1bd1495997028bef58798c54041202ddf4526b5fb3cda0a849b1"
+}
+{
+  "created": "tools/r049_signal_boundary/spec.py",
+  "sha256": "c17ff2ef34256198e5faf37e6d7b08d7418df9447c1d19365e90a62948732f56"
+}
+{
+  "created": "tools/r049_signal_boundary/tests/__init__.py",
+  "sha256": "ef3ee35924df911cffd72081a155bb09b4c2c2e6c7025bcb20d8f73dab715dd3"
+}
+{
+  "created": "tools/r049_signal_boundary/tests/test_r049_artifacts.py",
+  "sha256": "2f4eba6e483c74f4d28ae1f6923c7f00ee54f11d3569ad660c41cec185e8f6a1"
+}
+{
+  "created": "tools/r049_signal_boundary/tests/test_r049_device.py",
+  "sha256": "89d0ca8705a0e13f654731f8095b002971d264bc0424cda60a034c7a9e38963f"
+}

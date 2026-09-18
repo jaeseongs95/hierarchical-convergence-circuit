@@ -1,0 +1,43 @@
+case,strength,variant,mask,anchor,actual_ticks,fixed_ticks,actual_minus_fixed_ticks,eligible,eligibility_failures,outcome_equal,actual_accepted_correct,fixed_accepted_correct,native_program_equal,trajectory_equal,overlap_ticks,overlap_group_Linf,actual_gate,fixed_gate
+s00__identity,0.02,identity,edge,False,88,88,0,False,"[""A_not_correct_positive_adoption"", ""initialization_not_applied"", ""actual_B_not_correct_adoption"", ""fixed_B_not_correct_adoption""]",True,False,False,True,True,88,0.0,no_adopted_positive_source,no_adopted_positive_source
+s00__identity,0.02,identity,prefix,False,88,88,0,False,"[""A_not_correct_positive_adoption"", ""initialization_not_applied"", ""actual_B_not_correct_adoption"", ""fixed_B_not_correct_adoption""]",True,False,False,True,True,88,0.0,no_adopted_positive_source,no_adopted_positive_source
+s00__identity,0.02,identity,both,False,88,88,0,False,"[""A_not_correct_positive_adoption"", ""initialization_not_applied"", ""actual_B_not_correct_adoption"", ""fixed_B_not_correct_adoption""]",True,False,False,True,True,88,0.0,no_adopted_positive_source,no_adopted_positive_source
+s00__fresh_ids,0.02,fresh_ids,edge,False,88,88,0,False,"[""A_not_correct_positive_adoption"", ""initialization_not_applied"", ""actual_B_not_correct_adoption"", ""fixed_B_not_correct_adoption""]",True,False,False,True,True,88,0.0,no_adopted_positive_source,no_adopted_positive_source
+s00__fresh_ids,0.02,fresh_ids,prefix,False,88,88,0,False,"[""A_not_correct_positive_adoption"", ""initialization_not_applied"", ""actual_B_not_correct_adoption"", ""fixed_B_not_correct_adoption""]",True,False,False,True,True,88,0.0,no_adopted_positive_source,no_adopted_positive_source
+s00__fresh_ids,0.02,fresh_ids,both,False,88,88,0,False,"[""A_not_correct_positive_adoption"", ""initialization_not_applied"", ""actual_B_not_correct_adoption"", ""fixed_B_not_correct_adoption""]",True,False,False,True,True,88,0.0,no_adopted_positive_source,no_adopted_positive_source
+s01__identity,0.1,identity,edge,False,41,38,3,True,[],True,True,True,True,False,38,0.5073163230048661,bound_and_dependencies_current,bound_and_dependencies_current
+s01__identity,0.1,identity,prefix,False,37,37,0,True,[],True,True,True,True,False,37,0.046962661367889735,bound_and_dependencies_current,bound_and_dependencies_current
+s01__identity,0.1,identity,both,False,30,29,1,True,[],True,True,True,True,False,29,0.08022541249087389,bound_and_dependencies_current,bound_and_dependencies_current
+s01__fresh_ids,0.1,fresh_ids,edge,False,41,38,3,True,[],True,True,True,True,False,38,0.5073163230048661,bound_and_dependencies_current,bound_and_dependencies_current
+s01__fresh_ids,0.1,fresh_ids,prefix,False,37,37,0,True,[],True,True,True,True,False,37,0.046962661367889735,bound_and_dependencies_current,bound_and_dependencies_current
+s01__fresh_ids,0.1,fresh_ids,both,False,30,29,1,True,[],True,True,True,True,False,29,0.08022541249087389,bound_and_dependencies_current,bound_and_dependencies_current
+s02__identity,0.25,identity,edge,False,33,33,0,True,[],True,True,True,True,False,33,0.05485482003312553,bound_and_dependencies_current,bound_and_dependencies_current
+s02__identity,0.25,identity,prefix,False,31,31,0,True,[],True,True,True,True,False,31,0.00440724474088372,bound_and_dependencies_current,bound_and_dependencies_current
+s02__identity,0.25,identity,both,False,29,29,0,True,[],True,True,True,True,False,29,0.018757880133656757,bound_and_dependencies_current,bound_and_dependencies_current
+s02__fresh_ids,0.25,fresh_ids,edge,False,33,33,0,True,[],True,True,True,True,False,33,0.05485482003312553,bound_and_dependencies_current,bound_and_dependencies_current
+s02__fresh_ids,0.25,fresh_ids,prefix,False,31,31,0,True,[],True,True,True,True,False,31,0.00440724474088372,bound_and_dependencies_current,bound_and_dependencies_current
+s02__fresh_ids,0.25,fresh_ids,both,False,29,29,0,True,[],True,True,True,True,False,29,0.018757880133656757,bound_and_dependencies_current,bound_and_dependencies_current
+s03__identity,0.5,identity,edge,False,33,33,0,True,[],True,True,True,True,False,33,0.005539358522147597,bound_and_dependencies_current,bound_and_dependencies_current
+s03__identity,0.5,identity,prefix,False,31,31,0,True,[],True,True,True,True,False,31,0.011073495105353937,bound_and_dependencies_current,bound_and_dependencies_current
+s03__identity,0.5,identity,both,False,29,29,0,True,[],True,True,True,True,False,29,0.003670589832593718,bound_and_dependencies_current,bound_and_dependencies_current
+s03__fresh_ids,0.5,fresh_ids,edge,False,33,33,0,True,[],True,True,True,True,False,33,0.005539358522147597,bound_and_dependencies_current,bound_and_dependencies_current
+s03__fresh_ids,0.5,fresh_ids,prefix,False,31,31,0,True,[],True,True,True,True,False,31,0.011073495105353937,bound_and_dependencies_current,bound_and_dependencies_current
+s03__fresh_ids,0.5,fresh_ids,both,False,29,29,0,True,[],True,True,True,True,False,29,0.003670589832593718,bound_and_dependencies_current,bound_and_dependencies_current
+s04__identity,0.75,identity,edge,False,33,33,0,True,[],True,True,True,True,False,33,0.011925277962297864,bound_and_dependencies_current,bound_and_dependencies_current
+s04__identity,0.75,identity,prefix,False,31,31,0,True,[],True,True,True,True,False,31,0.011743348932310216,bound_and_dependencies_current,bound_and_dependencies_current
+s04__identity,0.75,identity,both,False,29,29,0,True,[],True,True,True,True,False,29,0.005069822411054137,bound_and_dependencies_current,bound_and_dependencies_current
+s04__fresh_ids,0.75,fresh_ids,edge,False,33,33,0,True,[],True,True,True,True,False,33,0.011925277962297864,bound_and_dependencies_current,bound_and_dependencies_current
+s04__fresh_ids,0.75,fresh_ids,prefix,False,31,31,0,True,[],True,True,True,True,False,31,0.011743348932310216,bound_and_dependencies_current,bound_and_dependencies_current
+s04__fresh_ids,0.75,fresh_ids,both,False,29,29,0,True,[],True,True,True,True,False,29,0.005069822411054137,bound_and_dependencies_current,bound_and_dependencies_current
+s05__identity,0.92,identity,edge,True,33,33,0,True,[],True,True,True,True,False,33,0.01264338222996636,bound_and_dependencies_current,bound_and_dependencies_current
+s05__identity,0.92,identity,prefix,True,31,31,0,True,[],True,True,True,True,False,31,0.011818268250910036,bound_and_dependencies_current,bound_and_dependencies_current
+s05__identity,0.92,identity,both,True,29,29,0,True,[],True,True,True,True,False,29,0.0053896409689940805,bound_and_dependencies_current,bound_and_dependencies_current
+s05__fresh_ids,0.92,fresh_ids,edge,True,33,33,0,True,[],True,True,True,True,False,33,0.01264338222996636,bound_and_dependencies_current,bound_and_dependencies_current
+s05__fresh_ids,0.92,fresh_ids,prefix,True,31,31,0,True,[],True,True,True,True,False,31,0.011818268250910036,bound_and_dependencies_current,bound_and_dependencies_current
+s05__fresh_ids,0.92,fresh_ids,both,True,29,29,0,True,[],True,True,True,True,False,29,0.0053896409689940805,bound_and_dependencies_current,bound_and_dependencies_current
+s06__identity,1.0,identity,edge,False,33,33,0,True,[],True,True,True,True,False,33,0.012760106333685517,bound_and_dependencies_current,bound_and_dependencies_current
+s06__identity,1.0,identity,prefix,False,31,31,0,True,[],True,True,True,True,False,31,0.01183043805504247,bound_and_dependencies_current,bound_and_dependencies_current
+s06__identity,1.0,identity,both,False,29,29,0,True,[],True,True,True,True,False,29,0.005441812581983396,bound_and_dependencies_current,bound_and_dependencies_current
+s06__fresh_ids,1.0,fresh_ids,edge,False,33,33,0,True,[],True,True,True,True,False,33,0.012760106333685517,bound_and_dependencies_current,bound_and_dependencies_current
+s06__fresh_ids,1.0,fresh_ids,prefix,False,31,31,0,True,[],True,True,True,True,False,31,0.01183043805504247,bound_and_dependencies_current,bound_and_dependencies_current
+s06__fresh_ids,1.0,fresh_ids,both,False,29,29,0,True,[],True,True,True,True,False,29,0.005441812581983396,bound_and_dependencies_current,bound_and_dependencies_current

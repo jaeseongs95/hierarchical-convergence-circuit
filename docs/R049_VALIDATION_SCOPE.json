@@ -1,0 +1,21 @@
+{
+  "population": "implementation_validation_not_research",
+  "native_core_files_git_blob_verified": 8,
+  "R048_source_files_verified": 25,
+  "new_tests_passed": 71,
+  "negative_conditions_not_used_to_tune_design": true,
+  "scientific_design_sha256": "d3194b2ed806e8efcbac07ce2b560cf1189ecf1f78b88614180afe3a10d3b8a1",
+  "existing_exploration_regression_conditions": 16,
+  "all_regression_dynamics_match": true,
+  "Windows_CMD_PowerShell_executed": false,
+  "actual_full_EXP29_parent_replayed_here": false,
+  "actual_inherited_R047_R048_suites_rerun_here": false,
+  "formal_EXP30_research_run_executed": false,
+  "integration_fixture_substitutions": [
+    "Git ancestry",
+    "original parent corpus and replay",
+    "inherited full-corpus test suite"
+  ],
+  "production_has_no_skip_option": true,
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]"
+}

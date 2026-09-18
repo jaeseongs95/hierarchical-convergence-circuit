@@ -1,0 +1,17 @@
+t0000 on_neutral exact=False numeric_and_discrete=True max_delta=1.11e-16
+t0001 off_neutral exact=True numeric_and_discrete=True max_delta=0
+t0002 on_high exact=True numeric_and_discrete=True max_delta=0
+t0003 off_high exact=True numeric_and_discrete=True max_delta=0
+t0004 off_neutral exact=True numeric_and_discrete=True max_delta=0
+t0005 on_high exact=True numeric_and_discrete=True max_delta=0
+t0006 off_high exact=True numeric_and_discrete=True max_delta=0
+t0007 on_neutral exact=False numeric_and_discrete=True max_delta=1.11e-16
+t0016 on_neutral exact=True numeric_and_discrete=True max_delta=0
+t0017 off_neutral exact=True numeric_and_discrete=True max_delta=0
+t0020 off_neutral exact=True numeric_and_discrete=True max_delta=0
+t0023 on_neutral exact=True numeric_and_discrete=True max_delta=0
+t0032 on_neutral exact=True numeric_and_discrete=True max_delta=0
+t0033 off_neutral exact=True numeric_and_discrete=True max_delta=0
+t0036 off_neutral exact=True numeric_and_discrete=True max_delta=0
+t0039 on_neutral exact=True numeric_and_discrete=True max_delta=0
+{"schema": "hcr-r049-hf1-local-diagnosis-v1", "population": "implementation_validation_not_research", "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]", "platform": "win32", "release_files": 35, "mode": "diagnose", "formal_EXP30_queries": 0, "old_failed_run_reexecuted": false, "old_exact_sha_failures": 2, "passed": true, "max_absolute_difference": 1.1102230246251565e-16, "diagnosis": "same_decisions_all_scalars_within_tolerance_but_original_SHA_comparison_failed"}

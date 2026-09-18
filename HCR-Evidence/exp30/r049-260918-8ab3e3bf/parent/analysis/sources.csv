@@ -1,0 +1,15 @@
+source,strength,variant,raw_value,accepted,classification,raw_correct,accepted_correct,native_ticks,censored,convergence_status,positive_reuse_available,D_DAG
+s00__identity,0.02,identity,False,False,unsupported,False,False,88,False,stable_decision,False,2
+s00__fresh_ids,0.02,fresh_ids,False,False,unsupported,False,False,88,False,stable_decision,False,2
+s01__identity,0.1,identity,True,True,correct,True,True,54,False,stable_decision,True,2
+s01__fresh_ids,0.1,fresh_ids,True,True,correct,True,True,54,False,stable_decision,True,2
+s02__identity,0.25,identity,True,True,correct,True,True,35,False,stable_decision,True,2
+s02__fresh_ids,0.25,fresh_ids,True,True,correct,True,True,35,False,stable_decision,True,2
+s03__identity,0.5,identity,True,True,correct,True,True,33,False,stable_decision,True,2
+s03__fresh_ids,0.5,fresh_ids,True,True,correct,True,True,33,False,stable_decision,True,2
+s04__identity,0.75,identity,True,True,correct,True,True,33,False,stable_decision,True,2
+s04__fresh_ids,0.75,fresh_ids,True,True,correct,True,True,33,False,stable_decision,True,2
+s05__identity,0.92,identity,True,True,correct,True,True,33,False,stable_decision,True,2
+s05__fresh_ids,0.92,fresh_ids,True,True,correct,True,True,33,False,stable_decision,True,2
+s06__identity,1.0,identity,True,True,correct,True,True,33,False,stable_decision,True,2
+s06__fresh_ids,1.0,fresh_ids,True,True,correct,True,True,33,False,stable_decision,True,2

@@ -1,0 +1,47 @@
+test_additive_install_and_repeat_preserve_old_files (test_r048_artifacts.Installer.test_additive_install_and_repeat_preserve_old_files) ... Additive install journal: /tmp/tmpq7_cyl7u/repo/HCR-Evidence/deployments/r048-install-021db7f3e78f
+Additive install journal: /tmp/tmpq7_cyl7u/repo/HCR-Evidence/deployments/r048-install-335f93cacb2b
+ok
+test_archive_rejects_checksum_and_path_and_old_source_write (test_r048_artifacts.Installer.test_archive_rejects_checksum_and_path_and_old_source_write) ... ok
+test_installer_first_failure_record_no_source_change (test_r048_artifacts.Installer.test_installer_first_failure_record_no_source_change) ... ok
+test_git_clean_hash_identical_and_index_not_written (test_r048_artifacts.Publication.test_git_clean_hash_identical_and_index_not_written) ... ok
+test_index_and_checkout_preserve_CMD_PS1_logs_bytes (test_r048_artifacts.Publication.test_index_and_checkout_preserve_CMD_PS1_logs_bytes) ... ok
+test_missing_ignore_override_detected (test_r048_artifacts.Publication.test_missing_ignore_override_detected) ... ok
+test_missing_override_detected (test_r048_artifacts.Publication.test_missing_override_detected) ... ok
+test_real_import_shadow_regression (test_r048_artifacts.Publication.test_real_import_shadow_regression) ... ok
+test_changed_content_not_blessed_by_new_hash (test_r048_artifacts.Storage.test_changed_content_not_blessed_by_new_hash) ... ok
+test_duplicate_json_rejected (test_r048_artifacts.Storage.test_duplicate_json_rejected) ... ok
+test_extra_file_not_silently_omitted (test_r048_artifacts.Storage.test_extra_file_not_silently_omitted) ... ok
+test_first_error_preserved (test_r048_artifacts.Storage.test_first_error_preserved) ... ok
+test_missing_log_is_not_regenerated (test_r048_artifacts.Storage.test_missing_log_is_not_regenerated) ... ok
+test_no_overwrite (test_r048_artifacts.Storage.test_no_overwrite) ... ok
+test_nonfinite_json_rejected (test_r048_artifacts.Storage.test_nonfinite_json_rejected) ... ok
+test_path_traversal (test_r048_artifacts.Storage.test_path_traversal) ... ok
+test_recover_exact_bytes_copy_only (test_r048_artifacts.Storage.test_recover_exact_bytes_copy_only) ... ok
+test_A_counted_once_in_unique_cost (test_r048_device.Matrix.test_A_counted_once_in_unique_cost) ... ok
+test_all_112_records_replayed (test_r048_device.Matrix.test_all_112_records_replayed) ... ok
+test_both_ID_anchor_complete_dynamics_match_EXP28 (test_r048_device.Matrix.test_both_ID_anchor_complete_dynamics_match_EXP28) ... ok
+test_budgets_preserve_nonanswers (test_r048_device.Matrix.test_budgets_preserve_nonanswers) ... ok
+test_checkpoint_never_pads_stopped_trajectory (test_r048_device.Matrix.test_checkpoint_never_pads_stopped_trajectory) ... ok
+test_eligibility_excludes_wrong_or_unapplied (test_r048_device.Matrix.test_eligibility_excludes_wrong_or_unapplied) ... ok
+test_evaluator_never_imports_producer_or_hcr (test_r048_device.Matrix.test_evaluator_never_imports_producer_or_hcr) ... ok
+test_failed_predictions_visible_in_report (test_r048_device.Matrix.test_failed_predictions_visible_in_report) ... ok
+test_fake_parent_reference_detected (test_r048_device.Matrix.test_fake_parent_reference_detected) ... ok
+test_fake_tick_detected (test_r048_device.Matrix.test_fake_tick_detected) ... ok
+test_fixed_uses_identical_packet_and_mask (test_r048_device.Matrix.test_fixed_uses_identical_packet_and_mask) ... ok
+test_ineligible_source_not_dropped_or_retried (test_r048_device.Matrix.test_ineligible_source_not_dropped_or_retried) ... ok
+test_mask_controls_only_previous_positions (test_r048_device.Matrix.test_mask_controls_only_previous_positions) ... ok
+test_native_construction_not_changed_between_arms (test_r048_device.Matrix.test_native_construction_not_changed_between_arms) ... ok
+test_new_goal_and_history_mutation_detected (test_r048_device.Matrix.test_new_goal_and_history_mutation_detected) ... ok
+test_no_energy_or_peak_memory_zero_claim (test_r048_device.Matrix.test_no_energy_or_peak_memory_zero_claim) ... ok
+test_plan_exact_count_and_frozen_hash (test_r048_device.Matrix.test_plan_exact_count_and_frozen_hash) ... ok
+test_shared_support_is_identical_between_A_B (test_r048_device.Matrix.test_shared_support_is_identical_between_A_B) ... ok
+test_source_is_not_mutated (test_r048_device.Matrix.test_source_is_not_mutated) ... ok
+test_world_fixed_not_calculated_from_result (test_r048_device.Matrix.test_world_fixed_not_calculated_from_result) ... ok
+test_extra_retry_is_detected (test_r048_device.Streams.test_extra_retry_is_detected) ... ok
+test_first_failure_preserves_partial_stream (test_r048_device.Streams.test_first_failure_preserves_partial_stream) ... ok
+test_serialized_plan_roundtrip_event_order (test_r048_device.Streams.test_serialized_plan_roundtrip_event_order) ... ok
+
+----------------------------------------------------------------------
+Ran 40 tests in 3.801s
+
+OK
