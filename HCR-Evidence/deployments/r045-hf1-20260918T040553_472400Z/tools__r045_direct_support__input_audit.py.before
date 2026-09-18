@@ -1,0 +1,126 @@
+"""Independent design checks. No imports from the producer spec or runtime."""
+from copy import deepcopy
+from .storage import digest, require
+
+
+def expected_conditions(parent):
+    return dict(protocol='exp26-r045-direct-support-v1',
+        basis_commit='3bfeb64af877a7512071798fd77d8eba839760a1',
+        budget=deepcopy(parent['conditions']['budget']),
+        selection_limits=deepcopy(parent['conditions']['selection_limits']),
+        scope='route_only', arm='online_support', scheduler='input_order',
+        families=['supported_len2', 'no_match_len1', 'conflict_len2'],
+        id_variants=['identity', 'fresh_ids'], use_circuits=[True, False], score_magnitude=0.92,
+        native_trial_count=12, gate_pairs=6, primary_gate_pairs=2, ID_controls=6, topology_count=2,
+        counterbalance='variant_order_rotates_by_family; gate_order_alternates_by_pair',
+        input_interventions='fresh_edge_IDs_only; conflict_changes_second_score_only; len1_is_separate_topology_control',
+        gate_intervention='unchanged_native_constructor_use_circuits_total_branch_gate',
+        memory_policy='same_frozen_EXP25_memory; no_pruning_no_retraining_no_active_flag_edits',
+        route_policy='single_topological_path_by_input_design; no_host_route_alignment',
+        no_new_training=True, no_online_feedback=True, automatic_retry=False, no_host_correction=True,
+        native_sources_modified=False, external_llm=False,
+        source_question='EXP25 macro was not on final adopted support path; test direct substitution',
+        primary_predictions={
+            'H_direct': 'supported_len2_ON_direct_use_on_positive_adopted_route',
+            'H_expansion': 'ON_expansions_lt_OFF_given_direct_exposure_and_uncensored_pair',
+            'H_kernel': 'ON_native_ticks_lt_OFF_given_direct_exposure_and_uncensored_pair',
+            'H_decision_same': 'decision_program_drive_and_tick_state_sequence_equal_given_direct_exposure_and_uncensored_pair',
+            'H_outcome': 'value_acceptance_preserved_in_uncensored_supported_len2_pair'},
+        negative_predictions={
+            'H_no_match': 'len1_ON_has_no_matched_candidate_pool_or_macro',
+            'H_no_match_ticks': 'len1_ON_OFF_native_ticks_equal_not_total_cost_equal',
+            'H_conflict_reject': 'conflict_len2_matched_pool_candidates_observed_mismatched_ineligible_and_no_macro',
+            'H_conflict_no_false_positive': 'neither_conflict_arm_adopts_True; abstention_reported_separately'},
+        ID_prediction='same_gate_same_family_canonical_readouts_decision_signatures_and_measured_counts_equal',
+        decision_signature_scope='recorded_program_drives_top_down_and_all_tick_states; event_identifiers_excluded',
+        comparison_scope='within_family_gate_pairs; no_len1_vs_len2_pure_matching_or_D_effect_claim',
+        reservation_policy='inherited_conservative_switch_dependent_bound; reservations_not_actual_ticks',
+        validity_independent_of_predictions=True, missing_direct_exposure_is_result=True,
+        unmeasured='energy_peak_memory_minimal_goal_DAG_isomorphism:null',
+        scope_not_claimed='learning_gain_relearning_dynamic_reexpansion_optimality_full_HCC_cycle')
+
+
+def _strings(value):
+    if isinstance(value, dict):
+        for k, v in value.items():
+            yield k
+            yield from _strings(v)
+    elif isinstance(value, (list, tuple)):
+        for v in value:
+            yield from _strings(v)
+    elif isinstance(value, str):
+        yield value
+
+
+def check_seed(seed):
+    memory, cfg = seed['memory'], seed['config']
+    require(memory['schema'] == 'hcr-memory-r02', 'expected learned R02 memory')
+    circuits = memory['circuits']
+    require(type(circuits) is list and circuits, 'no empty-memory substitution')
+    require(all(type(c['active']) is bool and type(c['pattern']['length']) is int for c in circuits),
+            'circuit active/length types')
+    lengths = [c['pattern']['length'] for c in circuits if c['active']]
+    require(2 in lengths and all(n >= 2 for n in lengths), 'len2 opportunity / len1 negative-control precondition')
+    require(cfg['mismatch_threshold'] < 0.92, 'conflict score must exceed pinned mismatch threshold')
+    names = {'e0', 'e1', 'alias_Z9', 'alias_A1'}
+    require(not (set(_strings(memory)) | set(_strings(cfg))) & names, 'seed contains manipulated input edge IDs')
+    return dict(verified=True, active_pattern_lengths=lengths, exact_input_ID_references=0,
+        memory_changed=False, config_changed=False, pattern_semantics='structural_path_length_not_semantic_motif')
+
+
+def check_plan_inputs(plan, parent, seed):
+    require(digest(plan['conditions']) == digest(expected_conditions(parent)), 'frozen conditions changed')
+    for key in ('memory', 'config'):
+        require(digest(seed[key]) == plan[key + '_sha256'] == parent[key + '_sha256'], 'frozen ' + key)
+    seed_report = check_seed(seed)
+    families = ['supported_len2', 'no_match_len1', 'conflict_len2']
+    variants = ['identity', 'fresh_ids']
+    expected_names = {f + '__' + v for f in families for v in variants}
+    cases = plan['cases']; byname = {c['name']: c for c in cases}; worlds = plan['evaluation_worlds']
+    require(len(cases) == 6 and set(byname) == set(worlds) == expected_names, 'case/world population')
+    restored = {}
+    for family in families:
+        for variant in variants:
+            name = family + '__' + variant; case = byname[name]
+            require(set(case) == {'name','family','cohort','id_variant','observation','manipulation'}, 'case schema')
+            require((case['family'], case['cohort'], case['id_variant']) == (family, family, variant), 'case label binding')
+            expected = ({'e0': 'e0'} if variant == 'identity' else {'e0': 'alias_Z9'})
+            if family != 'no_match_len1':
+                expected['e1'] = 'e1' if variant == 'identity' else 'alias_A1'
+            require(case['manipulation'] == dict(edge_map=expected, boundary='before_native_begin',
+                input_array_order_unchanged=True), 'mapping/slot contract')
+            obs = case['observation']; inverse = {v: k for k, v in expected.items()}
+            require(set(obs) == {'episode_id','revision','start','goal','edges'}, 'observation schema')
+            require((obs['episode_id'], obs['revision'], obs['start'], obs['goal']) ==
+                    ('exp26-fixed-path', 0, 'v0', 'v2') and type(obs['revision']) is int, 'observation identity')
+            require(type(obs['edges']) is list and len(obs['edges']) == len(expected), 'edge count')
+            edges = []
+            for edge in obs['edges']:
+                require(set(edge) == {'id','source','target','score'} and edge['id'] in inverse, 'edge schema/reference')
+                require(type(edge['score']) is float, 'score type')
+                edges.append(dict(edge, id=inverse[edge['id']]))
+            target = [dict(id='e0', source='v0', target='v2', score=0.92)] if family == 'no_match_len1' else [
+                dict(id='e0', source='v0', target='v1', score=0.92),
+                dict(id='e1', source='v1', target='v2', score=-0.92 if family == 'conflict_len2' else 0.92)]
+            require(edges == target, 'topology/order/observation drift')
+            truth = {expected[e['id']]: not (family == 'conflict_len2' and e['id'] == 'e1') for e in target}
+            require(worlds[name] == {'declared': truth} and all(type(v) is bool for v in worlds[name]['declared'].values()),
+                    'evaluator world binding')
+            restored[name] = dict(verified=True, inverse_mapping=inverse, canonical_observation_sha256=digest(dict(obs, edges=edges)))
+    for variant in variants:
+        positive = deepcopy(byname['supported_len2__' + variant]['observation'])
+        negative = deepcopy(byname['conflict_len2__' + variant]['observation'])
+        negative['edges'][1]['score'] = 0.92
+        require(positive == negative, 'conflict contrast changed more than one score')
+    expected_trials = []
+    for fi in range(3):
+        for vi in range(2):
+            variant = variants[(vi + fi) % 2]
+            for gi in range(2):
+                expected_trials.append(dict(id=f't{len(expected_trials):04d}', case=families[fi] + '__' + variant,
+                    scope='route_only', arm='online_support', scheduler='input_order', use_circuits=(2 * fi + vi + gi) % 2 == 0))
+    require(plan['trials'] == expected_trials and all(type(t['use_circuits']) is bool for t in plan['trials']),
+            'trial order/population/type')
+    return dict(verified=True, cases=restored, native_trials=12, primary_pairs=2, gate_pairs=6,
+        topology_count=2, seed=seed_report, evaluator_only_truth_and_mapping=True,
+        conflict_one_score_only=True, runtime_routes_not_forced=True)

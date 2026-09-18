@@ -1,0 +1,19 @@
+{
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "basis_commit": "ef074f7991733ba0a73d870780d4873718caf1ca",
+  "tests": {
+    "new": 75,
+    "r037_unit": 93,
+    "r038_unit": 72,
+    "unique_total": 240
+  },
+  "native_selftest_executed": false,
+  "exp21_main_executed": false,
+  "windows_cmd_executed": false,
+  "python312_execution": false,
+  "python312_syntax_checked": true,
+  "native_selftest_session_count": 32,
+  "planned_main_native_trials": 72,
+  "synthetic_unit_evidence_not_research": true
+}

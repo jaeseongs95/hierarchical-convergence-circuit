@@ -1,0 +1,14 @@
+{
+  "date": "2026-09-18",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "validation_class": "source_release_validation_not_research_evidence",
+  "unit_tests_passed": 100,
+  "unit_tests_skipped": 0,
+  "native_experiment_executed": false,
+  "native_integration_executed": false,
+  "windows_cmd_executed": false,
+  "powershell_executed": false,
+  "source_basis_commit": "6b8ff8ab4c4858a3ab8f1a24e82b9033372133fc",
+  "new_learning_experiment": false
+}

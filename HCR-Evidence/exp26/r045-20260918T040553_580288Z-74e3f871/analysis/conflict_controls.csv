@@ -1,0 +1,5 @@
+id_variant,use_circuits,positive_trial,conflict_trial,positive_matched,conflict_matched,positive_eligible,conflict_eligible,positive_macro,conflict_macro,positive_value,conflict_value,positive_accepted,conflict_accepted,positive_reason,conflict_reason,uncensored,static_separate_sessions,dynamic_reexpansion_tested
+identity,True,t0000,t0008,1,1,1,0,1,0,True,False,True,True,stop_supported_policy,stop_supported_policy,True,True,False
+identity,False,t0001,t0009,0,0,0,0,0,0,True,False,True,True,stop_supported_policy,stop_supported_policy,True,True,False
+fresh_ids,True,t0003,t0011,1,1,1,0,1,0,True,False,True,True,stop_supported_policy,stop_supported_policy,True,True,False
+fresh_ids,False,t0002,t0010,0,0,0,0,0,0,True,False,True,True,stop_supported_policy,stop_supported_policy,True,True,False

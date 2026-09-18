@@ -1,0 +1,25 @@
+{
+  "basis_commit": "6b8ff8ab4c4858a3ab8f1a24e82b9033372133fc",
+  "live_source_files_reviewed": {
+    "src/hcr/sessions.py": "eadec17479c8a38adb185c5726bb32ccf0243c0b",
+    "src/hcr/runtime.py": "759e6adfee7ae66938ef1562914c9228610458ca",
+    "src/hcr/expansion.py": "174e63083b2354eecb4ca82a2907e651601d714a",
+    "src/hcr/activation.py": "e7240e19ffd3de2d8882745780a24c50c7f1a089",
+    "src/hcr/workspace.py": "52bc9338f43078bc11835491d5baf80d16195809",
+    "src/hcr/dynamics.py": "53de614846489a531f4a8d463fc17eabe1e5a6ca",
+    "tools/r037_online_selection/backend.py": "11060822a7796f12a4ad4c759d87369506af56dd",
+    "tools/r037_online_selection/runtime.py": "24fc0d6a2445af091b1b9bc9ce3eb9cedd1161ba",
+    "tools/r041_scheduler_direction/native_audit.py": "b720b068352067430d60ac667bb780f299dad972",
+    "tools/r041_scheduler_direction/control_audit.py": "b807abf2533dba1a9bc4b97afd83af00f5fd4d9a"
+  },
+  "observed_API": [
+    "AdaptiveSession accepts use_circuits at construction",
+    "R041 ScheduledTimingTrial accepts backend",
+    "OnlineTrial calls backend.begin and preserves memory",
+    "R041 controller reservation already depends on native switch",
+    "native trace supplies pool/decision network tick events",
+    "route_only suppresses judgment learned drive only"
+  ],
+  "native_auditor_derivation": "R041 independent native_audit with frozen switch check replaced by explicit gate check",
+  "native_execution_verified": false
+}

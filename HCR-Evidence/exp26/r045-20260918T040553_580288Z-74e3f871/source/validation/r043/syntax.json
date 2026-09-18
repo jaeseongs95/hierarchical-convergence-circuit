@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "python_files": 27,
+  "files": [
+    "Run-HCR-R043.py",
+    "scripts/install_r043.py",
+    "scripts/r043_cli.py",
+    "scripts/verify_r043.py",
+    "tools/r043_input_order_control/__init__.py",
+    "tools/r043_input_order_control/audit.py",
+    "tools/r043_input_order_control/baseline_audit.py",
+    "tools/r043_input_order_control/cli.py",
+    "tools/r043_input_order_control/contracts.py",
+    "tools/r043_input_order_control/input_audit.py",
+    "tools/r043_input_order_control/native_tests/test_native_integration.py",
+    "tools/r043_input_order_control/policy_audit.py",
+    "tools/r043_input_order_control/protocol.py",
+    "tools/r043_input_order_control/reporting.py",
+    "tools/r043_input_order_control/runtime.py",
+    "tools/r043_input_order_control/sources.py",
+    "tools/r043_input_order_control/spec.py",
+    "tools/r043_input_order_control/storage.py",
+    "tools/r043_input_order_control/tests/__init__.py",
+    "tools/r043_input_order_control/tests/fixtures.py",
+    "tools/r043_input_order_control/tests/test_input_contract.py",
+    "tools/r043_input_order_control/tests/test_installer.py",
+    "tools/r043_input_order_control/tests/test_policy_audit.py",
+    "tools/r043_input_order_control/tests/test_reporting.py",
+    "tools/r043_input_order_control/tests/test_storage_pipeline.py",
+    "tools/r043_input_order_control/trajectory.py",
+    "tools/r043_input_order_control/transform.py"
+  ]
+}

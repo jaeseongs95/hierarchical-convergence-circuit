@@ -1,0 +1,33 @@
+{
+  "mode": "source_review_not_native_execution",
+  "R044_worker_parameters": [
+    "observation",
+    "config",
+    "memory",
+    "budget",
+    "scheduler",
+    "use_circuits",
+    "event_sink"
+  ],
+  "unchanged_dependencies": [
+    "R044 runtime.worker",
+    "R044 trial_audit.audit_trial",
+    "R044 gate_audit.measure_execution",
+    "R044 policy_audit.check",
+    "R044 baseline_audit.compare",
+    "R036 check_seed",
+    "R041 candidate_view"
+  ],
+  "sources_read_via_GitHub": [
+    "src/hcr/activation.py",
+    "src/hcr/dynamics.py",
+    "src/hcr/circuits.py",
+    "tools/r036_input_representation/audit.py"
+  ],
+  "no_native_source_patch": true,
+  "new_auditor_does_not_invoke_runtime": true,
+  "new_ID_projection_generic": true,
+  "R042_seven_edge_projection_not_reused": true,
+  "measure_errors_typed": true,
+  "first_fixture_failure_and_traceback_retained": true
+}

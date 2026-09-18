@@ -1,0 +1,17 @@
+trial_id,family,id_variant,use_circuits,network_id,kind,kernel_ticks,group_count,active_links,group_updates,signal_transmissions,settled,status
+t0000,supported_len2,identity,True,network-4,pool,34,6,10,204,340,True,stable_decision
+t0000,supported_len2,identity,True,network-43,decision,33,5,8,165,264,True,stable_decision
+t0001,supported_len2,identity,False,network-8,decision,33,5,8,165,264,True,stable_decision
+t0002,supported_len2,fresh_ids,False,network-8,decision,33,5,8,165,264,True,stable_decision
+t0003,supported_len2,fresh_ids,True,network-4,pool,34,6,10,204,340,True,stable_decision
+t0003,supported_len2,fresh_ids,True,network-43,decision,33,5,8,165,264,True,stable_decision
+t0004,no_match_len1,fresh_ids,True,network-6,decision,29,3,4,87,116,True,stable_decision
+t0005,no_match_len1,fresh_ids,False,network-5,decision,29,3,4,87,116,True,stable_decision
+t0006,no_match_len1,identity,False,network-5,decision,29,3,4,87,116,True,stable_decision
+t0007,no_match_len1,identity,True,network-6,decision,29,3,4,87,116,True,stable_decision
+t0008,conflict_len2,identity,True,network-4,pool,30,6,10,180,300,True,stable_decision
+t0008,conflict_len2,identity,True,network-43,decision,28,5,8,140,224,True,stable_decision
+t0009,conflict_len2,identity,False,network-8,decision,28,5,8,140,224,True,stable_decision
+t0010,conflict_len2,fresh_ids,False,network-8,decision,28,5,8,140,224,True,stable_decision
+t0011,conflict_len2,fresh_ids,True,network-4,pool,30,6,10,180,300,True,stable_decision
+t0011,conflict_len2,fresh_ids,True,network-43,decision,28,5,8,140,224,True,stable_decision

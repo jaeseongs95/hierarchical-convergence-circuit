@@ -1,0 +1,9 @@
+trial_id,family,id_variant,use_circuits,event_seq,inspected,edge_scans,matched,complete,fallback_reason,prefix
+t0000,supported_len2,identity,True,3,2,8,1,True,,[]
+t0003,supported_len2,fresh_ids,True,3,2,8,1,True,,[]
+t0004,no_match_len1,fresh_ids,True,3,2,2,0,True,,[]
+t0007,no_match_len1,identity,True,3,2,2,0,True,,[]
+t0008,conflict_len2,identity,True,3,2,8,1,True,,[]
+t0008,conflict_len2,identity,True,40,2,4,0,True,,"[""e0""]"
+t0011,conflict_len2,fresh_ids,True,3,2,8,1,True,,[]
+t0011,conflict_len2,fresh_ids,True,40,2,4,0,True,,"[""e0""]"

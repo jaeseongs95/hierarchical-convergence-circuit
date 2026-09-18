@@ -1,0 +1,63 @@
+"""Frozen-input mutation tests; no native inference."""
+import ast
+from copy import deepcopy
+from pathlib import Path
+import unittest
+from r045_direct_support import spec,input_audit
+from r045_direct_support.storage import digest
+from r045_direct_support.tests.fixtures import plan_fixture
+
+
+class DesignTests(unittest.TestCase):
+    def test_full_fixed_design(self):
+        p,parent,seed=plan_fixture();r=input_audit.check_plan_inputs(p,parent,seed)
+        self.assertEqual((r['native_trials'],r['primary_pairs'],r['topology_count']),(12,2,2))
+    def test_input_auditor_does_not_import_producer(self):
+        tree=ast.parse(Path(input_audit.__file__).read_text(encoding='utf-8'))
+        names=[n.module or '' for n in ast.walk(tree) if isinstance(n,ast.ImportFrom)]
+        self.assertFalse(any('spec' in n or 'runtime' in n for n in names))
+    def test_counterbalance(self):
+        ts=spec.trials()
+        self.assertEqual(sum(t['use_circuits'] for t in ts),6)
+        self.assertEqual(sum(ts[i]['use_circuits'] for i in range(0,12,2)),3)
+    def test_no_truth_in_observation(self):
+        cases,_=spec.cases()
+        self.assertTrue(all(set(c['observation'])=={'episode_id','revision','start','goal','edges'} for c in cases))
+    def test_score_only_conflict(self):
+        cases,_=spec.cases();by={c['name']:c for c in cases}
+        for v in ('identity','fresh_ids'):
+            a=by['supported_len2__'+v]['observation'];b=deepcopy(by['conflict_len2__'+v]['observation'])
+            b['edges'][1]['score']=.92;self.assertEqual(a,b)
+    def test_no_mutation(self):
+        p,parent,seed=plan_fixture();before=digest([p,parent,seed]);input_audit.check_plan_inputs(p,parent,seed)
+        self.assertEqual(before,digest([p,parent,seed]))
+    def test_design_mutations(self):
+        mutations={
+            'budget':lambda p,s:p['conditions']['budget'].update(max_advances=1),
+            'score':lambda p,s:p['cases'][0]['observation']['edges'][0].update(score=.93),
+            'topology':lambda p,s:p['cases'][0]['observation']['edges'][1].update(target='v0'),
+            'ordering':lambda p,s:p['cases'][0]['observation']['edges'].reverse(),
+            'boolean_gate':lambda p,s:p['trials'][0].update(use_circuits=1),
+            'missing_trial':lambda p,s:p['trials'].pop(),
+            'duplicate_trial':lambda p,s:p['trials'].__setitem__(1,deepcopy(p['trials'][0])),
+            'world':lambda p,s:p['evaluation_worlds']['supported_len2__identity']['declared'].update(e0=False),
+            'ID_map':lambda p,s:p['cases'][1]['manipulation']['edge_map'].update(e0='alias_A1'),
+            'episode':lambda p,s:p['cases'][4]['observation'].update(episode_id='another'),
+            'native_sources':lambda p,s:p['conditions'].update(native_sources_modified=True),
+            'memory':lambda p,s:s['memory']['circuits'][0].update(active=False),
+            'null_score':lambda p,s:p['cases'][0]['observation']['edges'][0].update(score=None)}
+        for name,mutate in mutations.items():
+            with self.subTest(name=name):
+                p,parent,seed=plan_fixture();mutate(p,seed)
+                with self.assertRaises((ValueError,KeyError,TypeError)): input_audit.check_plan_inputs(p,parent,seed)
+    def test_seed_preconditions(self):
+        for change in ('length1','no_len2','reference','mismatch'):
+            with self.subTest(change=change):
+                _,_,seed=plan_fixture()
+                if change=='length1':seed['memory']['circuits'].append({'active':True,'pattern':{'length':1}})
+                if change=='no_len2':seed['memory']['circuits'][0]['pattern']['length']=3
+                if change=='reference':seed['memory']['test_reference']='alias_Z9'
+                if change=='mismatch':seed['config']['mismatch_threshold']=.95
+                with self.assertRaises(ValueError):input_audit.check_seed(seed)
+
+if __name__=='__main__':unittest.main()

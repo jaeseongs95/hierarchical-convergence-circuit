@@ -1,0 +1,12 @@
+{
+  "branch": "main",
+  "basis_commit": "3bfeb64af877a7512071798fd77d8eba839760a1",
+  "repository": "jaeseongs95/hierarchical-convergence-circuit",
+  "branch_verified_via": "GitHub connector branches/main",
+  "R044_manifest_git_blob": "86eaf459d963220845512c766b707ba3b4c0a1f6",
+  "R044_manifest_declared_files_verified": 49,
+  "local_source": "provided R044 additive release archive; manifest blob matched current repository",
+  "complete_native_checkout_available": false,
+  "EXP25_complete_raw_available": false,
+  "git_written": false
+}

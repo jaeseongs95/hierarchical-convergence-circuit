@@ -1,0 +1,7 @@
+family,use_circuits,identity_trial,fresh_trial,measured_cost_vector_equal,canonical_readouts_equal,decision_computation_signature_equal,prediction,wall_time_identity_required
+supported_len2,True,t0000,t0003,True,True,True,supported_in_pair,False
+supported_len2,False,t0001,t0002,True,True,True,supported_in_pair,False
+no_match_len1,True,t0007,t0004,True,True,True,supported_in_pair,False
+no_match_len1,False,t0006,t0005,True,True,True,supported_in_pair,False
+conflict_len2,True,t0008,t0011,True,True,True,supported_in_pair,False
+conflict_len2,False,t0009,t0010,True,True,True,supported_in_pair,False

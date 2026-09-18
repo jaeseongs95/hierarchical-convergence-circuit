@@ -1,0 +1,62 @@
+{
+  "commands": [
+    {
+      "command": [
+        "scripts/r045_cli.py",
+        "--help"
+      ],
+      "returncode": 0,
+      "log": "cli_help.log",
+      "classification": "cli_help"
+    },
+    {
+      "command": [
+        "Run-HCR-R045.py",
+        "--help"
+      ],
+      "returncode": 0,
+      "log": "launcher_help.log",
+      "classification": "cli_help"
+    },
+    {
+      "command": [
+        "scripts/verify_r045.py"
+      ],
+      "returncode": 1,
+      "log": "native_dependency_check_unavailable.log",
+      "classification": "dependency_unavailable"
+    }
+  ],
+  "unit_test_runs": [
+    {
+      "log": "unit_pass1.log",
+      "tests": 44,
+      "failures": 0
+    },
+    {
+      "log": "unit_pass2.log",
+      "tests": 75,
+      "failures": 0
+    },
+    {
+      "log": "unit_pass3.log",
+      "tests": 89,
+      "failures": 0
+    },
+    {
+      "log": "unit_signature_control_initial_failure.log",
+      "tests": 90,
+      "failures": 1,
+      "fix": "New ID signature mutation test selected OFF by array index; changed test to select fresh_ids+ON by labels. No runtime repair."
+    },
+    {
+      "log": "unit_final.log",
+      "tests": 90,
+      "failures": 0,
+      "errors": 0,
+      "skips": 0
+    }
+  ],
+  "native_unavailability_not_treated_as_pass": true,
+  "preparation_runs_not_research": true
+}

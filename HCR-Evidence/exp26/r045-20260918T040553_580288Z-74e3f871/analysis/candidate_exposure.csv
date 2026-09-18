@@ -1,0 +1,5 @@
+trial_id,family,id_variant,use_circuits,event_seq,network_id,circuit_id,circuit_version,canonical_span,activation,mismatch,prior,eligible,rejection_reasons
+t0000,supported_len2,identity,True,40,network-4,pattern-d7053e8a62ed20d50b15444c,4,"[""e0"",""e1""]",0.9950917743200483,0.0,0.11110714285714281,True,[]
+t0003,supported_len2,fresh_ids,True,40,network-4,pattern-d7053e8a62ed20d50b15444c,4,"[""e0"",""e1""]",0.9950917743200483,0.0,0.11110714285714281,True,[]
+t0008,conflict_len2,identity,True,36,network-4,pattern-d7053e8a62ed20d50b15444c,4,"[""e0"",""e1""]",0.007744965255253199,0.92,0.11110714285714281,False,"[""activation_below_threshold"",""mismatch_above_threshold""]"
+t0011,conflict_len2,fresh_ids,True,36,network-4,pattern-d7053e8a62ed20d50b15444c,4,"[""e0"",""e1""]",0.007744965255253199,0.92,0.11110714285714281,False,"[""activation_below_threshold"",""mismatch_above_threshold""]"

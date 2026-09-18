@@ -1,0 +1,16 @@
+{
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "native_dependencies_available": false,
+  "windows_runtime_available": false,
+  "powershell_available": false,
+  "actual_validation": "90 synthetic unit tests + AST/CLI/package integrity checks only",
+  "genuine_EXP26_research_trials_executed_here": 0,
+  "native_regression_executed_here": 0,
+  "native_smoke_executed_here": 0,
+  "full_independent_native_replay_executed_here": false,
+  "user_launcher_requires_native_checks": true,
+  "skip_native_on_failure": false,
+  "dependencies_installed": false,
+  "network_or_model_download_used": false
+}
