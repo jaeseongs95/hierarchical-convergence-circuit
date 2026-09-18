@@ -1,0 +1,9 @@
+usage: r045_cli.py [-h] {prepare,execute,audit,verify,bundle} ...
+
+EXP26 / R045 direct goal-support reuse diagnostics
+
+positional arguments:
+  {prepare,execute,audit,verify,bundle}
+
+options:
+  -h, --help            show this help message and exit

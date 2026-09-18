@@ -1,0 +1,9 @@
+{
+  "schema": "hcr-release-check-r02",
+  "verified": true,
+  "files_checked": 213,
+  "release": "0.3.3",
+  "differences": [],
+  "line_ending_only_variants": [],
+  "scope": "registered release files only; local run/IDE/Git/unregistered development files are not certified"
+}

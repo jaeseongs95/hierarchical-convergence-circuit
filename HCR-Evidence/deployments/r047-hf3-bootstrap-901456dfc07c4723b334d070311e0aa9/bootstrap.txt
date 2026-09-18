@@ -1,0 +1,3 @@
+﻿R047-HF3: source and release-manifest migration
+Python: C:\Users\sjs95\AppData\Local\Programs\Python\Python312\python.exe
+exit_code=0

@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/mnt/data/hcr_r042_patch/scripts/verify_r042.py", line 33, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/mnt/data/hcr_r042_patch/scripts/verify_r042.py", line 22, in main
+    dependencies = sources.dependencies()
+  File "/mnt/data/hcr_r042_patch/tools/r042_id_role_isolation/sources.py", line 26, in dependencies
+    from r038_early_adoption.sources import check_manifest
+ModuleNotFoundError: No module named 'r038_early_adoption'

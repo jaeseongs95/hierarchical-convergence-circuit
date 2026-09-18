@@ -1,0 +1,9 @@
+usage: r046_cli.py [-h] {prepare,execute,audit,verify,regression} ...
+
+EXP27: explicit sequential thought carry on pinned native HCR core
+
+positional arguments:
+  {prepare,execute,audit,verify,regression}
+
+options:
+  -h, --help            show this help message and exit

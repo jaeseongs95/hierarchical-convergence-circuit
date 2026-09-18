@@ -1,0 +1,62 @@
+test_input_isolation (unittest.loader._FailedTest.test_input_isolation) ... ERROR
+test_reporting (unittest.loader._FailedTest.test_reporting) ... ERROR
+test_selector_and_trajectory (unittest.loader._FailedTest.test_selector_and_trajectory) ... ERROR
+
+======================================================================
+ERROR: test_input_isolation (unittest.loader._FailedTest.test_input_isolation)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_input_isolation
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/mnt/data/exp20_work/repo/tools/r039_order_isolation/tests/test_input_isolation.py", line 6, in <module>
+    from r039_order_isolation.tests._fixtures import parent,cases
+  File "/mnt/data/exp20_work/repo/tools/r039_order_isolation/tests/_fixtures.py", line 65
+    records.append(dict(trial=dict(id=f't{len(records):04d}',case=c['name'],scope=scope,arm=arm),cohort='order_only',
+                  ^
+SyntaxError: '(' was never closed
+
+
+======================================================================
+ERROR: test_reporting (unittest.loader._FailedTest.test_reporting)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_reporting
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/mnt/data/exp20_work/repo/tools/r039_order_isolation/tests/test_reporting.py", line 3, in <module>
+    from r039_order_isolation.tests._fixtures import reporting_fixture
+  File "/mnt/data/exp20_work/repo/tools/r039_order_isolation/tests/_fixtures.py", line 65
+    records.append(dict(trial=dict(id=f't{len(records):04d}',case=c['name'],scope=scope,arm=arm),cohort='order_only',
+                  ^
+SyntaxError: '(' was never closed
+
+
+======================================================================
+ERROR: test_selector_and_trajectory (unittest.loader._FailedTest.test_selector_and_trajectory)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_selector_and_trajectory
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/mnt/data/exp20_work/repo/tools/r039_order_isolation/tests/test_selector_and_trajectory.py", line 9, in <module>
+    from r039_order_isolation.tests._fixtures import cases,view,trajectory_fixture
+  File "/mnt/data/exp20_work/repo/tools/r039_order_isolation/tests/_fixtures.py", line 65
+    records.append(dict(trial=dict(id=f't{len(records):04d}',case=c['name'],scope=scope,arm=arm),cohort='order_only',
+                  ^
+SyntaxError: '(' was never closed
+
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (errors=3)

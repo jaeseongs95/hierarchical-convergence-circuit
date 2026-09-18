@@ -1,0 +1,9 @@
+usage: r042_cli.py [-h] {prepare,execute,audit,verify,bundle} ...
+
+EXP23 / R042 ID-role isolation
+
+positional arguments:
+  {prepare,execute,audit,verify,bundle}
+
+options:
+  -h, --help            show this help message and exit

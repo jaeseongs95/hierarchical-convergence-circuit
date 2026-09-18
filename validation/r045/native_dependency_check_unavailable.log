@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/mnt/data/hcr_r045_work/release/scripts/verify_r045.py", line 35, in <module>
+    if __name__=='__main__': raise SystemExit(main())
+                                              ~~~~^^
+  File "/mnt/data/hcr_r045_work/release/scripts/verify_r045.py", line 21, in main
+    old=sources.dependencies()
+  File "/mnt/data/hcr_r045_work/release/tools/r045_direct_support/sources.py", line 27, in dependencies
+    from r038_early_adoption.sources import check_manifest
+ModuleNotFoundError: No module named 'r038_early_adoption'

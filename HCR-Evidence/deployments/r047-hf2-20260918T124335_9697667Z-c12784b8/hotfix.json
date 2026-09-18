@@ -1,0 +1,17 @@
+{
+    "hotfix":  "R047-HF2",
+    "status":  "patched",
+    "scope":  "self-test import resolution; HF1 installer write-method correction",
+    "protocol_path":  "D:\\codex\\진짜미친짓\\hierarchical-convergence-circuit\\tools\\r047_state_ablation\\protocol.py",
+    "before_sha256":  "99e1cb3e26e2dfa7604081b74b45f0730f876b6ebedaa1e63e94b4260353852c",
+    "after_sha256":  "1ea945016c22f880d79861a4fa27126fcf3201e900e312c7ca9c29e72683dfae",
+    "native_or_experiment_design_changed":  false,
+    "prior_failed_runs_modified":  false,
+    "automatic_retry":  false,
+    "changes":  [
+                    "unittest discovery start path changed from relative to absolute repo/tools/.../tests",
+                    "unittest subprocess cwd changed from repo to repo/src",
+                    "patch installation uses File.Copy(overwrite=true), not File.Replace(..., null)"
+                ],
+    "created_utc":  "2026-09-18T12:43:36.0166693Z"
+}

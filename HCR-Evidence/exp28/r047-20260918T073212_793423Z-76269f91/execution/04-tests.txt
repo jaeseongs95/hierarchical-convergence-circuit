@@ -1,0 +1,26 @@
+test_archive_corruption_detected (test_installer.InstallerTests.test_archive_corruption_detected) ... ok
+test_existing_different_file_refused (test_installer.InstallerTests.test_existing_different_file_refused) ... ok
+test_install_exclusive_idempotent_fixture (test_installer.InstallerTests.test_install_exclusive_idempotent_fixture) ... ok
+test_preflight_failure_writes_first_failure_no_source (test_installer.InstallerTests.test_preflight_failure_writes_first_failure_no_source) ... ok
+test_release_hash_verified (test_installer.InstallerTests.test_release_hash_verified) ... ok
+test_zip_case_alias_rejected (test_installer.InstallerTests.test_zip_case_alias_rejected) ... ok
+test_zip_traversal_is_rejected (test_installer.InstallerTests.test_zip_traversal_is_rejected) ... ok
+setUpClass (test_research_device.Matrix) ... ERROR
+
+======================================================================
+ERROR: setUpClass (test_research_device.Matrix)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\codex\진짜미친짓\hierarchical-convergence-circuit\tools\r047_state_ablation\tests\test_research_device.py", line 18, in setUpClass
+    for v,ob in cls.a.items():cls.sources[v]=runtime.run_query(ob,spec.CONFIG)
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\codex\진짜미친짓\hierarchical-convergence-circuit\tools\r047_state_ablation\runtime.py", line 134, in run_query
+    from hcr.model import Config, Cost, Status, ExpansionLimit
+  File "D:\codex\진짜미친짓\hierarchical-convergence-circuit\hcr.py", line 9, in <module>
+    from hcr.cli import main
+ModuleNotFoundError: No module named 'hcr.cli'; 'hcr' is not a package
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.079s
+
+FAILED (errors=1)

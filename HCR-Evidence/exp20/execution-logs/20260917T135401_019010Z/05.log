@@ -1,0 +1,13 @@
+test_all_native_trials_independently_audited (test_native_integration.NativeIntegrationTests.test_all_native_trials_independently_audited) ... ok
+test_auditor_does_not_execute_production_runtime_or_selector (test_native_integration.NativeIntegrationTests.test_auditor_does_not_execute_production_runtime_or_selector) ... ok
+test_existing_source_failure_not_host_corrected (test_native_integration.NativeIntegrationTests.test_existing_source_failure_not_host_corrected) ... ok
+test_frozen_memory_and_no_measurement (test_native_integration.NativeIntegrationTests.test_frozen_memory_and_no_measurement) ... ok
+test_native_posthoc_work_and_online_prefix (test_native_integration.NativeIntegrationTests.test_native_posthoc_work_and_online_prefix) ... ok
+test_native_saved_matches_preserved_exp19 (test_native_integration.NativeIntegrationTests.test_native_saved_matches_preserved_exp19) ... ok
+test_new_support_count_regression (test_native_integration.NativeIntegrationTests.test_new_support_count_regression) ... ok
+test_posthoc_tampering_rejected (test_native_integration.NativeIntegrationTests.test_posthoc_tampering_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 9.955s
+
+OK

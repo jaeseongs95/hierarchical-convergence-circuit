@@ -1,0 +1,121 @@
+test_baseline_pin_is_exp21_release (test_installer_and_boundary.InstallerTests.test_baseline_pin_is_exp21_release) ... FAIL
+test_bootstrap_has_no_network_install (test_installer_and_boundary.InstallerTests.test_bootstrap_has_no_network_install) ... ok
+test_checksum_failure (test_installer_and_boundary.InstallerTests.test_checksum_failure) ... ok
+test_conflict_is_detected_before_any_write (test_installer_and_boundary.InstallerTests.test_conflict_is_detected_before_any_write) ... ok
+test_existing_source_not_allowed_in_payload (test_installer_and_boundary.InstallerTests.test_existing_source_not_allowed_in_payload) ... ok
+test_idempotent_no_overwrite (test_installer_and_boundary.InstallerTests.test_idempotent_no_overwrite) ... ok
+test_nonfinite_json_rejected (test_installer_and_boundary.InstallerTests.test_nonfinite_json_rejected) ... ok
+test_path_traversal (test_installer_and_boundary.InstallerTests.test_path_traversal) ... ok
+test_python312_syntax_for_source_files (test_installer_and_boundary.InstallerTests.test_python312_syntax_for_source_files) ... ok
+test_runner_checks_exp21_and_uses_new_output (test_installer_and_boundary.InstallerTests.test_runner_checks_exp21_and_uses_new_output) ... ok
+test_runner_native_import_priority (test_installer_and_boundary.InstallerTests.test_runner_native_import_priority) ... ok
+test_symlink_destination_rejected (test_installer_and_boundary.InstallerTests.test_symlink_destination_rejected) ... ok
+test_unicode_safe_path (test_installer_and_boundary.InstallerTests.test_unicode_safe_path) ... ok
+test_unknown_json_keys_duplicate_rejected (test_installer_and_boundary.InstallerTests.test_unknown_json_keys_duplicate_rejected) ... ok
+test_valid_payload (test_installer_and_boundary.InstallerTests.test_valid_payload) ... ok
+test_case_dimension_duplicate_rejected_even_with_unique_ids (test_max_and_invariance.InvarianceEfficiencyTests.test_case_dimension_duplicate_rejected_even_with_unique_ids) ... ok
+test_equal_cost_result_not_forced_into_predicted_pattern (test_max_and_invariance.InvarianceEfficiencyTests.test_equal_cost_result_not_forced_into_predicted_pattern) ... ok
+test_faster_max_is_not_rejected (test_max_and_invariance.InvarianceEfficiencyTests.test_faster_max_is_not_rejected) ... ok
+test_invariant_but_slower_is_valid (test_max_and_invariance.InvarianceEfficiencyTests.test_invariant_but_slower_is_valid) ... ok
+test_max_effect_not_acceptance_condition (test_max_and_invariance.InvarianceEfficiencyTests.test_max_effect_not_acceptance_condition) ... ok
+test_noninvariant_max_is_retained (test_max_and_invariance.InvarianceEfficiencyTests.test_noninvariant_max_is_retained) ... ok
+test_outcome_change_is_not_hidden_by_cost (test_max_and_invariance.InvarianceEfficiencyTests.test_outcome_change_is_not_hidden_by_cost) ... ok
+test_report_does_not_add_scheduler_cost_to_ticks (test_max_and_invariance.InvarianceEfficiencyTests.test_report_does_not_add_scheduler_cost_to_ticks) ... ok
+test_three_pairwise_contrasts_per_cell (test_max_and_invariance.InvarianceEfficiencyTests.test_three_pairwise_contrasts_per_cell) ... ok
+test_both_previous_schedulers_can_regress (test_max_and_invariance.MaxControlTests.test_both_previous_schedulers_can_regress) ... ok
+test_max_audit_independent_of_choose (test_max_and_invariance.MaxControlTests.test_max_audit_independent_of_choose) ... ok
+test_max_audit_rejects_min_label (test_max_and_invariance.MaxControlTests.test_max_audit_rejects_min_label) ... ok
+test_max_control_can_move_head (test_max_and_invariance.MaxControlTests.test_max_control_can_move_head) ... ok
+test_max_with_zero_extra_budget_has_no_priority (test_max_and_invariance.MaxControlTests.test_max_with_zero_extra_budget_has_no_priority) ... ok
+test_native_failure_not_retried (test_max_and_invariance.MaxControlTests.test_native_failure_not_retried) ... ok
+test_parent_scheduler_mismatch_rejected (test_max_and_invariance.MaxControlTests.test_parent_scheduler_mismatch_rejected) ... ok
+test_slower_synthetic_max_result_is_valid (test_max_and_invariance.MaxControlTests.test_slower_synthetic_max_result_is_valid) ... ok
+test_36_identity_position_permutations (test_max_and_invariance.MaxSchedulerTests.test_36_identity_position_permutations) ... ok
+test_independent_max_spec_not_production (test_max_and_invariance.MaxSchedulerTests.test_independent_max_spec_not_production) ... ok
+test_max_already_at_head (test_max_and_invariance.MaxSchedulerTests.test_max_already_at_head) ... ok
+test_max_counts_same_work_as_min (test_max_and_invariance.MaxSchedulerTests.test_max_counts_same_work_as_min) ... ok
+test_max_empty_frontier (test_max_and_invariance.MaxSchedulerTests.test_max_empty_frontier) ... ok
+test_max_forbids_private_fields (test_max_and_invariance.MaxSchedulerTests.test_max_forbids_private_fields) ... ok
+test_max_is_not_slot_max (test_max_and_invariance.MaxSchedulerTests.test_max_is_not_slot_max) ... ok
+test_max_no_mutation (test_max_and_invariance.MaxSchedulerTests.test_max_no_mutation) ... ok
+test_max_prefix_uses_tuple_order (test_max_and_invariance.MaxSchedulerTests.test_max_prefix_uses_tuple_order) ... ok
+test_max_rejects_duplicate_dependency (test_max_and_invariance.MaxSchedulerTests.test_max_rejects_duplicate_dependency) ... ok
+test_max_root_path (test_max_and_invariance.MaxSchedulerTests.test_max_root_path) ... ok
+test_old_policies_unchanged_except_versioned_envelope (test_max_and_invariance.MaxSchedulerTests.test_old_policies_unchanged_except_versioned_envelope) ... ok
+test_analysis_not_overwritten (test_reporting_pipeline.PipelineTests.test_analysis_not_overwritten) ... ok
+test_analysis_tampering_not_repaired (test_reporting_pipeline.PipelineTests.test_analysis_tampering_not_repaired) ... ok
+test_checksum_error_recorded (test_reporting_pipeline.PipelineTests.test_checksum_error_recorded) ... ok
+test_missing_raw_rejected (test_reporting_pipeline.PipelineTests.test_missing_raw_rejected) ... ok
+test_roundtrip_raw_analysis_verify (test_reporting_pipeline.PipelineTests.test_roundtrip_raw_analysis_verify) ... ok
+test_stream_tail_rejected (test_reporting_pipeline.PipelineTests.test_stream_tail_rejected) ... ok
+test_stream_trial_binding_rejected (test_reporting_pipeline.PipelineTests.test_stream_trial_binding_rejected) ... ok
+test_csv_contains_separate_scheduler_fields (test_reporting_pipeline.ReportingTests.test_csv_contains_separate_scheduler_fields) ... ok
+test_duplicate_trial_rejected (test_reporting_pipeline.ReportingTests.test_duplicate_trial_rejected) ... ok
+test_event_sequence_bookkeeping_excluded (test_reporting_pipeline.ReportingTests.test_event_sequence_bookkeeping_excluded) ... ok
+test_full_synthetic_population (test_reporting_pipeline.ReportingTests.test_full_synthetic_population) ... ok
+test_gap_removed_is_observation_not_required (test_reporting_pipeline.ReportingTests.test_gap_removed_is_observation_not_required) ... ok
+test_missing_trial_rejected (test_reporting_pipeline.ReportingTests.test_missing_trial_rejected) ... ok
+test_no_gap_accepted (test_reporting_pipeline.ReportingTests.test_no_gap_accepted) ... ok
+test_real_computation_change_not_excluded (test_reporting_pipeline.ReportingTests.test_real_computation_change_not_excluded) ... ok
+test_render_preserves_nonclaims (test_reporting_pipeline.ReportingTests.test_render_preserves_nonclaims) ... ok
+test_scheduler_cost_separate (test_reporting_pipeline.ReportingTests.test_scheduler_cost_separate) ... ok
+test_ticks_not_multiplied_by_readouts (test_reporting_pipeline.ReportingTests.test_ticks_not_multiplied_by_readouts) ... ok
+test_all_nine_cells_audited (test_runtime_audit.RuntimeAuditTests.test_all_nine_cells_audited) ... ok
+test_auditor_does_not_call_runtime_or_scheduler (test_runtime_audit.RuntimeAuditTests.test_auditor_does_not_call_runtime_or_scheduler) ... ok
+test_choice_mutation_rejected (test_runtime_audit.RuntimeAuditTests.test_choice_mutation_rejected) ... ok
+test_choice_tampering (test_runtime_audit.RuntimeAuditTests.test_choice_tampering) ... ok
+test_different_scheduler_label_rejected (test_runtime_audit.RuntimeAuditTests.test_different_scheduler_label_rejected) ... ok
+test_first_readout_preserved (test_runtime_audit.RuntimeAuditTests.test_first_readout_preserved) ... ok
+test_hidden_tail_event_rejected (test_runtime_audit.RuntimeAuditTests.test_hidden_tail_event_rejected) ... ok
+test_input_order_never_reorders (test_runtime_audit.RuntimeAuditTests.test_input_order_never_reorders) ... ok
+test_native_abstention_not_converted_by_scheduling (test_runtime_audit.RuntimeAuditTests.test_native_abstention_not_converted_by_scheduling) ... ok
+test_online_cost_synthetic_fixture (test_runtime_audit.RuntimeAuditTests.test_online_cost_synthetic_fixture) ... ok
+test_posthoc_does_not_retroactively_save (test_runtime_audit.RuntimeAuditTests.test_posthoc_does_not_retroactively_save) ... ok
+test_posthoc_result_tampering (test_runtime_audit.RuntimeAuditTests.test_posthoc_result_tampering) ... ok
+test_priority_committed_through_api (test_runtime_audit.RuntimeAuditTests.test_priority_committed_through_api) ... ok
+test_priority_dependency_deletion_rejected (test_runtime_audit.RuntimeAuditTests.test_priority_dependency_deletion_rejected) ... ok
+test_priority_state_change_rejected (test_runtime_audit.RuntimeAuditTests.test_priority_state_change_rejected) ... ok
+test_raw_none_not_flipped (test_runtime_audit.RuntimeAuditTests.test_raw_none_not_flipped) ... ok
+test_scheduler_counter_tampering (test_runtime_audit.RuntimeAuditTests.test_scheduler_counter_tampering) ... ok
+test_selection_budget_preserved (test_runtime_audit.RuntimeAuditTests.test_selection_budget_preserved) ... ok
+test_selector_failure_keeps_original_candidate (test_runtime_audit.RuntimeAuditTests.test_selector_failure_keeps_original_candidate) ... ok
+test_worker_cannot_retry (test_runtime_audit.RuntimeAuditTests.test_worker_cannot_retry) ... ok
+test_zero_extra_budget_no_priority (test_runtime_audit.RuntimeAuditTests.test_zero_extra_budget_no_priority) ... ok
+test_zero_initial_budget_no_scheduling (test_runtime_audit.RuntimeAuditTests.test_zero_initial_budget_no_scheduling) ... ok
+test_108_treatments_exact (test_scheduler.SchedulerTests.test_108_treatments_exact) ... ok
+test_already_min_no_transition (test_scheduler.SchedulerTests.test_already_min_no_transition) ... ok
+test_counters (test_scheduler.SchedulerTests.test_counters) ... ok
+test_duplicate_ids_rejected (test_scheduler.SchedulerTests.test_duplicate_ids_rejected) ... ok
+test_empty_frontier_no_priority (test_scheduler.SchedulerTests.test_empty_frontier_no_priority) ... ok
+test_id_min_is_not_slot_min (test_scheduler.SchedulerTests.test_id_min_is_not_slot_min) ... ok
+test_independent_audit_200_seeded_combinations (test_scheduler.SchedulerTests.test_independent_audit_200_seeded_combinations) ... ok
+test_input_not_modified (test_scheduler.SchedulerTests.test_input_not_modified) ... ok
+test_input_order_retains_head (test_scheduler.SchedulerTests.test_input_order_retains_head) ... ok
+test_invalid_paths_rejected (test_scheduler.SchedulerTests.test_invalid_paths_rejected) ... ok
+test_malformed_view (test_scheduler.SchedulerTests.test_malformed_view) ... ok
+test_native_counters (test_scheduler.SchedulerTests.test_native_counters) ... ok
+test_no_accuracy_required (test_scheduler.SchedulerTests.test_no_accuracy_required) ... ok
+test_no_scores_or_truth_fields (test_scheduler.SchedulerTests.test_no_scores_or_truth_fields) ... ok
+test_order_invariant_identity_mapping (test_scheduler.SchedulerTests.test_order_invariant_identity_mapping) ... ok
+test_prefix_lexicographic_order (test_scheduler.SchedulerTests.test_prefix_lexicographic_order) ... ok
+test_readout_ready_rejects_projection (test_scheduler.SchedulerTests.test_readout_ready_rejects_projection) ... ok
+test_root_path_is_allowed (test_scheduler.SchedulerTests.test_root_path_is_allowed) ... ok
+test_treatment_dropping_rejected (test_scheduler.SchedulerTests.test_treatment_dropping_rejected) ... ok
+test_unknown_scheduler (test_scheduler.SchedulerTests.test_unknown_scheduler) ... ok
+
+======================================================================
+FAIL: test_baseline_pin_is_exp21_release (test_installer_and_boundary.InstallerTests.test_baseline_pin_is_exp21_release)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/r041_work/repo/tools/r041_scheduler_direction/tests/test_installer_and_boundary.py", line 61, in test_baseline_pin_is_exp21_release
+    self.assertEqual(installer.BASIS,'ef074f7991733ba0a73d870780d4873718caf1ca')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '37bb3c19f27dfbd73de7519fc8cad399395bcf3a' != 'ef074f7991733ba0a73d870780d4873718caf1ca'
+- 37bb3c19f27dfbd73de7519fc8cad399395bcf3a
++ ef074f7991733ba0a73d870780d4873718caf1ca
+
+
+----------------------------------------------------------------------
+Ran 104 tests in 1.964s
+
+FAILED (failures=1)

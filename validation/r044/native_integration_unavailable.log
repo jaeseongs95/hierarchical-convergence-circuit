@@ -1,0 +1,18 @@
+COMMAND: python -X utf8 -B -m unittest discover -s tools/r044_reuse_contribution/native_tests -v
+RETURN CODE: 1
+test_four_cells_with_independent_audit (test_native_integration.NativeIntegrationTests.test_four_cells_with_independent_audit) ... ERROR
+
+======================================================================
+ERROR: test_four_cells_with_independent_audit (test_native_integration.NativeIntegrationTests.test_four_cells_with_independent_audit)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/hcr_work/r044/tools/r044_reuse_contribution/native_tests/test_native_integration.py", line 15, in test_four_cells_with_independent_audit
+    from r044_reuse_contribution.trial_audit import audit_trial
+  File "/mnt/data/hcr_work/r044/tools/r044_reuse_contribution/trial_audit.py", line 3, in <module>
+    from r038_early_adoption import metrics
+ModuleNotFoundError: No module named 'r038_early_adoption'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.013s
+
+FAILED (errors=1)

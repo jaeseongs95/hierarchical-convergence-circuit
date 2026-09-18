@@ -1,0 +1,49 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260918105811
+Username: DESKTOP-DKTCA33\sjs95
+RunAs User: DESKTOP-DKTCA33\sjs95
+Configuration Name: 
+Machine: DESKTOP-DKTCA33 (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:\Users\sjs95\AppData\Local\Temp\hcr-r044-payload-ec371449a9634dc3a67ae94528ce7060\bootstrap_r044.ps1 -Repo D:\codex\진짜미친짓\hierarchical-convergence-circuit -InstallArchive C:\Users\sjs95\AppData\Local\Temp\hcr-r044-payload-ec371449a9634dc3a67ae94528ce7060\payload.zip
+Process ID: 17204
+PSVersion: 5.1.26100.9444
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9444
+BuildVersion: 10.0.26100.9444
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Python: C:\Users\sjs95\AppData\Local\Programs\Python\Python312\python.exe
+{"addon_integrity":true,"addon_only":false,"dependency_files":368,"dependency_integrity":true,"native_imports":true,"new
+_files":46,"syntax":true}
+{"installed": 50, "already_identical": 0, "installation_record": "D:\\codex\\진진짜짜미미친친짓짓\\hierarchical-convergence-circui
+t\\HCR-Evidence\\deployments\\r044-20260918T015811_497437Z\\installation.json"}
+ry_changed":false,"reference_scope":"exact_JSON_string_keys_and_values; pinned_baseline_schema"},"verified":true},"invar
+iance_required":false,"inverse_mapping_evaluator_only":true,"native_readouts":24,"native_sources_modified":false,"native
+_state_proof_control_and_scheduler_independently_replayed":true,"native_trials":24,"parent_identity_regression_checked":
+6,"parent_raw_independently_audited":6,"prior_lineage":{"EXP24_raw_replayed_in_this_check":false,"source":"pinned_EXP24_
+anchor","verified":true},"raw_manifest_sha256":"24b88d417b107b0d6a92c1187c52b2ef0b14a313beab90e6025d23c872129bcf","schem
+a":"hcr-exp25-audit-v1","seed_training":{"binding_scans_checked":54,"checkpoint_state_replayed":true,"decisions_checked"
+:6,"events":422,"external_truth_evaluated":false,"generation":33,"graph_steps_checked":15,"memory_updates_checked":6,"ne
+w_inferences":0,"scalar_ticks_replayed":316,"schema":"hcr-session-audit-r021-v1","scope":"independent event/state/counte
+r replay; declared seed memory and feedback are inputs; timing is range-checked only","verified":true},"stream_records":
+552,"verified":true}
+[9/9] scripts/r044_cli.py bundle --run D:\codex\진진짜짜미미친친짓짓\hierarchical-convergence-circuit\HCR-Evidence\exp25\r044-2026
+0918T015818_405389Z --out D:\codex\진진짜짜미미친친짓짓\hierarchical-convergence-circuit\HCR-Evidence\exp25\r044-20260918T015818_4
+05389Z_evidence.zip
+{"analysis_present":true,"bundle":"D:\\codex\\진진짜짜미미친친짓짓\\hierarchical-convergence-circuit\\HCR-Evidence\\exp25\\r044-20
+260918T015818_405389Z_evidence.zip","complete_raw":true,"files":548,"sha256":"3652470f39e96755b992a1e67d495ad43180a5622f
+bb6bb09b88788e2ced7fdc"}
+실실행행 기기록록: D:\codex\진진짜짜미미친친짓짓\hierarchical-convergence-circuit\HCR-Evidence\exp25\execution-logs\20260918T015818_405389
+Z
+보보고고서서: D:\codex\진진짜짜미미친친짓짓\hierarchical-convergence-circuit\HCR-Evidence\exp25\r044-20260918T015818_405389Z\analysis\su
+mmary.ko.md
+원원자자료료 ZIP: D:\codex\진진짜짜미미친친짓짓\hierarchical-convergence-circuit\HCR-Evidence\exp25\r044-20260918T015818_405389Z_evidenc
+e.zip
+**********************
+Windows PowerShell transcript end
+End time: 20260918110013
+**********************

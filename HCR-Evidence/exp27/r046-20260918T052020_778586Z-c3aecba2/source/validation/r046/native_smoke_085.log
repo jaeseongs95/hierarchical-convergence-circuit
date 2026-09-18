@@ -1,0 +1,26 @@
+A identity True
+extend identity cold correct 36 0
+extend identity state_carry correct 29 0
+extend identity proof_memo correct 36 4
+extend identity relation_carry correct 36 4
+different_subject identity cold correct 36 0
+different_subject identity state_carry correct 36 0
+different_subject identity proof_memo correct 36 0
+different_subject identity relation_carry correct 36 0
+premise_changed identity cold correct 28 0
+premise_changed identity state_carry correct 28 0
+premise_changed identity proof_memo correct 28 0
+premise_changed identity relation_carry correct 28 0
+A fresh_ids True
+extend fresh_ids cold correct 36 0
+extend fresh_ids state_carry correct 29 0
+extend fresh_ids proof_memo correct 36 4
+extend fresh_ids relation_carry correct 36 4
+different_subject fresh_ids cold correct 36 0
+different_subject fresh_ids state_carry correct 36 0
+different_subject fresh_ids proof_memo correct 36 0
+different_subject fresh_ids relation_carry correct 36 0
+premise_changed fresh_ids cold correct 28 0
+premise_changed fresh_ids state_carry correct 28 0
+premise_changed fresh_ids proof_memo correct 28 0
+premise_changed fresh_ids relation_carry correct 28 0

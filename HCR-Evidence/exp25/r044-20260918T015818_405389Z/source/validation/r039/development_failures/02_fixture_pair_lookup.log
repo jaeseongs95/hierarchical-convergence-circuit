@@ -1,0 +1,84 @@
+test_36_trial_schedule (test_input_isolation.InputTests.test_36_trial_schedule) ... ok
+test_all_arm_scope_combinations (test_input_isolation.InputTests.test_all_arm_scope_combinations) ... ok
+test_anchor_hash_matches_actual_exp19 (test_input_isolation.InputTests.test_anchor_hash_matches_actual_exp19) ... ok
+test_anchor_input_is_unchanged (test_input_isolation.InputTests.test_anchor_input_is_unchanged) ... ok
+test_auditor_does_not_call_generator (test_input_isolation.InputTests.test_auditor_does_not_call_generator) ... ok
+test_effect_not_a_pass_requirement (test_input_isolation.InputTests.test_effect_not_a_pass_requirement) ... ok
+test_fixed_semantics (test_input_isolation.InputTests.test_fixed_semantics) ... ok
+test_no_trial_drop (test_input_isolation.InputTests.test_no_trial_drop) ... ok
+test_no_trial_reorder (test_input_isolation.InputTests.test_no_trial_reorder) ... ok
+test_no_truth_in_public_payload (test_input_isolation.InputTests.test_no_truth_in_public_payload) ... ok
+test_parent_and_cases_are_not_shared (test_input_isolation.InputTests.test_parent_and_cases_are_not_shared) ... ok
+test_reject_branch_label (test_input_isolation.InputTests.test_reject_branch_label) ... ok
+test_reject_edge_drop (test_input_isolation.InputTests.test_reject_edge_drop) ... ok
+test_reject_edge_id (test_input_isolation.InputTests.test_reject_edge_id) ... ok
+test_reject_episode (test_input_isolation.InputTests.test_reject_episode) ... ok
+test_reject_extra_truth (test_input_isolation.InputTests.test_reject_extra_truth) ... ok
+test_reject_internal_edge_order (test_input_isolation.InputTests.test_reject_internal_edge_order) ... ok
+test_reject_missing_as_false (test_input_isolation.InputTests.test_reject_missing_as_false) ... ok
+test_reject_missing_as_zero (test_input_isolation.InputTests.test_reject_missing_as_zero) ... ok
+test_reject_node_id (test_input_isolation.InputTests.test_reject_node_id) ... ok
+test_reject_population_label (test_input_isolation.InputTests.test_reject_population_label) ... ok
+test_reject_revision (test_input_isolation.InputTests.test_reject_revision) ... ok
+test_reject_score (test_input_isolation.InputTests.test_reject_score) ... ok
+test_reject_slot_map (test_input_isolation.InputTests.test_reject_slot_map) ... ok
+test_reject_world_bool_int (test_input_isolation.InputTests.test_reject_world_bool_int) ... ok
+test_reject_world_flip (test_input_isolation.InputTests.test_reject_world_flip) ... ok
+test_six_distinct_order_hashes (test_input_isolation.InputTests.test_six_distinct_order_hashes) ... ok
+test_six_orders_exhaustive (test_input_isolation.InputTests.test_six_orders_exhaustive) ... ok
+test_ID_irrelevance_never_claimed (test_reporting.ReportingTests.test_ID_irrelevance_never_claimed) ... ok
+test_confounded_prefix_blocks_claim (test_reporting.ReportingTests.test_confounded_prefix_blocks_claim) ... FAIL
+test_duplicated_arm_refused (test_reporting.ReportingTests.test_duplicated_arm_refused) ... ok
+test_missing_arm_refused (test_reporting.ReportingTests.test_missing_arm_refused) ... ok
+test_negative_saving_preserved (test_reporting.ReportingTests.test_negative_saving_preserved) ... FAIL
+test_no_opportunity_not_failure (test_reporting.ReportingTests.test_no_opportunity_not_failure) ... ok
+test_order_tick_spread_is_observed_not_forced (test_reporting.ReportingTests.test_order_tick_spread_is_observed_not_forced) ... ok
+test_render_and_csv (test_reporting.ReportingTests.test_render_and_csv) ... ok
+test_same_outcome_no_order_effect (test_reporting.ReportingTests.test_same_outcome_no_order_effect) ... ok
+test_savings_retained (test_reporting.ReportingTests.test_savings_retained) ... ok
+test_total_only_terminal_ticks (test_reporting.ReportingTests.test_total_only_terminal_ticks) ... ok
+test_wrong_output_not_called_correct (test_reporting.ReportingTests.test_wrong_output_not_called_correct) ... ok
+test_all_six_fixed_id_permutations (test_selector_and_trajectory.SelectorMappingTests.test_all_six_fixed_id_permutations) ... ok
+test_auditor_does_not_execute_selector (test_selector_and_trajectory.SelectorMappingTests.test_auditor_does_not_execute_selector) ... ok
+test_bad_parent_is_rejected_not_fixed (test_selector_and_trajectory.SelectorMappingTests.test_bad_parent_is_rejected_not_fixed) ... ok
+test_budget_is_not_hidden_retry (test_selector_and_trajectory.SelectorMappingTests.test_budget_is_not_hidden_retry) ... ok
+test_mapping_state_invariant_across_slot_positions (test_selector_and_trajectory.SelectorMappingTests.test_mapping_state_invariant_across_slot_positions) ... ok
+test_native_missing_proof_stays_missing (test_selector_and_trajectory.SelectorMappingTests.test_native_missing_proof_stays_missing) ... ok
+test_unbuilt_support_is_not_created (test_selector_and_trajectory.SelectorMappingTests.test_unbuilt_support_is_not_created) ... ok
+test_all_permutations_have_same_ID_paths (test_selector_and_trajectory.TrajectoryTests.test_all_permutations_have_same_ID_paths) ... ok
+test_corrupted_observation_refused (test_selector_and_trajectory.TrajectoryTests.test_corrupted_observation_refused) ... ok
+test_duplicate_completion_refused (test_selector_and_trajectory.TrajectoryTests.test_duplicate_completion_refused) ... ok
+test_early_frontier_trace (test_selector_and_trajectory.TrajectoryTests.test_early_frontier_trace) ... ok
+test_empty_no_state_valid (test_selector_and_trajectory.TrajectoryTests.test_empty_no_state_valid) ... ok
+test_mapping_does_not_change_native (test_selector_and_trajectory.TrajectoryTests.test_mapping_does_not_change_native) ... ok
+test_missing_completion_refused (test_selector_and_trajectory.TrajectoryTests.test_missing_completion_refused) ... ok
+test_nonempty_missing_state_refused (test_selector_and_trajectory.TrajectoryTests.test_nonempty_missing_state_refused) ... ok
+test_slot_bool_refused (test_selector_and_trajectory.TrajectoryTests.test_slot_bool_refused) ... ok
+test_slot_negative_refused (test_selector_and_trajectory.TrajectoryTests.test_slot_negative_refused) ... ok
+test_slot_out_of_range_refused (test_selector_and_trajectory.TrajectoryTests.test_slot_out_of_range_refused) ... ok
+
+======================================================================
+FAIL: test_confounded_prefix_blocks_claim (test_reporting.ReportingTests.test_confounded_prefix_blocks_claim)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/exp20_work/repo/tools/r039_order_isolation/tests/test_reporting.py", line 26, in test_confounded_prefix_blocks_claim
+    self.assertEqual(summarize(r)['paired'][0]['finding'],'paired_execution_not_comparable')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'correct_output_preserving_tick_saving' != 'paired_execution_not_comparable'
+- correct_output_preserving_tick_saving
++ paired_execution_not_comparable
+
+
+======================================================================
+FAIL: test_negative_saving_preserved (test_reporting.ReportingTests.test_negative_saving_preserved)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/exp20_work/repo/tools/r039_order_isolation/tests/test_reporting.py", line 29, in test_negative_saving_preserved
+    self.assertEqual(summarize(r)['paired'][0]['saved_native_ticks'],-3)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 3 != -3
+
+----------------------------------------------------------------------
+Ran 58 tests in 0.064s
+
+FAILED (failures=2)

@@ -1,0 +1,11 @@
+COMMAND: python -X utf8 -B scripts/r044_cli.py --help
+RETURN CODE: 0
+usage: r044_cli.py [-h] {prepare,execute,audit,verify,bundle} ...
+
+EXP25 / R044 frozen-memory circuit-reuse contribution
+
+positional arguments:
+  {prepare,execute,audit,verify,bundle}
+
+options:
+  -h, --help            show this help message and exit

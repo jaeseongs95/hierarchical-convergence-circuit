@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "D:\codex\진짜미친짓\hierarchical-convergence-circuit\scripts\r045_cli.py", line 6, in <module>
+    if __name__=='__main__': raise SystemExit(main())
+                                              ^^^^^^
+  File "D:\codex\진짜미친짓\hierarchical-convergence-circuit\tools\r045_direct_support\cli.py", line 48, in main
+    result=prepare(args.source_run,args.out)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\codex\진짜미친짓\hierarchical-convergence-circuit\tools\r045_direct_support\protocol.py", line 44, in prepare
+    plan=make_plan(source);io.put(target,plan)
+         ^^^^^^^^^^^^^^^^^
+  File "D:\codex\진짜미친짓\hierarchical-convergence-circuit\tools\r045_direct_support\protocol.py", line 23, in make_plan
+    input_audit.check_plan_inputs(plan,parent,seed)
+  File "D:\codex\진짜미친짓\hierarchical-convergence-circuit\tools\r045_direct_support\input_audit.py", line 75, in check_plan_inputs
+    seed_report = check_seed(seed)
+                  ^^^^^^^^^^^^^^^^
+  File "D:\codex\진짜미친짓\hierarchical-convergence-circuit\tools\r045_direct_support\input_audit.py", line 60, in check_seed
+    require(all(type(c['active']) is bool and type(c['pattern']['length']) is int for c in circuits),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\codex\진짜미친짓\hierarchical-convergence-circuit\tools\r045_direct_support\input_audit.py", line 60, in <genexpr>
+    require(all(type(c['active']) is bool and type(c['pattern']['length']) is int for c in circuits),
+                                                   ~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'length'

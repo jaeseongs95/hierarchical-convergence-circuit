@@ -1,0 +1,21 @@
+test_activation_ineligible_support_not_accepted (test_selector_integration.SelectorIntegrationTests.test_activation_ineligible_support_not_accepted) ... ok
+test_existing_lower_activation_support_is_selected (test_selector_integration.SelectorIntegrationTests.test_existing_lower_activation_support_is_selected) ... ok
+test_hidden_field_rejected (test_selector_integration.SelectorIntegrationTests.test_hidden_field_rejected) ... ok
+test_missing_completed_support_stays_abstained (test_selector_integration.SelectorIntegrationTests.test_missing_completed_support_stays_abstained) ... ok
+test_native_policy_does_not_use_supported_alternative (test_selector_integration.SelectorIntegrationTests.test_native_policy_does_not_use_supported_alternative) ... ok
+test_native_saved_proof_not_replaced (test_selector_integration.SelectorIntegrationTests.test_native_saved_proof_not_replaced) ... ok
+test_negative_evidence_does_not_flip_raw_value (test_selector_integration.SelectorIntegrationTests.test_negative_evidence_does_not_flip_raw_value) ... ok
+test_nonpositive_raw_is_native_passthrough (test_selector_integration.SelectorIntegrationTests.test_nonpositive_raw_is_native_passthrough) ... ok
+test_online_adoption_controls_stop_after_actual_selector (test_selector_integration.SelectorIntegrationTests.test_online_adoption_controls_stop_after_actual_selector) ... ok
+test_positive_observation_can_still_be_wrong_in_hidden_world (test_selector_integration.SelectorIntegrationTests.test_positive_observation_can_still_be_wrong_in_hidden_world) ... ok
+test_proof_budget (test_selector_integration.SelectorIntegrationTests.test_proof_budget) ... ok
+test_ranking_budget (test_selector_integration.SelectorIntegrationTests.test_ranking_budget) ... ok
+test_scan_budget (test_selector_integration.SelectorIntegrationTests.test_scan_budget) ... ok
+test_selector_costs_accounted_separately_from_graph_ticks (test_selector_integration.SelectorIntegrationTests.test_selector_costs_accounted_separately_from_graph_ticks) ... ok
+test_view_and_original_proof_unmodified (test_selector_integration.SelectorIntegrationTests.test_view_and_original_proof_unmodified) ... ok
+test_zero_is_not_support (test_selector_integration.SelectorIntegrationTests.test_zero_is_not_support) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.011s
+
+OK

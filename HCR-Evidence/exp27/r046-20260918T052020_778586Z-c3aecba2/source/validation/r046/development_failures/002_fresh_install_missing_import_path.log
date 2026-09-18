@@ -1,0 +1,21 @@
+test_carry (unittest.loader._FailedTest.test_carry) ... ERROR
+
+======================================================================
+ERROR: test_carry (unittest.loader._FailedTest.test_carry)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_carry
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/mnt/data/r046_final_install/tools/r046_thought_carry/tests/test_carry.py", line 5, in <module>
+    from hcr.model import Config
+ModuleNotFoundError: No module named 'hcr'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)

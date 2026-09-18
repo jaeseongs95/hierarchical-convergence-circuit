@@ -1,0 +1,13 @@
+COMMAND: python -X utf8 -B Run-HCR-R044.py --help
+RETURN CODE: 0
+usage: Run-HCR-R044.py [-h] [--source-run SOURCE_RUN] [--prior-run PRIOR_RUN]
+                       [--out OUT] [--check-only]
+
+R044 / EXP25 frozen-memory reuse contribution
+
+options:
+  -h, --help            show this help message and exit
+  --source-run SOURCE_RUN
+  --prior-run PRIOR_RUN
+  --out OUT
+  --check-only          기존 raw 재검산 및 통합 self-test까지만 실행

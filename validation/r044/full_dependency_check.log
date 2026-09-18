@@ -1,0 +1,11 @@
+COMMAND: python -X utf8 -B scripts/verify_r044.py
+RETURN CODE: 1
+Traceback (most recent call last):
+  File "/mnt/data/hcr_work/r044/scripts/verify_r044.py", line 36, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/mnt/data/hcr_work/r044/scripts/verify_r044.py", line 22, in main
+    dependencies = sources.dependencies()
+  File "/mnt/data/hcr_work/r044/tools/r044_reuse_contribution/sources.py", line 26, in dependencies
+    from r038_early_adoption.sources import check_manifest
+ModuleNotFoundError: No module named 'r038_early_adoption'

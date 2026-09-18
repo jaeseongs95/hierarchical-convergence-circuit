@@ -1,0 +1,11 @@
+usage: Run-HCR-R043.py [-h] [--source-run SOURCE_RUN] [--prior-run PRIOR_RUN]
+                       [--out OUT] [--check-only]
+
+R043 / EXP24 input-order negative control
+
+options:
+  -h, --help            show this help message and exit
+  --source-run SOURCE_RUN
+  --prior-run PRIOR_RUN
+  --out OUT
+  --check-only          기존 raw 재검산 및 통합 self-test까지만 실행

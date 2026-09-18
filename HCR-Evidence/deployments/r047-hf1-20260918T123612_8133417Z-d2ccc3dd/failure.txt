@@ -1,0 +1,7 @@
+Exception calling "Replace" with "3" argument(s): "The path is not of a legal form."
+At line:56 char:13
++             [IO.File]::Replace($temp,$protocol,$null)
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : ArgumentException
+ 

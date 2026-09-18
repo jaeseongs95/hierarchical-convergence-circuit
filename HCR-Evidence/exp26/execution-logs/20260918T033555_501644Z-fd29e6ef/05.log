@@ -1,0 +1,6 @@
+test_native_regression_and_smoke (test_native_integration.NativeIntegrationTests.test_native_regression_and_smoke) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 5.387s
+
+OK

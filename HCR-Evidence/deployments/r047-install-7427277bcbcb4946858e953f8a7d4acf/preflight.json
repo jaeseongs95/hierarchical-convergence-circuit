@@ -1,0 +1,33 @@
+{
+  "files_to_create": [
+    "HCR-Evidence/.gitignore",
+    "R047_MANIFEST.json",
+    "R047_README.ko.md",
+    "Run-HCR-R047.cmd",
+    "Run-HCR-R047.py",
+    "docs/R047_DESIGN.ko.md",
+    "scripts/install_r047.py",
+    "scripts/launch_r047.ps1",
+    "scripts/r047_cli.py",
+    "scripts/r047_verify_bundle.cmd",
+    "tools/r047_state_ablation/__init__.py",
+    "tools/r047_state_ablation/audit.py",
+    "tools/r047_state_ablation/legacy_worker.py",
+    "tools/r047_state_ablation/protocol.py",
+    "tools/r047_state_ablation/provenance.py",
+    "tools/r047_state_ablation/regression.py",
+    "tools/r047_state_ablation/reporting.py",
+    "tools/r047_state_ablation/runtime.py",
+    "tools/r047_state_ablation/spec.py",
+    "tools/r047_state_ablation/storage.py",
+    "tools/r047_state_ablation/tests/__init__.py",
+    "tools/r047_state_ablation/tests/test_installer.py",
+    "tools/r047_state_ablation/tests/test_research_device.py",
+    "validation/.gitignore",
+    "validation/r047/design_frozen_before_tests.txt",
+    "validation/r047/scope.json",
+    "validation/r047/unit_tests_65.txt"
+  ],
+  "files_unchanged": 0,
+  "head": "bdd24df2d783a1cea82a6050f4f793c9eb06ca0a"
+}

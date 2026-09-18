@@ -1,0 +1,10 @@
+usage: Run-HCR-R045.py [-h] [--source-run SOURCE_RUN] [--out OUT]
+                       [--check-only]
+
+R045 / EXP26 direct-support circuit contribution
+
+options:
+  -h, --help            show this help message and exit
+  --source-run SOURCE_RUN
+  --out OUT
+  --check-only          Run all mandatory checks, but no new research trials

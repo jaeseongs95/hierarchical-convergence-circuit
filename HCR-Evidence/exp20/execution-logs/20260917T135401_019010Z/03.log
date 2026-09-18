@@ -1,0 +1,19 @@
+test_actual_posthoc_scans_are_separate_cost (test_selector_timing.SelectorTimingTests.test_actual_posthoc_scans_are_separate_cost) ... ok
+test_actual_selected_proof_binds_supported_branch (test_selector_timing.SelectorTimingTests.test_actual_selected_proof_binds_supported_branch) ... ok
+test_actual_selector_budget_failure_is_not_success (test_selector_timing.SelectorTimingTests.test_actual_selector_budget_failure_is_not_success) ... ok
+test_actual_selector_does_not_flip_false_raw (test_selector_timing.SelectorTimingTests.test_actual_selector_does_not_flip_false_raw) ... ok
+test_actual_selector_none_raw_passthrough (test_selector_timing.SelectorTimingTests.test_actual_selector_none_raw_passthrough) ... ok
+test_first_missing_path_is_not_repaired (test_selector_timing.SelectorTimingTests.test_first_missing_path_is_not_repaired) ... ok
+test_misleading_world_does_not_enter_selector (test_selector_timing.SelectorTimingTests.test_misleading_world_does_not_enter_selector) ... ok
+test_native_proof_remains_original (test_selector_timing.SelectorTimingTests.test_native_proof_remains_original) ... ok
+test_real_selector_can_accept_before_graph_complete (test_selector_timing.SelectorTimingTests.test_real_selector_can_accept_before_graph_complete) ... ok
+test_real_selector_requires_activation (test_selector_timing.SelectorTimingTests.test_real_selector_requires_activation) ... ok
+test_real_selector_requires_observation_support (test_selector_timing.SelectorTimingTests.test_real_selector_requires_observation_support) ... ok
+test_real_selector_three_arms (test_selector_timing.SelectorTimingTests.test_real_selector_three_arms) ... ok
+test_same_kernel_work_if_support_arrives_last (test_selector_timing.SelectorTimingTests.test_same_kernel_work_if_support_arrives_last) ... ok
+test_unknown_private_field_is_rejected (test_selector_timing.SelectorTimingTests.test_unknown_private_field_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.063s
+
+OK

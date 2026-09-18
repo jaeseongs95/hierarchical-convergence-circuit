@@ -1,0 +1,9 @@
+usage: r043_cli.py [-h] {prepare,execute,audit,verify,bundle} ...
+
+EXP24 / R043 input-order negative control
+
+positional arguments:
+  {prepare,execute,audit,verify,bundle}
+
+options:
+  -h, --help            show this help message and exit

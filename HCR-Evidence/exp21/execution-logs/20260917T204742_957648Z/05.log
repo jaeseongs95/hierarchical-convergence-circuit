@@ -1,0 +1,16 @@
+test_all_30_native_selftests_audited (test_native_integration.NativeIntegrationTests.test_all_30_native_selftests_audited) ... ok
+test_frozen_memory_and_observation (test_native_integration.NativeIntegrationTests.test_frozen_memory_and_observation) ... ok
+test_independent_audit_does_not_execute_production (test_native_integration.NativeIntegrationTests.test_independent_audit_does_not_execute_production) ... ok
+test_input_order_has_no_native_priority_calls (test_native_integration.NativeIntegrationTests.test_input_order_has_no_native_priority_calls) ... ok
+test_input_order_matches_unmodified_wrapper (test_native_integration.NativeIntegrationTests.test_input_order_matches_unmodified_wrapper) ... ok
+test_no_missing_parent_correction (test_native_integration.NativeIntegrationTests.test_no_missing_parent_correction) ... ok
+test_priority_counter_tampering_rejected (test_native_integration.NativeIntegrationTests.test_priority_counter_tampering_rejected) ... ok
+test_priority_path_exercised_in_native_controller (test_native_integration.NativeIntegrationTests.test_priority_path_exercised_in_native_controller) ... ok
+test_public_priority_operation_changes_only_frontier (test_native_integration.NativeIntegrationTests.test_public_priority_operation_changes_only_frontier) ... ok
+test_raw_selection_value_preserved (test_native_integration.NativeIntegrationTests.test_raw_selection_value_preserved) ... ok
+test_scheduler_view_never_has_scores_or_worlds (test_native_integration.NativeIntegrationTests.test_scheduler_view_never_has_scores_or_worlds) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 17.216s
+
+OK

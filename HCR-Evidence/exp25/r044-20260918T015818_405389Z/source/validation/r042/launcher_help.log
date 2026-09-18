@@ -1,0 +1,10 @@
+usage: Run-HCR-R042.py [-h] [--source-run SOURCE_RUN] [--out OUT]
+                       [--check-only]
+
+R042 / EXP23 ID-role isolation
+
+options:
+  -h, --help            show this help message and exit
+  --source-run SOURCE_RUN
+  --out OUT
+  --check-only          기존 raw 재검산 및 통합 self-test까지만 실행

@@ -1,0 +1,49 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260918123551
+Username: DESKTOP-DKTCA33\sjs95
+RunAs User: DESKTOP-DKTCA33\sjs95
+Configuration Name: 
+Machine: DESKTOP-DKTCA33 (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:\Users\sjs95\AppData\Local\Temp\hcr-r045-payload-b6881f35d0cb4c218a8e85243812ac55\bootstrap_r045.ps1 -Repo D:\codex\진짜미친짓\hierarchical-convergence-circuit -InstallArchive C:\Users\sjs95\AppData\Local\Temp\hcr-r045-payload-b6881f35d0cb4c218a8e85243812ac55\payload.zip
+Process ID: 20412
+PSVersion: 5.1.26100.9444
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9444
+BuildVersion: 10.0.26100.9444
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Python: C:\Users\sjs95\AppData\Local\Programs\Python\Python312\python.exe
+{"addon_integrity":true,"addon_only":false,"dependency_files":414,"dependency_integrity":true,"native_imports":true,"new
+_files":50,"syntax":true}
+{"installed": 51, "already_identical": 0, "installation_record": "D:\\codex\\진진짜짜미미친친짓짓\\hierarchical-convergence-circui
+t\\HCR-Evidence\\deployments\\r045-20260918T033551_437850Z\\installation.json"}
+  File "D:\codex\진진짜짜미미친친짓짓\hierarchical-convergence-circuit\tools\r045_direct_support\protocol.py", line 23, in make_pl
+an
+    input_audit.check_plan_inputs(plan,parent,seed)
+  File "D:\codex\진진짜짜미미친친짓짓\hierarchical-convergence-circuit\tools\r045_direct_support\input_audit.py", line 75, in chec
+k_plan_inputs
+    seed_report = check_seed(seed)
+                  ^^^^^^^^^^^^^^^^
+  File "D:\codex\진진짜짜미미친친짓짓\hierarchical-convergence-circuit\tools\r045_direct_support\input_audit.py", line 60, in chec
+k_seed
+    require(all(type(c['active']) is bool and type(c['pattern']['length']) is int for c in circuits),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\codex\진진짜짜미미친친짓짓\hierarchical-convergence-circuit\tools\r045_direct_support\input_audit.py", line 60, in <gen
+expr>
+    require(all(type(c['active']) is bool and type(c['pattern']['length']) is int for c in circuits),
+                                                   ~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'length'
+First failure; no retry. Stage 6, log: D:\codex\진진짜짜미미친친짓짓\hierarchical-convergence-circuit\HCR-Evidence\exp26\execution
+-logs\20260918T033555_501644Z-fd29e6ef\06.log
+Execution logs: D:\codex\진진짜짜미미친친짓짓\hierarchical-convergence-circuit\HCR-Evidence\exp26\execution-logs\20260918T033555_5
+01644Z-fd29e6ef
+Incomplete forensic ZIP: D:\codex\진진짜짜미미친친짓짓\hierarchical-convergence-circuit\HCR-Evidence\exp26\execution-logs\20260918
+T033555_501644Z-fd29e6ef_forensic.zip
+**********************
+Windows PowerShell transcript end
+End time: 20260918123630
+**********************

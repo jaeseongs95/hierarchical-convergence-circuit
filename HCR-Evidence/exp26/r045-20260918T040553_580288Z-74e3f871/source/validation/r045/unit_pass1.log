@@ -1,0 +1,49 @@
+test_counterbalance (test_design.DesignTests.test_counterbalance) ... ok
+test_design_mutations (test_design.DesignTests.test_design_mutations) ... ok
+test_full_fixed_design (test_design.DesignTests.test_full_fixed_design) ... ok
+test_input_auditor_does_not_import_producer (test_design.DesignTests.test_input_auditor_does_not_import_producer) ... ok
+test_no_mutation (test_design.DesignTests.test_no_mutation) ... ok
+test_no_truth_in_observation (test_design.DesignTests.test_no_truth_in_observation) ... ok
+test_score_only_conflict (test_design.DesignTests.test_score_only_conflict) ... ok
+test_seed_preconditions (test_design.DesignTests.test_seed_preconditions) ... ok
+test_absent_positive_route_is_unknown_not_zero (test_measurements.MeasurementTests.test_absent_positive_route_is_unknown_not_zero) ... ok
+test_alias_projection (test_measurements.MeasurementTests.test_alias_projection) ... ok
+test_bad_count_rejected (test_measurements.MeasurementTests.test_bad_count_rejected) ... ok
+test_bad_eligibility_rejected (test_measurements.MeasurementTests.test_bad_eligibility_rejected) ... ok
+test_bad_tick_sequence_rejected (test_measurements.MeasurementTests.test_bad_tick_sequence_rejected) ... ok
+test_binding_without_match_is_not_pool_exposure (test_measurements.MeasurementTests.test_binding_without_match_is_not_pool_exposure) ... ok
+test_decision_signature_ignores_pool_event_ids (test_measurements.MeasurementTests.test_decision_signature_ignores_pool_event_ids) ... ok
+test_direct_on_positive_adopted_route (test_measurements.MeasurementTests.test_direct_on_positive_adopted_route) ... ok
+test_direct_without_macro_rejected (test_measurements.MeasurementTests.test_direct_without_macro_rejected) ... ok
+test_input_mismatch_requires_boundaries_not_repair (test_measurements.MeasurementTests.test_input_mismatch_requires_boundaries_not_repair) ... ok
+test_macro_somewhere_is_not_direct_use (test_measurements.MeasurementTests.test_macro_somewhere_is_not_direct_use) ... ok
+test_missing_settle_rejected (test_measurements.MeasurementTests.test_missing_settle_rejected) ... ok
+test_negative_proof_is_not_positive_direct_adoption (test_measurements.MeasurementTests.test_negative_proof_is_not_positive_direct_adoption) ... ok
+test_six_gate_conditions (test_measurements.MeasurementTests.test_six_gate_conditions) ... ok
+test_tick_change_changes_signature (test_measurements.MeasurementTests.test_tick_change_changes_signature) ... ok
+test_ID_readout_change_detected (test_reporting.ReportingTests.test_ID_readout_change_detected) ... ok
+test_bad_tick_partition_rejected (test_reporting.ReportingTests.test_bad_tick_partition_rejected) ... ok
+test_bool_as_gate_not_int (test_reporting.ReportingTests.test_bool_as_gate_not_int) ... ok
+test_changed_outcome_not_called_efficiency (test_reporting.ReportingTests.test_changed_outcome_not_called_efficiency) ... ok
+test_conflict_abstention_not_counted_as_correct (test_reporting.ReportingTests.test_conflict_abstention_not_counted_as_correct) ... ok
+test_conflict_false_acceptance_fails_prediction (test_reporting.ReportingTests.test_conflict_false_acceptance_fails_prediction) ... ok
+test_duplicate_cell_rejected (test_reporting.ReportingTests.test_duplicate_cell_rejected) ... ok
+test_each_censored_reason (test_reporting.ReportingTests.test_each_censored_reason) ... ok
+test_misconvergence_stays_an_outcome (test_reporting.ReportingTests.test_misconvergence_stays_an_outcome) ... ok
+test_missing_direct_exposure_is_not_failure_of_audit (test_reporting.ReportingTests.test_missing_direct_exposure_is_not_failure_of_audit) ... ok
+test_missing_readouts_not_equal_by_default (test_reporting.ReportingTests.test_missing_readouts_not_equal_by_default) ... ok
+test_native_wall_placeholder_excluded (test_reporting.ReportingTests.test_native_wall_placeholder_excluded) ... ok
+test_no_pool_is_not_evidence_of_mismatch_rejection (test_reporting.ReportingTests.test_no_pool_is_not_evidence_of_mismatch_rejection) ... ok
+test_opposed_predictions_remain_opposed (test_reporting.ReportingTests.test_opposed_predictions_remain_opposed) ... ok
+test_primary_not_all_families_pooled (test_reporting.ReportingTests.test_primary_not_all_families_pooled) ... ok
+test_render_and_csv (test_reporting.ReportingTests.test_render_and_csv) ... ok
+test_unmeasured_cost_not_zero (test_reporting.ReportingTests.test_unmeasured_cost_not_zero) ... ok
+test_forwards_only_pinned_inputs (test_runtime.RuntimeBoundaryTests.test_forwards_only_pinned_inputs) ... ok
+test_gate_int_rejected_before_backend (test_runtime.RuntimeBoundaryTests.test_gate_int_rejected_before_backend) ... ok
+test_native_exceptions_not_retried (test_runtime.RuntimeBoundaryTests.test_native_exceptions_not_retried) ... ok
+test_signature_excludes_truth_family_maps_and_backend_override (test_runtime.RuntimeBoundaryTests.test_signature_excludes_truth_family_maps_and_backend_override) ... ok
+
+----------------------------------------------------------------------
+Ran 44 tests in 0.084s
+
+OK

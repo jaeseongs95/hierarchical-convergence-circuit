@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/mnt/data/r043_work/release/scripts/verify_r043.py", line 33, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/mnt/data/r043_work/release/scripts/verify_r043.py", line 22, in main
+    dependencies = sources.dependencies()
+  File "/mnt/data/r043_work/release/tools/r043_input_order_control/sources.py", line 26, in dependencies
+    from r038_early_adoption.sources import check_manifest
+ModuleNotFoundError: No module named 'r038_early_adoption'
