@@ -1,0 +1,24 @@
+{
+  "python_312_AST_passed": true,
+  "files": [
+    "Run-HCR-R046.py",
+    "scripts/install_r046.py",
+    "scripts/r046_cli.py",
+    "scripts/verify_r046.py",
+    "tools/r046_thought_carry/__init__.py",
+    "tools/r046_thought_carry/cli.py",
+    "tools/r046_thought_carry/contracts.py",
+    "tools/r046_thought_carry/evaluator.py",
+    "tools/r046_thought_carry/protocol.py",
+    "tools/r046_thought_carry/regression.py",
+    "tools/r046_thought_carry/reporting.py",
+    "tools/r046_thought_carry/runtime.py",
+    "tools/r046_thought_carry/sources.py",
+    "tools/r046_thought_carry/spec.py",
+    "tools/r046_thought_carry/storage.py",
+    "tools/r046_thought_carry/tests/__init__.py",
+    "tools/r046_thought_carry/tests/test_carry.py",
+    "tools/r046_thought_carry/tests/test_installer.py",
+    "tools/r046_thought_carry/tests/test_parent_regression.py"
+  ]
+}

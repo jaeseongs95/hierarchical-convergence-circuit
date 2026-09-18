@@ -1,0 +1,19 @@
+"""Frozen comparison scope. Predictions are results, not integrity conditions."""
+BASE_COMMIT='3f07c81e27984e712f8cf3dc4b52ab2194dfbc53'
+PARENT='HCR-Evidence/exp26/r045-20260918T040553_580288Z-74e3f871'
+PARENT_MANIFEST_SHA256='277d631fe5a3f36df6845675760c47fdb049ee80bc4a0bf6c8762e22ae047cf0'
+R045_MANIFEST_BLOB='7698b7b3675a8ff3599858f3fe8689277304a14a'
+NATIVE_BLOBS={
+ '__init__.py':'ea6ccdd983eb195aaefb8898057f4fb2493a95f1',
+ 'model.py':'89e90e7f32e8cf388bbb0f7c7213b4261dc606b4',
+ 'dynamics.py':'53de614846489a531f4a8d463fc17eabe1e5a6ca',
+ 'workspace.py':'52bc9338f43078bc11835491d5baf80d16195809',
+ 'binding.py':'44aa43f2fd4be7aa3af0b9183f03e1fe5b748d37',
+ 'identity.py':'0214cfe5bf7a5c2d41ca5e353e3f0d880fee374b',
+ 'codec.py':'44eac9a84681b7ba919fa3cf737ab0dbff8477e1',
+ 'proof.py':'119c35031a97d57bc8e2c874332e8b9e1ecf6b7a'}
+ARMS=('cold','state_carry','proof_memo','relation_carry')
+VARIANTS=('identity','fresh_ids')
+SCENARIOS=('extend','different_subject','premise_changed')
+SCORE=.92
+SCHEMA='hcr-exp27-plan-v1'

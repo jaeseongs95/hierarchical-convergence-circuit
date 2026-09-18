@@ -1,0 +1,6 @@
+Development smoke before release, score=0.85, actual native core, no research data.
+First query failed independent audit:
+r046_thought_carry.storage.ContractError: cold received carry
+Observed cause in adapter source: local `reason` variable for the carry gate was overwritten by terminal adoption reason before assembling the record.
+Correction: preserve `gate_reason` at the carry boundary. This changes record provenance, not the native calculation or preregistered prediction.
+No automatic experimental retry was used. Subsequent checks run after source correction.
