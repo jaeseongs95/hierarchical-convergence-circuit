@@ -1,0 +1,12 @@
+{
+  "bytes_read_for_original_verification": 1126907304,
+  "experiments_indexed": 31,
+  "failures": [],
+  "generated_files_checked": 13,
+  "moves_checked": 19,
+  "original_evidence_files_checked": 12056,
+  "original_files_checked": 12927,
+  "passed": true,
+  "schema": "hcc-layout-independent-audit-v2",
+  "scope": "local byte/path/index integrity; NOT an HCC experiment or external attestation"
+}

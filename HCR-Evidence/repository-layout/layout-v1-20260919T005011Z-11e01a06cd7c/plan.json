@@ -1,0 +1,246 @@
+{
+  "base_commit": "83d07f43cb9b138cadfcdbdd1f0e40bcfb5857e9",
+  "before_inventory": "HCR-Evidence/repository-layout/layout-v1-20260919T005011Z-11e01a06cd7c/before.json",
+  "before_inventory_sha256": "8d46c205915acd9cc91ea0f51c30d58c15514901b954f70be6bfd3fc7db71403",
+  "claim_status_changes": [],
+  "creates": [
+    {
+      "bytes": 864,
+      "op": "create",
+      "sha256": "8e1f689df92d5ed07576e65daad5f2537e621ed79a7745c8b53914f403bea8ba",
+      "target": "Run-HCR.cmd"
+    },
+    {
+      "bytes": 1397,
+      "op": "create",
+      "sha256": "d05783a3c9a4c32bf58ed99452eef0c07e2c4907784c692cc314a79ce8ccd1c3",
+      "target": "START_HERE.ko.md"
+    },
+    {
+      "bytes": 8,
+      "op": "create",
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+      "target": "archive/distributions/.gitattributes"
+    },
+    {
+      "bytes": 7837,
+      "op": "create",
+      "sha256": "1545b18a72eb00ef0a2ebe195a80fa81a00bbcdca5edfb4c7f77d0a3dea50539",
+      "target": "archive/distributions/INDEX.json"
+    },
+    {
+      "bytes": 754,
+      "op": "create",
+      "sha256": "1c2d66824f9f8397b49d1b6e30c36cefea32d546615487df832799fe5cfeddc8",
+      "target": "archive/distributions/README.ko.md"
+    },
+    {
+      "bytes": 1686,
+      "op": "create",
+      "sha256": "0834ddac2f2beed92255d45ea666dec05a92f83151ee24eee22799b71142cd7b",
+      "target": "docs/current/REPOSITORY_GUIDE.ko.md"
+    },
+    {
+      "bytes": 19765,
+      "op": "create",
+      "sha256": "1b342d23f6c8ee9e0daba11af885fbf864058bc9ca3b1baff68da11ff0f710f4",
+      "target": "experiments/INDEX.json"
+    },
+    {
+      "bytes": 3411,
+      "op": "create",
+      "sha256": "6f7e40c1c824e28099383ae1a25e9c55fb3f5dbd8db5838399b42b383e2205f8",
+      "target": "experiments/INDEX.ko.md"
+    },
+    {
+      "bytes": 463,
+      "op": "create",
+      "sha256": "31cbf3b388ec51af5753018ad6c0ca4de72587badc3ffc4d732d0efbe0949387",
+      "target": "experiments/exp-09-baseline/README.md"
+    },
+    {
+      "bytes": 472,
+      "op": "create",
+      "sha256": "77468c5d30f147435719e2ab6278a556fb73088b2a16edba44b32f22e2f1c27a",
+      "target": "experiments/exp-28-state-ablation/README.md"
+    },
+    {
+      "bytes": 467,
+      "op": "create",
+      "sha256": "cdb9ef3a18e9ba2faabbb86e0d3004078c3a8eef2c75d20f4189a2215de44036",
+      "target": "experiments/exp-29-precision/README.md"
+    },
+    {
+      "bytes": 473,
+      "op": "create",
+      "sha256": "4e999229ec5549c2b466da085c9d89b077cd653989238b42366f48c006679d1e",
+      "target": "experiments/exp-30-signal-boundary/README.md"
+    },
+    {
+      "bytes": 2127,
+      "op": "create",
+      "sha256": "c4088be026ebd327149128013a7f1098bd85b29571ee5fb329a9950571d08ab6",
+      "target": "scripts/run_indexed_experiment.py"
+    }
+  ],
+  "excluded_cache_names": [
+    ".git",
+    ".mypy_cache",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".venv",
+    "__pycache__",
+    "venv"
+  ],
+  "excluded_inventory_roots": [
+    "HCR-Evidence/repository-layout/layout-v1-20260919T005011Z-11e01a06cd7c",
+    "HCR-Evidence/repository-layout/active.lock",
+    "HCC_REORGANIZE"
+  ],
+  "existing_files_rewritten": 0,
+  "moves": [
+    {
+      "bytes": 4095,
+      "op": "move",
+      "sha256": "660a401f8e1bc61aa7edb5f662e93d2b65296038d21ae412c38ddd393f6ccaba",
+      "source": "HCR_R037_EXP18_import_hotfix.zip",
+      "target": "archive/distributions/r037/HCR_R037_EXP18_import_hotfix.zip"
+    },
+    {
+      "bytes": 3213,
+      "op": "move",
+      "sha256": "3af5bcb7c1b69d30f65a79c1622f52ca254f81438497a1e8d46a6371751bbb9c",
+      "source": "HCR_R037_EXP18_import_hotfix_원클릭.bat",
+      "target": "archive/distributions/r037/HCR_R037_EXP18_import_hotfix_원클릭.bat"
+    },
+    {
+      "bytes": 98050,
+      "op": "move",
+      "sha256": "c0b5cf50fb9d267eeac275c91d4790e571777ed9664dc3190f0ec3b22d1a696c",
+      "source": "HCR_R039_EXP20_OneClick.cmd",
+      "target": "archive/distributions/r039/HCR_R039_EXP20_OneClick.cmd"
+    },
+    {
+      "bytes": 113748,
+      "op": "move",
+      "sha256": "c1491deb922db56f4aa459c87f6cbaa51f3d23981cdb951dd53a6da6c85a8b31",
+      "source": "HCR_R040_EXP21_OneClick.cmd",
+      "target": "archive/distributions/r040/HCR_R040_EXP21_OneClick.cmd"
+    },
+    {
+      "bytes": 140576,
+      "op": "move",
+      "sha256": "b709273eb61c07bb745a91913e896b71f6dba68371beea3ad0546ca0bc36ef48",
+      "source": "HCR_R041_EXP22_OneClick.cmd",
+      "target": "archive/distributions/r041/HCR_R041_EXP22_OneClick.cmd"
+    },
+    {
+      "bytes": 99696,
+      "op": "move",
+      "sha256": "bb3a41cae9c5b46e5da6e1485524d0eadcea06e39bb2c18f9402db1f969dbd96",
+      "source": "HCR_R042_EXP23_OneClick.cmd",
+      "target": "archive/distributions/r042/HCR_R042_EXP23_OneClick.cmd"
+    },
+    {
+      "bytes": 103834,
+      "op": "move",
+      "sha256": "d3752c10863f01f1556b2048380bef63e72312513b2c81dd461f8b4901f4494e",
+      "source": "HCR_R043_EXP24_OneClick.cmd",
+      "target": "archive/distributions/r043/HCR_R043_EXP24_OneClick.cmd"
+    },
+    {
+      "bytes": 123104,
+      "op": "move",
+      "sha256": "1cf942c3dec1142875417908901c524e201277a9bf656cb7d7016ab153751eaf",
+      "source": "HCR_R044_EXP25_OneClick.cmd",
+      "target": "archive/distributions/r044/HCR_R044_EXP25_OneClick.cmd"
+    },
+    {
+      "bytes": 22251,
+      "op": "move",
+      "sha256": "c61f47ac481afd3a9afe1810f460e2080713070cdc94d6a4aea46b5956a54045",
+      "source": "HCR_R045_EXP26_Hotfix1_OneClick.cmd",
+      "target": "archive/distributions/r045/HCR_R045_EXP26_Hotfix1_OneClick.cmd"
+    },
+    {
+      "bytes": 22325,
+      "op": "move",
+      "sha256": "ed3ad8bc8ce159aaa26b554aa34f6194119287017ccab93c1da04efa43029704",
+      "source": "HCR_R045_EXP26_Hotfix2_OneClick.cmd",
+      "target": "archive/distributions/r045/HCR_R045_EXP26_Hotfix2_OneClick.cmd"
+    },
+    {
+      "bytes": 124060,
+      "op": "move",
+      "sha256": "b2f6a51b8f8295ed1bffb5ab7492e05d1375d9d84c2b39c94d8b430f44f98b8f",
+      "source": "HCR_R045_EXP26_OneClick.cmd",
+      "target": "archive/distributions/r045/HCR_R045_EXP26_OneClick.cmd"
+    },
+    {
+      "bytes": 102017,
+      "op": "move",
+      "sha256": "2acccf7e172b052126f20989e11a80291ef3355667c24493c489a25041343be9",
+      "source": "HCR_R046_EXP27_OneClick.cmd",
+      "target": "archive/distributions/r046/HCR_R046_EXP27_OneClick.cmd"
+    },
+    {
+      "bytes": 5998,
+      "op": "move",
+      "sha256": "cac622641f9a28e491c49f2aca9cdb6d6a5a50e8153f71d728bc916a8c192b7b",
+      "source": "HCR_R047_EXP28_Hotfix1_OneClick.cmd",
+      "target": "archive/distributions/r047/HCR_R047_EXP28_Hotfix1_OneClick.cmd"
+    },
+    {
+      "bytes": 6800,
+      "op": "move",
+      "sha256": "86a1cd27a34b3b0729d716e947191c079f59c9aa832a36530250bc151e645383",
+      "source": "HCR_R047_EXP28_Hotfix2_OneClick.cmd",
+      "target": "archive/distributions/r047/HCR_R047_EXP28_Hotfix2_OneClick.cmd"
+    },
+    {
+      "bytes": 35158,
+      "op": "move",
+      "sha256": "2fc4ab5b397e9c5d72ce4d5f49b66f691ef01e0b106f235d81116bbc72e0b671",
+      "source": "HCR_R047_EXP28_Hotfix3_OneClick.cmd",
+      "target": "archive/distributions/r047/HCR_R047_EXP28_Hotfix3_OneClick.cmd"
+    },
+    {
+      "bytes": 79783,
+      "op": "move",
+      "sha256": "f51f145948cdae13eed890985808452dc0fabd9df235ddd0f71c633fd94699f9",
+      "source": "HCR_R047_EXP28_OneClick.cmd",
+      "target": "archive/distributions/r047/HCR_R047_EXP28_OneClick.cmd"
+    },
+    {
+      "bytes": 66287,
+      "op": "move",
+      "sha256": "05fdc847388d83d7d53be4155f1391c4d6d4736df225b6b2065d0edcfbe958d4",
+      "source": "HCR_R048_EXP29_OneClick.cmd",
+      "target": "archive/distributions/r048/HCR_R048_EXP29_OneClick.cmd"
+    },
+    {
+      "bytes": 485327,
+      "op": "move",
+      "sha256": "e33888701c9b3ebfd86a2f5dcd25e760162013e8a96cc387d7bd1e0c23c6b4ed",
+      "source": "HCR_R049_EXP30_Hotfix1_OneClick.cmd",
+      "target": "archive/distributions/r049/HCR_R049_EXP30_Hotfix1_OneClick.cmd"
+    },
+    {
+      "bytes": 75628,
+      "op": "move",
+      "sha256": "596929b96b0a464f81e9dbb52ee26986265f05f712fb83290981e95f0cb0f3ed",
+      "source": "HCR_R049_EXP30_OneClick.cmd",
+      "target": "archive/distributions/r049/HCR_R049_EXP30_OneClick.cmd"
+    }
+  ],
+  "regression_suites": [
+    "core",
+    "r047_state_ablation",
+    "r048_precision",
+    "r049_signal_boundary"
+  ],
+  "research_runs_executed_by_migration": 0,
+  "retained_distribution_files": [],
+  "run_directory": "HCR-Evidence/repository-layout/layout-v1-20260919T005011Z-11e01a06cd7c",
+  "schema": "hcc-layout-v1"
+}

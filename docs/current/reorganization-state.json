@@ -1,0 +1,9 @@
+{
+  "audit_sha256": "a9181082eecf13b79efb24a2b06dd5d0d3dc4d5d6190442d73a8ad3f104ac842",
+  "base_commit": "83d07f43cb9b138cadfcdbdd1f0e40bcfb5857e9",
+  "final_regression_sha256": "76e6328bcce0725b6463e77087fd36c3d1ca99f98eb2c4dd346762321d5323b3",
+  "plan_sha256": "8b3762faf26050e188c9549bb18534c7d0ce921413554f69893f047f2bb7e7c4",
+  "run_directory": "HCR-Evidence/repository-layout/layout-v2-20260919T012757Z-093d037af484",
+  "schema": "hcc-layout-v2-receipt",
+  "status": "APPLIED_AND_VERIFIED"
+}

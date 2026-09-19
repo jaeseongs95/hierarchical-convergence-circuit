@@ -1,0 +1,2 @@
+{"at": "2026-09-19T00:50:11.674977+00:00", "baseline_commit": "83d07f43cb9b138cadfcdbdd1f0e40bcfb5857e9", "event": "start"}
+{"at": "2026-09-19T00:51:02.690192+00:00", "event": "regression_start", "phase": "before", "suite": "core"}

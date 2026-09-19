@@ -1,0 +1,11 @@
+{
+  "baseline_scope": "exact local main commit; no automatic remote updates",
+  "branch": "main",
+  "git_index_sha256": "3c59182dd63261c73ec70bcb052241a0aa340f01076c7c7b8dded12f77f8ccd9",
+  "head": "83d07f43cb9b138cadfcdbdd1f0e40bcfb5857e9",
+  "network_requests_by_migrator": 0,
+  "platform": "win32",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "repository": "jaeseongs95/hierarchical-convergence-circuit",
+  "schema": "hcc-layout-v1-preflight"
+}
