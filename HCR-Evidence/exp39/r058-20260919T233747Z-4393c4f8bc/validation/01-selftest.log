@@ -1,0 +1,37 @@
+test_checkpoint_stability_and_band_are_distinct (test_audit.AuditTests.test_checkpoint_stability_and_band_are_distinct) ... ok
+test_first_termination_is_not_replaceable (test_audit.AuditTests.test_first_termination_is_not_replaceable) ... ok
+test_frozen_contract_rejects_horizon_and_marker_changes (test_audit.AuditTests.test_frozen_contract_rejects_horizon_and_marker_changes) ... ok
+test_independent_suffix_and_exact_prefix_reconstruction (test_audit.AuditTests.test_independent_suffix_and_exact_prefix_reconstruction) ... ok
+test_suffix_resealed_tampering_is_rejected (test_audit.AuditTests.test_suffix_resealed_tampering_is_rejected) ... ok
+test_budget_marker_retained_after_later_stability (test_continuation.ContinuationTests.test_budget_marker_retained_after_later_stability) ... ok
+test_oscillation_marker_retained_and_suffix_continues (test_continuation.ContinuationTests.test_oscillation_marker_retained_and_suffix_continues) ... ok
+test_stable_marker_preserved_and_counter_not_reset (test_continuation.ContinuationTests.test_stable_marker_preserved_and_counter_not_reset) ... ok
+test_exact_initial_matrix_and_invariant_drives (test_worker_pipeline.WorkerPipeline.test_exact_initial_matrix_and_invariant_drives) ... ok
+test_exact_single_link_removal_preserves_everything_else (test_worker_pipeline.WorkerPipeline.test_exact_single_link_removal_preserves_everything_else) ... ok
+test_fixed_contract_tampering_rejected (test_worker_pipeline.WorkerPipeline.test_fixed_contract_tampering_rejected) ... ok
+test_four_smoke_branches_fresh_start_and_null_claims (test_worker_pipeline.WorkerPipeline.test_four_smoke_branches_fresh_start_and_null_claims) ... start_i05 two fixed-horizon masks recorded
+goal_i05 two fixed-horizon masks recorded
+ok
+test_parent_or_anchor_change_stops_before_worker (test_worker_pipeline.WorkerPipeline.test_parent_or_anchor_change_stops_before_worker) ... ok
+test_research_matrix_metadata_and_overrides (test_worker_pipeline.WorkerPipeline.test_research_matrix_metadata_and_overrides) ... start_i01 two fixed-horizon masks recorded
+start_i05 two fixed-horizon masks recorded
+start_i09 two fixed-horizon masks recorded
+goal_i01 two fixed-horizon masks recorded
+goal_i05 two fixed-horizon masks recorded
+goal_i09 two fixed-horizon masks recorded
+ok
+test_stage_preserves_first_failure_without_retry (test_worker_pipeline.WorkerPipeline.test_stage_preserves_first_failure_without_retry) ... STAGE: failed
+STAGE: failed
+ok
+test_unknown_duplicate_extra_or_missing_link_rejected (test_worker_pipeline.WorkerPipeline.test_unknown_duplicate_extra_or_missing_link_rejected) ... ok
+test_budget_and_oscillation_termination (tools.r053_feedback.tests.test_audit.AuditTests.test_budget_and_oscillation_termination) ... ok
+test_frozen_spec_rejects_resealed_semantic_change (tools.r053_feedback.tests.test_audit.AuditTests.test_frozen_spec_rejects_resealed_semantic_change) ... ok
+test_handmade_single_group_trace_and_termination_tampering (tools.r053_feedback.tests.test_audit.AuditTests.test_handmade_single_group_trace_and_termination_tampering) ... ok
+test_record_accepts_valid_packet (tools.r053_feedback.tests.test_audit.AuditTests.test_record_accepts_valid_packet) ... ok
+test_resealed_record_tampering (tools.r053_feedback.tests.test_audit.AuditTests.test_resealed_record_tampering) ... ok
+test_trajectory_tampering (tools.r053_feedback.tests.test_audit.AuditTests.test_trajectory_tampering) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.279s
+
+OK
