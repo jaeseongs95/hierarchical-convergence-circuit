@@ -653,6 +653,26 @@
       "source_commit": null,
       "source_commit_note": "Fixed-total drive allocation in a frozen numerical kernel; native outcomes are unmeasured.",
       "standalone_python_entrypoint": "Run-HCR-R055.py"
+    },
+    {
+      "current_python_entrypoint": null,
+      "default_dispatcher_promoted": false,
+      "design": "experiments/exp-37-drive-factorial/design.ko.md",
+      "directory": "experiments/exp-37-drive-factorial",
+      "evidence_directory": "HCR-Evidence/exp37",
+      "execution_status": "standalone_candidate_contract",
+      "experiment_id": "EXP-37",
+      "frozen_design": "experiments/exp-37-drive-factorial/frozen_spec.json",
+      "implementation_validation_directory": "HCR-Evidence/r056-validation",
+      "legacy_python_entrypoint": null,
+      "release_manifest": "R056_MANIFEST.json",
+      "revision_references": [
+        "r056"
+      ],
+      "run_status": "read_per_run_evidence",
+      "source_commit": null,
+      "source_commit_note": "Local two-drive factorial in a frozen numerical kernel; orientations separate and native outcomes unmeasured.",
+      "standalone_python_entrypoint": "Run-HCR-R056.py"
     }
   ],
   "inventory_commit": "afb5d5e5b67906b7697f16163e166f59b17e1655",

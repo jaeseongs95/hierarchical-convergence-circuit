@@ -1,0 +1,41 @@
+test_bridge_includes_drive_and_full_numerical_receipts (test_audit.AuditTests.test_bridge_includes_drive_and_full_numerical_receipts) ... ok
+test_continuous_comparisons_and_nonstable_guard (test_audit.AuditTests.test_continuous_comparisons_and_nonstable_guard) ... ok
+test_endpoint_guard_and_nonstable_termination (test_audit.AuditTests.test_endpoint_guard_and_nonstable_termination) ... ok
+test_factorial_orientation_effects_and_interaction (test_audit.AuditTests.test_factorial_orientation_effects_and_interaction) ... ok
+test_frozen_spec_rejects_resealed_semantic_change (test_audit.AuditTests.test_frozen_spec_rejects_resealed_semantic_change) ... ok
+test_inventory_rejects_hash_drift_and_missing_file (test_audit.AuditTests.test_inventory_rejects_hash_drift_and_missing_file) ... ok
+test_original_drive_and_parent_receipts (test_audit.AuditTests.test_original_drive_and_parent_receipts) ... ok
+test_valid_record_and_resealed_boundary_tampering (test_audit.AuditTests.test_valid_record_and_resealed_boundary_tampering) ... ok
+test_eight_smoke_branches_fresh_start_and_null_claims (test_worker_pipeline.WorkerPipeline.test_eight_smoke_branches_fresh_start_and_null_claims) ... startstrong two fixed masks recorded
+startlean two fixed masks recorded
+goalstrong two fixed masks recorded
+goallean two fixed masks recorded
+ok
+test_exact_local_factorial_mapping (test_worker_pipeline.WorkerPipeline.test_exact_local_factorial_mapping) ... ok
+test_exact_single_link_removal_preserves_everything_else (test_worker_pipeline.WorkerPipeline.test_exact_single_link_removal_preserves_everything_else) ... ok
+test_fixed_contract_tampering_rejected (test_worker_pipeline.WorkerPipeline.test_fixed_contract_tampering_rejected) ... ok
+test_parent_or_anchor_change_stops_before_worker (test_worker_pipeline.WorkerPipeline.test_parent_or_anchor_change_stops_before_worker) ... ok
+test_research_matrix_metadata_and_overrides (test_worker_pipeline.WorkerPipeline.test_research_matrix_metadata_and_overrides) ... startstrong two fixed masks recorded
+start_raise_weak two fixed masks recorded
+start_lower_strong two fixed masks recorded
+startlean two fixed masks recorded
+goalstrong two fixed masks recorded
+goal_raise_weak two fixed masks recorded
+goal_lower_strong two fixed masks recorded
+goallean two fixed masks recorded
+ok
+test_stage_preserves_first_failure_without_retry (test_worker_pipeline.WorkerPipeline.test_stage_preserves_first_failure_without_retry) ... STAGE: failed
+STAGE: failed
+ok
+test_unknown_duplicate_extra_or_missing_link_rejected (test_worker_pipeline.WorkerPipeline.test_unknown_duplicate_extra_or_missing_link_rejected) ... ok
+test_budget_and_oscillation_termination (tools.r053_feedback.tests.test_audit.AuditTests.test_budget_and_oscillation_termination) ... ok
+test_frozen_spec_rejects_resealed_semantic_change (tools.r053_feedback.tests.test_audit.AuditTests.test_frozen_spec_rejects_resealed_semantic_change) ... ok
+test_handmade_single_group_trace_and_termination_tampering (tools.r053_feedback.tests.test_audit.AuditTests.test_handmade_single_group_trace_and_termination_tampering) ... ok
+test_record_accepts_valid_packet (tools.r053_feedback.tests.test_audit.AuditTests.test_record_accepts_valid_packet) ... ok
+test_resealed_record_tampering (tools.r053_feedback.tests.test_audit.AuditTests.test_resealed_record_tampering) ... ok
+test_trajectory_tampering (tools.r053_feedback.tests.test_audit.AuditTests.test_trajectory_tampering) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.195s
+
+OK
