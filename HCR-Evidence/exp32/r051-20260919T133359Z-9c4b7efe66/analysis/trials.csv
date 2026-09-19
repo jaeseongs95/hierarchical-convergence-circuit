@@ -1,0 +1,17 @@
+﻿case_id,strength,top_down,identity_variant,arm,raw_value,proof_valid,failure_class,edge_conflicts,accepted,adopted_correct,restarts,changed_slots,additional_kernel_ticks,additional_signal_transmissions
+r051-c000,0.02,False,0,hold,False,False,proof_construction_failure,0,False,,0,,0,0
+r051-c000,0.02,False,0,revision_only,False,False,proof_construction_failure,0,False,,1,,37,148
+r051-c000,0.02,False,0,edge0,True,True,supported_adoption,0,True,True,1,0,47,188
+r051-c000,0.02,False,0,edge1,True,True,supported_adoption,0,True,True,1,1,44,176
+r051-c001,0.02,True,0,hold,False,True,dependency_support_failure,2,False,,0,,0,0
+r051-c001,0.02,True,0,revision_only,False,True,dependency_support_failure,2,False,,1,,88,704
+r051-c001,0.02,True,0,edge0,False,True,dependency_support_failure,1,False,,1,0,60,480
+r051-c001,0.02,True,0,edge1,False,True,dependency_support_failure,1,False,,1,1,116,928
+r051-c002,0.02,False,1,hold,False,False,proof_construction_failure,0,False,,0,,0,0
+r051-c002,0.02,False,1,revision_only,False,False,proof_construction_failure,0,False,,1,,37,148
+r051-c002,0.02,False,1,edge0,True,True,supported_adoption,0,True,True,1,0,47,188
+r051-c002,0.02,False,1,edge1,True,True,supported_adoption,0,True,True,1,1,44,176
+r051-c003,0.02,True,1,hold,False,True,dependency_support_failure,2,False,,0,,0,0
+r051-c003,0.02,True,1,revision_only,False,True,dependency_support_failure,2,False,,1,,88,704
+r051-c003,0.02,True,1,edge0,False,True,dependency_support_failure,1,False,,1,0,60,480
+r051-c003,0.02,True,1,edge1,False,True,dependency_support_failure,1,False,,1,1,116,928

@@ -1,0 +1,20 @@
+test_all_arms_match_independent_observation (test_contract.Contract.test_all_arms_match_independent_observation) ... ok
+test_complete_matrix (test_contract.Contract.test_complete_matrix) ... ok
+test_config_numeric_representation_is_preserved (test_contract.Contract.test_config_numeric_representation_is_preserved) ... ok
+test_echo_and_hold (test_contract.Contract.test_echo_and_hold) ... ok
+test_matrix_tampering_rejected (test_contract.Contract.test_matrix_tampering_rejected) ... ok
+test_no_duplicate_or_extra_cases (test_contract.Contract.test_no_duplicate_or_extra_cases) ... ok
+test_resealed_input_and_pairing_tampering_rejected (test_contract.Contract.test_resealed_input_and_pairing_tampering_rejected) ... ok
+test_single_slot_and_revision (test_contract.Contract.test_single_slot_and_revision) ... ok
+test_strong_native_sanity_and_no_measurement_path (test_contract.Contract.test_strong_native_sanity_and_no_measurement_path) ... ok
+test_unsupported_arm_rejected (test_contract.Contract.test_unsupported_arm_rejected) ... ok
+test_valid_paired_record (test_contract.Contract.test_valid_paired_record) ... ok
+test_report_distinguishes_rejection_from_wrong_adoption (test_pipeline.Pipeline.test_report_distinguishes_rejection_from_wrong_adoption) ... ok
+test_stage_failure_is_recorded_once_without_retry (test_pipeline.Pipeline.test_stage_failure_is_recorded_once_without_retry) ... STAGE: failed
+STAGE: failed
+ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.268s
+
+OK
