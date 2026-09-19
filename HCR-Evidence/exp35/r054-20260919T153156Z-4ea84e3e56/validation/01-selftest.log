@@ -1,0 +1,26 @@
+test_continuous_comparisons_necessity_and_predictions (test_audit.AuditTests.test_continuous_comparisons_necessity_and_predictions) ... ok
+test_endpoint_threshold_band_and_nonstable_termination (test_audit.AuditTests.test_endpoint_threshold_band_and_nonstable_termination) ... ok
+test_frozen_spec_rejects_resealed_semantic_change (test_audit.AuditTests.test_frozen_spec_rejects_resealed_semantic_change) ... ok
+test_inventory_rejects_missing_and_anchor_hash_drift (test_audit.AuditTests.test_inventory_rejects_missing_and_anchor_hash_drift) ... ok
+test_valid_record_and_resealed_boundary_tampering (test_audit.AuditTests.test_valid_record_and_resealed_boundary_tampering) ... ok
+test_wrong_mask_argument_and_parent_binding (test_audit.AuditTests.test_wrong_mask_argument_and_parent_binding) ... ok
+test_exact_single_link_removal_preserves_everything_else (test_worker_pipeline.WorkerPipeline.test_exact_single_link_removal_preserves_everything_else) ... ok
+test_fixed_contract_tampering_rejected (test_worker_pipeline.WorkerPipeline.test_fixed_contract_tampering_rejected) ... ok
+test_parent_or_anchor_change_stops_before_worker (test_worker_pipeline.WorkerPipeline.test_parent_or_anchor_change_stops_before_worker) ... ok
+test_six_smoke_branches_fresh_start_and_null_claims (test_worker_pipeline.WorkerPipeline.test_six_smoke_branches_fresh_start_and_null_claims) ... startstrong six fixed masks recorded
+ok
+test_stage_preserves_first_failure_without_retry (test_worker_pipeline.WorkerPipeline.test_stage_preserves_first_failure_without_retry) ... STAGE: failed
+STAGE: failed
+ok
+test_unknown_duplicate_extra_or_missing_link_rejected (test_worker_pipeline.WorkerPipeline.test_unknown_duplicate_extra_or_missing_link_rejected) ... ok
+test_budget_and_oscillation_termination (tools.r053_feedback.tests.test_audit.AuditTests.test_budget_and_oscillation_termination) ... ok
+test_frozen_spec_rejects_resealed_semantic_change (tools.r053_feedback.tests.test_audit.AuditTests.test_frozen_spec_rejects_resealed_semantic_change) ... ok
+test_handmade_single_group_trace_and_termination_tampering (tools.r053_feedback.tests.test_audit.AuditTests.test_handmade_single_group_trace_and_termination_tampering) ... ok
+test_record_accepts_valid_packet (tools.r053_feedback.tests.test_audit.AuditTests.test_record_accepts_valid_packet) ... ok
+test_resealed_record_tampering (tools.r053_feedback.tests.test_audit.AuditTests.test_resealed_record_tampering) ... ok
+test_trajectory_tampering (tools.r053_feedback.tests.test_audit.AuditTests.test_trajectory_tampering) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.122s
+
+OK
