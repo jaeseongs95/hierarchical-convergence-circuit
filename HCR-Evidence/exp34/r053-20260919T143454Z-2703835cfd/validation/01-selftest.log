@@ -1,0 +1,21 @@
+test_budget_and_oscillation_termination (test_audit.AuditTests.test_budget_and_oscillation_termination) ... ok
+test_frozen_spec_rejects_resealed_semantic_change (test_audit.AuditTests.test_frozen_spec_rejects_resealed_semantic_change) ... ok
+test_handmade_single_group_trace_and_termination_tampering (test_audit.AuditTests.test_handmade_single_group_trace_and_termination_tampering) ... ok
+test_record_accepts_valid_packet (test_audit.AuditTests.test_record_accepts_valid_packet) ... ok
+test_resealed_record_tampering (test_audit.AuditTests.test_resealed_record_tampering) ... ok
+test_trajectory_tampering (test_audit.AuditTests.test_trajectory_tampering) ... ok
+test_duplicate_network_is_rejected (test_worker_pipeline.WorkerPipeline.test_duplicate_network_is_rejected) ... ok
+test_four_masks_partition_without_mutating_source (test_worker_pipeline.WorkerPipeline.test_four_masks_partition_without_mutating_source) ... ok
+test_frozen_matrix_preflight_rejects_resealed_changes (test_worker_pipeline.WorkerPipeline.test_frozen_matrix_preflight_rejects_resealed_changes) ... ok
+test_network_extraction_does_not_use_native_outcomes (test_worker_pipeline.WorkerPipeline.test_network_extraction_does_not_use_native_outcomes) ... ok
+test_parent_change_stops_before_worker (test_worker_pipeline.WorkerPipeline.test_parent_change_stops_before_worker) ... ok
+test_parent_paths_are_fixed (test_worker_pipeline.WorkerPipeline.test_parent_paths_are_fixed) ... ok
+test_stage_failure_is_retained_without_retry (test_worker_pipeline.WorkerPipeline.test_stage_failure_is_retained_without_retry) ... STAGE: failed
+STAGE: failed
+ok
+test_synthetic_kernel_only (test_worker_pipeline.WorkerPipeline.test_synthetic_kernel_only) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.043s
+
+OK
