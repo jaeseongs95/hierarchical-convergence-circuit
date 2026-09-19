@@ -545,8 +545,8 @@
       "run_status": "artifacts_present_unreviewed",
       "source_commit": null,
       "source_commit_note": "Read each run's provenance; the inventory commit is NOT the run's source commit."
-    }
-    ,{
+    },
+    {
       "current_python_entrypoint": null,
       "default_dispatcher_promoted": false,
       "design": "experiments/exp-31-review-boundary/design.ko.md",
@@ -563,6 +563,24 @@
       "source_commit": null,
       "source_commit_note": "Runtime plan and frozen source identify the actual checkout and patch; this entry is not a research result.",
       "standalone_python_entrypoint": "Run-HCR-R050.py"
+    },
+    {
+      "current_python_entrypoint": null,
+      "default_dispatcher_promoted": false,
+      "design": "experiments/exp-32-edge-controls/design.ko.md",
+      "directory": "experiments/exp-32-edge-controls",
+      "evidence_directory": null,
+      "execution_status": "standalone_candidate_contract",
+      "experiment_id": "EXP-32",
+      "frozen_design": "experiments/exp-32-edge-controls/frozen_spec.json",
+      "implementation_validation_directory": "HCR-Evidence/r051-validation",
+      "legacy_python_entrypoint": null,
+      "release_manifest": "R051_MANIFEST.json",
+      "revision_references": ["r051"],
+      "run_status": "research_not_run",
+      "source_commit": null,
+      "source_commit_note": "Read the frozen per-run source and plan. Source validation is not a research result.",
+      "standalone_python_entrypoint": "Run-HCR-R051.py"
     }
   ],
   "inventory_commit": "afb5d5e5b67906b7697f16163e166f59b17e1655",

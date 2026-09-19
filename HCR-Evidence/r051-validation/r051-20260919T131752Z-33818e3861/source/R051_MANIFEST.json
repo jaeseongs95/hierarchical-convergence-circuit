@@ -1,0 +1,25 @@
+{
+  "schema": "hcc-r051-manifest-v1",
+  "contract": "r051-fixed-edge-controls-v1",
+  "parent_commit": "408fcda4d9f6b38d1e4a8e586b2019c70f25e269",
+  "hash_normalization": "CRLF to LF only",
+  "files": {
+    "experiments/exp-32-edge-controls/design.ko.md": "0af5c37a67683595eaaa7117e317ad74fb8dcca74ef9258481e80bea00c878d4",
+    "experiments/exp-32-edge-controls/DISCUSSION.ko.md": "a8757ff23564786ad8af42304e83338374e8476a2e32efe3909729077c8aef31",
+    "experiments/exp-32-edge-controls/frozen_spec.json": "b05c2c92062b74ebf4b7bed27f0ff5e0f05027e0657747af3f4db3b3d6957641",
+    "HCR-Evidence/exp32/.gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "HCR-Evidence/exp32/.gitignore": "050c4c43407269dc8a0c7c332affc85b0ea2a431a61719285b827a005139dd63",
+    "HCR-Evidence/r051-validation/.gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "HCR-Evidence/r051-validation/.gitignore": "050c4c43407269dc8a0c7c332affc85b0ea2a431a61719285b827a005139dd63",
+    "Run-HCR-R051.cmd": "96451c2df6230edf267b1ef5aff047001c98ed42f9d3f0b324cc17e952cb7567",
+    "Run-HCR-R051.py": "57093f08f0ded662c7e61a959e3fb3c5f89b66d38d3826c9b8d8c4d49b27103e",
+    "tools/r051_edge_controls/__init__.py": "b95d897fba803ed4ea9428947dc8142d783b0ca1814ba16007727349115bbe60",
+    "tools/r051_edge_controls/audit.py": "04aa7f68c30aba638d3c833119c925001c5d4c4932cbde1ecc5e6863a3cf046f",
+    "tools/r051_edge_controls/bootstrap.py": "3a0178abc627ea06b73c9f117228f829bd59fabc3dfbc1b9d68127ccf87dbc8e",
+    "tools/r051_edge_controls/pipeline.py": "5671fe5449d2cbad00152aef7cc6c146397db3fe736b0233618f014a9004b686",
+    "tools/r051_edge_controls/selftest.py": "f856b9f72a9f5b23869acb535fb8aec1119a435b6a895294281de0a83cf0a7ba",
+    "tools/r051_edge_controls/tests/test_contract.py": "d491e4f54738f3da445b6b7aa2c23386c5e2f910e0971859d06c24d41973a28e",
+    "tools/r051_edge_controls/tests/test_pipeline.py": "0061728e77127cd0866f44bc54616b8eb7a90a656201f280c1a8d530fe879dda",
+    "tools/r051_edge_controls/worker.py": "35cd39ea09cda750c171d9b299aad8050043a3764d81b9cda816f43e4d94781b"
+  }
+}
