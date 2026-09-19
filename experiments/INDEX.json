@@ -673,6 +673,26 @@
       "source_commit": null,
       "source_commit_note": "Local two-drive factorial in a frozen numerical kernel; orientations separate and native outcomes unmeasured.",
       "standalone_python_entrypoint": "Run-HCR-R056.py"
+    },
+    {
+      "current_python_entrypoint": null,
+      "default_dispatcher_promoted": false,
+      "design": "experiments/exp-38-initial-state/design.ko.md",
+      "directory": "experiments/exp-38-initial-state",
+      "evidence_directory": "HCR-Evidence/exp38",
+      "execution_status": "standalone_candidate_contract",
+      "experiment_id": "EXP-38",
+      "frozen_design": "experiments/exp-38-initial-state/frozen_spec.json",
+      "implementation_validation_directory": "HCR-Evidence/r057-validation",
+      "legacy_python_entrypoint": null,
+      "release_manifest": "R057_MANIFEST.json",
+      "revision_references": [
+        "r057"
+      ],
+      "run_status": "read_per_run_evidence",
+      "source_commit": null,
+      "source_commit_note": "Uniform initial-state contrasts in a frozen numerical kernel; no attractor, hysteresis or native-outcome claim.",
+      "standalone_python_entrypoint": "Run-HCR-R057.py"
     }
   ],
   "inventory_commit": "afb5d5e5b67906b7697f16163e166f59b17e1655",

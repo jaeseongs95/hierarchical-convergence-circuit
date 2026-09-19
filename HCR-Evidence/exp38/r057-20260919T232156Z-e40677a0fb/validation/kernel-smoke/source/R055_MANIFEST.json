@@ -1,0 +1,25 @@
+{
+  "schema": "hcc-r055-manifest-v1",
+  "contract": "r055-fixed-total-drive-v1",
+  "parent_commit": "0187483a8bd3404b8d5930057e387d9e229c2e95",
+  "hash_normalization": "CRLF to LF only",
+  "files": {
+    "experiments/exp-36-drive-allocation/design.ko.md": "f122e8fa52b91162438b02d3d4539cc7197963000cbbb616185f6b5e73e914cb",
+    "experiments/exp-36-drive-allocation/frozen_spec.json": "65dd6fd5add8d2323d13699ccd71ec9c433853b3d13a9d25dcc83948609592ba",
+    "experiments/exp-36-drive-allocation/ORCHESTRATION.ko.md": "43aceb2c9ec492b70af35e01118a4e53c3eb0274678fdf21d7de87d4c6569f4d",
+    "HCR-Evidence/exp36/.gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "HCR-Evidence/exp36/.gitignore": "050c4c43407269dc8a0c7c332affc85b0ea2a431a61719285b827a005139dd63",
+    "HCR-Evidence/r055-validation/.gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "HCR-Evidence/r055-validation/.gitignore": "050c4c43407269dc8a0c7c332affc85b0ea2a431a61719285b827a005139dd63",
+    "Run-HCR-R055.cmd": "d4c9d3b86b913ee8cb8b880c06247c8fef11a71e1e011cc0a7ba00d4178bdd6b",
+    "Run-HCR-R055.py": "d25b17d552026899d306e120aa16473a6256ddc6b697b2f1b27fb4f2535103c4",
+    "tools/r055_allocation/__init__.py": "5804b48345ee9372ac7405b24546a25afcd2759ea1a1618228d09d9fa7e474b9",
+    "tools/r055_allocation/audit.py": "a2c2b6ff129be95392ca6e1b1086dcec2644dfce1d80c71c872edc84dbdc98d3",
+    "tools/r055_allocation/bootstrap.py": "ac570e26b56aa9c76966a47796bd81075f5654a3a336a301f29a1b7c765c355f",
+    "tools/r055_allocation/pipeline.py": "80ca30ea54a7be04f065bbf25f6dd4000b0c5fe92ca1148f99937e6c6ed2cd5b",
+    "tools/r055_allocation/selftest.py": "61eb0789bd6ca1a3729d7aa24c7f62457a48bb5c36eaee4a9249884c2ced791c",
+    "tools/r055_allocation/tests/test_audit.py": "0f97a9c867750c6b03ba3fb515a1962de1a0df4fc7cd2e8767d01628d8deeb52",
+    "tools/r055_allocation/tests/test_worker_pipeline.py": "fc266c41d38d760d4b7370ad5fd715ab82c1a9539b6db3cd5987d0211351afb1",
+    "tools/r055_allocation/worker.py": "82c4447b9bbdd9aa64fad2dce373bbae2ed59205f6a7a11ff5edd72e9b39ded9"
+  }
+}
