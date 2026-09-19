@@ -635,6 +635,24 @@
       "source_commit": null,
       "source_commit_note": "Single-link removal in a frozen numerical kernel; native outcomes are unmeasured.",
       "standalone_python_entrypoint": "Run-HCR-R054.py"
+    },
+    {
+      "current_python_entrypoint": null,
+      "default_dispatcher_promoted": false,
+      "design": "experiments/exp-36-drive-allocation/design.ko.md",
+      "directory": "experiments/exp-36-drive-allocation",
+      "evidence_directory": "HCR-Evidence/exp36",
+      "execution_status": "standalone_candidate_contract",
+      "experiment_id": "EXP-36",
+      "frozen_design": "experiments/exp-36-drive-allocation/frozen_spec.json",
+      "implementation_validation_directory": "HCR-Evidence/r055-validation",
+      "legacy_python_entrypoint": null,
+      "release_manifest": "R055_MANIFEST.json",
+      "revision_references": ["r055"],
+      "run_status": "read_per_run_evidence",
+      "source_commit": null,
+      "source_commit_note": "Fixed-total drive allocation in a frozen numerical kernel; native outcomes are unmeasured.",
+      "standalone_python_entrypoint": "Run-HCR-R055.py"
     }
   ],
   "inventory_commit": "afb5d5e5b67906b7697f16163e166f59b17e1655",

@@ -1,0 +1,745 @@
+{
+  "schema": "hcc-r050-frozen-spec-v1",
+  "contract": "r050-review-boundary-v1",
+  "frozen_before_research_execution": true,
+  "arms": [
+    "hold",
+    "same_input_restart",
+    "echo_revision_restart",
+    "strength_revision_restart"
+  ],
+  "config": {
+    "kernel": {
+      "evidence_gain": 4.0,
+      "relation_gain": 2.0,
+      "top_down_gain": 0.35,
+      "prior_gain": 2.0,
+      "self_excitation": 0.25,
+      "inhibition": 0.2,
+      "damping": 0.45,
+      "temperature": 1.0,
+      "residual_tolerance": 1e-06,
+      "margin_threshold": 0.3,
+      "patience": 4,
+      "max_ticks": 160,
+      "max_edges": 8,
+      "max_paths": 4,
+      "max_path_length": 4,
+      "max_groups": 32,
+      "max_search": 2048,
+      "min_valid_episodes": 3,
+      "max_circuits": 16,
+      "weakening": 0.2,
+      "learning_rate": 0.25,
+      "max_observation_requests": 2
+    },
+    "pattern_lengths": [
+      2,
+      3
+    ],
+    "max_expansions": 64,
+    "max_frontier": 32,
+    "max_binding_checks": 1024,
+    "max_pool_candidates": 4,
+    "activation_threshold": 0.55,
+    "mismatch_threshold": 0.8,
+    "circuit_inhibition": 0.15
+  },
+  "cases": [
+    {
+      "id": "c000",
+      "strength": 0.02,
+      "relation": "++",
+      "identity_variant": 0,
+      "top_down": false,
+      "observation": {
+        "episode_id": "r050-c000",
+        "revision": 0,
+        "start": "v0",
+        "goal": "v2",
+        "edges": [
+          {
+            "id": "a-edge",
+            "source": "v0",
+            "target": "v1",
+            "score": 0.02
+          },
+          {
+            "id": "z-edge",
+            "source": "v1",
+            "target": "v2",
+            "score": 0.02
+          }
+        ]
+      }
+    },
+    {
+      "id": "c001",
+      "strength": 0.02,
+      "relation": "++",
+      "identity_variant": 0,
+      "top_down": true,
+      "observation": {
+        "episode_id": "r050-c001",
+        "revision": 0,
+        "start": "v0",
+        "goal": "v2",
+        "edges": [
+          {
+            "id": "a-edge",
+            "source": "v0",
+            "target": "v1",
+            "score": 0.02
+          },
+          {
+            "id": "z-edge",
+            "source": "v1",
+            "target": "v2",
+            "score": 0.02
+          }
+        ]
+      }
+    },
+    {
+      "id": "c002",
+      "strength": 0.02,
+      "relation": "++",
+      "identity_variant": 1,
+      "top_down": false,
+      "observation": {
+        "episode_id": "r050-c002",
+        "revision": 0,
+        "start": "v2",
+        "goal": "v0",
+        "edges": [
+          {
+            "id": "z-edge",
+            "source": "v2",
+            "target": "v1",
+            "score": 0.02
+          },
+          {
+            "id": "a-edge",
+            "source": "v1",
+            "target": "v0",
+            "score": 0.02
+          }
+        ]
+      }
+    },
+    {
+      "id": "c003",
+      "strength": 0.02,
+      "relation": "++",
+      "identity_variant": 1,
+      "top_down": true,
+      "observation": {
+        "episode_id": "r050-c003",
+        "revision": 0,
+        "start": "v2",
+        "goal": "v0",
+        "edges": [
+          {
+            "id": "z-edge",
+            "source": "v2",
+            "target": "v1",
+            "score": 0.02
+          },
+          {
+            "id": "a-edge",
+            "source": "v1",
+            "target": "v0",
+            "score": 0.02
+          }
+        ]
+      }
+    },
+    {
+      "id": "c004",
+      "strength": 0.02,
+      "relation": "+-",
+      "identity_variant": 0,
+      "top_down": false,
+      "observation": {
+        "episode_id": "r050-c004",
+        "revision": 0,
+        "start": "v0",
+        "goal": "v2",
+        "edges": [
+          {
+            "id": "a-edge",
+            "source": "v0",
+            "target": "v1",
+            "score": 0.02
+          },
+          {
+            "id": "z-edge",
+            "source": "v1",
+            "target": "v2",
+            "score": -0.02
+          }
+        ]
+      }
+    },
+    {
+      "id": "c005",
+      "strength": 0.02,
+      "relation": "+-",
+      "identity_variant": 0,
+      "top_down": true,
+      "observation": {
+        "episode_id": "r050-c005",
+        "revision": 0,
+        "start": "v0",
+        "goal": "v2",
+        "edges": [
+          {
+            "id": "a-edge",
+            "source": "v0",
+            "target": "v1",
+            "score": 0.02
+          },
+          {
+            "id": "z-edge",
+            "source": "v1",
+            "target": "v2",
+            "score": -0.02
+          }
+        ]
+      }
+    },
+    {
+      "id": "c006",
+      "strength": 0.02,
+      "relation": "+-",
+      "identity_variant": 1,
+      "top_down": false,
+      "observation": {
+        "episode_id": "r050-c006",
+        "revision": 0,
+        "start": "v2",
+        "goal": "v0",
+        "edges": [
+          {
+            "id": "z-edge",
+            "source": "v2",
+            "target": "v1",
+            "score": 0.02
+          },
+          {
+            "id": "a-edge",
+            "source": "v1",
+            "target": "v0",
+            "score": -0.02
+          }
+        ]
+      }
+    },
+    {
+      "id": "c007",
+      "strength": 0.02,
+      "relation": "+-",
+      "identity_variant": 1,
+      "top_down": true,
+      "observation": {
+        "episode_id": "r050-c007",
+        "revision": 0,
+        "start": "v2",
+        "goal": "v0",
+        "edges": [
+          {
+            "id": "z-edge",
+            "source": "v2",
+            "target": "v1",
+            "score": 0.02
+          },
+          {
+            "id": "a-edge",
+            "source": "v1",
+            "target": "v0",
+            "score": -0.02
+          }
+        ]
+      }
+    },
+    {
+      "id": "c008",
+      "strength": 0.1,
+      "relation": "++",
+      "identity_variant": 0,
+      "top_down": false,
+      "observation": {
+        "episode_id": "r050-c008",
+        "revision": 0,
+        "start": "v0",
+        "goal": "v2",
+        "edges": [
+          {
+            "id": "a-edge",
+            "source": "v0",
+            "target": "v1",
+            "score": 0.1
+          },
+          {
+            "id": "z-edge",
+            "source": "v1",
+            "target": "v2",
+            "score": 0.1
+          }
+        ]
+      }
+    },
+    {
+      "id": "c009",
+      "strength": 0.1,
+      "relation": "++",
+      "identity_variant": 0,
+      "top_down": true,
+      "observation": {
+        "episode_id": "r050-c009",
+        "revision": 0,
+        "start": "v0",
+        "goal": "v2",
+        "edges": [
+          {
+            "id": "a-edge",
+            "source": "v0",
+            "target": "v1",
+            "score": 0.1
+          },
+          {
+            "id": "z-edge",
+            "source": "v1",
+            "target": "v2",
+            "score": 0.1
+          }
+        ]
+      }
+    },
+    {
+      "id": "c010",
+      "strength": 0.1,
+      "relation": "++",
+      "identity_variant": 1,
+      "top_down": false,
+      "observation": {
+        "episode_id": "r050-c010",
+        "revision": 0,
+        "start": "v2",
+        "goal": "v0",
+        "edges": [
+          {
+            "id": "z-edge",
+            "source": "v2",
+            "target": "v1",
+            "score": 0.1
+          },
+          {
+            "id": "a-edge",
+            "source": "v1",
+            "target": "v0",
+            "score": 0.1
+          }
+        ]
+      }
+    },
+    {
+      "id": "c011",
+      "strength": 0.1,
+      "relation": "++",
+      "identity_variant": 1,
+      "top_down": true,
+      "observation": {
+        "episode_id": "r050-c011",
+        "revision": 0,
+        "start": "v2",
+        "goal": "v0",
+        "edges": [
+          {
+            "id": "z-edge",
+            "source": "v2",
+            "target": "v1",
+            "score": 0.1
+          },
+          {
+            "id": "a-edge",
+            "source": "v1",
+            "target": "v0",
+            "score": 0.1
+          }
+        ]
+      }
+    },
+    {
+      "id": "c012",
+      "strength": 0.1,
+      "relation": "+-",
+      "identity_variant": 0,
+      "top_down": false,
+      "observation": {
+        "episode_id": "r050-c012",
+        "revision": 0,
+        "start": "v0",
+        "goal": "v2",
+        "edges": [
+          {
+            "id": "a-edge",
+            "source": "v0",
+            "target": "v1",
+            "score": 0.1
+          },
+          {
+            "id": "z-edge",
+            "source": "v1",
+            "target": "v2",
+            "score": -0.1
+          }
+        ]
+      }
+    },
+    {
+      "id": "c013",
+      "strength": 0.1,
+      "relation": "+-",
+      "identity_variant": 0,
+      "top_down": true,
+      "observation": {
+        "episode_id": "r050-c013",
+        "revision": 0,
+        "start": "v0",
+        "goal": "v2",
+        "edges": [
+          {
+            "id": "a-edge",
+            "source": "v0",
+            "target": "v1",
+            "score": 0.1
+          },
+          {
+            "id": "z-edge",
+            "source": "v1",
+            "target": "v2",
+            "score": -0.1
+          }
+        ]
+      }
+    },
+    {
+      "id": "c014",
+      "strength": 0.1,
+      "relation": "+-",
+      "identity_variant": 1,
+      "top_down": false,
+      "observation": {
+        "episode_id": "r050-c014",
+        "revision": 0,
+        "start": "v2",
+        "goal": "v0",
+        "edges": [
+          {
+            "id": "z-edge",
+            "source": "v2",
+            "target": "v1",
+            "score": 0.1
+          },
+          {
+            "id": "a-edge",
+            "source": "v1",
+            "target": "v0",
+            "score": -0.1
+          }
+        ]
+      }
+    },
+    {
+      "id": "c015",
+      "strength": 0.1,
+      "relation": "+-",
+      "identity_variant": 1,
+      "top_down": true,
+      "observation": {
+        "episode_id": "r050-c015",
+        "revision": 0,
+        "start": "v2",
+        "goal": "v0",
+        "edges": [
+          {
+            "id": "z-edge",
+            "source": "v2",
+            "target": "v1",
+            "score": 0.1
+          },
+          {
+            "id": "a-edge",
+            "source": "v1",
+            "target": "v0",
+            "score": -0.1
+          }
+        ]
+      }
+    },
+    {
+      "id": "c016",
+      "strength": 1.0,
+      "relation": "++",
+      "identity_variant": 0,
+      "top_down": false,
+      "observation": {
+        "episode_id": "r050-c016",
+        "revision": 0,
+        "start": "v0",
+        "goal": "v2",
+        "edges": [
+          {
+            "id": "a-edge",
+            "source": "v0",
+            "target": "v1",
+            "score": 1.0
+          },
+          {
+            "id": "z-edge",
+            "source": "v1",
+            "target": "v2",
+            "score": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "c017",
+      "strength": 1.0,
+      "relation": "++",
+      "identity_variant": 0,
+      "top_down": true,
+      "observation": {
+        "episode_id": "r050-c017",
+        "revision": 0,
+        "start": "v0",
+        "goal": "v2",
+        "edges": [
+          {
+            "id": "a-edge",
+            "source": "v0",
+            "target": "v1",
+            "score": 1.0
+          },
+          {
+            "id": "z-edge",
+            "source": "v1",
+            "target": "v2",
+            "score": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "c018",
+      "strength": 1.0,
+      "relation": "++",
+      "identity_variant": 1,
+      "top_down": false,
+      "observation": {
+        "episode_id": "r050-c018",
+        "revision": 0,
+        "start": "v2",
+        "goal": "v0",
+        "edges": [
+          {
+            "id": "z-edge",
+            "source": "v2",
+            "target": "v1",
+            "score": 1.0
+          },
+          {
+            "id": "a-edge",
+            "source": "v1",
+            "target": "v0",
+            "score": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "c019",
+      "strength": 1.0,
+      "relation": "++",
+      "identity_variant": 1,
+      "top_down": true,
+      "observation": {
+        "episode_id": "r050-c019",
+        "revision": 0,
+        "start": "v2",
+        "goal": "v0",
+        "edges": [
+          {
+            "id": "z-edge",
+            "source": "v2",
+            "target": "v1",
+            "score": 1.0
+          },
+          {
+            "id": "a-edge",
+            "source": "v1",
+            "target": "v0",
+            "score": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "c020",
+      "strength": 1.0,
+      "relation": "+-",
+      "identity_variant": 0,
+      "top_down": false,
+      "observation": {
+        "episode_id": "r050-c020",
+        "revision": 0,
+        "start": "v0",
+        "goal": "v2",
+        "edges": [
+          {
+            "id": "a-edge",
+            "source": "v0",
+            "target": "v1",
+            "score": 1.0
+          },
+          {
+            "id": "z-edge",
+            "source": "v1",
+            "target": "v2",
+            "score": -1.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "c021",
+      "strength": 1.0,
+      "relation": "+-",
+      "identity_variant": 0,
+      "top_down": true,
+      "observation": {
+        "episode_id": "r050-c021",
+        "revision": 0,
+        "start": "v0",
+        "goal": "v2",
+        "edges": [
+          {
+            "id": "a-edge",
+            "source": "v0",
+            "target": "v1",
+            "score": 1.0
+          },
+          {
+            "id": "z-edge",
+            "source": "v1",
+            "target": "v2",
+            "score": -1.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "c022",
+      "strength": 1.0,
+      "relation": "+-",
+      "identity_variant": 1,
+      "top_down": false,
+      "observation": {
+        "episode_id": "r050-c022",
+        "revision": 0,
+        "start": "v2",
+        "goal": "v0",
+        "edges": [
+          {
+            "id": "z-edge",
+            "source": "v2",
+            "target": "v1",
+            "score": 1.0
+          },
+          {
+            "id": "a-edge",
+            "source": "v1",
+            "target": "v0",
+            "score": -1.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "c023",
+      "strength": 1.0,
+      "relation": "+-",
+      "identity_variant": 1,
+      "top_down": true,
+      "observation": {
+        "episode_id": "r050-c023",
+        "revision": 0,
+        "start": "v2",
+        "goal": "v0",
+        "edges": [
+          {
+            "id": "z-edge",
+            "source": "v2",
+            "target": "v1",
+            "score": 1.0
+          },
+          {
+            "id": "a-edge",
+            "source": "v1",
+            "target": "v0",
+            "score": -1.0
+          }
+        ]
+      }
+    }
+  ],
+  "limits": {
+    "max_advances_per_session": 8,
+    "max_kernel_ticks_per_session": 1280,
+    "max_restarts_per_arm": 1,
+    "max_probes_per_arm": 1
+  },
+  "numeric_comparison": {
+    "abs_tol": 1e-12,
+    "rel_tol": 1e-12
+  },
+  "predictions": [
+    {
+      "id": "P1",
+      "claim": "Same-input restart should preserve the numeric solution under deterministic frozen inputs.",
+      "failure_is": "numeric trajectory difference, not automatically an implementation error"
+    },
+    {
+      "id": "P2",
+      "claim": "Echo/revision-only restart should not change numeric state relative to same-input restart.",
+      "failure_is": "revision/identity-sensitive numeric difference to investigate"
+    },
+    {
+      "id": "P3",
+      "claim": "A single sign-preserving strength intervention may change state or adopted output relative to the echo arm.",
+      "failure_is": "no change is an informative negative result, not a reason to add more probes"
+    },
+    {
+      "id": "P4",
+      "claim": "Native observe_first can have no measurement target at a weak known-score rejection.",
+      "failure_is": "a different native action is recorded, not corrected"
+    }
+  ],
+  "boundaries": {
+    "actual_hcc_session_experiment": true,
+    "llm_experiment": false,
+    "oracle_truth_to_worker": false,
+    "independent_sensor_data": false,
+    "score_strength_is_not_new_sign_information": true,
+    "state_preserving_review": false,
+    "graph_frontier_continuation": false,
+    "learning": false,
+    "reuse": false,
+    "high_initial_activation": false,
+    "changes_to_kernel": false,
+    "independent_trials": false,
+    "default_dispatcher_promotion": false
+  }
+}
