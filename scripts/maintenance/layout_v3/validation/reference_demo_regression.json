@@ -1,0 +1,27 @@
+{
+  "schema": "hcc-layout-v3-core-regression",
+  "tests_run": 6,
+  "collected_ids": [
+    "test_r031_prior_scope.PythonLauncher.test_check_only_no_demo",
+    "test_r031_prior_scope.PythonLauncher.test_discovery_import_environment",
+    "test_r031_prior_scope.PythonLauncher.test_existing_output_stops_before_tests",
+    "test_r031_prior_scope.PythonLauncher.test_native_failure_stops_next_command",
+    "test_r032_grounding.GroundingCLI.test_launcher_python_not_powershell",
+    "test_r033_review.ReviewCLI.test_launcher_python_discovery"
+  ],
+  "failures": 0,
+  "errors": 0,
+  "skipped": [],
+  "expected_failures": 0,
+  "unexpected_successes": 0,
+  "outcomes": {
+    "test_r031_prior_scope.PythonLauncher.test_check_only_no_demo": "pass",
+    "test_r031_prior_scope.PythonLauncher.test_discovery_import_environment": "pass",
+    "test_r031_prior_scope.PythonLauncher.test_existing_output_stops_before_tests": "pass",
+    "test_r031_prior_scope.PythonLauncher.test_native_failure_stops_next_command": "pass",
+    "test_r032_grounding.GroundingCLI.test_launcher_python_not_powershell": "pass",
+    "test_r033_review.ReviewCLI.test_launcher_python_discovery": "pass"
+  },
+  "failure_details": [],
+  "actual_research_experiment_executed": false
+}

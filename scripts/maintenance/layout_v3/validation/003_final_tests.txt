@@ -1,0 +1,48 @@
+test_28_archived_paths_are_repaired (test_layout_v3.CatalogAndDispatcher.test_28_archived_paths_are_repaired) ... ok
+test_all_31_catalog_identities_are_preserved (test_layout_v3.CatalogAndDispatcher.test_all_31_catalog_identities_are_preserved) ... ok
+test_default_r049_unchanged (test_layout_v3.CatalogAndDispatcher.test_default_r049_unchanged) ... ok
+test_exp29_dispatch_preserves_current_r048 (test_layout_v3.CatalogAndDispatcher.test_exp29_dispatch_preserves_current_r048) ... ok
+test_historical_dispatch_never_runs (test_layout_v3.CatalogAndDispatcher.test_historical_dispatch_never_runs) ... ok
+test_injected_dispatch_target_rejected (test_layout_v3.CatalogAndDispatcher.test_injected_dispatch_target_rejected) ... ok
+test_list_and_describe_and_check_do_not_run_study (test_layout_v3.CatalogAndDispatcher.test_list_and_describe_and_check_do_not_run_study) ... ok
+test_path_traversal_rejected (test_layout_v3.CatalogAndDispatcher.test_path_traversal_rejected) ... ok
+test_research_metadata_not_promoted (test_layout_v3.CatalogAndDispatcher.test_research_metadata_not_promoted) ... ok
+test_explicit_recovery_of_partially_applied_transaction (test_layout_v3.Orchestration.test_explicit_recovery_of_partially_applied_transaction) ... ok
+test_failed_final_regression_restores_files (test_layout_v3.Orchestration.test_failed_final_regression_restores_files) ... ok
+test_fault_after_success_marker_but_before_seal_does_not_claim_success (test_layout_v3.Orchestration.test_fault_after_success_marker_but_before_seal_does_not_claim_success) ... ok
+test_pending_transaction_blocks_reentry (test_layout_v3.Orchestration.test_pending_transaction_blocks_reentry) ... ok
+test_production_preflight_refuses_other_head (test_layout_v3.Orchestration.test_production_preflight_refuses_other_head) ... ok
+test_real_six_upstream_assertions_final_once_after_audit (test_layout_v3.Orchestration.test_real_six_upstream_assertions_final_once_after_audit) ... ok
+test_recovery_refuses_a_live_process (test_layout_v3.Orchestration.test_recovery_refuses_a_live_process) ... ok
+test_changed_skip_reason_refused (test_layout_v3.RegressionAcceptance.test_changed_skip_reason_refused) ... ok
+test_disappeared_skip_without_pass_refused (test_layout_v3.RegressionAcceptance.test_disappeared_skip_without_pass_refused) ... ok
+test_error_failure_expectedfailure_and_exitcode_refused (test_layout_v3.RegressionAcceptance.test_error_failure_expectedfailure_and_exitcode_refused) ... ok
+test_identical_skip_is_unmeasured_not_pass (test_layout_v3.RegressionAcceptance.test_identical_skip_is_unmeasured_not_pass) ... ok
+test_missing_or_duplicate_collection_refused (test_layout_v3.RegressionAcceptance.test_missing_or_duplicate_collection_refused) ... ok
+test_new_skip_refused (test_layout_v3.RegressionAcceptance.test_new_skip_refused) ... ok
+test_skip_resolved_by_real_pass_is_accepted (test_layout_v3.RegressionAcceptance.test_skip_resolved_by_real_pass_is_accepted) ... ok
+test_all_applied_operations_rollback (test_layout_v3.TransactionChecks.test_all_applied_operations_rollback) ... ok
+test_apply_and_independent_inventory_audit (test_layout_v3.TransactionChecks.test_apply_and_independent_inventory_audit) ... ok
+test_case_collision_refused (test_layout_v3.TransactionChecks.test_case_collision_refused) ... ok
+test_changed_source_before_first_write_is_refused (test_layout_v3.TransactionChecks.test_changed_source_before_first_write_is_refused) ... ok
+test_evidence_cache_named_directory_is_not_excluded (test_layout_v3.TransactionChecks.test_evidence_cache_named_directory_is_not_excluded) ... ok
+test_external_modified_output_is_not_overwritten (test_layout_v3.TransactionChecks.test_external_modified_output_is_not_overwritten) ... ok
+test_external_unplanned_file_is_detected_but_not_deleted (test_layout_v3.TransactionChecks.test_external_unplanned_file_is_detected_but_not_deleted) ... ok
+test_mutated_assertion_is_detected (test_layout_v3.TransactionChecks.test_mutated_assertion_is_detected) ... ok
+test_mutated_frozen_plan_is_rejected (test_layout_v3.TransactionChecks.test_mutated_frozen_plan_is_rejected) ... ok
+test_originals_and_engine_evidence_bytes_preserved (test_layout_v3.TransactionChecks.test_originals_and_engine_evidence_bytes_preserved) ... ok
+test_rollback_after_partial_publication (test_layout_v3.TransactionChecks.test_rollback_after_partial_publication) ... ok
+test_symlink_target_path_is_refused_without_creation_in_production (test_layout_v3.TransactionChecks.test_symlink_target_path_is_refused_without_creation_in_production) ... ok
+test_current_real_index_git_blob_identity (test_layout_v3.VerifiedSources.test_current_real_index_git_blob_identity) ... ok
+test_git_blob_identity_of_six_launchers (test_layout_v3.VerifiedSources.test_git_blob_identity_of_six_launchers) ... ok
+test_multiple_test_references_are_refused (test_layout_v3.VerifiedSources.test_multiple_test_references_are_refused) ... ok
+test_powershell_bom_and_crlf_not_normalized_by_relocation (test_layout_v3.VerifiedSources.test_powershell_bom_and_crlf_not_normalized_by_relocation) ... ok
+test_real_launcher_help_in_fresh_process (test_layout_v3.VerifiedSources.test_real_launcher_help_in_fresh_process) ... ok
+test_real_launchers_checkonly_keeps_cwd (test_layout_v3.VerifiedSources.test_real_launchers_checkonly_keeps_cwd) ... ok
+test_real_launchers_commands_keep_repository_root (test_layout_v3.VerifiedSources.test_real_launchers_commands_keep_repository_root) ... ok
+test_unknown_bootstrap_is_refused (test_layout_v3.VerifiedSources.test_unknown_bootstrap_is_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 43 tests in 4.976s
+
+OK

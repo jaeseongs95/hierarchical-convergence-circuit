@@ -146,7 +146,7 @@ class R02CliTests(unittest.TestCase):
         exe = shutil.which('pwsh') or shutil.which('powershell')
         if exe is None:
             self.skipTest('PowerShell native parser unavailable in this environment')
-        path = str(Path(__file__).resolve().parents[1] / 'Run-HCR-R02.ps1').replace("'", "''")
+        path = str(Path(__file__).resolve().parents[1] / 'scripts/legacy/Run-HCR-R02.ps1').replace("'", "''")
         code = "$t=$null;$e=$null;[void][System.Management.Automation.Language.Parser]::ParseFile('" + path + "',[ref]$t,[ref]$e);if($e.Count){$e;exit 1}"
         result = subprocess.run([exe, '-NoProfile', '-Command', code], capture_output=True)
         self.assertEqual(result.returncode, 0, result.stdout.decode(errors='replace'))

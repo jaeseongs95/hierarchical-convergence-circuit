@@ -1,0 +1,12 @@
+test_check_only_no_demo (test_r031_prior_scope.PythonLauncher.test_check_only_no_demo) ... ok
+test_discovery_import_environment (test_r031_prior_scope.PythonLauncher.test_discovery_import_environment) ... ok
+test_existing_output_stops_before_tests (test_r031_prior_scope.PythonLauncher.test_existing_output_stops_before_tests) ... ok
+test_native_failure_stops_next_command (test_r031_prior_scope.PythonLauncher.test_native_failure_stops_next_command) ... ok
+test_launcher_python_not_powershell (test_r032_grounding.GroundingCLI.test_launcher_python_not_powershell) ... ok
+test_launcher_python_discovery (test_r033_review.ReviewCLI.test_launcher_python_discovery) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.004s
+
+OK
+HCC_LAYOUT_V3_REGRESSION: {"tests_run": 6, "failures": 0, "errors": 0, "skipped": []}

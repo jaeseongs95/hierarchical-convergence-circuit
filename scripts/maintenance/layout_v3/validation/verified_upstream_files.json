@@ -1,0 +1,41 @@
+{
+  "base_commit": "afb5d5e5b67906b7697f16163e166f59b17e1655",
+  "files": {
+    "Run-HCR-R02.ps1": {
+      "git_blob": "3956724defd3b92e842c5f02d793b1a13129f337",
+      "sha256": "699fe74d3c481c9e691683b4a8bc37aa94ab5904d214686f8488d552033e3235",
+      "bytes": 1312
+    },
+    "Run-HCR-R021.ps1": {
+      "git_blob": "cff7e77307cbe429e59118cd875e4ce5f6bc8db3",
+      "sha256": "20f3a003a39676513c829d2bdfe2c3fe3e70a29aece9bf08fbac83a67908b46a",
+      "bytes": 1537
+    },
+    "Run-HCR-R03.ps1": {
+      "git_blob": "4318c0c6de40cb14cb137eb5e8a5bdcb6e60d4a6",
+      "sha256": "b5ca555e9fc15117c20c54c4032997a39047ee72884fe62e75a7f6915ed88a46",
+      "bytes": 1753
+    },
+    "Run-HCR-R031.py": {
+      "git_blob": "0424790fd504d546666b88ca414b0ed346e4812e",
+      "sha256": "0701357c9bf5697caf7b06fb9567818c383666574ae92009def9bc93b83ddee0",
+      "bytes": 2305
+    },
+    "Run-HCR-R032.py": {
+      "git_blob": "e9b00d92faba886dcef5b4de013db42e10561675",
+      "sha256": "4a1d476bdf6d7c82dbbf9a105de3786a06250d33dc88facec520076cab869320",
+      "bytes": 2311
+    },
+    "Run-HCR-R033.py": {
+      "git_blob": "1140f56f1ce7c739eb623b5aa10aa49a18edb78f",
+      "sha256": "2a9b4cb46a6673f08ee56a40a650418f81ac12eb07f75879ffe899c532dbd626",
+      "bytes": 2305
+    },
+    "INDEX.json": {
+      "git_blob": "1e2208b837969a7b32b9a5fa3f138296d9cfe5ad",
+      "sha256": "1b342d23f6c8ee9e0daba11af885fbf864058bc9ca3b1baff68da11ff0f710f4",
+      "bytes": 19765
+    }
+  },
+  "scope": "Six complete launchers and complete INDEX.json match GitHub blob bytes; test files are only the six extracted launcher-test cases."
+}

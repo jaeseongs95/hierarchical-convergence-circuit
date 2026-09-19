@@ -1,0 +1,482 @@
+{
+  "base_commit": "afb5d5e5b67906b7697f16163e166f59b17e1655",
+  "baseline_receipt_sha256": "71d66e31a71f2505144d849046b7742bd251607e4055ff723af2cae53b590d22",
+  "baseline_regression": {
+    "errors": 0,
+    "failures": 0,
+    "returncode": 0,
+    "skipped": [
+      {
+        "reason": "symlink creation is not available",
+        "test": "test_r021_sessions.CheckpointIO.test_file_symlink_rejected"
+      },
+      {
+        "reason": "symlink creation is not available",
+        "test": "test_r021_sessions.CheckpointIO.test_symlink_parent_rejected"
+      },
+      {
+        "reason": "local symlink creation not supported",
+        "test": "test_r034_selection.ProtocolAndIO.test_symlink_rejected"
+      }
+    ],
+    "tests_run": 602
+  },
+  "before_inventory_sha256": "b8704351b5424a293a860802a6dbb1ef15f0c579689ae1614ee67e30ba734faa",
+  "layout": {
+    "base_commit": "afb5d5e5b67906b7697f16163e166f59b17e1655",
+    "default_experiment": "EXP-30",
+    "expected_immutable": [
+      "src/",
+      "tools/",
+      "configs/",
+      "HCR-Evidence/",
+      "archive/releases/",
+      "R048_MANIFEST.json",
+      "R049_MANIFEST.json"
+    ],
+    "installed_outputs": {
+      "README.ko.md": "dbbd0b910b084ae4eda9a466e2ac9add071216e5f67030aea144c48e83de5aea",
+      "README.md": "56003c0e7fd4f09c85e128d49cfb01806e9f6feb460d9e3ffe2069a31eb6dba2",
+      "Run-HCR-R02.ps1": null,
+      "Run-HCR-R021.ps1": null,
+      "Run-HCR-R03.ps1": null,
+      "Run-HCR-R031.py": null,
+      "Run-HCR-R032.py": null,
+      "Run-HCR-R033.py": null,
+      "START_HERE.ko.md": "cb808dfdeb9e27ff399c75c7f14e07690a15058e1462860d6ea334354e14cf77",
+      "archive/layout-v3-originals/.gitattributes": "8ba20d115ed989e836edc1e680794d8f25af9d46ed66d186358f80bcdbb7ac03",
+      "archive/layout-v3-originals/.gitignore": "59591d0c24532824ab277cf5364b9affa504ceda0737345b941baca332ee05f3",
+      "archive/layout-v3-originals/README.ko.md": "ee6abf89ffb334ee1925d4216f9777e8062e0979ec26b668eec3c75ae7f94969",
+      "archive/layout-v3-originals/README.md": "9b79a2b20e19dcc17178ba4fb14dcc6744601eb8c70aef00e1d679b70e4029ea",
+      "archive/layout-v3-originals/Run-HCR-R02.ps1": "699fe74d3c481c9e691683b4a8bc37aa94ab5904d214686f8488d552033e3235",
+      "archive/layout-v3-originals/Run-HCR-R021.ps1": "d3c8c3302e7b42c9b432c8cb7c7b22eadbc86ac8f1858ab31d7db54bef313fad",
+      "archive/layout-v3-originals/Run-HCR-R03.ps1": "b5ca555e9fc15117c20c54c4032997a39047ee72884fe62e75a7f6915ed88a46",
+      "archive/layout-v3-originals/Run-HCR-R031.py": "0701357c9bf5697caf7b06fb9567818c383666574ae92009def9bc93b83ddee0",
+      "archive/layout-v3-originals/Run-HCR-R032.py": "4a1d476bdf6d7c82dbbf9a105de3786a06250d33dc88facec520076cab869320",
+      "archive/layout-v3-originals/Run-HCR-R033.py": "2a9b4cb46a6673f08ee56a40a650418f81ac12eb07f75879ffe899c532dbd626",
+      "archive/layout-v3-originals/START_HERE.ko.md": "423d646a99e2fb2e135260f052c4a235d0f67f6d02fef2e6110991d9fc1d1439",
+      "archive/layout-v3-originals/docs/current/REPOSITORY_GUIDE.ko.md": "2e3a751b1aacd04b130f218d77a2af524e5c4aad3ff7ee1def44146161c9377e",
+      "archive/layout-v3-originals/experiments/INDEX.json": "1b342d23f6c8ee9e0daba11af885fbf864058bc9ca3b1baff68da11ff0f710f4",
+      "archive/layout-v3-originals/experiments/INDEX.ko.md": "6f7e40c1c824e28099383ae1a25e9c55fb3f5dbd8db5838399b42b383e2205f8",
+      "archive/layout-v3-originals/scripts/run_indexed_experiment.py": "c4088be026ebd327149128013a7f1098bd85b29571ee5fb329a9950571d08ab6",
+      "archive/layout-v3-originals/tests/test_r021_cli.py": "0674e8bee6a9d805010f0ed0b5d5dafac33ca3de49bdfed09a35d52af4609990",
+      "archive/layout-v3-originals/tests/test_r02_audit_cli.py": "235bdadde11eb539dd67d93f136313c0e749a33037facd6c6a051dd87c1f37bf",
+      "archive/layout-v3-originals/tests/test_r031_prior_scope.py": "eb0c286e0a7544c5716d43f44eec2f3f495768ad6058be594ac1dcbddea162ab",
+      "archive/layout-v3-originals/tests/test_r032_grounding.py": "be7d387c0ab8ae3a0e4fb697f385c60e1f2d602373dee9ab9ffdb088a7f64c79",
+      "archive/layout-v3-originals/tests/test_r033_review.py": "06656bb9383d15eff7e97a0fa62befcacba1d539a7704596e1741069b640ee6b",
+      "archive/layout-v3-originals/tests/test_r03_methods.py": "af6fd405ed9926837a02347408b78ac3f56be15cd89374109fbe65312a5a40f0",
+      "docs/current/REPOSITORY_GUIDE.ko.md": "7b64db00b0d5c0e050fb8c8422bb39c2686d7430f0f81028de56e000a195f4cd",
+      "experiments/INDEX.json": "a8b47757bf484da8ac28fe879eb5e8cbce291cc7204625f61b7bab06afbc5bde",
+      "experiments/INDEX.ko.md": "305cecab1414fe863e240d50925ec0441070a4201c0ecbef6455f00136e641a0",
+      "scripts/legacy/README.ko.md": "90f7e8719d9e4154f6093f4cd339409932774bd82df4f6a9ca342afe40c39d16",
+      "scripts/legacy/Run-HCR-R02.ps1": "f22b3169e3665486090c2b7688451f0368168d5e6d9d85e8d8742f29938558eb",
+      "scripts/legacy/Run-HCR-R021.ps1": "8cedaa1acd5b0f060086eee46a2e2db34fc75b1b1f959c009d64005083b4f697",
+      "scripts/legacy/Run-HCR-R03.ps1": "7705fb62e6bfc781accc27fde2d795d70d557a30a9be1f08f509053df941ed48",
+      "scripts/legacy/Run-HCR-R031.py": "2024669d93c52e1b485e9e2511836f0bcaadfc977dd909c53ebf10165bebfda5",
+      "scripts/legacy/Run-HCR-R032.py": "b308acec2e0c0aa7a41d240bab42148bbc16be78d19022893199327ebdbd3819",
+      "scripts/legacy/Run-HCR-R033.py": "8dde812c72552770ee31eff8c30ec4607ba14c6c45ec5f99c2082836348e4c92",
+      "scripts/run_indexed_experiment.py": "bc2695d0ec2c0481f206cffff28e4ea9ebb4d0cb9b8d7b6999ba0fcf8e427e11",
+      "tests/test_r021_cli.py": "39c3b5601f71c5c7022bec104ec78b1fae2758e565824859bd586093ddedb70c",
+      "tests/test_r02_audit_cli.py": "45ba3fea31f696d8151b1b579bafb5ef18cc217f4cc56a779798573596d852c1",
+      "tests/test_r031_prior_scope.py": "78259b357b352fd738558b93422a0fed8c46227451db87d25bf3160040f56cc0",
+      "tests/test_r032_grounding.py": "befc3ded076aa284ed5d826c40557ae1aba22442ffdbcd0d5477a2ba8ba31e5f",
+      "tests/test_r033_review.py": "af3f720a63a66b96585620d17b119ac7dbc17966997aa59f6d6b31403803868a",
+      "tests/test_r03_methods.py": "88814f27092934bdb564212b6bfb9d77fb1fb5bb5920c4ee0cefbd66848891a0"
+    },
+    "originals": {
+      "archive/layout-v3-originals/README.ko.md": "ee6abf89ffb334ee1925d4216f9777e8062e0979ec26b668eec3c75ae7f94969",
+      "archive/layout-v3-originals/README.md": "9b79a2b20e19dcc17178ba4fb14dcc6744601eb8c70aef00e1d679b70e4029ea",
+      "archive/layout-v3-originals/Run-HCR-R02.ps1": "699fe74d3c481c9e691683b4a8bc37aa94ab5904d214686f8488d552033e3235",
+      "archive/layout-v3-originals/Run-HCR-R021.ps1": "d3c8c3302e7b42c9b432c8cb7c7b22eadbc86ac8f1858ab31d7db54bef313fad",
+      "archive/layout-v3-originals/Run-HCR-R03.ps1": "b5ca555e9fc15117c20c54c4032997a39047ee72884fe62e75a7f6915ed88a46",
+      "archive/layout-v3-originals/Run-HCR-R031.py": "0701357c9bf5697caf7b06fb9567818c383666574ae92009def9bc93b83ddee0",
+      "archive/layout-v3-originals/Run-HCR-R032.py": "4a1d476bdf6d7c82dbbf9a105de3786a06250d33dc88facec520076cab869320",
+      "archive/layout-v3-originals/Run-HCR-R033.py": "2a9b4cb46a6673f08ee56a40a650418f81ac12eb07f75879ffe899c532dbd626",
+      "archive/layout-v3-originals/START_HERE.ko.md": "423d646a99e2fb2e135260f052c4a235d0f67f6d02fef2e6110991d9fc1d1439",
+      "archive/layout-v3-originals/docs/current/REPOSITORY_GUIDE.ko.md": "2e3a751b1aacd04b130f218d77a2af524e5c4aad3ff7ee1def44146161c9377e",
+      "archive/layout-v3-originals/experiments/INDEX.json": "1b342d23f6c8ee9e0daba11af885fbf864058bc9ca3b1baff68da11ff0f710f4",
+      "archive/layout-v3-originals/experiments/INDEX.ko.md": "6f7e40c1c824e28099383ae1a25e9c55fb3f5dbd8db5838399b42b383e2205f8",
+      "archive/layout-v3-originals/scripts/run_indexed_experiment.py": "c4088be026ebd327149128013a7f1098bd85b29571ee5fb329a9950571d08ab6",
+      "archive/layout-v3-originals/tests/test_r021_cli.py": "0674e8bee6a9d805010f0ed0b5d5dafac33ca3de49bdfed09a35d52af4609990",
+      "archive/layout-v3-originals/tests/test_r02_audit_cli.py": "235bdadde11eb539dd67d93f136313c0e749a33037facd6c6a051dd87c1f37bf",
+      "archive/layout-v3-originals/tests/test_r031_prior_scope.py": "eb0c286e0a7544c5716d43f44eec2f3f495768ad6058be594ac1dcbddea162ab",
+      "archive/layout-v3-originals/tests/test_r032_grounding.py": "be7d387c0ab8ae3a0e4fb697f385c60e1f2d602373dee9ab9ffdb088a7f64c79",
+      "archive/layout-v3-originals/tests/test_r033_review.py": "06656bb9383d15eff7e97a0fa62befcacba1d539a7704596e1741069b640ee6b",
+      "archive/layout-v3-originals/tests/test_r03_methods.py": "af6fd405ed9926837a02347408b78ac3f56be15cd89374109fbe65312a5a40f0"
+    },
+    "regression_receipt": "HCR-Evidence/repository-layout/phase2-v2-20260919T020845Z-5406ad54f3a6/regression.json",
+    "schema": "hcc-layout-v3",
+    "transformations": [
+      {
+        "destination": "scripts/legacy/Run-HCR-R02.ps1",
+        "source": "Run-HCR-R02.ps1",
+        "test": "tests/test_r02_audit_cli.py"
+      },
+      {
+        "destination": "scripts/legacy/Run-HCR-R021.ps1",
+        "source": "Run-HCR-R021.ps1",
+        "test": "tests/test_r021_cli.py"
+      },
+      {
+        "destination": "scripts/legacy/Run-HCR-R03.ps1",
+        "source": "Run-HCR-R03.ps1",
+        "test": "tests/test_r03_methods.py"
+      },
+      {
+        "destination": "scripts/legacy/Run-HCR-R031.py",
+        "source": "Run-HCR-R031.py",
+        "test": "tests/test_r031_prior_scope.py"
+      },
+      {
+        "destination": "scripts/legacy/Run-HCR-R032.py",
+        "source": "Run-HCR-R032.py",
+        "test": "tests/test_r032_grounding.py"
+      },
+      {
+        "destination": "scripts/legacy/Run-HCR-R033.py",
+        "source": "Run-HCR-R033.py",
+        "test": "tests/test_r033_review.py"
+      }
+    ]
+  },
+  "operations": [
+    {
+      "after_file": "staged/0000-after.bin",
+      "after_sha256": "8ba20d115ed989e836edc1e680794d8f25af9d46ed66d186358f80bcdbb7ac03",
+      "before_file": null,
+      "before_sha256": null,
+      "path": "archive/layout-v3-originals/.gitattributes"
+    },
+    {
+      "after_file": "staged/0001-after.bin",
+      "after_sha256": "59591d0c24532824ab277cf5364b9affa504ceda0737345b941baca332ee05f3",
+      "before_file": null,
+      "before_sha256": null,
+      "path": "archive/layout-v3-originals/.gitignore"
+    },
+    {
+      "after_file": "staged/0002-after.bin",
+      "after_sha256": "ee6abf89ffb334ee1925d4216f9777e8062e0979ec26b668eec3c75ae7f94969",
+      "before_file": null,
+      "before_sha256": null,
+      "path": "archive/layout-v3-originals/README.ko.md"
+    },
+    {
+      "after_file": "staged/0003-after.bin",
+      "after_sha256": "9b79a2b20e19dcc17178ba4fb14dcc6744601eb8c70aef00e1d679b70e4029ea",
+      "before_file": null,
+      "before_sha256": null,
+      "path": "archive/layout-v3-originals/README.md"
+    },
+    {
+      "after_file": "staged/0004-after.bin",
+      "after_sha256": "699fe74d3c481c9e691683b4a8bc37aa94ab5904d214686f8488d552033e3235",
+      "before_file": null,
+      "before_sha256": null,
+      "path": "archive/layout-v3-originals/Run-HCR-R02.ps1"
+    },
+    {
+      "after_file": "staged/0005-after.bin",
+      "after_sha256": "d3c8c3302e7b42c9b432c8cb7c7b22eadbc86ac8f1858ab31d7db54bef313fad",
+      "before_file": null,
+      "before_sha256": null,
+      "path": "archive/layout-v3-originals/Run-HCR-R021.ps1"
+    },
+    {
+      "after_file": "staged/0006-after.bin",
+      "after_sha256": "b5ca555e9fc15117c20c54c4032997a39047ee72884fe62e75a7f6915ed88a46",
+      "before_file": null,
+      "before_sha256": null,
+      "path": "archive/layout-v3-originals/Run-HCR-R03.ps1"
+    },
+    {
+      "after_file": "staged/0007-after.bin",
+      "after_sha256": "0701357c9bf5697caf7b06fb9567818c383666574ae92009def9bc93b83ddee0",
+      "before_file": null,
+      "before_sha256": null,
+      "path": "archive/layout-v3-originals/Run-HCR-R031.py"
+    },
+    {
+      "after_file": "staged/0008-after.bin",
+      "after_sha256": "4a1d476bdf6d7c82dbbf9a105de3786a06250d33dc88facec520076cab869320",
+      "before_file": null,
+      "before_sha256": null,
+      "path": "archive/layout-v3-originals/Run-HCR-R032.py"
+    },
+    {
+      "after_file": "staged/0009-after.bin",
+      "after_sha256": "2a9b4cb46a6673f08ee56a40a650418f81ac12eb07f75879ffe899c532dbd626",
+      "before_file": null,
+      "before_sha256": null,
+      "path": "archive/layout-v3-originals/Run-HCR-R033.py"
+    },
+    {
+      "after_file": "staged/0010-after.bin",
+      "after_sha256": "423d646a99e2fb2e135260f052c4a235d0f67f6d02fef2e6110991d9fc1d1439",
+      "before_file": null,
+      "before_sha256": null,
+      "path": "archive/layout-v3-originals/START_HERE.ko.md"
+    },
+    {
+      "after_file": "staged/0011-after.bin",
+      "after_sha256": "2e3a751b1aacd04b130f218d77a2af524e5c4aad3ff7ee1def44146161c9377e",
+      "before_file": null,
+      "before_sha256": null,
+      "path": "archive/layout-v3-originals/docs/current/REPOSITORY_GUIDE.ko.md"
+    },
+    {
+      "after_file": "staged/0012-after.bin",
+      "after_sha256": "1b342d23f6c8ee9e0daba11af885fbf864058bc9ca3b1baff68da11ff0f710f4",
+      "before_file": null,
+      "before_sha256": null,
+      "path": "archive/layout-v3-originals/experiments/INDEX.json"
+    },
+    {
+      "after_file": "staged/0013-after.bin",
+      "after_sha256": "6f7e40c1c824e28099383ae1a25e9c55fb3f5dbd8db5838399b42b383e2205f8",
+      "before_file": null,
+      "before_sha256": null,
+      "path": "archive/layout-v3-originals/experiments/INDEX.ko.md"
+    },
+    {
+      "after_file": "staged/0014-after.bin",
+      "after_sha256": "c4088be026ebd327149128013a7f1098bd85b29571ee5fb329a9950571d08ab6",
+      "before_file": null,
+      "before_sha256": null,
+      "path": "archive/layout-v3-originals/scripts/run_indexed_experiment.py"
+    },
+    {
+      "after_file": "staged/0015-after.bin",
+      "after_sha256": "0674e8bee6a9d805010f0ed0b5d5dafac33ca3de49bdfed09a35d52af4609990",
+      "before_file": null,
+      "before_sha256": null,
+      "path": "archive/layout-v3-originals/tests/test_r021_cli.py"
+    },
+    {
+      "after_file": "staged/0016-after.bin",
+      "after_sha256": "235bdadde11eb539dd67d93f136313c0e749a33037facd6c6a051dd87c1f37bf",
+      "before_file": null,
+      "before_sha256": null,
+      "path": "archive/layout-v3-originals/tests/test_r02_audit_cli.py"
+    },
+    {
+      "after_file": "staged/0017-after.bin",
+      "after_sha256": "eb0c286e0a7544c5716d43f44eec2f3f495768ad6058be594ac1dcbddea162ab",
+      "before_file": null,
+      "before_sha256": null,
+      "path": "archive/layout-v3-originals/tests/test_r031_prior_scope.py"
+    },
+    {
+      "after_file": "staged/0018-after.bin",
+      "after_sha256": "be7d387c0ab8ae3a0e4fb697f385c60e1f2d602373dee9ab9ffdb088a7f64c79",
+      "before_file": null,
+      "before_sha256": null,
+      "path": "archive/layout-v3-originals/tests/test_r032_grounding.py"
+    },
+    {
+      "after_file": "staged/0019-after.bin",
+      "after_sha256": "06656bb9383d15eff7e97a0fa62befcacba1d539a7704596e1741069b640ee6b",
+      "before_file": null,
+      "before_sha256": null,
+      "path": "archive/layout-v3-originals/tests/test_r033_review.py"
+    },
+    {
+      "after_file": "staged/0020-after.bin",
+      "after_sha256": "af6fd405ed9926837a02347408b78ac3f56be15cd89374109fbe65312a5a40f0",
+      "before_file": null,
+      "before_sha256": null,
+      "path": "archive/layout-v3-originals/tests/test_r03_methods.py"
+    },
+    {
+      "after_file": "staged/0021-after.bin",
+      "after_sha256": "dbbd0b910b084ae4eda9a466e2ac9add071216e5f67030aea144c48e83de5aea",
+      "before_file": "staged/0021-before.bin",
+      "before_sha256": "ee6abf89ffb334ee1925d4216f9777e8062e0979ec26b668eec3c75ae7f94969",
+      "path": "README.ko.md"
+    },
+    {
+      "after_file": "staged/0022-after.bin",
+      "after_sha256": "56003c0e7fd4f09c85e128d49cfb01806e9f6feb460d9e3ffe2069a31eb6dba2",
+      "before_file": "staged/0022-before.bin",
+      "before_sha256": "9b79a2b20e19dcc17178ba4fb14dcc6744601eb8c70aef00e1d679b70e4029ea",
+      "path": "README.md"
+    },
+    {
+      "after_file": "staged/0023-after.bin",
+      "after_sha256": "cb808dfdeb9e27ff399c75c7f14e07690a15058e1462860d6ea334354e14cf77",
+      "before_file": "staged/0023-before.bin",
+      "before_sha256": "423d646a99e2fb2e135260f052c4a235d0f67f6d02fef2e6110991d9fc1d1439",
+      "path": "START_HERE.ko.md"
+    },
+    {
+      "after_file": "staged/0024-after.bin",
+      "after_sha256": "e139a0b6decc68798eb64ef6e10697eb9e96410ad06b97d8fed20977222c9069",
+      "before_file": null,
+      "before_sha256": null,
+      "path": "docs/current/LAYOUT_V3.json"
+    },
+    {
+      "after_file": "staged/0025-after.bin",
+      "after_sha256": "7b64db00b0d5c0e050fb8c8422bb39c2686d7430f0f81028de56e000a195f4cd",
+      "before_file": "staged/0025-before.bin",
+      "before_sha256": "2e3a751b1aacd04b130f218d77a2af524e5c4aad3ff7ee1def44146161c9377e",
+      "path": "docs/current/REPOSITORY_GUIDE.ko.md"
+    },
+    {
+      "after_file": "staged/0026-after.bin",
+      "after_sha256": "a8b47757bf484da8ac28fe879eb5e8cbce291cc7204625f61b7bab06afbc5bde",
+      "before_file": "staged/0026-before.bin",
+      "before_sha256": "1b342d23f6c8ee9e0daba11af885fbf864058bc9ca3b1baff68da11ff0f710f4",
+      "path": "experiments/INDEX.json"
+    },
+    {
+      "after_file": "staged/0027-after.bin",
+      "after_sha256": "305cecab1414fe863e240d50925ec0441070a4201c0ecbef6455f00136e641a0",
+      "before_file": "staged/0027-before.bin",
+      "before_sha256": "6f7e40c1c824e28099383ae1a25e9c55fb3f5dbd8db5838399b42b383e2205f8",
+      "path": "experiments/INDEX.ko.md"
+    },
+    {
+      "after_file": "staged/0028-after.bin",
+      "after_sha256": "90f7e8719d9e4154f6093f4cd339409932774bd82df4f6a9ca342afe40c39d16",
+      "before_file": null,
+      "before_sha256": null,
+      "path": "scripts/legacy/README.ko.md"
+    },
+    {
+      "after_file": "staged/0029-after.bin",
+      "after_sha256": "f22b3169e3665486090c2b7688451f0368168d5e6d9d85e8d8742f29938558eb",
+      "before_file": null,
+      "before_sha256": null,
+      "path": "scripts/legacy/Run-HCR-R02.ps1"
+    },
+    {
+      "after_file": "staged/0030-after.bin",
+      "after_sha256": "8cedaa1acd5b0f060086eee46a2e2db34fc75b1b1f959c009d64005083b4f697",
+      "before_file": null,
+      "before_sha256": null,
+      "path": "scripts/legacy/Run-HCR-R021.ps1"
+    },
+    {
+      "after_file": "staged/0031-after.bin",
+      "after_sha256": "7705fb62e6bfc781accc27fde2d795d70d557a30a9be1f08f509053df941ed48",
+      "before_file": null,
+      "before_sha256": null,
+      "path": "scripts/legacy/Run-HCR-R03.ps1"
+    },
+    {
+      "after_file": "staged/0032-after.bin",
+      "after_sha256": "2024669d93c52e1b485e9e2511836f0bcaadfc977dd909c53ebf10165bebfda5",
+      "before_file": null,
+      "before_sha256": null,
+      "path": "scripts/legacy/Run-HCR-R031.py"
+    },
+    {
+      "after_file": "staged/0033-after.bin",
+      "after_sha256": "b308acec2e0c0aa7a41d240bab42148bbc16be78d19022893199327ebdbd3819",
+      "before_file": null,
+      "before_sha256": null,
+      "path": "scripts/legacy/Run-HCR-R032.py"
+    },
+    {
+      "after_file": "staged/0034-after.bin",
+      "after_sha256": "8dde812c72552770ee31eff8c30ec4607ba14c6c45ec5f99c2082836348e4c92",
+      "before_file": null,
+      "before_sha256": null,
+      "path": "scripts/legacy/Run-HCR-R033.py"
+    },
+    {
+      "after_file": "staged/0035-after.bin",
+      "after_sha256": "bc2695d0ec2c0481f206cffff28e4ea9ebb4d0cb9b8d7b6999ba0fcf8e427e11",
+      "before_file": "staged/0035-before.bin",
+      "before_sha256": "c4088be026ebd327149128013a7f1098bd85b29571ee5fb329a9950571d08ab6",
+      "path": "scripts/run_indexed_experiment.py"
+    },
+    {
+      "after_file": "staged/0036-after.bin",
+      "after_sha256": "39c3b5601f71c5c7022bec104ec78b1fae2758e565824859bd586093ddedb70c",
+      "before_file": "staged/0036-before.bin",
+      "before_sha256": "0674e8bee6a9d805010f0ed0b5d5dafac33ca3de49bdfed09a35d52af4609990",
+      "path": "tests/test_r021_cli.py"
+    },
+    {
+      "after_file": "staged/0037-after.bin",
+      "after_sha256": "45ba3fea31f696d8151b1b579bafb5ef18cc217f4cc56a779798573596d852c1",
+      "before_file": "staged/0037-before.bin",
+      "before_sha256": "235bdadde11eb539dd67d93f136313c0e749a33037facd6c6a051dd87c1f37bf",
+      "path": "tests/test_r02_audit_cli.py"
+    },
+    {
+      "after_file": "staged/0038-after.bin",
+      "after_sha256": "78259b357b352fd738558b93422a0fed8c46227451db87d25bf3160040f56cc0",
+      "before_file": "staged/0038-before.bin",
+      "before_sha256": "eb0c286e0a7544c5716d43f44eec2f3f495768ad6058be594ac1dcbddea162ab",
+      "path": "tests/test_r031_prior_scope.py"
+    },
+    {
+      "after_file": "staged/0039-after.bin",
+      "after_sha256": "befc3ded076aa284ed5d826c40557ae1aba22442ffdbcd0d5477a2ba8ba31e5f",
+      "before_file": "staged/0039-before.bin",
+      "before_sha256": "be7d387c0ab8ae3a0e4fb697f385c60e1f2d602373dee9ab9ffdb088a7f64c79",
+      "path": "tests/test_r032_grounding.py"
+    },
+    {
+      "after_file": "staged/0040-after.bin",
+      "after_sha256": "af3f720a63a66b96585620d17b119ac7dbc17966997aa59f6d6b31403803868a",
+      "before_file": "staged/0040-before.bin",
+      "before_sha256": "06656bb9383d15eff7e97a0fa62befcacba1d539a7704596e1741069b640ee6b",
+      "path": "tests/test_r033_review.py"
+    },
+    {
+      "after_file": "staged/0041-after.bin",
+      "after_sha256": "88814f27092934bdb564212b6bfb9d77fb1fb5bb5920c4ee0cefbd66848891a0",
+      "before_file": "staged/0041-before.bin",
+      "before_sha256": "af6fd405ed9926837a02347408b78ac3f56be15cd89374109fbe65312a5a40f0",
+      "path": "tests/test_r03_methods.py"
+    },
+    {
+      "after_file": null,
+      "after_sha256": null,
+      "before_file": "staged/0042-before.bin",
+      "before_sha256": "699fe74d3c481c9e691683b4a8bc37aa94ab5904d214686f8488d552033e3235",
+      "path": "Run-HCR-R02.ps1"
+    },
+    {
+      "after_file": null,
+      "after_sha256": null,
+      "before_file": "staged/0043-before.bin",
+      "before_sha256": "d3c8c3302e7b42c9b432c8cb7c7b22eadbc86ac8f1858ab31d7db54bef313fad",
+      "path": "Run-HCR-R021.ps1"
+    },
+    {
+      "after_file": null,
+      "after_sha256": null,
+      "before_file": "staged/0044-before.bin",
+      "before_sha256": "b5ca555e9fc15117c20c54c4032997a39047ee72884fe62e75a7f6915ed88a46",
+      "path": "Run-HCR-R03.ps1"
+    },
+    {
+      "after_file": null,
+      "after_sha256": null,
+      "before_file": "staged/0045-before.bin",
+      "before_sha256": "0701357c9bf5697caf7b06fb9567818c383666574ae92009def9bc93b83ddee0",
+      "path": "Run-HCR-R031.py"
+    },
+    {
+      "after_file": null,
+      "after_sha256": null,
+      "before_file": "staged/0046-before.bin",
+      "before_sha256": "4a1d476bdf6d7c82dbbf9a105de3786a06250d33dc88facec520076cab869320",
+      "path": "Run-HCR-R032.py"
+    },
+    {
+      "after_file": null,
+      "after_sha256": null,
+      "before_file": "staged/0047-before.bin",
+      "before_sha256": "2a9b4cb46a6673f08ee56a40a650418f81ac12eb07f75879ffe899c532dbd626",
+      "path": "Run-HCR-R033.py"
+    }
+  ],
+  "schema": "hcc-layout-v3-plan",
+  "toolkit": "scripts/maintenance/layout_v3"
+}

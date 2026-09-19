@@ -1,0 +1,19 @@
+{
+  "grammar": "Python 3.12",
+  "runtime_used": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "files": [
+    "audit.py",
+    "fsops.py",
+    "layout.py",
+    "main.py",
+    "payload/run_indexed_experiment.py",
+    "probe.py",
+    "tests/fixtures.py",
+    "tests/test_layout_v3.py",
+    "tests/upstream/Run-HCR-R031.py",
+    "tests/upstream/Run-HCR-R032.py",
+    "tests/upstream/Run-HCR-R033.py",
+    "verify_package.py"
+  ],
+  "success": true
+}

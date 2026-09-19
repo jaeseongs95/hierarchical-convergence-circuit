@@ -1,0 +1,31 @@
+{
+  "base_commit": "afb5d5e5b67906b7697f16163e166f59b17e1655",
+  "core_regression": {
+    "final_core_runs": 1,
+    "new_skips": [],
+    "passed": 599,
+    "pre_cleanup_tests_executed": false,
+    "previous_skips_now_passed": [],
+    "tests_run": 602,
+    "unchanged_environment_skips": [
+      {
+        "reason": "symlink creation is not available",
+        "test": "test_r021_sessions.CheckpointIO.test_file_symlink_rejected"
+      },
+      {
+        "reason": "symlink creation is not available",
+        "test": "test_r021_sessions.CheckpointIO.test_symlink_parent_rejected"
+      },
+      {
+        "reason": "local symlink creation not supported",
+        "test": "test_r034_selection.ProtocolAndIO.test_symlink_rejected"
+      }
+    ],
+    "verified": true
+  },
+  "git_commit_push_performed": false,
+  "legacy_launchers_relocated": 6,
+  "research_experiment_executed": false,
+  "status": "APPLIED_AND_VERIFIED",
+  "test_paths_updated": 6
+}

@@ -1,0 +1,18 @@
+{
+  "syntax": "Python 3.12 grammar",
+  "files": [
+    "layout.py",
+    "verify_package.py",
+    "fsops.py",
+    "audit.py",
+    "main.py",
+    "probe.py",
+    "payload/run_indexed_experiment.py",
+    "tests/test_layout_v3.py",
+    "tests/fixtures.py",
+    "tests/upstream/Run-HCR-R031.py",
+    "tests/upstream/Run-HCR-R033.py",
+    "tests/upstream/Run-HCR-R032.py"
+  ],
+  "success": true
+}

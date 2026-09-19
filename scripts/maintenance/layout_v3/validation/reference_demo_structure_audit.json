@@ -1,0 +1,62 @@
+{
+  "catalog": {
+    "experiments": 31,
+    "research_metadata_unchanged": true,
+    "resolved_paths": 134,
+    "verified": true
+  },
+  "current_releases": [
+    {
+      "files": 4,
+      "manifest_sha256": "75c3bcc4ffc1bf292b5fcd89db5df7fade3cc5f3fa46270d2fd9f460ee12342a",
+      "revision": "R048",
+      "verified": true
+    },
+    {
+      "files": 4,
+      "manifest_sha256": "12641e086788502c8a9a098ee577e6dcfc872634f81ca4d45c3032c07c39b345",
+      "revision": "R049",
+      "verified": true
+    }
+  ],
+  "files_checked": 184,
+  "rolled_back": false,
+  "scope": "all working files except explicit tool/run/Git/cache exclusions",
+  "transformations": {
+    "checked": 6,
+    "items": [
+      {
+        "assertions_preserved": true,
+        "launcher": "scripts/legacy/Run-HCR-R02.ps1",
+        "test": "tests/test_r02_audit_cli.py"
+      },
+      {
+        "assertions_preserved": true,
+        "launcher": "scripts/legacy/Run-HCR-R021.ps1",
+        "test": "tests/test_r021_cli.py"
+      },
+      {
+        "assertions_preserved": true,
+        "launcher": "scripts/legacy/Run-HCR-R03.ps1",
+        "test": "tests/test_r03_methods.py"
+      },
+      {
+        "assertions_preserved": true,
+        "launcher": "scripts/legacy/Run-HCR-R031.py",
+        "test": "tests/test_r031_prior_scope.py"
+      },
+      {
+        "assertions_preserved": true,
+        "launcher": "scripts/legacy/Run-HCR-R032.py",
+        "test": "tests/test_r032_grounding.py"
+      },
+      {
+        "assertions_preserved": true,
+        "launcher": "scripts/legacy/Run-HCR-R033.py",
+        "test": "tests/test_r033_review.py"
+      }
+    ]
+  },
+  "unplanned_file_differences": [],
+  "verified": true
+}

@@ -1,0 +1,15 @@
+{
+  "automatic_retry": false,
+  "command": [
+    "C:\\Users\\sjs95\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "D:\\codex\\진짜미친짓\\hierarchical-convergence-circuit\\scripts\\maintenance\\layout_v3\\probe.py",
+    "--repo",
+    "D:\\codex\\진짜미친짓\\hierarchical-convergence-circuit",
+    "--result",
+    "D:\\codex\\진짜미친짓\\hierarchical-convergence-circuit\\HCR-Evidence\\repository-layout\\layout-v3-20260919T025130Z-f3da091e0c\\regression.json"
+  ],
+  "cwd": "D:\\codex\\진짜미친짓\\hierarchical-convergence-circuit"
+}

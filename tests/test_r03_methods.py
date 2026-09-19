@@ -231,7 +231,7 @@ class MethodCLI(unittest.TestCase):
         import shutil
         executable=shutil.which('pwsh') or shutil.which('powershell.exe')
         if not executable:self.skipTest('PowerShell native parser unavailable in this environment')
-        path=str(ROOT/'Run-HCR-R03.ps1').replace("'","''")
+        path=str(ROOT/'scripts/legacy/Run-HCR-R03.ps1').replace("'","''")
         command="$t=$null;$e=$null;[System.Management.Automation.Language.Parser]::ParseFile('"+path+"',[ref]$t,[ref]$e)|Out-Null;if($e.Count -gt 0){$e|Out-String|Write-Error;exit 1}"
         p=subprocess.run([executable,'-NoProfile','-Command',command],capture_output=True,text=True)
         self.assertEqual(p.returncode,0,p.stdout+p.stderr)

@@ -1,0 +1,10 @@
+{
+  "fixture": true,
+  "full_HCC_repository": false,
+  "actual_HCC_engine_executed": false,
+  "full_602_regression_executed": false,
+  "upstream_launcher_assertions_executed": 6,
+  "upstream_complete_files_git_blob_verified": 7,
+  "preflight_fixture_override": true,
+  "reason": "Fixture is a small actual Git repository with real upstream launchers and catalog plus six extracted upstream tests. It is not a full checkout or research evidence."
+}

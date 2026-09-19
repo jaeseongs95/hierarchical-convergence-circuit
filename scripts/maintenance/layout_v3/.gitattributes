@@ -1,0 +1,2 @@
+# Preserve this verified maintenance package and embedded source fixtures exactly.
+* -text -filter -ident !working-tree-encoding

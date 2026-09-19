@@ -124,7 +124,7 @@ class OutputContracts(unittest.TestCase):
         import shutil
         exe=shutil.which('pwsh') or shutil.which('powershell')
         if exe is None:self.skipTest('PowerShell native parser unavailable in this environment')
-        path=str(ROOT/'Run-HCR-R021.ps1').replace("'","''")
+        path=str(ROOT/'scripts/legacy/Run-HCR-R021.ps1').replace("'","''")
         code="$t=$null;$e=$null;[void][System.Management.Automation.Language.Parser]::ParseFile('"+path+"',[ref]$t,[ref]$e);if($e.Count){$e;exit 1}"
         r=subprocess.run([exe,'-NoProfile','-Command',code],capture_output=True)
         self.assertEqual(r.returncode,0,r.stdout.decode(errors='replace'))

@@ -326,7 +326,7 @@ class PlanCLI(unittest.TestCase):
         with self.assertRaises(ContractError):validate_plan(p)
 
     def test_launcher_python_discovery(self):
-        spec=importlib.util.spec_from_file_location('review_launcher',ROOT/'Run-HCR-R033.py');module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+        spec=importlib.util.spec_from_file_location('review_launcher',ROOT/'scripts/legacy/Run-HCR-R033.py');module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
         steps=module.commands(Path('HCR-Evidence/exp14/test'))
         self.assertIn(['hcr.py','review','demo','--out',str(Path('HCR-Evidence/exp14/test'))],steps)
         self.assertFalse(any('.ps1' in str(s) for s in steps))

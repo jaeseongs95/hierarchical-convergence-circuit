@@ -1,0 +1,2 @@
+# Preserve migration evidence, including staged bytes and first failures.
+!*

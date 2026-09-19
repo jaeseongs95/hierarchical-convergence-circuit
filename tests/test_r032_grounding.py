@@ -209,7 +209,7 @@ class GroundingCLI(unittest.TestCase):
         self.assertFalse(json.loads(stdout.getvalue())['inference_executed'])
     def test_launcher_python_not_powershell(self):
         import importlib.util
-        spec=importlib.util.spec_from_file_location('grounding_launcher',ROOT/'Run-HCR-R032.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
+        spec=importlib.util.spec_from_file_location('grounding_launcher',ROOT/'scripts/legacy/Run-HCR-R032.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
         steps=m.commands(Path('output'));self.assertIn(['hcr.py','grounding','demo','--out','output'],steps)
         self.assertFalse(any('powershell' in str(s).lower() for s in steps))
     def test_existing_output_does_not_start(self):

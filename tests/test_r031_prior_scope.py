@@ -296,7 +296,7 @@ class FullProtocol(unittest.TestCase):
 class PythonLauncher(unittest.TestCase):
     def load(self):
         import importlib.util
-        spec=importlib.util.spec_from_file_location('r031_launcher',ROOT/'Run-HCR-R031.py')
+        spec=importlib.util.spec_from_file_location('r031_launcher',ROOT/'scripts/legacy/Run-HCR-R031.py')
         m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);return m
     def test_discovery_import_environment(self):
         commands=self.load().commands(Path('new-run'))
