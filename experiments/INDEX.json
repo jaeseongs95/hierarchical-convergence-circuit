@@ -581,6 +581,24 @@
       "source_commit": null,
       "source_commit_note": "Read the frozen per-run source and plan. Source validation is not a research result.",
       "standalone_python_entrypoint": "Run-HCR-R051.py"
+    },
+    {
+      "current_python_entrypoint": null,
+      "default_dispatcher_promoted": false,
+      "design": "experiments/exp-33-array-roles/design.ko.md",
+      "directory": "experiments/exp-33-array-roles",
+      "evidence_directory": "HCR-Evidence/exp33",
+      "execution_status": "standalone_candidate_contract",
+      "experiment_id": "EXP-33",
+      "frozen_design": "experiments/exp-33-array-roles/frozen_spec.json",
+      "implementation_validation_directory": "HCR-Evidence/r052-validation",
+      "legacy_python_entrypoint": null,
+      "release_manifest": "R052_MANIFEST.json",
+      "revision_references": ["r052"],
+      "run_status": "read_per_run_evidence",
+      "source_commit": null,
+      "source_commit_note": "Read the frozen per-run source and plan; hypothesis agreement is not an audit requirement.",
+      "standalone_python_entrypoint": "Run-HCR-R052.py"
     }
   ],
   "inventory_commit": "afb5d5e5b67906b7697f16163e166f59b17e1655",

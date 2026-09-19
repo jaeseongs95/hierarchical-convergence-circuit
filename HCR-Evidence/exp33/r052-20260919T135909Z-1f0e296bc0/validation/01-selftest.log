@@ -1,0 +1,34 @@
+test_auditor_import_does_not_import_producer_or_dynamics (test_audit.Contract.test_auditor_import_does_not_import_producer_or_dynamics) ... ok
+test_fixed_spec_and_tamper_rejection (test_audit.Contract.test_fixed_spec_and_tamper_rejection) ... ok
+test_intervention_is_role_based_for_both_array_orders (test_audit.Contract.test_intervention_is_role_based_for_both_array_orders) ... ok
+test_record_schema_pairing_and_tamper (test_audit.Contract.test_record_schema_pairing_and_tamper) ... ok
+test_render_does_not_count_rejection_as_wrong_adoption (test_audit.Contract.test_render_does_not_count_rejection_as_wrong_adoption) ... ok
+test_all_numeric_children_contribute_to_maximum_difference (test_audit.RoleProjection.test_all_numeric_children_contribute_to_maximum_difference) ... ok
+test_budget_unknowns_stay_not_comparable (test_audit.RoleProjection.test_budget_unknowns_stay_not_comparable) ... ok
+test_goal_prefix_proof_and_support_changes_are_detected (test_audit.RoleProjection.test_goal_prefix_proof_and_support_changes_are_detected) ... ok
+test_permutation_equivariance_and_raw_coordinates_remain_distinct (test_audit.RoleProjection.test_permutation_equivariance_and_raw_coordinates_remain_distinct) ... ok
+test_projection_does_not_modify_raw (test_audit.RoleProjection.test_projection_does_not_modify_raw) ... ok
+test_raw_coordinate_equality_does_not_create_false_role_equality (test_audit.RoleProjection.test_raw_coordinate_equality_does_not_create_false_role_equality) ... ok
+test_real_native_path_and_swapped_packets_are_projectable (test_audit.RoleProjection.test_real_native_path_and_swapped_packets_are_projectable) ... ok
+test_unmapped_state_and_malformed_role_map_are_rejected (test_audit.RoleProjection.test_unmapped_state_and_malformed_role_map_are_rejected) ... ok
+test_all_arms_match_independent_observation (test_contract.Contract.test_all_arms_match_independent_observation) ... ok
+test_complete_matrix (test_contract.Contract.test_complete_matrix) ... ok
+test_config_numeric_representation_is_preserved (test_contract.Contract.test_config_numeric_representation_is_preserved) ... ok
+test_echo_and_hold (test_contract.Contract.test_echo_and_hold) ... ok
+test_matrix_tampering_rejected (test_contract.Contract.test_matrix_tampering_rejected) ... ok
+test_missing_or_ambiguous_structural_target_rejected (test_contract.Contract.test_missing_or_ambiguous_structural_target_rejected) ... ok
+test_no_duplicate_or_extra_cases (test_contract.Contract.test_no_duplicate_or_extra_cases) ... ok
+test_resealed_input_and_pairing_tampering_rejected (test_contract.Contract.test_resealed_input_and_pairing_tampering_rejected) ... ok
+test_single_slot_and_revision (test_contract.Contract.test_single_slot_and_revision) ... ok
+test_strong_native_sanity_and_no_measurement_path (test_contract.Contract.test_strong_native_sanity_and_no_measurement_path) ... ok
+test_unexpected_initial_strength_rejected (test_contract.Contract.test_unexpected_initial_strength_rejected) ... ok
+test_unsupported_arm_rejected (test_contract.Contract.test_unsupported_arm_rejected) ... ok
+test_valid_paired_record (test_contract.Contract.test_valid_paired_record) ... ok
+test_stage_failure_is_recorded_once_without_retry (test_pipeline.Pipeline.test_stage_failure_is_recorded_once_without_retry) ... STAGE: failed
+STAGE: failed
+ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.731s
+
+OK

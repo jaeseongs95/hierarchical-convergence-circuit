@@ -1,0 +1,608 @@
+{
+  "claims_registry": "evidence/claims.yaml",
+  "default_experiment": "EXP-30",
+  "experiments": [
+    {
+      "current_python_entrypoint": null,
+      "design": "experiments/exp-00-r01-integration/design.md",
+      "directory": "experiments/exp-00-r01-integration",
+      "evidence_directory": null,
+      "execution_status": "no_registered_python_driver",
+      "experiment_id": "EXP-00",
+      "frozen_design": null,
+      "implementation_validation_directory": null,
+      "legacy_python_entrypoint": null,
+      "release_manifest": null,
+      "revision_references": [
+        "r01"
+      ],
+      "run_status": "not_determined",
+      "source_commit": null,
+      "source_commit_note": "Read each run's provenance; the inventory commit is NOT the run's source commit."
+    },
+    {
+      "current_python_entrypoint": null,
+      "design": "experiments/exp-01-familiarity-compression/design.md",
+      "directory": "experiments/exp-01-familiarity-compression",
+      "evidence_directory": null,
+      "execution_status": "no_registered_python_driver",
+      "experiment_id": "EXP-01",
+      "frozen_design": null,
+      "implementation_validation_directory": null,
+      "legacy_python_entrypoint": null,
+      "release_manifest": null,
+      "revision_references": [],
+      "run_status": "not_determined",
+      "source_commit": null,
+      "source_commit_note": "Read each run's provenance; the inventory commit is NOT the run's source commit."
+    },
+    {
+      "current_python_entrypoint": null,
+      "design": "experiments/exp-02-novelty-graph-expansion/design.md",
+      "directory": "experiments/exp-02-novelty-graph-expansion",
+      "evidence_directory": null,
+      "execution_status": "no_registered_python_driver",
+      "experiment_id": "EXP-02",
+      "frozen_design": null,
+      "implementation_validation_directory": null,
+      "legacy_python_entrypoint": null,
+      "release_manifest": null,
+      "revision_references": [],
+      "run_status": "not_determined",
+      "source_commit": null,
+      "source_commit_note": "Read each run's provenance; the inventory commit is NOT the run's source commit."
+    },
+    {
+      "current_python_entrypoint": null,
+      "design": "experiments/exp-03-misconvergence/design.md",
+      "directory": "experiments/exp-03-misconvergence",
+      "evidence_directory": null,
+      "execution_status": "no_registered_python_driver",
+      "experiment_id": "EXP-03",
+      "frozen_design": null,
+      "implementation_validation_directory": null,
+      "legacy_python_entrypoint": null,
+      "release_manifest": null,
+      "revision_references": [],
+      "run_status": "not_determined",
+      "source_commit": null,
+      "source_commit_note": "Read each run's provenance; the inventory commit is NOT the run's source commit."
+    },
+    {
+      "current_python_entrypoint": null,
+      "design": "experiments/exp-04-binding-continuity/design.md",
+      "directory": "experiments/exp-04-binding-continuity",
+      "evidence_directory": null,
+      "execution_status": "no_registered_python_driver",
+      "experiment_id": "EXP-04",
+      "frozen_design": null,
+      "implementation_validation_directory": null,
+      "legacy_python_entrypoint": null,
+      "release_manifest": null,
+      "revision_references": [],
+      "run_status": "not_determined",
+      "source_commit": null,
+      "source_commit_note": "Read each run's provenance; the inventory commit is NOT the run's source commit."
+    },
+    {
+      "current_python_entrypoint": null,
+      "design": "experiments/exp-05-cross-abstraction-primitive/design.md",
+      "directory": "experiments/exp-05-cross-abstraction-primitive",
+      "evidence_directory": null,
+      "execution_status": "no_registered_python_driver",
+      "experiment_id": "EXP-05",
+      "frozen_design": null,
+      "implementation_validation_directory": null,
+      "legacy_python_entrypoint": null,
+      "release_manifest": null,
+      "revision_references": [],
+      "run_status": "not_determined",
+      "source_commit": null,
+      "source_commit_note": "Read each run's provenance; the inventory commit is NOT the run's source commit."
+    },
+    {
+      "current_python_entrypoint": null,
+      "design": "experiments/exp-06-decision-vs-explanation/design.md",
+      "directory": "experiments/exp-06-decision-vs-explanation",
+      "evidence_directory": null,
+      "execution_status": "no_registered_python_driver",
+      "experiment_id": "EXP-06",
+      "frozen_design": null,
+      "implementation_validation_directory": null,
+      "legacy_python_entrypoint": null,
+      "release_manifest": null,
+      "revision_references": [],
+      "run_status": "not_determined",
+      "source_commit": null,
+      "source_commit_note": "Read each run's provenance; the inventory commit is NOT the run's source commit."
+    },
+    {
+      "current_python_entrypoint": null,
+      "design": "experiments/exp-07-attractor-revisability/design.md",
+      "directory": "experiments/exp-07-attractor-revisability",
+      "evidence_directory": null,
+      "execution_status": "no_registered_python_driver",
+      "experiment_id": "EXP-07",
+      "frozen_design": null,
+      "implementation_validation_directory": null,
+      "legacy_python_entrypoint": null,
+      "release_manifest": null,
+      "revision_references": [],
+      "run_status": "not_determined",
+      "source_commit": null,
+      "source_commit_note": "Read each run's provenance; the inventory commit is NOT the run's source commit."
+    },
+    {
+      "current_python_entrypoint": null,
+      "design": "experiments/exp-08-r02-adaptive-integration/design.md",
+      "directory": "experiments/exp-08-r02-adaptive-integration",
+      "evidence_directory": null,
+      "execution_status": "no_registered_python_driver",
+      "experiment_id": "EXP-08",
+      "frozen_design": null,
+      "implementation_validation_directory": null,
+      "legacy_python_entrypoint": null,
+      "release_manifest": null,
+      "revision_references": [
+        "r02"
+      ],
+      "run_status": "not_determined",
+      "source_commit": null,
+      "source_commit_note": "Read each run's provenance; the inventory commit is NOT the run's source commit."
+    },
+    {
+      "current_python_entrypoint": null,
+      "design": "experiments/exp-10-session-continuity/design.md",
+      "directory": "experiments/exp-10-session-continuity",
+      "evidence_directory": "HCR-Evidence/exp10",
+      "execution_status": "no_registered_python_driver",
+      "experiment_id": "EXP-10",
+      "frozen_design": null,
+      "implementation_validation_directory": null,
+      "legacy_python_entrypoint": null,
+      "release_manifest": null,
+      "revision_references": [
+        "r021"
+      ],
+      "run_status": "artifacts_present_unreviewed",
+      "source_commit": null,
+      "source_commit_note": "Read each run's provenance; the inventory commit is NOT the run's source commit."
+    },
+    {
+      "current_python_entrypoint": null,
+      "design": "experiments/exp-11-method-interleaving/design.md",
+      "directory": "experiments/exp-11-method-interleaving",
+      "evidence_directory": "HCR-Evidence/exp11",
+      "execution_status": "no_registered_python_driver",
+      "experiment_id": "EXP-11",
+      "frozen_design": null,
+      "implementation_validation_directory": null,
+      "legacy_python_entrypoint": null,
+      "release_manifest": null,
+      "revision_references": [
+        "r03"
+      ],
+      "run_status": "artifacts_present_unreviewed",
+      "source_commit": null,
+      "source_commit_note": "Read each run's provenance; the inventory commit is NOT the run's source commit."
+    },
+    {
+      "current_python_entrypoint": null,
+      "design": "experiments/exp-12-prior-scope/design.md",
+      "directory": "experiments/exp-12-prior-scope",
+      "evidence_directory": "HCR-Evidence/exp12",
+      "execution_status": "historical_requires_original_checkout",
+      "experiment_id": "EXP-12",
+      "frozen_design": null,
+      "implementation_validation_directory": null,
+      "legacy_python_entrypoint": "scripts/legacy/Run-HCR-R031.py",
+      "release_manifest": null,
+      "revision_references": [
+        "r031"
+      ],
+      "run_status": "artifacts_present_unreviewed",
+      "source_commit": null,
+      "source_commit_note": "Read each run's provenance; the inventory commit is NOT the run's source commit."
+    },
+    {
+      "current_python_entrypoint": null,
+      "design": "experiments/exp-13-evidence-grounding/design.md",
+      "directory": "experiments/exp-13-evidence-grounding",
+      "evidence_directory": "HCR-Evidence/exp13",
+      "execution_status": "historical_requires_original_checkout",
+      "experiment_id": "EXP-13",
+      "frozen_design": null,
+      "implementation_validation_directory": null,
+      "legacy_python_entrypoint": "scripts/legacy/Run-HCR-R032.py",
+      "release_manifest": null,
+      "revision_references": [
+        "r032"
+      ],
+      "run_status": "artifacts_present_unreviewed",
+      "source_commit": null,
+      "source_commit_note": "Read each run's provenance; the inventory commit is NOT the run's source commit."
+    },
+    {
+      "current_python_entrypoint": null,
+      "design": "experiments/exp-14-grounded-review/design.md",
+      "directory": "experiments/exp-14-grounded-review",
+      "evidence_directory": "HCR-Evidence/exp14",
+      "execution_status": "historical_requires_original_checkout",
+      "experiment_id": "EXP-14",
+      "frozen_design": null,
+      "implementation_validation_directory": null,
+      "legacy_python_entrypoint": "scripts/legacy/Run-HCR-R033.py",
+      "release_manifest": null,
+      "revision_references": [
+        "r033"
+      ],
+      "run_status": "artifacts_present_unreviewed",
+      "source_commit": null,
+      "source_commit_note": "Read each run's provenance; the inventory commit is NOT the run's source commit."
+    },
+    {
+      "current_python_entrypoint": null,
+      "design": "experiments/exp-15-proof-selection/design.md",
+      "directory": "experiments/exp-15-proof-selection",
+      "evidence_directory": "HCR-Evidence/exp15",
+      "execution_status": "historical_requires_original_checkout",
+      "experiment_id": "EXP-15",
+      "frozen_design": null,
+      "implementation_validation_directory": null,
+      "legacy_python_entrypoint": "archive/releases/r034/Run-HCR-R034.py",
+      "release_manifest": "archive/releases/r034/R034_MANIFEST.json",
+      "revision_references": [
+        "r034"
+      ],
+      "run_status": "artifacts_present_unreviewed",
+      "source_commit": null,
+      "source_commit_note": "Read each run's provenance; the inventory commit is NOT the run's source commit."
+    },
+    {
+      "current_python_entrypoint": null,
+      "design": "experiments/exp-16-frozen-proof-selection/design.md",
+      "directory": "experiments/exp-16-frozen-proof-selection",
+      "evidence_directory": "HCR-Evidence/exp16",
+      "execution_status": "historical_requires_original_checkout",
+      "experiment_id": "EXP-16",
+      "frozen_design": null,
+      "implementation_validation_directory": null,
+      "legacy_python_entrypoint": "archive/releases/r035/Run-HCR-R035.py",
+      "release_manifest": "archive/releases/r035/R035_MANIFEST.json",
+      "revision_references": [
+        "r035"
+      ],
+      "run_status": "artifacts_present_unreviewed",
+      "source_commit": null,
+      "source_commit_note": "Read each run's provenance; the inventory commit is NOT the run's source commit."
+    },
+    {
+      "current_python_entrypoint": null,
+      "design": "experiments/exp-17-input-representation/design.md",
+      "directory": "experiments/exp-17-input-representation",
+      "evidence_directory": "HCR-Evidence/exp17",
+      "execution_status": "historical_requires_original_checkout",
+      "experiment_id": "EXP-17",
+      "frozen_design": null,
+      "implementation_validation_directory": null,
+      "legacy_python_entrypoint": "archive/releases/r036/Run-HCR-R036.py",
+      "release_manifest": "archive/releases/r036/R036_MANIFEST.json",
+      "revision_references": [
+        "r036"
+      ],
+      "run_status": "artifacts_present_unreviewed",
+      "source_commit": null,
+      "source_commit_note": "Read each run's provenance; the inventory commit is NOT the run's source commit."
+    },
+    {
+      "current_python_entrypoint": null,
+      "design": "experiments/exp-18-online-proof-selection/design.md",
+      "directory": "experiments/exp-18-online-proof-selection",
+      "evidence_directory": "HCR-Evidence/exp18",
+      "execution_status": "historical_requires_original_checkout",
+      "experiment_id": "EXP-18",
+      "frozen_design": null,
+      "implementation_validation_directory": "validation/r037",
+      "legacy_python_entrypoint": "archive/releases/r037/Run-HCR-R037.py",
+      "release_manifest": "archive/releases/r037/R037_MANIFEST.json",
+      "revision_references": [
+        "r037"
+      ],
+      "run_status": "artifacts_present_unreviewed",
+      "source_commit": null,
+      "source_commit_note": "Read each run's provenance; the inventory commit is NOT the run's source commit."
+    },
+    {
+      "current_python_entrypoint": null,
+      "design": "experiments/exp-19-early-proof-adoption/design.md",
+      "directory": "experiments/exp-19-early-proof-adoption",
+      "evidence_directory": "HCR-Evidence/exp19",
+      "execution_status": "historical_requires_original_checkout",
+      "experiment_id": "EXP-19",
+      "frozen_design": null,
+      "implementation_validation_directory": "validation/r038",
+      "legacy_python_entrypoint": "archive/releases/r038/Run-HCR-R038.py",
+      "release_manifest": "archive/releases/r038/R038_MANIFEST.json",
+      "revision_references": [
+        "r038"
+      ],
+      "run_status": "artifacts_present_unreviewed",
+      "source_commit": null,
+      "source_commit_note": "Read each run's provenance; the inventory commit is NOT the run's source commit."
+    },
+    {
+      "current_python_entrypoint": null,
+      "design": "experiments/exp-20-order-isolation/design.md",
+      "directory": "experiments/exp-20-order-isolation",
+      "evidence_directory": "HCR-Evidence/exp20",
+      "execution_status": "historical_requires_original_checkout",
+      "experiment_id": "EXP-20",
+      "frozen_design": null,
+      "implementation_validation_directory": "validation/r039",
+      "legacy_python_entrypoint": "archive/releases/r039/Run-HCR-R039.py",
+      "release_manifest": "archive/releases/r039/R039_MANIFEST.json",
+      "revision_references": [
+        "r039"
+      ],
+      "run_status": "artifacts_present_unreviewed",
+      "source_commit": null,
+      "source_commit_note": "Read each run's provenance; the inventory commit is NOT the run's source commit."
+    },
+    {
+      "current_python_entrypoint": null,
+      "design": "experiments/exp-21-frontier-scheduling/design.md",
+      "directory": "experiments/exp-21-frontier-scheduling",
+      "evidence_directory": "HCR-Evidence/exp21",
+      "execution_status": "historical_requires_original_checkout",
+      "experiment_id": "EXP-21",
+      "frozen_design": null,
+      "implementation_validation_directory": "validation/r040",
+      "legacy_python_entrypoint": "archive/releases/r040/Run-HCR-R040.py",
+      "release_manifest": "archive/releases/r040/R040_MANIFEST.json",
+      "revision_references": [
+        "r040"
+      ],
+      "run_status": "artifacts_present_unreviewed",
+      "source_commit": null,
+      "source_commit_note": "Read each run's provenance; the inventory commit is NOT the run's source commit."
+    },
+    {
+      "current_python_entrypoint": null,
+      "design": "experiments/exp-22-scheduler-direction/design.md",
+      "directory": "experiments/exp-22-scheduler-direction",
+      "evidence_directory": "HCR-Evidence/exp22",
+      "execution_status": "historical_requires_original_checkout",
+      "experiment_id": "EXP-22",
+      "frozen_design": null,
+      "implementation_validation_directory": "validation/r041",
+      "legacy_python_entrypoint": "archive/releases/r041/Run-HCR-R041.py",
+      "release_manifest": "archive/releases/r041/R041_MANIFEST.json",
+      "revision_references": [
+        "r041"
+      ],
+      "run_status": "artifacts_present_unreviewed",
+      "source_commit": null,
+      "source_commit_note": "Read each run's provenance; the inventory commit is NOT the run's source commit."
+    },
+    {
+      "current_python_entrypoint": null,
+      "design": "experiments/exp-23-id-role-isolation/design.md",
+      "directory": "experiments/exp-23-id-role-isolation",
+      "evidence_directory": "HCR-Evidence/exp23",
+      "execution_status": "historical_requires_original_checkout",
+      "experiment_id": "EXP-23",
+      "frozen_design": null,
+      "implementation_validation_directory": "validation/r042",
+      "legacy_python_entrypoint": "archive/releases/r042/Run-HCR-R042.py",
+      "release_manifest": "archive/releases/r042/R042_MANIFEST.json",
+      "revision_references": [
+        "r042"
+      ],
+      "run_status": "artifacts_present_unreviewed",
+      "source_commit": null,
+      "source_commit_note": "Read each run's provenance; the inventory commit is NOT the run's source commit."
+    },
+    {
+      "current_python_entrypoint": null,
+      "design": "experiments/exp-24-input-order-control/design.md",
+      "directory": "experiments/exp-24-input-order-control",
+      "evidence_directory": "HCR-Evidence/exp24",
+      "execution_status": "historical_requires_original_checkout",
+      "experiment_id": "EXP-24",
+      "frozen_design": null,
+      "implementation_validation_directory": "validation/r043",
+      "legacy_python_entrypoint": "archive/releases/r043/Run-HCR-R043.py",
+      "release_manifest": "archive/releases/r043/R043_MANIFEST.json",
+      "revision_references": [
+        "r043"
+      ],
+      "run_status": "artifacts_present_unreviewed",
+      "source_commit": null,
+      "source_commit_note": "Read each run's provenance; the inventory commit is NOT the run's source commit."
+    },
+    {
+      "current_python_entrypoint": null,
+      "design": "experiments/exp-25-reuse-contribution/design.md",
+      "directory": "experiments/exp-25-reuse-contribution",
+      "evidence_directory": "HCR-Evidence/exp25",
+      "execution_status": "historical_requires_original_checkout",
+      "experiment_id": "EXP-25",
+      "frozen_design": null,
+      "implementation_validation_directory": "validation/r044",
+      "legacy_python_entrypoint": "archive/releases/r044/Run-HCR-R044.py",
+      "release_manifest": "archive/releases/r044/R044_MANIFEST.json",
+      "revision_references": [
+        "r044"
+      ],
+      "run_status": "artifacts_present_unreviewed",
+      "source_commit": null,
+      "source_commit_note": "Read each run's provenance; the inventory commit is NOT the run's source commit."
+    },
+    {
+      "current_python_entrypoint": null,
+      "design": "experiments/exp-26-direct-support/design.md",
+      "directory": "experiments/exp-26-direct-support",
+      "evidence_directory": "HCR-Evidence/exp26",
+      "execution_status": "historical_requires_original_checkout",
+      "experiment_id": "EXP-26",
+      "frozen_design": null,
+      "implementation_validation_directory": "validation/r045",
+      "legacy_python_entrypoint": "archive/releases/r045/Run-HCR-R045.py",
+      "release_manifest": "archive/releases/r045/R045_MANIFEST.json",
+      "revision_references": [
+        "r045"
+      ],
+      "run_status": "artifacts_present_unreviewed",
+      "source_commit": null,
+      "source_commit_note": "Read each run's provenance; the inventory commit is NOT the run's source commit."
+    },
+    {
+      "current_python_entrypoint": null,
+      "design": "experiments/exp-27-thought-carry/design.md",
+      "directory": "experiments/exp-27-thought-carry",
+      "evidence_directory": "HCR-Evidence/exp27",
+      "execution_status": "historical_requires_original_checkout",
+      "experiment_id": "EXP-27",
+      "frozen_design": null,
+      "implementation_validation_directory": "validation/r046",
+      "legacy_python_entrypoint": "archive/releases/r046/Run-HCR-R046.py",
+      "release_manifest": "archive/releases/r046/R046_MANIFEST.json",
+      "revision_references": [
+        "r046"
+      ],
+      "run_status": "artifacts_present_unreviewed",
+      "source_commit": null,
+      "source_commit_note": "Read each run's provenance; the inventory commit is NOT the run's source commit."
+    },
+    {
+      "current_python_entrypoint": null,
+      "design": "docs/EXP09_R2.ko.md",
+      "directory": "experiments/exp-09-baseline",
+      "evidence_directory": "HCR-Evidence/exp09",
+      "execution_status": "no_registered_python_driver",
+      "experiment_id": "EXP-09",
+      "frozen_design": null,
+      "implementation_validation_directory": null,
+      "legacy_python_entrypoint": null,
+      "release_manifest": null,
+      "revision_references": [
+        "r02"
+      ],
+      "run_status": "artifacts_present_unreviewed",
+      "source_commit": null,
+      "source_commit_note": "Read each run's provenance; the inventory commit is NOT the run's source commit."
+    },
+    {
+      "current_python_entrypoint": null,
+      "design": "docs/R047_DESIGN.ko.md",
+      "directory": "experiments/exp-28-state-ablation",
+      "evidence_directory": "HCR-Evidence/exp28",
+      "execution_status": "historical_requires_original_checkout",
+      "experiment_id": "EXP-28",
+      "frozen_design": null,
+      "implementation_validation_directory": "validation/r047",
+      "legacy_python_entrypoint": "archive/releases/r047/Run-HCR-R047.py",
+      "release_manifest": "archive/releases/r047/R047_MANIFEST.json",
+      "revision_references": [
+        "r047"
+      ],
+      "run_status": "artifacts_present_unreviewed",
+      "source_commit": null,
+      "source_commit_note": "Read each run's provenance; the inventory commit is NOT the run's source commit."
+    },
+    {
+      "current_python_entrypoint": "Run-HCR-R048.py",
+      "design": "docs/R048_DESIGN.ko.md",
+      "directory": "experiments/exp-29-precision",
+      "evidence_directory": "HCR-Evidence/exp29",
+      "execution_status": "installed_current_contract",
+      "experiment_id": "EXP-29",
+      "frozen_design": "docs/R048_FROZEN_DESIGN.json",
+      "implementation_validation_directory": null,
+      "legacy_python_entrypoint": "Run-HCR-R048.py",
+      "release_manifest": "R048_MANIFEST.json",
+      "revision_references": [
+        "r048"
+      ],
+      "run_status": "artifacts_present_unreviewed",
+      "source_commit": null,
+      "source_commit_note": "Read each run's provenance; the inventory commit is NOT the run's source commit."
+    },
+    {
+      "current_python_entrypoint": "Run-HCR-R049.py",
+      "design": "docs/R049_DESIGN.ko.md",
+      "directory": "experiments/exp-30-signal-boundary",
+      "evidence_directory": "HCR-Evidence/exp30",
+      "execution_status": "installed_current_contract",
+      "experiment_id": "EXP-30",
+      "frozen_design": "docs/R049_FROZEN_DESIGN.json",
+      "implementation_validation_directory": null,
+      "legacy_python_entrypoint": "Run-HCR-R049.py",
+      "release_manifest": "R049_MANIFEST.json",
+      "revision_references": [
+        "r049"
+      ],
+      "run_status": "artifacts_present_unreviewed",
+      "source_commit": null,
+      "source_commit_note": "Read each run's provenance; the inventory commit is NOT the run's source commit."
+    },
+    {
+      "current_python_entrypoint": null,
+      "default_dispatcher_promoted": false,
+      "design": "experiments/exp-31-review-boundary/design.ko.md",
+      "directory": "experiments/exp-31-review-boundary",
+      "evidence_directory": null,
+      "execution_status": "standalone_candidate_contract",
+      "experiment_id": "EXP-31",
+      "frozen_design": "experiments/exp-31-review-boundary/frozen_spec.json",
+      "implementation_validation_directory": null,
+      "legacy_python_entrypoint": null,
+      "release_manifest": "R050_MANIFEST.json",
+      "revision_references": ["r050"],
+      "run_status": "read_per_run_evidence",
+      "source_commit": null,
+      "source_commit_note": "Runtime plan and frozen source identify the actual checkout and patch; this entry is not a research result.",
+      "standalone_python_entrypoint": "Run-HCR-R050.py"
+    },
+    {
+      "current_python_entrypoint": null,
+      "default_dispatcher_promoted": false,
+      "design": "experiments/exp-32-edge-controls/design.ko.md",
+      "directory": "experiments/exp-32-edge-controls",
+      "evidence_directory": "HCR-Evidence/exp32",
+      "execution_status": "standalone_candidate_contract",
+      "experiment_id": "EXP-32",
+      "frozen_design": "experiments/exp-32-edge-controls/frozen_spec.json",
+      "implementation_validation_directory": "HCR-Evidence/r051-validation",
+      "legacy_python_entrypoint": null,
+      "release_manifest": "R051_MANIFEST.json",
+      "revision_references": ["r051"],
+      "run_status": "read_per_run_evidence",
+      "source_commit": null,
+      "source_commit_note": "Read the frozen per-run source and plan. Source validation is not a research result.",
+      "standalone_python_entrypoint": "Run-HCR-R051.py"
+    },
+    {
+      "current_python_entrypoint": null,
+      "default_dispatcher_promoted": false,
+      "design": "experiments/exp-33-array-roles/design.ko.md",
+      "directory": "experiments/exp-33-array-roles",
+      "evidence_directory": "HCR-Evidence/exp33",
+      "execution_status": "standalone_candidate_contract",
+      "experiment_id": "EXP-33",
+      "frozen_design": "experiments/exp-33-array-roles/frozen_spec.json",
+      "implementation_validation_directory": "HCR-Evidence/r052-validation",
+      "legacy_python_entrypoint": null,
+      "release_manifest": "R052_MANIFEST.json",
+      "revision_references": ["r052"],
+      "run_status": "read_per_run_evidence",
+      "source_commit": null,
+      "source_commit_note": "Read the frozen per-run source and plan; hypothesis agreement is not an audit requirement.",
+      "standalone_python_entrypoint": "Run-HCR-R052.py"
+    }
+  ],
+  "inventory_commit": "afb5d5e5b67906b7697f16163e166f59b17e1655",
+  "inventory_commit_scope": "repository listing only; never substituted for a run source commit",
+  "layout_schema": "hcc-layout-v3-catalog",
+  "schema": "hcc-experiment-index-v1"
+}

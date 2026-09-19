@@ -1,0 +1,1 @@
+{"arm":"start_edge","automatic_retry":false,"baseline_sha256":"f7fd217a5bf6fae54c80088caf422983cbad951aaedca433ecc299c6e7d2c682","case_id":"r052-c003","measurement_calls":0,"observation":{"edges":[{"id":"z-edge","score":0.02,"source":"v1","target":"v2"},{"id":"a-edge","score":1.0,"source":"v0","target":"v1"}],"episode_id":"r052-c003","goal":"v2","revision":1,"start":"v0"}}

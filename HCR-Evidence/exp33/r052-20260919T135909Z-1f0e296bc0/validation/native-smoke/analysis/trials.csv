@@ -1,0 +1,9 @@
+﻿case_id,strength,array_order,top_down,arm,raw_value,proof_valid,failure_class,edge_conflicts,accepted,adopted_correct,restarts,changed_roles,additional_kernel_ticks,additional_signal_transmissions
+r052-c000,0.02,path,False,hold,False,False,proof_construction_failure,0,False,,0,,0,0
+r052-c000,0.02,path,False,revision_only,False,False,proof_construction_failure,0,False,,1,,37,148
+r052-c000,0.02,path,False,start_edge,True,True,supported_adoption,0,True,True,1,start_edge,47,188
+r052-c000,0.02,path,False,goal_edge,True,True,supported_adoption,0,True,True,1,goal_edge,44,176
+r052-c002,0.02,swapped,False,hold,False,False,proof_construction_failure,0,False,,0,,0,0
+r052-c002,0.02,swapped,False,revision_only,False,False,proof_construction_failure,0,False,,1,,37,148
+r052-c002,0.02,swapped,False,start_edge,True,True,supported_adoption,0,True,True,1,start_edge,47,188
+r052-c002,0.02,swapped,False,goal_edge,True,True,supported_adoption,0,True,True,1,goal_edge,44,176
