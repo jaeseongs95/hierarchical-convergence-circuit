@@ -1,0 +1,257 @@
+{
+  "schemaVersion": "1.0.0",
+  "ok": true,
+  "output": {
+    "schemaVersion": "1.0.0",
+    "workspaceRoot": "D:\\codex\\AI논문\\hierarchical-convergence-circuit",
+    "instructionFileManifest": [
+      {
+        "path": "D:\\codex\\AI논문\\AGENTS.md",
+        "kind": "agents",
+        "replacesSiblingAgents": false,
+        "size": 14068,
+        "sha256": "8616e5bb09ddc49f50bccfbec98b66392f53efab1e315ff976e5c767543dde0b",
+        "precedence": 1
+      }
+    ],
+    "targets": [
+      {
+        "requestedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\tools\\r065_information",
+        "resolvedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\tools\\r065_information",
+        "exists": false,
+        "instructionChain": [
+          {
+            "path": "D:\\codex\\AI논문\\AGENTS.md",
+            "kind": "agents",
+            "replacesSiblingAgents": false,
+            "size": 14068,
+            "sha256": "8616e5bb09ddc49f50bccfbec98b66392f53efab1e315ff976e5c767543dde0b",
+            "precedence": 1
+          }
+        ],
+        "activeRules": [
+          {
+            "ruleId": "project-research",
+            "summary": "원자료 보존·조건 동결·원클릭 검증·한국어 기록; 사용자 대화의 명시적 턴 권한으로 commit/main 병합/push",
+            "sourcePath": "D:/codex/AI논문/AGENTS.md",
+            "sourceLocator": "D:/codex/AI논문/AGENTS.md:167"
+          }
+        ],
+        "overriddenRules": [],
+        "unresolvedConflicts": []
+      },
+      {
+        "requestedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\experiments\\exp-46-information-boundary",
+        "resolvedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\experiments\\exp-46-information-boundary",
+        "exists": false,
+        "instructionChain": [
+          {
+            "path": "D:\\codex\\AI논문\\AGENTS.md",
+            "kind": "agents",
+            "replacesSiblingAgents": false,
+            "size": 14068,
+            "sha256": "8616e5bb09ddc49f50bccfbec98b66392f53efab1e315ff976e5c767543dde0b",
+            "precedence": 1
+          }
+        ],
+        "activeRules": [
+          {
+            "ruleId": "project-research",
+            "summary": "원자료 보존·조건 동결·원클릭 검증·한국어 기록; 사용자 대화의 명시적 턴 권한으로 commit/main 병합/push",
+            "sourcePath": "D:/codex/AI논문/AGENTS.md",
+            "sourceLocator": "D:/codex/AI논문/AGENTS.md:167"
+          }
+        ],
+        "overriddenRules": [],
+        "unresolvedConflicts": []
+      },
+      {
+        "requestedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\experiments\\INDEX.json",
+        "resolvedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\experiments\\INDEX.json",
+        "exists": true,
+        "instructionChain": [
+          {
+            "path": "D:\\codex\\AI논문\\AGENTS.md",
+            "kind": "agents",
+            "replacesSiblingAgents": false,
+            "size": 14068,
+            "sha256": "8616e5bb09ddc49f50bccfbec98b66392f53efab1e315ff976e5c767543dde0b",
+            "precedence": 1
+          }
+        ],
+        "activeRules": [
+          {
+            "ruleId": "project-research",
+            "summary": "원자료 보존·조건 동결·원클릭 검증·한국어 기록; 사용자 대화의 명시적 턴 권한으로 commit/main 병합/push",
+            "sourcePath": "D:/codex/AI논문/AGENTS.md",
+            "sourceLocator": "D:/codex/AI논문/AGENTS.md:167"
+          }
+        ],
+        "overriddenRules": [],
+        "unresolvedConflicts": []
+      },
+      {
+        "requestedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\experiments\\INDEX.ko.md",
+        "resolvedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\experiments\\INDEX.ko.md",
+        "exists": true,
+        "instructionChain": [
+          {
+            "path": "D:\\codex\\AI논문\\AGENTS.md",
+            "kind": "agents",
+            "replacesSiblingAgents": false,
+            "size": 14068,
+            "sha256": "8616e5bb09ddc49f50bccfbec98b66392f53efab1e315ff976e5c767543dde0b",
+            "precedence": 1
+          }
+        ],
+        "activeRules": [
+          {
+            "ruleId": "project-research",
+            "summary": "원자료 보존·조건 동결·원클릭 검증·한국어 기록; 사용자 대화의 명시적 턴 권한으로 commit/main 병합/push",
+            "sourcePath": "D:/codex/AI논문/AGENTS.md",
+            "sourceLocator": "D:/codex/AI논문/AGENTS.md:167"
+          }
+        ],
+        "overriddenRules": [],
+        "unresolvedConflicts": []
+      },
+      {
+        "requestedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\Run-HCR-R065.py",
+        "resolvedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\Run-HCR-R065.py",
+        "exists": false,
+        "instructionChain": [
+          {
+            "path": "D:\\codex\\AI논문\\AGENTS.md",
+            "kind": "agents",
+            "replacesSiblingAgents": false,
+            "size": 14068,
+            "sha256": "8616e5bb09ddc49f50bccfbec98b66392f53efab1e315ff976e5c767543dde0b",
+            "precedence": 1
+          }
+        ],
+        "activeRules": [
+          {
+            "ruleId": "project-research",
+            "summary": "원자료 보존·조건 동결·원클릭 검증·한국어 기록; 사용자 대화의 명시적 턴 권한으로 commit/main 병합/push",
+            "sourcePath": "D:/codex/AI논문/AGENTS.md",
+            "sourceLocator": "D:/codex/AI논문/AGENTS.md:167"
+          }
+        ],
+        "overriddenRules": [],
+        "unresolvedConflicts": []
+      },
+      {
+        "requestedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\Run-HCR-R065.cmd",
+        "resolvedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\Run-HCR-R065.cmd",
+        "exists": false,
+        "instructionChain": [
+          {
+            "path": "D:\\codex\\AI논문\\AGENTS.md",
+            "kind": "agents",
+            "replacesSiblingAgents": false,
+            "size": 14068,
+            "sha256": "8616e5bb09ddc49f50bccfbec98b66392f53efab1e315ff976e5c767543dde0b",
+            "precedence": 1
+          }
+        ],
+        "activeRules": [
+          {
+            "ruleId": "project-research",
+            "summary": "원자료 보존·조건 동결·원클릭 검증·한국어 기록; 사용자 대화의 명시적 턴 권한으로 commit/main 병합/push",
+            "sourcePath": "D:/codex/AI논문/AGENTS.md",
+            "sourceLocator": "D:/codex/AI논문/AGENTS.md:167"
+          }
+        ],
+        "overriddenRules": [],
+        "unresolvedConflicts": []
+      },
+      {
+        "requestedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\R065_MANIFEST.json",
+        "resolvedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\R065_MANIFEST.json",
+        "exists": false,
+        "instructionChain": [
+          {
+            "path": "D:\\codex\\AI논문\\AGENTS.md",
+            "kind": "agents",
+            "replacesSiblingAgents": false,
+            "size": 14068,
+            "sha256": "8616e5bb09ddc49f50bccfbec98b66392f53efab1e315ff976e5c767543dde0b",
+            "precedence": 1
+          }
+        ],
+        "activeRules": [
+          {
+            "ruleId": "project-research",
+            "summary": "원자료 보존·조건 동결·원클릭 검증·한국어 기록; 사용자 대화의 명시적 턴 권한으로 commit/main 병합/push",
+            "sourcePath": "D:/codex/AI논문/AGENTS.md",
+            "sourceLocator": "D:/codex/AI논문/AGENTS.md:167"
+          }
+        ],
+        "overriddenRules": [],
+        "unresolvedConflicts": []
+      },
+      {
+        "requestedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\HCR-Evidence\\exp46",
+        "resolvedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\HCR-Evidence\\exp46",
+        "exists": false,
+        "instructionChain": [
+          {
+            "path": "D:\\codex\\AI논문\\AGENTS.md",
+            "kind": "agents",
+            "replacesSiblingAgents": false,
+            "size": 14068,
+            "sha256": "8616e5bb09ddc49f50bccfbec98b66392f53efab1e315ff976e5c767543dde0b",
+            "precedence": 1
+          }
+        ],
+        "activeRules": [
+          {
+            "ruleId": "project-research",
+            "summary": "원자료 보존·조건 동결·원클릭 검증·한국어 기록; 사용자 대화의 명시적 턴 권한으로 commit/main 병합/push",
+            "sourcePath": "D:/codex/AI논문/AGENTS.md",
+            "sourceLocator": "D:/codex/AI논문/AGENTS.md:167"
+          }
+        ],
+        "overriddenRules": [],
+        "unresolvedConflicts": []
+      },
+      {
+        "requestedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\HCR-Evidence\\r065-validation",
+        "resolvedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\HCR-Evidence\\r065-validation",
+        "exists": false,
+        "instructionChain": [
+          {
+            "path": "D:\\codex\\AI논문\\AGENTS.md",
+            "kind": "agents",
+            "replacesSiblingAgents": false,
+            "size": 14068,
+            "sha256": "8616e5bb09ddc49f50bccfbec98b66392f53efab1e315ff976e5c767543dde0b",
+            "precedence": 1
+          }
+        ],
+        "activeRules": [
+          {
+            "ruleId": "project-research",
+            "summary": "원자료 보존·조건 동결·원클릭 검증·한국어 기록; 사용자 대화의 명시적 턴 권한으로 commit/main 병합/push",
+            "sourcePath": "D:/codex/AI논문/AGENTS.md",
+            "sourceLocator": "D:/codex/AI논문/AGENTS.md:167"
+          }
+        ],
+        "overriddenRules": [],
+        "unresolvedConflicts": []
+      }
+    ],
+    "findings": [
+      "Target does not exist; future nested instructions cannot be observed: D:\\codex\\AI논문\\hierarchical-convergence-circuit\\tools\\r065_information",
+      "Target does not exist; future nested instructions cannot be observed: D:\\codex\\AI논문\\hierarchical-convergence-circuit\\experiments\\exp-46-information-boundary",
+      "Target does not exist; future nested instructions cannot be observed: D:\\codex\\AI논문\\hierarchical-convergence-circuit\\Run-HCR-R065.py",
+      "Target does not exist; future nested instructions cannot be observed: D:\\codex\\AI논문\\hierarchical-convergence-circuit\\Run-HCR-R065.cmd",
+      "Target does not exist; future nested instructions cannot be observed: D:\\codex\\AI논문\\hierarchical-convergence-circuit\\R065_MANIFEST.json",
+      "Target does not exist; future nested instructions cannot be observed: D:\\codex\\AI논문\\hierarchical-convergence-circuit\\HCR-Evidence\\exp46",
+      "Target does not exist; future nested instructions cannot be observed: D:\\codex\\AI논문\\hierarchical-convergence-circuit\\HCR-Evidence\\r065-validation"
+    ],
+    "analysisStatus": "complete",
+    "verdict": "PASS"
+  },
+  "error": null
+}

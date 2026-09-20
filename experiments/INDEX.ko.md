@@ -45,3 +45,5 @@ EXP-43의 독립 실행은 [Run-HCR-R062.cmd](../Run-HCR-R062.cmd), 설계는 [n
 EXP-44의 독립 실행은 [Run-HCR-R063.cmd](../Run-HCR-R063.cmd), 설계는 [회로 형성 전후](exp-44-circuit-formation/design.ko.md)를 따른다.
 
 EXP-45 / R064: [오류 교정·재노출 유지](exp-45-error-retention/design.ko.md). 독립 진입점 `Run-HCR-R064.cmd`; 기본 dispatcher는 그대로 유지한다.
+
+EXP-46 / R065: [기억 정보 경계 재분석](exp-46-information-boundary/design.ko.md). `Run-HCR-R065.cmd`; 기존 R064 packet 재채점이며 새 native 연구 실행은 없다.

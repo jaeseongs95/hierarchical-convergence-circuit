@@ -1,0 +1,164 @@
+{
+  "schemaVersion": "1.0.0",
+  "target": {
+    "kind": "artifact",
+    "identifier": "HCR-Evidence/r065-validation/acceptance-target.json",
+    "digest": "sha256:9d15acaef990e316893fbc4ec8e442c91e142b3f7b76e8b082574e9a493e55c1"
+  },
+  "criteria": [
+    {
+      "criterionId": "AC-001",
+      "statement": "[AC-001] R064 원자료와 실행 source를 hash로 고정하고 observation→feedback→patch→persistent memory→fresh 판단 정보 흐름 및 필드의 계산/무결성 용도를 추적한다.",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "E-001",
+        "E-002"
+      ],
+      "observedResult": "Read source paths: learning gate, activation inputs, persistent fields, full-session history and fresh evaluation boundary.; Raw correction adds only consumed_feedback, patches and version; compiled circuits/pending unchanged; full session preserves feedback.",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    },
+    {
+      "criterionId": "AC-002",
+      "statement": "[AC-002] 기존 frozen packet 12개 각각을 동일 입력·memory·packet으로 두 참조 세계에서 재평가하고 독립 논리 검산 및 부재/변조 거부 검사를 통과한다. 새 native 실행·독립 표본 수는 0이다.",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "E-003",
+        "E-004"
+      ],
+      "observedResult": "12 existing packets / 24 reference scores, R064 raw formula replay matches prior summary, nine mutations rejected, zero new samples/inference.; Four synthetic chain rows, three readout boundaries, two invalid truth rejection cases.",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    },
+    {
+      "criterionId": "AC-003",
+      "statement": "[AC-003] 원클릭 진입점, source/input/bundle hash와 ZIP, 색인, 기존 evidence 보존 및 최종 core 회귀 1회를 검증한다.",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "E-005",
+        "E-006",
+        "E-007"
+      ],
+      "observedResult": "602 tests: 599 pass, three preexisting skips, zero failures or new skips; single final regression.; 29 new bundle files and exact ZIP, 1418 parent files, frozen source and index verified; patterns unchanged and actual reuse observed in three ON repeat cells.; 26385 prior out-of-scope files unchanged; all staged content within scope and outside exclusions. Working-tree skill BLOCKED retained separately for identical preexisting excluded ZIP.",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    },
+    {
+      "criterionId": "AC-004",
+      "statement": "[AC-004] 구조 재사용 유지와 세계 사실 교정 유지를 구분하고 재분석의 주장 한계 및 정보량을 통제할 다음 사실-memory baseline 설계를 기록한다.",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "E-008",
+        "E-009"
+      ],
+      "observedResult": "Observations, inference, alternatives, claim limits and zero new research execution distinguished.; Future context/epoch factual-memory baseline controls information exposure, storage/retrieval and explicit input intervention.",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    }
+  ],
+  "verifiedEvidenceIndex": [
+    {
+      "evidenceId": "E-001",
+      "kind": "file",
+      "locator": "experiments/exp-46-information-boundary/FLOW.ko.md",
+      "digest": "sha256:214dc9998e13c239429d660dca3b09665f305870c1f63ac60b83ae8f65457ab2",
+      "targetDigest": "sha256:9d15acaef990e316893fbc4ec8e442c91e142b3f7b76e8b082574e9a493e55c1",
+      "criterionIds": [
+        "AC-001"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "E-002",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp46/r065-20260920T054159Z-5a8a87d609/memory_flow.json",
+      "digest": "sha256:4c36f863e602cf6df52b099fa0ba8edf7d089762b00c97f7601d1f23a02e3238",
+      "targetDigest": "sha256:9d15acaef990e316893fbc4ec8e442c91e142b3f7b76e8b082574e9a493e55c1",
+      "criterionIds": [
+        "AC-001"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "E-003",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp46/r065-20260920T054159Z-5a8a87d609/verification.json",
+      "digest": "sha256:ff4c806f2d7c90632c72f62ccf32dcdf657fc71a03d537a20cf54c3987bd5946",
+      "targetDigest": "sha256:9d15acaef990e316893fbc4ec8e442c91e142b3f7b76e8b082574e9a493e55c1",
+      "criterionIds": [
+        "AC-002"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "E-004",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp46/r065-20260920T054159Z-5a8a87d609/validation/selftest.json",
+      "digest": "sha256:45d16c1610d822ca8a92ebf7cf10c4cbed361ccc72606835752841ebd7475793",
+      "targetDigest": "sha256:9d15acaef990e316893fbc4ec8e442c91e142b3f7b76e8b082574e9a493e55c1",
+      "criterionIds": [
+        "AC-002"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "E-005",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp46/r065-20260920T054159Z-5a8a87d609/validation/core_regression.json",
+      "digest": "sha256:d5daace122f8617bfd42c41ab59ddb55331aae622d85dc3ab6f6439a54928ab9",
+      "targetDigest": "sha256:9d15acaef990e316893fbc4ec8e442c91e142b3f7b76e8b082574e9a493e55c1",
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "E-006",
+      "kind": "file",
+      "locator": "HCR-Evidence/r065-validation/delivery-verification.json",
+      "digest": "sha256:0f03334511522711d3bf973d7358abfd39eaf857851cfd656a65df087f1a6644",
+      "targetDigest": "sha256:9d15acaef990e316893fbc4ec8e442c91e142b3f7b76e8b082574e9a493e55c1",
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "E-007",
+      "kind": "file",
+      "locator": "HCR-Evidence/r065-validation/scope-evidence.json",
+      "digest": "sha256:a993c6c4f5d492315fe9d34ee3eeeb4cb93d26864e0a2d057bcf20f8d36485bf",
+      "targetDigest": "sha256:9d15acaef990e316893fbc4ec8e442c91e142b3f7b76e8b082574e9a493e55c1",
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "E-008",
+      "kind": "file",
+      "locator": "experiments/exp-46-information-boundary/RESULTS.ko.md",
+      "digest": "sha256:2d463181f092a3eea097dc11831e7f357802842e5e984dd532e0e81fd84a5722",
+      "targetDigest": "sha256:9d15acaef990e316893fbc4ec8e442c91e142b3f7b76e8b082574e9a493e55c1",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "E-009",
+      "kind": "file",
+      "locator": "experiments/exp-46-information-boundary/NEXT.ko.md",
+      "digest": "sha256:08009f5c35d6df18843894ddb12d2d8a2d404d3ad8b9f55ce4b6675fb14d055d",
+      "targetDigest": "sha256:9d15acaef990e316893fbc4ec8e442c91e142b3f7b76e8b082574e9a493e55c1",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports"
+    }
+  ],
+  "unresolvedCriteria": [],
+  "limitations": [
+    "기존 R064 원자료의 재분석으로 새 native 연구 실행/독립 표본 0",
+    "별도 로직·프로세스 검산이며 독립 연구자 감사 아님",
+    "working-tree scope 스킬은 기존 동일 ZIP의 excluded 우선 분류로 BLOCKED; 판정 보존, 모든 이전 범위 밖 파일 bytes와 staged scope를 별도로 직접 검증",
+    "open/closed truth 재부착은 동시에 가능한 동일 학습 이력이나 실제 world intervention의 증거가 아님"
+  ],
+  "verdict": "PASS"
+}

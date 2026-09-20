@@ -1,0 +1,16 @@
+{
+  "schema": "hcc-r065-acceptance-target-v1",
+  "files": {
+    "R065_MANIFEST.json": "sha256:6dedfba9f84518c26288afef895621568b2d82f233bfe79017ecfc5d1eb0a0eb",
+    "HCR-Evidence/exp46/r065-20260920T054159Z-5a8a87d609/source_manifest.json": "sha256:cc347499ccd49a91e8945949c3061fa3dca4b7437c23c5a1dbf83d54b6254639",
+    "HCR-Evidence/exp46/r065-20260920T054159Z-5a8a87d609/bundle_manifest.json": "sha256:7e3fe82772b5048423def7d1c07dd1bd627365d13895b9ac8c96b02e82beec92",
+    "experiments/exp-46-information-boundary/RESULTS.ko.md": "sha256:2d463181f092a3eea097dc11831e7f357802842e5e984dd532e0e81fd84a5722",
+    "experiments/exp-46-information-boundary/NEXT.ko.md": "sha256:08009f5c35d6df18843894ddb12d2d8a2d404d3ad8b9f55ce4b6675fb14d055d",
+    "experiments/exp-46-information-boundary/VALIDATION.ko.md": "sha256:4d9b8cbcf423187290d4ce790c3dc86b889a42ae449858c98f264e4dd08fac7b",
+    "HCR-Evidence/r065-validation/verify-delivery.py": "sha256:f66b8c8ac63d899958957a52ce63474859ea30a843a3f393aeb876d751e4cbb7",
+    "HCR-Evidence/r065-validation/delivery-verification.json": "sha256:0f03334511522711d3bf973d7358abfd39eaf857851cfd656a65df087f1a6644",
+    "HCR-Evidence/r065-validation/scope-evidence.json": "sha256:a993c6c4f5d492315fe9d34ee3eeeb4cb93d26864e0a2d057bcf20f8d36485bf",
+    "experiments/INDEX.json": "sha256:4735f4de601a14f18afe580741ce873e002566b7d6c128cb88b5b22fde59fd0c",
+    "experiments/INDEX.ko.md": "sha256:69afd84c555760d9020d7bca3f2d715eaa84b976fbc59c2b037f5a01351c6a98"
+  }
+}

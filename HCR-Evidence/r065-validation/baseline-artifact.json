@@ -1,0 +1,7 @@
+{
+  "manifestSha256": "250a3005fb0bd747e20b00edc38fbe6ac217a9f7a58ecdae2771f7b0f40a651b",
+  "bytesSha256": "438021b55253886bbd1a47523f49f759d14d4ccbfa9f1dd91bdaf25857b4ddf3",
+  "storage": "baseline.json.gz",
+  "compression": "gzip; decompression reproduces exact captured bytes",
+  "compressedSha256": "8057b3504d3ffacafccded28a95c489b4636d1953c95dc60ecfa7312c0ceb8d5"
+}
