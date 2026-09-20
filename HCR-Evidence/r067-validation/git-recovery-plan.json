@@ -1,0 +1,6 @@
+{
+  "base": "108f8e42021704fe272b311ba8043addd95f0607",
+  "research_commit": "19439ff19cc08178fe9e5fd09bd024346766cc46",
+  "procedure": "If research content must be withdrawn, create a new revert commit for the research commit and any delivery metadata commit after checking later changes. Do not reset or force-push.",
+  "check": "git-recovery-check.json"
+}

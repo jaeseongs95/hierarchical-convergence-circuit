@@ -1,0 +1,9 @@
+{
+  "base": "108f8e42021704fe272b311ba8043addd95f0607",
+  "research_commit": "19439ff19cc08178fe9e5fd09bd024346766cc46",
+  "reverse_patch_sha256": "sha256:7f03aadddf041f6c94cddadb44d9671d8a8dd4d920dd5e5fd914ba0bb2299051",
+  "command": "git diff --binary BASE RESEARCH_COMMIT | git apply --reverse --check --cached -",
+  "returncode": 0,
+  "working_tree_changed": false,
+  "limitation": "Read-only reverse patch applicability check, not a performed rollback or remote restore. Recovery uses a new revert commit; no force push."
+}

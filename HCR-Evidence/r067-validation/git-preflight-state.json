@@ -1,0 +1,7 @@
+{
+  "remote_url": "https://github.com/jaeseongs95/hierarchical-convergence-circuit.git",
+  "target": "https://github.com/jaeseongs95/hierarchical-convergence-circuit.git/refs/heads/main",
+  "current_remote": "108f8e42021704fe272b311ba8043addd95f0607",
+  "validated_research_commit": "19439ff19cc08178fe9e5fd09bd024346766cc46",
+  "delivery": "Research commit plus preflight metadata only; no further implementation changes."
+}
