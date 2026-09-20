@@ -1,0 +1,4 @@
+# Preserve logs and snapshots as evidence; never include Python bytecode.
+!*.log
+__pycache__/
+*.py[cod]

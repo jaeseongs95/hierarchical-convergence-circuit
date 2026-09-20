@@ -1,0 +1,216 @@
+{
+  "schemaVersion": "1.0.0",
+  "taskEnvelope": {
+    "schemaVersion": "1.0.0",
+    "taskId": "hcc-r064",
+    "objective": "동일 R063 학습 memory에서 외부 오류 feedback·같은관측/수정관측 재개·frozen 재노출을 분리해 수정과 유지 여부를 판별",
+    "scope": {
+      "included": [
+        "tools/r064_retention/",
+        "experiments/exp-45-error-retention/",
+        "experiments/INDEX.json",
+        "Run-HCR-R064.py",
+        "Run-HCR-R064.cmd",
+        "R064_MANIFEST.json",
+        "HCR-Evidence/exp45/",
+        "HCR-Evidence/r064-validation/",
+        "experiments/INDEX.ko.md"
+      ],
+      "excluded": [
+        "src/",
+        "tests/",
+        "archive/"
+      ]
+    },
+    "acceptanceCriteria": [
+      "[AC-001] R063 seed 출처를 검산하고 최초 ADAPT 1회·조건부 재개 2군·frozen 평가 12조건을 사전 동결된 단일 연구 실행으로 기록한다.",
+      "[AC-002] 외부 truth·feedback·요청 관측과 native memory·상태·proof·지지·채택을 독립 검산하고 합성 분기·변조 검사 및 최종 core 회귀 1회를 수행한다.",
+      "[AC-003] 원본 core·과거 evidence·manifest를 보존하며 source·parent·raw·bundle·ZIP·변경 범위를 검증한다.",
+      "[AC-004] 오류·memory 약화·재개·관측 교정·재노출 행동을 구별하여 예측을 판정하고 한계 및 다음 판별 질문을 기록한다."
+    ],
+    "riskLevel": "medium",
+    "workUnits": [
+      {
+        "id": "WU-001",
+        "objective": "조건 동결, 구현, 단일 실행 및 검증과 결과 보고",
+        "dependencies": [],
+        "writeTargets": [
+          "tools/r064_retention/",
+          "experiments/exp-45-error-retention/",
+          "experiments/INDEX.json",
+          "Run-HCR-R064.py",
+          "Run-HCR-R064.cmd",
+          "R064_MANIFEST.json",
+          "HCR-Evidence/exp45/",
+          "HCR-Evidence/r064-validation/",
+          "experiments/INDEX.ko.md"
+        ]
+      }
+    ],
+    "requiredCapabilities": [
+      "minimal-implementation",
+      "change-scope-baseline-capture",
+      "change-scope-assurance",
+      "acceptance-evidence-validation"
+    ],
+    "constraints": [
+      "최초 ADAPT 1회, 같은관측/수정관측 재개는 유효 요청이 있을 때 각1회, frozen 평가12회; 자동 retry·추가 학습 없음",
+      "R063 memory/3을 시작점으로 원본 API를 사용하고 src/tests·과거 raw·manifest는 수정하지 않음",
+      "구현 합성 실패 수정은 연구 전 허용하며 최초 evidence 보존; 연구 시작 뒤 source·spec·metric 의미 변경 및 연구 재실행 없음",
+      "외부 truth는 별도 reference 프로세스에서만 읽음; host는 native 판단·proof·memory를 직접 보정하지 않음",
+      "검산 독립성은 별도 공식·프로세스이며 독립 연구자 감사와 다름; 장기 일반화·에너지 효과는 미측정"
+    ],
+    "authorization": {
+      "allowedActions": [
+        "research-edit-execute-verify",
+        "commit-merge-main-clean-local-branch-push-origin-main"
+      ],
+      "prohibitedActions": [
+        "force-push",
+        "overwrite-existing-evidence"
+      ],
+      "approvalRequired": [
+        "install-deploy-tag"
+      ]
+    },
+    "decision": {
+      "complexity": "simple",
+      "hasConflicts": false
+    },
+    "orchestration": {
+      "requested": true,
+      "mcpAvailable": true
+    }
+  },
+  "target": {
+    "kind": "artifact",
+    "identifier": "HCR-Evidence/r064-validation/acceptance-target.json",
+    "digest": "sha256:244af790f4c4e2f159ebe535b882553da73e6b3bf1b06a5fb6d1b7c6c055e6ff"
+  },
+  "evidence": [
+    {
+      "id": "E-001",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp45/r064-20260920T024825Z-d995fcc733/summary.json",
+      "digest": "sha256:de70be56924368f817cf8ba955f9e2a5bac37466bf9f4d795e8c9737d15ced1c",
+      "targetDigest": "sha256:244af790f4c4e2f159ebe535b882553da73e6b3bf1b06a5fb6d1b7c6c055e6ff",
+      "verified": true,
+      "criterionIds": [
+        "AC-001"
+      ],
+      "direction": "supports",
+      "observedResult": "Initial and two revision branches plus 12 frozen conditions independently verified; parent native provenance replayed."
+    },
+    {
+      "id": "E-002",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp45/r064-20260920T024825Z-d995fcc733/validation/smoke_request/summary.json",
+      "digest": "sha256:5bb9fe23239d9841de79a912e198d1491fc1b4b344f729d81ffe95bd670e4601",
+      "targetDigest": "sha256:244af790f4c4e2f159ebe535b882553da73e6b3bf1b06a5fb6d1b7c6c055e6ff",
+      "verified": true,
+      "criterionIds": [
+        "AC-002"
+      ],
+      "direction": "supports",
+      "observedResult": "Synthetic request branch: ADAPT 3, frozen 6, 46 rejected mutations."
+    },
+    {
+      "id": "E-003",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp45/r064-20260920T024825Z-d995fcc733/validation/smoke_no_request/summary.json",
+      "digest": "sha256:b7da38de5641eafbe6c3698866d5c91bc51ea5a97924301a1032f92cc2eaf469",
+      "targetDigest": "sha256:244af790f4c4e2f159ebe535b882553da73e6b3bf1b06a5fb6d1b7c6c055e6ff",
+      "verified": true,
+      "criterionIds": [
+        "AC-002"
+      ],
+      "direction": "supports",
+      "observedResult": "Synthetic no-request branch: ADAPT 1, frozen 6, 44 rejected mutations; two conditional executions omitted."
+    },
+    {
+      "id": "E-004",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp45/r064-20260920T024825Z-d995fcc733/validation/core_regression.json",
+      "digest": "sha256:d5daace122f8617bfd42c41ab59ddb55331aae622d85dc3ab6f6439a54928ab9",
+      "targetDigest": "sha256:244af790f4c4e2f159ebe535b882553da73e6b3bf1b06a5fb6d1b7c6c055e6ff",
+      "verified": true,
+      "criterionIds": [
+        "AC-002"
+      ],
+      "direction": "supports",
+      "observedResult": "One final core regression: 602 tests, 599 passes, 3 preexisting skips, zero new skips."
+    },
+    {
+      "id": "E-005",
+      "kind": "file",
+      "locator": "HCR-Evidence/r064-validation/delivery-verification.json",
+      "digest": "sha256:22bd1a9644421128719d7768c58d78532b4b849a11fa1f8e1e083d5e4211874f",
+      "targetDigest": "sha256:244af790f4c4e2f159ebe535b882553da73e6b3bf1b06a5fb6d1b7c6c055e6ff",
+      "verified": true,
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "1418 bundle files, source/raw/parent hashes and ZIP verified; native event metrics independently recounted."
+    },
+    {
+      "id": "E-006",
+      "kind": "file",
+      "locator": "HCR-Evidence/r064-validation/scope-report.json",
+      "digest": "sha256:4f2500c7cbcb286b22355c64dcd2f0b5b243ec6abd05bb088046019f119376cd",
+      "targetDigest": "sha256:244af790f4c4e2f159ebe535b882553da73e6b3bf1b06a5fb6d1b7c6c055e6ff",
+      "verified": true,
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "PASS: excluded, unplanned, preexisting-overlap and ownership-unknown are all zero."
+    },
+    {
+      "id": "E-007",
+      "kind": "file",
+      "locator": "experiments/exp-45-error-retention/RESULTS.ko.md",
+      "digest": "sha256:4dcd57d0ddf1e3f10366710314f71c1568bdf990de47f6240421ded855334548",
+      "targetDigest": "sha256:244af790f4c4e2f159ebe535b882553da73e6b3bf1b06a5fb6d1b7c6c055e6ff",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Memory change and corrected-observation correction supported; same-observation correction and retained behavior falsified in this fixed toy condition."
+    },
+    {
+      "id": "E-008",
+      "kind": "file",
+      "locator": "experiments/exp-45-error-retention/NEXT.ko.md",
+      "digest": "sha256:4f2da71d9b3c2cf037d3f7d111b7156537c3d6069924d11f331ee7734157ef6e",
+      "targetDigest": "sha256:244af790f4c4e2f159ebe535b882553da73e6b3bf1b06a5fb6d1b7c6c055e6ff",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Next bounded information-flow audit distinguishes structural reuse memory from corrected world-fact retention."
+    },
+    {
+      "id": "E-009",
+      "kind": "file",
+      "locator": "HCR-Evidence/r064-validation/memory-and-activation-details.json",
+      "digest": "sha256:219519a9c7e854f43d3c7f617649b844bcaf6489a09b41252f3e36515b439120",
+      "targetDigest": "sha256:244af790f4c4e2f159ebe535b882553da73e6b3bf1b06a5fb6d1b7c6c055e6ff",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Same raw reanalysis: correction feedback adds only version/consumption/patch history; circuit and pending unchanged; pool remains eligible after weakening."
+    }
+  ],
+  "verificationCommands": [],
+  "knownLimitations": [
+    "고정 toy world와 단일 오류 feedback 사례; 합성·부모 재검산은 새 연구 표본 아님",
+    "별도 수식·프로세스 검산이며 독립 연구자 감사 아님",
+    "장기 유지·반복 오류·LLM/인간 인지·에너지·peak memory는 미측정"
+  ],
+  "criterionOverrides": []
+}

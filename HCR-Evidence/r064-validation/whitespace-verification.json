@@ -1,0 +1,17 @@
+{
+  "initial_check_exit": 2,
+  "crlf_aware_check_exit": 2,
+  "remaining_warning_count": 30,
+  "all_remaining_warnings_from_unchanged_historical_source": true,
+  "historical_source_hashes": {
+    "HCR-Evidence/exp45/r064-20260920T024825Z-d995fcc733/source/experiments/exp-31-review-boundary/design.ko.md": "a9f3d7ca786a8d26a3afca77a65a668d92e7d01762d5bf34e047f49235a82713",
+    "HCR-Evidence/exp45/r064-20260920T024825Z-d995fcc733/source/tests/test_r021_sessions.py": "80da8aef9c8e9df76c88b41483cc1cac5803ad977fe1ef8e52b2c9c44d1cad7a",
+    "HCR-Evidence/exp45/r064-20260920T024825Z-d995fcc733/validation/smoke_no_request/source/experiments/exp-31-review-boundary/design.ko.md": "a9f3d7ca786a8d26a3afca77a65a668d92e7d01762d5bf34e047f49235a82713",
+    "HCR-Evidence/exp45/r064-20260920T024825Z-d995fcc733/validation/smoke_no_request/source/tests/test_r021_sessions.py": "80da8aef9c8e9df76c88b41483cc1cac5803ad977fe1ef8e52b2c9c44d1cad7a",
+    "HCR-Evidence/exp45/r064-20260920T024825Z-d995fcc733/validation/smoke_request/source/experiments/exp-31-review-boundary/design.ko.md": "a9f3d7ca786a8d26a3afca77a65a668d92e7d01762d5bf34e047f49235a82713",
+    "HCR-Evidence/exp45/r064-20260920T024825Z-d995fcc733/validation/smoke_request/source/tests/test_r021_sessions.py": "80da8aef9c8e9df76c88b41483cc1cac5803ad977fe1ef8e52b2c9c44d1cad7a"
+  },
+  "new_implementation_and_docs_whitespace_pass": true,
+  "source_or_research_modified": false,
+  "explanation": "Byte-preserving historical source copies contain CRLF, existing Markdown hard-break spaces and an existing final blank line. Preserving these bytes is required; no source or evidence normalization was applied."
+}

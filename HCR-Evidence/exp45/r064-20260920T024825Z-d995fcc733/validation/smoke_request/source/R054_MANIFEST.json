@@ -1,0 +1,25 @@
+{
+  "schema": "hcc-r054-manifest-v1",
+  "contract": "r054-single-feedback-link-v1",
+  "parent_commit": "7786d52940f61c9259239c792baf0350093a6eea",
+  "hash_normalization": "CRLF to LF only",
+  "files": {
+    "experiments/exp-35-feedback-links/design.ko.md": "fb485cc88df619469c20040e52f44574b68718a9a8d2639593f84234c8c3413e",
+    "experiments/exp-35-feedback-links/frozen_spec.json": "1068cfd7386ea28684f4a88332dccacc66740198f7257df824eb7a21eefa418d",
+    "experiments/exp-35-feedback-links/ORCHESTRATION.ko.md": "532c7556c4ecb5c7d05c4eb6fc0fba547d6c9132d7842f01f0a546a911e738ff",
+    "HCR-Evidence/exp35/.gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "HCR-Evidence/exp35/.gitignore": "050c4c43407269dc8a0c7c332affc85b0ea2a431a61719285b827a005139dd63",
+    "HCR-Evidence/r054-validation/.gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "HCR-Evidence/r054-validation/.gitignore": "050c4c43407269dc8a0c7c332affc85b0ea2a431a61719285b827a005139dd63",
+    "Run-HCR-R054.cmd": "8418a8b539a8b3e5fad6c7df8aafb4842195c6c998e1f219cdb8901bc3893362",
+    "Run-HCR-R054.py": "ca4be9a1b2b889d759a397a457060c23602002150ce53b8e7d42b004a3c30b32",
+    "tools/r054_links/__init__.py": "46fd81b21a2e239659ef2a09e091816bf18a5494a3f74399e8a1a6b3327d5d95",
+    "tools/r054_links/audit.py": "e47edf5f0cd6249b585afec227e21b7ffd19cba8f907f061d897aaf535341084",
+    "tools/r054_links/bootstrap.py": "e880b49a2eb50292ba5040ab2b593d218fc0af9dce588c625616b2a4aed0247b",
+    "tools/r054_links/pipeline.py": "08c20671b1ee57da29981a249f7206004e1f3b044c126e51efd017e8b61daac0",
+    "tools/r054_links/selftest.py": "be6021c06e72e98f809db6d95227c7762b76fdc7ccfc7862b0f5889cdae06c77",
+    "tools/r054_links/tests/test_audit.py": "e049894ba75dad01c4f5b2568e8718ec6e2a4535940b8b61e3772c2c9096806a",
+    "tools/r054_links/tests/test_worker_pipeline.py": "6baf0453ae9a41b69c42e19c96674287b883ff91b5a1753f32cf140040f9ccc3",
+    "tools/r054_links/worker.py": "c707a1a81ca269b97a6796b6a915f3135d0295f0733aa1713f8e5a14178a32be"
+  }
+}

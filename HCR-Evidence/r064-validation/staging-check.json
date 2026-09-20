@@ -1,0 +1,8 @@
+{
+  "staged_files_before_receipt": 1454,
+  "all_in_scope": true,
+  "core_or_archive_staged": false,
+  "prior_baseline_preserved": true,
+  "remote_main_before_push": "04a9f9d834647fc025bebc83adb086fe67108b25",
+  "branch": "research/r064-error-retention"
+}

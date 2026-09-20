@@ -1,0 +1,177 @@
+{
+  "same_raw_reanalysis": true,
+  "new_research_execution": false,
+  "memory_changed_fields": {
+    "before_to_after_feedback": [
+      "circuits",
+      "consumed_feedback",
+      "patches",
+      "version"
+    ],
+    "after_feedback_to_after_correction": [
+      "consumed_feedback",
+      "patches",
+      "version"
+    ]
+  },
+  "pool": [
+    {
+      "snapshot": "before",
+      "pool_activations": [
+        [
+          {
+            "activation": 0.9956111261578813,
+            "binding": {
+              "edge_order": [
+                0,
+                1
+              ],
+              "observation_digest": "2a4e5043268d3ee1c614d68c85f403cd956f22b87f06cf5d8274e5a137053d0b",
+              "pattern_id": "pattern-d7053e8a62ed20d50b15444c",
+              "revision": 0,
+              "roles": [
+                [
+                  "R0",
+                  {
+                    "node_id": "binding:c883e90a8a71849a50bc9aa8:0",
+                    "revision": 0,
+                    "semantic_id": "v0"
+                  }
+                ],
+                [
+                  "R1",
+                  {
+                    "node_id": "binding:c883e90a8a71849a50bc9aa8:1",
+                    "revision": 0,
+                    "semantic_id": "v1"
+                  }
+                ],
+                [
+                  "R2",
+                  {
+                    "node_id": "binding:c883e90a8a71849a50bc9aa8:2",
+                    "revision": 0,
+                    "semantic_id": "v2"
+                  }
+                ]
+              ]
+            },
+            "circuit_id": "pattern-d7053e8a62ed20d50b15444c",
+            "circuit_version": 1,
+            "eligible": true,
+            "mismatch": 0.0,
+            "prior": 0.16499999999999998
+          }
+        ]
+      ]
+    },
+    {
+      "snapshot": "after_feedback",
+      "pool_activations": [
+        [
+          {
+            "activation": 0.994221227325771,
+            "binding": {
+              "edge_order": [
+                0,
+                1
+              ],
+              "observation_digest": "2a4e5043268d3ee1c614d68c85f403cd956f22b87f06cf5d8274e5a137053d0b",
+              "pattern_id": "pattern-d7053e8a62ed20d50b15444c",
+              "revision": 0,
+              "roles": [
+                [
+                  "R0",
+                  {
+                    "node_id": "binding:c883e90a8a71849a50bc9aa8:0",
+                    "revision": 0,
+                    "semantic_id": "v0"
+                  }
+                ],
+                [
+                  "R1",
+                  {
+                    "node_id": "binding:c883e90a8a71849a50bc9aa8:1",
+                    "revision": 0,
+                    "semantic_id": "v1"
+                  }
+                ],
+                [
+                  "R2",
+                  {
+                    "node_id": "binding:c883e90a8a71849a50bc9aa8:2",
+                    "revision": 0,
+                    "semantic_id": "v2"
+                  }
+                ]
+              ]
+            },
+            "circuit_id": "pattern-d7053e8a62ed20d50b15444c",
+            "circuit_version": 2,
+            "eligible": true,
+            "mismatch": 0.0,
+            "prior": 0.033
+          }
+        ]
+      ]
+    },
+    {
+      "snapshot": "after_correction",
+      "pool_activations": [
+        [
+          {
+            "activation": 0.994221227325771,
+            "binding": {
+              "edge_order": [
+                0,
+                1
+              ],
+              "observation_digest": "2a4e5043268d3ee1c614d68c85f403cd956f22b87f06cf5d8274e5a137053d0b",
+              "pattern_id": "pattern-d7053e8a62ed20d50b15444c",
+              "revision": 0,
+              "roles": [
+                [
+                  "R0",
+                  {
+                    "node_id": "binding:c883e90a8a71849a50bc9aa8:0",
+                    "revision": 0,
+                    "semantic_id": "v0"
+                  }
+                ],
+                [
+                  "R1",
+                  {
+                    "node_id": "binding:c883e90a8a71849a50bc9aa8:1",
+                    "revision": 0,
+                    "semantic_id": "v1"
+                  }
+                ],
+                [
+                  "R2",
+                  {
+                    "node_id": "binding:c883e90a8a71849a50bc9aa8:2",
+                    "revision": 0,
+                    "semantic_id": "v2"
+                  }
+                ]
+              ]
+            },
+            "circuit_id": "pattern-d7053e8a62ed20d50b15444c",
+            "circuit_version": 2,
+            "eligible": true,
+            "mismatch": 0.0,
+            "prior": 0.033
+          }
+        ]
+      ]
+    }
+  ],
+  "corrected_feedback_patch": {
+    "before_hash": "8e19232a0ffba6b76edf5696f13c701275fdc89320a888374ab80201ed900f88",
+    "changes": [],
+    "decision_id": "r02-d-82-366ccc1bf4cedff0",
+    "feedback_id": "external-r02-d-82-366ccc1bf4cedff0",
+    "previous_version": 4,
+    "version": 5
+  }
+}

@@ -825,6 +825,26 @@
       "source_commit": null,
       "source_commit_note": "Analytic local Jacobian and one-step sign-corner epsilon controls; finite one-step numerical scope only.",
       "standalone_python_entrypoint": "Run-HCR-R063.py"
+    },
+    {
+      "current_python_entrypoint": null,
+      "default_dispatcher_promoted": false,
+      "design": "experiments/exp-45-error-retention/design.ko.md",
+      "directory": "experiments/exp-45-error-retention",
+      "evidence_directory": "HCR-Evidence/exp45",
+      "execution_status": "standalone_candidate_contract",
+      "experiment_id": "EXP-45",
+      "frozen_design": "experiments/exp-45-error-retention/frozen_spec.json",
+      "implementation_validation_directory": "HCR-Evidence/r064-validation",
+      "legacy_python_entrypoint": null,
+      "release_manifest": "R064_MANIFEST.json",
+      "revision_references": [
+        "r064"
+      ],
+      "run_status": "read_per_run_evidence",
+      "source_commit": null,
+      "source_commit_note": "Pinned R063 seed; external-error feedback, paired native revision, and frozen retention; fixed toy-world scope.",
+      "standalone_python_entrypoint": "Run-HCR-R064.py"
     }
   ],
   "inventory_commit": "afb5d5e5b67906b7697f16163e166f59b17e1655",
