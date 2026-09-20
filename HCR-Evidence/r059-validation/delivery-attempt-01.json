@@ -1,0 +1,1 @@
+{"cause":"glob counted both the one run directory and its ZIP; directory-only count required","prior_checks_completed":["source inventory","bundle and ZIP exact bytes","22 raw pair distances and recovery predicates","599 core passes / 3 skips / 16 selftests"],"research_reexecuted":false,"stage":"research_execution_count","status":"measurement_failure"}

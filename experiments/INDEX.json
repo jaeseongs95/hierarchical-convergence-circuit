@@ -558,7 +558,9 @@
       "implementation_validation_directory": null,
       "legacy_python_entrypoint": null,
       "release_manifest": "R050_MANIFEST.json",
-      "revision_references": ["r050"],
+      "revision_references": [
+        "r050"
+      ],
       "run_status": "read_per_run_evidence",
       "source_commit": null,
       "source_commit_note": "Runtime plan and frozen source identify the actual checkout and patch; this entry is not a research result.",
@@ -576,7 +578,9 @@
       "implementation_validation_directory": "HCR-Evidence/r051-validation",
       "legacy_python_entrypoint": null,
       "release_manifest": "R051_MANIFEST.json",
-      "revision_references": ["r051"],
+      "revision_references": [
+        "r051"
+      ],
       "run_status": "read_per_run_evidence",
       "source_commit": null,
       "source_commit_note": "Read the frozen per-run source and plan. Source validation is not a research result.",
@@ -594,7 +598,9 @@
       "implementation_validation_directory": "HCR-Evidence/r052-validation",
       "legacy_python_entrypoint": null,
       "release_manifest": "R052_MANIFEST.json",
-      "revision_references": ["r052"],
+      "revision_references": [
+        "r052"
+      ],
       "run_status": "read_per_run_evidence",
       "source_commit": null,
       "source_commit_note": "Read the frozen per-run source and plan; hypothesis agreement is not an audit requirement.",
@@ -612,7 +618,9 @@
       "implementation_validation_directory": "HCR-Evidence/r053-validation",
       "legacy_python_entrypoint": null,
       "release_manifest": "R053_MANIFEST.json",
-      "revision_references": ["r053"],
+      "revision_references": [
+        "r053"
+      ],
       "run_status": "read_per_run_evidence",
       "source_commit": null,
       "source_commit_note": "Counterfactual frozen-kernel experiment; native proof/support/adoption are unmeasured.",
@@ -630,7 +638,9 @@
       "implementation_validation_directory": "HCR-Evidence/r054-validation",
       "legacy_python_entrypoint": null,
       "release_manifest": "R054_MANIFEST.json",
-      "revision_references": ["r054"],
+      "revision_references": [
+        "r054"
+      ],
       "run_status": "read_per_run_evidence",
       "source_commit": null,
       "source_commit_note": "Single-link removal in a frozen numerical kernel; native outcomes are unmeasured.",
@@ -648,7 +658,9 @@
       "implementation_validation_directory": "HCR-Evidence/r055-validation",
       "legacy_python_entrypoint": null,
       "release_manifest": "R055_MANIFEST.json",
-      "revision_references": ["r055"],
+      "revision_references": [
+        "r055"
+      ],
       "run_status": "read_per_run_evidence",
       "source_commit": null,
       "source_commit_note": "Fixed-total drive allocation in a frozen numerical kernel; native outcomes are unmeasured.",
@@ -713,6 +725,26 @@
       "source_commit": null,
       "source_commit_note": "Fixed-horizon continuation preserving the original first termination; finite-time persistence only.",
       "standalone_python_entrypoint": "Run-HCR-R058.py"
+    },
+    {
+      "current_python_entrypoint": null,
+      "default_dispatcher_promoted": false,
+      "design": "experiments/exp-40-local-recovery/design.ko.md",
+      "directory": "experiments/exp-40-local-recovery",
+      "evidence_directory": "HCR-Evidence/exp40",
+      "execution_status": "standalone_candidate_contract",
+      "experiment_id": "EXP-40",
+      "frozen_design": "experiments/exp-40-local-recovery/frozen_spec.json",
+      "implementation_validation_directory": "HCR-Evidence/r059-validation",
+      "legacy_python_entrypoint": null,
+      "release_manifest": "R059_MANIFEST.json",
+      "revision_references": [
+        "r059"
+      ],
+      "run_status": "read_per_run_evidence",
+      "source_commit": null,
+      "source_commit_note": "Paired coordinate perturbation recovery from two fixed-horizon anchors; finite-time numerical scope only.",
+      "standalone_python_entrypoint": "Run-HCR-R059.py"
     }
   ],
   "inventory_commit": "afb5d5e5b67906b7697f16163e166f59b17e1655",

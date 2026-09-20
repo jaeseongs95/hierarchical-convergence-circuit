@@ -1,0 +1,26 @@
+{
+  "schema": "hcc-r052-manifest-v1",
+  "contract": "r052-array-role-controls-v1",
+  "parent_commit": "b1d4525039f94c22f8aa2233aa6d6db616d9282c",
+  "hash_normalization": "CRLF to LF only",
+  "files": {
+    "HCR-Evidence/exp33/.gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "HCR-Evidence/exp33/.gitignore": "050c4c43407269dc8a0c7c332affc85b0ea2a431a61719285b827a005139dd63",
+    "HCR-Evidence/r052-validation/.gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "HCR-Evidence/r052-validation/.gitignore": "050c4c43407269dc8a0c7c332affc85b0ea2a431a61719285b827a005139dd63",
+    "Run-HCR-R052.cmd": "6ca6b418f1c2969d0bc296eee396551c85a86012fc4ac392fb2793df1a51310b",
+    "Run-HCR-R052.py": "d85f870793a65a64e1c429be713b7e845664c24867ec9681d98f565cbd1fecaa",
+    "experiments/exp-33-array-roles/IMPLEMENTATION_REVIEW.ko.md": "387ae2dbbf92a5a5b737835cb28c941d701c412a3bcac449be9ea8ca7efc67db",
+    "experiments/exp-33-array-roles/design.ko.md": "02e07cc6ac422ffd248718c511b9e884b1c1326b84c7d1b384da9d8768115e87",
+    "experiments/exp-33-array-roles/frozen_spec.json": "600f87ccf61c5f5b73259edb6dcd61db0ad7354acd077e75644350498f17c7d9",
+    "tools/r052_array_roles/__init__.py": "3d9c892ccda4c0a34ff48d46d46a284e79a245ee921521e8e74658d6f0f04f45",
+    "tools/r052_array_roles/audit.py": "4f52112f5a684006e524a6b2fd88efdccbafaad3e14c514fd456445523e02777",
+    "tools/r052_array_roles/bootstrap.py": "f4816cfe18b296cf6fb402b0acc63256ee698b16bbddd305b36d7aca3640703e",
+    "tools/r052_array_roles/pipeline.py": "835962de417dde41b590fd400ed1ee310b7f809f8d305221ef06cad1100c598a",
+    "tools/r052_array_roles/selftest.py": "f569aea26a8725542d7be88ee2bbb048fd9880291f66d3a7b4d0177eab00504c",
+    "tools/r052_array_roles/tests/test_audit.py": "9262ffbb77acd152a346e0225e31ddab0cf253440d9855ca3a1fde01c57475ed",
+    "tools/r052_array_roles/tests/test_contract.py": "23e9413272e5bbb1908aa9cec67a01ce0def3c1be0bc3398bd21f7aaa1a0a2e3",
+    "tools/r052_array_roles/tests/test_pipeline.py": "f519ae4911af1ac94e45fbacbe1f49659ecb10c2b2e6f5b90bc88c33930fc984",
+    "tools/r052_array_roles/worker.py": "0879f3c70fae2785fcf4a8a4213a4d362a6fe035045de76d47a5ed6ba60cc794"
+  }
+}
