@@ -1,0 +1,17 @@
+{
+  "schema": "hcc-r067-manifest-v1",
+  "files": {
+    "tools/r067_refresh/__init__.py": "5cf46ed7cb3869dc0575477ec4c799f9c46ad3b7af70ddb7c00bf34820f8ab20",
+    "tools/r067_refresh/measure.py": "b280f033ab5856675cf2ab04196f53ce39563b1f8da963a41d431089d6dc4da4",
+    "tools/r067_refresh/pipeline.py": "ed0d7867e9f9d22423d9dca8336e6ff4f7c4610e78a5abb495898164ac91381e",
+    "tools/r067_refresh/selftest.py": "083f091b510860b796c4f689046d55e408ced50d2fbc2595b885bc8819c81acb",
+    "tools/r067_refresh/verify.py": "1612da2da264590ea2190d32bd99a5104665045990197c8a8537cb8a3baf86fa",
+    "tools/r067_refresh/worker.py": "7cda5395f758f6ea1fcb3e463f349f3c770c3caa54804fdc6e05a473b26a0c8c",
+    "Run-HCR-R067.py": "51fd652550f79c3d174f7365d72483d340d94a22b845d9532c41254598350ba9",
+    "Run-HCR-R067.cmd": "2293db4f073adf98a04c16c92ccc16edc6696a9fb60c89d638a80751c0dfa9ec",
+    "experiments/exp-48-observation-refresh/design.ko.md": "576b2924eccc8bfdd2b42aabd8d75b3f59f20f0b37153c5b6a433fae26411779",
+    "experiments/exp-48-observation-refresh/frozen_spec.json": "6cf3a0b353f5f2e2c371f1245bf0774c22de63e64e67562710cd576e2ba0718f",
+    "experiments/exp-48-observation-refresh/ORCHESTRATION.ko.md": "817a04f540a45e5fbe07f88f27f7f40eaaae869cac3bbe5003b6e63d911ca870",
+    "experiments/exp-48-observation-refresh/reference_worlds.json": "9aa8afd416048c32c87fe9cc7139886b83c7c456428f11e2155d74ab52fa6722"
+  }
+}

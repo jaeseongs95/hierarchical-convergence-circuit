@@ -1,0 +1,1 @@
+{"after_initial_inference":true,"request":{"budget":1,"channel":"current","controller":"explicit_baseline","edge_id":"e1","requested_at":1,"scope":{"context":"toy-A","epoch":0},"source":"v1","target":"v2"}}

@@ -49,3 +49,5 @@ EXP-45 / R064: [오류 교정·재노출 유지](exp-45-error-retention/design.k
 EXP-46 / R065: [기억 정보 경계 재분석](exp-46-information-boundary/design.ko.md). `Run-HCR-R065.cmd`; 기존 R064 packet 재채점이며 새 native 연구 실행은 없다.
 
 EXP-47 / R066: [명시적 사실 저장·조회 baseline](exp-47-fact-retrieval/design.ko.md). `Run-HCR-R066.cmd`; context/epoch 경계와 미통지 변화에서 입력 개입 효과를 비교한다.
+
+EXP-48 / R067: [충돌 뒤 추가 관측 정보 효과](exp-48-observation-refresh/design.ko.md). `Run-HCR-R067.cmd`; e0 고정, 과거 사실·stale·fresh e1과 회로 ON/OFF를 비교한다.

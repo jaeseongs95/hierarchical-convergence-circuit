@@ -1,0 +1,236 @@
+{
+  "schemaVersion": "1.0.0",
+  "taskEnvelope": {
+    "schemaVersion": "1.0.0",
+    "taskId": "hcc-r067",
+    "objective": "충돌 뒤 e0를 고정하고 과거 사실·오래된 재관측·현재 관측의 e1 정보 효과를 두 참조 세계와 회로 ON/OFF에서 구별한다.",
+    "scope": {
+      "included": [
+        "tools/r067_refresh/",
+        "experiments/exp-48-observation-refresh/",
+        "experiments/INDEX.json",
+        "experiments/INDEX.ko.md",
+        "Run-HCR-R067.py",
+        "Run-HCR-R067.cmd",
+        "R067_MANIFEST.json",
+        "HCR-Evidence/exp48/",
+        "HCR-Evidence/r067-validation/"
+      ],
+      "excluded": [
+        "src/",
+        "tests/",
+        "archive/",
+        "tools/r064_retention/",
+        "tools/r065_information/",
+        "experiments/exp-45-error-retention/",
+        "experiments/exp-46-information-boundary/",
+        "tools/r066_facts/",
+        "experiments/exp-47-fact-retrieval/"
+      ]
+    },
+    "acceptanceCriteria": [
+      "[AC-001] 동일 원관측·memory·config·scope, e0 고정, e1 한 번 요청 예산, 세 군·두 세계·두 gate와 예측을 실행 전에 동결하고 source/parent provenance를 보존한다.",
+      "[AC-002] 12조건의 최초·후속 판단 24회, 명시적 controller 요청·관측 시점·출처·입력 개입·사실 저장·proof/readout/adoption과 별도 비용을 기록하고 동일 정보의 단순 baseline과 비교한다.",
+      "[AC-003] 별도 로직·프로세스의 입력·관측 계약 검산과 native replay, unknown/conflict/변조 검사, 원클릭 bundle/ZIP 무결성 및 최종 core 회귀 1회와 기존 파일 보존을 확인한다.",
+      "[AC-004] 정보 획득과 구조의 효과를 구분하여 결과·대안·주장 한계·다음 판별 실험을 기록하고 결과와 검증 근거를 전달한다."
+    ],
+    "riskLevel": "medium",
+    "workUnits": [
+      {
+        "id": "WU-001",
+        "objective": "충돌 뒤 e0를 고정하고 과거 사실·오래된 재관측·현재 관측의 e1 정보 효과를 두 참조 세계와 회로 ON/OFF에서 구별한다.",
+        "dependencies": [],
+        "writeTargets": [
+          "tools/r067_refresh/",
+          "experiments/exp-48-observation-refresh/",
+          "experiments/INDEX.json",
+          "experiments/INDEX.ko.md",
+          "Run-HCR-R067.py",
+          "Run-HCR-R067.cmd",
+          "R067_MANIFEST.json",
+          "HCR-Evidence/exp48/",
+          "HCR-Evidence/r067-validation/"
+        ]
+      }
+    ],
+    "requiredCapabilities": [
+      "minimal-implementation",
+      "change-scope-baseline-capture",
+      "change-scope-assurance",
+      "acceptance-evidence-validation"
+    ],
+    "constraints": [
+      "core·과거 evidence·기존 untracked 보존",
+      "새 학습 없이 R064 after_correction memory로 frozen 평가",
+      "명시적 baseline controller, 이상적 toy 측정 oracle; native 자율 관측 능력으로 해석하지 않음",
+      "최초 실패 보존·자동 retry 없음·예측 실패는 연구 결과",
+      "별도 로직·프로세스 검산이며 독립 연구자 감사 아님"
+    ],
+    "authorization": {
+      "allowedActions": [
+        "research-edit-execute-verify",
+        "commit-merge-main-clean-local-branch-push-origin-main"
+      ],
+      "prohibitedActions": [
+        "force-push",
+        "overwrite-existing-evidence"
+      ],
+      "approvalRequired": [
+        "install-deploy-tag"
+      ]
+    },
+    "decision": {
+      "complexity": "simple",
+      "hasConflicts": false
+    },
+    "orchestration": {
+      "requested": true,
+      "mcpAvailable": true
+    }
+  },
+  "target": {
+    "kind": "artifact",
+    "identifier": "HCR-Evidence/r067-validation/acceptance-target.json",
+    "digest": "sha256:2959e025aba23ccaee2a177734b9972019c75c4ca2471be6037eb077432e88c0"
+  },
+  "evidence": [
+    {
+      "id": "E-001",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp48/r067-20260920T063020Z-db2c8e7392/plan.json",
+      "digest": "sha256:1a02bcff03823b07cf332a43e4dc098fbdf65fdc2f03021f5f0b6e569fce67f0",
+      "targetDigest": "sha256:2959e025aba23ccaee2a177734b9972019c75c4ca2471be6037eb077432e88c0",
+      "verified": true,
+      "criterionIds": [
+        "AC-001"
+      ],
+      "direction": "supports",
+      "observedResult": "Frozen 12-cell design, e0 fixed, 1-call budget, pinned R064 inputs and memory."
+    },
+    {
+      "id": "E-002",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp48/r067-20260920T063020Z-db2c8e7392/source_manifest.json",
+      "digest": "sha256:f06be266683568eb2635540b7bee493836e6cb8a06bd027d107ae5041ebbeed8",
+      "targetDigest": "sha256:2959e025aba23ccaee2a177734b9972019c75c4ca2471be6037eb077432e88c0",
+      "verified": true,
+      "criterionIds": [
+        "AC-001"
+      ],
+      "direction": "supports",
+      "observedResult": "393 frozen source files verified against current checkout and bundle."
+    },
+    {
+      "id": "E-003",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp48/r067-20260920T063020Z-db2c8e7392/summary.json",
+      "digest": "sha256:ac5e524ef4372d79a3f60a32535d56074ee77640796c857f12951e5a99e5d515",
+      "targetDigest": "sha256:2959e025aba23ccaee2a177734b9972019c75c4ca2471be6037eb077432e88c0",
+      "verified": true,
+      "criterionIds": [
+        "AC-002"
+      ],
+      "direction": "supports",
+      "observedResult": "24 before/after native judgments, controller call counters, separate stored facts, two worlds and same-input direct baseline independently checked."
+    },
+    {
+      "id": "E-004",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp48/r067-20260920T063020Z-db2c8e7392/verification.json",
+      "digest": "sha256:18c892d5e564ca4ca7009dedb447dccf5b111c9c1ea4ea6505af2c168f9b7ce4",
+      "targetDigest": "sha256:2959e025aba23ccaee2a177734b9972019c75c4ca2471be6037eb077432e88c0",
+      "verified": true,
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "24 native formula replays, 16 mutated-input/native-evidence rejections."
+    },
+    {
+      "id": "E-005",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp48/r067-20260920T063020Z-db2c8e7392/validation/selftest.json",
+      "digest": "sha256:28ec9c38d3d2c9c02623396267e187440ef433309214d927658fae4612f585db",
+      "targetDigest": "sha256:2959e025aba23ccaee2a177734b9972019c75c4ca2471be6037eb077432e88c0",
+      "verified": true,
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "11 synthetic boundary checks including unknown, conflict, explicit False and freshness/provenance failures."
+    },
+    {
+      "id": "E-006",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp48/r067-20260920T063020Z-db2c8e7392/validation/core_regression.json",
+      "digest": "sha256:d5daace122f8617bfd42c41ab59ddb55331aae622d85dc3ab6f6439a54928ab9",
+      "targetDigest": "sha256:2959e025aba23ccaee2a177734b9972019c75c4ca2471be6037eb077432e88c0",
+      "verified": true,
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "One final suite: 602 run, 599 passed, exactly 3 existing skips, no failures/errors."
+    },
+    {
+      "id": "E-007",
+      "kind": "file",
+      "locator": "HCR-Evidence/r067-validation/delivery-verification.json",
+      "digest": "sha256:96ab48a965799e2fcaf9d7e57f999aa06d2b0374144960ef3f13967e9bc8e782",
+      "targetDigest": "sha256:2959e025aba23ccaee2a177734b9972019c75c4ca2471be6037eb077432e88c0",
+      "verified": true,
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "584 bundle files, ZIP/source/parent/raw hashes and index verified; 27308 out-of-scope files and 6 preparation files unchanged."
+    },
+    {
+      "id": "E-008",
+      "kind": "file",
+      "locator": "HCR-Evidence/r067-validation/scope-report.json",
+      "digest": "sha256:cc6fe27e66fd01f76ca587b51d4dd7e1eaba8ce711f9b1f70e8b9203d80ed7c8",
+      "targetDigest": "sha256:2959e025aba23ccaee2a177734b9972019c75c4ca2471be6037eb077432e88c0",
+      "verified": true,
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "PASS: zero excluded, unplanned, overlap or unknown ownership."
+    },
+    {
+      "id": "E-009",
+      "kind": "file",
+      "locator": "experiments/exp-48-observation-refresh/RESULTS.ko.md",
+      "digest": "sha256:d8fef95e8d03ef0fb3316030bc73de8388929240ab0c4d87825c8bf059717663",
+      "targetDigest": "sha256:2959e025aba23ccaee2a177734b9972019c75c4ca2471be6037eb077432e88c0",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Research result separates observation information from HCC structure, records alternatives and narrow claim limits."
+    },
+    {
+      "id": "E-010",
+      "kind": "file",
+      "locator": "experiments/exp-48-observation-refresh/NEXT.ko.md",
+      "digest": "sha256:0f13ee112fe349bed3650176e240b1536d2d8906f0869ac2e3c5a14f068b31d7",
+      "targetDigest": "sha256:2959e025aba23ccaee2a177734b9972019c75c4ca2471be6037eb077432e88c0",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Next bounded question about existing native observation-request path."
+    }
+  ],
+  "verificationCommands": [],
+  "knownLimitations": [
+    "명시적 controller·이상적 toy sensor이며 native 자율 정보 획득의 증거 아님",
+    "12개 대응조건·24회 판단은 독립 표본 아님",
+    "후속 기억 유지·센서 오류·에너지 측정 없음",
+    "별도 로직·프로세스 검산이며 독립 연구자 감사 아님"
+  ],
+  "criterionOverrides": []
+}

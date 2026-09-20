@@ -1,0 +1,24 @@
+{
+  "schema": "hcc-r064-manifest-v1",
+  "contract": "r064-error-retention-v1",
+  "parent_commit": "04a9f9d834647fc025bebc83adb086fe67108b25",
+  "hash_normalization": "CRLF to LF only",
+  "files": {
+    "experiments/exp-45-error-retention/design.ko.md": "b6d50f541e201397482307cf4b7c58fb4c5d487524451d9a09ec361ff165b528",
+    "experiments/exp-45-error-retention/frozen_spec.json": "6183b4f1e8f2a23d438863fa3be182a8d2ebea93bb24a3e0eb77a95b3db25ff2",
+    "experiments/exp-45-error-retention/ORCHESTRATION.ko.md": "3ec6b460ffdd232131cca22127ee35f6aa9a10a9d9c11fa00e0f184d52ad8fc8",
+    "experiments/exp-45-error-retention/reference_worlds.json": "7b7bfb5dee4da065b98a49701e7b94322acc514cb0904a6101b585508fda04ca",
+    "HCR-Evidence/exp45/.gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "HCR-Evidence/exp45/.gitignore": "050c4c43407269dc8a0c7c332affc85b0ea2a431a61719285b827a005139dd63",
+    "HCR-Evidence/r064-validation/.gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "HCR-Evidence/r064-validation/.gitignore": "050c4c43407269dc8a0c7c332affc85b0ea2a431a61719285b827a005139dd63",
+    "Run-HCR-R064.cmd": "7e74be009e24e999ebdc20a362b3c6f238784d577f7371e8e2b9109f42f4b63b",
+    "Run-HCR-R064.py": "613cf655e1852526c3c91adc48d8375394802969308016f6b67123c3d29f7124",
+    "tools/r064_retention/__init__.py": "e00861cba9c63b98ba2add95d5a881dd17c04fed0cc3208310a259ac9a16c9ab",
+    "tools/r064_retention/audit.py": "1e124840418878920f84e22e17185a2c5e2895948b24b69c5a70912df293fd9a",
+    "tools/r064_retention/bootstrap.py": "41d47c3f2b7b611cb4f74b37eb44e560c018afe8292b19e01c95419feb927084",
+    "tools/r064_retention/contract.py": "88ec18fc107be999338dabf76caa1e085374190afaa170bb7eaccbd825607c56",
+    "tools/r064_retention/pipeline.py": "55057cfb4d77dce54c09e95b1cab41dbd78ddab19e3e7c0dbc2258136a083c32",
+    "tools/r064_retention/worker.py": "e398f67baae696a5d8973229a4836172154eaff2f7170d89132133cf755f31a7"
+  }
+}
