@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "1.0.0",
+  "mode": "capture",
+  "repositoryRoot": "D:\\codex\\AI논문\\hierarchical-convergence-circuit",
+  "comparisonTarget": "working-tree",
+  "taskEnvelope": {
+    "schemaVersion": "1.0.0",
+    "taskId": "hcc-r061",
+    "objective": "R060 일시 증폭의 국소 선형 설명을 Jacobian과 사전 epsilon 대조로 판별",
+    "scope": {
+      "included": [
+        "tools/r061_linear/",
+        "experiments/exp-42-local-linearization/",
+        "experiments/INDEX.json",
+        "Run-HCR-R061.py",
+        "Run-HCR-R061.cmd",
+        "R061_MANIFEST.json",
+        "HCR-Evidence/exp42/",
+        "HCR-Evidence/r061-validation/"
+      ],
+      "excluded": [
+        "src/",
+        "tests/",
+        "archive/"
+      ]
+    },
+    "acceptanceCriteria": [
+      "[AC-001] 두 anchor, 32 부호 방향, epsilon 1e-4/1e-5/1e-6와 대조의 194 branch를 한 번 실행하고 analytic Jacobian 및 원자료를 보존한다.",
+      "[AC-002] 별도 수식 검산과 변조 self-test, smoke 및 최종 core regression 1회를 통과하며 기존 skip을 유지한다.",
+      "[AC-003] source/bundle/ZIP hash와 범위를 검증하고 이전 추적 및 미추적 자료를 보존한다.",
+      "[AC-004] 결과 방향과 무관한 해석 및 주장 한계를 기록한다."
+    ],
+    "riskLevel": "medium",
+    "workUnits": [
+      {
+        "id": "WU-001",
+        "objective": "조건 동결, 구현, 단일 실행 및 검증과 결과 보고",
+        "dependencies": [],
+        "writeTargets": [
+          "tools/r061_linear/",
+          "experiments/exp-42-local-linearization/",
+          "experiments/INDEX.json",
+          "Run-HCR-R061.py",
+          "Run-HCR-R061.cmd",
+          "R061_MANIFEST.json",
+          "HCR-Evidence/exp42/",
+          "HCR-Evidence/r061-validation/"
+        ]
+      }
+    ],
+    "requiredCapabilities": [
+      "minimal-implementation",
+      "change-scope-baseline-capture",
+      "change-scope-assurance",
+      "acceptance-evidence-validation"
+    ],
+    "constraints": [
+      "연구 실행 1회, 자동 retry 없음",
+      "기존 source/raw/manifest 보존",
+      "별도 수식/프로세스 독립성만 주장"
+    ],
+    "authorization": {
+      "allowedActions": [
+        "research-edit-execute-verify",
+        "commit-merge-main-clean-local-branch-push-origin-main"
+      ],
+      "prohibitedActions": [
+        "force-push",
+        "overwrite-existing-evidence"
+      ],
+      "approvalRequired": [
+        "install-deploy-tag"
+      ]
+    },
+    "decision": {
+      "complexity": "simple",
+      "hasConflicts": false
+    },
+    "orchestration": {
+      "requested": true,
+      "mcpAvailable": true
+    }
+  },
+  "maxFiles": 200000
+}

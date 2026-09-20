@@ -1,0 +1,20 @@
+test_all_synthetic_arms_and_no_anchor_mutation (test_linearization.LinearizationTests.test_all_synthetic_arms_and_no_anchor_mutation) ... ok
+test_analytic_columns_against_central_differences (test_linearization.LinearizationTests.test_analytic_columns_against_central_differences) ... ok
+test_exact_matrix_and_frozen_spec (test_linearization.LinearizationTests.test_exact_matrix_and_frozen_spec) ... ok
+test_known_zero_link_derivative (test_linearization.LinearizationTests.test_known_zero_link_derivative) ... ok
+test_metrics_include_signed_cancellation_and_control (test_linearization.LinearizationTests.test_metrics_include_signed_cancellation_and_control) ... ok
+test_out_of_range_and_missing_coordinate_rejected (test_linearization.LinearizationTests.test_out_of_range_and_missing_coordinate_rejected) ... ok
+test_reject_jacobian_tampering (test_linearization.LinearizationTests.test_reject_jacobian_tampering) ... ok
+test_reject_record_tampering (test_linearization.LinearizationTests.test_reject_record_tampering) ... ok
+test_self_link_and_duplicate_link_derivative (test_linearization.LinearizationTests.test_self_link_and_duplicate_link_derivative) ... ok
+test_budget_and_oscillation_termination (tools.r053_feedback.tests.test_audit.AuditTests.test_budget_and_oscillation_termination) ... ok
+test_frozen_spec_rejects_resealed_semantic_change (tools.r053_feedback.tests.test_audit.AuditTests.test_frozen_spec_rejects_resealed_semantic_change) ... ok
+test_handmade_single_group_trace_and_termination_tampering (tools.r053_feedback.tests.test_audit.AuditTests.test_handmade_single_group_trace_and_termination_tampering) ... ok
+test_record_accepts_valid_packet (tools.r053_feedback.tests.test_audit.AuditTests.test_record_accepts_valid_packet) ... ok
+test_resealed_record_tampering (tools.r053_feedback.tests.test_audit.AuditTests.test_resealed_record_tampering) ... ok
+test_trajectory_tampering (tools.r053_feedback.tests.test_audit.AuditTests.test_trajectory_tampering) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.068s
+
+OK

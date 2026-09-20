@@ -1,0 +1,11 @@
+{
+  "verified": true,
+  "staged_files": 938,
+  "scope_only": true,
+  "zip_not_staged": true,
+  "active_diff_check": true,
+  "staged_bundle_bytes_verified": true,
+  "full_diff_check_exit": 2,
+  "full_diff_check_reason": "Frozen historical source and Windows logs retain original CRLF/trailing whitespace; source/raw bytes must not be rewritten.",
+  "previous_head": "5fcdbb3f44cfe14628a65971b3fe916b0169536d"
+}

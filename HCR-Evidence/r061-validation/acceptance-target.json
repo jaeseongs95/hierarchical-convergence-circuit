@@ -1,0 +1,7 @@
+{
+  "R061_MANIFEST.json": "sha256:92b1dab6a1cd8e5982f81bb17e0b6a6d715431bd1b2c8f3505bb9dcd19eedaf2",
+  "HCR-Evidence/exp42/r061-20260920T003940Z-3ecb1ce52b/source_manifest.json": "sha256:5cb4b6daaeb04c5044ec1613e349c3ccf5560c5b8d1e73ef83cf9382e6b49867",
+  "HCR-Evidence/exp42/r061-20260920T003940Z-3ecb1ce52b/bundle_manifest.json": "sha256:fab9a9a483287404c02846b1a2265effc2153535cb26ffe3bb20ef321f7462f9",
+  "experiments/exp-42-local-linearization/RESULTS.ko.md": "sha256:3c0320599eae6fac5192768b34dad9f96859c68e5be6f4ace0f2db7cb0dc995c",
+  "HCR-Evidence/r061-validation/delivery-verification.json": "sha256:af801593f7e63144c89a42a4624198a78fc30a64bbbfed97f56954c579b2eeed"
+}

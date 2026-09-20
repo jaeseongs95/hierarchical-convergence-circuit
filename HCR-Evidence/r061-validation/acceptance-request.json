@@ -1,0 +1,185 @@
+{
+  "schemaVersion": "1.0.0",
+  "taskEnvelope": {
+    "schemaVersion": "1.0.0",
+    "taskId": "hcc-r061",
+    "objective": "R060 일시 증폭의 국소 선형 설명을 Jacobian과 사전 epsilon 대조로 판별",
+    "scope": {
+      "included": [
+        "tools/r061_linear/",
+        "experiments/exp-42-local-linearization/",
+        "experiments/INDEX.json",
+        "Run-HCR-R061.py",
+        "Run-HCR-R061.cmd",
+        "R061_MANIFEST.json",
+        "HCR-Evidence/exp42/",
+        "HCR-Evidence/r061-validation/"
+      ],
+      "excluded": [
+        "src/",
+        "tests/",
+        "archive/"
+      ]
+    },
+    "acceptanceCriteria": [
+      "[AC-001] 두 anchor, 32 부호 방향, epsilon 1e-4/1e-5/1e-6와 대조의 194 branch를 한 번 실행하고 analytic Jacobian 및 원자료를 보존한다.",
+      "[AC-002] 별도 수식 검산과 변조 self-test, smoke 및 최종 core regression 1회를 통과하며 기존 skip을 유지한다.",
+      "[AC-003] source/bundle/ZIP hash와 범위를 검증하고 이전 추적 및 미추적 자료를 보존한다.",
+      "[AC-004] 결과 방향과 무관한 해석 및 주장 한계를 기록한다."
+    ],
+    "riskLevel": "medium",
+    "workUnits": [
+      {
+        "id": "WU-001",
+        "objective": "조건 동결, 구현, 단일 실행 및 검증과 결과 보고",
+        "dependencies": [],
+        "writeTargets": [
+          "tools/r061_linear/",
+          "experiments/exp-42-local-linearization/",
+          "experiments/INDEX.json",
+          "Run-HCR-R061.py",
+          "Run-HCR-R061.cmd",
+          "R061_MANIFEST.json",
+          "HCR-Evidence/exp42/",
+          "HCR-Evidence/r061-validation/"
+        ]
+      }
+    ],
+    "requiredCapabilities": [
+      "minimal-implementation",
+      "change-scope-baseline-capture",
+      "change-scope-assurance",
+      "acceptance-evidence-validation"
+    ],
+    "constraints": [
+      "연구 실행 1회, 자동 retry 없음",
+      "기존 source/raw/manifest 보존",
+      "별도 수식/프로세스 독립성만 주장"
+    ],
+    "authorization": {
+      "allowedActions": [
+        "research-edit-execute-verify",
+        "commit-merge-main-clean-local-branch-push-origin-main"
+      ],
+      "prohibitedActions": [
+        "force-push",
+        "overwrite-existing-evidence"
+      ],
+      "approvalRequired": [
+        "install-deploy-tag"
+      ]
+    },
+    "decision": {
+      "complexity": "simple",
+      "hasConflicts": false
+    },
+    "orchestration": {
+      "requested": true,
+      "mcpAvailable": true
+    }
+  },
+  "target": {
+    "kind": "artifact",
+    "identifier": "HCR-Evidence/r061-validation/acceptance-target.json",
+    "digest": "sha256:7bad97c352d831552522b011b270a2eebce7ddabb884bbbc8c438d51fd8b0be6"
+  },
+  "evidence": [
+    {
+      "id": "E-001",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp42/r061-20260920T003940Z-3ecb1ce52b/analysis/audit.json",
+      "digest": "sha256:bef0899d78650aea520303d8412bbd13d13e2db1d54bcfee10aa09361a75458f",
+      "targetDigest": "sha256:7bad97c352d831552522b011b270a2eebce7ddabb884bbbc8c438d51fd8b0be6",
+      "verified": true,
+      "criterionIds": [
+        "AC-001"
+      ],
+      "direction": "supports",
+      "observedResult": "194 exact branches, one research run, independently verified recurrence and Jacobian"
+    },
+    {
+      "id": "E-002",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp42/r061-20260920T003940Z-3ecb1ce52b/validation/selftest.json",
+      "digest": "sha256:a579d3c1bb19bdf89fb2e1821fbe066d07486343cf719fae72820dc16856b5c0",
+      "targetDigest": "sha256:7bad97c352d831552522b011b270a2eebce7ddabb884bbbc8c438d51fd8b0be6",
+      "verified": true,
+      "criterionIds": [
+        "AC-002"
+      ],
+      "direction": "supports",
+      "observedResult": "15 strict synthetic checks passed"
+    },
+    {
+      "id": "E-003",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp42/r061-20260920T003940Z-3ecb1ce52b/validation/core_regression.json",
+      "digest": "sha256:d5daace122f8617bfd42c41ab59ddb55331aae622d85dc3ab6f6439a54928ab9",
+      "targetDigest": "sha256:7bad97c352d831552522b011b270a2eebce7ddabb884bbbc8c438d51fd8b0be6",
+      "verified": true,
+      "criterionIds": [
+        "AC-002"
+      ],
+      "direction": "supports",
+      "observedResult": "602 tested; 599 passed; exactly 3 existing symlink skips"
+    },
+    {
+      "id": "E-004",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp42/r061-20260920T003940Z-3ecb1ce52b/validation/kernel-smoke/analysis/audit.json",
+      "digest": "sha256:f544dd2cdb26515198710e6c600cf375915c2291708c5d072253b0dffd9e4b1a",
+      "targetDigest": "sha256:7bad97c352d831552522b011b270a2eebce7ddabb884bbbc8c438d51fd8b0be6",
+      "verified": true,
+      "criterionIds": [
+        "AC-002"
+      ],
+      "direction": "supports",
+      "observedResult": "8 smoke branches verified"
+    },
+    {
+      "id": "E-005",
+      "kind": "file",
+      "locator": "HCR-Evidence/r061-validation/delivery-verification.json",
+      "digest": "sha256:af801593f7e63144c89a42a4624198a78fc30a64bbbfed97f56954c579b2eeed",
+      "targetDigest": "sha256:7bad97c352d831552522b011b270a2eebce7ddabb884bbbc8c438d51fd8b0be6",
+      "verified": true,
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "source/bundle/ZIP hashes and raw metrics verified"
+    },
+    {
+      "id": "E-006",
+      "kind": "file",
+      "locator": "HCR-Evidence/r061-validation/scope-report-final.json",
+      "digest": "sha256:d46e3b928c2a1e0e582063a3ffae3034bfacbde5348aa716d0dcf86e17be62a0",
+      "targetDigest": "sha256:7bad97c352d831552522b011b270a2eebce7ddabb884bbbc8c438d51fd8b0be6",
+      "verified": true,
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "PASS; no excluded, unplanned or preexisting overlap"
+    },
+    {
+      "id": "E-007",
+      "kind": "file",
+      "locator": "experiments/exp-42-local-linearization/RESULTS.ko.md",
+      "digest": "sha256:3c0320599eae6fac5192768b34dad9f96859c68e5be6f4ace0f2db7cb0dc995c",
+      "targetDigest": "sha256:7bad97c352d831552522b011b270a2eebce7ddabb884bbbc8c438d51fd8b0be6",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Grounded result interpretation, alternatives, next experiment and claim boundaries reviewed"
+    }
+  ],
+  "verificationCommands": [],
+  "knownLimitations": [
+    "별도 수식과 프로세스 검산이며 동일 구현자; 독립 연구자 감사 아님",
+    "두 synthetic anchor의 한 단계 국소 선형화; 장기 안정성 및 native outcomes 미검증"
+  ],
+  "criterionOverrides": []
+}

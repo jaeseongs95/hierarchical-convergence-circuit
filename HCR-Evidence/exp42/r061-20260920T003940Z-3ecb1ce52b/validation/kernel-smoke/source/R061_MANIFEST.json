@@ -1,0 +1,25 @@
+{
+  "schema": "hcc-r061-manifest-v1",
+  "contract": "r061-local-linearization-v1",
+  "parent_commit": "5fcdbb3f44cfe14628a65971b3fe916b0169536d",
+  "hash_normalization": "CRLF to LF only",
+  "files": {
+    "experiments/exp-42-local-linearization/design.ko.md": "d03ff6d2de1681d934e0dc3b257b2c655da664bd181a9bec8ecde3b262ca8aba",
+    "experiments/exp-42-local-linearization/frozen_spec.json": "fd1f10efaf5ce8d0f0c7108c8ca3a1f57795fea377606afd3ee495cc64939102",
+    "experiments/exp-42-local-linearization/ORCHESTRATION.ko.md": "65d13ac0d08965f74db3793a9330646e641e6ce101cb29d7d8f2eb4fab3f3652",
+    "HCR-Evidence/exp42/.gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "HCR-Evidence/exp42/.gitignore": "050c4c43407269dc8a0c7c332affc85b0ea2a431a61719285b827a005139dd63",
+    "HCR-Evidence/r061-validation/.gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "HCR-Evidence/r061-validation/.gitignore": "050c4c43407269dc8a0c7c332affc85b0ea2a431a61719285b827a005139dd63",
+    "Run-HCR-R061.cmd": "38f0c54df1d027c458c26e58ca3243a15194818d7981353152dfe90ad35ace82",
+    "Run-HCR-R061.py": "351065a7d9bf2485be66e391a97021077d3807c9bf895064de4f1eb1661152ac",
+    "tools/r061_linear/__init__.py": "59a5ada08259700b63adfae8cc11f2738b689d8a2fce284bf01337dc3510839c",
+    "tools/r061_linear/audit.py": "8b6b0b3750b9a7f76d58ab562401489a94f9585ae2bc0b8e10faae254a80e26a",
+    "tools/r061_linear/bootstrap.py": "551e3afd2402f31244ef5e84a38bf595fcab1333e9839ca64fa5337a8b3d129a",
+    "tools/r061_linear/linear.py": "f2e16078e3b2e40241f8def9a7fefb77fd639da6182fd1c45570b0e02662c674",
+    "tools/r061_linear/pipeline.py": "2cdafa7077c2da231f75ae686d111f71d7958a4bb38ca4b860cf79e1384c1579",
+    "tools/r061_linear/selftest.py": "18efaf7b8465abf34220c13fb04bf0d55c0771dba3c002f177fddbb20a762a44",
+    "tools/r061_linear/tests/test_linearization.py": "6e9f6f49150e49775d9de58670f0d45af65ae558eb76ffac66553d495d17a302",
+    "tools/r061_linear/worker.py": "5c5f49cfc5ed06ff64f60d436c6c694766f666080e2da3dfc11ed5870e329861"
+  }
+}

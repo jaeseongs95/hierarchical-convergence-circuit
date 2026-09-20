@@ -1,0 +1,176 @@
+{
+  "verified": true,
+  "run": "HCR-Evidence/exp42/r061-20260920T003940Z-3ecb1ce52b",
+  "research_executions": 1,
+  "rows": 194,
+  "selftests": 15,
+  "smoke_rows": 8,
+  "anchor_replays": 2,
+  "core_regression": {
+    "tests_run": 602,
+    "passed": 599,
+    "runs": 1,
+    "skips": [
+      {
+        "reason": "symlink creation is not available",
+        "test": "test_r021_sessions.CheckpointIO.test_file_symlink_rejected"
+      },
+      {
+        "reason": "symlink creation is not available",
+        "test": "test_r021_sessions.CheckpointIO.test_symlink_parent_rejected"
+      },
+      {
+        "reason": "local symlink creation not supported",
+        "test": "test_r034_selection.ProtocolAndIO.test_symlink_rejected"
+      }
+    ]
+  },
+  "source_files": 320,
+  "bundle_hash_targets": 899,
+  "zip_files": 900,
+  "source_and_bundle_unmodified": true,
+  "metrics_recomputed_from_raw": true,
+  "previous_index_entries_preserved": true,
+  "statistics": {
+    "goal_i05": {
+      "scales": {
+        "0.0001": {
+          "count": 32,
+          "max_gain": 1.0650183654636944,
+          "amplified": 8,
+          "max_linearization_error": 1.9767609197424672e-08,
+          "max_normalized_error": 0.00019767609197424792,
+          "max_gain_gap": 0.00019767609187071322
+        },
+        "1e-05": {
+          "count": 32,
+          "max_gain": 1.0648404542474186,
+          "amplified": 8,
+          "max_linearization_error": 1.9764875667693165e-10,
+          "max_normalized_error": 1.9764875667673398e-05,
+          "max_gain_gap": 1.976487559485207e-05
+        },
+        "1e-06": {
+          "count": 32,
+          "max_gain": 1.0648226658165563,
+          "amplified": 8,
+          "max_linearization_error": 1.9764853858458245e-12,
+          "max_normalized_error": 1.9764853857889895e-06,
+          "max_gain_gap": 1.976504346412611e-06
+        }
+      },
+      "jacobian": [
+        [
+          0.6459792654148481,
+          0.0,
+          0.149301079534208,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.5501704427836928,
+          0.0,
+          0.00026513321907750226,
+          0.0
+        ],
+        [
+          0.39986072960918345,
+          0.0,
+          0.5949843320810332,
+          0.0699756276816071,
+          0.0
+        ],
+        [
+          0.0,
+          0.05762247134523326,
+          0.05762247134523326,
+          0.5564825280263388,
+          0.01008393248541582
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.04718459174060714,
+          0.5553082665708183
+        ]
+      ],
+      "jacobian_infinity_norm": 1.0648206893718237,
+      "smallest_epsilon_gain_agreement": true
+    },
+    "goal_i09": {
+      "scales": {
+        "0.0001": {
+          "count": 32,
+          "max_gain": 0.772004180070814,
+          "amplified": 0,
+          "max_linearization_error": 1.0278394778213116e-08,
+          "max_normalized_error": 0.00010278394778214248,
+          "max_gain_gap": 0.00010278394778207023
+        },
+        "1e-05": {
+          "count": 32,
+          "max_gain": 0.7719116719963772,
+          "amplified": 0,
+          "max_linearization_error": 1.0275873345457062e-10,
+          "max_normalized_error": 1.0275873345503828e-05,
+          "max_gain_gap": 1.0275873345344522e-05
+        },
+        "1e-06": {
+          "count": 32,
+          "max_gain": 0.7719024237351569,
+          "amplified": 0,
+          "max_linearization_error": 1.027612125107901e-12,
+          "max_normalized_error": 1.0276121250783513e-06,
+          "max_gain_gap": 1.0276121250596404e-06
+        }
+      },
+      "jacobian": [
+        [
+          0.6297454129364997,
+          0.0,
+          0.12404842012344389,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.5500435491839124,
+          0.0,
+          6.774317497485259e-05,
+          0.0
+        ],
+        [
+          0.17235059893051008,
+          0.0,
+          0.5693894423796825,
+          0.030161354812839263,
+          0.0
+        ],
+        [
+          0.0,
+          0.03151974992045989,
+          0.03151974992045989,
+          0.5535459718660518,
+          0.0055159562360804805
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.044497388228718286,
+          0.5550059561757309
+        ]
+      ],
+      "jacobian_infinity_norm": 0.7719013961230318,
+      "smallest_epsilon_gain_agreement": true
+    }
+  },
+  "research_cost": {
+    "kernel_ticks": 194,
+    "group_updates": 970,
+    "normalization_ops": 970,
+    "signal_transmissions": 1552
+  }
+}
