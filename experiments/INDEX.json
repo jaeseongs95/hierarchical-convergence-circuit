@@ -785,6 +785,26 @@
       "source_commit": null,
       "source_commit_note": "Analytic local Jacobian and one-step sign-corner epsilon controls; finite one-step numerical scope only.",
       "standalone_python_entrypoint": "Run-HCR-R061.py"
+    },
+    {
+      "current_python_entrypoint": null,
+      "default_dispatcher_promoted": false,
+      "design": "experiments/exp-43-native-feedback/design.ko.md",
+      "directory": "experiments/exp-43-native-feedback",
+      "evidence_directory": "HCR-Evidence/exp43",
+      "execution_status": "standalone_candidate_contract",
+      "experiment_id": "EXP-43",
+      "frozen_design": "experiments/exp-43-native-feedback/frozen_spec.json",
+      "implementation_validation_directory": "HCR-Evidence/r062-validation",
+      "legacy_python_entrypoint": null,
+      "release_manifest": "R062_MANIFEST.json",
+      "revision_references": [
+        "r062"
+      ],
+      "run_status": "read_per_run_evidence",
+      "source_commit": null,
+      "source_commit_note": "Analytic local Jacobian and one-step sign-corner epsilon controls; finite one-step numerical scope only.",
+      "standalone_python_entrypoint": "Run-HCR-R062.py"
     }
   ],
   "inventory_commit": "afb5d5e5b67906b7697f16163e166f59b17e1655",

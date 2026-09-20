@@ -1,0 +1,23 @@
+{
+  "schema": "hcc-r062-manifest-v1",
+  "contract": "r062-native-feedback-v1",
+  "parent_commit": "46efbdab1b92b6294d6d8e337beca91bb53b5746",
+  "hash_normalization": "CRLF to LF only",
+  "files": {
+    "HCR-Evidence/exp43/.gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "HCR-Evidence/exp43/.gitignore": "050c4c43407269dc8a0c7c332affc85b0ea2a431a61719285b827a005139dd63",
+    "HCR-Evidence/r062-validation/.gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "HCR-Evidence/r062-validation/.gitignore": "050c4c43407269dc8a0c7c332affc85b0ea2a431a61719285b827a005139dd63",
+    "Run-HCR-R062.cmd": "d332c556a1482a8939b433e8f71f7dd8069cbfb29a486004150315151fb4a706",
+    "Run-HCR-R062.py": "d2f4bbf35ac060d9f5470d5ed321653a3f5e07169d856dc2a77a92396536e05f",
+    "experiments/exp-43-native-feedback/ORCHESTRATION.ko.md": "71c9aa53f7fc31f8ab717d150523cd2c4ef65ef8acb4f156c1a8579d88b9746d",
+    "experiments/exp-43-native-feedback/design.ko.md": "0891e49f042d35556b5db6d1e0ff0e16ece80c574c4be3675cdc761407daccd5",
+    "experiments/exp-43-native-feedback/frozen_spec.json": "e8b76ca86485fb0c037b2e870eb17470280992449bd43e44cc7068a7f8ff5591",
+    "tools/r062_native/__init__.py": "f3caa7e4490ec88fb01e94b1df189fa76dd2203e899f38e15f1a1f6346f6fd5c",
+    "tools/r062_native/audit.py": "93eae9f3c1b648d4a652afb624303187c8f3ad9bb0e44ad86bcd29083a1ae291",
+    "tools/r062_native/bootstrap.py": "067f9f8fe3e794b56355acf57a2c5970b09402fb58f280744e3f968a364cfd09",
+    "tools/r062_native/pipeline.py": "289991125728092ba465a37e6d393e8b3acb17b7adbae141b7b25d538f7971b7",
+    "tools/r062_native/variants.py": "3ad08699a56aa7925b97cfd4f7680208d0298b6beef644d5d27a04428938c496",
+    "tools/r062_native/worker.py": "073abfa2079580cfc68d9571ef7629ab7b9da5ee736712e0d7a0594b00da0743"
+  }
+}

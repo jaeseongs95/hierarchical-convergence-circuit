@@ -39,3 +39,5 @@
 
 R034~R047의 원 manifest도 같은 `archive/releases/rNNN/` 아래에 보존한다.
 기존 source_commit과 run_status는 이번 정리로 새 판정하거나 덮어쓰지 않는다.
+
+EXP-43의 독립 실행은 [Run-HCR-R062.cmd](../Run-HCR-R062.cmd), 설계는 [native feedback](exp-43-native-feedback/design.ko.md)을 따른다. 현재 전체 목록은 INDEX.json이며 공통 기본 실행은 EXP-30을 유지한다.

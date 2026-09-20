@@ -1,0 +1,151 @@
+{
+  "schemaVersion": "1.0.0",
+  "target": {
+    "kind": "artifact",
+    "identifier": "HCR-Evidence/r062-validation/acceptance-target.json",
+    "digest": "sha256:12260a2eb209ca5c9d763263428665109ebf990b211b800c3e52b5433c326e20"
+  },
+  "criteria": [
+    {
+      "criterionId": "AC-001",
+      "statement": "[AC-001] 두 입력과 full/drop_P_prefix의 실제 native 변형 4개를 단일 연구 실행에서 기록하고 R052/R054와 수치 bridge를 검산한다.",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "E-001",
+        "E-002"
+      ],
+      "observedResult": "Two full native sessions independently verified, full R052 and R054 trajectory bridge; Two drop native sessions independently verified, R054 trajectory bridge",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    },
+    {
+      "criterionId": "AC-002",
+      "statement": "[AC-002] 독립 native 상태·proof·support·채택 검산, 변조 self-test, 별도 smoke와 최종 core 회귀 1회를 통과한다.",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "E-003",
+        "E-004"
+      ],
+      "observedResult": "4 synthetic native sessions, 32 semantic/hash tamper rejections; 602 tests, 599 passes, exactly 3 preexisting Windows symlink skips, one final core regression",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    },
+    {
+      "criterionId": "AC-003",
+      "statement": "[AC-003] 원본 core와 기존 evidence를 보존하고 두 파일만 바뀌는 실험 복사본·source·bundle·ZIP·작업 범위를 검증한다.",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "E-005",
+        "E-006"
+      ],
+      "observedResult": "1440 bundle files, exact variant/source and ZIP bytes, raw metrics independently recomputed; pre-research failure retained; PASS; excluded/unplanned/preexisting-overlap/ownership-unknown all zero",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    },
+    {
+      "criterionId": "AC-004",
+      "statement": "[AC-004] 결과 방향에 관계없이 해석과 다음 학습·재사용 비교의 조건 및 미해결 가설을 기록한다.",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "E-007",
+        "E-008"
+      ],
+      "observedResult": "Observed native adoption change, unaffected control, alternatives, bounded claims and first preparation failure described; Formation before/after and held-out reuse paired design distinguished from existing EXP25; no new experiment claimed",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    }
+  ],
+  "verifiedEvidenceIndex": [
+    {
+      "evidenceId": "E-001",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp43/r062-20260920T011305Z-1a61ac35ea/audit/full.json",
+      "digest": "sha256:5ece2d7245ba2281c789856e67a418d8bdaf99fc5cf4fb94eaf3687d52c647fc",
+      "targetDigest": "sha256:12260a2eb209ca5c9d763263428665109ebf990b211b800c3e52b5433c326e20",
+      "criterionIds": [
+        "AC-001"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "E-002",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp43/r062-20260920T011305Z-1a61ac35ea/audit/drop_P_prefix.json",
+      "digest": "sha256:0365979d7bef32c82bcc8b779ae9f86a8a17f3196e4e4082ab0ca48e373f01bc",
+      "targetDigest": "sha256:12260a2eb209ca5c9d763263428665109ebf990b211b800c3e52b5433c326e20",
+      "criterionIds": [
+        "AC-001"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "E-003",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp43/r062-20260920T011305Z-1a61ac35ea/validation/native-smoke/summary.json",
+      "digest": "sha256:baaf83ef7cbc5dbf98ad7cf28b7dd973aef073814e615769fd558543e41c368a",
+      "targetDigest": "sha256:12260a2eb209ca5c9d763263428665109ebf990b211b800c3e52b5433c326e20",
+      "criterionIds": [
+        "AC-002"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "E-004",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp43/r062-20260920T011305Z-1a61ac35ea/validation/core_regression.json",
+      "digest": "sha256:d5daace122f8617bfd42c41ab59ddb55331aae622d85dc3ab6f6439a54928ab9",
+      "targetDigest": "sha256:12260a2eb209ca5c9d763263428665109ebf990b211b800c3e52b5433c326e20",
+      "criterionIds": [
+        "AC-002"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "E-005",
+      "kind": "file",
+      "locator": "HCR-Evidence/r062-validation/delivery-verification.json",
+      "digest": "sha256:e54b64c2323b8c1129c3899d4785e3a964088e067217a2f8d546c3074e2c5d18",
+      "targetDigest": "sha256:12260a2eb209ca5c9d763263428665109ebf990b211b800c3e52b5433c326e20",
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "E-006",
+      "kind": "file",
+      "locator": "HCR-Evidence/r062-validation/scope-report.json",
+      "digest": "sha256:9ea6d1d05ac0189f4f6b00f643a7690aec30298a8eed18169987d4b8728f68f6",
+      "targetDigest": "sha256:12260a2eb209ca5c9d763263428665109ebf990b211b800c3e52b5433c326e20",
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "E-007",
+      "kind": "file",
+      "locator": "experiments/exp-43-native-feedback/RESULTS.ko.md",
+      "digest": "sha256:ef42b5bb4875f0a12cea12acbc3db0ca1c1846d94f4281d3a727fb92fbf10411",
+      "targetDigest": "sha256:12260a2eb209ca5c9d763263428665109ebf990b211b800c3e52b5433c326e20",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "E-008",
+      "kind": "file",
+      "locator": "experiments/exp-43-native-feedback/NEXT.ko.md",
+      "digest": "sha256:002fe432a0334e9ec85557523328edf72f2270179fa9e4490e2234fed7b24962",
+      "targetDigest": "sha256:12260a2eb209ca5c9d763263428665109ebf990b211b800c3e52b5433c326e20",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports"
+    }
+  ],
+  "unresolvedCriteria": [],
+  "limitations": [
+    "두 결정적 toy 입력이며 독립 표본이나 광범위 일반화 아님",
+    "공식·프로세스 분리이며 별도 연구자 감사 아님",
+    "학습·회로 형성·재사용·오류 후 유지 실험은 아직 수행하지 않음"
+  ],
+  "verdict": "PASS"
+}

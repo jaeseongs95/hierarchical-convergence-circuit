@@ -1,0 +1,1251 @@
+{
+  "schema": "hcc-r061-frozen-spec-v1",
+  "contract": "r061-local-linearization-v1",
+  "frozen_before_research_execution": true,
+  "parent_directory": "HCR-Evidence/exp33/r052-20260919T135909Z-1f0e296bc0",
+  "parent_files": {
+    "study/raw/r052-c000/start_edge.json": "b98580bc1525cf27b5aaed0ea2fba05e9c88650ce899a53ba7c68eb8bba423d2",
+    "study/baselines/r052-c000.json": "4a26ed727610ecc87b4c45a208b1c8fc9c865acf286e3867b1e434c571417ef5",
+    "study/raw/r052-c001/goal_edge.json": "7de85cc168e4cb39b44f83f393d97a81068028f172c75c46bd0960a4355397d5",
+    "analysis/audit.json": "4a3c2ee31e1815571e400177aacb5e76f73c40d446d7dac01793f8c1f9990f25",
+    "study/raw/r052-c001/start_edge.json": "dabc61df4a7a63a7a54ea5d0ea9287bf4437cf1addafe04d96aefce47dec7d59",
+    "plan.json": "c8338c32bb9991cb44546620e654899b081059241c54cae475a32c297b501aff",
+    "study/raw/r052-c000/goal_edge.json": "9d47c4dbd951ee674e6f6ee99efa8c2bb4b7ea84201bfeea9d78563f81b820c5",
+    "source_manifest.json": "d98937e5627f75de5e39070a9428301c2c98b4da23f4ea8e2d15d0c1f48b49b1",
+    "raw_manifest.json": "598c004511230005ad51629a577e99f594e98c25f70f5a90e2c70acf0a8e208c",
+    "study/baselines/r052-c001.json": "a412e2ef79d8a1277071783c1b8bd4a74e0df9a3c65de51b0a9579da042f73b1"
+  },
+  "program_parent": "study/raw/r052-c001/start_edge.json",
+  "anchor_directory": "HCR-Evidence/exp39/r058-20260919T233747Z-4393c4f8bc",
+  "anchor_files": {
+    "plan.json": "3787df3b6d8847628c670abcb8683588bc2d8474bc8d7e7edf6471576dd8dd55",
+    "source_manifest.json": "39a66345b82eaec0fc465f70b3442e46715da3ebc656a2f6292b2ff9a04f51e3",
+    "raw_manifest.json": "2790a47903b8e3cb42ddaaacc1933ab66906878b78d678941ff5aa7b1084694f",
+    "analysis/audit.json": "93fe4555e515cbe6d852381f02814bdecd6447ed6d5e80328f2c9089bbc6e187",
+    "study/goal_i05/full.json": "77808dfd2c64057622ebc5c8d51fd7ca6828653c4576b00a915a22eafb5ab349",
+    "study/goal_i09/full.json": "184c8efe35e514cb3d85ebf50d69e48be8f931229314b1c65d18616faedbfa92"
+  },
+  "conditions": [
+    "goal_i05",
+    "goal_i09"
+  ],
+  "coordinates": [
+    "e:0",
+    "e:1",
+    "p:0:0",
+    "p:0:1",
+    "goal"
+  ],
+  "arms": [
+    {
+      "id": "control",
+      "epsilon": 0.0,
+      "signs": null,
+      "deltas": {
+        "e:0": 0.0,
+        "e:1": 0.0,
+        "p:0:0": 0.0,
+        "p:0:1": 0.0,
+        "goal": 0.0
+      }
+    },
+    {
+      "id": "e4_mmmmm",
+      "epsilon": 0.0001,
+      "signs": "mmmmm",
+      "deltas": {
+        "e:0": -0.0001,
+        "e:1": -0.0001,
+        "p:0:0": -0.0001,
+        "p:0:1": -0.0001,
+        "goal": -0.0001
+      }
+    },
+    {
+      "id": "e4_mmmmp",
+      "epsilon": 0.0001,
+      "signs": "mmmmp",
+      "deltas": {
+        "e:0": -0.0001,
+        "e:1": -0.0001,
+        "p:0:0": -0.0001,
+        "p:0:1": -0.0001,
+        "goal": 0.0001
+      }
+    },
+    {
+      "id": "e4_mmmpm",
+      "epsilon": 0.0001,
+      "signs": "mmmpm",
+      "deltas": {
+        "e:0": -0.0001,
+        "e:1": -0.0001,
+        "p:0:0": -0.0001,
+        "p:0:1": 0.0001,
+        "goal": -0.0001
+      }
+    },
+    {
+      "id": "e4_mmmpp",
+      "epsilon": 0.0001,
+      "signs": "mmmpp",
+      "deltas": {
+        "e:0": -0.0001,
+        "e:1": -0.0001,
+        "p:0:0": -0.0001,
+        "p:0:1": 0.0001,
+        "goal": 0.0001
+      }
+    },
+    {
+      "id": "e4_mmpmm",
+      "epsilon": 0.0001,
+      "signs": "mmpmm",
+      "deltas": {
+        "e:0": -0.0001,
+        "e:1": -0.0001,
+        "p:0:0": 0.0001,
+        "p:0:1": -0.0001,
+        "goal": -0.0001
+      }
+    },
+    {
+      "id": "e4_mmpmp",
+      "epsilon": 0.0001,
+      "signs": "mmpmp",
+      "deltas": {
+        "e:0": -0.0001,
+        "e:1": -0.0001,
+        "p:0:0": 0.0001,
+        "p:0:1": -0.0001,
+        "goal": 0.0001
+      }
+    },
+    {
+      "id": "e4_mmppm",
+      "epsilon": 0.0001,
+      "signs": "mmppm",
+      "deltas": {
+        "e:0": -0.0001,
+        "e:1": -0.0001,
+        "p:0:0": 0.0001,
+        "p:0:1": 0.0001,
+        "goal": -0.0001
+      }
+    },
+    {
+      "id": "e4_mmppp",
+      "epsilon": 0.0001,
+      "signs": "mmppp",
+      "deltas": {
+        "e:0": -0.0001,
+        "e:1": -0.0001,
+        "p:0:0": 0.0001,
+        "p:0:1": 0.0001,
+        "goal": 0.0001
+      }
+    },
+    {
+      "id": "e4_mpmmm",
+      "epsilon": 0.0001,
+      "signs": "mpmmm",
+      "deltas": {
+        "e:0": -0.0001,
+        "e:1": 0.0001,
+        "p:0:0": -0.0001,
+        "p:0:1": -0.0001,
+        "goal": -0.0001
+      }
+    },
+    {
+      "id": "e4_mpmmp",
+      "epsilon": 0.0001,
+      "signs": "mpmmp",
+      "deltas": {
+        "e:0": -0.0001,
+        "e:1": 0.0001,
+        "p:0:0": -0.0001,
+        "p:0:1": -0.0001,
+        "goal": 0.0001
+      }
+    },
+    {
+      "id": "e4_mpmpm",
+      "epsilon": 0.0001,
+      "signs": "mpmpm",
+      "deltas": {
+        "e:0": -0.0001,
+        "e:1": 0.0001,
+        "p:0:0": -0.0001,
+        "p:0:1": 0.0001,
+        "goal": -0.0001
+      }
+    },
+    {
+      "id": "e4_mpmpp",
+      "epsilon": 0.0001,
+      "signs": "mpmpp",
+      "deltas": {
+        "e:0": -0.0001,
+        "e:1": 0.0001,
+        "p:0:0": -0.0001,
+        "p:0:1": 0.0001,
+        "goal": 0.0001
+      }
+    },
+    {
+      "id": "e4_mppmm",
+      "epsilon": 0.0001,
+      "signs": "mppmm",
+      "deltas": {
+        "e:0": -0.0001,
+        "e:1": 0.0001,
+        "p:0:0": 0.0001,
+        "p:0:1": -0.0001,
+        "goal": -0.0001
+      }
+    },
+    {
+      "id": "e4_mppmp",
+      "epsilon": 0.0001,
+      "signs": "mppmp",
+      "deltas": {
+        "e:0": -0.0001,
+        "e:1": 0.0001,
+        "p:0:0": 0.0001,
+        "p:0:1": -0.0001,
+        "goal": 0.0001
+      }
+    },
+    {
+      "id": "e4_mpppm",
+      "epsilon": 0.0001,
+      "signs": "mpppm",
+      "deltas": {
+        "e:0": -0.0001,
+        "e:1": 0.0001,
+        "p:0:0": 0.0001,
+        "p:0:1": 0.0001,
+        "goal": -0.0001
+      }
+    },
+    {
+      "id": "e4_mpppp",
+      "epsilon": 0.0001,
+      "signs": "mpppp",
+      "deltas": {
+        "e:0": -0.0001,
+        "e:1": 0.0001,
+        "p:0:0": 0.0001,
+        "p:0:1": 0.0001,
+        "goal": 0.0001
+      }
+    },
+    {
+      "id": "e4_pmmmm",
+      "epsilon": 0.0001,
+      "signs": "pmmmm",
+      "deltas": {
+        "e:0": 0.0001,
+        "e:1": -0.0001,
+        "p:0:0": -0.0001,
+        "p:0:1": -0.0001,
+        "goal": -0.0001
+      }
+    },
+    {
+      "id": "e4_pmmmp",
+      "epsilon": 0.0001,
+      "signs": "pmmmp",
+      "deltas": {
+        "e:0": 0.0001,
+        "e:1": -0.0001,
+        "p:0:0": -0.0001,
+        "p:0:1": -0.0001,
+        "goal": 0.0001
+      }
+    },
+    {
+      "id": "e4_pmmpm",
+      "epsilon": 0.0001,
+      "signs": "pmmpm",
+      "deltas": {
+        "e:0": 0.0001,
+        "e:1": -0.0001,
+        "p:0:0": -0.0001,
+        "p:0:1": 0.0001,
+        "goal": -0.0001
+      }
+    },
+    {
+      "id": "e4_pmmpp",
+      "epsilon": 0.0001,
+      "signs": "pmmpp",
+      "deltas": {
+        "e:0": 0.0001,
+        "e:1": -0.0001,
+        "p:0:0": -0.0001,
+        "p:0:1": 0.0001,
+        "goal": 0.0001
+      }
+    },
+    {
+      "id": "e4_pmpmm",
+      "epsilon": 0.0001,
+      "signs": "pmpmm",
+      "deltas": {
+        "e:0": 0.0001,
+        "e:1": -0.0001,
+        "p:0:0": 0.0001,
+        "p:0:1": -0.0001,
+        "goal": -0.0001
+      }
+    },
+    {
+      "id": "e4_pmpmp",
+      "epsilon": 0.0001,
+      "signs": "pmpmp",
+      "deltas": {
+        "e:0": 0.0001,
+        "e:1": -0.0001,
+        "p:0:0": 0.0001,
+        "p:0:1": -0.0001,
+        "goal": 0.0001
+      }
+    },
+    {
+      "id": "e4_pmppm",
+      "epsilon": 0.0001,
+      "signs": "pmppm",
+      "deltas": {
+        "e:0": 0.0001,
+        "e:1": -0.0001,
+        "p:0:0": 0.0001,
+        "p:0:1": 0.0001,
+        "goal": -0.0001
+      }
+    },
+    {
+      "id": "e4_pmppp",
+      "epsilon": 0.0001,
+      "signs": "pmppp",
+      "deltas": {
+        "e:0": 0.0001,
+        "e:1": -0.0001,
+        "p:0:0": 0.0001,
+        "p:0:1": 0.0001,
+        "goal": 0.0001
+      }
+    },
+    {
+      "id": "e4_ppmmm",
+      "epsilon": 0.0001,
+      "signs": "ppmmm",
+      "deltas": {
+        "e:0": 0.0001,
+        "e:1": 0.0001,
+        "p:0:0": -0.0001,
+        "p:0:1": -0.0001,
+        "goal": -0.0001
+      }
+    },
+    {
+      "id": "e4_ppmmp",
+      "epsilon": 0.0001,
+      "signs": "ppmmp",
+      "deltas": {
+        "e:0": 0.0001,
+        "e:1": 0.0001,
+        "p:0:0": -0.0001,
+        "p:0:1": -0.0001,
+        "goal": 0.0001
+      }
+    },
+    {
+      "id": "e4_ppmpm",
+      "epsilon": 0.0001,
+      "signs": "ppmpm",
+      "deltas": {
+        "e:0": 0.0001,
+        "e:1": 0.0001,
+        "p:0:0": -0.0001,
+        "p:0:1": 0.0001,
+        "goal": -0.0001
+      }
+    },
+    {
+      "id": "e4_ppmpp",
+      "epsilon": 0.0001,
+      "signs": "ppmpp",
+      "deltas": {
+        "e:0": 0.0001,
+        "e:1": 0.0001,
+        "p:0:0": -0.0001,
+        "p:0:1": 0.0001,
+        "goal": 0.0001
+      }
+    },
+    {
+      "id": "e4_pppmm",
+      "epsilon": 0.0001,
+      "signs": "pppmm",
+      "deltas": {
+        "e:0": 0.0001,
+        "e:1": 0.0001,
+        "p:0:0": 0.0001,
+        "p:0:1": -0.0001,
+        "goal": -0.0001
+      }
+    },
+    {
+      "id": "e4_pppmp",
+      "epsilon": 0.0001,
+      "signs": "pppmp",
+      "deltas": {
+        "e:0": 0.0001,
+        "e:1": 0.0001,
+        "p:0:0": 0.0001,
+        "p:0:1": -0.0001,
+        "goal": 0.0001
+      }
+    },
+    {
+      "id": "e4_ppppm",
+      "epsilon": 0.0001,
+      "signs": "ppppm",
+      "deltas": {
+        "e:0": 0.0001,
+        "e:1": 0.0001,
+        "p:0:0": 0.0001,
+        "p:0:1": 0.0001,
+        "goal": -0.0001
+      }
+    },
+    {
+      "id": "e4_ppppp",
+      "epsilon": 0.0001,
+      "signs": "ppppp",
+      "deltas": {
+        "e:0": 0.0001,
+        "e:1": 0.0001,
+        "p:0:0": 0.0001,
+        "p:0:1": 0.0001,
+        "goal": 0.0001
+      }
+    },
+    {
+      "id": "e5_mmmmm",
+      "epsilon": 1e-05,
+      "signs": "mmmmm",
+      "deltas": {
+        "e:0": -1e-05,
+        "e:1": -1e-05,
+        "p:0:0": -1e-05,
+        "p:0:1": -1e-05,
+        "goal": -1e-05
+      }
+    },
+    {
+      "id": "e5_mmmmp",
+      "epsilon": 1e-05,
+      "signs": "mmmmp",
+      "deltas": {
+        "e:0": -1e-05,
+        "e:1": -1e-05,
+        "p:0:0": -1e-05,
+        "p:0:1": -1e-05,
+        "goal": 1e-05
+      }
+    },
+    {
+      "id": "e5_mmmpm",
+      "epsilon": 1e-05,
+      "signs": "mmmpm",
+      "deltas": {
+        "e:0": -1e-05,
+        "e:1": -1e-05,
+        "p:0:0": -1e-05,
+        "p:0:1": 1e-05,
+        "goal": -1e-05
+      }
+    },
+    {
+      "id": "e5_mmmpp",
+      "epsilon": 1e-05,
+      "signs": "mmmpp",
+      "deltas": {
+        "e:0": -1e-05,
+        "e:1": -1e-05,
+        "p:0:0": -1e-05,
+        "p:0:1": 1e-05,
+        "goal": 1e-05
+      }
+    },
+    {
+      "id": "e5_mmpmm",
+      "epsilon": 1e-05,
+      "signs": "mmpmm",
+      "deltas": {
+        "e:0": -1e-05,
+        "e:1": -1e-05,
+        "p:0:0": 1e-05,
+        "p:0:1": -1e-05,
+        "goal": -1e-05
+      }
+    },
+    {
+      "id": "e5_mmpmp",
+      "epsilon": 1e-05,
+      "signs": "mmpmp",
+      "deltas": {
+        "e:0": -1e-05,
+        "e:1": -1e-05,
+        "p:0:0": 1e-05,
+        "p:0:1": -1e-05,
+        "goal": 1e-05
+      }
+    },
+    {
+      "id": "e5_mmppm",
+      "epsilon": 1e-05,
+      "signs": "mmppm",
+      "deltas": {
+        "e:0": -1e-05,
+        "e:1": -1e-05,
+        "p:0:0": 1e-05,
+        "p:0:1": 1e-05,
+        "goal": -1e-05
+      }
+    },
+    {
+      "id": "e5_mmppp",
+      "epsilon": 1e-05,
+      "signs": "mmppp",
+      "deltas": {
+        "e:0": -1e-05,
+        "e:1": -1e-05,
+        "p:0:0": 1e-05,
+        "p:0:1": 1e-05,
+        "goal": 1e-05
+      }
+    },
+    {
+      "id": "e5_mpmmm",
+      "epsilon": 1e-05,
+      "signs": "mpmmm",
+      "deltas": {
+        "e:0": -1e-05,
+        "e:1": 1e-05,
+        "p:0:0": -1e-05,
+        "p:0:1": -1e-05,
+        "goal": -1e-05
+      }
+    },
+    {
+      "id": "e5_mpmmp",
+      "epsilon": 1e-05,
+      "signs": "mpmmp",
+      "deltas": {
+        "e:0": -1e-05,
+        "e:1": 1e-05,
+        "p:0:0": -1e-05,
+        "p:0:1": -1e-05,
+        "goal": 1e-05
+      }
+    },
+    {
+      "id": "e5_mpmpm",
+      "epsilon": 1e-05,
+      "signs": "mpmpm",
+      "deltas": {
+        "e:0": -1e-05,
+        "e:1": 1e-05,
+        "p:0:0": -1e-05,
+        "p:0:1": 1e-05,
+        "goal": -1e-05
+      }
+    },
+    {
+      "id": "e5_mpmpp",
+      "epsilon": 1e-05,
+      "signs": "mpmpp",
+      "deltas": {
+        "e:0": -1e-05,
+        "e:1": 1e-05,
+        "p:0:0": -1e-05,
+        "p:0:1": 1e-05,
+        "goal": 1e-05
+      }
+    },
+    {
+      "id": "e5_mppmm",
+      "epsilon": 1e-05,
+      "signs": "mppmm",
+      "deltas": {
+        "e:0": -1e-05,
+        "e:1": 1e-05,
+        "p:0:0": 1e-05,
+        "p:0:1": -1e-05,
+        "goal": -1e-05
+      }
+    },
+    {
+      "id": "e5_mppmp",
+      "epsilon": 1e-05,
+      "signs": "mppmp",
+      "deltas": {
+        "e:0": -1e-05,
+        "e:1": 1e-05,
+        "p:0:0": 1e-05,
+        "p:0:1": -1e-05,
+        "goal": 1e-05
+      }
+    },
+    {
+      "id": "e5_mpppm",
+      "epsilon": 1e-05,
+      "signs": "mpppm",
+      "deltas": {
+        "e:0": -1e-05,
+        "e:1": 1e-05,
+        "p:0:0": 1e-05,
+        "p:0:1": 1e-05,
+        "goal": -1e-05
+      }
+    },
+    {
+      "id": "e5_mpppp",
+      "epsilon": 1e-05,
+      "signs": "mpppp",
+      "deltas": {
+        "e:0": -1e-05,
+        "e:1": 1e-05,
+        "p:0:0": 1e-05,
+        "p:0:1": 1e-05,
+        "goal": 1e-05
+      }
+    },
+    {
+      "id": "e5_pmmmm",
+      "epsilon": 1e-05,
+      "signs": "pmmmm",
+      "deltas": {
+        "e:0": 1e-05,
+        "e:1": -1e-05,
+        "p:0:0": -1e-05,
+        "p:0:1": -1e-05,
+        "goal": -1e-05
+      }
+    },
+    {
+      "id": "e5_pmmmp",
+      "epsilon": 1e-05,
+      "signs": "pmmmp",
+      "deltas": {
+        "e:0": 1e-05,
+        "e:1": -1e-05,
+        "p:0:0": -1e-05,
+        "p:0:1": -1e-05,
+        "goal": 1e-05
+      }
+    },
+    {
+      "id": "e5_pmmpm",
+      "epsilon": 1e-05,
+      "signs": "pmmpm",
+      "deltas": {
+        "e:0": 1e-05,
+        "e:1": -1e-05,
+        "p:0:0": -1e-05,
+        "p:0:1": 1e-05,
+        "goal": -1e-05
+      }
+    },
+    {
+      "id": "e5_pmmpp",
+      "epsilon": 1e-05,
+      "signs": "pmmpp",
+      "deltas": {
+        "e:0": 1e-05,
+        "e:1": -1e-05,
+        "p:0:0": -1e-05,
+        "p:0:1": 1e-05,
+        "goal": 1e-05
+      }
+    },
+    {
+      "id": "e5_pmpmm",
+      "epsilon": 1e-05,
+      "signs": "pmpmm",
+      "deltas": {
+        "e:0": 1e-05,
+        "e:1": -1e-05,
+        "p:0:0": 1e-05,
+        "p:0:1": -1e-05,
+        "goal": -1e-05
+      }
+    },
+    {
+      "id": "e5_pmpmp",
+      "epsilon": 1e-05,
+      "signs": "pmpmp",
+      "deltas": {
+        "e:0": 1e-05,
+        "e:1": -1e-05,
+        "p:0:0": 1e-05,
+        "p:0:1": -1e-05,
+        "goal": 1e-05
+      }
+    },
+    {
+      "id": "e5_pmppm",
+      "epsilon": 1e-05,
+      "signs": "pmppm",
+      "deltas": {
+        "e:0": 1e-05,
+        "e:1": -1e-05,
+        "p:0:0": 1e-05,
+        "p:0:1": 1e-05,
+        "goal": -1e-05
+      }
+    },
+    {
+      "id": "e5_pmppp",
+      "epsilon": 1e-05,
+      "signs": "pmppp",
+      "deltas": {
+        "e:0": 1e-05,
+        "e:1": -1e-05,
+        "p:0:0": 1e-05,
+        "p:0:1": 1e-05,
+        "goal": 1e-05
+      }
+    },
+    {
+      "id": "e5_ppmmm",
+      "epsilon": 1e-05,
+      "signs": "ppmmm",
+      "deltas": {
+        "e:0": 1e-05,
+        "e:1": 1e-05,
+        "p:0:0": -1e-05,
+        "p:0:1": -1e-05,
+        "goal": -1e-05
+      }
+    },
+    {
+      "id": "e5_ppmmp",
+      "epsilon": 1e-05,
+      "signs": "ppmmp",
+      "deltas": {
+        "e:0": 1e-05,
+        "e:1": 1e-05,
+        "p:0:0": -1e-05,
+        "p:0:1": -1e-05,
+        "goal": 1e-05
+      }
+    },
+    {
+      "id": "e5_ppmpm",
+      "epsilon": 1e-05,
+      "signs": "ppmpm",
+      "deltas": {
+        "e:0": 1e-05,
+        "e:1": 1e-05,
+        "p:0:0": -1e-05,
+        "p:0:1": 1e-05,
+        "goal": -1e-05
+      }
+    },
+    {
+      "id": "e5_ppmpp",
+      "epsilon": 1e-05,
+      "signs": "ppmpp",
+      "deltas": {
+        "e:0": 1e-05,
+        "e:1": 1e-05,
+        "p:0:0": -1e-05,
+        "p:0:1": 1e-05,
+        "goal": 1e-05
+      }
+    },
+    {
+      "id": "e5_pppmm",
+      "epsilon": 1e-05,
+      "signs": "pppmm",
+      "deltas": {
+        "e:0": 1e-05,
+        "e:1": 1e-05,
+        "p:0:0": 1e-05,
+        "p:0:1": -1e-05,
+        "goal": -1e-05
+      }
+    },
+    {
+      "id": "e5_pppmp",
+      "epsilon": 1e-05,
+      "signs": "pppmp",
+      "deltas": {
+        "e:0": 1e-05,
+        "e:1": 1e-05,
+        "p:0:0": 1e-05,
+        "p:0:1": -1e-05,
+        "goal": 1e-05
+      }
+    },
+    {
+      "id": "e5_ppppm",
+      "epsilon": 1e-05,
+      "signs": "ppppm",
+      "deltas": {
+        "e:0": 1e-05,
+        "e:1": 1e-05,
+        "p:0:0": 1e-05,
+        "p:0:1": 1e-05,
+        "goal": -1e-05
+      }
+    },
+    {
+      "id": "e5_ppppp",
+      "epsilon": 1e-05,
+      "signs": "ppppp",
+      "deltas": {
+        "e:0": 1e-05,
+        "e:1": 1e-05,
+        "p:0:0": 1e-05,
+        "p:0:1": 1e-05,
+        "goal": 1e-05
+      }
+    },
+    {
+      "id": "e6_mmmmm",
+      "epsilon": 1e-06,
+      "signs": "mmmmm",
+      "deltas": {
+        "e:0": -1e-06,
+        "e:1": -1e-06,
+        "p:0:0": -1e-06,
+        "p:0:1": -1e-06,
+        "goal": -1e-06
+      }
+    },
+    {
+      "id": "e6_mmmmp",
+      "epsilon": 1e-06,
+      "signs": "mmmmp",
+      "deltas": {
+        "e:0": -1e-06,
+        "e:1": -1e-06,
+        "p:0:0": -1e-06,
+        "p:0:1": -1e-06,
+        "goal": 1e-06
+      }
+    },
+    {
+      "id": "e6_mmmpm",
+      "epsilon": 1e-06,
+      "signs": "mmmpm",
+      "deltas": {
+        "e:0": -1e-06,
+        "e:1": -1e-06,
+        "p:0:0": -1e-06,
+        "p:0:1": 1e-06,
+        "goal": -1e-06
+      }
+    },
+    {
+      "id": "e6_mmmpp",
+      "epsilon": 1e-06,
+      "signs": "mmmpp",
+      "deltas": {
+        "e:0": -1e-06,
+        "e:1": -1e-06,
+        "p:0:0": -1e-06,
+        "p:0:1": 1e-06,
+        "goal": 1e-06
+      }
+    },
+    {
+      "id": "e6_mmpmm",
+      "epsilon": 1e-06,
+      "signs": "mmpmm",
+      "deltas": {
+        "e:0": -1e-06,
+        "e:1": -1e-06,
+        "p:0:0": 1e-06,
+        "p:0:1": -1e-06,
+        "goal": -1e-06
+      }
+    },
+    {
+      "id": "e6_mmpmp",
+      "epsilon": 1e-06,
+      "signs": "mmpmp",
+      "deltas": {
+        "e:0": -1e-06,
+        "e:1": -1e-06,
+        "p:0:0": 1e-06,
+        "p:0:1": -1e-06,
+        "goal": 1e-06
+      }
+    },
+    {
+      "id": "e6_mmppm",
+      "epsilon": 1e-06,
+      "signs": "mmppm",
+      "deltas": {
+        "e:0": -1e-06,
+        "e:1": -1e-06,
+        "p:0:0": 1e-06,
+        "p:0:1": 1e-06,
+        "goal": -1e-06
+      }
+    },
+    {
+      "id": "e6_mmppp",
+      "epsilon": 1e-06,
+      "signs": "mmppp",
+      "deltas": {
+        "e:0": -1e-06,
+        "e:1": -1e-06,
+        "p:0:0": 1e-06,
+        "p:0:1": 1e-06,
+        "goal": 1e-06
+      }
+    },
+    {
+      "id": "e6_mpmmm",
+      "epsilon": 1e-06,
+      "signs": "mpmmm",
+      "deltas": {
+        "e:0": -1e-06,
+        "e:1": 1e-06,
+        "p:0:0": -1e-06,
+        "p:0:1": -1e-06,
+        "goal": -1e-06
+      }
+    },
+    {
+      "id": "e6_mpmmp",
+      "epsilon": 1e-06,
+      "signs": "mpmmp",
+      "deltas": {
+        "e:0": -1e-06,
+        "e:1": 1e-06,
+        "p:0:0": -1e-06,
+        "p:0:1": -1e-06,
+        "goal": 1e-06
+      }
+    },
+    {
+      "id": "e6_mpmpm",
+      "epsilon": 1e-06,
+      "signs": "mpmpm",
+      "deltas": {
+        "e:0": -1e-06,
+        "e:1": 1e-06,
+        "p:0:0": -1e-06,
+        "p:0:1": 1e-06,
+        "goal": -1e-06
+      }
+    },
+    {
+      "id": "e6_mpmpp",
+      "epsilon": 1e-06,
+      "signs": "mpmpp",
+      "deltas": {
+        "e:0": -1e-06,
+        "e:1": 1e-06,
+        "p:0:0": -1e-06,
+        "p:0:1": 1e-06,
+        "goal": 1e-06
+      }
+    },
+    {
+      "id": "e6_mppmm",
+      "epsilon": 1e-06,
+      "signs": "mppmm",
+      "deltas": {
+        "e:0": -1e-06,
+        "e:1": 1e-06,
+        "p:0:0": 1e-06,
+        "p:0:1": -1e-06,
+        "goal": -1e-06
+      }
+    },
+    {
+      "id": "e6_mppmp",
+      "epsilon": 1e-06,
+      "signs": "mppmp",
+      "deltas": {
+        "e:0": -1e-06,
+        "e:1": 1e-06,
+        "p:0:0": 1e-06,
+        "p:0:1": -1e-06,
+        "goal": 1e-06
+      }
+    },
+    {
+      "id": "e6_mpppm",
+      "epsilon": 1e-06,
+      "signs": "mpppm",
+      "deltas": {
+        "e:0": -1e-06,
+        "e:1": 1e-06,
+        "p:0:0": 1e-06,
+        "p:0:1": 1e-06,
+        "goal": -1e-06
+      }
+    },
+    {
+      "id": "e6_mpppp",
+      "epsilon": 1e-06,
+      "signs": "mpppp",
+      "deltas": {
+        "e:0": -1e-06,
+        "e:1": 1e-06,
+        "p:0:0": 1e-06,
+        "p:0:1": 1e-06,
+        "goal": 1e-06
+      }
+    },
+    {
+      "id": "e6_pmmmm",
+      "epsilon": 1e-06,
+      "signs": "pmmmm",
+      "deltas": {
+        "e:0": 1e-06,
+        "e:1": -1e-06,
+        "p:0:0": -1e-06,
+        "p:0:1": -1e-06,
+        "goal": -1e-06
+      }
+    },
+    {
+      "id": "e6_pmmmp",
+      "epsilon": 1e-06,
+      "signs": "pmmmp",
+      "deltas": {
+        "e:0": 1e-06,
+        "e:1": -1e-06,
+        "p:0:0": -1e-06,
+        "p:0:1": -1e-06,
+        "goal": 1e-06
+      }
+    },
+    {
+      "id": "e6_pmmpm",
+      "epsilon": 1e-06,
+      "signs": "pmmpm",
+      "deltas": {
+        "e:0": 1e-06,
+        "e:1": -1e-06,
+        "p:0:0": -1e-06,
+        "p:0:1": 1e-06,
+        "goal": -1e-06
+      }
+    },
+    {
+      "id": "e6_pmmpp",
+      "epsilon": 1e-06,
+      "signs": "pmmpp",
+      "deltas": {
+        "e:0": 1e-06,
+        "e:1": -1e-06,
+        "p:0:0": -1e-06,
+        "p:0:1": 1e-06,
+        "goal": 1e-06
+      }
+    },
+    {
+      "id": "e6_pmpmm",
+      "epsilon": 1e-06,
+      "signs": "pmpmm",
+      "deltas": {
+        "e:0": 1e-06,
+        "e:1": -1e-06,
+        "p:0:0": 1e-06,
+        "p:0:1": -1e-06,
+        "goal": -1e-06
+      }
+    },
+    {
+      "id": "e6_pmpmp",
+      "epsilon": 1e-06,
+      "signs": "pmpmp",
+      "deltas": {
+        "e:0": 1e-06,
+        "e:1": -1e-06,
+        "p:0:0": 1e-06,
+        "p:0:1": -1e-06,
+        "goal": 1e-06
+      }
+    },
+    {
+      "id": "e6_pmppm",
+      "epsilon": 1e-06,
+      "signs": "pmppm",
+      "deltas": {
+        "e:0": 1e-06,
+        "e:1": -1e-06,
+        "p:0:0": 1e-06,
+        "p:0:1": 1e-06,
+        "goal": -1e-06
+      }
+    },
+    {
+      "id": "e6_pmppp",
+      "epsilon": 1e-06,
+      "signs": "pmppp",
+      "deltas": {
+        "e:0": 1e-06,
+        "e:1": -1e-06,
+        "p:0:0": 1e-06,
+        "p:0:1": 1e-06,
+        "goal": 1e-06
+      }
+    },
+    {
+      "id": "e6_ppmmm",
+      "epsilon": 1e-06,
+      "signs": "ppmmm",
+      "deltas": {
+        "e:0": 1e-06,
+        "e:1": 1e-06,
+        "p:0:0": -1e-06,
+        "p:0:1": -1e-06,
+        "goal": -1e-06
+      }
+    },
+    {
+      "id": "e6_ppmmp",
+      "epsilon": 1e-06,
+      "signs": "ppmmp",
+      "deltas": {
+        "e:0": 1e-06,
+        "e:1": 1e-06,
+        "p:0:0": -1e-06,
+        "p:0:1": -1e-06,
+        "goal": 1e-06
+      }
+    },
+    {
+      "id": "e6_ppmpm",
+      "epsilon": 1e-06,
+      "signs": "ppmpm",
+      "deltas": {
+        "e:0": 1e-06,
+        "e:1": 1e-06,
+        "p:0:0": -1e-06,
+        "p:0:1": 1e-06,
+        "goal": -1e-06
+      }
+    },
+    {
+      "id": "e6_ppmpp",
+      "epsilon": 1e-06,
+      "signs": "ppmpp",
+      "deltas": {
+        "e:0": 1e-06,
+        "e:1": 1e-06,
+        "p:0:0": -1e-06,
+        "p:0:1": 1e-06,
+        "goal": 1e-06
+      }
+    },
+    {
+      "id": "e6_pppmm",
+      "epsilon": 1e-06,
+      "signs": "pppmm",
+      "deltas": {
+        "e:0": 1e-06,
+        "e:1": 1e-06,
+        "p:0:0": 1e-06,
+        "p:0:1": -1e-06,
+        "goal": -1e-06
+      }
+    },
+    {
+      "id": "e6_pppmp",
+      "epsilon": 1e-06,
+      "signs": "pppmp",
+      "deltas": {
+        "e:0": 1e-06,
+        "e:1": 1e-06,
+        "p:0:0": 1e-06,
+        "p:0:1": -1e-06,
+        "goal": 1e-06
+      }
+    },
+    {
+      "id": "e6_ppppm",
+      "epsilon": 1e-06,
+      "signs": "ppppm",
+      "deltas": {
+        "e:0": 1e-06,
+        "e:1": 1e-06,
+        "p:0:0": 1e-06,
+        "p:0:1": 1e-06,
+        "goal": -1e-06
+      }
+    },
+    {
+      "id": "e6_ppppp",
+      "epsilon": 1e-06,
+      "signs": "ppppp",
+      "deltas": {
+        "e:0": 1e-06,
+        "e:1": 1e-06,
+        "p:0:0": 1e-06,
+        "p:0:1": 1e-06,
+        "goal": 1e-06
+      }
+    }
+  ],
+  "smoke_arms": [
+    "control",
+    "e4_mmmmm",
+    "e5_ppppp",
+    "e6_mpmpm"
+  ],
+  "horizon": 1,
+  "anchor_tick": 512,
+  "checkpoints": [
+    1
+  ],
+  "intervention": {
+    "clipping": false,
+    "reset_stability": true,
+    "initial_stable_steps": 0,
+    "stop_early": false,
+    "all_coordinates_once": true
+  },
+  "numeric_comparison": {
+    "abs_tol": 1e-12,
+    "rel_tol": 1e-12
+  },
+  "unmeasured": [
+    "native_session_packet",
+    "proof",
+    "support",
+    "raw_decision",
+    "adoption",
+    "actual_energy_joules"
+  ],
+  "automatic_retry": false,
+  "prediction": "Local linear explanation predicts directional gains approaching analytic J as epsilon decreases; agreement is a research outcome, never required for audit success.",
+  "inference_scope": "One-step local linearization at two fixed synthetic recurrence states; no spectral, asymptotic stability, basin, native cognition or learning claim.",
+  "epsilons": [
+    0.0001,
+    1e-05,
+    1e-06
+  ],
+  "linearization_criteria": {
+    "smallest_epsilon_gain_abs_tolerance": 0.0001,
+    "epsilon_decrease_factor": 10,
+    "roundoff_floor": 1e-14,
+    "analytic_jacobian_audit_abs_tolerance": 1e-12,
+    "analytic_jacobian_audit_rel_tolerance": 1e-12,
+    "success_required_for_audit": false
+  }
+}

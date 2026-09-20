@@ -1,0 +1,78 @@
+{
+  "verified": true,
+  "run": "HCR-Evidence/exp43/r062-20260920T011305Z-1a61ac35ea",
+  "bundle_files": 1440,
+  "bundle_sha256": "3bb11886832d074ba67560c8012cc852745f44acf25642a3a45836cf73564094",
+  "zip_sha256": "2f9ff80a968fadcfed46e2610978b23450b7714e9d5920414d6ebd41e5823196",
+  "core_regression": {
+    "environment_skips": [
+      {
+        "reason": "symlink creation is not available",
+        "test": "test_r021_sessions.CheckpointIO.test_file_symlink_rejected"
+      },
+      {
+        "reason": "symlink creation is not available",
+        "test": "test_r021_sessions.CheckpointIO.test_symlink_parent_rejected"
+      },
+      {
+        "reason": "local symlink creation not supported",
+        "test": "test_r034_selection.ProtocolAndIO.test_symlink_rejected"
+      }
+    ],
+    "errors": [],
+    "expected_baseline_count": 602,
+    "expected_failures": [],
+    "failures": [],
+    "final_core_runs": 1,
+    "new_skips": [],
+    "passed": 599,
+    "research_experiment": false,
+    "schema": "hcc-r050-core-regression-v1",
+    "skip_is_pass": false,
+    "tests_run": 602,
+    "unexpected_successes": [],
+    "verified": true
+  },
+  "rows": [
+    {
+      "case": "goalstrong",
+      "arm": "drop_P_prefix",
+      "goal": 0.9868078092823211,
+      "raw": true,
+      "support_gaps": 0,
+      "adopted": true,
+      "ticks": 75
+    },
+    {
+      "case": "startstrong",
+      "arm": "drop_P_prefix",
+      "goal": 0.02867619581616716,
+      "raw": false,
+      "support_gaps": 1,
+      "adopted": null,
+      "ticks": 62
+    },
+    {
+      "case": "goalstrong",
+      "arm": "full",
+      "goal": 0.013283387008994015,
+      "raw": false,
+      "support_gaps": 1,
+      "adopted": null,
+      "ticks": 116
+    },
+    {
+      "case": "startstrong",
+      "arm": "full",
+      "goal": 0.02611721134724789,
+      "raw": false,
+      "support_gaps": 1,
+      "adopted": null,
+      "ticks": 60
+    }
+  ],
+  "synthetic_executions": 4,
+  "rejected_mutations": 32,
+  "prior_pre_research_failure_preserved": true,
+  "prior_failure_research_execution_count": 0
+}

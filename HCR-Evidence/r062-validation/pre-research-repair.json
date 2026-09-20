@@ -1,0 +1,10 @@
+{
+  "stage": "synthetic_smoke_directory_creation",
+  "failed_run": "HCR-Evidence/exp43/r062-20260920T011242Z-6ad9516312",
+  "cause": "validation parent directory absent; mkdir lacked parents=True",
+  "fix": "create smoke parent directory before freeze",
+  "research_executions_before_repair": 0,
+  "core_regression_runs_before_repair": 0,
+  "prior_failed_evidence_preserved": true,
+  "automatic_retry": false
+}

@@ -1,0 +1,7 @@
+{
+  "context_correction": "Original task-contract request suppliedFacts retained a stale R060 sentence from template. Corrected companion changes only that provenance field, not TaskEnvelope, acceptance criteria, frozen spec, or baseline.",
+  "envelope_unchanged": true,
+  "session_board_update": "BINDING_REQUIRED after local plugin update; list succeeded; no other ongoing HCC code changes observed",
+  "initial_skill_version": "2.0.1+codex.20260919223823",
+  "final_validator_version": "2.0.1+codex.20260920011209"
+}

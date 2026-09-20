@@ -1,0 +1,24 @@
+{
+  "schema": "hcc-r060-manifest-v1",
+  "contract": "r060-joint-recovery-v1",
+  "parent_commit": "b3fc168a4650851b5930964ac79fdaa8eb96cc27",
+  "hash_normalization": "CRLF to LF only",
+  "files": {
+    "experiments/exp-41-joint-recovery/design.ko.md": "2746758a54ceee277afc4a0c52b16bd624bbe71d223ac896648521967611a51e",
+    "experiments/exp-41-joint-recovery/frozen_spec.json": "bfe57558b4399fc59a98ed5075385692628eaa627fc148efcf8347018632adc2",
+    "experiments/exp-41-joint-recovery/ORCHESTRATION.ko.md": "2b87f19bb78fae07c50f4f3f9d72e335ff3462a50b1f6f0f91c9dee1634498cc",
+    "HCR-Evidence/exp41/.gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "HCR-Evidence/exp41/.gitignore": "050c4c43407269dc8a0c7c332affc85b0ea2a431a61719285b827a005139dd63",
+    "HCR-Evidence/r060-validation/.gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "HCR-Evidence/r060-validation/.gitignore": "050c4c43407269dc8a0c7c332affc85b0ea2a431a61719285b827a005139dd63",
+    "Run-HCR-R060.cmd": "9fd05ba3deebe791fa9a5416d1fb276edb763d1098abe8deda31133efc22b4f2",
+    "Run-HCR-R060.py": "cf1d1737e248472f482a55cbeeccac8faf5fced909d527e1e2cff7216014b12e",
+    "tools/r060_joint/__init__.py": "59a5ada08259700b63adfae8cc11f2738b689d8a2fce284bf01337dc3510839c",
+    "tools/r060_joint/audit.py": "bbdfd8073243069bedc8ceb4eadaa06a7f05092ac003d8c0b24662f89b3c1e77",
+    "tools/r060_joint/bootstrap.py": "b3153e85c573e70240fc6e559cd7a367577285d5ec97efe662d619fc78462c01",
+    "tools/r060_joint/pipeline.py": "4d9ed4689c8ea2fdb57a40c235317332653b90ef956c393cdd1099d770634973",
+    "tools/r060_joint/selftest.py": "595f82a5e4537217417603967930a53988456dad3ac2a1acb3dc55a7031eb8ab",
+    "tools/r060_joint/tests/test_recovery.py": "78cedda3bde8e935773bb6845a93607bebf9e935078163aae330d334f0af13a4",
+    "tools/r060_joint/worker.py": "8e7935bfa7e4a05f01b01bb92be39316e2ca2be93f8056a81fe7e6e6f0351986"
+  }
+}
