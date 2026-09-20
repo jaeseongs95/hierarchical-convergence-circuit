@@ -1,0 +1,8 @@
+{
+  "source": "conversation:user:AGENTS-instructions-and-continue",
+  "quote": "이 프로젝트의 한 턴 진행은 커밋·로컬 main 병합·작업 브랜치 정리·origin/main push·원격 반영 확인까지 포함하며 일반 push 승인도 포함한다.",
+  "action": "normal fast-forward push to origin/main",
+  "target": "https://github.com/jaeseongs95/hierarchical-convergence-circuit.git/refs/heads/main",
+  "operation": "hcc-r068-delivery-metadata",
+  "force_push": false
+}

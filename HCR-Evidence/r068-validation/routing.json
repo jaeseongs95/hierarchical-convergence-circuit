@@ -1,0 +1,52 @@
+{
+  "execution": "direct professional skills, no MCP workflow run",
+  "route": "direct",
+  "selected": [
+    {
+      "provider": "instruction-scope-resolver",
+      "priority": 50,
+      "reason": "Known workspace, resolve target paths"
+    },
+    {
+      "provider": "task-contract",
+      "priority": 50,
+      "reason": "Continuation scoped from R067 NEXT and current API investigation"
+    },
+    {
+      "provider": "change-scope-guardian",
+      "priority": 50,
+      "reason": "Preserve preexisting untracked evidence; freeze baseline and compare"
+    },
+    {
+      "provider": "ponytail",
+      "priority": 50,
+      "reason": "Reuse native runner, source pipeline and independent replay; no core extension"
+    },
+    {
+      "provider": "acceptance-evidence-validator",
+      "priority": 50,
+      "reason": "Bind frozen target to current checked evidence"
+    },
+    {
+      "provider": "mutation-risk-preflight",
+      "priority": 50,
+      "reason": "Exact origin/main normal push with user authorization"
+    }
+  ],
+  "order": [
+    "instructions",
+    "contract",
+    "baseline",
+    "implementation",
+    "native/synthetic/replay/regression",
+    "scope and delivery verification",
+    "preflight and research delivery",
+    "acceptance",
+    "metadata delivery"
+  ],
+  "constraints": [
+    "No subagents: independent bounded work did not reduce bottleneck",
+    "No independent human-researcher audit claimed",
+    "Model and reasoning settings not both observed; no fit claim"
+  ]
+}

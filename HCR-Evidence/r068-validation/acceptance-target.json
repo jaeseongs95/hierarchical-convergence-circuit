@@ -1,0 +1,10 @@
+{
+  "research_commit": "0615d91a745653d82c7ecabfa04b4a94319eea0e",
+  "files": {
+    "R068_MANIFEST.json": "sha256:f73fc74b3b7201d22d04a1149610487e6c8c9521f0a07cb2f8c27d66e117a7f0",
+    "HCR-Evidence/exp49/r068-20260920T091750Z-4ee71c2983/bundle_manifest.json": "sha256:ad892028187d8eae063a1cf37433e0bf015b41e05ef8ebc327a030912158c470",
+    "experiments/exp-49-request-boundary/RESULTS.ko.md": "sha256:d032ba1efb9924e18abe24e420c41d2e6eb3ee41c0fd648a52d6cf7f33c00249",
+    "experiments/exp-49-request-boundary/NEXT.ko.md": "sha256:c59509f27fab7bc1def5ddcbdd91fc5429a862bc700d3defa20dff0249c2ef91",
+    "experiments/INDEX.json": "sha256:857e0a32f8f67510878b1db97bf0ae17c20bfa94cb07569bc55527aa5088a23e"
+  }
+}

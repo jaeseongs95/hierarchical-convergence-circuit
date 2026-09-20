@@ -1,0 +1,22 @@
+{
+  "remote_main": "0615d91a745653d82c7ecabfa04b4a94319eea0e",
+  "research_commit": "0615d91a745653d82c7ecabfa04b4a94319eea0e",
+  "metadata_files": {
+    "HCR-Evidence/r068-validation/acceptance-report-verification.json": "sha256:655823ac7f996b259837b1279f4757264aac1ab82808d9b562c06a9f640f36af",
+    "HCR-Evidence/r068-validation/acceptance-report.json": "sha256:0e18963e6a71079f49378a5faeab022046835ef51bd0b384fde2b45155545426",
+    "HCR-Evidence/r068-validation/acceptance-request-artifact.json": "sha256:749b7fc26f8a3be252c4450d72519c777305cc0f771efc151a0a1d9ecc76331a",
+    "HCR-Evidence/r068-validation/acceptance-request.json": "sha256:c554e021a36b728fdd4d6484042841930987ea04b3772c77878d317312ce5201",
+    "HCR-Evidence/r068-validation/acceptance-target.json": "sha256:cafad526df19b7814190725dadeff469227a09f8bfd04e16188194936f8d9aed",
+    "HCR-Evidence/r068-validation/collaboration-validation.json": "sha256:655823ac7f996b259837b1279f4757264aac1ab82808d9b562c06a9f640f36af",
+    "HCR-Evidence/r068-validation/git-authorization.json": "sha256:d7b40b5ef29c8a2ad412f52a10c3a4564ead026b33dc4104753c95bb09bab775",
+    "HCR-Evidence/r068-validation/git-preflight-intent.json": "sha256:556dbcc7875efcd36b645902973ab1a219341e5c189c8de9868b1826fd6378c2",
+    "HCR-Evidence/r068-validation/git-preflight-receipt-check.json": "sha256:6bc505f36a13034a5ce684dc14ea10446c495f15af6a225af08f7fdcfd3d10ba",
+    "HCR-Evidence/r068-validation/git-preflight-report.json": "sha256:915fe5c1cbe6dcbd9fcb6269841692653dfd2308bb615cca8791b5c298fc8244",
+    "HCR-Evidence/r068-validation/git-preflight-state.json": "sha256:d78d226420e3d1e3a10993c7d781a1ac14d05629449e59020114df708842fdcf",
+    "HCR-Evidence/r068-validation/git-recovery-check.json": "sha256:db0e5a5038d5f9b0323a0e52b0bbb7a04a6bfbe6b313151d20a26d33468aa3bf",
+    "HCR-Evidence/r068-validation/git-recovery-plan.json": "sha256:ad9d7e04a40ea8fa7295e76b8f85e44fe7fe72d32e24d57100ba58d6167171d4",
+    "HCR-Evidence/r068-validation/research-git-delivery.json": "sha256:474bafd0c3de615f9b48c1a017ecd4e44f5fd397b60e0d89c9c1f2f17e9b9ac1",
+    "HCR-Evidence/r068-validation/routing.json": "sha256:b09b89bca8da9e7b908328787eaaecf9a8955ac4bd9e3ad4c2c51d39cee98fcd"
+  },
+  "scope": "Only R068 delivery and acceptance records; research files unchanged"
+}

@@ -1,0 +1,5 @@
+{
+  "base": "44f227ef201f2aab288cd57ccf3762b864e3d138",
+  "research_commit": "0615d91a745653d82c7ecabfa04b4a94319eea0e",
+  "procedure": "Create a new revert commit for research and delivery metadata after checking later changes; no reset or force push."
+}

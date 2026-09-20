@@ -1,0 +1,9 @@
+{
+  "base": "44f227ef201f2aab288cd57ccf3762b864e3d138",
+  "research_commit": "0615d91a745653d82c7ecabfa04b4a94319eea0e",
+  "reverse_patch_sha256": "sha256:83765d2e13399f34afc3e8d13df1953d5efc6dd2f8b796a06bfac276fba06c84",
+  "command": "git diff --binary BASE RESEARCH | git apply --reverse --check --cached -",
+  "returncode": 0,
+  "working_tree_changed": false,
+  "limitation": "Read-only applicability check, not an executed rollback."
+}

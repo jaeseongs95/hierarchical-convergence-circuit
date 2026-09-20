@@ -1,0 +1,176 @@
+{
+  "schemaVersion": "1.0.0",
+  "target": {
+    "kind": "artifact",
+    "identifier": "HCR-Evidence/r068-validation/acceptance-target.json",
+    "digest": "sha256:cafad526df19b7814190725dadeff469227a09f8bfd04e16188194936f8d9aed"
+  },
+  "criteria": [
+    {
+      "criterionId": "AC-001",
+      "statement": "[AC-001] R067 원관측·memory·config·limits를 보존하고 두 mode·두 gate의 4조건, API 경계 예측과 비교 불가 조건을 실행 전에 동결한다.",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "E-001",
+        "E-002"
+      ],
+      "observedResult": "R067 input/config/memory preserved; modes and gates fixed before execution.; 403 frozen source files checked.",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    },
+    {
+      "criterionId": "AC-002",
+      "statement": "[AC-002] 4 native 최초 판단·readout·요청 전후 packet과 피드백 없는 API 거부를 보존하고 실제 요청·측정·학습 횟수를 구분한다.",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "E-003"
+      ],
+      "observedResult": "Four native sessions, exact rejected-request state equality and no feedback/sensor; two offline reference worlds per session.",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    },
+    {
+      "criterionId": "AC-003",
+      "statement": "[AC-003] 외부 피드백 이후 요청·revision의 합성 검사와 별도 native 수식 replay·변조 거부·bundle 무결성·최종 회귀 1회 및 기존 파일 보존을 확인한다.",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "E-004",
+        "E-005",
+        "E-006",
+        "E-007"
+      ],
+      "observedResult": "Four research formula replays and ten synthetic API cases; eleven tamper rejections.; One final regression: 599 passed, 3 existing skips, 0 failures/errors.; 461 bundle files and ZIP exact; 27936 out-of-scope files and seven preparation files unchanged.; PASS: no excluded/unplanned/preexisting overlap.",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    },
+    {
+      "criterionId": "AC-004",
+      "statement": "[AC-004] 관측·대안·주장 한계·다음 판별 실험을 기록하고 검증 결과를 커밋·병합·push해 전달한다.",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "E-008",
+        "E-009",
+        "E-010"
+      ],
+      "observedResult": "Six-part research report distinguishes unavailable autonomous comparison and synthetic feedback-assisted revision.; Bounded next contrast separates feedback, memory and session continuity.; Research commit merged and normal-pushed; remote hash directly verified. Final acceptance metadata delivery follows.",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    }
+  ],
+  "verifiedEvidenceIndex": [
+    {
+      "evidenceId": "E-001",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp49/r068-20260920T091750Z-4ee71c2983/plan.json",
+      "digest": "sha256:c962efbf5c54b98ec2cd73c78e5b504904da15f07f044d65290ccd2c25d017d1",
+      "targetDigest": "sha256:cafad526df19b7814190725dadeff469227a09f8bfd04e16188194936f8d9aed",
+      "criterionIds": [
+        "AC-001"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "E-002",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp49/r068-20260920T091750Z-4ee71c2983/source_manifest.json",
+      "digest": "sha256:1937f6f7063db5edbda00b81576d1d6dad8c5deee1ed44db4446b83a7a97219d",
+      "targetDigest": "sha256:cafad526df19b7814190725dadeff469227a09f8bfd04e16188194936f8d9aed",
+      "criterionIds": [
+        "AC-001"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "E-003",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp49/r068-20260920T091750Z-4ee71c2983/summary.json",
+      "digest": "sha256:fca4d844ea3d46bf8840f5114a0a61fda696a4761c7aa3590eaa8a1c0250443f",
+      "targetDigest": "sha256:cafad526df19b7814190725dadeff469227a09f8bfd04e16188194936f8d9aed",
+      "criterionIds": [
+        "AC-002"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "E-004",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp49/r068-20260920T091750Z-4ee71c2983/verification.json",
+      "digest": "sha256:59980f386be2866a01187abd507156f83cd8523a1987e9d6f371dacadb81c90e",
+      "targetDigest": "sha256:cafad526df19b7814190725dadeff469227a09f8bfd04e16188194936f8d9aed",
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "E-005",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp49/r068-20260920T091750Z-4ee71c2983/validation/core_regression.json",
+      "digest": "sha256:d5daace122f8617bfd42c41ab59ddb55331aae622d85dc3ab6f6439a54928ab9",
+      "targetDigest": "sha256:cafad526df19b7814190725dadeff469227a09f8bfd04e16188194936f8d9aed",
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "E-006",
+      "kind": "file",
+      "locator": "HCR-Evidence/r068-validation/delivery-verification.json",
+      "digest": "sha256:432bd345fe3f630c34e3d449f8022fde5509deea9f595e7bfab231649e477820",
+      "targetDigest": "sha256:cafad526df19b7814190725dadeff469227a09f8bfd04e16188194936f8d9aed",
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "E-007",
+      "kind": "file",
+      "locator": "HCR-Evidence/r068-validation/scope-report.json",
+      "digest": "sha256:3ab318d0121f46ac87647e7946f80b9039e7008c9f7f3351dab5d5dc7c2cf09c",
+      "targetDigest": "sha256:cafad526df19b7814190725dadeff469227a09f8bfd04e16188194936f8d9aed",
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "E-008",
+      "kind": "file",
+      "locator": "experiments/exp-49-request-boundary/RESULTS.ko.md",
+      "digest": "sha256:d032ba1efb9924e18abe24e420c41d2e6eb3ee41c0fd648a52d6cf7f33c00249",
+      "targetDigest": "sha256:cafad526df19b7814190725dadeff469227a09f8bfd04e16188194936f8d9aed",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "E-009",
+      "kind": "file",
+      "locator": "experiments/exp-49-request-boundary/NEXT.ko.md",
+      "digest": "sha256:c59509f27fab7bc1def5ddcbdd91fc5429a862bc700d3defa20dff0249c2ef91",
+      "targetDigest": "sha256:cafad526df19b7814190725dadeff469227a09f8bfd04e16188194936f8d9aed",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "E-010",
+      "kind": "file",
+      "locator": "HCR-Evidence/r068-validation/research-git-delivery.json",
+      "digest": "sha256:474bafd0c3de615f9b48c1a017ecd4e44f5fd397b60e0d89c9c1f2f17e9b9ac1",
+      "targetDigest": "sha256:cafad526df19b7814190725dadeff469227a09f8bfd04e16188194936f8d9aed",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports"
+    }
+  ],
+  "unresolvedCriteria": [],
+  "limitations": [
+    "Autonomous conflict sensing comparison not measurable with current native input schema.",
+    "Synthetic feedback/revision cases are not research samples.",
+    "Independent logic/process replay, not independent researcher audit.",
+    "First self-test fixture failure preserved; only corrected run reached research and final regression."
+  ],
+  "verdict": "PASS"
+}
