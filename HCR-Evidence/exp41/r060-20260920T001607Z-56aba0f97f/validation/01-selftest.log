@@ -1,0 +1,29 @@
+test_all_sign_corners_and_coordinate_omission (test_recovery.RecoveryTests.test_all_sign_corners_and_coordinate_omission) ... ok
+test_all_synthetic_arms_independent_recurrence (test_recovery.RecoveryTests.test_all_synthetic_arms_independent_recurrence) ... ok
+test_band_preservation_is_not_recovery (test_recovery.RecoveryTests.test_band_preservation_is_not_recovery) ... ok
+test_evidence_change_stops_before_worker (test_recovery.RecoveryTests.test_evidence_change_stops_before_worker) ... ok
+test_exact_spec_rejects_changed_matrix_and_threshold (test_recovery.RecoveryTests.test_exact_spec_rejects_changed_matrix_and_threshold) ... ok
+test_first_failure_retained_and_no_retry (test_recovery.RecoveryTests.test_first_failure_retained_and_no_retry) ... STAGE: failed
+STAGE: failed
+ok
+test_fresh_state_and_counter_reset_without_early_stop (test_recovery.RecoveryTests.test_fresh_state_and_counter_reset_without_early_stop) ... ok
+test_mixed_sign_binding_and_anchor_immutability (test_recovery.RecoveryTests.test_mixed_sign_binding_and_anchor_immutability) ... ok
+test_produce_exact_matrix_and_anchor_initials (test_recovery.RecoveryTests.test_produce_exact_matrix_and_anchor_initials) ... goal_i05 joint interventions recorded
+goal_i09 joint interventions recorded
+goal_i05 joint interventions recorded
+goal_i09 joint interventions recorded
+ok
+test_range_rejected_without_clipping (test_recovery.RecoveryTests.test_range_rejected_without_clipping) ... ok
+test_recovery_uses_entire_tail_and_all_coordinates (test_recovery.RecoveryTests.test_recovery_uses_entire_tail_and_all_coordinates) ... ok
+test_resealed_corruption_rejected (test_recovery.RecoveryTests.test_resealed_corruption_rejected) ... ok
+test_budget_and_oscillation_termination (tools.r053_feedback.tests.test_audit.AuditTests.test_budget_and_oscillation_termination) ... ok
+test_frozen_spec_rejects_resealed_semantic_change (tools.r053_feedback.tests.test_audit.AuditTests.test_frozen_spec_rejects_resealed_semantic_change) ... ok
+test_handmade_single_group_trace_and_termination_tampering (tools.r053_feedback.tests.test_audit.AuditTests.test_handmade_single_group_trace_and_termination_tampering) ... ok
+test_record_accepts_valid_packet (tools.r053_feedback.tests.test_audit.AuditTests.test_record_accepts_valid_packet) ... ok
+test_resealed_record_tampering (tools.r053_feedback.tests.test_audit.AuditTests.test_resealed_record_tampering) ... ok
+test_trajectory_tampering (tools.r053_feedback.tests.test_audit.AuditTests.test_trajectory_tampering) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 1.585s
+
+OK

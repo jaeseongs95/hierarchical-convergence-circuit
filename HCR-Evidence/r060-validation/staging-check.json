@@ -1,0 +1,8 @@
+{
+  "verified": true,
+  "staged_files": 772,
+  "byte_identical_evidence_files": 738,
+  "implementation_whitespace_exit": 0,
+  "historical_evidence_whitespace": "Unfiltered git diff --check treated preserved CRLF and historical spaces as whitespace errors; no frozen bytes changed. Implementation checked separately with cr-at-eol.",
+  "scope": "Only R060 add-on, EXP-41, index and new evidence"
+}

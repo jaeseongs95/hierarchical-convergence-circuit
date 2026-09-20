@@ -1,0 +1,68 @@
+{
+  "verified": true,
+  "run": "HCR-Evidence/exp41/r060-20260920T001607Z-56aba0f97f",
+  "research_executions": 1,
+  "rows": 66,
+  "selftests": 18,
+  "smoke_rows": 8,
+  "anchor_replays": 2,
+  "core_regression": {
+    "tests_run": 602,
+    "passed": 599,
+    "runs": 1,
+    "skips": [
+      {
+        "reason": "symlink creation is not available",
+        "test": "test_r021_sessions.CheckpointIO.test_file_symlink_rejected"
+      },
+      {
+        "reason": "symlink creation is not available",
+        "test": "test_r021_sessions.CheckpointIO.test_symlink_parent_rejected"
+      },
+      {
+        "reason": "local symlink creation not supported",
+        "test": "test_r034_selection.ProtocolAndIO.test_symlink_rejected"
+      }
+    ]
+  },
+  "source_files": 302,
+  "bundle_hash_targets": 735,
+  "zip_files": 736,
+  "source_and_bundle_unmodified": true,
+  "summary_recomputed_from_raw": true,
+  "previous_index_entries_preserved": true,
+  "statistics": {
+    "goal_i05": {
+      "perturbations": 32,
+      "recovered": 32,
+      "bands_preserved": 32,
+      "max_final_distance": 3.3384683906234613e-12,
+      "max_tail_distance": 2.605968218993837e-11,
+      "return_ticks": [
+        57,
+        70
+      ],
+      "max_amplification": 1.0650183654636944,
+      "control_max_anchor_drift": 0.0
+    },
+    "goal_i09": {
+      "perturbations": 32,
+      "recovered": 32,
+      "bands_preserved": 32,
+      "max_final_distance": 4.440892098500626e-16,
+      "max_tail_distance": 4.440892098500626e-16,
+      "return_ticks": [
+        25,
+        33
+      ],
+      "max_amplification": 1.0,
+      "control_max_anchor_drift": 0.0
+    }
+  },
+  "research_cost": {
+    "kernel_ticks": 8448,
+    "group_updates": 42240,
+    "normalization_ops": 42240,
+    "signal_transmissions": 67584
+  }
+}

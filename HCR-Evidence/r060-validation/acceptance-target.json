@@ -1,0 +1,7 @@
+{
+  "R060_MANIFEST.json": "sha256:18ef5aa87c92f7e1ccbbb41947b4edb6b3e8e763f074b0b2556c4b6367598131",
+  "HCR-Evidence/exp41/r060-20260920T001607Z-56aba0f97f/source_manifest.json": "sha256:ae8dd0c1f82ec6a0b1293d4b1eb8398e523260c66670b826c7a32bee44179afc",
+  "HCR-Evidence/exp41/r060-20260920T001607Z-56aba0f97f/bundle_manifest.json": "sha256:9248c7d539cd58ce567bb2f48cd31a8b5cb6a15e509c6e616ee37c0b2db2a75d",
+  "experiments/exp-41-joint-recovery/RESULTS.ko.md": "sha256:cfd0bd659f252cf875cca84b04c446c6db66445b2361fbe59449cd2cff86db13",
+  "HCR-Evidence/r060-validation/delivery-verification.json": "sha256:8584eaaf59fb1bae4ae52a96a0397a3b1a649a503132df79ec5f8221eaec65c3"
+}

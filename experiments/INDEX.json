@@ -745,6 +745,26 @@
       "source_commit": null,
       "source_commit_note": "Paired coordinate perturbation recovery from two fixed-horizon anchors; finite-time numerical scope only.",
       "standalone_python_entrypoint": "Run-HCR-R059.py"
+    },
+    {
+      "current_python_entrypoint": null,
+      "default_dispatcher_promoted": false,
+      "design": "experiments/exp-41-joint-recovery/design.ko.md",
+      "directory": "experiments/exp-41-joint-recovery",
+      "evidence_directory": "HCR-Evidence/exp41",
+      "execution_status": "standalone_candidate_contract",
+      "experiment_id": "EXP-41",
+      "frozen_design": "experiments/exp-41-joint-recovery/frozen_spec.json",
+      "implementation_validation_directory": "HCR-Evidence/r060-validation",
+      "legacy_python_entrypoint": null,
+      "release_manifest": "R060_MANIFEST.json",
+      "revision_references": [
+        "r060"
+      ],
+      "run_status": "read_per_run_evidence",
+      "source_commit": null,
+      "source_commit_note": "Paired simultaneous perturbation of all five coordinates at 32 sign corners; finite-time numerical scope only.",
+      "standalone_python_entrypoint": "Run-HCR-R060.py"
     }
   ],
   "inventory_commit": "afb5d5e5b67906b7697f16163e166f59b17e1655",

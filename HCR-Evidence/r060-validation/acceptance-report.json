@@ -1,0 +1,138 @@
+{
+  "schemaVersion": "1.0.0",
+  "target": {
+    "kind": "artifact",
+    "identifier": "HCR-Evidence\\r060-validation\\acceptance-target.json",
+    "digest": "sha256:d298a9a499c5f8ef5a58fe8515edd9d2912919089d927d0e3b8c700ab3f9b7f8"
+  },
+  "criteria": [
+    {
+      "criterionId": "AC-001",
+      "statement": "[AC-001] 사전 동결된 두 anchor와 32 부호 조합 및 대조의 66 branch를 한 번 실행하고 모든 원자료를 보존한다.",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "E-001"
+      ],
+      "observedResult": "66 branch exact matrix and all ticks verified; one research run",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    },
+    {
+      "criterionId": "AC-002",
+      "statement": "[AC-002] 별도 수식 검산과 변조 self-test, smoke 및 최종 core regression 1회를 통과하며 기존 skip을 유지한다.",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "E-002",
+        "E-003",
+        "E-004"
+      ],
+      "observedResult": "18 strict synthetic checks passed; 602 tested; 599 passed; exactly 3 baseline skips; 8 smoke branches and 2 anchor replays verified",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    },
+    {
+      "criterionId": "AC-003",
+      "statement": "[AC-003] source/bundle/ZIP hash와 범위를 검증하고 이전 추적 및 미추적 자료를 보존한다.",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "E-005",
+        "E-006"
+      ],
+      "observedResult": "302 source, 735 bundle hash targets, 736 ZIP members verified; raw summary recomputed; PASS; 255 preexisting entries untouched; zero exclusions, overlaps, unplanned changes",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    },
+    {
+      "criterionId": "AC-004",
+      "statement": "[AC-004] 결과 방향과 무관한 해석 및 주장 한계를 기록한다.",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "E-007"
+      ],
+      "observedResult": "Raw evidence supports recovery in all 64 perturbations; 8 low directions transiently amplify; limitations and next discriminator recorded",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    }
+  ],
+  "verifiedEvidenceIndex": [
+    {
+      "evidenceId": "E-001",
+      "kind": "file",
+      "locator": "HCR-Evidence\\exp41\\r060-20260920T001607Z-56aba0f97f\\analysis\\audit.json",
+      "digest": "sha256:3cfbcae435677195ad7dcdc6119062cf9a5bbb401bc2672e5c5eeddff4e31846",
+      "targetDigest": "sha256:d298a9a499c5f8ef5a58fe8515edd9d2912919089d927d0e3b8c700ab3f9b7f8",
+      "criterionIds": [
+        "AC-001"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "E-002",
+      "kind": "file",
+      "locator": "HCR-Evidence\\exp41\\r060-20260920T001607Z-56aba0f97f\\validation\\selftest.json",
+      "digest": "sha256:adb7b2e8596ebf87e2a7703d7b4d065228b8874923688a2ceac1658c68e335d8",
+      "targetDigest": "sha256:d298a9a499c5f8ef5a58fe8515edd9d2912919089d927d0e3b8c700ab3f9b7f8",
+      "criterionIds": [
+        "AC-002"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "E-003",
+      "kind": "file",
+      "locator": "HCR-Evidence\\exp41\\r060-20260920T001607Z-56aba0f97f\\validation\\core_regression.json",
+      "digest": "sha256:d5daace122f8617bfd42c41ab59ddb55331aae622d85dc3ab6f6439a54928ab9",
+      "targetDigest": "sha256:d298a9a499c5f8ef5a58fe8515edd9d2912919089d927d0e3b8c700ab3f9b7f8",
+      "criterionIds": [
+        "AC-002"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "E-004",
+      "kind": "file",
+      "locator": "HCR-Evidence\\exp41\\r060-20260920T001607Z-56aba0f97f\\validation\\kernel-smoke\\analysis\\audit.json",
+      "digest": "sha256:a759964b7e53a9b8ed029cd1f22883d7c5708277c9edb365dc11e1901a9c7e0a",
+      "targetDigest": "sha256:d298a9a499c5f8ef5a58fe8515edd9d2912919089d927d0e3b8c700ab3f9b7f8",
+      "criterionIds": [
+        "AC-002"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "E-005",
+      "kind": "file",
+      "locator": "HCR-Evidence\\r060-validation\\delivery-verification.json",
+      "digest": "sha256:8584eaaf59fb1bae4ae52a96a0397a3b1a649a503132df79ec5f8221eaec65c3",
+      "targetDigest": "sha256:d298a9a499c5f8ef5a58fe8515edd9d2912919089d927d0e3b8c700ab3f9b7f8",
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "E-006",
+      "kind": "file",
+      "locator": "HCR-Evidence\\r060-validation\\scope-report.json",
+      "digest": "sha256:6d5e7c6ee55ee1b9a7517f9ff11bf31c92167e1ec5217912b566182d9eaa22fb",
+      "targetDigest": "sha256:d298a9a499c5f8ef5a58fe8515edd9d2912919089d927d0e3b8c700ab3f9b7f8",
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "E-007",
+      "kind": "file",
+      "locator": "experiments\\exp-41-joint-recovery\\RESULTS.ko.md",
+      "digest": "sha256:cfd0bd659f252cf875cca84b04c446c6db66445b2361fbe59449cd2cff86db13",
+      "targetDigest": "sha256:d298a9a499c5f8ef5a58fe8515edd9d2912919089d927d0e3b8c700ab3f9b7f8",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports"
+    }
+  ],
+  "unresolvedCriteria": [],
+  "limitations": [
+    "별도 수식과 프로세스 검산이며 동일 구현자; 독립 연구자 감사 아님",
+    "synthetic finite-time corner perturbations; native outcomes unmeasured"
+  ],
+  "verdict": "PASS"
+}
