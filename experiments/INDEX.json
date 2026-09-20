@@ -905,6 +905,26 @@
       "source_commit": null,
       "source_commit_note": "Fixed e0 and paired e1 observation-refresh baseline; 24 native sessions, ideal toy sensor, no new learning.",
       "standalone_python_entrypoint": "Run-HCR-R067.py"
+    },
+    {
+      "current_python_entrypoint": null,
+      "default_dispatcher_promoted": false,
+      "design": "experiments/exp-49-request-boundary/design.ko.md",
+      "directory": "experiments/exp-49-request-boundary",
+      "evidence_directory": "HCR-Evidence/exp49",
+      "execution_status": "standalone_candidate_contract",
+      "experiment_id": "EXP-49",
+      "frozen_design": "experiments/exp-49-request-boundary/frozen_spec.json",
+      "implementation_validation_directory": "HCR-Evidence/r068-validation",
+      "legacy_python_entrypoint": null,
+      "release_manifest": "R068_MANIFEST.json",
+      "revision_references": [
+        "r068"
+      ],
+      "run_status": "read_per_run_evidence",
+      "source_commit": null,
+      "source_commit_note": "Existing native observation-request boundary; four no-feedback sessions and separate synthetic API controls; autonomous conflict comparison not measurable.",
+      "standalone_python_entrypoint": "Run-HCR-R068.py"
     }
   ],
   "inventory_commit": "afb5d5e5b67906b7697f16163e166f59b17e1655",

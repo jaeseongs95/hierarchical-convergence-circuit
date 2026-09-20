@@ -1,0 +1,6 @@
+{
+  "whole_staged_exit": 2,
+  "reason": "Byte-preserved historical source CRLF and existing whitespace inside source snapshots; do not alter evidence",
+  "implementation_check_exit": 0,
+  "evidence_only": true
+}

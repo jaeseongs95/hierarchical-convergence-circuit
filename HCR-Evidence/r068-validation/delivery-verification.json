@@ -1,0 +1,21 @@
+{
+  "verified": true,
+  "bundle_files": 461,
+  "source_files": 403,
+  "zip_exact": true,
+  "pinned_parent_files": 4,
+  "native_evaluations": 4,
+  "paired_conditions": 4,
+  "synthetic_checks": 10,
+  "rejected_mutations": 11,
+  "core_passed": 599,
+  "existing_skips": 3,
+  "final_core_runs": 1,
+  "baseline_out_of_scope_files_unchanged": 27936,
+  "baseline_preparation_files_unchanged": 7,
+  "staged_paths_in_scope": true,
+  "index_stdout": "{\"verified\": true, \"experiments\": 50, \"study_executed\": false}",
+  "comparison": "not_measurable_missing_native_fact_freshness_input",
+  "autonomous_native_observation_requests": 0,
+  "independent_researcher": false
+}

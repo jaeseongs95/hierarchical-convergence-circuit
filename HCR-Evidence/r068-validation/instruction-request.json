@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "1.0.0",
+  "workspaceRoot": "D:\\codex\\AI논문\\hierarchical-convergence-circuit",
+  "instructionRoots": [
+    {
+      "path": "D:\\codex\\AI논문",
+      "precedence": 0,
+      "authorized": true
+    }
+  ],
+  "targets": [
+    {
+      "path": "tools/r068_request/",
+      "mayNotExist": true
+    },
+    {
+      "path": "experiments/exp-49-request-boundary/",
+      "mayNotExist": true
+    },
+    {
+      "path": "experiments/INDEX.json",
+      "mayNotExist": true
+    },
+    {
+      "path": "experiments/INDEX.ko.md",
+      "mayNotExist": true
+    },
+    {
+      "path": "Run-HCR-R068.py",
+      "mayNotExist": true
+    },
+    {
+      "path": "Run-HCR-R068.cmd",
+      "mayNotExist": true
+    },
+    {
+      "path": "R068_MANIFEST.json",
+      "mayNotExist": true
+    },
+    {
+      "path": "HCR-Evidence/exp49/",
+      "mayNotExist": true
+    },
+    {
+      "path": "HCR-Evidence/r068-validation/",
+      "mayNotExist": true
+    }
+  ],
+  "externalPolicyRefs": [
+    {
+      "layer": "user",
+      "locator": "conversation:user:AGENTS-instructions-and-next-turn"
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "schemaVersion": "1.0.0",
+  "request": {
+    "schemaVersion": "1.0.0",
+    "taskId": "hcc-r068",
+    "request": "이어서 작업 진행해줘.",
+    "instructionResolutionRefs": [
+      "HCR-Evidence/r068-validation/instruction-resolution.json",
+      "conversation:user:global-instructions"
+    ],
+    "pathSemantics": "windows",
+    "authorizationEvidence": [
+      {
+        "action": "research-edit-execute-verify",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "conversation:user:AGENTS-instructions-and-next-turn"
+      },
+      {
+        "action": "commit-merge-main-clean-local-branch-push-origin-main",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "conversation:user:AGENTS-instructions-and-next-turn"
+      },
+      {
+        "action": "force-push",
+        "effect": "prohibit",
+        "authority": "user",
+        "sourceLocator": "conversation:user:AGENTS-instructions-and-next-turn"
+      },
+      {
+        "action": "overwrite-existing-evidence",
+        "effect": "prohibit",
+        "authority": "user",
+        "sourceLocator": "conversation:user:AGENTS-instructions-and-next-turn"
+      },
+      {
+        "action": "install-deploy-tag",
+        "effect": "require-approval",
+        "authority": "user",
+        "sourceLocator": "conversation:user:AGENTS-instructions-and-next-turn"
+      }
+    ],
+    "suppliedFacts": [
+      {
+        "statement": "main/origin/main 44f227ef201f2aab288cd57ccf3762b864e3d138; R067 NEXT는 native request 경계 확인",
+        "locator": "experiments/exp-48-observation-refresh/NEXT.ko.md"
+      }
+    ],
+    "userDecisions": []
+  },
+  "report": {
+    "schemaVersion": "1.0.0",
+    "taskEnvelope": {
+      "schemaVersion": "1.0.0",
+      "taskId": "hcc-r068",
+      "objective": "기존 native API에서 외부 오답 피드백 없는 관측 요청의 경계를 재현하고 합성 요청·revision 검사를 연구 결과와 분리한다.",
+      "scope": {
+        "included": [
+          "tools/r068_request/",
+          "experiments/exp-49-request-boundary/",
+          "experiments/INDEX.json",
+          "experiments/INDEX.ko.md",
+          "Run-HCR-R068.py",
+          "Run-HCR-R068.cmd",
+          "R068_MANIFEST.json",
+          "HCR-Evidence/exp49/",
+          "HCR-Evidence/r068-validation/"
+        ],
+        "excluded": [
+          "src/",
+          "tests/",
+          "archive/",
+          "tools/r064_retention/",
+          "tools/r065_information/",
+          "experiments/exp-45-error-retention/",
+          "experiments/exp-46-information-boundary/",
+          "tools/r066_facts/",
+          "experiments/exp-47-fact-retrieval/",
+          "tools/r067_refresh/",
+          "experiments/exp-48-observation-refresh/"
+        ]
+      },
+      "acceptanceCriteria": [
+        "[AC-001] R067 원관측·memory·config·limits를 보존하고 두 mode·두 gate의 4조건, API 경계 예측과 비교 불가 조건을 실행 전에 동결한다.",
+        "[AC-002] 4 native 최초 판단·readout·요청 전후 packet과 피드백 없는 API 거부를 보존하고 실제 요청·측정·학습 횟수를 구분한다.",
+        "[AC-003] 외부 피드백 이후 요청·revision의 합성 검사와 별도 native 수식 replay·변조 거부·bundle 무결성·최종 회귀 1회 및 기존 파일 보존을 확인한다.",
+        "[AC-004] 관측·대안·주장 한계·다음 판별 실험을 기록하고 검증 결과를 커밋·병합·push해 전달한다."
+      ],
+      "riskLevel": "medium",
+      "workUnits": [
+        {
+          "id": "WU-001",
+          "objective": "기존 native API에서 외부 오답 피드백 없는 관측 요청의 경계를 재현하고 합성 요청·revision 검사를 연구 결과와 분리한다.",
+          "dependencies": [],
+          "writeTargets": [
+            "tools/r068_request/",
+            "experiments/exp-49-request-boundary/",
+            "experiments/INDEX.json",
+            "experiments/INDEX.ko.md",
+            "Run-HCR-R068.py",
+            "Run-HCR-R068.cmd",
+            "R068_MANIFEST.json",
+            "HCR-Evidence/exp49/",
+            "HCR-Evidence/r068-validation/"
+          ]
+        }
+      ],
+      "requiredCapabilities": [
+        "minimal-implementation",
+        "change-scope-baseline-capture",
+        "change-scope-assurance",
+        "acceptance-evidence-validation"
+      ],
+      "constraints": [
+        "core·과거 evidence·기존 untracked 보존",
+        "연구 실행은 피드백·센서 입력 없음; 합성 positive control의 feedback과 revision은 별도 분류",
+        "자율 conflict sensing 비교 불가를 0점 성능으로 표현하지 않음",
+        "최초 실패 보존·자동 retry 없음",
+        "별도 로직·프로세스 검산이며 독립 연구자 감사 아님"
+      ],
+      "authorization": {
+        "allowedActions": [
+          "research-edit-execute-verify",
+          "commit-merge-main-clean-local-branch-push-origin-main"
+        ],
+        "prohibitedActions": [
+          "force-push",
+          "overwrite-existing-evidence"
+        ],
+        "approvalRequired": [
+          "install-deploy-tag"
+        ]
+      },
+      "decision": {
+        "complexity": "simple",
+        "hasConflicts": false
+      },
+      "orchestration": {
+        "requested": true,
+        "mcpAvailable": true
+      }
+    },
+    "acceptanceEvidencePlan": {
+      "schemaVersion": "1.0.0",
+      "criteria": [
+        {
+          "criterionId": "AC-001",
+          "statement": "[AC-001] R067 원관측·memory·config·limits를 보존하고 두 mode·두 gate의 4조건, API 경계 예측과 비교 불가 조건을 실행 전에 동결한다.",
+          "verificationMethod": "동결 spec, 별도 replay, 합성 검사, 원자료/무결성/회귀/전달 검증",
+          "expectedEvidenceKinds": [
+            "file",
+            "test",
+            "document"
+          ],
+          "passCondition": "[AC-001] R067 원관측·memory·config·limits를 보존하고 두 mode·두 gate의 4조건, API 경계 예측과 비교 불가 조건을 실행 전에 동결한다."
+        },
+        {
+          "criterionId": "AC-002",
+          "statement": "[AC-002] 4 native 최초 판단·readout·요청 전후 packet과 피드백 없는 API 거부를 보존하고 실제 요청·측정·학습 횟수를 구분한다.",
+          "verificationMethod": "동결 spec, 별도 replay, 합성 검사, 원자료/무결성/회귀/전달 검증",
+          "expectedEvidenceKinds": [
+            "file",
+            "test",
+            "document"
+          ],
+          "passCondition": "[AC-002] 4 native 최초 판단·readout·요청 전후 packet과 피드백 없는 API 거부를 보존하고 실제 요청·측정·학습 횟수를 구분한다."
+        },
+        {
+          "criterionId": "AC-003",
+          "statement": "[AC-003] 외부 피드백 이후 요청·revision의 합성 검사와 별도 native 수식 replay·변조 거부·bundle 무결성·최종 회귀 1회 및 기존 파일 보존을 확인한다.",
+          "verificationMethod": "동결 spec, 별도 replay, 합성 검사, 원자료/무결성/회귀/전달 검증",
+          "expectedEvidenceKinds": [
+            "file",
+            "test",
+            "document"
+          ],
+          "passCondition": "[AC-003] 외부 피드백 이후 요청·revision의 합성 검사와 별도 native 수식 replay·변조 거부·bundle 무결성·최종 회귀 1회 및 기존 파일 보존을 확인한다."
+        },
+        {
+          "criterionId": "AC-004",
+          "statement": "[AC-004] 관측·대안·주장 한계·다음 판별 실험을 기록하고 검증 결과를 커밋·병합·push해 전달한다.",
+          "verificationMethod": "동결 spec, 별도 replay, 합성 검사, 원자료/무결성/회귀/전달 검증",
+          "expectedEvidenceKinds": [
+            "file",
+            "test",
+            "document"
+          ],
+          "passCondition": "[AC-004] 관측·대안·주장 한계·다음 판별 실험을 기록하고 검증 결과를 커밋·병합·push해 전달한다."
+        }
+      ]
+    },
+    "provenance": [
+      {
+        "field": "/objective",
+        "valueSummary": "기존 native API에서 외부 오답 피드백 없는 관측 요청의 경계를 재현하고 합성 요청·revision 검사를 연구 결과와 분리한다.",
+        "sourceLocator": "conversation:user:AGENTS-instructions-and-next-turn",
+        "basis": "instruction"
+      },
+      {
+        "field": "/scope",
+        "valueSummary": "{'included': ['tools/r068_request/', 'experiments/exp-49-request-boundary/', 'experiments/INDEX.json', 'experiments/INDEX.ko.md', 'Run-HCR-R068.py', 'Run-HCR-R068.cmd', 'R068_MANIFEST.json', 'HCR-Evidence/exp49/', 'HCR-Evidence/r068-validation/'], 'excluded': ['src/', 'tests/', 'archive/', 'tools/r064_retention/', 'tools/r065_information/', 'experiments/exp-45-error-retention/', 'experiments/exp-46-information-boundary/', 'tools/r066_facts/', 'experiments/exp-47-fact-retrieval/', 'tools/r067_refresh/', 'experiments/exp-48-observation-refresh/']}",
+        "sourceLocator": "conversation:user:AGENTS-instructions-and-next-turn",
+        "basis": "instruction"
+      },
+      {
+        "field": "/riskLevel",
+        "valueSummary": "medium",
+        "sourceLocator": "conversation:user:AGENTS-instructions-and-next-turn",
+        "basis": "instruction"
+      },
+      {
+        "field": "/authorization",
+        "valueSummary": "{'allowedActions': ['research-edit-execute-verify', 'commit-merge-main-clean-local-branch-push-origin-main'], 'prohibitedActions': ['force-push', 'overwrite-existing-evidence'], 'approvalRequired': ['install-deploy-tag']}",
+        "sourceLocator": "conversation:user:AGENTS-instructions-and-next-turn",
+        "basis": "instruction"
+      }
+    ],
+    "authorizationProvenance": [
+      {
+        "action": "research-edit-execute-verify",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "conversation:user:AGENTS-instructions-and-next-turn",
+        "envelopeField": "/authorization/allowedActions"
+      },
+      {
+        "action": "commit-merge-main-clean-local-branch-push-origin-main",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "conversation:user:AGENTS-instructions-and-next-turn",
+        "envelopeField": "/authorization/allowedActions"
+      },
+      {
+        "action": "force-push",
+        "effect": "prohibit",
+        "authority": "user",
+        "sourceLocator": "conversation:user:AGENTS-instructions-and-next-turn",
+        "envelopeField": "/authorization/prohibitedActions"
+      },
+      {
+        "action": "overwrite-existing-evidence",
+        "effect": "prohibit",
+        "authority": "user",
+        "sourceLocator": "conversation:user:AGENTS-instructions-and-next-turn",
+        "envelopeField": "/authorization/prohibitedActions"
+      },
+      {
+        "action": "install-deploy-tag",
+        "effect": "require-approval",
+        "authority": "user",
+        "sourceLocator": "conversation:user:AGENTS-instructions-and-next-turn",
+        "envelopeField": "/authorization/approvalRequired"
+      }
+    ],
+    "assumptions": [],
+    "ambiguities": [],
+    "contradictions": [],
+    "verdict": "PASS"
+  }
+}

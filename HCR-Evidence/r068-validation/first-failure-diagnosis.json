@@ -1,0 +1,16 @@
+{
+  "status": "CAUSE_CONFIRMED",
+  "phase": "synthetic-selftest-before-research",
+  "symptom": "Config construction rejected zero request budget",
+  "mechanism": "Config.__post_init__ requires each integer field >= 1",
+  "root_condition": "Synthetic fixture incorrectly treated zero as a valid runtime no-request setting",
+  "evidence": "HCR-Evidence\\exp49\\r068-20260920T091701Z-a6d286bb1c\\validation\\selftest.log",
+  "sha256": "aec9a9d056ed4cfd2b12c065d2a8393d0f84152baf7698517f38313523f3a0ff",
+  "discriminating_evidence": "Traceback identifies config construction, src/hcr/model.py lines 67-73 independently confirms rule; four preceding synthetic cases completed.",
+  "excluded_alternatives": [
+    "No runtime request was reached for this case",
+    "No native research cell or final regression ran"
+  ],
+  "correction": "Assert configuration rejection; retain four research cells and all ten synthetic condition names",
+  "automatic_retry": false
+}
