@@ -1,0 +1,67 @@
+{
+  "all_diff_returncode": 2,
+  "authored_diff_returncode": 0,
+  "inherited_findings": [
+    {
+      "file": "HCR-Evidence/exp47/r066-20260920T060557Z-c4b48b19a6/source/experiments/exp-31-review-boundary/design.ko.md",
+      "line": 3,
+      "message": "trailing whitespace.",
+      "unchanged_source": "experiments\\exp-31-review-boundary\\design.ko.md"
+    },
+    {
+      "file": "HCR-Evidence/exp47/r066-20260920T060557Z-c4b48b19a6/source/experiments/exp-31-review-boundary/design.ko.md",
+      "line": 4,
+      "message": "trailing whitespace.",
+      "unchanged_source": "experiments\\exp-31-review-boundary\\design.ko.md"
+    },
+    {
+      "file": "HCR-Evidence/exp47/r066-20260920T060557Z-c4b48b19a6/source/experiments/exp-31-review-boundary/design.ko.md",
+      "line": 58,
+      "message": "trailing whitespace.",
+      "unchanged_source": "experiments\\exp-31-review-boundary\\design.ko.md"
+    },
+    {
+      "file": "HCR-Evidence/exp47/r066-20260920T060557Z-c4b48b19a6/source/experiments/exp-31-review-boundary/design.ko.md",
+      "line": 59,
+      "message": "trailing whitespace.",
+      "unchanged_source": "experiments\\exp-31-review-boundary\\design.ko.md"
+    },
+    {
+      "file": "HCR-Evidence/exp47/r066-20260920T060557Z-c4b48b19a6/source/experiments/exp-31-review-boundary/design.ko.md",
+      "line": 60,
+      "message": "trailing whitespace.",
+      "unchanged_source": "experiments\\exp-31-review-boundary\\design.ko.md"
+    },
+    {
+      "file": "HCR-Evidence/exp47/r066-20260920T060557Z-c4b48b19a6/source/experiments/exp-31-review-boundary/design.ko.md",
+      "line": 61,
+      "message": "trailing whitespace.",
+      "unchanged_source": "experiments\\exp-31-review-boundary\\design.ko.md"
+    },
+    {
+      "file": "HCR-Evidence/exp47/r066-20260920T060557Z-c4b48b19a6/source/experiments/exp-31-review-boundary/design.ko.md",
+      "line": 62,
+      "message": "trailing whitespace.",
+      "unchanged_source": "experiments\\exp-31-review-boundary\\design.ko.md"
+    },
+    {
+      "file": "HCR-Evidence/exp47/r066-20260920T060557Z-c4b48b19a6/source/experiments/exp-31-review-boundary/design.ko.md",
+      "line": 63,
+      "message": "trailing whitespace.",
+      "unchanged_source": "experiments\\exp-31-review-boundary\\design.ko.md"
+    },
+    {
+      "file": "HCR-Evidence/exp47/r066-20260920T060557Z-c4b48b19a6/source/experiments/exp-31-review-boundary/design.ko.md",
+      "line": 64,
+      "message": "trailing whitespace.",
+      "unchanged_source": "experiments\\exp-31-review-boundary\\design.ko.md"
+    },
+    {
+      "file": "HCR-Evidence/exp47/r066-20260920T060557Z-c4b48b19a6/source/tests/test_r021_sessions.py",
+      "line": 385,
+      "message": "new blank line at EOF.",
+      "unchanged_source": "tests\\test_r021_sessions.py"
+    }
+  ],
+  "raw_frozen_bytes_preserved": true
+}

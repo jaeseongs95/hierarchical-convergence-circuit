@@ -1,0 +1,252 @@
+{
+  "schemaVersion": "1.0.0",
+  "workspaceRoot": "D:\\codex\\AI논문\\hierarchical-convergence-circuit",
+  "instructionFileManifest": [
+    {
+      "path": "D:\\codex\\AI논문\\AGENTS.md",
+      "kind": "agents",
+      "replacesSiblingAgents": false,
+      "size": 14068,
+      "sha256": "8616e5bb09ddc49f50bccfbec98b66392f53efab1e315ff976e5c767543dde0b",
+      "precedence": 1
+    }
+  ],
+  "targets": [
+    {
+      "requestedPath": "tools/r066_facts/",
+      "resolvedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\tools\\r066_facts",
+      "exists": false,
+      "instructionChain": [
+        {
+          "path": "D:\\codex\\AI논문\\AGENTS.md",
+          "kind": "agents",
+          "replacesSiblingAgents": false,
+          "size": 14068,
+          "sha256": "8616e5bb09ddc49f50bccfbec98b66392f53efab1e315ff976e5c767543dde0b",
+          "precedence": 1
+        }
+      ],
+      "activeRules": [
+        {
+          "summary": "동결·최소 실험·원자료 보존·독립 검산·원클릭·한 턴 Git 전달 및 한국어 보고",
+          "ruleId": "PROJECT-RESEARCH",
+          "sourcePath": "D:\\codex\\AI논문\\AGENTS.md",
+          "sourceLocator": "sections 4-10"
+        }
+      ],
+      "overriddenRules": [],
+      "unresolvedConflicts": []
+    },
+    {
+      "requestedPath": "experiments/exp-47-fact-retrieval/",
+      "resolvedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\experiments\\exp-47-fact-retrieval",
+      "exists": false,
+      "instructionChain": [
+        {
+          "path": "D:\\codex\\AI논문\\AGENTS.md",
+          "kind": "agents",
+          "replacesSiblingAgents": false,
+          "size": 14068,
+          "sha256": "8616e5bb09ddc49f50bccfbec98b66392f53efab1e315ff976e5c767543dde0b",
+          "precedence": 1
+        }
+      ],
+      "activeRules": [
+        {
+          "summary": "동결·최소 실험·원자료 보존·독립 검산·원클릭·한 턴 Git 전달 및 한국어 보고",
+          "ruleId": "PROJECT-RESEARCH",
+          "sourcePath": "D:\\codex\\AI논문\\AGENTS.md",
+          "sourceLocator": "sections 4-10"
+        }
+      ],
+      "overriddenRules": [],
+      "unresolvedConflicts": []
+    },
+    {
+      "requestedPath": "experiments/INDEX.json",
+      "resolvedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\experiments\\INDEX.json",
+      "exists": true,
+      "instructionChain": [
+        {
+          "path": "D:\\codex\\AI논문\\AGENTS.md",
+          "kind": "agents",
+          "replacesSiblingAgents": false,
+          "size": 14068,
+          "sha256": "8616e5bb09ddc49f50bccfbec98b66392f53efab1e315ff976e5c767543dde0b",
+          "precedence": 1
+        }
+      ],
+      "activeRules": [
+        {
+          "summary": "동결·최소 실험·원자료 보존·독립 검산·원클릭·한 턴 Git 전달 및 한국어 보고",
+          "ruleId": "PROJECT-RESEARCH",
+          "sourcePath": "D:\\codex\\AI논문\\AGENTS.md",
+          "sourceLocator": "sections 4-10"
+        }
+      ],
+      "overriddenRules": [],
+      "unresolvedConflicts": []
+    },
+    {
+      "requestedPath": "experiments/INDEX.ko.md",
+      "resolvedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\experiments\\INDEX.ko.md",
+      "exists": true,
+      "instructionChain": [
+        {
+          "path": "D:\\codex\\AI논문\\AGENTS.md",
+          "kind": "agents",
+          "replacesSiblingAgents": false,
+          "size": 14068,
+          "sha256": "8616e5bb09ddc49f50bccfbec98b66392f53efab1e315ff976e5c767543dde0b",
+          "precedence": 1
+        }
+      ],
+      "activeRules": [
+        {
+          "summary": "동결·최소 실험·원자료 보존·독립 검산·원클릭·한 턴 Git 전달 및 한국어 보고",
+          "ruleId": "PROJECT-RESEARCH",
+          "sourcePath": "D:\\codex\\AI논문\\AGENTS.md",
+          "sourceLocator": "sections 4-10"
+        }
+      ],
+      "overriddenRules": [],
+      "unresolvedConflicts": []
+    },
+    {
+      "requestedPath": "Run-HCR-R066.py",
+      "resolvedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\Run-HCR-R066.py",
+      "exists": false,
+      "instructionChain": [
+        {
+          "path": "D:\\codex\\AI논문\\AGENTS.md",
+          "kind": "agents",
+          "replacesSiblingAgents": false,
+          "size": 14068,
+          "sha256": "8616e5bb09ddc49f50bccfbec98b66392f53efab1e315ff976e5c767543dde0b",
+          "precedence": 1
+        }
+      ],
+      "activeRules": [
+        {
+          "summary": "동결·최소 실험·원자료 보존·독립 검산·원클릭·한 턴 Git 전달 및 한국어 보고",
+          "ruleId": "PROJECT-RESEARCH",
+          "sourcePath": "D:\\codex\\AI논문\\AGENTS.md",
+          "sourceLocator": "sections 4-10"
+        }
+      ],
+      "overriddenRules": [],
+      "unresolvedConflicts": []
+    },
+    {
+      "requestedPath": "Run-HCR-R066.cmd",
+      "resolvedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\Run-HCR-R066.cmd",
+      "exists": false,
+      "instructionChain": [
+        {
+          "path": "D:\\codex\\AI논문\\AGENTS.md",
+          "kind": "agents",
+          "replacesSiblingAgents": false,
+          "size": 14068,
+          "sha256": "8616e5bb09ddc49f50bccfbec98b66392f53efab1e315ff976e5c767543dde0b",
+          "precedence": 1
+        }
+      ],
+      "activeRules": [
+        {
+          "summary": "동결·최소 실험·원자료 보존·독립 검산·원클릭·한 턴 Git 전달 및 한국어 보고",
+          "ruleId": "PROJECT-RESEARCH",
+          "sourcePath": "D:\\codex\\AI논문\\AGENTS.md",
+          "sourceLocator": "sections 4-10"
+        }
+      ],
+      "overriddenRules": [],
+      "unresolvedConflicts": []
+    },
+    {
+      "requestedPath": "R066_MANIFEST.json",
+      "resolvedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\R066_MANIFEST.json",
+      "exists": false,
+      "instructionChain": [
+        {
+          "path": "D:\\codex\\AI논문\\AGENTS.md",
+          "kind": "agents",
+          "replacesSiblingAgents": false,
+          "size": 14068,
+          "sha256": "8616e5bb09ddc49f50bccfbec98b66392f53efab1e315ff976e5c767543dde0b",
+          "precedence": 1
+        }
+      ],
+      "activeRules": [
+        {
+          "summary": "동결·최소 실험·원자료 보존·독립 검산·원클릭·한 턴 Git 전달 및 한국어 보고",
+          "ruleId": "PROJECT-RESEARCH",
+          "sourcePath": "D:\\codex\\AI논문\\AGENTS.md",
+          "sourceLocator": "sections 4-10"
+        }
+      ],
+      "overriddenRules": [],
+      "unresolvedConflicts": []
+    },
+    {
+      "requestedPath": "HCR-Evidence/exp47/",
+      "resolvedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\HCR-Evidence\\exp47",
+      "exists": false,
+      "instructionChain": [
+        {
+          "path": "D:\\codex\\AI논문\\AGENTS.md",
+          "kind": "agents",
+          "replacesSiblingAgents": false,
+          "size": 14068,
+          "sha256": "8616e5bb09ddc49f50bccfbec98b66392f53efab1e315ff976e5c767543dde0b",
+          "precedence": 1
+        }
+      ],
+      "activeRules": [
+        {
+          "summary": "동결·최소 실험·원자료 보존·독립 검산·원클릭·한 턴 Git 전달 및 한국어 보고",
+          "ruleId": "PROJECT-RESEARCH",
+          "sourcePath": "D:\\codex\\AI논문\\AGENTS.md",
+          "sourceLocator": "sections 4-10"
+        }
+      ],
+      "overriddenRules": [],
+      "unresolvedConflicts": []
+    },
+    {
+      "requestedPath": "HCR-Evidence/r066-validation/",
+      "resolvedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\HCR-Evidence\\r066-validation",
+      "exists": false,
+      "instructionChain": [
+        {
+          "path": "D:\\codex\\AI논문\\AGENTS.md",
+          "kind": "agents",
+          "replacesSiblingAgents": false,
+          "size": 14068,
+          "sha256": "8616e5bb09ddc49f50bccfbec98b66392f53efab1e315ff976e5c767543dde0b",
+          "precedence": 1
+        }
+      ],
+      "activeRules": [
+        {
+          "summary": "동결·최소 실험·원자료 보존·독립 검산·원클릭·한 턴 Git 전달 및 한국어 보고",
+          "ruleId": "PROJECT-RESEARCH",
+          "sourcePath": "D:\\codex\\AI논문\\AGENTS.md",
+          "sourceLocator": "sections 4-10"
+        }
+      ],
+      "overriddenRules": [],
+      "unresolvedConflicts": []
+    }
+  ],
+  "findings": [
+    "Target does not exist; future nested instructions cannot be observed: tools/r066_facts/",
+    "Target does not exist; future nested instructions cannot be observed: experiments/exp-47-fact-retrieval/",
+    "Target does not exist; future nested instructions cannot be observed: Run-HCR-R066.py",
+    "Target does not exist; future nested instructions cannot be observed: Run-HCR-R066.cmd",
+    "Target does not exist; future nested instructions cannot be observed: R066_MANIFEST.json",
+    "Target does not exist; future nested instructions cannot be observed: HCR-Evidence/exp47/",
+    "Target does not exist; future nested instructions cannot be observed: HCR-Evidence/r066-validation/"
+  ],
+  "analysisStatus": "complete",
+  "verdict": "PASS"
+}

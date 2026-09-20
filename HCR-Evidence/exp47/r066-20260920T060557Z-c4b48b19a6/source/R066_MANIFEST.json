@@ -1,0 +1,16 @@
+{
+  "schema": "hcc-r066-manifest-v1",
+  "files": {
+    "tools/r066_facts/__init__.py": "f5564fc9e0e4aff2414781de32784b754aecc29799d28d8a8d96cc730df244f3",
+    "tools/r066_facts/pipeline.py": "3c033f6ad694fa5d8424000d2609d5053104aa90369a9bdd2d8c3ed55adcac85",
+    "tools/r066_facts/selftest.py": "17a85440f43f15cba470cb7c2cc3f2cdd08e204c13a8d206295ea256173a748a",
+    "tools/r066_facts/verify.py": "0ed9dba70f41eb2ffa9a3705d42e6302c5435b4cfcef586aa0ee27b3fbf09cc8",
+    "tools/r066_facts/worker.py": "c72b474a7b24d7ce7ef99c3490fd4a854afaa91f5d0c63b71aff8f163c993af9",
+    "Run-HCR-R066.py": "8ac5e2c5d455cd80548a8daafede6239c1f66d275b24891618e35b510120aff6",
+    "Run-HCR-R066.cmd": "fca1872b2c7f6b5e5367abb1c720d3590596d253add0da7eeee01d45ff914e5b",
+    "experiments/exp-47-fact-retrieval/design.ko.md": "2f5476af6ce2a6d48903a97181a4e4b38379c8ea5f7543fa42c23e73a5746218",
+    "experiments/exp-47-fact-retrieval/ORCHESTRATION.ko.md": "0e3244f686cdb5e876a1396d849537f989a4cfa11a70454196aa656f10fb11f2",
+    "experiments/exp-47-fact-retrieval/frozen_spec.json": "ec91b3f79f23a9c2922d2e24ae66a0086146271a03d3cf1d53c195afac0d3058",
+    "experiments/exp-47-fact-retrieval/reference_worlds.json": "17e1df6b382e18d313f88cb87f6a81f5344c367de45f6eede1d8c1ae99696fd3"
+  }
+}

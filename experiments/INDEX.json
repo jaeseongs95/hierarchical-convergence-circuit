@@ -865,6 +865,26 @@
       "source_commit": null,
       "source_commit_note": "R064 raw reanalysis only: persistent information flow and identical-packet paired reference worlds; zero new native research executions or samples.",
       "standalone_python_entrypoint": "Run-HCR-R065.py"
+    },
+    {
+      "current_python_entrypoint": null,
+      "default_dispatcher_promoted": false,
+      "design": "experiments/exp-47-fact-retrieval/design.ko.md",
+      "directory": "experiments/exp-47-fact-retrieval",
+      "evidence_directory": "HCR-Evidence/exp47",
+      "execution_status": "standalone_candidate_contract",
+      "experiment_id": "EXP-47",
+      "frozen_design": "experiments/exp-47-fact-retrieval/frozen_spec.json",
+      "implementation_validation_directory": "HCR-Evidence/r066-validation",
+      "legacy_python_entrypoint": null,
+      "release_manifest": "R066_MANIFEST.json",
+      "revision_references": [
+        "r066"
+      ],
+      "run_status": "read_per_run_evidence",
+      "source_commit": null,
+      "source_commit_note": "Scoped fact-table host input intervention with pinned R064 requested measurements; 60 new frozen evaluations, no new learning; channel memories differ.",
+      "standalone_python_entrypoint": "Run-HCR-R066.py"
     }
   ],
   "inventory_commit": "afb5d5e5b67906b7697f16163e166f59b17e1655",

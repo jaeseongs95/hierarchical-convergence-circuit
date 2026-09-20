@@ -1,0 +1,27 @@
+{
+  "verified": true,
+  "bundle_files": 800,
+  "source_files": 380,
+  "zip_exact": true,
+  "parent_pinned_files": 5,
+  "native_evaluations": 60,
+  "synthetic_checks": 10,
+  "rejected_mutations": 13,
+  "core_passed": 599,
+  "existing_skips": 3,
+  "successful_final_core_runs": 1,
+  "first_failed_regression_preserved": true,
+  "regression_attempts_total": 2,
+  "recovery_bundle_files": 8,
+  "prior_out_of_scope_files_unchanged": 26456,
+  "staged_paths_in_scope": true,
+  "index_stdout": "{\"verified\": true, \"experiments\": 48, \"study_executed\": false}",
+  "predictions": {
+    "binary_has_no_fact_intervention": true,
+    "matching_retrieval_corrects": true,
+    "scope_mismatch_preserves_input": true,
+    "silent_change_can_make_retrieval_wrong": true,
+    "truthful_observation_suffices": true
+  },
+  "independent_researcher": false
+}

@@ -1,0 +1,13 @@
+{
+  "schema": "hcc-r066-acceptance-target-v1",
+  "manifest_sha256": "0638eb3ccdd54c5b1d16a50bc50fbb5c8e178a4a5befe9f72a3e970ae5c30792",
+  "research_manifest_sha256": "c2004e25f998d6794b9ec69937a29f26fb309fdb3d216d74b8ab6861c8380098",
+  "recovery_manifest_sha256": "a1609f725581d9d16f17160a55178811b9eb1d7fe82b4a45667bea8c0c3effa7",
+  "docs": {
+    "experiments/exp-47-fact-retrieval/design.ko.md": "2f5476af6ce2a6d48903a97181a4e4b38379c8ea5f7543fa42c23e73a5746218",
+    "experiments/exp-47-fact-retrieval/NEXT.ko.md": "b72d8759b4b105e62565fd3ddda68a97c36cb66ad0f00492a71d6da31cc45be4",
+    "experiments/exp-47-fact-retrieval/ORCHESTRATION.ko.md": "0e3244f686cdb5e876a1396d849537f989a4cfa11a70454196aa656f10fb11f2",
+    "experiments/exp-47-fact-retrieval/RESULTS.ko.md": "f5243d6d13c8cd0911795ae3b326b27cac3599ed8aafaa69856ae5ac254f34c9",
+    "experiments/exp-47-fact-retrieval/VALIDATION.ko.md": "43a229b690560345cd1d95ea91907b9ecb2b08c1c8b847af1b182c2a4e4267a9"
+  }
+}

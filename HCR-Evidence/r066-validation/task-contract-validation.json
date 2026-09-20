@@ -1,0 +1,210 @@
+{
+  "schemaVersion": "1.0.0",
+  "ok": true,
+  "output": {
+    "schemaVersion": "1.0.0",
+    "taskEnvelope": {
+      "schemaVersion": "1.0.0",
+      "taskId": "hcc-r066",
+      "objective": "요청 교정 관측의 사실 저장과 조회를 분리하고 context/epoch 경계 및 조용한 세계 변화에서 명시적 입력 개입 baseline을 검증한다.",
+      "scope": {
+        "included": [
+          "tools/r066_facts/",
+          "experiments/exp-47-fact-retrieval/",
+          "experiments/INDEX.json",
+          "experiments/INDEX.ko.md",
+          "Run-HCR-R066.py",
+          "Run-HCR-R066.cmd",
+          "R066_MANIFEST.json",
+          "HCR-Evidence/exp47/",
+          "HCR-Evidence/r066-validation/"
+        ],
+        "excluded": [
+          "src/",
+          "tests/",
+          "archive/",
+          "tools/r064_retention/",
+          "tools/r065_information/",
+          "experiments/exp-45-error-retention/",
+          "experiments/exp-46-information-boundary/"
+        ]
+      },
+      "acceptanceCriteria": [
+        "[AC-001] R064 요청·교정 관측·memory와 현재 source를 hash로 고정하고 context/epoch/edge/provenance 사실 계약, 비교군·조건·예측을 실행 전에 동결한다.",
+        "[AC-002] binary/edge 정보 경로별 current/record_only/lookup 및 회로 ON/OFF를 동일 조건에서 비교하고 같은 상황·다른 context·새 epoch·미통지 변화·정확 관측의 원입력/조회/실입력/판단/proof/readout/비용을 보존한다.",
+        "[AC-003] 별도 로직·프로세스의 사실 조회 재계산과 native 수식 replay, unknown/conflict/변조 self-test, 원클릭 source/input/bundle/ZIP 무결성, 최종 core 회귀 1회와 색인·기존 파일 보존을 확인한다.",
+        "[AC-004] 정보 접근의 효과와 구조 재사용 비용을 분리해 결과와 주장 한계·다음 판별 실험을 기록하고 커밋·main 병합·작업 브랜치 정리·origin/main 반영을 확인한다."
+      ],
+      "riskLevel": "medium",
+      "workUnits": [
+        {
+          "id": "WU-001",
+          "objective": "요청 교정 관측의 사실 저장과 조회를 분리하고 context/epoch 경계 및 조용한 세계 변화에서 명시적 입력 개입 baseline을 검증한다.",
+          "dependencies": [],
+          "writeTargets": [
+            "tools/r066_facts/",
+            "experiments/exp-47-fact-retrieval/",
+            "experiments/INDEX.json",
+            "experiments/INDEX.ko.md",
+            "Run-HCR-R066.py",
+            "Run-HCR-R066.cmd",
+            "R066_MANIFEST.json",
+            "HCR-Evidence/exp47/",
+            "HCR-Evidence/r066-validation/"
+          ]
+        }
+      ],
+      "requiredCapabilities": [
+        "minimal-implementation",
+        "change-scope-baseline-capture",
+        "change-scope-assurance",
+        "acceptance-evidence-validation"
+      ],
+      "constraints": [
+        "core와 과거 evidence/manifest 및 기존 untracked 보존",
+        "R064 요청 교정 관측 재사용 및 새 frozen native 평가; 새 학습 없음",
+        "context/epoch는 baseline에만 명시적으로 제공하며 native 능력으로 합산하지 않음",
+        "조건 동결 후 결과에 따른 수정·자동 retry 없음; 최초 실패 보존",
+        "별도 로직/프로세스 검산은 독립 연구자 감사 아님"
+      ],
+      "authorization": {
+        "allowedActions": [
+          "research-edit-execute-verify",
+          "commit-merge-main-clean-local-branch-push-origin-main"
+        ],
+        "prohibitedActions": [
+          "force-push",
+          "overwrite-existing-evidence"
+        ],
+        "approvalRequired": [
+          "install-deploy-tag"
+        ]
+      },
+      "decision": {
+        "complexity": "simple",
+        "hasConflicts": false
+      },
+      "orchestration": {
+        "requested": true,
+        "mcpAvailable": true
+      }
+    },
+    "acceptanceEvidencePlan": {
+      "schemaVersion": "1.0.0",
+      "criteria": [
+        {
+          "criterionId": "AC-001",
+          "statement": "[AC-001] R064 요청·교정 관측·memory와 현재 source를 hash로 고정하고 context/epoch/edge/provenance 사실 계약, 비교군·조건·예측을 실행 전에 동결한다.",
+          "verificationMethod": "frozen contracts, raw replay, boundary self-tests, manifests and delivery evidence",
+          "expectedEvidenceKinds": [
+            "file",
+            "test",
+            "document"
+          ],
+          "passCondition": "[AC-001] R064 요청·교정 관측·memory와 현재 source를 hash로 고정하고 context/epoch/edge/provenance 사실 계약, 비교군·조건·예측을 실행 전에 동결한다."
+        },
+        {
+          "criterionId": "AC-002",
+          "statement": "[AC-002] binary/edge 정보 경로별 current/record_only/lookup 및 회로 ON/OFF를 동일 조건에서 비교하고 같은 상황·다른 context·새 epoch·미통지 변화·정확 관측의 원입력/조회/실입력/판단/proof/readout/비용을 보존한다.",
+          "verificationMethod": "frozen contracts, raw replay, boundary self-tests, manifests and delivery evidence",
+          "expectedEvidenceKinds": [
+            "file",
+            "test",
+            "document"
+          ],
+          "passCondition": "[AC-002] binary/edge 정보 경로별 current/record_only/lookup 및 회로 ON/OFF를 동일 조건에서 비교하고 같은 상황·다른 context·새 epoch·미통지 변화·정확 관측의 원입력/조회/실입력/판단/proof/readout/비용을 보존한다."
+        },
+        {
+          "criterionId": "AC-003",
+          "statement": "[AC-003] 별도 로직·프로세스의 사실 조회 재계산과 native 수식 replay, unknown/conflict/변조 self-test, 원클릭 source/input/bundle/ZIP 무결성, 최종 core 회귀 1회와 색인·기존 파일 보존을 확인한다.",
+          "verificationMethod": "frozen contracts, raw replay, boundary self-tests, manifests and delivery evidence",
+          "expectedEvidenceKinds": [
+            "file",
+            "test",
+            "document"
+          ],
+          "passCondition": "[AC-003] 별도 로직·프로세스의 사실 조회 재계산과 native 수식 replay, unknown/conflict/변조 self-test, 원클릭 source/input/bundle/ZIP 무결성, 최종 core 회귀 1회와 색인·기존 파일 보존을 확인한다."
+        },
+        {
+          "criterionId": "AC-004",
+          "statement": "[AC-004] 정보 접근의 효과와 구조 재사용 비용을 분리해 결과와 주장 한계·다음 판별 실험을 기록하고 커밋·main 병합·작업 브랜치 정리·origin/main 반영을 확인한다.",
+          "verificationMethod": "frozen contracts, raw replay, boundary self-tests, manifests and delivery evidence",
+          "expectedEvidenceKinds": [
+            "file",
+            "test",
+            "document"
+          ],
+          "passCondition": "[AC-004] 정보 접근의 효과와 구조 재사용 비용을 분리해 결과와 주장 한계·다음 판별 실험을 기록하고 커밋·main 병합·작업 브랜치 정리·origin/main 반영을 확인한다."
+        }
+      ]
+    },
+    "provenance": [
+      {
+        "field": "/objective",
+        "valueSummary": "요청 교정 관측의 사실 저장과 조회를 분리하고 context/epoch 경계 및 조용한 세계 변화에서 명시적 입력 개입 baseline을 검증한다.",
+        "sourceLocator": "conversation:user:AGENTS-instructions-and-next-turn",
+        "basis": "instruction"
+      },
+      {
+        "field": "/scope",
+        "valueSummary": "{'included': ['tools/r066_facts/', 'experiments/exp-47-fact-retrieval/', 'experiments/INDEX.json', 'experiments/INDEX.ko.md', 'Run-HCR-R066.py', 'Run-HCR-R066.cmd', 'R066_MANIFEST.json', 'HCR-Evidence/exp47/', 'HCR-Evidence/r066-validation/'], 'excluded': ['src/', 'tests/', 'archive/', 'tools/r064_retention/', 'tools/r065_information/', 'experiments/exp-45-error-retention/', 'experiments/exp-46-information-boundary/']}",
+        "sourceLocator": "conversation:user:AGENTS-instructions-and-next-turn",
+        "basis": "instruction"
+      },
+      {
+        "field": "/riskLevel",
+        "valueSummary": "medium",
+        "sourceLocator": "conversation:user:AGENTS-instructions-and-next-turn",
+        "basis": "instruction"
+      },
+      {
+        "field": "/authorization",
+        "valueSummary": "{'allowedActions': ['research-edit-execute-verify', 'commit-merge-main-clean-local-branch-push-origin-main'], 'prohibitedActions': ['force-push', 'overwrite-existing-evidence'], 'approvalRequired': ['install-deploy-tag']}",
+        "sourceLocator": "conversation:user:AGENTS-instructions-and-next-turn",
+        "basis": "instruction"
+      }
+    ],
+    "authorizationProvenance": [
+      {
+        "action": "research-edit-execute-verify",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "conversation:user:AGENTS-instructions-and-next-turn",
+        "envelopeField": "/authorization/allowedActions"
+      },
+      {
+        "action": "commit-merge-main-clean-local-branch-push-origin-main",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "conversation:user:AGENTS-instructions-and-next-turn",
+        "envelopeField": "/authorization/allowedActions"
+      },
+      {
+        "action": "force-push",
+        "effect": "prohibit",
+        "authority": "user",
+        "sourceLocator": "conversation:user:AGENTS-instructions-and-next-turn",
+        "envelopeField": "/authorization/prohibitedActions"
+      },
+      {
+        "action": "overwrite-existing-evidence",
+        "effect": "prohibit",
+        "authority": "user",
+        "sourceLocator": "conversation:user:AGENTS-instructions-and-next-turn",
+        "envelopeField": "/authorization/prohibitedActions"
+      },
+      {
+        "action": "install-deploy-tag",
+        "effect": "require-approval",
+        "authority": "user",
+        "sourceLocator": "conversation:user:AGENTS-instructions-and-next-turn",
+        "envelopeField": "/authorization/approvalRequired"
+      }
+    ],
+    "assumptions": [],
+    "ambiguities": [],
+    "contradictions": [],
+    "verdict": "PASS"
+  },
+  "error": null
+}
