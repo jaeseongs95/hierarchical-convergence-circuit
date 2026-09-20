@@ -1,0 +1,203 @@
+{
+  "schemaVersion": "1.0.0",
+  "taskEnvelope": {
+    "schemaVersion": "1.0.0",
+    "taskId": "hcc-r063",
+    "objective": "기존 native 학습으로 회로가 형성되는 전후를 기록하고 새 입력에서 frozen memory와 reuse gate의 효과를 분리",
+    "scope": {
+      "included": [
+        "tools/r063_formation/",
+        "experiments/exp-44-circuit-formation/",
+        "experiments/INDEX.json",
+        "Run-HCR-R063.py",
+        "Run-HCR-R063.cmd",
+        "R063_MANIFEST.json",
+        "HCR-Evidence/exp44/",
+        "HCR-Evidence/r063-validation/",
+        "experiments/INDEX.ko.md"
+      ],
+      "excluded": [
+        "src/",
+        "tests/",
+        "archive/"
+      ]
+    },
+    "acceptanceCriteria": [
+      "[AC-001] 사전 고정 training 3회와 평가 12조건을 단일 연구 실행에서 기록하고 memory 형성 전후·재사용·판단·비용을 구별한다.",
+      "[AC-002] 외부 reference feedback과 native memory 변경을 별도 프로세스에서 검산하고 합성 통합·변조 검사 및 최종 core 회귀 1회를 수행한다.",
+      "[AC-003] 기존 core·과거 evidence·manifest를 보존하며 source·입력·bundle·ZIP hash와 작업 범위를 검증한다.",
+      "[AC-004] 형성·재사용·expansion·ticks·채택 각각의 예측을 결과와 대조하고 일반화 한계와 다음 판별 질문을 기록한다."
+    ],
+    "riskLevel": "medium",
+    "workUnits": [
+      {
+        "id": "WU-001",
+        "objective": "조건 동결, 구현, 단일 실행 및 검증과 결과 보고",
+        "dependencies": [],
+        "writeTargets": [
+          "tools/r063_formation/",
+          "experiments/exp-44-circuit-formation/",
+          "experiments/INDEX.json",
+          "Run-HCR-R063.py",
+          "Run-HCR-R063.cmd",
+          "R063_MANIFEST.json",
+          "HCR-Evidence/exp44/",
+          "HCR-Evidence/r063-validation/",
+          "experiments/INDEX.ko.md"
+        ]
+      }
+    ],
+    "requiredCapabilities": [
+      "minimal-implementation",
+      "change-scope-baseline-capture",
+      "change-scope-assurance",
+      "acceptance-evidence-validation"
+    ],
+    "constraints": [
+      "연구 training 3회·평가 12회 단일 실행, 자동 retry·추가 학습·결과별 fixture 교체 없음",
+      "원본 src/tests와 과거 source/raw/manifest 보존, 이번 addon만 구현",
+      "구현 중 합성 검사 실패는 최초 기록을 보존하고 연구 시작 전에 수정 가능; 연구가 시작된 후 조건·실행 코드·검산 의미를 바꾸지 않음",
+      "별도 공식·프로세스 독립성이며 별도 연구자 감사 아님",
+      "HCC 전체 이론·LLM·인지 일반화와 에너지 효과를 주장하지 않음"
+    ],
+    "authorization": {
+      "allowedActions": [
+        "research-edit-execute-verify",
+        "commit-merge-main-clean-local-branch-push-origin-main"
+      ],
+      "prohibitedActions": [
+        "force-push",
+        "overwrite-existing-evidence"
+      ],
+      "approvalRequired": [
+        "install-deploy-tag"
+      ]
+    },
+    "decision": {
+      "complexity": "simple",
+      "hasConflicts": false
+    },
+    "orchestration": {
+      "requested": true,
+      "mcpAvailable": true
+    }
+  },
+  "target": {
+    "kind": "artifact",
+    "identifier": "HCR-Evidence/r063-validation/acceptance-target.json",
+    "digest": "sha256:a729d12720a479108230036b697432c3c058875d2ebb8b98044b2ab897c0b53b"
+  },
+  "evidence": [
+    {
+      "id": "E-001",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp44/r063-20260920T020204Z-07096ed58b/summary.json",
+      "digest": "sha256:1ef412e9b6779c2770cbcf9b5f0e9e672177e23ea52ada87c34a47a7d3ee291b",
+      "targetDigest": "sha256:a729d12720a479108230036b697432c3c058875d2ebb8b98044b2ab897c0b53b",
+      "verified": true,
+      "criterionIds": [
+        "AC-001"
+      ],
+      "direction": "supports",
+      "observedResult": "Training 3 and evaluation 12 independently replayed; pending/compiled provenance and frozen 2x2 paired outcomes measured"
+    },
+    {
+      "id": "E-002",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp44/r063-20260920T020204Z-07096ed58b/validation/native-smoke/summary.json",
+      "digest": "sha256:81aeeb96fb11a11f2397b0eefdb6f67109fbd5367f6782356dd173a700917c84",
+      "targetDigest": "sha256:a729d12720a479108230036b697432c3c058875d2ebb8b98044b2ab897c0b53b",
+      "verified": true,
+      "criterionIds": [
+        "AC-002"
+      ],
+      "direction": "supports",
+      "observedResult": "Synthetic training 3 and evaluation 8 verified, 56 mutation rejections"
+    },
+    {
+      "id": "E-003",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp44/r063-20260920T020204Z-07096ed58b/validation/core_regression.json",
+      "digest": "sha256:d5daace122f8617bfd42c41ab59ddb55331aae622d85dc3ab6f6439a54928ab9",
+      "targetDigest": "sha256:a729d12720a479108230036b697432c3c058875d2ebb8b98044b2ab897c0b53b",
+      "verified": true,
+      "criterionIds": [
+        "AC-002"
+      ],
+      "direction": "supports",
+      "observedResult": "One core regression, 602 tests, 599 passes and exactly 3 existing skips"
+    },
+    {
+      "id": "E-004",
+      "kind": "file",
+      "locator": "HCR-Evidence/r063-validation/delivery-verification.json",
+      "digest": "sha256:e333d1792d107331783a63d1bfa5b52193dd16e93fa1b85b8a6b923ce49d2977",
+      "targetDigest": "sha256:a729d12720a479108230036b697432c3c058875d2ebb8b98044b2ab897c0b53b",
+      "verified": true,
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "952 bundle files, source/raw manifest and ZIP verified, native event metrics independently recomputed"
+    },
+    {
+      "id": "E-005",
+      "kind": "file",
+      "locator": "HCR-Evidence/r063-validation/scope-report.json",
+      "digest": "sha256:5831c5c2b5dae828faecbcef58fa2f8c3d5bdede424bd020498dd89a062a4890",
+      "targetDigest": "sha256:a729d12720a479108230036b697432c3c058875d2ebb8b98044b2ab897c0b53b",
+      "verified": true,
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "PASS, zero excluded/unplanned/preexisting-overlap/ownership-unknown"
+    },
+    {
+      "id": "E-006",
+      "kind": "file",
+      "locator": "experiments/exp-44-circuit-formation/RESULTS.ko.md",
+      "digest": "sha256:a672e33b83f5120c99103d8c48c5e0e87fda82a7bac4901323643acc7618db42",
+      "targetDigest": "sha256:a729d12720a479108230036b697432c3c058875d2ebb8b98044b2ab897c0b53b",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Formation and reuse observed; expansion/outcome predictions supported and kernel reduction falsified in 3 pairs; limitations and checker correction recorded"
+    },
+    {
+      "id": "E-007",
+      "kind": "file",
+      "locator": "experiments/exp-44-circuit-formation/NEXT.ko.md",
+      "digest": "sha256:a0c4d27f4842895c915d695d2c7417c556efaa833451e009955bf38d3ebaf5e9",
+      "targetDigest": "sha256:a729d12720a479108230036b697432c3c058875d2ebb8b98044b2ab897c0b53b",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Next bounded question separates negative feedback, memory changes, correction and retained behavior"
+    },
+    {
+      "id": "E-008",
+      "kind": "file",
+      "locator": "HCR-Evidence/r063-validation/decision-trajectory-details.json",
+      "digest": "sha256:852346cbea9ed4ab4d2d59b7375a258947024435ea601bfb660080ce56c8119d",
+      "targetDigest": "sha256:a729d12720a479108230036b697432c3c058875d2ebb8b98044b2ab897c0b53b",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Existing raw reanalysis: same decision program and tick states, extra explicit zero drive entries; pool overhead separated"
+    }
+  ],
+  "verificationCommands": [],
+  "knownLimitations": [
+    "사전 정의된 motif·컴파일 규칙과 authored toy world이며 일반 구조 발견이나 통계적 독립 표본 아님",
+    "별도 공식·프로세스 검산이며 독립 연구자 감사 아님",
+    "오류 feedback 이후 수정·유지와 에너지 효율은 측정하지 않음"
+  ],
+  "criterionOverrides": []
+}

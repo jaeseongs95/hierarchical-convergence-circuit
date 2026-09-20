@@ -1,0 +1,9 @@
+{
+  "schema": "hcc-r063-acceptance-target-v1",
+  "source_manifest": "sha256:07f4ed6862ac709c34e9d64bf0761a5c8dc639f7e7d5b629336b550198caffd1",
+  "bundle_manifest": "sha256:d4b4af2c2e289eb849e5d94a48261cad201017f4993cc2460fb78d42ad631cce",
+  "release_manifest": "sha256:98882b0342ee7e78e85984a6ab05cca0a9a940971ba515655950ba9ed3d4b6cd",
+  "results": "sha256:a672e33b83f5120c99103d8c48c5e0e87fda82a7bac4901323643acc7618db42",
+  "next_design": "sha256:a0c4d27f4842895c915d695d2c7417c556efaa833451e009955bf38d3ebaf5e9",
+  "delivery_checker": "sha256:2aba90979e7577c5bb4e688769c3f0379628b19c230fdca8e5281beca0744aa0"
+}

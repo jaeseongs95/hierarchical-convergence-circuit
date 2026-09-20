@@ -1,0 +1,20 @@
+{
+  "analysis": "existing raw only, no new inference",
+  "rows": [
+    {
+      "case": "renamed-control",
+      "decision_network_and_tick_trajectory_exact": false,
+      "decision_ticks": 33
+    },
+    {
+      "case": "new-branch-open",
+      "decision_network_and_tick_trajectory_exact": false,
+      "decision_ticks": 38
+    },
+    {
+      "case": "new-branch-cut",
+      "decision_network_and_tick_trajectory_exact": false,
+      "decision_ticks": 34
+    }
+  ]
+}

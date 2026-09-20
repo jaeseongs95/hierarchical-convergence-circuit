@@ -1,0 +1,41 @@
+{
+  "analysis": "same raw evidence, not an independent experiment",
+  "initial_exact_dictionary_comparison_preserved": "decision-trajectory-comparison.json",
+  "rows": [
+    {
+      "case": "renamed-control",
+      "program_equal": true,
+      "all_tick_states_residuals_stability_equal": true,
+      "drive_dictionaries_equal": false,
+      "on_extra_drive_entries": {
+        "p:0:0": 0.0,
+        "p:0:1": 0.0
+      },
+      "effective_group_drives_equal": true
+    },
+    {
+      "case": "new-branch-open",
+      "program_equal": true,
+      "all_tick_states_residuals_stability_equal": true,
+      "drive_dictionaries_equal": false,
+      "on_extra_drive_entries": {
+        "p:0:0": 0.0,
+        "p:0:1": 0.0,
+        "p:0:2": 0.0,
+        "p:0:3": 0.0
+      },
+      "effective_group_drives_equal": true
+    },
+    {
+      "case": "new-branch-cut",
+      "program_equal": true,
+      "all_tick_states_residuals_stability_equal": true,
+      "drive_dictionaries_equal": false,
+      "on_extra_drive_entries": {
+        "p:0:0": 0.0,
+        "p:0:1": 0.0
+      },
+      "effective_group_drives_equal": true
+    }
+  ]
+}

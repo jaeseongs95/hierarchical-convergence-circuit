@@ -1,0 +1,327 @@
+{
+  "verified": true,
+  "run": "HCR-Evidence/exp44/r063-20260920T020204Z-07096ed58b",
+  "bundle_files": 952,
+  "zip_sha256": "e587fcfd914b8f54192df60d778614c4ea304ebbe78076b9c7389ad79a1615f0",
+  "source_manifest_sha256": "07f4ed6862ac709c34e9d64bf0761a5c8dc639f7e7d5b629336b550198caffd1",
+  "formation": [
+    {
+      "episode": 1,
+      "memory_version": 1,
+      "circuits": 0,
+      "pending": [
+        {
+          "length": 2,
+          "evidence_count": 1
+        }
+      ],
+      "compiled_lengths": [],
+      "strengths": [],
+      "feedback_correct": true
+    },
+    {
+      "episode": 2,
+      "memory_version": 2,
+      "circuits": 0,
+      "pending": [
+        {
+          "length": 2,
+          "evidence_count": 2
+        },
+        {
+          "length": 3,
+          "evidence_count": 1
+        }
+      ],
+      "compiled_lengths": [],
+      "strengths": [],
+      "feedback_correct": true
+    },
+    {
+      "episode": 3,
+      "memory_version": 3,
+      "circuits": 1,
+      "pending": [
+        {
+          "length": 3,
+          "evidence_count": 2
+        }
+      ],
+      "compiled_lengths": [
+        2
+      ],
+      "strengths": [
+        0.55
+      ],
+      "feedback_correct": true
+    }
+  ],
+  "rows": [
+    {
+      "identity": "m0-off-new-branch-cut",
+      "case": "new-branch-cut",
+      "memory": 0,
+      "gate": false,
+      "expansions": 5,
+      "reuses": 0,
+      "pool": 0,
+      "decision": 34,
+      "kernel_ticks": 34,
+      "adopted": false,
+      "accepted": true,
+      "raw": false,
+      "gaps": 0,
+      "D_DAG": 2,
+      "binding_checks": 0
+    },
+    {
+      "identity": "m0-off-new-branch-open",
+      "case": "new-branch-open",
+      "memory": 0,
+      "gate": false,
+      "expansions": 4,
+      "reuses": 0,
+      "pool": 0,
+      "decision": 38,
+      "kernel_ticks": 38,
+      "adopted": true,
+      "accepted": true,
+      "raw": true,
+      "gaps": 0,
+      "D_DAG": 4,
+      "binding_checks": 0
+    },
+    {
+      "identity": "m0-off-renamed-control",
+      "case": "renamed-control",
+      "memory": 0,
+      "gate": false,
+      "expansions": 2,
+      "reuses": 0,
+      "pool": 0,
+      "decision": 33,
+      "kernel_ticks": 33,
+      "adopted": true,
+      "accepted": true,
+      "raw": true,
+      "gaps": 0,
+      "D_DAG": 2,
+      "binding_checks": 0
+    },
+    {
+      "identity": "m0-on-new-branch-cut",
+      "case": "new-branch-cut",
+      "memory": 0,
+      "gate": true,
+      "expansions": 5,
+      "reuses": 0,
+      "pool": 0,
+      "decision": 34,
+      "kernel_ticks": 34,
+      "adopted": false,
+      "accepted": true,
+      "raw": false,
+      "gaps": 0,
+      "D_DAG": 2,
+      "binding_checks": 0
+    },
+    {
+      "identity": "m0-on-new-branch-open",
+      "case": "new-branch-open",
+      "memory": 0,
+      "gate": true,
+      "expansions": 4,
+      "reuses": 0,
+      "pool": 0,
+      "decision": 38,
+      "kernel_ticks": 38,
+      "adopted": true,
+      "accepted": true,
+      "raw": true,
+      "gaps": 0,
+      "D_DAG": 4,
+      "binding_checks": 0
+    },
+    {
+      "identity": "m0-on-renamed-control",
+      "case": "renamed-control",
+      "memory": 0,
+      "gate": true,
+      "expansions": 2,
+      "reuses": 0,
+      "pool": 0,
+      "decision": 33,
+      "kernel_ticks": 33,
+      "adopted": true,
+      "accepted": true,
+      "raw": true,
+      "gaps": 0,
+      "D_DAG": 2,
+      "binding_checks": 0
+    },
+    {
+      "identity": "m3-off-new-branch-cut",
+      "case": "new-branch-cut",
+      "memory": 3,
+      "gate": false,
+      "expansions": 5,
+      "reuses": 0,
+      "pool": 0,
+      "decision": 34,
+      "kernel_ticks": 34,
+      "adopted": false,
+      "accepted": true,
+      "raw": false,
+      "gaps": 0,
+      "D_DAG": 2,
+      "binding_checks": 0
+    },
+    {
+      "identity": "m3-off-new-branch-open",
+      "case": "new-branch-open",
+      "memory": 3,
+      "gate": false,
+      "expansions": 4,
+      "reuses": 0,
+      "pool": 0,
+      "decision": 38,
+      "kernel_ticks": 38,
+      "adopted": true,
+      "accepted": true,
+      "raw": true,
+      "gaps": 0,
+      "D_DAG": 4,
+      "binding_checks": 0
+    },
+    {
+      "identity": "m3-off-renamed-control",
+      "case": "renamed-control",
+      "memory": 3,
+      "gate": false,
+      "expansions": 2,
+      "reuses": 0,
+      "pool": 0,
+      "decision": 33,
+      "kernel_ticks": 33,
+      "adopted": true,
+      "accepted": true,
+      "raw": true,
+      "gaps": 0,
+      "D_DAG": 2,
+      "binding_checks": 0
+    },
+    {
+      "identity": "m3-on-new-branch-cut",
+      "case": "new-branch-cut",
+      "memory": 3,
+      "gate": true,
+      "expansions": 4,
+      "reuses": 1,
+      "pool": 61,
+      "decision": 34,
+      "kernel_ticks": 95,
+      "adopted": false,
+      "accepted": true,
+      "raw": false,
+      "gaps": 0,
+      "D_DAG": 2,
+      "binding_checks": 20
+    },
+    {
+      "identity": "m3-on-new-branch-open",
+      "case": "new-branch-open",
+      "memory": 3,
+      "gate": true,
+      "expansions": 2,
+      "reuses": 2,
+      "pool": 67,
+      "decision": 38,
+      "kernel_ticks": 105,
+      "adopted": true,
+      "accepted": true,
+      "raw": true,
+      "gaps": 0,
+      "D_DAG": 4,
+      "binding_checks": 20
+    },
+    {
+      "identity": "m3-on-renamed-control",
+      "case": "renamed-control",
+      "memory": 3,
+      "gate": true,
+      "expansions": 1,
+      "reuses": 1,
+      "pool": 35,
+      "decision": 33,
+      "kernel_ticks": 68,
+      "adopted": true,
+      "accepted": true,
+      "raw": true,
+      "gaps": 0,
+      "D_DAG": 2,
+      "binding_checks": 4
+    }
+  ],
+  "pairs": [
+    {
+      "case": "renamed-control",
+      "circuit_reuses": 1,
+      "eligible": true,
+      "expansion_delta": -1,
+      "kernel_tick_delta": 35,
+      "off_before_after_cost_equal": true,
+      "off_before_after_outcome_equal": true,
+      "post_gate_outcome_equal": true,
+      "pre_gate_cost_equal": true,
+      "pre_gate_outcome_equal": true,
+      "predictions": {
+        "expansion_reduction": "supported",
+        "kernel_tick_reduction": "falsified",
+        "outcome_preservation": "supported"
+      }
+    },
+    {
+      "case": "new-branch-open",
+      "circuit_reuses": 2,
+      "eligible": true,
+      "expansion_delta": -2,
+      "kernel_tick_delta": 67,
+      "off_before_after_cost_equal": true,
+      "off_before_after_outcome_equal": true,
+      "post_gate_outcome_equal": true,
+      "pre_gate_cost_equal": true,
+      "pre_gate_outcome_equal": true,
+      "predictions": {
+        "expansion_reduction": "supported",
+        "kernel_tick_reduction": "falsified",
+        "outcome_preservation": "supported"
+      }
+    },
+    {
+      "case": "new-branch-cut",
+      "circuit_reuses": 1,
+      "eligible": true,
+      "expansion_delta": -1,
+      "kernel_tick_delta": 61,
+      "off_before_after_cost_equal": true,
+      "off_before_after_outcome_equal": true,
+      "post_gate_outcome_equal": true,
+      "pre_gate_cost_equal": true,
+      "pre_gate_outcome_equal": true,
+      "predictions": {
+        "expansion_reduction": "supported",
+        "kernel_tick_reduction": "falsified",
+        "outcome_preservation": "supported"
+      }
+    }
+  ],
+  "research_training": 3,
+  "research_evaluation": 12,
+  "synthetic_training": 3,
+  "synthetic_evaluation": 8,
+  "rejected_mutations": 56,
+  "core_tests": 602,
+  "core_passes": 599,
+  "preexisting_skips": 3,
+  "core_regression_runs": 1
+}

@@ -1,0 +1,11 @@
+{
+  "initial_check": "AssertionError at event inventory comparison",
+  "affected_metric": "delivery checker expansions count only",
+  "cause": "Native AdaptiveWorkspace.retire increments expansions for dead-end retirement; initial extra checker counted only r02_expansion",
+  "correction": "Count r02_expansion plus r02_dead_end, consistent with frozen native and independent session replay",
+  "research_source_changed": false,
+  "research_evidence_changed": false,
+  "research_reexecuted": false,
+  "frozen_hypotheses_changed": false,
+  "original_checker": "verify-delivery-initial.py"
+}
