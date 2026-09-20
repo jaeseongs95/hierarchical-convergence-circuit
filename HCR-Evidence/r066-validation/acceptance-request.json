@@ -1,0 +1,249 @@
+{
+  "schemaVersion": "1.0.0",
+  "taskEnvelope": {
+    "schemaVersion": "1.0.0",
+    "taskId": "hcc-r066",
+    "objective": "요청 교정 관측의 사실 저장과 조회를 분리하고 context/epoch 경계 및 조용한 세계 변화에서 명시적 입력 개입 baseline을 검증한다.",
+    "scope": {
+      "included": [
+        "tools/r066_facts/",
+        "experiments/exp-47-fact-retrieval/",
+        "experiments/INDEX.json",
+        "experiments/INDEX.ko.md",
+        "Run-HCR-R066.py",
+        "Run-HCR-R066.cmd",
+        "R066_MANIFEST.json",
+        "HCR-Evidence/exp47/",
+        "HCR-Evidence/r066-validation/"
+      ],
+      "excluded": [
+        "src/",
+        "tests/",
+        "archive/",
+        "tools/r064_retention/",
+        "tools/r065_information/",
+        "experiments/exp-45-error-retention/",
+        "experiments/exp-46-information-boundary/"
+      ]
+    },
+    "acceptanceCriteria": [
+      "[AC-001] R064 요청·교정 관측·memory와 현재 source를 hash로 고정하고 context/epoch/edge/provenance 사실 계약, 비교군·조건·예측을 실행 전에 동결한다.",
+      "[AC-002] binary/edge 정보 경로별 current/record_only/lookup 및 회로 ON/OFF를 동일 조건에서 비교하고 같은 상황·다른 context·새 epoch·미통지 변화·정확 관측의 원입력/조회/실입력/판단/proof/readout/비용을 보존한다.",
+      "[AC-003] 별도 로직·프로세스의 사실 조회 재계산과 native 수식 replay, unknown/conflict/변조 self-test, 원클릭 source/input/bundle/ZIP 무결성, 최종 core 회귀 1회와 색인·기존 파일 보존을 확인한다.",
+      "[AC-004] 정보 접근의 효과와 구조 재사용 비용을 분리해 결과와 주장 한계·다음 판별 실험을 기록하고 커밋·main 병합·작업 브랜치 정리·origin/main 반영을 확인한다."
+    ],
+    "riskLevel": "medium",
+    "workUnits": [
+      {
+        "id": "WU-001",
+        "objective": "요청 교정 관측의 사실 저장과 조회를 분리하고 context/epoch 경계 및 조용한 세계 변화에서 명시적 입력 개입 baseline을 검증한다.",
+        "dependencies": [],
+        "writeTargets": [
+          "tools/r066_facts/",
+          "experiments/exp-47-fact-retrieval/",
+          "experiments/INDEX.json",
+          "experiments/INDEX.ko.md",
+          "Run-HCR-R066.py",
+          "Run-HCR-R066.cmd",
+          "R066_MANIFEST.json",
+          "HCR-Evidence/exp47/",
+          "HCR-Evidence/r066-validation/"
+        ]
+      }
+    ],
+    "requiredCapabilities": [
+      "minimal-implementation",
+      "change-scope-baseline-capture",
+      "change-scope-assurance",
+      "acceptance-evidence-validation"
+    ],
+    "constraints": [
+      "core와 과거 evidence/manifest 및 기존 untracked 보존",
+      "R064 요청 교정 관측 재사용 및 새 frozen native 평가; 새 학습 없음",
+      "context/epoch는 baseline에만 명시적으로 제공하며 native 능력으로 합산하지 않음",
+      "조건 동결 후 결과에 따른 수정·자동 retry 없음; 최초 실패 보존",
+      "별도 로직/프로세스 검산은 독립 연구자 감사 아님"
+    ],
+    "authorization": {
+      "allowedActions": [
+        "research-edit-execute-verify",
+        "commit-merge-main-clean-local-branch-push-origin-main"
+      ],
+      "prohibitedActions": [
+        "force-push",
+        "overwrite-existing-evidence"
+      ],
+      "approvalRequired": [
+        "install-deploy-tag"
+      ]
+    },
+    "decision": {
+      "complexity": "simple",
+      "hasConflicts": false
+    },
+    "orchestration": {
+      "requested": true,
+      "mcpAvailable": true
+    }
+  },
+  "target": {
+    "kind": "artifact",
+    "identifier": "HCR-Evidence/r066-validation/acceptance-target.json",
+    "digest": "sha256:b4c20508948a887b854385082733b920d38811ca68e7c6101de19ef92b871f18"
+  },
+  "evidence": [
+    {
+      "id": "E-001",
+      "kind": "file",
+      "locator": "experiments/exp-47-fact-retrieval/frozen_spec.json",
+      "digest": "sha256:ec91b3f79f23a9c2922d2e24ae66a0086146271a03d3cf1d53c195afac0d3058",
+      "targetDigest": "sha256:b4c20508948a887b854385082733b920d38811ca68e7c6101de19ef92b871f18",
+      "verified": true,
+      "criterionIds": [
+        "AC-001"
+      ],
+      "direction": "supports",
+      "observedResult": "Source, parent hashes, matrix, scope, predictions and units frozen before native evaluation."
+    },
+    {
+      "id": "E-002",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp47/r066-20260920T060557Z-c4b48b19a6/input_manifest.json",
+      "digest": "sha256:4a044cf63e81ef6845efebd4fcb235e0ad6a53f2c735fc430126ff3dac20e0fb",
+      "targetDigest": "sha256:b4c20508948a887b854385082733b920d38811ca68e7c6101de19ef92b871f18",
+      "verified": true,
+      "criterionIds": [
+        "AC-001"
+      ],
+      "direction": "supports",
+      "observedResult": "Five exact pinned requested-measurement and native-memory input files verified."
+    },
+    {
+      "id": "E-003",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp47/r066-20260920T060557Z-c4b48b19a6/summary.json",
+      "digest": "sha256:3be867869dbeb082d4c04253c1970d5852b0443ed47fd5ad271419bfa7819a0f",
+      "targetDigest": "sha256:b4c20508948a887b854385082733b920d38811ca68e7c6101de19ef92b871f18",
+      "verified": true,
+      "criterionIds": [
+        "AC-002"
+      ],
+      "direction": "supports",
+      "observedResult": "60 raw evaluations with matched within-channel memory, original/actual input, facts and native measurements; recording-only same in 20 comparisons."
+    },
+    {
+      "id": "E-004",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp47/r066-20260920T060557Z-c4b48b19a6/verification.json",
+      "digest": "sha256:87c57dad12311906bb293469be7cf4936d1e7c3296cb54170c545c29dafdbf62",
+      "targetDigest": "sha256:b4c20508948a887b854385082733b920d38811ca68e7c6101de19ef92b871f18",
+      "verified": true,
+      "criterionIds": [
+        "AC-002",
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "60 independent native formula replays, separate keyed fact join and 13 rejected mutations; no absent candidate."
+    },
+    {
+      "id": "E-005",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp47/r066-20260920T060557Z-c4b48b19a6/validation/selftest.json",
+      "digest": "sha256:098aa2459665588a176f19282b0eab35a8d3c69593ae3a1137b0f065d3ff4dd2",
+      "targetDigest": "sha256:b4c20508948a887b854385082733b920d38811ca68e7c6101de19ef92b871f18",
+      "verified": true,
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "10 synthetic boundary checks including unknown, conflict, rebinding, invalid value types and binary no-inference."
+    },
+    {
+      "id": "E-006",
+      "kind": "file",
+      "locator": "HCR-Evidence/r066-validation/regression-recovery/validation/core_regression.json",
+      "digest": "sha256:d5daace122f8617bfd42c41ab59ddb55331aae622d85dc3ab6f6439a54928ab9",
+      "targetDigest": "sha256:b4c20508948a887b854385082733b920d38811ca68e7c6101de19ef92b871f18",
+      "verified": true,
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "602 tests, 599 pass, original three environment skips, no new errors or skips."
+    },
+    {
+      "id": "E-007",
+      "kind": "file",
+      "locator": "HCR-Evidence/r066-validation/delivery-verification.json",
+      "digest": "sha256:68f594cc00e56a9ffbe3f176de8147147583877bea67e2c704ef6b1c6f2b7514",
+      "targetDigest": "sha256:b4c20508948a887b854385082733b920d38811ca68e7c6101de19ef92b871f18",
+      "verified": true,
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "800 research files, 380 frozen source files, recovery and ZIP verified; 26456 prior out-of-scope files preserved; index valid."
+    },
+    {
+      "id": "E-008",
+      "kind": "file",
+      "locator": "HCR-Evidence/r066-validation/scope-report.json",
+      "digest": "sha256:c88ce5fd47b7304cb3e406fdd5e666e92fc139262830b80f616004ad808877d6",
+      "targetDigest": "sha256:b4c20508948a887b854385082733b920d38811ca68e7c6101de19ef92b871f18",
+      "verified": true,
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "Scope PASS: no excluded/unplanned/preexisting-overlap changes."
+    },
+    {
+      "id": "E-009",
+      "kind": "file",
+      "locator": "experiments/exp-47-fact-retrieval/RESULTS.ko.md",
+      "digest": "sha256:f5243d6d13c8cd0911795ae3b326b27cac3599ed8aafaa69856ae5ac254f34c9",
+      "targetDigest": "sha256:b4c20508948a887b854385082733b920d38811ca68e7c6101de19ef92b871f18",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Results separate input intervention, record-only behavior, stale fact failure and native structural reuse costs."
+    },
+    {
+      "id": "E-010",
+      "kind": "file",
+      "locator": "experiments/exp-47-fact-retrieval/NEXT.ko.md",
+      "digest": "sha256:b72d8759b4b105e62565fd3ddda68a97c36cb66ad0f00492a71d6da31cc45be4",
+      "targetDigest": "sha256:b4c20508948a887b854385082733b920d38811ca68e7c6101de19ef92b871f18",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Next discriminator holds e0 and additional observation budget fixed across unchanged and changed worlds."
+    },
+    {
+      "id": "E-011",
+      "kind": "file",
+      "locator": "HCR-Evidence/r066-validation/git-delivery.json",
+      "digest": "sha256:0f93797a27ad4175cf241dfc095b69a5295c239fb3326c1815a5daf196001277",
+      "targetDigest": "sha256:b4c20508948a887b854385082733b920d38811ca68e7c6101de19ef92b871f18",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Research commit merged to local main, branch deleted and exact origin/main verified."
+    }
+  ],
+  "verificationCommands": [],
+  "knownLimitations": [
+    "명시적 host 입력 개입 baseline이며 native 사실 학습·HCC 독자적 우위 아님",
+    "60개 고정 평가 조건은 독립 표본이 아님; 정보 channel 사이에는 memory 이력 차이가 있음",
+    "별도 로직·프로세스 검산이며 독립 연구자 감사 아님",
+    "최초 회귀 import 실패 보존; harness 수정 뒤 599 pass/기존 skip 3, 회귀 시도 총 2회",
+    "봉인 원본의 공백 10건 보존; 직접 작성 파일 공백 검사는 통과"
+  ],
+  "criterionOverrides": []
+}
