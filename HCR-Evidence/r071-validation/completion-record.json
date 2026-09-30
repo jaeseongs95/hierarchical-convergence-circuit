@@ -1,0 +1,16 @@
+{
+  "research_commit": "0af9685c6d675ab8cefdfccd880521a6133468ab",
+  "acceptance": "PASS",
+  "scope": "PASS",
+  "delivery_integrity": "PASS",
+  "core_tests": 602,
+  "passed": 599,
+  "preserved_skips": 3,
+  "first_failure_preserved": true,
+  "native_executions": 14,
+  "recovery_native_executions": 0,
+  "normalization_corrections": 47,
+  "preflight": "READY",
+  "publication": "authorized ordinary push after local fast-forward merge; remote reflection to be verified live",
+  "independent_discovery_samples": 0
+}
