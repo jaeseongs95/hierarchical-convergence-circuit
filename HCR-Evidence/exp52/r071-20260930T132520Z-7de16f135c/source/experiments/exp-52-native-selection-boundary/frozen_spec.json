@@ -1,0 +1,319 @@
+{
+  "schema": "hcc-r071-selection-boundary-v1",
+  "parent_run": "HCR-Evidence/exp50/r069-20260930T120436Z-4ac297ded8",
+  "parent_manifests": {
+    "bundle_manifest.json": "7b476fa295f308921b4e0731d6681b413f8d75c42efd267b0bbf792675867e9a",
+    "source_manifest.json": "75c662d7ca50c57b831eb4dd5cbc9359cd5f3fdea78201ca5b45882c301c009f",
+    "raw_manifest.json": "e71f75a7a35e1734753a85f0558aa460f16fcfbbd78f663ab9d8eea8719b6f65"
+  },
+  "input_files": [
+    "plan.json",
+    "memory/M0.json",
+    "memory/M1.json"
+  ],
+  "configs": {
+    "default": {
+      "activation_threshold": 0.55,
+      "circuit_inhibition": 0.15,
+      "kernel": {
+        "damping": 0.45,
+        "evidence_gain": 4.0,
+        "inhibition": 0.2,
+        "learning_rate": 0.25,
+        "margin_threshold": 0.3,
+        "max_circuits": 16,
+        "max_edges": 8,
+        "max_groups": 32,
+        "max_observation_requests": 2,
+        "max_path_length": 4,
+        "max_paths": 4,
+        "max_search": 2048,
+        "max_ticks": 160,
+        "min_valid_episodes": 3,
+        "patience": 4,
+        "prior_gain": 2.0,
+        "relation_gain": 2.0,
+        "residual_tolerance": 1e-06,
+        "self_excitation": 0.25,
+        "temperature": 1.0,
+        "top_down_gain": 0.35,
+        "weakening": 0.2
+      },
+      "max_binding_checks": 1024,
+      "max_expansions": 64,
+      "max_frontier": 32,
+      "max_pool_candidates": 4,
+      "mismatch_threshold": 0.8,
+      "pattern_lengths": [
+        2,
+        3
+      ]
+    },
+    "midpoint": {
+      "activation_threshold": 0.9940565651611166,
+      "circuit_inhibition": 0.15,
+      "kernel": {
+        "damping": 0.45,
+        "evidence_gain": 4.0,
+        "inhibition": 0.2,
+        "learning_rate": 0.25,
+        "margin_threshold": 0.3,
+        "max_circuits": 16,
+        "max_edges": 8,
+        "max_groups": 32,
+        "max_observation_requests": 2,
+        "max_path_length": 4,
+        "max_paths": 4,
+        "max_search": 2048,
+        "max_ticks": 160,
+        "min_valid_episodes": 3,
+        "patience": 4,
+        "prior_gain": 2.0,
+        "relation_gain": 2.0,
+        "residual_tolerance": 1e-06,
+        "self_excitation": 0.25,
+        "temperature": 1.0,
+        "top_down_gain": 0.35,
+        "weakening": 0.2
+      },
+      "max_binding_checks": 1024,
+      "max_expansions": 64,
+      "max_frontier": 32,
+      "max_pool_candidates": 4,
+      "mismatch_threshold": 0.8,
+      "pattern_lengths": [
+        2,
+        3
+      ]
+    }
+  },
+  "recipe": [
+    {
+      "id": "train-1",
+      "observation": {
+        "episode_id": "train-1",
+        "revision": 0,
+        "start": "train-1-v0",
+        "goal": "train-1-v2",
+        "edges": [
+          {
+            "id": "train-1-e0",
+            "source": "train-1-v0",
+            "target": "train-1-v1",
+            "score": 1.0
+          },
+          {
+            "id": "train-1-e1",
+            "source": "train-1-v1",
+            "target": "train-1-v2",
+            "score": 1.0
+          }
+        ]
+      },
+      "mode": "train"
+    },
+    {
+      "id": "train-2",
+      "observation": {
+        "episode_id": "train-2",
+        "revision": 0,
+        "start": "train-2-v0",
+        "goal": "train-2-v3",
+        "edges": [
+          {
+            "id": "train-2-e0",
+            "source": "train-2-v0",
+            "target": "train-2-v1",
+            "score": 1.0
+          },
+          {
+            "id": "train-2-e1",
+            "source": "train-2-v1",
+            "target": "train-2-v2",
+            "score": 1.0
+          },
+          {
+            "id": "train-2-e2",
+            "source": "train-2-v2",
+            "target": "train-2-v3",
+            "score": 1.0
+          }
+        ]
+      },
+      "mode": "train"
+    },
+    {
+      "id": "train-3",
+      "observation": {
+        "episode_id": "train-3",
+        "revision": 0,
+        "start": "train-3-v0",
+        "goal": "train-3-v4",
+        "edges": [
+          {
+            "id": "train-3-e0",
+            "source": "train-3-v0",
+            "target": "train-3-v1",
+            "score": 1.0
+          },
+          {
+            "id": "train-3-e1",
+            "source": "train-3-v1",
+            "target": "train-3-v2",
+            "score": 1.0
+          },
+          {
+            "id": "train-3-e2",
+            "source": "train-3-v2",
+            "target": "train-3-v3",
+            "score": 1.0
+          },
+          {
+            "id": "train-3-e3",
+            "source": "train-3-v3",
+            "target": "train-3-v4",
+            "score": 1.0
+          }
+        ]
+      },
+      "mode": "train"
+    },
+    {
+      "id": "donor-1",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "v0",
+            "target": "v1"
+          },
+          {
+            "id": "e1",
+            "score": 0.8,
+            "source": "v1",
+            "target": "v2"
+          }
+        ],
+        "episode_id": "r071-donor-1",
+        "goal": "v2",
+        "revision": 0,
+        "start": "v0"
+      },
+      "mode": "adapt"
+    },
+    {
+      "id": "donor-2",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "v0",
+            "target": "v1"
+          },
+          {
+            "id": "e1",
+            "score": 0.8,
+            "source": "v1",
+            "target": "v2"
+          }
+        ],
+        "episode_id": "r071-donor-2",
+        "goal": "v2",
+        "revision": 0,
+        "start": "v0"
+      },
+      "mode": "adapt"
+    }
+  ],
+  "observation": {
+    "edges": [
+      {
+        "id": "e0",
+        "score": 1.0,
+        "source": "v0",
+        "target": "v1"
+      },
+      {
+        "id": "e1",
+        "score": 0.8,
+        "source": "v1",
+        "target": "v2"
+      }
+    ],
+    "episode_id": "r069-probe",
+    "goal": "v2",
+    "revision": 1,
+    "start": "v0"
+  },
+  "limits": {
+    "max_advances_per_session": 16,
+    "max_kernel_ticks_per_session": 5120
+  },
+  "checkpoints": {
+    "M0": 4,
+    "M1": 5
+  },
+  "expected_checkpoints": {
+    "M0": {
+      "strength": 0.11,
+      "version": 2,
+      "failures": 1,
+      "active": true,
+      "evidence_episodes": [
+        "train-1",
+        "train-2",
+        "train-3"
+      ]
+    },
+    "M1": {
+      "strength": 0.022,
+      "version": 3,
+      "failures": 2,
+      "active": true,
+      "evidence_episodes": [
+        "train-1",
+        "train-2",
+        "train-3"
+      ]
+    }
+  },
+  "world_file": "experiments/exp-52-native-selection-boundary/reference_world.json",
+  "world_sha256": "6ac404fb511d2d3146e5cdd74bc564eb5f92b87affd53cc62c34817ffdb84b83",
+  "tolerance": 2e-12,
+  "predictions": {
+    "default-M0": {
+      "first_source": "circuit",
+      "value": true,
+      "correct": false,
+      "expansions": 1
+    },
+    "default-M1": {
+      "first_source": "circuit",
+      "value": true,
+      "correct": false,
+      "expansions": 1
+    },
+    "midpoint-M0": {
+      "first_source": "circuit",
+      "value": true,
+      "correct": false,
+      "expansions": 1
+    },
+    "midpoint-M1": {
+      "first_source": "primitive",
+      "value": true,
+      "correct": false,
+      "expansions": 2
+    }
+  },
+  "core_regression_runs": 1,
+  "automatic_retry": false,
+  "threshold_provenance": {
+    "source": "experiments/exp-51-pool-signal-boundary/RESULTS.ko.md",
+    "sha256": "aa96636fa65623d9d35b90ce99575842de2ee9d7dbfe66ddfe33dfe0e1884021",
+    "selection": "post_hoc midpoint from R070 existing activations; not independent discovery"
+  },
+  "claim_boundary": "New native recipe/config/checkpoint comparison; not exact R069 memory, pure strength, independent threshold discovery, circuit competition or HCC general advantage."
+}

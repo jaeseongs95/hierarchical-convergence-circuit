@@ -1,0 +1,261 @@
+{
+  "schemaVersion": "1.0.0",
+  "taskEnvelope": {
+    "schemaVersion": "1.0.0",
+    "taskId": "hcc-r071-native-selection-boundary",
+    "objective": "R070의 선택 경계 예측을 계약을 보존한 native paired 실험으로 검사하고 연구 결과를 전달한다",
+    "scope": {
+      "included": [
+        "Run-HCR-R071.cmd",
+        "Run-HCR-R071.py",
+        "R071_MANIFEST.json",
+        "tools/r071_boundary/",
+        "experiments/exp-52-native-selection-boundary/",
+        "experiments/INDEX.json",
+        "experiments/INDEX.ko.md",
+        "HCR-Evidence/exp52/",
+        "HCR-Evidence/r071-validation/"
+      ],
+      "excluded": [
+        "src/",
+        "tests/",
+        "archive/",
+        "HCR-Evidence/exp50/",
+        "HCR-Evidence/exp51/",
+        "experiments/exp-51-pool-signal-boundary/"
+      ]
+    },
+    "acceptanceCriteria": [
+      "[AC-001] 기존 core와 evidence를 보존하고 조건 및 native memory 형성 recipe를 실행 전에 동결한다",
+      "[AC-002] config별 native 형성·두 약화와 2x2 새 세션 선택·판단·비용을 독립 재계산한다",
+      "[AC-003] 측정 변조 및 config 불일치 거부, 별도 집계 검산과 기존 core 회귀 1회를 통과한다",
+      "[AC-004] 토론·주장 경계·원클릭·결과를 기록하고 범위 및 수용 검사를 통과한다"
+    ],
+    "riskLevel": "medium",
+    "workUnits": [
+      {
+        "id": "research",
+        "objective": "native 선택 민감도 실험과 검산",
+        "dependencies": [],
+        "writeTargets": [
+          "Run-HCR-R071.cmd",
+          "Run-HCR-R071.py",
+          "R071_MANIFEST.json",
+          "tools/r071_boundary/",
+          "experiments/exp-52-native-selection-boundary/",
+          "experiments/INDEX.json",
+          "experiments/INDEX.ko.md",
+          "HCR-Evidence/exp52/",
+          "HCR-Evidence/r071-validation/"
+        ]
+      }
+    ],
+    "requiredCapabilities": [
+      "independent-deliberation",
+      "change-scope-baseline-capture",
+      "minimal-implementation",
+      "mutation-risk-preflight",
+      "change-scope-assurance",
+      "acceptance-evidence-validation"
+    ],
+    "constraints": [
+      "기존 core와 historical evidence 수정 금지",
+      "memory signature 자동 수정 금지",
+      "자동 retry와 설치 금지",
+      "post hoc boundary 성공을 독립 발견으로 계산 금지"
+    ],
+    "authorization": {
+      "allowedActions": [
+        "read",
+        "write-scoped-research-files",
+        "run-local-checks",
+        "commit",
+        "merge-local-main",
+        "delete-completed-local-task-branch",
+        "push-origin-main"
+      ],
+      "prohibitedActions": [
+        "force-push",
+        "rewrite-historical-evidence",
+        "overwrite-user-changes"
+      ],
+      "approvalRequired": [
+        "deploy",
+        "tag",
+        "install",
+        "delete-remote-branch"
+      ]
+    },
+    "decision": {
+      "complexity": "complex",
+      "hasConflicts": false
+    },
+    "orchestration": {
+      "requested": false,
+      "mcpAvailable": true
+    }
+  },
+  "target": {
+    "kind": "artifact",
+    "identifier": "R071-deliverable-and-recovered-sealed-run",
+    "digest": "sha256:a2536653d4a9831279103587e11f9654deeff5d9171778cee564fc9d3d524031"
+  },
+  "evidence": [
+    {
+      "id": "integrity",
+      "kind": "test",
+      "locator": "HCR-Evidence/r071-validation/delivery-verification.json",
+      "digest": "sha256:f2aed15319a43ee5e34c3fcd4e5bfce6865114a7d109a113aef377fd1621dc8b",
+      "targetDigest": "sha256:a2536653d4a9831279103587e11f9654deeff5d9171778cee564fc9d3d524031",
+      "verified": true,
+      "criterionIds": [
+        "AC-001",
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "Current bundle/ZIP byte equality, initial failure unchanged,602 tests with599 pass and3 preserved skips"
+    },
+    {
+      "id": "analysis",
+      "kind": "test",
+      "locator": "HCR-Evidence/exp52/r071-20260930T132808Z-695d047b35/verification.json",
+      "digest": "sha256:a050935f449fe9251a8fc78847fc2d4a7949c39e21bdc842d5f57a5912b0e429",
+      "targetDigest": "sha256:a2536653d4a9831279103587e11f9654deeff5d9171778cee564fc9d3d524031",
+      "verified": true,
+      "criterionIds": [
+        "AC-002"
+      ],
+      "direction": "supports",
+      "observedResult": "Four independently audited native evaluation packets, raw selection/readout/cost projections"
+    },
+    {
+      "id": "formation",
+      "kind": "test",
+      "locator": "HCR-Evidence/exp52/r071-20260930T132808Z-695d047b35/summary.json",
+      "digest": "sha256:3726b7365b2c17873f56e991bea1f6f1e53669044a4cf1516c97fb41164b2a30",
+      "targetDigest": "sha256:a2536653d4a9831279103587e11f9654deeff5d9171778cee564fc9d3d524031",
+      "verified": true,
+      "criterionIds": [
+        "AC-002"
+      ],
+      "direction": "supports",
+      "observedResult": "Both native formation/weakening recipes independently replayed and matched projections verified"
+    },
+    {
+      "id": "mutations",
+      "kind": "test",
+      "locator": "HCR-Evidence/exp52/r071-20260930T132808Z-695d047b35/validation/mutation-checks.json",
+      "digest": "sha256:3bc0685f5345f2cb7769bc8ff7cc2f51e1e34a5e5be688a36377584813a2494e",
+      "targetDigest": "sha256:a2536653d4a9831279103587e11f9654deeff5d9171778cee564fc9d3d524031",
+      "verified": true,
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "Seven packet/measurement mutations rejected"
+    },
+    {
+      "id": "config",
+      "kind": "test",
+      "locator": "HCR-Evidence/exp52/r071-20260930T132808Z-695d047b35/original-validation/preflight-selftest.json",
+      "digest": "sha256:1c013de4ac1fe4cf952b64630d8514d20f20a0e66b3ce94fa228ed646448c449",
+      "targetDigest": "sha256:a2536653d4a9831279103587e11f9654deeff5d9171778cee564fc9d3d524031",
+      "verified": true,
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "Existing memory/new config mismatch rejected before native research"
+    },
+    {
+      "id": "scope",
+      "kind": "file",
+      "locator": "HCR-Evidence/r071-validation/scope-report.json",
+      "digest": "sha256:9e76e0e17073538b69115af716187a579b87221d508251c88db91547a7af37ed",
+      "targetDigest": "sha256:a2536653d4a9831279103587e11f9654deeff5d9171778cee564fc9d3d524031",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Scope PASS, preexisting files untouched"
+    },
+    {
+      "id": "record",
+      "kind": "document",
+      "locator": "experiments/exp-52-native-selection-boundary/RESULTS.ko.md",
+      "digest": "sha256:cdea36b9be590d5f26b4bf1f0848b82de8ab64acd531f39600ce21c4d8aa1023",
+      "targetDigest": "sha256:a2536653d4a9831279103587e11f9654deeff5d9171778cee564fc9d3d524031",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Observed interpretation, alternatives, scope and failed analysis/recovery documented"
+    },
+    {
+      "id": "panel",
+      "kind": "document",
+      "locator": "experiments/exp-52-native-selection-boundary/decision-record.json",
+      "digest": "sha256:bea66001c125de04f2def3d6fe55f608a7d666cd19763f967f7de03c2d4c9a3a",
+      "targetDigest": "sha256:a2536653d4a9831279103587e11f9654deeff5d9171778cee564fc9d3d524031",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Blind two-reviewer design and cross examination validated"
+    },
+    {
+      "id": "launcher",
+      "kind": "file",
+      "locator": "Run-HCR-R071.cmd",
+      "digest": "sha256:e445d39485437e9b07251464324985697484d2d969346f72789d71b8ff2390aa",
+      "targetDigest": "sha256:a2536653d4a9831279103587e11f9654deeff5d9171778cee564fc9d3d524031",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Existing Python fail-fast .cmd entrypoint; Python execution completed with recovery and no duplicate native data"
+    },
+    {
+      "id": "staged-byte-integrity",
+      "kind": "test",
+      "locator": "HCR-Evidence/r071-validation/staged-evidence-bytes.final.json",
+      "digest": "sha256:5cedf76982c8195235ca8dfd38bfc60a7fde4538337456165d883c9c1185d6c2",
+      "targetDigest": "sha256:a2536653d4a9831279103587e11f9654deeff5d9171778cee564fc9d3d524031",
+      "verified": true,
+      "criterionIds": [
+        "AC-001",
+        "AC-003",
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "47 normalized staged evidence files restored by scoped -text and index renormalization; all original raw bytes unchanged"
+    }
+  ],
+  "verificationCommands": [
+    {
+      "id": "recovery",
+      "command": "python -X utf8 -B Run-HCR-R071.py --recover HCR-Evidence/exp52/r071-20260930T132520Z-7de16f135c",
+      "exitCode": 0,
+      "locator": "HCR-Evidence/exp52/r071-20260930T132808Z-695d047b35/result.json",
+      "targetDigest": "sha256:a2536653d4a9831279103587e11f9654deeff5d9171778cee564fc9d3d524031",
+      "criterionIds": [
+        "AC-001",
+        "AC-002",
+        "AC-003",
+        "AC-004"
+      ]
+    }
+  ],
+  "knownLimitations": [
+    "R070-derived post hoc midpoint, not independent discovery",
+    "First analysis failure preserved; recovery reuses14 native executions, adds0",
+    "Core602:599 passed,3 preserved environment skips",
+    "Python entrypoint and .cmd index dispatch tested; experiment .cmd shim inspected without repeating study",
+    "No physical energy, peak memory or external researcher replication"
+  ],
+  "criterionOverrides": []
+}

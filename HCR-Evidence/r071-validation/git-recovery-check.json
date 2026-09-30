@@ -1,0 +1,19 @@
+{
+  "verified": true,
+  "baseline_commit": "87d494c8230c568ec45de8733bf12ca8e165adf4",
+  "changed_existing_files": [
+    {
+      "path": "experiments/INDEX.json",
+      "restored_sha256": "274023c0e3b0d61402f63bc71289d7ada8c1d10fe71ea17fcb04d1f10d75d75a",
+      "bytes_match": true
+    },
+    {
+      "path": "experiments/INDEX.ko.md",
+      "restored_sha256": "7a6ad9b44acad93d0f68440ec1457f2a1a4137fc18eda2c972cfe5baf5c710d9",
+      "bytes_match": true
+    }
+  ],
+  "restore_environment": "disposable local directory only",
+  "procedure": "Preserve baseline commit and revert only R071 changes as a reviewed new commit; no force push or unrelated reset.",
+  "limitations": "Baseline byte restore tested in temporary directory; no live or remote rollback performed."
+}

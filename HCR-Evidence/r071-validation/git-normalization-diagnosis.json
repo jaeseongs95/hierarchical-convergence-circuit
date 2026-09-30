@@ -1,0 +1,10 @@
+{
+  "verdict": "CAUSE_CONFIRMED",
+  "symptom": "47 frozen source snapshots differed between working bytes and index",
+  "mechanism": "parent attributes text=auto normalized historical CRLF; regular add did not refresh already indexed files after scoped attributes addition",
+  "root_condition": "new frozen evidence subtree lacked local -text at initial staging",
+  "discriminating_evidence": "git check-attr text reports unset, but initial index still LF; --renormalize refresh then all47 staged blobs byte-equal",
+  "intervention": "Only new exp52 .gitattributes and new staged index entries changed; native artifacts/source bytes preserved",
+  "new_native_executions": 0,
+  "new_core_regression_runs": 0
+}

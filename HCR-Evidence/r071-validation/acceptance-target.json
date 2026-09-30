@@ -1,0 +1,27 @@
+{
+  "target": {
+    "kind": "artifact",
+    "identifier": "R071-deliverable-and-recovered-sealed-run",
+    "digest": "sha256:3c8f02cc49b7ef320a85bca3bf684b3abdb2e86a89145261122d3a89b47c4816"
+  },
+  "files": {
+    "Run-HCR-R071.cmd": "sha256:e445d39485437e9b07251464324985697484d2d969346f72789d71b8ff2390aa",
+    "Run-HCR-R071.py": "sha256:214e0f2e960ccd143cb0a11f83ad89eee21dee3583e80db2055d809793ed80f2",
+    "tools/r071_boundary/__init__.py": "sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "tools/r071_boundary/audit.py": "sha256:cb1c644fef7d406ccbbdc1fe564de6836e8b292906de121ce1388fc9406df44d",
+    "tools/r071_boundary/pipeline.py": "sha256:862d5124d542a9c105020d3615e429c2c3a39600e32e403d2130552a25a5943a",
+    "tools/r071_boundary/verify.py": "sha256:d26eadcf7c181e38602d89916fd4741e229e8b7c111ea2eb52de69c1d2820e74",
+    "tools/r071_boundary/worker.py": "sha256:06526840c2fd91c4bb45767246c25d74efb3834a944df7fee8e7e11d8a93d07a",
+    "experiments/exp-52-native-selection-boundary/decision-record.json": "sha256:bea66001c125de04f2def3d6fe55f608a7d666cd19763f967f7de03c2d4c9a3a",
+    "experiments/exp-52-native-selection-boundary/frozen_spec.json": "sha256:c5d75854fa454d077277cd29ed67996ecaadf6ce28cbeedb1d8e9db8ebe63985",
+    "experiments/exp-52-native-selection-boundary/reference_world.json": "sha256:6ac404fb511d2d3146e5cdd74bc564eb5f92b87affd53cc62c34817ffdb84b83",
+    "experiments/exp-52-native-selection-boundary/design.ko.md": "sha256:ccd7916f8c4eb2708e0010f54d939d98948eed53d2bc1d644b81c66d11a1d504",
+    "R071_MANIFEST.json": "sha256:965b21d3925ebc7e88de96c739612f3b120a14ce2c208fb7b39810ba49bb69ef",
+    "experiments/INDEX.json": "sha256:39ca3a5442ef2755e6867dbdac588c9a61bbf87128cc9d0227bcce5cea1c8d6d",
+    "experiments/INDEX.ko.md": "sha256:0ac0e09a62cd6adb5cdfa68a2a698934bfe7ecab959137541ef4b31f9ed5f1a8",
+    "experiments/exp-52-native-selection-boundary/RESULTS.ko.md": "sha256:cdea36b9be590d5f26b4bf1f0848b82de8ab64acd531f39600ce21c4d8aa1023",
+    "experiments/exp-52-native-selection-boundary/NEXT.ko.md": "sha256:8fa43a0133c9086931c3b73a660cf85ce8368573007cce1d6342a92e7ba1f408",
+    "experiments/exp-52-native-selection-boundary/DELIBERATION.ko.md": "sha256:57b6f19e223a0d23c072e0c4e4ca509799211e7139dc53ce5d2bd01ac5522bc9",
+    "HCR-Evidence/exp52/r071-20260930T132808Z-695d047b35/bundle_manifest.json": "sha256:591e92636e05b2cbd774ffd4a44c4ffeafa01df4cde441887d130e32bdc42ade"
+  }
+}

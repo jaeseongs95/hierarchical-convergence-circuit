@@ -1,0 +1,201 @@
+{
+  "schemaVersion": "1.0.0",
+  "target": {
+    "kind": "artifact",
+    "identifier": "R071-deliverable-and-recovered-sealed-run",
+    "digest": "sha256:a2536653d4a9831279103587e11f9654deeff5d9171778cee564fc9d3d524031"
+  },
+  "criteria": [
+    {
+      "criterionId": "AC-001",
+      "statement": "[AC-001] 기존 core와 evidence를 보존하고 조건 및 native memory 형성 recipe를 실행 전에 동결한다",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "integrity",
+        "staged-byte-integrity",
+        "command:recovery"
+      ],
+      "observedResult": "Current bundle/ZIP byte equality, initial failure unchanged,602 tests with599 pass and3 preserved skips; 47 normalized staged evidence files restored by scoped -text and index renormalization; all original raw bytes unchanged; Verification command exited with code 0.",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    },
+    {
+      "criterionId": "AC-002",
+      "statement": "[AC-002] config별 native 형성·두 약화와 2x2 새 세션 선택·판단·비용을 독립 재계산한다",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "analysis",
+        "formation",
+        "command:recovery"
+      ],
+      "observedResult": "Four independently audited native evaluation packets, raw selection/readout/cost projections; Both native formation/weakening recipes independently replayed and matched projections verified; Verification command exited with code 0.",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    },
+    {
+      "criterionId": "AC-003",
+      "statement": "[AC-003] 측정 변조 및 config 불일치 거부, 별도 집계 검산과 기존 core 회귀 1회를 통과한다",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "integrity",
+        "mutations",
+        "config",
+        "staged-byte-integrity",
+        "command:recovery"
+      ],
+      "observedResult": "Current bundle/ZIP byte equality, initial failure unchanged,602 tests with599 pass and3 preserved skips; Seven packet/measurement mutations rejected; Existing memory/new config mismatch rejected before native research; 47 normalized staged evidence files restored by scoped -text and index renormalization; all original raw bytes unchanged; Verification command exited with code 0.",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    },
+    {
+      "criterionId": "AC-004",
+      "statement": "[AC-004] 토론·주장 경계·원클릭·결과를 기록하고 범위 및 수용 검사를 통과한다",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "scope",
+        "record",
+        "panel",
+        "launcher",
+        "staged-byte-integrity",
+        "command:recovery"
+      ],
+      "observedResult": "Scope PASS, preexisting files untouched; Observed interpretation, alternatives, scope and failed analysis/recovery documented; Blind two-reviewer design and cross examination validated; Existing Python fail-fast .cmd entrypoint; Python execution completed with recovery and no duplicate native data; 47 normalized staged evidence files restored by scoped -text and index renormalization; all original raw bytes unchanged; Verification command exited with code 0.",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    }
+  ],
+  "verifiedEvidenceIndex": [
+    {
+      "evidenceId": "integrity",
+      "kind": "test",
+      "locator": "HCR-Evidence/r071-validation/delivery-verification.json",
+      "digest": "sha256:f2aed15319a43ee5e34c3fcd4e5bfce6865114a7d109a113aef377fd1621dc8b",
+      "targetDigest": "sha256:a2536653d4a9831279103587e11f9654deeff5d9171778cee564fc9d3d524031",
+      "criterionIds": [
+        "AC-001",
+        "AC-003"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "analysis",
+      "kind": "test",
+      "locator": "HCR-Evidence/exp52/r071-20260930T132808Z-695d047b35/verification.json",
+      "digest": "sha256:a050935f449fe9251a8fc78847fc2d4a7949c39e21bdc842d5f57a5912b0e429",
+      "targetDigest": "sha256:a2536653d4a9831279103587e11f9654deeff5d9171778cee564fc9d3d524031",
+      "criterionIds": [
+        "AC-002"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "formation",
+      "kind": "test",
+      "locator": "HCR-Evidence/exp52/r071-20260930T132808Z-695d047b35/summary.json",
+      "digest": "sha256:3726b7365b2c17873f56e991bea1f6f1e53669044a4cf1516c97fb41164b2a30",
+      "targetDigest": "sha256:a2536653d4a9831279103587e11f9654deeff5d9171778cee564fc9d3d524031",
+      "criterionIds": [
+        "AC-002"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "mutations",
+      "kind": "test",
+      "locator": "HCR-Evidence/exp52/r071-20260930T132808Z-695d047b35/validation/mutation-checks.json",
+      "digest": "sha256:3bc0685f5345f2cb7769bc8ff7cc2f51e1e34a5e5be688a36377584813a2494e",
+      "targetDigest": "sha256:a2536653d4a9831279103587e11f9654deeff5d9171778cee564fc9d3d524031",
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "config",
+      "kind": "test",
+      "locator": "HCR-Evidence/exp52/r071-20260930T132808Z-695d047b35/original-validation/preflight-selftest.json",
+      "digest": "sha256:1c013de4ac1fe4cf952b64630d8514d20f20a0e66b3ce94fa228ed646448c449",
+      "targetDigest": "sha256:a2536653d4a9831279103587e11f9654deeff5d9171778cee564fc9d3d524031",
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "scope",
+      "kind": "file",
+      "locator": "HCR-Evidence/r071-validation/scope-report.json",
+      "digest": "sha256:9e76e0e17073538b69115af716187a579b87221d508251c88db91547a7af37ed",
+      "targetDigest": "sha256:a2536653d4a9831279103587e11f9654deeff5d9171778cee564fc9d3d524031",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "record",
+      "kind": "document",
+      "locator": "experiments/exp-52-native-selection-boundary/RESULTS.ko.md",
+      "digest": "sha256:cdea36b9be590d5f26b4bf1f0848b82de8ab64acd531f39600ce21c4d8aa1023",
+      "targetDigest": "sha256:a2536653d4a9831279103587e11f9654deeff5d9171778cee564fc9d3d524031",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "panel",
+      "kind": "document",
+      "locator": "experiments/exp-52-native-selection-boundary/decision-record.json",
+      "digest": "sha256:bea66001c125de04f2def3d6fe55f608a7d666cd19763f967f7de03c2d4c9a3a",
+      "targetDigest": "sha256:a2536653d4a9831279103587e11f9654deeff5d9171778cee564fc9d3d524031",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "launcher",
+      "kind": "file",
+      "locator": "Run-HCR-R071.cmd",
+      "digest": "sha256:e445d39485437e9b07251464324985697484d2d969346f72789d71b8ff2390aa",
+      "targetDigest": "sha256:a2536653d4a9831279103587e11f9654deeff5d9171778cee564fc9d3d524031",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "staged-byte-integrity",
+      "kind": "test",
+      "locator": "HCR-Evidence/r071-validation/staged-evidence-bytes.final.json",
+      "digest": "sha256:5cedf76982c8195235ca8dfd38bfc60a7fde4538337456165d883c9c1185d6c2",
+      "targetDigest": "sha256:a2536653d4a9831279103587e11f9654deeff5d9171778cee564fc9d3d524031",
+      "criterionIds": [
+        "AC-001",
+        "AC-003",
+        "AC-004"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "command:recovery",
+      "kind": "verification-command",
+      "locator": "HCR-Evidence/exp52/r071-20260930T132808Z-695d047b35/result.json",
+      "digest": "sha256:868b21e2f55b0b8378c14adde72f29fbc68dceec35d81cc62f47a2d5a444bf65",
+      "targetDigest": "sha256:a2536653d4a9831279103587e11f9654deeff5d9171778cee564fc9d3d524031",
+      "criterionIds": [
+        "AC-001",
+        "AC-002",
+        "AC-003",
+        "AC-004"
+      ],
+      "direction": "supports"
+    }
+  ],
+  "unresolvedCriteria": [],
+  "limitations": [
+    "R070-derived post hoc midpoint, not independent discovery",
+    "First analysis failure preserved; recovery reuses14 native executions, adds0",
+    "Core602:599 passed,3 preserved environment skips",
+    "Python entrypoint and .cmd index dispatch tested; experiment .cmd shim inspected without repeating study",
+    "No physical energy, peak memory or external researcher replication"
+  ],
+  "verdict": "PASS"
+}

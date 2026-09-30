@@ -965,6 +965,26 @@
       "source_commit": null,
       "source_commit_note": "Reanalysis of four R069 new-session packets; separate pool trajectories and route-only decision inputs; no new native execution or independent samples.",
       "standalone_python_entrypoint": "Run-HCR-R070.py"
+    },
+    {
+      "current_python_entrypoint": null,
+      "default_dispatcher_promoted": false,
+      "design": "experiments/exp-52-native-selection-boundary/design.ko.md",
+      "directory": "experiments/exp-52-native-selection-boundary",
+      "evidence_directory": "HCR-Evidence/exp52",
+      "execution_status": "standalone_candidate_contract",
+      "experiment_id": "EXP-52",
+      "frozen_design": "experiments/exp-52-native-selection-boundary/frozen_spec.json",
+      "implementation_validation_directory": "HCR-Evidence/r071-validation",
+      "legacy_python_entrypoint": null,
+      "release_manifest": "R071_MANIFEST.json",
+      "revision_references": [
+        "r071"
+      ],
+      "run_status": "read_per_run_evidence",
+      "source_commit": null,
+      "source_commit_note": "Native config-matched formation and weakening recipe; 2x2 checkpoint/threshold selection; R070-derived post hoc boundary, no independent discovery claim.",
+      "standalone_python_entrypoint": "Run-HCR-R071.py"
     }
   ],
   "inventory_commit": "afb5d5e5b67906b7697f16163e166f59b17e1655",

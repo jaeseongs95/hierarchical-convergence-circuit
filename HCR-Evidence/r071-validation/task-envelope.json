@@ -1,0 +1,95 @@
+{
+  "schemaVersion": "1.0.0",
+  "taskId": "hcc-r071-native-selection-boundary",
+  "objective": "R070의 선택 경계 예측을 계약을 보존한 native paired 실험으로 검사하고 연구 결과를 전달한다",
+  "scope": {
+    "included": [
+      "Run-HCR-R071.cmd",
+      "Run-HCR-R071.py",
+      "R071_MANIFEST.json",
+      "tools/r071_boundary/",
+      "experiments/exp-52-native-selection-boundary/",
+      "experiments/INDEX.json",
+      "experiments/INDEX.ko.md",
+      "HCR-Evidence/exp52/",
+      "HCR-Evidence/r071-validation/"
+    ],
+    "excluded": [
+      "src/",
+      "tests/",
+      "archive/",
+      "HCR-Evidence/exp50/",
+      "HCR-Evidence/exp51/",
+      "experiments/exp-51-pool-signal-boundary/"
+    ]
+  },
+  "acceptanceCriteria": [
+    "[AC-001] 기존 core와 evidence를 보존하고 조건 및 native memory 형성 recipe를 실행 전에 동결한다",
+    "[AC-002] config별 native 형성·두 약화와 2x2 새 세션 선택·판단·비용을 독립 재계산한다",
+    "[AC-003] 측정 변조 및 config 불일치 거부, 별도 집계 검산과 기존 core 회귀 1회를 통과한다",
+    "[AC-004] 토론·주장 경계·원클릭·결과를 기록하고 범위 및 수용 검사를 통과한다"
+  ],
+  "riskLevel": "medium",
+  "workUnits": [
+    {
+      "id": "research",
+      "objective": "native 선택 민감도 실험과 검산",
+      "dependencies": [],
+      "writeTargets": [
+        "Run-HCR-R071.cmd",
+        "Run-HCR-R071.py",
+        "R071_MANIFEST.json",
+        "tools/r071_boundary/",
+        "experiments/exp-52-native-selection-boundary/",
+        "experiments/INDEX.json",
+        "experiments/INDEX.ko.md",
+        "HCR-Evidence/exp52/",
+        "HCR-Evidence/r071-validation/"
+      ]
+    }
+  ],
+  "requiredCapabilities": [
+    "independent-deliberation",
+    "change-scope-baseline-capture",
+    "minimal-implementation",
+    "mutation-risk-preflight",
+    "change-scope-assurance",
+    "acceptance-evidence-validation"
+  ],
+  "constraints": [
+    "기존 core와 historical evidence 수정 금지",
+    "memory signature 자동 수정 금지",
+    "자동 retry와 설치 금지",
+    "post hoc boundary 성공을 독립 발견으로 계산 금지"
+  ],
+  "authorization": {
+    "allowedActions": [
+      "read",
+      "write-scoped-research-files",
+      "run-local-checks",
+      "commit",
+      "merge-local-main",
+      "delete-completed-local-task-branch",
+      "push-origin-main"
+    ],
+    "prohibitedActions": [
+      "force-push",
+      "rewrite-historical-evidence",
+      "overwrite-user-changes"
+    ],
+    "approvalRequired": [
+      "deploy",
+      "tag",
+      "install",
+      "delete-remote-branch"
+    ]
+  },
+  "decision": {
+    "complexity": "complex",
+    "hasConflicts": false
+  },
+  "orchestration": {
+    "requested": false,
+    "mcpAvailable": true
+  }
+}

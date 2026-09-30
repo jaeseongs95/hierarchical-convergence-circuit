@@ -1,0 +1,26 @@
+{
+  "schema": "hcc-r053-manifest-v1",
+  "contract": "r053-feedback-factorial-v1",
+  "parent_commit": "cf89182a4f5d133b337795b5f8da5d9dac6a8fb2",
+  "hash_normalization": "CRLF to LF only",
+  "files": {
+    "experiments/exp-34-feedback-factorial/design.ko.md": "0a03731e6392c32e86b6156281b415396af853ced828cd5d97d45b2ea010b39a",
+    "experiments/exp-34-feedback-factorial/DISCUSSION.ko.md": "17f632cdedc1b7e6d33d3a07bca85a9835d413371d11ad27ee92c9d35d4ffaa9",
+    "experiments/exp-34-feedback-factorial/frozen_spec.json": "9d418a74e24b729190edcbbea5868d78ae729aebc44fd36d843bb23ef8da8c8b",
+    "experiments/exp-34-feedback-factorial/IMPLEMENTATION_REVIEW.ko.md": "9f043dd92a271facbbadb8bc15b92b4fbb3617eb808a13af727cd71a40dfa70f",
+    "HCR-Evidence/exp34/.gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "HCR-Evidence/exp34/.gitignore": "050c4c43407269dc8a0c7c332affc85b0ea2a431a61719285b827a005139dd63",
+    "HCR-Evidence/r053-validation/.gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "HCR-Evidence/r053-validation/.gitignore": "050c4c43407269dc8a0c7c332affc85b0ea2a431a61719285b827a005139dd63",
+    "Run-HCR-R053.cmd": "899bc002f1b56ca62f7a57184bb40bf4cb935f55a99f2322ae806c358c55a6a9",
+    "Run-HCR-R053.py": "e4f40f60e211a7065c24f6451181ab7a840d9d7a394aed237f3e3b64019427ef",
+    "tools/r053_feedback/__init__.py": "45ba705bc589bb6075b69161d05141a5f9f9ca368f520896145b9f0ebb47e0ac",
+    "tools/r053_feedback/audit.py": "10e78d05d625ffb639f4aaa5488483d5a499237fe1e6befecc1a237a7390e0c3",
+    "tools/r053_feedback/bootstrap.py": "57a422957b8e257f611f1e3e84ac3d81a50c6289056b7a9c75f4a4ace0791e02",
+    "tools/r053_feedback/pipeline.py": "78a4205d458e65d2a4b5e20c078ac5f8f2ee62d9c213662835dca96932b0ac5f",
+    "tools/r053_feedback/selftest.py": "5d9ec4f3d857411fbc101f4b48650703de379708b5dc98e673cd5295b7e5acce",
+    "tools/r053_feedback/tests/test_audit.py": "7301a28068fa29e1dcf34ee4fe78532bc1d4aa0b11214c0a515be3e12ce2a336",
+    "tools/r053_feedback/tests/test_worker_pipeline.py": "957537d3e3d8d309d36d04d9b510825070b5c2bb42925e679f7f5934d06701eb",
+    "tools/r053_feedback/worker.py": "562351b80aa526c7b067b3a33ab56d51c5503d2cc33d4a8ecbef3d6dfe16275f"
+  }
+}

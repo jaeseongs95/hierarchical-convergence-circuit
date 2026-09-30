@@ -1,0 +1,16 @@
+{
+  "schema": "hcc-r071-release-v1",
+  "files": {
+    "Run-HCR-R071.cmd": "e445d39485437e9b07251464324985697484d2d969346f72789d71b8ff2390aa",
+    "Run-HCR-R071.py": "c512f7f3e624813ed983ee652c1e699a23c0dc7364c2d9860315eea8b73362a1",
+    "tools/r071_boundary/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "tools/r071_boundary/audit.py": "d30b8ace0fdbc1fd635245e12c2857ab904725950482804c23b6359840c3a79f",
+    "tools/r071_boundary/pipeline.py": "b409eabb41d435b20bf647e4206658ced4e08f7a1463e2691865aa9a96a54324",
+    "tools/r071_boundary/verify.py": "d26eadcf7c181e38602d89916fd4741e229e8b7c111ea2eb52de69c1d2820e74",
+    "tools/r071_boundary/worker.py": "06526840c2fd91c4bb45767246c25d74efb3834a944df7fee8e7e11d8a93d07a",
+    "experiments/exp-52-native-selection-boundary/decision-record.json": "bea66001c125de04f2def3d6fe55f608a7d666cd19763f967f7de03c2d4c9a3a",
+    "experiments/exp-52-native-selection-boundary/frozen_spec.json": "c5d75854fa454d077277cd29ed67996ecaadf6ce28cbeedb1d8e9db8ebe63985",
+    "experiments/exp-52-native-selection-boundary/reference_world.json": "6ac404fb511d2d3146e5cdd74bc564eb5f92b87affd53cc62c34817ffdb84b83",
+    "experiments/exp-52-native-selection-boundary/design.ko.md": "ccd7916f8c4eb2708e0010f54d939d98948eed53d2bc1d644b81c66d11a1d504"
+  }
+}

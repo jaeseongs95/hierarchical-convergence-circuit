@@ -1,0 +1,6 @@
+{
+  "verified": true,
+  "command": "git -c core.whitespace=cr-at-eol diff --cached --check -- <implementation/document paths>",
+  "exitCode": 0,
+  "raw_evidence_bytes_preserved": true
+}

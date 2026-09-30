@@ -1,0 +1,13 @@
+{
+  "source": "Direct user continuation and user-supplied instructions section8 permit scoped commit/merge/branch cleanup/ordinary origin/main push",
+  "operationId": "r071-push-research",
+  "actionClass": "publish",
+  "targetLocators": [
+    "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main"
+  ],
+  "environments": [
+    "external"
+  ],
+  "candidate_artifact_digest": "sha256:3c8f02cc49b7ef320a85bca3bf684b3abdb2e86a89145261122d3a89b47c4816",
+  "scope": "Verified R071 research only; no core/deploy/tag/force push"
+}

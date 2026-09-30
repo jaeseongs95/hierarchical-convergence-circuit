@@ -1,0 +1,383 @@
+{
+  "schemaVersion": "1.0.0",
+  "request": {
+    "schemaVersion": "1.0.0",
+    "taskId": "hcc-r071-native-selection-boundary",
+    "request": "다음작업 이어서해줘. 토론스킬 써야되면 써줘. 사용자 제공 지침 section8의 연구 진행은 commit/main merge/branch 정리/origin main 일반 push와 확인을 포함한다.",
+    "instructionResolutionRefs": [
+      "D:/codex/AI논문/AGENTS.md",
+      "user:supplied-global-AGENTS"
+    ],
+    "pathSemantics": "windows",
+    "authorizationEvidence": [
+      {
+        "action": "read",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8"
+      },
+      {
+        "action": "write-scoped-research-files",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8"
+      },
+      {
+        "action": "run-local-checks",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8"
+      },
+      {
+        "action": "commit",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8"
+      },
+      {
+        "action": "merge-local-main",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8"
+      },
+      {
+        "action": "delete-completed-local-task-branch",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8"
+      },
+      {
+        "action": "push-origin-main",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8"
+      },
+      {
+        "action": "force-push",
+        "effect": "prohibit",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS"
+      },
+      {
+        "action": "rewrite-historical-evidence",
+        "effect": "prohibit",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS"
+      },
+      {
+        "action": "overwrite-user-changes",
+        "effect": "prohibit",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS"
+      },
+      {
+        "action": "deploy",
+        "effect": "require-approval",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS"
+      },
+      {
+        "action": "tag",
+        "effect": "require-approval",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS"
+      },
+      {
+        "action": "install",
+        "effect": "require-approval",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS"
+      },
+      {
+        "action": "delete-remote-branch",
+        "effect": "require-approval",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS"
+      }
+    ],
+    "suppliedFacts": [
+      {
+        "statement": "R069 NEXT는 pool 신호 재계산을 다음 작업으로 지정했다",
+        "locator": "experiments/exp-50-revision-factorization/NEXT.ko.md"
+      }
+    ],
+    "userDecisions": []
+  },
+  "report": {
+    "schemaVersion": "1.0.0",
+    "taskEnvelope": {
+      "schemaVersion": "1.0.0",
+      "taskId": "hcc-r071-native-selection-boundary",
+      "objective": "R070의 선택 경계 예측을 계약을 보존한 native paired 실험으로 검사하고 연구 결과를 전달한다",
+      "scope": {
+        "included": [
+          "Run-HCR-R071.cmd",
+          "Run-HCR-R071.py",
+          "R071_MANIFEST.json",
+          "tools/r071_boundary/",
+          "experiments/exp-52-native-selection-boundary/",
+          "experiments/INDEX.json",
+          "experiments/INDEX.ko.md",
+          "HCR-Evidence/exp52/",
+          "HCR-Evidence/r071-validation/"
+        ],
+        "excluded": [
+          "src/",
+          "tests/",
+          "archive/",
+          "HCR-Evidence/exp50/",
+          "HCR-Evidence/exp51/",
+          "experiments/exp-51-pool-signal-boundary/"
+        ]
+      },
+      "acceptanceCriteria": [
+        "[AC-001] 기존 core와 evidence를 보존하고 조건 및 native memory 형성 recipe를 실행 전에 동결한다",
+        "[AC-002] config별 native 형성·두 약화와 2x2 새 세션 선택·판단·비용을 독립 재계산한다",
+        "[AC-003] 측정 변조 및 config 불일치 거부, 별도 집계 검산과 기존 core 회귀 1회를 통과한다",
+        "[AC-004] 토론·주장 경계·원클릭·결과를 기록하고 범위 및 수용 검사를 통과한다"
+      ],
+      "riskLevel": "medium",
+      "workUnits": [
+        {
+          "id": "research",
+          "objective": "native 선택 민감도 실험과 검산",
+          "dependencies": [],
+          "writeTargets": [
+            "Run-HCR-R071.cmd",
+            "Run-HCR-R071.py",
+            "R071_MANIFEST.json",
+            "tools/r071_boundary/",
+            "experiments/exp-52-native-selection-boundary/",
+            "experiments/INDEX.json",
+            "experiments/INDEX.ko.md",
+            "HCR-Evidence/exp52/",
+            "HCR-Evidence/r071-validation/"
+          ]
+        }
+      ],
+      "requiredCapabilities": [
+        "independent-deliberation",
+        "change-scope-baseline-capture",
+        "minimal-implementation",
+        "mutation-risk-preflight",
+        "change-scope-assurance",
+        "acceptance-evidence-validation"
+      ],
+      "constraints": [
+        "기존 core와 historical evidence 수정 금지",
+        "memory signature 자동 수정 금지",
+        "자동 retry와 설치 금지",
+        "post hoc boundary 성공을 독립 발견으로 계산 금지"
+      ],
+      "authorization": {
+        "allowedActions": [
+          "read",
+          "write-scoped-research-files",
+          "run-local-checks",
+          "commit",
+          "merge-local-main",
+          "delete-completed-local-task-branch",
+          "push-origin-main"
+        ],
+        "prohibitedActions": [
+          "force-push",
+          "rewrite-historical-evidence",
+          "overwrite-user-changes"
+        ],
+        "approvalRequired": [
+          "deploy",
+          "tag",
+          "install",
+          "delete-remote-branch"
+        ]
+      },
+      "decision": {
+        "complexity": "complex",
+        "hasConflicts": false
+      },
+      "orchestration": {
+        "requested": false,
+        "mcpAvailable": true
+      }
+    },
+    "acceptanceEvidencePlan": {
+      "schemaVersion": "1.0.0",
+      "criteria": [
+        {
+          "criterionId": "AC-001",
+          "statement": "[AC-001] 기존 core와 evidence를 보존하고 조건 및 native memory 형성 recipe를 실행 전에 동결한다",
+          "verificationMethod": "동결 hash·native packet 독립 replay·변조 거부·core regression·scope 직접 확인",
+          "expectedEvidenceKinds": [
+            "file",
+            "test",
+            "document"
+          ],
+          "passCondition": "[AC-001] 기존 core와 evidence를 보존하고 조건 및 native memory 형성 recipe를 실행 전에 동결한다"
+        },
+        {
+          "criterionId": "AC-002",
+          "statement": "[AC-002] config별 native 형성·두 약화와 2x2 새 세션 선택·판단·비용을 독립 재계산한다",
+          "verificationMethod": "동결 hash·native packet 독립 replay·변조 거부·core regression·scope 직접 확인",
+          "expectedEvidenceKinds": [
+            "file",
+            "test",
+            "document"
+          ],
+          "passCondition": "[AC-002] config별 native 형성·두 약화와 2x2 새 세션 선택·판단·비용을 독립 재계산한다"
+        },
+        {
+          "criterionId": "AC-003",
+          "statement": "[AC-003] 측정 변조 및 config 불일치 거부, 별도 집계 검산과 기존 core 회귀 1회를 통과한다",
+          "verificationMethod": "동결 hash·native packet 독립 replay·변조 거부·core regression·scope 직접 확인",
+          "expectedEvidenceKinds": [
+            "file",
+            "test",
+            "document"
+          ],
+          "passCondition": "[AC-003] 측정 변조 및 config 불일치 거부, 별도 집계 검산과 기존 core 회귀 1회를 통과한다"
+        },
+        {
+          "criterionId": "AC-004",
+          "statement": "[AC-004] 토론·주장 경계·원클릭·결과를 기록하고 범위 및 수용 검사를 통과한다",
+          "verificationMethod": "동결 hash·native packet 독립 replay·변조 거부·core regression·scope 직접 확인",
+          "expectedEvidenceKinds": [
+            "file",
+            "test",
+            "document"
+          ],
+          "passCondition": "[AC-004] 토론·주장 경계·원클릭·결과를 기록하고 범위 및 수용 검사를 통과한다"
+        }
+      ]
+    },
+    "provenance": [
+      {
+        "field": "/objective",
+        "valueSummary": "R070의 선택 경계 예측을 계약을 보존한 native paired 실험으로 검사하고 연구 결과를 전달한다",
+        "sourceLocator": "experiments/exp-51-pool-signal-boundary/NEXT.ko.md",
+        "basis": "verified-inference"
+      },
+      {
+        "field": "/scope",
+        "valueSummary": "EXP52 additive native research",
+        "sourceLocator": "user:supplied-AGENTS",
+        "basis": "instruction"
+      },
+      {
+        "field": "/riskLevel",
+        "valueSummary": "Reversible local research artifacts and ordinary authorized push",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8",
+        "basis": "verified-inference"
+      },
+      {
+        "field": "/authorization",
+        "valueSummary": "사용자 제공 한 턴 진행의 Git 전달 범위와 금지 행동",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8",
+        "basis": "explicit"
+      }
+    ],
+    "authorizationProvenance": [
+      {
+        "action": "read",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8",
+        "envelopeField": "/authorization/allowedActions"
+      },
+      {
+        "action": "write-scoped-research-files",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8",
+        "envelopeField": "/authorization/allowedActions"
+      },
+      {
+        "action": "run-local-checks",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8",
+        "envelopeField": "/authorization/allowedActions"
+      },
+      {
+        "action": "commit",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8",
+        "envelopeField": "/authorization/allowedActions"
+      },
+      {
+        "action": "merge-local-main",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8",
+        "envelopeField": "/authorization/allowedActions"
+      },
+      {
+        "action": "delete-completed-local-task-branch",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8",
+        "envelopeField": "/authorization/allowedActions"
+      },
+      {
+        "action": "push-origin-main",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8",
+        "envelopeField": "/authorization/allowedActions"
+      },
+      {
+        "action": "force-push",
+        "effect": "prohibit",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS",
+        "envelopeField": "/authorization/prohibitedActions"
+      },
+      {
+        "action": "rewrite-historical-evidence",
+        "effect": "prohibit",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS",
+        "envelopeField": "/authorization/prohibitedActions"
+      },
+      {
+        "action": "overwrite-user-changes",
+        "effect": "prohibit",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS",
+        "envelopeField": "/authorization/prohibitedActions"
+      },
+      {
+        "action": "deploy",
+        "effect": "require-approval",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS",
+        "envelopeField": "/authorization/approvalRequired"
+      },
+      {
+        "action": "tag",
+        "effect": "require-approval",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS",
+        "envelopeField": "/authorization/approvalRequired"
+      },
+      {
+        "action": "install",
+        "effect": "require-approval",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS",
+        "envelopeField": "/authorization/approvalRequired"
+      },
+      {
+        "action": "delete-remote-branch",
+        "effect": "require-approval",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS",
+        "envelopeField": "/authorization/approvalRequired"
+      }
+    ],
+    "assumptions": [],
+    "ambiguities": [],
+    "contradictions": [],
+    "verdict": "PASS"
+  }
+}

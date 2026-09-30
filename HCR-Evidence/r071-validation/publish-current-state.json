@@ -1,0 +1,6 @@
+{
+  "remote_commit": "87d494c8230c568ec45de8733bf12ca8e165adf4",
+  "targetLocator": "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main",
+  "fingerprint": "sha256:1d6908ea7742a6d7cfcfa3e8556a6ead751b9276dda65126e135b5304e98d6b0",
+  "observed_via": "git ls-remote origin refs/heads/main"
+}

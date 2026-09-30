@@ -1,0 +1,15 @@
+{
+  "execution": "direct-local-skills",
+  "order": [
+    "task-contract",
+    "independent-deliberation",
+    "change-scope-baseline",
+    "ponytail",
+    "native-recipe",
+    "independent-formula-audit",
+    "scope-assurance",
+    "acceptance",
+    "publish-preflight"
+  ],
+  "guarded_completion_claim": false
+}
