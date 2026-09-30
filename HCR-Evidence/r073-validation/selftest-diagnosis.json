@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0.0",
+  "requestArtifactDigest": "sha256:04bd587b0f20b25595ce6f5115c7d5c18bc4d20074ce4840a3f83feb94f87a70",
+  "failureClusters": [
+    {
+      "fingerprint": "sha256:08f369c6160fc6a58e550d8b5d2d8d78b101ca88ce3c4bc174b2cea037994700",
+      "episodeIds": [
+        "r073-first-selftest"
+      ],
+      "operation": "construct reduced-budget apparatus Config",
+      "stableFailureTuple": {
+        "error": "R0.1의 작고 유한한 범위 초과",
+        "frame": "dataclasses.replace -> Config.__post_init__",
+        "phase": "selftest"
+      },
+      "environmentDigest": "sha256:9ecd8183037c9ffcb7147c20441cb5bdbbe8f5114e0f3165efd7e82b316bf9e9"
+    }
+  ],
+  "observations": [
+    {
+      "id": "OBS-001",
+      "statement": "Attempt r073-first-selftest failed during construct reduced-budget apparatus Config in environment sha256:9ecd8183037c9ffcb7147c20441cb5bdbbe8f5114e0f3165efd7e82b316bf9e9.",
+      "evidenceRefs": [
+        "HCR-Evidence/r073-validation/selftest-config-observation.json"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "CONFIG",
+      "causalLayer": "implementation",
+      "statement": "Budget selftest violates max_ticks >= patience before recurrence",
+      "supportingEvidence": [
+        "HCR-Evidence/r073-validation/selftest-config-observation.json"
+      ],
+      "contradictingEvidence": [],
+      "state": "confirmed",
+      "causeAnalysis": {
+        "symptom": "R0.1의 작고 유한한 범위 초과",
+        "mechanism": "Config validation rejects max_ticks=1 below inherited patience=4",
+        "rootCondition": "Selftest reduced max_ticks without reducing patience",
+        "discriminatingEvidence": {
+          "statement": "Same config constructor rejects 1/4 and accepts 1/1",
+          "evidenceRefs": [
+            "HCR-Evidence/r073-validation/selftest-config-observation.json"
+          ]
+        },
+        "eliminationObservation": {
+          "statement": "Native anchor replay completed; no research replay produced; failure occurs before recurrence",
+          "evidenceRefs": [
+            "HCR-Evidence/r073-validation/selftest-config-observation.json"
+          ]
+        }
+      }
+    },
+    {
+      "id": "DATA",
+      "causalLayer": "input",
+      "statement": "Native anchor or research recurrence caused failure",
+      "supportingEvidence": [],
+      "contradictingEvidence": [
+        "HCR-Evidence/r073-validation/selftest-config-observation.json"
+      ],
+      "state": "refuted"
+    }
+  ],
+  "nextDiscriminatingTest": null,
+  "confirmedCause": {
+    "causeId": "CONFIG",
+    "hypothesisId": "CONFIG",
+    "statement": "Budget selftest violates max_ticks >= patience before recurrence",
+    "symptom": "R0.1의 작고 유한한 범위 초과",
+    "mechanism": "Config validation rejects max_ticks=1 below inherited patience=4",
+    "rootCondition": "Selftest reduced max_ticks without reducing patience",
+    "discriminatingEvidence": {
+      "statement": "Same config constructor rejects 1/4 and accepts 1/1",
+      "evidenceRefs": [
+        "HCR-Evidence/r073-validation/selftest-config-observation.json"
+      ]
+    },
+    "eliminationObservation": {
+      "statement": "Native anchor replay completed; no research replay produced; failure occurs before recurrence",
+      "evidenceRefs": [
+        "HCR-Evidence/r073-validation/selftest-config-observation.json"
+      ]
+    },
+    "evidenceBindings": [
+      {
+        "evidenceRef": "HCR-Evidence/r073-validation/selftest-config-observation.json",
+        "artifactDigest": "sha256:9ecd8183037c9ffcb7147c20441cb5bdbbe8f5114e0f3165efd7e82b316bf9e9",
+        "hypothesisIds": [
+          "CONFIG"
+        ],
+        "relation": "supports"
+      }
+    ]
+  },
+  "recommendedNextAction": "Use the confirmed cause as input to a separately authorized remediation task.",
+  "limitations": [],
+  "verdict": "CAUSE_CONFIRMED"
+}

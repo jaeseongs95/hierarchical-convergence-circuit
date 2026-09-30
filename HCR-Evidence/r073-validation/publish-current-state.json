@@ -1,0 +1,8 @@
+{
+  "verified": true,
+  "remote_ref": "refs/heads/main",
+  "remote_commit": "a99e034eced3ea254a2bb31a06d3fcef8e4061f6",
+  "local_baseline_main": "a99e034eced3ea254a2bb31a06d3fcef8e4061f6",
+  "targetLocator": "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main",
+  "fingerprint": "sha256:9c9134bef23c522f07d6076e9a85f836e278d189c4cef58727646c332bd966b6"
+}

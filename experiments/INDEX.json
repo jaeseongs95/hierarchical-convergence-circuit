@@ -1005,6 +1005,26 @@
       "source_commit": null,
       "source_commit_note": "Pinned R071 config-specific native M0/M1; three frozen score points in 12 fresh sessions, four repeated-condition cells; no new formation/feedback or independent discovery.",
       "standalone_python_entrypoint": "Run-HCR-R072.py"
+    },
+    {
+      "current_python_entrypoint": null,
+      "default_dispatcher_promoted": false,
+      "design": "experiments/exp-54-pool-drive-decomposition/design.ko.md",
+      "directory": "experiments/exp-54-pool-drive-decomposition",
+      "evidence_directory": "HCR-Evidence/exp54",
+      "execution_status": "standalone_candidate_contract",
+      "experiment_id": "EXP-54",
+      "frozen_design": "experiments/exp-54-pool-drive-decomposition/frozen_spec.json",
+      "implementation_validation_directory": "HCR-Evidence/r073-validation",
+      "legacy_python_entrypoint": null,
+      "release_manifest": "R073_MANIFEST.json",
+      "revision_references": [
+        "r073"
+      ],
+      "run_status": "read_per_run_evidence",
+      "source_commit": null,
+      "source_commit_note": "Sealed R072 reanalysis: 12 native anchors and 18 evaluator formula replays; evidence-only/prior-only/joint decomposition; no new native execution, learning or independent sample.",
+      "standalone_python_entrypoint": "Run-HCR-R073.py"
     }
   ],
   "inventory_commit": "afb5d5e5b67906b7697f16163e166f59b17e1655",

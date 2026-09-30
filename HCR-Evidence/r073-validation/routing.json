@@ -1,0 +1,26 @@
+{
+  "execution": "direct-local-skills",
+  "route": "direct",
+  "order": [
+    "task-contract",
+    "scope-baseline",
+    "ponytail",
+    "formula-replay",
+    "independent-formula-verification",
+    "scope",
+    "acceptance",
+    "publish-preflight"
+  ],
+  "selected": {
+    "task-contract": "continuation resolved by R072 NEXT",
+    "change-scope-guardian": "preserve existing untracked files and scoped delivery",
+    "ponytail": "reuse independent equations and byte/stage helpers",
+    "acceptance-evidence-validator": "fixed research deliverable",
+    "mutation-risk-preflight": "ordinary authorized public origin/main push"
+  },
+  "omitted": {
+    "independent-audit": "no high impact security/permission/payment/data-loss/schema/deployment/global-setting change",
+    "subagent-coordination": "serial reanalysis; no explicit delegation; separate formula verifier"
+  },
+  "guarded_completion_claim": false
+}

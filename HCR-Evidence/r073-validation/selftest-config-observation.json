@@ -1,0 +1,12 @@
+{
+  "invalid_max_ticks": 1,
+  "invalid_patience": 4,
+  "old_error": "R0.1의 작고 유한한 범위 초과",
+  "valid_max_ticks": 1,
+  "valid_patience": 1,
+  "model_constraint": "max_ticks >= patience",
+  "source": "src/hcr/model.py:80",
+  "native_anchor_reanalysis_completed": true,
+  "formula_research_started": false,
+  "failure_log": "HCR-Evidence/exp54/r073-20260930T211539Z-d719c0ba3d/validation/selftest.log"
+}

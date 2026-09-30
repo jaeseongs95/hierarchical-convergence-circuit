@@ -1,0 +1,22 @@
+{
+  "verified": true,
+  "bundle_files": 523,
+  "bundle_zip_bytes_equal": true,
+  "source_and_parent_hashes_verified": true,
+  "source_manifest_normalized_bytes_verified": true,
+  "core_tests": 602,
+  "core_passed": 599,
+  "existing_environment_skips": 3,
+  "new_failures_errors_skips": 0,
+  "core_regression_runs": 1,
+  "formula_replay_cells": 18,
+  "native_anchor_cells": 12,
+  "new_native_research_executions": 0,
+  "new_training_executions": 0,
+  "new_feedback_applications": 0,
+  "new_independent_samples": 0,
+  "first_failure_preserved": "HCR-Evidence/exp54/r073-20260930T211539Z-d719c0ba3d",
+  "failed_run_core_regression_runs": 0,
+  "automatic_retry": false,
+  "applied_code_fix": "Selftest valid max_ticks=1/patience=1 only; no research condition/prediction change"
+}

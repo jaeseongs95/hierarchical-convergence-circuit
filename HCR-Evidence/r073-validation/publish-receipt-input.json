@@ -1,0 +1,180 @@
+{
+  "intent": {
+    "schemaVersion": "1.0.0",
+    "operationId": "r073-push-research",
+    "actionClass": "publish",
+    "targets": [
+      {
+        "locator": "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main",
+        "targetType": "git-ref",
+        "environment": "external",
+        "expectedFingerprint": "sha256:9c9134bef23c522f07d6076e9a85f836e278d189c4cef58727646c332bd966b6"
+      }
+    ],
+    "plannedCommandOrTool": {
+      "tool": "git",
+      "action": "push origin main"
+    },
+    "scopeRef": {
+      "locator": "HCR-Evidence/r073-validation/task-envelope.json",
+      "digest": "sha256:745a984a5728b68c2f40a09ab7db43125e7db3e67382af440bb833157b3cac86",
+      "includedTargets": [
+        "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main"
+      ],
+      "excludedTargets": []
+    },
+    "authorizationRef": {
+      "locator": "HCR-Evidence/r073-validation/publish-authorization.json",
+      "digest": "sha256:35f967130fc36346620c186d24631272f03c887d1b927d8df4d5a20b84927e9f",
+      "allowedActions": [
+        "publish"
+      ],
+      "allowedTargets": [
+        "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main"
+      ],
+      "environments": [
+        "external"
+      ]
+    },
+    "approvalEvidenceRefs": [
+      {
+        "locator": "HCR-Evidence/r073-validation/publish-authorization.json",
+        "digest": "sha256:35f967130fc36346620c186d24631272f03c887d1b927d8df4d5a20b84927e9f",
+        "operationId": "r073-push-research",
+        "actionClass": "publish",
+        "targetLocators": [
+          "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main"
+        ],
+        "environments": [
+          "external"
+        ],
+        "expiresAt": "2026-09-30T22:27:58.832903+00:00"
+      }
+    ],
+    "currentStateEvidenceRefs": [
+      {
+        "locator": "HCR-Evidence/r073-validation/publish-current-state.json",
+        "digest": "sha256:9f8cd1bd591c6250176c5b41cd2d8bd7e39f53418711c8523255e3520c8b7c50",
+        "targetLocator": "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main",
+        "fingerprint": "sha256:9c9134bef23c522f07d6076e9a85f836e278d189c4cef58727646c332bd966b6"
+      }
+    ],
+    "recoveryPlan": {
+      "available": true,
+      "method": "Reviewed reversal of scoped primary patch as new commit; keep raw evidence and baseline; no force push",
+      "backupRef": "git:a99e034eced3ea254a2bb31a06d3fcef8e4061f6",
+      "restoreProcedureRef": "HCR-Evidence/r073-validation/git-recovery-check.json",
+      "restoreTestEvidenceRef": "HCR-Evidence/r073-validation/git-recovery-check.json",
+      "irreversibilityAccepted": false
+    },
+    "expectedBlastRadius": {
+      "affectedTargets": 1,
+      "affectedUsers": 1,
+      "external": true,
+      "description": "Scoped R073 evaluator formula reanalysis and sealed evidence; no core or deployment change"
+    }
+  },
+  "report": {
+    "schemaVersion": "1.0.0",
+    "operationId": "r073-push-research",
+    "actionDigest": "sha256:dcbdf2e753be9f11e2566180e2ee064e021b0ecef7df394d9179fdb462cfe702",
+    "targetDigest": "sha256:ac7804ec6f5d333c5d143d08d5cb48d81dcae782231197a1e2e4ef19336d3aa9",
+    "classification": {
+      "actionClass": "publish",
+      "reversibility": "reversible",
+      "externalImpact": true,
+      "dataLossPotential": false,
+      "permissionImpact": false
+    },
+    "checks": [
+      {
+        "checkId": "target-specificity",
+        "state": "passed",
+        "evidenceRefs": [],
+        "message": "모든 대상이 구체적으로 식별됐습니다."
+      },
+      {
+        "checkId": "scope-match",
+        "state": "passed",
+        "evidenceRefs": [
+          "HCR-Evidence/r073-validation/task-envelope.json"
+        ],
+        "message": "대상이 작업 범위 안에 있습니다."
+      },
+      {
+        "checkId": "authorization-match",
+        "state": "passed",
+        "evidenceRefs": [
+          "HCR-Evidence/r073-validation/publish-authorization.json"
+        ],
+        "message": "행동, 대상과 환경이 허용 범위에 있습니다."
+      },
+      {
+        "checkId": "current-state",
+        "state": "passed",
+        "evidenceRefs": [
+          "HCR-Evidence/r073-validation/publish-current-state.json"
+        ],
+        "message": "현재 fingerprint가 예상값과 일치합니다."
+      },
+      {
+        "checkId": "approval",
+        "state": "passed",
+        "evidenceRefs": [
+          "HCR-Evidence/r073-validation/publish-authorization.json"
+        ],
+        "message": "승인 상태: observed"
+      },
+      {
+        "checkId": "recovery",
+        "state": "passed",
+        "evidenceRefs": [
+          "git:a99e034eced3ea254a2bb31a06d3fcef8e4061f6",
+          "HCR-Evidence/r073-validation/git-recovery-check.json"
+        ],
+        "message": "복구 또는 명시적 비가역성 수용 근거가 있습니다."
+      },
+      {
+        "checkId": "blast-radius",
+        "state": "passed",
+        "evidenceRefs": [],
+        "message": "예상 영향 범위가 모든 대상을 포함합니다."
+      }
+    ],
+    "approval": {
+      "required": true,
+      "status": "observed",
+      "evidenceRefs": [
+        "HCR-Evidence/r073-validation/publish-authorization.json"
+      ]
+    },
+    "recovery": {
+      "available": true,
+      "restoreTested": true,
+      "irreversibilityAccepted": false,
+      "evidenceRefs": [
+        "git:a99e034eced3ea254a2bb31a06d3fcef8e4061f6",
+        "HCR-Evidence/r073-validation/git-recovery-check.json"
+      ]
+    },
+    "blastRadius": {
+      "affectedTargets": 1,
+      "affectedUsers": 1,
+      "external": true,
+      "description": "Scoped R073 evaluator formula reanalysis and sealed evidence; no core or deployment change"
+    },
+    "unresolved": [],
+    "invalidationTriggers": [
+      "action 또는 planned tool 변경",
+      "target 또는 environment 변경",
+      "current-state evidence 또는 fingerprint 변경",
+      "scope 또는 authorization 변경",
+      "승인 evidence의 만료 또는 범위 변경",
+      "복구 계획 변경",
+      "예상 blast radius 변경"
+    ],
+    "validUntil": "2026-09-30T21:42:58.962Z",
+    "observedAt": "2026-09-30T21:27:58.962Z",
+    "verdict": "READY"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "source": "Direct user continuation and user-supplied AGENTS section8 authorize scoped research commit/local main merge/completed local branch cleanup/ordinary origin/main push; no new approval is inferred from artifact",
+  "operationId": "r073-push-research",
+  "actionClass": "publish",
+  "targetLocators": [
+    "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main"
+  ],
+  "environments": [
+    "external"
+  ],
+  "candidate_artifact_digest": "sha256:daf7335cd12a53f6d12fd3476f1d0fd5aeeb08244a9c685251b1d256ed9a8dfe",
+  "scope": "R073 additive formula reanalysis, source registration, sealed evidence and governance only; no core/deploy/tag/force-push/remote branch deletion"
+}

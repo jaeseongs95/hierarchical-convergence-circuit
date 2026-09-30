@@ -1,0 +1,22 @@
+{
+  "same": {
+    "e0": true,
+    "e1": false
+  },
+  "other_context": {
+    "e0": true,
+    "e1": true
+  },
+  "new_epoch": {
+    "e0": true,
+    "e1": true
+  },
+  "silent_change": {
+    "e0": true,
+    "e1": true
+  },
+  "truthful": {
+    "e0": true,
+    "e1": false
+  }
+}

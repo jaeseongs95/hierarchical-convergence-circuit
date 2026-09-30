@@ -1,0 +1,204 @@
+{
+  "schema": "hcc-r052-frozen-spec-v1",
+  "contract": "r052-array-role-controls-v1",
+  "frozen_before_research_execution": true,
+  "arms": [
+    "hold",
+    "revision_only",
+    "start_edge",
+    "goal_edge"
+  ],
+  "config": {
+    "kernel": {
+      "evidence_gain": 4.0,
+      "relation_gain": 2.0,
+      "top_down_gain": 0.35,
+      "prior_gain": 2.0,
+      "self_excitation": 0.25,
+      "inhibition": 0.2,
+      "damping": 0.45,
+      "temperature": 1.0,
+      "residual_tolerance": 1e-06,
+      "margin_threshold": 0.3,
+      "patience": 4,
+      "max_ticks": 160,
+      "max_edges": 8,
+      "max_paths": 4,
+      "max_path_length": 4,
+      "max_groups": 32,
+      "max_search": 2048,
+      "min_valid_episodes": 3,
+      "max_circuits": 16,
+      "weakening": 0.2,
+      "learning_rate": 0.25,
+      "max_observation_requests": 2
+    },
+    "pattern_lengths": [
+      2,
+      3
+    ],
+    "max_expansions": 64,
+    "max_frontier": 32,
+    "max_binding_checks": 1024,
+    "max_pool_candidates": 4,
+    "activation_threshold": 0.55,
+    "mismatch_threshold": 0.8,
+    "circuit_inhibition": 0.15
+  },
+  "cases": [
+    {
+      "id": "r052-c000",
+      "strength": 0.02,
+      "relation": "++",
+      "identity_variant": 0,
+      "array_order": "path",
+      "top_down": false,
+      "observation": {
+        "episode_id": "r052-c000",
+        "revision": 0,
+        "start": "v0",
+        "goal": "v2",
+        "edges": [
+          {
+            "id": "a-edge",
+            "source": "v0",
+            "target": "v1",
+            "score": 0.02
+          },
+          {
+            "id": "z-edge",
+            "source": "v1",
+            "target": "v2",
+            "score": 0.02
+          }
+        ]
+      }
+    },
+    {
+      "id": "r052-c001",
+      "strength": 0.02,
+      "relation": "++",
+      "identity_variant": 0,
+      "array_order": "path",
+      "top_down": true,
+      "observation": {
+        "episode_id": "r052-c001",
+        "revision": 0,
+        "start": "v0",
+        "goal": "v2",
+        "edges": [
+          {
+            "id": "a-edge",
+            "source": "v0",
+            "target": "v1",
+            "score": 0.02
+          },
+          {
+            "id": "z-edge",
+            "source": "v1",
+            "target": "v2",
+            "score": 0.02
+          }
+        ]
+      }
+    },
+    {
+      "id": "r052-c002",
+      "strength": 0.02,
+      "relation": "++",
+      "identity_variant": 0,
+      "array_order": "swapped",
+      "top_down": false,
+      "observation": {
+        "episode_id": "r052-c002",
+        "revision": 0,
+        "start": "v0",
+        "goal": "v2",
+        "edges": [
+          {
+            "id": "z-edge",
+            "source": "v1",
+            "target": "v2",
+            "score": 0.02
+          },
+          {
+            "id": "a-edge",
+            "source": "v0",
+            "target": "v1",
+            "score": 0.02
+          }
+        ]
+      }
+    },
+    {
+      "id": "r052-c003",
+      "strength": 0.02,
+      "relation": "++",
+      "identity_variant": 0,
+      "array_order": "swapped",
+      "top_down": true,
+      "observation": {
+        "episode_id": "r052-c003",
+        "revision": 0,
+        "start": "v0",
+        "goal": "v2",
+        "edges": [
+          {
+            "id": "z-edge",
+            "source": "v1",
+            "target": "v2",
+            "score": 0.02
+          },
+          {
+            "id": "a-edge",
+            "source": "v0",
+            "target": "v1",
+            "score": 0.02
+          }
+        ]
+      }
+    }
+  ],
+  "limits": {
+    "max_advances_per_session": 8,
+    "max_kernel_ticks_per_session": 1280
+  },
+  "numeric_comparison": {
+    "abs_tol": 1e-12,
+    "rel_tol": 1e-12
+  },
+  "parent": {
+    "run": "r051-20260919T133359Z-9c4b7efe66",
+    "audit_sha256": "decc81a7d0aed71b7baf0e133b0620369100427b49667c0b3e4eac451e0513af"
+  },
+  "predictions": {
+    "P1": "hold versus revision_only preserves numerical state and tick trajectory.",
+    "P2": "After independently mapping array slots to structural roles, array permutation preserves state, trajectory, proof/support and terminal outcome. Violations remain results, not automatic audit failures.",
+    "P3": "Compare start-edge and goal-edge strength interventions within each array order and top_down setting. This is an index/binding equivariance test, not a scheduler competition intervention."
+  },
+  "boundaries": {
+    "research_baselines": 4,
+    "paired_arm_records": 16,
+    "independent_samples": false,
+    "relation": "++ only",
+    "initial_strength": 0.02,
+    "revision_for_all_restarts": 1,
+    "target_selection": "fixed topology role by start/source or goal/target; never outcome-dependent",
+    "restarts_per_non_hold_arm": 1,
+    "measurement_calls": 0,
+    "learning": false,
+    "state_continuation": false,
+    "core_changes": false,
+    "automatic_retry": false,
+    "energy_measured": false,
+    "hypothesis_success_required": false,
+    "array_order": [
+      "path",
+      "swapped"
+    ],
+    "smoke_case_indices": [
+      0,
+      2
+    ]
+  }
+}

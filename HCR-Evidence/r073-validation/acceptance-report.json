@@ -1,0 +1,156 @@
+{
+  "schemaVersion": "1.0.0",
+  "target": {
+    "kind": "artifact",
+    "identifier": "R073-formula-reanalysis-and-sealed-drive-decomposition",
+    "digest": "sha256:daf7335cd12a53f6d12fd3476f1d0fd5aeeb08244a9c685251b1d256ed9a8dfe"
+  },
+  "criteria": [
+    {
+      "criterionId": "AC-001",
+      "statement": "[AC-001] R072 봉인 원자료·config·memory·program·initial/top_down을 실행 전 hash와 조건으로 고정하고 이전 파일을 보존한다",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "integrity",
+        "scope",
+        "command:oneclick"
+      ],
+      "observedResult": "Exact parent/source/bundle/ZIP bytes, 602/599/3 core and failure preservation verified; Scope PASS with existing user untracked files unchanged; Verification command exited with code 0.",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    },
+    {
+      "criterionId": "AC-002",
+      "statement": "[AC-002] 12개 native 관찰을 재검산하고 score 0.8 기준 evidence-only/prior-only/joint 18개 수식 replay에서 방향·결합·zero-prior checkpoint 대응을 분리한다",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "formula",
+        "report",
+        "command:oneclick"
+      ],
+      "observedResult": "18 trajectories by separate recurrence, six joint native matches across 12 anchors, 8 replay/4 summary mutations rejected; Directions, nonadditive term and zero-prior equivalence tied to raw summary; formula/native/sample/cost boundaries preserved; Verification command exited with code 0.",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    },
+    {
+      "criterionId": "AC-003",
+      "statement": "[AC-003] 생산 runtime 없이 별도 수식으로 궤적·수렴·집계를 검산하고 변조와 budget 측정불가를 거부·보존하며 기존 core 회귀 1회를 통과한다",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "integrity",
+        "formula",
+        "command:oneclick"
+      ],
+      "observedResult": "Exact parent/source/bundle/ZIP bytes, 602/599/3 core and failure preservation verified; 18 trajectories by separate recurrence, six joint native matches across 12 anchors, 8 replay/4 summary mutations rejected; Verification command exited with code 0.",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    },
+    {
+      "criterionId": "AC-004",
+      "statement": "[AC-004] native 관찰과 counterfactual eligibility·계산 tick을 구분하고 새 native/학습/독립 표본 0을 명시한 결과·다음 질문·원클릭·범위·수용 검사를 완료한다",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "scope",
+        "report",
+        "next",
+        "index",
+        "command:oneclick"
+      ],
+      "observedResult": "Scope PASS with existing user untracked files unchanged; Directions, nonadditive term and zero-prior equivalence tied to raw summary; formula/native/sample/cost boundaries preserved; Saturation alternative and bounded next discriminator recorded; no premature native success claim; 55 experiment index entries verified without running study; Verification command exited with code 0.",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    }
+  ],
+  "verifiedEvidenceIndex": [
+    {
+      "evidenceId": "integrity",
+      "kind": "test",
+      "locator": "HCR-Evidence/r073-validation/delivery-verification.json",
+      "digest": "sha256:90b9856ec85d944ced8b85488e00cdc434d8c4383b24bd8d6ff1c5c7b33067e3",
+      "targetDigest": "sha256:daf7335cd12a53f6d12fd3476f1d0fd5aeeb08244a9c685251b1d256ed9a8dfe",
+      "criterionIds": [
+        "AC-001",
+        "AC-003"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "formula",
+      "kind": "test",
+      "locator": "HCR-Evidence/exp54/r073-20260930T211742Z-26d148fdc6/verification.json",
+      "digest": "sha256:47a497969438ba420541fd2618716b1eaca2c606e7590bc39ddca408cecaf46f",
+      "targetDigest": "sha256:daf7335cd12a53f6d12fd3476f1d0fd5aeeb08244a9c685251b1d256ed9a8dfe",
+      "criterionIds": [
+        "AC-002",
+        "AC-003"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "scope",
+      "kind": "test",
+      "locator": "HCR-Evidence/r073-validation/scope-report.json",
+      "digest": "sha256:a22b921becc4713f0af9cb2f8ff3721cf1df240398f77065db6f8ef09cc7e4ab",
+      "targetDigest": "sha256:daf7335cd12a53f6d12fd3476f1d0fd5aeeb08244a9c685251b1d256ed9a8dfe",
+      "criterionIds": [
+        "AC-001",
+        "AC-004"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "report",
+      "kind": "document",
+      "locator": "experiments/exp-54-pool-drive-decomposition/RESULTS.ko.md",
+      "digest": "sha256:d2c13c38c066d78b4434fd61f9566bd7306ed004e5cd38986faf46012a8e1a6e",
+      "targetDigest": "sha256:daf7335cd12a53f6d12fd3476f1d0fd5aeeb08244a9c685251b1d256ed9a8dfe",
+      "criterionIds": [
+        "AC-002",
+        "AC-004"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "next",
+      "kind": "document",
+      "locator": "experiments/exp-54-pool-drive-decomposition/NEXT.ko.md",
+      "digest": "sha256:ee972de2f4d6924f94bceec04916a8a23d1f2c0101aea4ecc32537a0f146f62b",
+      "targetDigest": "sha256:daf7335cd12a53f6d12fd3476f1d0fd5aeeb08244a9c685251b1d256ed9a8dfe",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "index",
+      "kind": "test",
+      "locator": "HCR-Evidence/r073-validation/index-check.log",
+      "digest": "sha256:568c706d4c4e3bc14757d7840c13292422bf3aeba3c9a382a55d5844ee258988",
+      "targetDigest": "sha256:daf7335cd12a53f6d12fd3476f1d0fd5aeeb08244a9c685251b1d256ed9a8dfe",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "command:oneclick",
+      "kind": "verification-command",
+      "locator": "HCR-Evidence/exp54/r073-20260930T211742Z-26d148fdc6/result.json",
+      "digest": "sha256:d4cef20de8b2133fbbf339299571fbb50357d5386d71473053e5ada202810ae1",
+      "targetDigest": "sha256:daf7335cd12a53f6d12fd3476f1d0fd5aeeb08244a9c685251b1d256ed9a8dfe",
+      "criterionIds": [
+        "AC-001",
+        "AC-002",
+        "AC-003",
+        "AC-004"
+      ],
+      "direction": "supports"
+    }
+  ],
+  "unresolvedCriteria": [],
+  "limitations": [
+    "Same sealed R072 data; 18 formula replays, 0 new native/training/feedback/independent samples",
+    "Single candidate, short toy path, checkpoint bundle; formula effect only",
+    "Counterfactual eligibility is not actual native selection; no native expansions or decision cost assigned",
+    "Three existing symlink capability skips, no new failures/errors/skips",
+    "First selftest Config error retained; valid apparatus config corrected without changing research predictions",
+    "Separate formula/process verification, no external independent replication; energy and peak memory unmeasured"
+  ],
+  "verdict": "PASS"
+}

@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "<frozen runpy>", line 229, in run_module
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\codex\AI논문\hierarchical-convergence-circuit\HCR-Evidence\exp54\r073-20260930T211539Z-d719c0ba3d\source\tools\r073_decomposition\audit.py", line 102, in <module>
+    p.add_argument('--phase',choices=['selftest','final'],required=True);a=p.parse_args();main(a.out,a.phase)
+                                                                                          ^^^^^^^^^^^^^^^^^^^
+  File "D:\codex\AI논문\hierarchical-convergence-circuit\HCR-Evidence\exp54\r073-20260930T211539Z-d719c0ba3d\source\tools\r073_decomposition\audit.py", line 93, in main
+    if phase=='selftest':selftest(out)
+                         ^^^^^^^^^^^^^
+  File "D:\codex\AI논문\hierarchical-convergence-circuit\HCR-Evidence\exp54\r073-20260930T211539Z-d719c0ba3d\source\tools\r073_decomposition\audit.py", line 42, in selftest
+    short=simulate(d['program'],d['initial'],d['drives'],replace(cfg,max_ticks=1),d['top_down'])
+                                                         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sjs95\AppData\Local\Programs\Python\Python312\Lib\dataclasses.py", line 1588, in replace
+    return obj.__class__(**changes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 25, in __init__
+  File "D:\codex\AI논문\hierarchical-convergence-circuit\HCR-Evidence\exp54\r073-20260930T211539Z-d719c0ba3d\source\src\hcr\model.py", line 81, in __post_init__
+    raise ContractError('R0.1의 작고 유한한 범위 초과')
+hcr.model.ContractError: R0.1의 작고 유한한 범위 초과

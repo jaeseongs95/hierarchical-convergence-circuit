@@ -1,0 +1,210 @@
+{
+  "schemaVersion": "1.0.0",
+  "taskEnvelope": {
+    "schemaVersion": "1.0.0",
+    "taskId": "hcc-r073-pool-drive-decomposition",
+    "objective": "R072 원자료에서 evidence drive와 uncertainty prior의 활성도 효과를 수식 counterfactual로 분리해 주장 범위를 갱신한다",
+    "scope": {
+      "included": [
+        "Run-HCR-R073.cmd",
+        "Run-HCR-R073.py",
+        "R073_MANIFEST.json",
+        "tools/r073_decomposition/",
+        "experiments/exp-54-pool-drive-decomposition/",
+        "experiments/INDEX.json",
+        "experiments/INDEX.ko.md",
+        "HCR-Evidence/exp54/",
+        "HCR-Evidence/r073-validation/"
+      ],
+      "excluded": [
+        "src/",
+        "tests/",
+        "archive/",
+        "HCR-Evidence/exp53/",
+        "experiments/exp-53-selection-input-range/"
+      ]
+    },
+    "acceptanceCriteria": [
+      "[AC-001] R072 봉인 원자료·config·memory·program·initial/top_down을 실행 전 hash와 조건으로 고정하고 이전 파일을 보존한다",
+      "[AC-002] 12개 native 관찰을 재검산하고 score 0.8 기준 evidence-only/prior-only/joint 18개 수식 replay에서 방향·결합·zero-prior checkpoint 대응을 분리한다",
+      "[AC-003] 생산 runtime 없이 별도 수식으로 궤적·수렴·집계를 검산하고 변조와 budget 측정불가를 거부·보존하며 기존 core 회귀 1회를 통과한다",
+      "[AC-004] native 관찰과 counterfactual eligibility·계산 tick을 구분하고 새 native/학습/독립 표본 0을 명시한 결과·다음 질문·원클릭·범위·수용 검사를 완료한다"
+    ],
+    "riskLevel": "medium",
+    "workUnits": [
+      {
+        "id": "research",
+        "objective": "R072 원자료에서 evidence drive와 uncertainty prior의 활성도 효과를 수식 counterfactual로 분리해 주장 범위를 갱신한다",
+        "dependencies": [],
+        "writeTargets": [
+          "Run-HCR-R073.cmd",
+          "Run-HCR-R073.py",
+          "R073_MANIFEST.json",
+          "tools/r073_decomposition/",
+          "experiments/exp-54-pool-drive-decomposition/",
+          "experiments/INDEX.json",
+          "experiments/INDEX.ko.md",
+          "HCR-Evidence/exp54/",
+          "HCR-Evidence/r073-validation/"
+        ]
+      }
+    ],
+    "requiredCapabilities": [
+      "change-scope-baseline-capture",
+      "minimal-implementation",
+      "change-scope-assurance",
+      "acceptance-evidence-validation",
+      "mutation-risk-preflight"
+    ],
+    "constraints": [
+      "기존 core와 historical evidence 수정 금지",
+      "observation/memory 재서명·native 실행·feedback·학습 금지",
+      "counterfactual에 native selection/expansions/decision cost 부여 금지",
+      "같은 원자료 재분석을 독립 표본으로 계산 금지",
+      "자동 retry 금지"
+    ],
+    "authorization": {
+      "allowedActions": [
+        "read",
+        "write-scoped-research-files",
+        "run-local-checks",
+        "commit",
+        "merge-local-main",
+        "delete-completed-local-task-branch",
+        "push-origin-main"
+      ],
+      "prohibitedActions": [
+        "force-push",
+        "rewrite-historical-evidence",
+        "overwrite-user-changes"
+      ],
+      "approvalRequired": [
+        "deploy",
+        "tag",
+        "install",
+        "delete-remote-branch"
+      ]
+    },
+    "decision": {
+      "complexity": "simple",
+      "hasConflicts": false
+    },
+    "orchestration": {
+      "requested": false,
+      "mcpAvailable": true
+    }
+  },
+  "target": {
+    "kind": "artifact",
+    "identifier": "R073-formula-reanalysis-and-sealed-drive-decomposition",
+    "digest": "sha256:daf7335cd12a53f6d12fd3476f1d0fd5aeeb08244a9c685251b1d256ed9a8dfe"
+  },
+  "evidence": [
+    {
+      "id": "integrity",
+      "kind": "test",
+      "locator": "HCR-Evidence/r073-validation/delivery-verification.json",
+      "digest": "sha256:90b9856ec85d944ced8b85488e00cdc434d8c4383b24bd8d6ff1c5c7b33067e3",
+      "targetDigest": "sha256:daf7335cd12a53f6d12fd3476f1d0fd5aeeb08244a9c685251b1d256ed9a8dfe",
+      "verified": true,
+      "criterionIds": [
+        "AC-001",
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "Exact parent/source/bundle/ZIP bytes, 602/599/3 core and failure preservation verified"
+    },
+    {
+      "id": "formula",
+      "kind": "test",
+      "locator": "HCR-Evidence/exp54/r073-20260930T211742Z-26d148fdc6/verification.json",
+      "digest": "sha256:47a497969438ba420541fd2618716b1eaca2c606e7590bc39ddca408cecaf46f",
+      "targetDigest": "sha256:daf7335cd12a53f6d12fd3476f1d0fd5aeeb08244a9c685251b1d256ed9a8dfe",
+      "verified": true,
+      "criterionIds": [
+        "AC-002",
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "18 trajectories by separate recurrence, six joint native matches across 12 anchors, 8 replay/4 summary mutations rejected"
+    },
+    {
+      "id": "scope",
+      "kind": "test",
+      "locator": "HCR-Evidence/r073-validation/scope-report.json",
+      "digest": "sha256:a22b921becc4713f0af9cb2f8ff3721cf1df240398f77065db6f8ef09cc7e4ab",
+      "targetDigest": "sha256:daf7335cd12a53f6d12fd3476f1d0fd5aeeb08244a9c685251b1d256ed9a8dfe",
+      "verified": true,
+      "criterionIds": [
+        "AC-001",
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Scope PASS with existing user untracked files unchanged"
+    },
+    {
+      "id": "report",
+      "kind": "document",
+      "locator": "experiments/exp-54-pool-drive-decomposition/RESULTS.ko.md",
+      "digest": "sha256:d2c13c38c066d78b4434fd61f9566bd7306ed004e5cd38986faf46012a8e1a6e",
+      "targetDigest": "sha256:daf7335cd12a53f6d12fd3476f1d0fd5aeeb08244a9c685251b1d256ed9a8dfe",
+      "verified": true,
+      "criterionIds": [
+        "AC-002",
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Directions, nonadditive term and zero-prior equivalence tied to raw summary; formula/native/sample/cost boundaries preserved"
+    },
+    {
+      "id": "next",
+      "kind": "document",
+      "locator": "experiments/exp-54-pool-drive-decomposition/NEXT.ko.md",
+      "digest": "sha256:ee972de2f4d6924f94bceec04916a8a23d1f2c0101aea4ecc32537a0f146f62b",
+      "targetDigest": "sha256:daf7335cd12a53f6d12fd3476f1d0fd5aeeb08244a9c685251b1d256ed9a8dfe",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Saturation alternative and bounded next discriminator recorded; no premature native success claim"
+    },
+    {
+      "id": "index",
+      "kind": "test",
+      "locator": "HCR-Evidence/r073-validation/index-check.log",
+      "digest": "sha256:568c706d4c4e3bc14757d7840c13292422bf3aeba3c9a382a55d5844ee258988",
+      "targetDigest": "sha256:daf7335cd12a53f6d12fd3476f1d0fd5aeeb08244a9c685251b1d256ed9a8dfe",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "55 experiment index entries verified without running study"
+    }
+  ],
+  "verificationCommands": [
+    {
+      "id": "oneclick",
+      "command": "Run-HCR-R073.cmd",
+      "exitCode": 0,
+      "locator": "HCR-Evidence/exp54/r073-20260930T211742Z-26d148fdc6/result.json",
+      "targetDigest": "sha256:daf7335cd12a53f6d12fd3476f1d0fd5aeeb08244a9c685251b1d256ed9a8dfe",
+      "criterionIds": [
+        "AC-001",
+        "AC-002",
+        "AC-003",
+        "AC-004"
+      ]
+    }
+  ],
+  "knownLimitations": [
+    "Same sealed R072 data; 18 formula replays, 0 new native/training/feedback/independent samples",
+    "Single candidate, short toy path, checkpoint bundle; formula effect only",
+    "Counterfactual eligibility is not actual native selection; no native expansions or decision cost assigned",
+    "Three existing symlink capability skips, no new failures/errors/skips",
+    "First selftest Config error retained; valid apparatus config corrected without changing research predictions",
+    "Separate formula/process verification, no external independent replication; energy and peak memory unmeasured"
+  ],
+  "criterionOverrides": []
+}

@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "1.0.0",
+  "objective": "Diagnose formula apparatus budget selftest failure",
+  "expectedBehavior": "A valid reduced selftest config reaches evaluator budget classification",
+  "episodes": [
+    {
+      "attemptId": "r073-first-selftest",
+      "operation": "construct reduced-budget apparatus Config",
+      "stableFailureTuple": {
+        "error": "R0.1의 작고 유한한 범위 초과",
+        "phase": "selftest",
+        "frame": "dataclasses.replace -> Config.__post_init__"
+      },
+      "environmentDigest": "sha256:9ecd8183037c9ffcb7147c20441cb5bdbbe8f5114e0f3165efd7e82b316bf9e9",
+      "changeSummary": "New selftest max_ticks=1 while inherited patience=4",
+      "evidenceRefs": [
+        "HCR-Evidence/r073-validation/selftest-config-observation.json"
+      ]
+    }
+  ],
+  "lastKnownGood": {
+    "locator": "HCR-Evidence/exp53/r072-20260930T140801Z-ba41410e23/verification.json"
+  },
+  "constraints": [
+    "Preserve failed run and research predictions",
+    "No native runtime or historical evidence mutation"
+  ],
+  "authorization": {
+    "allowedChecks": [
+      "read-scoped-files",
+      "local-config-validation"
+    ],
+    "approvalRequired": [],
+    "prohibitedChecks": [
+      "edit-historical-evidence"
+    ]
+  },
+  "evidenceBindings": [
+    {
+      "evidenceRef": "HCR-Evidence/r073-validation/selftest-config-observation.json",
+      "artifactDigest": "sha256:9ecd8183037c9ffcb7147c20441cb5bdbbe8f5114e0f3165efd7e82b316bf9e9",
+      "hypothesisIds": [
+        "CONFIG"
+      ],
+      "relation": "supports"
+    },
+    {
+      "evidenceRef": "HCR-Evidence/r073-validation/selftest-config-observation.json",
+      "artifactDigest": "sha256:9ecd8183037c9ffcb7147c20441cb5bdbbe8f5114e0f3165efd7e82b316bf9e9",
+      "hypothesisIds": [
+        "DATA"
+      ],
+      "relation": "refutes"
+    }
+  ],
+  "attemptedChecks": [],
+  "candidateHypotheses": [
+    {
+      "id": "CONFIG",
+      "causalLayer": "implementation",
+      "statement": "Budget selftest violates max_ticks >= patience before recurrence",
+      "supportingEvidence": [
+        "HCR-Evidence/r073-validation/selftest-config-observation.json"
+      ],
+      "contradictingEvidence": [],
+      "state": "confirmed",
+      "causeAnalysis": {
+        "symptom": "R0.1의 작고 유한한 범위 초과",
+        "mechanism": "Config validation rejects max_ticks=1 below inherited patience=4",
+        "rootCondition": "Selftest reduced max_ticks without reducing patience",
+        "discriminatingEvidence": {
+          "statement": "Same config constructor rejects 1/4 and accepts 1/1",
+          "evidenceRefs": [
+            "HCR-Evidence/r073-validation/selftest-config-observation.json"
+          ]
+        },
+        "eliminationObservation": {
+          "statement": "Native anchor replay completed; no research replay produced; failure occurs before recurrence",
+          "evidenceRefs": [
+            "HCR-Evidence/r073-validation/selftest-config-observation.json"
+          ]
+        }
+      }
+    },
+    {
+      "id": "DATA",
+      "causalLayer": "input",
+      "statement": "Native anchor or research recurrence caused failure",
+      "supportingEvidence": [],
+      "contradictingEvidence": [
+        "HCR-Evidence/r073-validation/selftest-config-observation.json"
+      ],
+      "state": "refuted"
+    }
+  ],
+  "candidateTests": [],
+  "accessBlockers": []
+}

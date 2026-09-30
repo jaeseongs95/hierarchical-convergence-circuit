@@ -1,0 +1,14 @@
+{
+  "schema": "hcc-r068-release-v1",
+  "files": {
+    "Run-HCR-R068.cmd": "197ad44655200e7578dc8419bc22c541b1cf4cbac81d3f094d80bab9aa424eac",
+    "Run-HCR-R068.py": "937fef8ea2b0482bf865192f9cb988242ca90c74860595af8a22d32665f4c807",
+    "experiments/exp-49-request-boundary/design.ko.md": "aeb73572912a2c2c0b759567ef9a72b74797d4f186718d6328120164ce353014",
+    "experiments/exp-49-request-boundary/frozen_spec.json": "eb329652f341814a85299eda0de2aae8761b9fa18e2707d46491c8543a547461",
+    "tools/r068_request/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tools/r068_request/pipeline.py": "f9c2a895122de24f833b6c06a263c10c3b673d0d1be6a8c204ade24de0a34788",
+    "tools/r068_request/selftest.py": "f7f3c6aed3db419effe003ec1ef18077ddbc5e46e38d435779640f644d95f6c3",
+    "tools/r068_request/verify.py": "b6d7f2b0446b31d1fcc51e067edbf30453e1633abce942880f09dbce75456be6",
+    "tools/r068_request/worker.py": "5cdc4bb16250e447518779e1b6a10f23e6c1770edfb60977ad6995ff34bcdd8b"
+  }
+}

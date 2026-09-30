@@ -1,0 +1,15 @@
+{
+  "schema": "hcc-r073-source-manifest-v1",
+  "files": {
+    "Run-HCR-R073.cmd": "8bb1490e76a094eb97da09cf3123f7c30b0d2abbbc5a6faac5b0b9a07204667e",
+    "Run-HCR-R073.py": "685251ea19fc9efdaa1c40d5fde5f3b2258440c4ee9a5cc28e17478afc6151df",
+    "tools/r073_decomposition/__init__.py": "bb952f8eb9893a1e5d36d955f240390787ab4141cd76f02883072dc5a644006d",
+    "tools/r073_decomposition/audit.py": "1dd4b7f78aba225766a59b5afa9dec917470821b8a89beb115cf7c9dcc5f1f4d",
+    "tools/r073_decomposition/pipeline.py": "c056bdeb5a228ee35f65c9e2f6c765ec3da2cdc2a79c1943a669544988e6856f",
+    "tools/r073_decomposition/replay.py": "23aede8c8e8327577c0874db6c8c708a25b785ed68d26bd67c53def7fc5af5a8",
+    "tools/r073_decomposition/verify.py": "7b40d5cfa9f1940dde0641cb8c799c25c2e99582bd56a200f98956886fc3d759",
+    "experiments/exp-54-pool-drive-decomposition/design.ko.md": "bfea84ea66af946288064c37c3f8ee85aab3160eca54cb1e38c7a501542e7d8d",
+    "experiments/exp-54-pool-drive-decomposition/frozen_spec.json": "7a2fd1f26d5d7c791c82098da9184ef0ca9c219f9bd92ded124ba75689a074c8"
+  },
+  "scope": "Formula reanalysis only; raw inputs are sealed by frozen_spec; existing source chain retained"
+}

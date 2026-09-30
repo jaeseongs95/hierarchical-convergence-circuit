@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "1.0.0",
+  "taskId": "hcc-r073-pool-drive-decomposition",
+  "objective": "R072 원자료에서 evidence drive와 uncertainty prior의 활성도 효과를 수식 counterfactual로 분리해 주장 범위를 갱신한다",
+  "scope": {
+    "included": [
+      "Run-HCR-R073.cmd",
+      "Run-HCR-R073.py",
+      "R073_MANIFEST.json",
+      "tools/r073_decomposition/",
+      "experiments/exp-54-pool-drive-decomposition/",
+      "experiments/INDEX.json",
+      "experiments/INDEX.ko.md",
+      "HCR-Evidence/exp54/",
+      "HCR-Evidence/r073-validation/"
+    ],
+    "excluded": [
+      "src/",
+      "tests/",
+      "archive/",
+      "HCR-Evidence/exp53/",
+      "experiments/exp-53-selection-input-range/"
+    ]
+  },
+  "acceptanceCriteria": [
+    "[AC-001] R072 봉인 원자료·config·memory·program·initial/top_down을 실행 전 hash와 조건으로 고정하고 이전 파일을 보존한다",
+    "[AC-002] 12개 native 관찰을 재검산하고 score 0.8 기준 evidence-only/prior-only/joint 18개 수식 replay에서 방향·결합·zero-prior checkpoint 대응을 분리한다",
+    "[AC-003] 생산 runtime 없이 별도 수식으로 궤적·수렴·집계를 검산하고 변조와 budget 측정불가를 거부·보존하며 기존 core 회귀 1회를 통과한다",
+    "[AC-004] native 관찰과 counterfactual eligibility·계산 tick을 구분하고 새 native/학습/독립 표본 0을 명시한 결과·다음 질문·원클릭·범위·수용 검사를 완료한다"
+  ],
+  "riskLevel": "medium",
+  "workUnits": [
+    {
+      "id": "research",
+      "objective": "R072 원자료에서 evidence drive와 uncertainty prior의 활성도 효과를 수식 counterfactual로 분리해 주장 범위를 갱신한다",
+      "dependencies": [],
+      "writeTargets": [
+        "Run-HCR-R073.cmd",
+        "Run-HCR-R073.py",
+        "R073_MANIFEST.json",
+        "tools/r073_decomposition/",
+        "experiments/exp-54-pool-drive-decomposition/",
+        "experiments/INDEX.json",
+        "experiments/INDEX.ko.md",
+        "HCR-Evidence/exp54/",
+        "HCR-Evidence/r073-validation/"
+      ]
+    }
+  ],
+  "requiredCapabilities": [
+    "change-scope-baseline-capture",
+    "minimal-implementation",
+    "change-scope-assurance",
+    "acceptance-evidence-validation",
+    "mutation-risk-preflight"
+  ],
+  "constraints": [
+    "기존 core와 historical evidence 수정 금지",
+    "observation/memory 재서명·native 실행·feedback·학습 금지",
+    "counterfactual에 native selection/expansions/decision cost 부여 금지",
+    "같은 원자료 재분석을 독립 표본으로 계산 금지",
+    "자동 retry 금지"
+  ],
+  "authorization": {
+    "allowedActions": [
+      "read",
+      "write-scoped-research-files",
+      "run-local-checks",
+      "commit",
+      "merge-local-main",
+      "delete-completed-local-task-branch",
+      "push-origin-main"
+    ],
+    "prohibitedActions": [
+      "force-push",
+      "rewrite-historical-evidence",
+      "overwrite-user-changes"
+    ],
+    "approvalRequired": [
+      "deploy",
+      "tag",
+      "install",
+      "delete-remote-branch"
+    ]
+  },
+  "decision": {
+    "complexity": "simple",
+    "hasConflicts": false
+  },
+  "orchestration": {
+    "requested": false,
+    "mcpAvailable": true
+  }
+}

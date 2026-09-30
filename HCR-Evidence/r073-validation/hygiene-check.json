@@ -1,0 +1,12 @@
+{
+  "verified": true,
+  "new_source_whitespace_verified": true,
+  "primary_diff_check_exit_code": 0,
+  "full_diff_check_status": "not_clean_preserved_historical_evidence",
+  "default_warning": "Sealed CRLF logs/source flagged as trailing CR",
+  "cr_at_eol_followup_exit_code": 2,
+  "cr_at_eol_followup_lines": 38,
+  "remaining_warning": "Preserved historical Markdown two-space hard breaks in frozen source; all are inside HCR-Evidence",
+  "raw_evidence_policy": "Historical whitespace is retained byte-for-byte; never clean or reseal it to pass an editorial check",
+  "global_git_config_changed": false
+}

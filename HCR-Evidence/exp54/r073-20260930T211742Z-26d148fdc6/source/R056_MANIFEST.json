@@ -1,0 +1,25 @@
+{
+  "schema": "hcc-r056-manifest-v1",
+  "contract": "r056-drive-factorial-v1",
+  "parent_commit": "94745b23c03b7cc25cfa1311ecec33c487b09f2f",
+  "hash_normalization": "CRLF to LF only",
+  "files": {
+    "experiments/exp-37-drive-factorial/design.ko.md": "fd84f2fe5dd4755230cb4f68a9f01ba3809f242613e3f073cff99b3b7f825a91",
+    "experiments/exp-37-drive-factorial/frozen_spec.json": "b25456bda7ea81798896b8e3bc29904023f019c337e2a5b61b301721193ee34f",
+    "experiments/exp-37-drive-factorial/ORCHESTRATION.ko.md": "51e4d183bf4d36c18085581252fb42e7cfc7c86760594de3b3dc820702c5bf0c",
+    "HCR-Evidence/exp37/.gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "HCR-Evidence/exp37/.gitignore": "050c4c43407269dc8a0c7c332affc85b0ea2a431a61719285b827a005139dd63",
+    "HCR-Evidence/r056-validation/.gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "HCR-Evidence/r056-validation/.gitignore": "050c4c43407269dc8a0c7c332affc85b0ea2a431a61719285b827a005139dd63",
+    "Run-HCR-R056.cmd": "fe81cbc4da9873a76e9b6a0c1cf7983ad4cd1656787f8442c1dc25c9c1ef8b32",
+    "Run-HCR-R056.py": "2d64dd55634844ec0a4b53e32c1c064d2ebb287eef97f6df470eb25d3ae57002",
+    "tools/r056_factorial/__init__.py": "8b3415ad9e3db8a35557ad7bdae0d47ab7c91e2c40e7f3e477cbd76bd15c1fb8",
+    "tools/r056_factorial/audit.py": "5cb25eba764aabe7ad47297d5ef924eae7692ad28ebb16bb83106c0d01fa5830",
+    "tools/r056_factorial/bootstrap.py": "d643e0869c5b95bf2350822e5d0e99b908a574ca18834ca8a7c1c1e8966f3b42",
+    "tools/r056_factorial/pipeline.py": "c6f40926fe0eb108035ccc695602564fdef6d83a1b763561117b2118c860ec8a",
+    "tools/r056_factorial/selftest.py": "0772ccd7f7d0fa45675a4ac54635514fd17a222c5090a3255cb400bd16f30046",
+    "tools/r056_factorial/tests/test_audit.py": "be6eddb16764ca04e6039d0a4015f37947083e9b4bb2fb14c25eb36cc83536f8",
+    "tools/r056_factorial/tests/test_worker_pipeline.py": "9b7e79cfcefdaf1d121c293fa93e318509fe97d40186678f9b0ed58f340d904e",
+    "tools/r056_factorial/worker.py": "5f422613b387226300f2ccc6da7b9619f276cd72a9db398aaad713813b150a2d"
+  }
+}

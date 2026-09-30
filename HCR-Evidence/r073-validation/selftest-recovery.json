@@ -1,0 +1,11 @@
+{
+  "cause": "CAUSE_CONFIRMED: invalid selftest max_ticks < patience",
+  "changed": [
+    "tools/r073_decomposition/audit.py",
+    "tools/r073_decomposition/verify.py"
+  ],
+  "new_input": "Selftest max_ticks=1 and patience=1; research config and predictions unchanged",
+  "preserved_failed_run": "HCR-Evidence/exp54/r073-20260930T211539Z-d719c0ba3d",
+  "automatic_retry": false,
+  "prior_core_regression_runs": 0
+}
