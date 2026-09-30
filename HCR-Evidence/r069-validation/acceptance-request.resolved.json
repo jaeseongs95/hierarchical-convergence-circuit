@@ -1,0 +1,264 @@
+{
+  "schemaVersion": "1.0.0",
+  "taskEnvelope": {
+    "schemaVersion": "1.0.0",
+    "taskId": "hcc-r069-revision-factorization-resolved",
+    "objective": "R068 이후 외부 reference feedback, memory checkpoint, 새 측정과 revision 경로를 분리한 최소 paired toy 실험을 토론·동결·실행·검산하고 main에 전달한다",
+    "scope": {
+      "included": [
+        "Run-HCR-R069.cmd",
+        "Run-HCR-R069.py",
+        "R069_MANIFEST.json",
+        "tools/r069_revision/**",
+        "experiments/exp-50-revision-factorization/**",
+        "experiments/INDEX.json",
+        "experiments/INDEX.ko.md",
+        "HCR-Evidence/exp50/**",
+        "HCR-Evidence/r069-validation/**"
+      ],
+      "excluded": [
+        "src/**",
+        "tests/**",
+        "archive/**",
+        "HCR-Evidence/exp49/**"
+      ]
+    },
+    "acceptanceCriteria": [
+      "AC-001: 독립 토론과 조건/예측 실행 전 동결",
+      "AC-002: 독립 reference feedback 및 M0/M1×stale/fresh 새 세션과 동일 M1 revision 비교; 최초/후속 evidence 보존",
+      "AC-003: 별도 evaluator formula replay, 변조 거부, source/parent/bundle integrity와 core 회귀 1회",
+      "AC-004: 범위 외/기존 변경 보존; 결과 한계 기록; 커밋/main 병합/push 및 원격 확인"
+    ],
+    "constraints": [
+      "core와 과거 evidence 변경 금지",
+      "retry 없이 최초 실패 보존",
+      "순수 세션 지속·자율감지·HCC 우위 주장 금지",
+      "Python stdlib/기존 도구 사용; 설치 금지"
+    ],
+    "authorization": {
+      "allowedActions": [
+        "read",
+        "write-scoped-research-files",
+        "run-local-experiment",
+        "commit",
+        "merge-local-main",
+        "delete-completed-local-task-branch",
+        "push-origin-main"
+      ],
+      "approvalRequired": [
+        "deploy",
+        "tag",
+        "install",
+        "delete-remote-branch"
+      ],
+      "prohibitedActions": [
+        "force-push",
+        "rewrite-historical-evidence",
+        "overwrite-user-changes"
+      ]
+    },
+    "workUnits": [
+      {
+        "id": "research",
+        "objective": "독립 토론·조건 동결·원클릭 paired 실행 및 검산",
+        "dependencies": [],
+        "writeTargets": [
+          "Run-HCR-R069.cmd",
+          "Run-HCR-R069.py",
+          "R069_MANIFEST.json",
+          "tools/r069_revision/**",
+          "experiments/exp-50-revision-factorization/**",
+          "HCR-Evidence/exp50/**"
+        ]
+      },
+      {
+        "id": "delivery",
+        "objective": "수용·범위·전달 검증과 index 갱신",
+        "dependencies": [
+          "research"
+        ],
+        "writeTargets": [
+          "experiments/INDEX.json",
+          "experiments/INDEX.ko.md",
+          "HCR-Evidence/r069-validation/**"
+        ]
+      }
+    ],
+    "riskLevel": "medium",
+    "decision": {
+      "complexity": "complex",
+      "hasConflicts": false
+    },
+    "orchestration": {
+      "requested": true,
+      "mcpAvailable": true
+    },
+    "requiredCapabilities": [
+      "independent-deliberation",
+      "change-scope-baseline-capture",
+      "minimal-implementation",
+      "mutation-risk-preflight",
+      "change-scope-assurance",
+      "acceptance-evidence-validation"
+    ]
+  },
+  "target": {
+    "kind": "artifact",
+    "identifier": "R069 release + sealed run + RESULTS + delivered source commit5502c16",
+    "digest": "sha256:d047fe258b95b87bc56d791289b98f849fde918aaf02b33bdf67e4288bdf24b1"
+  },
+  "evidence": [
+    {
+      "id": "E1",
+      "kind": "file",
+      "locator": "experiments/exp-50-revision-factorization/decision-record.json",
+      "digest": "sha256:955032b8930a6e425e0dd0c9af0e825dc9fb2e88faedd385e38ccfdc51f515f2",
+      "targetDigest": "sha256:d047fe258b95b87bc56d791289b98f849fde918aaf02b33bdf67e4288bdf24b1",
+      "verified": true,
+      "criterionIds": [
+        "AC-001"
+      ],
+      "direction": "supports",
+      "observedResult": "2 isolated blind reviews, cross examination and fresh Judge completed; final DecisionRecord validated"
+    },
+    {
+      "id": "E2",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp50/r069-20260930T120436Z-4ac297ded8/plan.json",
+      "digest": "sha256:c7464cc8ddd3b5314d8dd5fe3f17c860c7f027800c34ff3499763ef647f74faa",
+      "targetDigest": "sha256:d047fe258b95b87bc56d791289b98f849fde918aaf02b33bdf67e4288bdf24b1",
+      "verified": true,
+      "criterionIds": [
+        "AC-001",
+        "AC-002"
+      ],
+      "direction": "supports",
+      "observedResult": "Frozen six paired cells, reference world/config/source/parent and explicit claim boundaries"
+    },
+    {
+      "id": "E3",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp50/r069-20260930T120436Z-4ac297ded8/summary.json",
+      "digest": "sha256:1793568ebf1d0c6b171396204f900e18c7f11dfb07bc5b2fc098c3806c5a0af7",
+      "targetDigest": "sha256:d047fe258b95b87bc56d791289b98f849fde918aaf02b33bdf67e4288bdf24b1",
+      "verified": true,
+      "criterionIds": [
+        "AC-002"
+      ],
+      "direction": "supports",
+      "observedResult": "One donor, six followups, reference-derived feedback once, actual circuit weakening, request e1, acquisition1/fresh delivery3/cached delivery3; initial and final readout preserved"
+    },
+    {
+      "id": "E4",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp50/r069-20260930T120436Z-4ac297ded8/verification.json",
+      "digest": "sha256:9812d606d7cf4977b980679f96ab65e92ce060a7a6c32bd5f3476ea397e79b45",
+      "targetDigest": "sha256:d047fe258b95b87bc56d791289b98f849fde918aaf02b33bdf67e4288bdf24b1",
+      "verified": true,
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "7 independent formula replays and 16 mutation rejections; verified=true"
+    },
+    {
+      "id": "E5",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp50/r069-20260930T120436Z-4ac297ded8/validation/core_regression.json",
+      "digest": "sha256:d5daace122f8617bfd42c41ab59ddb55331aae622d85dc3ab6f6439a54928ab9",
+      "targetDigest": "sha256:d047fe258b95b87bc56d791289b98f849fde918aaf02b33bdf67e4288bdf24b1",
+      "verified": true,
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "Exactly 602 tests, 599 passed, baseline 3 skips; final suite once"
+    },
+    {
+      "id": "E6",
+      "kind": "file",
+      "locator": "HCR-Evidence/r069-validation/delivery-verification.json",
+      "digest": "sha256:4688e08d3d4e5373d4c14a69cb252b1bb5f6fa10ea4f4cc32f9fa5b49d68253d",
+      "targetDigest": "sha256:d047fe258b95b87bc56d791289b98f849fde918aaf02b33bdf67e4288bdf24b1",
+      "verified": true,
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "Source/parent/bundle/ZIP/index integrity verified without native rerun"
+    },
+    {
+      "id": "E7",
+      "kind": "file",
+      "locator": "HCR-Evidence/r069-validation/scope-report.precommit.json",
+      "digest": "sha256:fcea8fecf10033f6bef6e1e2b2b267759de90193bcaa85a48320cb50cbe92dfa",
+      "targetDigest": "sha256:d047fe258b95b87bc56d791289b98f849fde918aaf02b33bdf67e4288bdf24b1",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Scope PASS; no excluded/unplanned/preexisting overlap"
+    },
+    {
+      "id": "E8",
+      "kind": "file",
+      "locator": "HCR-Evidence/r069-validation/git-delivery.json",
+      "digest": "sha256:875ebfc5be3cd27464943c83ce37b288d3ec02e68e92e8207e42d527270751f0",
+      "targetDigest": "sha256:d047fe258b95b87bc56d791289b98f849fde918aaf02b33bdf67e4288bdf24b1",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Source commit5502c16 locally ff merged and pushed; remote HEAD equal"
+    },
+    {
+      "id": "E9",
+      "kind": "file",
+      "locator": "HCR-Evidence/r069-validation/post-git-integrity.json",
+      "digest": "sha256:d1398fe5974047f820695921cf1474685337a4162f4df257736c7e77a5de1da0",
+      "targetDigest": "sha256:d047fe258b95b87bc56d791289b98f849fde918aaf02b33bdf67e4288bdf24b1",
+      "verified": true,
+      "criterionIds": [
+        "AC-003",
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Sealed files byte-equal to committed Git blobs and executed source; current root text normalized equal"
+    },
+    {
+      "id": "E10",
+      "kind": "file",
+      "locator": "experiments/exp-50-revision-factorization/RESULTS.ko.md",
+      "digest": "sha256:21a2c2290e43b7c2bdb9ba96d2f7f555f232c4f57862436c70cb0b480f7a3437",
+      "targetDigest": "sha256:d047fe258b95b87bc56d791289b98f849fde918aaf02b33bdf67e4288bdf24b1",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Interpretation/report limits distinguish checkpoint, content and revision API bundle"
+    }
+  ],
+  "verificationCommands": [
+    {
+      "id": "CMD-001",
+      "command": "Run-HCR-R069.cmd",
+      "exitCode": 0,
+      "locator": "HCR-Evidence/exp50/r069-20260930T120436Z-4ac297ded8/result.json",
+      "targetDigest": "sha256:d047fe258b95b87bc56d791289b98f849fde918aaf02b33bdf67e4288bdf24b1",
+      "criterionIds": [
+        "AC-002",
+        "AC-003"
+      ]
+    }
+  ],
+  "knownLimitations": [
+    "Authored binary toy world; paired branches are not independent samples",
+    "3 baseline environment skips are not passes",
+    "No autonomous sensing, pure persistence or feedback-information-only inference",
+    "MCP bootstrap BINDING_REQUIRED; direct skill execution only"
+  ],
+  "criterionOverrides": []
+}

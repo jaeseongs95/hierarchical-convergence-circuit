@@ -1,0 +1,6 @@
+{
+  "valid": false,
+  "errors": [
+    "validation input schema validation failed: [{\"instancePath\":\"/requestArtifact\",\"schemaPath\":\"#/properties/requestArtifact/required\",\"keyword\":\"required\",\"params\":{\"missingProperty\":\"artifactId\"},\"message\":\"must have required property 'artifactId'\"},{\"instancePath\":\"/requestArtifact\",\"schemaPath\":\"#/properties/requestArtifact/required\",\"keyword\":\"required\",\"params\":{\"missingProperty\":\"schemaId\"},\"message\":\"must have required property 'schemaId'\"}]"
+  ]
+}

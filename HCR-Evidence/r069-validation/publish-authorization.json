@@ -1,0 +1,13 @@
+{
+  "source": "Current human request to continue research plus user-provided AGENTS.md section 8 general push authorization",
+  "operationId": "r069-push-research",
+  "actionClass": "publish",
+  "targetLocators": [
+    "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main"
+  ],
+  "environments": [
+    "external"
+  ],
+  "request_scope": "Publish verified R069 scoped research and evidence through origin/main without force; no deploy/tag/remote deletion.",
+  "head": "5502c164ec0b1c5abbdc048b7fb72aa0c2486be8"
+}

@@ -1,0 +1,12 @@
+{
+  "original_digest": "sha256:0448faff4347298708f47c014ea4205b6e5107afbfc1b7fe109a2bec02431929",
+  "resolved_digest": "sha256:92bd7fba81844b45cfc7ebab6f454fc4dd7fa82499e6db414f2308bf7b73c4f6",
+  "changed_fields": [
+    "taskId",
+    "decision.hasConflicts"
+  ],
+  "scope_and_acceptance_unchanged": true,
+  "reason": "Initial design interpretation alternatives resolved by two blind reviewers, cross examination and fresh Judge; no unresolved user requirement or permission conflict.",
+  "evidence": "experiments/exp-50-revision-factorization/decision-record.json",
+  "original_preserved": true
+}

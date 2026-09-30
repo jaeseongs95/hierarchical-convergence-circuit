@@ -1,0 +1,6 @@
+{
+  "R069_MANIFEST.json": "sha256:c11c6027a89ec47a52b2db0d520676c07e55acecd9798c03fa69601577d619d4",
+  "HCR-Evidence/exp50/r069-20260930T120436Z-4ac297ded8/bundle_manifest.json": "sha256:7b476fa295f308921b4e0731d6681b413f8d75c42efd267b0bbf792675867e9a",
+  "experiments/exp-50-revision-factorization/RESULTS.ko.md": "sha256:21a2c2290e43b7c2bdb9ba96d2f7f555f232c4f57862436c70cb0b480f7a3437",
+  "HCR-Evidence/r069-validation/git-delivery.json": "sha256:875ebfc5be3cd27464943c83ce37b288d3ec02e68e92e8207e42d527270751f0"
+}

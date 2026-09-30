@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "1.0.0",
+  "taskId": "hcc-r069-revision-factorization-resolved",
+  "objective": "R068 이후 외부 reference feedback, memory checkpoint, 새 측정과 revision 경로를 분리한 최소 paired toy 실험을 토론·동결·실행·검산하고 main에 전달한다",
+  "scope": {
+    "included": [
+      "Run-HCR-R069.cmd",
+      "Run-HCR-R069.py",
+      "R069_MANIFEST.json",
+      "tools/r069_revision/**",
+      "experiments/exp-50-revision-factorization/**",
+      "experiments/INDEX.json",
+      "experiments/INDEX.ko.md",
+      "HCR-Evidence/exp50/**",
+      "HCR-Evidence/r069-validation/**"
+    ],
+    "excluded": [
+      "src/**",
+      "tests/**",
+      "archive/**",
+      "HCR-Evidence/exp49/**"
+    ]
+  },
+  "acceptanceCriteria": [
+    "AC-001: 독립 토론과 조건/예측 실행 전 동결",
+    "AC-002: 독립 reference feedback 및 M0/M1×stale/fresh 새 세션과 동일 M1 revision 비교; 최초/후속 evidence 보존",
+    "AC-003: 별도 evaluator formula replay, 변조 거부, source/parent/bundle integrity와 core 회귀 1회",
+    "AC-004: 범위 외/기존 변경 보존; 결과 한계 기록; 커밋/main 병합/push 및 원격 확인"
+  ],
+  "constraints": [
+    "core와 과거 evidence 변경 금지",
+    "retry 없이 최초 실패 보존",
+    "순수 세션 지속·자율감지·HCC 우위 주장 금지",
+    "Python stdlib/기존 도구 사용; 설치 금지"
+  ],
+  "authorization": {
+    "allowedActions": [
+      "read",
+      "write-scoped-research-files",
+      "run-local-experiment",
+      "commit",
+      "merge-local-main",
+      "delete-completed-local-task-branch",
+      "push-origin-main"
+    ],
+    "approvalRequired": [
+      "deploy",
+      "tag",
+      "install",
+      "delete-remote-branch"
+    ],
+    "prohibitedActions": [
+      "force-push",
+      "rewrite-historical-evidence",
+      "overwrite-user-changes"
+    ]
+  },
+  "workUnits": [
+    {
+      "id": "research",
+      "objective": "독립 토론·조건 동결·원클릭 paired 실행 및 검산",
+      "dependencies": [],
+      "writeTargets": [
+        "Run-HCR-R069.cmd",
+        "Run-HCR-R069.py",
+        "R069_MANIFEST.json",
+        "tools/r069_revision/**",
+        "experiments/exp-50-revision-factorization/**",
+        "HCR-Evidence/exp50/**"
+      ]
+    },
+    {
+      "id": "delivery",
+      "objective": "수용·범위·전달 검증과 index 갱신",
+      "dependencies": [
+        "research"
+      ],
+      "writeTargets": [
+        "experiments/INDEX.json",
+        "experiments/INDEX.ko.md",
+        "HCR-Evidence/r069-validation/**"
+      ]
+    }
+  ],
+  "riskLevel": "medium",
+  "decision": {
+    "complexity": "complex",
+    "hasConflicts": false
+  },
+  "orchestration": {
+    "requested": true,
+    "mcpAvailable": true
+  },
+  "requiredCapabilities": [
+    "independent-deliberation",
+    "change-scope-baseline-capture",
+    "minimal-implementation",
+    "mutation-risk-preflight",
+    "change-scope-assurance",
+    "acceptance-evidence-validation"
+  ]
+}

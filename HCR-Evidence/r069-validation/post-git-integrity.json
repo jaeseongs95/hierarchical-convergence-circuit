@@ -1,0 +1,11 @@
+{
+  "verified": true,
+  "current_source_normalized_matches": true,
+  "sealed_source_exact_matches": true,
+  "commit_sealed_files_exact": 489,
+  "checkout_line_ending_differences": [
+    "Run-HCR-R069.cmd"
+  ],
+  "no_source_semantic_change": true,
+  "source_commit": "5502c164ec0b1c5abbdc048b7fb72aa0c2486be8"
+}
