@@ -53,3 +53,5 @@ EXP-47 / R066: [명시적 사실 저장·조회 baseline](exp-47-fact-retrieval/
 EXP-48 / R067: [충돌 뒤 추가 관측 정보 효과](exp-48-observation-refresh/design.ko.md). `Run-HCR-R067.cmd`; e0 고정, 과거 사실·stale·fresh e1과 회로 ON/OFF를 비교한다.
 
 EXP-49 / R068: [native 관측 요청 경계](exp-49-request-boundary/design.ko.md). `Run-HCR-R068.cmd`; 외부 오답 피드백 없는 요청과 별도 합성 revision 검사를 구분한다.
+
+EXP-50의 독립 실행은 [Run-HCR-R069.cmd](../Run-HCR-R069.cmd), 설계는 [revision factorization](exp-50-revision-factorization/design.ko.md)을 따른다. 기본 dispatcher는 변경하지 않는다.

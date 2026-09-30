@@ -1,0 +1,20 @@
+{
+  "verified": true,
+  "baseline_commit": "b441e247e3e980a445e70e2ab273e477879846d4",
+  "changed_existing_files": [
+    {
+      "path": "experiments/INDEX.json",
+      "restored_sha256": "857e0a32f8f67510878b1db97bf0ae17c20bfa94cb07569bc55527aa5088a23e",
+      "bytes_match": true
+    },
+    {
+      "path": "experiments/INDEX.ko.md",
+      "restored_sha256": "1b3a03abcb9cabfec23d65fa69bb80bf755c2e09b51e27e6f780420d47d7478b",
+      "bytes_match": true
+    }
+  ],
+  "new_paths_removed_only_by_scoped_reviewed_revert": true,
+  "whole_worktree_reset_required": false,
+  "limitations": "Byte restore of preexisting changed index files only; no live revert, remote rollback or force push executed.",
+  "procedure": "Preserve baseline commit and revert the R069 delivery commits with a new reviewed commit; never force-push or reset unrelated files."
+}

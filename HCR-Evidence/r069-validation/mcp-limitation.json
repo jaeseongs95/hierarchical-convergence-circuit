@@ -1,0 +1,8 @@
+{
+  "code": "BINDING_REQUIRED",
+  "stage": "bootstrap",
+  "run_started": false,
+  "direct_skill_execution": true,
+  "guarded_completion": false,
+  "reason": "Trusted host execution attestation missing"
+}

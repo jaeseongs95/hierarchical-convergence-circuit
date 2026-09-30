@@ -925,6 +925,26 @@
       "source_commit": null,
       "source_commit_note": "Existing native observation-request boundary; four no-feedback sessions and separate synthetic API controls; autonomous conflict comparison not measurable.",
       "standalone_python_entrypoint": "Run-HCR-R068.py"
+    },
+    {
+      "current_python_entrypoint": null,
+      "default_dispatcher_promoted": false,
+      "design": "experiments/exp-50-revision-factorization/design.ko.md",
+      "directory": "experiments/exp-50-revision-factorization",
+      "evidence_directory": "HCR-Evidence/exp50",
+      "execution_status": "standalone_candidate_contract",
+      "experiment_id": "EXP-50",
+      "frozen_design": "experiments/exp-50-revision-factorization/frozen_spec.json",
+      "implementation_validation_directory": "HCR-Evidence/r069-validation",
+      "legacy_python_entrypoint": null,
+      "release_manifest": "R069_MANIFEST.json",
+      "revision_references": [
+        "r069"
+      ],
+      "run_status": "read_per_run_evidence",
+      "source_commit": null,
+      "source_commit_note": "One donor and six paired checkpoint/observation/revision-path branches; authored binary world and shared ideal toy measurement; not pure persistence or autonomous sensing.",
+      "standalone_python_entrypoint": "Run-HCR-R069.py"
     }
   ],
   "inventory_commit": "afb5d5e5b67906b7697f16163e166f59b17e1655",

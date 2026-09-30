@@ -1,0 +1,9 @@
+{
+  "verified": true,
+  "staged_sealed_files_byte_equal": 481,
+  "scoped_attributes": "HCR-Evidence/exp50/.gitattributes",
+  "new_source_whitespace_check": "passed",
+  "historical_snapshot_whitespace_preserved": true,
+  "reason": "Frozen copied source contains historical Markdown hard breaks and existing blank EOF; not rewritten.",
+  "initial_git_index_check_failure": "Existing staged LF conversion remained after adding attributes; git add --renormalize reprocessed only exp50 with -text."
+}
