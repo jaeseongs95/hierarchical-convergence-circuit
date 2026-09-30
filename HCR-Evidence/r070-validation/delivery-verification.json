@@ -1,0 +1,33 @@
+{
+  "verified": true,
+  "run": "HCR-Evidence/exp51/r070-20260930T124334Z-a1eb37c575",
+  "parent_bundle_exact": true,
+  "current_bundle_exact": true,
+  "parent_zip_exact": true,
+  "current_zip_exact": true,
+  "core_regression": {
+    "tests_run": 602,
+    "passed": 599,
+    "environment_skips": [
+      {
+        "reason": "symlink creation is not available",
+        "test": "test_r021_sessions.CheckpointIO.test_file_symlink_rejected"
+      },
+      {
+        "reason": "symlink creation is not available",
+        "test": "test_r021_sessions.CheckpointIO.test_symlink_parent_rejected"
+      },
+      {
+        "reason": "local symlink creation not supported",
+        "test": "test_r034_selection.ProtocolAndIO.test_symlink_rejected"
+      }
+    ],
+    "final_core_runs": 1
+  },
+  "formula_replays": 4,
+  "measurement_mutations_rejected": 8,
+  "new_native_research_executions": 0,
+  "new_independent_samples": 0,
+  "energy_measured": false,
+  "peak_memory_measured": false
+}

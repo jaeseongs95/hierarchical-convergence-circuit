@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "1.0.0",
+  "operationId": "r070-push-research",
+  "actionClass": "publish",
+  "targets": [
+    {
+      "locator": "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main",
+      "targetType": "git-ref",
+      "environment": "external",
+      "expectedFingerprint": "sha256:ea4efc4dd2cc39ba37ec76afe904770216adff1d50f1ec911cbad89ce60b5379"
+    }
+  ],
+  "plannedCommandOrTool": {
+    "tool": "git",
+    "action": "push origin main"
+  },
+  "scopeRef": {
+    "locator": "HCR-Evidence/r070-validation/task-envelope.json",
+    "digest": "sha256:92005449ea2929d4d3a885368efc8bf7c8cc42e0e0c4de417c3e735596f821f4",
+    "includedTargets": [
+      "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main"
+    ],
+    "excludedTargets": []
+  },
+  "authorizationRef": {
+    "locator": "HCR-Evidence/r070-validation/publish-authorization.json",
+    "digest": "sha256:2a1cdf2a289074d2c73bef3a5bcb2cf81d2bcd8f7168bc2070f6577e4551a1d5",
+    "allowedActions": [
+      "publish"
+    ],
+    "allowedTargets": [
+      "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main"
+    ],
+    "environments": [
+      "external"
+    ]
+  },
+  "approvalEvidenceRefs": [
+    {
+      "locator": "HCR-Evidence/r070-validation/publish-authorization.json",
+      "digest": "sha256:2a1cdf2a289074d2c73bef3a5bcb2cf81d2bcd8f7168bc2070f6577e4551a1d5",
+      "operationId": "r070-push-research",
+      "actionClass": "publish",
+      "targetLocators": [
+        "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main"
+      ],
+      "environments": [
+        "external"
+      ],
+      "expiresAt": "2026-09-30T13:08:05.158040+00:00"
+    }
+  ],
+  "currentStateEvidenceRefs": [
+    {
+      "locator": "HCR-Evidence/r070-validation/publish-current-state.json",
+      "digest": "sha256:5a1b246a1678b89730adc9cd2d2f0ba2eed9d99d4ff7a28b71ec3d16d86e630a",
+      "targetLocator": "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main",
+      "fingerprint": "sha256:ea4efc4dd2cc39ba37ec76afe904770216adff1d50f1ec911cbad89ce60b5379"
+    }
+  ],
+  "recoveryPlan": {
+    "available": true,
+    "method": "Reviewed revert as a new commit; baseline preserved; no force push",
+    "backupRef": "git:04f53800a03d2095ab8a9da173693f7673eccca5",
+    "restoreProcedureRef": "HCR-Evidence/r070-validation/git-recovery-check.json",
+    "restoreTestEvidenceRef": "HCR-Evidence/r070-validation/git-recovery-check.json",
+    "irreversibilityAccepted": false
+  },
+  "expectedBlastRadius": {
+    "affectedTargets": 1,
+    "affectedUsers": 1,
+    "external": true,
+    "description": "R070 scoped research and evidence on origin/main; native core unchanged"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "source": "Direct human continuation request and user-supplied AGENTS section 8 authorizes ordinary origin/main push",
+  "operationId": "r070-push-research",
+  "actionClass": "publish",
+  "targetLocators": [
+    "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main"
+  ],
+  "environments": [
+    "external"
+  ],
+  "candidate_artifact_digest": "sha256:82be49edbcc5ec514fafc71f946d699a0214debc8851c5b0e70de299dccde1ff",
+  "scope": "Only verified R070 additive research, index and validation; no core, deploy, tag or force push"
+}

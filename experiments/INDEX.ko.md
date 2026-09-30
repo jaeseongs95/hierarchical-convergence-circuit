@@ -55,3 +55,5 @@ EXP-48 / R067: [충돌 뒤 추가 관측 정보 효과](exp-48-observation-refre
 EXP-49 / R068: [native 관측 요청 경계](exp-49-request-boundary/design.ko.md). `Run-HCR-R068.cmd`; 외부 오답 피드백 없는 요청과 별도 합성 revision 검사를 구분한다.
 
 EXP-50의 독립 실행은 [Run-HCR-R069.cmd](../Run-HCR-R069.cmd), 설계는 [revision factorization](exp-50-revision-factorization/design.ko.md)을 따른다. 기본 dispatcher는 변경하지 않는다.
+
+EXP-51 / R070: [회로 약화 신호의 전달 경계](exp-51-pool-signal-boundary/design.ko.md). `Run-HCR-R070.cmd`; R069 네 packet 재분석이며 새 native 연구 실행과 독립 표본은 없다.

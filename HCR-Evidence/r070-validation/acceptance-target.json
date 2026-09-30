@@ -1,0 +1,23 @@
+{
+  "target": {
+    "kind": "artifact",
+    "identifier": "R070-deliverable-and-sealed-run",
+    "digest": "sha256:82be49edbcc5ec514fafc71f946d699a0214debc8851c5b0e70de299dccde1ff"
+  },
+  "files": {
+    "R070_MANIFEST.json": "sha256:3c517cf2db0c5dc4279ace114d6128b2b09e0b37d911fdb957d2de49bdfbfc01",
+    "Run-HCR-R070.cmd": "sha256:e613d391f6222285dbf63bc405840826f5978d481139e24ece82b0492bedef55",
+    "Run-HCR-R070.py": "sha256:0ea25b41dbeada969b18d6161b559e1c52fa33f88656d1f708cf24e67298e7f6",
+    "experiments/INDEX.json": "sha256:274023c0e3b0d61402f63bc71289d7ada8c1d10fe71ea17fcb04d1f10d75d75a",
+    "experiments/INDEX.ko.md": "sha256:7a6ad9b44acad93d0f68440ec1457f2a1a4137fc18eda2c972cfe5baf5c710d9",
+    "experiments/exp-51-pool-signal-boundary/NEXT.ko.md": "sha256:8da812056180b25b45da6e9618f576442ba0fa5e9149314595593c226fabce72",
+    "experiments/exp-51-pool-signal-boundary/RESULTS.ko.md": "sha256:aa96636fa65623d9d35b90ce99575842de2ee9d7dbfe66ddfe33dfe0e1884021",
+    "experiments/exp-51-pool-signal-boundary/design.ko.md": "sha256:06389d2e1b263b174e61ecc8662b8454378f17d949126812765a2032b6e2569e",
+    "experiments/exp-51-pool-signal-boundary/frozen_spec.json": "sha256:baae30fdb753ed2cb7062b493e12bdf16fd0b5bb71763210634c3597a486eb6f",
+    "tools/r070_pool/__init__.py": "sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "tools/r070_pool/analyze.py": "sha256:8c9d9c75ede579026b07c946a90a546ec4f92bf12b040a61142daeafd511b3bf",
+    "tools/r070_pool/pipeline.py": "sha256:762bad9921162ba73072c4f74dc677737164a98808c5f332559e9be22debb665",
+    "tools/r070_pool/verify.py": "sha256:b1056044d770c42f708616ff64a2d86dfe966616fae485b9f780a94750567d90",
+    "evidence_bundle": "sha256:8ee32fb4927edf79c5ce4c1a90661d2f07ecf9a7f829a07833c65e2c377d48f2"
+  }
+}

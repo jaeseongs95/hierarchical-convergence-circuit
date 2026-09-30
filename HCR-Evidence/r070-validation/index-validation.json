@@ -1,0 +1,8 @@
+{
+  "verified": true,
+  "command": "cmd /c Run-HCR.cmd --check-index",
+  "exit_code": 0,
+  "experiments": 52,
+  "study_executed": false,
+  "default_dispatcher_changed": false
+}

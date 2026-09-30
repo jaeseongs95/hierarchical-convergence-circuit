@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.2.0",
+  "sourceOriginKind": "user-turn",
+  "sourceReceiptId": null,
+  "authorityEffect": "none",
+  "userDirective": "unspecified",
+  "netBenefitCriteria": {
+    "independentlyCompletable": true,
+    "parallelBottleneckReduced": false,
+    "limitedContextSufficient": true,
+    "singleWriterOwnership": true,
+    "netBenefitAfterOverhead": false
+  },
+  "auditSeparationRequired": false,
+  "route": "direct"
+}

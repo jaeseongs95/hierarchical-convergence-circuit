@@ -1,0 +1,19 @@
+{
+  "verified": true,
+  "baseline_commit": "04f53800a03d2095ab8a9da173693f7673eccca5",
+  "changed_existing_files": [
+    {
+      "path": "experiments/INDEX.json",
+      "restored_sha256": "6de0746caf5c2d4de1ebf1f4a7f29ca922fd7b8eab6b01113c75e7b742b1f344",
+      "bytes_match": true
+    },
+    {
+      "path": "experiments/INDEX.ko.md",
+      "restored_sha256": "083b4b8ff3910c5440e63010de1297f8adfbf816254d983882ec33369ae527ce",
+      "bytes_match": true
+    }
+  ],
+  "restore_environment": "disposable local directory only",
+  "procedure": "Preserve the baseline commit and revert only R070 commits as a new reviewed commit; never force-push or reset unrelated files.",
+  "limitations": "Git blob extraction and temporary byte restore verified; no live or remote rollback performed."
+}

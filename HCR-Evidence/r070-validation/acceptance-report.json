@@ -1,0 +1,159 @@
+{
+  "schemaVersion": "1.0.0",
+  "target": {
+    "kind": "artifact",
+    "identifier": "R070-deliverable-and-sealed-run",
+    "digest": "sha256:82be49edbcc5ec514fafc71f946d699a0214debc8851c5b0e70de299dccde1ff"
+  },
+  "criteria": [
+    {
+      "criterionId": "AC-001",
+      "statement": "[AC-001] R069 원본·source·조건 hash를 고정하고 기존 evidence를 보존한다",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "integrity",
+        "command:oneclick"
+      ],
+      "observedResult": "原본과 결과 bundle 및 ZIP 바이트 일치; 602 tests, 599 passed, 3 preserved environment skips; Verification command exited with code 0.",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    },
+    {
+      "criterionId": "AC-002",
+      "statement": "[AC-002] M0/M1 stale/fresh pool network·drive·tick·activation·eligibility·선택과 decision 입력을 원자료에서 독립 재계산한다",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "analysis",
+        "command:oneclick"
+      ],
+      "observedResult": "Four packet replays; raw pool and decision projections verified in separate process; Verification command exited with code 0.",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    },
+    {
+      "criterionId": "AC-003",
+      "statement": "[AC-003] 변조 거부와 별도 집계 대조를 통과하고 최종 기존 core 회귀를 1회 실행한다",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "integrity",
+        "selftest",
+        "command:oneclick"
+      ],
+      "observedResult": "原본과 결과 bundle 및 ZIP 바이트 일치; 602 tests, 599 passed, 3 preserved environment skips; Eight measurement mutations rejected; no native research samples; Verification command exited with code 0.",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    },
+    {
+      "criterionId": "AC-004",
+      "statement": "[AC-004] 재분석의 표본 경계·대안·다음 판별 조건과 원클릭 실행을 기록하고 범위 검사를 통과한다",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "scope",
+        "interpretation",
+        "next",
+        "launcher",
+        "command:oneclick"
+      ],
+      "observedResult": "Scope PASS; preexisting changes untouched; Observed vs derived predictions, alternative explanations and sample boundaries recorded; Config/checkpoint contract and paired threshold or observation alternative recorded; One-click launcher executed successfully and core regression completed; Verification command exited with code 0.",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    }
+  ],
+  "verifiedEvidenceIndex": [
+    {
+      "evidenceId": "integrity",
+      "kind": "test",
+      "locator": "HCR-Evidence/r070-validation/delivery-verification.json",
+      "digest": "sha256:776bc2b549f522a14ff5cdd2f4fbadea39a26aaa6a2e3cf477f9c81cd52f8992",
+      "targetDigest": "sha256:82be49edbcc5ec514fafc71f946d699a0214debc8851c5b0e70de299dccde1ff",
+      "criterionIds": [
+        "AC-001",
+        "AC-003"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "analysis",
+      "kind": "test",
+      "locator": "HCR-Evidence/exp51/r070-20260930T124334Z-a1eb37c575/verification.json",
+      "digest": "sha256:1e3130a89ffa28c6afa8b22d381144f228948d07dfd2d8799a472f88eb877d7b",
+      "targetDigest": "sha256:82be49edbcc5ec514fafc71f946d699a0214debc8851c5b0e70de299dccde1ff",
+      "criterionIds": [
+        "AC-002"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "selftest",
+      "kind": "test",
+      "locator": "HCR-Evidence/exp51/r070-20260930T124334Z-a1eb37c575/validation/selftest.json",
+      "digest": "sha256:bfe0543e15df65dbaee78dedb1e95fc64a1869461e766d017daf3790fd323f97",
+      "targetDigest": "sha256:82be49edbcc5ec514fafc71f946d699a0214debc8851c5b0e70de299dccde1ff",
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "scope",
+      "kind": "file",
+      "locator": "HCR-Evidence/r070-validation/scope-report.json",
+      "digest": "sha256:c92ddc41978b7090da757eb7709198e9980a22c4647cfc415c072939203684a6",
+      "targetDigest": "sha256:82be49edbcc5ec514fafc71f946d699a0214debc8851c5b0e70de299dccde1ff",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "interpretation",
+      "kind": "document",
+      "locator": "experiments/exp-51-pool-signal-boundary/RESULTS.ko.md",
+      "digest": "sha256:aa96636fa65623d9d35b90ce99575842de2ee9d7dbfe66ddfe33dfe0e1884021",
+      "targetDigest": "sha256:82be49edbcc5ec514fafc71f946d699a0214debc8851c5b0e70de299dccde1ff",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "next",
+      "kind": "document",
+      "locator": "experiments/exp-51-pool-signal-boundary/NEXT.ko.md",
+      "digest": "sha256:8da812056180b25b45da6e9618f576442ba0fa5e9149314595593c226fabce72",
+      "targetDigest": "sha256:82be49edbcc5ec514fafc71f946d699a0214debc8851c5b0e70de299dccde1ff",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "launcher",
+      "kind": "file",
+      "locator": "Run-HCR-R070.cmd",
+      "digest": "sha256:e613d391f6222285dbf63bc405840826f5978d481139e24ece82b0492bedef55",
+      "targetDigest": "sha256:82be49edbcc5ec514fafc71f946d699a0214debc8851c5b0e70de299dccde1ff",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "command:oneclick",
+      "kind": "verification-command",
+      "locator": "HCR-Evidence/exp51/r070-20260930T124334Z-a1eb37c575/result.json",
+      "digest": "sha256:01b810d2bc45c321d38cd1fcb65cd411458077b6ced12a265125b1bc359d5787",
+      "targetDigest": "sha256:82be49edbcc5ec514fafc71f946d699a0214debc8851c5b0e70de299dccde1ff",
+      "criterionIds": [
+        "AC-001",
+        "AC-002",
+        "AC-003",
+        "AC-004"
+      ],
+      "direction": "supports"
+    }
+  ],
+  "unresolvedCriteria": [],
+  "limitations": [
+    "Same R069 raw evidence; no new independent sample or native threshold run",
+    "Three existing environment skips; actual energy and peak memory unknown",
+    "Direct local skills, no guarded MCP execution or independent researcher replication"
+  ],
+  "verdict": "PASS"
+}

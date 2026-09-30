@@ -1,0 +1,17 @@
+{
+  "schema": "hcc-r069-release-v1",
+  "files": {
+    "Run-HCR-R069.cmd": "ebb0c55fcbb4c6927a93829f91b22d4b580e4a591b7f5311a4372bd2096e25e5",
+    "Run-HCR-R069.py": "08919b263e1bc387d9fdf0af604d13eb9917ceae1acc4692755d84f910e9344f",
+    "experiments/exp-50-revision-factorization/DELIBERATION.ko.md": "ba46f819f42ac07534616ccee310c08cafb3aff57b86f37f8e639421fa76e15f",
+    "experiments/exp-50-revision-factorization/decision-record.json": "955032b8930a6e425e0dd0c9af0e825dc9fb2e88faedd385e38ccfdc51f515f2",
+    "experiments/exp-50-revision-factorization/design.ko.md": "ad570e3602988fef6a43f4e60284777cc83373ae9de7ff3d69a16a667e5b6be5",
+    "experiments/exp-50-revision-factorization/frozen_spec.json": "faab91ae06443d2ce4981ce6cfe0e7b90e4d96e5d9005a33691d492f0d6224e8",
+    "experiments/exp-50-revision-factorization/reference_world.json": "6ac404fb511d2d3146e5cdd74bc564eb5f92b87affd53cc62c34817ffdb84b83",
+    "tools/r069_revision/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "tools/r069_revision/pipeline.py": "5c562d0dcda7d071fdb9f347a472459d7c5e11dd907c44fb0199caaaf61c17b6",
+    "tools/r069_revision/selftest.py": "94464f8a3fbb91e4f0ee2bf3178c1f02613414d2eabf5a568e23c798151f4b17",
+    "tools/r069_revision/verify.py": "d259722ee8c25e3ff6d286d09854b249752991035015bcfff758953369c5e215",
+    "tools/r069_revision/worker.py": "9ba6a1391f2241c2932fa4977df589e4da9cd3cf11012dfd1e8d14db2806332c"
+  }
+}

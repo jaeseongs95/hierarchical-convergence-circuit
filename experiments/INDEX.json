@@ -945,6 +945,26 @@
       "source_commit": null,
       "source_commit_note": "One donor and six paired checkpoint/observation/revision-path branches; authored binary world and shared ideal toy measurement; not pure persistence or autonomous sensing.",
       "standalone_python_entrypoint": "Run-HCR-R069.py"
+    },
+    {
+      "current_python_entrypoint": null,
+      "default_dispatcher_promoted": false,
+      "design": "experiments/exp-51-pool-signal-boundary/design.ko.md",
+      "directory": "experiments/exp-51-pool-signal-boundary",
+      "evidence_directory": "HCR-Evidence/exp51",
+      "execution_status": "standalone_candidate_contract",
+      "experiment_id": "EXP-51",
+      "frozen_design": "experiments/exp-51-pool-signal-boundary/frozen_spec.json",
+      "implementation_validation_directory": "HCR-Evidence/r070-validation",
+      "legacy_python_entrypoint": null,
+      "release_manifest": "R070_MANIFEST.json",
+      "revision_references": [
+        "r070"
+      ],
+      "run_status": "read_per_run_evidence",
+      "source_commit": null,
+      "source_commit_note": "Reanalysis of four R069 new-session packets; separate pool trajectories and route-only decision inputs; no new native execution or independent samples.",
+      "standalone_python_entrypoint": "Run-HCR-R070.py"
     }
   ],
   "inventory_commit": "afb5d5e5b67906b7697f16163e166f59b17e1655",

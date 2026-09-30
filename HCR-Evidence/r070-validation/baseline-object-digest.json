@@ -1,0 +1,1 @@
+{"manifestSha256": "74e9cee6f341276f49094140aa1e7d9e207c39e245b8cbce46720ef01d817339", "baseline_file": "baseline.json", "raw_file_digest_record": "baseline-digest.json", "note": "Compare CLI requires the captured canonical manifest digest rather than JSON file byte digest; original baseline unchanged."}

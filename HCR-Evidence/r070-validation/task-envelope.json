@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "1.0.0",
+  "taskId": "hcc-r070-pool-signal-boundary",
+  "objective": "R069의 약화 신호가 pool 선택과 decision에 전달된 경계를 원자료로 재계산하고 검증된 연구 기록을 전달한다",
+  "scope": {
+    "included": [
+      "Run-HCR-R070.cmd",
+      "Run-HCR-R070.py",
+      "R070_MANIFEST.json",
+      "tools/r070_pool/",
+      "experiments/exp-51-pool-signal-boundary/",
+      "experiments/INDEX.json",
+      "experiments/INDEX.ko.md",
+      "HCR-Evidence/exp51/",
+      "HCR-Evidence/r070-validation/"
+    ],
+    "excluded": [
+      "src/",
+      "tests/",
+      "archive/",
+      "HCR-Evidence/exp50/",
+      "experiments/exp-50-revision-factorization/"
+    ]
+  },
+  "acceptanceCriteria": [
+    "[AC-001] R069 원본·source·조건 hash를 고정하고 기존 evidence를 보존한다",
+    "[AC-002] M0/M1 stale/fresh pool network·drive·tick·activation·eligibility·선택과 decision 입력을 원자료에서 독립 재계산한다",
+    "[AC-003] 변조 거부와 별도 집계 대조를 통과하고 최종 기존 core 회귀를 1회 실행한다",
+    "[AC-004] 재분석의 표본 경계·대안·다음 판별 조건과 원클릭 실행을 기록하고 범위 검사를 통과한다"
+  ],
+  "riskLevel": "medium",
+  "workUnits": [
+    {
+      "id": "research",
+      "objective": "동결된 원자료 재분석·검산·원클릭 전달",
+      "dependencies": [],
+      "writeTargets": [
+        "Run-HCR-R070.cmd",
+        "Run-HCR-R070.py",
+        "R070_MANIFEST.json",
+        "tools/r070_pool/",
+        "experiments/exp-51-pool-signal-boundary/",
+        "experiments/INDEX.json",
+        "experiments/INDEX.ko.md",
+        "HCR-Evidence/exp51/",
+        "HCR-Evidence/r070-validation/"
+      ]
+    }
+  ],
+  "requiredCapabilities": [
+    "change-scope-baseline-capture",
+    "minimal-implementation",
+    "mutation-risk-preflight",
+    "change-scope-assurance",
+    "acceptance-evidence-validation"
+  ],
+  "constraints": [
+    "원본 및 core 변경 금지",
+    "새 native 연구 실행과 독립 표본 수는 0",
+    "자동 retry와 설치 금지"
+  ],
+  "authorization": {
+    "allowedActions": [
+      "read",
+      "write-scoped-research-files",
+      "run-local-checks",
+      "commit",
+      "merge-local-main",
+      "delete-completed-local-task-branch",
+      "push-origin-main"
+    ],
+    "prohibitedActions": [
+      "force-push",
+      "rewrite-historical-evidence",
+      "overwrite-user-changes"
+    ],
+    "approvalRequired": [
+      "deploy",
+      "tag",
+      "install",
+      "delete-remote-branch"
+    ]
+  },
+  "decision": {
+    "complexity": "simple",
+    "hasConflicts": false
+  },
+  "orchestration": {
+    "requested": false,
+    "mcpAvailable": true
+  }
+}

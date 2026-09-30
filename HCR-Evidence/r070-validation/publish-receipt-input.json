@@ -1,0 +1,180 @@
+{
+  "intent": {
+    "schemaVersion": "1.0.0",
+    "operationId": "r070-push-research",
+    "actionClass": "publish",
+    "targets": [
+      {
+        "locator": "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main",
+        "targetType": "git-ref",
+        "environment": "external",
+        "expectedFingerprint": "sha256:ea4efc4dd2cc39ba37ec76afe904770216adff1d50f1ec911cbad89ce60b5379"
+      }
+    ],
+    "plannedCommandOrTool": {
+      "tool": "git",
+      "action": "push origin main"
+    },
+    "scopeRef": {
+      "locator": "HCR-Evidence/r070-validation/task-envelope.json",
+      "digest": "sha256:92005449ea2929d4d3a885368efc8bf7c8cc42e0e0c4de417c3e735596f821f4",
+      "includedTargets": [
+        "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main"
+      ],
+      "excludedTargets": []
+    },
+    "authorizationRef": {
+      "locator": "HCR-Evidence/r070-validation/publish-authorization.json",
+      "digest": "sha256:2a1cdf2a289074d2c73bef3a5bcb2cf81d2bcd8f7168bc2070f6577e4551a1d5",
+      "allowedActions": [
+        "publish"
+      ],
+      "allowedTargets": [
+        "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main"
+      ],
+      "environments": [
+        "external"
+      ]
+    },
+    "approvalEvidenceRefs": [
+      {
+        "locator": "HCR-Evidence/r070-validation/publish-authorization.json",
+        "digest": "sha256:2a1cdf2a289074d2c73bef3a5bcb2cf81d2bcd8f7168bc2070f6577e4551a1d5",
+        "operationId": "r070-push-research",
+        "actionClass": "publish",
+        "targetLocators": [
+          "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main"
+        ],
+        "environments": [
+          "external"
+        ],
+        "expiresAt": "2026-09-30T13:08:05.158040+00:00"
+      }
+    ],
+    "currentStateEvidenceRefs": [
+      {
+        "locator": "HCR-Evidence/r070-validation/publish-current-state.json",
+        "digest": "sha256:5a1b246a1678b89730adc9cd2d2f0ba2eed9d99d4ff7a28b71ec3d16d86e630a",
+        "targetLocator": "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main",
+        "fingerprint": "sha256:ea4efc4dd2cc39ba37ec76afe904770216adff1d50f1ec911cbad89ce60b5379"
+      }
+    ],
+    "recoveryPlan": {
+      "available": true,
+      "method": "Reviewed revert as a new commit; baseline preserved; no force push",
+      "backupRef": "git:04f53800a03d2095ab8a9da173693f7673eccca5",
+      "restoreProcedureRef": "HCR-Evidence/r070-validation/git-recovery-check.json",
+      "restoreTestEvidenceRef": "HCR-Evidence/r070-validation/git-recovery-check.json",
+      "irreversibilityAccepted": false
+    },
+    "expectedBlastRadius": {
+      "affectedTargets": 1,
+      "affectedUsers": 1,
+      "external": true,
+      "description": "R070 scoped research and evidence on origin/main; native core unchanged"
+    }
+  },
+  "report": {
+    "schemaVersion": "1.0.0",
+    "operationId": "r070-push-research",
+    "actionDigest": "sha256:8bf442999bd956eee2cf11412eb067b1fef91ff71b583146037457d28859d16d",
+    "targetDigest": "sha256:7d60a43dd50580cdfc912780495ae77bc4a6714f09b1f0385349dd1141bb9daa",
+    "classification": {
+      "actionClass": "publish",
+      "reversibility": "reversible",
+      "externalImpact": true,
+      "dataLossPotential": false,
+      "permissionImpact": false
+    },
+    "checks": [
+      {
+        "checkId": "target-specificity",
+        "state": "passed",
+        "evidenceRefs": [],
+        "message": "모든 대상이 구체적으로 식별됐습니다."
+      },
+      {
+        "checkId": "scope-match",
+        "state": "passed",
+        "evidenceRefs": [
+          "HCR-Evidence/r070-validation/task-envelope.json"
+        ],
+        "message": "대상이 작업 범위 안에 있습니다."
+      },
+      {
+        "checkId": "authorization-match",
+        "state": "passed",
+        "evidenceRefs": [
+          "HCR-Evidence/r070-validation/publish-authorization.json"
+        ],
+        "message": "행동, 대상과 환경이 허용 범위에 있습니다."
+      },
+      {
+        "checkId": "current-state",
+        "state": "passed",
+        "evidenceRefs": [
+          "HCR-Evidence/r070-validation/publish-current-state.json"
+        ],
+        "message": "현재 fingerprint가 예상값과 일치합니다."
+      },
+      {
+        "checkId": "approval",
+        "state": "passed",
+        "evidenceRefs": [
+          "HCR-Evidence/r070-validation/publish-authorization.json"
+        ],
+        "message": "승인 상태: observed"
+      },
+      {
+        "checkId": "recovery",
+        "state": "passed",
+        "evidenceRefs": [
+          "git:04f53800a03d2095ab8a9da173693f7673eccca5",
+          "HCR-Evidence/r070-validation/git-recovery-check.json"
+        ],
+        "message": "복구 또는 명시적 비가역성 수용 근거가 있습니다."
+      },
+      {
+        "checkId": "blast-radius",
+        "state": "passed",
+        "evidenceRefs": [],
+        "message": "예상 영향 범위가 모든 대상을 포함합니다."
+      }
+    ],
+    "approval": {
+      "required": true,
+      "status": "observed",
+      "evidenceRefs": [
+        "HCR-Evidence/r070-validation/publish-authorization.json"
+      ]
+    },
+    "recovery": {
+      "available": true,
+      "restoreTested": true,
+      "irreversibilityAccepted": false,
+      "evidenceRefs": [
+        "git:04f53800a03d2095ab8a9da173693f7673eccca5",
+        "HCR-Evidence/r070-validation/git-recovery-check.json"
+      ]
+    },
+    "blastRadius": {
+      "affectedTargets": 1,
+      "affectedUsers": 1,
+      "external": true,
+      "description": "R070 scoped research and evidence on origin/main; native core unchanged"
+    },
+    "unresolved": [],
+    "invalidationTriggers": [
+      "action 또는 planned tool 변경",
+      "target 또는 environment 변경",
+      "current-state evidence 또는 fingerprint 변경",
+      "scope 또는 authorization 변경",
+      "승인 evidence의 만료 또는 범위 변경",
+      "복구 계획 변경",
+      "예상 blast radius 변경"
+    ],
+    "validUntil": "2026-09-30T13:08:05.284Z",
+    "observedAt": "2026-09-30T12:53:05.284Z",
+    "verdict": "READY"
+  }
+}
