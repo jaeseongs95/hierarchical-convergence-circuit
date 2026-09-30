@@ -1,0 +1,27 @@
+{
+  "verified": true,
+  "interventions": [
+    "Explicit frozen gain array order for grid check",
+    "Preserve absent goal direct drive in independent reconstruction"
+  ],
+  "first_failed_run": "HCR-Evidence\\exp55\\r074-20260930T220855Z-e6c67a3883",
+  "second_failed_run": "HCR-Evidence/exp55/r074-20260930T221139Z-4d9aee8c0f",
+  "failed_runs_preserved": true,
+  "changed_source": {
+    "tools/r074_sensitivity/audit.py": {
+      "old": "56b39fd6cbac163467c7e77eb2451c1b5c040fb912cd5f0eb76992334b83a2cb",
+      "new": "93e708f029d25babc03b2e1d8d570ae80bcf3a7f144cb1b3c05a4e3bcf8c9f70"
+    },
+    "tools/r074_sensitivity/verify.py": {
+      "old": "e14473a32fd4135c7a52ff38046cc72d7fde406dedae92f16a0c83bd21ec910a",
+      "new": "bbbef51df06d4f52bc70d53ddf12c6e9d1549494b37c6b9553df134c20ba50dc"
+    }
+  },
+  "exact_research_spec_preserved": true,
+  "grid_validation_passed": true,
+  "independent_input_reconstruction_cells": 24,
+  "new_formula_replays": 0,
+  "regression_runs": 0,
+  "new_run_required": true,
+  "automatic_retry": false
+}

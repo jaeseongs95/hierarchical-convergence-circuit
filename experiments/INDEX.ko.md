@@ -62,3 +62,5 @@ EXP-52 / R071: [native 선택 경계](exp-52-native-selection-boundary/design.ko
 EXP-53 / R072: [고정 선택 경계의 입력 범위](exp-53-selection-input-range/design.ko.md). `Run-HCR-R072.cmd`; 봉인된 R071 memory에서 세 score의 12개 native 평가, 0.8 네 셀은 기존 조건 반복. 선택·판단·정수 비용을 분리한다.
 
 EXP-54 / R073: [pool drive 수식 분해](exp-54-pool-drive-decomposition/design.ko.md). `Run-HCR-R073.cmd`; 봉인 R072의 12 native 관찰 검산과 evidence-only/prior-only/joint 18 replay. 새 native·학습·독립 표본 0, counterfactual eligibility와 비용 경계를 보존한다.
+
+EXP-55 / R074: [evidence gain과 유한 score 반응](exp-55-evidence-gain-sensitivity/design.ko.md). `Run-HCR-R074.cmd`; gain4/1·고정 prior/0의 24 evaluator replay로 e:1·c:0 민감도를 분리한다. R073 대응 6개, 새 native·학습·독립 표본 0.

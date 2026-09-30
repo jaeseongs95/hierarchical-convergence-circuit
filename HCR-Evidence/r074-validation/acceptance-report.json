@@ -1,0 +1,163 @@
+{
+  "schemaVersion": "1.0.0",
+  "target": {
+    "digest": "sha256:487bd68734fbbe69108bcfdb77355f84a4bb7507adaed1d67351334291c7afac",
+    "identifier": "R074-sealed-evidence-gain-sensitivity",
+    "kind": "artifact"
+  },
+  "criteria": [
+    {
+      "criterionId": "AC-001",
+      "statement": "[AC-001] R072 입력과 R073 대응 replay를 hash로 고정하고 program·initial·top_down·기존 config를 보존하며 gain bundle과 prior 개입만 명시한다",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "integrity",
+        "command:oneclick"
+      ],
+      "observedResult": "Exact parent/anchor/source/bundle/ZIP; two failures preserved; research spec bytes unchanged; final core599pass3baseline skips; Verification command exited with code 0.",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    },
+    {
+      "criterionId": "AC-002",
+      "statement": "[AC-002] 24개 수식 replay에서 e:1·c:0의 baseline 차이, gain별 민감도, prior 0 checkpoint 동등성과 R073 대응 6개를 구분한다",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "formula",
+        "analysis",
+        "command:oneclick"
+      ],
+      "observedResult": "24 trajectories by separate recurrence; six exact prior replay matches; 9 raw and5 summary mutations rejected; budget and ambiguity preserved; Node deltas/gain response/zero prior pairs projected from verified raw records, with non-evaluable handling and no native cost; Verification command exited with code 0.",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    },
+    {
+      "criterionId": "AC-003",
+      "statement": "[AC-003] 별도 수식으로 입력·매 tick·수렴·집계·변조 거부와 budget/ambiguity를 검증하고 최종 core 회귀 1회를 통과한다",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "integrity",
+        "formula",
+        "regression",
+        "command:oneclick"
+      ],
+      "observedResult": "Exact parent/anchor/source/bundle/ZIP; two failures preserved; research spec bytes unchanged; final core599pass3baseline skips; 24 trajectories by separate recurrence; six exact prior replay matches; 9 raw and5 summary mutations rejected; budget and ambiguity preserved; Exactly1 final602 suite:599pass3existing capability skips; no failures errors or new skips; Verification command exited with code 0.",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    },
+    {
+      "criterionId": "AC-004",
+      "statement": "[AC-004] 원클릭·결과·다음 질문을 제공하고 same-data 재분석·새 native/학습/독립 표본 0·native cost null·대안 설명을 보존하며 범위·수용 검사를 통과한다",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "research-report",
+        "next",
+        "scope",
+        "command:oneclick"
+      ],
+      "observedResult": "Observed sensitivity, partial saturation support, e0 background confound, bounded toy/same-data/native-zero interpretation; Unexecuted bounded mixed drive scale candidate; no forced mechanism inflation; PASS;1101in-scope,262preexisting untouched,0excluded/unplanned/overlap/unknown; Verification command exited with code 0.",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    }
+  ],
+  "verifiedEvidenceIndex": [
+    {
+      "evidenceId": "integrity",
+      "kind": "test",
+      "locator": "HCR-Evidence/r074-validation/delivery-verification.json",
+      "digest": "sha256:7515ef6b2bb15b1bf1bb82d32b71d3491973c6b6a0d6c375761825a1d1825198",
+      "targetDigest": "sha256:487bd68734fbbe69108bcfdb77355f84a4bb7507adaed1d67351334291c7afac",
+      "criterionIds": [
+        "AC-001",
+        "AC-003"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "formula",
+      "kind": "test",
+      "locator": "HCR-Evidence/exp55/r074-20260930T221337Z-87c1ca1866/verification.json",
+      "digest": "sha256:994aad3acca421b0fcc4b22249bc4e9b950aef9f1ec8c2733fff060c98296ca0",
+      "targetDigest": "sha256:487bd68734fbbe69108bcfdb77355f84a4bb7507adaed1d67351334291c7afac",
+      "criterionIds": [
+        "AC-002",
+        "AC-003"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "analysis",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp55/r074-20260930T221337Z-87c1ca1866/summary.json",
+      "digest": "sha256:0afd740d062ba25874807861bb00f7f4bd0a5555283fcffec5ce33ab6317ae52",
+      "targetDigest": "sha256:487bd68734fbbe69108bcfdb77355f84a4bb7507adaed1d67351334291c7afac",
+      "criterionIds": [
+        "AC-002"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "regression",
+      "kind": "test",
+      "locator": "HCR-Evidence/exp55/r074-20260930T221337Z-87c1ca1866/validation/core_regression.json",
+      "digest": "sha256:d5daace122f8617bfd42c41ab59ddb55331aae622d85dc3ab6f6439a54928ab9",
+      "targetDigest": "sha256:487bd68734fbbe69108bcfdb77355f84a4bb7507adaed1d67351334291c7afac",
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "research-report",
+      "kind": "document",
+      "locator": "experiments/exp-55-evidence-gain-sensitivity/RESULTS.ko.md",
+      "digest": "sha256:6b854365025cc53228adf22bce1e99c019fe39249633e212be4f6127d05b9e3a",
+      "targetDigest": "sha256:487bd68734fbbe69108bcfdb77355f84a4bb7507adaed1d67351334291c7afac",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "next",
+      "kind": "document",
+      "locator": "experiments/exp-55-evidence-gain-sensitivity/NEXT.ko.md",
+      "digest": "sha256:34238ac7e33b164e9e8775febad5660f9f8f95945ccf5abf20f20b4ef43b40f1",
+      "targetDigest": "sha256:487bd68734fbbe69108bcfdb77355f84a4bb7507adaed1d67351334291c7afac",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "scope",
+      "kind": "test",
+      "locator": "HCR-Evidence/r074-validation/scope-report.json",
+      "digest": "sha256:f1e1a761ba9ecb7a9ed67fb152015cef355e2a882ff036779e11e570f07f3aea",
+      "targetDigest": "sha256:487bd68734fbbe69108bcfdb77355f84a4bb7507adaed1d67351334291c7afac",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "command:oneclick",
+      "kind": "verification-command",
+      "locator": "HCR-Evidence/exp55/r074-20260930T221337Z-87c1ca1866/result.json",
+      "digest": "sha256:58be636e1f7e2a6fb252e04f8349ea4b5db8dfc535bd07019690c80fedc3eb92",
+      "targetDigest": "sha256:487bd68734fbbe69108bcfdb77355f84a4bb7507adaed1d67351334291c7afac",
+      "criterionIds": [
+        "AC-001",
+        "AC-002",
+        "AC-003",
+        "AC-004"
+      ],
+      "direction": "supports"
+    }
+  ],
+  "unresolvedCriteria": [],
+  "limitations": [
+    "Same sealed R072/R073 data;24formula replays,6prior correspondences,0new native/training/feedback/independent samples",
+    "Gain changes both e0/e1 drive; no isolated e1 saturation causal claim",
+    "Toy single candidate, no native behavior/cost assigned; energy/peak memory null",
+    "First grid error,goal input precheck error,and second source guard stop preserved; successful source fixes keep research spec unchanged",
+    "599passes3existing symlink skips; no external independent replication"
+  ],
+  "verdict": "PASS"
+}

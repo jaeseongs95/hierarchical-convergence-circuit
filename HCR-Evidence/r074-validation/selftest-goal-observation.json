@@ -1,0 +1,16 @@
+{
+  "direct_drive_keys": [
+    "c:0",
+    "e:0",
+    "e:1",
+    "p:0:0",
+    "p:0:1"
+  ],
+  "goal_is_group": true,
+  "goal_has_direct_drive": false,
+  "goal_uses_incoming_links_and_zero_default": true,
+  "wrong_verifier_expression": "else n['drives'][key]",
+  "raw_network_sha256": "166a2ffa21f59d6559071f8f06bd0e6de466a912d22d62f30e77e294ea6b3ef5",
+  "local_input_check_error": "KeyError: 'goal'",
+  "new_research_replays": 0
+}

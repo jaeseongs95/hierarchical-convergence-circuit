@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0.0",
+  "requestArtifactDigest": "sha256:e2daa9c2cd17287f766049263f5919efeb7b1751b0f907450e5b240264cd7355",
+  "failureClusters": [
+    {
+      "fingerprint": "sha256:0486698bd5d307a75e112bae3146308365df01e2608689c139b6a172c12936d0",
+      "episodeIds": [
+        "r074-input-precheck"
+      ],
+      "operation": "independent drive reconstruction",
+      "stableFailureTuple": {
+        "error": "KeyError: 'goal'",
+        "frame": "expected_inputs drives[key]",
+        "phase": "input-precheck"
+      },
+      "environmentDigest": "sha256:e35cd5a12b4179c13364f3afb365df3d379de5677bb4dd5c192a32703ec2b85b"
+    }
+  ],
+  "observations": [
+    {
+      "id": "OBS-001",
+      "statement": "Attempt r074-input-precheck failed during independent drive reconstruction in environment sha256:e35cd5a12b4179c13364f3afb365df3d379de5677bb4dd5c192a32703ec2b85b.",
+      "evidenceRefs": [
+        "HCR-Evidence/r074-validation/selftest-goal-observation.json"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "GOAL",
+      "causalLayer": "implementation",
+      "statement": "Verifier confuses goal group existence with explicit direct drive existence",
+      "supportingEvidence": [
+        "HCR-Evidence/r074-validation/selftest-goal-observation.json"
+      ],
+      "contradictingEvidence": [],
+      "state": "confirmed",
+      "causeAnalysis": {
+        "symptom": "KeyError: 'goal' before recurrence",
+        "mechanism": "Reads absent goal key from sealed explicit drive map",
+        "rootCondition": "Goal receives links, with no explicit drive entry; verifier enumerates all groups",
+        "discriminatingEvidence": {
+          "statement": "Sealed pool has goal group but drive map has only e:0,e:1,p:0:0,p:0:1,c:0",
+          "evidenceRefs": [
+            "HCR-Evidence/r074-validation/selftest-goal-observation.json"
+          ]
+        },
+        "eliminationObservation": {
+          "statement": "Original sealed raw keys verified; no producer or research condition changed",
+          "evidenceRefs": [
+            "HCR-Evidence/r074-validation/selftest-goal-observation.json"
+          ]
+        }
+      }
+    },
+    {
+      "id": "DRIFT",
+      "causalLayer": "input",
+      "statement": "Input corruption removed an originally explicit goal drive",
+      "supportingEvidence": [],
+      "contradictingEvidence": [
+        "HCR-Evidence/r074-validation/selftest-goal-observation.json"
+      ],
+      "state": "refuted"
+    }
+  ],
+  "nextDiscriminatingTest": null,
+  "confirmedCause": {
+    "causeId": "GOAL",
+    "hypothesisId": "GOAL",
+    "statement": "Verifier confuses goal group existence with explicit direct drive existence",
+    "symptom": "KeyError: 'goal' before recurrence",
+    "mechanism": "Reads absent goal key from sealed explicit drive map",
+    "rootCondition": "Goal receives links, with no explicit drive entry; verifier enumerates all groups",
+    "discriminatingEvidence": {
+      "statement": "Sealed pool has goal group but drive map has only e:0,e:1,p:0:0,p:0:1,c:0",
+      "evidenceRefs": [
+        "HCR-Evidence/r074-validation/selftest-goal-observation.json"
+      ]
+    },
+    "eliminationObservation": {
+      "statement": "Original sealed raw keys verified; no producer or research condition changed",
+      "evidenceRefs": [
+        "HCR-Evidence/r074-validation/selftest-goal-observation.json"
+      ]
+    },
+    "evidenceBindings": [
+      {
+        "evidenceRef": "HCR-Evidence/r074-validation/selftest-goal-observation.json",
+        "artifactDigest": "sha256:e35cd5a12b4179c13364f3afb365df3d379de5677bb4dd5c192a32703ec2b85b",
+        "hypothesisIds": [
+          "GOAL"
+        ],
+        "relation": "supports"
+      }
+    ]
+  },
+  "recommendedNextAction": "Use the confirmed cause as input to a separately authorized remediation task.",
+  "limitations": [],
+  "verdict": "CAUSE_CONFIRMED"
+}

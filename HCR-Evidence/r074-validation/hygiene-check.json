@@ -1,0 +1,1 @@
+{"command":"git diff --cached --check -- . :(exclude)HCR-Evidence/**","full_evidence_check_claimed":false,"returncode":0,"sealed_evidence_excluded":true,"verified":true}

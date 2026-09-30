@@ -1,0 +1,15 @@
+{
+  "schema": "hcc-r074-source-manifest-v1",
+  "files": {
+    "Run-HCR-R074.cmd": "b6cacd42028b57dfdfd54eacba59c15c4900ae3a537ccf06d36fb302e8328b4a",
+    "Run-HCR-R074.py": "ca427430a430a1a75e79ff84f147985b58fa4fe388c3a6262db540ad90a87d44",
+    "tools/r074_sensitivity/__init__.py": "6d3a9749e19c31429461f6096b9329be440877effbc3e185ef04beef04e0bc3d",
+    "tools/r074_sensitivity/audit.py": "56b39fd6cbac163467c7e77eb2451c1b5c040fb912cd5f0eb76992334b83a2cb",
+    "tools/r074_sensitivity/pipeline.py": "6c351ea2052008a0b80bdd859c211b157b0fcc435754386017738cc1196282f4",
+    "tools/r074_sensitivity/replay.py": "5d29ab9c45e441880dea1fc06371af8af9c314b4c05a78f01ab356a07336e8ea",
+    "tools/r074_sensitivity/verify.py": "e14473a32fd4135c7a52ff38046cc72d7fde406dedae92f16a0c83bd21ec910a",
+    "experiments/exp-55-evidence-gain-sensitivity/design.ko.md": "7b2ecdd8b0d4fb62aa773589f2a90daa1eb24fb7a61f3d3eaa29125e633265c3",
+    "experiments/exp-55-evidence-gain-sensitivity/frozen_spec.json": "1c7427d2397aac89020fc3e7c53ec2168b10b63c9073f5eda861ce227f227f69"
+  },
+  "scope": "Evaluator gain bundle and fixed prior sensitivity only; sealed R072 and R073 inputs, no native memory signature claim"
+}

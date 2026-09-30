@@ -1,0 +1,17 @@
+{
+  "execution": "direct-local-skills",
+  "phases": [
+    "task-contract",
+    "change-scope-baseline",
+    "ponytail",
+    "formula-replay-and-independent-verification",
+    "change-scope-assurance",
+    "acceptance-evidence-validation",
+    "mutation-risk-preflight"
+  ],
+  "registry_priority": 50,
+  "delegation": "No user request; parallel bottleneck and net benefit absent; one writer",
+  "audit": "No high impact core/security/deploy/data loss change",
+  "model_effort": "No reliable current effort observation; not inferred",
+  "prose": "Research reports derive from raw experiment data; no standalone prose editing request"
+}

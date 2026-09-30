@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0.0",
+  "requestArtifactDigest": "sha256:0d3830814574196fd4de5082740ce3216ed12f87ef989aa73cb22d86bdcf78ad",
+  "failureClusters": [
+    {
+      "fingerprint": "sha256:ef6f34d0b0aab1e7fa9381dacbb805f1bfd1be8f2d6dd4c574080cd76c810181",
+      "episodeIds": [
+        "r074-first-selftest"
+      ],
+      "operation": "validate frozen grid order",
+      "stableFailureTuple": {
+        "error": "Exact grid",
+        "frame": "check_spec expected cells",
+        "phase": "selftest"
+      },
+      "environmentDigest": "sha256:5fb244a041f4de597ac267d4759fa51a7aea8fc8400ee0c8ab0f0603653f4e87"
+    }
+  ],
+  "observations": [
+    {
+      "id": "OBS-001",
+      "statement": "Attempt r074-first-selftest failed during validate frozen grid order in environment sha256:5fb244a041f4de597ac267d4759fa51a7aea8fc8400ee0c8ab0f0603653f4e87.",
+      "evidenceRefs": [
+        "HCR-Evidence/r074-validation/selftest-order-observation.json"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "ORDER",
+      "causalLayer": "implementation",
+      "statement": "Grid validator reconstructs order from dictionary keys changed by canonical serialization",
+      "supportingEvidence": [
+        "HCR-Evidence/r074-validation/selftest-order-observation.json"
+      ],
+      "contradictingEvidence": [],
+      "state": "confirmed",
+      "causeAnalysis": {
+        "symptom": "Exact grid assertion before evaluator",
+        "mechanism": "sort_keys serialization places g1 before g4 but frozen cell array starts g4",
+        "rootCondition": "Validator derives experimental array order from JSON object insertion order",
+        "discriminatingEvidence": {
+          "statement": "Cell identities/numeric values match as a set; order alone differs; plan equals frozen spec",
+          "evidenceRefs": [
+            "HCR-Evidence/r074-validation/selftest-order-observation.json"
+          ]
+        },
+        "eliminationObservation": {
+          "statement": "Failure occurs before simulate; no research replay or regression exists; parent integrity completed",
+          "evidenceRefs": [
+            "HCR-Evidence/r074-validation/selftest-order-observation.json"
+          ]
+        }
+      }
+    },
+    {
+      "id": "DATA",
+      "causalLayer": "input",
+      "statement": "Numeric experimental conditions or grid membership changed",
+      "supportingEvidence": [],
+      "contradictingEvidence": [
+        "HCR-Evidence/r074-validation/selftest-order-observation.json"
+      ],
+      "state": "refuted"
+    }
+  ],
+  "nextDiscriminatingTest": null,
+  "confirmedCause": {
+    "causeId": "ORDER",
+    "hypothesisId": "ORDER",
+    "statement": "Grid validator reconstructs order from dictionary keys changed by canonical serialization",
+    "symptom": "Exact grid assertion before evaluator",
+    "mechanism": "sort_keys serialization places g1 before g4 but frozen cell array starts g4",
+    "rootCondition": "Validator derives experimental array order from JSON object insertion order",
+    "discriminatingEvidence": {
+      "statement": "Cell identities/numeric values match as a set; order alone differs; plan equals frozen spec",
+      "evidenceRefs": [
+        "HCR-Evidence/r074-validation/selftest-order-observation.json"
+      ]
+    },
+    "eliminationObservation": {
+      "statement": "Failure occurs before simulate; no research replay or regression exists; parent integrity completed",
+      "evidenceRefs": [
+        "HCR-Evidence/r074-validation/selftest-order-observation.json"
+      ]
+    },
+    "evidenceBindings": [
+      {
+        "evidenceRef": "HCR-Evidence/r074-validation/selftest-order-observation.json",
+        "artifactDigest": "sha256:5fb244a041f4de597ac267d4759fa51a7aea8fc8400ee0c8ab0f0603653f4e87",
+        "hypothesisIds": [
+          "ORDER"
+        ],
+        "relation": "supports"
+      }
+    ]
+  },
+  "recommendedNextAction": "Use the confirmed cause as input to a separately authorized remediation task.",
+  "limitations": [],
+  "verdict": "CAUSE_CONFIRMED"
+}

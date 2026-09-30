@@ -1,0 +1,97 @@
+{
+  "schemaVersion": "1.0.0",
+  "taskId": "hcc-r074-evidence-gain-sensitivity",
+  "objective": "고정 prior 아래 evidence gain 4와 1의 e:1·c:0 score 반응을 비교해 포화 설명의 지지 범위와 경로 대안을 갱신한다",
+  "scope": {
+    "included": [
+      "Run-HCR-R074.cmd",
+      "Run-HCR-R074.py",
+      "R074_MANIFEST.json",
+      "tools/r074_sensitivity/",
+      "experiments/exp-55-evidence-gain-sensitivity/",
+      "experiments/INDEX.json",
+      "experiments/INDEX.ko.md",
+      "HCR-Evidence/exp55/",
+      "HCR-Evidence/r074-validation/"
+    ],
+    "excluded": [
+      "src/",
+      "tests/",
+      "archive/",
+      "HCR-Evidence/exp53/",
+      "HCR-Evidence/exp54/",
+      "experiments/exp-53-selection-input-range/",
+      "experiments/exp-54-pool-drive-decomposition/",
+      "tools/r073_decomposition/"
+    ]
+  },
+  "acceptanceCriteria": [
+    "[AC-001] R072 입력과 R073 대응 replay를 hash로 고정하고 program·initial·top_down·기존 config를 보존하며 gain bundle과 prior 개입만 명시한다",
+    "[AC-002] 24개 수식 replay에서 e:1·c:0의 baseline 차이, gain별 민감도, prior 0 checkpoint 동등성과 R073 대응 6개를 구분한다",
+    "[AC-003] 별도 수식으로 입력·매 tick·수렴·집계·변조 거부와 budget/ambiguity를 검증하고 최종 core 회귀 1회를 통과한다",
+    "[AC-004] 원클릭·결과·다음 질문을 제공하고 same-data 재분석·새 native/학습/독립 표본 0·native cost null·대안 설명을 보존하며 범위·수용 검사를 통과한다"
+  ],
+  "riskLevel": "medium",
+  "workUnits": [
+    {
+      "id": "research",
+      "objective": "고정 prior 아래 evidence gain 4와 1의 e:1·c:0 score 반응을 비교해 포화 설명의 지지 범위와 경로 대안을 갱신한다",
+      "dependencies": [],
+      "writeTargets": [
+        "Run-HCR-R074.cmd",
+        "Run-HCR-R074.py",
+        "R074_MANIFEST.json",
+        "tools/r074_sensitivity/",
+        "experiments/exp-55-evidence-gain-sensitivity/",
+        "experiments/INDEX.json",
+        "experiments/INDEX.ko.md",
+        "HCR-Evidence/exp55/",
+        "HCR-Evidence/r074-validation/"
+      ]
+    }
+  ],
+  "requiredCapabilities": [
+    "change-scope-baseline-capture",
+    "minimal-implementation",
+    "change-scope-assurance",
+    "acceptance-evidence-validation",
+    "mutation-risk-preflight"
+  ],
+  "constraints": [
+    "기존 core와 historical evidence 수정 금지",
+    "observation/memory 재서명·native 실행·feedback·학습 금지",
+    "counterfactual에 native selection/expansions/decision cost 부여 금지",
+    "같은 원자료 재분석을 독립 표본으로 계산 금지",
+    "자동 retry 금지"
+  ],
+  "authorization": {
+    "allowedActions": [
+      "read",
+      "write-scoped-research-files",
+      "run-local-checks",
+      "commit",
+      "merge-local-main",
+      "delete-completed-local-task-branch",
+      "push-origin-main"
+    ],
+    "prohibitedActions": [
+      "force-push",
+      "rewrite-historical-evidence",
+      "overwrite-user-changes"
+    ],
+    "approvalRequired": [
+      "deploy",
+      "tag",
+      "install",
+      "delete-remote-branch"
+    ]
+  },
+  "decision": {
+    "complexity": "simple",
+    "hasConflicts": false
+  },
+  "orchestration": {
+    "requested": false,
+    "mcpAvailable": true
+  }
+}

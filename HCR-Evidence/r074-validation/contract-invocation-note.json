@@ -1,0 +1,7 @@
+{
+  "initial_argument_call_exit": 1,
+  "cause": "CLI accepts --input <file> or stdin; bare positional path ignored and stdin absent",
+  "research_started": false,
+  "corrected_input": "same contract bytes through documented stdin",
+  "automatic_retry": false
+}

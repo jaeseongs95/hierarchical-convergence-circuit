@@ -1,0 +1,1 @@
+{"cause":"Report validator expects artifact/expectedArtifactDigest, not report/reportArtifactDigest","corrected_validation":{"kind":"change-scope-report","valid":true},"initial_exit":1,"scope_report_unchanged":true}

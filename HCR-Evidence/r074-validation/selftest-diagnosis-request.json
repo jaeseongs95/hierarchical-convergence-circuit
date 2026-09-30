@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "1.0.0",
+  "objective": "Diagnose exact grid selftest failure before recurrence",
+  "expectedBehavior": "Canonical serialization preserves grid membership and explicit cell array order",
+  "episodes": [
+    {
+      "attemptId": "r074-first-selftest",
+      "operation": "validate frozen grid order",
+      "stableFailureTuple": {
+        "error": "Exact grid",
+        "phase": "selftest",
+        "frame": "check_spec expected cells"
+      },
+      "environmentDigest": "sha256:5fb244a041f4de597ac267d4759fa51a7aea8fc8400ee0c8ab0f0603653f4e87",
+      "changeSummary": "Gain dict insertion order differs after canonical sort_keys JSON",
+      "evidenceRefs": [
+        "HCR-Evidence/r074-validation/selftest-order-observation.json"
+      ]
+    }
+  ],
+  "lastKnownGood": {
+    "locator": "HCR-Evidence/exp54/r073-20260930T211742Z-26d148fdc6/verification.json"
+  },
+  "constraints": [
+    "Preserve failed run and research predictions",
+    "No native runtime or historical evidence mutation"
+  ],
+  "authorization": {
+    "allowedChecks": [
+      "read-scoped-files",
+      "local-json-order-check"
+    ],
+    "approvalRequired": [],
+    "prohibitedChecks": [
+      "edit-historical-evidence"
+    ]
+  },
+  "evidenceBindings": [
+    {
+      "evidenceRef": "HCR-Evidence/r074-validation/selftest-order-observation.json",
+      "artifactDigest": "sha256:5fb244a041f4de597ac267d4759fa51a7aea8fc8400ee0c8ab0f0603653f4e87",
+      "hypothesisIds": [
+        "ORDER"
+      ],
+      "relation": "supports"
+    },
+    {
+      "evidenceRef": "HCR-Evidence/r074-validation/selftest-order-observation.json",
+      "artifactDigest": "sha256:5fb244a041f4de597ac267d4759fa51a7aea8fc8400ee0c8ab0f0603653f4e87",
+      "hypothesisIds": [
+        "DATA"
+      ],
+      "relation": "refutes"
+    }
+  ],
+  "attemptedChecks": [],
+  "candidateHypotheses": [
+    {
+      "id": "ORDER",
+      "causalLayer": "implementation",
+      "statement": "Grid validator reconstructs order from dictionary keys changed by canonical serialization",
+      "supportingEvidence": [
+        "HCR-Evidence/r074-validation/selftest-order-observation.json"
+      ],
+      "contradictingEvidence": [],
+      "state": "confirmed",
+      "causeAnalysis": {
+        "symptom": "Exact grid assertion before evaluator",
+        "mechanism": "sort_keys serialization places g1 before g4 but frozen cell array starts g4",
+        "rootCondition": "Validator derives experimental array order from JSON object insertion order",
+        "discriminatingEvidence": {
+          "statement": "Cell identities/numeric values match as a set; order alone differs; plan equals frozen spec",
+          "evidenceRefs": [
+            "HCR-Evidence/r074-validation/selftest-order-observation.json"
+          ]
+        },
+        "eliminationObservation": {
+          "statement": "Failure occurs before simulate; no research replay or regression exists; parent integrity completed",
+          "evidenceRefs": [
+            "HCR-Evidence/r074-validation/selftest-order-observation.json"
+          ]
+        }
+      }
+    },
+    {
+      "id": "DATA",
+      "causalLayer": "input",
+      "statement": "Numeric experimental conditions or grid membership changed",
+      "supportingEvidence": [],
+      "contradictingEvidence": [
+        "HCR-Evidence/r074-validation/selftest-order-observation.json"
+      ],
+      "state": "refuted"
+    }
+  ],
+  "candidateTests": [],
+  "accessBlockers": []
+}

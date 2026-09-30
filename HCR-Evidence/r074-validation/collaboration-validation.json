@@ -1,0 +1,1 @@
+{"scope":"structural-only","valid":true,"errors":[],"diagnostic":"This check validates the schema and deterministic route only; it does not read or authenticate source receipts."}

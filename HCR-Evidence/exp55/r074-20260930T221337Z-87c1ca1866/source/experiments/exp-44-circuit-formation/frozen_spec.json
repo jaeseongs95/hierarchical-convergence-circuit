@@ -1,0 +1,411 @@
+{
+  "schema": "hcc-r063-spec-v1",
+  "frozen_before_research_execution": true,
+  "parent_commit": "c59dbf1766df2226cc0085ef5c643f8aad2386e0",
+  "config": {
+    "kernel": {
+      "evidence_gain": 4.0,
+      "relation_gain": 2.0,
+      "top_down_gain": 0.35,
+      "prior_gain": 2.0,
+      "self_excitation": 0.25,
+      "inhibition": 0.2,
+      "damping": 0.45,
+      "temperature": 1.0,
+      "residual_tolerance": 1e-06,
+      "margin_threshold": 0.3,
+      "patience": 4,
+      "max_ticks": 160,
+      "max_edges": 8,
+      "max_paths": 4,
+      "max_path_length": 4,
+      "max_groups": 32,
+      "max_search": 2048,
+      "min_valid_episodes": 3,
+      "max_circuits": 16,
+      "weakening": 0.2,
+      "learning_rate": 0.25,
+      "max_observation_requests": 2
+    },
+    "pattern_lengths": [
+      2,
+      3
+    ],
+    "max_expansions": 64,
+    "max_frontier": 32,
+    "max_binding_checks": 1024,
+    "max_pool_candidates": 4,
+    "activation_threshold": 0.55,
+    "mismatch_threshold": 0.8,
+    "circuit_inhibition": 0.15
+  },
+  "limits": {
+    "max_advances_per_session": 16,
+    "max_kernel_ticks_per_session": 5120
+  },
+  "research": {
+    "training": [
+      {
+        "id": "train-1",
+        "observation": {
+          "episode_id": "train-1",
+          "revision": 0,
+          "start": "train-1-v0",
+          "goal": "train-1-v2",
+          "edges": [
+            {
+              "id": "train-1-e0",
+              "source": "train-1-v0",
+              "target": "train-1-v1",
+              "score": 1.0
+            },
+            {
+              "id": "train-1-e1",
+              "source": "train-1-v1",
+              "target": "train-1-v2",
+              "score": 1.0
+            }
+          ]
+        }
+      },
+      {
+        "id": "train-2",
+        "observation": {
+          "episode_id": "train-2",
+          "revision": 0,
+          "start": "train-2-v0",
+          "goal": "train-2-v3",
+          "edges": [
+            {
+              "id": "train-2-e0",
+              "source": "train-2-v0",
+              "target": "train-2-v1",
+              "score": 1.0
+            },
+            {
+              "id": "train-2-e1",
+              "source": "train-2-v1",
+              "target": "train-2-v2",
+              "score": 1.0
+            },
+            {
+              "id": "train-2-e2",
+              "source": "train-2-v2",
+              "target": "train-2-v3",
+              "score": 1.0
+            }
+          ]
+        }
+      },
+      {
+        "id": "train-3",
+        "observation": {
+          "episode_id": "train-3",
+          "revision": 0,
+          "start": "train-3-v0",
+          "goal": "train-3-v4",
+          "edges": [
+            {
+              "id": "train-3-e0",
+              "source": "train-3-v0",
+              "target": "train-3-v1",
+              "score": 1.0
+            },
+            {
+              "id": "train-3-e1",
+              "source": "train-3-v1",
+              "target": "train-3-v2",
+              "score": 1.0
+            },
+            {
+              "id": "train-3-e2",
+              "source": "train-3-v2",
+              "target": "train-3-v3",
+              "score": 1.0
+            },
+            {
+              "id": "train-3-e3",
+              "source": "train-3-v3",
+              "target": "train-3-v4",
+              "score": 1.0
+            }
+          ]
+        }
+      }
+    ],
+    "cases": [
+      {
+        "id": "renamed-control",
+        "observation": {
+          "episode_id": "renamed-control",
+          "revision": 0,
+          "start": "renamed-control-v0",
+          "goal": "renamed-control-v2",
+          "edges": [
+            {
+              "id": "renamed-control-e0",
+              "source": "renamed-control-v0",
+              "target": "renamed-control-v1",
+              "score": 1.0
+            },
+            {
+              "id": "renamed-control-e1",
+              "source": "renamed-control-v1",
+              "target": "renamed-control-v2",
+              "score": 1.0
+            }
+          ]
+        }
+      },
+      {
+        "id": "new-branch-open",
+        "observation": {
+          "episode_id": "new-branch-open",
+          "revision": 0,
+          "start": "new-branch-open-v0",
+          "goal": "new-branch-open-v4",
+          "edges": [
+            {
+              "id": "new-branch-open-e0",
+              "source": "new-branch-open-v0",
+              "target": "new-branch-open-v1",
+              "score": 1.0
+            },
+            {
+              "id": "new-branch-open-e1",
+              "source": "new-branch-open-v1",
+              "target": "new-branch-open-v2",
+              "score": 1.0
+            },
+            {
+              "id": "new-branch-open-e2",
+              "source": "new-branch-open-v2",
+              "target": "new-branch-open-v3",
+              "score": 1.0
+            },
+            {
+              "id": "new-branch-open-e3",
+              "source": "new-branch-open-v3",
+              "target": "new-branch-open-v4",
+              "score": 1.0
+            },
+            {
+              "id": "new-branch-open-spur",
+              "source": "new-branch-open-v1",
+              "target": "new-branch-open-sink",
+              "score": 1.0
+            }
+          ]
+        }
+      },
+      {
+        "id": "new-branch-cut",
+        "observation": {
+          "episode_id": "new-branch-cut",
+          "revision": 0,
+          "start": "new-branch-cut-v0",
+          "goal": "new-branch-cut-v4",
+          "edges": [
+            {
+              "id": "new-branch-cut-e0",
+              "source": "new-branch-cut-v0",
+              "target": "new-branch-cut-v1",
+              "score": 1.0
+            },
+            {
+              "id": "new-branch-cut-e1",
+              "source": "new-branch-cut-v1",
+              "target": "new-branch-cut-v2",
+              "score": 1.0
+            },
+            {
+              "id": "new-branch-cut-e2",
+              "source": "new-branch-cut-v2",
+              "target": "new-branch-cut-v3",
+              "score": 1.0
+            },
+            {
+              "id": "new-branch-cut-e3",
+              "source": "new-branch-cut-v3",
+              "target": "new-branch-cut-v4",
+              "score": -1.0
+            },
+            {
+              "id": "new-branch-cut-spur",
+              "source": "new-branch-cut-v1",
+              "target": "new-branch-cut-sink",
+              "score": 1.0
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "smoke": {
+    "training": [
+      {
+        "id": "smoke-train-1",
+        "observation": {
+          "episode_id": "smoke-train-1",
+          "revision": 0,
+          "start": "smoke-train-1-v0",
+          "goal": "smoke-train-1-v2",
+          "edges": [
+            {
+              "id": "smoke-train-1-e0",
+              "source": "smoke-train-1-v0",
+              "target": "smoke-train-1-v1",
+              "score": 1.0
+            },
+            {
+              "id": "smoke-train-1-e1",
+              "source": "smoke-train-1-v1",
+              "target": "smoke-train-1-v2",
+              "score": 1.0
+            }
+          ]
+        }
+      },
+      {
+        "id": "smoke-train-2",
+        "observation": {
+          "episode_id": "smoke-train-2",
+          "revision": 0,
+          "start": "smoke-train-2-v0",
+          "goal": "smoke-train-2-v2",
+          "edges": [
+            {
+              "id": "smoke-train-2-e0",
+              "source": "smoke-train-2-v0",
+              "target": "smoke-train-2-v1",
+              "score": 1.0
+            },
+            {
+              "id": "smoke-train-2-e1",
+              "source": "smoke-train-2-v1",
+              "target": "smoke-train-2-v2",
+              "score": 1.0
+            }
+          ]
+        }
+      },
+      {
+        "id": "smoke-train-3",
+        "observation": {
+          "episode_id": "smoke-train-3",
+          "revision": 0,
+          "start": "smoke-train-3-v0",
+          "goal": "smoke-train-3-v2",
+          "edges": [
+            {
+              "id": "smoke-train-3-e0",
+              "source": "smoke-train-3-v0",
+              "target": "smoke-train-3-v1",
+              "score": 1.0
+            },
+            {
+              "id": "smoke-train-3-e1",
+              "source": "smoke-train-3-v1",
+              "target": "smoke-train-3-v2",
+              "score": 1.0
+            }
+          ]
+        }
+      }
+    ],
+    "cases": [
+      {
+        "id": "smoke-open",
+        "observation": {
+          "episode_id": "smoke-open",
+          "revision": 0,
+          "start": "smoke-open-v0",
+          "goal": "smoke-open-v2",
+          "edges": [
+            {
+              "id": "smoke-open-e0",
+              "source": "smoke-open-v0",
+              "target": "smoke-open-v1",
+              "score": 1.0
+            },
+            {
+              "id": "smoke-open-e1",
+              "source": "smoke-open-v1",
+              "target": "smoke-open-v2",
+              "score": 1.0
+            }
+          ]
+        }
+      },
+      {
+        "id": "smoke-cut",
+        "observation": {
+          "episode_id": "smoke-cut",
+          "revision": 0,
+          "start": "smoke-cut-v0",
+          "goal": "smoke-cut-v2",
+          "edges": [
+            {
+              "id": "smoke-cut-e0",
+              "source": "smoke-cut-v0",
+              "target": "smoke-cut-v1",
+              "score": 1.0
+            },
+            {
+              "id": "smoke-cut-e1",
+              "source": "smoke-cut-v1",
+              "target": "smoke-cut-v2",
+              "score": -1.0
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "interventions": {
+    "memory_snapshots": [
+      0,
+      3
+    ],
+    "use_circuits": [
+      false,
+      true
+    ],
+    "top_down": true,
+    "judgment_prior": "route_only",
+    "allow_reexpansion": true,
+    "selector": "native first ready readout + existing dependency gate",
+    "scheduler": "native input_order",
+    "learning_feedback": "independent reference assessment after native finished branch",
+    "feedback_link_change": false
+  },
+  "reference_contract": "Authored toy world passability equals sign(score); all scores nonzero; generator sees public input only and receives validated feedback after inference",
+  "expected_training": "Existing min_valid_episodes=3 rule can compile length-2 after three valid positive distinct episodes; length-3 remains pending after two. Treat as rule operation, not emergent learning law.",
+  "hypotheses": {
+    "formation": "A compiled length-2 circuit with exact native episode/proof/feedback provenance appears if all training episodes are positive and externally valid",
+    "reuse": "post-training ON uses a learned circuit on frozen evaluation inputs",
+    "expansion": "post ON strictly fewer expansions than post OFF when reuse occurs and neither execution is budget/native-failed",
+    "kernel": "post ON strictly fewer native kernel ticks under the same applicability condition",
+    "outcome": "raw value, acceptance, adopted value, support-gap count and proof validity preserved post ON vs OFF"
+  },
+  "controls": [
+    "pre memory gate comparison",
+    "OFF before vs after comparison",
+    "renaming-only control is not compositional transfer",
+    "unseen branch topology includes an open and a cut case"
+  ],
+  "boundaries": {
+    "research_training": 3,
+    "research_eval": 12,
+    "automatic_retry": false,
+    "extra_training": false,
+    "independent_samples": false,
+    "core_changes": false,
+    "energy_measured": false,
+    "peak_memory_measured": false,
+    "learning_rate_tuning": false,
+    "feedback_mistakes_are_not_repaired_by_host": true
+  },
+  "stopping": "Implementation synthetic checks may be corrected before research, preserving prior failures. One research pass; no outcome-dependent source/spec/metric changes or rerun. Budget/no-candidate stays measurable with feedback omitted.",
+  "next_question": "First distinguish formation, actual reuse, quality and separate costs; decide next failure/re-expansion question from those observations."
+}

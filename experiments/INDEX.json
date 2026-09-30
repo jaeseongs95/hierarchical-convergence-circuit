@@ -1025,6 +1025,26 @@
       "source_commit": null,
       "source_commit_note": "Sealed R072 reanalysis: 12 native anchors and 18 evaluator formula replays; evidence-only/prior-only/joint decomposition; no new native execution, learning or independent sample.",
       "standalone_python_entrypoint": "Run-HCR-R073.py"
+    },
+    {
+      "current_python_entrypoint": null,
+      "default_dispatcher_promoted": false,
+      "design": "experiments/exp-55-evidence-gain-sensitivity/design.ko.md",
+      "directory": "experiments/exp-55-evidence-gain-sensitivity",
+      "evidence_directory": "HCR-Evidence/exp55",
+      "execution_status": "standalone_candidate_contract",
+      "experiment_id": "EXP-55",
+      "frozen_design": "experiments/exp-55-evidence-gain-sensitivity/frozen_spec.json",
+      "implementation_validation_directory": "HCR-Evidence/r074-validation",
+      "legacy_python_entrypoint": null,
+      "release_manifest": "R074_MANIFEST.json",
+      "revision_references": [
+        "r074"
+      ],
+      "run_status": "read_per_run_evidence",
+      "source_commit": null,
+      "source_commit_note": "Sealed R072/R073 reanalysis: 24 evaluator gain/prior sensitivity cells; six prior replay correspondences; no new native execution, training or independent sample.",
+      "standalone_python_entrypoint": "Run-HCR-R074.py"
     }
   ],
   "inventory_commit": "afb5d5e5b67906b7697f16163e166f59b17e1655",

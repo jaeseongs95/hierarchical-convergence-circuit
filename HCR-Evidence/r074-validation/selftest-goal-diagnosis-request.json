@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "1.0.0",
+  "objective": "Diagnose independent input reconstruction KeyError",
+  "expectedBehavior": "Reconstruct only explicit evidence/prior drives; goal absence remains absence",
+  "episodes": [
+    {
+      "attemptId": "r074-input-precheck",
+      "operation": "independent drive reconstruction",
+      "stableFailureTuple": {
+        "error": "KeyError: 'goal'",
+        "phase": "input-precheck",
+        "frame": "expected_inputs drives[key]"
+      },
+      "environmentDigest": "sha256:e35cd5a12b4179c13364f3afb365df3d379de5677bb4dd5c192a32703ec2b85b",
+      "changeSummary": "Independent checker expects an explicit goal drive absent in sealed native pool",
+      "evidenceRefs": [
+        "HCR-Evidence/r074-validation/selftest-goal-observation.json"
+      ]
+    }
+  ],
+  "lastKnownGood": {
+    "locator": "HCR-Evidence/exp54/r073-20260930T211742Z-26d148fdc6/verification.json"
+  },
+  "constraints": [
+    "Preserve failed run and research predictions",
+    "No native runtime or historical evidence mutation"
+  ],
+  "authorization": {
+    "allowedChecks": [
+      "read-scoped-files",
+      "local-json-order-check"
+    ],
+    "approvalRequired": [],
+    "prohibitedChecks": [
+      "edit-historical-evidence"
+    ]
+  },
+  "evidenceBindings": [
+    {
+      "evidenceRef": "HCR-Evidence/r074-validation/selftest-goal-observation.json",
+      "artifactDigest": "sha256:e35cd5a12b4179c13364f3afb365df3d379de5677bb4dd5c192a32703ec2b85b",
+      "hypothesisIds": [
+        "GOAL"
+      ],
+      "relation": "supports"
+    },
+    {
+      "evidenceRef": "HCR-Evidence/r074-validation/selftest-goal-observation.json",
+      "artifactDigest": "sha256:e35cd5a12b4179c13364f3afb365df3d379de5677bb4dd5c192a32703ec2b85b",
+      "hypothesisIds": [
+        "DRIFT"
+      ],
+      "relation": "refutes"
+    }
+  ],
+  "attemptedChecks": [],
+  "candidateHypotheses": [
+    {
+      "id": "GOAL",
+      "causalLayer": "implementation",
+      "statement": "Verifier confuses goal group existence with explicit direct drive existence",
+      "supportingEvidence": [
+        "HCR-Evidence/r074-validation/selftest-goal-observation.json"
+      ],
+      "contradictingEvidence": [],
+      "state": "confirmed",
+      "causeAnalysis": {
+        "symptom": "KeyError: 'goal' before recurrence",
+        "mechanism": "Reads absent goal key from sealed explicit drive map",
+        "rootCondition": "Goal receives links, with no explicit drive entry; verifier enumerates all groups",
+        "discriminatingEvidence": {
+          "statement": "Sealed pool has goal group but drive map has only e:0,e:1,p:0:0,p:0:1,c:0",
+          "evidenceRefs": [
+            "HCR-Evidence/r074-validation/selftest-goal-observation.json"
+          ]
+        },
+        "eliminationObservation": {
+          "statement": "Original sealed raw keys verified; no producer or research condition changed",
+          "evidenceRefs": [
+            "HCR-Evidence/r074-validation/selftest-goal-observation.json"
+          ]
+        }
+      }
+    },
+    {
+      "id": "DRIFT",
+      "causalLayer": "input",
+      "statement": "Input corruption removed an originally explicit goal drive",
+      "supportingEvidence": [],
+      "contradictingEvidence": [
+        "HCR-Evidence/r074-validation/selftest-goal-observation.json"
+      ],
+      "state": "refuted"
+    }
+  ],
+  "candidateTests": [],
+  "accessBlockers": []
+}

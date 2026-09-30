@@ -1,0 +1,11 @@
+{
+  "second_run": "HCR-Evidence\\exp55\\r074-20260930T221139Z-4d9aee8c0f",
+  "stage": "freeze",
+  "error": "R074 source drift: tools/r074_sensitivity/audit.py",
+  "cause": "Launcher was incorrectly continued after failed input precheck; manifest refresh had not run",
+  "source_guard_blocked": true,
+  "research_replays": 0,
+  "regression_runs": 0,
+  "first_and_second_evidence_preserved": true,
+  "correction": "Require successful targeted check and manifest refresh before separate launcher call"
+}

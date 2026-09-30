@@ -1,0 +1,18 @@
+{
+  "original_gain_key_order": [
+    "g4",
+    "g1"
+  ],
+  "canonical_plan_gain_key_order": [
+    "g1",
+    "g4"
+  ],
+  "cells_first": "g4-fixed-M0-s06",
+  "reconstructed_first": "g1-fixed-M0-s06",
+  "set_equal": true,
+  "cell_numeric_values_equal": true,
+  "plan_semantically_equal": true,
+  "new_formula_replays": 0,
+  "new_core_regression_runs": 0,
+  "traceback_sha256": "ab5e7eb1343f840e5c83922837107052a63fda2072bfec1c13bc0d71bedc3b07"
+}
