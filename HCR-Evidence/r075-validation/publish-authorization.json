@@ -1,0 +1,13 @@
+{
+  "actionClass": "publish",
+  "operationId": "r075-push-research",
+  "targetLocators": [
+    "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main"
+  ],
+  "environments": [
+    "external"
+  ],
+  "candidate_artifact_digest": "sha256:075f0f6ab18ec7658dc0bf7c30cf04fe7089af2878997ea211d8f99fb09af20c",
+  "source": "Direct user continuation and directly user-supplied AGENTS section8 authorize ordinary origin/main push and completed local task branch deletion",
+  "scope": "R075 additive fixed-config drive factorization and sealed evidence; user-authorized ordinary Git delivery"
+}

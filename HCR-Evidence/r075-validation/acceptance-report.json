@@ -1,0 +1,185 @@
+{
+  "schemaVersion": "1.0.0",
+  "target": {
+    "kind": "artifact",
+    "identifier": "R075-sealed-drive-factorization",
+    "digest": "sha256:075f0f6ab18ec7658dc0bf7c30cf04fe7089af2878997ea211d8f99fb09af20c"
+  },
+  "criteria": [
+    {
+      "criterionId": "AC-001",
+      "statement": "[AC-001] 봉인 R072 입력과 R074 대조를 고정하고 prior 0·M0·program·initial·top_down·kernel config를 유지하며 e0/e1 drive scale만 분리한다",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "integrity",
+        "command:oneclick"
+      ],
+      "observedResult": "Exact pinned input/source/raw/bundle/ZIP bytes; catalog-only post-run addition verified; Verification command exited with code 0.",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    },
+    {
+      "criterionId": "AC-002",
+      "statement": "[AC-002] 12 evaluator 조건에서 다섯 node의 score 차이·분리 scale 효과·상호작용을 계산하고 기존 6조건과 혼합 6조건을 구분한다",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "formula",
+        "summary",
+        "command:oneclick"
+      ],
+      "observedResult": "12 separate recurrence trajectories; six exact R074 matches;9raw/5summary mutations rejected; unknown and ambiguity preserved; Five-node score deltas, separated scale effects and signed interactions recomputed from verified raw; Verification command exited with code 0.",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    },
+    {
+      "criterionId": "AC-003",
+      "statement": "[AC-003] 독립 입력 재구성·별도 recurrence·집계 재계산·변조 거부·budget/ambiguity 보존을 확인하고 최종 core 회귀 1회에서 새 실패나 skip이 없다",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "integrity",
+        "formula",
+        "regression",
+        "command:oneclick"
+      ],
+      "observedResult": "Exact pinned input/source/raw/bundle/ZIP bytes; catalog-only post-run addition verified; 12 separate recurrence trajectories; six exact R074 matches;9raw/5summary mutations rejected; unknown and ambiguity preserved; 602 tests once:599passed3baseline environment skips; no failure/error/new skip; Verification command exited with code 0.",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    },
+    {
+      "criterionId": "AC-004",
+      "statement": "[AC-004] 원클릭·보존 evidence·결과와 다음 native 질문을 제공하며 표본/비용 경계·범위·수용 검증과 승인된 일반 Git 전달을 완료한다",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "report",
+        "next",
+        "scope",
+        "delivery",
+        "command:delivery"
+      ],
+      "observedResult": "Bounded same-data interpretation with native/sample/cost boundaries; Formula decomposition closed; unexecuted native two-candidate question defined; PASS; preexisting files untouched and no excluded/unplanned/overlap; Signed research commit merged to localmain; researchbranch deleted; ordinary push0 and remote==localmain; Verification command exited with code 0.",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    }
+  ],
+  "verifiedEvidenceIndex": [
+    {
+      "evidenceId": "integrity",
+      "kind": "test",
+      "locator": "HCR-Evidence/r075-validation/delivery-verification.json",
+      "digest": "sha256:1aae17d47bbe58b2ff25927692fbb0db9594c07ed4c7d41d1dfe5bace7021fda",
+      "targetDigest": "sha256:075f0f6ab18ec7658dc0bf7c30cf04fe7089af2878997ea211d8f99fb09af20c",
+      "criterionIds": [
+        "AC-001",
+        "AC-003"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "formula",
+      "kind": "test",
+      "locator": "HCR-Evidence/exp56/r075-20260930T230143Z-63f9346db8/verification.json",
+      "digest": "sha256:a0c6d44718fcbc540275265eb08cbf621ce8577b3568c39ac31056609704f93d",
+      "targetDigest": "sha256:075f0f6ab18ec7658dc0bf7c30cf04fe7089af2878997ea211d8f99fb09af20c",
+      "criterionIds": [
+        "AC-002",
+        "AC-003"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "summary",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp56/r075-20260930T230143Z-63f9346db8/summary.json",
+      "digest": "sha256:a2a387c3e16810bafd4db9d4c7a8e9a4b227ea908424fc8ce6743de04c9e3d32",
+      "targetDigest": "sha256:075f0f6ab18ec7658dc0bf7c30cf04fe7089af2878997ea211d8f99fb09af20c",
+      "criterionIds": [
+        "AC-002"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "regression",
+      "kind": "test",
+      "locator": "HCR-Evidence/exp56/r075-20260930T230143Z-63f9346db8/validation/core_regression.json",
+      "digest": "sha256:d5daace122f8617bfd42c41ab59ddb55331aae622d85dc3ab6f6439a54928ab9",
+      "targetDigest": "sha256:075f0f6ab18ec7658dc0bf7c30cf04fe7089af2878997ea211d8f99fb09af20c",
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "report",
+      "kind": "document",
+      "locator": "experiments/exp-56-drive-factorization/RESULTS.ko.md",
+      "digest": "sha256:ff06eb2b1d2e8841a52d6de238e3bfca26c4568b582f396525be5d83e3786670",
+      "targetDigest": "sha256:075f0f6ab18ec7658dc0bf7c30cf04fe7089af2878997ea211d8f99fb09af20c",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "next",
+      "kind": "document",
+      "locator": "experiments/exp-56-drive-factorization/NEXT.ko.md",
+      "digest": "sha256:cdc89298484427818caecd3eb6a1e0cb9b0fb4712c77942c32d2b26073318337",
+      "targetDigest": "sha256:075f0f6ab18ec7658dc0bf7c30cf04fe7089af2878997ea211d8f99fb09af20c",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "scope",
+      "kind": "test",
+      "locator": "HCR-Evidence/r075-validation/scope-report.delivery.json",
+      "digest": "sha256:6e68ddb46eaac259a3c31334330a6e02995c113b000c9d12117cbeeb8c87fd69",
+      "targetDigest": "sha256:075f0f6ab18ec7658dc0bf7c30cf04fe7089af2878997ea211d8f99fb09af20c",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "delivery",
+      "kind": "test",
+      "locator": "HCR-Evidence/r075-validation/git-delivery.json",
+      "digest": "sha256:8a84673a25353f473374c84b72e38b6bcf5a7df47b5afee253a00af8d49d7cef",
+      "targetDigest": "sha256:075f0f6ab18ec7658dc0bf7c30cf04fe7089af2878997ea211d8f99fb09af20c",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "command:oneclick",
+      "kind": "verification-command",
+      "locator": "HCR-Evidence/exp56/r075-20260930T230143Z-63f9346db8/result.json",
+      "digest": "sha256:e5768ff0ffc0b8ead540e8d7814684838e09fcfd7916f49952bcda9766f6dfb0",
+      "targetDigest": "sha256:075f0f6ab18ec7658dc0bf7c30cf04fe7089af2878997ea211d8f99fb09af20c",
+      "criterionIds": [
+        "AC-001",
+        "AC-002",
+        "AC-003"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "command:delivery",
+      "kind": "verification-command",
+      "locator": "HCR-Evidence/r075-validation/git-delivery.json",
+      "digest": "sha256:df23bfb4958cf44c9fb2539986d95a3f6715d9db2e87cab9bd748d8a48435b7b",
+      "targetDigest": "sha256:075f0f6ab18ec7658dc0bf7c30cf04fe7089af2878997ea211d8f99fb09af20c",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports"
+    }
+  ],
+  "unresolvedCriteria": [],
+  "limitations": [
+    "Same sealed data:12formula cells,6prior correspondences,6mixed-scale interventions,0new native/training/feedback/independent samples",
+    "Finite drive-level effects of one authored program at prior0/M0; no native selection,learning,global stability claim",
+    "Native costs and energy/peak memory remain null;3existing symlink capability skips retained",
+    "Catalog finalized after sealed experiment and checked separately; first delivery check failure preserved",
+    "Project AGENTS edited outside Git repository; cloud test permission recorded but no cloud test executed"
+  ],
+  "verdict": "PASS"
+}

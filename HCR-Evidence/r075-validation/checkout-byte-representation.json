@@ -1,0 +1,9 @@
+{
+  "verified": true,
+  "cause": "Git text=auto checkout converted the new cmd to CRLF",
+  "restored_to_original_frozen_bytes": [
+    "Run-HCR-R075.cmd"
+  ],
+  "semantic_source_changes": 0,
+  "research_rerun": false
+}

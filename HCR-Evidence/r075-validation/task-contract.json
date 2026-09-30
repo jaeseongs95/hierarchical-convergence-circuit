@@ -205,7 +205,7 @@
         {
           "criterionId": "AC-001",
           "statement": "[AC-001] 봉인 R072 입력과 R074 대조를 고정하고 prior 0·M0·program·initial·top_down·kernel config를 유지하며 e0/e1 drive scale만 분리한다",
-          "verificationMethod": "hash·raw recurrence·summary·変조 거부·최종 회귀·문서/범위/전달 직접 확인",
+          "verificationMethod": "hash·raw recurrence·summary·변조 거부·최종 회귀·문서/범위/전달 직접 확인",
           "expectedEvidenceKinds": [
             "file",
             "test",
@@ -216,7 +216,7 @@
         {
           "criterionId": "AC-002",
           "statement": "[AC-002] 12 evaluator 조건에서 다섯 node의 score 차이·분리 scale 효과·상호작용을 계산하고 기존 6조건과 혼합 6조건을 구분한다",
-          "verificationMethod": "hash·raw recurrence·summary·変조 거부·최종 회귀·문서/범위/전달 직접 확인",
+          "verificationMethod": "hash·raw recurrence·summary·변조 거부·최종 회귀·문서/범위/전달 직접 확인",
           "expectedEvidenceKinds": [
             "file",
             "test",
@@ -227,7 +227,7 @@
         {
           "criterionId": "AC-003",
           "statement": "[AC-003] 독립 입력 재구성·별도 recurrence·집계 재계산·변조 거부·budget/ambiguity 보존을 확인하고 최종 core 회귀 1회에서 새 실패나 skip이 없다",
-          "verificationMethod": "hash·raw recurrence·summary·変조 거부·최종 회귀·문서/범위/전달 직접 확인",
+          "verificationMethod": "hash·raw recurrence·summary·변조 거부·최종 회귀·문서/범위/전달 직접 확인",
           "expectedEvidenceKinds": [
             "file",
             "test",
@@ -238,7 +238,7 @@
         {
           "criterionId": "AC-004",
           "statement": "[AC-004] 원클릭·보존 evidence·결과와 다음 native 질문을 제공하며 표본/비용 경계·범위·수용 검증과 승인된 일반 Git 전달을 완료한다",
-          "verificationMethod": "hash·raw recurrence·summary·変조 거부·최종 회귀·문서/범위/전달 직접 확인",
+          "verificationMethod": "hash·raw recurrence·summary·변조 거부·최종 회귀·문서/범위/전달 직접 확인",
           "expectedEvidenceKinds": [
             "file",
             "test",
