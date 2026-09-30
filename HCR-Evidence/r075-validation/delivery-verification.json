@@ -1,0 +1,34 @@
+{
+  "verified": true,
+  "run": "HCR-Evidence/exp56/r075-20260930T230143Z-63f9346db8",
+  "source_files": 478,
+  "bundle_files": 521,
+  "zip_sha256": "1649afcf2dfd27c0cfaf679d61ba04388313dc23648d8ace2c43fbce3f85bbae",
+  "original_and_copy_input_bytes_exact": true,
+  "frozen_snapshot_bytes_exact": true,
+  "current_computational_source_bytes_exact": true,
+  "post_run_catalog_addition_verified": true,
+  "changed_current_catalog_paths": [
+    "experiments/INDEX.json"
+  ],
+  "raw_bundle_zip_bytes_exact": true,
+  "core_regression": {
+    "runs": 1,
+    "tests_run": 602,
+    "passed": 599,
+    "environment_skips": 3,
+    "new_skips": 0
+  },
+  "formula_cells": 12,
+  "prior_replay_correspondences": 6,
+  "mixed_scale_cells": 6,
+  "max_formula_error": 1.7208456881689926e-15,
+  "new_native_research_executions": 0,
+  "new_independent_samples": 0,
+  "index_paths_verified": true,
+  "index_experiments": 57,
+  "default_dispatcher_promoted": false,
+  "automatic_retry": false,
+  "failed_research_runs": 0,
+  "delivery_check_failure_preserved": "catalog-observation.json"
+}

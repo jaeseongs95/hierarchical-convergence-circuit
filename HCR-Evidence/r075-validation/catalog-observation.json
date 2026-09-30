@@ -1,0 +1,16 @@
+{
+  "first_failure": "AssertionError in delivery check: frozen inventory equals current inventory",
+  "failed_check": "files(out/source)==source_manifest.files==inventory(root)",
+  "sealed_copy_matches": true,
+  "added_inventory_paths": [],
+  "missing_inventory_paths": [],
+  "changed_frozen_source_paths": [
+    "experiments/INDEX.json"
+  ],
+  "current_catalog_only_appends_exp56": true,
+  "computational_source_changes": [],
+  "evidence_modified": false,
+  "research_oneclick_exit_code": 0,
+  "root_condition": "Catalog finalized after the one-click sealed its source snapshot",
+  "correction": "Retain snapshot and compare computational source exactly; verify the sole post-run catalog addition separately"
+}

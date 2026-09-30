@@ -1,0 +1,17 @@
+{
+  "artifact_ready": true,
+  "target_digest": "sha256:075f0f6ab18ec7658dc0bf7c30cf04fe7089af2878997ea211d8f99fb09af20c",
+  "scope_verdict": "PASS",
+  "verified_criteria": [
+    "AC-001",
+    "AC-002",
+    "AC-003"
+  ],
+  "criterion_004": {
+    "documentation_and_local_checks": "verified",
+    "git_delivery": "pending"
+  },
+  "final_acceptance_verdict": null,
+  "reason": "AC-004 includes actual Git delivery, so final acceptance follows verified remote reflection",
+  "oneclick_exit_code": 0
+}

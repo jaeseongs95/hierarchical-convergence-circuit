@@ -1,0 +1,15 @@
+{
+  "schema": "hcc-r075-source-manifest-v1",
+  "files": {
+    "Run-HCR-R075.cmd": "049b06f46c7dec3235515d524c2874881b739d6e88f3fa0e8e031255ff50f93d",
+    "Run-HCR-R075.py": "e88e0ecbeca16696814b3fa9698b6280ea55ba2e1e9afaed1ce6d919e9377c7e",
+    "tools/r075_factorization/__init__.py": "e2534a9357b8bc25d170965a4d055132148bde0bebccdf69c48f80f29936ca55",
+    "tools/r075_factorization/audit.py": "19645c8f95fae26ddbdb7d255fe9092a5d7b031d4e951d70ee6499e4b334da8b",
+    "tools/r075_factorization/pipeline.py": "582a8f62eadf106c0ed7f90e2a42d0f38e393f242e10bb7f00c41dc533ee24cc",
+    "tools/r075_factorization/replay.py": "2e3ba14137568226e325231d0277a7b52b1ecb20c1586e8518ba953436d23c75",
+    "tools/r075_factorization/verify.py": "e3e5cbb020ac70934b3c2551c16c5d0ea08ca4076a1dcef900d58097dac90bcc",
+    "experiments/exp-56-drive-factorization/design.ko.md": "64f924d973499ab227d5c9ecb6df426036a8e1c0b8864a8976608ea99d45f875",
+    "experiments/exp-56-drive-factorization/frozen_spec.json": "bb352981a0f9e9d167fa3b9f9b6f9dea346418c74ebd6e9d537f186bb330631b"
+  },
+  "scope": "Fixed config and zero prior; e0/e1 direct drive factorization only; six R074 correspondences and six mixed-scale cells; no native behavior claim"
+}

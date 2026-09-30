@@ -1,0 +1,12 @@
+{
+  "parsed_python_files": [
+    "Run-HCR-R075.py",
+    "tools/r075_factorization/__init__.py",
+    "tools/r075_factorization/audit.py",
+    "tools/r075_factorization/pipeline.py",
+    "tools/r075_factorization/replay.py",
+    "tools/r075_factorization/verify.py"
+  ],
+  "frozen_source_manifest_sha256": "7c021771d1b8ce8bca8c67e65f051be9e55890981dfc55094b8cb52aa06c7e71",
+  "research_execution_performed": false
+}

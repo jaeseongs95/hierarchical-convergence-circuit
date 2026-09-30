@@ -1,0 +1,6 @@
+{
+  "verified": true,
+  "command": "git diff --cached --check -- scoped source/docs/index",
+  "exit_code": 0,
+  "sealed_evidence_whitespace_normalized": false
+}

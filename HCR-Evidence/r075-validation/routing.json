@@ -1,0 +1,179 @@
+{
+  "executionMode": "direct-local-specialist-flow",
+  "registry": {
+    "schemaVersion": "1.0.0",
+    "query": {
+      "all": false,
+      "capabilities": [
+        "task-contract-definition",
+        "change-scope-baseline-capture",
+        "minimal-implementation",
+        "change-scope-assurance",
+        "acceptance-evidence-validation",
+        "mutation-risk-preflight"
+      ]
+    },
+    "providers": [
+      {
+        "skillId": "task-contract",
+        "version": "1.1.0",
+        "providerIndex": 0,
+        "capabilities": [
+          "task-contract-definition"
+        ],
+        "executionClass": "bootstrap",
+        "phase": "task-definition",
+        "phaseOrder": 30,
+        "priority": 50,
+        "selectionCriteria": [
+          "unstructured-task-request",
+          "missing-acceptance-criteria",
+          "scope-or-authorization-ambiguity",
+          "explicit-task-contract"
+        ],
+        "preconditions": [
+          "The user request and applicable instruction resolution are available."
+        ],
+        "gate": {
+          "kind": "none",
+          "policy": "none"
+        }
+      },
+      {
+        "skillId": "change-scope-guardian",
+        "version": "1.0.0",
+        "providerIndex": 0,
+        "capabilities": [
+          "change-scope-baseline-capture"
+        ],
+        "executionClass": "workflow",
+        "phase": "scope-baseline",
+        "phaseOrder": 42,
+        "priority": 50,
+        "selectionCriteria": [
+          "mutation-workflow",
+          "dirty-worktree",
+          "explicit-baseline-request"
+        ],
+        "preconditions": [
+          "A readable Git repository and frozen task envelope are available.",
+          "No task mutation has started."
+        ],
+        "gate": {
+          "kind": "precondition",
+          "policy": "conditional"
+        }
+      },
+      {
+        "skillId": "ponytail",
+        "version": "4.10.0",
+        "providerIndex": 0,
+        "capabilities": [
+          "minimal-implementation"
+        ],
+        "executionClass": "workflow",
+        "phase": "implementation",
+        "phaseOrder": 44,
+        "priority": 50,
+        "selectionCriteria": [
+          "code-writing-step",
+          "explicit-minimal-implementation-request"
+        ],
+        "preconditions": [],
+        "gate": {
+          "kind": "none",
+          "policy": "none"
+        }
+      },
+      {
+        "skillId": "mutation-risk-preflight",
+        "version": "1.0.1",
+        "providerIndex": 0,
+        "capabilities": [
+          "mutation-risk-preflight"
+        ],
+        "executionClass": "workflow",
+        "phase": "pre-mutation-gate",
+        "phaseOrder": 45,
+        "priority": 50,
+        "selectionCriteria": [
+          "explicit-preflight-request",
+          "destructive-or-external-mutation"
+        ],
+        "preconditions": [
+          "A concrete mutation action and exact target are available.",
+          "The check runs before the mutation."
+        ],
+        "gate": {
+          "kind": "precondition",
+          "policy": "conditional"
+        }
+      },
+      {
+        "skillId": "change-scope-guardian",
+        "version": "1.0.0",
+        "providerIndex": 1,
+        "capabilities": [
+          "change-scope-assurance"
+        ],
+        "executionClass": "workflow",
+        "phase": "scope-verification",
+        "phaseOrder": 60,
+        "priority": 50,
+        "selectionCriteria": [
+          "implementation-change-present",
+          "explicit-scope-review"
+        ],
+        "preconditions": [
+          "A frozen task envelope and matching workspace baseline are available."
+        ],
+        "gate": {
+          "kind": "precondition",
+          "policy": "conditional"
+        }
+      },
+      {
+        "skillId": "acceptance-evidence-validator",
+        "version": "1.0.0",
+        "providerIndex": 0,
+        "capabilities": [
+          "acceptance-evidence-validation"
+        ],
+        "executionClass": "workflow",
+        "phase": "acceptance-verification",
+        "phaseOrder": 70,
+        "priority": 50,
+        "selectionCriteria": [
+          "explicit-acceptance-evidence-review",
+          "completion-claim-needs-evidence"
+        ],
+        "preconditions": [
+          "A valid TaskEnvelope.v1, fixed target identifier, inspectable evidence locations, and a frozen acceptance request artifact are available."
+        ],
+        "gate": {
+          "kind": "completion",
+          "policy": "conditional"
+        }
+      }
+    ],
+    "missingCapabilities": []
+  },
+  "omitted": {
+    "subagent_coordination": "No explicit delegation and no demonstrated parallel benefit",
+    "independent_audit": "No high-risk core/security/permission/data/deployment mutation",
+    "independent_deliberation": "Frozen minimal factorial directly distinguishes the remaining confound",
+    "model_effort": "No observed current model/effort binding"
+  },
+  "stage_order": [
+    "task-contract",
+    "scope-baseline",
+    "minimal-implementation",
+    "independent-formula-verification",
+    "final-core-regression-once",
+    "scope-assurance",
+    "prepublish-artifact-readiness",
+    "mutation-risk-preflight",
+    "authorized-git-delivery",
+    "final-acceptance-evidence-validation"
+  ]
+}

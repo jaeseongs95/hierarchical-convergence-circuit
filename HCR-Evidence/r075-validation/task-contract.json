@@ -1,0 +1,382 @@
+{
+  "schemaVersion": "1.0.0",
+  "request": {
+    "schemaVersion": "1.0.0",
+    "taskId": "hcc-r075-drive-factorization",
+    "request": "다음작업 이어서 진행해줘. 사용자 제공 AGENTS 제8절의 한 턴 범위를 포함한다.",
+    "instructionResolutionRefs": [
+      "D:/codex/AI논문/AGENTS.md",
+      "user:supplied-global-AGENTS"
+    ],
+    "pathSemantics": "windows",
+    "authorizationEvidence": [
+      {
+        "action": "read",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8"
+      },
+      {
+        "action": "write-scoped-research-files",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8"
+      },
+      {
+        "action": "run-local-checks",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8"
+      },
+      {
+        "action": "commit",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8"
+      },
+      {
+        "action": "merge-local-main",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8"
+      },
+      {
+        "action": "delete-completed-local-task-branch",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8"
+      },
+      {
+        "action": "push-origin-main",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8"
+      },
+      {
+        "action": "force-push",
+        "effect": "prohibit",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS"
+      },
+      {
+        "action": "rewrite-historical-evidence",
+        "effect": "prohibit",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS"
+      },
+      {
+        "action": "overwrite-user-changes",
+        "effect": "prohibit",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS"
+      },
+      {
+        "action": "deploy",
+        "effect": "require-approval",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS"
+      },
+      {
+        "action": "tag",
+        "effect": "require-approval",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS"
+      },
+      {
+        "action": "install",
+        "effect": "require-approval",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS"
+      },
+      {
+        "action": "delete-remote-branch",
+        "effect": "require-approval",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS"
+      }
+    ],
+    "suppliedFacts": [
+      {
+        "statement": "R074 NEXT가 prior 0·M0·e0/e1 scale4/1 2x2와 score 세 점 비교를 제안한다",
+        "locator": "experiments/exp-55-evidence-gain-sensitivity/NEXT.ko.md"
+      }
+    ],
+    "userDecisions": []
+  },
+  "report": {
+    "schemaVersion": "1.0.0",
+    "taskEnvelope": {
+      "schemaVersion": "1.0.0",
+      "taskId": "hcc-r075-drive-factorization",
+      "objective": "e0 배경 drive와 e1 score drive의 scale을 분리해 R074 gain bundle 효과의 기여와 상호작용을 판정한다",
+      "scope": {
+        "included": [
+          "Run-HCR-R075.cmd",
+          "Run-HCR-R075.py",
+          "R075_MANIFEST.json",
+          "tools/r075_factorization/",
+          "experiments/exp-56-drive-factorization/",
+          "experiments/INDEX.json",
+          "experiments/INDEX.ko.md",
+          "HCR-Evidence/exp56/",
+          "HCR-Evidence/r075-validation/"
+        ],
+        "excluded": [
+          "src/",
+          "archive/",
+          "tools/r074_sensitivity/",
+          "HCR-Evidence/exp55/",
+          "HCR-Evidence/r074-validation/"
+        ]
+      },
+      "acceptanceCriteria": [
+        "[AC-001] 봉인 R072 입력과 R074 대조를 고정하고 prior 0·M0·program·initial·top_down·kernel config를 유지하며 e0/e1 drive scale만 분리한다",
+        "[AC-002] 12 evaluator 조건에서 다섯 node의 score 차이·분리 scale 효과·상호작용을 계산하고 기존 6조건과 혼합 6조건을 구분한다",
+        "[AC-003] 독립 입력 재구성·별도 recurrence·집계 재계산·변조 거부·budget/ambiguity 보존을 확인하고 최종 core 회귀 1회에서 새 실패나 skip이 없다",
+        "[AC-004] 원클릭·보존 evidence·결과와 다음 native 질문을 제공하며 표본/비용 경계·범위·수용 검증과 승인된 일반 Git 전달을 완료한다"
+      ],
+      "riskLevel": "medium",
+      "workUnits": [
+        {
+          "id": "research",
+          "objective": "e0 배경 drive와 e1 score drive의 scale을 분리해 R074 gain bundle 효과의 기여와 상호작용을 판정한다",
+          "dependencies": [],
+          "writeTargets": [
+            "Run-HCR-R075.cmd",
+            "Run-HCR-R075.py",
+            "R075_MANIFEST.json",
+            "tools/r075_factorization/",
+            "experiments/exp-56-drive-factorization/",
+            "experiments/INDEX.json",
+            "experiments/INDEX.ko.md",
+            "HCR-Evidence/exp56/",
+            "HCR-Evidence/r075-validation/"
+          ]
+        }
+      ],
+      "requiredCapabilities": [
+        "change-scope-baseline-capture",
+        "minimal-implementation",
+        "change-scope-assurance",
+        "acceptance-evidence-validation",
+        "mutation-risk-preflight"
+      ],
+      "constraints": [
+        "기존 core와 historical evidence 수정 금지",
+        "observation/memory 재서명·native 실행·feedback·학습 금지",
+        "counterfactual에 native selection/expansions/decision cost 부여 금지",
+        "같은 원자료 재분석을 독립 표본으로 계산 금지",
+        "자동 retry 금지"
+      ],
+      "authorization": {
+        "allowedActions": [
+          "read",
+          "write-scoped-research-files",
+          "run-local-checks",
+          "commit",
+          "merge-local-main",
+          "delete-completed-local-task-branch",
+          "push-origin-main"
+        ],
+        "prohibitedActions": [
+          "force-push",
+          "rewrite-historical-evidence",
+          "overwrite-user-changes"
+        ],
+        "approvalRequired": [
+          "deploy",
+          "tag",
+          "install",
+          "delete-remote-branch"
+        ]
+      },
+      "decision": {
+        "complexity": "simple",
+        "hasConflicts": false
+      },
+      "orchestration": {
+        "requested": false,
+        "mcpAvailable": true
+      }
+    },
+    "acceptanceEvidencePlan": {
+      "schemaVersion": "1.0.0",
+      "criteria": [
+        {
+          "criterionId": "AC-001",
+          "statement": "[AC-001] 봉인 R072 입력과 R074 대조를 고정하고 prior 0·M0·program·initial·top_down·kernel config를 유지하며 e0/e1 drive scale만 분리한다",
+          "verificationMethod": "hash·raw recurrence·summary·変조 거부·최종 회귀·문서/범위/전달 직접 확인",
+          "expectedEvidenceKinds": [
+            "file",
+            "test",
+            "document"
+          ],
+          "passCondition": "[AC-001] 봉인 R072 입력과 R074 대조를 고정하고 prior 0·M0·program·initial·top_down·kernel config를 유지하며 e0/e1 drive scale만 분리한다"
+        },
+        {
+          "criterionId": "AC-002",
+          "statement": "[AC-002] 12 evaluator 조건에서 다섯 node의 score 차이·분리 scale 효과·상호작용을 계산하고 기존 6조건과 혼합 6조건을 구분한다",
+          "verificationMethod": "hash·raw recurrence·summary·変조 거부·최종 회귀·문서/범위/전달 직접 확인",
+          "expectedEvidenceKinds": [
+            "file",
+            "test",
+            "document"
+          ],
+          "passCondition": "[AC-002] 12 evaluator 조건에서 다섯 node의 score 차이·분리 scale 효과·상호작용을 계산하고 기존 6조건과 혼합 6조건을 구분한다"
+        },
+        {
+          "criterionId": "AC-003",
+          "statement": "[AC-003] 독립 입력 재구성·별도 recurrence·집계 재계산·변조 거부·budget/ambiguity 보존을 확인하고 최종 core 회귀 1회에서 새 실패나 skip이 없다",
+          "verificationMethod": "hash·raw recurrence·summary·変조 거부·최종 회귀·문서/범위/전달 직접 확인",
+          "expectedEvidenceKinds": [
+            "file",
+            "test",
+            "document"
+          ],
+          "passCondition": "[AC-003] 독립 입력 재구성·별도 recurrence·집계 재계산·변조 거부·budget/ambiguity 보존을 확인하고 최종 core 회귀 1회에서 새 실패나 skip이 없다"
+        },
+        {
+          "criterionId": "AC-004",
+          "statement": "[AC-004] 원클릭·보존 evidence·결과와 다음 native 질문을 제공하며 표본/비용 경계·범위·수용 검증과 승인된 일반 Git 전달을 완료한다",
+          "verificationMethod": "hash·raw recurrence·summary·変조 거부·최종 회귀·문서/범위/전달 직접 확인",
+          "expectedEvidenceKinds": [
+            "file",
+            "test",
+            "document"
+          ],
+          "passCondition": "[AC-004] 원클릭·보존 evidence·결과와 다음 native 질문을 제공하며 표본/비용 경계·범위·수용 검증과 승인된 일반 Git 전달을 완료한다"
+        }
+      ]
+    },
+    "provenance": [
+      {
+        "field": "/objective",
+        "valueSummary": "e0 배경 drive와 e1 score drive의 scale을 분리해 R074 gain bundle 효과의 기여와 상호작용을 판정한다",
+        "sourceLocator": "experiments/exp-55-evidence-gain-sensitivity/NEXT.ko.md",
+        "basis": "verified-inference"
+      },
+      {
+        "field": "/scope",
+        "valueSummary": "EXP56 additive evaluator drive factorization",
+        "sourceLocator": "user:supplied-AGENTS",
+        "basis": "instruction"
+      },
+      {
+        "field": "/riskLevel",
+        "valueSummary": "Reversible local research artifacts and authorized ordinary push",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8",
+        "basis": "verified-inference"
+      },
+      {
+        "field": "/authorization",
+        "valueSummary": "사용자가 직접 제공한 한 턴 Git 전달 범위",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8",
+        "basis": "explicit"
+      }
+    ],
+    "authorizationProvenance": [
+      {
+        "action": "read",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8",
+        "envelopeField": "/authorization/allowedActions"
+      },
+      {
+        "action": "write-scoped-research-files",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8",
+        "envelopeField": "/authorization/allowedActions"
+      },
+      {
+        "action": "run-local-checks",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8",
+        "envelopeField": "/authorization/allowedActions"
+      },
+      {
+        "action": "commit",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8",
+        "envelopeField": "/authorization/allowedActions"
+      },
+      {
+        "action": "merge-local-main",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8",
+        "envelopeField": "/authorization/allowedActions"
+      },
+      {
+        "action": "delete-completed-local-task-branch",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8",
+        "envelopeField": "/authorization/allowedActions"
+      },
+      {
+        "action": "push-origin-main",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8",
+        "envelopeField": "/authorization/allowedActions"
+      },
+      {
+        "action": "force-push",
+        "effect": "prohibit",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS",
+        "envelopeField": "/authorization/prohibitedActions"
+      },
+      {
+        "action": "rewrite-historical-evidence",
+        "effect": "prohibit",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS",
+        "envelopeField": "/authorization/prohibitedActions"
+      },
+      {
+        "action": "overwrite-user-changes",
+        "effect": "prohibit",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS",
+        "envelopeField": "/authorization/prohibitedActions"
+      },
+      {
+        "action": "deploy",
+        "effect": "require-approval",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS",
+        "envelopeField": "/authorization/approvalRequired"
+      },
+      {
+        "action": "tag",
+        "effect": "require-approval",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS",
+        "envelopeField": "/authorization/approvalRequired"
+      },
+      {
+        "action": "install",
+        "effect": "require-approval",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS",
+        "envelopeField": "/authorization/approvalRequired"
+      },
+      {
+        "action": "delete-remote-branch",
+        "effect": "require-approval",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS",
+        "envelopeField": "/authorization/approvalRequired"
+      }
+    ],
+    "assumptions": [],
+    "ambiguities": [],
+    "contradictions": [],
+    "verdict": "PASS"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0.0",
+  "requestArtifactDigest": "sha256:cb000eac2f432ac77af6c0e74b9ae85b74c41146a499e7f85ecfa695365444b1",
+  "failureClusters": [
+    {
+      "fingerprint": "sha256:5769db6d91a73f97b0c307a993a2c91b635eeb77effe615577a03c6b7fc758f2",
+      "episodeIds": [
+        "r075-delivery-check-1"
+      ],
+      "operation": "delivery source inventory comparison",
+      "stableFailureTuple": {
+        "error": "AssertionError",
+        "frame": "frozen source equality to current inventory",
+        "phase": "delivery"
+      },
+      "environmentDigest": "sha256:22e5081cd25571e66e6c08489bbb2eb3568689b6cad2eca5fae2a1f910d1ef42"
+    }
+  ],
+  "observations": [
+    {
+      "id": "OBS-001",
+      "statement": "Attempt r075-delivery-check-1 failed during delivery source inventory comparison in environment sha256:22e5081cd25571e66e6c08489bbb2eb3568689b6cad2eca5fae2a1f910d1ef42.",
+      "evidenceRefs": [
+        "HCR-Evidence/r075-validation/catalog-observation.json"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "CATALOG",
+      "causalLayer": "implementation",
+      "statement": "Delivery equality includes catalog metadata finalized after the experiment",
+      "supportingEvidence": [
+        "HCR-Evidence/r075-validation/catalog-observation.json"
+      ],
+      "contradictingEvidence": [],
+      "state": "confirmed",
+      "causeAnalysis": {
+        "symptom": "Frozen inventory equality assertion failed",
+        "mechanism": "Current INDEX contains EXP56 while sealed INDEX stops at EXP55",
+        "rootCondition": "Catalog was finalized after the source snapshot was sealed",
+        "discriminatingEvidence": {
+          "statement": "Only INDEX hash differs, with exactly one appended EXP56 entry",
+          "evidenceRefs": [
+            "HCR-Evidence/r075-validation/catalog-observation.json"
+          ]
+        },
+        "eliminationObservation": {
+          "statement": "All computational source hashes and sealed snapshot bytes remain exact",
+          "evidenceRefs": [
+            "HCR-Evidence/r075-validation/catalog-observation.json"
+          ]
+        }
+      }
+    },
+    {
+      "id": "DRIFT",
+      "causalLayer": "input",
+      "statement": "Computational source or evidence was changed after research",
+      "supportingEvidence": [],
+      "contradictingEvidence": [
+        "HCR-Evidence/r075-validation/catalog-observation.json"
+      ],
+      "state": "refuted"
+    }
+  ],
+  "nextDiscriminatingTest": null,
+  "confirmedCause": {
+    "causeId": "CATALOG",
+    "hypothesisId": "CATALOG",
+    "statement": "Delivery equality includes catalog metadata finalized after the experiment",
+    "symptom": "Frozen inventory equality assertion failed",
+    "mechanism": "Current INDEX contains EXP56 while sealed INDEX stops at EXP55",
+    "rootCondition": "Catalog was finalized after the source snapshot was sealed",
+    "discriminatingEvidence": {
+      "statement": "Only INDEX hash differs, with exactly one appended EXP56 entry",
+      "evidenceRefs": [
+        "HCR-Evidence/r075-validation/catalog-observation.json"
+      ]
+    },
+    "eliminationObservation": {
+      "statement": "All computational source hashes and sealed snapshot bytes remain exact",
+      "evidenceRefs": [
+        "HCR-Evidence/r075-validation/catalog-observation.json"
+      ]
+    },
+    "evidenceBindings": [
+      {
+        "evidenceRef": "HCR-Evidence/r075-validation/catalog-observation.json",
+        "artifactDigest": "sha256:22e5081cd25571e66e6c08489bbb2eb3568689b6cad2eca5fae2a1f910d1ef42",
+        "hypothesisIds": [
+          "CATALOG"
+        ],
+        "relation": "supports"
+      }
+    ]
+  },
+  "recommendedNextAction": "Use the confirmed cause as input to a separately authorized remediation task.",
+  "limitations": [],
+  "verdict": "CAUSE_CONFIRMED"
+}

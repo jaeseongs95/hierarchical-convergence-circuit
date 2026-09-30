@@ -64,3 +64,5 @@ EXP-53 / R072: [고정 선택 경계의 입력 범위](exp-53-selection-input-ra
 EXP-54 / R073: [pool drive 수식 분해](exp-54-pool-drive-decomposition/design.ko.md). `Run-HCR-R073.cmd`; 봉인 R072의 12 native 관찰 검산과 evidence-only/prior-only/joint 18 replay. 새 native·학습·독립 표본 0, counterfactual eligibility와 비용 경계를 보존한다.
 
 EXP-55 / R074: [evidence gain과 유한 score 반응](exp-55-evidence-gain-sensitivity/design.ko.md). `Run-HCR-R074.cmd`; gain4/1·고정 prior/0의 24 evaluator replay로 e:1·c:0 민감도를 분리한다. R073 대응 6개, 새 native·학습·독립 표본 0.
+
+EXP-56 / R075: [두 evidence drive의 scale 분리](exp-56-drive-factorization/design.ko.md). `Run-HCR-R075.cmd`; prior0·M0·고정 config의 12 evaluator 조건으로 e0 배경과 e1 score drive의 기여를 분리한다. R074 대응 6개와 혼합 scale 6개, 새 native·학습·독립 표본 0.

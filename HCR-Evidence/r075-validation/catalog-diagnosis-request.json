@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "1.0.0",
+  "objective": "Diagnose post-run catalog inventory difference",
+  "expectedBehavior": "Preserve sealed snapshot and separately bind the additive final catalog",
+  "episodes": [
+    {
+      "attemptId": "r075-delivery-check-1",
+      "operation": "delivery source inventory comparison",
+      "stableFailureTuple": {
+        "error": "AssertionError",
+        "phase": "delivery",
+        "frame": "frozen source equality to current inventory"
+      },
+      "environmentDigest": "sha256:22e5081cd25571e66e6c08489bbb2eb3568689b6cad2eca5fae2a1f910d1ef42",
+      "changeSummary": "EXP56 catalog finalized after sealed one-click",
+      "evidenceRefs": [
+        "HCR-Evidence/r075-validation/catalog-observation.json"
+      ]
+    }
+  ],
+  "lastKnownGood": {
+    "locator": "HCR-Evidence\\exp56\\r075-20260930T230143Z-63f9346db8\\verification.json"
+  },
+  "constraints": [
+    "Preserve all sealed source and evidence",
+    "Do not rerun research for a catalog-only finalization"
+  ],
+  "authorization": {
+    "allowedChecks": [
+      "read-scoped-files",
+      "local-catalog-difference-check"
+    ],
+    "approvalRequired": [],
+    "prohibitedChecks": [
+      "edit-historical-evidence"
+    ]
+  },
+  "evidenceBindings": [
+    {
+      "evidenceRef": "HCR-Evidence/r075-validation/catalog-observation.json",
+      "artifactDigest": "sha256:22e5081cd25571e66e6c08489bbb2eb3568689b6cad2eca5fae2a1f910d1ef42",
+      "hypothesisIds": [
+        "CATALOG"
+      ],
+      "relation": "supports"
+    },
+    {
+      "evidenceRef": "HCR-Evidence/r075-validation/catalog-observation.json",
+      "artifactDigest": "sha256:22e5081cd25571e66e6c08489bbb2eb3568689b6cad2eca5fae2a1f910d1ef42",
+      "hypothesisIds": [
+        "DRIFT"
+      ],
+      "relation": "refutes"
+    }
+  ],
+  "attemptedChecks": [],
+  "candidateHypotheses": [
+    {
+      "id": "CATALOG",
+      "causalLayer": "implementation",
+      "statement": "Delivery equality includes catalog metadata finalized after the experiment",
+      "supportingEvidence": [
+        "HCR-Evidence/r075-validation/catalog-observation.json"
+      ],
+      "contradictingEvidence": [],
+      "state": "confirmed",
+      "causeAnalysis": {
+        "symptom": "Frozen inventory equality assertion failed",
+        "mechanism": "Current INDEX contains EXP56 while sealed INDEX stops at EXP55",
+        "rootCondition": "Catalog was finalized after the source snapshot was sealed",
+        "discriminatingEvidence": {
+          "statement": "Only INDEX hash differs, with exactly one appended EXP56 entry",
+          "evidenceRefs": [
+            "HCR-Evidence/r075-validation/catalog-observation.json"
+          ]
+        },
+        "eliminationObservation": {
+          "statement": "All computational source hashes and sealed snapshot bytes remain exact",
+          "evidenceRefs": [
+            "HCR-Evidence/r075-validation/catalog-observation.json"
+          ]
+        }
+      }
+    },
+    {
+      "id": "DRIFT",
+      "causalLayer": "input",
+      "statement": "Computational source or evidence was changed after research",
+      "supportingEvidence": [],
+      "contradictingEvidence": [
+        "HCR-Evidence/r075-validation/catalog-observation.json"
+      ],
+      "state": "refuted"
+    }
+  ],
+  "candidateTests": [],
+  "accessBlockers": []
+}
