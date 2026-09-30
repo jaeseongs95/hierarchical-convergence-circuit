@@ -1,0 +1,235 @@
+{
+  "schemaVersion": "1.0.0",
+  "taskEnvelope": {
+    "schemaVersion": "1.0.0",
+    "taskId": "hcc-r072-selection-input-range",
+    "objective": "R071 native 선택 경계가 사전에 제한한 입력 변화에서 유지되는 범위를 판정하고 연구 결과를 전달한다",
+    "scope": {
+      "included": [
+        "Run-HCR-R072.cmd",
+        "Run-HCR-R072.py",
+        "R072_MANIFEST.json",
+        "tools/r072_range/",
+        "experiments/exp-53-selection-input-range/",
+        "experiments/INDEX.json",
+        "experiments/INDEX.ko.md",
+        "HCR-Evidence/exp53/",
+        "HCR-Evidence/r072-validation/"
+      ],
+      "excluded": [
+        "src/",
+        "tests/",
+        "archive/",
+        "HCR-Evidence/exp52/",
+        "experiments/exp-52-native-selection-boundary/"
+      ]
+    },
+    "acceptanceCriteria": [
+      "[AC-001] 실행 전에 조건과 R071 config별 M0/M1 원자료 hash를 동결하고 기존 core·evidence와 memory signature를 보존한다",
+      "[AC-002] score 0.6/0.8/1.0 × threshold 2개 × checkpoint 2개를 새 세션 12개로 실행하고 선택·판단·비용을 독립 재계산한다",
+      "[AC-003] 원자료·집계 변조 및 config 불일치를 거부하고 집계를 별도 검산하며 기존 core 회귀 1회를 통과한다",
+      "[AC-004] score 0.8 반복과 score bundle·checkpoint bundle 한계를 분리해 결과·다음 판별 질문·원클릭 실행을 기록하고 범위·수용 검사를 통과한다"
+    ],
+    "riskLevel": "medium",
+    "workUnits": [
+      {
+        "id": "research",
+        "objective": "고정 memory에서 입력 범위 실험과 독립 검산",
+        "dependencies": [],
+        "writeTargets": [
+          "Run-HCR-R072.cmd",
+          "Run-HCR-R072.py",
+          "R072_MANIFEST.json",
+          "tools/r072_range/",
+          "experiments/exp-53-selection-input-range/",
+          "experiments/INDEX.json",
+          "experiments/INDEX.ko.md",
+          "HCR-Evidence/exp53/",
+          "HCR-Evidence/r072-validation/"
+        ]
+      }
+    ],
+    "requiredCapabilities": [
+      "change-scope-baseline-capture",
+      "minimal-implementation",
+      "change-scope-assurance",
+      "acceptance-evidence-validation",
+      "mutation-risk-preflight"
+    ],
+    "constraints": [
+      "기존 core·historical evidence 수정 금지",
+      "기존 config/memory signature 재작성 금지",
+      "평가 feedback·새 training·자동 retry 금지",
+      "0.8 반복을 독립 발견으로 계산 금지",
+      "score를 순수 threshold·strength 효과로 해석 금지"
+    ],
+    "authorization": {
+      "allowedActions": [
+        "read",
+        "write-scoped-research-files",
+        "run-local-checks",
+        "commit",
+        "merge-local-main",
+        "delete-completed-local-task-branch",
+        "push-origin-main"
+      ],
+      "prohibitedActions": [
+        "force-push",
+        "rewrite-historical-evidence",
+        "overwrite-user-changes"
+      ],
+      "approvalRequired": [
+        "deploy",
+        "tag",
+        "install",
+        "delete-remote-branch"
+      ]
+    },
+    "decision": {
+      "complexity": "simple",
+      "hasConflicts": false
+    },
+    "orchestration": {
+      "requested": false,
+      "mcpAvailable": true
+    }
+  },
+  "target": {
+    "kind": "artifact",
+    "identifier": "R072-deliverable-and-sealed-native-input-range",
+    "digest": "sha256:736781d20665fed7ee99b5ab451a969ef33067d2b4c6ad7bed9d0bf21edb54af"
+  },
+  "evidence": [
+    {
+      "id": "integrity",
+      "kind": "test",
+      "locator": "HCR-Evidence/r072-validation/delivery-verification.json",
+      "digest": "sha256:d6ebc0b5aa76d5157b2b6cc38fe5e1f5f0011dfdf8f1622e7d4f156b492c44d1",
+      "targetDigest": "sha256:736781d20665fed7ee99b5ab451a969ef33067d2b4c6ad7bed9d0bf21edb54af",
+      "verified": true,
+      "criterionIds": [
+        "AC-001",
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "Sealed bundle/ZIP bytes, exact seed memory/config, unchanged core/parent and single 602/599/3 regression verified"
+    },
+    {
+      "id": "analysis",
+      "kind": "test",
+      "locator": "HCR-Evidence/exp53/r072-20260930T140801Z-ba41410e23/verification.json",
+      "digest": "sha256:2cd0a0edd5250e2bb9d6437ea022c15d880af7cac04302697599cac98e3de12f",
+      "targetDigest": "sha256:736781d20665fed7ee99b5ab451a969ef33067d2b4c6ad7bed9d0bf21edb54af",
+      "verified": true,
+      "criterionIds": [
+        "AC-002",
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "12 native packets and raw summary independently verified; six summary mutations rejected"
+    },
+    {
+      "id": "lineage",
+      "kind": "test",
+      "locator": "HCR-Evidence/exp53/r072-20260930T140801Z-ba41410e23/validation/selftest.json",
+      "digest": "sha256:971284681b11a1ad3518326067c39dfcb1a50d275e7425cf907ac3a2fffa16cb",
+      "targetDigest": "sha256:736781d20665fed7ee99b5ab451a969ef33067d2b4c6ad7bed9d0bf21edb54af",
+      "verified": true,
+      "criterionIds": [
+        "AC-001",
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "Parent native recipe independently replayed; exact four memories loaded; four config mismatches and seven inherited packet mutations rejected"
+    },
+    {
+      "id": "raw_mutations",
+      "kind": "test",
+      "locator": "HCR-Evidence/exp53/r072-20260930T140801Z-ba41410e23/validation/mutation-checks.json",
+      "digest": "sha256:3bc0685f5345f2cb7769bc8ff7cc2f51e1e34a5e5be688a36377584813a2494e",
+      "targetDigest": "sha256:736781d20665fed7ee99b5ab451a969ef33067d2b4c6ad7bed9d0bf21edb54af",
+      "verified": true,
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "Seven new raw packet mutations rejected"
+    },
+    {
+      "id": "scope",
+      "kind": "test",
+      "locator": "HCR-Evidence/r072-validation/scope-report.json",
+      "digest": "sha256:fdffd9af19fa63f452c423aae4704de0728888a88c9627f05c1b2e19ad318700",
+      "targetDigest": "sha256:736781d20665fed7ee99b5ab451a969ef33067d2b4c6ad7bed9d0bf21edb54af",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Scope PASS; no excluded/unplanned/preexisting overlap"
+    },
+    {
+      "id": "report",
+      "kind": "document",
+      "locator": "experiments/exp-53-selection-input-range/RESULTS.ko.md",
+      "digest": "sha256:90b6d33735baf76e94989e85d1361974d5f1aef37acb02c069de94181adcbe8e",
+      "targetDigest": "sha256:736781d20665fed7ee99b5ab451a969ef33067d2b4c6ad7bed9d0bf21edb54af",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Observed split limits, failed frozen predictions, score/checkpoint bundles and repeat limitations recorded"
+    },
+    {
+      "id": "next",
+      "kind": "document",
+      "locator": "experiments/exp-53-selection-input-range/NEXT.ko.md",
+      "digest": "sha256:113f8bc61d27c578781c69cfc72b3db0c8657f327f939fc62095240872e00d28",
+      "targetDigest": "sha256:736781d20665fed7ee99b5ab451a969ef33067d2b4c6ad7bed9d0bf21edb54af",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Next evidence/prior counterfactual discrimination recorded without implementation inflation"
+    },
+    {
+      "id": "index",
+      "kind": "test",
+      "locator": "HCR-Evidence/r072-validation/index-check.json",
+      "digest": "sha256:f511f6341312251121a8d05f76939134364c49c9b136597c6a6cb58d0e4db392",
+      "targetDigest": "sha256:736781d20665fed7ee99b5ab451a969ef33067d2b4c6ad7bed9d0bf21edb54af",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Standalone EXP53 registration and unchanged EXP30 default verified through .cmd index check"
+    }
+  ],
+  "verificationCommands": [
+    {
+      "id": "oneclick",
+      "command": "Run-HCR-R072.cmd",
+      "exitCode": 0,
+      "locator": "HCR-Evidence/exp53/r072-20260930T140801Z-ba41410e23/result.json",
+      "targetDigest": "sha256:736781d20665fed7ee99b5ab451a969ef33067d2b4c6ad7bed9d0bf21edb54af",
+      "criterionIds": [
+        "AC-001",
+        "AC-002",
+        "AC-003",
+        "AC-004"
+      ]
+    }
+  ],
+  "knownLimitations": [
+    "Three preselected positive score points, one candidate and checkpoint bundles; not continuous robustness or pure strength",
+    "Four score 0.8 native repeats; eight new score evaluations, no independent discovery samples",
+    "Range invariance and three directional cell forecasts falsified; original predictions remain frozen",
+    "Three existing symlink capability skips; no new skip/failure/error",
+    "Equation/process separation, no independent external researcher replication",
+    "Energy and peak memory unmeasured; score jointly varies evidence drive and uncertainty prior"
+  ],
+  "criterionOverrides": []
+}

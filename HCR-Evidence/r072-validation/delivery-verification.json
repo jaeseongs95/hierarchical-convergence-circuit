@@ -1,0 +1,42 @@
+{
+  "verified": true,
+  "run": "HCR-Evidence/exp53/r072-20260930T140801Z-ba41410e23",
+  "sealed_bundle_files": 542,
+  "bundle_sha256": "c88886c038a63c0a00752557302ef3dad51968a430a86758478f9d1c8d3fb53d",
+  "zip_sha256": "9374f2cd6aba6a0aa88347d6c91d975f5a5dc7130c5ba4858e9a1ae44792becc",
+  "zip_matches_raw_bytes": true,
+  "parent_original_bundle_unchanged": true,
+  "pinned_memory_and_config_bytes_unchanged": true,
+  "source_files_unchanged_except_post_run_index_registration": true,
+  "core_tests_run": 602,
+  "passed": 599,
+  "environment_skips": [
+    {
+      "reason": "symlink creation is not available",
+      "test": "test_r021_sessions.CheckpointIO.test_file_symlink_rejected"
+    },
+    {
+      "reason": "symlink creation is not available",
+      "test": "test_r021_sessions.CheckpointIO.test_symlink_parent_rejected"
+    },
+    {
+      "reason": "local symlink creation not supported",
+      "test": "test_r034_selection.ProtocolAndIO.test_symlink_rejected"
+    }
+  ],
+  "new_skips": [],
+  "first_research_failure": false,
+  "automatic_retry": false,
+  "native_evaluations": 12,
+  "new_training": 0,
+  "new_feedback": 0,
+  "raw_mutations_rejected": 7,
+  "summary_mutations_rejected": 6,
+  "cross_config_rejections": 4,
+  "proof_under_assumptions_valid": true,
+  "D_DAG": 2,
+  "repeat_cells_match": true,
+  "claim_flags_preserved": true,
+  "index_check_exit_code": 0,
+  "launcher_executed": "Run-HCR-R072.cmd"
+}

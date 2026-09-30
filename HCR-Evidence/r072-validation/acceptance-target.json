@@ -1,0 +1,29 @@
+{
+  "target": {
+    "kind": "artifact",
+    "identifier": "R072-deliverable-and-sealed-native-input-range",
+    "digest": "sha256:736781d20665fed7ee99b5ab451a969ef33067d2b4c6ad7bed9d0bf21edb54af"
+  },
+  "files": {
+    "experiments/exp-53-selection-input-range/design.ko.md": "sha256:195b2b348f8cba3c3b02874573d92f1b77984eff50053b6851ca2a4aeddf8e84",
+    "experiments/exp-53-selection-input-range/frozen_spec.json": "sha256:e6713a2efc481194b223c10ed554253eceba678d93ce1996c707a8c5cf09af94",
+    "experiments/exp-53-selection-input-range/NEXT.ko.md": "sha256:113f8bc61d27c578781c69cfc72b3db0c8657f327f939fc62095240872e00d28",
+    "experiments/exp-53-selection-input-range/ORCHESTRATION.ko.md": "sha256:efc7a1fbd5aaf3850ac530367204fc330fcd7386d61c77f77545d37ba0e67e2c",
+    "experiments/exp-53-selection-input-range/reference_world.json": "sha256:6ac404fb511d2d3146e5cdd74bc564eb5f92b87affd53cc62c34817ffdb84b83",
+    "experiments/exp-53-selection-input-range/RESULTS.ko.md": "sha256:90b6d33735baf76e94989e85d1361974d5f1aef37acb02c069de94181adcbe8e",
+    "experiments/INDEX.json": "sha256:ea7b13bdfc8d409a9c0299f62627061704dca3010b644811943a6919660d578c",
+    "experiments/INDEX.ko.md": "sha256:7016f7ea26e2da5df37d5e656761719d734ee7a394cf676ec57b8b3c52ecc7b2",
+    "HCR-Evidence/exp53/.gitattributes": "sha256:705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "HCR-Evidence/exp53/r072-20260930T140801Z-ba41410e23/bundle_manifest.json": "sha256:c88886c038a63c0a00752557302ef3dad51968a430a86758478f9d1c8d3fb53d",
+    "HCR-Evidence/exp53/r072-20260930T140801Z-ba41410e23.zip": "sha256:9374f2cd6aba6a0aa88347d6c91d975f5a5dc7130c5ba4858e9a1ae44792becc",
+    "HCR-Evidence/r072-validation/.gitattributes": "sha256:705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "R072_MANIFEST.json": "sha256:1d5faa114d9914534255f095be44c629bbee06084d60e140074744da5e66aed2",
+    "Run-HCR-R072.cmd": "sha256:ea671043727fa61376d8ded7d6a6df720fc836899f1efc8b009e54e6a3225d68",
+    "Run-HCR-R072.py": "sha256:496efd33811ea1cd1b9e421783a3b161a6f03cf34af7d469cfa1992bdcaf0c19",
+    "tools/r072_range/__init__.py": "sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "tools/r072_range/audit.py": "sha256:329bfd0cb545e90ea1b759613993dec6d2e2f8cb8c7411362b908118c1b25d14",
+    "tools/r072_range/pipeline.py": "sha256:8b3c4c3cd459d63fd8590956a228a820e7166a8ca9f353dc3de69703e7435471",
+    "tools/r072_range/verify.py": "sha256:e1343418b6885f809194644584689b8a87a97d4114dc472375c4e0339f880ec5",
+    "tools/r072_range/worker.py": "sha256:d80ab1849de3af3a1742a5fd2e09e639dd3aa8c18a13000636b18d57deac7cbc"
+  }
+}

@@ -59,3 +59,4 @@ EXP-50의 독립 실행은 [Run-HCR-R069.cmd](../Run-HCR-R069.cmd), 설계는 [r
 EXP-51 / R070: [회로 약화 신호의 전달 경계](exp-51-pool-signal-boundary/design.ko.md). `Run-HCR-R070.cmd`; R069 네 packet 재분석이며 새 native 연구 실행과 독립 표본은 없다.
 
 EXP-52 / R071: [native 선택 경계](exp-52-native-selection-boundary/design.ko.md). `Run-HCR-R071.cmd`; config별 native 형성·약화 뒤 네 paired 평가. 최초 분석 실패 보존, native 재실행 없이 분석 복구.
+EXP-53 / R072: [고정 선택 경계의 입력 범위](exp-53-selection-input-range/design.ko.md). `Run-HCR-R072.cmd`; 봉인된 R071 memory에서 세 score의 12개 native 평가, 0.8 네 셀은 기존 조건 반복. 선택·판단·정수 비용을 분리한다.

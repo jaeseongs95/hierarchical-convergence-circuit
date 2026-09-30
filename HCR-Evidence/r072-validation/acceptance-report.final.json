@@ -1,0 +1,194 @@
+{
+  "schemaVersion": "1.0.0",
+  "target": {
+    "kind": "artifact",
+    "identifier": "R072-deliverable-and-sealed-native-input-range",
+    "digest": "sha256:736781d20665fed7ee99b5ab451a969ef33067d2b4c6ad7bed9d0bf21edb54af"
+  },
+  "criteria": [
+    {
+      "criterionId": "AC-001",
+      "statement": "[AC-001] 실행 전에 조건과 R071 config별 M0/M1 원자료 hash를 동결하고 기존 core·evidence와 memory signature를 보존한다",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "integrity",
+        "lineage",
+        "staged-bytes",
+        "command:oneclick"
+      ],
+      "observedResult": "Sealed bundle/ZIP bytes, exact seed memory/config, unchanged core/parent and single 602/599/3 regression verified; Parent native recipe independently replayed; exact four memories loaded; four config mismatches and seven inherited packet mutations rejected; 583 staged blobs match every working-tree byte; 567 evidence files retain exact raw bytes; Verification command exited with code 0.",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    },
+    {
+      "criterionId": "AC-002",
+      "statement": "[AC-002] score 0.6/0.8/1.0 × threshold 2개 × checkpoint 2개를 새 세션 12개로 실행하고 선택·판단·비용을 독립 재계산한다",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "analysis",
+        "command:oneclick"
+      ],
+      "observedResult": "12 native packets and raw summary independently verified; six summary mutations rejected; Verification command exited with code 0.",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    },
+    {
+      "criterionId": "AC-003",
+      "statement": "[AC-003] 원자료·집계 변조 및 config 불일치를 거부하고 집계를 별도 검산하며 기존 core 회귀 1회를 통과한다",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "integrity",
+        "analysis",
+        "lineage",
+        "raw_mutations",
+        "staged-bytes",
+        "command:oneclick"
+      ],
+      "observedResult": "Sealed bundle/ZIP bytes, exact seed memory/config, unchanged core/parent and single 602/599/3 regression verified; 12 native packets and raw summary independently verified; six summary mutations rejected; Parent native recipe independently replayed; exact four memories loaded; four config mismatches and seven inherited packet mutations rejected; Seven new raw packet mutations rejected; 583 staged blobs match every working-tree byte; 567 evidence files retain exact raw bytes; Verification command exited with code 0.",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    },
+    {
+      "criterionId": "AC-004",
+      "statement": "[AC-004] score 0.8 반복과 score bundle·checkpoint bundle 한계를 분리해 결과·다음 판별 질문·원클릭 실행을 기록하고 범위·수용 검사를 통과한다",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "scope",
+        "report",
+        "next",
+        "index",
+        "staged-bytes",
+        "command:oneclick"
+      ],
+      "observedResult": "Scope PASS; no excluded/unplanned/preexisting overlap; Observed split limits, failed frozen predictions, score/checkpoint bundles and repeat limitations recorded; Next evidence/prior counterfactual discrimination recorded without implementation inflation; Standalone EXP53 registration and unchanged EXP30 default verified through .cmd index check; 583 staged blobs match every working-tree byte; 567 evidence files retain exact raw bytes; Verification command exited with code 0.",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    }
+  ],
+  "verifiedEvidenceIndex": [
+    {
+      "evidenceId": "integrity",
+      "kind": "test",
+      "locator": "HCR-Evidence/r072-validation/delivery-verification.json",
+      "digest": "sha256:d6ebc0b5aa76d5157b2b6cc38fe5e1f5f0011dfdf8f1622e7d4f156b492c44d1",
+      "targetDigest": "sha256:736781d20665fed7ee99b5ab451a969ef33067d2b4c6ad7bed9d0bf21edb54af",
+      "criterionIds": [
+        "AC-001",
+        "AC-003"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "analysis",
+      "kind": "test",
+      "locator": "HCR-Evidence/exp53/r072-20260930T140801Z-ba41410e23/verification.json",
+      "digest": "sha256:2cd0a0edd5250e2bb9d6437ea022c15d880af7cac04302697599cac98e3de12f",
+      "targetDigest": "sha256:736781d20665fed7ee99b5ab451a969ef33067d2b4c6ad7bed9d0bf21edb54af",
+      "criterionIds": [
+        "AC-002",
+        "AC-003"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "lineage",
+      "kind": "test",
+      "locator": "HCR-Evidence/exp53/r072-20260930T140801Z-ba41410e23/validation/selftest.json",
+      "digest": "sha256:971284681b11a1ad3518326067c39dfcb1a50d275e7425cf907ac3a2fffa16cb",
+      "targetDigest": "sha256:736781d20665fed7ee99b5ab451a969ef33067d2b4c6ad7bed9d0bf21edb54af",
+      "criterionIds": [
+        "AC-001",
+        "AC-003"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "raw_mutations",
+      "kind": "test",
+      "locator": "HCR-Evidence/exp53/r072-20260930T140801Z-ba41410e23/validation/mutation-checks.json",
+      "digest": "sha256:3bc0685f5345f2cb7769bc8ff7cc2f51e1e34a5e5be688a36377584813a2494e",
+      "targetDigest": "sha256:736781d20665fed7ee99b5ab451a969ef33067d2b4c6ad7bed9d0bf21edb54af",
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "scope",
+      "kind": "test",
+      "locator": "HCR-Evidence/r072-validation/scope-report.json",
+      "digest": "sha256:fdffd9af19fa63f452c423aae4704de0728888a88c9627f05c1b2e19ad318700",
+      "targetDigest": "sha256:736781d20665fed7ee99b5ab451a969ef33067d2b4c6ad7bed9d0bf21edb54af",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "report",
+      "kind": "document",
+      "locator": "experiments/exp-53-selection-input-range/RESULTS.ko.md",
+      "digest": "sha256:90b6d33735baf76e94989e85d1361974d5f1aef37acb02c069de94181adcbe8e",
+      "targetDigest": "sha256:736781d20665fed7ee99b5ab451a969ef33067d2b4c6ad7bed9d0bf21edb54af",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "next",
+      "kind": "document",
+      "locator": "experiments/exp-53-selection-input-range/NEXT.ko.md",
+      "digest": "sha256:113f8bc61d27c578781c69cfc72b3db0c8657f327f939fc62095240872e00d28",
+      "targetDigest": "sha256:736781d20665fed7ee99b5ab451a969ef33067d2b4c6ad7bed9d0bf21edb54af",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "index",
+      "kind": "test",
+      "locator": "HCR-Evidence/r072-validation/index-check.json",
+      "digest": "sha256:f511f6341312251121a8d05f76939134364c49c9b136597c6a6cb58d0e4db392",
+      "targetDigest": "sha256:736781d20665fed7ee99b5ab451a969ef33067d2b4c6ad7bed9d0bf21edb54af",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "staged-bytes",
+      "kind": "test",
+      "locator": "HCR-Evidence/r072-validation/staged-evidence-bytes.json",
+      "digest": "sha256:880a3431875d80d1f3377b16c309202bf73989f7aa8521174cc3db89621d129a",
+      "targetDigest": "sha256:736781d20665fed7ee99b5ab451a969ef33067d2b4c6ad7bed9d0bf21edb54af",
+      "criterionIds": [
+        "AC-001",
+        "AC-003",
+        "AC-004"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "command:oneclick",
+      "kind": "verification-command",
+      "locator": "HCR-Evidence/exp53/r072-20260930T140801Z-ba41410e23/result.json",
+      "digest": "sha256:ca5412bcc3e94545e20cc1c64cb79fa525b7e42b0b9e55e2ea4c8dbe809f6b3f",
+      "targetDigest": "sha256:736781d20665fed7ee99b5ab451a969ef33067d2b4c6ad7bed9d0bf21edb54af",
+      "criterionIds": [
+        "AC-001",
+        "AC-002",
+        "AC-003",
+        "AC-004"
+      ],
+      "direction": "supports"
+    }
+  ],
+  "unresolvedCriteria": [],
+  "limitations": [
+    "Three preselected positive score points, one candidate and checkpoint bundles; not continuous robustness or pure strength",
+    "Four score 0.8 native repeats; eight new score evaluations, no independent discovery samples",
+    "Range invariance and three directional cell forecasts falsified; original predictions remain frozen",
+    "Three existing symlink capability skips; no new skip/failure/error",
+    "Equation/process separation, no independent external researcher replication",
+    "Energy and peak memory unmeasured; score jointly varies evidence drive and uncertainty prior"
+  ],
+  "verdict": "PASS"
+}

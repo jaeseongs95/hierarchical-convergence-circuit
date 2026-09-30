@@ -1,0 +1,10 @@
+{
+  "schemaVersion": "1.0.0",
+  "ok": false,
+  "output": null,
+  "error": {
+    "code": "INVALID_INPUT",
+    "message": "Expected JSON on stdin or --input <file>.",
+    "details": null
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "research_execution_started": false,
+  "setup_failures": [
+    "query-registry belongs to skills/orchestrator/scripts",
+    "baseline requires working-tree and taskEnvelope",
+    "task validator file flag is --input"
+  ],
+  "resolution": "Installed CLI input contracts inspected and corrected; failed task-validation retained; successful baseline taken before task file creation"
+}

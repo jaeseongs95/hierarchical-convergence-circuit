@@ -1,0 +1,18 @@
+{
+  "verified": true,
+  "files": [
+    "Run-HCR-R072.cmd",
+    "Run-HCR-R072.py",
+    "tools/r072_range/__init__.py",
+    "tools/r072_range/audit.py",
+    "tools/r072_range/pipeline.py",
+    "tools/r072_range/verify.py",
+    "tools/r072_range/worker.py",
+    "experiments/exp-53-selection-input-range/design.ko.md",
+    "experiments/exp-53-selection-input-range/frozen_spec.json",
+    "experiments/exp-53-selection-input-range/reference_world.json"
+  ],
+  "syntax": "ast.parse of new Python sources; no bytecode or native execution",
+  "frozen_spec_sha256": "e6713a2efc481194b223c10ed554253eceba678d93ce1996c707a8c5cf09af94",
+  "frozen_before_native_execution": true
+}

@@ -1,0 +1,28 @@
+{
+  "verified": true,
+  "baseline_commit": "2290f1ccea45822ba0282d6d02970281f07f57fb",
+  "baseline_object_exists": true,
+  "primary_inverse_patch_check_exit_code": 0,
+  "check_command": "git apply --reverse --check --cached of scoped primary staged patch",
+  "primary_paths": [
+    "R072_MANIFEST.json",
+    "Run-HCR-R072.cmd",
+    "Run-HCR-R072.py",
+    "experiments/INDEX.json",
+    "experiments/INDEX.ko.md",
+    "experiments/exp-53-selection-input-range/NEXT.ko.md",
+    "experiments/exp-53-selection-input-range/ORCHESTRATION.ko.md",
+    "experiments/exp-53-selection-input-range/RESULTS.ko.md",
+    "experiments/exp-53-selection-input-range/design.ko.md",
+    "experiments/exp-53-selection-input-range/frozen_spec.json",
+    "experiments/exp-53-selection-input-range/reference_world.json",
+    "tools/r072_range/__init__.py",
+    "tools/r072_range/audit.py",
+    "tools/r072_range/pipeline.py",
+    "tools/r072_range/verify.py",
+    "tools/r072_range/worker.py"
+  ],
+  "raw_evidence_excluded_from_rollback": true,
+  "actual_restore_executed": false,
+  "method": "Reviewed reverse of primary changes as a new commit; retain all evidence and baseline objects; never force push"
+}

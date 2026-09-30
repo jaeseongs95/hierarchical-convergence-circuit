@@ -1,0 +1,8 @@
+{
+  "schemaVersion": "1.0.0",
+  "valid": true,
+  "errorCode": null,
+  "reason": "receipt와 현재 mutation intent가 일치합니다. 이 결과는 실행 권한을 새로 부여하지 않습니다.",
+  "actionDigest": "sha256:0678920b55d4c594d1ccc81a439e52b04e9085d7f41cd7f5433507bb40346831",
+  "targetDigest": "sha256:c734342d15d6889c518af725f0c47f0fa2cd657448649e4af5b2b5222eb71d25"
+}

@@ -1,0 +1,28 @@
+{
+  "execution": "direct-local-skills",
+  "route": "direct",
+  "order": [
+    "task-contract",
+    "change-scope-baseline",
+    "ponytail",
+    "native-evaluation",
+    "independent-formula-audit",
+    "summary-verification",
+    "scope-assurance",
+    "acceptance",
+    "publish-preflight"
+  ],
+  "selected": {
+    "task-contract": "unstructured continuation resolved by R071 NEXT",
+    "change-scope-guardian": "existing untracked inputs and scoped delivery",
+    "ponytail": "additive scripts reuse executor and auditors",
+    "acceptance-evidence-validator": "fixed deliverable completion evidence",
+    "mutation-risk-preflight": "exact ordinary public origin/main push only"
+  },
+  "omitted": {
+    "independent-deliberation": "no conflicting design choice; prior NEXT supplies exact restricted comparison",
+    "independent-audit": "no high impact security/permission/payment/data-loss/schema/deployment/global-setting change",
+    "subagent-coordination": "serial fixed experiment; no explicit delegation; audit code separate from producer"
+  },
+  "guarded_completion_claim": false
+}

@@ -1,0 +1,28 @@
+{
+  "verified": true,
+  "command": "Run-HCR.cmd --check-index",
+  "exit_code": 0,
+  "default_experiment": "EXP-30",
+  "new_entry": {
+    "current_python_entrypoint": null,
+    "default_dispatcher_promoted": false,
+    "design": "experiments/exp-53-selection-input-range/design.ko.md",
+    "directory": "experiments/exp-53-selection-input-range",
+    "evidence_directory": "HCR-Evidence/exp53",
+    "execution_status": "standalone_candidate_contract",
+    "experiment_id": "EXP-53",
+    "frozen_design": "experiments/exp-53-selection-input-range/frozen_spec.json",
+    "implementation_validation_directory": "HCR-Evidence/r072-validation",
+    "legacy_python_entrypoint": null,
+    "release_manifest": "R072_MANIFEST.json",
+    "revision_references": [
+      "r072"
+    ],
+    "run_status": "read_per_run_evidence",
+    "source_commit": null,
+    "source_commit_note": "Pinned R071 config-specific native M0/M1; three frozen score points in 12 fresh sessions, four repeated-condition cells; no new formation/feedback or independent discovery.",
+    "standalone_python_entrypoint": "Run-HCR-R072.py"
+  },
+  "registration_after_sealed_run": true,
+  "frozen_index_is_pre_registration_source": true
+}

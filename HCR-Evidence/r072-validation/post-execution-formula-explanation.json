@@ -1,0 +1,106 @@
+{
+  "verified": true,
+  "reanalysis": true,
+  "new_native_research_executions": 0,
+  "new_independent_samples": 0,
+  "source_refs": [
+    "src/hcr/activation.py:32",
+    "src/hcr/evaluation/adaptive_audit_support.py:96"
+  ],
+  "source_sha256": {
+    "src/hcr/activation.py": "c35fadb824de51563c03fb23b0656564f7d4d3ea8c228ac74ee803a419e64df5",
+    "src/hcr/evaluation/adaptive_audit_support.py": "096e0be2e608697fdc2f596e1e0873feda0285cc6e410f668205cd4ebfc7dc14"
+  },
+  "rows": [
+    {
+      "cell": "s06-default-M0",
+      "uncertainty": 0.4,
+      "balance": 0.75,
+      "recomputed_prior": 0.06600000000000002,
+      "recorded_prior": 0.06600000000000002
+    },
+    {
+      "cell": "s06-default-M1",
+      "uncertainty": 0.4,
+      "balance": 0.75,
+      "recomputed_prior": 0.013200000000000003,
+      "recorded_prior": 0.013200000000000003
+    },
+    {
+      "cell": "s06-midpoint-M0",
+      "uncertainty": 0.4,
+      "balance": 0.75,
+      "recomputed_prior": 0.06600000000000002,
+      "recorded_prior": 0.06600000000000002
+    },
+    {
+      "cell": "s06-midpoint-M1",
+      "uncertainty": 0.4,
+      "balance": 0.75,
+      "recomputed_prior": 0.013200000000000003,
+      "recorded_prior": 0.013200000000000003
+    },
+    {
+      "cell": "s08-default-M0",
+      "uncertainty": 0.19999999999999996,
+      "balance": 0.75,
+      "recomputed_prior": 0.033,
+      "recorded_prior": 0.033
+    },
+    {
+      "cell": "s08-default-M1",
+      "uncertainty": 0.19999999999999996,
+      "balance": 0.75,
+      "recomputed_prior": 0.0066,
+      "recorded_prior": 0.0066
+    },
+    {
+      "cell": "s08-midpoint-M0",
+      "uncertainty": 0.19999999999999996,
+      "balance": 0.75,
+      "recomputed_prior": 0.033,
+      "recorded_prior": 0.033
+    },
+    {
+      "cell": "s08-midpoint-M1",
+      "uncertainty": 0.19999999999999996,
+      "balance": 0.75,
+      "recomputed_prior": 0.0066,
+      "recorded_prior": 0.0066
+    },
+    {
+      "cell": "s10-default-M0",
+      "uncertainty": 0.0,
+      "balance": 0.75,
+      "recomputed_prior": 0.0,
+      "recorded_prior": 0.0
+    },
+    {
+      "cell": "s10-default-M1",
+      "uncertainty": 0.0,
+      "balance": 0.75,
+      "recomputed_prior": 0.0,
+      "recorded_prior": 0.0
+    },
+    {
+      "cell": "s10-midpoint-M0",
+      "uncertainty": 0.0,
+      "balance": 0.75,
+      "recomputed_prior": 0.0,
+      "recorded_prior": 0.0
+    },
+    {
+      "cell": "s10-midpoint-M1",
+      "uncertainty": 0.0,
+      "balance": 0.75,
+      "recomputed_prior": 0.0,
+      "recorded_prior": 0.0
+    }
+  ],
+  "at_score_one": {
+    "pool_program_equal": true,
+    "pool_drives_equal": true,
+    "pool_trajectory_equal": true
+  },
+  "interpretation": "The uncertainty factor zeroes the prior term at score 1.0; direction forecasts failed and remain frozen. Across-score evidence/prior effects remain bundled."
+}
