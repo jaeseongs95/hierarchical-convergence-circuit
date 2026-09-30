@@ -1,0 +1,15 @@
+{
+  "verified": true,
+  "diagnosis": "CAUSE_CONFIRMED",
+  "restored_exact_accepted_bytes": "Run-HCR-R072.cmd",
+  "source": "HCR-Evidence/exp53/r072-20260930T140801Z-ba41410e23/source/Run-HCR-R072.cmd",
+  "logical_source_changed": false,
+  "accepted_target_digest_unchanged": true,
+  "historical_hashes_rewritten": false,
+  "native_data_changed": false,
+  "new_native_executions": 0,
+  "new_core_regression_runs": 0,
+  "remote_push_before_repair": false,
+  "global_git_config_changed": false,
+  "tracked_diff_after_newline_restoration": []
+}

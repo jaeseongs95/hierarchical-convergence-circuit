@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0.0",
+  "requestArtifactDigest": "sha256:efd4a5f6c3f4cca90dc591f7723df984d2f41cf3fcd6bf174ea933fa2b44f1fb",
+  "failureClusters": [
+    {
+      "fingerprint": "sha256:d7ec7d22414ff0d44b6b7e1d19663b6511441a316ecbb307d46e7229cc5add47",
+      "episodeIds": [
+        "r072-local-main-delivery"
+      ],
+      "operation": "verify fixed artifact before push",
+      "stableFailureTuple": {
+        "error": "accepted artifact SHA mismatch",
+        "path": "Run-HCR-R072.cmd",
+        "phase": "after git checkout/ff merge before push"
+      },
+      "environmentDigest": "sha256:f0eb72409901368692bb0ca13c3febc7e1f11bcbebe5ba39b3eb0e604634a8e5"
+    }
+  ],
+  "observations": [
+    {
+      "id": "OBS-001",
+      "statement": "Attempt r072-local-main-delivery failed during verify fixed artifact before push in environment sha256:f0eb72409901368692bb0ca13c3febc7e1f11bcbebe5ba39b3eb0e604634a8e5.",
+      "evidenceRefs": [
+        "HCR-Evidence/r072-validation/git-eol-observation.json"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "EOL",
+      "causalLayer": "environment",
+      "statement": "core.autocrlf true converted the newly introduced .cmd during checkout/ff merge",
+      "supportingEvidence": [
+        "HCR-Evidence/r072-validation/git-eol-observation.json"
+      ],
+      "contradictingEvidence": [],
+      "state": "confirmed",
+      "causeAnalysis": {
+        "symptom": "One accepted wrapper raw hash differs before push",
+        "mechanism": "Git leaves indexed LF source intact and writes CRLF working-tree text on checkout",
+        "rootCondition": "New .cmd uses inherited text=auto with core.autocrlf true and no per-file fixed eol",
+        "discriminatingEvidence": {
+          "statement": "Exactly 34 LF line terminators became CRLF; removing CR returns exact sealed bytes and expected SHA",
+          "evidenceRefs": [
+            "HCR-Evidence/r072-validation/git-eol-observation.json"
+          ]
+        },
+        "eliminationObservation": {
+          "statement": "Git indexed source equals sealed LF source; all other accepted target hashes matched; native data and report definitions unchanged",
+          "evidenceRefs": [
+            "HCR-Evidence/r072-validation/git-eol-observation.json"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SOURCE",
+      "causalLayer": "implementation",
+      "statement": "Wrapper logic/source changed after acceptance",
+      "supportingEvidence": [],
+      "contradictingEvidence": [
+        "HCR-Evidence/r072-validation/git-eol-observation.json"
+      ],
+      "state": "refuted"
+    }
+  ],
+  "nextDiscriminatingTest": null,
+  "confirmedCause": {
+    "causeId": "EOL",
+    "hypothesisId": "EOL",
+    "statement": "core.autocrlf true converted the newly introduced .cmd during checkout/ff merge",
+    "symptom": "One accepted wrapper raw hash differs before push",
+    "mechanism": "Git leaves indexed LF source intact and writes CRLF working-tree text on checkout",
+    "rootCondition": "New .cmd uses inherited text=auto with core.autocrlf true and no per-file fixed eol",
+    "discriminatingEvidence": {
+      "statement": "Exactly 34 LF line terminators became CRLF; removing CR returns exact sealed bytes and expected SHA",
+      "evidenceRefs": [
+        "HCR-Evidence/r072-validation/git-eol-observation.json"
+      ]
+    },
+    "eliminationObservation": {
+      "statement": "Git indexed source equals sealed LF source; all other accepted target hashes matched; native data and report definitions unchanged",
+      "evidenceRefs": [
+        "HCR-Evidence/r072-validation/git-eol-observation.json"
+      ]
+    },
+    "evidenceBindings": [
+      {
+        "evidenceRef": "HCR-Evidence/r072-validation/git-eol-observation.json",
+        "artifactDigest": "sha256:110c9b691e3feeb1ef6f16b005280754082b018d7b1039de5bffd3db8ed0586a",
+        "hypothesisIds": [
+          "EOL"
+        ],
+        "relation": "supports"
+      }
+    ]
+  },
+  "recommendedNextAction": "Use the confirmed cause as input to a separately authorized remediation task.",
+  "limitations": [],
+  "verdict": "CAUSE_CONFIRMED"
+}

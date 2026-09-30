@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "1.0.0",
+  "objective": "Diagnose pre-push accepted-wrapper byte mismatch after local main checkout",
+  "expectedBehavior": "Accepted artifact bytes and sealed native evidence remain unchanged before ordinary push",
+  "episodes": [
+    {
+      "attemptId": "r072-local-main-delivery",
+      "operation": "verify fixed artifact before push",
+      "stableFailureTuple": {
+        "error": "accepted artifact SHA mismatch",
+        "path": "Run-HCR-R072.cmd",
+        "phase": "after git checkout/ff merge before push"
+      },
+      "environmentDigest": "sha256:f0eb72409901368692bb0ca13c3febc7e1f11bcbebe5ba39b3eb0e604634a8e5",
+      "changeSummary": "Native research and scope/acceptance passed; checkout converted new .cmd LF to CRLF",
+      "evidenceRefs": [
+        "HCR-Evidence/r072-validation/git-eol-observation.json"
+      ]
+    }
+  ],
+  "lastKnownGood": {
+    "locator": "HCR-Evidence/r072-validation/staged-evidence-bytes.json",
+    "all_bytes_equal": true
+  },
+  "constraints": [
+    "Do not reseal historical hashes",
+    "Do not rerun native or core tests for newline-only wrapper restoration",
+    "Do not change Git global config",
+    "Preserve all raw evidence"
+  ],
+  "authorization": {
+    "allowedChecks": [
+      "read-scoped-files",
+      "read-git-config"
+    ],
+    "approvalRequired": [],
+    "prohibitedChecks": [
+      "force-push",
+      "edit-historical-evidence"
+    ]
+  },
+  "evidenceBindings": [
+    {
+      "evidenceRef": "HCR-Evidence/r072-validation/git-eol-observation.json",
+      "artifactDigest": "sha256:110c9b691e3feeb1ef6f16b005280754082b018d7b1039de5bffd3db8ed0586a",
+      "hypothesisIds": [
+        "EOL"
+      ],
+      "relation": "supports"
+    },
+    {
+      "evidenceRef": "HCR-Evidence/r072-validation/git-eol-observation.json",
+      "artifactDigest": "sha256:110c9b691e3feeb1ef6f16b005280754082b018d7b1039de5bffd3db8ed0586a",
+      "hypothesisIds": [
+        "SOURCE"
+      ],
+      "relation": "refutes"
+    }
+  ],
+  "attemptedChecks": [],
+  "candidateHypotheses": [
+    {
+      "id": "EOL",
+      "causalLayer": "environment",
+      "statement": "core.autocrlf true converted the newly introduced .cmd during checkout/ff merge",
+      "supportingEvidence": [
+        "HCR-Evidence/r072-validation/git-eol-observation.json"
+      ],
+      "contradictingEvidence": [],
+      "state": "confirmed",
+      "causeAnalysis": {
+        "symptom": "One accepted wrapper raw hash differs before push",
+        "mechanism": "Git leaves indexed LF source intact and writes CRLF working-tree text on checkout",
+        "rootCondition": "New .cmd uses inherited text=auto with core.autocrlf true and no per-file fixed eol",
+        "discriminatingEvidence": {
+          "statement": "Exactly 34 LF line terminators became CRLF; removing CR returns exact sealed bytes and expected SHA",
+          "evidenceRefs": [
+            "HCR-Evidence/r072-validation/git-eol-observation.json"
+          ]
+        },
+        "eliminationObservation": {
+          "statement": "Git indexed source equals sealed LF source; all other accepted target hashes matched; native data and report definitions unchanged",
+          "evidenceRefs": [
+            "HCR-Evidence/r072-validation/git-eol-observation.json"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SOURCE",
+      "causalLayer": "implementation",
+      "statement": "Wrapper logic/source changed after acceptance",
+      "supportingEvidence": [],
+      "contradictingEvidence": [
+        "HCR-Evidence/r072-validation/git-eol-observation.json"
+      ],
+      "state": "refuted"
+    }
+  ],
+  "candidateTests": [],
+  "accessBlockers": []
+}

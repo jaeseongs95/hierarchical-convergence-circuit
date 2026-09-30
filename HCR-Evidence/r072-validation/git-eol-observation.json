@@ -1,0 +1,13 @@
+{
+  "verified": true,
+  "path": "Run-HCR-R072.cmd",
+  "accepted_sha256": "sha256:ea671043727fa61376d8ded7d6a6df720fc836899f1efc8b009e54e6a3225d68",
+  "checkout_sha256": "sha256:f7d3dbc7b980daeb95fa18995bacf8de7ccf5382d3a8866f4e48640e9f385f6a",
+  "crlf_pairs": 34,
+  "sealed_crlf_pairs": 0,
+  "only_crlf_conversion": true,
+  "core_autocrlf": "true",
+  "native_data_changed": false,
+  "remote_push_started": false,
+  "git_index_source_matches_sealed": true
+}
