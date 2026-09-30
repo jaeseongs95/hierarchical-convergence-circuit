@@ -1,0 +1,30 @@
+{
+  "source_snapshot_crlf_lines": 34,
+  "source_snapshot_lf_lines": 34,
+  "original_staged_check": "git diff --cached --check",
+  "original_check_failure": "CRLF-preserved binary source snapshots were reported as trailing whitespace",
+  "original_failure_tool_output": "22e866",
+  "commit_created_despite_preceding_python_assertion": "70f8d1c6eb42ad39da25b8201e33752a0e9db03e",
+  "orchestration_cause": "Independent PowerShell lines executed git commit after Python returned nonzero; no conditional exit was present",
+  "scoped_check_command": [
+    "git",
+    "-c",
+    "core.whitespace=cr-at-eol",
+    "diff",
+    "--check",
+    "04f53800a03d2095ab8a9da173693f7673eccca5",
+    "70f8d1c6eb42ad39da25b8201e33752a0e9db03e",
+    "--",
+    "Run-HCR-R070.cmd",
+    "Run-HCR-R070.py",
+    "R070_MANIFEST.json",
+    "tools/r070_pool",
+    "experiments/exp-51-pool-signal-boundary",
+    "experiments/INDEX.json",
+    "experiments/INDEX.ko.md"
+  ],
+  "scoped_check_exit_code": 0,
+  "scoped_check_output": "",
+  "raw_source_modified": false,
+  "regression_rerun": false
+}

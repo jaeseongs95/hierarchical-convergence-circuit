@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "1.0.0",
+  "requestArtifactDigest": "sha256:6951dc3ab8bbb8e0843070180ee87046fe8b11194fa9ae69dcf07f748d2771cc",
+  "failureClusters": [
+    {
+      "fingerprint": "sha256:d735ca949746ccf82f8654b13d67835a13261ca80991673b2332a2ebbf2e3933",
+      "episodeIds": [
+        "r070-git-hygiene-1"
+      ],
+      "operation": "staged diff hygiene followed by commit",
+      "stableFailureTuple": {
+        "error": "CRLF trailing whitespace assertion",
+        "sequence": "commit follows failure"
+      },
+      "environmentDigest": "sha256:6f0caa768afd7529e476eab8c846483dab2fdd6d76cdf2915e5d2db4ba744502"
+    }
+  ],
+  "observations": [
+    {
+      "id": "OBS-001",
+      "statement": "Attempt r070-git-hygiene-1 failed during staged diff hygiene followed by commit in environment sha256:6f0caa768afd7529e476eab8c846483dab2fdd6d76cdf2915e5d2db4ba744502.",
+      "evidenceRefs": [
+        "HCR-Evidence/r070-validation/hygiene-observation.json"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "H1",
+      "causalLayer": "tooling",
+      "statement": "Wrong whitespace contract for byte-preserved CRLF snapshots plus ungated PowerShell command sequencing",
+      "supportingEvidence": [
+        "HCR-Evidence/r070-validation/hygiene-observation.json"
+      ],
+      "contradictingEvidence": [],
+      "state": "confirmed",
+      "causeAnalysis": {
+        "symptom": "Raw snapshots flagged as whitespace errors and commit created after failed Python assertion",
+        "mechanism": "-text keeps CR bytes; default diff hygiene flags them. PowerShell continues to later lines without checking native exit.",
+        "rootCondition": "The generic staged check included raw binary snapshots and the commit command was a separate unguarded line.",
+        "discriminatingEvidence": {
+          "statement": "Snapshot CRLF counts and a scoped cr-at-eol code check with exit 0",
+          "evidenceRefs": [
+            "HCR-Evidence/r070-validation/hygiene-observation.json"
+          ]
+        },
+        "eliminationObservation": {
+          "statement": "No current implementation whitespace error; raw integrity and core regression already verified",
+          "evidenceRefs": [
+            "HCR-Evidence/r070-validation/hygiene-observation.json"
+          ]
+        }
+      }
+    },
+    {
+      "id": "H2",
+      "causalLayer": "implementation",
+      "statement": "New R070 code has whitespace errors",
+      "supportingEvidence": [],
+      "contradictingEvidence": [
+        "HCR-Evidence/r070-validation/hygiene-observation.json"
+      ],
+      "state": "refuted"
+    }
+  ],
+  "nextDiscriminatingTest": null,
+  "confirmedCause": {
+    "causeId": "H1",
+    "hypothesisId": "H1",
+    "statement": "Wrong whitespace contract for byte-preserved CRLF snapshots plus ungated PowerShell command sequencing",
+    "symptom": "Raw snapshots flagged as whitespace errors and commit created after failed Python assertion",
+    "mechanism": "-text keeps CR bytes; default diff hygiene flags them. PowerShell continues to later lines without checking native exit.",
+    "rootCondition": "The generic staged check included raw binary snapshots and the commit command was a separate unguarded line.",
+    "discriminatingEvidence": {
+      "statement": "Snapshot CRLF counts and a scoped cr-at-eol code check with exit 0",
+      "evidenceRefs": [
+        "HCR-Evidence/r070-validation/hygiene-observation.json"
+      ]
+    },
+    "eliminationObservation": {
+      "statement": "No current implementation whitespace error; raw integrity and core regression already verified",
+      "evidenceRefs": [
+        "HCR-Evidence/r070-validation/hygiene-observation.json"
+      ]
+    },
+    "evidenceBindings": [
+      {
+        "evidenceRef": "HCR-Evidence/r070-validation/hygiene-observation.json",
+        "artifactDigest": "sha256:6f0caa768afd7529e476eab8c846483dab2fdd6d76cdf2915e5d2db4ba744502",
+        "hypothesisIds": [
+          "H1"
+        ],
+        "relation": "supports"
+      }
+    ]
+  },
+  "recommendedNextAction": "Use the confirmed cause as input to a separately authorized remediation task.",
+  "limitations": [],
+  "verdict": "CAUSE_CONFIRMED"
+}

@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "1.0.0",
+  "objective": "Diagnose staged whitespace report and premature commit sequencing",
+  "expectedBehavior": "Intentional raw CRLF preservation must coexist with code hygiene; a failed prerequisite must stop later mutation",
+  "episodes": [
+    {
+      "attemptId": "r070-git-hygiene-1",
+      "operation": "staged diff hygiene followed by commit",
+      "stableFailureTuple": {
+        "error": "CRLF trailing whitespace assertion",
+        "sequence": "commit follows failure"
+      },
+      "environmentDigest": "sha256:6f0caa768afd7529e476eab8c846483dab2fdd6d76cdf2915e5d2db4ba744502",
+      "changeSummary": "Raw snapshot files kept CRLF under -text attributes",
+      "evidenceRefs": [
+        "HCR-Evidence/r070-validation/hygiene-observation.json"
+      ]
+    }
+  ],
+  "lastKnownGood": {
+    "core_regression": "602 tests / 599 passed / 3 environment skips"
+  },
+  "constraints": [
+    "Do not rewrite raw evidence or core",
+    "Do not rerun research or regression without changed implementation"
+  ],
+  "authorization": {
+    "allowedChecks": [
+      "read-scoped-artifacts"
+    ],
+    "approvalRequired": [],
+    "prohibitedChecks": [
+      "rewrite-evidence"
+    ]
+  },
+  "evidenceBindings": [
+    {
+      "evidenceRef": "HCR-Evidence/r070-validation/hygiene-observation.json",
+      "artifactDigest": "sha256:6f0caa768afd7529e476eab8c846483dab2fdd6d76cdf2915e5d2db4ba744502",
+      "hypothesisIds": [
+        "H1"
+      ],
+      "relation": "supports"
+    },
+    {
+      "evidenceRef": "HCR-Evidence/r070-validation/hygiene-observation.json",
+      "artifactDigest": "sha256:6f0caa768afd7529e476eab8c846483dab2fdd6d76cdf2915e5d2db4ba744502",
+      "hypothesisIds": [
+        "H2"
+      ],
+      "relation": "refutes"
+    }
+  ],
+  "attemptedChecks": [],
+  "candidateHypotheses": [
+    {
+      "id": "H1",
+      "causalLayer": "tooling",
+      "statement": "Wrong whitespace contract for byte-preserved CRLF snapshots plus ungated PowerShell command sequencing",
+      "supportingEvidence": [
+        "HCR-Evidence/r070-validation/hygiene-observation.json"
+      ],
+      "contradictingEvidence": [],
+      "state": "confirmed",
+      "causeAnalysis": {
+        "symptom": "Raw snapshots flagged as whitespace errors and commit created after failed Python assertion",
+        "mechanism": "-text keeps CR bytes; default diff hygiene flags them. PowerShell continues to later lines without checking native exit.",
+        "rootCondition": "The generic staged check included raw binary snapshots and the commit command was a separate unguarded line.",
+        "discriminatingEvidence": {
+          "statement": "Snapshot CRLF counts and a scoped cr-at-eol code check with exit 0",
+          "evidenceRefs": [
+            "HCR-Evidence/r070-validation/hygiene-observation.json"
+          ]
+        },
+        "eliminationObservation": {
+          "statement": "No current implementation whitespace error; raw integrity and core regression already verified",
+          "evidenceRefs": [
+            "HCR-Evidence/r070-validation/hygiene-observation.json"
+          ]
+        }
+      }
+    },
+    {
+      "id": "H2",
+      "causalLayer": "implementation",
+      "statement": "New R070 code has whitespace errors",
+      "supportingEvidence": [],
+      "contradictingEvidence": [
+        "HCR-Evidence/r070-validation/hygiene-observation.json"
+      ],
+      "state": "refuted"
+    }
+  ],
+  "candidateTests": [],
+  "accessBlockers": []
+}
