@@ -1,0 +1,12 @@
+{
+  "operationId": "r078-publish-clarified-delivery",
+  "actionClass": "publish",
+  "targetLocators": [
+    "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main"
+  ],
+  "environments": [
+    "external"
+  ],
+  "candidate_commit": "ab332c95313fce180c6ca2015256a6689e6daf93",
+  "source": "Direct user-provided one-turn ordinary push authorization; scoped clarification and delivery evidence only"
+}

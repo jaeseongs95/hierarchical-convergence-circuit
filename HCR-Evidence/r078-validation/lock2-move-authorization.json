@@ -1,0 +1,11 @@
+{
+  "operationId": "r078-preserve-second-inactive-lock",
+  "actionClass": "move",
+  "targetLocators": [
+    "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\.git\\index.lock"
+  ],
+  "environments": [
+    "local"
+  ],
+  "source": "Authorized preservation-only reversible move to finish scoped Git delivery; no lock deletion"
+}

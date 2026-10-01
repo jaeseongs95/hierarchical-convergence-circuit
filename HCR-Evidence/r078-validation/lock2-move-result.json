@@ -1,0 +1,9 @@
+{
+  "verified": true,
+  "preserved_bytes_exact": true,
+  "creation_origin": "unknown",
+  "no_live_git_process_on_inspection": true,
+  "exclusive_file_open_passed": true,
+  "optional_locks_disabled_for_following_commands": true,
+  "native_retry": false
+}

@@ -1,0 +1,15 @@
+{
+  "stage": "final-records-staging",
+  "git_add_exit": 128,
+  "commit_created": false,
+  "current_branch": "research/r078-delivery-records",
+  "current_head": "ab332c95313fce180c6ca2015256a6689e6daf93",
+  "lock_bytes": 0,
+  "lock_mtime_ns": 1790819145758802500,
+  "source_origin": "unknown",
+  "exclusive_file_open_passed": true,
+  "optional_locks_disabled_read_keeps_timestamp": true,
+  "tracked_diff": "",
+  "hashlib_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "native_retry": false
+}

@@ -1,0 +1,13 @@
+{
+  "primary_research_branch": "research/r078-binding-order",
+  "primary_commit": "06cd9689b8293fe01e133706349c57d1187f22f8",
+  "primary_fast_forward_merged": true,
+  "primary_branch_deleted": true,
+  "clarification_commit": "ab332c95313fce180c6ca2015256a6689e6daf93",
+  "clarification_committed_on_main_before_lead_branch_reminder": true,
+  "history_not_rewritten": true,
+  "remaining_delivery_records_branch": "research/r078-delivery-records",
+  "research_execution_and_frozen_sources_unchanged": true,
+  "followup_criterion": "first-network stable_false versus ambiguous distinguished by convergence.status and progress mismatch.kind;ready/graph completeness/frontier separately observed",
+  "authority": "Original user instruction;peer reminders do not create new authorization"
+}

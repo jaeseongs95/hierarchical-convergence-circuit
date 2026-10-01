@@ -1,0 +1,14 @@
+{
+  "verified": true,
+  "current_artifact_commit": "ab332c95313fce180c6ca2015256a6689e6daf93",
+  "local_main_commit": "ab332c95313fce180c6ca2015256a6689e6daf93",
+  "remote_main_commit": "ab332c95313fce180c6ca2015256a6689e6daf93",
+  "ordinary_push": true,
+  "push_exit_code": 0,
+  "signature_verified": true,
+  "task_branch_deleted": true,
+  "remaining_local_branches": [
+    "main"
+  ],
+  "computational_source_and_raw_unchanged": true
+}

@@ -1,0 +1,312 @@
+{
+  "schemaVersion": "1.0.0",
+  "taskEnvelope": {
+    "schemaVersion": "1.0.0",
+    "taskId": "hcc-r078-binding-order",
+    "objective": "R077 동일 memory에서 edge 배열 순서가 비동률/동률 native 최초 선택과 실제 edge ID proof에 미치는 영향을 분리한다",
+    "scope": {
+      "included": [
+        "Run-HCR-R078.cmd",
+        "Run-HCR-R078.py",
+        "R078_MANIFEST.json",
+        "tools/r078_binding_order/",
+        "experiments/exp-59-binding-order/",
+        "experiments/INDEX.json",
+        "experiments/INDEX.ko.md",
+        "HCR-Evidence/exp59/",
+        "HCR-Evidence/r078-validation/"
+      ],
+      "excluded": [
+        "src/",
+        "tests/",
+        "archive/",
+        "tools/r077_equal_binding/",
+        "experiments/exp-58-equal-binding/",
+        "HCR-Evidence/exp58/",
+        "HCR-Evidence/r077-validation/"
+      ]
+    },
+    "acceptanceCriteria": [
+      "[AC-001] native 실행 전에 R077 봉인 memory/config/world/ID/score/budget과 edge 블록 교환 12셀, 예측·반증·판정불가 기준을 hash로 동결한다",
+      "[AC-002] 재학습/feedback 없이 12개 native journal, slot→edge ID, 모든 pool 후보·binding·activation·eligibility·inhibition·순서·expansion·proof/readout/채택·개별 비용을 보존한다",
+      "[AC-003] 독립 규칙으로 12 journal과 recurrence·경로 매핑·입력 hash·집계를 재계산하고 raw/summary 변조를 거부하며 최종 core 회귀 1회에서 599 pass/기존 skip3을 확인한다",
+      "[AC-004] 원클릭·bundle·연결된 결과/NEXT·scope/acceptance 검증과 기존 변경 보존·커밋·main 병합·작업브랜치 정리·일반 origin/main push 확인을 완료한다"
+    ],
+    "riskLevel": "medium",
+    "workUnits": [
+      {
+        "id": "research",
+        "objective": "R077 동일 memory에서 edge 배열 순서가 비동률/동률 native 최초 선택과 실제 edge ID proof에 미치는 영향을 분리한다",
+        "dependencies": [],
+        "writeTargets": [
+          "Run-HCR-R078.cmd",
+          "Run-HCR-R078.py",
+          "R078_MANIFEST.json",
+          "tools/r078_binding_order/",
+          "experiments/exp-59-binding-order/",
+          "experiments/INDEX.json",
+          "experiments/INDEX.ko.md",
+          "HCR-Evidence/exp59/",
+          "HCR-Evidence/r078-validation/"
+        ]
+      }
+    ],
+    "requiredCapabilities": [
+      "change-scope-baseline-capture",
+      "minimal-implementation",
+      "change-scope-assurance",
+      "acceptance-evidence-validation",
+      "mutation-risk-preflight"
+    ],
+    "constraints": [
+      "core/정책/역사 evidence 수정 금지",
+      "재학습/feedback/host correction/automatic retry 금지",
+      "독립 발견 표본0, energy/peak memory null",
+      "ON/OFF로 inhibition 독립 효과 해석 금지",
+      "Run-HCR-R077.cmd는 허용 범위 밖이며 최초 기준선의 raw bytes와 상태를 그대로 보존한다"
+    ],
+    "authorization": {
+      "allowedActions": [
+        "read",
+        "write-scoped-research-files",
+        "run-local-checks",
+        "commit",
+        "merge-local-main",
+        "delete-completed-local-task-branch",
+        "push-origin-main"
+      ],
+      "prohibitedActions": [
+        "force-push",
+        "rewrite-historical-evidence",
+        "overwrite-user-changes"
+      ],
+      "approvalRequired": [
+        "deploy",
+        "tag",
+        "install",
+        "delete-remote-branch"
+      ]
+    },
+    "decision": {
+      "complexity": "simple",
+      "hasConflicts": false
+    },
+    "orchestration": {
+      "requested": false,
+      "mcpAvailable": true
+    }
+  },
+  "target": {
+    "kind": "artifact",
+    "identifier": "R078-sealed-binding-order-with-proof-support-clarification",
+    "digest": "sha256:6f1577cd5a2e5dc44a944b3393a83a8ff0a9b4274d45f79c8006cb86d26a2360"
+  },
+  "evidence": [
+    {
+      "id": "freeze",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp59/r078-20261001T012408Z-598761f4db/plan.json",
+      "digest": "sha256:98620ac05c9b2f021852efcfc728a53720a330cbec51de60dc7d29df32f276a7",
+      "targetDigest": "sha256:6f1577cd5a2e5dc44a944b3393a83a8ff0a9b4274d45f79c8006cb86d26a2360",
+      "verified": true,
+      "criterionIds": [
+        "AC-001"
+      ],
+      "direction": "supports",
+      "observedResult": "Pre-native sealed R077 memory/config/world/IDs/budgets,12 order×score×gate cells and separate predictions"
+    },
+    {
+      "id": "grounding",
+      "kind": "test",
+      "locator": "HCR-Evidence/exp59/r078-20261001T012408Z-598761f4db/validation/selftest.json",
+      "digest": "sha256:308e6f5c943fa60f1a21bc150a3fe76b19884add5965ec2f0e6beeeb4e8b6bc1",
+      "targetDigest": "sha256:6f1577cd5a2e5dc44a944b3393a83a8ff0a9b4274d45f79c8006cb86d26a2360",
+      "verified": true,
+      "criterionIds": [
+        "AC-001"
+      ],
+      "direction": "supports",
+      "observedResult": "R0779 prior journals reanalyzed,12 native-free grammar/ID checks;no new discovery evidence"
+    },
+    {
+      "id": "integrity",
+      "kind": "test",
+      "locator": "HCR-Evidence/r078-validation/delivery-verification.json",
+      "digest": "sha256:baaab33713fa6eab5ec448460a268a9655c26973f4cf732aaa99a5f2c58139db",
+      "targetDigest": "sha256:6f1577cd5a2e5dc44a944b3393a83a8ff0a9b4274d45f79c8006cb86d26a2360",
+      "verified": true,
+      "criterionIds": [
+        "AC-001",
+        "AC-003",
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Bundle/ZIP/current source/original and copied parent bytes verified;catalog references verified"
+    },
+    {
+      "id": "native",
+      "kind": "test",
+      "locator": "HCR-Evidence/exp59/r078-20261001T012408Z-598761f4db/verification.json",
+      "digest": "sha256:f7ae473e0e247576d3df49333da5fbd1e407cc5450cb47c4056814e6253b1f6f",
+      "targetDigest": "sha256:6f1577cd5a2e5dc44a944b3393a83a8ff0a9b4274d45f79c8006cb86d26a2360",
+      "verified": true,
+      "criterionIds": [
+        "AC-002",
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "Independent12 journal replay,pool recurrence,slot→ID mapping;raw mutations11 rejected;no producer imports"
+    },
+    {
+      "id": "summary",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp59/r078-20261001T012408Z-598761f4db/summary.json",
+      "digest": "sha256:76decdb579b5ae7010bad7b46fb7b19da62245d908aba8bc675d470ecceae8c5",
+      "targetDigest": "sha256:6f1577cd5a2e5dc44a944b3393a83a8ff0a9b4274d45f79c8006cb86d26a2360",
+      "verified": true,
+      "criterionIds": [
+        "AC-002"
+      ],
+      "direction": "supports",
+      "observedResult": "All12 candidates/bindings/activations/eligibility/inhibition/selections/proof inventory/adoption and separate cost retained;falsified OFF proof prediction allowed"
+    },
+    {
+      "id": "support",
+      "kind": "test",
+      "locator": "HCR-Evidence/r078-validation/proof-support-audit.json",
+      "digest": "sha256:f256578e6d51710b76146e3aef37c461daebcc6b402503bc5be3dc545b29f882",
+      "targetDigest": "sha256:6f1577cd5a2e5dc44a944b3393a83a8ff0a9b4274d45f79c8006cb86d26a2360",
+      "verified": true,
+      "criterionIds": [
+        "AC-002",
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "Final dependency closure/path index/depth/terminal ranking independently checked;4mutations rejected;first/final decision networks separated"
+    },
+    {
+      "id": "tamper",
+      "kind": "test",
+      "locator": "HCR-Evidence/exp59/r078-20261001T012408Z-598761f4db/validation/summary-verification.json",
+      "digest": "sha256:ad66efd3f559899d68375087655b34e9bc26e29ceeb2b6672ce6e0886b4a15f9",
+      "targetDigest": "sha256:6f1577cd5a2e5dc44a944b3393a83a8ff0a9b4274d45f79c8006cb86d26a2360",
+      "verified": true,
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "Summary mutation13 rejected;exact raw-grounded aggregation recomputed"
+    },
+    {
+      "id": "regression",
+      "kind": "test",
+      "locator": "HCR-Evidence/exp59/r078-20261001T012408Z-598761f4db/validation/core_regression.json",
+      "digest": "sha256:d5daace122f8617bfd42c41ab59ddb55331aae622d85dc3ab6f6439a54928ab9",
+      "targetDigest": "sha256:6f1577cd5a2e5dc44a944b3393a83a8ff0a9b4274d45f79c8006cb86d26a2360",
+      "verified": true,
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "One final regression:602tests,599pass,3existing environment skips,no new skip/failure"
+    },
+    {
+      "id": "report",
+      "kind": "document",
+      "locator": "experiments/exp-59-binding-order/results.ko.md",
+      "digest": "sha256:6f2ee602aad791c8ffe3210ca0812914dd1f830dfe2cc67a900a45c315362646",
+      "targetDigest": "sha256:6f1577cd5a2e5dc44a944b3393a83a8ff0a9b4274d45f79c8006cb86d26a2360",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Observed non-tie preservation,tie order flip,OFF coverage exception,replication/novel input distinction and claim boundaries documented"
+    },
+    {
+      "id": "next",
+      "kind": "document",
+      "locator": "experiments/exp-59-binding-order/NEXT.ko.md",
+      "digest": "sha256:01612d18e83dfb8e383b4798949c4cf3d02a38fd6261c8ac7f9a4aa5d7cbc444",
+      "targetDigest": "sha256:6f1577cd5a2e5dc44a944b3393a83a8ff0a9b4274d45f79c8006cb86d26a2360",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Unexecuted successor:zero-drive versus positive evidence,first goal/convergence/readout/coverage thresholds and final ancestry"
+    },
+    {
+      "id": "scope",
+      "kind": "test",
+      "locator": "HCR-Evidence/r078-validation/scope-report.after-delivery.json",
+      "digest": "sha256:36cca0df4aac03d78e40f65f2678fa21924e89dc1a1e76b67537ad5ef776cfed",
+      "targetDigest": "sha256:6f1577cd5a2e5dc44a944b3393a83a8ff0a9b4274d45f79c8006cb86d26a2360",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "ScopePASS,no excluded/unplanned/overlap,preexisting263 raw entries preserved"
+    },
+    {
+      "id": "delivery",
+      "kind": "test",
+      "locator": "HCR-Evidence/r078-validation/clarified-git-delivery.json",
+      "digest": "sha256:b045161059f252bb82c93537ef27599b0d2a7f27dba46864ebc93bd65f8e372e",
+      "targetDigest": "sha256:6f1577cd5a2e5dc44a944b3393a83a8ff0a9b4274d45f79c8006cb86d26a2360",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Signed primary and clarification commits on main,ordinary push verified remote==local,task branch deleted"
+    },
+    {
+      "id": "lock",
+      "kind": "test",
+      "locator": "HCR-Evidence/r078-validation/lock-move-result.json",
+      "digest": "sha256:616da341e9bf011184a70e17a146b6d73c4983683559704be597c9b08a6ccaf7",
+      "targetDigest": "sha256:6f1577cd5a2e5dc44a944b3393a83a8ff0a9b4274d45f79c8006cb86d26a2360",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Inactive empty Git lock retained by scoped move after READY preflight;index and research bytes unchanged"
+    }
+  ],
+  "verificationCommands": [
+    {
+      "id": "oneclick",
+      "command": "Run-HCR-R078.cmd",
+      "criterionIds": [
+        "AC-001",
+        "AC-002",
+        "AC-003"
+      ],
+      "exitCode": 0,
+      "locator": "HCR-Evidence/exp59/r078-20261001T012408Z-598761f4db/result.json",
+      "targetDigest": "sha256:6f1577cd5a2e5dc44a944b3393a83a8ff0a9b4274d45f79c8006cb86d26a2360"
+    },
+    {
+      "id": "delivery",
+      "command": "git push origin main; read refs/heads/main; delete merged local task branch",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "exitCode": 0,
+      "locator": "HCR-Evidence/r078-validation/clarified-git-delivery.json",
+      "targetDigest": "sha256:6f1577cd5a2e5dc44a944b3393a83a8ff0a9b4274d45f79c8006cb86d26a2360"
+    }
+  ],
+  "criterionOverrides": [],
+  "knownLimitations": [
+    "Authored deterministic single memory/world;original6 are R077 replication,swapped6 new input conditions;independent discovery samples0",
+    "ON/OFF does not isolate inhibition; stable goal margin does not measure candidate separation",
+    "Frozen summary proof_edge_id_paths is inventory; post-execution final ancestry clarification preserved separately without changing predictions",
+    "Energy/peak memory null;three existing symlink skips;cloud validation not executed",
+    "Initial scope exclusion collided with unchanged preexisting EOL state;original snapshot rebound to equivalent narrower permission contract without new allowed paths",
+    "Inactive zero-byte Git lock preserved by READY reversible move;Git index and raw unchanged"
+  ]
+}
