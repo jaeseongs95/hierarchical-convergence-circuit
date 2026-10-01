@@ -1,0 +1,8 @@
+{
+  "verified": true,
+  "changed_paths": 649,
+  "all_staged_paths_in_allowed_scope": true,
+  "checked_sealed_evidence_files": 634,
+  "raw_bytes_exact": true,
+  "method": "Git index blob IDs compared with Git blob hash of raw file bytes"
+}

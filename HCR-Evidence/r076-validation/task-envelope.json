@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "1.0.0",
+  "taskId": "hcc-r076-native-competition",
+  "objective": "Native feedback으로 길이2/3 회로를 형성하고 고정 world와 paired score 입력에서 모든 pool 후보·경쟁·선택·proof·채택·비용을 구분한다",
+  "scope": {
+    "included": [
+      "Run-HCR-R076.cmd",
+      "Run-HCR-R076.py",
+      "R076_MANIFEST.json",
+      "tools/r076_competition/",
+      "experiments/exp-57-native-competition/",
+      "experiments/INDEX.json",
+      "experiments/INDEX.ko.md",
+      "HCR-Evidence/exp57/",
+      "HCR-Evidence/r076-validation/"
+    ],
+    "excluded": [
+      "src/",
+      "archive/",
+      "HCR-Evidence/exp56/",
+      "HCR-Evidence/r075-validation/"
+    ]
+  },
+  "acceptanceCriteria": [
+    "[AC-001] 첫 native 실행 전에 config·world·score 네 점·3회 formation·ON/OFF 8셀·budget과 주장 경계를 동결하고 host memory/proof 수정을 하지 않는다",
+    "[AC-002] native formation과 binding/pool 진입을 분리 검증하며 추가 prefix 후보를 포함한 모든 후보·억제·eligibility·선택·proof/readout·비용을 보존하고 선택 전환의 음성·측정불가도 허용한다",
+    "[AC-003] 원자료를 독립 재생하고 memory feedback·수식·집계를 검산하며 변조를 거부하고 최종 core 회귀 1회에서 새 실패/skip이 없다",
+    "[AC-004] 원클릭·원자료 bundle·한계와 다음 판별 연구를 제공하고 기존 변경 보존·범위/수용 확인·커밋·로컬 main 병합·브랜치 정리·일반 push 반영 확인을 완료한다"
+  ],
+  "riskLevel": "medium",
+  "workUnits": [
+    {
+      "id": "research",
+      "objective": "Native feedback으로 길이2/3 회로를 형성하고 고정 world와 paired score 입력에서 모든 pool 후보·경쟁·선택·proof·채택·비용을 구분한다",
+      "dependencies": [],
+      "writeTargets": [
+        "Run-HCR-R076.cmd",
+        "Run-HCR-R076.py",
+        "R076_MANIFEST.json",
+        "tools/r076_competition/",
+        "experiments/exp-57-native-competition/",
+        "experiments/INDEX.json",
+        "experiments/INDEX.ko.md",
+        "HCR-Evidence/exp57/",
+        "HCR-Evidence/r076-validation/"
+      ]
+    }
+  ],
+  "requiredCapabilities": [
+    "change-scope-baseline-capture",
+    "minimal-implementation",
+    "change-scope-assurance",
+    "acceptance-evidence-validation",
+    "mutation-risk-preflight"
+  ],
+  "constraints": [
+    "기존 core와 historical evidence 수정 금지",
+    "최초 실패·부분 자료 보존, 자동 retry/host correction 금지",
+    "prior·mismatch 자연 변화는 joint 개입으로 기록",
+    "기존 599pass/3환경skip 보존",
+    "결정적 authored 조건을 독립 표본이나 일반 HCC 우위로 표현 금지"
+  ],
+  "authorization": {
+    "allowedActions": [
+      "read",
+      "write-scoped-research-files",
+      "run-local-checks",
+      "commit",
+      "merge-local-main",
+      "delete-completed-local-task-branch",
+      "push-origin-main"
+    ],
+    "prohibitedActions": [
+      "force-push",
+      "rewrite-historical-evidence",
+      "overwrite-user-changes"
+    ],
+    "approvalRequired": [
+      "deploy",
+      "tag",
+      "install",
+      "delete-remote-branch"
+    ]
+  },
+  "decision": {
+    "complexity": "simple",
+    "hasConflicts": false
+  },
+  "orchestration": {
+    "requested": false,
+    "mcpAvailable": true
+  }
+}

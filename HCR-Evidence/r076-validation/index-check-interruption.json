@@ -1,0 +1,8 @@
+{
+  "status": "stopped_before_result",
+  "comparisonTarget": "index",
+  "baselineComparisonTarget": "working-tree",
+  "reason": "Read-only extra check enumerates every tracked blob before rejecting mismatched baseline kind; 34993 indexed files. No index PASS claimed.",
+  "required_scope_evidence": "scope-report.json",
+  "native_rerun": false
+}

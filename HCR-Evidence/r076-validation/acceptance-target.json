@@ -1,0 +1,69 @@
+{
+  "schema": "hcc-r076-delivery-target-v1",
+  "files": {
+    "Run-HCR-R076.cmd": {
+      "sha256": "708e71d2c6071b278b8074dc7889f185f17a267e786df671be469c83032c9a7c",
+      "normalization": "lf"
+    },
+    "Run-HCR-R076.py": {
+      "sha256": "01eeb2c71c6f84a58591828cd678a1aa0fa6ebeef6740f182180d87decbbe414",
+      "normalization": "lf"
+    },
+    "tools/r076_competition/__init__.py": {
+      "sha256": "3db0096b6a9d25ae42d70992d7008b5e73e4063880dd17d7283c5ad7480443e7",
+      "normalization": "lf"
+    },
+    "tools/r076_competition/audit.py": {
+      "sha256": "ab463e3f810e548ee719a036faf9fb2edfb53bc4ea6e3a77052fcd8282fa86da",
+      "normalization": "lf"
+    },
+    "tools/r076_competition/pipeline.py": {
+      "sha256": "7b575943a22990cef43e0f55ffd00c260f09b1423de10aee49231467514114cd",
+      "normalization": "lf"
+    },
+    "tools/r076_competition/verify.py": {
+      "sha256": "e3fd120918ef10e55fbf540d8fe9783810c46754191b8e62df7a2bcf698eacf0",
+      "normalization": "lf"
+    },
+    "tools/r076_competition/worker.py": {
+      "sha256": "b0c5436bc72893295eb2a89a60325f44167888597da2573aa526728445eb287d",
+      "normalization": "lf"
+    },
+    "experiments/exp-57-native-competition/design.ko.md": {
+      "sha256": "f067b1c3e375d84a0a4954cdd82457f18ef307618c4f4030b6d1c1bf73ceb81e",
+      "normalization": "lf"
+    },
+    "experiments/exp-57-native-competition/frozen_spec.json": {
+      "sha256": "5494b701ca385ecc772e8d65c558648b8d7d9824378bfbf62241caa6b192d9d7",
+      "normalization": "lf"
+    },
+    "experiments/exp-57-native-competition/reference_world.json": {
+      "sha256": "58ec8669bd160336d3d140c950518682e4ba5e665f9505389e4d88ca3a34cdad",
+      "normalization": "lf"
+    },
+    "R076_MANIFEST.json": {
+      "sha256": "4f21cd48aab095484e9364171145199c5fec1b961cce7c9854d43cb845cf7442",
+      "normalization": "lf"
+    },
+    "experiments/INDEX.json": {
+      "sha256": "7de9864558fdf4288272485aa1e9da7b6f30a3f454f92ba96016c9c629946fe0",
+      "normalization": "lf"
+    },
+    "experiments/INDEX.ko.md": {
+      "sha256": "54284834c813c4edb023812e55a53db6ece9d9edc76bbcebb84ff78632fd14b7",
+      "normalization": "lf"
+    },
+    "experiments/exp-57-native-competition/RESULTS.ko.md": {
+      "sha256": "a1f55f49386cbc6be88419383828dc02f497fc374a7c280224b29b7fb0793cb9",
+      "normalization": "lf"
+    },
+    "experiments/exp-57-native-competition/NEXT.ko.md": {
+      "sha256": "0310700a723653f133740b26431aa8109a8ce7d7c6cfd0fe3d65fa2b0beb7b25",
+      "normalization": "lf"
+    },
+    "HCR-Evidence/exp57/r076-20261001T001633Z-cac62c3eb7/bundle_manifest.json": {
+      "sha256": "6a7707c5d1f1e80a69caaea1e847db26376284012eea47a159efb4433b08b2ad",
+      "normalization": "raw"
+    }
+  }
+}

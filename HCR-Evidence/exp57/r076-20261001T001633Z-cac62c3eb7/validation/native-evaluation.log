@@ -1,0 +1,8 @@
+sneg-on readout_ready
+sneg-off readout_ready
+s00-on readout_ready
+s00-off readout_ready
+s06-on readout_ready
+s06-off readout_ready
+s10-on readout_ready
+s10-off readout_ready

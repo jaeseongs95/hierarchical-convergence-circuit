@@ -1,0 +1,15 @@
+{
+  "schema": "hcc-r076-source-manifest-v1",
+  "files": {
+    "Run-HCR-R076.cmd": "708e71d2c6071b278b8074dc7889f185f17a267e786df671be469c83032c9a7c",
+    "Run-HCR-R076.py": "01eeb2c71c6f84a58591828cd678a1aa0fa6ebeef6740f182180d87decbbe414",
+    "tools/r076_competition/__init__.py": "3db0096b6a9d25ae42d70992d7008b5e73e4063880dd17d7283c5ad7480443e7",
+    "tools/r076_competition/audit.py": "ab463e3f810e548ee719a036faf9fb2edfb53bc4ea6e3a77052fcd8282fa86da",
+    "tools/r076_competition/pipeline.py": "7b575943a22990cef43e0f55ffd00c260f09b1423de10aee49231467514114cd",
+    "tools/r076_competition/verify.py": "e3fd120918ef10e55fbf540d8fe9783810c46754191b8e62df7a2bcf698eacf0",
+    "tools/r076_competition/worker.py": "b0c5436bc72893295eb2a89a60325f44167888597da2573aa526728445eb287d",
+    "experiments/exp-57-native-competition/design.ko.md": "f067b1c3e375d84a0a4954cdd82457f18ef307618c4f4030b6d1c1bf73ceb81e",
+    "experiments/exp-57-native-competition/frozen_spec.json": "5494b701ca385ecc772e8d65c558648b8d7d9824378bfbf62241caa6b192d9d7",
+    "experiments/exp-57-native-competition/reference_world.json": "58ec8669bd160336d3d140c950518682e4ba5e665f9505389e4d88ca3a34cdad"
+  }
+}

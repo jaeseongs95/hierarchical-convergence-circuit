@@ -1,0 +1,38 @@
+{
+  "verified": true,
+  "run": "HCR-Evidence/exp57/r076-20261001T001633Z-cac62c3eb7",
+  "source_files": 489,
+  "bundle_files": 609,
+  "zip_sha256": "2845628505886891ef58c775c1d370e4e2b9c287ff5bb5b9e473d38b5ab77507",
+  "frozen_snapshot_bytes_exact": true,
+  "current_computational_source_bytes_exact": true,
+  "post_run_catalog_addition_verified": true,
+  "changed_current_catalog_paths": [
+    "experiments/INDEX.json"
+  ],
+  "raw_bundle_zip_bytes_exact": true,
+  "core_regression": {
+    "runs": 1,
+    "tests_run": 602,
+    "passed": 599,
+    "environment_skips": 3,
+    "new_skips": 0
+  },
+  "native_training_executions": 3,
+  "native_evaluation_executions": 8,
+  "independent_feedback_replays": 3,
+  "rejected_raw_mutations": 7,
+  "rejected_summary_mutations": 8,
+  "new_independent_samples": 0,
+  "max_pool_replay_error": 8.881784197001252e-16,
+  "first_selection_switch_observed": true,
+  "two_complete_route_first_selection_switch_observed": false,
+  "prefix_candidate_preserved": true,
+  "energy_joules": null,
+  "peak_memory_bytes": null,
+  "index_paths_verified": true,
+  "index_experiments": 58,
+  "default_dispatcher_promoted": false,
+  "automatic_retry": false,
+  "failed_research_runs": 0
+}

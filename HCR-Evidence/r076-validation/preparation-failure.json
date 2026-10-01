@@ -1,0 +1,7 @@
+{
+  "stage": "contract-assembly-before-file-write",
+  "exception": "KeyError: 'envelope'",
+  "cause": "Observed report key is taskEnvelope; corrected lookup only",
+  "native_executions": 0,
+  "automatic_retry": false
+}

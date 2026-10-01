@@ -1,0 +1,15 @@
+{
+  "verified": true,
+  "scope_verdict": "PASS",
+  "oneclick_exit_code": 0,
+  "independent_native_replays": 11,
+  "feedback_replays": 3,
+  "raw_mutation_rejections": 7,
+  "summary_mutation_rejections": 8,
+  "regression_tests": 602,
+  "regression_passed": 599,
+  "existing_environment_skips": 3,
+  "new_skips": 0,
+  "target_digest": "sha256:3cf549190df40b1e2985d303a7a6d8134f33a6fa8cc27ed56354fcbcf9f86a93",
+  "delivery_still_pending": true
+}

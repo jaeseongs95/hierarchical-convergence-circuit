@@ -1065,6 +1065,26 @@
       "source_commit": null,
       "source_commit_note": "Sealed R072/R074 reanalysis: 12 fixed-config zero-prior e0/e1 drive-factorial evaluator cells, six prior correspondences and six mixed-scale interventions; no new native execution, training or independent sample.",
       "standalone_python_entrypoint": "Run-HCR-R075.py"
+    },
+    {
+      "current_python_entrypoint": null,
+      "default_dispatcher_promoted": false,
+      "design": "experiments/exp-57-native-competition/design.ko.md",
+      "directory": "experiments/exp-57-native-competition",
+      "evidence_directory": "HCR-Evidence/exp57",
+      "execution_status": "standalone_candidate_contract",
+      "experiment_id": "EXP-57",
+      "frozen_design": "experiments/exp-57-native-competition/frozen_spec.json",
+      "implementation_validation_directory": "HCR-Evidence/r076-validation",
+      "legacy_python_entrypoint": null,
+      "release_manifest": "R076_MANIFEST.json",
+      "revision_references": [
+        "r076"
+      ],
+      "run_status": "read_per_run_evidence",
+      "source_commit": null,
+      "source_commit_note": "Three native formation sessions and eight paired frozen evaluations; two stored patterns and three pool candidates including prefix; joint public score/prior/mismatch intervention, no independent discovery samples.",
+      "standalone_python_entrypoint": "Run-HCR-R076.py"
     }
   ],
   "inventory_commit": "afb5d5e5b67906b7697f16163e166f59b17e1655",

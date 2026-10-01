@@ -1,0 +1,11 @@
+{
+  "verified": true,
+  "method": "Reverse scoped primary patch in an isolated temporary index",
+  "reverse_primary_patch_check_exit_code": 0,
+  "reverse_primary_patch_simulation_exit_code": 0,
+  "remaining_only_new_evidence": true,
+  "preserved_evidence_paths": 631,
+  "actual_checkout_restore_executed": false,
+  "baseline_commit": "bd201799f6259cd77361aea9f69bca328ed261f2",
+  "patch_sha256": "05575dca2bc0af75c0432f50eb6fd2baea72344f3773d333a48e0fee770edac7"
+}

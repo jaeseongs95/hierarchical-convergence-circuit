@@ -1,0 +1,9 @@
+{
+  "verified": true,
+  "manifest_files": 10,
+  "syntax_checked": true,
+  "expected_native_executions": 11,
+  "expected_evaluation_cells": 8,
+  "run_not_started": true,
+  "plan_sha256": "5494b701ca385ecc772e8d65c558648b8d7d9824378bfbf62241caa6b192d9d7"
+}

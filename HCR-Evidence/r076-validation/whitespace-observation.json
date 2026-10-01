@@ -1,0 +1,16 @@
+{
+  "default_raw_evidence_check_exit_code": 1,
+  "observed_reason": "Preserved CRLF in -text sealed source/log bytes is reported as trailing whitespace by default Git diff --check",
+  "primary_check_exit_code": 0,
+  "cr_at_eol_aware_all_paths_check_exit_code": 2,
+  "remaining_findings": "HCR-Evidence/exp57/r076-20261001T001633Z-cac62c3eb7/source/experiments/exp-31-review-boundary/design.ko.md:3: trailing whitespace.\n+계약: `r050-review-boundary-v1`  \nHCR-Evidence/exp57/r076-20261001T001633Z-cac62c3eb7/source/experiments/exp-31-review-boundary/design.ko.md:4: trailing whitespace.\n+구현 기준: `7ba5f31fb68a92fa0eca8ed0bf5f302fe2d36b86`  \nHCR-Evidence/exp57/r076-20261001T001633Z-cac62c3eb7/source/experiments/exp-31-review-boundary/design.ko.md:58: trailing whitespace.\n+`baselines/`: 실제 최초 session packet, 최초 finish branch의 candidate, native 다음 action, 실험 target.  \nHCR-Evidence/exp57/r076-20261001T001633Z-cac62c3eb7/source/experiments/exp-31-review-boundary/design.ko.md:59: trailing whitespace.\n+`raw/`: 각 arm의 최초 판단 참조, 명시적 개입, 실제 새 session packet/candidate, terminal adoption.  \nHCR-Evidence/exp57/r076-20261001T001633Z-cac62c3eb7/source/experiments/exp-31-review-boundary/design.ko.md:60: trailing whitespace.\n+`progress/`: 각 성공한 init/begin/advance의 append-only snapshot과 candidate 원본.  \nHCR-Evidence/exp57/r076-20261001T001633Z-cac62c3eb7/source/experiments/exp-31-review-boundary/design.ko.md:61: trailing whitespace.\n+`measurements/`: 응답 검증 전 보존한 request/response.  \nHCR-Evidence/exp57/r076-20261001T001633Z-cac62c3eb7/source/experiments/exp-31-review-boundary/design.ko.md:62: trailing whitespace.\n+`interventions/`: 실제 실행 전 동결한 restart 입력과 사유.  \nHCR-Evidence/exp57/r076-20261001T001633Z-cac62c3eb7/source/experiments/exp-31-review-boundary/design.ko.md:63: trailing whitespace.\n+`source/`, `source_manifest.json`, `plan.json`: 실행한 원본 core, 신규 도구, tests, 조건, provenance.  \nHCR-Evidence/exp57/r076-20261001T001633Z-cac62c3eb7/source/experiments/exp-31-review-boundary/design.ko.md:64: trailing whitespace.\n+`analysis/`: 독립 audit, trials.csv, summary.json, summary.ko.md.  \nHCR-Evidence/exp57/r076-20261001T001633Z-cac62c3eb7/source/tests/test_r021_sessions.py:385: new blank line at EOF.\n",
+  "raw_evidence_rewritten": false,
+  "research_rerun": false,
+  "remaining_findings_are_exact_historical_bytes": true,
+  "primary_implementation_has_no_whitespace_findings": true,
+  "historical_finding_count": 10,
+  "historical_finding_types": [
+    "Markdown two-space hard breaks",
+    "test file blank line at EOF"
+  ]
+}
