@@ -1,0 +1,12 @@
+{
+  "actionClass": "delete",
+  "operationId": "r080-branch-delete-primary",
+  "targetLocators": [
+    "git-local-ref://hierarchical-convergence-circuit/refs/heads/research/r080-small-positive"
+  ],
+  "environments": [
+    "local"
+  ],
+  "candidate_commit": "864f5e0668b25c7cf9cd81cba79b54014691ae8a",
+  "source": "User supplied AGENTS one-turn includes ordinary origin/main push and completed local branch deletion; no force/deployment"
+}

@@ -1,0 +1,12 @@
+{
+  "verified": true,
+  "root_launcher_checkout_changed_only_EOL": true,
+  "root_launcher_original_bytes_restored_on_delivery_branch": true,
+  "current_source_exact": true,
+  "staged_content_patch_count": 0,
+  "native_or_regression_reruns": 0,
+  "baseline_stat_only_files": [
+    "Run-HCR-R077.cmd",
+    "Run-HCR-R078.cmd"
+  ]
+}

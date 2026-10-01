@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "1.0.0",
+  "operationId": "r080-branch-delete-primary",
+  "actionClass": "delete",
+  "plannedCommandOrTool": {
+    "tool": "git",
+    "action": "branch -d research/r080-small-positive"
+  },
+  "targets": [
+    {
+      "locator": "git-local-ref://hierarchical-convergence-circuit/refs/heads/research/r080-small-positive",
+      "targetType": "git-ref",
+      "environment": "local",
+      "expectedFingerprint": "sha256:1aece00d364dc006d53bc90869245e47edbefeffaeac1506942581a04f3a5506"
+    }
+  ],
+  "scopeRef": {
+    "locator": "HCR-Evidence/r080-validation/task-envelope.json",
+    "digest": "sha256:3d87507e11240336538fc57f1b80bbb03c91cc875b627a079ef7d0f0b8efa5bf",
+    "includedTargets": [
+      "git-local-ref://hierarchical-convergence-circuit/refs/heads/research/r080-small-positive"
+    ],
+    "excludedTargets": []
+  },
+  "authorizationRef": {
+    "locator": "HCR-Evidence/r080-validation/branch-delete-authorization.json",
+    "digest": "sha256:b4e8ba7472fefe3e2f8940f7abd31ab73f095cdf9c3fa8a9eb85a329945544b8",
+    "allowedActions": [
+      "delete"
+    ],
+    "allowedTargets": [
+      "git-local-ref://hierarchical-convergence-circuit/refs/heads/research/r080-small-positive"
+    ],
+    "environments": [
+      "local"
+    ]
+  },
+  "approvalEvidenceRefs": [
+    {
+      "locator": "HCR-Evidence/r080-validation/branch-delete-authorization.json",
+      "digest": "sha256:b4e8ba7472fefe3e2f8940f7abd31ab73f095cdf9c3fa8a9eb85a329945544b8",
+      "operationId": "r080-branch-delete-primary",
+      "actionClass": "delete",
+      "targetLocators": [
+        "git-local-ref://hierarchical-convergence-circuit/refs/heads/research/r080-small-positive"
+      ],
+      "environments": [
+        "local"
+      ],
+      "expiresAt": "2026-10-01T04:21:30.172095+00:00"
+    }
+  ],
+  "currentStateEvidenceRefs": [
+    {
+      "locator": "HCR-Evidence/r080-validation/branch-delete-current-state.json",
+      "digest": "sha256:025f29c37ae33b622a4d76c0763bfcf39f0328d76316f5743d69f400e548daf5",
+      "targetLocator": "git-local-ref://hierarchical-convergence-circuit/refs/heads/research/r080-small-positive",
+      "fingerprint": "sha256:1aece00d364dc006d53bc90869245e47edbefeffaeac1506942581a04f3a5506"
+    }
+  ],
+  "recoveryPlan": {
+    "available": true,
+    "backupRef": "git:864f5e0668b25c7cf9cd81cba79b54014691ae8a",
+    "method": "Recreate local task ref from exact commit retained on main; isolated bare ref deletion/recreation passed",
+    "restoreProcedureRef": "HCR-Evidence/r080-validation/branch-restore-test.json",
+    "restoreTestEvidenceRef": "HCR-Evidence/r080-validation/branch-restore-test.json",
+    "irreversibilityAccepted": false
+  },
+  "expectedBlastRadius": {
+    "affectedTargets": 1,
+    "affectedUsers": 1,
+    "external": false,
+    "description": "Only completed merged local task branch"
+  }
+}

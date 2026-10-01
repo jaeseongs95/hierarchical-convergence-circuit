@@ -1,0 +1,8 @@
+{
+  "observed_at": "2026-10-01T03:21:30.156017+00:00",
+  "target": "git-local-ref://hierarchical-convergence-circuit/refs/heads/research/r080-small-positive",
+  "before": "2a79556e2c86eba30df2994b012a586656c41b3c",
+  "candidate": "864f5e0668b25c7cf9cd81cba79b54014691ae8a",
+  "branch": "research/r080-small-positive",
+  "main_merge_planned": true
+}

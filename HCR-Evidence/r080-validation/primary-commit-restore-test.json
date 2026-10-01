@@ -1,0 +1,8 @@
+{
+  "verified": true,
+  "base": "2a79556e2c86eba30df2994b012a586656c41b3c",
+  "candidate": "864f5e0668b25c7cf9cd81cba79b54014691ae8a",
+  "apply_and_reverse_in_alternate_index": true,
+  "patch_sha256": "8ef39fb21847067b4a761b4c98d3900f79620855200260637a06c28d395417bc",
+  "user_index_untouched": true
+}

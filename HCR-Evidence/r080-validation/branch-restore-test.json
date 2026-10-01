@@ -1,0 +1,7 @@
+{
+  "verified": true,
+  "isolated_bare_repository_delete_recreate": true,
+  "branch": "research/r080-small-positive",
+  "commit": "864f5e0668b25c7cf9cd81cba79b54014691ae8a",
+  "production_worktree_unchanged": true
+}

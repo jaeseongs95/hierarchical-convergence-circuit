@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.0.0",
+  "operationId": "r080-publish-primary",
+  "actionDigest": "sha256:5d6dd8e74be606d8ffd392eee8eef67051e6fa07162b330a5fde6d04242fff2f",
+  "targetDigest": "sha256:cfa0635cf0199ac8a4809fe780baa6bca83e631ba9266037bf2a2906acc1a37a",
+  "classification": {
+    "actionClass": "publish",
+    "reversibility": "reversible",
+    "externalImpact": true,
+    "dataLossPotential": false,
+    "permissionImpact": false
+  },
+  "checks": [
+    {
+      "checkId": "target-specificity",
+      "state": "passed",
+      "evidenceRefs": [],
+      "message": "모든 대상이 구체적으로 식별됐습니다."
+    },
+    {
+      "checkId": "scope-match",
+      "state": "passed",
+      "evidenceRefs": [
+        "HCR-Evidence/r080-validation/task-envelope.json"
+      ],
+      "message": "대상이 작업 범위 안에 있습니다."
+    },
+    {
+      "checkId": "authorization-match",
+      "state": "passed",
+      "evidenceRefs": [
+        "HCR-Evidence/r080-validation/publish-authorization.json"
+      ],
+      "message": "행동, 대상과 환경이 허용 범위에 있습니다."
+    },
+    {
+      "checkId": "current-state",
+      "state": "passed",
+      "evidenceRefs": [
+        "HCR-Evidence/r080-validation/publish-current-state.json"
+      ],
+      "message": "현재 fingerprint가 예상값과 일치합니다."
+    },
+    {
+      "checkId": "approval",
+      "state": "passed",
+      "evidenceRefs": [
+        "HCR-Evidence/r080-validation/publish-authorization.json"
+      ],
+      "message": "승인 상태: observed"
+    },
+    {
+      "checkId": "recovery",
+      "state": "passed",
+      "evidenceRefs": [
+        "git:2a79556e2c86eba30df2994b012a586656c41b3c",
+        "HCR-Evidence/r080-validation/primary-commit-restore-test.json"
+      ],
+      "message": "복구 또는 명시적 비가역성 수용 근거가 있습니다."
+    },
+    {
+      "checkId": "blast-radius",
+      "state": "passed",
+      "evidenceRefs": [],
+      "message": "예상 영향 범위가 모든 대상을 포함합니다."
+    }
+  ],
+  "approval": {
+    "required": true,
+    "status": "observed",
+    "evidenceRefs": [
+      "HCR-Evidence/r080-validation/publish-authorization.json"
+    ]
+  },
+  "recovery": {
+    "available": true,
+    "restoreTested": true,
+    "irreversibilityAccepted": false,
+    "evidenceRefs": [
+      "git:2a79556e2c86eba30df2994b012a586656c41b3c",
+      "HCR-Evidence/r080-validation/primary-commit-restore-test.json"
+    ]
+  },
+  "blastRadius": {
+    "affectedTargets": 1,
+    "affectedUsers": 1,
+    "external": true,
+    "description": "R080 additive research evidence on existing main"
+  },
+  "unresolved": [],
+  "invalidationTriggers": [
+    "action 또는 planned tool 변경",
+    "target 또는 environment 변경",
+    "current-state evidence 또는 fingerprint 변경",
+    "scope 또는 authorization 변경",
+    "승인 evidence의 만료 또는 범위 변경",
+    "복구 계획 변경",
+    "예상 blast radius 변경"
+  ],
+  "validUntil": "2026-10-01T03:36:29.889Z",
+  "observedAt": "2026-10-01T03:21:29.889Z",
+  "verdict": "READY"
+}
