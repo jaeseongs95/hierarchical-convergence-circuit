@@ -1,0 +1,14 @@
+{
+  "verified": true,
+  "syntax_files": [
+    "Run-HCR-R078.py",
+    "tools/r078_binding_order/__init__.py",
+    "tools/r078_binding_order/audit.py",
+    "tools/r078_binding_order/pipeline.py",
+    "tools/r078_binding_order/verify.py",
+    "tools/r078_binding_order/worker.py"
+  ],
+  "manifest_sha256": "0ab7c7be6046c32153b7fbd18c34e6d3598ac1a92880aa8918cb60096a3f07e9",
+  "spec_sha256": "fe1c5f36ed5d8e66fd5641f54291a21116a5ade756685ec40f6394b7bfbf24ef",
+  "native_executions_so_far": 0
+}

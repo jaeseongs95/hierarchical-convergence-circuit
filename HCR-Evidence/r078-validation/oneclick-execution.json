@@ -1,0 +1,7 @@
+{
+  "command": "Run-HCR-R078.cmd",
+  "exitCode": 0,
+  "run": "HCR-Evidence/exp59/r078-20261001T012408Z-598761f4db",
+  "automatic_retry": false,
+  "tool_exec_session": 40032
+}

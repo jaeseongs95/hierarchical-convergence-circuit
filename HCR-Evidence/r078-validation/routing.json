@@ -1,0 +1,15 @@
+{
+  "route": "direct",
+  "execution": "direct-specialist",
+  "selected": [
+    "task-contract",
+    "change-scope-baseline-capture",
+    "minimal-implementation",
+    "change-scope-assurance",
+    "acceptance-evidence-validation",
+    "mutation-risk-preflight"
+  ],
+  "independent_researcher": false,
+  "auditSeparationRequired": false,
+  "reason": "bounded additive native probe; independent evaluator reused in separate processes; no high-risk core change"
+}

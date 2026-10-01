@@ -1,0 +1,10 @@
+{
+  "schema": "hcc-r078-acceptance-target-v1",
+  "files": {
+    "R078_MANIFEST.json": "3bd253c5bdd0ced1ab682683f9aa5390b44649f1cd6077b235783c6964e5bcb5",
+    "experiments/exp-59-binding-order/results.ko.md": "dd8db5af34d33a33b43c5a5eca2b47eb039b75484d706bbc77f1523e54f0f527",
+    "experiments/exp-59-binding-order/NEXT.ko.md": "d8a9f59f0460fe60376ae3f0160136e1489a59ea78bb5ec29d943b58b7e1c475",
+    "HCR-Evidence/r078-validation/proof-support-audit.json": "f256578e6d51710b76146e3aef37c461daebcc6b402503bc5be3dc545b29f882",
+    "HCR-Evidence\\exp59\\r078-20261001T012408Z-598761f4db\\bundle_manifest.json": "5988a7a3e40b5b867b73be388e8ad6a69898681b8ba68b5dbe931a5c00cfe6c9"
+  }
+}

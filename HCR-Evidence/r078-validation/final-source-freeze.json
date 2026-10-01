@@ -1,0 +1,5 @@
+{
+  "manifest_sha256": "3bd253c5bdd0ced1ab682683f9aa5390b44649f1cd6077b235783c6964e5bcb5",
+  "reason": "readout-ready primitive fallback must falsify circuit preference rather than become not_evaluable",
+  "native_executions_so_far": 0
+}

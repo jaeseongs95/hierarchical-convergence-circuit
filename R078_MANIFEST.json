@@ -1,0 +1,14 @@
+{
+  "schema": "hcc-r078-source-manifest-v1",
+  "files": {
+    "Run-HCR-R078.cmd": "2ac9621a6f5de89c3513f6ce142ea9fe521c16223aba4d7bb3fa262981a74d0a",
+    "Run-HCR-R078.py": "7392d986d1b6ae2d59f4d5ea4ffb8d9d42c4c5862ed200f015d6bbcdac2e258c",
+    "tools/r078_binding_order/__init__.py": "5a5cab5166a27fa8344babbeee3a7e0dd07ebefca3bc923bd5ce328260390393",
+    "tools/r078_binding_order/audit.py": "86656fca71fdd9758ed184807f42d59b7e8392084dbe22a6627d5f0469333fd8",
+    "tools/r078_binding_order/pipeline.py": "c07207fd304be4fbcbe311fba59308e3919d8c462c43de1c9b4e3059e095f900",
+    "tools/r078_binding_order/verify.py": "87bf156271becd22b9fa5bfbbc8d634261bc9127404ec080359762b5802126af",
+    "tools/r078_binding_order/worker.py": "2595db880b36c97c2ef49c525be1e6c744f3d598effd31b3e59b04aff477e699",
+    "experiments/exp-59-binding-order/design.ko.md": "e7ce086a902f7e70111fb1e6826c79a1fd3542ab084a0d27be63d18deef5a507",
+    "experiments/exp-59-binding-order/frozen_spec.json": "fe1c5f36ed5d8e66fd5641f54291a21116a5ade756685ec40f6394b7bfbf24ef"
+  }
+}

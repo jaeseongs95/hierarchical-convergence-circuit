@@ -1,0 +1,15 @@
+{
+  "status": "CAUSE_CONFIRMED",
+  "symptom": "BLOCKED for unchanged preexisting EOL state",
+  "mechanism": "scope tool applies explicit exclusion before preexisting-untouched classification",
+  "root_condition": "Run-HCR-R077.cmd is both an explicit excluded path and unchanged baseline .M entry",
+  "observed_sha256": "26d4283cae45d5d263c6af9bad3eec7fa67ce3ef86465eae39d4ce05409f2b35",
+  "original_scope_report_sha256": "2aafe25bf0ffbf15ae948df6380d95fe67221c00cc1cbdd0f31b7cceb6c8fe2c",
+  "original_baseline_manifest": "4aced031ecd2d3e029a1300ce1b5a896393e8cab7fb7862db699ea6eb39d7b0f",
+  "derived_baseline_manifest": "339456a178ee791f952df77abe94f73d439586da7e74dbf3484e87e5c314c473",
+  "entries_and_captured_at_unchanged": true,
+  "include_set_unchanged": true,
+  "authority_unchanged": true,
+  "raw_and_source_unchanged": true,
+  "native_retry": false
+}

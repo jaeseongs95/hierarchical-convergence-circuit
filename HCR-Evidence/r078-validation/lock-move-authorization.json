@@ -1,0 +1,11 @@
+{
+  "actionClass": "move",
+  "operationId": "r078-preserve-inactive-index-lock",
+  "targetLocators": [
+    "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\.git\\index.lock"
+  ],
+  "environments": [
+    "local"
+  ],
+  "source": "Authorized scoped Git completion with explicit preservation of old zero-byte metadata; reversible preserve-only move, no deletion"
+}

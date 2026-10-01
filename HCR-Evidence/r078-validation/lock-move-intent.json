@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.0.0",
+  "operationId": "r078-preserve-inactive-index-lock",
+  "actionClass": "move",
+  "plannedCommandOrTool": {
+    "tool": "Python Path.rename",
+    "action": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\.git\\index.lock -> D:\\codex\\AI논문\\hierarchical-convergence-circuit\\.git\\index.lock.r078-preserved"
+  },
+  "targets": [
+    {
+      "locator": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\.git\\index.lock",
+      "targetType": "file",
+      "environment": "local",
+      "expectedFingerprint": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "scopeRef": {
+    "locator": "HCR-Evidence/r078-validation/task-envelope.v2.json",
+    "digest": "sha256:1c5a9d5b568bae6240a77beab858dc55eb421ce7b86c6630076cfa3d968b948f",
+    "includedTargets": [
+      "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\.git\\index.lock"
+    ],
+    "excludedTargets": []
+  },
+  "authorizationRef": {
+    "locator": "HCR-Evidence/r078-validation/lock-move-authorization.json",
+    "digest": "sha256:5c9fd3a18acef71efd7bb659852ffc48d1dc114568a00d03c3b208e74bfa6d7c",
+    "allowedActions": [
+      "move"
+    ],
+    "allowedTargets": [
+      "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\.git\\index.lock"
+    ],
+    "environments": [
+      "local"
+    ]
+  },
+  "approvalEvidenceRefs": [],
+  "currentStateEvidenceRefs": [
+    {
+      "locator": "HCR-Evidence/r078-validation/index-lock-diagnosis.json",
+      "digest": "sha256:28a87a5c8ab75df2e2e89cd2faa61de52428c9a4909075885b17cd960d3b6de3",
+      "targetLocator": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\.git\\index.lock",
+      "fingerprint": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "recoveryPlan": {
+    "available": true,
+    "backupRef": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\.git\\index.lock.r078-preserved",
+    "method": "Preserve original empty lock; restore by rename only if no new Git owner/lock exists",
+    "restoreProcedureRef": "HCR-Evidence/r078-validation/lock-restore-test.json",
+    "restoreTestEvidenceRef": "HCR-Evidence/r078-validation/lock-restore-test.json",
+    "irreversibilityAccepted": false
+  },
+  "expectedBlastRadius": {
+    "affectedTargets": 1,
+    "affectedUsers": 1,
+    "external": false,
+    "description": "One proven inactive zero-byte Git lock metadata file"
+  }
+}

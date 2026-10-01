@@ -1,0 +1,21 @@
+{
+  "verified": true,
+  "AC001": true,
+  "AC002": true,
+  "AC003": true,
+  "AC004_pending": "Git commit/merge/push/branch cleanup and final acceptance",
+  "existing_changed_entries_preserved": 263,
+  "staged_scope_paths": 1248,
+  "native_evaluations": 12,
+  "training_feedback": 0,
+  "frozen_predictions": {
+    "non_tie_first_selection": "supported",
+    "non_tie_proof": "supported",
+    "off_first_selection": "supported",
+    "off_proof": "falsified",
+    "tie_first_selection": "supported",
+    "tie_proof": "supported"
+  },
+  "single_writer": true,
+  "core_regression_runs": 1
+}

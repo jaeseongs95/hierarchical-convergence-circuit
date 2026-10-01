@@ -1,0 +1,16 @@
+{
+  "verified": true,
+  "status": "CAUSE_CONFIRMED",
+  "stage": "pre-staging",
+  "first_failure": "index.lock exists, staging stopped before Git write",
+  "lock": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\.git\\index.lock",
+  "bytes": 0,
+  "mtime": 1790818072.1054046,
+  "sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "creation_origin": "unknown",
+  "owner_free_evidence": "Exclusive native FileShare.None open passed; unchanged old timestamp; sole observed git child belongs to unrelated D:/claude capture-workspace-baseline process",
+  "git_process_inventory": [],
+  "index_sha256_before": "sha256:46596521a3eaf34753eb620a99d2a5b42e581d8ba3eda561a55e0ee85edd9e8a",
+  "observedAt": "2026-10-01T01:36:36.001461+00:00",
+  "native_retry": false
+}

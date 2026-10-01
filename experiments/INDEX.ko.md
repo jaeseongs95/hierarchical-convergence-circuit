@@ -70,3 +70,5 @@ EXP-56 / R075: [두 evidence drive의 scale 분리](exp-56-drive-factorization/d
 EXP-57 / R076: [native 다중 회로 경쟁](exp-57-native-competition/design.ko.md). `Run-HCR-R076.cmd`; native 형성 3회·paired 평가 8회에서 두 저장 pattern과 prefix 포함 세 후보의 경쟁·선택·proof·비용을 분리한다. joint score 개입, 새 독립 표본 0.
 
 EXP-58 / R077: [같은 길이의 두 완결 binding](exp-58-equal-binding/design.ko.md). `Run-HCR-R077.cmd`; native 형성 3회·paired 평가 6회, 저장 pattern 하나·두 완결 binding에서 prior/mismatch0 score 개입의 선택·proof·비용을 분리한다. 새 독립 표본 0.
+
+EXP-59 / R078: [동일 memory의 edge 배열 순서](exp-59-binding-order/design.ko.md). `Run-HCR-R078.cmd`; 봉인 R077 memory·config·world·공개 ID에서 두 경로 블록 순서×세 score×ON/OFF의 12 native 평가. train/feedback/독립 발견 표본 0.

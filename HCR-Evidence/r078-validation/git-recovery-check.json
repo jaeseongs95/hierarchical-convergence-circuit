@@ -1,0 +1,10 @@
+{
+  "verified": true,
+  "method": "Separate temporary index applies/reverses exact staged binary patch",
+  "base_commit": "4eb0101a2d7fd234c5b4ba5c942045cb958c2e0d",
+  "expected_tree": "03a781dd1aa2cfe402147e18eec1bef4a17d15eb",
+  "restored_tree": "03a781dd1aa2cfe402147e18eec1bef4a17d15eb",
+  "applied_tree": "92c2649d1609f4fd0c75c7a289a10f07e8e5b842",
+  "primary_patch_sha256": "d3fbaf76531f9bda73e0975d300d78a54d9031f9a9f2395943e891f032cdfd74",
+  "worktree_changed": false
+}
