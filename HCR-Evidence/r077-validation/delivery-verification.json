@@ -1,0 +1,41 @@
+{
+  "verified": true,
+  "run": "HCR-Evidence/exp58/r077-20261001T004751Z-b3e726c9fa",
+  "source_files": 500,
+  "bundle_files": 602,
+  "zip_sha256": "f5205530d942736a5512d7e094250bd0c7f4a53cf2adf3f6c4817e1d17d9641a",
+  "frozen_snapshot_bytes_exact": true,
+  "current_computational_source_bytes_exact": true,
+  "post_run_catalog_addition_verified": true,
+  "changed_current_catalog_paths": [
+    "experiments/INDEX.json"
+  ],
+  "raw_bundle_zip_bytes_exact": true,
+  "core_regression": {
+    "runs": 1,
+    "tests_run": 602,
+    "passed": 599,
+    "environment_skips": 3,
+    "new_skips": 0
+  },
+  "native_training_executions": 3,
+  "native_evaluation_executions": 6,
+  "independent_feedback_replays": 3,
+  "rejected_raw_mutations": 7,
+  "rejected_summary_mutations": 10,
+  "new_independent_samples": 0,
+  "max_pool_replay_error": 5.551115123125783e-16,
+  "first_selection_switch_observed": true,
+  "two_complete_route_first_selection_switch_observed": true,
+  "prefix_candidate_count": 0,
+  "stored_pattern_count": 1,
+  "initial_binding_count": 2,
+  "prior_gain": 0,
+  "energy_joules": null,
+  "peak_memory_bytes": null,
+  "index_paths_verified": true,
+  "index_experiments": 59,
+  "default_dispatcher_promoted": false,
+  "automatic_retry": false,
+  "failed_research_runs": 0
+}

@@ -1,0 +1,36 @@
+{
+  "verified": true,
+  "targetDigest": "sha256:f9118febf51797cf6d374efb96b5df1c99f3b366f33debd12a67dca35ed0ffdb",
+  "source_raw_zip_verified": true,
+  "scope_verdict": "PASS",
+  "core_regression": {
+    "environment_skips": [
+      {
+        "reason": "symlink creation is not available",
+        "test": "test_r021_sessions.CheckpointIO.test_file_symlink_rejected"
+      },
+      {
+        "reason": "symlink creation is not available",
+        "test": "test_r021_sessions.CheckpointIO.test_symlink_parent_rejected"
+      },
+      {
+        "reason": "local symlink creation not supported",
+        "test": "test_r034_selection.ProtocolAndIO.test_symlink_rejected"
+      }
+    ],
+    "errors": [],
+    "expected_baseline_count": 602,
+    "expected_failures": [],
+    "failures": [],
+    "final_core_runs": 1,
+    "new_skips": [],
+    "passed": 599,
+    "research_experiment": false,
+    "schema": "hcc-r050-core-regression-v1",
+    "skip_is_pass": false,
+    "tests_run": 602,
+    "unexpected_successes": [],
+    "verified": true
+  },
+  "remaining": "commit, merge, push, branch cleanup, final acceptance"
+}

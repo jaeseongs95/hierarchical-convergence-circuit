@@ -1,0 +1,522 @@
+{
+  "schema": "hcc-r076-native-competition-v1",
+  "config": {
+    "activation_threshold": 0.55,
+    "circuit_inhibition": 0.15,
+    "kernel": {
+      "damping": 0.45,
+      "evidence_gain": 4.0,
+      "inhibition": 0.2,
+      "learning_rate": 0.25,
+      "margin_threshold": 0.3,
+      "max_circuits": 16,
+      "max_edges": 8,
+      "max_groups": 32,
+      "max_observation_requests": 2,
+      "max_path_length": 4,
+      "max_paths": 4,
+      "max_search": 2048,
+      "max_ticks": 160,
+      "min_valid_episodes": 3,
+      "patience": 4,
+      "prior_gain": 2.0,
+      "relation_gain": 2.0,
+      "residual_tolerance": 1e-06,
+      "self_excitation": 0.25,
+      "temperature": 1.0,
+      "top_down_gain": 0.35,
+      "weakening": 0.2
+    },
+    "max_binding_checks": 1024,
+    "max_expansions": 64,
+    "max_frontier": 32,
+    "max_pool_candidates": 4,
+    "mismatch_threshold": 0.8,
+    "pattern_lengths": [
+      2,
+      3
+    ]
+  },
+  "limits": {
+    "max_advances_per_session": 16,
+    "max_kernel_ticks_per_session": 5120
+  },
+  "training": [
+    {
+      "id": "r076-train-1",
+      "observation": {
+        "episode_id": "r076-train-1",
+        "revision": 0,
+        "start": "r076-train-1-v0",
+        "goal": "r076-train-1-v3",
+        "edges": [
+          {
+            "id": "r076-train-1-e0",
+            "source": "r076-train-1-v0",
+            "target": "r076-train-1-v1",
+            "score": 1.0
+          },
+          {
+            "id": "r076-train-1-e1",
+            "source": "r076-train-1-v1",
+            "target": "r076-train-1-v2",
+            "score": 1.0
+          },
+          {
+            "id": "r076-train-1-e2",
+            "source": "r076-train-1-v2",
+            "target": "r076-train-1-v3",
+            "score": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "r076-train-2",
+      "observation": {
+        "episode_id": "r076-train-2",
+        "revision": 0,
+        "start": "r076-train-2-v0",
+        "goal": "r076-train-2-v3",
+        "edges": [
+          {
+            "id": "r076-train-2-e0",
+            "source": "r076-train-2-v0",
+            "target": "r076-train-2-v1",
+            "score": 1.0
+          },
+          {
+            "id": "r076-train-2-e1",
+            "source": "r076-train-2-v1",
+            "target": "r076-train-2-v2",
+            "score": 1.0
+          },
+          {
+            "id": "r076-train-2-e2",
+            "source": "r076-train-2-v2",
+            "target": "r076-train-2-v3",
+            "score": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "r076-train-3",
+      "observation": {
+        "episode_id": "r076-train-3",
+        "revision": 0,
+        "start": "r076-train-3-v0",
+        "goal": "r076-train-3-v3",
+        "edges": [
+          {
+            "id": "r076-train-3-e0",
+            "source": "r076-train-3-v0",
+            "target": "r076-train-3-v1",
+            "score": 1.0
+          },
+          {
+            "id": "r076-train-3-e1",
+            "source": "r076-train-3-v1",
+            "target": "r076-train-3-v2",
+            "score": 1.0
+          },
+          {
+            "id": "r076-train-3-e2",
+            "source": "r076-train-3-v2",
+            "target": "r076-train-3-v3",
+            "score": 1.0
+          }
+        ]
+      }
+    }
+  ],
+  "scores": {
+    "sneg": -1.0,
+    "s00": 0.0,
+    "s06": 0.6,
+    "s10": 1.0
+  },
+  "cells": [
+    {
+      "id": "sneg-on",
+      "score_id": "sneg",
+      "score": -1.0,
+      "use_circuits": true,
+      "observation": {
+        "episode_id": "r076-probe",
+        "revision": 0,
+        "start": "S",
+        "goal": "G",
+        "edges": [
+          {
+            "id": "e0",
+            "source": "S",
+            "target": "A",
+            "score": 1.0
+          },
+          {
+            "id": "e1",
+            "source": "A",
+            "target": "G",
+            "score": 1.0
+          },
+          {
+            "id": "e2",
+            "source": "S",
+            "target": "B",
+            "score": 1.0
+          },
+          {
+            "id": "e3",
+            "source": "B",
+            "target": "C",
+            "score": 1.0
+          },
+          {
+            "id": "e4",
+            "source": "C",
+            "target": "G",
+            "score": -1.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "sneg-off",
+      "score_id": "sneg",
+      "score": -1.0,
+      "use_circuits": false,
+      "observation": {
+        "episode_id": "r076-probe",
+        "revision": 0,
+        "start": "S",
+        "goal": "G",
+        "edges": [
+          {
+            "id": "e0",
+            "source": "S",
+            "target": "A",
+            "score": 1.0
+          },
+          {
+            "id": "e1",
+            "source": "A",
+            "target": "G",
+            "score": 1.0
+          },
+          {
+            "id": "e2",
+            "source": "S",
+            "target": "B",
+            "score": 1.0
+          },
+          {
+            "id": "e3",
+            "source": "B",
+            "target": "C",
+            "score": 1.0
+          },
+          {
+            "id": "e4",
+            "source": "C",
+            "target": "G",
+            "score": -1.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "s00-on",
+      "score_id": "s00",
+      "score": 0.0,
+      "use_circuits": true,
+      "observation": {
+        "episode_id": "r076-probe",
+        "revision": 0,
+        "start": "S",
+        "goal": "G",
+        "edges": [
+          {
+            "id": "e0",
+            "source": "S",
+            "target": "A",
+            "score": 1.0
+          },
+          {
+            "id": "e1",
+            "source": "A",
+            "target": "G",
+            "score": 1.0
+          },
+          {
+            "id": "e2",
+            "source": "S",
+            "target": "B",
+            "score": 1.0
+          },
+          {
+            "id": "e3",
+            "source": "B",
+            "target": "C",
+            "score": 1.0
+          },
+          {
+            "id": "e4",
+            "source": "C",
+            "target": "G",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "s00-off",
+      "score_id": "s00",
+      "score": 0.0,
+      "use_circuits": false,
+      "observation": {
+        "episode_id": "r076-probe",
+        "revision": 0,
+        "start": "S",
+        "goal": "G",
+        "edges": [
+          {
+            "id": "e0",
+            "source": "S",
+            "target": "A",
+            "score": 1.0
+          },
+          {
+            "id": "e1",
+            "source": "A",
+            "target": "G",
+            "score": 1.0
+          },
+          {
+            "id": "e2",
+            "source": "S",
+            "target": "B",
+            "score": 1.0
+          },
+          {
+            "id": "e3",
+            "source": "B",
+            "target": "C",
+            "score": 1.0
+          },
+          {
+            "id": "e4",
+            "source": "C",
+            "target": "G",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "s06-on",
+      "score_id": "s06",
+      "score": 0.6,
+      "use_circuits": true,
+      "observation": {
+        "episode_id": "r076-probe",
+        "revision": 0,
+        "start": "S",
+        "goal": "G",
+        "edges": [
+          {
+            "id": "e0",
+            "source": "S",
+            "target": "A",
+            "score": 1.0
+          },
+          {
+            "id": "e1",
+            "source": "A",
+            "target": "G",
+            "score": 1.0
+          },
+          {
+            "id": "e2",
+            "source": "S",
+            "target": "B",
+            "score": 1.0
+          },
+          {
+            "id": "e3",
+            "source": "B",
+            "target": "C",
+            "score": 1.0
+          },
+          {
+            "id": "e4",
+            "source": "C",
+            "target": "G",
+            "score": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "id": "s06-off",
+      "score_id": "s06",
+      "score": 0.6,
+      "use_circuits": false,
+      "observation": {
+        "episode_id": "r076-probe",
+        "revision": 0,
+        "start": "S",
+        "goal": "G",
+        "edges": [
+          {
+            "id": "e0",
+            "source": "S",
+            "target": "A",
+            "score": 1.0
+          },
+          {
+            "id": "e1",
+            "source": "A",
+            "target": "G",
+            "score": 1.0
+          },
+          {
+            "id": "e2",
+            "source": "S",
+            "target": "B",
+            "score": 1.0
+          },
+          {
+            "id": "e3",
+            "source": "B",
+            "target": "C",
+            "score": 1.0
+          },
+          {
+            "id": "e4",
+            "source": "C",
+            "target": "G",
+            "score": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "id": "s10-on",
+      "score_id": "s10",
+      "score": 1.0,
+      "use_circuits": true,
+      "observation": {
+        "episode_id": "r076-probe",
+        "revision": 0,
+        "start": "S",
+        "goal": "G",
+        "edges": [
+          {
+            "id": "e0",
+            "source": "S",
+            "target": "A",
+            "score": 1.0
+          },
+          {
+            "id": "e1",
+            "source": "A",
+            "target": "G",
+            "score": 1.0
+          },
+          {
+            "id": "e2",
+            "source": "S",
+            "target": "B",
+            "score": 1.0
+          },
+          {
+            "id": "e3",
+            "source": "B",
+            "target": "C",
+            "score": 1.0
+          },
+          {
+            "id": "e4",
+            "source": "C",
+            "target": "G",
+            "score": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "s10-off",
+      "score_id": "s10",
+      "score": 1.0,
+      "use_circuits": false,
+      "observation": {
+        "episode_id": "r076-probe",
+        "revision": 0,
+        "start": "S",
+        "goal": "G",
+        "edges": [
+          {
+            "id": "e0",
+            "source": "S",
+            "target": "A",
+            "score": 1.0
+          },
+          {
+            "id": "e1",
+            "source": "A",
+            "target": "G",
+            "score": 1.0
+          },
+          {
+            "id": "e2",
+            "source": "S",
+            "target": "B",
+            "score": 1.0
+          },
+          {
+            "id": "e3",
+            "source": "B",
+            "target": "C",
+            "score": 1.0
+          },
+          {
+            "id": "e4",
+            "source": "C",
+            "target": "G",
+            "score": 1.0
+          }
+        ]
+      }
+    }
+  ],
+  "world_file": "experiments/exp-57-native-competition/reference_world.json",
+  "world_sha256": "58ec8669bd160336d3d140c950518682e4ba5e665f9505389e4d88ca3a34cdad",
+  "predictions": {
+    "formation_lengths": [
+      2,
+      3
+    ],
+    "first_pool_paths": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        3,
+        4
+      ]
+    ],
+    "first_selection_changes_across_scores": true
+  },
+  "numeric_tolerance": 2e-12,
+  "core_regression_runs": 1,
+  "automatic_retry": false,
+  "claim_boundary": "Joint public evidence/prior/mismatch intervention; additional prefix candidate preserved; no isolated inhibition effect or general performance claim",
+  "new_independent_samples": 0
+}

@@ -1,0 +1,15 @@
+{
+  "schema": "hcc-r077-source-manifest-v1",
+  "files": {
+    "Run-HCR-R077.cmd": "26d4283cae45d5d263c6af9bad3eec7fa67ce3ef86465eae39d4ce05409f2b35",
+    "Run-HCR-R077.py": "5570724249f30208375a6400da12107fd5c6545565c003e102699bdeb8a08659",
+    "tools/r077_equal_binding/__init__.py": "f18cdb2345abc7965bb7d4fa593a26f1662b5c8900619430243175bdfd04e335",
+    "tools/r077_equal_binding/audit.py": "964dc61e72d7e2c0dda4843ac64bd3d7d7b1f271be0c0dc48ae309b7427883bc",
+    "tools/r077_equal_binding/pipeline.py": "6871dcbe4ebb74ba0a9eb3280f1f6343da6e50e269a674d12b2e280bcd746535",
+    "tools/r077_equal_binding/verify.py": "e1cfa6985c1c8a2e3b8ec6f1c1c7d9c5da424cc42862304ab10576b00cba0fb5",
+    "tools/r077_equal_binding/worker.py": "b955f7471b4474aa38b1a056d082f5f68b51abcf2a282584d429d6d8237f754e",
+    "experiments/exp-58-equal-binding/design.ko.md": "b29bc7f3cd29ba9f7143ed811adf37037bc1c30bc139d8436961072e3969da35",
+    "experiments/exp-58-equal-binding/frozen_spec.json": "cd2806e4c6d5dceb2857582c65d06e729086b1fe18878da9c9c96268138482bd",
+    "experiments/exp-58-equal-binding/reference_world.json": "041e12afda54ca228bda2e026332ade2a6a069c5d0fb6c442274dd4838d7374b"
+  }
+}

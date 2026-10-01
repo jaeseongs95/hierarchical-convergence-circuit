@@ -1,0 +1,11 @@
+{
+  "identifier": "R077-sealed-equal-length-binding",
+  "files": {
+    "R077_MANIFEST.json": "sha256:fb6c8aa1b77ba7724547970077752cf0fbb9b59f194901b4703236e274a8c1ed",
+    "experiments/INDEX.json": "sha256:ff0371ffc89dc6028e4cee7c043e8ea322861c0216cd40145b79fdd8a4381315",
+    "experiments/INDEX.ko.md": "sha256:394ba796638099796e2a08a35fddc8b07005d3b2548254dab01950f8bed358d6",
+    "experiments/exp-58-equal-binding/results.ko.md": "sha256:ba31084a5b353f032df290291917dad84dcd4c5757e4db7aa69f1e154ea85345",
+    "experiments/exp-58-equal-binding/NEXT.ko.md": "sha256:abfc071ec72060db09465cb0a584ed47ae8feb64bf863cdd528c0bbcb165c092",
+    "HCR-Evidence/exp58/r077-20261001T004751Z-b3e726c9fa/bundle_manifest.json": "sha256:1a2856c4fbcd9fdf5e9dbbc9476cd2cbdf4d5ffdfe7b702577446feb1842d9e6"
+  }
+}

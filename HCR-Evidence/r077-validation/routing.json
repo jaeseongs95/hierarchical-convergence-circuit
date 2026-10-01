@@ -1,0 +1,22 @@
+{
+  "order": [
+    "instruction-resolution",
+    "task-contract",
+    "scope-baseline",
+    "ponytail",
+    "native-run",
+    "independent-replay",
+    "scope-assurance",
+    "acceptance",
+    "publish-preflight"
+  ],
+  "execution_mode": "direct",
+  "risk": "medium",
+  "subagents": 0,
+  "omitted": {
+    "independent_audit": "No high-risk production/security/data mutation",
+    "evaluation_validity": "Research mechanism experiment, no skill/model quality benchmark",
+    "workspace_profile": "Existing R076 conventions directly inspected"
+  },
+  "source_main": "94df6cc51edf172d2d1f91a31c0351532fd46900"
+}

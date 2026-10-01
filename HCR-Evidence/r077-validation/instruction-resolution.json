@@ -1,0 +1,253 @@
+{
+  "schemaVersion": "1.0.0",
+  "workspaceRoot": "D:\\codex\\AI논문",
+  "instructionFileManifest": [
+    {
+      "path": "D:\\codex\\AI논문\\AGENTS.md",
+      "kind": "agents",
+      "replacesSiblingAgents": false,
+      "size": 14399,
+      "sha256": "2fbd4ae2af14201752e2937d6ce9bbbcccabd1451db59d69499f975ea491cf63",
+      "precedence": 1
+    }
+  ],
+  "targets": [
+    {
+      "requestedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\Run-HCR-R077.cmd",
+      "resolvedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\Run-HCR-R077.cmd",
+      "exists": false,
+      "instructionChain": [
+        {
+          "path": "D:\\codex\\AI논문\\AGENTS.md",
+          "kind": "agents",
+          "replacesSiblingAgents": false,
+          "size": 14399,
+          "sha256": "2fbd4ae2af14201752e2937d6ce9bbbcccabd1451db59d69499f975ea491cf63",
+          "precedence": 1
+        }
+      ],
+      "activeRules": [
+        {
+          "ruleId": "research-evidence",
+          "summary": "원자료 보존·조건 동결·독립 검산·한 턴 Git 전달",
+          "sourcePath": "D:\\codex\\AI논문\\AGENTS.md",
+          "sourceLocator": "sections 4,5,7,8,9"
+        }
+      ],
+      "overriddenRules": [],
+      "unresolvedConflicts": []
+    },
+    {
+      "requestedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\Run-HCR-R077.py",
+      "resolvedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\Run-HCR-R077.py",
+      "exists": false,
+      "instructionChain": [
+        {
+          "path": "D:\\codex\\AI논문\\AGENTS.md",
+          "kind": "agents",
+          "replacesSiblingAgents": false,
+          "size": 14399,
+          "sha256": "2fbd4ae2af14201752e2937d6ce9bbbcccabd1451db59d69499f975ea491cf63",
+          "precedence": 1
+        }
+      ],
+      "activeRules": [
+        {
+          "ruleId": "research-evidence",
+          "summary": "원자료 보존·조건 동결·독립 검산·한 턴 Git 전달",
+          "sourcePath": "D:\\codex\\AI논문\\AGENTS.md",
+          "sourceLocator": "sections 4,5,7,8,9"
+        }
+      ],
+      "overriddenRules": [],
+      "unresolvedConflicts": []
+    },
+    {
+      "requestedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\R077_MANIFEST.json",
+      "resolvedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\R077_MANIFEST.json",
+      "exists": false,
+      "instructionChain": [
+        {
+          "path": "D:\\codex\\AI논문\\AGENTS.md",
+          "kind": "agents",
+          "replacesSiblingAgents": false,
+          "size": 14399,
+          "sha256": "2fbd4ae2af14201752e2937d6ce9bbbcccabd1451db59d69499f975ea491cf63",
+          "precedence": 1
+        }
+      ],
+      "activeRules": [
+        {
+          "ruleId": "research-evidence",
+          "summary": "원자료 보존·조건 동결·독립 검산·한 턴 Git 전달",
+          "sourcePath": "D:\\codex\\AI논문\\AGENTS.md",
+          "sourceLocator": "sections 4,5,7,8,9"
+        }
+      ],
+      "overriddenRules": [],
+      "unresolvedConflicts": []
+    },
+    {
+      "requestedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\tools\\r077_equal_binding",
+      "resolvedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\tools\\r077_equal_binding",
+      "exists": false,
+      "instructionChain": [
+        {
+          "path": "D:\\codex\\AI논문\\AGENTS.md",
+          "kind": "agents",
+          "replacesSiblingAgents": false,
+          "size": 14399,
+          "sha256": "2fbd4ae2af14201752e2937d6ce9bbbcccabd1451db59d69499f975ea491cf63",
+          "precedence": 1
+        }
+      ],
+      "activeRules": [
+        {
+          "ruleId": "research-evidence",
+          "summary": "원자료 보존·조건 동결·독립 검산·한 턴 Git 전달",
+          "sourcePath": "D:\\codex\\AI논문\\AGENTS.md",
+          "sourceLocator": "sections 4,5,7,8,9"
+        }
+      ],
+      "overriddenRules": [],
+      "unresolvedConflicts": []
+    },
+    {
+      "requestedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\experiments\\exp-58-equal-binding",
+      "resolvedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\experiments\\exp-58-equal-binding",
+      "exists": false,
+      "instructionChain": [
+        {
+          "path": "D:\\codex\\AI논문\\AGENTS.md",
+          "kind": "agents",
+          "replacesSiblingAgents": false,
+          "size": 14399,
+          "sha256": "2fbd4ae2af14201752e2937d6ce9bbbcccabd1451db59d69499f975ea491cf63",
+          "precedence": 1
+        }
+      ],
+      "activeRules": [
+        {
+          "ruleId": "research-evidence",
+          "summary": "원자료 보존·조건 동결·독립 검산·한 턴 Git 전달",
+          "sourcePath": "D:\\codex\\AI논문\\AGENTS.md",
+          "sourceLocator": "sections 4,5,7,8,9"
+        }
+      ],
+      "overriddenRules": [],
+      "unresolvedConflicts": []
+    },
+    {
+      "requestedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\experiments\\INDEX.json",
+      "resolvedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\experiments\\INDEX.json",
+      "exists": true,
+      "instructionChain": [
+        {
+          "path": "D:\\codex\\AI논문\\AGENTS.md",
+          "kind": "agents",
+          "replacesSiblingAgents": false,
+          "size": 14399,
+          "sha256": "2fbd4ae2af14201752e2937d6ce9bbbcccabd1451db59d69499f975ea491cf63",
+          "precedence": 1
+        }
+      ],
+      "activeRules": [
+        {
+          "ruleId": "research-evidence",
+          "summary": "원자료 보존·조건 동결·독립 검산·한 턴 Git 전달",
+          "sourcePath": "D:\\codex\\AI논문\\AGENTS.md",
+          "sourceLocator": "sections 4,5,7,8,9"
+        }
+      ],
+      "overriddenRules": [],
+      "unresolvedConflicts": []
+    },
+    {
+      "requestedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\experiments\\INDEX.ko.md",
+      "resolvedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\experiments\\INDEX.ko.md",
+      "exists": true,
+      "instructionChain": [
+        {
+          "path": "D:\\codex\\AI논문\\AGENTS.md",
+          "kind": "agents",
+          "replacesSiblingAgents": false,
+          "size": 14399,
+          "sha256": "2fbd4ae2af14201752e2937d6ce9bbbcccabd1451db59d69499f975ea491cf63",
+          "precedence": 1
+        }
+      ],
+      "activeRules": [
+        {
+          "ruleId": "research-evidence",
+          "summary": "원자료 보존·조건 동결·독립 검산·한 턴 Git 전달",
+          "sourcePath": "D:\\codex\\AI논문\\AGENTS.md",
+          "sourceLocator": "sections 4,5,7,8,9"
+        }
+      ],
+      "overriddenRules": [],
+      "unresolvedConflicts": []
+    },
+    {
+      "requestedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\HCR-Evidence\\exp58",
+      "resolvedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\HCR-Evidence\\exp58",
+      "exists": false,
+      "instructionChain": [
+        {
+          "path": "D:\\codex\\AI논문\\AGENTS.md",
+          "kind": "agents",
+          "replacesSiblingAgents": false,
+          "size": 14399,
+          "sha256": "2fbd4ae2af14201752e2937d6ce9bbbcccabd1451db59d69499f975ea491cf63",
+          "precedence": 1
+        }
+      ],
+      "activeRules": [
+        {
+          "ruleId": "research-evidence",
+          "summary": "원자료 보존·조건 동결·독립 검산·한 턴 Git 전달",
+          "sourcePath": "D:\\codex\\AI논문\\AGENTS.md",
+          "sourceLocator": "sections 4,5,7,8,9"
+        }
+      ],
+      "overriddenRules": [],
+      "unresolvedConflicts": []
+    },
+    {
+      "requestedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\HCR-Evidence\\r077-validation",
+      "resolvedPath": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\HCR-Evidence\\r077-validation",
+      "exists": false,
+      "instructionChain": [
+        {
+          "path": "D:\\codex\\AI논문\\AGENTS.md",
+          "kind": "agents",
+          "replacesSiblingAgents": false,
+          "size": 14399,
+          "sha256": "2fbd4ae2af14201752e2937d6ce9bbbcccabd1451db59d69499f975ea491cf63",
+          "precedence": 1
+        }
+      ],
+      "activeRules": [
+        {
+          "ruleId": "research-evidence",
+          "summary": "원자료 보존·조건 동결·독립 검산·한 턴 Git 전달",
+          "sourcePath": "D:\\codex\\AI논문\\AGENTS.md",
+          "sourceLocator": "sections 4,5,7,8,9"
+        }
+      ],
+      "overriddenRules": [],
+      "unresolvedConflicts": []
+    }
+  ],
+  "findings": [
+    "Target does not exist; future nested instructions cannot be observed: D:\\codex\\AI논문\\hierarchical-convergence-circuit\\Run-HCR-R077.cmd",
+    "Target does not exist; future nested instructions cannot be observed: D:\\codex\\AI논문\\hierarchical-convergence-circuit\\Run-HCR-R077.py",
+    "Target does not exist; future nested instructions cannot be observed: D:\\codex\\AI논문\\hierarchical-convergence-circuit\\R077_MANIFEST.json",
+    "Target does not exist; future nested instructions cannot be observed: D:\\codex\\AI논문\\hierarchical-convergence-circuit\\tools\\r077_equal_binding",
+    "Target does not exist; future nested instructions cannot be observed: D:\\codex\\AI논문\\hierarchical-convergence-circuit\\experiments\\exp-58-equal-binding",
+    "Target does not exist; future nested instructions cannot be observed: D:\\codex\\AI논문\\hierarchical-convergence-circuit\\HCR-Evidence\\exp58",
+    "Target does not exist; future nested instructions cannot be observed: D:\\codex\\AI논문\\hierarchical-convergence-circuit\\HCR-Evidence\\r077-validation",
+    "사용자 제공 전역/프로젝트 지침과 경로 chain을 대조했다. 하위 override와 권한/범위 충돌 없음. 위임 요청 없음; direct 구현과 독립 evaluator subprocess 사용."
+  ],
+  "analysisStatus": "complete",
+  "verdict": "PASS"
+}

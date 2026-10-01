@@ -1,0 +1,10 @@
+{
+  "stage": "scope-assurance-input",
+  "error": "baseline artifact digest does not match the frozen digest",
+  "cause": "Caller supplied raw JSON file hash; verifier requires baseline.manifestSha256",
+  "discriminating_evidence": "Installed lib.mjs lines223,349 and frozen baseline unchanged raw hash",
+  "source_file_sha256": "0fa25746036db845760c61a41a53dcbb012c40ec310640a1ef5a3a993c500562",
+  "raw_artifact_unchanged": true,
+  "native_retry": false,
+  "research_rerun": false
+}

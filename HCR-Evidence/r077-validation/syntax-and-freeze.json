@@ -1,0 +1,13 @@
+{
+  "verified": true,
+  "syntax_checked": [
+    "Run-HCR-R077.py",
+    "tools/r077_equal_binding/__init__.py",
+    "tools/r077_equal_binding/audit.py",
+    "tools/r077_equal_binding/pipeline.py",
+    "tools/r077_equal_binding/verify.py",
+    "tools/r077_equal_binding/worker.py"
+  ],
+  "manifest_sha256": "fb6c8aa1b77ba7724547970077752cf0fbb9b59f194901b4703236e274a8c1ed",
+  "native_research_executions": 0
+}

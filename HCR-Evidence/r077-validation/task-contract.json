@@ -1,0 +1,383 @@
+{
+  "schemaVersion": "1.0.0",
+  "request": {
+    "schemaVersion": "1.0.0",
+    "taskId": "hcc-r077-equal-binding",
+    "request": "다음작업 이어서 진행해줘. 사용자 제공 AGENTS 제8절의 한 턴 범위를 포함한다.",
+    "instructionResolutionRefs": [
+      "D:/codex/AI논문/AGENTS.md",
+      "user:supplied-global-AGENTS"
+    ],
+    "pathSemantics": "windows",
+    "authorizationEvidence": [
+      {
+        "action": "read",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8"
+      },
+      {
+        "action": "write-scoped-research-files",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8"
+      },
+      {
+        "action": "run-local-checks",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8"
+      },
+      {
+        "action": "commit",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8"
+      },
+      {
+        "action": "merge-local-main",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8"
+      },
+      {
+        "action": "delete-completed-local-task-branch",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8"
+      },
+      {
+        "action": "push-origin-main",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8"
+      },
+      {
+        "action": "force-push",
+        "effect": "prohibit",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS"
+      },
+      {
+        "action": "rewrite-historical-evidence",
+        "effect": "prohibit",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS"
+      },
+      {
+        "action": "overwrite-user-changes",
+        "effect": "prohibit",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS"
+      },
+      {
+        "action": "deploy",
+        "effect": "require-approval",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS"
+      },
+      {
+        "action": "tag",
+        "effect": "require-approval",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS"
+      },
+      {
+        "action": "install",
+        "effect": "require-approval",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS"
+      },
+      {
+        "action": "delete-remote-branch",
+        "effect": "require-approval",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS"
+      }
+    ],
+    "suppliedFacts": [
+      {
+        "statement": "EXP57 후속 제안: 동일길이 두 완결 binding과 prior_gain=0",
+        "locator": "experiments/exp-57-native-competition/results.ko.md"
+      }
+    ],
+    "userDecisions": []
+  },
+  "report": {
+    "schemaVersion": "1.0.0",
+    "taskEnvelope": {
+      "schemaVersion": "1.0.0",
+      "taskId": "hcc-r077-equal-binding",
+      "objective": "Native 길이2 회로 하나의 두 goal binding에서 prior_gain=0·고정 topology와 비음수 score 개입의 선택·proof·채택·비용을 구분한다",
+      "scope": {
+        "included": [
+          "Run-HCR-R077.cmd",
+          "Run-HCR-R077.py",
+          "R077_MANIFEST.json",
+          "tools/r077_equal_binding/",
+          "experiments/exp-58-equal-binding/",
+          "experiments/INDEX.json",
+          "experiments/INDEX.ko.md",
+          "HCR-Evidence/exp58/",
+          "HCR-Evidence/r077-validation/"
+        ],
+        "excluded": [
+          "src/",
+          "archive/",
+          "tools/r076_competition/",
+          "experiments/exp-57-native-competition/",
+          "HCR-Evidence/exp57/",
+          "HCR-Evidence/r076-validation/"
+        ]
+      },
+      "acceptanceCriteria": [
+        "[AC-001] native 실행 전 prior_gain=0·길이2 pattern·두 완결 경로·score 0/0.6/1·formation 3회·ON/OFF 6셀·world·budget·예측과 해석 경계를 동결한다",
+        "[AC-002] 회로 하나와 두 binding 후보를 구분하고 prefix 부재·prior/mismatch 0·모든 후보 상태·최초 선택·proof/readout·채택·비용을 보존하며 음성/측정불가도 허용한다",
+        "[AC-003] native journal 9개·feedback·pool 수식을 독립 재생하고 원자료/집계 변조를 거부하며 최종 core 회귀 1회에서 새 실패/skip이 없다",
+        "[AC-004] 원클릭·봉인 bundle·결과/한계/다음 판별 연구와 범위/수용 검증을 제공하고 기존 변경 보존·커밋·main 병합·작업브랜치 정리·일반 push 반영 확인을 완료한다"
+      ],
+      "riskLevel": "medium",
+      "workUnits": [
+        {
+          "id": "research",
+          "objective": "Native 길이2 회로 하나의 두 goal binding에서 prior_gain=0·고정 topology와 비음수 score 개입의 선택·proof·채택·비용을 구분한다",
+          "dependencies": [],
+          "writeTargets": [
+            "Run-HCR-R077.cmd",
+            "Run-HCR-R077.py",
+            "R077_MANIFEST.json",
+            "tools/r077_equal_binding/",
+            "experiments/exp-58-equal-binding/",
+            "experiments/INDEX.json",
+            "experiments/INDEX.ko.md",
+            "HCR-Evidence/exp58/",
+            "HCR-Evidence/r077-validation/"
+          ]
+        }
+      ],
+      "requiredCapabilities": [
+        "change-scope-baseline-capture",
+        "minimal-implementation",
+        "change-scope-assurance",
+        "acceptance-evidence-validation",
+        "mutation-risk-preflight"
+      ],
+      "constraints": [
+        "기존 core·실행 의미·historical evidence 수정 금지",
+        "최초 실패·부분 자료 보존, 자동 retry/host correction 금지",
+        "같은 길이의 binding 비교이며 서로 다른 저장 회로 경쟁으로 표현 금지",
+        "기존 599pass/3환경skip 보존",
+        "독립 발견 표본0, inhibition 필요성/일반 HCC 우위 판정 금지"
+      ],
+      "authorization": {
+        "allowedActions": [
+          "read",
+          "write-scoped-research-files",
+          "run-local-checks",
+          "commit",
+          "merge-local-main",
+          "delete-completed-local-task-branch",
+          "push-origin-main"
+        ],
+        "prohibitedActions": [
+          "force-push",
+          "rewrite-historical-evidence",
+          "overwrite-user-changes"
+        ],
+        "approvalRequired": [
+          "deploy",
+          "tag",
+          "install",
+          "delete-remote-branch"
+        ]
+      },
+      "decision": {
+        "complexity": "simple",
+        "hasConflicts": false
+      },
+      "orchestration": {
+        "requested": false,
+        "mcpAvailable": true
+      }
+    },
+    "acceptanceEvidencePlan": {
+      "schemaVersion": "1.0.0",
+      "criteria": [
+        {
+          "criterionId": "AC-001",
+          "statement": "[AC-001] native 실행 전 prior_gain=0·길이2 pattern·두 완결 경로·score 0/0.6/1·formation 3회·ON/OFF 6셀·world·budget·예측과 해석 경계를 동결한다",
+          "verificationMethod": "동결 hash·native packet 독립 재생·수식·feedback·집계·변조 거부·최종 회귀·scope·전달 직접 확인",
+          "expectedEvidenceKinds": [
+            "file",
+            "test",
+            "document"
+          ],
+          "passCondition": "[AC-001] native 실행 전 prior_gain=0·길이2 pattern·두 완결 경로·score 0/0.6/1·formation 3회·ON/OFF 6셀·world·budget·예측과 해석 경계를 동결한다"
+        },
+        {
+          "criterionId": "AC-002",
+          "statement": "[AC-002] 회로 하나와 두 binding 후보를 구분하고 prefix 부재·prior/mismatch 0·모든 후보 상태·최초 선택·proof/readout·채택·비용을 보존하며 음성/측정불가도 허용한다",
+          "verificationMethod": "동결 hash·native packet 독립 재생·수식·feedback·집계·변조 거부·최종 회귀·scope·전달 직접 확인",
+          "expectedEvidenceKinds": [
+            "file",
+            "test",
+            "document"
+          ],
+          "passCondition": "[AC-002] 회로 하나와 두 binding 후보를 구분하고 prefix 부재·prior/mismatch 0·모든 후보 상태·최초 선택·proof/readout·채택·비용을 보존하며 음성/측정불가도 허용한다"
+        },
+        {
+          "criterionId": "AC-003",
+          "statement": "[AC-003] native journal 9개·feedback·pool 수식을 독립 재생하고 원자료/집계 변조를 거부하며 최종 core 회귀 1회에서 새 실패/skip이 없다",
+          "verificationMethod": "동결 hash·native packet 독립 재생·수식·feedback·집계·변조 거부·최종 회귀·scope·전달 직접 확인",
+          "expectedEvidenceKinds": [
+            "file",
+            "test",
+            "document"
+          ],
+          "passCondition": "[AC-003] native journal 9개·feedback·pool 수식을 독립 재생하고 원자료/집계 변조를 거부하며 최종 core 회귀 1회에서 새 실패/skip이 없다"
+        },
+        {
+          "criterionId": "AC-004",
+          "statement": "[AC-004] 원클릭·봉인 bundle·결과/한계/다음 판별 연구와 범위/수용 검증을 제공하고 기존 변경 보존·커밋·main 병합·작업브랜치 정리·일반 push 반영 확인을 완료한다",
+          "verificationMethod": "동결 hash·native packet 독립 재생·수식·feedback·집계·변조 거부·최종 회귀·scope·전달 직접 확인",
+          "expectedEvidenceKinds": [
+            "file",
+            "test",
+            "document"
+          ],
+          "passCondition": "[AC-004] 원클릭·봉인 bundle·결과/한계/다음 판별 연구와 범위/수용 검증을 제공하고 기존 변경 보존·커밋·main 병합·작업브랜치 정리·일반 push 반영 확인을 완료한다"
+        }
+      ]
+    },
+    "provenance": [
+      {
+        "field": "/objective",
+        "valueSummary": "Native 길이2 회로 하나의 두 goal binding에서 prior_gain=0·고정 topology와 비음수 score 개입의 선택·proof·채택·비용을 구분한다",
+        "sourceLocator": "experiments/exp-57-native-competition/results.ko.md",
+        "basis": "verified-inference"
+      },
+      {
+        "field": "/scope",
+        "valueSummary": "EXP58 additive equal-length binding experiment",
+        "sourceLocator": "user:supplied-AGENTS",
+        "basis": "instruction"
+      },
+      {
+        "field": "/riskLevel",
+        "valueSummary": "Reversible local research artifacts and authorized ordinary push",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8",
+        "basis": "verified-inference"
+      },
+      {
+        "field": "/authorization",
+        "valueSummary": "사용자가 직접 제공한 한 턴 Git 전달 범위",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8",
+        "basis": "explicit"
+      }
+    ],
+    "authorizationProvenance": [
+      {
+        "action": "read",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8",
+        "envelopeField": "/authorization/allowedActions"
+      },
+      {
+        "action": "write-scoped-research-files",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8",
+        "envelopeField": "/authorization/allowedActions"
+      },
+      {
+        "action": "run-local-checks",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8",
+        "envelopeField": "/authorization/allowedActions"
+      },
+      {
+        "action": "commit",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8",
+        "envelopeField": "/authorization/allowedActions"
+      },
+      {
+        "action": "merge-local-main",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8",
+        "envelopeField": "/authorization/allowedActions"
+      },
+      {
+        "action": "delete-completed-local-task-branch",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8",
+        "envelopeField": "/authorization/allowedActions"
+      },
+      {
+        "action": "push-origin-main",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8",
+        "envelopeField": "/authorization/allowedActions"
+      },
+      {
+        "action": "force-push",
+        "effect": "prohibit",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS",
+        "envelopeField": "/authorization/prohibitedActions"
+      },
+      {
+        "action": "rewrite-historical-evidence",
+        "effect": "prohibit",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS",
+        "envelopeField": "/authorization/prohibitedActions"
+      },
+      {
+        "action": "overwrite-user-changes",
+        "effect": "prohibit",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS",
+        "envelopeField": "/authorization/prohibitedActions"
+      },
+      {
+        "action": "deploy",
+        "effect": "require-approval",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS",
+        "envelopeField": "/authorization/approvalRequired"
+      },
+      {
+        "action": "tag",
+        "effect": "require-approval",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS",
+        "envelopeField": "/authorization/approvalRequired"
+      },
+      {
+        "action": "install",
+        "effect": "require-approval",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS",
+        "envelopeField": "/authorization/approvalRequired"
+      },
+      {
+        "action": "delete-remote-branch",
+        "effect": "require-approval",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS",
+        "envelopeField": "/authorization/approvalRequired"
+      }
+    ],
+    "assumptions": [],
+    "ambiguities": [],
+    "contradictions": [],
+    "verdict": "PASS"
+  }
+}

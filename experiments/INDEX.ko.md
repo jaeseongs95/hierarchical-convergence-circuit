@@ -68,3 +68,5 @@ EXP-55 / R074: [evidence gain과 유한 score 반응](exp-55-evidence-gain-sensi
 EXP-56 / R075: [두 evidence drive의 scale 분리](exp-56-drive-factorization/design.ko.md). `Run-HCR-R075.cmd`; prior0·M0·고정 config의 12 evaluator 조건으로 e0 배경과 e1 score drive의 기여를 분리한다. R074 대응 6개와 혼합 scale 6개, 새 native·학습·독립 표본 0.
 
 EXP-57 / R076: [native 다중 회로 경쟁](exp-57-native-competition/design.ko.md). `Run-HCR-R076.cmd`; native 형성 3회·paired 평가 8회에서 두 저장 pattern과 prefix 포함 세 후보의 경쟁·선택·proof·비용을 분리한다. joint score 개입, 새 독립 표본 0.
+
+EXP-58 / R077: [같은 길이의 두 완결 binding](exp-58-equal-binding/design.ko.md). `Run-HCR-R077.cmd`; native 형성 3회·paired 평가 6회, 저장 pattern 하나·두 완결 binding에서 prior/mismatch0 score 개입의 선택·proof·비용을 분리한다. 새 독립 표본 0.

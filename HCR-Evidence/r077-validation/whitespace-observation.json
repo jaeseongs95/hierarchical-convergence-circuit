@@ -1,0 +1,20 @@
+{
+  "implementation_whitespace_verified": true,
+  "command": [
+    "git",
+    "diff",
+    "--cached",
+    "--check",
+    "--",
+    "Run-HCR-R077.cmd",
+    "Run-HCR-R077.py",
+    "R077_MANIFEST.json",
+    "tools/r077_equal_binding",
+    "experiments/exp-58-equal-binding",
+    "experiments/INDEX.json",
+    "experiments/INDEX.ko.md"
+  ],
+  "returncode": 0,
+  "raw_evidence_policy": "Frozen CRLF source snapshots and Windows logs remain byte-exact; raw trailing-CR observations are not normalized",
+  "full_raw_check_observed": "trailing CR on frozen historical cmd and Windows logs; extra own report blank line removed"
+}

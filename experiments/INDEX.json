@@ -1085,6 +1085,26 @@
       "source_commit": null,
       "source_commit_note": "Three native formation sessions and eight paired frozen evaluations; two stored patterns and three pool candidates including prefix; joint public score/prior/mismatch intervention, no independent discovery samples.",
       "standalone_python_entrypoint": "Run-HCR-R076.py"
+    },
+    {
+      "current_python_entrypoint": null,
+      "default_dispatcher_promoted": false,
+      "design": "experiments/exp-58-equal-binding/design.ko.md",
+      "directory": "experiments/exp-58-equal-binding",
+      "evidence_directory": "HCR-Evidence/exp58",
+      "execution_status": "standalone_candidate_contract",
+      "experiment_id": "EXP-58",
+      "frozen_design": "experiments/exp-58-equal-binding/frozen_spec.json",
+      "implementation_validation_directory": "HCR-Evidence/r077-validation",
+      "legacy_python_entrypoint": null,
+      "release_manifest": "R077_MANIFEST.json",
+      "revision_references": [
+        "r077"
+      ],
+      "run_status": "read_per_run_evidence",
+      "source_commit": null,
+      "source_commit_note": "Three native length2 formation sessions and six paired frozen evaluations; one stored pattern and two equal-length complete bindings; prior_gain=0 and mismatch=0; no independent discovery samples.",
+      "standalone_python_entrypoint": "Run-HCR-R077.py"
     }
   ],
   "inventory_commit": "afb5d5e5b67906b7697f16163e166f59b17e1655",
