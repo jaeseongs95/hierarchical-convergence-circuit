@@ -1,0 +1,12 @@
+{
+  "operationId": "r077-delete-completed-local-branch",
+  "actionClass": "delete",
+  "targetLocators": [
+    "git-local-ref://hierarchical-convergence-circuit/refs/heads/research/r077-equal-binding"
+  ],
+  "environments": [
+    "local"
+  ],
+  "source": "Direct human continuation and user-supplied Git policy authorize deleting the completed local task branch",
+  "tip": "b28230d68546f6e68b7e5024d016bc860db477cd"
+}

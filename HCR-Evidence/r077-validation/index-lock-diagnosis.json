@@ -1,0 +1,14 @@
+{
+  "verified": true,
+  "stage": "final-metadata-staging",
+  "first_failure": "git add:index.lock exists",
+  "lock": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\.git\\index.lock",
+  "bytes": 0,
+  "mtime": 1790816223.773124,
+  "owner_free_evidence": "No git.exe observed at01:04:57Z and on later inspection; exclusive file open passed; old lock timestamp unchanged",
+  "creation_origin": "unknown",
+  "discriminating_observation": "Global Git count briefly1; later0, target lock unchanged",
+  "dependent_commit_check_stopped": true,
+  "native_retry": false,
+  "research_rerun": false
+}

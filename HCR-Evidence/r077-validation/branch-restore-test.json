@@ -1,0 +1,9 @@
+{
+  "verified": true,
+  "separate_bare_clone": true,
+  "deleted_then_restored_exact_ref": true,
+  "branch": "research/r077-equal-binding",
+  "tip": "b28230d68546f6e68b7e5024d016bc860db477cd",
+  "main_contains_tip": true,
+  "source_worktree_changed": false
+}

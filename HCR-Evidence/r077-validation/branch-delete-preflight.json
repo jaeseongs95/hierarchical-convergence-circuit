@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.0.0",
+  "operationId": "r077-delete-completed-local-branch",
+  "actionDigest": "sha256:d2b0b4d5e7f121a9724aa9ae9feaff22cbe9bf837d437ea9963fd33ca5f724db",
+  "targetDigest": "sha256:c414fc8087c869aa3289cdf69c4a27346ec7b060dc6fce19b07f538de9fedcce",
+  "classification": {
+    "actionClass": "delete",
+    "reversibility": "reversible",
+    "externalImpact": false,
+    "dataLossPotential": true,
+    "permissionImpact": false
+  },
+  "checks": [
+    {
+      "checkId": "target-specificity",
+      "state": "passed",
+      "evidenceRefs": [],
+      "message": "모든 대상이 구체적으로 식별됐습니다."
+    },
+    {
+      "checkId": "scope-match",
+      "state": "passed",
+      "evidenceRefs": [
+        "HCR-Evidence/r077-validation/task-envelope.json"
+      ],
+      "message": "대상이 작업 범위 안에 있습니다."
+    },
+    {
+      "checkId": "authorization-match",
+      "state": "passed",
+      "evidenceRefs": [
+        "HCR-Evidence/r077-validation/branch-delete-authorization.json"
+      ],
+      "message": "행동, 대상과 환경이 허용 범위에 있습니다."
+    },
+    {
+      "checkId": "current-state",
+      "state": "passed",
+      "evidenceRefs": [
+        "HCR-Evidence/r077-validation/branch-delete-state.json"
+      ],
+      "message": "현재 fingerprint가 예상값과 일치합니다."
+    },
+    {
+      "checkId": "approval",
+      "state": "passed",
+      "evidenceRefs": [
+        "HCR-Evidence/r077-validation/branch-delete-authorization.json"
+      ],
+      "message": "승인 상태: observed"
+    },
+    {
+      "checkId": "recovery",
+      "state": "passed",
+      "evidenceRefs": [
+        "git:b28230d68546f6e68b7e5024d016bc860db477cd",
+        "HCR-Evidence/r077-validation/branch-restore-test.json"
+      ],
+      "message": "복구 또는 명시적 비가역성 수용 근거가 있습니다."
+    },
+    {
+      "checkId": "blast-radius",
+      "state": "passed",
+      "evidenceRefs": [],
+      "message": "예상 영향 범위가 모든 대상을 포함합니다."
+    }
+  ],
+  "approval": {
+    "required": true,
+    "status": "observed",
+    "evidenceRefs": [
+      "HCR-Evidence/r077-validation/branch-delete-authorization.json"
+    ]
+  },
+  "recovery": {
+    "available": true,
+    "restoreTested": true,
+    "irreversibilityAccepted": false,
+    "evidenceRefs": [
+      "git:b28230d68546f6e68b7e5024d016bc860db477cd",
+      "HCR-Evidence/r077-validation/branch-restore-test.json"
+    ]
+  },
+  "blastRadius": {
+    "affectedTargets": 1,
+    "affectedUsers": 1,
+    "external": false,
+    "description": "One merged local task ref; main and remote ref are retained"
+  },
+  "unresolved": [],
+  "invalidationTriggers": [
+    "action 또는 planned tool 변경",
+    "target 또는 environment 변경",
+    "current-state evidence 또는 fingerprint 변경",
+    "scope 또는 authorization 변경",
+    "승인 evidence의 만료 또는 범위 변경",
+    "복구 계획 변경",
+    "예상 blast radius 변경"
+  ],
+  "validUntil": "2026-10-01T01:14:47.803Z",
+  "observedAt": "2026-10-01T00:59:47.803Z",
+  "verdict": "READY"
+}

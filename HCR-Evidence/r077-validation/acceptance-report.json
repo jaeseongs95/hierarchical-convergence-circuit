@@ -1,0 +1,225 @@
+{
+  "schemaVersion": "1.0.0",
+  "target": {
+    "kind": "artifact",
+    "identifier": "R077-sealed-equal-length-binding",
+    "digest": "sha256:f9118febf51797cf6d374efb96b5df1c99f3b366f33debd12a67dca35ed0ffdb"
+  },
+  "criteria": [
+    {
+      "criterionId": "AC-001",
+      "statement": "[AC-001] native 실행 전 prior_gain=0·길이2 pattern·두 완결 경로·score 0/0.6/1·formation 3회·ON/OFF 6셀·world·budget·예측과 해석 경계를 동결한다",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "freeze",
+        "integrity",
+        "command:oneclick"
+      ],
+      "observedResult": "Pre-execution frozen config/world, length2/zero prior, three training episodes, six paired cells and bounded claims; Exact frozen source/raw/bundle/ZIP and catalog-only addition verified; Verification command exited with code 0.",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    },
+    {
+      "criterionId": "AC-002",
+      "statement": "[AC-002] 회로 하나와 두 binding 후보를 구분하고 prefix 부재·prior/mismatch 0·모든 후보 상태·최초 선택·proof/readout·채택·비용을 보존하며 음성/측정불가도 허용한다",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "native",
+        "summary",
+        "command:oneclick"
+      ],
+      "observedResult": "Nine independent journal replays, three feedback replays, all pool states checked; seven raw mutations rejected; One stored pattern/two complete bindings, zero prior/mismatch, all selections/proofs/adoptions and cost ledgers preserved; Verification command exited with code 0.",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    },
+    {
+      "criterionId": "AC-003",
+      "statement": "[AC-003] native journal 9개·feedback·pool 수식을 독립 재생하고 원자료/집계 변조를 거부하며 최종 core 회귀 1회에서 새 실패/skip이 없다",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "integrity",
+        "native",
+        "tamper",
+        "regression",
+        "command:oneclick"
+      ],
+      "observedResult": "Exact frozen source/raw/bundle/ZIP and catalog-only addition verified; Nine independent journal replays, three feedback replays, all pool states checked; seven raw mutations rejected; Ten summary mutations rejected; Final core regression once:602 tests,599 pass,three existing symlink skips,no new failure/skip; Verification command exited with code 0.",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    },
+    {
+      "criterionId": "AC-004",
+      "statement": "[AC-004] 원클릭·봉인 bundle·결과/한계/다음 판별 연구와 범위/수용 검증을 제공하고 기존 변경 보존·커밋·main 병합·작업브랜치 정리·일반 push 반영 확인을 완료한다",
+      "status": "satisfied",
+      "evidenceRefs": [
+        "integrity",
+        "report",
+        "next",
+        "scope",
+        "delivery",
+        "metadata-recovery",
+        "command:delivery"
+      ],
+      "observedResult": "Exact frozen source/raw/bundle/ZIP and catalog-only addition verified; Observed complete-binding switch, same accuracy/depth, higher ON ticks and bounded interpretation recorded; Unexecuted next discriminator:edge-array-order intervention at fixed physical graph/IDs and score; Scope PASS,no excluded/unplanned/preexisting overlap; original untracked files unchanged; Signed primary commit fast-forward merged,push succeeded,remote==local main,merged task branch deleted; Inactive zero-byte Git metadata lock preserved after READY preflight;staging resumed; no native or core rerun; Verification command exited with code 0.",
+      "rationale": "Verified evidence for the current target supports this criterion."
+    }
+  ],
+  "verifiedEvidenceIndex": [
+    {
+      "evidenceId": "freeze",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp58/r077-20261001T004751Z-b3e726c9fa/plan.json",
+      "digest": "sha256:8b018f38db574b521e5da702ea95b326c4ab143c0b402deb8423cbedaf132ac0",
+      "targetDigest": "sha256:f9118febf51797cf6d374efb96b5df1c99f3b366f33debd12a67dca35ed0ffdb",
+      "criterionIds": [
+        "AC-001"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "integrity",
+      "kind": "test",
+      "locator": "HCR-Evidence/r077-validation/delivery-verification.json",
+      "digest": "sha256:e567aa027dbda3d62cace4b02b24c2f8a08d8083bfc0815a22474aa6e3b36e47",
+      "targetDigest": "sha256:f9118febf51797cf6d374efb96b5df1c99f3b366f33debd12a67dca35ed0ffdb",
+      "criterionIds": [
+        "AC-001",
+        "AC-003",
+        "AC-004"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "native",
+      "kind": "test",
+      "locator": "HCR-Evidence/exp58/r077-20261001T004751Z-b3e726c9fa/verification.json",
+      "digest": "sha256:8f6498e97f58df6931af5e2821f135e44226ac2ae06b745c58bab4a1e25cdcc5",
+      "targetDigest": "sha256:f9118febf51797cf6d374efb96b5df1c99f3b366f33debd12a67dca35ed0ffdb",
+      "criterionIds": [
+        "AC-002",
+        "AC-003"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "summary",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp58/r077-20261001T004751Z-b3e726c9fa/summary.json",
+      "digest": "sha256:bcd5996114bf03fb48cc3cc179e4740bb56de78097d237c18eeb6a36e4b59834",
+      "targetDigest": "sha256:f9118febf51797cf6d374efb96b5df1c99f3b366f33debd12a67dca35ed0ffdb",
+      "criterionIds": [
+        "AC-002"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "tamper",
+      "kind": "test",
+      "locator": "HCR-Evidence/exp58/r077-20261001T004751Z-b3e726c9fa/validation/summary-verification.json",
+      "digest": "sha256:21b8c5074c028d6c0eb7afe60e3e0df521f07ea3abd5c6b3d222aa1422145b00",
+      "targetDigest": "sha256:f9118febf51797cf6d374efb96b5df1c99f3b366f33debd12a67dca35ed0ffdb",
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "regression",
+      "kind": "test",
+      "locator": "HCR-Evidence/exp58/r077-20261001T004751Z-b3e726c9fa/validation/core_regression.json",
+      "digest": "sha256:d5daace122f8617bfd42c41ab59ddb55331aae622d85dc3ab6f6439a54928ab9",
+      "targetDigest": "sha256:f9118febf51797cf6d374efb96b5df1c99f3b366f33debd12a67dca35ed0ffdb",
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "report",
+      "kind": "document",
+      "locator": "experiments/exp-58-equal-binding/results.ko.md",
+      "digest": "sha256:ba31084a5b353f032df290291917dad84dcd4c5757e4db7aa69f1e154ea85345",
+      "targetDigest": "sha256:f9118febf51797cf6d374efb96b5df1c99f3b366f33debd12a67dca35ed0ffdb",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "next",
+      "kind": "document",
+      "locator": "experiments/exp-58-equal-binding/NEXT.ko.md",
+      "digest": "sha256:abfc071ec72060db09465cb0a584ed47ae8feb64bf863cdd528c0bbcb165c092",
+      "targetDigest": "sha256:f9118febf51797cf6d374efb96b5df1c99f3b366f33debd12a67dca35ed0ffdb",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "scope",
+      "kind": "test",
+      "locator": "HCR-Evidence/r077-validation/scope-report.after-delivery.json",
+      "digest": "sha256:e3e8649897398adf40cc52bcfd93e09e79b6a4a162f6d38324be787df72cd3d6",
+      "targetDigest": "sha256:f9118febf51797cf6d374efb96b5df1c99f3b366f33debd12a67dca35ed0ffdb",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "delivery",
+      "kind": "test",
+      "locator": "HCR-Evidence/r077-validation/git-delivery.json",
+      "digest": "sha256:554b73a8707d96aafb06ed4140492ce4dff36408b42abb8cc62a65ce3d90e992",
+      "targetDigest": "sha256:f9118febf51797cf6d374efb96b5df1c99f3b366f33debd12a67dca35ed0ffdb",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "metadata-recovery",
+      "kind": "test",
+      "locator": "HCR-Evidence/r077-validation/lock-move-result.json",
+      "digest": "sha256:f1ee230f4060bb8f251f21ac576936b9d53f1f3b3903dc1050d087f662489629",
+      "targetDigest": "sha256:f9118febf51797cf6d374efb96b5df1c99f3b366f33debd12a67dca35ed0ffdb",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "command:oneclick",
+      "kind": "verification-command",
+      "locator": "HCR-Evidence/exp58/r077-20261001T004751Z-b3e726c9fa/result.json",
+      "digest": "sha256:d6d38aaf0ef5e4b7e9fce9122a912e36cf530929c4b5534088dc68ac95bdeb0a",
+      "targetDigest": "sha256:f9118febf51797cf6d374efb96b5df1c99f3b366f33debd12a67dca35ed0ffdb",
+      "criterionIds": [
+        "AC-001",
+        "AC-002",
+        "AC-003"
+      ],
+      "direction": "supports"
+    },
+    {
+      "evidenceId": "command:delivery",
+      "kind": "verification-command",
+      "locator": "HCR-Evidence/r077-validation/git-delivery.json",
+      "digest": "sha256:9aa563d5a369417788f24cce7d6f67302d7a336d05cdf205c0ba1c540dbbef94",
+      "targetDigest": "sha256:f9118febf51797cf6d374efb96b5df1c99f3b366f33debd12a67dca35ed0ffdb",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports"
+    }
+  ],
+  "unresolvedCriteria": [],
+  "limitations": [
+    "Authored deterministic world;9new native executions,0independent discovery samples",
+    "One stored pattern/two complete bindings;inhibition causal effect not isolated",
+    "ON ticks67/65/65 vsOFF33: no efficiency or accuracy advantage; all D_DAG2",
+    "Energy/peak memory null;3existing symlink skips;cloud validation not executed",
+    "Scope input initially used raw artifact digest where manifestSha256 is required;failure and correction preserved,no native retry",
+    "Windows checkout EOL-only change restored to frozen computational bytes;raw CRLF logs preserved",
+    "Final metadata staging was blocked by an old zero-byte index.lock;inactive ownership/exclusive access verified,lock renamed with bytes retained,Git index/worktree and research evidence unchanged"
+  ],
+  "verdict": "PASS"
+}

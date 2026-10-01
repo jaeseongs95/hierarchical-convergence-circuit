@@ -1,0 +1,12 @@
+{
+  "verified": true,
+  "primary_commit": "b28230d68546f6e68b7e5024d016bc860db477cd",
+  "local_main": "b28230d68546f6e68b7e5024d016bc860db477cd",
+  "remote_main": "b28230d68546f6e68b7e5024d016bc860db477cd",
+  "ordinary_push_exit_code": 0,
+  "signature_verified": true,
+  "fast_forward_merged": true,
+  "task_branch_deleted": true,
+  "deleted_branch": "research/r077-equal-binding",
+  "targetDigest": "sha256:f9118febf51797cf6d374efb96b5df1c99f3b366f33debd12a67dca35ed0ffdb"
+}

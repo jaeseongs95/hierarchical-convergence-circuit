@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "1.0.0",
+  "operationId": "r077-delete-completed-local-branch",
+  "actionClass": "delete",
+  "plannedCommandOrTool": {
+    "tool": "git",
+    "action": "branch -d research/r077-equal-binding"
+  },
+  "targets": [
+    {
+      "locator": "git-local-ref://hierarchical-convergence-circuit/refs/heads/research/r077-equal-binding",
+      "targetType": "git-ref",
+      "environment": "local",
+      "expectedFingerprint": "sha256:25d92e42e4417b7f68b64e6a1013618cfc5e6db209798f8453d932964a2aaf36"
+    }
+  ],
+  "scopeRef": {
+    "locator": "HCR-Evidence/r077-validation/task-envelope.json",
+    "digest": "sha256:a05b924900233053d85fbe5ac08cbf5aa25fcc634835354c948ac2abaa2b1666",
+    "includedTargets": [
+      "git-local-ref://hierarchical-convergence-circuit/refs/heads/research/r077-equal-binding"
+    ],
+    "excludedTargets": []
+  },
+  "authorizationRef": {
+    "locator": "HCR-Evidence/r077-validation/branch-delete-authorization.json",
+    "digest": "sha256:b697c10493dedf13cad44fb7ef828f5e625a8aab244e64acba75435a595ba68a",
+    "allowedActions": [
+      "delete"
+    ],
+    "allowedTargets": [
+      "git-local-ref://hierarchical-convergence-circuit/refs/heads/research/r077-equal-binding"
+    ],
+    "environments": [
+      "local"
+    ]
+  },
+  "approvalEvidenceRefs": [
+    {
+      "locator": "HCR-Evidence/r077-validation/branch-delete-authorization.json",
+      "digest": "sha256:b697c10493dedf13cad44fb7ef828f5e625a8aab244e64acba75435a595ba68a",
+      "operationId": "r077-delete-completed-local-branch",
+      "actionClass": "delete",
+      "targetLocators": [
+        "git-local-ref://hierarchical-convergence-circuit/refs/heads/research/r077-equal-binding"
+      ],
+      "environments": [
+        "local"
+      ],
+      "expiresAt": "2026-10-01T01:59:47.661629+00:00"
+    }
+  ],
+  "currentStateEvidenceRefs": [
+    {
+      "locator": "HCR-Evidence/r077-validation/branch-delete-state.json",
+      "digest": "sha256:34166161b9dea45c4eeac13d367a2549616b1b60bdd5e262bc7c361cc45f98f3",
+      "targetLocator": "git-local-ref://hierarchical-convergence-circuit/refs/heads/research/r077-equal-binding",
+      "fingerprint": "sha256:25d92e42e4417b7f68b64e6a1013618cfc5e6db209798f8453d932964a2aaf36"
+    }
+  ],
+  "recoveryPlan": {
+    "available": true,
+    "backupRef": "git:b28230d68546f6e68b7e5024d016bc860db477cd",
+    "method": "Recreate exact local ref from commit still referenced by local/remote main; separate bare clone delete/recreate test passed",
+    "restoreProcedureRef": "HCR-Evidence/r077-validation/branch-restore-test.json",
+    "restoreTestEvidenceRef": "HCR-Evidence/r077-validation/branch-restore-test.json",
+    "irreversibilityAccepted": false
+  },
+  "expectedBlastRadius": {
+    "affectedTargets": 1,
+    "affectedUsers": 1,
+    "external": false,
+    "description": "One merged local task ref; main and remote ref are retained"
+  }
+}

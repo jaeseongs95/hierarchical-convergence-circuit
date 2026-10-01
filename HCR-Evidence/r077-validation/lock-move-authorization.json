@@ -1,0 +1,12 @@
+{
+  "operationId": "r077-preserve-stale-index-lock",
+  "actionClass": "move",
+  "targetLocators": [
+    "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\.git\\index.lock"
+  ],
+  "environments": [
+    "local"
+  ],
+  "source": "User-authorized Git recording requires reversible preservation of proven inactive lock metadata",
+  "scope": "One old zero-byte lock; exact bytes retained; index/data untouched"
+}

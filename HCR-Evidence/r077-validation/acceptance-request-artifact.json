@@ -1,0 +1,6 @@
+{
+  "artifactId": "r077-final-acceptance-request",
+  "digest": "sha256:6eaf987fbe9bb6d76c15a790ec730f95ad666b610972861ba75f04fcecc691a9",
+  "locator": "HCR-Evidence/r077-validation/acceptance-request.json",
+  "schemaId": "https://agent-governance-skills.local/acceptance-evidence-validator/contracts/acceptance-evidence-input.v1.schema.json"
+}

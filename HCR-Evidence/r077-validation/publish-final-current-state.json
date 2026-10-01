@@ -1,0 +1,8 @@
+{
+  "observedAt": "2026-10-01T01:03:30.109652+00:00",
+  "remote_main_commit": "b28230d68546f6e68b7e5024d016bc860db477cd",
+  "candidate_base_commit": "b28230d68546f6e68b7e5024d016bc860db477cd",
+  "candidate_artifact_digest": "sha256:f9118febf51797cf6d374efb96b5df1c99f3b366f33debd12a67dca35ed0ffdb",
+  "current_local_branch": "main",
+  "permitted_delta": "HCR-Evidence/r077-validation/ only"
+}

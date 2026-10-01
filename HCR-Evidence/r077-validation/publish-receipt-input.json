@@ -1,0 +1,180 @@
+{
+  "report": {
+    "schemaVersion": "1.0.0",
+    "operationId": "r077-push-research",
+    "actionDigest": "sha256:ddd764dfdfb0281a20ba3e554812fac0a143b6852f49a3341bc9ebd419f9ccff",
+    "targetDigest": "sha256:237313ca88633a06ad59f1ee5b77ffe44a59d2f345e5e9627a9042f744d3126e",
+    "classification": {
+      "actionClass": "publish",
+      "reversibility": "reversible",
+      "externalImpact": true,
+      "dataLossPotential": false,
+      "permissionImpact": false
+    },
+    "checks": [
+      {
+        "checkId": "target-specificity",
+        "state": "passed",
+        "evidenceRefs": [],
+        "message": "모든 대상이 구체적으로 식별됐습니다."
+      },
+      {
+        "checkId": "scope-match",
+        "state": "passed",
+        "evidenceRefs": [
+          "HCR-Evidence/r077-validation/task-envelope.json"
+        ],
+        "message": "대상이 작업 범위 안에 있습니다."
+      },
+      {
+        "checkId": "authorization-match",
+        "state": "passed",
+        "evidenceRefs": [
+          "HCR-Evidence/r077-validation/publish-authorization.json"
+        ],
+        "message": "행동, 대상과 환경이 허용 범위에 있습니다."
+      },
+      {
+        "checkId": "current-state",
+        "state": "passed",
+        "evidenceRefs": [
+          "HCR-Evidence/r077-validation/publish-current-state.json"
+        ],
+        "message": "현재 fingerprint가 예상값과 일치합니다."
+      },
+      {
+        "checkId": "approval",
+        "state": "passed",
+        "evidenceRefs": [
+          "HCR-Evidence/r077-validation/publish-authorization.json"
+        ],
+        "message": "승인 상태: observed"
+      },
+      {
+        "checkId": "recovery",
+        "state": "passed",
+        "evidenceRefs": [
+          "git:94df6cc51edf172d2d1f91a31c0351532fd46900",
+          "HCR-Evidence/r077-validation/git-recovery-check.json"
+        ],
+        "message": "복구 또는 명시적 비가역성 수용 근거가 있습니다."
+      },
+      {
+        "checkId": "blast-radius",
+        "state": "passed",
+        "evidenceRefs": [],
+        "message": "예상 영향 범위가 모든 대상을 포함합니다."
+      }
+    ],
+    "approval": {
+      "required": true,
+      "status": "observed",
+      "evidenceRefs": [
+        "HCR-Evidence/r077-validation/publish-authorization.json"
+      ]
+    },
+    "recovery": {
+      "available": true,
+      "restoreTested": true,
+      "irreversibilityAccepted": false,
+      "evidenceRefs": [
+        "git:94df6cc51edf172d2d1f91a31c0351532fd46900",
+        "HCR-Evidence/r077-validation/git-recovery-check.json"
+      ]
+    },
+    "blastRadius": {
+      "affectedTargets": 1,
+      "affectedUsers": 1,
+      "external": true,
+      "description": "R077 native equal-binding research and sealed evidence on existing main ref"
+    },
+    "unresolved": [],
+    "invalidationTriggers": [
+      "action 또는 planned tool 변경",
+      "target 또는 environment 변경",
+      "current-state evidence 또는 fingerprint 변경",
+      "scope 또는 authorization 변경",
+      "승인 evidence의 만료 또는 범위 변경",
+      "복구 계획 변경",
+      "예상 blast radius 변경"
+    ],
+    "validUntil": "2026-10-01T01:13:34.875Z",
+    "observedAt": "2026-10-01T00:58:34.875Z",
+    "verdict": "READY"
+  },
+  "intent": {
+    "schemaVersion": "1.0.0",
+    "operationId": "r077-push-research",
+    "actionClass": "publish",
+    "plannedCommandOrTool": {
+      "tool": "git",
+      "action": "push origin main"
+    },
+    "targets": [
+      {
+        "locator": "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main",
+        "targetType": "git-ref",
+        "environment": "external",
+        "expectedFingerprint": "sha256:dc73f985407f50add45ee0264d459589fc90bb6b976565c1854fc8ba53237f4d"
+      }
+    ],
+    "scopeRef": {
+      "locator": "HCR-Evidence/r077-validation/task-envelope.json",
+      "digest": "sha256:a05b924900233053d85fbe5ac08cbf5aa25fcc634835354c948ac2abaa2b1666",
+      "includedTargets": [
+        "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main"
+      ],
+      "excludedTargets": []
+    },
+    "authorizationRef": {
+      "locator": "HCR-Evidence/r077-validation/publish-authorization.json",
+      "digest": "sha256:6059dcf070be8f4a916246f23e37d860631059af778ce512da273eb2882d2579",
+      "allowedActions": [
+        "publish"
+      ],
+      "allowedTargets": [
+        "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main"
+      ],
+      "environments": [
+        "external"
+      ]
+    },
+    "approvalEvidenceRefs": [
+      {
+        "locator": "HCR-Evidence/r077-validation/publish-authorization.json",
+        "digest": "sha256:6059dcf070be8f4a916246f23e37d860631059af778ce512da273eb2882d2579",
+        "operationId": "r077-push-research",
+        "actionClass": "publish",
+        "targetLocators": [
+          "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main"
+        ],
+        "environments": [
+          "external"
+        ],
+        "expiresAt": "2026-10-01T01:58:34.478292+00:00"
+      }
+    ],
+    "currentStateEvidenceRefs": [
+      {
+        "locator": "HCR-Evidence/r077-validation/publish-current-state.json",
+        "digest": "sha256:64779d6b0aa28aeb53b48a4f80ac33639710f6a4f5db17bf1845007bf7caa0c1",
+        "targetLocator": "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main",
+        "fingerprint": "sha256:dc73f985407f50add45ee0264d459589fc90bb6b976565c1854fc8ba53237f4d"
+      }
+    ],
+    "recoveryPlan": {
+      "available": true,
+      "backupRef": "git:94df6cc51edf172d2d1f91a31c0351532fd46900",
+      "method": "Reverse scoped primary patch as a new commit; temporary-index restore simulation verified",
+      "restoreProcedureRef": "HCR-Evidence/r077-validation/git-recovery-check.json",
+      "restoreTestEvidenceRef": "HCR-Evidence/r077-validation/git-recovery-check.json",
+      "irreversibilityAccepted": false
+    },
+    "expectedBlastRadius": {
+      "affectedTargets": 1,
+      "affectedUsers": 1,
+      "external": true,
+      "description": "R077 native equal-binding research and sealed evidence on existing main ref"
+    }
+  }
+}

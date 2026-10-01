@@ -1,0 +1,180 @@
+{
+  "report": {
+    "schemaVersion": "1.0.0",
+    "operationId": "r077-push-acceptance-records",
+    "actionDigest": "sha256:63fae814d97beef10e4b49f911b7abeb31e187cda86244b8a2684ea7fe339f03",
+    "targetDigest": "sha256:1262f5aeb2201c93eabe87cb3ac4d5f67dd3549e4a3273ccea941507834ce3f1",
+    "classification": {
+      "actionClass": "publish",
+      "reversibility": "reversible",
+      "externalImpact": true,
+      "dataLossPotential": false,
+      "permissionImpact": false
+    },
+    "checks": [
+      {
+        "checkId": "target-specificity",
+        "state": "passed",
+        "evidenceRefs": [],
+        "message": "모든 대상이 구체적으로 식별됐습니다."
+      },
+      {
+        "checkId": "scope-match",
+        "state": "passed",
+        "evidenceRefs": [
+          "HCR-Evidence/r077-validation/task-envelope.json"
+        ],
+        "message": "대상이 작업 범위 안에 있습니다."
+      },
+      {
+        "checkId": "authorization-match",
+        "state": "passed",
+        "evidenceRefs": [
+          "HCR-Evidence/r077-validation/publish-final-authorization.json"
+        ],
+        "message": "행동, 대상과 환경이 허용 범위에 있습니다."
+      },
+      {
+        "checkId": "current-state",
+        "state": "passed",
+        "evidenceRefs": [
+          "HCR-Evidence/r077-validation/publish-final-current-state.json"
+        ],
+        "message": "현재 fingerprint가 예상값과 일치합니다."
+      },
+      {
+        "checkId": "approval",
+        "state": "passed",
+        "evidenceRefs": [
+          "HCR-Evidence/r077-validation/publish-final-authorization.json"
+        ],
+        "message": "승인 상태: observed"
+      },
+      {
+        "checkId": "recovery",
+        "state": "passed",
+        "evidenceRefs": [
+          "git:94df6cc51edf172d2d1f91a31c0351532fd46900",
+          "HCR-Evidence/r077-validation/git-recovery-check.json"
+        ],
+        "message": "복구 또는 명시적 비가역성 수용 근거가 있습니다."
+      },
+      {
+        "checkId": "blast-radius",
+        "state": "passed",
+        "evidenceRefs": [],
+        "message": "예상 영향 범위가 모든 대상을 포함합니다."
+      }
+    ],
+    "approval": {
+      "required": true,
+      "status": "observed",
+      "evidenceRefs": [
+        "HCR-Evidence/r077-validation/publish-final-authorization.json"
+      ]
+    },
+    "recovery": {
+      "available": true,
+      "restoreTested": true,
+      "irreversibilityAccepted": false,
+      "evidenceRefs": [
+        "git:94df6cc51edf172d2d1f91a31c0351532fd46900",
+        "HCR-Evidence/r077-validation/git-recovery-check.json"
+      ]
+    },
+    "blastRadius": {
+      "affectedTargets": 1,
+      "affectedUsers": 1,
+      "external": true,
+      "description": "R077 acceptance and delivery records only; no change to sealed computational research artifact"
+    },
+    "unresolved": [],
+    "invalidationTriggers": [
+      "action 또는 planned tool 변경",
+      "target 또는 environment 변경",
+      "current-state evidence 또는 fingerprint 변경",
+      "scope 또는 authorization 변경",
+      "승인 evidence의 만료 또는 범위 변경",
+      "복구 계획 변경",
+      "예상 blast radius 변경"
+    ],
+    "validUntil": "2026-10-01T01:18:30.249Z",
+    "observedAt": "2026-10-01T01:03:30.249Z",
+    "verdict": "READY"
+  },
+  "intent": {
+    "schemaVersion": "1.0.0",
+    "operationId": "r077-push-acceptance-records",
+    "actionClass": "publish",
+    "plannedCommandOrTool": {
+      "tool": "git",
+      "action": "push origin main"
+    },
+    "targets": [
+      {
+        "locator": "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main",
+        "targetType": "git-ref",
+        "environment": "external",
+        "expectedFingerprint": "sha256:25d92e42e4417b7f68b64e6a1013618cfc5e6db209798f8453d932964a2aaf36"
+      }
+    ],
+    "scopeRef": {
+      "locator": "HCR-Evidence/r077-validation/task-envelope.json",
+      "digest": "sha256:a05b924900233053d85fbe5ac08cbf5aa25fcc634835354c948ac2abaa2b1666",
+      "includedTargets": [
+        "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main"
+      ],
+      "excludedTargets": []
+    },
+    "authorizationRef": {
+      "locator": "HCR-Evidence/r077-validation/publish-final-authorization.json",
+      "digest": "sha256:8e777db426b4df5fdef3007ee13e583092312e43c9b68d313c93c68bdf7e71c8",
+      "allowedActions": [
+        "publish"
+      ],
+      "allowedTargets": [
+        "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main"
+      ],
+      "environments": [
+        "external"
+      ]
+    },
+    "approvalEvidenceRefs": [
+      {
+        "locator": "HCR-Evidence/r077-validation/publish-final-authorization.json",
+        "digest": "sha256:8e777db426b4df5fdef3007ee13e583092312e43c9b68d313c93c68bdf7e71c8",
+        "operationId": "r077-push-acceptance-records",
+        "actionClass": "publish",
+        "targetLocators": [
+          "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main"
+        ],
+        "environments": [
+          "external"
+        ],
+        "expiresAt": "2026-10-01T02:03:30.109652+00:00"
+      }
+    ],
+    "currentStateEvidenceRefs": [
+      {
+        "locator": "HCR-Evidence/r077-validation/publish-final-current-state.json",
+        "digest": "sha256:1c3eb5fd53406c81a0b9f53bcdb13109268cb95ae518485a695369468e594cdb",
+        "targetLocator": "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main",
+        "fingerprint": "sha256:25d92e42e4417b7f68b64e6a1013618cfc5e6db209798f8453d932964a2aaf36"
+      }
+    ],
+    "recoveryPlan": {
+      "available": true,
+      "backupRef": "git:94df6cc51edf172d2d1f91a31c0351532fd46900",
+      "method": "Reverse scoped primary patch as a new commit; temporary-index restore simulation verified",
+      "restoreProcedureRef": "HCR-Evidence/r077-validation/git-recovery-check.json",
+      "restoreTestEvidenceRef": "HCR-Evidence/r077-validation/git-recovery-check.json",
+      "irreversibilityAccepted": false
+    },
+    "expectedBlastRadius": {
+      "affectedTargets": 1,
+      "affectedUsers": 1,
+      "external": true,
+      "description": "R077 acceptance and delivery records only; no change to sealed computational research artifact"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "observedAt": "2026-10-01T00:58:34.478292+00:00",
+  "remote_main_commit": "94df6cc51edf172d2d1f91a31c0351532fd46900",
+  "candidate_commit": "b28230d68546f6e68b7e5024d016bc860db477cd",
+  "candidate_artifact_digest": "sha256:f9118febf51797cf6d374efb96b5df1c99f3b366f33debd12a67dca35ed0ffdb",
+  "current_local_branch": "main"
+}

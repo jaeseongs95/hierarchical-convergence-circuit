@@ -1,0 +1,7 @@
+{
+  "returncode": 0,
+  "commit": "b28230d68546f6e68b7e5024d016bc860db477cd",
+  "branch": "research/r077-equal-binding",
+  "base": "94df6cc51edf172d2d1f91a31c0351532fd46900",
+  "command": "git commit -m R077: isolate score-driven selection across equal-length native bindings"
+}

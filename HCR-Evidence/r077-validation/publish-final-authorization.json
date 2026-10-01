@@ -1,0 +1,13 @@
+{
+  "actionClass": "publish",
+  "operationId": "r077-push-acceptance-records",
+  "targetLocators": [
+    "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main"
+  ],
+  "environments": [
+    "external"
+  ],
+  "candidate_artifact_digest": "sha256:f9118febf51797cf6d374efb96b5df1c99f3b366f33debd12a67dca35ed0ffdb",
+  "source": "Direct human continuation and user-supplied AGENTS section8 ordinary push authority",
+  "scope": "Only R077 validation and delivery records added to main; accepted research artifact remains exact"
+}
