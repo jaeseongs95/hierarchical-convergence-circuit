@@ -1,0 +1,12 @@
+{
+  "verdict": "PASS",
+  "effective_paths": [
+    "D:/codex/AI논문/AGENTS.md"
+  ],
+  "user_supplied_global": true,
+  "nonempty_overrides": [],
+  "nested_instructions": [],
+  "base_commit": "56f14eac8841ecc765e5ac426620d56a0067c4c6",
+  "remote_main_observed": "56f14eac8841ecc765e5ac426620d56a0067c4c6\trefs/heads/main",
+  "git_optional_locks": "process_only_0"
+}

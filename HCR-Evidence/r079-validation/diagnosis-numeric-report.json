@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "1.0.0",
+  "requestArtifactDigest": "sha256:359cd74b676435aa3759f565c187769b99dd8c49e55741899a1b302c79d9ebf3",
+  "failureClusters": [
+    {
+      "fingerprint": "sha256:3aebcc68ecc09d0cd4ddf8138c1db0a130fa4309918a3d42ad1284ddcebe0f5f",
+      "episodeIds": [
+        "r079-delivery-numeric"
+      ],
+      "operation": "delivery verification",
+      "stableFailureTuple": {
+        "error": "exact equality assertion",
+        "stage": "numeric"
+      },
+      "environmentDigest": "sha256:aed2a648f6896bf0c5edf3a1f69500f9909d597b788d97d32f120e5c1a88affc"
+    }
+  ],
+  "observations": [
+    {
+      "id": "OBS-001",
+      "statement": "Attempt r079-delivery-numeric failed during delivery verification in environment sha256:aed2a648f6896bf0c5edf3a1f69500f9909d597b788d97d32f120e5c1a88affc.",
+      "evidenceRefs": [
+        "HCR-Evidence/r079-validation/delivery-numeric-diagnosis.json"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "h1",
+      "causalLayer": "implementation",
+      "statement": "Independent replay/native floating-point states differ below the existing tolerance; exact equality is too strict",
+      "supportingEvidence": [
+        "HCR-Evidence/r079-validation/delivery-numeric-diagnosis.json"
+      ],
+      "contradictingEvidence": [],
+      "state": "confirmed",
+      "causeAnalysis": {
+        "symptom": "Post-run delivery verifier rejected supported evidence",
+        "mechanism": "Independent replay/native floating-point states differ below the existing tolerance; exact equality is too strict",
+        "rootCondition": "Delivery-only equality assertion exceeded frozen research contract",
+        "discriminatingEvidence": {
+          "statement": "Independent replay/native floating-point states differ below the existing tolerance; exact equality is too strict",
+          "evidenceRefs": [
+            "HCR-Evidence/r079-validation/delivery-numeric-diagnosis.json"
+          ]
+        },
+        "eliminationObservation": {
+          "statement": "All other source bytes equal for catalog case; numeric maximum difference 2.7755575615628914e-17 below frozen 2e-12; native run and primary metrics unchanged",
+          "evidenceRefs": [
+            "HCR-Evidence/r079-validation/delivery-numeric-diagnosis.json"
+          ]
+        }
+      }
+    }
+  ],
+  "nextDiscriminatingTest": null,
+  "confirmedCause": {
+    "causeId": "h1",
+    "hypothesisId": "h1",
+    "statement": "Independent replay/native floating-point states differ below the existing tolerance; exact equality is too strict",
+    "symptom": "Post-run delivery verifier rejected supported evidence",
+    "mechanism": "Independent replay/native floating-point states differ below the existing tolerance; exact equality is too strict",
+    "rootCondition": "Delivery-only equality assertion exceeded frozen research contract",
+    "discriminatingEvidence": {
+      "statement": "Independent replay/native floating-point states differ below the existing tolerance; exact equality is too strict",
+      "evidenceRefs": [
+        "HCR-Evidence/r079-validation/delivery-numeric-diagnosis.json"
+      ]
+    },
+    "eliminationObservation": {
+      "statement": "All other source bytes equal for catalog case; numeric maximum difference 2.7755575615628914e-17 below frozen 2e-12; native run and primary metrics unchanged",
+      "evidenceRefs": [
+        "HCR-Evidence/r079-validation/delivery-numeric-diagnosis.json"
+      ]
+    },
+    "evidenceBindings": [
+      {
+        "evidenceRef": "HCR-Evidence/r079-validation/delivery-numeric-diagnosis.json",
+        "artifactDigest": "sha256:22465f43eb9a1b4322c1e96ef0d2104cde6d448bb2a33cebe1f1351940445a83",
+        "hypothesisIds": [
+          "h1"
+        ],
+        "relation": "supports"
+      }
+    ]
+  },
+  "recommendedNextAction": "Use the confirmed cause as input to a separately authorized remediation task.",
+  "limitations": [],
+  "verdict": "CAUSE_CONFIRMED"
+}

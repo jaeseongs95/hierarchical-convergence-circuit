@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "1.0.0",
+  "objective": "Separate post-run verifier mismatch from native research failure",
+  "expectedBehavior": "Verify frozen research evidence and permitted delivery metadata accurately",
+  "episodes": [
+    {
+      "attemptId": "r079-delivery-catalog",
+      "operation": "delivery verification",
+      "stableFailureTuple": {
+        "stage": "catalog",
+        "error": "exact equality assertion"
+      },
+      "environmentDigest": "sha256:aed2a648f6896bf0c5edf3a1f69500f9909d597b788d97d32f120e5c1a88affc",
+      "changeSummary": "No native/core change",
+      "evidenceRefs": [
+        "HCR-Evidence/r079-validation/delivery-first-failure.json"
+      ]
+    }
+  ],
+  "lastKnownGood": null,
+  "constraints": [
+    "No native retry or frozen artifact overwrite"
+  ],
+  "authorization": {
+    "allowedChecks": [
+      "read"
+    ],
+    "approvalRequired": [],
+    "prohibitedChecks": [
+      "native-rerun"
+    ]
+  },
+  "evidenceBindings": [
+    {
+      "evidenceRef": "HCR-Evidence/r079-validation/delivery-first-failure.json",
+      "artifactDigest": "sha256:4253af112651cc0ea72d3866085197837dbf17243c5b8a5c46b60abd5031b6aa",
+      "hypothesisIds": [
+        "h1"
+      ],
+      "relation": "supports"
+    }
+  ],
+  "attemptedChecks": [],
+  "candidateHypotheses": [
+    {
+      "id": "h1",
+      "causalLayer": "implementation",
+      "statement": "Post-run catalog registration is permitted; exact current catalog equality to the earlier frozen catalog is too strict",
+      "supportingEvidence": [
+        "HCR-Evidence/r079-validation/delivery-first-failure.json"
+      ],
+      "contradictingEvidence": [],
+      "state": "confirmed",
+      "causeAnalysis": {
+        "symptom": "Post-run delivery verifier rejected supported evidence",
+        "mechanism": "Post-run catalog registration is permitted; exact current catalog equality to the earlier frozen catalog is too strict",
+        "rootCondition": "Delivery-only equality assertion exceeded frozen research contract",
+        "discriminatingEvidence": {
+          "statement": "Post-run catalog registration is permitted; exact current catalog equality to the earlier frozen catalog is too strict",
+          "evidenceRefs": [
+            "HCR-Evidence/r079-validation/delivery-first-failure.json"
+          ]
+        },
+        "eliminationObservation": {
+          "statement": "All other source bytes equal for catalog case; numeric maximum difference 2.7755575615628914e-17 below frozen 2e-12; native run and primary metrics unchanged",
+          "evidenceRefs": [
+            "HCR-Evidence/r079-validation/delivery-first-failure.json"
+          ]
+        }
+      }
+    }
+  ],
+  "candidateTests": [],
+  "accessBlockers": []
+}

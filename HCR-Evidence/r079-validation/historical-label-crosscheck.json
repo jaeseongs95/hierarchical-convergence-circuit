@@ -1,0 +1,30 @@
+{
+  "verified": true,
+  "new_native_executions": 0,
+  "checks": [
+    {
+      "summary": "HCR-Evidence/exp57/r076-20261001T001633Z-cac62c3eb7/summary.json",
+      "sha256": "adad3319e28f21c9de0f522f603de7826c848b792b19282b360310f2a8712bd9",
+      "sample_cell": "sneg-on",
+      "field": "pool.candidates[].inhibition_inputs[].final_signed_input",
+      "meaning": "weight * terminal activation, not centered kernel input",
+      "historical_changed": false
+    },
+    {
+      "summary": "HCR-Evidence/exp58/r077-20261001T004751Z-b3e726c9fa/summary.json",
+      "sha256": "bcd5996114bf03fb48cc3cc179e4740bb56de78097d237c18eeb6a36e4b59834",
+      "sample_cell": "s00-on",
+      "field": "pool.candidates[].inhibition_inputs[].final_signed_input",
+      "meaning": "weight * terminal activation, not centered kernel input",
+      "historical_changed": false
+    },
+    {
+      "summary": "HCR-Evidence/exp59/r078-20261001T012408Z-598761f4db/summary.json",
+      "sha256": "76decdb579b5ae7010bad7b46fb7b19da62245d908aba8bc675d470ecceae8c5",
+      "sample_cell": "original-s00-on",
+      "field": "pool.candidates[].inhibition_inputs[].final_signed_input",
+      "meaning": "weight * terminal activation, not centered kernel input",
+      "historical_changed": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "recorded_at": "2026-10-01T02:26:58.306971+00:00",
+  "stage": "post-run-delivery-verification",
+  "first_failure": "Current frozen source bytes",
+  "cause": "Only experiments/INDEX.json differs: intended EXP60 entry appended after native bundle was sealed. All source files used in execution remain exact.",
+  "observations": {
+    "frozen_index_sha256": "4e28a77a0228edfc70fbdb53d03cb101eda121786d14ba73cabf8bad6b101bd0",
+    "current_index_sha256": "903d0bedc0710cdc29949b0e9270657b9f84b21c213e38eaab5b61f07b246d1b",
+    "other_source_differences": []
+  },
+  "next_discriminating_check": "Compare old catalog structure to current catalog excluding exactly new EXP60 entry; require all previous entries and top-level fields identical",
+  "source_or_native_rerun": false
+}

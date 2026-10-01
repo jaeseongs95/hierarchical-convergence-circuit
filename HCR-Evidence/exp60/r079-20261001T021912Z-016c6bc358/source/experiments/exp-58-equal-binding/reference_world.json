@@ -1,0 +1,22 @@
+{
+  "training": {
+    "r077-train-1": {
+      "r077-train-1-e0": true,
+      "r077-train-1-e1": true
+    },
+    "r077-train-2": {
+      "r077-train-2-e0": true,
+      "r077-train-2-e1": true
+    },
+    "r077-train-3": {
+      "r077-train-3-e0": true,
+      "r077-train-3-e1": true
+    }
+  },
+  "evaluation": {
+    "e0": true,
+    "e1": true,
+    "e2": true,
+    "e3": true
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "1.0.0",
+  "taskId": "hcc-r079-score-readout",
+  "objective": "봉인 memory와 고정 runtime에서 e3 score가 첫 decision 수렴·readout·dependency coverage와 후속 계산에 연결되는 양상을 구별한다",
+  "scope": {
+    "included": [
+      "Run-HCR-R079.cmd",
+      "Run-HCR-R079.py",
+      "R079_MANIFEST.json",
+      "tools/r079_score_readout/",
+      "experiments/exp-60-score-readout/",
+      "experiments/INDEX.json",
+      "experiments/INDEX.ko.md",
+      "HCR-Evidence/exp60/",
+      "HCR-Evidence/r079-validation/"
+    ],
+    "excluded": [
+      "src/",
+      "tests/",
+      "archive/",
+      "tools/r078_binding_order/",
+      "experiments/exp-59-binding-order/",
+      "HCR-Evidence/exp59/",
+      "HCR-Evidence/r078-validation/"
+    ]
+  },
+  "acceptanceCriteria": [
+    "[AC-001] 실행 전에 config/world/memory/public ID/budget·20셀(재현8·신규score12)·첫 decision 상태와 progress reason·예측/반증/판정불가·허용오차를 동결한다",
+    "[AC-002] train/feedback/repair/retry 없이 native20의 journal·network/advance 대응·goal/margin/residual·candidate/ready/completeness/frontier·pool 후보·final ancestry·분리 비용을 보존한다",
+    "[AC-003] raw journal·recurrence·progress/readout·final ancestry·입력/원자료 hash·집계를 독립 재계산하고 synthetic/변조거부와 최종 core 회귀1회에서 새 실패/skip0을 확인한다",
+    "[AC-004] 원클릭·bundle·결과/NEXT/INDEX·범위/수용 검증, 기존 변경 보존 및 커밋/main 병합/일반 origin main push/원격 확인/작업브랜치 정리를 완료한다"
+  ],
+  "riskLevel": "medium",
+  "workUnits": [
+    {
+      "id": "research",
+      "objective": "봉인 memory와 고정 runtime에서 e3 score가 첫 decision 수렴·readout·dependency coverage와 후속 계산에 연결되는 양상을 구별한다",
+      "dependencies": [],
+      "writeTargets": [
+        "Run-HCR-R079.cmd",
+        "Run-HCR-R079.py",
+        "R079_MANIFEST.json",
+        "tools/r079_score_readout/",
+        "experiments/exp-60-score-readout/",
+        "experiments/INDEX.json",
+        "experiments/INDEX.ko.md",
+        "HCR-Evidence/exp60/",
+        "HCR-Evidence/r079-validation/"
+      ]
+    }
+  ],
+  "requiredCapabilities": [
+    "change-scope-baseline-capture",
+    "minimal-implementation",
+    "change-scope-assurance",
+    "acceptance-evidence-validation",
+    "mutation-risk-preflight"
+  ],
+  "constraints": [
+    "core·runtime/readout/scheduler/selector·역사 evidence 변경0",
+    "train/feedback/host correction/automatic retry0",
+    "독립 발견 표본0, energy/peak memory null",
+    "ON/OFF는 pool/binding/reuse 전체 개입; inhibition 단독 인과 아님",
+    "동결 뒤 score/기준 추가 금지; 미관측 ambiguous·정밀 경계 주장 금지"
+  ],
+  "authorization": {
+    "allowedActions": [
+      "read",
+      "write-scoped-research-files",
+      "run-local-checks",
+      "commit",
+      "merge-local-main",
+      "delete-completed-local-task-branch",
+      "push-origin-main"
+    ],
+    "prohibitedActions": [
+      "force-push",
+      "rewrite-historical-evidence",
+      "overwrite-user-changes"
+    ],
+    "approvalRequired": [
+      "deploy",
+      "tag",
+      "install",
+      "delete-remote-branch"
+    ]
+  },
+  "decision": {
+    "complexity": "simple",
+    "hasConflicts": false
+  },
+  "orchestration": {
+    "requested": false,
+    "mcpAvailable": true
+  }
+}

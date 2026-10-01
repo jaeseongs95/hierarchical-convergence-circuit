@@ -1,0 +1,11 @@
+{
+  "operationId": "r079-preserve-inactive-lock",
+  "actionClass": "move",
+  "source": "Required reversible preservation to complete user-authorized Git turn; no delete",
+  "targetLocators": [
+    "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\.git\\index.lock"
+  ],
+  "environments": [
+    "local"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "verified": true,
+  "roundtrip": "empty metadata rename roundtrip on same volume",
+  "preserve_original": true,
+  "restore_condition": "Only if no fresh lock or Git owner; never overwrite"
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.0.0",
+  "operationId": "r079-preserve-inactive-lock",
+  "actionClass": "move",
+  "plannedCommandOrTool": {
+    "tool": "Python Path.rename",
+    "action": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\.git\\index.lock -> D:\\codex\\AI논문\\hierarchical-convergence-circuit\\.git\\index.lock.r079-preserved-015515"
+  },
+  "targets": [
+    {
+      "locator": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\.git\\index.lock",
+      "targetType": "file",
+      "environment": "local",
+      "expectedFingerprint": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "scopeRef": {
+    "locator": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\.git\\r079-bootstrap\\scope.json",
+    "digest": "sha256:cc5050d709fa38228b026f79da5064e9c4cb5569ef4a45ec9fb28c70b5e966eb",
+    "includedTargets": [
+      "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\.git\\index.lock"
+    ],
+    "excludedTargets": []
+  },
+  "authorizationRef": {
+    "locator": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\.git\\r079-bootstrap\\authorization.json",
+    "digest": "sha256:efde62cfc8a76fa3ea96e32afba1f65abbd055e37016f4e057177d872b383f11",
+    "allowedActions": [
+      "move"
+    ],
+    "allowedTargets": [
+      "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\.git\\index.lock"
+    ],
+    "environments": [
+      "local"
+    ]
+  },
+  "approvalEvidenceRefs": [],
+  "currentStateEvidenceRefs": [
+    {
+      "locator": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\.git\\r079-bootstrap\\lock-state.json",
+      "digest": "sha256:ca313bcc5ff13aa9f5a1bd8d39dfa73fdfa5894b8c0a4d8443f7b9837819f54c",
+      "targetLocator": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\.git\\index.lock",
+      "fingerprint": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "recoveryPlan": {
+    "available": true,
+    "backupRef": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\.git\\index.lock.r079-preserved-015515",
+    "method": "Preserve original empty lock; restore by rename only if no new Git owner/lock exists",
+    "restoreProcedureRef": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\.git\\r079-bootstrap\\restore-test.json",
+    "restoreTestEvidenceRef": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\.git\\r079-bootstrap\\restore-test.json",
+    "irreversibilityAccepted": false
+  },
+  "expectedBlastRadius": {
+    "affectedTargets": 1,
+    "affectedUsers": 1,
+    "external": false,
+    "description": "One proven inactive zero-byte Git lock metadata file"
+  }
+}

@@ -1,0 +1,384 @@
+{
+  "schemaVersion": "1.0.0",
+  "request": {
+    "schemaVersion": "1.0.0",
+    "taskId": "hcc-r079-score-readout",
+    "request": "R079 한 턴 연구와 사용자 제공 AGENTS 제8절 Git 전달",
+    "instructionResolutionRefs": [
+      "D:/codex/AI논문/AGENTS.md",
+      "user:supplied-global-AGENTS"
+    ],
+    "pathSemantics": "windows",
+    "authorizationEvidence": [
+      {
+        "action": "read",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8"
+      },
+      {
+        "action": "write-scoped-research-files",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8"
+      },
+      {
+        "action": "run-local-checks",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8"
+      },
+      {
+        "action": "commit",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8"
+      },
+      {
+        "action": "merge-local-main",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8"
+      },
+      {
+        "action": "delete-completed-local-task-branch",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8"
+      },
+      {
+        "action": "push-origin-main",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8"
+      },
+      {
+        "action": "force-push",
+        "effect": "prohibit",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS"
+      },
+      {
+        "action": "rewrite-historical-evidence",
+        "effect": "prohibit",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS"
+      },
+      {
+        "action": "overwrite-user-changes",
+        "effect": "prohibit",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS"
+      },
+      {
+        "action": "deploy",
+        "effect": "require-approval",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS"
+      },
+      {
+        "action": "tag",
+        "effect": "require-approval",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS"
+      },
+      {
+        "action": "install",
+        "effect": "require-approval",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS"
+      },
+      {
+        "action": "delete-remote-branch",
+        "effect": "require-approval",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS"
+      }
+    ],
+    "suppliedFacts": [
+      {
+        "statement": "R078 first-route final 고정 예측 반증 후 score/readout 경계를 구별",
+        "locator": "experiments/exp-59-binding-order/NEXT.ko.md"
+      }
+    ],
+    "userDecisions": []
+  },
+  "report": {
+    "schemaVersion": "1.0.0",
+    "taskEnvelope": {
+      "schemaVersion": "1.0.0",
+      "taskId": "hcc-r079-score-readout",
+      "objective": "봉인 memory와 고정 runtime에서 e3 score가 첫 decision 수렴·readout·dependency coverage와 후속 계산에 연결되는 양상을 구별한다",
+      "scope": {
+        "included": [
+          "Run-HCR-R079.cmd",
+          "Run-HCR-R079.py",
+          "R079_MANIFEST.json",
+          "tools/r079_score_readout/",
+          "experiments/exp-60-score-readout/",
+          "experiments/INDEX.json",
+          "experiments/INDEX.ko.md",
+          "HCR-Evidence/exp60/",
+          "HCR-Evidence/r079-validation/"
+        ],
+        "excluded": [
+          "src/",
+          "tests/",
+          "archive/",
+          "tools/r078_binding_order/",
+          "experiments/exp-59-binding-order/",
+          "HCR-Evidence/exp59/",
+          "HCR-Evidence/r078-validation/"
+        ]
+      },
+      "acceptanceCriteria": [
+        "[AC-001] 실행 전에 config/world/memory/public ID/budget·20셀(재현8·신규score12)·첫 decision 상태와 progress reason·예측/반증/판정불가·허용오차를 동결한다",
+        "[AC-002] train/feedback/repair/retry 없이 native20의 journal·network/advance 대응·goal/margin/residual·candidate/ready/completeness/frontier·pool 후보·final ancestry·분리 비용을 보존한다",
+        "[AC-003] raw journal·recurrence·progress/readout·final ancestry·입력/원자료 hash·집계를 독립 재계산하고 synthetic/변조거부와 최종 core 회귀1회에서 새 실패/skip0을 확인한다",
+        "[AC-004] 원클릭·bundle·결과/NEXT/INDEX·범위/수용 검증, 기존 변경 보존 및 커밋/main 병합/일반 origin main push/원격 확인/작업브랜치 정리를 완료한다"
+      ],
+      "riskLevel": "medium",
+      "workUnits": [
+        {
+          "id": "research",
+          "objective": "봉인 memory와 고정 runtime에서 e3 score가 첫 decision 수렴·readout·dependency coverage와 후속 계산에 연결되는 양상을 구별한다",
+          "dependencies": [],
+          "writeTargets": [
+            "Run-HCR-R079.cmd",
+            "Run-HCR-R079.py",
+            "R079_MANIFEST.json",
+            "tools/r079_score_readout/",
+            "experiments/exp-60-score-readout/",
+            "experiments/INDEX.json",
+            "experiments/INDEX.ko.md",
+            "HCR-Evidence/exp60/",
+            "HCR-Evidence/r079-validation/"
+          ]
+        }
+      ],
+      "requiredCapabilities": [
+        "change-scope-baseline-capture",
+        "minimal-implementation",
+        "change-scope-assurance",
+        "acceptance-evidence-validation",
+        "mutation-risk-preflight"
+      ],
+      "constraints": [
+        "core·runtime/readout/scheduler/selector·역사 evidence 변경0",
+        "train/feedback/host correction/automatic retry0",
+        "독립 발견 표본0, energy/peak memory null",
+        "ON/OFF는 pool/binding/reuse 전체 개입; inhibition 단독 인과 아님",
+        "동결 뒤 score/기준 추가 금지; 미관측 ambiguous·정밀 경계 주장 금지"
+      ],
+      "authorization": {
+        "allowedActions": [
+          "read",
+          "write-scoped-research-files",
+          "run-local-checks",
+          "commit",
+          "merge-local-main",
+          "delete-completed-local-task-branch",
+          "push-origin-main"
+        ],
+        "prohibitedActions": [
+          "force-push",
+          "rewrite-historical-evidence",
+          "overwrite-user-changes"
+        ],
+        "approvalRequired": [
+          "deploy",
+          "tag",
+          "install",
+          "delete-remote-branch"
+        ]
+      },
+      "decision": {
+        "complexity": "simple",
+        "hasConflicts": false
+      },
+      "orchestration": {
+        "requested": false,
+        "mcpAvailable": true
+      }
+    },
+    "acceptanceEvidencePlan": {
+      "schemaVersion": "1.0.0",
+      "criteria": [
+        {
+          "criterionId": "AC-001",
+          "statement": "[AC-001] 실행 전에 config/world/memory/public ID/budget·20셀(재현8·신규score12)·첫 decision 상태와 progress reason·예측/반증/판정불가·허용오차를 동결한다",
+          "verificationMethod": "동결·journal 독립 재생·변조 거부·회귀·scope/전달 검사",
+          "expectedEvidenceKinds": [
+            "file",
+            "test",
+            "document"
+          ],
+          "passCondition": "[AC-001] 실행 전에 config/world/memory/public ID/budget·20셀(재현8·신규score12)·첫 decision 상태와 progress reason·예측/반증/판정불가·허용오차를 동결한다"
+        },
+        {
+          "criterionId": "AC-002",
+          "statement": "[AC-002] train/feedback/repair/retry 없이 native20의 journal·network/advance 대응·goal/margin/residual·candidate/ready/completeness/frontier·pool 후보·final ancestry·분리 비용을 보존한다",
+          "verificationMethod": "동결·journal 독립 재생·변조 거부·회귀·scope/전달 검사",
+          "expectedEvidenceKinds": [
+            "file",
+            "test",
+            "document"
+          ],
+          "passCondition": "[AC-002] train/feedback/repair/retry 없이 native20의 journal·network/advance 대응·goal/margin/residual·candidate/ready/completeness/frontier·pool 후보·final ancestry·분리 비용을 보존한다"
+        },
+        {
+          "criterionId": "AC-003",
+          "statement": "[AC-003] raw journal·recurrence·progress/readout·final ancestry·입력/원자료 hash·집계를 독립 재계산하고 synthetic/변조거부와 최종 core 회귀1회에서 새 실패/skip0을 확인한다",
+          "verificationMethod": "동결·journal 독립 재생·변조 거부·회귀·scope/전달 검사",
+          "expectedEvidenceKinds": [
+            "file",
+            "test",
+            "document"
+          ],
+          "passCondition": "[AC-003] raw journal·recurrence·progress/readout·final ancestry·입력/원자료 hash·집계를 독립 재계산하고 synthetic/변조거부와 최종 core 회귀1회에서 새 실패/skip0을 확인한다"
+        },
+        {
+          "criterionId": "AC-004",
+          "statement": "[AC-004] 원클릭·bundle·결과/NEXT/INDEX·범위/수용 검증, 기존 변경 보존 및 커밋/main 병합/일반 origin main push/원격 확인/작업브랜치 정리를 완료한다",
+          "verificationMethod": "동결·journal 독립 재생·변조 거부·회귀·scope/전달 검사",
+          "expectedEvidenceKinds": [
+            "file",
+            "test",
+            "document"
+          ],
+          "passCondition": "[AC-004] 원클릭·bundle·결과/NEXT/INDEX·범위/수용 검증, 기존 변경 보존 및 커밋/main 병합/일반 origin main push/원격 확인/작업브랜치 정리를 완료한다"
+        }
+      ]
+    },
+    "provenance": [
+      {
+        "field": "/objective",
+        "valueSummary": "봉인 memory와 고정 runtime에서 e3 score가 첫 decision 수렴·readout·dependency coverage와 후속 계산에 연결되는 양상을 구별한다",
+        "sourceLocator": "experiments/exp-59-binding-order/NEXT.ko.md",
+        "basis": "verified-inference"
+      },
+      {
+        "field": "/scope",
+        "valueSummary": "EXP60 additive experiment",
+        "sourceLocator": "user:supplied-AGENTS",
+        "basis": "instruction"
+      },
+      {
+        "field": "/riskLevel",
+        "valueSummary": "Reversible scoped research artifacts and ordinary push; core unchanged",
+        "sourceLocator": "user:supplied-AGENTS-section8",
+        "basis": "verified-inference"
+      },
+      {
+        "field": "/authorization",
+        "valueSummary": "User supplied one-turn Git delivery scope",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8",
+        "basis": "explicit"
+      }
+    ],
+    "authorizationProvenance": [
+      {
+        "action": "read",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8",
+        "envelopeField": "/authorization/allowedActions"
+      },
+      {
+        "action": "write-scoped-research-files",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8",
+        "envelopeField": "/authorization/allowedActions"
+      },
+      {
+        "action": "run-local-checks",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8",
+        "envelopeField": "/authorization/allowedActions"
+      },
+      {
+        "action": "commit",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8",
+        "envelopeField": "/authorization/allowedActions"
+      },
+      {
+        "action": "merge-local-main",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8",
+        "envelopeField": "/authorization/allowedActions"
+      },
+      {
+        "action": "delete-completed-local-task-branch",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8",
+        "envelopeField": "/authorization/allowedActions"
+      },
+      {
+        "action": "push-origin-main",
+        "effect": "allow",
+        "authority": "user",
+        "sourceLocator": "user:current-continuation-and-supplied-AGENTS-section8",
+        "envelopeField": "/authorization/allowedActions"
+      },
+      {
+        "action": "force-push",
+        "effect": "prohibit",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS",
+        "envelopeField": "/authorization/prohibitedActions"
+      },
+      {
+        "action": "rewrite-historical-evidence",
+        "effect": "prohibit",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS",
+        "envelopeField": "/authorization/prohibitedActions"
+      },
+      {
+        "action": "overwrite-user-changes",
+        "effect": "prohibit",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS",
+        "envelopeField": "/authorization/prohibitedActions"
+      },
+      {
+        "action": "deploy",
+        "effect": "require-approval",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS",
+        "envelopeField": "/authorization/approvalRequired"
+      },
+      {
+        "action": "tag",
+        "effect": "require-approval",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS",
+        "envelopeField": "/authorization/approvalRequired"
+      },
+      {
+        "action": "install",
+        "effect": "require-approval",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS",
+        "envelopeField": "/authorization/approvalRequired"
+      },
+      {
+        "action": "delete-remote-branch",
+        "effect": "require-approval",
+        "authority": "user",
+        "sourceLocator": "user:supplied-AGENTS",
+        "envelopeField": "/authorization/approvalRequired"
+      }
+    ],
+    "assumptions": [],
+    "ambiguities": [],
+    "contradictions": [],
+    "verdict": "PASS"
+  }
+}

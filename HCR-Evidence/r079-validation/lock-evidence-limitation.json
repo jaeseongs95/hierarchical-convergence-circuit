@@ -1,0 +1,6 @@
+{
+  "statement": "Lock-preserve script computed indexsha before rename and asserted current hash equal after rename; exit0 retained in tool execution. Exact numeric before/after digest was not persisted and cannot be reconstructed from current index after later Git operations.",
+  "evidence": "exec chunk e3ed2f; git-bootstrap/result.json verified=true/index_unchanged=true",
+  "limitation": "Runtime equality assertion, not an independently replayable archived pair of index digests",
+  "creator": "unknown; statusline diff refresh/interruption candidate is not proven historical cause"
+}

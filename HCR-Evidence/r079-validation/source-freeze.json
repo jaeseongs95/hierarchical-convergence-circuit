@@ -1,0 +1,19 @@
+{
+  "recorded_at": "2026-10-01T02:19:09.284622+00:00",
+  "source_files": {
+    "Run-HCR-R079.cmd": "fd598f91bc6b3fcd03a4140471467a4ad1ffb5d21cf72c556ad387f6ddc23090",
+    "Run-HCR-R079.py": "dd67d315a964a28f2b51e55b66ff7814f79bdbcd7deb772ddaff46f1f25c409e",
+    "tools/r079_score_readout/__init__.py": "16237ffc38d3853766eb58dcc3f21ce64041d347f2890972c2ecdea5a019db06",
+    "tools/r079_score_readout/audit.py": "dd08e69c44bd7b5550670ce22c4a06c45295b577a7e08f68820d2418134ef9a0",
+    "tools/r079_score_readout/measure.py": "ecea65d4ff9769af2fff814ba952413cba12de4afab1e6dc97c54bd8bed2ed1a",
+    "tools/r079_score_readout/pipeline.py": "819b54ae7e78efae0dedc1f3fc9a90d752f33e12ff114753aa8344d3c61e57e9",
+    "tools/r079_score_readout/verify.py": "c4987730d821618c0d177b71e8f1842e2391903a15b18d0259f778523d5583d1",
+    "tools/r079_score_readout/worker.py": "b17009d5891d88d6ae6bae0302624877d479628358a93e6a2d8207b4a4662370",
+    "experiments/exp-60-score-readout/design.ko.md": "d5495a755041eac1283165d48697a25848af78e91a2864b0fd9ab257624a7fb4",
+    "experiments/exp-60-score-readout/frozen_spec.json": "c4422485087856f3b2fa405d4cd846f12acee6231a76ae11fb527f8e1a9ee592",
+    "experiments/exp-60-score-readout/pre-execution-amendment.json": "e88617bd95e833ceec247aafc0bedb1e78d389ccdfc42957560287b79f60a1bd"
+  },
+  "manifest_sha256": "94e17cacb90922bdf5b5882d0ca25cefb00c38d7da075929b293e7ad51d228d2",
+  "syntax_verified": true,
+  "native_executions": 0
+}

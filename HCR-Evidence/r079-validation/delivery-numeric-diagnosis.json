@@ -1,0 +1,8 @@
+{
+  "first_failure": "Exact inherited uncentered term equality",
+  "cause": "Inherited helper uses independent replay state; delivery compared raw native state by exact float equality",
+  "max_absolute_error": 2.7755575615628914e-17,
+  "frozen_tolerance": 2e-12,
+  "conclusion": "Within original numerical tolerance; use same tolerance instead of exact float equality",
+  "new_native_executions": 0
+}

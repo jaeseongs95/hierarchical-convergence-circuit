@@ -1,0 +1,12 @@
+{
+  "command": [
+    "C:\\WINDOWS\\system32\\cmd.exe",
+    "/d",
+    "/c",
+    "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\Run-HCR-R079.cmd"
+  ],
+  "returncode": 0,
+  "started_at": "2026-10-01T02:19:11.766264+00:00",
+  "finished_at": "2026-10-01T02:21:53.369255+00:00",
+  "automatic_retry": false
+}

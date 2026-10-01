@@ -1,0 +1,32 @@
+{
+  "schema": "hcc-r079-pre-execution-amendment-v1",
+  "recorded_at": "2026-10-01T02:17:35.332338+00:00",
+  "native_executions_so_far": 0,
+  "original_frozen_spec_sha256": "c4422485087856f3b2fa405d4cd846f12acee6231a76ae11fb527f8e1a9ee592",
+  "original_design_sha256": "d5495a755041eac1283165d48697a25848af78e91a2864b0fd9ab257624a7fb4",
+  "changed_scores_cells_predictions_metrics": false,
+  "reason": "Independent peer design review D1-D4; source/raw construct clarification before native execution",
+  "input_evidence_partition": {
+    "reproduction": 8,
+    "new_score_intervention": 12
+  },
+  "new_score_construct_partition": {
+    "primary_score_readout_probe": "swapped OFF .05/.2/.4: 3 cells",
+    "invariance_control": "original OFF .05/.2/.4: 3 cells",
+    "pool_selection_control": "both orders ON .05/.2/.4: 6 cells; first decision depends on selected path"
+  },
+  "interpretation": [
+    "P1/P2 form one two-alternative test on the three new primary cells; not two independent supports. P1 additionally includes reproduced .6.",
+    "P3 is an invariance control, not new direct readout score-effect support. P5 new input support comes from the six ON interior-score cells; endpoints are reproduction.",
+    "R078 original first decision paths=[[0,1]] and e:3 has no links to goal. Its goal recurrence at fixed tick is disconnected from e3. However settle uses maximum residual over all groups: stopping tick and finite-time goal readout are not mathematically guaranteed invariant merely by disconnected topology. Measure actual ticks/residuals separately.",
+    "No source/runtime/gate intervention, no new scores, no threshold refinement or adaptive native run."
+  ],
+  "evidence": {
+    "raw": "HCR-Evidence/exp59/r078-20261001T012408Z-598761f4db/evaluation/original-s00-off/inference.json",
+    "source": "src/hcr/dynamics.py:36-45",
+    "peer_message_ids": [
+      "fad1256b-6e8f-4b9b-94d4-b1e01df3cc3c",
+      "990dff53-e8ad-4aa2-9505-f91504468d8d"
+    ]
+  }
+}

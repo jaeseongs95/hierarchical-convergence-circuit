@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "1.0.0",
+  "objective": "Separate post-run verifier mismatch from native research failure",
+  "expectedBehavior": "Verify frozen research evidence and permitted delivery metadata accurately",
+  "episodes": [
+    {
+      "attemptId": "r079-delivery-numeric",
+      "operation": "delivery verification",
+      "stableFailureTuple": {
+        "stage": "numeric",
+        "error": "exact equality assertion"
+      },
+      "environmentDigest": "sha256:aed2a648f6896bf0c5edf3a1f69500f9909d597b788d97d32f120e5c1a88affc",
+      "changeSummary": "No native/core change",
+      "evidenceRefs": [
+        "HCR-Evidence/r079-validation/delivery-numeric-diagnosis.json"
+      ]
+    }
+  ],
+  "lastKnownGood": null,
+  "constraints": [
+    "No native retry or frozen artifact overwrite"
+  ],
+  "authorization": {
+    "allowedChecks": [
+      "read"
+    ],
+    "approvalRequired": [],
+    "prohibitedChecks": [
+      "native-rerun"
+    ]
+  },
+  "evidenceBindings": [
+    {
+      "evidenceRef": "HCR-Evidence/r079-validation/delivery-numeric-diagnosis.json",
+      "artifactDigest": "sha256:22465f43eb9a1b4322c1e96ef0d2104cde6d448bb2a33cebe1f1351940445a83",
+      "hypothesisIds": [
+        "h1"
+      ],
+      "relation": "supports"
+    }
+  ],
+  "attemptedChecks": [],
+  "candidateHypotheses": [
+    {
+      "id": "h1",
+      "causalLayer": "implementation",
+      "statement": "Independent replay/native floating-point states differ below the existing tolerance; exact equality is too strict",
+      "supportingEvidence": [
+        "HCR-Evidence/r079-validation/delivery-numeric-diagnosis.json"
+      ],
+      "contradictingEvidence": [],
+      "state": "confirmed",
+      "causeAnalysis": {
+        "symptom": "Post-run delivery verifier rejected supported evidence",
+        "mechanism": "Independent replay/native floating-point states differ below the existing tolerance; exact equality is too strict",
+        "rootCondition": "Delivery-only equality assertion exceeded frozen research contract",
+        "discriminatingEvidence": {
+          "statement": "Independent replay/native floating-point states differ below the existing tolerance; exact equality is too strict",
+          "evidenceRefs": [
+            "HCR-Evidence/r079-validation/delivery-numeric-diagnosis.json"
+          ]
+        },
+        "eliminationObservation": {
+          "statement": "All other source bytes equal for catalog case; numeric maximum difference 2.7755575615628914e-17 below frozen 2e-12; native run and primary metrics unchanged",
+          "evidenceRefs": [
+            "HCR-Evidence/r079-validation/delivery-numeric-diagnosis.json"
+          ]
+        }
+      }
+    }
+  ],
+  "candidateTests": [],
+  "accessBlockers": []
+}

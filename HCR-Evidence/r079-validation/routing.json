@@ -1,0 +1,19 @@
+{
+  "route": "direct",
+  "execution": "direct-specialist",
+  "selected": [
+    "task-contract",
+    "change-scope-baseline-capture",
+    "minimal-implementation",
+    "change-scope-assurance",
+    "acceptance-evidence-validation",
+    "mutation-risk-preflight"
+  ],
+  "selection": "priority50 providers; baseline→minimal harness→raw independent verification→scope/acceptance; exact Git preflight before push/delete",
+  "omitted": {
+    "independent_audit": "no high-risk core change; separate read-only peer research audit",
+    "subagent_coordination": "single writer, no delegation",
+    "evaluation_validity": "native research probe; no skill/model benchmark"
+  },
+  "orchestrated_workflow": false
+}

@@ -1,0 +1,16 @@
+{
+  "returncode": 0,
+  "stderr": "warning: in the working copy of 'HCR-Evidence/r079-validation/.gitattributes', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'Run-HCR-R079.cmd', LF will be replaced by CRLF the next time Git touches it\n",
+  "automatic_retry": false,
+  "paths": [
+    "Run-HCR-R079.cmd",
+    "Run-HCR-R079.py",
+    "R079_MANIFEST.json",
+    "tools/r079_score_readout/",
+    "experiments/exp-60-score-readout/",
+    "experiments/INDEX.json",
+    "experiments/INDEX.ko.md",
+    "HCR-Evidence/exp60/",
+    "HCR-Evidence/r079-validation/"
+  ]
+}

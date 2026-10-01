@@ -1,0 +1,177 @@
+{
+  "schema": "hcc-r062-spec-v1",
+  "frozen_before_research_execution": true,
+  "parent_commit": "46efbdab1b92b6294d6d8e337beca91bb53b5746",
+  "cases": [
+    {
+      "id": "startstrong",
+      "top_down": true,
+      "observation": {
+        "edges": [
+          {
+            "id": "a-edge",
+            "score": 1.0,
+            "source": "v0",
+            "target": "v1"
+          },
+          {
+            "id": "z-edge",
+            "score": 0.02,
+            "source": "v1",
+            "target": "v2"
+          }
+        ],
+        "episode_id": "r052-c001",
+        "goal": "v2",
+        "revision": 1,
+        "start": "v0"
+      }
+    },
+    {
+      "id": "goalstrong",
+      "top_down": true,
+      "observation": {
+        "edges": [
+          {
+            "id": "a-edge",
+            "score": 0.02,
+            "source": "v0",
+            "target": "v1"
+          },
+          {
+            "id": "z-edge",
+            "score": 1.0,
+            "source": "v1",
+            "target": "v2"
+          }
+        ],
+        "episode_id": "r052-c001",
+        "goal": "v2",
+        "revision": 1,
+        "start": "v0"
+      }
+    }
+  ],
+  "smoke_cases": [
+    {
+      "id": "synthetic-open",
+      "top_down": true,
+      "observation": {
+        "edges": [
+          {
+            "id": "a-edge",
+            "score": 1.0,
+            "source": "v0",
+            "target": "v1"
+          },
+          {
+            "id": "z-edge",
+            "score": 1.0,
+            "source": "v1",
+            "target": "v2"
+          }
+        ],
+        "episode_id": "synthetic-open",
+        "goal": "v2",
+        "revision": 0,
+        "start": "v0"
+      }
+    },
+    {
+      "id": "synthetic-blocked",
+      "top_down": true,
+      "observation": {
+        "edges": [
+          {
+            "id": "a-edge",
+            "score": 1.0,
+            "source": "v0",
+            "target": "v1"
+          },
+          {
+            "id": "z-edge",
+            "score": -1.0,
+            "source": "v1",
+            "target": "v2"
+          }
+        ],
+        "episode_id": "synthetic-blocked",
+        "goal": "v2",
+        "revision": 0,
+        "start": "v0"
+      }
+    }
+  ],
+  "arms": [
+    "full",
+    "drop_P_prefix"
+  ],
+  "research_executions": 4,
+  "intervention": {
+    "kind": "explicit native source variant",
+    "removed_link": {
+      "source": "p:0:1",
+      "target": "p:0:0",
+      "kind": "top_down"
+    },
+    "execution_edits": 1,
+    "independent_grammar_edits": 1,
+    "post_state_correction": false
+  },
+  "source_patch_preimages": {
+    "src/hcr/workspace.py": "65ac816b06d0e2fbb971adeecfd9e317f99fc7d43881ea17f99d71d35e3e1b1a",
+    "src/hcr/evaluation/adaptive_audit_support.py": "096e0be2e608697fdc2f596e1e0873feda0285cc6e410f668205cd4ebfc7dc14"
+  },
+  "parent_directory": "HCR-Evidence/exp33/r052-20260919T135909Z-1f0e296bc0",
+  "parent_files": {
+    "plan.json": "c8338c32bb9991cb44546620e654899b081059241c54cae475a32c297b501aff",
+    "study/raw/r052-c001/start_edge.json": "dabc61df4a7a63a7a54ea5d0ea9287bf4437cf1addafe04d96aefce47dec7d59",
+    "study/raw/r052-c001/goal_edge.json": "7de85cc168e4cb39b44f83f393d97a81068028f172c75c46bd0960a4355397d5"
+  },
+  "parent_aliases": {
+    "plan.json": "plan.json",
+    "study/raw/r052-c001/start_edge.json": "start_edge.json",
+    "study/raw/r052-c001/goal_edge.json": "goal_edge.json"
+  },
+  "anchor_directory": "HCR-Evidence/exp35/r054-20260919T153156Z-4ea84e3e56",
+  "anchor_files": {
+    "study/startstrong/full.json": "f900b59f64193b3450591c4b57387cb586080cdf3ce1af8ffeb07983132ea8bd",
+    "study/startstrong/drop_P_prefix.json": "51e0869b2d1b451c288b04a9e6b03e90358a6a0b0dbc867f3598418a28848acb",
+    "study/goalstrong/full.json": "04f51d8aa969051fd81213fb08a0720cf68c78565e0665505a6cc30fab14f5db",
+    "study/goalstrong/drop_P_prefix.json": "ca7cbefc69df4a5392c500621a3ab9da904c357542fd4dcdb2781b48904addb3"
+  },
+  "anchor_aliases": {
+    "study/startstrong/full.json": "startstrong/full.json",
+    "study/startstrong/drop_P_prefix.json": "startstrong/drop_P_prefix.json",
+    "study/goalstrong/full.json": "goalstrong/full.json",
+    "study/goalstrong/drop_P_prefix.json": "goalstrong/drop_P_prefix.json"
+  },
+  "prediction": {
+    "goalstrong": "R054 predicts goal-side reversal after link removal; proof support/adoption are unmeasured and may reject",
+    "startstrong": "R054 predicts low goal side in both arms; native support may remain gapped"
+  },
+  "audit_criteria": [
+    "strict native event/state replay",
+    "independent proof/reference/support/readout verification",
+    "R054 all ticks 1e-12",
+    "R052 full native trajectory and adoption bridge",
+    "exact two-file source variant",
+    "synthetic tamper rejection",
+    "core regression once after code freeze"
+  ],
+  "boundaries": {
+    "learning": false,
+    "independent_samples": false,
+    "automatic_retry": false,
+    "world_labels_to_producer": false,
+    "energy_measured": false,
+    "hypothesis_success_required": false,
+    "prior": "legacy",
+    "memory": "empty frozen"
+  },
+  "interpretation": {
+    "all_numeric_only": "native bridge fails; inspect proof/support instead of learning claims",
+    "native_adoption_changes": "bounded structural sensitivity in native toy engine; next isolate learned reuse",
+    "source_or_audit_failure": "no mechanistic conclusion; preserve first failure"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "frozen_at": "2026-10-01T02:09:45.653394+00:00",
+  "native_executions_before_freeze": 0,
+  "branch": "research/r079-score-readout",
+  "base_commit": "56f14eac8841ecc765e5ac426620d56a0067c4c6",
+  "files": {
+    "experiments/exp-60-score-readout/frozen_spec.json": "c4422485087856f3b2fa405d4cd846f12acee6231a76ae11fb527f8e1a9ee592",
+    "experiments/exp-60-score-readout/design.ko.md": "d5495a755041eac1283165d48697a25848af78e91a2864b0fd9ab257624a7fb4"
+  }
+}

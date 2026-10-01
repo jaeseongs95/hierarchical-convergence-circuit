@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "1.0.0",
+  "requestArtifactDigest": "sha256:9a95ae8d469fd94c52c1d349d296e299c0e4f1eb726317e781ae29d6610e07cb",
+  "failureClusters": [
+    {
+      "fingerprint": "sha256:49de59e84351a85bd2251c7116ddb137ce6df6b8d1c0721f237a019c5701b84e",
+      "episodeIds": [
+        "r079-delivery-catalog"
+      ],
+      "operation": "delivery verification",
+      "stableFailureTuple": {
+        "error": "exact equality assertion",
+        "stage": "catalog"
+      },
+      "environmentDigest": "sha256:aed2a648f6896bf0c5edf3a1f69500f9909d597b788d97d32f120e5c1a88affc"
+    }
+  ],
+  "observations": [
+    {
+      "id": "OBS-001",
+      "statement": "Attempt r079-delivery-catalog failed during delivery verification in environment sha256:aed2a648f6896bf0c5edf3a1f69500f9909d597b788d97d32f120e5c1a88affc.",
+      "evidenceRefs": [
+        "HCR-Evidence/r079-validation/delivery-first-failure.json"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "h1",
+      "causalLayer": "implementation",
+      "statement": "Post-run catalog registration is permitted; exact current catalog equality to the earlier frozen catalog is too strict",
+      "supportingEvidence": [
+        "HCR-Evidence/r079-validation/delivery-first-failure.json"
+      ],
+      "contradictingEvidence": [],
+      "state": "confirmed",
+      "causeAnalysis": {
+        "symptom": "Post-run delivery verifier rejected supported evidence",
+        "mechanism": "Post-run catalog registration is permitted; exact current catalog equality to the earlier frozen catalog is too strict",
+        "rootCondition": "Delivery-only equality assertion exceeded frozen research contract",
+        "discriminatingEvidence": {
+          "statement": "Post-run catalog registration is permitted; exact current catalog equality to the earlier frozen catalog is too strict",
+          "evidenceRefs": [
+            "HCR-Evidence/r079-validation/delivery-first-failure.json"
+          ]
+        },
+        "eliminationObservation": {
+          "statement": "All other source bytes equal for catalog case; numeric maximum difference 2.7755575615628914e-17 below frozen 2e-12; native run and primary metrics unchanged",
+          "evidenceRefs": [
+            "HCR-Evidence/r079-validation/delivery-first-failure.json"
+          ]
+        }
+      }
+    }
+  ],
+  "nextDiscriminatingTest": null,
+  "confirmedCause": {
+    "causeId": "h1",
+    "hypothesisId": "h1",
+    "statement": "Post-run catalog registration is permitted; exact current catalog equality to the earlier frozen catalog is too strict",
+    "symptom": "Post-run delivery verifier rejected supported evidence",
+    "mechanism": "Post-run catalog registration is permitted; exact current catalog equality to the earlier frozen catalog is too strict",
+    "rootCondition": "Delivery-only equality assertion exceeded frozen research contract",
+    "discriminatingEvidence": {
+      "statement": "Post-run catalog registration is permitted; exact current catalog equality to the earlier frozen catalog is too strict",
+      "evidenceRefs": [
+        "HCR-Evidence/r079-validation/delivery-first-failure.json"
+      ]
+    },
+    "eliminationObservation": {
+      "statement": "All other source bytes equal for catalog case; numeric maximum difference 2.7755575615628914e-17 below frozen 2e-12; native run and primary metrics unchanged",
+      "evidenceRefs": [
+        "HCR-Evidence/r079-validation/delivery-first-failure.json"
+      ]
+    },
+    "evidenceBindings": [
+      {
+        "evidenceRef": "HCR-Evidence/r079-validation/delivery-first-failure.json",
+        "artifactDigest": "sha256:4253af112651cc0ea72d3866085197837dbf17243c5b8a5c46b60abd5031b6aa",
+        "hypothesisIds": [
+          "h1"
+        ],
+        "relation": "supports"
+      }
+    ]
+  },
+  "recommendedNextAction": "Use the confirmed cause as input to a separately authorized remediation task.",
+  "limitations": [],
+  "verdict": "CAUSE_CONFIRMED"
+}

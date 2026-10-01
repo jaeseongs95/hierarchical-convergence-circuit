@@ -72,3 +72,7 @@ EXP-57 / R076: [native 다중 회로 경쟁](exp-57-native-competition/design.ko
 EXP-58 / R077: [같은 길이의 두 완결 binding](exp-58-equal-binding/design.ko.md). `Run-HCR-R077.cmd`; native 형성 3회·paired 평가 6회, 저장 pattern 하나·두 완결 binding에서 prior/mismatch0 score 개입의 선택·proof·비용을 분리한다. 새 독립 표본 0.
 
 EXP-59 / R078: [동일 memory의 edge 배열 순서](exp-59-binding-order/design.ko.md). `Run-HCR-R078.cmd`; 봉인 R077 memory·config·world·공개 ID에서 두 경로 블록 순서×세 score×ON/OFF의 12 native 평가. train/feedback/독립 발견 표본 0.
+
+EXP-60 / R079: [score와 첫 readout 경계](exp-60-score-readout/design.ko.md). `Run-HCR-R079.cmd`; 고정 memory·두 배열×score 0/0.05/0.2/0.4/0.6×ON/OFF의 native20(재현8·새 입력12). 첫 status/progress·final ancestry·분리 비용. [결과](exp-60-score-readout/results.ko.md).
+
+보조 지표 해석 메모: R076~R079의 상속된 pool `final_signed_input`는 weight×terminal activation이며 kernel의 중심화된 마지막 tick 입력이 아니다. 봉인본은 그대로 보존하고 [R079 보완 근거](../HCR-Evidence/r079-validation/secondary-metric-clarification.json)와 [과거 필드 대조](../HCR-Evidence/r079-validation/historical-label-crosscheck.json)를 함께 읽는다. R079 summary의 pending `wall_seconds=0`도 실제 duration으로 사용하지 않는다.
