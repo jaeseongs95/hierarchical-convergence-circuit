@@ -1,0 +1,317 @@
+{
+  "schemaVersion": "1.0.0",
+  "taskEnvelope": {
+    "schemaVersion": "1.0.0",
+    "taskId": "hcc-r079-score-readout",
+    "objective": "봉인 memory와 고정 runtime에서 e3 score가 첫 decision 수렴·readout·dependency coverage와 후속 계산에 연결되는 양상을 구별한다",
+    "scope": {
+      "included": [
+        "Run-HCR-R079.cmd",
+        "Run-HCR-R079.py",
+        "R079_MANIFEST.json",
+        "tools/r079_score_readout/",
+        "experiments/exp-60-score-readout/",
+        "experiments/INDEX.json",
+        "experiments/INDEX.ko.md",
+        "HCR-Evidence/exp60/",
+        "HCR-Evidence/r079-validation/"
+      ],
+      "excluded": [
+        "src/",
+        "tests/",
+        "archive/",
+        "tools/r078_binding_order/",
+        "experiments/exp-59-binding-order/",
+        "HCR-Evidence/exp59/",
+        "HCR-Evidence/r078-validation/"
+      ]
+    },
+    "acceptanceCriteria": [
+      "[AC-001] 실행 전에 config/world/memory/public ID/budget·20셀(재현8·신규score12)·첫 decision 상태와 progress reason·예측/반증/판정불가·허용오차를 동결한다",
+      "[AC-002] train/feedback/repair/retry 없이 native20의 journal·network/advance 대응·goal/margin/residual·candidate/ready/completeness/frontier·pool 후보·final ancestry·분리 비용을 보존한다",
+      "[AC-003] raw journal·recurrence·progress/readout·final ancestry·입력/원자료 hash·집계를 독립 재계산하고 synthetic/변조거부와 최종 core 회귀1회에서 새 실패/skip0을 확인한다",
+      "[AC-004] 원클릭·bundle·결과/NEXT/INDEX·범위/수용 검증, 기존 변경 보존 및 커밋/main 병합/일반 origin main push/원격 확인/작업브랜치 정리를 완료한다"
+    ],
+    "riskLevel": "medium",
+    "workUnits": [
+      {
+        "id": "research",
+        "objective": "봉인 memory와 고정 runtime에서 e3 score가 첫 decision 수렴·readout·dependency coverage와 후속 계산에 연결되는 양상을 구별한다",
+        "dependencies": [],
+        "writeTargets": [
+          "Run-HCR-R079.cmd",
+          "Run-HCR-R079.py",
+          "R079_MANIFEST.json",
+          "tools/r079_score_readout/",
+          "experiments/exp-60-score-readout/",
+          "experiments/INDEX.json",
+          "experiments/INDEX.ko.md",
+          "HCR-Evidence/exp60/",
+          "HCR-Evidence/r079-validation/"
+        ]
+      }
+    ],
+    "requiredCapabilities": [
+      "change-scope-baseline-capture",
+      "minimal-implementation",
+      "change-scope-assurance",
+      "acceptance-evidence-validation",
+      "mutation-risk-preflight"
+    ],
+    "constraints": [
+      "core·runtime/readout/scheduler/selector·역사 evidence 변경0",
+      "train/feedback/host correction/automatic retry0",
+      "독립 발견 표본0, energy/peak memory null",
+      "ON/OFF는 pool/binding/reuse 전체 개입; inhibition 단독 인과 아님",
+      "동결 뒤 score/기준 추가 금지; 미관측 ambiguous·정밀 경계 주장 금지"
+    ],
+    "authorization": {
+      "allowedActions": [
+        "read",
+        "write-scoped-research-files",
+        "run-local-checks",
+        "commit",
+        "merge-local-main",
+        "delete-completed-local-task-branch",
+        "push-origin-main"
+      ],
+      "prohibitedActions": [
+        "force-push",
+        "rewrite-historical-evidence",
+        "overwrite-user-changes"
+      ],
+      "approvalRequired": [
+        "deploy",
+        "tag",
+        "install",
+        "delete-remote-branch"
+      ]
+    },
+    "decision": {
+      "complexity": "simple",
+      "hasConflicts": false
+    },
+    "orchestration": {
+      "requested": false,
+      "mcpAvailable": true
+    }
+  },
+  "target": {
+    "kind": "artifact",
+    "identifier": "R079-fixed-score-readout-sealed-research-and-clarified-secondary-metrics",
+    "digest": "sha256:3be179321be28dcf51adba212efac6cf1132daa52505d1ca1e87e02ba3a5f30f"
+  },
+  "evidence": [
+    {
+      "id": "freeze",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp60/r079-20261001T021912Z-016c6bc358/plan.json",
+      "digest": "sha256:d7d8d70fa751a70a7c54dd1f29d1de92c23378f973b8079b412323fb497e5fc3",
+      "targetDigest": "sha256:3be179321be28dcf51adba212efac6cf1132daa52505d1ca1e87e02ba3a5f30f",
+      "verified": true,
+      "criterionIds": [
+        "AC-001"
+      ],
+      "direction": "supports",
+      "observedResult": "Pre-native fixed memory/config/world/IDs/budgets;20 cells(reproduction8,new-score12),three new scores and finite prediction criteria"
+    },
+    {
+      "id": "selftest",
+      "kind": "test",
+      "locator": "HCR-Evidence/exp60/r079-20261001T021912Z-016c6bc358/validation/selftest.json",
+      "digest": "sha256:3c6f9d5787189e9b106ce9c30b33eefa05523f878abfa449d59de40095c16e37",
+      "targetDigest": "sha256:3be179321be28dcf51adba212efac6cf1132daa52505d1ca1e87e02ba3a5f30f",
+      "verified": true,
+      "criterionIds": [
+        "AC-001",
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "Prior17 journal reanalysis,grammar20,synthetic readout6/margin4;new native0"
+    },
+    {
+      "id": "integrity",
+      "kind": "test",
+      "locator": "HCR-Evidence/r079-validation/delivery-verification.json",
+      "digest": "sha256:1b760110c38f65b7d964c75d102c6f447d7e06a26694ce7d3a9130300c7baad3",
+      "targetDigest": "sha256:3be179321be28dcf51adba212efac6cf1132daa52505d1ca1e87e02ba3a5f30f",
+      "verified": true,
+      "criterionIds": [
+        "AC-001",
+        "AC-003",
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Bundle1269 and ZIP bytes exact,current executable/design exact,parent/repetition preserved,catalog-only addition verified"
+    },
+    {
+      "id": "native",
+      "kind": "test",
+      "locator": "HCR-Evidence/exp60/r079-20261001T021912Z-016c6bc358/verification.json",
+      "digest": "sha256:46a47782a944f5fb2869e66d9a0a2aa3145a8ea67e7b0cb12bc19e11eedd8d17",
+      "targetDigest": "sha256:3be179321be28dcf51adba212efac6cf1132daa52505d1ca1e87e02ba3a5f30f",
+      "verified": true,
+      "criterionIds": [
+        "AC-002",
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "Independent20 journals plus prior8 replay,network/advance mapping,recurrence and ancestry;raw18 mutations rejected"
+    },
+    {
+      "id": "summary",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp60/r079-20261001T021912Z-016c6bc358/summary.json",
+      "digest": "sha256:3954b6fc19ec509af9cd3f6a2e60b87282fbcbed07e242e21f0d86882b245ef8",
+      "targetDigest": "sha256:3be179321be28dcf51adba212efac6cf1132daa52505d1ca1e87e02ba3a5f30f",
+      "verified": true,
+      "criterionIds": [
+        "AC-002"
+      ],
+      "direction": "supports",
+      "observedResult": "First decision/pool/final ancestry/cost retained for native20;read secondary clarification for inherited duration and inhibitory-input labels"
+    },
+    {
+      "id": "summary-check",
+      "kind": "test",
+      "locator": "HCR-Evidence/exp60/r079-20261001T021912Z-016c6bc358/validation/summary-verification.json",
+      "digest": "sha256:7ca3c22efa8d1e303e9df4a5a58d17a5778516918c0a831b3f274760e139aa79",
+      "targetDigest": "sha256:3be179321be28dcf51adba212efac6cf1132daa52505d1ca1e87e02ba3a5f30f",
+      "verified": true,
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "Raw-grounded summary recomputation;summary18 mutations rejected"
+    },
+    {
+      "id": "secondary",
+      "kind": "test",
+      "locator": "HCR-Evidence/r079-validation/secondary-metric-clarification.json",
+      "digest": "sha256:67e728d3a1b9a594bf53302ba29d2a9e1fe918b721367db73d32fcf670b17fb0",
+      "targetDigest": "sha256:3be179321be28dcf51adba212efac6cf1132daa52505d1ca1e87e02ba3a5f30f",
+      "verified": true,
+      "criterionIds": [
+        "AC-002",
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "Actual timing and centered previous-state inhibition independently extracted;pending cost not duration;frozen primary evidence unchanged"
+    },
+    {
+      "id": "regression",
+      "kind": "test",
+      "locator": "HCR-Evidence/exp60/r079-20261001T021912Z-016c6bc358/validation/core_regression.json",
+      "digest": "sha256:d5daace122f8617bfd42c41ab59ddb55331aae622d85dc3ab6f6439a54928ab9",
+      "targetDigest": "sha256:3be179321be28dcf51adba212efac6cf1132daa52505d1ca1e87e02ba3a5f30f",
+      "verified": true,
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "Final core1 run:602 tests,599pass,3existing Windows symlink skips;new failures/skips0"
+    },
+    {
+      "id": "results",
+      "kind": "document",
+      "locator": "experiments/exp-60-score-readout/results.ko.md",
+      "digest": "sha256:d4fb535b99650cb5a31acf8f3d911ab9d19c8cdb30243f9da6d7596d5e66caa0",
+      "targetDigest": "sha256:3be179321be28dcf51adba212efac6cf1132daa52505d1ca1e87e02ba3a5f30f",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Finite grid,all tested positives stable True,0 negative-first coverage gate,tick decomposition and claim limits documented"
+    },
+    {
+      "id": "next",
+      "kind": "document",
+      "locator": "experiments/exp-60-score-readout/NEXT.ko.md",
+      "digest": "sha256:4f1b5d5a3b1605016d0d0657fc84d1b3dd459a6b5d7a55de07e7abc17627baf4",
+      "targetDigest": "sha256:3be179321be28dcf51adba212efac6cf1132daa52505d1ca1e87e02ba3a5f30f",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Unexecuted candidate grid in (0,.05),preserve indeterminate/budget outcomes;must freeze anew before execution"
+    },
+    {
+      "id": "scope",
+      "kind": "test",
+      "locator": "HCR-Evidence/r079-validation/scope-report.after-delivery.json",
+      "digest": "sha256:e3a11ea8e3dd5f8ae229bcf6379176601285b70370dc1f20711f00dc9669ff59",
+      "targetDigest": "sha256:3be179321be28dcf51adba212efac6cf1132daa52505d1ca1e87e02ba3a5f30f",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "PASS,in-scope1347,preexisting-untouched264,no excluded/unplanned/overlap/unknown"
+    },
+    {
+      "id": "git",
+      "kind": "test",
+      "locator": "HCR-Evidence/r079-validation/research-git-delivery.json",
+      "digest": "sha256:008260ade7487e6cb167cd87f87b7990b7d65fc95bbc29c00ef94b9e692489d2",
+      "targetDigest": "sha256:3be179321be28dcf51adba212efac6cf1132daa52505d1ca1e87e02ba3a5f30f",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Signed research commit on main and remote verified,ordinary push,original local research branch deleted;metadata closure recorded separately"
+    },
+    {
+      "id": "peer",
+      "kind": "document",
+      "locator": "HCR-Evidence/r079-validation/peer-audit-reconciliation.json",
+      "digest": "sha256:36b6c2002ab4b6dd4918c7fcfab23b0da07bff94ca0e3bcaf90a75c742800098",
+      "targetDigest": "sha256:3be179321be28dcf51adba212efac6cf1132daa52505d1ca1e87e02ba3a5f30f",
+      "verified": true,
+      "criterionIds": [
+        "AC-003",
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "External researcher reports no blocking research findings;M1/M2 documented;not Git permission or duplicated discovery evidence"
+    }
+  ],
+  "verificationCommands": [
+    {
+      "id": "oneclick",
+      "command": "Run-HCR-R079.cmd",
+      "criterionIds": [
+        "AC-001",
+        "AC-002",
+        "AC-003"
+      ],
+      "exitCode": 0,
+      "locator": "HCR-Evidence/r079-validation/oneclick-execution.json",
+      "targetDigest": "sha256:3be179321be28dcf51adba212efac6cf1132daa52505d1ca1e87e02ba3a5f30f"
+    },
+    {
+      "id": "delivery",
+      "command": "ordinary git push origin main; read remote main; git branch -d research/r079-score-readout",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "exitCode": 0,
+      "locator": "HCR-Evidence/r079-validation/research-git-delivery.json",
+      "targetDigest": "sha256:3be179321be28dcf51adba212efac6cf1132daa52505d1ca1e87e02ba3a5f30f"
+    }
+  ],
+  "criterionOverrides": [],
+  "knownLimitations": [
+    "Single authored world and sealed memory;independent discovery samples0;prior reproduction8,new input12 (swappedOFF3 probes,originalOFF3 and ON6 controls)",
+    "Positive sign hypothesis supported only at .05,.2,.4,.6;alternative subthreshold falsified only at new .05,.2,.4;one comparison,not two independent supports;unobserved (0,.05),no continuous threshold or general mechanism claim",
+    "ON/OFF bundles pool,binding,reuse;does not isolate inhibition;goal margin distinct from candidate activation gap",
+    "Frozen rows.wall_seconds is pending cost0;inherited final_signed_input is weight*terminal activation,not kernel centered previous-state input;separate post-execution clarification,no raw rewrite",
+    "selftest_completed_at and native_started_at are equal despite separate now calls;source sequencing and success receipt establish order,not timestamp strict inequality",
+    "First catalog discrepancy and2.78e-17 float comparison failures retained and diagnosed;fixed delivery checks preserve original2e-12 tolerance;native/regression not rerun",
+    "Original inactive Git lock preserved by reversible rename;index-equality asserted at runtime but actual before/after index SHA values not retained",
+    "Energy/peak memory null,existing Windows symlink skips3,cloud validation not run",
+    "Primary research branch deleted;metadata-only acceptance record branch closes afterward with final receipt under .git/r079-final-delivery"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "research_commit": "08f057175f245f3b24a8409e0404c57a74fa6f2d",
+  "frozen_spec_sha256": "sha256:c4422485087856f3b2fa405d4cd846f12acee6231a76ae11fb527f8e1a9ee592",
+  "manifest_sha256": "sha256:94e17cacb90922bdf5b5882d0ca25cefb00c38d7da075929b293e7ad51d228d2",
+  "evidence": [
+    {
+      "locator": "HCR-Evidence/exp60/r079-20261001T021912Z-016c6bc358/plan.json",
+      "digest": "sha256:d7d8d70fa751a70a7c54dd1f29d1de92c23378f973b8079b412323fb497e5fc3"
+    },
+    {
+      "locator": "HCR-Evidence/exp60/r079-20261001T021912Z-016c6bc358/validation/selftest.json",
+      "digest": "sha256:3c6f9d5787189e9b106ce9c30b33eefa05523f878abfa449d59de40095c16e37"
+    },
+    {
+      "locator": "HCR-Evidence/r079-validation/delivery-verification.json",
+      "digest": "sha256:1b760110c38f65b7d964c75d102c6f447d7e06a26694ce7d3a9130300c7baad3"
+    },
+    {
+      "locator": "HCR-Evidence/exp60/r079-20261001T021912Z-016c6bc358/verification.json",
+      "digest": "sha256:46a47782a944f5fb2869e66d9a0a2aa3145a8ea67e7b0cb12bc19e11eedd8d17"
+    },
+    {
+      "locator": "HCR-Evidence/exp60/r079-20261001T021912Z-016c6bc358/summary.json",
+      "digest": "sha256:3954b6fc19ec509af9cd3f6a2e60b87282fbcbed07e242e21f0d86882b245ef8"
+    },
+    {
+      "locator": "HCR-Evidence/exp60/r079-20261001T021912Z-016c6bc358/validation/summary-verification.json",
+      "digest": "sha256:7ca3c22efa8d1e303e9df4a5a58d17a5778516918c0a831b3f274760e139aa79"
+    },
+    {
+      "locator": "HCR-Evidence/r079-validation/secondary-metric-clarification.json",
+      "digest": "sha256:67e728d3a1b9a594bf53302ba29d2a9e1fe918b721367db73d32fcf670b17fb0"
+    },
+    {
+      "locator": "HCR-Evidence/exp60/r079-20261001T021912Z-016c6bc358/validation/core_regression.json",
+      "digest": "sha256:d5daace122f8617bfd42c41ab59ddb55331aae622d85dc3ab6f6439a54928ab9"
+    },
+    {
+      "locator": "experiments/exp-60-score-readout/results.ko.md",
+      "digest": "sha256:d4fb535b99650cb5a31acf8f3d911ab9d19c8cdb30243f9da6d7596d5e66caa0"
+    },
+    {
+      "locator": "experiments/exp-60-score-readout/NEXT.ko.md",
+      "digest": "sha256:4f1b5d5a3b1605016d0d0657fc84d1b3dd459a6b5d7a55de07e7abc17627baf4"
+    },
+    {
+      "locator": "HCR-Evidence/r079-validation/scope-report.after-delivery.json",
+      "digest": "sha256:e3a11ea8e3dd5f8ae229bcf6379176601285b70370dc1f20711f00dc9669ff59"
+    },
+    {
+      "locator": "HCR-Evidence/r079-validation/research-git-delivery.json",
+      "digest": "sha256:008260ade7487e6cb167cd87f87b7990b7d65fc95bbc29c00ef94b9e692489d2"
+    },
+    {
+      "locator": "HCR-Evidence/r079-validation/peer-audit-reconciliation.json",
+      "digest": "sha256:36b6c2002ab4b6dd4918c7fcfab23b0da07bff94ca0e3bcaf90a75c742800098"
+    }
+  ],
+  "acceptance_metadata_closure": "Metadata-only commit and final Git receipt are operational closure,not new research or revised criteria"
+}

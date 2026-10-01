@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "1.0.0",
+  "operationId": "r079-delete-completed-local-task-branch",
+  "actionClass": "delete",
+  "plannedCommandOrTool": {
+    "tool": "git",
+    "action": "branch -d research/r079-score-readout"
+  },
+  "targets": [
+    {
+      "locator": "git-local-ref://hierarchical-convergence-circuit/refs/heads/research/r079-score-readout",
+      "targetType": "git-ref",
+      "environment": "local",
+      "expectedFingerprint": "sha256:5a9046f4cd8d7a3cef1e8afd04b4cb525103adddee38128174c4e07e54504aeb"
+    }
+  ],
+  "scopeRef": {
+    "locator": "HCR-Evidence/r079-validation/task-envelope.json",
+    "digest": "sha256:404c38145d7287a48ded8b52661f6e394cb85b86476402a4a9a58eaf9af55bf6",
+    "includedTargets": [
+      "git-local-ref://hierarchical-convergence-circuit/refs/heads/research/r079-score-readout"
+    ],
+    "excludedTargets": []
+  },
+  "authorizationRef": {
+    "locator": "HCR-Evidence/r079-validation/branch-delete-authorization.json",
+    "digest": "sha256:2c3f76de297fdf6300997c134928096909911cad3174d584101c7a766c3bb61b",
+    "allowedActions": [
+      "delete"
+    ],
+    "allowedTargets": [
+      "git-local-ref://hierarchical-convergence-circuit/refs/heads/research/r079-score-readout"
+    ],
+    "environments": [
+      "local"
+    ]
+  },
+  "approvalEvidenceRefs": [
+    {
+      "locator": "HCR-Evidence/r079-validation/branch-delete-authorization.json",
+      "digest": "sha256:2c3f76de297fdf6300997c134928096909911cad3174d584101c7a766c3bb61b",
+      "operationId": "r079-delete-completed-local-task-branch",
+      "actionClass": "delete",
+      "targetLocators": [
+        "git-local-ref://hierarchical-convergence-circuit/refs/heads/research/r079-score-readout"
+      ],
+      "environments": [
+        "local"
+      ],
+      "expiresAt": "2026-10-01T03:40:12.002659+00:00"
+    }
+  ],
+  "currentStateEvidenceRefs": [
+    {
+      "locator": "HCR-Evidence/r079-validation/branch-delete-state.json",
+      "digest": "sha256:91a0abf51b8774eff5835e3928b3d23e0a0845082084ad45163ed88d553ac6ca",
+      "targetLocator": "git-local-ref://hierarchical-convergence-circuit/refs/heads/research/r079-score-readout",
+      "fingerprint": "sha256:5a9046f4cd8d7a3cef1e8afd04b4cb525103adddee38128174c4e07e54504aeb"
+    }
+  ],
+  "recoveryPlan": {
+    "available": true,
+    "backupRef": "git:08f057175f245f3b24a8409e0404c57a74fa6f2d",
+    "method": "Recreate exact local ref from commit retained on main and remote; isolated bare clone delete/recreate test passed",
+    "restoreProcedureRef": "HCR-Evidence/r079-validation/branch-restore-test.json",
+    "restoreTestEvidenceRef": "HCR-Evidence/r079-validation/branch-restore-test.json",
+    "irreversibilityAccepted": false
+  },
+  "expectedBlastRadius": {
+    "affectedTargets": 1,
+    "affectedUsers": 1,
+    "external": false,
+    "description": "One merged local task ref; main and remote retained"
+  }
+}

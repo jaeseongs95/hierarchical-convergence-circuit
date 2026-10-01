@@ -1,0 +1,13 @@
+{
+  "verified": true,
+  "recorded_at": "2026-10-01T02:40:12.410441+00:00",
+  "commit": "08f057175f245f3b24a8409e0404c57a74fa6f2d",
+  "main": "08f057175f245f3b24a8409e0404c57a74fa6f2d",
+  "remote_main": "08f057175f245f3b24a8409e0404c57a74fa6f2d",
+  "normal_push": true,
+  "signature_verified": true,
+  "research_branch_deleted": true,
+  "deleted_branch": "research/r079-score-readout",
+  "delete_output": "Deleted branch research/r079-score-readout (was 08f0571).",
+  "acceptance_metadata_branch": "research/r079-delivery"
+}

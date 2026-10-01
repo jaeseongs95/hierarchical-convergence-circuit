@@ -1,0 +1,8 @@
+{
+  "observed_at": "2026-10-01T02:35:07.485723+00:00",
+  "remote": "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main",
+  "before": "56f14eac8841ecc765e5ac426620d56a0067c4c6",
+  "candidate": "08f057175f245f3b24a8409e0404c57a74fa6f2d",
+  "tracked_content_changes": ":100644 100644 e9a6cda 0000000 M\tRun-HCR-R077.cmd\n:100644 100644 723fdbd 0000000 M\tRun-HCR-R078.cmd",
+  "source_scope": "primary commit verified scope; no src/tests/archive changes"
+}

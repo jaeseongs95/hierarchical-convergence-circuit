@@ -1,0 +1,7 @@
+{
+  "verified": true,
+  "isolated_bare_repository_delete_recreate": true,
+  "branch": "research/r079-score-readout",
+  "commit": "08f057175f245f3b24a8409e0404c57a74fa6f2d",
+  "production_worktree_unchanged": true
+}
