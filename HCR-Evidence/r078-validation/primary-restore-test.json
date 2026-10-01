@@ -1,0 +1,9 @@
+{
+  "verified": true,
+  "base_commit": "4eb0101a2d7fd234c5b4ba5c942045cb958c2e0d",
+  "candidate_commit": "06cd9689b8293fe01e133706349c57d1187f22f8",
+  "base_tree": "03a781dd1aa2cfe402147e18eec1bef4a17d15eb",
+  "restored_tree": "03a781dd1aa2cfe402147e18eec1bef4a17d15eb",
+  "patch_sha256": "sha256:48184d0f6761fa76c8e46788eb6204a95f3054a6d822120008879862cf9544ae",
+  "worktree_changed": false
+}

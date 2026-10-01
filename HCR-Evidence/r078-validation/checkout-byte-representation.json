@@ -1,0 +1,9 @@
+{
+  "verified": true,
+  "own_launcher_EOL_restored_from_frozen_snapshot": [
+    "Run-HCR-R078.cmd"
+  ],
+  "frozen_computational_bytes_preserved": true,
+  "historical_and_preexisting_files_untouched": true,
+  "source_rerun": false
+}

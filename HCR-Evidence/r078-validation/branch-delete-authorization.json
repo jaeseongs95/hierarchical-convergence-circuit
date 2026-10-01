@@ -1,0 +1,12 @@
+{
+  "actionClass": "delete",
+  "operationId": "r078-delete-completed-local-task-branch",
+  "targetLocators": [
+    "git-local-ref://hierarchical-convergence-circuit/refs/heads/research/r078-binding-order"
+  ],
+  "environments": [
+    "local"
+  ],
+  "source": "Direct human user-supplied AGENTS section8 authorizes completed local task branch cleanup",
+  "commit": "06cd9689b8293fe01e133706349c57d1187f22f8"
+}

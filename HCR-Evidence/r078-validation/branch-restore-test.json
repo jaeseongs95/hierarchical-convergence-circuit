@@ -1,0 +1,7 @@
+{
+  "verified": true,
+  "isolated_bare_repository_delete_recreate": true,
+  "branch": "research/r078-binding-order",
+  "commit": "06cd9689b8293fe01e133706349c57d1187f22f8",
+  "production_worktree_unchanged": true
+}

@@ -1,0 +1,13 @@
+{
+  "actionClass": "publish",
+  "operationId": "r078-publish-primary",
+  "targetLocators": [
+    "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main"
+  ],
+  "environments": [
+    "external"
+  ],
+  "candidate_commit": "06cd9689b8293fe01e133706349c57d1187f22f8",
+  "candidate_artifact_digest": "sha256:d1fa78daa85502270518696b3c91b19066df1cde42bc97202d3c100ed42106e4",
+  "source": "Direct user-provided AGENTS section8 one-turn ordinary origin/main push authority and research continuation; no force push/tag/deploy/remote deletion"
+}

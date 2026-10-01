@@ -1,0 +1,15 @@
+{
+  "verified": true,
+  "primary_commit": "06cd9689b8293fe01e133706349c57d1187f22f8",
+  "local_main_commit": "06cd9689b8293fe01e133706349c57d1187f22f8",
+  "remote_main_commit": "06cd9689b8293fe01e133706349c57d1187f22f8",
+  "ordinary_push": true,
+  "push_exit_code": 0,
+  "signature_verified": true,
+  "fast_forward_merged": true,
+  "task_branch_deleted": true,
+  "remaining_local_branches": [
+    "main"
+  ],
+  "forced": false
+}

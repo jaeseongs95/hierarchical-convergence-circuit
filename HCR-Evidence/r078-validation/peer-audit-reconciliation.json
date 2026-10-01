@@ -1,0 +1,19 @@
+{
+  "peer_message_id": "cfc52873-e3d4-4f2c-a33b-32c141a7e3f3",
+  "source": "Read-only Claude peer, not permission",
+  "verified_against": [
+    "src/hcr/runtime.py:280-292",
+    "src/hcr/dynamics.py:42",
+    "R078 raw first/final network states",
+    "R077/R078 original condition correspondence"
+  ],
+  "applied": [
+    "zero drive distinct from negative provisional goal/readout",
+    "six original cells marked deterministic replication; six swapped novel inputs",
+    "R077 OFF path contrast conditioned on array order",
+    "stable_decision margin distinguished from inter-candidate gap"
+  ],
+  "frozen_raw_spec_summary_changed": false,
+  "new_native_executions": 0,
+  "regression_rerun": false
+}
