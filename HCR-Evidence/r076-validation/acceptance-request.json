@@ -1,0 +1,256 @@
+{
+  "schemaVersion": "1.0.0",
+  "taskEnvelope": {
+    "schemaVersion": "1.0.0",
+    "taskId": "hcc-r076-native-competition",
+    "objective": "Native feedback으로 길이2/3 회로를 형성하고 고정 world와 paired score 입력에서 모든 pool 후보·경쟁·선택·proof·채택·비용을 구분한다",
+    "scope": {
+      "included": [
+        "Run-HCR-R076.cmd",
+        "Run-HCR-R076.py",
+        "R076_MANIFEST.json",
+        "tools/r076_competition/",
+        "experiments/exp-57-native-competition/",
+        "experiments/INDEX.json",
+        "experiments/INDEX.ko.md",
+        "HCR-Evidence/exp57/",
+        "HCR-Evidence/r076-validation/"
+      ],
+      "excluded": [
+        "src/",
+        "archive/",
+        "HCR-Evidence/exp56/",
+        "HCR-Evidence/r075-validation/"
+      ]
+    },
+    "acceptanceCriteria": [
+      "[AC-001] 첫 native 실행 전에 config·world·score 네 점·3회 formation·ON/OFF 8셀·budget과 주장 경계를 동결하고 host memory/proof 수정을 하지 않는다",
+      "[AC-002] native formation과 binding/pool 진입을 분리 검증하며 추가 prefix 후보를 포함한 모든 후보·억제·eligibility·선택·proof/readout·비용을 보존하고 선택 전환의 음성·측정불가도 허용한다",
+      "[AC-003] 원자료를 독립 재생하고 memory feedback·수식·집계를 검산하며 변조를 거부하고 최종 core 회귀 1회에서 새 실패/skip이 없다",
+      "[AC-004] 원클릭·원자료 bundle·한계와 다음 판별 연구를 제공하고 기존 변경 보존·범위/수용 확인·커밋·로컬 main 병합·브랜치 정리·일반 push 반영 확인을 완료한다"
+    ],
+    "riskLevel": "medium",
+    "workUnits": [
+      {
+        "id": "research",
+        "objective": "Native feedback으로 길이2/3 회로를 형성하고 고정 world와 paired score 입력에서 모든 pool 후보·경쟁·선택·proof·채택·비용을 구분한다",
+        "dependencies": [],
+        "writeTargets": [
+          "Run-HCR-R076.cmd",
+          "Run-HCR-R076.py",
+          "R076_MANIFEST.json",
+          "tools/r076_competition/",
+          "experiments/exp-57-native-competition/",
+          "experiments/INDEX.json",
+          "experiments/INDEX.ko.md",
+          "HCR-Evidence/exp57/",
+          "HCR-Evidence/r076-validation/"
+        ]
+      }
+    ],
+    "requiredCapabilities": [
+      "change-scope-baseline-capture",
+      "minimal-implementation",
+      "change-scope-assurance",
+      "acceptance-evidence-validation",
+      "mutation-risk-preflight"
+    ],
+    "constraints": [
+      "기존 core와 historical evidence 수정 금지",
+      "최초 실패·부분 자료 보존, 자동 retry/host correction 금지",
+      "prior·mismatch 자연 변화는 joint 개입으로 기록",
+      "기존 599pass/3환경skip 보존",
+      "결정적 authored 조건을 독립 표본이나 일반 HCC 우위로 표현 금지"
+    ],
+    "authorization": {
+      "allowedActions": [
+        "read",
+        "write-scoped-research-files",
+        "run-local-checks",
+        "commit",
+        "merge-local-main",
+        "delete-completed-local-task-branch",
+        "push-origin-main"
+      ],
+      "prohibitedActions": [
+        "force-push",
+        "rewrite-historical-evidence",
+        "overwrite-user-changes"
+      ],
+      "approvalRequired": [
+        "deploy",
+        "tag",
+        "install",
+        "delete-remote-branch"
+      ]
+    },
+    "decision": {
+      "complexity": "simple",
+      "hasConflicts": false
+    },
+    "orchestration": {
+      "requested": false,
+      "mcpAvailable": true
+    }
+  },
+  "target": {
+    "kind": "artifact",
+    "identifier": "R076-sealed-native-competition",
+    "digest": "sha256:3cf549190df40b1e2985d303a7a6d8134f33a6fa8cc27ed56354fcbcf9f86a93"
+  },
+  "evidence": [
+    {
+      "id": "integrity",
+      "kind": "test",
+      "locator": "HCR-Evidence/r076-validation/delivery-verification.json",
+      "digest": "sha256:a6b278f4640e995918a90dc72738593c121d2f8a367f2cb2cfd20b3468881615",
+      "targetDigest": "sha256:3cf549190df40b1e2985d303a7a6d8134f33a6fa8cc27ed56354fcbcf9f86a93",
+      "verified": true,
+      "criterionIds": [
+        "AC-001",
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "Exact frozen computational source/raw/bundle/ZIP bytes and catalog-only addition verified"
+    },
+    {
+      "id": "native",
+      "kind": "test",
+      "locator": "HCR-Evidence/exp57/r076-20261001T001633Z-cac62c3eb7/verification.json",
+      "digest": "sha256:a4fc14544329e23100f4a577e08055df39b95fe020b7976936fb5c82b2bacee0",
+      "targetDigest": "sha256:3cf549190df40b1e2985d303a7a6d8134f33a6fa8cc27ed56354fcbcf9f86a93",
+      "verified": true,
+      "criterionIds": [
+        "AC-002",
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "Eleven native journals and three feedback replays; every pool candidate state/recurrence/eligibility checked; seven raw mutations rejected"
+    },
+    {
+      "id": "summary",
+      "kind": "file",
+      "locator": "HCR-Evidence/exp57/r076-20261001T001633Z-cac62c3eb7/summary.json",
+      "digest": "sha256:adad3319e28f21c9de0f522f603de7826c848b792b19282b360310f2a8712bd9",
+      "targetDigest": "sha256:3cf549190df40b1e2985d303a7a6d8134f33a6fa8cc27ed56354fcbcf9f86a93",
+      "verified": true,
+      "criterionIds": [
+        "AC-002"
+      ],
+      "direction": "supports",
+      "observedResult": "Native formation, prefix-inclusive competition, selection/proof/adoption and separate tick/cost ledgers verified"
+    },
+    {
+      "id": "summary-check",
+      "kind": "test",
+      "locator": "HCR-Evidence/exp57/r076-20261001T001633Z-cac62c3eb7/validation/summary-verification.json",
+      "digest": "sha256:8770016712815a2d2c66ec034c0111db145104f21bbd8b5b3a27868e13462c1e",
+      "targetDigest": "sha256:3cf549190df40b1e2985d303a7a6d8134f33a6fa8cc27ed56354fcbcf9f86a93",
+      "verified": true,
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "Eight summary mutations rejected; same raw reanalysis is not a new native replay/sample"
+    },
+    {
+      "id": "regression",
+      "kind": "test",
+      "locator": "HCR-Evidence/exp57/r076-20261001T001633Z-cac62c3eb7/validation/core_regression.json",
+      "digest": "sha256:d5daace122f8617bfd42c41ab59ddb55331aae622d85dc3ab6f6439a54928ab9",
+      "targetDigest": "sha256:3cf549190df40b1e2985d303a7a6d8134f33a6fa8cc27ed56354fcbcf9f86a93",
+      "verified": true,
+      "criterionIds": [
+        "AC-003"
+      ],
+      "direction": "supports",
+      "observedResult": "602 tests once:599passed,three existing environment skips,no new failures/errors/skips"
+    },
+    {
+      "id": "report",
+      "kind": "document",
+      "locator": "experiments/exp-57-native-competition/RESULTS.ko.md",
+      "digest": "sha256:a1f55f49386cbc6be88419383828dc02f497fc374a7c280224b29b7fb0793cb9",
+      "targetDigest": "sha256:3cf549190df40b1e2985d303a7a6d8134f33a6fa8cc27ed56354fcbcf9f86a93",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Observed prefix/completed-route switch; no short completed-route first choice; all outcomes true and ON ticks higher; bounded claims"
+    },
+    {
+      "id": "next",
+      "kind": "document",
+      "locator": "experiments/exp-57-native-competition/NEXT.ko.md",
+      "digest": "sha256:0310700a723653f133740b26431aa8109a8ce7d7c6cfd0fe3d65fa2b0beb7b25",
+      "targetDigest": "sha256:3cf549190df40b1e2985d303a7a6d8134f33a6fa8cc27ed56354fcbcf9f86a93",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Unexecuted same-length binding candidates and initially prior_gain=0 native question"
+    },
+    {
+      "id": "scope",
+      "kind": "test",
+      "locator": "HCR-Evidence/r076-validation/scope-report.after-delivery.json",
+      "digest": "sha256:44833dd15b54048781c2c2a338f240c412e3ee448a6ebf069bf6b6665e93b16d",
+      "targetDigest": "sha256:3cf549190df40b1e2985d303a7a6d8134f33a6fa8cc27ed56354fcbcf9f86a93",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "PASS; no out-of-scope/preexisting overlaps; original untracked files preserved"
+    },
+    {
+      "id": "delivery",
+      "kind": "test",
+      "locator": "HCR-Evidence/r076-validation/git-delivery.json",
+      "digest": "sha256:bb232e1423f7c65a36ee385dcb1dbde60664a6438915fb7dc8e5bf45fef3755f",
+      "targetDigest": "sha256:3cf549190df40b1e2985d303a7a6d8134f33a6fa8cc27ed56354fcbcf9f86a93",
+      "verified": true,
+      "criterionIds": [
+        "AC-004"
+      ],
+      "direction": "supports",
+      "observedResult": "Signed commit merged to local main,ordinary push exit0,remote==local,completed local task branch deleted"
+    }
+  ],
+  "verificationCommands": [
+    {
+      "id": "oneclick",
+      "command": "Run-HCR-R076.cmd",
+      "criterionIds": [
+        "AC-001",
+        "AC-002",
+        "AC-003"
+      ],
+      "exitCode": 0,
+      "locator": "HCR-Evidence/exp57/r076-20261001T001633Z-cac62c3eb7/result.json",
+      "targetDigest": "sha256:3cf549190df40b1e2985d303a7a6d8134f33a6fa8cc27ed56354fcbcf9f86a93"
+    },
+    {
+      "id": "delivery",
+      "command": "git push origin main; git ls-remote origin refs/heads/main",
+      "criterionIds": [
+        "AC-004"
+      ],
+      "exitCode": 0,
+      "locator": "HCR-Evidence/r076-validation/git-delivery.json",
+      "targetDigest": "sha256:3cf549190df40b1e2985d303a7a6d8134f33a6fa8cc27ed56354fcbcf9f86a93"
+    }
+  ],
+  "criterionOverrides": [],
+  "knownLimitations": [
+    "Authored deterministic world:11new native executions and0independent statistical discovery samples",
+    "Public score jointly changes evidence/prior/mismatch; inhibition causal effect not isolated",
+    "First choice switches prefix/completed long route; short completed route was never first; no two-complete-route first-choice switch",
+    "All8decisions/adoptions true; ON kernel ticks higher in every paired condition; no efficiency or accuracy advantage claim",
+    "Energy/peak memory null;3existing symlink capability skips; no cloud validation executed",
+    "Optional index comparison stopped before result due incompatible baseline kind; required working-tree scope PASS and staged path/raw blob checks PASS",
+    "Preparation schema/CLI errors and raw whitespace observations retained; no failed research/native rerun"
+  ]
+}

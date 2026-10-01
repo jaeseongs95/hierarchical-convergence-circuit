@@ -1,0 +1,7 @@
+{
+  "observedAt": "2026-10-01T00:36:03.960345+00:00",
+  "remote_main_commit": "ad0876370d05a0ebf50a1d1604f3492750540e75",
+  "candidate_commit": null,
+  "candidate_records": "HCR-Evidence/r076-validation only; commit assigned after staging",
+  "candidate_artifact_digest": "sha256:3cf549190df40b1e2985d303a7a6d8134f33a6fa8cc27ed56354fcbcf9f86a93"
+}

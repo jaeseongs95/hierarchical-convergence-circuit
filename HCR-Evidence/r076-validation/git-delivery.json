@@ -1,0 +1,14 @@
+{
+  "verified": true,
+  "baseline_commit": "bd201799f6259cd77361aea9f69bca328ed261f2",
+  "commit": "ad0876370d05a0ebf50a1d1604f3492750540e75",
+  "remote_main_commit": "ad0876370d05a0ebf50a1d1604f3492750540e75",
+  "primary_push_exit_code": 0,
+  "local_main_equals_remote": true,
+  "signature_verified": true,
+  "task_branch_deleted": true,
+  "branch_deletion_exit_code": 0,
+  "force_push": false,
+  "raw_evidence_bytes_retained": true,
+  "acceptance_records_commit_still_pending": true
+}

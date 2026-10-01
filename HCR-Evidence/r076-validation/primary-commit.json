@@ -1,0 +1,7 @@
+{
+  "verified": true,
+  "commit": "ad0876370d05a0ebf50a1d1604f3492750540e75",
+  "commit_exit_code": 0,
+  "signature_check_exit_code": 0,
+  "signature_output": "gpg: Signature made Thu Oct  1 09:31:21 2026    \ngpg:                using RSA key AB7B6A55CA1AC0E6761502B5968D3ABAD2FE4B3A\ngpg: Good signature from \"jaeseongs95 <sjs.inf.study@gmail.com>\" [ultimate]\ngpg:                 aka \"jaeseongs95 <sjs9505@gmail.com>\" [ultimate]\n"
+}

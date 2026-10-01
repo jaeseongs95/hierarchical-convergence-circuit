@@ -1,0 +1,13 @@
+{
+  "actionClass": "publish",
+  "operationId": "r076-push-research",
+  "targetLocators": [
+    "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main"
+  ],
+  "environments": [
+    "external"
+  ],
+  "candidate_artifact_digest": "sha256:3cf549190df40b1e2985d303a7a6d8134f33a6fa8cc27ed56354fcbcf9f86a93",
+  "source": "Direct human continuation and directly user-supplied AGENTS section8 authorize ordinary origin/main push and completed local task branch deletion",
+  "scope": "R076 additive native competition and preserved evidence; no force push, tag, deploy or remote branch deletion"
+}

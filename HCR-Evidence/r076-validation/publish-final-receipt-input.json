@@ -1,0 +1,180 @@
+{
+  "report": {
+    "schemaVersion": "1.0.0",
+    "operationId": "r076-push-final-records",
+    "actionDigest": "sha256:29642796c015259ae0da3ef78c4f68c4ea6cefbcf1229a56fce2be1ce8d7ec27",
+    "targetDigest": "sha256:739d51de59d4ef4c7b5f4707dff9b638237dfdac9f2966f743ea838986d7f51d",
+    "classification": {
+      "actionClass": "publish",
+      "reversibility": "reversible",
+      "externalImpact": true,
+      "dataLossPotential": false,
+      "permissionImpact": false
+    },
+    "checks": [
+      {
+        "checkId": "target-specificity",
+        "state": "passed",
+        "evidenceRefs": [],
+        "message": "모든 대상이 구체적으로 식별됐습니다."
+      },
+      {
+        "checkId": "scope-match",
+        "state": "passed",
+        "evidenceRefs": [
+          "HCR-Evidence/r076-validation/task-envelope.json"
+        ],
+        "message": "대상이 작업 범위 안에 있습니다."
+      },
+      {
+        "checkId": "authorization-match",
+        "state": "passed",
+        "evidenceRefs": [
+          "HCR-Evidence/r076-validation/publish-final-authorization.json"
+        ],
+        "message": "행동, 대상과 환경이 허용 범위에 있습니다."
+      },
+      {
+        "checkId": "current-state",
+        "state": "passed",
+        "evidenceRefs": [
+          "HCR-Evidence/r076-validation/publish-final-current-state.json"
+        ],
+        "message": "현재 fingerprint가 예상값과 일치합니다."
+      },
+      {
+        "checkId": "approval",
+        "state": "passed",
+        "evidenceRefs": [
+          "HCR-Evidence/r076-validation/publish-final-authorization.json"
+        ],
+        "message": "승인 상태: observed"
+      },
+      {
+        "checkId": "recovery",
+        "state": "passed",
+        "evidenceRefs": [
+          "git:bd201799f6259cd77361aea9f69bca328ed261f2",
+          "HCR-Evidence/r076-validation/git-recovery-check.json"
+        ],
+        "message": "복구 또는 명시적 비가역성 수용 근거가 있습니다."
+      },
+      {
+        "checkId": "blast-radius",
+        "state": "passed",
+        "evidenceRefs": [],
+        "message": "예상 영향 범위가 모든 대상을 포함합니다."
+      }
+    ],
+    "approval": {
+      "required": true,
+      "status": "observed",
+      "evidenceRefs": [
+        "HCR-Evidence/r076-validation/publish-final-authorization.json"
+      ]
+    },
+    "recovery": {
+      "available": true,
+      "restoreTested": true,
+      "irreversibilityAccepted": false,
+      "evidenceRefs": [
+        "git:bd201799f6259cd77361aea9f69bca328ed261f2",
+        "HCR-Evidence/r076-validation/git-recovery-check.json"
+      ]
+    },
+    "blastRadius": {
+      "affectedTargets": 1,
+      "affectedUsers": 1,
+      "external": true,
+      "description": "R076 scoped acceptance and delivery record additions"
+    },
+    "unresolved": [],
+    "invalidationTriggers": [
+      "action 또는 planned tool 변경",
+      "target 또는 environment 변경",
+      "current-state evidence 또는 fingerprint 변경",
+      "scope 또는 authorization 변경",
+      "승인 evidence의 만료 또는 범위 변경",
+      "복구 계획 변경",
+      "예상 blast radius 변경"
+    ],
+    "validUntil": "2026-10-01T00:51:04.264Z",
+    "observedAt": "2026-10-01T00:36:04.264Z",
+    "verdict": "READY"
+  },
+  "intent": {
+    "schemaVersion": "1.0.0",
+    "operationId": "r076-push-final-records",
+    "actionClass": "publish",
+    "plannedCommandOrTool": {
+      "tool": "git",
+      "action": "push origin main"
+    },
+    "targets": [
+      {
+        "locator": "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main",
+        "targetType": "git-ref",
+        "environment": "external",
+        "expectedFingerprint": "sha256:b11c6895f1a108838a2d6032e89a4b41e9648f72d980727cf6e18549fed322ae"
+      }
+    ],
+    "scopeRef": {
+      "locator": "HCR-Evidence/r076-validation/task-envelope.json",
+      "digest": "sha256:112ed4eca77b688fa73f903171e117c7394c0bec618fc5734de2f9b6842b4b93",
+      "includedTargets": [
+        "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main"
+      ],
+      "excludedTargets": []
+    },
+    "authorizationRef": {
+      "locator": "HCR-Evidence/r076-validation/publish-final-authorization.json",
+      "digest": "sha256:3a48501616caf84de7076a51c187fdcd9e1179fc7f94fcdd1b8982078bce2e92",
+      "allowedActions": [
+        "publish"
+      ],
+      "allowedTargets": [
+        "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main"
+      ],
+      "environments": [
+        "external"
+      ]
+    },
+    "approvalEvidenceRefs": [
+      {
+        "locator": "HCR-Evidence/r076-validation/publish-final-authorization.json",
+        "digest": "sha256:3a48501616caf84de7076a51c187fdcd9e1179fc7f94fcdd1b8982078bce2e92",
+        "operationId": "r076-push-final-records",
+        "actionClass": "publish",
+        "targetLocators": [
+          "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main"
+        ],
+        "environments": [
+          "external"
+        ],
+        "expiresAt": "2026-10-01T01:36:03.960345+00:00"
+      }
+    ],
+    "currentStateEvidenceRefs": [
+      {
+        "locator": "HCR-Evidence/r076-validation/publish-final-current-state.json",
+        "digest": "sha256:05c7facb3fe5a28a608a5ba44270c8b7cde77d0c95f0391ae952dc82f1642498",
+        "targetLocator": "https://github.com/jaeseongs95/hierarchical-convergence-circuit#refs/heads/main",
+        "fingerprint": "sha256:b11c6895f1a108838a2d6032e89a4b41e9648f72d980727cf6e18549fed322ae"
+      }
+    ],
+    "recoveryPlan": {
+      "available": true,
+      "backupRef": "git:bd201799f6259cd77361aea9f69bca328ed261f2",
+      "method": "Reverse primary patch as a new commit preserving sealed evidence; temporary-index restore simulation verified",
+      "restoreProcedureRef": "HCR-Evidence/r076-validation/git-recovery-check.json",
+      "restoreTestEvidenceRef": "HCR-Evidence/r076-validation/git-recovery-check.json",
+      "irreversibilityAccepted": false
+    },
+    "expectedBlastRadius": {
+      "affectedTargets": 1,
+      "affectedUsers": 1,
+      "external": true,
+      "description": "R076 scoped acceptance and delivery record additions"
+    }
+  }
+}
