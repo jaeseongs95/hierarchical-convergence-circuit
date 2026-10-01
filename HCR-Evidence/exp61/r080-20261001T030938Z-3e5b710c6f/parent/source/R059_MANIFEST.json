@@ -1,0 +1,24 @@
+{
+  "schema": "hcc-r059-manifest-v1",
+  "contract": "r059-local-recovery-v1",
+  "parent_commit": "6ef4f80e9917e71cbcaed742b17d68482fd35c1f",
+  "hash_normalization": "CRLF to LF only",
+  "files": {
+    "HCR-Evidence/exp40/.gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "HCR-Evidence/exp40/.gitignore": "050c4c43407269dc8a0c7c332affc85b0ea2a431a61719285b827a005139dd63",
+    "HCR-Evidence/r059-validation/.gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "HCR-Evidence/r059-validation/.gitignore": "050c4c43407269dc8a0c7c332affc85b0ea2a431a61719285b827a005139dd63",
+    "Run-HCR-R059.cmd": "074a8d05c418278d1450d552215b6aa7f962a08b1ea1c2d560bbaf505b9712e7",
+    "Run-HCR-R059.py": "d15d7fe950e169fb685e58e31680c88d3e94deff602abd8fa9de5ea3f60b4579",
+    "experiments/exp-40-local-recovery/ORCHESTRATION.ko.md": "1b99c989b6b3a761875c26060cc21654003a862b215eb43491c9618651e05847",
+    "experiments/exp-40-local-recovery/design.ko.md": "710db82c2016212db2098bf1b820e5a61e19a170090366303b29635e30640523",
+    "experiments/exp-40-local-recovery/frozen_spec.json": "2469990729a2b94adb33617987f9431418768bb31d9342e08d6e7c5eae5ece77",
+    "tools/r059_recovery/__init__.py": "59a5ada08259700b63adfae8cc11f2738b689d8a2fce284bf01337dc3510839c",
+    "tools/r059_recovery/audit.py": "38769132b0596f5110442442e2984a16f5f3c2fb5fe7e7f7d689c7c53aa265ea",
+    "tools/r059_recovery/bootstrap.py": "31db549d5df99a8b754f466901242e5482654fa74dd708b319916f196da02f7d",
+    "tools/r059_recovery/pipeline.py": "ce95885ef6c96c20ffc52763849e1b50a12c412f49fc8c166eb477af95e648f9",
+    "tools/r059_recovery/selftest.py": "4394e0db971eeecb714497751bb34c6b0697428449278f8707df24f5c2c1d083",
+    "tools/r059_recovery/tests/test_recovery.py": "987d1e7cb9b3e97e794785ec3d8f487294224dbe8972a917aab289a58769f645",
+    "tools/r059_recovery/worker.py": "396466143584b539d7aac6d64c8c01d122fb96e6eedcd33b60c2fd4918d480a8"
+  }
+}

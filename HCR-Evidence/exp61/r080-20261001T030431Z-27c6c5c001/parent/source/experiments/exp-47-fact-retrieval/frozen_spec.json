@@ -1,0 +1,220 @@
+{
+  "schema": "hcc-r066-fact-baseline-v1",
+  "base_commit": "b7d0346c3ab305adadce13e597d91c5df3f3229d",
+  "parent_run": "HCR-Evidence/exp45/r064-20260920T024825Z-d995fcc733",
+  "parent_files": {
+    "plan.json": "34f8e2c2b1a6cff6865418708cc4b031cd1fd91e5ef48f0279b039301f98fedf",
+    "request.json": "092b23bd140a8d3c974ad9d4f9a06232c02506a8424fd27bb69d383ee738de7c",
+    "measurements.json": "b945cabe24628df6d3ff6ad5209f0723f995a18b6dff9c735718479dec7bbc94",
+    "memory/after_feedback.json": "60702432c155e680913503a47a82f66f7f3c21b0bb6d5f48bfdb6be53ff013b2",
+    "memory/after_correction.json": "a67e6f2f5fe4c0f57ee08822b08d82b7f5060e9c9c74b08238b37d0f7e09bd19"
+  },
+  "fact_scope": {
+    "context": "toy-A",
+    "epoch": 0
+  },
+  "scope_source": "Explicit baseline metadata authored for re-exposure; not inferred from historical IDs and not native API fields.",
+  "channels": {
+    "binary_feedback": "after_feedback",
+    "edge_correction": "after_correction"
+  },
+  "arms": [
+    "current",
+    "record_only",
+    "lookup"
+  ],
+  "config": {
+    "kernel": {
+      "evidence_gain": 4.0,
+      "relation_gain": 2.0,
+      "top_down_gain": 0.35,
+      "prior_gain": 2.0,
+      "self_excitation": 0.25,
+      "inhibition": 0.2,
+      "damping": 0.45,
+      "temperature": 1.0,
+      "residual_tolerance": 1e-06,
+      "margin_threshold": 0.3,
+      "patience": 4,
+      "max_ticks": 160,
+      "max_edges": 8,
+      "max_paths": 4,
+      "max_path_length": 4,
+      "max_groups": 32,
+      "max_search": 2048,
+      "min_valid_episodes": 3,
+      "max_circuits": 16,
+      "weakening": 0.2,
+      "learning_rate": 0.25,
+      "max_observation_requests": 2
+    },
+    "pattern_lengths": [
+      2,
+      3
+    ],
+    "max_expansions": 64,
+    "max_frontier": 32,
+    "max_binding_checks": 1024,
+    "max_pool_candidates": 4,
+    "activation_threshold": 0.55,
+    "mismatch_threshold": 0.8,
+    "circuit_inhibition": 0.15
+  },
+  "limits": {
+    "max_advances_per_session": 16,
+    "max_kernel_ticks_per_session": 5120
+  },
+  "cases": [
+    {
+      "id": "same",
+      "scope": {
+        "context": "toy-A",
+        "epoch": 0
+      },
+      "observation": {
+        "episode_id": "r066-probe",
+        "revision": 0,
+        "start": "v0",
+        "goal": "v2",
+        "edges": [
+          {
+            "id": "e0",
+            "source": "v0",
+            "target": "v1",
+            "score": 0.8
+          },
+          {
+            "id": "e1",
+            "source": "v1",
+            "target": "v2",
+            "score": 0.8
+          }
+        ]
+      }
+    },
+    {
+      "id": "other_context",
+      "scope": {
+        "context": "toy-B",
+        "epoch": 0
+      },
+      "observation": {
+        "episode_id": "r066-probe",
+        "revision": 0,
+        "start": "v0",
+        "goal": "v2",
+        "edges": [
+          {
+            "id": "e0",
+            "source": "v0",
+            "target": "v1",
+            "score": 0.8
+          },
+          {
+            "id": "e1",
+            "source": "v1",
+            "target": "v2",
+            "score": 0.8
+          }
+        ]
+      }
+    },
+    {
+      "id": "new_epoch",
+      "scope": {
+        "context": "toy-A",
+        "epoch": 1
+      },
+      "observation": {
+        "episode_id": "r066-probe",
+        "revision": 0,
+        "start": "v0",
+        "goal": "v2",
+        "edges": [
+          {
+            "id": "e0",
+            "source": "v0",
+            "target": "v1",
+            "score": 0.8
+          },
+          {
+            "id": "e1",
+            "source": "v1",
+            "target": "v2",
+            "score": 0.8
+          }
+        ]
+      }
+    },
+    {
+      "id": "silent_change",
+      "scope": {
+        "context": "toy-A",
+        "epoch": 0
+      },
+      "observation": {
+        "episode_id": "r066-probe",
+        "revision": 0,
+        "start": "v0",
+        "goal": "v2",
+        "edges": [
+          {
+            "id": "e0",
+            "source": "v0",
+            "target": "v1",
+            "score": 0.8
+          },
+          {
+            "id": "e1",
+            "source": "v1",
+            "target": "v2",
+            "score": 0.8
+          }
+        ]
+      }
+    },
+    {
+      "id": "truthful",
+      "scope": {
+        "context": "toy-A",
+        "epoch": 0
+      },
+      "observation": {
+        "episode_id": "r066-probe",
+        "revision": 0,
+        "start": "v0",
+        "goal": "v2",
+        "edges": [
+          {
+            "id": "e0",
+            "source": "v0",
+            "target": "v1",
+            "score": 1.0
+          },
+          {
+            "id": "e1",
+            "source": "v1",
+            "target": "v2",
+            "score": -1.0
+          }
+        ]
+      }
+    }
+  ],
+  "worlds_sha256": "17e1df6b382e18d313f88cb87f6a81f5344c367de45f6eede1d8c1ae99696fd3",
+  "predictions": {
+    "matching_retrieval_corrects": "Under fixed closed world, edge lookup adopts False while record-only retains wrong True, for each gate.",
+    "binary_has_no_fact_intervention": "No edge value is inferred from binary feedback.",
+    "scope_mismatch_preserves_input": "Other context or new epoch yields unknown retrieval and preserves the input.",
+    "silent_change_can_make_retrieval_wrong": "Unannounced change with same exposed scope can make old lookup wrong while original observation is correct.",
+    "truthful_observation_suffices": "Correct initial observation permits correct adoption without a fact table."
+  },
+  "stopping": "One 60-cell frozen evaluation, no new learning or retry; prediction failure is a result, not an execution failure.",
+  "claim_boundary": "Explicit host input intervention baseline, no native HCC fact memory or generalization claim. Within-channel paired comparisons only; channel memories differ. No independent samples.",
+  "units": {
+    "binary_correctness_payload_bits": "One earlier correctness Boolean, not Shannon information; correction feedback metadata also remains in edge channel memory.",
+    "edge_value_bits": "Number of explicit Boolean edge values, not entropy or independent samples.",
+    "retrieved_edge_value_bits": "Scope-matched Boolean records; not a guarantee of current-world truth under silent change.",
+    "information_gain_bits": null
+  }
+}

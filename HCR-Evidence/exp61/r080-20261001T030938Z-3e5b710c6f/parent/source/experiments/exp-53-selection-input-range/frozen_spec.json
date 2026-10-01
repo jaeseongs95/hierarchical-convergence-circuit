@@ -1,0 +1,526 @@
+{
+  "schema": "hcc-r072-selection-input-range-v1",
+  "parent_run": "HCR-Evidence/exp52/r071-20260930T132808Z-695d047b35",
+  "parent_manifests": {
+    "bundle_manifest.json": "591e92636e05b2cbd774ffd4a44c4ffeafa01df4cde441887d130e32bdc42ade",
+    "source_manifest.json": "242562dd55a65af1b96c8d068ab6238a5c96b9e2984449a2ec54274a5fa9c812",
+    "raw_manifest.json": "787287e963257a7c6f07bd0d468a09e73fb87a56a09bfcdaad2495ea6c25f9a4",
+    "evaluation_manifest.json": "dc29d0fdae13c43fa47d4b9e276bdf5a220b9a812368c93ed8fb02c768f49c58"
+  },
+  "parent_files": {
+    "plan.json": "8f35f4f52672c5e580dc699237d7ccfd42a2d096cc61acab327a622e1f70ce12",
+    "verification.json": "a050935f449fe9251a8fc78847fc2d4a7949c39e21bdc842d5f57a5912b0e429",
+    "arms/default/memory/4.json": "bdddaf1e2666d0bdebf4607c9b3b71ac6f42e750f10fd697389f3b3337685792",
+    "arms/default/memory/5.json": "a4d8dbaa8f2e5edb122abd88954160b459cf86efcccfde179bf9c55d12d3e685",
+    "arms/midpoint/memory/4.json": "304b746c2f74b0a3e4f71af5c76b4503b4a758b3bff1f9db4f6f8f11ee269444",
+    "arms/midpoint/memory/5.json": "1c82adeb259560b51a5a28377d399a3f266b949a8b596c4c9496fa7a5bd7fc18",
+    "evaluation/default-M0/inference.json": "dd2fb3d78e4326fe3ba0c94607e7e51ccb42522e7ccd8c690ad1df2e3f52d3a9",
+    "evaluation/default-M1/inference.json": "f043a1bbc33b51a9746ff493cb5ba31c1e1787d1e06ee77b2a25de80f2dd13d9",
+    "evaluation/midpoint-M0/inference.json": "27ce1e9bf1a3af8a2a6b63fc71d4f2eec31367ccbd43fc52083c327af2e54020",
+    "evaluation/midpoint-M1/inference.json": "d357bba4e639f1b928d8ca1dfcf0c2bcda4bfcb83782a9fd04fc055be682892c"
+  },
+  "configs": {
+    "default": {
+      "activation_threshold": 0.55,
+      "circuit_inhibition": 0.15,
+      "kernel": {
+        "damping": 0.45,
+        "evidence_gain": 4.0,
+        "inhibition": 0.2,
+        "learning_rate": 0.25,
+        "margin_threshold": 0.3,
+        "max_circuits": 16,
+        "max_edges": 8,
+        "max_groups": 32,
+        "max_observation_requests": 2,
+        "max_path_length": 4,
+        "max_paths": 4,
+        "max_search": 2048,
+        "max_ticks": 160,
+        "min_valid_episodes": 3,
+        "patience": 4,
+        "prior_gain": 2.0,
+        "relation_gain": 2.0,
+        "residual_tolerance": 1e-06,
+        "self_excitation": 0.25,
+        "temperature": 1.0,
+        "top_down_gain": 0.35,
+        "weakening": 0.2
+      },
+      "max_binding_checks": 1024,
+      "max_expansions": 64,
+      "max_frontier": 32,
+      "max_pool_candidates": 4,
+      "mismatch_threshold": 0.8,
+      "pattern_lengths": [
+        2,
+        3
+      ]
+    },
+    "midpoint": {
+      "activation_threshold": 0.9940565651611166,
+      "circuit_inhibition": 0.15,
+      "kernel": {
+        "damping": 0.45,
+        "evidence_gain": 4.0,
+        "inhibition": 0.2,
+        "learning_rate": 0.25,
+        "margin_threshold": 0.3,
+        "max_circuits": 16,
+        "max_edges": 8,
+        "max_groups": 32,
+        "max_observation_requests": 2,
+        "max_path_length": 4,
+        "max_paths": 4,
+        "max_search": 2048,
+        "max_ticks": 160,
+        "min_valid_episodes": 3,
+        "patience": 4,
+        "prior_gain": 2.0,
+        "relation_gain": 2.0,
+        "residual_tolerance": 1e-06,
+        "self_excitation": 0.25,
+        "temperature": 1.0,
+        "top_down_gain": 0.35,
+        "weakening": 0.2
+      },
+      "max_binding_checks": 1024,
+      "max_expansions": 64,
+      "max_frontier": 32,
+      "max_pool_candidates": 4,
+      "mismatch_threshold": 0.8,
+      "pattern_lengths": [
+        2,
+        3
+      ]
+    }
+  },
+  "checkpoints": {
+    "M0": 4,
+    "M1": 5
+  },
+  "limits": {
+    "max_advances_per_session": 16,
+    "max_kernel_ticks_per_session": 5120
+  },
+  "scores": {
+    "s06": 0.6,
+    "s08": 0.8,
+    "s10": 1.0
+  },
+  "repeat_score": 0.8,
+  "cells": [
+    {
+      "id": "s06-default-M0",
+      "score_id": "s06",
+      "score": 0.6,
+      "arm": "default",
+      "checkpoint": "M0",
+      "memory_file": "arms/default/memory/4.json",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "v0",
+            "target": "v1"
+          },
+          {
+            "id": "e1",
+            "score": 0.6,
+            "source": "v1",
+            "target": "v2"
+          }
+        ],
+        "episode_id": "r069-probe",
+        "goal": "v2",
+        "revision": 1,
+        "start": "v0"
+      }
+    },
+    {
+      "id": "s06-default-M1",
+      "score_id": "s06",
+      "score": 0.6,
+      "arm": "default",
+      "checkpoint": "M1",
+      "memory_file": "arms/default/memory/5.json",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "v0",
+            "target": "v1"
+          },
+          {
+            "id": "e1",
+            "score": 0.6,
+            "source": "v1",
+            "target": "v2"
+          }
+        ],
+        "episode_id": "r069-probe",
+        "goal": "v2",
+        "revision": 1,
+        "start": "v0"
+      }
+    },
+    {
+      "id": "s06-midpoint-M0",
+      "score_id": "s06",
+      "score": 0.6,
+      "arm": "midpoint",
+      "checkpoint": "M0",
+      "memory_file": "arms/midpoint/memory/4.json",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "v0",
+            "target": "v1"
+          },
+          {
+            "id": "e1",
+            "score": 0.6,
+            "source": "v1",
+            "target": "v2"
+          }
+        ],
+        "episode_id": "r069-probe",
+        "goal": "v2",
+        "revision": 1,
+        "start": "v0"
+      }
+    },
+    {
+      "id": "s06-midpoint-M1",
+      "score_id": "s06",
+      "score": 0.6,
+      "arm": "midpoint",
+      "checkpoint": "M1",
+      "memory_file": "arms/midpoint/memory/5.json",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "v0",
+            "target": "v1"
+          },
+          {
+            "id": "e1",
+            "score": 0.6,
+            "source": "v1",
+            "target": "v2"
+          }
+        ],
+        "episode_id": "r069-probe",
+        "goal": "v2",
+        "revision": 1,
+        "start": "v0"
+      }
+    },
+    {
+      "id": "s08-default-M0",
+      "score_id": "s08",
+      "score": 0.8,
+      "arm": "default",
+      "checkpoint": "M0",
+      "memory_file": "arms/default/memory/4.json",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "v0",
+            "target": "v1"
+          },
+          {
+            "id": "e1",
+            "score": 0.8,
+            "source": "v1",
+            "target": "v2"
+          }
+        ],
+        "episode_id": "r069-probe",
+        "goal": "v2",
+        "revision": 1,
+        "start": "v0"
+      }
+    },
+    {
+      "id": "s08-default-M1",
+      "score_id": "s08",
+      "score": 0.8,
+      "arm": "default",
+      "checkpoint": "M1",
+      "memory_file": "arms/default/memory/5.json",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "v0",
+            "target": "v1"
+          },
+          {
+            "id": "e1",
+            "score": 0.8,
+            "source": "v1",
+            "target": "v2"
+          }
+        ],
+        "episode_id": "r069-probe",
+        "goal": "v2",
+        "revision": 1,
+        "start": "v0"
+      }
+    },
+    {
+      "id": "s08-midpoint-M0",
+      "score_id": "s08",
+      "score": 0.8,
+      "arm": "midpoint",
+      "checkpoint": "M0",
+      "memory_file": "arms/midpoint/memory/4.json",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "v0",
+            "target": "v1"
+          },
+          {
+            "id": "e1",
+            "score": 0.8,
+            "source": "v1",
+            "target": "v2"
+          }
+        ],
+        "episode_id": "r069-probe",
+        "goal": "v2",
+        "revision": 1,
+        "start": "v0"
+      }
+    },
+    {
+      "id": "s08-midpoint-M1",
+      "score_id": "s08",
+      "score": 0.8,
+      "arm": "midpoint",
+      "checkpoint": "M1",
+      "memory_file": "arms/midpoint/memory/5.json",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "v0",
+            "target": "v1"
+          },
+          {
+            "id": "e1",
+            "score": 0.8,
+            "source": "v1",
+            "target": "v2"
+          }
+        ],
+        "episode_id": "r069-probe",
+        "goal": "v2",
+        "revision": 1,
+        "start": "v0"
+      }
+    },
+    {
+      "id": "s10-default-M0",
+      "score_id": "s10",
+      "score": 1.0,
+      "arm": "default",
+      "checkpoint": "M0",
+      "memory_file": "arms/default/memory/4.json",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "v0",
+            "target": "v1"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "v1",
+            "target": "v2"
+          }
+        ],
+        "episode_id": "r069-probe",
+        "goal": "v2",
+        "revision": 1,
+        "start": "v0"
+      }
+    },
+    {
+      "id": "s10-default-M1",
+      "score_id": "s10",
+      "score": 1.0,
+      "arm": "default",
+      "checkpoint": "M1",
+      "memory_file": "arms/default/memory/5.json",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "v0",
+            "target": "v1"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "v1",
+            "target": "v2"
+          }
+        ],
+        "episode_id": "r069-probe",
+        "goal": "v2",
+        "revision": 1,
+        "start": "v0"
+      }
+    },
+    {
+      "id": "s10-midpoint-M0",
+      "score_id": "s10",
+      "score": 1.0,
+      "arm": "midpoint",
+      "checkpoint": "M0",
+      "memory_file": "arms/midpoint/memory/4.json",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "v0",
+            "target": "v1"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "v1",
+            "target": "v2"
+          }
+        ],
+        "episode_id": "r069-probe",
+        "goal": "v2",
+        "revision": 1,
+        "start": "v0"
+      }
+    },
+    {
+      "id": "s10-midpoint-M1",
+      "score_id": "s10",
+      "score": 1.0,
+      "arm": "midpoint",
+      "checkpoint": "M1",
+      "memory_file": "arms/midpoint/memory/5.json",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "v0",
+            "target": "v1"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "v1",
+            "target": "v2"
+          }
+        ],
+        "episode_id": "r069-probe",
+        "goal": "v2",
+        "revision": 1,
+        "start": "v0"
+      }
+    }
+  ],
+  "world_file": "experiments/exp-53-selection-input-range/reference_world.json",
+  "world_sha256": "6ac404fb511d2d3146e5cdd74bc564eb5f92b87affd53cc62c34817ffdb84b83",
+  "predictions": {
+    "s06-default-M0": {
+      "first_source": "circuit",
+      "value": true,
+      "correct": false
+    },
+    "s06-default-M1": {
+      "first_source": "circuit",
+      "value": true,
+      "correct": false
+    },
+    "s06-midpoint-M0": {
+      "first_source": "primitive",
+      "value": true,
+      "correct": false
+    },
+    "s06-midpoint-M1": {
+      "first_source": "primitive",
+      "value": true,
+      "correct": false
+    },
+    "s08-default-M0": {
+      "first_source": "circuit",
+      "value": true,
+      "correct": false
+    },
+    "s08-default-M1": {
+      "first_source": "circuit",
+      "value": true,
+      "correct": false
+    },
+    "s08-midpoint-M0": {
+      "first_source": "circuit",
+      "value": true,
+      "correct": false
+    },
+    "s08-midpoint-M1": {
+      "first_source": "primitive",
+      "value": true,
+      "correct": false
+    },
+    "s10-default-M0": {
+      "first_source": "circuit",
+      "value": true,
+      "correct": false
+    },
+    "s10-default-M1": {
+      "first_source": "circuit",
+      "value": true,
+      "correct": false
+    },
+    "s10-midpoint-M0": {
+      "first_source": "circuit",
+      "value": true,
+      "correct": false
+    },
+    "s10-midpoint-M1": {
+      "first_source": "circuit",
+      "value": true,
+      "correct": false
+    }
+  },
+  "range_hypothesis": "The R071 midpoint M0/M1 selection separation persists across all three frozen score conditions; falsified if an evaluable score has equal first-source selection.",
+  "prediction_basis": "Derived direction from monotone evidence input in existing equations; adjacent cells are prospective predictions, not observations. 0.8 is an existing-condition repeat.",
+  "non_evaluable": "No completed candidate, unengaged parent checkpoint construct, mismatched memory projection, nonstable pool, nonzero mismatch or unequal pool calculation within a same-score/checkpoint threshold pair.",
+  "core_regression_runs": 1,
+  "automatic_retry": false,
+  "tolerance": 2e-12,
+  "threshold_provenance": {
+    "selection": "post_hoc midpoint from R070 existing activations; not independent discovery",
+    "sha256": "aa96636fa65623d9d35b90ce99575842de2ee9d7dbfe66ddfe33dfe0e1884021",
+    "source": "experiments/exp-51-pool-signal-boundary/RESULTS.ko.md"
+  },
+  "claim_boundary": "Three preselected positive-score points, one native circuit, fixed checkpoint bundles and R070-derived post hoc midpoint; no independent discovery, pure strength effect, pure threshold across scores, general robustness interval, correction sufficiency, competition or HCC superiority."
+}

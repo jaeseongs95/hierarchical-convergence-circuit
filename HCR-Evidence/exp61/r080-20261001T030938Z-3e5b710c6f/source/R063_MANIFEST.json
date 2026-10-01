@@ -1,0 +1,22 @@
+{
+  "schema": "hcc-r063-manifest-v1",
+  "contract": "r063-circuit-formation-v1",
+  "parent_commit": "c59dbf1766df2226cc0085ef5c643f8aad2386e0",
+  "hash_normalization": "CRLF to LF only",
+  "files": {
+    "HCR-Evidence/exp44/.gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "HCR-Evidence/exp44/.gitignore": "050c4c43407269dc8a0c7c332affc85b0ea2a431a61719285b827a005139dd63",
+    "HCR-Evidence/r063-validation/.gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "HCR-Evidence/r063-validation/.gitignore": "050c4c43407269dc8a0c7c332affc85b0ea2a431a61719285b827a005139dd63",
+    "Run-HCR-R063.cmd": "60884e9d9c854ffee5d5adb196e9c64ee8cd45d7cb37e01aee04370f53f3866e",
+    "Run-HCR-R063.py": "a7885c0e7224c98204e4bc365d497bdcdf180300852ea946d5d17549f6f50ffe",
+    "experiments/exp-44-circuit-formation/ORCHESTRATION.ko.md": "1c9e7d71d0832d0607bfb72e23738ae457948c40bf552805548c17af9d0b4bbd",
+    "experiments/exp-44-circuit-formation/design.ko.md": "69409563fce6e97126948de94293167481f682751959247e69cc89aa6dc7a705",
+    "experiments/exp-44-circuit-formation/frozen_spec.json": "4881be303831fbc3c5cca1cc8df03ade44da8c061bb39dc9b679d616bf11a57e",
+    "tools/r063_formation/__init__.py": "e00861cba9c63b98ba2add95d5a881dd17c04fed0cc3208310a259ac9a16c9ab",
+    "tools/r063_formation/audit.py": "142dd063022e7f9bccffb5864931a0457119b15ac75224fdc6495632a7132273",
+    "tools/r063_formation/bootstrap.py": "fba5fec48082fe80736bf0239b00151f86d874cbb5ec1111465193a4a2d2d1f5",
+    "tools/r063_formation/pipeline.py": "be209038dd74b54905f8a555f246f6dbb49e6aba01ec6f1121c0841985d6fd15",
+    "tools/r063_formation/worker.py": "31bf9a5083cf0db9605a4f57bd31c45c3c57a8585c61a0192e404a54715351de"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "recorded_at": "2026-10-01T03:02:15.215585+00:00",
+  "native_executions_so_far": 0,
+  "spec_sha256": "82ff34bd464606be117b2b4c8b99b95f12a5da8a47ce772c282a3285560aee04",
+  "design_sha256": "09e7da61bdbd0c54caf278fbaea2c8955a7892b97bdc31ecde2b4271fcaf5153",
+  "branch": "research/r080-small-positive",
+  "baseline_commit": "2a79556e2c86eba30df2994b012a586656c41b3c",
+  "run_started_at": null,
+  "run_finished_at": null
+}

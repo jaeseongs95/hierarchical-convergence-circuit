@@ -1,0 +1,372 @@
+{
+  "skill_version": "1.0.0",
+  "schema_version": "1.0",
+  "preflight": {
+    "required_capabilities": [
+      "isolated blind reviewers",
+      "read-only source and raw evidence access",
+      "fresh Judge"
+    ],
+    "observed_capabilities": [
+      "fork_turns:none",
+      "2 completed reviewers",
+      "local source/raw inspection",
+      "conditional cross examination",
+      "isolated blind reviewers",
+      "read-only source and raw evidence access",
+      "fresh Judge"
+    ],
+    "missing_capabilities": [],
+    "supported_models_reasoning": [
+      "gpt-6.1-sol: high available for future roles",
+      "gpt-6-astra: high available for future roles"
+    ]
+  },
+  "case_brief": {
+    "decision": "R068 이후 피드백·checkpoint·관측과 revision 경로를 구별하는 최소 실험은 무엇인가",
+    "facts": [
+      "R068 four no-feedback cells: no automatic requests; explicit API rejected",
+      "R068 NEXT proposes feedback and path factorization"
+    ],
+    "assumptions": [
+      "Authored binary world e0=True,e1=False",
+      "One ideal toy acquisition, no physical sensor"
+    ],
+    "constraints": [
+      "core와 과거 evidence 보존",
+      "reference truth로 피드백 산출",
+      "조건/예측 사전 동결과 실패 보존",
+      "세션 지속/자율감지 인과 주장 금지",
+      "sensor 획득과 전달/요청 비용 구분"
+    ],
+    "unknowns": [
+      "New fixed condition's actual weakening/readout/cost until execution"
+    ],
+    "success_criteria": [
+      "6 paired followup slots plus common donor",
+      "Actual mechanism/checkpoint/prefix verification",
+      "Claim boundaries preserve confounds"
+    ],
+    "failure_modes": [
+      "Feedback label mistaken for autonomous information acquisition",
+      "Revision disables circuit use",
+      "Memory version mistaken for functional learning",
+      "Copied donor/acquisition counted repeatedly"
+    ]
+  },
+  "run": {
+    "id": "r069-design-deliberation",
+    "stage": "MEDIUM",
+    "strict": false,
+    "worker_cap": 8,
+    "workers": [
+      {
+        "id": "/root/causal_review",
+        "role": "Causal identification reviewer",
+        "status": "completed",
+        "is_judge": false,
+        "instantiated": true,
+        "requested_model": "inherited",
+        "actual_model": null,
+        "requested_reasoning": "inherited",
+        "actual_reasoning": null,
+        "fallback_reason": "Inherited runtime settings; caller-visible model/effort unavailable. Spawn preceded subsequent user model restriction.",
+        "classification": "reviewer",
+        "blind_round1": true,
+        "context_isolated": true,
+        "participated_stages": [
+          "round1"
+        ]
+      },
+      {
+        "id": "/root/contract_review",
+        "role": "API contract and reproducibility reviewer",
+        "status": "completed",
+        "is_judge": false,
+        "instantiated": true,
+        "requested_model": "inherited",
+        "actual_model": null,
+        "requested_reasoning": "inherited",
+        "actual_reasoning": null,
+        "fallback_reason": "Inherited runtime settings; caller-visible model/effort unavailable. Spawn preceded subsequent user model restriction.",
+        "classification": "reviewer",
+        "blind_round1": true,
+        "context_isolated": true,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ]
+      },
+      {
+        "id": "/root/design_judge",
+        "role": "Fresh design Judge",
+        "status": "completed",
+        "is_judge": true,
+        "instantiated": true,
+        "requested_model": "gpt-6.1-sol",
+        "actual_model": "gpt-6.1-sol",
+        "requested_reasoning": "high",
+        "actual_reasoning": "high",
+        "fallback_reason": null,
+        "classification": "judge",
+        "blind_round1": false,
+        "context_isolated": true,
+        "participated_stages": [
+          "final_judge"
+        ]
+      }
+    ],
+    "completed_worker_ids": [
+      "/root/causal_review",
+      "/root/contract_review",
+      "/root/design_judge"
+    ],
+    "reused_worker_ids": [],
+    "failures": [],
+    "fresh_judge_id": "/root/design_judge",
+    "candidate_skill_sha256": null,
+    "assurance": "independent",
+    "specialist_additions": [],
+    "redeliberations": [],
+    "judge_fallback": null,
+    "capability_shortfall": false
+  },
+  "panel_manifest": [
+    {
+      "id": "/root/causal_review",
+      "role": "Causal identification reviewer",
+      "status": "completed",
+      "is_judge": false,
+      "instantiated": true,
+      "requested_model": "inherited",
+      "actual_model": null,
+      "requested_reasoning": "inherited",
+      "actual_reasoning": null,
+      "fallback_reason": "Inherited runtime settings; caller-visible model/effort unavailable. Spawn preceded subsequent user model restriction.",
+      "classification": "reviewer",
+      "blind_round1": true,
+      "context_isolated": true,
+      "participated_stages": [
+        "round1"
+      ]
+    },
+    {
+      "id": "/root/contract_review",
+      "role": "API contract and reproducibility reviewer",
+      "status": "completed",
+      "is_judge": false,
+      "instantiated": true,
+      "requested_model": "inherited",
+      "actual_model": null,
+      "requested_reasoning": "inherited",
+      "actual_reasoning": null,
+      "fallback_reason": "Inherited runtime settings; caller-visible model/effort unavailable. Spawn preceded subsequent user model restriction.",
+      "classification": "reviewer",
+      "blind_round1": true,
+      "context_isolated": true,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ]
+    },
+    {
+      "id": "/root/design_judge",
+      "role": "Fresh design Judge",
+      "status": "completed",
+      "is_judge": true,
+      "instantiated": true,
+      "requested_model": "gpt-6.1-sol",
+      "actual_model": "gpt-6.1-sol",
+      "requested_reasoning": "high",
+      "actual_reasoning": "high",
+      "fallback_reason": null,
+      "classification": "judge",
+      "blind_round1": false,
+      "context_isolated": true,
+      "participated_stages": [
+        "final_judge"
+      ]
+    }
+  ],
+  "constraints": [
+    "core와 과거 evidence 보존",
+    "reference truth로 피드백 산출",
+    "조건/예측 사전 동결과 실패 보존",
+    "세션 지속/자율감지 인과 주장 금지",
+    "sensor 획득과 전달/요청 비용 구분"
+  ],
+  "required_constraints": [
+    "core와 과거 evidence 보존",
+    "reference truth로 피드백 산출",
+    "조건/예측 사전 동결과 실패 보존",
+    "세션 지속/자율감지 인과 주장 금지",
+    "sensor 획득과 전달/요청 비용 구분"
+  ],
+  "material_claims": [
+    {
+      "id": "C1",
+      "statement": "feedback는 정보·memory 갱신·revision authorization을 함께 바꾼다",
+      "provenance": [
+        {
+          "locator": "src/hcr/runtime.py:347",
+          "verification_status": "verified",
+          "verification_note": "feedback가 update_adaptive를 호출하는 소스를 직접 확인"
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "statement": "revision은 circuit 사용이 비활성화되므로 새 세션 차이는 경로 묶음이다",
+      "provenance": [
+        {
+          "locator": "src/hcr/runtime.py:262",
+          "verification_status": "verified",
+          "verification_note": "use_circuits and p.revision_of is None를 직접 확인"
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "statement": "score 부호 대신 독립 authored world로 피드백을 산출해야 한다",
+      "provenance": [
+        {
+          "locator": "tools/r063_formation/audit.py:43",
+          "verification_status": "verified",
+          "verification_note": "기존 reference는 score>0; R064 reference는 별도 truth 사용"
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "statement": "메모리 version 변화만으로 실제 회로 학습을 주장할 수 없다",
+      "provenance": [
+        {
+          "locator": "src/hcr/learning.py:83",
+          "verification_status": "verified",
+          "verification_note": "사용한 circuit만 weaken; 버전/consumed_feedback는 항상 증가"
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "statement": "같은 request packet에서 두 revision과 M0/M1 새 세션 비교가 기존 API로 가능하다",
+      "provenance": [
+        {
+          "locator": "tools/r064_retention/worker.py:12",
+          "verification_status": "verified",
+          "verification_note": "기존 revision restore/bounded advance와 check_revision prefix 규칙 확인"
+        }
+      ]
+    }
+  ],
+  "cross_examination": {
+    "decision": "run",
+    "reason": "Hidden assumption: six-cell comparison might be misread as pure session persistence; contract reviewer challenged causal proposal",
+    "trigger_items": [
+      {
+        "id": "T1",
+        "origin_reviewer": "/root/causal_review"
+      }
+    ],
+    "selected_item_ids": [
+      "T1"
+    ],
+    "coverage": [
+      {
+        "item_id": "T1",
+        "reviewer_ids": [
+          "/root/contract_review"
+        ]
+      }
+    ],
+    "followups": [
+      {
+        "reviewer_id": "/root/contract_review",
+        "item_ids": [
+          "T1"
+        ]
+      }
+    ]
+  },
+  "issue_ledger": [
+    {
+      "issue_id": "I1",
+      "status": "CONFIRMED",
+      "rationale": "Feedback and revision API confounds are preserved as interpretation limits, not silently corrected",
+      "required_evidence": [
+        "runtime feedback and revision policy"
+      ],
+      "available_evidence": [
+        "C1",
+        "C2"
+      ]
+    }
+  ],
+  "axis_decisions": [
+    {
+      "axis": "Causal interpretation",
+      "decision": "Compare checkpoint and observation content; path bundle only",
+      "evidence_claim_ids": [
+        "C1",
+        "C2",
+        "C4"
+      ]
+    },
+    {
+      "axis": "Contract and minimal implementation",
+      "decision": "Reuse native execute/revision and independent packet audit; freeze 6 branches",
+      "evidence_claim_ids": [
+        "C3",
+        "C5"
+      ]
+    }
+  ],
+  "consensus_proposal": {
+    "status": "consensus",
+    "action": "One ON donor; 4 ON new-session M0/M1×stale/fresh cells; 2 normal M1 revision cells; one shared toy acquisition; no later feedback",
+    "supported_by_verified_claims": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "satisfied_constraints": [
+      "core와 과거 evidence 보존",
+      "reference truth로 피드백 산출",
+      "조건/예측 사전 동결과 실패 보존",
+      "세션 지속/자율감지 인과 주장 금지",
+      "sensor 획득과 전달/요청 비용 구분"
+    ],
+    "axis_alignment": [
+      {
+        "axis": "Causal interpretation",
+        "decision_ref": "Causal interpretation"
+      },
+      {
+        "axis": "Contract and minimal implementation",
+        "decision_ref": "Contract and minimal implementation"
+      }
+    ],
+    "conditions": [],
+    "unresolved_dissent": [],
+    "no_consensus_reason": null,
+    "remaining_options": [],
+    "decision_owner": null
+  },
+  "observability": {
+    "wall_time": "NOT_OBSERVABLE",
+    "tokens": "NOT_OBSERVABLE",
+    "tool_calls": "NOT_OBSERVABLE",
+    "worker_count": 3
+  },
+  "method_notes": [
+    "MEDIUM with two blind reviewers, conditional cross examination and separate fresh Judge; no specialist admitted.",
+    "Worker outputs are claims; material sources personally inspected",
+    "MCP plan_workflow refused BINDING_REQUIRED before run; direct skill execution only",
+    "User's subsequent model restriction applies to new sessions/roles; existing reviewers used inherited settings",
+    "Cross examination is the same reviewer lifecycle, not a distinct reused assignment.",
+    "Judge found pre-execution no-candidate and prediction-boundary defects; corrected before source/plan freeze. Separate raw-wrong and adopted-True donor predictions added.",
+    "First record validation failed schema consistency/lifecycle coverage; initial record preserved separately. Final record includes fresh Judge and corrected fields."
+  ]
+}

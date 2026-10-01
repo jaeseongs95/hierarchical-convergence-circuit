@@ -1,0 +1,1 @@
+{"competing_native_runtime_cause_excluded":true,"failure_type":"selftest_serialization_error","first_failure_preserved":true,"native_executions":0,"patch_targets":["tools/r080_small_positive/audit.py"],"single_keyword_typo":true,"targeted_check_passed":true,"verdict":"CAUSE_CONFIRMED"}

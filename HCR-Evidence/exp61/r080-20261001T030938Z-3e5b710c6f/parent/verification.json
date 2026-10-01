@@ -1,0 +1,1 @@
+{"all_candidate_states_preserved":true,"independent_feedback_replays":3,"independent_native_replays":9,"max_pool_replay_error":5.551115123125783e-16,"negative_result_allowed":true,"producer_imports":false,"rejected_raw_mutations":["advance_count","source","value","memory","proof","support","adoption"],"verified":true}

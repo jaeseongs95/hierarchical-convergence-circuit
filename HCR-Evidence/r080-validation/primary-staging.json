@@ -1,0 +1,17 @@
+{
+  "returncode": 0,
+  "paths": [
+    "Run-HCR-R080.cmd",
+    "Run-HCR-R080.py",
+    "R080_MANIFEST.json",
+    "tools/r080_small_positive/",
+    "experiments/exp-61-small-positive/",
+    "experiments/INDEX.json",
+    "experiments/INDEX.ko.md",
+    "HCR-Evidence/exp61/",
+    "HCR-Evidence/r080-validation/"
+  ],
+  "stderr": "warning: in the working copy of 'Run-HCR-R080.cmd', LF will be replaced by CRLF the next time Git touches it\n",
+  "core_autocrlf_override": "false_process_only",
+  "automatic_retry": false
+}

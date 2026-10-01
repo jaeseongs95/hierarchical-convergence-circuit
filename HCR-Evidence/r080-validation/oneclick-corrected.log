@@ -1,0 +1,6 @@
+STAGE: selftest-and-parent-grounding
+STAGE: native-evaluation
+STAGE: independent-analysis
+STAGE: summary-verification
+STAGE: final-core-regression
+EVIDENCE: D:\codex\AI논문\hierarchical-convergence-circuit\HCR-Evidence\exp61\r080-20261001T030938Z-3e5b710c6f

@@ -1,0 +1,14 @@
+{
+  "schema": "hcc-r080-source-manifest-v1",
+  "files": {
+    "Run-HCR-R080.py": "b79affd3a72fc32f401a54abe5ebd7166c24acb01ede558792825f4a09939a2b",
+    "Run-HCR-R080.cmd": "a8433c8ee471882bccc2939ef869098763f7d7e2092aa3363be4bcebcb5023d1",
+    "tools/r080_small_positive/__init__.py": "bca6db16746349d0b192fa8d248b57e64dff133591a7a8bc8d15069f9aee2e2c",
+    "tools/r080_small_positive/audit.py": "1d12e0a7a194395bda3b1bf0a14803f36deb2f515b3ab06bc967b0b71f688717",
+    "tools/r080_small_positive/pipeline.py": "5d4d762a31dad518b8820d77e669ca96db48e242b98faa4c0eb5c4d3023ede2f",
+    "tools/r080_small_positive/verify.py": "8e1c7fb71a3cc5107b83ccde76f679f816ca69623430d71f94527e6494838e15",
+    "tools/r080_small_positive/worker.py": "889e5324ea9b1aab9e3eb39f2af93faf97cec0654e2323ffb70c4c99c05f329d",
+    "experiments/exp-61-small-positive/design.ko.md": "09e7da61bdbd0c54caf278fbaea2c8955a7892b97bdc31ecde2b4271fcaf5153",
+    "experiments/exp-61-small-positive/frozen_spec.json": "82ff34bd464606be117b2b4c8b99b95f12a5da8a47ce772c282a3285560aee04"
+  }
+}

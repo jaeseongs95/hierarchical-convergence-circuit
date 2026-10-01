@@ -1,0 +1,13 @@
+{
+  "command": [
+    "cmd",
+    "/c",
+    "Run-HCR-R080.cmd"
+  ],
+  "started_at": "2026-10-01T03:09:38.340518+00:00",
+  "finished_at": "2026-10-01T03:12:27.906882+00:00",
+  "monotonic_duration_seconds": 169.5660076000022,
+  "returncode": 0,
+  "automatic_retry": false,
+  "changed_input": "pre-native keyword/construct/semantic-test amendments"
+}

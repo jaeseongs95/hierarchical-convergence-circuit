@@ -1,0 +1,26 @@
+{
+  "schema": "hcc-r058-manifest-v1",
+  "contract": "r058-fixed-horizon-v1",
+  "parent_commit": "82e152ef290d477ebce90bef700073745749a5ed",
+  "hash_normalization": "CRLF to LF only",
+  "files": {
+    "experiments/exp-39-fixed-horizon/design.ko.md": "2e0fb3854038026559bdb0dc6d7b8c080fc674cb93fbf9735d73c1adebb155a9",
+    "experiments/exp-39-fixed-horizon/frozen_spec.json": "6cf465609f904ad9cae0c81edc61edc43b88da678310512ffe088613ecfd693a",
+    "experiments/exp-39-fixed-horizon/ORCHESTRATION.ko.md": "b866776bff98a05ad67aadde9ca68629cf1072c77f8497d0a77c8b90231f16d9",
+    "HCR-Evidence/exp39/.gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "HCR-Evidence/exp39/.gitignore": "050c4c43407269dc8a0c7c332affc85b0ea2a431a61719285b827a005139dd63",
+    "HCR-Evidence/r058-validation/.gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "HCR-Evidence/r058-validation/.gitignore": "050c4c43407269dc8a0c7c332affc85b0ea2a431a61719285b827a005139dd63",
+    "Run-HCR-R058.cmd": "bbd9e2858d7debea1eff1e3a2954f1dc61815e4e1af92ee5d200817b383d9889",
+    "Run-HCR-R058.py": "d2fdb0a5befbc20099a7f3626fa13f65df70eaee0574c8025c566d6d0a7bfe63",
+    "tools/r058_horizon/__init__.py": "60608ab10a30427cf32ba7b7319b0b95939e5b1dd553b1f942985143d1654b18",
+    "tools/r058_horizon/audit.py": "8b6284ee1f59830b5ab89b244318643b678102f40065372396c0b2f61957114d",
+    "tools/r058_horizon/bootstrap.py": "7dbbe7a88320a07920c672767a668144e85564f02a66a79f3ac847972c3d8c03",
+    "tools/r058_horizon/pipeline.py": "1b59eafdd343b8d9d1fcafa7b19641e48b9cbee56e6debeb3b5f111ba07deee9",
+    "tools/r058_horizon/selftest.py": "61bcd876d4c0f06aac41f8bb1c2ce9a5cb3a1acf89bddcde17d3345ef5392bda",
+    "tools/r058_horizon/tests/test_audit.py": "4c887593b00119cfbdcaabd9f1819aea0780835d0da9dea1c95a5bc9aa53accb",
+    "tools/r058_horizon/tests/test_continuation.py": "53935b29edd757d10724f163fbaf572fc238c83986224510a3195f56bc461376",
+    "tools/r058_horizon/tests/test_worker_pipeline.py": "97e881c6d1804a7afe3b19c8fcbd3e579d1618d2d3cd9e8cf8a313812415fa3f",
+    "tools/r058_horizon/worker.py": "528c8c82661f4976a32ad36b552bd6699eb7285049f1f2aec751c6b37da88c3a"
+  }
+}

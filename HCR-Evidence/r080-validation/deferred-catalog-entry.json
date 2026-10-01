@@ -1,0 +1,20 @@
+{
+  "current_python_entrypoint": null,
+  "default_dispatcher_promoted": false,
+  "design": "experiments/exp-61-small-positive/design.ko.md",
+  "directory": "experiments/exp-61-small-positive",
+  "evidence_directory": "HCR-Evidence/exp61",
+  "execution_status": "standalone_candidate_contract",
+  "experiment_id": "EXP-61",
+  "frozen_design": "experiments/exp-61-small-positive/frozen_spec.json",
+  "implementation_validation_directory": "HCR-Evidence/r080-validation",
+  "legacy_python_entrypoint": null,
+  "release_manifest": "R080_MANIFEST.json",
+  "revision_references": [
+    "r080"
+  ],
+  "run_status": "read_per_run_evidence",
+  "source_commit": null,
+  "source_commit_note": "Seven fixed small-positive OFF evaluations: two R079 reproductions and five new score inputs; first False at .005/.01/.02/.03 and True at .04; zero training/feedback/discovery samples.",
+  "standalone_python_entrypoint": "Run-HCR-R080.py"
+}

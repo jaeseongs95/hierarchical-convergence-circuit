@@ -1,0 +1,13 @@
+{
+  "verdict": "PASS",
+  "chain": [
+    {
+      "path": "D:\\codex\\AI논문\\AGENTS.md",
+      "sha256": "2fbd4ae2af14201752e2937d6ce9bbbcccabd1451db59d69499f975ea491cf63"
+    }
+  ],
+  "analysisStatus": "complete",
+  "user_supplied_global_instructions": true,
+  "unresolvedConflicts": [],
+  "applicable_child_instruction_files": []
+}

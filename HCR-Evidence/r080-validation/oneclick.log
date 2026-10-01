@@ -1,0 +1,15 @@
+STAGE: selftest-and-parent-grounding
+FAILED EVIDENCE: D:\codex\AI논문\hierarchical-convergence-circuit\HCR-Evidence\exp61\r080-20261001T030431Z-27c6c5c001
+Traceback (most recent call last):
+  File "D:\codex\AI논문\hierarchical-convergence-circuit\Run-HCR-R080.py", line 11, in <module>
+    main()
+  File "D:\codex\AI논문\hierarchical-convergence-circuit\tools\r080_small_positive\pipeline.py", line 74, in main
+    stage(root,out,phase,'tools.r080_small_positive.audit',['--out',out,'--phase','selftest'])
+  File "D:\codex\AI논문\hierarchical-convergence-circuit\tools\r080_small_positive\pipeline.py", line 25, in stage
+    previous_stage(root,out,name,module,args,source)
+  File "D:\codex\AI논문\hierarchical-convergence-circuit\tools\r066_facts\pipeline.py", line 37, in stage
+    require(result.returncode == 0, 'Stage failed; evidence retained: '+name)
+  File "D:\codex\AI논문\hierarchical-convergence-circuit\tools\r050_review_boundary\common.py", line 21, in require
+    raise IntegrityError(message)
+tools.r050_review_boundary.common.IntegrityError: Stage failed; evidence retained: selftest-and-parent-grounding
+FAILED. No automatic retry was attempted. See the retained logs.

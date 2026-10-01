@@ -1,0 +1,6 @@
+{
+  "returncode": 0,
+  "output": "{\"scope\":\"structural-only\",\"valid\":true,\"errors\":[],\"diagnostic\":\"This check validates the schema and deterministic route only; it does not read or authenticate source receipts.\"}\n",
+  "stderr": "",
+  "receipt_validation": false
+}

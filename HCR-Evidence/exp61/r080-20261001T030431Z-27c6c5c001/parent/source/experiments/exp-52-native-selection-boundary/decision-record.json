@@ -1,0 +1,314 @@
+{
+  "schema_version": "1.0",
+  "run": {
+    "id": "r071-design-panel",
+    "stage": "MEDIUM",
+    "worker_cap": 2,
+    "workers": [
+      {
+        "id": "/root/contract_review",
+        "role": "Contract Auditor",
+        "status": "completed",
+        "instantiated": true,
+        "requested_model": "NOT_OBSERVABLE",
+        "actual_model": null,
+        "requested_reasoning": "NOT_OBSERVABLE",
+        "actual_reasoning": null,
+        "fallback_reason": "Inherited supported runtime; actual model/effort not observable to caller",
+        "is_judge": false,
+        "classification": "reviewer",
+        "blind_round1": true,
+        "context_isolated": true,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ]
+      },
+      {
+        "id": "/root/causal_review",
+        "role": "Causal Evidence Reviewer",
+        "status": "completed",
+        "instantiated": true,
+        "requested_model": "NOT_OBSERVABLE",
+        "actual_model": null,
+        "requested_reasoning": "NOT_OBSERVABLE",
+        "actual_reasoning": null,
+        "fallback_reason": "Inherited supported runtime; actual model/effort not observable to caller",
+        "is_judge": false,
+        "classification": "reviewer",
+        "blind_round1": true,
+        "context_isolated": true,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ]
+      }
+    ],
+    "completed_worker_ids": [
+      "/root/contract_review",
+      "/root/causal_review"
+    ],
+    "reused_worker_ids": [],
+    "fresh_judge_id": null,
+    "assurance": "partially_independent",
+    "specialist_additions": [],
+    "redeliberations": [],
+    "judge_fallback": null,
+    "strict": false,
+    "failures": [],
+    "capability_shortfall": false,
+    "candidate_skill_sha256": null
+  },
+  "constraints": [
+    "기존 core/evidence 보존",
+    "memory signature 자동 수정 금지",
+    "post hoc 경계의 독립 발견 주장 금지"
+  ],
+  "material_claims": [
+    {
+      "id": "C1",
+      "statement": "threshold도 memory config 계약에 포함되어 기존 checkpoint 재서명이 금지된다",
+      "provenance": [
+        {
+          "locator": "src/hcr/model.py:300; src/hcr/circuits.py:201",
+          "verification_status": "verified",
+          "verification_note": "Coordinator가 실제 소스 식과 계약을 확인"
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "statement": "선택과 최종 판단은 별개이며 threshold는 pool settle 뒤 eligibility에 적용된다",
+      "provenance": [
+        {
+          "locator": "src/hcr/activation.py:124; src/hcr/workspace.py:220",
+          "verification_status": "verified",
+          "verification_note": "Coordinator가 실제 소스 식과 계약을 확인"
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "statement": "동일 donor episode는 decision/feedback ID를 중복시킬 수 있다",
+      "provenance": [
+        {
+          "locator": "src/hcr/runtime.py:210; tools/r063_formation/audit.py:52",
+          "verification_status": "verified",
+          "verification_note": "Coordinator가 실제 소스 식과 계약을 확인"
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "statement": "새 native 최소 recipe는 correction 이력 없이 구성할 수 있으나 전체 R069 재현은 아니다",
+      "provenance": [
+        {
+          "locator": "src/hcr/learning.py:83-96; src/hcr/circuits.py:145",
+          "verification_status": "verified",
+          "verification_note": "Coordinator가 실제 소스 식과 계약을 확인"
+        }
+      ]
+    }
+  ],
+  "cross_examination": {
+    "decision": "run",
+    "reason": "native 준비 상태와 최소 recipe의 숨은 전제 검사",
+    "trigger_items": [
+      {
+        "id": "T1",
+        "origin_reviewer": "/root/causal_review"
+      },
+      {
+        "id": "T2",
+        "origin_reviewer": "/root/contract_review"
+      }
+    ],
+    "selected_item_ids": [
+      "T1",
+      "T2"
+    ],
+    "coverage": [
+      {
+        "item_id": "T1",
+        "reviewer_ids": [
+          "/root/contract_review"
+        ]
+      },
+      {
+        "item_id": "T2",
+        "reviewer_ids": [
+          "/root/causal_review"
+        ]
+      }
+    ],
+    "followups": [
+      {
+        "reviewer_id": "/root/contract_review",
+        "item_ids": [
+          "T1"
+        ]
+      },
+      {
+        "reviewer_id": "/root/causal_review",
+        "item_ids": [
+          "T2"
+        ]
+      }
+    ]
+  },
+  "axis_decisions": [
+    {
+      "axis": "Contract",
+      "decision": "새 config의 empty memory부터 native recipe 수행",
+      "evidence_claim_ids": [
+        "C1",
+        "C3"
+      ]
+    },
+    {
+      "axis": "Causality",
+      "decision": "선택 민감도와 판단 교정을 별도 판정",
+      "evidence_claim_ids": [
+        "C2",
+        "C4"
+      ]
+    }
+  ],
+  "consensus_proposal": {
+    "status": "conditional_consensus",
+    "action": "동일3 train+두 donor native feedback으로 config별 M0/M1를 만들고2x2 평가",
+    "supported_by_verified_claims": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "satisfied_constraints": [
+      "기존 core/evidence 보존",
+      "memory signature 자동 수정 금지",
+      "post hoc 경계의 독립 발견 주장 금지"
+    ],
+    "axis_alignment": [
+      {
+        "axis": "Contract",
+        "decision_ref": "Contract"
+      },
+      {
+        "axis": "Causality",
+        "decision_ref": "Causality"
+      }
+    ],
+    "conditions": [
+      "유효한 대응 checkpoint와 두 donor native reuse 확인"
+    ],
+    "unresolved_dissent": [],
+    "no_consensus_reason": null,
+    "remaining_options": [],
+    "decision_owner": null
+  },
+  "method_notes": [
+    "두 blind reviewer 및 교차 검토; MEDIUM에 fresh Judge 요구 없음; 추가 specialist/재숙고 없음; 최종 실행 감사 아님",
+    "Cross followups are completed participant stages; no final reused status. Initial validator failure retained in validation receipt."
+  ],
+  "case_brief": {
+    "decision": "R070 후속 native 선택 민감도 최소 설계",
+    "facts": [
+      "threshold는 config signature에 포함",
+      "R070 기존 threshold에서는 선택 유지"
+    ],
+    "assumptions": [
+      "native 동일 recipe로 pool 관련 상태 재구성 가능"
+    ],
+    "constraints": [
+      "기존 core/evidence 보존",
+      "memory signature 자동 수정 금지",
+      "post hoc 경계의 독립 발견 주장 금지"
+    ],
+    "unknowns": [
+      "native 준비·선택 예측의 실제 성립"
+    ],
+    "success_criteria": [
+      "계약을 보존한 네 paired 평가 설계"
+    ],
+    "failure_modes": [
+      "memory 재서명",
+      "post hoc 발견 주장",
+      "동일 donor feedback ID 중복"
+    ]
+  },
+  "required_constraints": [
+    "기존 core/evidence 보존",
+    "memory signature 자동 수정 금지",
+    "post hoc 경계의 독립 발견 주장 금지"
+  ],
+  "panel_manifest": [
+    {
+      "id": "/root/contract_review",
+      "role": "Contract Auditor",
+      "status": "completed",
+      "instantiated": true,
+      "requested_model": "NOT_OBSERVABLE",
+      "actual_model": null,
+      "requested_reasoning": "NOT_OBSERVABLE",
+      "actual_reasoning": null,
+      "fallback_reason": "Inherited supported runtime; actual model/effort not observable to caller",
+      "is_judge": false,
+      "classification": "reviewer",
+      "blind_round1": true,
+      "context_isolated": true,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ]
+    },
+    {
+      "id": "/root/causal_review",
+      "role": "Causal Evidence Reviewer",
+      "status": "completed",
+      "instantiated": true,
+      "requested_model": "NOT_OBSERVABLE",
+      "actual_model": null,
+      "requested_reasoning": "NOT_OBSERVABLE",
+      "actual_reasoning": null,
+      "fallback_reason": "Inherited supported runtime; actual model/effort not observable to caller",
+      "is_judge": false,
+      "classification": "reviewer",
+      "blind_round1": true,
+      "context_isolated": true,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ]
+    }
+  ],
+  "issue_ledger": [
+    {
+      "issue_id": "I1",
+      "status": "CONFIRMED",
+      "rationale": "고유 donor ID를 동결하고 native reuse/약화 검사를 요구한다",
+      "required_evidence": [
+        "native packet"
+      ],
+      "available_evidence": [
+        "runtime ID 생성/feedback 거부 소스"
+      ]
+    }
+  ],
+  "observability": {
+    "wall_time": "NOT_OBSERVABLE",
+    "tokens": "NOT_OBSERVABLE",
+    "tool_calls": "NOT_OBSERVABLE",
+    "worker_count": 2
+  },
+  "skill_version": "1.0.0",
+  "preflight": {
+    "required_capabilities": [
+      "blind_review"
+    ],
+    "observed_capabilities": [
+      "blind_review"
+    ],
+    "missing_capabilities": [],
+    "supported_models_reasoning": "NOT_OBSERVABLE"
+  }
+}

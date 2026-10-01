@@ -1,0 +1,564 @@
+{
+  "schema": "hcc-r078-binding-order-v1",
+  "config": {
+    "activation_threshold": 0.55,
+    "circuit_inhibition": 0.15,
+    "kernel": {
+      "damping": 0.45,
+      "evidence_gain": 4.0,
+      "inhibition": 0.2,
+      "learning_rate": 0.25,
+      "margin_threshold": 0.3,
+      "max_circuits": 16,
+      "max_edges": 8,
+      "max_groups": 32,
+      "max_observation_requests": 2,
+      "max_path_length": 4,
+      "max_paths": 4,
+      "max_search": 2048,
+      "max_ticks": 160,
+      "min_valid_episodes": 3,
+      "patience": 4,
+      "prior_gain": 0.0,
+      "relation_gain": 2.0,
+      "residual_tolerance": 1e-06,
+      "self_excitation": 0.25,
+      "temperature": 1.0,
+      "top_down_gain": 0.35,
+      "weakening": 0.2
+    },
+    "max_binding_checks": 1024,
+    "max_expansions": 64,
+    "max_frontier": 32,
+    "max_pool_candidates": 4,
+    "mismatch_threshold": 0.8,
+    "pattern_lengths": [
+      2
+    ]
+  },
+  "config_sha256": "03d48e78cdcdf2323b1c092c36734c5c267a797ef2a23289b5a338e2c0da30f4",
+  "limits": {
+    "max_advances_per_session": 16,
+    "max_kernel_ticks_per_session": 5120
+  },
+  "scores": {
+    "s00": 0.0,
+    "s06": 0.6,
+    "s10": 1.0
+  },
+  "orders": {
+    "original": [
+      "e0",
+      "e1",
+      "e2",
+      "e3"
+    ],
+    "swapped": [
+      "e2",
+      "e3",
+      "e0",
+      "e1"
+    ]
+  },
+  "cells": [
+    {
+      "id": "original-s00-on",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "S",
+            "target": "A"
+          },
+          {
+            "id": "e1",
+            "score": 0.6,
+            "source": "A",
+            "target": "G"
+          },
+          {
+            "id": "e2",
+            "score": 1.0,
+            "source": "S",
+            "target": "B"
+          },
+          {
+            "id": "e3",
+            "score": 0.0,
+            "source": "B",
+            "target": "G"
+          }
+        ],
+        "episode_id": "r077-probe",
+        "goal": "G",
+        "revision": 0,
+        "start": "S"
+      },
+      "score": 0.0,
+      "score_id": "s00",
+      "use_circuits": true,
+      "order_id": "original"
+    },
+    {
+      "id": "original-s00-off",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "S",
+            "target": "A"
+          },
+          {
+            "id": "e1",
+            "score": 0.6,
+            "source": "A",
+            "target": "G"
+          },
+          {
+            "id": "e2",
+            "score": 1.0,
+            "source": "S",
+            "target": "B"
+          },
+          {
+            "id": "e3",
+            "score": 0.0,
+            "source": "B",
+            "target": "G"
+          }
+        ],
+        "episode_id": "r077-probe",
+        "goal": "G",
+        "revision": 0,
+        "start": "S"
+      },
+      "score": 0.0,
+      "score_id": "s00",
+      "use_circuits": false,
+      "order_id": "original"
+    },
+    {
+      "id": "original-s06-on",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "S",
+            "target": "A"
+          },
+          {
+            "id": "e1",
+            "score": 0.6,
+            "source": "A",
+            "target": "G"
+          },
+          {
+            "id": "e2",
+            "score": 1.0,
+            "source": "S",
+            "target": "B"
+          },
+          {
+            "id": "e3",
+            "score": 0.6,
+            "source": "B",
+            "target": "G"
+          }
+        ],
+        "episode_id": "r077-probe",
+        "goal": "G",
+        "revision": 0,
+        "start": "S"
+      },
+      "score": 0.6,
+      "score_id": "s06",
+      "use_circuits": true,
+      "order_id": "original"
+    },
+    {
+      "id": "original-s06-off",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "S",
+            "target": "A"
+          },
+          {
+            "id": "e1",
+            "score": 0.6,
+            "source": "A",
+            "target": "G"
+          },
+          {
+            "id": "e2",
+            "score": 1.0,
+            "source": "S",
+            "target": "B"
+          },
+          {
+            "id": "e3",
+            "score": 0.6,
+            "source": "B",
+            "target": "G"
+          }
+        ],
+        "episode_id": "r077-probe",
+        "goal": "G",
+        "revision": 0,
+        "start": "S"
+      },
+      "score": 0.6,
+      "score_id": "s06",
+      "use_circuits": false,
+      "order_id": "original"
+    },
+    {
+      "id": "original-s10-on",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "S",
+            "target": "A"
+          },
+          {
+            "id": "e1",
+            "score": 0.6,
+            "source": "A",
+            "target": "G"
+          },
+          {
+            "id": "e2",
+            "score": 1.0,
+            "source": "S",
+            "target": "B"
+          },
+          {
+            "id": "e3",
+            "score": 1.0,
+            "source": "B",
+            "target": "G"
+          }
+        ],
+        "episode_id": "r077-probe",
+        "goal": "G",
+        "revision": 0,
+        "start": "S"
+      },
+      "score": 1.0,
+      "score_id": "s10",
+      "use_circuits": true,
+      "order_id": "original"
+    },
+    {
+      "id": "original-s10-off",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "S",
+            "target": "A"
+          },
+          {
+            "id": "e1",
+            "score": 0.6,
+            "source": "A",
+            "target": "G"
+          },
+          {
+            "id": "e2",
+            "score": 1.0,
+            "source": "S",
+            "target": "B"
+          },
+          {
+            "id": "e3",
+            "score": 1.0,
+            "source": "B",
+            "target": "G"
+          }
+        ],
+        "episode_id": "r077-probe",
+        "goal": "G",
+        "revision": 0,
+        "start": "S"
+      },
+      "score": 1.0,
+      "score_id": "s10",
+      "use_circuits": false,
+      "order_id": "original"
+    },
+    {
+      "id": "swapped-s00-on",
+      "observation": {
+        "edges": [
+          {
+            "id": "e2",
+            "score": 1.0,
+            "source": "S",
+            "target": "B"
+          },
+          {
+            "id": "e3",
+            "score": 0.0,
+            "source": "B",
+            "target": "G"
+          },
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "S",
+            "target": "A"
+          },
+          {
+            "id": "e1",
+            "score": 0.6,
+            "source": "A",
+            "target": "G"
+          }
+        ],
+        "episode_id": "r077-probe",
+        "goal": "G",
+        "revision": 0,
+        "start": "S"
+      },
+      "score": 0.0,
+      "score_id": "s00",
+      "use_circuits": true,
+      "order_id": "swapped"
+    },
+    {
+      "id": "swapped-s00-off",
+      "observation": {
+        "edges": [
+          {
+            "id": "e2",
+            "score": 1.0,
+            "source": "S",
+            "target": "B"
+          },
+          {
+            "id": "e3",
+            "score": 0.0,
+            "source": "B",
+            "target": "G"
+          },
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "S",
+            "target": "A"
+          },
+          {
+            "id": "e1",
+            "score": 0.6,
+            "source": "A",
+            "target": "G"
+          }
+        ],
+        "episode_id": "r077-probe",
+        "goal": "G",
+        "revision": 0,
+        "start": "S"
+      },
+      "score": 0.0,
+      "score_id": "s00",
+      "use_circuits": false,
+      "order_id": "swapped"
+    },
+    {
+      "id": "swapped-s06-on",
+      "observation": {
+        "edges": [
+          {
+            "id": "e2",
+            "score": 1.0,
+            "source": "S",
+            "target": "B"
+          },
+          {
+            "id": "e3",
+            "score": 0.6,
+            "source": "B",
+            "target": "G"
+          },
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "S",
+            "target": "A"
+          },
+          {
+            "id": "e1",
+            "score": 0.6,
+            "source": "A",
+            "target": "G"
+          }
+        ],
+        "episode_id": "r077-probe",
+        "goal": "G",
+        "revision": 0,
+        "start": "S"
+      },
+      "score": 0.6,
+      "score_id": "s06",
+      "use_circuits": true,
+      "order_id": "swapped"
+    },
+    {
+      "id": "swapped-s06-off",
+      "observation": {
+        "edges": [
+          {
+            "id": "e2",
+            "score": 1.0,
+            "source": "S",
+            "target": "B"
+          },
+          {
+            "id": "e3",
+            "score": 0.6,
+            "source": "B",
+            "target": "G"
+          },
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "S",
+            "target": "A"
+          },
+          {
+            "id": "e1",
+            "score": 0.6,
+            "source": "A",
+            "target": "G"
+          }
+        ],
+        "episode_id": "r077-probe",
+        "goal": "G",
+        "revision": 0,
+        "start": "S"
+      },
+      "score": 0.6,
+      "score_id": "s06",
+      "use_circuits": false,
+      "order_id": "swapped"
+    },
+    {
+      "id": "swapped-s10-on",
+      "observation": {
+        "edges": [
+          {
+            "id": "e2",
+            "score": 1.0,
+            "source": "S",
+            "target": "B"
+          },
+          {
+            "id": "e3",
+            "score": 1.0,
+            "source": "B",
+            "target": "G"
+          },
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "S",
+            "target": "A"
+          },
+          {
+            "id": "e1",
+            "score": 0.6,
+            "source": "A",
+            "target": "G"
+          }
+        ],
+        "episode_id": "r077-probe",
+        "goal": "G",
+        "revision": 0,
+        "start": "S"
+      },
+      "score": 1.0,
+      "score_id": "s10",
+      "use_circuits": true,
+      "order_id": "swapped"
+    },
+    {
+      "id": "swapped-s10-off",
+      "observation": {
+        "edges": [
+          {
+            "id": "e2",
+            "score": 1.0,
+            "source": "S",
+            "target": "B"
+          },
+          {
+            "id": "e3",
+            "score": 1.0,
+            "source": "B",
+            "target": "G"
+          },
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "S",
+            "target": "A"
+          },
+          {
+            "id": "e1",
+            "score": 0.6,
+            "source": "A",
+            "target": "G"
+          }
+        ],
+        "episode_id": "r077-probe",
+        "goal": "G",
+        "revision": 0,
+        "start": "S"
+      },
+      "score": 1.0,
+      "score_id": "s10",
+      "use_circuits": false,
+      "order_id": "swapped"
+    }
+  ],
+  "world_file": "experiments/exp-58-equal-binding/reference_world.json",
+  "world_sha256": "041e12afda54ca228bda2e026332ade2a6a069c5d0fb6c442274dd4838d7374b",
+  "parent_run": "HCR-Evidence/exp58/r077-20261001T004751Z-b3e726c9fa",
+  "parent_bundle_manifest_sha256": "1a2856c4fbcd9fdf5e9dbbc9476cd2cbdf4d5ffdfe7b702577446feb1842d9e6",
+  "memory_sha256": "ef87eadd38e56e7f0d797e5a5bef293e2229f75460627672caee12a27b097a90",
+  "predictions": {
+    "endpoint_edge_id_paths": {
+      "s00": [
+        "e0",
+        "e1"
+      ],
+      "s10": [
+        "e2",
+        "e3"
+      ]
+    },
+    "non_tie_first_selection": "same actual edge ID endpoint path in both orders",
+    "non_tie_proof": "same actual edge ID endpoint proof in both orders",
+    "tie_first_selection": "equal activations within tolerance and reversed candidate order; first native candidate selected in each order",
+    "tie_proof": "proof follows first native candidate; public edge ID path flips",
+    "off_first_selection": "first primitive edge follows first input path block in every score",
+    "off_proof": "proof follows first input path block in every score"
+  },
+  "numeric_tolerance": 2e-12,
+  "not_evaluable": "no readout, budget stop, unstable pool, missing two-complete-binding construct; tie prediction additionally requires activation equality",
+  "falsification": "one evaluable mismatch falsifies each separately frozen prediction",
+  "hypothesis_success_required": false,
+  "core_regression_runs": 1,
+  "automatic_retry": false,
+  "new_independent_samples": 0,
+  "claim_boundary": "array order only within score/gate; authored fixed native probe, not independent discovery, inhibition not isolated"
+}

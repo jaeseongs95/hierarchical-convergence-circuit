@@ -1,0 +1,12 @@
+{
+  "command": [
+    "cmd",
+    "/c",
+    "Run-HCR-R080.cmd"
+  ],
+  "started_at": "2026-10-01T03:04:31.380190+00:00",
+  "finished_at": "2026-10-01T03:04:41.498903+00:00",
+  "monotonic_duration_seconds": 10.11823689999801,
+  "returncode": 1,
+  "automatic_retry": false
+}

@@ -1,0 +1,17 @@
+{
+  "execution": "direct",
+  "sequence": [
+    "instruction-scope",
+    "scope-baseline",
+    "minimal-implementation",
+    "frozen-design-peer-review",
+    "native-and-independent-replay",
+    "change-scope-assurance",
+    "acceptance-evidence",
+    "publish-and-branch-delete-preflight"
+  ],
+  "peer": "claude-code:22ef161c-a74f-4710-a071-b702c8b3745a",
+  "delegated_implementation": false,
+  "medium_risk_local_research": true,
+  "core_changed": false
+}

@@ -1,0 +1,13 @@
+{
+  "schema": "hcc-r070-release-v1",
+  "files": {
+    "Run-HCR-R070.cmd": "cae74abed3f0a8df248abd5c4782b7513a0a56d0700223aa2d82ee8db85ffa1e",
+    "Run-HCR-R070.py": "0ea25b41dbeada969b18d6161b559e1c52fa33f88656d1f708cf24e67298e7f6",
+    "experiments/exp-51-pool-signal-boundary/design.ko.md": "06389d2e1b263b174e61ecc8662b8454378f17d949126812765a2032b6e2569e",
+    "experiments/exp-51-pool-signal-boundary/frozen_spec.json": "baae30fdb753ed2cb7062b493e12bdf16fd0b5bb71763210634c3597a486eb6f",
+    "tools/r070_pool/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "tools/r070_pool/analyze.py": "8c9d9c75ede579026b07c946a90a546ec4f92bf12b040a61142daeafd511b3bf",
+    "tools/r070_pool/pipeline.py": "762bad9921162ba73072c4f74dc677737164a98808c5f332559e9be22debb665",
+    "tools/r070_pool/verify.py": "b1056044d770c42f708616ff64a2d86dfe966616fae485b9f780a94750567d90"
+  }
+}
