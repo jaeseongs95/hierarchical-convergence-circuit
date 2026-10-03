@@ -3,7 +3,7 @@ from copy import deepcopy
 from pathlib import Path
 from tempfile import TemporaryDirectory
 from unittest.mock import patch
-from tools.r050_review_boundary.common import dump, files, load, IntegrityError
+from tools.r050_review_boundary.common import dump, files, load, canonical, IntegrityError
 from tools.r081_top_down import worker
 from tools.r081_top_down.review_gate import completed, request_for, reviewed
 
@@ -58,10 +58,10 @@ def main():
             ('blocking finding',lambda r:r.update(blocking_findings=['open'])),
             ('missing evidence',lambda r:r.update(evidence=''))]:
             bad=deepcopy(original);edit(bad)
-            real_load=load
+            real_read=Path.read_bytes
             def changed(path):
-                return bad if path==out/'external_reviews/c0.json' else real_load(path)
-            with patch('tools.r081_top_down.review_gate.load',side_effect=changed):
+                return canonical(bad) if path==out/'external_reviews/c0.json' else real_read(path)
+            with patch.object(Path,'read_bytes',changed):
                 try: reviewed(out,incoming,'writer','reviewer','c0')
                 except IntegrityError: checks.append(label+' rejected')
                 else: raise AssertionError(label)

@@ -1,0 +1,45 @@
+{
+  "schema": "r081-receipt-p2-fix-v1",
+  "request_id": "5343ce6f-87af-4561-a1ca-65c2a535790e",
+  "baseline_commit": "3c16f83d0bb0e65c4b70b422c34749cd5d416b79",
+  "baseline_manifest_sha256": "6b573eec19f46c94147651f9b6b1c5bb902e9a1924b7ad349618cfdb9d61c5ad",
+  "finding": "Static read-twice race independently reported; synthetic reproduction confirms the possibility, not a real incident.",
+  "change": "Read selected receipt bytes once; strictly parse those bytes and publish exactly those bytes. Capture cached selection once and retain exclusive publication.",
+  "strict_json": "UTF-8 object, duplicate keys and non-finite literal/overflow numbers rejected; existing size bound retained.",
+  "files": [
+    "experiments/exp-62-top-down/design.ko.md",
+    "R081_MANIFEST.json",
+    "tools/r081_top_down/gate_selftest.py",
+    "tools/r081_top_down/receipt_selftest.py",
+    "tools/r081_top_down/review_gate.py"
+  ],
+  "source_sha256": {
+    "experiments/exp-62-top-down/design.ko.md": "d5c072e8c694a6fc887c25480527c23a89741b3c56180f3df6ccbbf039d11645",
+    "R081_MANIFEST.json": "f1c5f749a1b14fa843a5b47d13a17efeeceed6af1bb74ef69bed286fddcf4d1e",
+    "tools/r081_top_down/gate_selftest.py": "53fbd9b25c227c8a03189d9cef41b1514099534d1b8740f3ea30340e5e666f65",
+    "tools/r081_top_down/receipt_selftest.py": "7d5ac14a62bc49d26695b8a04ff62c4b77adfbdb0a0e686ca69fd436375e39fa",
+    "tools/r081_top_down/review_gate.py": "64529166cc4c3a8e627b32218e98eed4b50a2b3548256794e9931ccc0df0cc54"
+  },
+  "tests": {
+    "old_implementation": "New race regression fails as expected",
+    "new_receipt_regressions": 10,
+    "existing_gate_checks": 16,
+    "passed": true,
+    "new_native_executions": 0
+  },
+  "reused_evidence": {
+    "path": "HCR-Evidence/r081-validation/new-session-20261003/validation-result.json",
+    "historical_journals": 11,
+    "reason": "audit.py, verify.py, worker.py, science spec and native implementation unchanged; historical reruns add no evidence for receipt parsing"
+  },
+  "cell_recalculation": "Frozen source audit.controls -> audit.measure -> audit_cell -> verify_execution -> packet_states; current-cell progress/candidate and True-cell R080 checks from collect. Full collect/verify only after all four cells.",
+  "identity_limit": "Hashes and reviewer-id do not authenticate the external reviewer; use verified external file transport.",
+  "acceptance": "Targeted P2 implementation and synthetic regression PASS; independent re-review pending; no actual four-condition execution.",
+  "preserved": [
+    "Run-HCR-R077.cmd",
+    "Run-HCR-R078.cmd",
+    "historical raw",
+    "prior No pinentry report",
+    "earlier validation logs"
+  ]
+}

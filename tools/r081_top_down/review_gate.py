@@ -3,8 +3,16 @@
 Receipts bind evidence; they do not authenticate the reviewer. The operator must
 obtain them through the designated reviewer's verified file channel.
 """
+import json
+from math import isfinite
 from pathlib import Path
-from tools.r050_review_boundary.common import dump, files, fingerprint, load, publish, require, sha
+from tools.r050_review_boundary.common import dump, files, fingerprint, load, publish, require, safe, sha, _unique
+
+
+def _finite_float(text):
+    number = float(text)
+    require(isfinite(number), 'Non-finite JSON: '+text)
+    return number
 
 
 def check_source(out):
@@ -34,11 +42,16 @@ def reviewed(out, review_dir, writer_id, reviewer_id, cell_id=None):
         dump(request_path, request)
     path = out/'external_reviews'/name
     incoming = Path(review_dir)/name if review_dir is not None else None
-    if not path.exists() and (incoming is None or not incoming.exists()):
+    cached = path.exists()
+    if not cached and (incoming is None or not incoming.exists()):
         print('WAITING_EXTERNAL_REVIEW:', request_path, flush=True)
         return False
-    raw = (path if path.exists() else incoming).read_bytes()
-    receipt = load(path if path.exists() else incoming)
+    raw = safe(path if cached else incoming).read_bytes()
+    require(len(raw) <= 128 * 1024 * 1024, 'Oversized review receipt')
+    receipt = json.loads(raw.decode('utf-8'), object_pairs_hook=_unique,
+                         parse_float=_finite_float,
+                         parse_constant=lambda value: require(False, 'Non-finite JSON: '+value))
+    require(isinstance(receipt, dict), 'Review receipt must be an object')
     require(bool(reviewer_id) and reviewer_id != writer_id, 'Separate reviewer identity required')
     require(receipt.get('schema') == 'hcc-r081-external-review-v1', 'External review schema')
     require(receipt.get('request') == request, 'External review target mismatch')
@@ -46,7 +59,7 @@ def reviewed(out, review_dir, writer_id, reviewer_id, cell_id=None):
     require(receipt.get('verdict') == 'PASS' and receipt.get('blocking_findings') == [], 'External review did not pass')
     require(isinstance(receipt.get('evidence'), str) and receipt['evidence'].strip(), 'Review evidence required')
     require(isinstance(receipt.get('reviewed_at'), str) and receipt['reviewed_at'].strip(), 'Review time required')
-    if not path.exists():
+    if not cached:
         publish(path, raw)
     return True
 

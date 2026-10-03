@@ -63,6 +63,14 @@ F2 순서는 외부 설계 검토 PASS → 첫 조건 → 그 조건의 외부 �
 
 외부 검토자는 동결 설계와 F1 비교의 적정성, 각 조건의 원자료 및 생산 코드와 분리된 재계산 결과, 실패 분류를 검토한다. 외부 검토 미수행은 연구 결과의 실패가 아니라 대기 상태다. 자기 검토, 다른 조건·run·소스의 결과, FAIL 또는 미해결 지적은 차단한다. 기존 결과 덮어쓰기·자동 retry·새 조건·예산 연장·학습은 없다.
 
+## 조건별 독립 재계산에 사용할 기존 경로
+
+외부 검토자는 해당 run의 `source/src`와 `source`를 Python import 경로의 앞에 두고 봉인된 검산기를 사용한다. `tools.r081_top_down.audit.controls(plan, out/'parent')`로 고정 조건·memory·config를 확인한 뒤, 현재 셀의 `evaluation/<cell-id>/inference.json`과 봉인된 world를 `audit.measure(plan, raw, cell, memory, cfg, world)`에 전달한다. 이 경로의 `audit_cell`→`verify_execution`→`hcr.evaluation.review_audit.packet_states`가 생산 kernel을 실행하지 않고 상태·tick·flag·비용·readout·proof를 다시 확인한다.
+
+이 호출만으로 해당 셀 검토가 모두 끝나는 것은 아니다. 기존 `audit.collect`의 셀 루프에 있는 progress packet 개수·마지막 packet 동일성·각 packet의 `assert_flags`와 `packet_states`·candidate 파일 동일성도 현재 셀에 적용한다. True 재현 셀에는 같은 루프의 R080 journal events, final_support, cost, tick_split, raw_value 대조를 적용한다. 조건별 검토자는 실행한 재계산 명령·반환 결과·검토 대상 해시를 외부 검토 근거에 남긴다.
+
+`collect(out)` 전체와 `verify.py`는 네 조건 및 paired 비교가 준비된 뒤의 최종 검사다. 이 전체 집계가 아직 불가능하다는 이유로 첫 셀의 외부 검토를 생략하거나 내부 함수 통과를 외부 PASS로 바꾸지 않는다. 별도 실험·생산 실행·새 검증 프레임워크는 추가하지 않는다. receipt는 한 번 읽은 UTF-8 bytes를 중복 키·비정상 숫자 거절 규칙으로 검증하고 같은 bytes를 보존한다. 파일 내용 결속은 검토자 신원 인증을 대신하지 않는다.
+
 ## 주장 범위
 
 한 authored native graph와 동일 memory의 유한 신호 묶음 개입이다. 개별 feedback edge, gain 또는 자기항의 효과를 분리하지 않았다. 정확 임계값·단조성·연속 bifurcation·고정점 유일성·LLM 내부·인간 인지·생물학·전력 또는 하드웨어 효율로 일반화하지 않는다. 결과 뒤에는 원관찰→가능 원인→paired 결과→현재 주장→다음 판별 후보 순서로 기록하며 조건을 추가하지 않는다.

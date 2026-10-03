@@ -1,0 +1,1 @@
+{"verified": true, "checks": ["FAIL snapshot rejected despite later PASS", "PASS snapshot preserved despite later FAIL", "duplicate-key rejected", "nested-duplicate rejected", "NaN rejected", "Infinity rejected", "negative-Infinity rejected", "overflow rejected", "finite control preserves exact bytes", "concurrent publication fails closed"], "new_native_executions": 0}
