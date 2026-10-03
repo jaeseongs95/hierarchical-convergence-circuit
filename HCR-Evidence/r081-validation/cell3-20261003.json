@@ -1,0 +1,386 @@
+{
+  "schema": "r081-cell-handoff-v1",
+  "request_id": "54476126-1075-4f26-babd-26962c45e389",
+  "status": "WAITING_EXTERNAL_REVIEW_OF_CELL3",
+  "run_id": "r081-20261003T132019Z-6b7e0ed896",
+  "run_directory": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\HCR-Evidence\\exp62\\r081-20261003T132019Z-6b7e0ed896",
+  "cell_id": "swapped-s004-td1-off",
+  "baseline_commit": "7aba0310f1dd17ab546edb3aeeeedb8e6028394c",
+  "source_checkout_commit": "77a850a84a73db2bf7dc863b21f31a904aa8105b",
+  "review_request": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\HCR-Evidence\\exp62\\r081-20261003T132019Z-6b7e0ed896\\review_requests\\swapped-s004-td1-off.json",
+  "review_request_file_sha256": "0905de5e96490d2160c52648d1464a8cfd13dff1b46915660b0b22631dc94f82",
+  "request": {
+    "plan_sha256": "90c1bceaa817c05d7a7d3f07bff11523f526d1443af8603260c55e23a83c82d5",
+    "raw_sha256": "67e6674ee8e2fc6258b63aa5cd46324ed811e915a35d65ab9d36f25d797fd158",
+    "run_id": "r081-20261003T132019Z-6b7e0ed896",
+    "schema": "hcc-r081-external-review-request-v1",
+    "source_sha256": "2d41e806bb2ae83abf159fc551b8f32b2cac98b1670beae5c0b2fbae9849f5d5",
+    "subject": "swapped-s004-td1-off"
+  },
+  "inference": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\HCR-Evidence\\exp62\\r081-20261003T132019Z-6b7e0ed896\\evaluation\\swapped-s004-td1-off\\inference.json",
+  "inference_sha256": "97daaac49c5edac743bb4d856fd10ed319104d1df61d444ca5941fc92e6c5c64",
+  "accepted_design_receipt": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\HCR-Evidence\\exp62\\r081-20261003T132019Z-6b7e0ed896\\external_reviews\\design.json",
+  "accepted_design_receipt_sha256": "979dd16881f680c958a0b74cd814b7536ec4b01e37e67146a4f92f000b81a4ad",
+  "accepted_cell2_receipt": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\HCR-Evidence\\exp62\\r081-20261003T132019Z-6b7e0ed896\\external_reviews\\swapped-s003-td0-off.json",
+  "accepted_cell2_receipt_sha256": "b0f8394b71607927c344587cf67accd4d154e996a08087127c3805d391b9de63",
+  "completed_cell_ids": [
+    "swapped-s003-td1-off",
+    "swapped-s003-td0-off",
+    "swapped-s004-td1-off"
+  ],
+  "total_native_cells": 3,
+  "first_two_cells_raw_preserved": true,
+  "internal_recalculation": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\HCR-Evidence\\exp62\\r081-20261003T132019Z-6b7e0ed896\\validation\\cell3-internal-recalculation.json",
+  "internal_recalculation_sha256": "1de87dd30f4641d8bc0bcbfb720d77e6b024965e1272301e8b3a2b544e2ea772",
+  "raw_files": {
+    "inference.json": "97daaac49c5edac743bb4d856fd10ed319104d1df61d444ca5941fc92e6c5c64",
+    "native_timing.json": "536c0b60e2738b10aa81e6799731630fa48420dae5f9aace8a8ad4007751fb7a",
+    "progress/candidate.json": "c3662497caca717e3df6a4ae68640306020aef0ce43c9ec78103bebaa00fe6f4",
+    "progress/step-000-init.json": "f11df44ad737caa7dc023ffa7986f6be93b3a5ed9149375d576116e1a3b06211",
+    "progress/step-001-begin.json": "f1501928b000c2564ce7115214498b0f9033305b14ad5a7da96371547a076823",
+    "progress/step-002-advance.json": "e41ca503cb72604395417aed6d6afff22224a710afdd96d030fe68d7676f43ff",
+    "progress/step-003-advance.json": "6e1b2ba9256a12e58a0d565fd67f341b1da69dcbeb66f8da41fc1b9100fb283d"
+  },
+  "native_timing": {
+    "duration_seconds": 0.16231800000241492,
+    "finished_at": "2026-10-03T14:44:56.004089+00:00",
+    "started_at": "2026-10-03T14:44:55.841950+00:00"
+  },
+  "command": [
+    "cmd.exe",
+    "/d",
+    "/c",
+    "Run-HCR-R081.cmd",
+    "--resume",
+    "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\HCR-Evidence\\exp62\\r081-20261003T132019Z-6b7e0ed896",
+    "--writer-id",
+    "01a101a3-8b68-71ae-8946-4575589ab08d",
+    "--reviewer-id",
+    "01a0fb43-50f6-725d-be5a-5eeb6893b0de",
+    "--review-dir",
+    "C:\\Users\\sjs95\\Documents\\Codex\\2026-10-03\\task-6\\cell3\\received-review"
+  ],
+  "native_invocations_this_request": 1,
+  "additional_cells_executed": 0,
+  "source_code_changes": 0,
+  "science_conditions_changes": 0,
+  "external_design_review": true,
+  "external_cell_review": false,
+  "internal_recalculation_verified": true,
+  "independent_researcher": false,
+  "R080_exact_journal_reproduction": true,
+  "evidence_role": "reproduction",
+  "progress_packets_replayed": 4,
+  "first_decision": {
+    "active_links_per_tick": 8,
+    "advance_index": 2,
+    "boundary_cost": {
+      "binding_checks": 0,
+      "binding_operations": 0,
+      "candidate_circuits": 0,
+      "circuit_groups_instantiated": 0,
+      "circuit_reuses": 0,
+      "compilation_items": 0,
+      "convergence_ticks": 111,
+      "dynamic_groups_created": 7,
+      "dynamic_links_created": 8,
+      "expansions": 2,
+      "frontier_retirements": 0,
+      "graph_edges_created": 3,
+      "graph_nodes_created": 4,
+      "group_updates": 777,
+      "kernel_ticks": 111,
+      "learning_updates": 0,
+      "memory_write_items": 0,
+      "normalization_ops": 777,
+      "observation_requests": 0,
+      "pool_calls": 0,
+      "primitive_candidates": 3,
+      "proof_nodes_reconstructed": 0,
+      "proof_reconstruction_cost": 0,
+      "recall_checks": 0,
+      "search_edge_checks": 0,
+      "signal_events": 888,
+      "signal_transmissions": 888,
+      "storage_bytes": 0,
+      "storage_cost": 0,
+      "topology_edge_checks": 16,
+      "verification_checks": 0,
+      "wall_seconds": 0.0
+    },
+    "candidate_value": true,
+    "category": "stable_true",
+    "convergence": {
+      "margin": 0.9681375110129884,
+      "residual": 3.2569972474583153e-07,
+      "stable_steps": 4,
+      "status": "stable_decision",
+      "ticks": 111
+    },
+    "drives": {
+      "e:0": 4.0,
+      "e:1": 0.16,
+      "e:2": 4.0,
+      "e:3": 2.4,
+      "goal": 0.0
+    },
+    "e3_goal_connected": true,
+    "e3_slot": "e:1",
+    "event_index": 8,
+    "event_seq": 8,
+    "final_state": {
+      "e:0": 0.9998928663646836,
+      "e:1": 0.7700093073142993,
+      "e:2": 0.9997861041647179,
+      "e:3": 0.9947553054285001,
+      "goal": 0.9840687555064942,
+      "p:0:0": 0.993873496018295,
+      "p:0:1": 0.9609702444238273
+    },
+    "frontier": [
+      {
+        "node": {
+          "node_id": "node:fc5672d78852d09166bd:2",
+          "revision": 0,
+          "semantic_id": "A"
+        },
+        "path": [
+          2
+        ],
+        "uses": [],
+        "visited": [
+          "S",
+          "A"
+        ]
+      }
+    ],
+    "frontier_public_paths": [
+      [
+        "e0"
+      ]
+    ],
+    "generation": 3,
+    "goal_activation": 0.9840687555064942,
+    "goal_dependency_group_ids": [
+      "e:0",
+      "e:1",
+      "goal",
+      "p:0:0",
+      "p:0:1"
+    ],
+    "graph_complete": false,
+    "link_terms": [
+      {
+        "kind": "support",
+        "last_tick_centered_link_input": 1.999571465448354,
+        "source": "e:0",
+        "target": "p:0:0",
+        "terminal_centered_link_term": 1.9995714654587342,
+        "terminal_uncentered_activation_product": 1.999785732729367,
+        "transmitted": true,
+        "weight": 2.0,
+        "would_be_last_tick_centered_term": 1.999571465448354
+      },
+      {
+        "kind": "top_down",
+        "last_tick_centered_link_input": 0.3457114425408444,
+        "source": "p:0:0",
+        "target": "e:0",
+        "terminal_centered_link_term": 0.3457114472128065,
+        "terminal_uncentered_activation_product": 0.3478557236064032,
+        "transmitted": true,
+        "weight": 0.35,
+        "would_be_last_tick_centered_term": 0.3457114425408444
+      },
+      {
+        "kind": "support",
+        "last_tick_centered_link_input": 1.0800359264582982,
+        "source": "e:1",
+        "target": "p:0:1",
+        "terminal_centered_link_term": 1.0800372292571971,
+        "terminal_uncentered_activation_product": 1.5400186146285986,
+        "transmitted": true,
+        "weight": 2.0,
+        "would_be_last_tick_centered_term": 1.0800359264582982
+      },
+      {
+        "kind": "top_down",
+        "last_tick_centered_link_input": 0.322678962521284,
+        "source": "p:0:1",
+        "target": "e:1",
+        "terminal_centered_link_term": 0.3226791710966791,
+        "terminal_uncentered_activation_product": 0.33633958554833954,
+        "transmitted": true,
+        "weight": 0.35,
+        "would_be_last_tick_centered_term": 0.322678962521284
+      },
+      {
+        "kind": "support",
+        "last_tick_centered_link_input": 1.975493957376254,
+        "source": "p:0:0",
+        "target": "p:0:1",
+        "terminal_centered_link_term": 1.97549398407318,
+        "terminal_uncentered_activation_product": 1.98774699203659,
+        "transmitted": true,
+        "weight": 2.0,
+        "would_be_last_tick_centered_term": 1.975493957376254
+      },
+      {
+        "kind": "top_down",
+        "last_tick_centered_link_input": 0.322678962521284,
+        "source": "p:0:1",
+        "target": "p:0:0",
+        "terminal_centered_link_term": 0.3226791710966791,
+        "terminal_uncentered_activation_product": 0.33633958554833954,
+        "transmitted": true,
+        "weight": 0.35,
+        "would_be_last_tick_centered_term": 0.322678962521284
+      },
+      {
+        "kind": "support",
+        "last_tick_centered_link_input": 1.8438797858359086,
+        "source": "p:0:1",
+        "target": "goal",
+        "terminal_centered_link_term": 1.8438809776953091,
+        "terminal_uncentered_activation_product": 1.9219404888476546,
+        "transmitted": true,
+        "weight": 2.0,
+        "would_be_last_tick_centered_term": 1.8438797858359086
+      },
+      {
+        "kind": "top_down",
+        "last_tick_centered_link_input": 0.3388480584910718,
+        "source": "goal",
+        "target": "p:0:1",
+        "terminal_centered_link_term": 0.3388481288545459,
+        "terminal_uncentered_activation_product": 0.34442406442727297,
+        "transmitted": true,
+        "weight": 0.35,
+        "would_be_last_tick_centered_term": 0.3388480584910718
+      }
+    ],
+    "measurement_status": "measured",
+    "network_id": "network-8",
+    "pending_value": true,
+    "program_digest": "eff846df37d8cc635cb29c204281bbd23aa3226a636b4c8ff82ce2bb44a6343a",
+    "progress_event_seq": null,
+    "progress_mismatch_kind": null,
+    "ready": true,
+    "route_public_paths": [
+      [
+        "e2",
+        "e3"
+      ]
+    ],
+    "route_slot_paths": [
+      [
+        0,
+        1
+      ]
+    ],
+    "settled_event_seq": 120,
+    "stored_links": 8,
+    "subsequent_expansion_count": 0,
+    "top_down": true,
+    "transition_event_end": 121,
+    "transition_event_start": 6,
+    "unsupported_gate": false
+  },
+  "raw_value": true,
+  "final_support": {
+    "final": "r:0:1",
+    "final_path_index": 0,
+    "final_support_node_ids": [
+      "f:0:1",
+      "f:1:1",
+      "r:0:0",
+      "r:0:1"
+    ],
+    "final_support_nodes": [
+      {
+        "edge_id": "e2",
+        "id": "f:0:1",
+        "parents": [],
+        "path_index": null,
+        "rule": "assumed_open"
+      },
+      {
+        "edge_id": "e3",
+        "id": "f:1:1",
+        "parents": [],
+        "path_index": null,
+        "rule": "assumed_open"
+      },
+      {
+        "edge_id": null,
+        "id": "r:0:0",
+        "parents": [
+          "f:0:1"
+        ],
+        "path_index": 0,
+        "rule": "start_edge"
+      },
+      {
+        "edge_id": null,
+        "id": "r:0:1",
+        "parents": [
+          "r:0:0",
+          "f:1:1"
+        ],
+        "path_index": 0,
+        "rule": "extend_path"
+      }
+    ],
+    "measurement_status": "measured",
+    "path_inventory": [
+      [
+        "e2",
+        "e3"
+      ]
+    ],
+    "recomputed_D_DAG": 2,
+    "selected_edge_id_path": [
+      "e2",
+      "e3"
+    ]
+  },
+  "cost": {
+    "binding_checks": 0,
+    "binding_operations": 0,
+    "candidate_circuits": 0,
+    "circuit_groups_instantiated": 0,
+    "circuit_reuses": 0,
+    "compilation_items": 0,
+    "dynamic_groups_created": 7,
+    "dynamic_links_created": 8,
+    "expansions": 2,
+    "frontier_retirements": 0,
+    "graph_edges_created": 3,
+    "graph_nodes_created": 4,
+    "group_updates": 777,
+    "kernel_ticks": 111,
+    "learning_updates": 0,
+    "memory_write_items": 0,
+    "normalization_ops": 777,
+    "observation_requests": 0,
+    "pool_calls": 0,
+    "primitive_candidates": 3,
+    "proof_nodes_reconstructed": 4,
+    "recall_checks": 0,
+    "search_edge_checks": 0,
+    "signal_transmissions": 888,
+    "storage_bytes": 0,
+    "topology_edge_checks": 16,
+    "verification_checks": 0
+  },
+  "tick_split": {
+    "decision": 111,
+    "pool": 0
+  },
+  "limits": {
+    "max_advances_per_session": 16,
+    "max_kernel_ticks_per_session": 5120
+  },
+  "kernel_max_ticks": 160,
+  "remaining": "Actual independent review of this cell is required before cell 4. No four-cell conclusion, paired hypothesis analysis, or final scientific approval is claimed."
+}
