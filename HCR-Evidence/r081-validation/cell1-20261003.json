@@ -1,0 +1,382 @@
+{
+  "schema": "r081-cell-handoff-v1",
+  "request_id": "083a61ae-e1a0-4858-bc36-45894b23e610",
+  "status": "WAITING_EXTERNAL_REVIEW_OF_CELL1",
+  "run_id": "r081-20261003T132019Z-6b7e0ed896",
+  "run_directory": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\HCR-Evidence\\exp62\\r081-20261003T132019Z-6b7e0ed896",
+  "cell_id": "swapped-s003-td1-off",
+  "baseline_commit": "06c8f8eff72e08341d10512acc17a7be08d21745",
+  "source_checkout_commit": "77a850a84a73db2bf7dc863b21f31a904aa8105b",
+  "review_request": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\HCR-Evidence\\exp62\\r081-20261003T132019Z-6b7e0ed896\\review_requests\\swapped-s003-td1-off.json",
+  "review_request_file_sha256": "a0cbe41ef1ec9dbac2f16d06430106f8ac1b1d543668f8ac7ee29dc3883411b1",
+  "request": {
+    "plan_sha256": "90c1bceaa817c05d7a7d3f07bff11523f526d1443af8603260c55e23a83c82d5",
+    "raw_sha256": "157913a49e1a04ab9ebe51e7c1caa18a7ba91411da790902f7e3c6cd7f4dd4d2",
+    "run_id": "r081-20261003T132019Z-6b7e0ed896",
+    "schema": "hcc-r081-external-review-request-v1",
+    "source_sha256": "2d41e806bb2ae83abf159fc551b8f32b2cac98b1670beae5c0b2fbae9849f5d5",
+    "subject": "swapped-s003-td1-off"
+  },
+  "inference": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\HCR-Evidence\\exp62\\r081-20261003T132019Z-6b7e0ed896\\evaluation\\swapped-s003-td1-off\\inference.json",
+  "inference_sha256": "56ac3c9ccb28ade542bdcfb613e8bf4ca326c86b900aee8c05e2b9eefd566fc1",
+  "accepted_design_receipt": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\HCR-Evidence\\exp62\\r081-20261003T132019Z-6b7e0ed896\\external_reviews\\design.json",
+  "accepted_design_receipt_sha256": "979dd16881f680c958a0b74cd814b7536ec4b01e37e67146a4f92f000b81a4ad",
+  "internal_recalculation": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\HCR-Evidence\\exp62\\r081-20261003T132019Z-6b7e0ed896\\validation\\cell1-internal-recalculation.json",
+  "internal_recalculation_sha256": "b7596113ea91fa09342381fda6104932422f61831fbed5abedbc759cf9674517",
+  "raw_files": {
+    "inference.json": "56ac3c9ccb28ade542bdcfb613e8bf4ca326c86b900aee8c05e2b9eefd566fc1",
+    "native_timing.json": "4125d8465beed1d466882894110c03fb5aca7a638fe7de896b5fb9d46bbe0d9e",
+    "progress/candidate.json": "f1dcba898e1a635517afdbd9d8227820cd841e9501b302b50f043c79a27334eb",
+    "progress/step-000-init.json": "9fdca7fb4e842e33bd49fd7251decb076aeb77e4471e27a39eaf67021e862cc3",
+    "progress/step-001-begin.json": "ee36aefabb6ed22da13747dbea29d35b8fd4e367afc9676b3c7d9e1dc125762c",
+    "progress/step-002-advance.json": "8d9cd6331379bf324a9df0f7e2030507fd0e6119ebd5bc60745d4b45dacc1414",
+    "progress/step-003-advance.json": "feb9f0a566684fd82488e0e4d4909614261b8f98490ef172969574b5f12eaeaa",
+    "progress/step-004-advance.json": "578f6203cc1d8dc57cb0f8b8f322f924c3696256e9fb9715534988e8851fd976"
+  },
+  "native_timing": {
+    "duration_seconds": 0.25884879999648547,
+    "finished_at": "2026-10-03T13:42:49.959794+00:00",
+    "started_at": "2026-10-03T13:42:49.701408+00:00"
+  },
+  "command": [
+    "cmd.exe",
+    "/d",
+    "/c",
+    "Run-HCR-R081.cmd",
+    "--resume",
+    "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\HCR-Evidence\\exp62\\r081-20261003T132019Z-6b7e0ed896",
+    "--writer-id",
+    "01a101a3-8b68-71ae-8946-4575589ab08d",
+    "--reviewer-id",
+    "01a0fb43-50f6-725d-be5a-5eeb6893b0de",
+    "--review-dir",
+    "C:\\Users\\sjs95\\Documents\\Codex\\2026-10-03\\task-6\\cell1\\received-review"
+  ],
+  "native_invocations_this_request": 1,
+  "additional_cells_executed": 0,
+  "source_code_changes": 0,
+  "science_conditions_changes": 0,
+  "external_design_review": true,
+  "external_cell_review": false,
+  "internal_recalculation_verified": true,
+  "independent_researcher": false,
+  "R080_exact_journal_reproduction": true,
+  "progress_packets_replayed": 5,
+  "first_decision": {
+    "active_links_per_tick": 8,
+    "advance_index": 2,
+    "boundary_cost": {
+      "binding_checks": 0,
+      "binding_operations": 0,
+      "candidate_circuits": 0,
+      "circuit_groups_instantiated": 0,
+      "circuit_reuses": 0,
+      "compilation_items": 0,
+      "convergence_ticks": 95,
+      "dynamic_groups_created": 7,
+      "dynamic_links_created": 8,
+      "expansions": 2,
+      "frontier_retirements": 0,
+      "graph_edges_created": 3,
+      "graph_nodes_created": 4,
+      "group_updates": 665,
+      "kernel_ticks": 95,
+      "learning_updates": 0,
+      "memory_write_items": 0,
+      "normalization_ops": 665,
+      "observation_requests": 0,
+      "pool_calls": 0,
+      "primitive_candidates": 3,
+      "proof_nodes_reconstructed": 0,
+      "proof_reconstruction_cost": 0,
+      "recall_checks": 0,
+      "search_edge_checks": 0,
+      "signal_events": 760,
+      "signal_transmissions": 760,
+      "storage_bytes": 0,
+      "storage_cost": 0,
+      "topology_edge_checks": 16,
+      "verification_checks": 0,
+      "wall_seconds": 0.0
+    },
+    "candidate_value": false,
+    "category": "stable_false",
+    "convergence": {
+      "margin": 0.9262333595346206,
+      "residual": 7.389189175532884e-07,
+      "stable_steps": 4,
+      "status": "stable_decision",
+      "ticks": 95
+    },
+    "drives": {
+      "e:0": 4.0,
+      "e:1": 0.12,
+      "e:2": 4.0,
+      "e:3": 2.4,
+      "goal": 0.0
+    },
+    "e3_goal_connected": true,
+    "e3_slot": "e:1",
+    "event_index": 8,
+    "event_seq": 8,
+    "final_state": {
+      "e:0": 0.9998908886615757,
+      "e:1": 0.41775282703519245,
+      "e:2": 0.9997861041647179,
+      "e:3": 0.9947553054285001,
+      "goal": 0.03688332023268971,
+      "p:0:0": 0.9808077968886428,
+      "p:0:1": 0.1443006884372346
+    },
+    "frontier": [
+      {
+        "node": {
+          "node_id": "node:a565af1320ba8ddc93a7:2",
+          "revision": 0,
+          "semantic_id": "A"
+        },
+        "path": [
+          2
+        ],
+        "uses": [],
+        "visited": [
+          "S",
+          "A"
+        ]
+      }
+    ],
+    "frontier_public_paths": [
+      [
+        "e0"
+      ]
+    ],
+    "generation": 3,
+    "goal_activation": 0.03688332023268971,
+    "goal_dependency_group_ids": [
+      "e:0",
+      "e:1",
+      "goal",
+      "p:0:0",
+      "p:0:1"
+    ],
+    "graph_complete": false,
+    "link_terms": [
+      {
+        "kind": "support",
+        "last_tick_centered_link_input": 1.9995635546270174,
+        "source": "e:0",
+        "target": "p:0:0",
+        "terminal_centered_link_term": 1.9995635546463029,
+        "terminal_uncentered_activation_product": 1.9997817773231514,
+        "transmitted": true,
+        "weight": 2.0,
+        "would_be_last_tick_centered_term": 1.9995635546270174
+      },
+      {
+        "kind": "top_down",
+        "last_tick_centered_link_input": 0.3365654402797199,
+        "source": "p:0:0",
+        "target": "e:0",
+        "terminal_centered_link_term": 0.33656545782204994,
+        "terminal_uncentered_activation_product": 0.34328272891102496,
+        "transmitted": true,
+        "weight": 0.35,
+        "would_be_last_tick_centered_term": 0.3365654402797199
+      },
+      {
+        "kind": "support",
+        "last_tick_centered_link_input": -0.3289904419819569,
+        "source": "e:1",
+        "target": "p:0:1",
+        "terminal_centered_link_term": -0.3289886918592302,
+        "terminal_uncentered_activation_product": 0.8355056540703849,
+        "transmitted": true,
+        "weight": 2.0,
+        "would_be_last_tick_centered_term": -0.3289904419819569
+      },
+      {
+        "kind": "top_down",
+        "last_tick_centered_link_input": -0.24899003533717806,
+        "source": "p:0:1",
+        "target": "e:1",
+        "terminal_centered_link_term": -0.24898951809393577,
+        "terminal_uncentered_activation_product": 0.050505240953032104,
+        "transmitted": true,
+        "weight": 0.35,
+        "would_be_last_tick_centered_term": -0.24899003533717806
+      },
+      {
+        "kind": "support",
+        "last_tick_centered_link_input": 1.9232310873126854,
+        "source": "p:0:0",
+        "target": "p:0:1",
+        "terminal_centered_link_term": 1.9232311875545713,
+        "terminal_uncentered_activation_product": 1.9616155937772857,
+        "transmitted": true,
+        "weight": 2.0,
+        "would_be_last_tick_centered_term": 1.9232310873126854
+      },
+      {
+        "kind": "top_down",
+        "last_tick_centered_link_input": -0.24899003533717806,
+        "source": "p:0:1",
+        "target": "p:0:0",
+        "terminal_centered_link_term": -0.24898951809393577,
+        "terminal_uncentered_activation_product": 0.050505240953032104,
+        "transmitted": true,
+        "weight": 0.35,
+        "would_be_last_tick_centered_term": -0.24899003533717806
+      },
+      {
+        "kind": "support",
+        "last_tick_centered_link_input": -1.4228002019267318,
+        "source": "p:0:1",
+        "target": "goal",
+        "terminal_centered_link_term": -1.4227972462510616,
+        "terminal_uncentered_activation_product": 0.2886013768744692,
+        "transmitted": true,
+        "weight": 2.0,
+        "would_be_last_tick_centered_term": -1.4228002019267318
+      },
+      {
+        "kind": "top_down",
+        "last_tick_centered_link_input": -0.3241818687277954,
+        "source": "goal",
+        "target": "p:0:1",
+        "terminal_centered_link_term": -0.3241816758371172,
+        "terminal_uncentered_activation_product": 0.012909162081441399,
+        "transmitted": true,
+        "weight": 0.35,
+        "would_be_last_tick_centered_term": -0.3241818687277954
+      }
+    ],
+    "measurement_status": "measured",
+    "network_id": "network-8",
+    "pending_value": null,
+    "program_digest": "eff846df37d8cc635cb29c204281bbd23aa3226a636b4c8ff82ce2bb44a6343a",
+    "progress_event_seq": 105,
+    "progress_mismatch_kind": "negative_requires_dependency_coverage",
+    "ready": false,
+    "route_public_paths": [
+      [
+        "e2",
+        "e3"
+      ]
+    ],
+    "route_slot_paths": [
+      [
+        0,
+        1
+      ]
+    ],
+    "settled_event_seq": 104,
+    "stored_links": 8,
+    "subsequent_expansion_count": 1,
+    "top_down": true,
+    "transition_event_end": 106,
+    "transition_event_start": 6,
+    "unsupported_gate": false
+  },
+  "raw_value": true,
+  "final_support": {
+    "final": "r:1:1",
+    "final_path_index": 1,
+    "final_support_node_ids": [
+      "f:2:1",
+      "f:3:1",
+      "r:1:0",
+      "r:1:1"
+    ],
+    "final_support_nodes": [
+      {
+        "edge_id": "e0",
+        "id": "f:2:1",
+        "parents": [],
+        "path_index": null,
+        "rule": "assumed_open"
+      },
+      {
+        "edge_id": "e1",
+        "id": "f:3:1",
+        "parents": [],
+        "path_index": null,
+        "rule": "assumed_open"
+      },
+      {
+        "edge_id": null,
+        "id": "r:1:0",
+        "parents": [
+          "f:2:1"
+        ],
+        "path_index": 1,
+        "rule": "start_edge"
+      },
+      {
+        "edge_id": null,
+        "id": "r:1:1",
+        "parents": [
+          "r:1:0",
+          "f:3:1"
+        ],
+        "path_index": 1,
+        "rule": "extend_path"
+      }
+    ],
+    "measurement_status": "measured",
+    "path_inventory": [
+      [
+        "e2",
+        "e3"
+      ],
+      [
+        "e0",
+        "e1"
+      ]
+    ],
+    "recomputed_D_DAG": 2,
+    "selected_edge_id_path": [
+      "e0",
+      "e1"
+    ]
+  },
+  "cost": {
+    "binding_checks": 0,
+    "binding_operations": 0,
+    "candidate_circuits": 0,
+    "circuit_groups_instantiated": 0,
+    "circuit_reuses": 0,
+    "compilation_items": 0,
+    "dynamic_groups_created": 16,
+    "dynamic_links_created": 24,
+    "expansions": 3,
+    "frontier_retirements": 0,
+    "graph_edges_created": 4,
+    "graph_nodes_created": 5,
+    "group_updates": 1178,
+    "kernel_ticks": 152,
+    "learning_updates": 0,
+    "memory_write_items": 0,
+    "normalization_ops": 1178,
+    "observation_requests": 0,
+    "pool_calls": 0,
+    "primitive_candidates": 4,
+    "proof_nodes_reconstructed": 4,
+    "recall_checks": 0,
+    "search_edge_checks": 0,
+    "signal_transmissions": 1672,
+    "storage_bytes": 0,
+    "topology_edge_checks": 24,
+    "verification_checks": 0
+  },
+  "tick_split": {
+    "decision": 152,
+    "pool": 0
+  },
+  "limits": {
+    "max_advances_per_session": 16,
+    "max_kernel_ticks_per_session": 5120
+  },
+  "kernel_max_ticks": 160,
+  "record_generation_note": "Initial local report serialization passed a Path to the byte-hash helper; corrected locally and repeated only read-only recalculation. Native execution was not repeated.",
+  "remaining": "Actual independent review of this cell is required before cell 2. No four-cell conclusion, paired hypothesis analysis, or final scientific approval is claimed."
+}
