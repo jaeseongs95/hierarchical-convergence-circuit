@@ -1,0 +1,15 @@
+{
+  "schema": "hcc-r072-release-v1",
+  "files": {
+    "Run-HCR-R072.cmd": "ea671043727fa61376d8ded7d6a6df720fc836899f1efc8b009e54e6a3225d68",
+    "Run-HCR-R072.py": "496efd33811ea1cd1b9e421783a3b161a6f03cf34af7d469cfa1992bdcaf0c19",
+    "tools/r072_range/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "tools/r072_range/audit.py": "329bfd0cb545e90ea1b759613993dec6d2e2f8cb8c7411362b908118c1b25d14",
+    "tools/r072_range/pipeline.py": "8b3c4c3cd459d63fd8590956a228a820e7166a8ca9f353dc3de69703e7435471",
+    "tools/r072_range/verify.py": "e1343418b6885f809194644584689b8a87a97d4114dc472375c4e0339f880ec5",
+    "tools/r072_range/worker.py": "d80ab1849de3af3a1742a5fd2e09e639dd3aa8c18a13000636b18d57deac7cbc",
+    "experiments/exp-53-selection-input-range/design.ko.md": "195b2b348f8cba3c3b02874573d92f1b77984eff50053b6851ca2a4aeddf8e84",
+    "experiments/exp-53-selection-input-range/frozen_spec.json": "e6713a2efc481194b223c10ed554253eceba678d93ce1996c707a8c5cf09af94",
+    "experiments/exp-53-selection-input-range/reference_world.json": "6ac404fb511d2d3146e5cdd74bc564eb5f92b87affd53cc62c34817ffdb84b83"
+  }
+}

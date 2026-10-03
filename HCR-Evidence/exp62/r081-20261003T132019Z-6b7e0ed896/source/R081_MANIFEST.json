@@ -1,0 +1,17 @@
+{
+  "schema": "hcc-r081-source-manifest-v1",
+  "files": {
+    "Run-HCR-R081.py": "dcbbad350f4b5a7430dee06eb1e40c4f115ccdebd33b82baec32c369f5f8157e",
+    "Run-HCR-R081.cmd": "56972b19ca328511e4d8b394e61002dd116c4637644cfb2680d70c080ba6d11a",
+    "tools/r081_top_down/__init__.py": "3f73f5d16ab45f4f8c1b04bee64a0af89445a21d13d07daef7d819ab7d419a58",
+    "tools/r081_top_down/audit.py": "7f6fa53ac25069cadba49e772c1e1b573dcb94c6e82c64c99f26b26e7eeee198",
+    "tools/r081_top_down/pipeline.py": "d1c1739d7b9fa785ff330f0c111d46442c26cd9b4f06e4382bb73dec48a38afc",
+    "tools/r081_top_down/verify.py": "c03773d941cca6d25f8956c18d23a974afed365c5d8b31fb6f653b2eb24eef9d",
+    "tools/r081_top_down/worker.py": "483ccb37016af182a597a2430b4911eb24dddf79076987bac4473f8e984900f3",
+    "experiments/exp-62-top-down/design.ko.md": "d5c072e8c694a6fc887c25480527c23a89741b3c56180f3df6ccbbf039d11645",
+    "experiments/exp-62-top-down/frozen_spec.json": "405225d50349b0b14fefcc1cab650f6f2b7e766f73bcd3f7a4b3d8fb572ae6c5",
+    "tools/r081_top_down/review_gate.py": "64529166cc4c3a8e627b32218e98eed4b50a2b3548256794e9931ccc0df0cc54",
+    "tools/r081_top_down/gate_selftest.py": "53fbd9b25c227c8a03189d9cef41b1514099534d1b8740f3ea30340e5e666f65",
+    "tools/r081_top_down/receipt_selftest.py": "7d5ac14a62bc49d26695b8a04ff62c4b77adfbdb0a0e686ca69fd436375e39fa"
+  }
+}

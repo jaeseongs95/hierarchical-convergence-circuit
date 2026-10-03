@@ -1,0 +1,391 @@
+{
+  "config": {
+    "activation_threshold": 0.55,
+    "circuit_inhibition": 0.15,
+    "kernel": {
+      "damping": 0.45,
+      "evidence_gain": 4.0,
+      "inhibition": 0.2,
+      "learning_rate": 0.25,
+      "margin_threshold": 0.3,
+      "max_circuits": 16,
+      "max_edges": 8,
+      "max_groups": 32,
+      "max_observation_requests": 2,
+      "max_path_length": 4,
+      "max_paths": 4,
+      "max_search": 2048,
+      "max_ticks": 160,
+      "min_valid_episodes": 3,
+      "patience": 4,
+      "prior_gain": 0.0,
+      "relation_gain": 2.0,
+      "residual_tolerance": 1e-06,
+      "self_excitation": 0.25,
+      "temperature": 1.0,
+      "top_down_gain": 0.35,
+      "weakening": 0.2
+    },
+    "max_binding_checks": 1024,
+    "max_expansions": 64,
+    "max_frontier": 32,
+    "max_pool_candidates": 4,
+    "mismatch_threshold": 0.8,
+    "pattern_lengths": [
+      2
+    ]
+  },
+  "config_sha256": "03d48e78cdcdf2323b1c092c36734c5c267a797ef2a23289b5a338e2c0da30f4",
+  "limits": {
+    "max_advances_per_session": 16,
+    "max_kernel_ticks_per_session": 5120
+  },
+  "world_file": "experiments/exp-58-equal-binding/reference_world.json",
+  "world_sha256": "041e12afda54ca228bda2e026332ade2a6a069c5d0fb6c442274dd4838d7374b",
+  "parent_run": "HCR-Evidence/exp58/r077-20261001T004751Z-b3e726c9fa",
+  "parent_bundle_manifest_sha256": "1a2856c4fbcd9fdf5e9dbbc9476cd2cbdf4d5ffdfe7b702577446feb1842d9e6",
+  "memory_sha256": "ef87eadd38e56e7f0d797e5a5bef293e2229f75460627672caee12a27b097a90",
+  "numeric_tolerance": 2e-12,
+  "first_network_definition": "Earliest r02_network(kind=decision) in journal event order; settled event and creation advance identified by transition event_start <= event_index < event_end. Exclude all pools and pre-network progress(network_id=None).",
+  "readout_definition": "candidate_value only for stable_decision and not all-zero/None unsupported; >=0.5 true else false. ready = candidate_value is True or graph_complete. Pending value retained only if true or false with complete graph. progress event absent when true or false+complete; otherwise negative_requires_dependency_coverage for false, unresolved_or_no_goal_candidate for None.",
+  "schema": "hcc-r080-small-positive-v1",
+  "baseline_commit": "2a79556e2c86eba30df2994b012a586656c41b3c",
+  "orders": {
+    "swapped": [
+      "e2",
+      "e3",
+      "e0",
+      "e1"
+    ]
+  },
+  "scores": {
+    "s00": 0.0,
+    "s0005": 0.005,
+    "s001": 0.01,
+    "s002": 0.02,
+    "s003": 0.03,
+    "s004": 0.04,
+    "s005": 0.05
+  },
+  "cells": [
+    {
+      "id": "swapped-s00-off",
+      "observation": {
+        "edges": [
+          {
+            "id": "e2",
+            "score": 1.0,
+            "source": "S",
+            "target": "B"
+          },
+          {
+            "id": "e3",
+            "score": 0.0,
+            "source": "B",
+            "target": "G"
+          },
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "S",
+            "target": "A"
+          },
+          {
+            "id": "e1",
+            "score": 0.6,
+            "source": "A",
+            "target": "G"
+          }
+        ],
+        "episode_id": "r077-probe",
+        "goal": "G",
+        "revision": 0,
+        "start": "S"
+      },
+      "score": 0.0,
+      "score_id": "s00",
+      "use_circuits": false,
+      "order_id": "swapped",
+      "evidence_role": "reproduction"
+    },
+    {
+      "id": "swapped-s0005-off",
+      "observation": {
+        "edges": [
+          {
+            "id": "e2",
+            "score": 1.0,
+            "source": "S",
+            "target": "B"
+          },
+          {
+            "id": "e3",
+            "score": 0.005,
+            "source": "B",
+            "target": "G"
+          },
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "S",
+            "target": "A"
+          },
+          {
+            "id": "e1",
+            "score": 0.6,
+            "source": "A",
+            "target": "G"
+          }
+        ],
+        "episode_id": "r077-probe",
+        "goal": "G",
+        "revision": 0,
+        "start": "S"
+      },
+      "score": 0.005,
+      "score_id": "s0005",
+      "use_circuits": false,
+      "order_id": "swapped",
+      "evidence_role": "new_score_intervention"
+    },
+    {
+      "id": "swapped-s001-off",
+      "observation": {
+        "edges": [
+          {
+            "id": "e2",
+            "score": 1.0,
+            "source": "S",
+            "target": "B"
+          },
+          {
+            "id": "e3",
+            "score": 0.01,
+            "source": "B",
+            "target": "G"
+          },
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "S",
+            "target": "A"
+          },
+          {
+            "id": "e1",
+            "score": 0.6,
+            "source": "A",
+            "target": "G"
+          }
+        ],
+        "episode_id": "r077-probe",
+        "goal": "G",
+        "revision": 0,
+        "start": "S"
+      },
+      "score": 0.01,
+      "score_id": "s001",
+      "use_circuits": false,
+      "order_id": "swapped",
+      "evidence_role": "new_score_intervention"
+    },
+    {
+      "id": "swapped-s002-off",
+      "observation": {
+        "edges": [
+          {
+            "id": "e2",
+            "score": 1.0,
+            "source": "S",
+            "target": "B"
+          },
+          {
+            "id": "e3",
+            "score": 0.02,
+            "source": "B",
+            "target": "G"
+          },
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "S",
+            "target": "A"
+          },
+          {
+            "id": "e1",
+            "score": 0.6,
+            "source": "A",
+            "target": "G"
+          }
+        ],
+        "episode_id": "r077-probe",
+        "goal": "G",
+        "revision": 0,
+        "start": "S"
+      },
+      "score": 0.02,
+      "score_id": "s002",
+      "use_circuits": false,
+      "order_id": "swapped",
+      "evidence_role": "new_score_intervention"
+    },
+    {
+      "id": "swapped-s003-off",
+      "observation": {
+        "edges": [
+          {
+            "id": "e2",
+            "score": 1.0,
+            "source": "S",
+            "target": "B"
+          },
+          {
+            "id": "e3",
+            "score": 0.03,
+            "source": "B",
+            "target": "G"
+          },
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "S",
+            "target": "A"
+          },
+          {
+            "id": "e1",
+            "score": 0.6,
+            "source": "A",
+            "target": "G"
+          }
+        ],
+        "episode_id": "r077-probe",
+        "goal": "G",
+        "revision": 0,
+        "start": "S"
+      },
+      "score": 0.03,
+      "score_id": "s003",
+      "use_circuits": false,
+      "order_id": "swapped",
+      "evidence_role": "new_score_intervention"
+    },
+    {
+      "id": "swapped-s004-off",
+      "observation": {
+        "edges": [
+          {
+            "id": "e2",
+            "score": 1.0,
+            "source": "S",
+            "target": "B"
+          },
+          {
+            "id": "e3",
+            "score": 0.04,
+            "source": "B",
+            "target": "G"
+          },
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "S",
+            "target": "A"
+          },
+          {
+            "id": "e1",
+            "score": 0.6,
+            "source": "A",
+            "target": "G"
+          }
+        ],
+        "episode_id": "r077-probe",
+        "goal": "G",
+        "revision": 0,
+        "start": "S"
+      },
+      "score": 0.04,
+      "score_id": "s004",
+      "use_circuits": false,
+      "order_id": "swapped",
+      "evidence_role": "new_score_intervention"
+    },
+    {
+      "id": "swapped-s005-off",
+      "observation": {
+        "edges": [
+          {
+            "id": "e2",
+            "score": 1.0,
+            "source": "S",
+            "target": "B"
+          },
+          {
+            "id": "e3",
+            "score": 0.05,
+            "source": "B",
+            "target": "G"
+          },
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "S",
+            "target": "A"
+          },
+          {
+            "id": "e1",
+            "score": 0.6,
+            "source": "A",
+            "target": "G"
+          }
+        ],
+        "episode_id": "r077-probe",
+        "goal": "G",
+        "revision": 0,
+        "start": "S"
+      },
+      "score": 0.05,
+      "score_id": "s005",
+      "use_circuits": false,
+      "order_id": "swapped",
+      "evidence_role": "reproduction"
+    }
+  ],
+  "reproduction_run": "HCR-Evidence/exp60/r079-20261001T021912Z-016c6bc358",
+  "reproduction_bundle_manifest_sha256": "82ec61178e0bec63d75162161601b96eb4ea840066c4778271c0faf76f129b1a",
+  "primary_metric": [
+    "first_decision.convergence.status",
+    "first_decision.progress_mismatch_kind"
+  ],
+  "predictions": {
+    "positive_grid_stable_true": {
+      "domain": "swapped OFF positive points {.005,.01,.02,.03,.04,.05}; .05 reproduction",
+      "expected": "Every evaluable first state stable_true, ready True and no network-local progress",
+      "falsification": "Any stable_false/ambiguous ready False with matching progress is a counterexample; nonstable/budget excluded"
+    },
+    "small_positive_nontrue_exists": {
+      "domain": "new interior five points {.005,.01,.02,.03,.04}",
+      "expected": "At least one stable_false/ambiguous ready False with matching network-local progress",
+      "falsification": "All five evaluable stable states are true/ready; nonstable or missing cell prevents falsification without witness"
+    },
+    "small_positive_stability_boundary_exists": {
+      "domain": "new interior five points {.005,.01,.02,.03,.04}",
+      "expected": "At least one earliest decision reports budget_exhausted or oscillating",
+      "falsification": "All five earliest decision networks measured and none reports either status; missing blocks no-witness verdict"
+    }
+  },
+  "not_evaluable": "Missing network/settled/mapping is measurement failure, not False. Stable predictions exclude budget_exhausted/oscillating/unsupported. A stable False/ambiguous matching progress witnesses H2 and falsifies H1 even with other missing cells. No witness: H1 support/H2 falsification require complete stable evaluability. H3 evaluates observed statuses separately: witness supports; no witness requires all first networks measured. Session external_compute_budget recorded separately, not substituted for network status.",
+  "stopping_rule": "Exactly seven cells once at unchanged max_ticks160, max_advances16, session ticks5120. No score/budget adjustment, retries or added conditions. Scientific nonstable/session-budget outcomes continue remaining scheduled cells. Integrity/runtime/measurement apparatus error stops pipeline, preserves first failure/partial raw and traceback. No automatic rollback/cleanup of evidence.",
+  "measurements": [
+    "Every decision network and generation half-open event range; convergence/status/goal/margin/residual/stable steps/ticks and all routes",
+    "candidate False/True/None, pending.value/ready, graph_complete and frontier; pre-network progress excluded from first metric",
+    "Proof.paths inventory vs Proof.final parent closure, independently recomputed D_DAG, raw decision, grounding readout and terminal adoption",
+    "slot [e2,e3,e0,e1]; program digest, drives e:1=4*score, goal dependency closure, all synchronous link last_tick_centered_link_input vs terminal_centered_link_term vs terminal_uncentered_activation_product",
+    "All integer counters separately; native active/finish/finished decision/capture intervals separate, pool metrics null/non-applicable; stage UTC and monotonic durations; actual energy/peak memory null"
+  ],
+  "hypothesis_success_required": false,
+  "core_regression_runs": 1,
+  "automatic_retry": false,
+  "training_executions": 0,
+  "feedback_applications": 0,
+  "new_independent_samples": 0,
+  "claim_boundary": "Seven executions of one authored native graph/memory; reproduction2 and new input5, independent discovery/training/feedback0. H1/H2 are one stable-state alternative test. H3 is a separate observed-stability question. No continuum threshold, monotonicity, sign sufficiency, isolated gate effect, internal LLM/human/energy claim."
+}

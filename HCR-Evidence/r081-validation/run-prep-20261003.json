@@ -1,0 +1,119 @@
+{
+  "schema": "r081-run-design-handoff-v1",
+  "status": "AWAITING_EXTERNAL_DESIGN_REVIEW",
+  "request_id": "5e2f6a81-5f1b-4bcb-a31e-3bcc20f8a540",
+  "run_id": "r081-20261003T132019Z-6b7e0ed896",
+  "run_directory": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\HCR-Evidence\\exp62\\r081-20261003T132019Z-6b7e0ed896",
+  "result_directory": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\HCR-Evidence\\exp62\\r081-20261003T132019Z-6b7e0ed896\\evaluation",
+  "source_checkout_commit": "77a850a84a73db2bf7dc863b21f31a904aa8105b",
+  "design_request": "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\HCR-Evidence\\exp62\\r081-20261003T132019Z-6b7e0ed896\\review_requests\\design.json",
+  "design_request_file_sha256": "84e8e9498b09ae2d8228c132239462494c39af417eab671cd0be1ac890f6ff1a",
+  "request": {
+    "plan_sha256": "90c1bceaa817c05d7a7d3f07bff11523f526d1443af8603260c55e23a83c82d5",
+    "raw_sha256": null,
+    "run_id": "r081-20261003T132019Z-6b7e0ed896",
+    "schema": "hcc-r081-external-review-request-v1",
+    "source_sha256": "2d41e806bb2ae83abf159fc551b8f32b2cac98b1670beae5c0b2fbae9849f5d5",
+    "subject": "design"
+  },
+  "source_manifest_file_sha256": "e7a0a8006cf17e310ead5d1bdc002e38a598ef3b7bf3fa2c5801486df25646bf",
+  "frozen_spec_file_sha256": "405225d50349b0b14fefcc1cab650f6f2b7e766f73bcd3f7a4b3d8fb572ae6c5",
+  "design_file_sha256": "d5c072e8c694a6fc887c25480527c23a89741b3c56180f3df6ccbbf039d11645",
+  "r081_manifest_file_sha256": "f1c5f749a1b14fa843a5b47d13a17efeeceed6af1bb74ef69bed286fddcf4d1e",
+  "review_policy": {
+    "reviewer_id": "01a0fb43-50f6-725d-be5a-5eeb6893b0de",
+    "writer_id": "01a101a3-8b68-71ae-8946-4575589ab08d"
+  },
+  "review_policy_file_sha256": "47e3ac553f960d48bdaae31aec433234054df17d9f9ad52e91bc4ee8c92edb7e",
+  "identity_contract": "Supported distinct writer/reviewer string IDs match the user-designated roles; verified external file delivery authenticates origin, not these hashes/strings.",
+  "external_receipt_destination": "C:\\Users\\sjs95\\Documents\\Codex\\2026-10-03\\task-6\\r081-external-reviews\\design.json",
+  "external_receipt_status": "ABSENT; no PASS generated",
+  "resume_command_after_real_design_receipt": [
+    "Run-HCR-R081.cmd",
+    "--resume",
+    "D:\\codex\\AI논문\\hierarchical-convergence-circuit\\HCR-Evidence\\exp62\\r081-20261003T132019Z-6b7e0ed896",
+    "--writer-id",
+    "01a101a3-8b68-71ae-8946-4575589ab08d",
+    "--reviewer-id",
+    "01a0fb43-50f6-725d-be5a-5eeb6893b0de",
+    "--review-dir",
+    "C:\\Users\\sjs95\\Documents\\Codex\\2026-10-03\\task-6\\r081-external-reviews"
+  ],
+  "run_creation_must_not_repeat": true,
+  "first_cell": {
+    "evidence_role": "reproduction",
+    "id": "swapped-s003-td1-off",
+    "observation": {
+      "edges": [
+        {
+          "id": "e2",
+          "score": 1.0,
+          "source": "S",
+          "target": "B"
+        },
+        {
+          "id": "e3",
+          "score": 0.03,
+          "source": "B",
+          "target": "G"
+        },
+        {
+          "id": "e0",
+          "score": 1.0,
+          "source": "S",
+          "target": "A"
+        },
+        {
+          "id": "e1",
+          "score": 0.6,
+          "source": "A",
+          "target": "G"
+        }
+      ],
+      "episode_id": "r077-probe",
+      "goal": "G",
+      "revision": 0,
+      "start": "S"
+    },
+    "order_id": "swapped",
+    "reproduction_id": "swapped-s003-off",
+    "score": 0.03,
+    "score_id": "s003",
+    "top_down": true,
+    "use_circuits": false
+  },
+  "ordered_cell_ids": [
+    "swapped-s003-td1-off",
+    "swapped-s003-td0-off",
+    "swapped-s004-td1-off",
+    "swapped-s004-td0-off"
+  ],
+  "resource_limits": {
+    "kernel_max_ticks": 160,
+    "max_advances_per_session": 16,
+    "max_kernel_ticks_per_session": 5120
+  },
+  "per_invocation_max_new_cells": 1,
+  "automatic_retry": false,
+  "budget_extension": false,
+  "native_executions": 0,
+  "core_regression_runs": 0,
+  "actual_external_reviews": 0,
+  "preparation_selftest": {
+    "algebra_checks": 15,
+    "grammar_checks": 4,
+    "margin_cases": 4,
+    "new_native_executions": 0,
+    "numeric_pilot_executions": 0,
+    "prediction_cases": 7,
+    "prior_native_journals_reanalyzed": 11,
+    "readout_cases": 6,
+    "research_sample": false,
+    "synthetic_native_executions": 0,
+    "verified": true
+  },
+  "existing_snapshots": "Previous task-6 validation snapshots used b2f3294 and synthetic identities; not R081 runs and not reused or overwritten.",
+  "cell_recalculation": "Use frozen source controls -> measure -> verify_execution -> packet_states plus current-cell progress/candidate and True-cell R080 checks from collect. Actual external review is required before every next cell.",
+  "source_code_changes": 0,
+  "science_conditions_changes": 0
+}
