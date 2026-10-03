@@ -1,0 +1,15 @@
+WAITING_EXTERNAL_REVIEW: C:\Users\sjs95\AppData\Local\Temp\tmp1bnk6ahw\synthetic-run\review_requests\design.json
+c0 synthetic-only
+WAITING_EXTERNAL_REVIEW: C:\Users\sjs95\AppData\Local\Temp\tmp1bnk6ahw\synthetic-run\review_requests\c0.json
+WAITING_EXTERNAL_REVIEW: C:\Users\sjs95\AppData\Local\Temp\tmp1bnk6ahw\synthetic-run\review_requests\c0.json
+WAITING_EXTERNAL_REVIEW: C:\Users\sjs95\AppData\Local\Temp\tmp1bnk6ahw\synthetic-run\review_requests\c0.json
+c1 synthetic-only
+WAITING_EXTERNAL_REVIEW: C:\Users\sjs95\AppData\Local\Temp\tmp1bnk6ahw\synthetic-run\review_requests\c1.json
+WAITING_EXTERNAL_REVIEW: C:\Users\sjs95\AppData\Local\Temp\tmp1bnk6ahw\synthetic-run\review_requests\c1.json
+c2 synthetic-only
+WAITING_EXTERNAL_REVIEW: C:\Users\sjs95\AppData\Local\Temp\tmp1bnk6ahw\synthetic-run\review_requests\c2.json
+WAITING_EXTERNAL_REVIEW: C:\Users\sjs95\AppData\Local\Temp\tmp1bnk6ahw\synthetic-run\review_requests\c2.json
+c3 synthetic-only
+WAITING_EXTERNAL_REVIEW: C:\Users\sjs95\AppData\Local\Temp\tmp1bnk6ahw\synthetic-run\review_requests\c3.json
+WAITING_EXTERNAL_REVIEW: C:\Users\sjs95\AppData\Local\Temp\tmp1bnk6ahw\synthetic-run\review_requests\c3.json
+{'verified': True, 'checks': ['missing design blocks first native', 'one new condition per invocation', 'missing cell review blocks next condition without rerun', 'four distinct conditions and final review required', 'repeated resume never reruns native', 'wrong run rejected', 'wrong raw rejected', 'wrong source rejected', 'wrong plan rejected', 'self review rejected', 'failed review rejected', 'blocking finding rejected', 'missing evidence rejected', 'partial native directory cannot rerun', 'identity change rejected', 'raw mutation invalidates acceptance'], 'new_native_executions': 0}

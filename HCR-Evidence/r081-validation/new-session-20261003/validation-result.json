@@ -1,0 +1,22 @@
+{
+  "verified": true,
+  "source_files": 547,
+  "scientific_conditions_unchanged": true,
+  "selftest": {
+    "algebra_checks": 15,
+    "grammar_checks": 4,
+    "margin_cases": 4,
+    "new_native_executions": 0,
+    "numeric_pilot_executions": 0,
+    "prediction_cases": 7,
+    "prior_native_journals_reanalyzed": 11,
+    "readout_cases": 6,
+    "research_sample": false,
+    "synthetic_native_executions": 0,
+    "verified": true
+  },
+  "new_native_executions": 0,
+  "core_regression_runs": 0,
+  "gate_checks": 16,
+  "manifest_sha256": "cd0fe9333b9aa11b83493f252fa7e2ce2412ae038843f53cb0ff23c3255c294e"
+}
