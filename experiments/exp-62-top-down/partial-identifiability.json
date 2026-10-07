@@ -1,0 +1,1089 @@
+{
+  "schema": "R081PartialIdentifiabilityRecord.v1",
+  "record_kind": "new structural analysis of existing partial evidence; no new native samples",
+  "source_commit": "f4423794e784b03bc23daa76d8a009638c3f8ecf",
+  "source_run": "r081-20261003T132019Z-6b7e0ed896",
+  "status": {
+    "run": "CLOSED_BY_USER_AT_CELL3",
+    "executed_cells": 3,
+    "planned_cells": 4,
+    "missing_cell": "swapped-s004-td0-off",
+    "missing_value": null,
+    "cell4_execution_GO": false,
+    "scientific_gate_pass": false
+  },
+  "source_analysis_sha256": "88af7efce0e0be95f54fc3f48838751596a8b08a3583be48c530c1247436a846",
+  "source_refs": {
+    "closure": {
+      "json_pointers": [
+        "/status",
+        "/run_id",
+        "/executed_cell_ids",
+        "/unexecuted_cell_ids",
+        "/cell4_executed",
+        "/resume_current_run_authorized"
+      ],
+      "path": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/closure.json",
+      "commit": "f4423794e784b03bc23daa76d8a009638c3f8ecf"
+    },
+    "plan": {
+      "json_pointers": [
+        "/cells",
+        "/numeric_tolerance",
+        "/first_network_definition",
+        "/readout_definition",
+        "/predictions",
+        "/not_evaluable",
+        "/signal_intervention",
+        "/config/kernel/damping",
+        "/config/kernel/self_excitation",
+        "/config/kernel/inhibition",
+        "/new_independent_samples"
+      ],
+      "path": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/plan.json",
+      "commit": "f4423794e784b03bc23daa76d8a009638c3f8ecf"
+    },
+    "spec": {
+      "json_pointers": [
+        "/cells",
+        "/predictions",
+        "/claim_boundary",
+        "/measurements"
+      ],
+      "path": "experiments/exp-62-top-down/frozen_spec.json",
+      "commit": "f4423794e784b03bc23daa76d8a009638c3f8ecf"
+    },
+    "design": {
+      "lines": [
+        7,
+        25,
+        31,
+        36,
+        37,
+        38,
+        39,
+        40,
+        42,
+        46,
+        52,
+        76
+      ],
+      "path": "experiments/exp-62-top-down/design.ko.md",
+      "commit": "f4423794e784b03bc23daa76d8a009638c3f8ecf"
+    },
+    "dynamics": {
+      "lines": [
+        12,
+        16,
+        17,
+        22,
+        23,
+        24,
+        25,
+        26,
+        35
+      ],
+      "path": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/source/src/hcr/dynamics.py",
+      "commit": "f4423794e784b03bc23daa76d8a009638c3f8ecf"
+    },
+    "review": {
+      "json_pointers": [
+        "/identity/reviewer_id",
+        "/target",
+        "/measurements/cells",
+        "/findings/1",
+        "/findings/2",
+        "/findings/5",
+        "/acceptance",
+        "/boundary"
+      ],
+      "external_artifact": {
+        "name": "FINAL-REVIEW.json",
+        "bytes": 30349,
+        "sha256": "deb4b37df150d4a59459bbff8c0ae0b974a73cd403e33c87ae6409a641c7d179",
+        "repository_included": false,
+        "role": "preserved retrospective reviewer report; not reexecuted in this analysis"
+      }
+    },
+    "review_text": {
+      "locator_text": "관찰·해석·독립성과 제약",
+      "external_artifact": {
+        "name": "FINAL-REVIEW.ko.txt",
+        "bytes": 6045,
+        "sha256": "ef8c46de78dcf734274745c21c2732a617136811afa1abceba535ca67875a36b",
+        "repository_included": false,
+        "role": "preserved retrospective reviewer report; not reexecuted in this analysis"
+      }
+    },
+    "raw1": {
+      "json_pointers": [
+        "/cell",
+        "/execution/packet/document/events/8",
+        "/execution/packet/document/events/104",
+        "/execution/packet/document/transitions/3",
+        "/execution/candidate/decision/proof",
+        "/execution/candidate/decision/cost",
+        "/execution/candidate/decision/value",
+        "/execution/candidate/readout",
+        "/execution/stop",
+        "/execution/packet/document/events/105",
+        "/execution/packet/document/events/108",
+        "/execution/packet/document/events/166"
+      ],
+      "path": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/evaluation/swapped-s003-td1-off/inference.json",
+      "commit": "f4423794e784b03bc23daa76d8a009638c3f8ecf"
+    },
+    "step1": {
+      "json_pointers": [
+        "/document/engine/pending/convergence",
+        "/document/engine/pending/state/goal",
+        "/document/engine/pending/ready",
+        "/document/engine/pending/value",
+        "/document/engine/pending/workspace",
+        "/document/engine/pending/cost",
+        "/document/transitions/3"
+      ],
+      "path": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/evaluation/swapped-s003-td1-off/progress/step-003-advance.json",
+      "commit": "f4423794e784b03bc23daa76d8a009638c3f8ecf"
+    },
+    "producer1": {
+      "json_pointers": [
+        "/verified",
+        "/row/first_decision",
+        "/row/final_support",
+        "/row/cost",
+        "/R080_exact_journal_reproduction"
+      ],
+      "path": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/validation/cell1-internal-recalculation.json",
+      "commit": "f4423794e784b03bc23daa76d8a009638c3f8ecf"
+    },
+    "timing1": {
+      "json_pointers": [
+        "/duration_seconds",
+        "/started_at",
+        "/finished_at"
+      ],
+      "path": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/evaluation/swapped-s003-td1-off/native_timing.json",
+      "commit": "f4423794e784b03bc23daa76d8a009638c3f8ecf"
+    },
+    "raw2": {
+      "json_pointers": [
+        "/cell",
+        "/execution/packet/document/events/8",
+        "/execution/packet/document/events/54",
+        "/execution/packet/document/transitions/3",
+        "/execution/candidate/decision/proof",
+        "/execution/candidate/decision/cost",
+        "/execution/candidate/decision/value",
+        "/execution/candidate/readout",
+        "/execution/stop"
+      ],
+      "path": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/evaluation/swapped-s003-td0-off/inference.json",
+      "commit": "f4423794e784b03bc23daa76d8a009638c3f8ecf"
+    },
+    "step2": {
+      "json_pointers": [
+        "/document/engine/pending/convergence",
+        "/document/engine/pending/state/goal",
+        "/document/engine/pending/ready",
+        "/document/engine/pending/value",
+        "/document/engine/pending/workspace",
+        "/document/engine/pending/cost",
+        "/document/transitions/3"
+      ],
+      "path": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/evaluation/swapped-s003-td0-off/progress/step-003-advance.json",
+      "commit": "f4423794e784b03bc23daa76d8a009638c3f8ecf"
+    },
+    "producer2": {
+      "json_pointers": [
+        "/verified",
+        "/row/first_decision",
+        "/row/final_support",
+        "/row/cost",
+        "/R080_exact_journal_reproduction"
+      ],
+      "path": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/validation/cell2-internal-recalculation.json",
+      "commit": "f4423794e784b03bc23daa76d8a009638c3f8ecf"
+    },
+    "timing2": {
+      "json_pointers": [
+        "/duration_seconds",
+        "/started_at",
+        "/finished_at"
+      ],
+      "path": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/evaluation/swapped-s003-td0-off/native_timing.json",
+      "commit": "f4423794e784b03bc23daa76d8a009638c3f8ecf"
+    },
+    "raw3": {
+      "json_pointers": [
+        "/cell",
+        "/execution/packet/document/events/8",
+        "/execution/packet/document/events/120",
+        "/execution/packet/document/transitions/3",
+        "/execution/candidate/decision/proof",
+        "/execution/candidate/decision/cost",
+        "/execution/candidate/decision/value",
+        "/execution/candidate/readout",
+        "/execution/stop"
+      ],
+      "path": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/evaluation/swapped-s004-td1-off/inference.json",
+      "commit": "f4423794e784b03bc23daa76d8a009638c3f8ecf"
+    },
+    "step3": {
+      "json_pointers": [
+        "/document/engine/pending/convergence",
+        "/document/engine/pending/state/goal",
+        "/document/engine/pending/ready",
+        "/document/engine/pending/value",
+        "/document/engine/pending/workspace",
+        "/document/engine/pending/cost",
+        "/document/transitions/3"
+      ],
+      "path": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/evaluation/swapped-s004-td1-off/progress/step-003-advance.json",
+      "commit": "f4423794e784b03bc23daa76d8a009638c3f8ecf"
+    },
+    "producer3": {
+      "json_pointers": [
+        "/verified",
+        "/row/first_decision",
+        "/row/final_support",
+        "/row/cost",
+        "/R080_exact_journal_reproduction"
+      ],
+      "path": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/validation/cell3-internal-recalculation.json",
+      "commit": "f4423794e784b03bc23daa76d8a009638c3f8ecf"
+    },
+    "timing3": {
+      "json_pointers": [
+        "/duration_seconds",
+        "/started_at",
+        "/finished_at"
+      ],
+      "path": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/evaluation/swapped-s004-td1-off/native_timing.json",
+      "commit": "f4423794e784b03bc23daa76d8a009638c3f8ecf"
+    }
+  },
+  "directly_read": [
+    {
+      "cell_id": "swapped-s003-td1-off",
+      "source_run": "r081-20261003T132019Z-6b7e0ed896",
+      "evidence_kind": "direct",
+      "score": 0.03,
+      "top_down": true,
+      "use_circuits": false,
+      "observation_episode_id": "r077-probe",
+      "edge_order": [
+        "e2",
+        "e3",
+        "e0",
+        "e1"
+      ],
+      "first_network": {
+        "event_index": 8,
+        "network_id": "network-8",
+        "decision_id": "r02-d-1-a565af1320ba8ddc",
+        "program_digest": "eff846df37d8cc635cb29c204281bbd23aa3226a636b4c8ff82ce2bb44a6343a",
+        "weak_edge_drive": 0.12,
+        "stored_links": 8,
+        "settled_event_index": 104,
+        "generation": 3,
+        "creation_advance_half_open_event_range": [
+          6,
+          106
+        ],
+        "recorded_goal": 0.03688332023268971,
+        "recorded_status": "stable_decision",
+        "recorded_ticks": 95,
+        "recorded_stable_steps": 4,
+        "category_derived_from_recorded_status_and_goal": "stable_false",
+        "first_candidate_value_derived": false,
+        "pending_value": null,
+        "ready": false,
+        "frontier_slot_paths": [
+          [
+            2
+          ]
+        ],
+        "route_slot_paths": [
+          [
+            0,
+            1
+          ]
+        ],
+        "same_advance_matching_progress_event_indices": [
+          105
+        ],
+        "excluded_pre_network_progress_event_index": 5,
+        "first_boundary_cost": {
+          "kernel_ticks": 95,
+          "signal_transmissions": 760,
+          "group_updates": 665,
+          "expansions": 2
+        }
+      },
+      "subsequent_decision_networks": [
+        {
+          "network_id": "network-108",
+          "event_index": 108,
+          "settled_event_index": 166,
+          "recorded_ticks": 57,
+          "recorded_status": "stable_decision"
+        }
+      ],
+      "final": {
+        "raw_decision_value": true,
+        "graph_complete": true,
+        "proof_paths_inventory": [
+          [
+            "e2",
+            "e3"
+          ],
+          [
+            "e0",
+            "e1"
+          ]
+        ],
+        "proof_final": "r:1:1",
+        "proof_nodes": [
+          "f:2:1",
+          "r:1:0",
+          "f:3:1",
+          "r:1:1"
+        ],
+        "recorded_primitive_depth": 2,
+        "worker_stop": "readout_ready",
+        "candidate_readout_accepted": true,
+        "candidate_readout_value": true,
+        "total_cost": {
+          "kernel_ticks": 152,
+          "signal_transmissions": 1672,
+          "group_updates": 1178,
+          "expansions": 3,
+          "proof_nodes_reconstructed": 4
+        }
+      },
+      "native_timing_record": {
+        "duration_seconds": 0.25884879999648547,
+        "interpretation": "단회 기록의 native duration; 일반적인 wall-time 효율은 식별하지 않음"
+      },
+      "source_refs": [
+        "raw1",
+        "step1",
+        "timing1",
+        "plan"
+      ]
+    },
+    {
+      "cell_id": "swapped-s003-td0-off",
+      "source_run": "r081-20261003T132019Z-6b7e0ed896",
+      "evidence_kind": "direct",
+      "score": 0.03,
+      "top_down": false,
+      "use_circuits": false,
+      "observation_episode_id": "r077-probe",
+      "edge_order": [
+        "e2",
+        "e3",
+        "e0",
+        "e1"
+      ],
+      "first_network": {
+        "event_index": 8,
+        "network_id": "network-8",
+        "decision_id": "r02-d-1-a565af1320ba8ddc",
+        "program_digest": "eff846df37d8cc635cb29c204281bbd23aa3226a636b4c8ff82ce2bb44a6343a",
+        "weak_edge_drive": 0.12,
+        "stored_links": 8,
+        "settled_event_index": 54,
+        "generation": 3,
+        "creation_advance_half_open_event_range": [
+          6,
+          55
+        ],
+        "recorded_goal": 0.8287115835390951,
+        "recorded_status": "stable_decision",
+        "recorded_ticks": 45,
+        "recorded_stable_steps": 4,
+        "category_derived_from_recorded_status_and_goal": "stable_true",
+        "first_candidate_value_derived": true,
+        "pending_value": true,
+        "ready": true,
+        "frontier_slot_paths": [
+          [
+            2
+          ]
+        ],
+        "route_slot_paths": [
+          [
+            0,
+            1
+          ]
+        ],
+        "same_advance_matching_progress_event_indices": [],
+        "excluded_pre_network_progress_event_index": 5,
+        "first_boundary_cost": {
+          "kernel_ticks": 45,
+          "signal_transmissions": 180,
+          "group_updates": 315,
+          "expansions": 2
+        }
+      },
+      "subsequent_decision_networks": [],
+      "final": {
+        "raw_decision_value": true,
+        "graph_complete": false,
+        "proof_paths_inventory": [
+          [
+            "e2",
+            "e3"
+          ]
+        ],
+        "proof_final": "r:0:1",
+        "proof_nodes": [
+          "f:0:1",
+          "r:0:0",
+          "f:1:1",
+          "r:0:1"
+        ],
+        "recorded_primitive_depth": 2,
+        "worker_stop": "readout_ready",
+        "candidate_readout_accepted": true,
+        "candidate_readout_value": true,
+        "total_cost": {
+          "kernel_ticks": 45,
+          "signal_transmissions": 180,
+          "group_updates": 315,
+          "expansions": 2,
+          "proof_nodes_reconstructed": 4
+        }
+      },
+      "native_timing_record": {
+        "duration_seconds": 0.1249960999994073,
+        "interpretation": "단회 기록의 native duration; 일반적인 wall-time 효율은 식별하지 않음"
+      },
+      "source_refs": [
+        "raw2",
+        "step2",
+        "timing2",
+        "plan"
+      ]
+    },
+    {
+      "cell_id": "swapped-s004-td1-off",
+      "source_run": "r081-20261003T132019Z-6b7e0ed896",
+      "evidence_kind": "direct",
+      "score": 0.04,
+      "top_down": true,
+      "use_circuits": false,
+      "observation_episode_id": "r077-probe",
+      "edge_order": [
+        "e2",
+        "e3",
+        "e0",
+        "e1"
+      ],
+      "first_network": {
+        "event_index": 8,
+        "network_id": "network-8",
+        "decision_id": "r02-d-1-fc5672d78852d091",
+        "program_digest": "eff846df37d8cc635cb29c204281bbd23aa3226a636b4c8ff82ce2bb44a6343a",
+        "weak_edge_drive": 0.16,
+        "stored_links": 8,
+        "settled_event_index": 120,
+        "generation": 3,
+        "creation_advance_half_open_event_range": [
+          6,
+          121
+        ],
+        "recorded_goal": 0.9840687555064942,
+        "recorded_status": "stable_decision",
+        "recorded_ticks": 111,
+        "recorded_stable_steps": 4,
+        "category_derived_from_recorded_status_and_goal": "stable_true",
+        "first_candidate_value_derived": true,
+        "pending_value": true,
+        "ready": true,
+        "frontier_slot_paths": [
+          [
+            2
+          ]
+        ],
+        "route_slot_paths": [
+          [
+            0,
+            1
+          ]
+        ],
+        "same_advance_matching_progress_event_indices": [],
+        "excluded_pre_network_progress_event_index": 5,
+        "first_boundary_cost": {
+          "kernel_ticks": 111,
+          "signal_transmissions": 888,
+          "group_updates": 777,
+          "expansions": 2
+        }
+      },
+      "subsequent_decision_networks": [],
+      "final": {
+        "raw_decision_value": true,
+        "graph_complete": false,
+        "proof_paths_inventory": [
+          [
+            "e2",
+            "e3"
+          ]
+        ],
+        "proof_final": "r:0:1",
+        "proof_nodes": [
+          "f:0:1",
+          "r:0:0",
+          "f:1:1",
+          "r:0:1"
+        ],
+        "recorded_primitive_depth": 2,
+        "worker_stop": "readout_ready",
+        "candidate_readout_accepted": true,
+        "candidate_readout_value": true,
+        "total_cost": {
+          "kernel_ticks": 111,
+          "signal_transmissions": 888,
+          "group_updates": 777,
+          "expansions": 2,
+          "proof_nodes_reconstructed": 4
+        }
+      },
+      "native_timing_record": {
+        "duration_seconds": 0.16231800000241492,
+        "interpretation": "단회 기록의 native duration; 일반적인 wall-time 효율은 식별하지 않음"
+      },
+      "source_refs": [
+        "raw3",
+        "step3",
+        "timing3",
+        "plan"
+      ]
+    }
+  ],
+  "reported_observations": {
+    "label": "reported; 기존 생산자/사후 검토 결과를 직접 실행 완료로 승격하지 않음",
+    "producer": {
+      "reports": [
+        {
+          "cell_id": "swapped-s003-td1-off",
+          "verified_reported": true,
+          "first_goal_reported": 0.03688332023268971,
+          "first_category_reported": "stable_false",
+          "first_candidate_value_reported": false,
+          "first_graph_complete_reported": false,
+          "R080_exact_journal_reproduction_reported": true,
+          "source_refs": [
+            "producer1"
+          ]
+        },
+        {
+          "cell_id": "swapped-s003-td0-off",
+          "verified_reported": true,
+          "first_goal_reported": 0.8287115835390951,
+          "first_category_reported": "stable_true",
+          "first_candidate_value_reported": true,
+          "first_graph_complete_reported": false,
+          "R080_exact_journal_reproduction_reported": null,
+          "source_refs": [
+            "producer2"
+          ]
+        },
+        {
+          "cell_id": "swapped-s004-td1-off",
+          "verified_reported": true,
+          "first_goal_reported": 0.9840687555064942,
+          "first_category_reported": "stable_true",
+          "first_candidate_value_reported": true,
+          "first_graph_complete_reported": false,
+          "R080_exact_journal_reproduction_reported": true,
+          "source_refs": [
+            "producer3"
+          ]
+        }
+      ]
+    },
+    "retrospective_reviewer": {
+      "reviewer_id": "01a10489-7008-72fc-8630-b72b0ec5b085",
+      "first_goals_recalculated_reported": [
+        0.03688332023268948,
+        0.8287115835390945,
+        0.984068755506494
+      ],
+      "all_three_raw_checks_reported": "PASS_RECALCULATED_RAW",
+      "unique_networks_reported": 4,
+      "unique_ticks_reported": 308,
+      "D_DAG_recomputed_reported": [
+        2,
+        2,
+        2
+      ],
+      "final_parent_closure_edges_reported": [
+        [
+          "e0",
+          "e1"
+        ],
+        [
+          "e2",
+          "e3"
+        ],
+        [
+          "e2",
+          "e3"
+        ]
+      ],
+      "original_four_cell_completion_reported": "NOT_CERTIFIED",
+      "historical_preexecution_independence_reported": "NOT_CERTIFIED",
+      "separate_terminal_adoption_reported": "미확인",
+      "source_refs": [
+        "review",
+        "review_text"
+      ]
+    },
+    "floating_point_provenance": {
+      "raw_and_reviewer_not_overwritten": true,
+      "raw_minus_reviewer_goals": [
+        2.2898349882893854e-16,
+        6.661338147750939e-16,
+        2.220446049250313e-16
+      ],
+      "numeric_tolerance": 2e-12,
+      "comparison": "세 차이 모두 동결 허용오차 미만; raw 기록값을 이번 대수의 입력으로 사용",
+      "interpretation": "동일 수학식의 별도 재계산 마지막 자리 차이를 새 표본·갈등·정정 근거로 계산하지 않음",
+      "source_refs": [
+        "raw1",
+        "raw2",
+        "raw3",
+        "review",
+        "plan"
+      ]
+    }
+  },
+  "identifiable_claims": [
+    {
+      "id": "ID-01",
+      "statement": ".03에서 top_down 신호 묶음 제거 후 첫 stable_false가 stable_true로 바뀌고 ready False→True, 해당 network의 coverage progress 1→0이다.",
+      "minimum_required_evidence": "동일 score의 stable 평가 가능한 ON/OFF 첫 network 및 생성 advance의 pending/progress 매핑",
+      "current_evidence": "셀1·2의 같은 첫 program digest·observation·drive와 stable_decision/goal, step003 ready/value, event105의 network-8 progress; seq5 pre-network progress 제외",
+      "identification_status": "현재 자료 충족",
+      "source_refs": [
+        "raw1",
+        "raw2",
+        "step1",
+        "step2",
+        "plan"
+      ],
+      "evidence_kind": "derived"
+    },
+    {
+      "id": "ID-02",
+      "statement": "remove_bundle_s003_true와 category_change_exists는 기존 자료에서 지지된다.",
+      "minimum_required_evidence": "전자는 .03 OFF의 stable_true/candidate True/ready True/progress 없음; 후자는 적어도 한 stable changed pair",
+      "current_evidence": ".03 쌍이 존재 증인이다. .04 쌍이 없어도 존재 술어의 참은 결정되며 두 지지 항목은 같은 증인의 다른 표현이다.",
+      "identification_status": "현재 자료 충족",
+      "source_refs": [
+        "raw1",
+        "raw2",
+        "step2",
+        "producer2",
+        "plan"
+      ],
+      "evidence_kind": "derived"
+    },
+    {
+      "id": "ID-03",
+      "statement": "ON을 유지한 .03→.04의 첫 goal·ticks·category·coverage 차이는 관측 대비로 식별된다.",
+      "minimum_required_evidence": "두 ON 셀의 첫 settled state와 동일 조건의 score 차이",
+      "current_evidence": "c-a=0.9471854352738045, 111-95=16; stable_false→stable_true 및 matching progress 1→0. OFF slope나 임계값 위치는 포함하지 않는다.",
+      "identification_status": "현재 자료 충족",
+      "source_refs": [
+        "raw1",
+        "raw3",
+        "step1",
+        "step3",
+        "plan"
+      ],
+      "evidence_kind": "derived"
+    },
+    {
+      "id": "ID-04",
+      "statement": ".03의 첫 판단 변화와 최종 raw decision 동일성은 동시에 성립하며 최종 proof 경로가 바뀐다.",
+      "minimum_required_evidence": "첫 상태와 마지막 decision/proof를 다른 시점으로 분리",
+      "current_evidence": "두 셀의 최종 raw value/readout은 모두 True; 최종 proof closure는 e0/e1→e2/e3. raw proof primitive_depth는 둘 다 2이고 D_DAG=2는 기존 reviewer 검산 보고에서 확인한다.",
+      "identification_status": "현재 자료 충족",
+      "source_refs": [
+        "raw1",
+        "raw2",
+        "review"
+      ],
+      "evidence_kind": "derived"
+    },
+    {
+      "id": "ID-05",
+      "statement": ".03의 기록된 비용 감소는 단위별로 식별되며 첫 network와 후속 coverage 차이를 회계적으로 나눌 수 있다.",
+      "minimum_required_evidence": "두 셀의 첫 boundary counter와 최종 counter, 셀1의 후속 network locator",
+      "current_evidence": "첫 ticks -50, 전체 ticks -107; 첫 transmissions -580, 전체 transmissions -1492; 첫 group_updates -350, 전체 -863; 전체 expansions -1. 이를 에너지·CPU 총연산·인과 매개효과로 해석하지 않는다.",
+      "identification_status": "현재 자료 충족",
+      "source_refs": [
+        "step1",
+        "step2",
+        "raw1",
+        "raw2"
+      ],
+      "evidence_kind": "derived"
+    },
+    {
+      "id": "ID-06",
+      "statement": ".04 ON 단독은 해당 셀의 첫 stable_true, ready True, progress 없음과 최종 e2/e3 proof를 지지한다.",
+      "minimum_required_evidence": "한 셀의 상태·network-local progress·최종 proof",
+      "current_evidence": "셀3 자료가 충족하며 remove_bundle_s004_true는 OFF를 지칭하므로 이 관측으로 대체할 수 없다.",
+      "identification_status": "현재 자료 충족",
+      "source_refs": [
+        "raw3",
+        "step3",
+        "producer3",
+        "plan"
+      ],
+      "evidence_kind": "derived"
+    },
+    {
+      "id": "ID-07",
+      "statement": "세 숫자로 가산 2×2 completion을 만들면 누락 goal은 1.7758970188128997이 되어 허용 범위를 벗어난다. 따라서 같은 동결 동역학의 측정된 fourth goal이 존재한다는 조건에서는 numeric interaction의 부호가 음수로 제한된다.",
+      "minimum_required_evidence": "관측 a,b,c와 모든 유효 goal의 [0,1] 불변조건; 동일 response 정의의 미관측 u 존재 가정",
+      "current_evidence": "source의 sigmoid 목표, damping .45의 convex update와 초기 .5가 범위를 보존한다. u의 실제 값·존재·stable category는 여전히 UNKNOWN이고 원 native cell4 결과를 예측/실행한 것이 아니다.",
+      "identification_status": "조건부 부분 식별; point 미식별",
+      "source_refs": [
+        "raw1",
+        "raw2",
+        "raw3",
+        "dynamics",
+        "plan"
+      ],
+      "evidence_kind": "derived"
+    }
+  ],
+  "non_identifiable_claims": [
+    {
+      "id": "NI-01",
+      "statement": ".04에서 top_down 제거의 실제 효과와 remove_bundle_s004_true",
+      "minimum_required_evidence": ".04 OFF의 첫 network/settled state/pending/progress와 ON과의 매핑",
+      "current_evidence_suffices": false,
+      "missing_evidence": "swapped-s004-td0-off",
+      "reason_code": "MISSING_TREATMENT_CELL",
+      "identification_status": "UNKNOWN",
+      "source_refs": [
+        "closure",
+        "plan",
+        "raw3"
+      ]
+    },
+    {
+      "id": "NI-02",
+      "statement": "두 점에서 모두 첫 goal 수치가 달라진다는 numeric_difference_both",
+      "minimum_required_evidence": "두 pair 모두 measured settled goal; 또는 한 measured equal pair로 반증",
+      "current_evidence_suffices": false,
+      "missing_evidence": ".04 pair의 measured goal; .03에는 동일 반례 없음",
+      "reason_code": "UNIVERSAL_PREDICATE_HAS_NO_COUNTEREXAMPLE_BUT_INCOMPLETE_DOMAIN",
+      "identification_status": "UNKNOWN",
+      "source_refs": [
+        "plan",
+        "raw1",
+        "raw2",
+        "raw3",
+        "closure"
+      ]
+    },
+    {
+      "id": "NI-03",
+      "statement": "score×top_down interaction의 정확한 값, OFF 점간 차이, 두 점 평균 제거효과 및 두 top_down 상태 평균 score효과",
+      "minimum_required_evidence": "같은 정의의 네 response 값",
+      "current_evidence_suffices": false,
+      "missing_evidence": "u=y(.04,OFF)",
+      "reason_code": "RANK_DEFICIENCY_ONE_FREE_COMPLETION",
+      "identification_status": "point UNKNOWN; goal에서는 동일 동역학의 numeric u 존재 가정 아래 범위만 도출",
+      "source_refs": [
+        "closure",
+        "raw1",
+        "raw2",
+        "raw3",
+        "dynamics"
+      ]
+    },
+    {
+      "id": "NI-04",
+      "statement": "개별 top_down 링크·gain·self_excitation·inhibition의 고유 원인 기여",
+      "minimum_required_evidence": "해당 요소들을 구별하는 독립 개입 또는 별도 정당화된 구조 가정",
+      "current_evidence_suffices": false,
+      "missing_evidence": "묶음 제거만 관측; self_excitation=.25와 inhibition=.20은 고정",
+      "reason_code": "BUNDLED_INTERVENTION_MECHANISM_ALIASING",
+      "identification_status": "UNKNOWN",
+      "source_refs": [
+        "plan",
+        "design",
+        "dynamics",
+        "raw1",
+        "raw2"
+      ]
+    },
+    {
+      "id": "NI-05",
+      "statement": "정확 임계값·단조성·연속 bifurcation·고정점 유일성·전체 재귀 제거",
+      "minimum_required_evidence": "해당 전역 술어를 구별하는 조건 범위·초기조건·안정성 증명",
+      "current_evidence_suffices": false,
+      "missing_evidence": "두 ON 점과 한 OFF 점; 다른 score/초기조건 증거 없음",
+      "reason_code": "FINITE_POINT_TO_GLOBAL_PROPERTY_UNDERDETERMINATION",
+      "identification_status": "UNKNOWN",
+      "source_refs": [
+        "plan",
+        "design",
+        "dynamics"
+      ]
+    },
+    {
+      "id": "NI-06",
+      "statement": "hardware 효율·실제 energy 감소·peak memory 감소·일반적인 wall-time 개선",
+      "minimum_required_evidence": "정의된 계측과 비교 환경·반복·비용 단위; energy/peak memory 실제 측정",
+      "current_evidence_suffices": false,
+      "missing_evidence": "실제 energy와 peak memory 계측 없음; native duration은 시점이 다른 단회 기록",
+      "reason_code": "UNMEASURED_CONSTRUCT_AND_SINGLE_TIMING_GENERALIZATION",
+      "identification_status": "UNKNOWN; 미측정을 0으로 대체하지 않음",
+      "source_refs": [
+        "plan",
+        "design",
+        "review",
+        "timing1",
+        "timing2",
+        "timing3"
+      ]
+    },
+    {
+      "id": "NI-07",
+      "statement": "별도 terminal adoption event, 원 4셀 완료, 과거 독립 사전 승인 인증",
+      "minimum_required_evidence": "대상 사건·최종화 artifact 및 원 시점 검토자/승인 근거",
+      "current_evidence_suffices": false,
+      "missing_evidence": "확인 범위는 readout_ready와 candidate accepted=True; 원 run CLOSED_BY_USER_AT_CELL3",
+      "reason_code": "ADMINISTRATIVE_OR_ATTESTATION_EVIDENCE_GAP",
+      "identification_status": "UNKNOWN 또는 NOT_CERTIFIED; 실험 실패와 구분",
+      "source_refs": [
+        "closure",
+        "review",
+        "raw1",
+        "raw2",
+        "raw3"
+      ]
+    },
+    {
+      "id": "NI-08",
+      "statement": "LLM 내부·인간 인지·생물학·학습된 circuit 형성 또는 일반 그래프 집단의 효과",
+      "minimum_required_evidence": "해당 수준과 모집단을 직접 측정하는 독립 자료",
+      "current_evidence_suffices": false,
+      "missing_evidence": "하나의 authored native graph·고정 memory·circuits OFF; training/feedback 없음",
+      "reason_code": "EXPLANATORY_LEVEL_AND_POPULATION_MISMATCH",
+      "identification_status": "UNKNOWN",
+      "source_refs": [
+        "plan",
+        "design"
+      ]
+    }
+  ],
+  "derived_contrast_relations": {
+    "evidence_kind": "derived",
+    "response_definition": "별도 response마다 적용; goal, ticks, counters를 더하지 않음. category는 명목 상태이며 아래 수치 대수를 그대로 적용하지 않음",
+    "notation": {
+      "a": "y(.03,ON)",
+      "b": "y(.03,OFF)",
+      "c": "y(.04,ON)",
+      "u": "y(.04,OFF), UNKNOWN; missing을 0으로 채우지 않음",
+      "removal_direction": "OFF minus ON"
+    },
+    "structural_identification": {
+      "saturated_model": "y(z,r)=beta0+betaS*z+betaR*r+betaSR*z*r; z=1 for .04, r=1 for OFF",
+      "observed_design_matrix": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ]
+      ],
+      "rank": 3,
+      "parameter_count": 4,
+      "nullspace_basis": [
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "identified_coefficients": {
+        "beta0": "a",
+        "betaS": "c-a",
+        "betaR": "b-a"
+      },
+      "free_coefficient": "betaSR=u-c-b+a",
+      "general_linear_contrast_condition": "q_a*a+q_b*b+q_c*c+q_u*u는 q_u=0일 때만 조건 없이 point 식별",
+      "source_refs": [
+        "raw1",
+        "raw2",
+        "raw3",
+        "closure"
+      ]
+    },
+    "relations": [
+      {
+        "name": "removal_03",
+        "formula": "DeltaR03=b-a",
+        "status": "식별",
+        "goal_value": 0.7918282633064054,
+        "first_ticks_value": -50
+      },
+      {
+        "name": "score_ON",
+        "formula": "DeltaSON=c-a",
+        "status": "식별",
+        "goal_value": 0.9471854352738045,
+        "first_ticks_value": 16
+      },
+      {
+        "name": "diagonal",
+        "formula": "c-b=DeltaSON-DeltaR03",
+        "status": "식별되지만 두 요인이 함께 달라져 단일 제거효과가 아님",
+        "goal_value": 0.15535717196739907,
+        "first_ticks_value": 66
+      },
+      {
+        "name": "removal_04",
+        "formula": "DeltaR04=u-c",
+        "status": "UNKNOWN",
+        "goal_value": null
+      },
+      {
+        "name": "score_OFF",
+        "formula": "DeltaSOFF=u-b",
+        "status": "UNKNOWN",
+        "goal_value": null
+      },
+      {
+        "name": "interaction",
+        "formula": "I=DeltaR04-DeltaR03=DeltaSOFF-DeltaSON=u-c-b+a",
+        "status": "point UNKNOWN",
+        "goal_formula": "I=u-1.7758970188128997",
+        "goal_value": null
+      },
+      {
+        "name": "mean_removal_two_scores",
+        "formula": "(DeltaR03+DeltaR04)/2=DeltaR03+I/2",
+        "status": "point UNKNOWN",
+        "goal_value": null
+      },
+      {
+        "name": "mean_score_two_switches",
+        "formula": "(DeltaSON+DeltaSOFF)/2=DeltaSON+I/2",
+        "status": "point UNKNOWN",
+        "goal_value": null
+      }
+    ],
+    "conditional_bounded_completion": {
+      "condition": "미실행 .04 OFF를 측정했다고 간주하지 않음. 같은 frozen dynamics의 first settled numeric goal u가 존재하는 completion에만 적용; stable evaluation 가능성을 요구하거나 보장하지 않음",
+      "bound_basis": "initial=.5; finite sigmoid target in [0,1]; p_next=.55*p+.45*target; 귀납적으로 모든 유효 goal in [0,1]",
+      "u_domain": [
+        0,
+        1
+      ],
+      "goal_interaction_interval": [
+        -1.7758970188128997,
+        -0.7758970188128997
+      ],
+      "removal_04_interval": [
+        -0.9840687555064942,
+        0.015931244493505803
+      ],
+      "score_OFF_interval": [
+        -0.8287115835390951,
+        0.17128841646090487
+      ],
+      "mean_removal_interval": [
+        -0.09612024610004438,
+        0.4038797538999556
+      ],
+      "mean_score_interval": [
+        0.059236925867354684,
+        0.5592369258673546
+      ],
+      "additive_completion": {
+        "assumption": "I=0",
+        "required_u": 1.7758970188128997,
+        "compatible_with_bound": false
+      },
+      "interpretation": "interaction 부호<0은 조건부 도출 가능하나 magnitude, .04 제거효과의 부호, OFF slope의 부호, .04 category 및 수렴 여부는 미식별. u 존재나 실행 승인을 뜻하지 않음",
+      "source_refs": [
+        "dynamics",
+        "plan",
+        "raw1",
+        "raw2",
+        "raw3"
+      ]
+    },
+    "cost_accounting": {
+      "direction": "OFF minus ON at .03",
+      "first_ticks": "45-95=-50",
+      "total_ticks": "45-(95+57)=-107=-50-57",
+      "first_signal_transmissions": "4*45-8*95=-580=4*(45-95)+(4-8)*95",
+      "total_signal_transmissions": "180-1672=-1492=-580-912; 셀1 후속 network의 기록된 증분=1672-760=912",
+      "first_group_updates": "315-665=-350",
+      "total_group_updates": "315-1178=-863=-350-513",
+      "final_proof_depth": "recorded primitive_depth difference=2-2=0; reviewer reported D_DAG difference=2-2=0",
+      "interpretation": "회계적 identity; disabled 링크 수와 tick/path 변화의 독립 인과 기여나 mediation 추정이 아님",
+      "source_refs": [
+        "raw1",
+        "raw2",
+        "step1",
+        "step2",
+        "review"
+      ]
+    },
+    "predicate_logic": {
+      "exists": "E=changed(.03) OR changed(.04); observed changed(.03)=True이므로 E=True",
+      "universal": "N=nonzero(.03) AND nonzero(.04); True AND UNKNOWN=UNKNOWN; 누락을 False로 대입하지 않음",
+      "dependency": "같은 .03 증인으로 remove_bundle_s003_true와 category_change_exists를 지지; 두 독립 표본으로 합산하지 않음",
+      "source_refs": [
+        "plan",
+        "raw1",
+        "raw2",
+        "closure"
+      ]
+    }
+  },
+  "verification": {
+    "method": "existing raw field/pointer projection and algebraic contrast checks; independent source review of conditional bounds",
+    "original_analysis_checks": "PASS for declared scope",
+    "retrospective_reviewer_execution": "reported; not reexecuted",
+    "new_native_executions": 0,
+    "new_cloud_jobs": 0,
+    "checker_reruns": 0,
+    "cross_review": "ACCEPTABLE within static scope; not an independent release audit"
+  },
+  "limits": [
+    "same authored graph and frozen conditions only",
+    "conditional numeric completion is not observation of cell4 or convergence proof",
+    "point interaction and cell4 category remain UNKNOWN",
+    "same records are not new independent discovery samples",
+    "energy/peak memory and whole runtime are not newly verified"
+  ]
+}
