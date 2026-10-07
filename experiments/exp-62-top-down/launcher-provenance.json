@@ -1,0 +1,316 @@
+{
+  "schema": "LauncherProvenancePortable.v1",
+  "original_source_commit": "f4423794e784b03bc23daa76d8a009638c3f8ecf",
+  "source_analysis_sha256": "78b67e639ba845d1878bf243d97d3d5592ef37eec0329451ab837b2efad86a3f",
+  "source_analysis_is_git_evidence": false,
+  "record_kind": "완료된 읽기 전용 분석의 전달 기록; 새 분석·실험 없음",
+  "conclusion": "두 SHA의 차이는 34개 CRLF/LF 줄 끝뿐이다. 내부 manifest는 LF 정규화 pin, source_manifest는 CRLF 원 바이트 snapshot을 가리킨다.",
+  "classification": "LINE_ENDING_REPRESENTATION_AND_PATH_SPECIFIC_GIT_STORAGE; NO_CONTENT_DRIFT_OBSERVED",
+  "representations": {
+    "lf": {
+      "bytes": 1095,
+      "cr": 0,
+      "lf": 34,
+      "sha256": "56972b19ca328511e4d8b394e61002dd116c4637644cfb2680d70c080ba6d11a",
+      "git_blob_id": "239d2aac25d1079797bcb6971498760e99d90323"
+    },
+    "crlf": {
+      "bytes": 1129,
+      "cr": 34,
+      "lf": 34,
+      "sha256": "6b6cc52df2ae8f9dc0da04528ec8b8f26badd908e864185ffb30b3f941786d92",
+      "git_blob_id": "eae2d32020c5a1a800d98c31bf9025a3183f728f"
+    }
+  },
+  "materializations": [
+    {
+      "kind": "fixed_commit_root_git_blob",
+      "ref": "root_cmd",
+      "representation": "lf"
+    },
+    {
+      "kind": "observed_current_worktree_bytes",
+      "logical_ref": "root_cmd",
+      "representation": "crlf"
+    },
+    {
+      "kind": "transferred_current_worktree_bytes",
+      "logical_ref": "root_cmd",
+      "representation": "crlf"
+    },
+    {
+      "kind": "transferred_closed_run_frozen_bytes",
+      "ref": "frozen_cmd",
+      "representation": "crlf"
+    },
+    {
+      "kind": "observed_frozen_source_worktree_bytes",
+      "ref": "frozen_cmd",
+      "representation": "crlf"
+    },
+    {
+      "kind": "fixed_commit_frozen_git_blob",
+      "ref": "frozen_cmd",
+      "representation": "crlf"
+    }
+  ],
+  "materialization_boundary": "working/transfer의 CRLF 관측과 root Git LF blob를 구분한다. transfer artifact 자체가 Git에 있다고 주장하지 않는다. 같은 CRLF 바이트는 frozen_cmd blob에 보존되어 있다.",
+  "manifest_boundaries": [
+    {
+      "refs": [
+        "internal_pin",
+        "frozen_internal_pin"
+      ],
+      "expected_representation": "lf",
+      "comparison": "sha(raw.replace(CRLF,LF))"
+    },
+    {
+      "ref": "snapshot_manifest",
+      "expected_representation": "crlf",
+      "comparison": "sha(raw)",
+      "reported_checkout_commit": "77a850a84a73db2bf7dc863b21f31a904aa8105b",
+      "reported_recorded_at": "2026-10-03T13:20:24.421363+00:00"
+    }
+  ],
+  "minimal_difference": {
+    "byte_delta": 34,
+    "affected_line_terminators": 34,
+    "in_memory_crlf_to_lf_byte_equal_to_fixed_root_blob": true,
+    "transferred_current_byte_equal_to_fixed_frozen_blob": true,
+    "non_line_ending_content_drift_observed": false,
+    "inputs_modified": false
+  },
+  "git_storage": {
+    "root_cmd_attribute": {
+      "ref": "root_attributes",
+      "rule": "* text=auto"
+    },
+    "frozen_cmd_attribute": {
+      "ref": "frozen_attributes",
+      "rule": "* -text"
+    },
+    "observed_eol": {
+      "root_cmd": "i/lf w/crlf attr/text=auto",
+      "frozen_cmd": "i/crlf w/crlf attr/-text"
+    },
+    "root_blob_same_at_checked_commits": [
+      "3c16f83d0bb0e65c4b70b422c34749cd5d416b79",
+      "77a850a84a73db2bf7dc863b21f31a904aa8105b",
+      "2957f49ec643a8296742459c5922104aa0fe8539",
+      "f4423794e784b03bc23daa76d8a009638c3f8ecf"
+    ],
+    "frozen_cmd_introduction_commit": "06c8f8eff72e08341d10512acc17a7be08d21745"
+  },
+  "pin_check": {
+    "status": "STATIC_SOURCE_CONFIRMED; RUNTIME_NOT_RUN",
+    "normalized_pin": {
+      "refs": [
+        "inventory",
+        "frozen_inventory"
+      ],
+      "comparison": "require(sha(raw.replace(b'\\r\\n',b'\\n')) == digest)",
+      "raw_digest_kept": "result[name] = sha(raw)"
+    },
+    "freeze": {
+      "ref": "freeze",
+      "meaning": "inventory의 raw digest를 확인한 원 바이트를 source로 복사하고 source_manifest를 기록"
+    },
+    "raw_snapshot_check": {
+      "refs": [
+        "source_check",
+        "raw_sha"
+      ],
+      "comparison": "files(out/'source') == load(out/'source_manifest.json')['files']; files uses sha(p.read_bytes())"
+    },
+    "current_vs_frozen_check": {
+      "ref": "inventory",
+      "line": 64,
+      "comparison": "inventory(root) == source"
+    },
+    "interpretation": "해당 CMD의 normalized pin과 raw snapshot 관계는 일치한다. SHA 차이 자체가 pin 실패를 의미하지 않는다.",
+    "boundary": "전체 inventory·previous_inventory·receipt·runtime은 실행하거나 검증하지 않았다."
+  },
+  "closed_run": {
+    "ref": "closure",
+    "status": "CLOSED_BY_USER_AT_CELL3",
+    "executed_cells": 3,
+    "planned_cells": 4,
+    "unexecuted_cell": "swapped-s004-td0-off",
+    "cell4_executed": false,
+    "resume_current_run_authorized": false,
+    "followup_native_execution_authorized": false,
+    "interpretation": "행정적 폐쇄 기록이며 실험 성공·실패·4셀 완료 판정이 아니다."
+  },
+  "invariants": [
+    {
+      "id": "SAME_FIXED_CANDIDATE_RAW_BYTES",
+      "assessment": "OBSERVED_FOR_EXAMINED_CMD_ONLY",
+      "meaning": "commit·path·raw/normalized 범위를 분리"
+    },
+    {
+      "id": "CLOSED_RUN_MONOTONIC",
+      "assessment": "SOURCE_STATE_CONFIRMED_AND_NO_MUTATING_ACTION",
+      "meaning": "cell3 폐쇄 및 cell4 GO 없음 유지"
+    },
+    {
+      "id": "READ_IS_NOT_EXECUTION_OR_AUTHORITY",
+      "assessment": "LOCAL_ACTION_SCOPE_PRESERVED",
+      "meaning": "조회·보고서·schema는 실행 승인이나 제품 PASS를 만들지 않음"
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "ORIGINAL_HOST_CRLF_CREATION_EVENT",
+      "status": "NOT_OBSERVED",
+      "scope": "원 호스트 당시 config 및 CRLF 생성 작업·행위자",
+      "impact": "바이트 차이 분류는 확정; 과거 생성 사건은 미확정"
+    },
+    {
+      "id": "FULL_RUNTIME_AND_INVENTORY",
+      "status": "NOT_VERIFIED_BY_SCOPE",
+      "execution_status": "NOT_RUN",
+      "scope": "548 source 파일, previous_inventory, 전체 런·receipt",
+      "impact": "CMD 관계를 전체 실행 성공이나 재개 가능성으로 일반화하지 않음"
+    }
+  ],
+  "claims": {
+    "new_scientific_evidence": false,
+    "scientific_gate_pass": false,
+    "runtime_certified": false,
+    "execution_authorized": false,
+    "cell4_execution_go": false,
+    "full_four_cell_completion": false,
+    "schema_is_product_pass": false,
+    "independent_release_audit": false,
+    "resealed": false
+  },
+  "source_refs": {
+    "root_cmd": {
+      "path": "Run-HCR-R081.cmd",
+      "lines": [
+        1,
+        34
+      ]
+    },
+    "frozen_cmd": {
+      "path": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/source/Run-HCR-R081.cmd",
+      "lines": [
+        1,
+        34
+      ]
+    },
+    "internal_pin": {
+      "path": "R081_MANIFEST.json",
+      "line": 5,
+      "json_pointer": "/files/Run-HCR-R081.cmd"
+    },
+    "frozen_internal_pin": {
+      "path": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/source/R081_MANIFEST.json",
+      "line": 5,
+      "json_pointer": "/files/Run-HCR-R081.cmd"
+    },
+    "snapshot_manifest": {
+      "path": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/source_manifest.json",
+      "line": 1,
+      "json_pointers": [
+        "/files/Run-HCR-R081.cmd",
+        "/checkout_commit",
+        "/recorded_at"
+      ]
+    },
+    "closure": {
+      "path": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/closure.json",
+      "lines": [
+        3,
+        14,
+        19,
+        22,
+        24,
+        26,
+        27
+      ],
+      "json_pointers": [
+        "/status",
+        "/executed_cell_ids",
+        "/unexecuted_cell_ids",
+        "/cell4_executed",
+        "/resume_current_run_authorized",
+        "/followup_native_execution_authorized"
+      ]
+    },
+    "root_attributes": {
+      "path": ".gitattributes",
+      "line": 1
+    },
+    "frozen_attributes": {
+      "path": "HCR-Evidence/exp62/.gitattributes",
+      "line": 1
+    },
+    "inventory": {
+      "path": "tools/r081_top_down/pipeline.py",
+      "lines": [
+        31,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        64
+      ]
+    },
+    "frozen_inventory": {
+      "path": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/source/tools/r081_top_down/pipeline.py",
+      "lines": [
+        31,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ]
+    },
+    "freeze": {
+      "path": "tools/r081_top_down/pipeline.py",
+      "lines": [
+        113,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120
+      ]
+    },
+    "source_check": {
+      "path": "tools/r081_top_down/review_gate.py",
+      "lines": [
+        18,
+        19,
+        20
+      ]
+    },
+    "raw_sha": {
+      "path": "tools/r050_review_boundary/common.py",
+      "lines": [
+        23,
+        24,
+        89,
+        92,
+        96,
+        97,
+        98
+      ]
+    }
+  },
+  "source_ref_semantics": "모든 path는 original_source_commit의 저장소 상대 경로다. 자료의 JSON pointer·source 줄은 해당 원 커밋에 결속한다.",
+  "portable_exclusions": [
+    "호스트·사용자·컴퓨터·GPG·브로커 정보",
+    "절대 경로와 저장소 외 운영기록",
+    "shell 본문·command transcript",
+    "중복 base64 CMD 바이트",
+    "workflow/권한 영수증 메타"
+  ],
+  "delivery_scope": "Git 동작은 이 기록의 검증이나 과학적 판정을 변경하지 않는다. 작성자는 저장소·원 분석 보고서를 수정하지 않았다."
+}
