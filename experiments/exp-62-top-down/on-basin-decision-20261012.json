@@ -1,0 +1,401 @@
+{
+  "skill_version": "1.0.0",
+  "schema_version": "1.0",
+  "preflight": {
+    "required_capabilities": [
+      "blind reviewer2",
+      "원자료/소스 읽기",
+      "서로 다른 failure function",
+      "별도 Fraction forward 검산"
+    ],
+    "observed_capabilities": [
+      "blind reviewer2",
+      "원자료/소스 읽기",
+      "서로 다른 failure function",
+      "별도 Fraction forward 검산"
+    ],
+    "missing_capabilities": [],
+    "supported_models_reasoning": [
+      "gpt-6.1-sol/high:tool schema 지원; actual runtime 미관측"
+    ]
+  },
+  "case_brief": {
+    "decision": "원래 초기값 p=.5가 고정한 첫 ON 실수 모델의 어느 인증 고정점으로 수렴하는가",
+    "facts": [
+      "기준 main4248b246과 기존 고정점 인증 박스",
+      "코드의 기본 초기값은 7상태 모두 p=.5이며 x0=0이다.",
+      "과거 첫 ON 네트워크의 native 종료는 .03 95틱/.04 111틱이다."
+    ],
+    "assumptions": [
+      "첫 네트워크 고정, binary64 primitive 계수의 실수 연장, 조기 종료 없는 무한 반복"
+    ],
+    "constraints": [
+      "원R0813/4·raw·src·manifest·CI·기존 분석 보존",
+      "실행 전 protocol·code·source·initial·budget·rounding 동결",
+      "forward 모델과 산술은 제안기와 독립; 고정점 박스는 pinned 검산기로 재검증",
+      "native·Cloud·install·API0",
+      "원초기값 basin과 열린 근방 존재만 인증; native 반올림·전체 basin 경계는 미인증"
+    ],
+    "unknowns": [
+      "native binary64의 장기 basin",
+      "명시적 근방 반경과 전체 경계",
+      "고정점 총수와 분기",
+      "dot 조언 미회수"
+    ],
+    "success_criteria": [
+      "모든 F(Xk)⊆Xk+1 exact 검사와 마지막 전체 구간의 엄격한 진입",
+      "고정점 재검증과 독립 원자료 모델의 exact equality",
+      "표적 변이 RED·원본 GREEN 및 negative controls"
+    ],
+    "failure_modes": [
+      "native settled 상태를 원래 초기값으로 대체",
+      "원 x0를 .5로 오해",
+      "공유 구현의 공통 오류 또는 서로 다른 map의 증명 결합",
+      "점 중첩이나 가까운 goal 값만으로 basin 승인",
+      "수학 단계와 native 틱 또는 정확한 점의 최초 진입 시간 혼동"
+    ]
+  },
+  "run": {
+    "id": "ai-on-basin-certification-20261012-r01",
+    "stage": "MEDIUM",
+    "strict": false,
+    "worker_cap": 3,
+    "workers": [
+      {
+        "id": "/root/basin_math_panel",
+        "role": "basin 동역학·유한 연결 사슬의 수학 검토",
+        "status": "completed",
+        "is_judge": false,
+        "instantiated": true,
+        "requested_model": "gpt-6.1-sol",
+        "actual_model": null,
+        "requested_reasoning": "high",
+        "actual_reasoning": null,
+        "fallback_reason": "호출 응답은task_name만 제공; 실제 effective 설정은 caller 관측 불가",
+        "classification": "reviewer",
+        "blind_round1": true,
+        "context_isolated": true,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ]
+      },
+      {
+        "id": "/root/basin_evidence_panel",
+        "role": "원초기값·모델 결속·증거 경계 검토",
+        "status": "completed",
+        "is_judge": false,
+        "instantiated": true,
+        "requested_model": "gpt-6.1-sol",
+        "actual_model": null,
+        "requested_reasoning": "high",
+        "actual_reasoning": null,
+        "fallback_reason": "호출 응답은task_name만 제공; 실제 effective 설정은 caller 관측 불가",
+        "classification": "reviewer",
+        "blind_round1": true,
+        "context_isolated": true,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ]
+      }
+    ],
+    "completed_worker_ids": [
+      "/root/basin_math_panel",
+      "/root/basin_evidence_panel"
+    ],
+    "reused_worker_ids": [],
+    "failures": [],
+    "fresh_judge_id": null,
+    "candidate_skill_sha256": null,
+    "assurance": "partially_independent",
+    "specialist_additions": [],
+    "redeliberations": [],
+    "judge_fallback": null,
+    "capability_shortfall": false
+  },
+  "panel_manifest": [
+    {
+      "id": "/root/basin_math_panel",
+      "role": "basin 동역학·유한 연결 사슬의 수학 검토",
+      "status": "completed",
+      "is_judge": false,
+      "instantiated": true,
+      "requested_model": "gpt-6.1-sol",
+      "actual_model": null,
+      "requested_reasoning": "high",
+      "actual_reasoning": null,
+      "fallback_reason": "호출 응답은task_name만 제공; 실제 effective 설정은 caller 관측 불가",
+      "classification": "reviewer",
+      "blind_round1": true,
+      "context_isolated": true,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ]
+    },
+    {
+      "id": "/root/basin_evidence_panel",
+      "role": "원초기값·모델 결속·증거 경계 검토",
+      "status": "completed",
+      "is_judge": false,
+      "instantiated": true,
+      "requested_model": "gpt-6.1-sol",
+      "actual_model": null,
+      "requested_reasoning": "high",
+      "actual_reasoning": null,
+      "fallback_reason": "호출 응답은task_name만 제공; 실제 effective 설정은 caller 관측 불가",
+      "classification": "reviewer",
+      "blind_round1": true,
+      "context_isolated": true,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ]
+    }
+  ],
+  "constraints": [
+    "원R0813/4·raw·src·manifest·CI·기존 분석 보존",
+    "실행 전 protocol·code·source·initial·budget·rounding 동결",
+    "forward 모델과 산술은 제안기와 독립; 고정점 박스는 pinned 검산기로 재검증",
+    "native·Cloud·install·API0",
+    "원초기값 basin과 열린 근방 존재만 인증; native 반올림·전체 basin 경계는 미인증"
+  ],
+  "required_constraints": [
+    "원R0813/4·raw·src·manifest·CI·기존 분석 보존",
+    "실행 전 protocol·code·source·initial·budget·rounding 동결",
+    "forward 모델과 산술은 제안기와 독립; 고정점 박스는 pinned 검산기로 재검증",
+    "native·Cloud·install·API0",
+    "원초기값 basin과 열린 근방 존재만 인증; native 반올림·전체 basin 경계는 미인증"
+  ],
+  "material_claims": [
+    {
+      "id": "C1",
+      "statement": "기본 초기값은 7상태 모두 p=.5이며 x0=0이다. 기록 어댑터와 판단 callsite에 initial override가 없다.",
+      "provenance": [
+        {
+          "locator": "src/hcr/dynamics.py:35",
+          "verification_status": "verified",
+          "verification_note": "원자료·현재/보존 runtime 바이트·초기화 AST 검사와 blind source 검토"
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "statement": ".03 ON의 원점 초기값부터 148개 구간 전이와 마지막 엄격한 진입을 검산해 index0의 낮은 고정점으로 수렴함을 인증했다.",
+      "provenance": [
+        {
+          "locator": "experiments/exp-62-top-down/on-basin-certificates-20261012.json#/independent_verification/results/0",
+          "verification_status": "verified",
+          "verification_note": "독립 원자료 모델 exact match·Taylor96 전이·고정점 재검증 실제 PASS와 수학 결과 검토"
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "statement": ".04 ON은 126개 구간 전이를 검산해 index3의 높은 고정점으로 수렴함을 인증했다.",
+      "provenance": [
+        {
+          "locator": "experiments/exp-62-top-down/on-basin-certificates-20261012.json#/independent_verification/results/1",
+          "verification_status": "verified",
+          "verification_note": "전이 포함·양수 마지막 여유·고정점 재검증 실제 PASS"
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "statement": "고립 두 좌표의 q_iso<1에 따라 선택된 5상태 고정점에는 유일한 7상태 확장이 있다. 원초기값 수렴과 열린 근방 존재를 인증했지만 명시적 반경과 native 장기 basin은 인증하지 않았다.",
+      "provenance": [
+        {
+          "locator": "experiments/exp-62-top-down/on-basin-certificates-20261012.json#/mathematical_argument",
+          "verification_status": "verified",
+          "verification_note": "고립 상태와 유한 입력·exact q_iso·연속성과 Banach 논리를 직접 대조"
+        }
+      ]
+    }
+  ],
+  "cross_examination": {
+    "decision": "run",
+    "reason": "공유 helper의 공통 오류와 모델 동일성, native 조기 종료와 실수 무한 반복, 열린 근방 및 7상태 확장의 숨은 전제를 확인했다.",
+    "trigger_items": [
+      {
+        "id": "T1",
+        "origin_reviewer": "/root/basin_evidence_panel"
+      },
+      {
+        "id": "T2",
+        "origin_reviewer": "/root/basin_evidence_panel"
+      },
+      {
+        "id": "T3",
+        "origin_reviewer": "/root/basin_math_panel"
+      }
+    ],
+    "selected_item_ids": [
+      "T1",
+      "T2",
+      "T3"
+    ],
+    "coverage": [
+      {
+        "item_id": "T1",
+        "reviewer_ids": [
+          "/root/basin_math_panel"
+        ]
+      },
+      {
+        "item_id": "T2",
+        "reviewer_ids": [
+          "/root/basin_math_panel"
+        ]
+      },
+      {
+        "item_id": "T3",
+        "reviewer_ids": [
+          "/root/basin_evidence_panel"
+        ]
+      }
+    ],
+    "followups": [
+      {
+        "reviewer_id": "/root/basin_math_panel",
+        "item_ids": [
+          "T1",
+          "T2"
+        ]
+      },
+      {
+        "reviewer_id": "/root/basin_evidence_panel",
+        "item_ids": [
+          "T3"
+        ]
+      }
+    ]
+  },
+  "issue_ledger": [
+    {
+      "issue_id": "I1",
+      "status": "CONFIRMED",
+      "rationale": "원래 초기값 결속에서 모든 exact forward 전이와 재검증한 고정점 박스까지의 연결 사슬이 검증됐다.",
+      "required_evidence": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "available_evidence": [
+        "C1",
+        "C2",
+        "C3"
+      ]
+    },
+    {
+      "issue_id": "I2",
+      "status": "UNRESOLVED",
+      "rationale": "native binary64 장기 basin·전체 basin 경계·명시적 반경은 별도의 증명 계약이 필요하다.",
+      "required_evidence": [
+        "native rounding/globalbasin certificate"
+      ],
+      "available_evidence": [
+        "C4"
+      ]
+    },
+    {
+      "issue_id": "I3",
+      "status": "UNRESOLVED",
+      "rationale": "기존 dot 조언은 미회수다. 이번 사용자 방향은 명확하므로 독립적으로 진행했다.",
+      "required_evidence": [
+        "dot reply"
+      ],
+      "available_evidence": [
+        "기존 발신기록"
+      ]
+    }
+  ],
+  "axis_decisions": [
+    {
+      "axis": "수학적 유효성",
+      "decision": "원래 초기값에서 .03의 낮은 고정점(index0), .04의 높은 고정점(index3) 수렴을 고정 실수 map에 한정해 수용한다.",
+      "evidence_claim_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4"
+      ]
+    },
+    {
+      "axis": "증거 경계",
+      "decision": "148/126은 구간의 인증 진입 단계다. native 95/111/160틱 및 정확한 점의 최초 진입 시간과 구분한다.",
+      "evidence_claim_ids": [
+        "C2",
+        "C3",
+        "C4"
+      ]
+    },
+    {
+      "axis": "범위·재현성",
+      "decision": "동결한 다섯 파일과 독립 검산·표적 검증으로 한 연구 단위를 전달한다.",
+      "evidence_claim_ids": [
+        "C1",
+        "C2",
+        "C3"
+      ]
+    }
+  ],
+  "consensus_proposal": {
+    "status": "conditional_consensus",
+    "action": "원래 초기값 p=.5의 basin을 고정한 첫 ON 실수 모델에서 .03의 낮은 고정점과 .04의 높은 고정점으로 인증한다.",
+    "supported_by_verified_claims": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "satisfied_constraints": [
+      "원R0813/4·raw·src·manifest·CI·기존 분석 보존",
+      "실행 전 protocol·code·source·initial·budget·rounding 동결",
+      "forward 모델과 산술은 제안기와 독립; 고정점 박스는 pinned 검산기로 재검증",
+      "native·Cloud·install·API0",
+      "원초기값 basin과 열린 근방 존재만 인증; native 반올림·전체 basin 경계는 미인증"
+    ],
+    "axis_alignment": [
+      {
+        "axis": "수학적 유효성",
+        "decision_ref": "수학적 유효성"
+      },
+      {
+        "axis": "증거 경계",
+        "decision_ref": "증거 경계"
+      },
+      {
+        "axis": "범위·재현성",
+        "decision_ref": "범위·재현성"
+      }
+    ],
+    "conditions": [
+      "고정한 첫 네트워크와 실수 무한 반복에 한정",
+      "열린 근방의 존재와 명시적 반경 인증을 구분",
+      "구간 인증 진입 단계를 정확한 점의 최초 진입 시간으로 표현하지 않음"
+    ],
+    "unresolved_dissent": [],
+    "no_consensus_reason": null,
+    "remaining_options": [
+      "native 반올림 견고성은 별도 증명 계약",
+      "score 간 분기와 전체 basin 경계는 별도 동결 연구"
+    ],
+    "decision_owner": null
+  },
+  "observability": {
+    "wall_time": "NOT_OBSERVABLE",
+    "tokens": "NOT_OBSERVABLE",
+    "tool_calls": "NOT_OBSERVABLE",
+    "worker_count": 2
+  },
+  "method_notes": [
+    "MEDIUM blind2와 각1회 cross-exam. Fresh Judge·reserve·specialist는 사용하지 않았다. Coordinator 통합이며 partially_independent로 기록했다.",
+    "수학 reviewer의 독립 초기 source/연결 사슬 주장 이후 설계 초안을 공유했다. 후속 설계·코드·결과 검토는 non-independent recheck이며 완전 독립 감사로 확대하지 않는다.",
+    "제안기는 coordinator가 pinned Decimal helper를 사용해 구현했다. 별도 reviewer가 원자료 모델과 Fraction/Taylor forward 검산기를 독립 구현했다. 기존 checker는 고정점 박스 재검증에만 사용하며 두 모델의 exact equality를 확인한다.",
+    "Sol6.1/high를 요청해 dispatch했지만 실제 effective 모델·effort는 UNKNOWN이다.",
+    "구현·검증·범위·수용 근거·push preflight를 direct 전문 흐름으로 연결했다. 숫자 실행 전에 분리 검산기를 위해 작업 계약을 4파일에서 5파일로 바꿨다. 처음 캡처한 전체 기준 snapshot의 entries/hash/head/time은 보존하고 작업 계약 binding만 별도 파생 artifact로 갱신했다. 미완료 commit 기준 캡처는 증거로 사용하지 않았다.",
+    "원R0813/4 보존, 새 native·Cloud·install·유료 API0. Dot 미회수는 이번 작업의 실행 권한 gate가 아니다."
+  ]
+}

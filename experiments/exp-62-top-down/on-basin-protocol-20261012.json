@@ -1,0 +1,125 @@
+{
+  "schema": "HCCONBasinProtocol.v1",
+  "frozen_at_utc": "2026-10-12T05:12:39.710325+00:00",
+  "source_commit": "4248b246acdae558e68588cb565af095d4cfccb4",
+  "question": "원default p=.5가조기종료없는fixed firstON実数反復에서 어느certifiedrootへ수렴하는가",
+  "model_semantics": "고정 raw/config JSON 숫자를 binary64로 복원하고 primitive 계수를 exact rational로 변환한 실수 연장 모델. native 연산 순서의 반올림을 재현하지 않는다.",
+  "root_protocol": {
+    "path": "experiments/exp-62-top-down/on-root-protocol-20261012.json",
+    "sha256": "396d45bac10dba17b69c1eca5542807cba838fc1a7fa600c85e7fc33fa23c86c",
+    "bytes": 5940
+  },
+  "root_record": {
+    "path": "experiments/exp-62-top-down/on-root-certificates-20261012.json",
+    "sha256": "d1dc48c3fc547a68b1ae9ef3478c5165868a2cb3ce07ff4e3698efce96c945a8",
+    "bytes": 39459
+  },
+  "root_checker": {
+    "path": "tools/analysis/check_on_fixed_points.py",
+    "sha256": "e23abd2a8fb4e881913a50cc0b810f187b0181ee8f0f712ec5d883fcaecd8663",
+    "bytes": 15448
+  },
+  "proposal_helper": {
+    "path": "tools/analysis/on_fixed_points.py",
+    "sha256": "6156e328499369da75fed5da451d814addfad06e4b4d0286babb1b18212c9d86",
+    "bytes": 9888
+  },
+  "sources": [
+    {
+      "path": "src/hcr/dynamics.py",
+      "sha256": "a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc",
+      "bytes": 3848
+    },
+    {
+      "path": "src/hcr/runtime.py",
+      "sha256": "1f71a2a2d5469f8c9532de421b71f16b8e62ec6bc8aa6184146f41a7990f34eb",
+      "bytes": 26026
+    }
+  ],
+  "models": [
+    {
+      "model_id": "swapped-s003-td1-off",
+      "raw_path": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/evaluation/swapped-s003-td1-off/inference.json",
+      "raw_sha256": "56ac3c9ccb28ade542bdcfb613e8bf4ca326c86b900aee8c05e2b9eefd566fc1",
+      "raw_bytes": 234849
+    },
+    {
+      "model_id": "swapped-s004-td1-off",
+      "raw_path": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/evaluation/swapped-s004-td1-off/inference.json",
+      "raw_sha256": "97daaac49c5edac743bb4d856fd10ed319104d1df61d444ca5941fc92e6c5c64",
+      "raw_bytes": 174744
+    }
+  ],
+  "state_order": [
+    "e:0",
+    "e:1",
+    "p:0:0",
+    "p:0:1",
+    "goal"
+  ],
+  "original_initial": {
+    "source": "settle_recorded→settle(initial omitted); state eachgroup p=.5",
+    "all_state_order": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "e:3",
+      "p:0:0",
+      "p:0:1",
+      "goal"
+    ],
+    "p": "0.5",
+    "x": "0",
+    "proof_initial_bounds": "eachfiveactivepoint exactly0, no firsttick/settled replacement"
+  },
+  "targets": {
+    "swapped-s003-td1-off": [
+      0,
+      2
+    ],
+    "swapped-s004-td1-off": [
+      3
+    ]
+  },
+  "arithmetic": {
+    "proposal": "pinned Decimal80 directed interval helper; exp widened neighbours; synchronousF; outward grid50 eachstep",
+    "checker": "independent model and Fraction arithmetic; independent Taylor96 exp/tanh; entireforwardimage enclosure checked inside submitted nextbox",
+    "taylor_degree": 96,
+    "grid_decimal_places": 50,
+    "trace_encoding": "fixed50-decimal strings, finite no exponent/plus/whitespace/-zero; length<=60; all endpoints -1<=x<=1",
+    "exact_exp_tail": "S96(u)<=exp(u)<=S96(u)+(u^97/97!)/(1-u/98),0<=u<98"
+  },
+  "budget": {
+    "max_steps_per_model": 1000,
+    "model_order": [
+      "swapped-s003-td1-off",
+      "swapped-s004-td1-off"
+    ],
+    "auto_retry": false,
+    "adaptive_precision": false,
+    "alternative_initial": false
+  },
+  "entry_rule": "first step where entire XN strictly inside one verified targetB; point overlap/nearestgoal/residual not sufficient; reportexact chosenindex+gap",
+  "certificate_arguments": [
+    "X0={0}; rigorous F(Xk) subset Xk+1 induction",
+    "strictXN subset intB plus independentlyrevalidated B self-map/weightedcontraction implies exact initialpoint converges to thatroot",
+    "continuity implies open initialneighborhood exists; noexplicitradius certified",
+    "isolatede2/e3 directrawlinkabsence and finitebias/drive/selfcoef plusq_iso<1 imply unique7state lift and original7state convergence in samefixedrealmodel"
+  ],
+  "verification_plan": [
+    "blind2 + boundedcross beforecode/numbers",
+    "input/code/protocol pins before actualsearch",
+    "standalone syntheticchecks and frozenexternaldrivers",
+    "generatorgridceiling omission and verifierforward/entry soundness targetedmutations RED thenGREEN",
+    "alter initial, model ID/rootbinding, coordinateorder, omittedstep, shrunkennextbox, boundarycontact negativecontrols",
+    "source/native95/111tick observations are separate historical facts; no rootbox membership assumed"
+  ],
+  "failure_semantics": "schema/pin mismatch rejected; Taylor/transition failure rejected/inconclusive; maxsteps/noentry INCONCLUSIVE, nevernonconvergence/absence",
+  "limits": [
+    "fixedfirstgraph real extension and infiniteiteration only",
+    "native middle rounding/160tick/stop statuses/graphexpansion notcertified",
+    "originalR0813of4 preserved, no .04OFF/native/Cloud/API/install",
+    "no fullbasinboundary/globalrootcount/bifurcation",
+    "rootchecker helperonly forroot proof; no forward/model sharing innewverifier"
+  ]
+}
