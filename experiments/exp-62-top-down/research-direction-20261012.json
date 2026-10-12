@@ -1,0 +1,387 @@
+{
+  "skill_version": "1.0.0",
+  "schema_version": "1.0",
+  "preflight": {
+    "required_capabilities": [
+      "blind reviewer2",
+      "원자료/소스 읽기",
+      "서로 다른 failure function"
+    ],
+    "observed_capabilities": [
+      "blind reviewer2",
+      "원자료/소스 읽기",
+      "서로 다른 failure function"
+    ],
+    "missing_capabilities": [],
+    "supported_models_reasoning": [
+      "gpt-6.1-sol/high:tool schema 지원; actual runtime 미관측"
+    ]
+  },
+  "case_brief": {
+    "decision": "현재 HCC의 다음 최소 연구 단위에서 내부점 refinement·고정점 분석·성분 개입 중 무엇을 먼저 수행할 것인가",
+    "facts": [
+      "main/source1bd29ee",
+      "R081 기존3/4와 두 보존 분석",
+      "세 관측 첫 graph가 동일하며 .03/.04 ON first goal이 다름"
+    ],
+    "assumptions": [
+      "동결 첫 network를 연구하는 실수 수학 모델은 native 전체 실행과 구분한다."
+    ],
+    "constraints": [
+      "원 R081 셀3 종료와3/4 유지; 누락 셀 재실행 없음",
+      "실수 수학·원 관측·native 유한 종료를 구분",
+      "소스/raw/manifest/CI 변경 없음",
+      "생산 실행·기존 checker·Cloud 재실행 없음"
+    ],
+    "unknowns": [
+      "ON의 root수/basin/분기",
+      "dot 조언은 발신했으며 아직 미회수"
+    ],
+    "success_criteria": [
+      "서로 다른2 blind review 및 조건부 반박",
+      "source-bound derived 결과와 미식별 구분",
+      "한 후속 단위와 반증 조건 결정"
+    ],
+    "failure_modes": [
+      "유한 종료를 exact root로 오해",
+      "일반 row norm 실패를 DAG 정리 반증으로 오해",
+      "원3/4를 완료로 승격",
+      "state 등가를 native/config 전체 등가로 확대"
+    ]
+  },
+  "run": {
+    "id": "ai-research-direction-20261012-r01",
+    "stage": "MEDIUM",
+    "strict": false,
+    "worker_cap": 3,
+    "workers": [
+      {
+        "id": "/root/research_dynamics_review",
+        "role": "수학적 동역학·안정성 검토",
+        "status": "completed",
+        "is_judge": false,
+        "instantiated": true,
+        "requested_model": "gpt-6.1-sol",
+        "actual_model": null,
+        "requested_reasoning": "high",
+        "actual_reasoning": null,
+        "fallback_reason": "호출 응답은task_name만 제공; 실제 effective 설정은 caller 관측 불가",
+        "classification": "reviewer",
+        "blind_round1": true,
+        "context_isolated": true,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ]
+      },
+      {
+        "id": "/root/research_identification_review",
+        "role": "식별력·construct·정보가치 검토",
+        "status": "completed",
+        "is_judge": false,
+        "instantiated": true,
+        "requested_model": "gpt-6.1-sol",
+        "actual_model": null,
+        "requested_reasoning": "high",
+        "actual_reasoning": null,
+        "fallback_reason": "호출 응답은task_name만 제공; 실제 effective 설정은 caller 관측 불가",
+        "classification": "reviewer",
+        "blind_round1": true,
+        "context_isolated": true,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ]
+      }
+    ],
+    "completed_worker_ids": [
+      "/root/research_dynamics_review",
+      "/root/research_identification_review"
+    ],
+    "reused_worker_ids": [],
+    "failures": [],
+    "fresh_judge_id": null,
+    "candidate_skill_sha256": null,
+    "assurance": "partially_independent",
+    "specialist_additions": [],
+    "redeliberations": [],
+    "judge_fallback": null,
+    "capability_shortfall": false
+  },
+  "panel_manifest": [
+    {
+      "id": "/root/research_dynamics_review",
+      "role": "수학적 동역학·안정성 검토",
+      "status": "completed",
+      "is_judge": false,
+      "instantiated": true,
+      "requested_model": "gpt-6.1-sol",
+      "actual_model": null,
+      "requested_reasoning": "high",
+      "actual_reasoning": null,
+      "fallback_reason": "호출 응답은task_name만 제공; 실제 effective 설정은 caller 관측 불가",
+      "classification": "reviewer",
+      "blind_round1": true,
+      "context_isolated": true,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ]
+    },
+    {
+      "id": "/root/research_identification_review",
+      "role": "식별력·construct·정보가치 검토",
+      "status": "completed",
+      "is_judge": false,
+      "instantiated": true,
+      "requested_model": "gpt-6.1-sol",
+      "actual_model": null,
+      "requested_reasoning": "high",
+      "actual_reasoning": null,
+      "fallback_reason": "호출 응답은task_name만 제공; 실제 effective 설정은 caller 관측 불가",
+      "classification": "reviewer",
+      "blind_round1": true,
+      "context_isolated": true,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ]
+    }
+  ],
+  "constraints": [
+    "원 R081 셀3 종료와3/4 유지; 누락 셀 재실행 없음",
+    "실수 수학·원 관측·native 유한 종료를 구분",
+    "소스/raw/manifest/CI 변경 없음",
+    "생산 실행·기존 checker·Cloud 재실행 없음"
+  ],
+  "required_constraints": [
+    "원 R081 셀3 종료와3/4 유지; 누락 셀 재실행 없음",
+    "실수 수학·원 관측·native 유한 종료를 구분",
+    "소스/raw/manifest/CI 변경 없음",
+    "생산 실행·기존 checker·Cloud 재실행 없음"
+  ],
+  "material_claims": [
+    {
+      "id": "C1",
+      "statement": "세 관측 첫 network는 동일7groups/8links이며 e:2/e:3은 첫 goal 부분계의 링크에 참여하지 않는다.",
+      "provenance": [
+        {
+          "locator": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/evaluation/swapped-s003-td0-off/inference.json#/execution/packet/document/events/8/payload/program",
+          "verification_status": "verified",
+          "verification_note": "Coordinator가 세 셀 event8의 groups/links/digest를 직접 대조"
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "statement": "OFF에서는 node 간 support DAG와 자기 방향q=.65125<1을 분리해 유일 평형·무한 반복 수렴을 증명할 수 있다.",
+      "provenance": [
+        {
+          "locator": "src/hcr/dynamics.py:14",
+          "verification_status": "verified",
+          "verification_note": "고정식/config/DAG 원자료 확인 및 두 독립 관점·한정 반박의 증명 검토"
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "statement": "실제 settle은 전체7상태의 residual/patience/oscillation을 사용하며 기록 settled state는 exact root의 직접 증명이 아니다.",
+      "provenance": [
+        {
+          "locator": "src/hcr/dynamics.py:35",
+          "verification_status": "verified",
+          "verification_note": "종료 코드를 직접 읽음; 축약 stop time 보장과 ON root 인증을 제외"
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "statement": "self_excitation/inhibition 합만 state 실수식에 나타나지만 config signature와 native 부동소수점은 별도 경계다.",
+      "provenance": [
+        {
+          "locator": "src/hcr/model.py:67",
+          "verification_status": "verified",
+          "verification_note": "tick 대수·signature asdict·circuits memory mismatch 코드를 직접 읽고 교차 검토"
+        }
+      ]
+    }
+  ],
+  "cross_examination": {
+    "decision": "run",
+    "reason": "숨은 전제인 큰 row sum, 7→5의 종료 의미, 같은 자기항 합의 native 등가성을 확인",
+    "trigger_items": [
+      {
+        "id": "T1",
+        "origin_reviewer": "/root/research_dynamics_review"
+      },
+      {
+        "id": "T2",
+        "origin_reviewer": "/root/research_dynamics_review"
+      },
+      {
+        "id": "T3",
+        "origin_reviewer": "/root/research_identification_review"
+      }
+    ],
+    "selected_item_ids": [
+      "T1",
+      "T2",
+      "T3"
+    ],
+    "coverage": [
+      {
+        "item_id": "T1",
+        "reviewer_ids": [
+          "/root/research_identification_review"
+        ]
+      },
+      {
+        "item_id": "T2",
+        "reviewer_ids": [
+          "/root/research_identification_review"
+        ]
+      },
+      {
+        "item_id": "T3",
+        "reviewer_ids": [
+          "/root/research_dynamics_review"
+        ]
+      }
+    ],
+    "followups": [
+      {
+        "reviewer_id": "/root/research_identification_review",
+        "item_ids": [
+          "T1",
+          "T2"
+        ]
+      },
+      {
+        "reviewer_id": "/root/research_dynamics_review",
+        "item_ids": [
+          "T3"
+        ]
+      }
+    ]
+  },
+  "issue_ledger": [
+    {
+      "issue_id": "I1",
+      "status": "CONFIRMED",
+      "rationale": "고정 첫 OFF support DAG에서 scalar contraction과 수렴 입력에 대한 오차 귀납으로 정리가 성립",
+      "required_evidence": [
+        "C1",
+        "C2"
+      ],
+      "available_evidence": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "issue_id": "I2",
+      "status": "UNRESOLVED",
+      "rationale": "ON root 수·basin·분기는 이번에 인증하지 않았다.",
+      "required_evidence": [
+        "exact root existence/uniqueness or distinct roots certificates"
+      ],
+      "available_evidence": [
+        "C3"
+      ]
+    },
+    {
+      "issue_id": "I3",
+      "status": "UNRESOLVED",
+      "rationale": "dot 방향 조언 미회수. 실행 권한 대신 후속 우선순위에 대한 조언으로 기다린다.",
+      "required_evidence": [
+        "dot reply"
+      ],
+      "available_evidence": [
+        "조언 peer7f38f24d 발신·동일 native 기상 알림"
+      ]
+    }
+  ],
+  "axis_decisions": [
+    {
+      "axis": "정보가치",
+      "decision": "임계값 세분화보다 먼저 관측 첫 graph의 최소 고정점 기반을 분석한다.",
+      "evidence_claim_ids": [
+        "C1",
+        "C2",
+        "C3"
+      ]
+    },
+    {
+      "axis": "수학적 유효성",
+      "decision": "OFF 조건부 정리를 수용하고 ON root/basin은 미식별로 둔다.",
+      "evidence_claim_ids": [
+        "C2",
+        "C3",
+        "C4"
+      ]
+    },
+    {
+      "axis": "범위·재현성",
+      "decision": "분석 기록만 추가하고 원3/4·소스·raw·native 실행을 보존한다.",
+      "evidence_claim_ids": [
+        "C1",
+        "C3"
+      ]
+    }
+  ],
+  "consensus_proposal": {
+    "status": "conditional_consensus",
+    "action": "관측 first-network의 최소 고정점 기반을 기록하고 ON root 인증을 다음 분석 단위로 둔다. 내부 점 추가와 새 native는 후순위다.",
+    "supported_by_verified_claims": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "satisfied_constraints": [
+      "원 R081 셀3 종료와3/4 유지; 누락 셀 재실행 없음",
+      "실수 수학·원 관측·native 유한 종료를 구분",
+      "소스/raw/manifest/CI 변경 없음",
+      "생산 실행·기존 checker·Cloud 재실행 없음"
+    ],
+    "axis_alignment": [
+      {
+        "axis": "정보가치",
+        "decision_ref": "정보가치"
+      },
+      {
+        "axis": "수학적 유효성",
+        "decision_ref": "수학적 유효성"
+      },
+      {
+        "axis": "범위·재현성",
+        "decision_ref": "범위·재현성"
+      }
+    ],
+    "conditions": [
+      "ON root/basin을 미식별로 명시",
+      "dot 조언 회수 후 다음 분석 계약의 우선순위와 대조"
+    ],
+    "unresolved_dissent": [],
+    "no_consensus_reason": null,
+    "remaining_options": [
+      "ON root 인증 분석",
+      "판별 예측을 얻으면 feedback 성분 개입",
+      "내부 점 추가는 budget 종료 등 대안을 구별할 때 재평가"
+    ],
+    "decision_owner": null
+  },
+  "observability": {
+    "wall_time": "NOT_OBSERVABLE",
+    "tokens": "NOT_OBSERVABLE",
+    "tool_calls": "NOT_OBSERVABLE",
+    "worker_count": 2
+  },
+  "method_notes": [
+    "MEDIUM degraded_ok; blind reviewer2명, 각1회 한정 cross-exam. fresh Judge는 요구되지 않아 미사용; reserve 미사용.",
+    "사용자 Sol6.1/high 지침을 tool args에 지정. 실제 모델/effort는 UNKNOWN. schema 검증은 구조·내부 정합이며 수학 자동 증명 아님.",
+    "dot 조언은 사용자가 지정한 현 프로젝트 총괄 채팅에 요청했다. 개발가이드에 따라 로컬 AGS 주소와 dot 대화 주소의 동일성을 가정하지 않는다. 기존 소유자 전용 Drive 보고 파일을 직접 수정하지 않는다. 조언은 아직 미회수.",
+    "프로젝트 orchestrator로 direct 전문 단계를 연결. 생산 코드 구현·새 평가 run·공식 scientific/release gate 아님.",
+    "MEDIUM의 Judge 없는 coordinator 통합이므로 assurance를 partially_independent로 제한했다. schema 최초검사3개 오류는 capability 문구 일치·assurance·owner 필드 수정으로 해결; 과학 결과와 원자료는 불변."
+  ]
+}

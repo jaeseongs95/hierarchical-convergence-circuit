@@ -1,0 +1,356 @@
+{
+  "schema": "HCCFirstNetworkFixedPointFoundation.v1",
+  "date": "2026-10-12",
+  "record_kind": "source-bound mathematical derivation; no native or solver execution",
+  "source_commit": "1bd29ee74d543b82729b90e26c8b426aa895cac2",
+  "source_run": "r081-20261003T132019Z-6b7e0ed896",
+  "original_run_status": "CLOSED_BY_USER_AT_CELL3; native3/4 unchanged",
+  "sources": [
+    {
+      "path": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/source/src/hcr/dynamics.py",
+      "commit": "1bd29ee74d543b82729b90e26c8b426aa895cac2",
+      "bytes": 3848,
+      "sha256": "a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc"
+    },
+    {
+      "path": "src/hcr/dynamics.py",
+      "commit": "1bd29ee74d543b82729b90e26c8b426aa895cac2",
+      "bytes": 3848,
+      "sha256": "a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc"
+    },
+    {
+      "path": "experiments/exp-62-top-down/frozen_spec.json",
+      "commit": "1bd29ee74d543b82729b90e26c8b426aa895cac2",
+      "bytes": 11047,
+      "sha256": "405225d50349b0b14fefcc1cab650f6f2b7e766f73bcd3f7a4b3d8fb572ae6c5"
+    },
+    {
+      "path": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/closure.json",
+      "commit": "1bd29ee74d543b82729b90e26c8b426aa895cac2",
+      "bytes": 149656,
+      "sha256": "ad2ac7923d6dd611a97129a02db92eb4784145c090cca86ddace4d0965fbd3e0"
+    },
+    {
+      "path": "src/hcr/model.py",
+      "commit": "1bd29ee74d543b82729b90e26c8b426aa895cac2",
+      "bytes": 12732,
+      "sha256": "b10e41146036bbbe6e155cee84f3c03711d9bfdeef26c54439d679cc36d590dd"
+    },
+    {
+      "path": "src/hcr/circuits.py",
+      "commit": "1bd29ee74d543b82729b90e26c8b426aa895cac2",
+      "bytes": 13117,
+      "sha256": "4325900b76292568267c535d8cb7ab157ec2c81a9c841ea1d136df4047c2fd5b"
+    }
+  ],
+  "observed_models": [
+    {
+      "cell": "swapped-s003-td1-off",
+      "raw": {
+        "path": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/evaluation/swapped-s003-td1-off/inference.json",
+        "source_commit": "1bd29ee74d543b82729b90e26c8b426aa895cac2",
+        "bytes": 234849,
+        "sha256": "56ac3c9ccb28ade542bdcfb613e8bf4ca326c86b900aee8c05e2b9eefd566fc1",
+        "network_pointer": "/execution/packet/document/events/8/payload",
+        "settled_pointer": "/execution/packet/document/events/104/payload"
+      },
+      "program_digest": "eff846df37d8cc635cb29c204281bbd23aa3226a636b4c8ff82ce2bb44a6343a",
+      "group_count": 7,
+      "stored_link_count": 8,
+      "active_link_count": 8,
+      "top_down": true,
+      "state_order": [
+        "e:0",
+        "e:1",
+        "p:0:0",
+        "p:0:1",
+        "goal"
+      ],
+      "W_target_source": [
+        [
+          0.0,
+          0.0,
+          0.35,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.35,
+          0.0
+        ],
+        [
+          2.0,
+          0.0,
+          0.0,
+          0.35,
+          0.0
+        ],
+        [
+          0.0,
+          2.0,
+          2.0,
+          0.0,
+          0.35
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          2.0,
+          0.0
+        ]
+      ],
+      "bias_plus_drive": [
+        4.0,
+        0.12,
+        0.0,
+        -2.0,
+        0.0
+      ],
+      "original_observed_goal": 0.03688332023268971,
+      "classification": "original_observation_reused; not a new sample"
+    },
+    {
+      "cell": "swapped-s003-td0-off",
+      "raw": {
+        "path": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/evaluation/swapped-s003-td0-off/inference.json",
+        "source_commit": "1bd29ee74d543b82729b90e26c8b426aa895cac2",
+        "bytes": 107032,
+        "sha256": "ee7d6efc9c03af368d88243c7ddc32a68e9059b3f9d20226862c758bac524c40",
+        "network_pointer": "/execution/packet/document/events/8/payload",
+        "settled_pointer": "/execution/packet/document/events/54/payload"
+      },
+      "program_digest": "eff846df37d8cc635cb29c204281bbd23aa3226a636b4c8ff82ce2bb44a6343a",
+      "group_count": 7,
+      "stored_link_count": 8,
+      "active_link_count": 4,
+      "top_down": false,
+      "state_order": [
+        "e:0",
+        "e:1",
+        "p:0:0",
+        "p:0:1",
+        "goal"
+      ],
+      "W_target_source": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          2.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.0,
+          2.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          2.0,
+          0.0
+        ]
+      ],
+      "bias_plus_drive": [
+        4.0,
+        0.12,
+        0.0,
+        -2.0,
+        0.0
+      ],
+      "original_observed_goal": 0.8287115835390951,
+      "classification": "original_observation_reused; not a new sample"
+    },
+    {
+      "cell": "swapped-s004-td1-off",
+      "raw": {
+        "path": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/evaluation/swapped-s004-td1-off/inference.json",
+        "source_commit": "1bd29ee74d543b82729b90e26c8b426aa895cac2",
+        "bytes": 174744,
+        "sha256": "97daaac49c5edac743bb4d856fd10ed319104d1df61d444ca5941fc92e6c5c64",
+        "network_pointer": "/execution/packet/document/events/8/payload",
+        "settled_pointer": "/execution/packet/document/events/120/payload"
+      },
+      "program_digest": "eff846df37d8cc635cb29c204281bbd23aa3226a636b4c8ff82ce2bb44a6343a",
+      "group_count": 7,
+      "stored_link_count": 8,
+      "active_link_count": 8,
+      "top_down": true,
+      "state_order": [
+        "e:0",
+        "e:1",
+        "p:0:0",
+        "p:0:1",
+        "goal"
+      ],
+      "W_target_source": [
+        [
+          0.0,
+          0.0,
+          0.35,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.35,
+          0.0
+        ],
+        [
+          2.0,
+          0.0,
+          0.0,
+          0.35,
+          0.0
+        ],
+        [
+          0.0,
+          2.0,
+          2.0,
+          0.0,
+          0.35
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          2.0,
+          0.0
+        ]
+      ],
+      "bias_plus_drive": [
+        4.0,
+        0.16,
+        0.0,
+        -2.0,
+        0.0
+      ],
+      "original_observed_goal": 0.9840687555064942,
+      "classification": "original_observation_reused; not a new sample"
+    }
+  ],
+  "reduction": {
+    "original_states": 7,
+    "goal_subsystem_states": [
+      "e:0",
+      "e:1",
+      "p:0:0",
+      "p:0:1",
+      "goal"
+    ],
+    "isolated_states": [
+      "e:2",
+      "e:3"
+    ],
+    "claim": "동일 초기값을 쓰는 실수 모델에서 같은 tick의 goal 부분계 상태를 보존한다.",
+    "stop_semantics_preserved": false,
+    "reason": "실제 residual/patience/oscillation 판정은 전체 7상태를 사용한다. native 종료 후 추가 tick이나 축약된 종료 시각의 일치는 주장하지 않는다."
+  },
+  "equations": {
+    "notation": "p_i∈[0,1], x_i=2p_i−1, k=self_excitation+inhibition, d=damping, T=temperature, W[target,source]=active link weight",
+    "general": "F_i(p)=(1−d)p_i+d σ((2(b_i+drive_i+Σ_j W_ij(2p_j−1))+k(2p_i−1))/T)",
+    "centered": "F(x)=(1−d)x+d H(x); H_i(x)=tanh((b_i+drive_i+Σ_j W_ij x_j+(k/2)x_i)/T)",
+    "fixed_point": "p*=σ(z(p*)); equivalently x*=H(x*), since d>0",
+    "observed_parameters": {
+      "k": 0.45,
+      "d": 0.45,
+      "T": 1,
+      "initial_p": 0.5
+    },
+    "jacobian_at_exact_fixed_point": "J_F(x*)=(1−d)I+d diag(1−(x*)²)(W+(k/2)I)/T",
+    "equivalent_p_jacobian": "J_F(p*)=(1−d)I+d diag(p*(1−p*))(4W+2kI)/T"
+  },
+  "off_theorem": {
+    "claim_state": "derived conditional theorem",
+    "conditions": [
+      "finite inter-node active support DAG",
+      "fixed graph/bias/drives/config",
+      "real arithmetic, finite inputs, T>0, 0<d≤1, k≥0 and k/(2T)<1",
+      "all valid initial p∈[0,1]^N; no early stop"
+    ],
+    "applicable_observed_case": "swapped-s003-td0-off",
+    "inter_node_topology": [
+      "e:0→p:0:0",
+      "e:1→p:0:1",
+      "p:0:0→p:0:1",
+      "p:0:1→goal"
+    ],
+    "scalar_target_lipschitz": "k/(2T)=0.225",
+    "scalar_damped_lipschitz": "q=1−d+d k/(2T)=0.65125",
+    "conclusion": "고정된 OFF 첫 network의 실수 모델은 유일한 고정점을 가지며 모든 유효 초기 상태에서 무한 반복하면 그 고정점으로 수렴한다.",
+    "proof": [
+      "상위 입력u를 고정하면 각 node F_i는 [0,1]을 보존하고 자기 방향 Lipschitz 상수q<1인 scalar contraction이다. 따라서 고정입력마다 고정점이 하나 있다.",
+      "상위 입력u_t→u*일 때 e_(t+1)≤q e_t+d/(2T)|u_t−u*|이다. 기하급수 convolution을 유한 초기항과 임의로 작은 후반항으로 나누면 e_t→0이다.",
+      "유한 node 간 DAG의 root부터 위상 순서로 이 논증을 적용한다. root 고정점 유일성·수렴 뒤 각 downstream 고정점의 유일성과 수렴을 귀납해 전체 결과를 얻는다."
+    ],
+    "norm_boundary": "일반 infinity-norm row sum이1을 초과하더라도 DAG 귀납을 반박하지 않는다. 그 상계로 전역 일괄 contraction을 증명했다고도 하지 않는다.",
+    "native_boundary": [
+      "160tick 안의 종료나 정확한 stop status 보증 아님",
+      "floating-point plateau/bitwise recurrence 증명 아님",
+      ".04 OFF의 실제 값·실행·proof를 제공하지 않음",
+      "유일성은 고정 첫 network에만 적용; route/graph 수정·memory 학습을 포함하지 않음"
+    ]
+  },
+  "on_analysis": {
+    "conditions": "exact fixed point or independently certified root neighbourhood must be established before equilibrium stability certification",
+    "local_stability_sufficient_condition": "ρ(J_F)<1 at an exact fixed point",
+    "alternatives": [
+      "각 score의 유일한 안정 평형",
+      "동일 score의 복수 안정 평형과 초기 .5의 basin 변화",
+      "유한 residual 종료 상태와 장기 평형의 차이"
+    ],
+    "root_count": "UNKNOWN",
+    "basin_membership": "UNKNOWN",
+    "bifurcation_type": "UNKNOWN",
+    "solver_runs": 0,
+    "critical_boundary": "한 root의 국소 안정성은 유일성·전체 basin·분기 원인을 증명하지 않는다. recorded settled state를 정확한 root로 대입해 인증하지 않는다."
+  },
+  "parameter_identifiability": {
+    "claim_state": "derived; state recurrence in real arithmetic only",
+    "claim": "고정 graph/drives/initial/T/d에서 self_excitation+inhibition의 합을 유지하는 유효 설정은 같은 실수 state recurrence를 갖는다.",
+    "limits": [
+      "native 부동소수점은 positive/negative를 별도로 평가하므로 bitwise 동일성 미증명",
+      "config signature는 두 필드를 별도로 포함하므로 memory/config 호환성·learning·routing·전체 실행 동등성을 함의하지 않는다."
+    ]
+  },
+  "next_discriminator": {
+    "scope": "새 native 없이 ON의 exact reduced equations에 root 존재·추가root·국소 안정성을 인증할 분석 계약 준비",
+    "falsifier": "같은 관측 ON score에서 서로 다른 안정 root2개를 인증하면 유일성 설명을 반박한다.",
+    "insufficient_result": "root search가 하나만 찾았다는 사실은 유일성 증거가 아니다.",
+    "deferred": "링크별 개입은 서로 다른 설명이 반대 예측을 주는 경우에만 후속 설계한다."
+  },
+  "verification": {
+    "raw_first_graph_and_config_direct_read": true,
+    "frozen_current_dynamics_identical_bytes": true,
+    "blind_reviewers_completed": 2,
+    "bounded_cross_examination_completed": true,
+    "new_native_samples": 0,
+    "native_runtime_executions": 0,
+    "cloud_jobs": 0,
+    "original_checker_reruns": 0,
+    "observed_models_only": true
+  }
+}
