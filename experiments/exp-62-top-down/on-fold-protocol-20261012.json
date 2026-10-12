@@ -1,0 +1,94 @@
+{
+  "schema": "HCCONFoldProtocol.v1",
+  "source_commit": "4aa04e9863ddef4fd2cb9364ead24e337141bf86",
+  "parameter": "h: exact real drive for e:1; score s=h/4",
+  "state_order": [
+    "e:0",
+    "e:1",
+    "p:0:0",
+    "p:0:1",
+    "goal"
+  ],
+  "conditional_order": [
+    "e:0",
+    "p:0:0",
+    "e:1",
+    "goal"
+  ],
+  "dependencies": {
+    "basin_protocol": {
+      "path": "experiments/exp-62-top-down/on-basin-protocol-20261012.json",
+      "sha256": "a1358e1245d61092f2063d32cde0f2ca783ce44dfb9412ca6e015295ff76cf6d",
+      "bytes": 5221
+    },
+    "basin_checker": {
+      "path": "tools/analysis/check_on_basins.py",
+      "sha256": "7c9a9b9ae49495b561d0c6a7aaeddfaf7eaf6c892ef34ca261a668f44e0d5bb2",
+      "bytes": 23200
+    },
+    "root_protocol": {
+      "path": "experiments/exp-62-top-down/on-root-protocol-20261012.json",
+      "sha256": "396d45bac10dba17b69c1eca5542807cba838fc1a7fa600c85e7fc33fa23c86c",
+      "bytes": 5940
+    },
+    "root_record": {
+      "path": "experiments/exp-62-top-down/on-root-certificates-20261012.json",
+      "sha256": "d1dc48c3fc547a68b1ae9ef3478c5165868a2cb3ce07ff4e3698efce96c945a8",
+      "bytes": 39459
+    },
+    "root_checker": {
+      "path": "tools/analysis/check_on_fixed_points.py",
+      "sha256": "e23abd2a8fb4e881913a50cc0b810f187b0181ee8f0f712ec5d883fcaecd8663",
+      "bytes": 15448
+    }
+  },
+  "budget": {
+    "newton_iterations": 40,
+    "conditional_iterations": 200,
+    "branch_bisections": 80,
+    "tube_count": 64,
+    "max_queries": 400,
+    "auto_retry": false
+  },
+  "seed": [
+    "-1/2",
+    "7/50"
+  ],
+  "fold_radius": [
+    "1/100000000",
+    "1/100000000"
+  ],
+  "conditional_padding": "1/1000000000000",
+  "tube_padding": "1/10000000",
+  "local_y_halfwidth": "1/50",
+  "parameter_guard": "1/1000000",
+  "arithmetic": {
+    "interval_decimal_places": 70,
+    "taylor_degree": 96
+  },
+  "initial_root_index": 0,
+  "continuation_grid": "h_i=h0+(fold_box_h_lower-guard-h0)*(1-(1-i/64)^2); exact rational arithmetic",
+  "conditional_bounds": [
+    "a>=9/10,u>=4/5; roots enter this rectangle",
+    "conditional block q=max((k+alpha)*19/100,(2+k)*36/100,k)<1"
+  ],
+  "fold_checks": [
+    "C invertible; T=z-C(R,Ry) strict selfmap and weighted q<1",
+    "Rh<0,Ryy<0 on local rectangle",
+    "local h_low: center R>0 and both y endpoints R<0",
+    "local h_high: R(center) upper+maxabsRy(center)^2/(2*(-Ryy upper))<0"
+  ],
+  "connection_checks": [
+    "64 intervals exact coverage from raw h0 to fold_lower_h-guard",
+    "Ry>0,Rh<0 on every stable tube; corner residual signs",
+    "common endpoint intersection interval contains a root by exact opposite signs",
+    "first tube contains full root0 y projection; last tube strictly in left local rectangle at exact h_low"
+  ],
+  "failure_policy": "Any missing inclusion/sign/coverage or exhausted budget => INCONCLUSIVE; no same-input retry",
+  "scope_limits": [
+    "local low-branch saddle-node, not unique global critical point",
+    "No native/160tick/latergraph claim",
+    "No new native/Cloud/API/install"
+  ],
+  "reference_theorem": "https://www.scholarpedia.org/article/Saddle-node_bifurcation"
+}

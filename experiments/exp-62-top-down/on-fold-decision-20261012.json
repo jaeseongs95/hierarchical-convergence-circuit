@@ -1,0 +1,347 @@
+{
+  "skill_version": "1.0.0",
+  "schema_version": "1.0",
+  "preflight": {
+    "required_capabilities": [
+      "blind reviewer2",
+      "raw/source read",
+      "separate exact verifier"
+    ],
+    "observed_capabilities": [
+      "blind reviewer2",
+      "raw/source read",
+      "separate exact verifier"
+    ],
+    "missing_capabilities": [],
+    "supported_models_reasoning": [
+      "gpt-6.1-sol/high schema supports; effective setting unobserved"
+    ]
+  },
+  "case_brief": {
+    "decision": "endpoint-exact 연속drive 가족에서 .03 낮은 안정가지와 연결된 비퇴화 fold 및 score 임계구간을 엄밀 검산",
+    "facts": [
+      ".03 stable>=2;.04 globalroot1",
+      "raw only e:1 drive changes",
+      "connected fold certificate accepted"
+    ],
+    "assumptions": [
+      "endpoint-exact continuous real family"
+    ],
+    "constraints": [
+      "Only fixed-first-ON real continuum; no native staircase equivalence",
+      "One fixed candidate run; Newton40/conditional200/bisection80/tubes64/queries400; no automatic retry or objective replacement",
+      "Conditional coordinates a,u,v,g; residual uses r=tanh(L) off root, never replace r by y in rectangle derivative",
+      "Local connected fold only; no globally unique critical point or intermediate total root counts",
+      "No closed R081/native/Cloud/API/install/globalconfig/force changes"
+    ],
+    "unknowns": [
+      "global unique critical point",
+      "native threshold",
+      "dot answer"
+    ],
+    "success_criteria": [
+      "독립 토론2+교차에서 연속가족·fold증거·branch연결 계약 확정, dot답변 도착 시 대조하고 미회수 상태 구분",
+      "두raw가 G/kernel/bias/고립입력 동일·e:1 drive만변경; h=exactbinary64(.12)..(.16),s=h/4 endpoints exact결속",
+      "수치 전 코드/입력/protocol/예산 동결; conditional 전체root 축약·자기포함·수축 및 implicit 미분을 독립 산술로 검산",
+      "invertible rationalC·augmented (R,Ry) strictselfmap/q<1·Rh<0/Ryy<0로 interior fold criticalinterval 인증",
+      "64개 stable tubes·exact-gap0·공통endpoint root존재를교집합에인증·root0projection포함·local두root/무root 및저가지접합 검증",
+      "off-root미분·수축/엄격포함·가지gap·binding 표적변이/음성대조; 이론PF-Schur로stable/unstable 연결, 실패보존",
+      "원R081closed3/4/raw/src/CI/기존결과 보존 native/Cloud/API/install0; 새5file/GPGsignedcommit/mainFF/branch정리/ordinarypush/remotebytes"
+    ],
+    "failure_modes": [
+      "native staircase treated continuous",
+      "off-root sigma replaced by y",
+      "tube overlap confused with same-root join"
+    ]
+  },
+  "run": {
+    "id": "ai-on-fold-20261012",
+    "stage": "MEDIUM",
+    "strict": false,
+    "worker_cap": 2,
+    "workers": [
+      {
+        "id": "/root/fold_math_design",
+        "role": "fold 수학·잔차 축약·가지 접합 검토",
+        "status": "completed",
+        "is_judge": false,
+        "instantiated": true,
+        "requested_model": "gpt-6.1-sol",
+        "actual_model": null,
+        "requested_reasoning": "high",
+        "actual_reasoning": null,
+        "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+        "classification": "reviewer",
+        "blind_round1": true,
+        "context_isolated": true,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ]
+      },
+      {
+        "id": "/root/fold_evidence_design",
+        "role": "endpoint 출처·주장 범위·가지 동일성 검토",
+        "status": "completed",
+        "is_judge": false,
+        "instantiated": true,
+        "requested_model": "gpt-6.1-sol",
+        "actual_model": null,
+        "requested_reasoning": "high",
+        "actual_reasoning": null,
+        "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+        "classification": "reviewer",
+        "blind_round1": true,
+        "context_isolated": true,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ]
+      }
+    ],
+    "completed_worker_ids": [
+      "/root/fold_math_design",
+      "/root/fold_evidence_design"
+    ],
+    "reused_worker_ids": [],
+    "failures": [],
+    "fresh_judge_id": null,
+    "candidate_skill_sha256": null,
+    "assurance": "partially_independent",
+    "specialist_additions": [],
+    "redeliberations": [],
+    "judge_fallback": null,
+    "capability_shortfall": false
+  },
+  "panel_manifest": [
+    {
+      "id": "/root/fold_math_design",
+      "role": "fold 수학·잔차 축약·가지 접합 검토",
+      "status": "completed",
+      "is_judge": false,
+      "instantiated": true,
+      "requested_model": "gpt-6.1-sol",
+      "actual_model": null,
+      "requested_reasoning": "high",
+      "actual_reasoning": null,
+      "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+      "classification": "reviewer",
+      "blind_round1": true,
+      "context_isolated": true,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ]
+    },
+    {
+      "id": "/root/fold_evidence_design",
+      "role": "endpoint 출처·주장 범위·가지 동일성 검토",
+      "status": "completed",
+      "is_judge": false,
+      "instantiated": true,
+      "requested_model": "gpt-6.1-sol",
+      "actual_model": null,
+      "requested_reasoning": "high",
+      "actual_reasoning": null,
+      "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+      "classification": "reviewer",
+      "blind_round1": true,
+      "context_isolated": true,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ]
+    }
+  ],
+  "constraints": [
+    "Only fixed-first-ON real continuum; no native staircase equivalence",
+    "One fixed candidate run; Newton40/conditional200/bisection80/tubes64/queries400; no automatic retry or objective replacement",
+    "Conditional coordinates a,u,v,g; residual uses r=tanh(L) off root, never replace r by y in rectangle derivative",
+    "Local connected fold only; no globally unique critical point or intermediate total root counts",
+    "No closed R081/native/Cloud/API/install/globalconfig/force changes"
+  ],
+  "required_constraints": [
+    "Only fixed-first-ON real continuum; no native staircase equivalence",
+    "One fixed candidate run; Newton40/conditional200/bisection80/tubes64/queries400; no automatic retry or objective replacement",
+    "Conditional coordinates a,u,v,g; residual uses r=tanh(L) off root, never replace r by y in rectangle derivative",
+    "Local connected fold only; no globally unique critical point or intermediate total root counts",
+    "No closed R081/native/Cloud/API/install/globalconfig/force changes"
+  ],
+  "material_claims": [
+    {
+      "id": "family",
+      "statement": "exact endpoints differ only by drive e:1; score=h/4",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-fold-20261012-r01\\ENDPOINT-SOURCE.actual.json",
+          "verification_status": "verified",
+          "verification_note": "Coordinator checked frozen source and actual certificate results"
+        }
+      ]
+    },
+    {
+      "id": "fold",
+      "statement": "R=Ry=0 strict contraction, Rh<0,Ryy<0 with critical score interval ['0.036068708258', '0.036068713259']",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-fold-20261012-r01\\CHECK.actual.json",
+          "verification_status": "verified",
+          "verification_note": "Coordinator checked frozen source and actual certificate results"
+        }
+      ]
+    },
+    {
+      "id": "bridge",
+      "statement": "64 stable tubes/63 common-root joins connect low root0 to local pair; local root counts2→0",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-fold-20261012-r01\\CHECK.actual.json",
+          "verification_status": "verified",
+          "verification_note": "Coordinator checked frozen source and actual certificate results"
+        }
+      ]
+    },
+    {
+      "id": "test",
+      "statement": "Four targeted mutations fail and pristine checks pass; 11 direct negative controls reject",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-fold-20261012-r01\\test-root\\proof-result.json",
+          "verification_status": "verified",
+          "verification_note": "Coordinator checked frozen source and actual certificate results"
+        }
+      ]
+    }
+  ],
+  "cross_examination": {
+    "decision": "run",
+    "reason": "Weak continuum provenance and same-branch join/nondegeneracy hidden premises",
+    "trigger_items": [
+      {
+        "id": "T1",
+        "origin_reviewer": "/root/fold_evidence_design"
+      },
+      {
+        "id": "T2",
+        "origin_reviewer": "/root/fold_math_design"
+      }
+    ],
+    "selected_item_ids": [
+      "T1",
+      "T2"
+    ],
+    "coverage": [
+      {
+        "item_id": "T1",
+        "reviewer_ids": [
+          "/root/fold_math_design"
+        ]
+      },
+      {
+        "item_id": "T2",
+        "reviewer_ids": [
+          "/root/fold_evidence_design"
+        ]
+      }
+    ],
+    "followups": [
+      {
+        "reviewer_id": "/root/fold_math_design",
+        "item_ids": [
+          "T1"
+        ]
+      },
+      {
+        "reviewer_id": "/root/fold_evidence_design",
+        "item_ids": [
+          "T2"
+        ]
+      }
+    ]
+  },
+  "issue_ledger": [
+    {
+      "issue_id": "common-root-bridge",
+      "status": "CONFIRMED",
+      "rationale": "Exact shared parameter and IVT within adjacent y intersection, not overlap alone",
+      "required_evidence": [
+        "D:\\codex\\리드\\ai-fold-20261012-r01\\CHECK.actual.json"
+      ],
+      "available_evidence": [
+        "D:\\codex\\리드\\ai-fold-20261012-r01\\CHECK.actual.json"
+      ]
+    }
+  ],
+  "axis_decisions": [
+    {
+      "axis": "Family",
+      "decision": "Exact smooth real family established",
+      "evidence_claim_ids": [
+        "family"
+      ]
+    },
+    {
+      "axis": "Mechanism",
+      "decision": "Connected low stable branch disappears through nondegenerate local saddle-node",
+      "evidence_claim_ids": [
+        "fold",
+        "bridge"
+      ]
+    },
+    {
+      "axis": "Verification",
+      "decision": "Guard sensitivity and scoped mathematical proof passed",
+      "evidence_claim_ids": [
+        "test"
+      ]
+    }
+  ],
+  "consensus_proposal": {
+    "status": "consensus",
+    "action": "Publish connected low-branch local fold certificate",
+    "supported_by_verified_claims": [
+      "family",
+      "fold",
+      "bridge",
+      "test"
+    ],
+    "satisfied_constraints": [
+      "Only fixed-first-ON real continuum; no native staircase equivalence",
+      "One fixed candidate run; Newton40/conditional200/bisection80/tubes64/queries400; no automatic retry or objective replacement",
+      "Conditional coordinates a,u,v,g; residual uses r=tanh(L) off root, never replace r by y in rectangle derivative",
+      "Local connected fold only; no globally unique critical point or intermediate total root counts",
+      "No closed R081/native/Cloud/API/install/globalconfig/force changes"
+    ],
+    "axis_alignment": [
+      {
+        "axis": "Family",
+        "decision_ref": "Family"
+      },
+      {
+        "axis": "Mechanism",
+        "decision_ref": "Mechanism"
+      },
+      {
+        "axis": "Verification",
+        "decision_ref": "Verification"
+      }
+    ],
+    "conditions": [],
+    "unresolved_dissent": [],
+    "no_consensus_reason": null,
+    "remaining_options": [],
+    "decision_owner": null
+  },
+  "observability": {
+    "wall_time": "NOT_OBSERVABLE",
+    "tokens": "NOT_OBSERVABLE",
+    "tool_calls": "NOT_OBSERVABLE",
+    "worker_count": 2
+  },
+  "method_notes": [
+    "MEDIUM2 blind reviewers/crossonceeach/Coordinator integration; no Judge/reserve/specialist. Actual requested Sol6.1/high settings unobserved.",
+    "Later math implementation of verifier and evidence static code recheck are non-independent reuse; not counted as fresh participants.",
+    "Evidence blind review read historical global decision, but not current peer/coordinator preference. Separate arithmetic/source reads underpin claim.",
+    "Both proposal and checker/source froze before numbers; schema alignment before numbers only. Native/Cloud/API/install0. Dot answer not yet received."
+  ]
+}
