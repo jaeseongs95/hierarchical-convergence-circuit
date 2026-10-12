@@ -1,0 +1,120 @@
+{
+  "schema": "HCCONRootProtocol.v1",
+  "source_commit": "98329354a299e2594876e6cf3793ea777e3ffbf4",
+  "frozen_at_utc": "2026-10-12T04:28:46.247401+00:00",
+  "question": "관측 ON 조건마다 안정 고정점이 둘 이상 공존하는가; 존재·box 내부 유일성·국소 안정성은 인증 가능한가",
+  "foundation": {
+    "path": "experiments/exp-62-top-down/fixed-point-foundation-20261012.json",
+    "sha256": "adf648626d9cd26f267f573eb5b3494507fa4ff5859c755c5174ef4f24cb0f0f"
+  },
+  "sources": [
+    {
+      "path": "src/hcr/dynamics.py",
+      "commit": "1bd29ee74d543b82729b90e26c8b426aa895cac2",
+      "bytes": 3848,
+      "sha256": "a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc"
+    },
+    {
+      "path": "experiments/exp-62-top-down/frozen_spec.json",
+      "commit": "1bd29ee74d543b82729b90e26c8b426aa895cac2",
+      "bytes": 11047,
+      "sha256": "405225d50349b0b14fefcc1cab650f6f2b7e766f73bcd3f7a4b3d8fb572ae6c5"
+    }
+  ],
+  "models": [
+    {
+      "model_id": "swapped-s003-td1-off",
+      "raw_path": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/evaluation/swapped-s003-td1-off/inference.json",
+      "raw_sha256": "56ac3c9ccb28ade542bdcfb613e8bf4ca326c86b900aee8c05e2b9eefd566fc1",
+      "raw_bytes": 234849
+    },
+    {
+      "model_id": "swapped-s004-td1-off",
+      "raw_path": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/evaluation/swapped-s004-td1-off/inference.json",
+      "raw_sha256": "97daaac49c5edac743bb4d856fd10ed319104d1df61d444ca5941fc92e6c5c64",
+      "raw_bytes": 174744
+    }
+  ],
+  "state_order": [
+    "e:0",
+    "e:1",
+    "p:0:0",
+    "p:0:1",
+    "goal"
+  ],
+  "model_semantics": "고정 raw/config JSON 숫자를 binary64로 복원하고 primitive 계수를 exact rational로 변환한 실수 연장 모델. native 연산 순서의 반올림을 재현하지 않는다.",
+  "equation": "H(x)=tanh((bias+drives+(W+(self_excitation+inhibition)/2 I)x)/temperature); F=(1-d)x+dH",
+  "source_constraints": [
+    "최초 r02_network kind=decision를 독립 선택",
+    "top_down true,7groups/8links,temperature1/damping .45/primitive self .25/inhibition .20",
+    "제거 상태 e:2/e:3의 active 유입/유출이 5변수 부분계와 결합되지 않아야 함",
+    "생산 HCC 모듈 import·원 checker·native/Cloud 실행 금지"
+  ],
+  "discovery": {
+    "seeds": [
+      -1,
+      0,
+      1
+    ],
+    "seed_rule": "5좌표가 모두 seed 값인 상태; 모델 순서 .03 ON 후 .04 ON, seed 순서−1,0,+1",
+    "max_iterations": 10000,
+    "step_tolerance": 1e-14,
+    "finite_iterations_are_proof": false,
+    "terminal_candidates": "각 seed의 유한 terminal center를 모두 제출; tolerance/budget 종료 구분; heuristically dedup하지 않음",
+    "weights_rule": "w0=ones; M_center=diag(sech²(z(center)))G, G=(W+k/2 I)/T; 동기 w=ones+M_center*w 256회",
+    "weight_iterations": 256,
+    "weight_max": 100000000,
+    "base_radius": "0.00000001",
+    "box_rule": "center_i±base_radius*weight_i; radius 변경·박스 clip·자동 retry 없음",
+    "attempts_per_model": 3
+  },
+  "generator_interval": {
+    "decimal_precision": 80,
+    "exp_rule": "correctly-rounded exp에 같은 context next_minus/next_plus 적용; 입력과 모든 사칙연산도 외향 구간",
+    "certification_role": "diagnostic/proposal only; final verdict from independent rational checker"
+  },
+  "certificate_schema": {
+    "schema": "HCCONRootBox.v1",
+    "fields": [
+      "schema",
+      "protocol_sha256",
+      "model_id",
+      "state_order",
+      "lower",
+      "upper",
+      "weights"
+    ],
+    "numeric_encoding": "길이≤200의 canonical finite decimal 문자열을 Fraction으로 exact 해석; exponent/whitespace/plus/NaN/Inf/negative-zero/trailing fractional zero 금지",
+    "box_domain": "−1<lower_i<upper_i<1",
+    "weights_domain": "0<weight_i<=100000000"
+  },
+  "checker": {
+    "arithmetic": "independent Fraction exact rationals; no generator import or shared interval/model/exponential helper",
+    "taylor_degree": 96,
+    "exp_positive_bound": "S96(u)≤exp(u)≤S96(u)+(u^97/97!)/(1-u/98), 0≤u<98",
+    "tanh_rule": "positive via increasing (exp(2z)-1)/(exp(2z)+1); negative via odd symmetry; zero exact",
+    "jacobian_bound": "상자 전체 preactivation에서 sech² 상한 계산;0 횡단은1; qH=max_i sum_j m_i |Gij| wj/wi",
+    "acceptance": [
+      "expected protocol/source/raw hashes exactly match",
+      "strict H(B) inside interior B",
+      "exact qH<1 and exact0<d<=1",
+      "public outward40-decimal H bounds show strict self-inclusion, qH_upper<1 and qF_upper<1"
+    ],
+    "public_decimal_places": 40,
+    "insufficient_rule": "tail ratio invalid, certification failure or public bound rounding to1 is rejected/inconclusive; not uniqueness/absence"
+  },
+  "root_count": "같은 모델의 accepted boxes에서 exact strict 좌표 분리를 만족하는 최대 pairwise-disjoint 부분집합의 크기만 안정 root 존재의 하한으로 보고한다. 전체 root 수/부재/유일성을 뜻하지 않는다.",
+  "limits": [
+    "원R081 3/4 종료 유지; .04 OFF 생성 없음",
+    "native 초기p=.5의 basin/160tick 종료/전체 root 수/분기형은UNKNOWN",
+    "새 native 독립 표본0; 수학 모델에서 도출한 추가 분석"
+  ],
+  "verification_plan": [
+    "2 blind views+各1 bounded cross-exam completed before numeric exploration",
+    "Decimal generator standalone self-test with independent exact Taylor exp1 enclosure",
+    "Fraction checker exact Taylor golden cases/oddness/crossing-zero derivative/strict/equality/invalid encoding checks",
+    "generator exp-neighbour omission mutation and checker self-inclusion-bypass mutation in isolated copies must fail same self-test",
+    "actual certificate acceptance plus deliberately outside box control rejection",
+    "frozen code/protocol/runtime/input pins before root search; all failures/attempts recorded"
+  ]
+}
