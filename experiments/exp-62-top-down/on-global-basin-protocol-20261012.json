@@ -1,0 +1,61 @@
+{
+  "schema": "HCCONGlobalBasinProtocol.v1",
+  "source_commit": "2fd891360f983b786b973c5aafea2dca8d2be438",
+  "model_id": "swapped-s004-td1-off",
+  "state_order": [
+    "e:0",
+    "e:1",
+    "p:0:0",
+    "p:0:1",
+    "goal"
+  ],
+  "initial_x": "[-1,1]^5",
+  "target_root_index": 3,
+  "max_steps": 1000,
+  "grid_places": 50,
+  "taylor_degree": 96,
+  "auto_retry": false,
+  "dependencies": {
+    "basin_protocol": {
+      "path": "experiments/exp-62-top-down/on-basin-protocol-20261012.json",
+      "sha256": "a1358e1245d61092f2063d32cde0f2ca783ce44dfb9412ca6e015295ff76cf6d",
+      "bytes": 5221
+    },
+    "basin_checker": {
+      "path": "tools/analysis/check_on_basins.py",
+      "sha256": "7c9a9b9ae49495b561d0c6a7aaeddfaf7eaf6c892ef34ca261a668f44e0d5bb2",
+      "bytes": 23200
+    },
+    "root_protocol": {
+      "path": "experiments/exp-62-top-down/on-root-protocol-20261012.json",
+      "sha256": "396d45bac10dba17b69c1eca5542807cba838fc1a7fa600c85e7fc33fa23c86c",
+      "bytes": 5940
+    },
+    "root_record": {
+      "path": "experiments/exp-62-top-down/on-root-certificates-20261012.json",
+      "sha256": "d1dc48c3fc547a68b1ae9ef3478c5165868a2cb3ce07ff4e3698efce96c945a8",
+      "bytes": 39459
+    },
+    "root_checker": {
+      "path": "tools/analysis/check_on_fixed_points.py",
+      "sha256": "e23abd2a8fb4e881913a50cc0b810f187b0181ee8f0f712ec5d883fcaecd8663",
+      "bytes": 15448
+    },
+    "proposal_helper": {
+      "path": "tools/analysis/on_fixed_points.py",
+      "sha256": "6156e328499369da75fed5da451d814addfad06e4b4d0286babb1b18212c9d86",
+      "bytes": 9888
+    }
+  },
+  "hypotheses": {
+    "success": "Every valid initial state reaches root3; fixed real map has exactly one root, with isolated two-state lift",
+    "failure": "INCONCLUSIVE; never evidence of nonconvergence or alternative roots"
+  },
+  "arithmetic": "Proposal Decimal80 directed/grid50; checker pinned Fraction Taylor96 arithmetic independent of proposal arithmetic",
+  "limits": [
+    "fixed first .04 ON graph; exact binary64 primitive real extension; no early stopping",
+    "No native/Cloud/API/install; no score threshold/bifurcation type/rounding robustness claim",
+    "Previous original-initial 274 transitions not repeated; new fullcube path checked independently",
+    "Existing root3 proof is revalidated as a dependency, not counted as a new independently found root"
+  ]
+}

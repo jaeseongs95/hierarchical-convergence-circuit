@@ -1,0 +1,334 @@
+{
+  "skill_version": "1.0.0",
+  "schema_version": "1.0",
+  "preflight": {
+    "required_capabilities": [
+      "blind reviewer2",
+      "source reads",
+      "exact verification"
+    ],
+    "observed_capabilities": [
+      "blind reviewer2",
+      "source reads",
+      "exact verification"
+    ],
+    "missing_capabilities": [],
+    "supported_models_reasoning": [
+      "gpt-6.1-sol/high schema supports; effective setting unobserved"
+    ]
+  },
+  "case_brief": {
+    "decision": "Which next bounded unit best distinguishes remaining explanations, and does fullcube .04 certification establish global convergence?",
+    "facts": [
+      "Base2fd89136; .03 stable>=2/.04>=1; original basins certified",
+      "New fullcube .04 path133 accepted"
+    ],
+    "assumptions": [
+      "Fixed first graph and real extension"
+    ],
+    "constraints": [
+      "원3/4·raw·src·CI·기존결과 보존",
+      "실행 전 .04/fullcube/root3/1000/grid50/Taylor96/no-retry 동결",
+      "제안기와 별도 pinned Fraction 산술로 전체 포함 사슬·root 증명 결속",
+      "고정 실수 모델과 native·점수분기 주장 구분",
+      "dot 요청과 답변·승인을 구분"
+    ],
+    "unknowns": [
+      "Dot advice reply",
+      "native dynamics",
+      "parameter threshold/type"
+    ],
+    "success_criteria": [
+      "새 사용자 지정 총괄에 dot 조언을 요청하고 접수·답변 상태를 구분; 독립 토론2+교차검토로 다음 단위 결정",
+      "수치 실행 전 .04/fullcube/root3/1000/grid50/Taylor96/no-retry/코드·source 핀 동결",
+      "전체 초기cube 정확 결속·각 포함전이·엄격한 전체 target 진입을 제안기와 별도 exact checker로 검사; 실패는INCONCLUSIVE",
+      "동일 raw 모델·root 자기포함/수축 재검증·고립좌표 조건에 근거해 성공 시5/7 전역수렴 및유일성만 주장",
+      "초기영역 축소·좌표/모델/root 교체·전이누락/축소·경계접촉 거부와 실제표적mutation RED/GREEN",
+      "원3/4·raw·src·CI·기존결과 보존; native/Cloud/API/install0; 점수임계/분기형/native미인증",
+      "신규5파일 범위PASS·GPG signed commit/mainFF/작업branch정리/ordinarypush/원격바이트검증"
+    ],
+    "failure_modes": [
+      "Shrink initial set",
+      "Count endpoint seeds as all-initial proof",
+      "Infer bifurcation type"
+    ]
+  },
+  "run": {
+    "id": "ai-on-global-basin-20261012",
+    "stage": "MEDIUM",
+    "strict": false,
+    "worker_cap": 2,
+    "workers": [
+      {
+        "id": "/root/next_research_math",
+        "role": "수학적 인증 가능성과 숨은 전제",
+        "status": "completed",
+        "is_judge": false,
+        "instantiated": true,
+        "requested_model": "gpt-6.1-sol",
+        "actual_model": null,
+        "requested_reasoning": "high",
+        "actual_reasoning": null,
+        "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+        "classification": "reviewer",
+        "blind_round1": true,
+        "context_isolated": true,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ]
+      },
+      {
+        "id": "/root/next_research_value",
+        "role": "연구 정보가치와 증거 해석",
+        "status": "completed",
+        "is_judge": false,
+        "instantiated": true,
+        "requested_model": "gpt-6.1-sol",
+        "actual_model": null,
+        "requested_reasoning": "high",
+        "actual_reasoning": null,
+        "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+        "classification": "reviewer",
+        "blind_round1": true,
+        "context_isolated": true,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ]
+      }
+    ],
+    "completed_worker_ids": [
+      "/root/next_research_math",
+      "/root/next_research_value"
+    ],
+    "reused_worker_ids": [],
+    "failures": [],
+    "fresh_judge_id": null,
+    "candidate_skill_sha256": null,
+    "assurance": "partially_independent",
+    "specialist_additions": [],
+    "redeliberations": [],
+    "judge_fallback": null,
+    "capability_shortfall": false
+  },
+  "panel_manifest": [
+    {
+      "id": "/root/next_research_math",
+      "role": "수학적 인증 가능성과 숨은 전제",
+      "status": "completed",
+      "is_judge": false,
+      "instantiated": true,
+      "requested_model": "gpt-6.1-sol",
+      "actual_model": null,
+      "requested_reasoning": "high",
+      "actual_reasoning": null,
+      "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+      "classification": "reviewer",
+      "blind_round1": true,
+      "context_isolated": true,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ]
+    },
+    {
+      "id": "/root/next_research_value",
+      "role": "연구 정보가치와 증거 해석",
+      "status": "completed",
+      "is_judge": false,
+      "instantiated": true,
+      "requested_model": "gpt-6.1-sol",
+      "actual_model": null,
+      "requested_reasoning": "high",
+      "actual_reasoning": null,
+      "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+      "classification": "reviewer",
+      "blind_round1": true,
+      "context_isolated": true,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ]
+    }
+  ],
+  "constraints": [
+    "원3/4·raw·src·CI·기존결과 보존",
+    "실행 전 .04/fullcube/root3/1000/grid50/Taylor96/no-retry 동결",
+    "제안기와 별도 pinned Fraction 산술로 전체 포함 사슬·root 증명 결속",
+    "고정 실수 모델과 native·점수분기 주장 구분",
+    "dot 요청과 답변·승인을 구분"
+  ],
+  "required_constraints": [
+    "원3/4·raw·src·CI·기존결과 보존",
+    "실행 전 .04/fullcube/root3/1000/grid50/Taylor96/no-retry 동결",
+    "제안기와 별도 pinned Fraction 산술로 전체 포함 사슬·root 증명 결속",
+    "고정 실수 모델과 native·점수분기 주장 구분",
+    "dot 요청과 답변·승인을 구분"
+  ],
+  "material_claims": [
+    {
+      "id": "fullcube",
+      "statement": "133 exact transitions and root3 reverification establish one global fixed point and all-valid-initial convergence",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-research-resume-20261008-r01\\repository\\experiments\\exp-62-top-down\\on-global-basin-certificates-20261012.json",
+          "verification_status": "verified",
+          "verification_note": "Coordinator directly inspected frozen source/results"
+        }
+      ]
+    },
+    {
+      "id": "selection",
+      "statement": "Wholecube distinguishes residual low equilibrium; tiny radius merely quantifies known open neighborhood",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-basin-radius-20261012-r01\\DESIGN-FREEZE.actual.json",
+          "verification_status": "verified",
+          "verification_note": "Coordinator directly inspected frozen source/results"
+        }
+      ]
+    },
+    {
+      "id": "limits",
+      "statement": "No native or bifurcation claim; prior artifacts preserved and advice reply unobserved",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-research-resume-20261008-r01\\repository\\experiments\\exp-62-top-down\\on-global-basin-certificates-20261012.json",
+          "verification_status": "verified",
+          "verification_note": "Coordinator directly inspected frozen source/results"
+        }
+      ]
+    }
+  ],
+  "cross_examination": {
+    "decision": "run",
+    "reason": "Round1 differed: guaranteed tiny radius vs higher-value uncertain fullcube attempt",
+    "trigger_items": [
+      {
+        "id": "T2",
+        "origin_reviewer": "/root/next_research_value"
+      },
+      {
+        "id": "T3",
+        "origin_reviewer": "/root/next_research_math"
+      }
+    ],
+    "selected_item_ids": [
+      "T2",
+      "T3"
+    ],
+    "coverage": [
+      {
+        "item_id": "T2",
+        "reviewer_ids": [
+          "/root/next_research_math"
+        ]
+      },
+      {
+        "item_id": "T3",
+        "reviewer_ids": [
+          "/root/next_research_value"
+        ]
+      }
+    ],
+    "followups": [
+      {
+        "reviewer_id": "/root/next_research_math",
+        "item_ids": [
+          "T2"
+        ]
+      },
+      {
+        "reviewer_id": "/root/next_research_value",
+        "item_ids": [
+          "T3"
+        ]
+      }
+    ]
+  },
+  "issue_ledger": [
+    {
+      "issue_id": "initial-guard-test",
+      "status": "CONFIRMED",
+      "rationale": "Unrelated first-entry guard masked mutation; stronger external guard oracle catches it",
+      "required_evidence": [
+        "D:\\codex\\리드\\ai-basin-radius-20261012-r01\\DIAGNOSIS.actual.json"
+      ],
+      "available_evidence": [
+        "D:\\codex\\리드\\ai-basin-radius-20261012-r01\\test-root-r3\\proof-result.json"
+      ]
+    }
+  ],
+  "axis_decisions": [
+    {
+      "axis": "Information value",
+      "decision": "Select fullcube before numbers",
+      "evidence_claim_ids": [
+        "selection"
+      ]
+    },
+    {
+      "axis": "Mathematics",
+      "decision": "Global unique root and all-valid-initial convergence at .04 accepted",
+      "evidence_claim_ids": [
+        "fullcube"
+      ]
+    },
+    {
+      "axis": "Claim boundaries",
+      "decision": "Native and bifurcation remain unestablished",
+      "evidence_claim_ids": [
+        "limits"
+      ]
+    }
+  ],
+  "consensus_proposal": {
+    "status": "consensus",
+    "action": "Publish bounded fullcube .04 certificate unit",
+    "supported_by_verified_claims": [
+      "fullcube",
+      "selection",
+      "limits"
+    ],
+    "satisfied_constraints": [
+      "원3/4·raw·src·CI·기존결과 보존",
+      "실행 전 .04/fullcube/root3/1000/grid50/Taylor96/no-retry 동결",
+      "제안기와 별도 pinned Fraction 산술로 전체 포함 사슬·root 증명 결속",
+      "고정 실수 모델과 native·점수분기 주장 구분",
+      "dot 요청과 답변·승인을 구분"
+    ],
+    "axis_alignment": [
+      {
+        "axis": "Information value",
+        "decision_ref": "Information value"
+      },
+      {
+        "axis": "Mathematics",
+        "decision_ref": "Mathematics"
+      },
+      {
+        "axis": "Claim boundaries",
+        "decision_ref": "Claim boundaries"
+      }
+    ],
+    "conditions": [],
+    "unresolved_dissent": [],
+    "no_consensus_reason": null,
+    "remaining_options": [],
+    "decision_owner": null
+  },
+  "observability": {
+    "wall_time": "NOT_OBSERVABLE",
+    "tokens": "NOT_OBSERVABLE",
+    "tool_calls": "NOT_OBSERVABLE",
+    "worker_count": 2
+  },
+  "method_notes": [
+    "Two blind distinct perspectives, once cross per reviewer, MEDIUM coordinator integration; no Judge/reserve/specialist",
+    "Coordinator-origin T1 dependency clarification and later static code review are non-independent rechecks; no new blind participant",
+    "Implementation reuse failed at model capacity; main wrote wrappers. Arithmetic verifier differs from proposal through pinned prior implementation",
+    "Dot advice not returned; independent panel selected direction before numeric run",
+    "run.workers describes completed blind/cross panel lifecycle only. Later value implementation turn failed at capacity, math static recheck completed; both are separate non-independent reuse."
+  ]
+}
