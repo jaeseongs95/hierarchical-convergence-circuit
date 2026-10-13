@@ -1,0 +1,110 @@
+{
+  "schema": "HCCONCriticalStripProtocol.v1",
+  "source_commit": "bb18cd9a5a23ba64a071d894681e3e160b8f98af",
+  "parameter": "exact real drive h for e:1; s=h/4",
+  "dependencies": {
+    "fold_protocol": {
+      "path": "experiments/exp-62-top-down/on-fold-protocol-20261012.json",
+      "sha256": "9e9f4cfc432e68e57c5b20dd0bb2c62d11b7b86376aff7228862467b99043ef5",
+      "bytes": 3126
+    },
+    "fold_checker": {
+      "path": "tools/analysis/check_on_fold.py",
+      "sha256": "90b5038691c774b1705b868f03cfaa524d2216d115dbf23aab7a67cc96827264",
+      "bytes": 25726
+    },
+    "fold_record": {
+      "path": "experiments/exp-62-top-down/on-fold-certificates-20261012.json",
+      "sha256": "91b49fa0e00695721f73ab6d0a73bf13e5adc6103448d86a6080e52a1c6d9216",
+      "bytes": 247019
+    },
+    "workspace": {
+      "path": "src/hcr/workspace.py",
+      "sha256": "65ac816b06d0e2fbb971adeecfd9e317f99fc7d43881ea17f99d71d35e3e1b1a",
+      "bytes": 11225
+    },
+    "dynamics": {
+      "path": "src/hcr/dynamics.py",
+      "sha256": "a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc",
+      "bytes": 3848
+    },
+    "runtime": {
+      "path": "src/hcr/runtime.py",
+      "sha256": "1f71a2a2d5469f8c9532de421b71f16b8e62ec6bc8aa6184146f41a7990f34eb",
+      "bytes": 26026
+    }
+  },
+  "budget": {
+    "conditional_iterations": 200,
+    "h_cells": 4,
+    "max_queries": 1100,
+    "wall_time_seconds": 1800,
+    "auto_retry": false
+  },
+  "arithmetic": {
+    "interval_decimal_places": 70,
+    "taylor_degree": 96
+  },
+  "conditional_padding": "1/1000000000000",
+  "regions": [
+    {
+      "id": "low",
+      "y": [
+        "-999/1000",
+        "-1/4"
+      ],
+      "cells": 96
+    },
+    {
+      "id": "middle",
+      "y": [
+        "-1/4",
+        "9/10"
+      ],
+      "cells": 128
+    },
+    {
+      "id": "high",
+      "y": [
+        "9/10",
+        "999/1000"
+      ],
+      "cells": 32
+    }
+  ],
+  "edge_y": [
+    "-999/1000",
+    "-1/4",
+    "9/10",
+    "999/1000"
+  ],
+  "partition": "exact linear y grid per region crossed with exact h_j=h0+(h1-h0)*j/4; order region,h_index,y_index",
+  "root_domain": "L in [-12/5-k-alpha,2+k+alpha]; rigorous tanh image strictly inside (-999/1000,999/1000)",
+  "signs": {
+    "low": [
+      "Ryy<0",
+      "Rh<0"
+    ],
+    "middle": [
+      "R<0"
+    ],
+    "high": [
+      "Ry>0"
+    ],
+    "full_h_faces": [
+      "R(y=-.999)<0",
+      "R(y=-.25)<0",
+      "R(y=.9)<0",
+      "R(y=.999)>0",
+      "Ry(-.999)>0",
+      "Ry(-.25)<0"
+    ]
+  },
+  "old_dependency_recheck": "All-root reduction/raw model/root0 recheck, isolated lift; only old fold center+box queries and augmented proof; no repeat 64 tubes/199queries/133cube",
+  "failure_policy": "Any source/geometry/self-inclusion/sign/fold/budget failure: INCONCLUSIVE with original evidence; no automatic retry or target reduction",
+  "scope_limits": [
+    "unique equilibrium saddle-node and distinct root census of exact first ON family only",
+    "not all dynamical bifurcations, global convergence/basins, native threshold/stop/160ticks/latergraph",
+    "same raw reanalysis is not a new native sample; R081 closed3of4 retained"
+  ]
+}

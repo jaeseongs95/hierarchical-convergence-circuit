@@ -1,0 +1,353 @@
+{
+  "skill_version": "1.0.0",
+  "schema_version": "1.0",
+  "preflight": {
+    "required_capabilities": [
+      "two blind reviewers",
+      "raw/source read",
+      "separate Fraction verifier"
+    ],
+    "observed_capabilities": [
+      "two blind reviewers",
+      "raw/source read",
+      "separate Fraction verifier"
+    ],
+    "missing_capabilities": [],
+    "supported_models_reasoning": [
+      "gpt-6.1-sol/high schema supports; effective setting unobserved"
+    ]
+  },
+  "case_brief": {
+    "decision": "고정 첫 ON 실수가족 .03~.04 전 구간의 유일한 평형 fold와 전체 평형 개수를 인증한다",
+    "facts": [
+      "Previous connectedlocalfold delivered; globalcritical/counts previouslyUNKNOWN",
+      "Current exact shape cover/anchor accepted"
+    ],
+    "assumptions": [
+      "endpoint-exact fixed first ON real family"
+    ],
+    "constraints": [
+      "Fixed first ON graph, exact binary64 primitive real extension h=beta(.12)..beta(.16), score=h/4",
+      "One fixed candidate run; 1024 cells/4 full-h faces/2 old fold queries; conditional200/grid70/Taylor96/max1100/wall1800s; no retry or adaptive changes",
+      "All roots confined to [-999/1000,999/1000]; no unresolved cell allowed; strict inequalities only",
+      "3/2/1 means below/equal/above the unknown exact h*, not every point inside its certified enclosure",
+      "Unique equilibrium fold only; no all-bifurcation/global-basin/native-stop/160tick/latergraph claim",
+      "R081 closed; native/Cloud/API/install/global keys or config/force changes prohibited; GPG input necessity reported to user"
+    ],
+    "unknowns": [
+      "native threshold/stop/otherbifurcations",
+      "Dot advice"
+    ],
+    "success_criteria": [
+      "토론2+교차각1로 최소 전구간 계약·주장 경계 확정; dot조언 요청경로·미발신/미회수 구분",
+      "동일 raw/source/exact 모델 및 조건부 축약·고립상태 lift를 독립 결속하고 전체 root compact domain을 엄격히 인증",
+      "수치 전 입력·코드·protocol·분할·budget 동결; 전체1024cells와4wholehfaces의 exactcoverage/자기포함 검산",
+      "low Ryy<0/Rh<0·경계R<0/Ry반대부호, middle R<0, high Ry>0·IVT로 숨은 평형 배제",
+      "기존 fold의2query/C가역/엄격포함/수축 재검산으로 전구간유일fold 및 정확h*기준3/2/1개 도출",
+      "coverage·strictsign·wholehface·fold/source binding 의미있는mutation/음성대조와 실패 보존",
+      "새5파일만; 원R081closed3/4/raw/src/CI/기존결과 보존; GPGsignedcommit/mainFF/branch삭제/ordinarypush/remote5bytes 확인"
+    ],
+    "failure_modes": [
+      "partialcover treated global",
+      "point h face extrapolated",
+      "historicalaccepted summary treated proof",
+      "root2 applied wholecriticalenclosure"
+    ]
+  },
+  "run": {
+    "id": "ai-on-critical-strip-20261013",
+    "stage": "MEDIUM",
+    "strict": false,
+    "worker_cap": 2,
+    "workers": [
+      {
+        "id": "/root/critical_strip_math",
+        "role": "평형 총수·경계·퇴화의 증명 의무",
+        "status": "completed",
+        "is_judge": false,
+        "instantiated": true,
+        "requested_model": "gpt-6.1-sol",
+        "actual_model": null,
+        "requested_reasoning": "high",
+        "actual_reasoning": null,
+        "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+        "classification": "reviewer",
+        "blind_round1": true,
+        "context_isolated": true,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ]
+      },
+      {
+        "id": "/root/critical_strip_evidence",
+        "role": "근거 결속·연구 가치·주장 경계",
+        "status": "completed",
+        "is_judge": false,
+        "instantiated": true,
+        "requested_model": "gpt-6.1-sol",
+        "actual_model": null,
+        "requested_reasoning": "high",
+        "actual_reasoning": null,
+        "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+        "classification": "reviewer",
+        "blind_round1": true,
+        "context_isolated": true,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ]
+      }
+    ],
+    "completed_worker_ids": [
+      "/root/critical_strip_math",
+      "/root/critical_strip_evidence"
+    ],
+    "reused_worker_ids": [],
+    "failures": [],
+    "fresh_judge_id": null,
+    "candidate_skill_sha256": null,
+    "assurance": "partially_independent",
+    "specialist_additions": [],
+    "redeliberations": [],
+    "judge_fallback": null,
+    "capability_shortfall": false
+  },
+  "panel_manifest": [
+    {
+      "id": "/root/critical_strip_math",
+      "role": "평형 총수·경계·퇴화의 증명 의무",
+      "status": "completed",
+      "is_judge": false,
+      "instantiated": true,
+      "requested_model": "gpt-6.1-sol",
+      "actual_model": null,
+      "requested_reasoning": "high",
+      "actual_reasoning": null,
+      "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+      "classification": "reviewer",
+      "blind_round1": true,
+      "context_isolated": true,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ]
+    },
+    {
+      "id": "/root/critical_strip_evidence",
+      "role": "근거 결속·연구 가치·주장 경계",
+      "status": "completed",
+      "is_judge": false,
+      "instantiated": true,
+      "requested_model": "gpt-6.1-sol",
+      "actual_model": null,
+      "requested_reasoning": "high",
+      "actual_reasoning": null,
+      "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+      "classification": "reviewer",
+      "blind_round1": true,
+      "context_isolated": true,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ]
+    }
+  ],
+  "constraints": [
+    "Fixed first ON graph, exact binary64 primitive real extension h=beta(.12)..beta(.16), score=h/4",
+    "One fixed candidate run; 1024 cells/4 full-h faces/2 old fold queries; conditional200/grid70/Taylor96/max1100/wall1800s; no retry or adaptive changes",
+    "All roots confined to [-999/1000,999/1000]; no unresolved cell allowed; strict inequalities only",
+    "3/2/1 means below/equal/above the unknown exact h*, not every point inside its certified enclosure",
+    "Unique equilibrium fold only; no all-bifurcation/global-basin/native-stop/160tick/latergraph claim",
+    "R081 closed; native/Cloud/API/install/global keys or config/force changes prohibited; GPG input necessity reported to user"
+  ],
+  "required_constraints": [
+    "Fixed first ON graph, exact binary64 primitive real extension h=beta(.12)..beta(.16), score=h/4",
+    "One fixed candidate run; 1024 cells/4 full-h faces/2 old fold queries; conditional200/grid70/Taylor96/max1100/wall1800s; no retry or adaptive changes",
+    "All roots confined to [-999/1000,999/1000]; no unresolved cell allowed; strict inequalities only",
+    "3/2/1 means below/equal/above the unknown exact h*, not every point inside its certified enclosure",
+    "Unique equilibrium fold only; no all-bifurcation/global-basin/native-stop/160tick/latergraph claim",
+    "R081 closed; native/Cloud/API/install/global keys or config/force changes prohibited; GPG input necessity reported to user"
+  ],
+  "material_claims": [
+    {
+      "id": "binding",
+      "statement": "exact raw/source/model and all-root conditional reduction/collar verified",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-critical-strip-20261013-r01\\RAW-SOURCE-BINDING.actual.json",
+          "verification_status": "verified",
+          "verification_note": "Coordinator read current pinned source and actual result; summary is not a substitute for proof"
+        }
+      ]
+    },
+    {
+      "id": "coverage",
+      "statement": "1024 exactcells+4whole-hfaces+2priorfoldqueries certified, no uncovered region",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-critical-strip-20261013-r01\\CHECK.actual.json",
+          "verification_status": "verified",
+          "verification_note": "Coordinator read current pinned source and actual result; summary is not a substitute for proof"
+        }
+      ]
+    },
+    {
+      "id": "census",
+      "statement": "unique equilibrium fold with distinct equilibrium counts3/2/1 relative to actual h*",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-critical-strip-20261013-r01\\CHECK.actual.json",
+          "verification_status": "verified",
+          "verification_note": "Coordinator read current pinned source and actual result; summary is not a substitute for proof"
+        }
+      ]
+    },
+    {
+      "id": "test",
+      "statement": "4 direct-guard mutation pairs consistent; 12 negativecontrols rejected; original adapter failures retained",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-critical-strip-20261013-r01\\test-root\\proof-result.json",
+          "verification_status": "verified",
+          "verification_note": "Coordinator read current pinned source and actual result; summary is not a substitute for proof"
+        }
+      ]
+    }
+  ],
+  "cross_examination": {
+    "decision": "run",
+    "reason": "Boundary coverage/h-face extrapolation and reliance on historical endpoint anchor are material hidden premises",
+    "trigger_items": [
+      {
+        "id": "T1",
+        "origin_reviewer": "/root/critical_strip_math"
+      },
+      {
+        "id": "T2",
+        "origin_reviewer": "/root/critical_strip_evidence"
+      }
+    ],
+    "selected_item_ids": [
+      "T1",
+      "T2"
+    ],
+    "coverage": [
+      {
+        "item_id": "T1",
+        "reviewer_ids": [
+          "/root/critical_strip_evidence"
+        ]
+      },
+      {
+        "item_id": "T2",
+        "reviewer_ids": [
+          "/root/critical_strip_math"
+        ]
+      }
+    ],
+    "followups": [
+      {
+        "reviewer_id": "/root/critical_strip_evidence",
+        "item_ids": [
+          "T1"
+        ]
+      },
+      {
+        "reviewer_id": "/root/critical_strip_math",
+        "item_ids": [
+          "T2"
+        ]
+      }
+    ]
+  },
+  "issue_ledger": [
+    {
+      "issue_id": "full-strip-and-anchor",
+      "status": "CONFIRMED",
+      "rationale": "Exact complete cover and freshhigh IVT replace historicalroot anchor; full-hface checks exclude extrapolation",
+      "required_evidence": [
+        "D:\\codex\\리드\\ai-critical-strip-20261013-r01\\CHECK.actual.json"
+      ],
+      "available_evidence": [
+        "D:\\codex\\리드\\ai-critical-strip-20261013-r01\\CHECK.actual.json"
+      ]
+    }
+  ],
+  "axis_decisions": [
+    {
+      "axis": "Family",
+      "decision": "Same exact first ON model; raw/source and root collar verified",
+      "evidence_claim_ids": [
+        "binding"
+      ]
+    },
+    {
+      "axis": "Census",
+      "decision": "Full-strip unique equilibriumfold and3/2/1distinct roots",
+      "evidence_claim_ids": [
+        "coverage",
+        "census"
+      ]
+    },
+    {
+      "axis": "Verification",
+      "decision": "Guard sensitivity and failures accounted for; native count unchanged",
+      "evidence_claim_ids": [
+        "test"
+      ]
+    }
+  ],
+  "consensus_proposal": {
+    "status": "consensus",
+    "action": "Deliver full-strip equilibrium census and unique equilibrium fold certificate",
+    "supported_by_verified_claims": [
+      "binding",
+      "coverage",
+      "census",
+      "test"
+    ],
+    "satisfied_constraints": [
+      "Fixed first ON graph, exact binary64 primitive real extension h=beta(.12)..beta(.16), score=h/4",
+      "One fixed candidate run; 1024 cells/4 full-h faces/2 old fold queries; conditional200/grid70/Taylor96/max1100/wall1800s; no retry or adaptive changes",
+      "All roots confined to [-999/1000,999/1000]; no unresolved cell allowed; strict inequalities only",
+      "3/2/1 means below/equal/above the unknown exact h*, not every point inside its certified enclosure",
+      "Unique equilibrium fold only; no all-bifurcation/global-basin/native-stop/160tick/latergraph claim",
+      "R081 closed; native/Cloud/API/install/global keys or config/force changes prohibited; GPG input necessity reported to user"
+    ],
+    "axis_alignment": [
+      {
+        "axis": "Family",
+        "decision_ref": "Family"
+      },
+      {
+        "axis": "Census",
+        "decision_ref": "Census"
+      },
+      {
+        "axis": "Verification",
+        "decision_ref": "Verification"
+      }
+    ],
+    "conditions": [],
+    "unresolved_dissent": [],
+    "no_consensus_reason": null,
+    "remaining_options": [],
+    "decision_owner": null
+  },
+  "observability": {
+    "wall_time": "NOT_OBSERVABLE",
+    "tokens": "NOT_OBSERVABLE",
+    "tool_calls": "NOT_OBSERVABLE",
+    "worker_count": 2
+  },
+  "method_notes": [
+    "MEDIUM2 blind+eachcrossonce, Coordinator integration partially_independent; noJudge/reserve/specialist. RequestedSol6.1/high actualruntimeUNKNOWN.",
+    "Math initialcapacityerror, statusinspected, same-settings transientfollowuponce completed; no model fallback or extra reviewer. This recovered dispatch is not a failed completed-panel worker.",
+    "Math subsequently authored checker, evidence subsequently read full code non-independently; not extra blind participants.",
+    "One frozen scientificcandidate. Mutator substring collision and diagnosis-wrapperfielderror retained; completed2mutationpairs reused; later2pairs executedonce; science/code/protocolunchanged.",
+    "NormalizedTaskContractPASS addsACIDs only and maps byte-identical scopedTASK; no baseline task rebind. Originalworkingtree42028 baseline.",
+    "Dot transport supports exact replies toexistingrequests, not unsolicitednewquestion; questionprepared, notsent. No unauthorizednewroute/API.",
+    "Native/Cloud/API/install0; originalR081closed3of4. No all-dynamical-bifurcation/stability/globalbasin/native-stop claims."
+  ]
+}
