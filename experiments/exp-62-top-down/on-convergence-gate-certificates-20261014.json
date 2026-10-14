@@ -1,0 +1,908 @@
+{
+  "schema": "HCCONConvergenceGateCertificates.v1",
+  "recorded_at_utc": "2026-10-14T04:23:38.508+00:00",
+  "source_commit": "6e3ea47535c37fe47e351161b67dfbf2bb730dc3",
+  "protocol": {
+    "path": "experiments/exp-62-top-down/on-convergence-gate-protocol-20261014.json",
+    "sha256": "d7ebdde8e5a82a237aaa3105adfedcd4da24c0713c7735b85750105dc7aefb0d",
+    "bytes": 7315
+  },
+  "frozen_execution": {
+    "at_utc": "2026-10-14T04:19:54.662+00:00",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "C:\\Users\\Lenovo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "files": [
+      {
+        "path": "tools/analysis/on_convergence_gate.py",
+        "sha256": "30b756eafb578b78cd53e976191a708e33323504f1f30694c13cec6e0d01fab6",
+        "bytes": 3250
+      },
+      {
+        "path": "tools/analysis/check_on_convergence_gate.py",
+        "sha256": "0978b8da49213ca2a22fe4f7fc444cb989f72da0ff9bc52c61004ba7d9e10493",
+        "bytes": 23111
+      },
+      {
+        "path": "experiments/exp-62-top-down/on-convergence-gate-protocol-20261014.json",
+        "sha256": "d7ebdde8e5a82a237aaa3105adfedcd4da24c0713c7735b85750105dc7aefb0d",
+        "bytes": 7315
+      }
+    ],
+    "protocol": {
+      "path": "experiments/exp-62-top-down/on-convergence-gate-protocol-20261014.json",
+      "sha256": "d7ebdde8e5a82a237aaa3105adfedcd4da24c0713c7735b85750105dc7aefb0d",
+      "bytes": 7315
+    },
+    "design_sha256": "719870fdd72179bb6c34910a038118268efd99e066a04d6f96f71d5d74601269",
+    "numerical_runs_before_freeze": 0,
+    "writers": {
+      "producer": "/root",
+      "checker": "/root/gate_evidence (non-independent implementation reuse)"
+    },
+    "arithmetic": "Fraction/Taylor96/cacheOFF/public40, rootgrid31; absolute180s/fixed2cases; native0",
+    "source_dependency": "Old B1848/B6144 and trajectories/census are pinned trusteddependencies, not rechecked; fresh2 localproofs/currentwholeB residuals"
+  },
+  "proposal": {
+    "schema": "HCCONConvergenceGateProposal.v1",
+    "protocol_sha256": "d7ebdde8e5a82a237aaa3105adfedcd4da24c0713c7735b85750105dc7aefb0d",
+    "sample_id": "above_near",
+    "score_hex": "0x1.277babda5a221p-5",
+    "drive_hex": "0x1.277babda5a221p-3",
+    "cases": [
+      {
+        "id": "low1848",
+        "tick": 1848,
+        "record_pin": {
+          "path": "experiments/exp-62-top-down/on-real-stop-certificates-20261014.json",
+          "sha256": "c4638c7a4dd9d644ed2899b4449c0d25ecbc24eb5240b40e584bf96ba5f0f0ad",
+          "bytes": 1736261
+        },
+        "x_box": [
+          [
+            "0.999782481187553207541617093853",
+            "0.999782481187553207541617093855"
+          ],
+          [
+            "-0.052229679449883636864596304939",
+            "-0.052229679449883636864596304146"
+          ],
+          [
+            "0.999572208329435853767513865004",
+            "0.999572208329435853767513865007"
+          ],
+          [
+            "0.989510610857000352963850979566",
+            "0.989510610857000352963850979568"
+          ],
+          [
+            "0.966230841848212556901778588924",
+            "0.966230841848212556901778588968"
+          ],
+          [
+            "-0.528006918420777588270879586183",
+            "-0.528006918420777588270879584421"
+          ],
+          [
+            "-0.847349156562563401988921909611",
+            "-0.847349156562563401988921908550"
+          ]
+        ],
+        "region": {
+          "lower": [
+            "0.9997814811875532075416170938540",
+            "-0.0522306794498836368645963045425",
+            "0.9995712083294358537675138650055",
+            "0.9895096108570003529638509795670",
+            "0.9662298418482125569017785889460",
+            "-0.5280079184207775882708795853020",
+            "-0.8473501565625634019889219090805"
+          ],
+          "upper": [
+            "0.9997834811875532075416170938540",
+            "-0.0522286794498836368645963045425",
+            "0.9995732083294358537675138650055",
+            "0.9895116108570003529638509795670",
+            "0.9662318418482125569017785889460",
+            "-0.5280059184207775882708795853020",
+            "-0.8473481565625634019889219090805"
+          ],
+          "weights": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "id": "high6144",
+        "tick": 6144,
+        "record_pin": {
+          "path": "experiments/exp-62-top-down/on-real-escape-certificates-20261014.json",
+          "sha256": "26dc951594bca98d371d2ae48f93ca3896b362725b6dc0984c5a7ec6b4b452e9",
+          "bytes": 4357667
+        },
+        "x_box": [
+          [
+            "0.999785726559583877876981955542",
+            "0.999785726559583877876981955544"
+          ],
+          [
+            "0.525160590743828066001970492661",
+            "0.525160590743828066001970492665"
+          ],
+          [
+            "0.999572208329435853767513865004",
+            "0.999572208329435853767513865007"
+          ],
+          [
+            "0.989510610857000352963850979566",
+            "0.989510610857000352963850979568"
+          ],
+          [
+            "0.987705801108870750429212349357",
+            "0.987705801108870750429212349359"
+          ],
+          [
+            "0.917140508431532725670471190497",
+            "0.917140508431532725670471190502"
+          ],
+          [
+            "0.967521342221448675748143176558",
+            "0.967521342221448675748143176561"
+          ]
+        ],
+        "region": {
+          "lower": [
+            "0.9997847265595838778769819555430",
+            "0.5251595907438280660019704926630",
+            "0.9995712083294358537675138650055",
+            "0.9895096108570003529638509795670",
+            "0.9877048011088707504292123493580",
+            "0.9171395084315327256704711904995",
+            "0.9675203422214486757481431765595"
+          ],
+          "upper": [
+            "0.9997867265595838778769819555430",
+            "0.5251615907438280660019704926630",
+            "0.9995732083294358537675138650055",
+            "0.9895116108570003529638509795670",
+            "0.9877068011088707504292123493580",
+            "0.9171415084315327256704711904995",
+            "0.9675223422214486757481431765595"
+          ],
+          "weights": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      }
+    ]
+  },
+  "independent_verification": {
+    "schema": "HCCONConvergenceGateCheck.v1",
+    "accepted": true,
+    "status": "CERTIFIED_ANALYSIS",
+    "protocol_sha256": "d7ebdde8e5a82a237aaa3105adfedcd4da24c0713c7735b85750105dc7aefb0d",
+    "proposal_sha256": "aa4afa3b394c049a3d6ba31b43ec2ecaaa78eecfe9e705966268da8dd1fc422f",
+    "checker_pin": {
+      "path": "D:\\codex\\리드\\ai-research-resume-20261008-r01\\repository\\tools\\analysis\\check_on_convergence_gate.py",
+      "sha256": "0978b8da49213ca2a22fe4f7fc444cb989f72da0ff9bc52c61004ba7d9e10493",
+      "bytes": 23111
+    },
+    "source_pins": [
+      {
+        "path": "src/hcr/dynamics.py",
+        "sha256": "a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc",
+        "bytes": 3848
+      },
+      {
+        "path": "src/hcr/model.py",
+        "sha256": "b10e41146036bbbe6e155cee84f3c03711d9bfdeef26c54439d679cc36d590dd",
+        "bytes": 12732
+      },
+      {
+        "path": "src/hcr/workspace.py",
+        "sha256": "65ac816b06d0e2fbb971adeecfd9e317f99fc7d43881ea17f99d71d35e3e1b1a",
+        "bytes": 11225
+      },
+      {
+        "path": "src/hcr/runtime.py",
+        "sha256": "1f71a2a2d5469f8c9532de421b71f16b8e62ec6bc8aa6184146f41a7990f34eb",
+        "bytes": 26026
+      },
+      {
+        "path": "tools/analysis/on_fixed_points.py",
+        "sha256": "6156e328499369da75fed5da451d814addfad06e4b4d0286babb1b18212c9d86",
+        "bytes": 9888
+      },
+      {
+        "path": "tools/analysis/check_on_basins.py",
+        "sha256": "7c9a9b9ae49495b561d0c6a7aaeddfaf7eaf6c892ef34ca261a668f44e0d5bb2",
+        "bytes": 23200
+      },
+      {
+        "path": "tools/analysis/check_on_native_stop.py",
+        "sha256": "654b468fa48d66d1f30d40b295e41e3aa3c0962de9c4175d840db5ddda5786c1",
+        "bytes": 25975
+      },
+      {
+        "path": "tools/analysis/check_on_critical_strip.py",
+        "sha256": "faf55c1886aaa12afc8455b37ee0d170a5af16f8d21e53c8f5c51bfbf928329d",
+        "bytes": 16009
+      },
+      {
+        "path": "tools/analysis/check_on_fold.py",
+        "sha256": "90b5038691c774b1705b868f03cfaa524d2216d115dbf23aab7a67cc96827264",
+        "bytes": 25726
+      },
+      {
+        "path": "experiments/exp-62-top-down/on-native-stop-protocol-20261014.json",
+        "sha256": "f24a4d53a0689c5cbd70d0140c41bbfcfa5322d08366519ea6fc2bf4f0e49aae",
+        "bytes": 6047
+      },
+      {
+        "path": "experiments/exp-62-top-down/on-native-stop-certificates-20261014.json",
+        "sha256": "50c65972e890e9883d200b34180f32a488a15dcf7bfcc00fcf661dabe4e0a7d5",
+        "bytes": 2237372
+      },
+      {
+        "path": "experiments/exp-62-top-down/on-critical-strip-protocol-20261013.json",
+        "sha256": "86112d643e22f7dad2094746b26c8878f1b78de3bec408d2076d3fad0c6e5871",
+        "bytes": 3148
+      },
+      {
+        "path": "experiments/exp-62-top-down/on-critical-strip-certificates-20261013.json",
+        "sha256": "1baa4cc77de6f430ba4df19bc6d8c05e2514d3b6dfeea64bb597151dbc249819",
+        "bytes": 968815
+      },
+      {
+        "path": "tools/analysis/on_real_stop.py",
+        "sha256": "c8eea9a4d797b76cfe66a70c2e16698c3037248644aff3a283e66d095cb86506",
+        "bytes": 4685
+      },
+      {
+        "path": "tools/analysis/check_on_real_stop.py",
+        "sha256": "34695b2362977adce21a878cdcdd3d94b22e089906e7e789f2719e7bb55cddc4",
+        "bytes": 23555
+      },
+      {
+        "path": "experiments/exp-62-top-down/on-real-stop-protocol-20261014.json",
+        "sha256": "46b8c83a43357c8cc20f81641e044d1725cdbf9171f466729e920bcd71bfe372",
+        "bytes": 4812
+      },
+      {
+        "path": "experiments/exp-62-top-down/on-real-stop-certificates-20261014.json",
+        "sha256": "c4638c7a4dd9d644ed2899b4449c0d25ecbc24eb5240b40e584bf96ba5f0f0ad",
+        "bytes": 1736261
+      },
+      {
+        "path": "tools/analysis/check_on_fixed_points.py",
+        "sha256": "e23abd2a8fb4e881913a50cc0b810f187b0181ee8f0f712ec5d883fcaecd8663",
+        "bytes": 15448
+      },
+      {
+        "path": "tools/analysis/on_real_escape.py",
+        "sha256": "176ca1f065cd58da2c68a55fd92c7a4614f55a4f94fe3d050d46d2b2bd82083e",
+        "bytes": 9543
+      },
+      {
+        "path": "tools/analysis/check_on_real_escape.py",
+        "sha256": "34ad1f6b8f7adbd51cd5fca6681f93feff5f1ee15f9a56ca74243f997811578c",
+        "bytes": 29402
+      },
+      {
+        "path": "experiments/exp-62-top-down/on-real-escape-protocol-20261014.json",
+        "sha256": "744f7c8e101501291f9b757613044ac6b878d78b4e1c5d41c1a60082c3e23509",
+        "bytes": 6036
+      },
+      {
+        "path": "experiments/exp-62-top-down/on-real-escape-certificates-20261014.json",
+        "sha256": "26dc951594bca98d371d2ae48f93ca3896b362725b6dc0984c5a7ec6b4b452e9",
+        "bytes": 4357667
+      }
+    ],
+    "raw_pins": [
+      {
+        "model_id": "swapped-s003-td1-off",
+        "path": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/evaluation/swapped-s003-td1-off/inference.json",
+        "sha256": "56ac3c9ccb28ade542bdcfb613e8bf4ca326c86b900aee8c05e2b9eefd566fc1",
+        "bytes": 234849
+      },
+      {
+        "model_id": "swapped-s004-td1-off",
+        "path": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/evaluation/swapped-s004-td1-off/inference.json",
+        "sha256": "97daaac49c5edac743bb4d856fd10ed319104d1df61d444ca5941fc92e6c5c64",
+        "bytes": 174744
+      }
+    ],
+    "dependency_records": [
+      {
+        "path": "experiments/exp-62-top-down/on-real-stop-certificates-20261014.json",
+        "sha256": "c4638c7a4dd9d644ed2899b4449c0d25ecbc24eb5240b40e584bf96ba5f0f0ad",
+        "bytes": 1736261
+      },
+      {
+        "path": "experiments/exp-62-top-down/on-real-escape-certificates-20261014.json",
+        "sha256": "26dc951594bca98d371d2ae48f93ca3896b362725b6dc0984c5a7ec6b4b452e9",
+        "bytes": 4357667
+      }
+    ],
+    "model_digest": "a56e4dc4616ac97d976957a48622f277a48ac5f265724b75f33f1670db7ffc26",
+    "state_order": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "e:3",
+      "p:0:0",
+      "p:0:1",
+      "goal"
+    ],
+    "sample_id": "above_near",
+    "cases": [
+      {
+        "id": "low1848",
+        "tick": 1848,
+        "record_pin": {
+          "path": "experiments/exp-62-top-down/on-real-stop-certificates-20261014.json",
+          "sha256": "c4638c7a4dd9d644ed2899b4449c0d25ecbc24eb5240b40e584bf96ba5f0f0ad",
+          "bytes": 1736261
+        },
+        "x_box": [
+          [
+            "0.999782481187553207541617093853",
+            "0.999782481187553207541617093855"
+          ],
+          [
+            "-0.052229679449883636864596304939",
+            "-0.052229679449883636864596304146"
+          ],
+          [
+            "0.999572208329435853767513865004",
+            "0.999572208329435853767513865007"
+          ],
+          [
+            "0.989510610857000352963850979566",
+            "0.989510610857000352963850979568"
+          ],
+          [
+            "0.966230841848212556901778588924",
+            "0.966230841848212556901778588968"
+          ],
+          [
+            "-0.528006918420777588270879586183",
+            "-0.528006918420777588270879584421"
+          ],
+          [
+            "-0.847349156562563401988921909611",
+            "-0.847349156562563401988921908550"
+          ]
+        ],
+        "region": {
+          "lower": [
+            "0.9997814811875532075416170938540",
+            "-0.0522306794498836368645963045425",
+            "0.9995712083294358537675138650055",
+            "0.9895096108570003529638509795670",
+            "0.9662298418482125569017785889460",
+            "-0.5280079184207775882708795853020",
+            "-0.8473501565625634019889219090805"
+          ],
+          "upper": [
+            "0.9997834811875532075416170938540",
+            "-0.0522286794498836368645963045425",
+            "0.9995732083294358537675138650055",
+            "0.9895116108570003529638509795670",
+            "0.9662318418482125569017785889460",
+            "-0.5280059184207775882708795853020",
+            "-0.8473481565625634019889219090805"
+          ],
+          "weights": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "all7_strict_entry": true,
+        "closed_convex_box": true,
+        "region_valid": false,
+        "local_proof": {
+          "accepted": false,
+          "H_lower": [
+            "0.9997824809534024678300691399526750447304",
+            "-0.0522282541655458618792402134980645345842",
+            "0.9995722081369707350130408672127936537912",
+            "0.9895106061615303322486597760049165069172",
+            "0.9662307756184551749831129997141772150919",
+            "-0.5280057838209223193731509611666913654556",
+            "-0.8473471101427266319692439536236423970744"
+          ],
+          "H_upper": [
+            "0.9997824814536412881386848271280085572293",
+            "-0.0522271073024360920861477241905934033642",
+            "0.9995722085219008859497536323123276406430",
+            "0.9895106155524682828816738716771608533829",
+            "0.9662311175669080821542223750505062270381",
+            "-0.5279991847185264681763127981927774182929",
+            "-0.8473458552252012786400180619309375975133"
+          ],
+          "slope_upper": [
+            "0.0004349907786594316404902477088289009788",
+            "0.9972723292628198266244422293854419537728",
+            "0.0008554007201804559245026808817334239286",
+            "0.0208687602938408100724025964787392001139",
+            "0.0663980882477585285641254252837986223824",
+            "0.7212168609365713657247294633809878485670",
+            "0.2820050016326722349566457002942744055774"
+          ],
+          "reason": "strict self-inclusion failed"
+        },
+        "region_failure_reasons": [
+          "strict self-inclusion failed"
+        ],
+        "current_residual": {
+          "H_B_lower": [
+            "0.9997824812035220217717545602347832468363",
+            "-0.0522276807340081976577924845509920081935",
+            "0.9995722083294358537675138650060479492801",
+            "0.9895106108570003529638509795677589324705",
+            "0.9662309465931070200844901230944015794112",
+            "-0.5280024842776948271496669534114853775521",
+            "-0.8473464826851469321253035587463488650533"
+          ],
+          "H_B_upper": [
+            "0.9997824812035220217717545602347901414323",
+            "-0.0522276807340081976577924837580358950144",
+            "0.9995722083294358537675138650060485266754",
+            "0.9895106108570003529638509795677683234086",
+            "0.9662309465931070200844901231362720055088",
+            "-0.5280024842776948271496669516504265545784",
+            "-0.8473464826851469321253035576852455963844"
+          ],
+          "coordinate_residual_x_upper": [
+            "0.0000000000159688142301374663817901414323",
+            "0.0000019987158754392068038211809641049856",
+            "0.0000000000000000000000000000020485266754",
+            "0.0000000000000000000000000000017683234086",
+            "0.0000001047448944631827115342122720055088",
+            "0.0000044341430827611212126345325734454216",
+            "0.0000026738774164698636183519257544036156"
+          ],
+          "eH_x_cert": "5542678853451401515793165716806777/1250000000000000000000000000000000000000",
+          "eH_x_upper40": "0.0000044341430827611212126345325734454216",
+          "all7": true,
+          "definition": "sup_B ||H(x)-x||_infinity outer interval",
+          "current_not_previous_tick_delta": true,
+          "eF_p_coupled": "44931611554268508881090769827520191015268344133861/45035996273704960000000000000000000000000000000000000000",
+          "eF_p_upper40": "0.0000009976821936212522974572085538440590"
+        },
+        "paired_bound": {
+          "qH_cert": null,
+          "qF_coupled": null,
+          "qF_upper40": null,
+          "E_exact": null,
+          "E_upper40": null,
+          "evaluated": false,
+          "reason": "region not proved; denominator not evaluated"
+        },
+        "gates": [
+          {
+            "epsilon_p_exact": "1/1000000",
+            "status": "NOT_CERTIFIED",
+            "reasons": [
+              "closed invariant contraction region not proved"
+            ]
+          },
+          {
+            "epsilon_p_exact": "1/100000000",
+            "status": "NOT_CERTIFIED",
+            "reasons": [
+              "closed invariant contraction region not proved"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "high6144",
+        "tick": 6144,
+        "record_pin": {
+          "path": "experiments/exp-62-top-down/on-real-escape-certificates-20261014.json",
+          "sha256": "26dc951594bca98d371d2ae48f93ca3896b362725b6dc0984c5a7ec6b4b452e9",
+          "bytes": 4357667
+        },
+        "x_box": [
+          [
+            "0.999785726559583877876981955542",
+            "0.999785726559583877876981955544"
+          ],
+          [
+            "0.525160590743828066001970492661",
+            "0.525160590743828066001970492665"
+          ],
+          [
+            "0.999572208329435853767513865004",
+            "0.999572208329435853767513865007"
+          ],
+          [
+            "0.989510610857000352963850979566",
+            "0.989510610857000352963850979568"
+          ],
+          [
+            "0.987705801108870750429212349357",
+            "0.987705801108870750429212349359"
+          ],
+          [
+            "0.917140508431532725670471190497",
+            "0.917140508431532725670471190502"
+          ],
+          [
+            "0.967521342221448675748143176558",
+            "0.967521342221448675748143176561"
+          ]
+        ],
+        "region": {
+          "lower": [
+            "0.9997847265595838778769819555430",
+            "0.5251595907438280660019704926630",
+            "0.9995712083294358537675138650055",
+            "0.9895096108570003529638509795670",
+            "0.9877048011088707504292123493580",
+            "0.9171395084315327256704711904995",
+            "0.9675203422214486757481431765595"
+          ],
+          "upper": [
+            "0.9997867265595838778769819555430",
+            "0.5251615907438280660019704926630",
+            "0.9995732083294358537675138650055",
+            "0.9895116108570003529638509795670",
+            "0.9877068011088707504292123493580",
+            "0.9171415084315327256704711904995",
+            "0.9675223422214486757481431765595"
+          ],
+          "weights": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "all7_strict_entry": true,
+        "closed_convex_box": true,
+        "region_valid": true,
+        "local_proof": {
+          "accepted": true,
+          "H_lower": [
+            "0.9997857263131956797922905463275759196413",
+            "0.5251601743250488116606338217308791590169",
+            "0.9995722081369707350130408672127936537912",
+            "0.9895106061615303322486597760049165069172",
+            "0.9877057381827907840977384129735263456573",
+            "0.9171397816746916614366769318082115400426",
+            "0.9675212000381861232347602192517458253033"
+          ],
+          "H_upper": [
+            "0.9997857268059717926761220355988629952542",
+            "0.5251610071623558306773223180374295628496",
+            "0.9995722085219008859497536323123276406430",
+            "0.9895106155524682828816738716771608533829",
+            "0.9877058640346306324355185416912058888232",
+            "0.9171412351822749915250791606992086157775",
+            "0.9675214844040990638117882383421103811761"
+          ],
+          "slope_upper": [
+            "0.0004285014603957836995110000333407578501",
+            "0.7242067913028843429139598964970628413990",
+            "0.0008554007201804559245026808817334239286",
+            "0.0208687602938408100724025964787392001139",
+            "0.0244373747607883433528767626150027543220",
+            "0.1588546208696989133196711087751463782524",
+            "0.0639027274766682324476556419068752597442"
+          ],
+          "qH_upper": "0.7267598904788725257920344577817000395774",
+          "qF_upper": "0.8770419507154926335728408975872132390314",
+          "exact_qH_lt_one": true,
+          "exact_qF_lt_one": true,
+          "reason": "certified existence, uniqueness in box and local damped stability"
+        },
+        "region_failure_reasons": [],
+        "current_residual": {
+          "H_B_lower": [
+            "0.9997857265595838778769819555436887534563",
+            "0.5251605907438280660019704926626828367459",
+            "0.9995722083294358537675138650060479492801",
+            "0.9895106108570003529638509795677589324705",
+            "0.9877058011088707504292123493584644107546",
+            "0.9171405084315327256704711904989679367343",
+            "0.9675213422214486757481431765597303544907"
+          ],
+          "H_B_upper": [
+            "0.9997857265595838778769819555436892462325",
+            "0.5251605907438280660019704926646019835839",
+            "0.9995722083294358537675138650060485266754",
+            "0.9895106108570003529638509795677683234086",
+            "0.9877058011088707504292123493586159217075",
+            "0.9171405084315327256704711905012196820889",
+            "0.9675213422214486757481431765604125131696"
+          ],
+          "coordinate_residual_x_upper": [
+            "0.0000000000000000000000000000016892462325",
+            "0.0000000000000000000000000000036019835839",
+            "0.0000000000000000000000000000020485266754",
+            "0.0000000000000000000000000000017683234086",
+            "0.0000000000000000000000000000016159217075",
+            "0.0000000000000000000000000000042196820889",
+            "0.0000000000000000000000000000024125131696"
+          ],
+          "eH_x_cert": "42196820889/10000000000000000000000000000000000000000",
+          "eH_x_upper40": "0.0000000000000000000000000000042196820889",
+          "all7": true,
+          "definition": "sup_B ||H(x)-x||_infinity outer interval",
+          "current_not_previous_tick_delta": true,
+          "eF_p_coupled": "342067656297455939598527877/360287970189639680000000000000000000000000000000000000000",
+          "eF_p_upper40": "0.0000000000000000000000000000009494284701"
+        },
+        "paired_bound": {
+          "qH_cert": "3633799452394362628960172288908500197887/5000000000000000000000000000000000000000",
+          "qF_coupled": "78996916048611710845043622049446440089267031321137655091/90071992547409920000000000000000000000000000000000000000",
+          "qF_upper40": "0.8770419507154926335728408975872132390314",
+          "E_exact": "42196820889/5464802190422549484159310844365999208452",
+          "E_upper40": "0.0000000000000000000000000000077215641882",
+          "evaluated": true,
+          "paired_damping_identity": true,
+          "reason": "paired rational bound",
+          "qF_is_upper_bound_not_optimal_constant": true,
+          "independently_rounded_ratios_equal_claim": false
+        },
+        "gates": [
+          {
+            "epsilon_p_exact": "1/1000000",
+            "status": "CERTIFIED_WITHIN_EPS",
+            "reasons": []
+          },
+          {
+            "epsilon_p_exact": "1/100000000",
+            "status": "CERTIFIED_WITHIN_EPS",
+            "reasons": []
+          }
+        ]
+      }
+    ],
+    "desired_contrast_observed": true,
+    "all7": true,
+    "norm": "p_infinity_all7",
+    "epsilon_p_exact": [
+      "1/1000000",
+      "1/100000000"
+    ],
+    "new_local_checks": 2,
+    "old_trajectory_rerun": 0,
+    "native_replays": 0,
+    "prior_census_rerun": false,
+    "elapsed_seconds": 1.75,
+    "limits": [
+      "Old accepted trajectory/census and64 actual-chunk records are trusted pinned dependencies, not rerun.",
+      "Current residual is F(x_t)-x_t over completeB_t, not previous tick difference or patience.",
+      "Two fixed cases/epsilons only; no first certified tick/allinputs/native/fullEngine/product policy fix.",
+      "NOT_CERTIFIED means sufficient conditions were not proved; it does not prove divergence.",
+      "qF is a uniform upper bound; paired rational cancellation does not imply equal independentlyrounded ratios.",
+      "Caller enforces one absolute180-second deadline; no retry/adaptation."
+    ]
+  },
+  "scientific_result": {
+    "claim_status": "CERTIFIED_TWO_CASE_SUFFICIENT_GATE",
+    "desired_contrast_observed": true,
+    "low1848": "NOT_CERTIFIED for both epsilons; invariant contraction region not proved, not divergence",
+    "high6144": "CERTIFIED_WITHIN_EPS for both epsilons",
+    "high_E_upper40": "0.0000000000000000000000000000077215641882",
+    "epsilon_p_exact": [
+      "1/1000000",
+      "1/100000000"
+    ],
+    "distance_norm": "all7 p infinity",
+    "first_gate_tick": "NOT_ESTABLISHED",
+    "native_or_fullEngine_or_product_fix": "NOT_ESTABLISHED"
+  },
+  "argument": [
+    "같은 firstON network8·ordered7·exact lifted binary64 b/G/d·above_near score/drive·원래 p0=.5를 사용한다. 기존 accepted B1848/B6144를 전체7상태·유일tick·sourceclosure로 결속했고 기존2048/4096궤적과 census는 재실행하지 않았다.",
+    "현재 B를 포함하는 닫힌 볼록 영역 C, H(C) 엄격 자기포함과 전체 C의 균일 qH<1을 먼저 증명한다. 0<d<=1에서 F(C) subset C이고 qF<=1-d+d*qH<1이므로 Banach 정리로 C에 유일 고정점 p*가 존재하고 내부 궤적이 수렴한다.",
+    "현재 전체 B_t에 대해 H(B_t)-B_t의 바깥 구간으로 eH_x를 상계한다. 이것은 시점 t-1에서 t까지의 이동량이나 goal 한 좌표의 잔차가 아니다. x=2p-1이므로 eF_p=d*eH_x/2다.",
+    "upward40 qHcert/eHcert를 유리수로 결속해 qFcoupled=1-d+d*qHcert, E=eF_p/(1-qFcoupled)=eHcert/[2*(1-qHcert)]를 정확히 계산한다. qF는 선택한 상계이고 최적 Lipschitz 상수와 같다는 주장이 아니다. 별도 upward40 public qF<1과 public E<=epsilon도 요구한다.",
+    "따라서 작은 d로 잔차가 작아져도 그 효과는 1-qF와 상쇄된다. 작은 잔차 하나만으로 고정점에 가깝다고 판정할 수 없다. q>=1이나 영역 증명 실패에서는 거리식을 계산하거나 종료를 허용하지 않는다.",
+    "low1848은 현재 eF_p가1e-6보다 작지만 C의 H 자기포함이 실패해 두 목표에서 NOT_CERTIFIED다. high6144는 불변성과 수축률을 fresh 검산했고 전체 B의 거리 상계가 두 목표보다 작아 CERTIFIED_WITHIN_EPS다.",
+    "C의 p지름1e-6는 첫 목표에 기하학적으로 충분하지만 1e-8 목표에는 충분하지 않다. 이번 잔차 거리 상계는 엄격한 두 번째 목표도 통과해 추가 정밀도를 제공한다.",
+    "조건은 충분조건이다. NOT_CERTIFIED는 발산/비수렴의 증명이 아니고 malformed/incomplete는 INCONCLUSIVE다. 두 고정 상태 결과로 최초 인증 시점, 전 입력, native/libm, 원 cap160/fullEngine, 제품 종료 정책 수정 완료를 주장하지 않는다."
+  ],
+  "verification": {
+    "guard_mutation_result": {
+      "schemaVersion": "1.0.0",
+      "kind": "engineering-test-result",
+      "verdict": "CONSISTENT",
+      "targetDigest": "sha256:2ce6551b2a2b7db7dae51f44fcbdc2fa8c03b30e3320fe8d3a5cca6c6e6cfdce",
+      "reportDigest": "sha256:328f61f750402a8ab5b9f52c42c38ce9b67ab1e2f23af179a0b59ff9a9de2ae8",
+      "issues": [],
+      "limitations": [
+        "This is an unsigned local consistency check, not host attestation or an independent audit.",
+        "Snapshots bind only explicitly declared files; environment, dependencies outside scope and omitted Git changes require separate review.",
+        "Semantic correctness, test oracle quality, assertion causality and review completeness remain reviewer responsibilities."
+      ]
+    },
+    "negative_controls": {
+      "count": 26,
+      "all_passed": true,
+      "checks": [
+        {
+          "id": "duplicate JSON",
+          "passed": true
+        },
+        {
+          "id": "nonfinite JSON",
+          "passed": true
+        },
+        {
+          "id": "wrongdrive",
+          "passed": true
+        },
+        {
+          "id": "whole7 truncated",
+          "passed": true
+        },
+        {
+          "id": "negativezero",
+          "passed": true
+        },
+        {
+          "id": "midpoint substitute",
+          "passed": true
+        },
+        {
+          "id": "booltick",
+          "passed": true
+        },
+        {
+          "id": "repeatedtick",
+          "passed": true
+        },
+        {
+          "id": "weightchange",
+          "passed": true
+        },
+        {
+          "id": "sourcehash",
+          "passed": true
+        },
+        {
+          "id": "sourcebytes",
+          "passed": true
+        },
+        {
+          "id": "traversal",
+          "passed": true
+        },
+        {
+          "id": "q>=1 no division 1",
+          "passed": true
+        },
+        {
+          "id": "q>=1 no division 2",
+          "passed": true
+        },
+        {
+          "id": "zero damping",
+          "passed": true
+        },
+        {
+          "id": "negative residual",
+          "passed": true
+        },
+        {
+          "id": "small d does not imply proximity",
+          "passed": true
+        },
+        {
+          "id": "nearone amplifies tiny residue",
+          "passed": true
+        },
+        {
+          "id": "x-p half once",
+          "passed": true
+        },
+        {
+          "id": "inclusive epsilon equality",
+          "passed": true
+        },
+        {
+          "id": "regionfailure no false divergence",
+          "passed": true
+        },
+        {
+          "id": "q1 null no division",
+          "passed": true
+        },
+        {
+          "id": "underrounded E",
+          "passed": true
+        },
+        {
+          "id": "malformed proposal before proof",
+          "passed": true
+        },
+        {
+          "id": "invalid wallbudget",
+          "passed": true
+        },
+        {
+          "id": "public upward exact",
+          "passed": true
+        }
+      ],
+      "actual_local_proof_reruns": 0,
+      "native_runs": 0
+    },
+    "scientific_candidate_runs": 1,
+    "numeric_auto_retries": 0,
+    "combined_elapsed_seconds": 2.014999999999418,
+    "new_local_checks": 2,
+    "native_replays": 0,
+    "old_trajectory_and_census_reruns": 0,
+    "harness_failures_preserved": [
+      "External install adapter assumed nonexistent baseline pin path key; corrected before repo mutation/numbers. Frozen proof code unchanged."
+    ],
+    "review_mode": "root producer and separately authored checker; evidence reviewer implementation non-independent reuse; no producer read"
+  },
+  "advice": {
+    "current_coordinator": "codex://threads/01a12e46-1b11-7712-97c9-8f65c618d295",
+    "dot_original_reply": "NOT_OBSERVED",
+    "existing_r2_question": "f64be501-f7a5-4547-80b5-3530841bbd5a; no newquestion/transport"
+  },
+  "references": [
+    {
+      "url": "https://kconrad.math.uconn.edu/blurbs/analysis/contraction.pdf",
+      "supports": "Theorem1.1 complete selfmap uniformcontraction; Section2 geometric/posteriori estimates"
+    }
+  ],
+  "limits": [
+    "Old accepted trajectory/census and64 actual-chunk records are trusted pinned dependencies, not rerun.",
+    "Current residual is F(x_t)-x_t over completeB_t, not previous tick difference or patience.",
+    "Two fixed cases/epsilons only; no first certified tick/allinputs/native/fullEngine/product policy fix.",
+    "NOT_CERTIFIED means sufficient conditions were not proved; it does not prove divergence.",
+    "qF is a uniform upper bound; paired rational cancellation does not imply equal independentlyrounded ratios.",
+    "Caller enforces one absolute180-second deadline; no retry/adaptation.",
+    "11 mutation pairs and26 synthetic controls cover targeted conditions, not allproduct/security cases.",
+    "R081closed3of4; operatingPython/poller/global/native/API/install changes0."
+  ],
+  "reproduction": {
+    "one_entrypoint": [
+      "python",
+      "-B",
+      "-X",
+      "utf8",
+      "tools/analysis/on_convergence_gate.py",
+      "--repo",
+      ".",
+      "--protocol",
+      "experiments/exp-62-top-down/on-convergence-gate-protocol-20261014.json",
+      "--protocol-sha256",
+      "d7ebdde8e5a82a237aaa3105adfedcd4da24c0713c7735b85750105dc7aefb0d",
+      "--output",
+      "NEW-proposal.json",
+      "--verify-output",
+      "NEW-check.json"
+    ],
+    "automatic_retry": false
+  }
+}

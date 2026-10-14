@@ -1,0 +1,369 @@
+{
+  "skill_version": "1.0.0",
+  "schema_version": "1.0",
+  "preflight": {
+    "required_capabilities": [
+      "two blind reviewers",
+      "raw/source read",
+      "separate Fraction verifier"
+    ],
+    "observed_capabilities": [
+      "two blind reviewers",
+      "raw/source read",
+      "separate Fraction verifier"
+    ],
+    "missing_capabilities": [],
+    "supported_models_reasoning": [
+      "gpt-6-astra/high requested for math under session-only human exception; gpt-6.1-sol/high for evidence; effective settings unobserved"
+    ]
+  },
+  "case_brief": {
+    "decision": "같은 실수 모델에서 불변 수축 영역과 현재 전체상태 잔차로 고정점 거리 상계를 인증하고 조기 종료 사례를 차단하는 충분조건을 검증한다",
+    "facts": [
+      "Same exact model/pinned complete B1848/B6144",
+      "Fresh2 localregion/currentresidual checks accepted"
+    ],
+    "assumptions": [
+      "Old accepted trajectory/census proofs are trusted pinned dependencies"
+    ],
+    "constraints": [
+      "Same above_near scorehex0x1.277babda5a221p-5 drivehex0x1.277babda5a221p-3, firstON network8 ordered7/rawkernel/p0=.5/exactliftedbinary64 F=(1-d)I+dH.",
+      "Two frozen COMPLETE B1848 fromoldrealstop proof andB6144 fromoldescape proof, uniqueexacttick/sourcepins; no midpoint/native/goal-only substitution. Old2048/new4096/census1030/native20000 proofs reused, notrerun.",
+      "C=exactBmidpoint±exact1e-6 inx, grid31/all7weights1; targetdistance eps_p=[1/1000000,1/100000000] fixedbefore numbers; no radius/weight/case/precision adaptation. Onecandidate, twolocalchecks, FractionTaylor96/publicplaces40/cacheOFF/absolute180sec deadline/noautoretry.",
+      "RequireclosedconvexC within(-1,1)^7/all7strictentry/Hstrictselfinclusion/uniformqHcert<1; qFcoupled=1-d+d*qHcert exactbound, notoptimalLipschitz equality. Existing5state loaders notused.",
+      "Currentuniform eH_x bound fromH(B_t)-B_t all7, not runtimepreviousdelta/patience/nativepoint. Upward40 qHcert/eHcert rationals paired; eF_p=d*eHcert/2, Eexact=eF_p/(1-qFcoupled)=eHcert/(2*(1-qHcert)). Publicupward qF<1 andE≤epsilon also required; serializedindependentratiosnotequalclaim.",
+      "Ifregion/contraction/errorbound sufficientconditionsunproved =>NOT_CERTIFIED withreason, notproofdivergence/nonconvergence. Malformed source/schema/case/arithmetic/budget =>INCONCLUSIVE. q>=1 =>E null/no denominatordivision.",
+      "epsilon1e-6 matchesonly oldtolerance scale, notsamebinary64value/not oldpolicyaccuracyguarantee;1e-8 stricterthanC pdiameter1e-6 demonstratesresidualaddedvalue onlyifverified. Two cases do notprovefirstgate tick/allinputs/native/fullEngine orproductfix.",
+      "R081closed3/4; newnative/LLM/Cloud/API/install/poller/globalconfig/force0. Reboot timinghumanUNKNOWN; boundedlocalworkonly/checkpoint. SessionneededAstra mathreviewonly/effectiveUNKNOWN; actualGPGinput notifyifobserved; Dotadvicewhenactualreplyarrives."
+    ],
+    "unknowns": [
+      "First gate tick/native/fullEngine/product policy",
+      "Dot original reply"
+    ],
+    "success_criteria": [
+      "[AC-001] 수학·근거 blind토론2/cross각1로 지역수축·잔차/시점·감쇠·판정의 충분조건과 두 epsilon을 수치전 동결; Dot원답미확보 구분",
+      "[AC-002] 동일 raw/source/ordered7/exactbGd/score/drive 및 accepted1848/6144 proof에서 COMPLETE B를 유일tick으로 결속; oldtrajectory/native/census재실행0",
+      "[AC-003] 각B의 정확중점±1e-6/weights1 C에서 all7strictentry·Hselfinclusion·uniformqH/qF와 전체B의 current H(B)-B 잔차를 FractionTaylor96로 fresh검산",
+      "[AC-004] eF_p=d*eH_x/2, qF_coupled=1-d+d*qHcert의 유리수E=eF_p/(1-qFcoupled)=eH_x/(2*(1-qHcert)) 및 upward publicE로 epsilon1e-6/1e-8 gate를 판정; low비인증/high결과·충분조건 한계 기록",
+      "[AC-005] 영역전제/전체7state/half factor/damping/q>=1/ε경계/publicrounding/source/tick/현재잔차 경계의 표적mutation·음성검사; NOT_CERTIFIED와INCONCLUSIVE 분리",
+      "[AC-006] 새5파일만/GPGcommit/mainFF/branch정리/ordinarypush/remote5bytesclean; raw·제품·기존결과·R081closed3of4 및 운영환경 보존"
+    ],
+    "failure_modes": [
+      "Small previous delta mistaken for current proximity",
+      "No invariant uniform contraction region",
+      "Damping/factor2/public rounding mismatch",
+      "NOT_CERTIFIED confused with divergence"
+    ]
+  },
+  "run": {
+    "id": "ai-convergence-gate-20261014-r04",
+    "stage": "MEDIUM",
+    "strict": false,
+    "worker_cap": 2,
+    "workers": [
+      {
+        "id": "/root/gate_math",
+        "role": "Banach·현재 전체잔차·감쇠결합·거리 충분조건",
+        "status": "completed",
+        "is_judge": false,
+        "instantiated": true,
+        "requested_model": "gpt-6-astra",
+        "actual_model": null,
+        "requested_reasoning": "high",
+        "actual_reasoning": null,
+        "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+        "classification": "reviewer",
+        "blind_round1": true,
+        "context_isolated": true,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ]
+      },
+      {
+        "id": "/root/gate_evidence",
+        "role": "원자료·전체box·시점·영역전제·판정 경계",
+        "status": "completed",
+        "is_judge": false,
+        "instantiated": true,
+        "requested_model": "gpt-6.1-sol",
+        "actual_model": null,
+        "requested_reasoning": "high",
+        "actual_reasoning": null,
+        "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+        "classification": "reviewer",
+        "blind_round1": true,
+        "context_isolated": true,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ]
+      }
+    ],
+    "completed_worker_ids": [
+      "/root/gate_math",
+      "/root/gate_evidence"
+    ],
+    "reused_worker_ids": [],
+    "failures": [],
+    "fresh_judge_id": null,
+    "candidate_skill_sha256": null,
+    "assurance": "partially_independent",
+    "specialist_additions": [],
+    "redeliberations": [],
+    "judge_fallback": null,
+    "capability_shortfall": false
+  },
+  "panel_manifest": [
+    {
+      "id": "/root/gate_math",
+      "role": "Banach·현재 전체잔차·감쇠결합·거리 충분조건",
+      "status": "completed",
+      "is_judge": false,
+      "instantiated": true,
+      "requested_model": "gpt-6-astra",
+      "actual_model": null,
+      "requested_reasoning": "high",
+      "actual_reasoning": null,
+      "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+      "classification": "reviewer",
+      "blind_round1": true,
+      "context_isolated": true,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ]
+    },
+    {
+      "id": "/root/gate_evidence",
+      "role": "원자료·전체box·시점·영역전제·판정 경계",
+      "status": "completed",
+      "is_judge": false,
+      "instantiated": true,
+      "requested_model": "gpt-6.1-sol",
+      "actual_model": null,
+      "requested_reasoning": "high",
+      "actual_reasoning": null,
+      "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+      "classification": "reviewer",
+      "blind_round1": true,
+      "context_isolated": true,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ]
+    }
+  ],
+  "constraints": [
+    "Same above_near scorehex0x1.277babda5a221p-5 drivehex0x1.277babda5a221p-3, firstON network8 ordered7/rawkernel/p0=.5/exactliftedbinary64 F=(1-d)I+dH.",
+    "Two frozen COMPLETE B1848 fromoldrealstop proof andB6144 fromoldescape proof, uniqueexacttick/sourcepins; no midpoint/native/goal-only substitution. Old2048/new4096/census1030/native20000 proofs reused, notrerun.",
+    "C=exactBmidpoint±exact1e-6 inx, grid31/all7weights1; targetdistance eps_p=[1/1000000,1/100000000] fixedbefore numbers; no radius/weight/case/precision adaptation. Onecandidate, twolocalchecks, FractionTaylor96/publicplaces40/cacheOFF/absolute180sec deadline/noautoretry.",
+    "RequireclosedconvexC within(-1,1)^7/all7strictentry/Hstrictselfinclusion/uniformqHcert<1; qFcoupled=1-d+d*qHcert exactbound, notoptimalLipschitz equality. Existing5state loaders notused.",
+    "Currentuniform eH_x bound fromH(B_t)-B_t all7, not runtimepreviousdelta/patience/nativepoint. Upward40 qHcert/eHcert rationals paired; eF_p=d*eHcert/2, Eexact=eF_p/(1-qFcoupled)=eHcert/(2*(1-qHcert)). Publicupward qF<1 andE≤epsilon also required; serializedindependentratiosnotequalclaim.",
+    "Ifregion/contraction/errorbound sufficientconditionsunproved =>NOT_CERTIFIED withreason, notproofdivergence/nonconvergence. Malformed source/schema/case/arithmetic/budget =>INCONCLUSIVE. q>=1 =>E null/no denominatordivision.",
+    "epsilon1e-6 matchesonly oldtolerance scale, notsamebinary64value/not oldpolicyaccuracyguarantee;1e-8 stricterthanC pdiameter1e-6 demonstratesresidualaddedvalue onlyifverified. Two cases do notprovefirstgate tick/allinputs/native/fullEngine orproductfix.",
+    "R081closed3/4; newnative/LLM/Cloud/API/install/poller/globalconfig/force0. Reboot timinghumanUNKNOWN; boundedlocalworkonly/checkpoint. SessionneededAstra mathreviewonly/effectiveUNKNOWN; actualGPGinput notifyifobserved; Dotadvicewhenactualreplyarrives."
+  ],
+  "required_constraints": [
+    "Same above_near scorehex0x1.277babda5a221p-5 drivehex0x1.277babda5a221p-3, firstON network8 ordered7/rawkernel/p0=.5/exactliftedbinary64 F=(1-d)I+dH.",
+    "Two frozen COMPLETE B1848 fromoldrealstop proof andB6144 fromoldescape proof, uniqueexacttick/sourcepins; no midpoint/native/goal-only substitution. Old2048/new4096/census1030/native20000 proofs reused, notrerun.",
+    "C=exactBmidpoint±exact1e-6 inx, grid31/all7weights1; targetdistance eps_p=[1/1000000,1/100000000] fixedbefore numbers; no radius/weight/case/precision adaptation. Onecandidate, twolocalchecks, FractionTaylor96/publicplaces40/cacheOFF/absolute180sec deadline/noautoretry.",
+    "RequireclosedconvexC within(-1,1)^7/all7strictentry/Hstrictselfinclusion/uniformqHcert<1; qFcoupled=1-d+d*qHcert exactbound, notoptimalLipschitz equality. Existing5state loaders notused.",
+    "Currentuniform eH_x bound fromH(B_t)-B_t all7, not runtimepreviousdelta/patience/nativepoint. Upward40 qHcert/eHcert rationals paired; eF_p=d*eHcert/2, Eexact=eF_p/(1-qFcoupled)=eHcert/(2*(1-qHcert)). Publicupward qF<1 andE≤epsilon also required; serializedindependentratiosnotequalclaim.",
+    "Ifregion/contraction/errorbound sufficientconditionsunproved =>NOT_CERTIFIED withreason, notproofdivergence/nonconvergence. Malformed source/schema/case/arithmetic/budget =>INCONCLUSIVE. q>=1 =>E null/no denominatordivision.",
+    "epsilon1e-6 matchesonly oldtolerance scale, notsamebinary64value/not oldpolicyaccuracyguarantee;1e-8 stricterthanC pdiameter1e-6 demonstratesresidualaddedvalue onlyifverified. Two cases do notprovefirstgate tick/allinputs/native/fullEngine orproductfix.",
+    "R081closed3/4; newnative/LLM/Cloud/API/install/poller/globalconfig/force0. Reboot timinghumanUNKNOWN; boundedlocalworkonly/checkpoint. SessionneededAstra mathreviewonly/effectiveUNKNOWN; actualGPGinput notifyifobserved; Dotadvicewhenactualreplyarrives."
+  ],
+  "material_claims": [
+    {
+      "id": "binding",
+      "statement": "Same raw/source/exact model/ordered7/target and COMPLETE unique B1848/B6144 pins bound; no oldtrajectory/native rerun",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-convergence-gate-20261014-r04\\CHECK.actual.json",
+          "verification_status": "verified",
+          "verification_note": "Current actual checker/root execution; old proofs explicitly trusted pinneddependencies, not rerun"
+        }
+      ]
+    },
+    {
+      "id": "local",
+      "statement": "Fresh local2 region proofs and whole current B residuals: low selfinclusion failed; high uniform qH/qF<1 accepted",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-convergence-gate-20261014-r04\\CHECK.actual.json",
+          "verification_status": "verified",
+          "verification_note": "Current actual checker/root execution; old proofs explicitly trusted pinneddependencies, not rerun"
+        }
+      ]
+    },
+    {
+      "id": "distance",
+      "statement": "Exact paired cancellation and public outward bounds: low NOT_CERTIFIED/high CERTIFIED for eps1e-6/1e-8",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-convergence-gate-20261014-r04\\CHECK.actual.json",
+          "verification_status": "verified",
+          "verification_note": "Current actual checker/root execution; old proofs explicitly trusted pinneddependencies, not rerun"
+        }
+      ]
+    },
+    {
+      "id": "guards",
+      "statement": "11 mutationpairs CONSISTENT and26 controls PASS; fixed single candidate/two localchecks",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-convergence-gate-20261014-r04\\test-root\\proof-result.json",
+          "verification_status": "verified",
+          "verification_note": "Current actual checker/root execution; old proofs explicitly trusted pinneddependencies, not rerun"
+        }
+      ]
+    }
+  ],
+  "cross_examination": {
+    "decision": "run",
+    "reason": "Current versus previous residual, paired damping/public cancellation, full B/currentregion and twoepsilon addedvalue",
+    "trigger_items": [
+      {
+        "id": "T1",
+        "origin_reviewer": "/root/gate_math"
+      },
+      {
+        "id": "T2",
+        "origin_reviewer": "/root/gate_evidence"
+      }
+    ],
+    "selected_item_ids": [
+      "T1",
+      "T2"
+    ],
+    "coverage": [
+      {
+        "item_id": "T1",
+        "reviewer_ids": [
+          "/root/gate_evidence"
+        ]
+      },
+      {
+        "item_id": "T2",
+        "reviewer_ids": [
+          "/root/gate_math"
+        ]
+      }
+    ],
+    "followups": [
+      {
+        "reviewer_id": "/root/gate_evidence",
+        "item_ids": [
+          "T1"
+        ]
+      },
+      {
+        "reviewer_id": "/root/gate_math",
+        "item_ids": [
+          "T2"
+        ]
+      }
+    ]
+  },
+  "issue_ledger": [
+    {
+      "issue_id": "invariance-before-residual",
+      "status": "CONFIRMED",
+      "rationale": "Both reviewers agree residual-only is insufficient; choose existing H strictselfinclusion/uniformq box checker and whole currentB residual. Alternative residualball validation is outside minimal fixed candidate.",
+      "required_evidence": [
+        "D:\\codex\\리드\\ai-convergence-gate-20261014-r04\\CHECK.actual.json"
+      ],
+      "available_evidence": [
+        "D:\\codex\\리드\\ai-convergence-gate-20261014-r04\\CHECK.actual.json"
+      ]
+    }
+  ],
+  "axis_decisions": [
+    {
+      "axis": "Provenance",
+      "decision": "Same ordered7 model and complete pinned old states, no old proof rerun",
+      "evidence_claim_ids": [
+        "binding"
+      ]
+    },
+    {
+      "axis": "Region",
+      "decision": "Closed convex containing region/Hselfinclusion/uniform contraction mandatory; negative proof validanalysis",
+      "evidence_claim_ids": [
+        "local"
+      ]
+    },
+    {
+      "axis": "Distance",
+      "decision": "All7 currentB p norm with exact paired damping cancellation/publicoutward strictq andinclusive eps",
+      "evidence_claim_ids": [
+        "distance"
+      ]
+    },
+    {
+      "axis": "Verification",
+      "decision": "11 mutationpairs/26 controls, scope5/GPG/mainpush/readback",
+      "evidence_claim_ids": [
+        "guards"
+      ]
+    }
+  ],
+  "consensus_proposal": {
+    "status": "consensus",
+    "action": "Use invariant uniformcontraction region plus current wholeB residual normalized by1-q as a sufficient convergence/proximity gate",
+    "supported_by_verified_claims": [
+      "binding",
+      "local",
+      "distance",
+      "guards"
+    ],
+    "satisfied_constraints": [
+      "Same above_near scorehex0x1.277babda5a221p-5 drivehex0x1.277babda5a221p-3, firstON network8 ordered7/rawkernel/p0=.5/exactliftedbinary64 F=(1-d)I+dH.",
+      "Two frozen COMPLETE B1848 fromoldrealstop proof andB6144 fromoldescape proof, uniqueexacttick/sourcepins; no midpoint/native/goal-only substitution. Old2048/new4096/census1030/native20000 proofs reused, notrerun.",
+      "C=exactBmidpoint±exact1e-6 inx, grid31/all7weights1; targetdistance eps_p=[1/1000000,1/100000000] fixedbefore numbers; no radius/weight/case/precision adaptation. Onecandidate, twolocalchecks, FractionTaylor96/publicplaces40/cacheOFF/absolute180sec deadline/noautoretry.",
+      "RequireclosedconvexC within(-1,1)^7/all7strictentry/Hstrictselfinclusion/uniformqHcert<1; qFcoupled=1-d+d*qHcert exactbound, notoptimalLipschitz equality. Existing5state loaders notused.",
+      "Currentuniform eH_x bound fromH(B_t)-B_t all7, not runtimepreviousdelta/patience/nativepoint. Upward40 qHcert/eHcert rationals paired; eF_p=d*eHcert/2, Eexact=eF_p/(1-qFcoupled)=eHcert/(2*(1-qHcert)). Publicupward qF<1 andE≤epsilon also required; serializedindependentratiosnotequalclaim.",
+      "Ifregion/contraction/errorbound sufficientconditionsunproved =>NOT_CERTIFIED withreason, notproofdivergence/nonconvergence. Malformed source/schema/case/arithmetic/budget =>INCONCLUSIVE. q>=1 =>E null/no denominatordivision.",
+      "epsilon1e-6 matchesonly oldtolerance scale, notsamebinary64value/not oldpolicyaccuracyguarantee;1e-8 stricterthanC pdiameter1e-6 demonstratesresidualaddedvalue onlyifverified. Two cases do notprovefirstgate tick/allinputs/native/fullEngine orproductfix.",
+      "R081closed3/4; newnative/LLM/Cloud/API/install/poller/globalconfig/force0. Reboot timinghumanUNKNOWN; boundedlocalworkonly/checkpoint. SessionneededAstra mathreviewonly/effectiveUNKNOWN; actualGPGinput notifyifobserved; Dotadvicewhenactualreplyarrives."
+    ],
+    "axis_alignment": [
+      {
+        "axis": "Provenance",
+        "decision_ref": "Provenance"
+      },
+      {
+        "axis": "Region",
+        "decision_ref": "Region"
+      },
+      {
+        "axis": "Distance",
+        "decision_ref": "Distance"
+      },
+      {
+        "axis": "Verification",
+        "decision_ref": "Verification"
+      }
+    ],
+    "conditions": [],
+    "unresolved_dissent": [],
+    "no_consensus_reason": null,
+    "remaining_options": [],
+    "decision_owner": null
+  },
+  "observability": {
+    "wall_time": "NOT_OBSERVABLE",
+    "tokens": "NOT_OBSERVABLE",
+    "tool_calls": "NOT_OBSERVABLE",
+    "worker_count": 2
+  },
+  "method_notes": [
+    "MEDIUM2 isolated blind/crossonce each; root partlyindependent; noJudge/reserve/specialist/failure.",
+    "Requested session-neededAstra/high math andSol6.1/high evidence; effectiveUNKNOWN. Evidence later separately authors checker, non-independentimplementationreuse; no producer read.",
+    "Fixed2states/2eps/region before numbers, code3 frozen; one2localcheck candidate2.7s approximately, exact elapsed in science receipt; no oldtrajectory/native/census replay.",
+    "Small residual alone not proximity; uniformlocalq andinvariantregion required. Coupled rational damping cancels, independentlyrounded ratios not claimed equal.",
+    "External install adapter baseline pin key error corrected before repository mutation/numbers; no proofcode adaptation/numeric retry.",
+    "Dot originalreply NOT_OBSERVED; same existing coordinator route; no newquestion/transport/poller/global/API/native authority."
+  ]
+}
