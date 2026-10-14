@@ -1,0 +1,377 @@
+{
+  "skill_version": "1.0.0",
+  "schema_version": "1.0",
+  "preflight": {
+    "required_capabilities": [
+      "two blind reviewers",
+      "raw/source read",
+      "separate Fraction verifier"
+    ],
+    "observed_capabilities": [
+      "two blind reviewers",
+      "raw/source read",
+      "separate Fraction verifier"
+    ],
+    "missing_capabilities": [],
+    "supported_models_reasoning": [
+      "gpt-6-astra/high requested for math under session-only human exception; gpt-6.1-sol/high for evidence; effective settings unobserved"
+    ]
+  },
+  "case_brief": {
+    "decision": "동일 실수 궤적의 저장된 전체상태 상자와 고정 수렴 gate에서 두 epsilon별 최초 인증 tick 및 모든 선행 tick의 비인증 근거를 인증한다",
+    "facts": [
+      "Existing complete0..6144 boxes pinbound; same model/gate",
+      "Current fixedscan gives two firstpositives withcompletepredecessorcoverage"
+    ],
+    "assumptions": [
+      "Old accepted trajectory/census are trusted pinneddependencies"
+    ],
+    "constraints": [
+      "Same above_near/firstON network8/ordered7/p0=.5/initialx0/exact liftedbinary64 bGd; score0x1.277babda5a221p-5 drive0x1.277babda5a221p-3.",
+      "Trusted pinned previous complete B1..160/native record real_x_boxes, B161..2048/realstop suffix, B2049..6144/escape suffix; no old trajectory/census/native rerun. B0 exact7zeros. Source/protocol/checker closure26 plus raw2 pinned.",
+      "Earliest means firstinteger0..6144 where frozen conservativeB_t/fixedrecipe gatecertifies each epsilon, notfirstactualdistance/optimalcertificate/firstentry. No time-monotonicity assumed.",
+      "Same C_t=exactBmidpoint±r=1e-6 x/grid31/allweights1; eps_p exact1e-6,1e-8; FractionTaylor96/public40/cacheOFF. No radius/weight/box/precision/sciencecandidate adaptation.",
+      "Fixed blocks64 increasingfrom0 withlastpartial; attempt qrow5=p:0:1 lower bound atnearestargument then Hcorner rows5=p:0:1 and6=goal; failedwitness is notnegative. Deterministicintegerhalving untilsingleton/fulloldgate; target-specific masks andhalt only afterbothfirsts.",
+      "Block actualrational center/affine extrema overALLmembers andS=sumabsG. qlower=S*(1-tanh_upper(max(0,maxabs(a)-rS))^2)>=1 or Huppercornerlower>=maxmid+r or Hlowercornerupper<=minmid-r proves allmember fixedHgate impossible, not Fdivergence orfirstfailure-reason ordering.",
+      "Preserve old geometry exceptions asINCONCLUSIVE; validC withallBstrictentry false remainsnormalNOT_CERTIFIED. Precompute everyCdomain/entry fromfullB; any unresolvedpredecessor blocks earliest. Leaf currentwholeB residual notmidpoint/previousdelta, exactpaired d cancellation/publicoutwardq<1/E<=eps retained.",
+      "Onecandidate absoluteUTC1200sec includesoverhead/downtime; max65536 scalarproof calls andmax6145 fullgate checks are independentcaps, notcompletionguarantees. Immutableproposal/appendcommittedpartialledger, timeoutorpartial=>INCONCLUSIVE/no automaticretry/resume/deadlinereset. Frozen partition refinement only, not scientificadaptation.",
+      "Earliestproof for each eps requirespositive T_eps and verifiedgapless/nonoverlapping negatives coveringexact[0,T_eps-1]; no sparse/binarysearch withoutmonotonic theorem. SmallerEps first>=largerEps first.",
+      "New productpolicy/native/fullEngine/allinputs proof0. R081closed3/4; API/Cloud/install/poller/global/force0. User session-neededAstra mathproofexception only/effectiveUNKNOWN. ActualGPGcacheUI notifyifobserved. Dotquestion1251B relayed currentcoordinator once, actualDotreplyNOT_OBSERVED."
+    ],
+    "unknowns": [
+      "True firstepsilon distance/optimalcertificate/native/fullEngine/productpolicy",
+      "Dot originalreply"
+    ],
+    "success_criteria": [
+      "[AC-001] blind토론2/cross각1로 최초fixedrecipe 의미·두eps·묶음음성/분할·전decessor/0tick·예산과INCONCLUSIVE 경계를 수치전 동결; Dot실원답구분",
+      "[AC-002] 같은raw/source/ordered7/exactbGd/score/drive/initial_x0·accepted B1..160/161..2048/2049..6144 unique전부와B0=0을결속; 기존trajectory/native/census재실행0",
+      "[AC-003] blocks64/고정행index5p:0:1·6goal의 rational모든center extrema·strictHcorner/균일H수축불가 음성증명, deterministichalving→leaf fullgate; 불성립묶음을음성으로쓰지않음",
+      "[AC-004] 각epsilon 최초양성 전체B current잔차·불변수축·정확paired/publicE 인증 및 [0,Tε-1] 모든정수 음성coverage gap/overlap0; 단조성/true최초거리/최적gate 주장0",
+      "[AC-005] 초기tick/전체7state/source/splice/묶음extrema·부등식/equality/coverage/mask/geometry/publicε/partialdeadline 핵심guard mutation·음성경계 검증",
+      "[AC-006] 새5파일만·GPGsignedcommit/mainFF/branch정리/ordinarypush/remote5byteclean 및 원자료·제품·기존결과·R081closed3of4/운영환경 보존"
+    ],
+    "failure_modes": [
+      "Sparse monotonic inference",
+      "Wrong derivative/corner inequality direction",
+      "Missing0/splice/state/epsilon mask",
+      "Unknown predecessor mislabelednegative"
+    ]
+  },
+  "run": {
+    "id": "ai-first-gate-20261014-r05",
+    "stage": "MEDIUM",
+    "strict": false,
+    "worker_cap": 2,
+    "workers": [
+      {
+        "id": "/root/first_gate_math",
+        "role": "묶음음성·도함수하계·최초성·고정gate 의미",
+        "status": "completed",
+        "is_judge": false,
+        "instantiated": true,
+        "requested_model": "gpt-6-astra",
+        "actual_model": null,
+        "requested_reasoning": "high",
+        "actual_reasoning": null,
+        "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+        "classification": "reviewer",
+        "blind_round1": true,
+        "context_isolated": true,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ]
+      },
+      {
+        "id": "/root/first_gate_evidence",
+        "role": "초기값·전상태·source/tick·coverage·판정범위",
+        "status": "completed",
+        "is_judge": false,
+        "instantiated": true,
+        "requested_model": "gpt-6.1-sol",
+        "actual_model": null,
+        "requested_reasoning": "high",
+        "actual_reasoning": null,
+        "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+        "classification": "reviewer",
+        "blind_round1": true,
+        "context_isolated": true,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ]
+      }
+    ],
+    "completed_worker_ids": [
+      "/root/first_gate_math",
+      "/root/first_gate_evidence"
+    ],
+    "reused_worker_ids": [],
+    "failures": [],
+    "fresh_judge_id": null,
+    "candidate_skill_sha256": null,
+    "assurance": "partially_independent",
+    "specialist_additions": [],
+    "redeliberations": [],
+    "judge_fallback": null,
+    "capability_shortfall": false
+  },
+  "panel_manifest": [
+    {
+      "id": "/root/first_gate_math",
+      "role": "묶음음성·도함수하계·최초성·고정gate 의미",
+      "status": "completed",
+      "is_judge": false,
+      "instantiated": true,
+      "requested_model": "gpt-6-astra",
+      "actual_model": null,
+      "requested_reasoning": "high",
+      "actual_reasoning": null,
+      "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+      "classification": "reviewer",
+      "blind_round1": true,
+      "context_isolated": true,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ]
+    },
+    {
+      "id": "/root/first_gate_evidence",
+      "role": "초기값·전상태·source/tick·coverage·판정범위",
+      "status": "completed",
+      "is_judge": false,
+      "instantiated": true,
+      "requested_model": "gpt-6.1-sol",
+      "actual_model": null,
+      "requested_reasoning": "high",
+      "actual_reasoning": null,
+      "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+      "classification": "reviewer",
+      "blind_round1": true,
+      "context_isolated": true,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ]
+    }
+  ],
+  "constraints": [
+    "Same above_near/firstON network8/ordered7/p0=.5/initialx0/exact liftedbinary64 bGd; score0x1.277babda5a221p-5 drive0x1.277babda5a221p-3.",
+    "Trusted pinned previous complete B1..160/native record real_x_boxes, B161..2048/realstop suffix, B2049..6144/escape suffix; no old trajectory/census/native rerun. B0 exact7zeros. Source/protocol/checker closure26 plus raw2 pinned.",
+    "Earliest means firstinteger0..6144 where frozen conservativeB_t/fixedrecipe gatecertifies each epsilon, notfirstactualdistance/optimalcertificate/firstentry. No time-monotonicity assumed.",
+    "Same C_t=exactBmidpoint±r=1e-6 x/grid31/allweights1; eps_p exact1e-6,1e-8; FractionTaylor96/public40/cacheOFF. No radius/weight/box/precision/sciencecandidate adaptation.",
+    "Fixed blocks64 increasingfrom0 withlastpartial; attempt qrow5=p:0:1 lower bound atnearestargument then Hcorner rows5=p:0:1 and6=goal; failedwitness is notnegative. Deterministicintegerhalving untilsingleton/fulloldgate; target-specific masks andhalt only afterbothfirsts.",
+    "Block actualrational center/affine extrema overALLmembers andS=sumabsG. qlower=S*(1-tanh_upper(max(0,maxabs(a)-rS))^2)>=1 or Huppercornerlower>=maxmid+r or Hlowercornerupper<=minmid-r proves allmember fixedHgate impossible, not Fdivergence orfirstfailure-reason ordering.",
+    "Preserve old geometry exceptions asINCONCLUSIVE; validC withallBstrictentry false remainsnormalNOT_CERTIFIED. Precompute everyCdomain/entry fromfullB; any unresolvedpredecessor blocks earliest. Leaf currentwholeB residual notmidpoint/previousdelta, exactpaired d cancellation/publicoutwardq<1/E<=eps retained.",
+    "Onecandidate absoluteUTC1200sec includesoverhead/downtime; max65536 scalarproof calls andmax6145 fullgate checks are independentcaps, notcompletionguarantees. Immutableproposal/appendcommittedpartialledger, timeoutorpartial=>INCONCLUSIVE/no automaticretry/resume/deadlinereset. Frozen partition refinement only, not scientificadaptation.",
+    "Earliestproof for each eps requirespositive T_eps and verifiedgapless/nonoverlapping negatives coveringexact[0,T_eps-1]; no sparse/binarysearch withoutmonotonic theorem. SmallerEps first>=largerEps first.",
+    "New productpolicy/native/fullEngine/allinputs proof0. R081closed3/4; API/Cloud/install/poller/global/force0. User session-neededAstra mathproofexception only/effectiveUNKNOWN. ActualGPGcacheUI notifyifobserved. Dotquestion1251B relayed currentcoordinator once, actualDotreplyNOT_OBSERVED."
+  ],
+  "required_constraints": [
+    "Same above_near/firstON network8/ordered7/p0=.5/initialx0/exact liftedbinary64 bGd; score0x1.277babda5a221p-5 drive0x1.277babda5a221p-3.",
+    "Trusted pinned previous complete B1..160/native record real_x_boxes, B161..2048/realstop suffix, B2049..6144/escape suffix; no old trajectory/census/native rerun. B0 exact7zeros. Source/protocol/checker closure26 plus raw2 pinned.",
+    "Earliest means firstinteger0..6144 where frozen conservativeB_t/fixedrecipe gatecertifies each epsilon, notfirstactualdistance/optimalcertificate/firstentry. No time-monotonicity assumed.",
+    "Same C_t=exactBmidpoint±r=1e-6 x/grid31/allweights1; eps_p exact1e-6,1e-8; FractionTaylor96/public40/cacheOFF. No radius/weight/box/precision/sciencecandidate adaptation.",
+    "Fixed blocks64 increasingfrom0 withlastpartial; attempt qrow5=p:0:1 lower bound atnearestargument then Hcorner rows5=p:0:1 and6=goal; failedwitness is notnegative. Deterministicintegerhalving untilsingleton/fulloldgate; target-specific masks andhalt only afterbothfirsts.",
+    "Block actualrational center/affine extrema overALLmembers andS=sumabsG. qlower=S*(1-tanh_upper(max(0,maxabs(a)-rS))^2)>=1 or Huppercornerlower>=maxmid+r or Hlowercornerupper<=minmid-r proves allmember fixedHgate impossible, not Fdivergence orfirstfailure-reason ordering.",
+    "Preserve old geometry exceptions asINCONCLUSIVE; validC withallBstrictentry false remainsnormalNOT_CERTIFIED. Precompute everyCdomain/entry fromfullB; any unresolvedpredecessor blocks earliest. Leaf currentwholeB residual notmidpoint/previousdelta, exactpaired d cancellation/publicoutwardq<1/E<=eps retained.",
+    "Onecandidate absoluteUTC1200sec includesoverhead/downtime; max65536 scalarproof calls andmax6145 fullgate checks are independentcaps, notcompletionguarantees. Immutableproposal/appendcommittedpartialledger, timeoutorpartial=>INCONCLUSIVE/no automaticretry/resume/deadlinereset. Frozen partition refinement only, not scientificadaptation.",
+    "Earliestproof for each eps requirespositive T_eps and verifiedgapless/nonoverlapping negatives coveringexact[0,T_eps-1]; no sparse/binarysearch withoutmonotonic theorem. SmallerEps first>=largerEps first.",
+    "New productpolicy/native/fullEngine/allinputs proof0. R081closed3/4; API/Cloud/install/poller/global/force0. User session-neededAstra mathproofexception only/effectiveUNKNOWN. ActualGPGcacheUI notifyifobserved. Dotquestion1251B relayed currentcoordinator once, actualDotreplyNOT_OBSERVED."
+  ],
+  "material_claims": [
+    {
+      "id": "binding",
+      "statement": "Same raw/model/ordered7/initial0 and complete stored6145 boxes source/splice/tick bound; oldtrajectory/native/census notrerun",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-first-gate-20261014-r05\\CHECK.actual.json",
+          "verification_status": "verified",
+          "verification_note": "Actual current checker/root evidence; prior proofs explicitly trusteddependencies, notrerun"
+        }
+      ]
+    },
+    {
+      "id": "negative",
+      "statement": "Exactallmember groupH impossibility andsingleton fullgates cover everyepsilon predecessor withgap/overlap0; no time monotonicity",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-first-gate-20261014-r05\\CHECK.actual.json",
+          "verification_status": "verified",
+          "verification_note": "Actual current checker/root evidence; prior proofs explicitly trusteddependencies, notrerun"
+        }
+      ]
+    },
+    {
+      "id": "first",
+      "statement": "Two fixedrecipe epsilon firstpositive ticks andfullcurrentB/root/paired/publicdistance certificates withcompletecoverage",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-first-gate-20261014-r05\\CHECK.actual.json",
+          "verification_status": "verified",
+          "verification_note": "Actual current checker/root evidence; prior proofs explicitly trusteddependencies, notrerun"
+        }
+      ]
+    },
+    {
+      "id": "guards",
+      "statement": "14targetmutationpairs CONSISTENT/33controlsPASS, onecandidate bounded andcommittedjournal pinvalidated",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-first-gate-20261014-r05\\test-root\\proof-result.json",
+          "verification_status": "verified",
+          "verification_note": "Actual current checker/root evidence; prior proofs explicitly trusteddependencies, notrerun"
+        }
+      ]
+    }
+  ],
+  "cross_examination": {
+    "decision": "run",
+    "reason": "Grouped H impossibility direction/allmembers/cornerattainment andinitialtick/conservativefirstness/geometry/negative masks/budget hiddenpremises",
+    "trigger_items": [
+      {
+        "id": "T1",
+        "origin_reviewer": "/root/first_gate_math"
+      },
+      {
+        "id": "T2",
+        "origin_reviewer": "/root/first_gate_evidence"
+      }
+    ],
+    "selected_item_ids": [
+      "T1",
+      "T2"
+    ],
+    "coverage": [
+      {
+        "item_id": "T1",
+        "reviewer_ids": [
+          "/root/first_gate_evidence"
+        ]
+      },
+      {
+        "item_id": "T2",
+        "reviewer_ids": [
+          "/root/first_gate_math"
+        ]
+      }
+    ],
+    "followups": [
+      {
+        "reviewer_id": "/root/first_gate_evidence",
+        "item_ids": [
+          "T1"
+        ]
+      },
+      {
+        "reviewer_id": "/root/first_gate_math",
+        "item_ids": [
+          "T2"
+        ]
+      }
+    ]
+  },
+  "issue_ledger": [
+    {
+      "issue_id": "firstness-semantic-and-coverage",
+      "status": "CONFIRMED",
+      "rationale": "Both reviewers requireeverypredecessor andfixedstoredB/gate semantics; groupednecessaryfailures validonlywhen actualdirection/ALLmember/corners proved. Geometry exceptions preserved; entryfalse remainsnormalnegative; direct actualcoverageandpositives satisfy conditions.",
+      "required_evidence": [
+        "D:\\codex\\리드\\ai-first-gate-20261014-r05\\CHECK.actual.json"
+      ],
+      "available_evidence": [
+        "D:\\codex\\리드\\ai-first-gate-20261014-r05\\CHECK.actual.json"
+      ]
+    }
+  ],
+  "axis_decisions": [
+    {
+      "axis": "Provenance",
+      "decision": "Same model andstoredB0..6144 withcompleteunique state/tick/splice pins; oldprooftrustednotrerun",
+      "evidence_claim_ids": [
+        "binding"
+      ]
+    },
+    {
+      "axis": "Exclusion",
+      "decision": "Exact groupedH negativewitness orfullleaf gate; no big-hull failure/time monotonic shortcut",
+      "evidence_claim_ids": [
+        "negative"
+      ]
+    },
+    {
+      "axis": "Firstness",
+      "decision": "Two eps exactpredecessorcoverage pluspositive fullB E/public/root; firstfixedrecipe only",
+      "evidence_claim_ids": [
+        "first"
+      ]
+    },
+    {
+      "axis": "Verification",
+      "decision": "14mutationpairs/33controls; immutablejournalpins/budget/scopes/GPGunitdelivery",
+      "evidence_claim_ids": [
+        "guards"
+      ]
+    }
+  ],
+  "consensus_proposal": {
+    "status": "consensus",
+    "action": "Deliver epsilon-specific earliest fixed stored-box convergence gate certificates with complete prior-tick exclusion",
+    "supported_by_verified_claims": [
+      "binding",
+      "negative",
+      "first",
+      "guards"
+    ],
+    "satisfied_constraints": [
+      "Same above_near/firstON network8/ordered7/p0=.5/initialx0/exact liftedbinary64 bGd; score0x1.277babda5a221p-5 drive0x1.277babda5a221p-3.",
+      "Trusted pinned previous complete B1..160/native record real_x_boxes, B161..2048/realstop suffix, B2049..6144/escape suffix; no old trajectory/census/native rerun. B0 exact7zeros. Source/protocol/checker closure26 plus raw2 pinned.",
+      "Earliest means firstinteger0..6144 where frozen conservativeB_t/fixedrecipe gatecertifies each epsilon, notfirstactualdistance/optimalcertificate/firstentry. No time-monotonicity assumed.",
+      "Same C_t=exactBmidpoint±r=1e-6 x/grid31/allweights1; eps_p exact1e-6,1e-8; FractionTaylor96/public40/cacheOFF. No radius/weight/box/precision/sciencecandidate adaptation.",
+      "Fixed blocks64 increasingfrom0 withlastpartial; attempt qrow5=p:0:1 lower bound atnearestargument then Hcorner rows5=p:0:1 and6=goal; failedwitness is notnegative. Deterministicintegerhalving untilsingleton/fulloldgate; target-specific masks andhalt only afterbothfirsts.",
+      "Block actualrational center/affine extrema overALLmembers andS=sumabsG. qlower=S*(1-tanh_upper(max(0,maxabs(a)-rS))^2)>=1 or Huppercornerlower>=maxmid+r or Hlowercornerupper<=minmid-r proves allmember fixedHgate impossible, not Fdivergence orfirstfailure-reason ordering.",
+      "Preserve old geometry exceptions asINCONCLUSIVE; validC withallBstrictentry false remainsnormalNOT_CERTIFIED. Precompute everyCdomain/entry fromfullB; any unresolvedpredecessor blocks earliest. Leaf currentwholeB residual notmidpoint/previousdelta, exactpaired d cancellation/publicoutwardq<1/E<=eps retained.",
+      "Onecandidate absoluteUTC1200sec includesoverhead/downtime; max65536 scalarproof calls andmax6145 fullgate checks are independentcaps, notcompletionguarantees. Immutableproposal/appendcommittedpartialledger, timeoutorpartial=>INCONCLUSIVE/no automaticretry/resume/deadlinereset. Frozen partition refinement only, not scientificadaptation.",
+      "Earliestproof for each eps requirespositive T_eps and verifiedgapless/nonoverlapping negatives coveringexact[0,T_eps-1]; no sparse/binarysearch withoutmonotonic theorem. SmallerEps first>=largerEps first.",
+      "New productpolicy/native/fullEngine/allinputs proof0. R081closed3/4; API/Cloud/install/poller/global/force0. User session-neededAstra mathproofexception only/effectiveUNKNOWN. ActualGPGcacheUI notifyifobserved. Dotquestion1251B relayed currentcoordinator once, actualDotreplyNOT_OBSERVED."
+    ],
+    "axis_alignment": [
+      {
+        "axis": "Provenance",
+        "decision_ref": "Provenance"
+      },
+      {
+        "axis": "Exclusion",
+        "decision_ref": "Exclusion"
+      },
+      {
+        "axis": "Firstness",
+        "decision_ref": "Firstness"
+      },
+      {
+        "axis": "Verification",
+        "decision_ref": "Verification"
+      }
+    ],
+    "conditions": [],
+    "unresolved_dissent": [],
+    "no_consensus_reason": null,
+    "remaining_options": [],
+    "decision_owner": null
+  },
+  "observability": {
+    "wall_time": "NOT_OBSERVABLE",
+    "tokens": "NOT_OBSERVABLE",
+    "tool_calls": "NOT_OBSERVABLE",
+    "worker_count": 2
+  },
+  "method_notes": [
+    "MEDIUM2 isolated blind/crossonceeach, rootpartlyindependent; noJudge/reserve/specialist/workerfailure.",
+    "Requested sessionneededAstra/high math andSol6.1/high evidence, effectiveUNKNOWN. Evidence later separatelywriteschecker withoutfirstproducer read, non-independentimplementationreuse.",
+    "Onefixedcandidate elapsed 14.110s; counters {'scalar_proof_calls': 810, 'dependency_scalar_checks': 1, 'full_gate_checks': 14, 'group_trials': 135, 'group_rejections': 100}; oldtrajectory/census/native reruns0. Existingloader dependencytop-level scalar sanity1 included in totalcap; other roots recursive invocations counted/cacheOFF.",
+    "Firstpositive for each epsilon hasgaplesspriornegativecoverage starting0. Deterministicblocks64/refinement frozen before numbers; no time monotonicity orradius/precision adaptation. Unexaminedfuture afterbothfirsts doesnotaffect firstness.",
+    "One redundant guard mutation survived because second protection remained; composite samebehavior fault mutation demonstrated; prior10 successfulpairs reused, no proofcode change/numericretry.",
+    "ActualDotoriginalreplyNOT_OBSERVED; coordinatorreports onceexistingChiefroute Drivepublished stage, notDotread; no operatingpause release/poller/API/Cloud/product changes."
+  ]
+}
