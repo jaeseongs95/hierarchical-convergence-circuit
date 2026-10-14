@@ -1,0 +1,135 @@
+{
+  "schema": "HCCTerminationImplementation.v1",
+  "status": "IMPLEMENTED_SYNTHETIC_PLATFORM_VERIFIED",
+  "language": "ko",
+  "historical_design_commit": "328b1e86c7629e2e443a68d2f90af2790291bf22",
+  "supplier_policy_commit": "e8045b2195b175092e7dd683b981109853b2ed4f",
+  "design_pin": {
+    "path": "experiments/exp-62-top-down/termination-policy-comparison-plan-20261015.json",
+    "sha256": "09fce49f6d4e3e517b5b00a746f0d74d9964c9ee90a3950bc9b24bc5ccc5e958",
+    "bytes": 14381
+  },
+  "code_pins": [
+    {
+      "path": "tools/analysis/termination_compare_core.py",
+      "sha256": "73f496600b86eae3681d912a2853a313212ffeb416b6d3f87a70394b077d88c1",
+      "bytes": 9591
+    },
+    {
+      "path": "tools/analysis/test_termination_comparison.py",
+      "sha256": "60a194bc40cb9472065494adb0ea6ebcbd44587c3578ebe86ce4594c8e77d068",
+      "bytes": 22389
+    },
+    {
+      "path": "tools/analysis/termination_compare_runner.py",
+      "sha256": "ffed8c533a83639ebd28093de5607920421c17cd4d65d3f90a764cca70a9ffcc",
+      "bytes": 29644
+    },
+    {
+      "path": "tools/analysis/check_termination_comparison.py",
+      "sha256": "b4a8d84510bc295e39f5a7ba67e68c37a2d4dbd24500a73cc1e60268de20abe7",
+      "bytes": 11036
+    },
+    {
+      "path": "Run-HCR-Termination-Comparison.cmd",
+      "sha256": "a9d6edf6cf68ed8b18e73c7064a7f563bdeae3ee3a81319bac95c0c8f56edeca",
+      "bytes": 385
+    }
+  ],
+  "arithmetic_pins": {
+    "check_on_basins.py": "7c9a9b9ae49495b561d0c6a7aaeddfaf7eaf6c892ef34ca261a668f44e0d5bb2",
+    "check_on_fixed_points.py": "e23abd2a8fb4e881913a50cc0b810f187b0181ee8f0f712ec5d883fcaecd8663",
+    "check_on_convergence_gate.py": "0978b8da49213ca2a22fe4f7fc444cb989f72da0ff9bc52c61004ba7d9e10493",
+    "check_on_online_convergence_gate.py": "5258e7f3167e969117f6ed95ed7eb206d3f09ffe6867c4bd289626e5cbc2bf4c"
+  },
+  "model_digest": "a56e4dc4616ac97d976957a48622f277a48ac5f265724b75f33f1670db7ffc26",
+  "supplier": {
+    "state_order": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "e:3",
+      "p:0:0",
+      "p:0:1",
+      "goal"
+    ],
+    "initial_state": "all7 zero; each cell cold start",
+    "grid_decimal_places": 30,
+    "outward_rounding": true,
+    "tick_cap": 6144,
+    "p_scale": "x/2",
+    "numeric_helpers": "hash-pinned AST-selected numeric definitions; no old trajectory loader/future first-tick constants"
+  },
+  "policies": {
+    "L": "legacy full7 p residual and stable/period2 counters every tick, decision cadence16, stable first; threshold overlap INCONCLUSIVE",
+    "F": "last completed snapshot at wall/tick cap; no convergence claim",
+    "C": "current full7 enclosure; radius1e-5, eps1e-6; local residual/contraction certificate at cadence16; interrupted gate remains PENDING"
+  },
+  "evaluation": {
+    "when": "separate process after policy seal",
+    "world": "independently authored all-open synthetic world; absent from policy input",
+    "distance": "full7 p infinity-distance to hash-pinned accepted same-model old6144 anchor",
+    "candidate_coverage": "required; partialFalse is diagnostic",
+    "adopted_value": "NOT_MEASURED",
+    "full_engine_accuracy": "NOT_ESTABLISHED",
+    "proof_validity": "NOT_MEASURED",
+    "denominators": {
+      "all": 6,
+      "per_budget": 3
+    },
+    "trust_limit": "shared pinned numeric certificate checker and trusted old anchor; no independent full-prefix replay or OS attestation"
+  },
+  "resource_envelope": {
+    "policy_caps_seconds": [
+      180,
+      1800
+    ],
+    "evaluation_seconds_per_cell": 120,
+    "single_cleanup_grace_seconds_per_cell": 10,
+    "setup_seconds": 180,
+    "global_seconds": 6900,
+    "job_committed_memory_limit_bytes": 536870912,
+    "sequence": [
+      "180/L",
+      "180/F",
+      "180/C",
+      "1800/C",
+      "1800/F",
+      "1800/L"
+    ],
+    "accounting": "phase wall from acquisition/launch through seal; Job tree user+kernel CPU, peak committed virtual memory, separate numeric units; interrupted uncommitted work unknown",
+    "memory_is_rss": false,
+    "hard_realtime_guarantee": false,
+    "overrun_recorded": true,
+    "launch": "owned child CREATE_SUSPENDED, assign Job, resume only its primary thread, release handshake; no breakaway/fallback",
+    "termination": "own Job tree immediate termination at cap; KILL_ON_JOB_CLOSE; bounded single grace; no resume or implicit science retry",
+    "completed_state": "fsynced immutable full7 snapshot and acknowledgement timestamp within phase; late write never promotes acknowledgement"
+  },
+  "verification": {
+    "tests": 25,
+    "entrypoint": "Run-HCR-Termination-Comparison.cmd (default --self-test)",
+    "test_run_sha256": "74a08e5f0220862a704c43ff9d01dd27d294eb8786c4182eb9de49744e57279b",
+    "core_mutations_killed": 4,
+    "core_and_original9_tests_unchanged_from_signed_supplier_commit": true,
+    "exit_reconciliation": "actual isolated old/new discriminator retained outside repo; bounded100ms wait within original deadline",
+    "synthetic_only": true,
+    "actual_scientific_cells": 0,
+    "new_original_real_orbit_steps": 0,
+    "native_full_engine_runs": 0,
+    "paid_api_calls": 0,
+    "limitation": "tests and local consistency do not prove host attestation, arbitrary graph performance, or scientific six-cell outcomes"
+  },
+  "dot_advice": {
+    "thread": "01a12e46-1b11-7712-97c9-8f65c618d295",
+    "original_answer": "NOT_OBSERVED",
+    "receipt_is_answer": false
+  },
+  "next_execution": "explicit fresh bounded study request; --execute requires fresh output and exact plan/implementation SHA256; implementation validation does not execute six cells",
+  "primary_platform_references": [
+    "https://learn.microsoft.com/en-us/windows/win32/procthread/job-objects",
+    "https://learn.microsoft.com/en-us/windows/win32/procthread/process-creation-flags",
+    "https://learn.microsoft.com/en-us/windows/win32/api/winnt/ns-winnt-jobobject_extended_limit_information",
+    "https://learn.microsoft.com/en-us/windows/win32/api/tlhelp32/ns-tlhelp32-threadentry32",
+    "https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-resumethread"
+  ]
+}
