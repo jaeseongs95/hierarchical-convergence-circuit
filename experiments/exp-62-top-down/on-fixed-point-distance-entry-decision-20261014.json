@@ -1,0 +1,362 @@
+{
+  "skill_version": "1.0.0",
+  "schema_version": "1.0",
+  "preflight": {
+    "required_capabilities": [
+      "two blind reviewers",
+      "raw/source read",
+      "separate Fraction verifier"
+    ],
+    "observed_capabilities": [
+      "two blind reviewers",
+      "raw/source read",
+      "separate Fraction verifier"
+    ],
+    "missing_capabilities": [],
+    "supported_models_reasoning": [
+      "gpt-6-astra/high requested for math under session-only human exception; gpt-6.1-sol/high for evidence; effective settings unobserved"
+    ]
+  },
+  "case_brief": {
+    "decision": "동일 실수 궤적의 실제 limit 고정점까지 전체상태 거리의 최초 epsilon 진입을 인증해 고정 충분조건의 인증 지연과 구분한다",
+    "facts": [
+      "Pinned complete0..6144 realorbit andacceptedhigh6144/oldfirstgate dependencies",
+      "Currentrootanchor/rationaldistance/coverage checked"
+    ],
+    "assumptions": [
+      "Oldacceptedphysics proofs trusted pinneddependencies, notrerun"
+    ],
+    "constraints": [
+      "Same firstON/network8/above_near score0x1.277babda5a221p-5 drive0x1.277babda5a221p-3/ordered7/exact liftedbinary64 bGd/x0=0/p0=.5. Eps_p exact1e-6 and1e-8.",
+      "Previous accepted real trajectory B0..6144/high6144 currentwholeB residual and contraction/firstfixedgate5161/5173 are trusted pinneddependencies; no old trajectory/native/census/checker-science reruns. New rootanchor/distances only.",
+      "Actual limitroot enclosure and whole7 state distance, no goal-only/midpoint/tickdelta substitution; every integer predecessor must be OUTSIDE by strict lower>eps, first INSIDE by upper<=eps. Equality lower<=eps<=upper is AMBIGUOUS unlessupper<=eps; no monotonicity assumed.",
+      "All6145 storedticks examined ascending, fixed rational distances; any ambiguous predecessor blocks exactfirstclaim; laterstored violations/ambiguity block permanenceclaim. Infinite tail may only use accepted high6144 selfmap/contraction andE<=eps, not finite observations alone.",
+      "One candidate absoluteUTC/monotonic120seconds/6145distancechecks/one binding scalar sanity; immutable outputs/committed partialjournal; partial=>INCONCLUSIVE/no retry/resume/reset. No box/radius/eps/precision adaptation.",
+      "Comparison difference is frozen sufficientgate first minus independently distancecertified first onthe same realtrajectory; retrospective high6144root anchor is not online stoppingpolicy or native/libm/fullEngine/allinput proof.",
+      "Raw/product/CI/oldproofs unchanged. R081CLOSED_BY_USER_AT_CELL3/native3of4. OperatingPython/API/Cloud/install/poller/global/keys/force/PR/deploy0; sessionneededAstra math only/effectiveUNKNOWN. Notify actual Pinentrywait; Dot originalreply NOT_OBSERVED."
+    ],
+    "unknowns": [
+      "Native/fullEngine/onlinepolicy/globalinputs",
+      "Dot originalreply"
+    ],
+    "success_criteria": [
+      "[AC-001] 두 blind 관점과 교차반박으로 rootanchor·거리·최초성·계속머무름의 증명의무를 동결하고 실제 Dot원답과 상태를 구분한다",
+      "[AC-002] 같은 raw/model/ordered7/x0=0/complete B0..6144/source/splice 및 high6144·이전 firstgate 인증을 pinned trusteddependencies로 결속하고 궤적/native/census 재실행0을 지킨다",
+      "[AC-003] high6144 전체B 잔차 인증의 rational 고정점 anchor와 모든 tick의 전체7 p-infinity 거리 하한/상한을 outward/exact 산술로 판정한다",
+      "[AC-004] 최초진입은 모든 선행tick lower>epsilon 및 양성tick upper<=epsilon으로 인증하거나 ambiguity를 유지하며, 이후유지와 고정gate 지연은 별도 근거로만 보고한다",
+      "[AC-005] anchor/scale/equality/all7/zero/source/coverage/ambiguity/partial 핵심guard의 meaningful isolatedmutation·boundarycontrol을 실행한다",
+      "[AC-006] 새5파일 범위검증·GPG 서명commit/mainFF/branch정리/ordinarypush/원격5byte확인·clean 및 기존원자료/제품/운영/R081closed 보존"
+    ],
+    "failure_modes": [
+      "Wrong x/p scaling orrootanchor",
+      "Skippedambiguous predecessor/goalonly",
+      "Firstentry conflatedwithpermanent/online"
+    ]
+  },
+  "run": {
+    "id": "ai-distance-entry-20261014-r06",
+    "stage": "MEDIUM",
+    "strict": false,
+    "worker_cap": 2,
+    "workers": [
+      {
+        "id": "/root/distance_math",
+        "role": "rootanchor·same limit·whole7distance·first/permanent",
+        "status": "completed",
+        "is_judge": false,
+        "instantiated": true,
+        "requested_model": "gpt-6-astra",
+        "actual_model": null,
+        "requested_reasoning": "high",
+        "actual_reasoning": null,
+        "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+        "classification": "reviewer",
+        "blind_round1": true,
+        "context_isolated": true,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ]
+      },
+      {
+        "id": "/root/distance_evidence",
+        "role": "sourceclosure·accepteddependency·rounding·coverage·claimscope",
+        "status": "completed",
+        "is_judge": false,
+        "instantiated": true,
+        "requested_model": "gpt-6.1-sol",
+        "actual_model": null,
+        "requested_reasoning": "high",
+        "actual_reasoning": null,
+        "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+        "classification": "reviewer",
+        "blind_round1": true,
+        "context_isolated": true,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ]
+      }
+    ],
+    "completed_worker_ids": [
+      "/root/distance_math",
+      "/root/distance_evidence"
+    ],
+    "reused_worker_ids": [],
+    "failures": [],
+    "fresh_judge_id": null,
+    "candidate_skill_sha256": null,
+    "assurance": "partially_independent",
+    "specialist_additions": [],
+    "redeliberations": [],
+    "judge_fallback": null,
+    "capability_shortfall": false
+  },
+  "panel_manifest": [
+    {
+      "id": "/root/distance_math",
+      "role": "rootanchor·same limit·whole7distance·first/permanent",
+      "status": "completed",
+      "is_judge": false,
+      "instantiated": true,
+      "requested_model": "gpt-6-astra",
+      "actual_model": null,
+      "requested_reasoning": "high",
+      "actual_reasoning": null,
+      "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+      "classification": "reviewer",
+      "blind_round1": true,
+      "context_isolated": true,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ]
+    },
+    {
+      "id": "/root/distance_evidence",
+      "role": "sourceclosure·accepteddependency·rounding·coverage·claimscope",
+      "status": "completed",
+      "is_judge": false,
+      "instantiated": true,
+      "requested_model": "gpt-6.1-sol",
+      "actual_model": null,
+      "requested_reasoning": "high",
+      "actual_reasoning": null,
+      "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+      "classification": "reviewer",
+      "blind_round1": true,
+      "context_isolated": true,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ]
+    }
+  ],
+  "constraints": [
+    "Same firstON/network8/above_near score0x1.277babda5a221p-5 drive0x1.277babda5a221p-3/ordered7/exact liftedbinary64 bGd/x0=0/p0=.5. Eps_p exact1e-6 and1e-8.",
+    "Previous accepted real trajectory B0..6144/high6144 currentwholeB residual and contraction/firstfixedgate5161/5173 are trusted pinneddependencies; no old trajectory/native/census/checker-science reruns. New rootanchor/distances only.",
+    "Actual limitroot enclosure and whole7 state distance, no goal-only/midpoint/tickdelta substitution; every integer predecessor must be OUTSIDE by strict lower>eps, first INSIDE by upper<=eps. Equality lower<=eps<=upper is AMBIGUOUS unlessupper<=eps; no monotonicity assumed.",
+    "All6145 storedticks examined ascending, fixed rational distances; any ambiguous predecessor blocks exactfirstclaim; laterstored violations/ambiguity block permanenceclaim. Infinite tail may only use accepted high6144 selfmap/contraction andE<=eps, not finite observations alone.",
+    "One candidate absoluteUTC/monotonic120seconds/6145distancechecks/one binding scalar sanity; immutable outputs/committed partialjournal; partial=>INCONCLUSIVE/no retry/resume/reset. No box/radius/eps/precision adaptation.",
+    "Comparison difference is frozen sufficientgate first minus independently distancecertified first onthe same realtrajectory; retrospective high6144root anchor is not online stoppingpolicy or native/libm/fullEngine/allinput proof.",
+    "Raw/product/CI/oldproofs unchanged. R081CLOSED_BY_USER_AT_CELL3/native3of4. OperatingPython/API/Cloud/install/poller/global/keys/force/PR/deploy0; sessionneededAstra math only/effectiveUNKNOWN. Notify actual Pinentrywait; Dot originalreply NOT_OBSERVED."
+  ],
+  "required_constraints": [
+    "Same firstON/network8/above_near score0x1.277babda5a221p-5 drive0x1.277babda5a221p-3/ordered7/exact liftedbinary64 bGd/x0=0/p0=.5. Eps_p exact1e-6 and1e-8.",
+    "Previous accepted real trajectory B0..6144/high6144 currentwholeB residual and contraction/firstfixedgate5161/5173 are trusted pinneddependencies; no old trajectory/native/census/checker-science reruns. New rootanchor/distances only.",
+    "Actual limitroot enclosure and whole7 state distance, no goal-only/midpoint/tickdelta substitution; every integer predecessor must be OUTSIDE by strict lower>eps, first INSIDE by upper<=eps. Equality lower<=eps<=upper is AMBIGUOUS unlessupper<=eps; no monotonicity assumed.",
+    "All6145 storedticks examined ascending, fixed rational distances; any ambiguous predecessor blocks exactfirstclaim; laterstored violations/ambiguity block permanenceclaim. Infinite tail may only use accepted high6144 selfmap/contraction andE<=eps, not finite observations alone.",
+    "One candidate absoluteUTC/monotonic120seconds/6145distancechecks/one binding scalar sanity; immutable outputs/committed partialjournal; partial=>INCONCLUSIVE/no retry/resume/reset. No box/radius/eps/precision adaptation.",
+    "Comparison difference is frozen sufficientgate first minus independently distancecertified first onthe same realtrajectory; retrospective high6144root anchor is not online stoppingpolicy or native/libm/fullEngine/allinput proof.",
+    "Raw/product/CI/oldproofs unchanged. R081CLOSED_BY_USER_AT_CELL3/native3of4. OperatingPython/API/Cloud/install/poller/global/keys/force/PR/deploy0; sessionneededAstra math only/effectiveUNKNOWN. Notify actual Pinentrywait; Dot originalreply NOT_OBSERVED."
+  ],
+  "material_claims": [
+    {
+      "id": "binding",
+      "statement": "Same raw/model/ordered7/initial0 andcomplete6145 boxes; acceptedoldproof trust pinnednotrerun",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-distance-entry-20261014-r06\\CHECK.actual.json",
+          "verification_status": "verified",
+          "verification_note": "Actualcurrentevidence read; prioracceptedphysics explicitly trusted dependency notrerun"
+        }
+      ]
+    },
+    {
+      "id": "anchor",
+      "statement": "Explicitrootanchor/algebra/entry/selfmap/whole7 intervaldistances exactrational",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-distance-entry-20261014-r06\\CHECK.actual.json",
+          "verification_status": "verified",
+          "verification_note": "Actualcurrentevidence read; prioracceptedphysics explicitly trusted dependency notrerun"
+        }
+      ]
+    },
+    {
+      "id": "first",
+      "statement": "Completeexactpredecessor exclusion orretainedambiguity; separatefinite+infinitepermanence andfixedgatecomparison",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-distance-entry-20261014-r06\\CHECK.actual.json",
+          "verification_status": "verified",
+          "verification_note": "Actualcurrentevidence read; prioracceptedphysics explicitly trusted dependency notrerun"
+        }
+      ]
+    },
+    {
+      "id": "guards",
+      "statement": "Actualisolatedmutationpairs CONSISTENT/boundarycontrols PASS",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-distance-entry-20261014-r06\\test-root\\proof-result.json",
+          "verification_status": "verified",
+          "verification_note": "Actualcurrentevidence read; prioracceptedphysics explicitly trusted dependency notrerun"
+        }
+      ]
+    }
+  ],
+  "cross_examination": {
+    "decision": "run",
+    "reason": "Rootanchor allB factor2/trustedproof vsfreshalgebra andfirstpermanent hiddenpremises",
+    "trigger_items": [
+      {
+        "id": "T1",
+        "origin_reviewer": "/root/distance_math"
+      },
+      {
+        "id": "T2",
+        "origin_reviewer": "/root/distance_evidence"
+      }
+    ],
+    "selected_item_ids": [
+      "T1",
+      "T2"
+    ],
+    "coverage": [
+      {
+        "item_id": "T1",
+        "reviewer_ids": [
+          "/root/distance_evidence"
+        ]
+      },
+      {
+        "item_id": "T2",
+        "reviewer_ids": [
+          "/root/distance_math"
+        ]
+      }
+    ],
+    "followups": [
+      {
+        "reviewer_id": "/root/distance_evidence",
+        "item_ids": [
+          "T1"
+        ]
+      },
+      {
+        "reviewer_id": "/root/distance_math",
+        "item_ids": [
+          "T2"
+        ]
+      }
+    ]
+  },
+  "issue_ledger": [
+    {
+      "issue_id": "root-distance-first-permanent",
+      "status": "CONFIRMED",
+      "rationale": "Rootclosure/algebra/whole7/fullpredecessor/ambiguous semantics andfinite+infinite permanence proof separated inactualcheck",
+      "required_evidence": [
+        "D:\\codex\\리드\\ai-distance-entry-20261014-r06\\CHECK.actual.json"
+      ],
+      "available_evidence": [
+        "D:\\codex\\리드\\ai-distance-entry-20261014-r06\\CHECK.actual.json"
+      ]
+    }
+  ],
+  "axis_decisions": [
+    {
+      "axis": "Provenance",
+      "decision": "30source/raw2/ordered7/splice/model accepteddependencies",
+      "evidence_claim_ids": [
+        "binding"
+      ]
+    },
+    {
+      "axis": "Distance",
+      "decision": "Certifiedlimitrootanchor andexactall7 p∞ lower/upper",
+      "evidence_claim_ids": [
+        "anchor"
+      ]
+    },
+    {
+      "axis": "Firstness",
+      "decision": "Exhaustive pre/futurestored scan plusonlysupportedclaims; no monotonicity/onlineinference",
+      "evidence_claim_ids": [
+        "first"
+      ]
+    },
+    {
+      "axis": "Verification",
+      "decision": "Scopedsyntheticguardmutations/control evidence/GPGunitdelivery",
+      "evidence_claim_ids": [
+        "guards"
+      ]
+    }
+  ],
+  "consensus_proposal": {
+    "status": "consensus",
+    "action": "Deliver same-real actual fixedpoint-distance firstentry analysis with rigorous complete coverage and frozen sufficientgate delay",
+    "supported_by_verified_claims": [
+      "binding",
+      "anchor",
+      "first",
+      "guards"
+    ],
+    "satisfied_constraints": [
+      "Same firstON/network8/above_near score0x1.277babda5a221p-5 drive0x1.277babda5a221p-3/ordered7/exact liftedbinary64 bGd/x0=0/p0=.5. Eps_p exact1e-6 and1e-8.",
+      "Previous accepted real trajectory B0..6144/high6144 currentwholeB residual and contraction/firstfixedgate5161/5173 are trusted pinneddependencies; no old trajectory/native/census/checker-science reruns. New rootanchor/distances only.",
+      "Actual limitroot enclosure and whole7 state distance, no goal-only/midpoint/tickdelta substitution; every integer predecessor must be OUTSIDE by strict lower>eps, first INSIDE by upper<=eps. Equality lower<=eps<=upper is AMBIGUOUS unlessupper<=eps; no monotonicity assumed.",
+      "All6145 storedticks examined ascending, fixed rational distances; any ambiguous predecessor blocks exactfirstclaim; laterstored violations/ambiguity block permanenceclaim. Infinite tail may only use accepted high6144 selfmap/contraction andE<=eps, not finite observations alone.",
+      "One candidate absoluteUTC/monotonic120seconds/6145distancechecks/one binding scalar sanity; immutable outputs/committed partialjournal; partial=>INCONCLUSIVE/no retry/resume/reset. No box/radius/eps/precision adaptation.",
+      "Comparison difference is frozen sufficientgate first minus independently distancecertified first onthe same realtrajectory; retrospective high6144root anchor is not online stoppingpolicy or native/libm/fullEngine/allinput proof.",
+      "Raw/product/CI/oldproofs unchanged. R081CLOSED_BY_USER_AT_CELL3/native3of4. OperatingPython/API/Cloud/install/poller/global/keys/force/PR/deploy0; sessionneededAstra math only/effectiveUNKNOWN. Notify actual Pinentrywait; Dot originalreply NOT_OBSERVED."
+    ],
+    "axis_alignment": [
+      {
+        "axis": "Provenance",
+        "decision_ref": "Provenance"
+      },
+      {
+        "axis": "Distance",
+        "decision_ref": "Distance"
+      },
+      {
+        "axis": "Firstness",
+        "decision_ref": "Firstness"
+      },
+      {
+        "axis": "Verification",
+        "decision_ref": "Verification"
+      }
+    ],
+    "conditions": [],
+    "unresolved_dissent": [],
+    "no_consensus_reason": null,
+    "remaining_options": [],
+    "decision_owner": null
+  },
+  "observability": {
+    "wall_time": "NOT_OBSERVABLE",
+    "tokens": "NOT_OBSERVABLE",
+    "tool_calls": "NOT_OBSERVABLE",
+    "worker_count": 2
+  },
+  "method_notes": [
+    "MEDIUM two isolatedblindreviewers andcrossonceeach; requestedAstra/high andSol6.1/high effectiveUNKNOWN/rootpartiallyindependent; noJudge/reserve/specialist.",
+    "Evidence reviewer later authored checker under frozen limitedhandoff/singlewriter/no producerread; implementationreuse isnot extraindependentreview.",
+    "Onefrozen candidate combinedelapsed3.453s; counters{'binding_scalar_sanity': 1, 'distance_records': 6145, 'committed_distance_records': 6145, 'new_H_root_trajectory_native_census_runs': 0}; no oldtrajectory/native/census/H/root proof rerun beyondbinding scalar sanity1.",
+    "Actualdistance entry andpermanence requiredistinctproofs; futureanchor retrospective notonline/productpolicy. Dot原replyNOT_OBSERVED/currentcoordinator reportsNOT_HELD; no duplicatequestion/operatingauthority expansion."
+  ]
+}
