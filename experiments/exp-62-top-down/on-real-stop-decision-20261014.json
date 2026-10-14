@@ -1,0 +1,367 @@
+{
+  "skill_version": "1.0.0",
+  "schema_version": "1.0",
+  "preflight": {
+    "required_capabilities": [
+      "two blind reviewers",
+      "raw/source read",
+      "separate Fraction verifier"
+    ],
+    "observed_capabilities": [
+      "two blind reviewers",
+      "raw/source read",
+      "separate Fraction verifier"
+    ],
+    "missing_capabilities": [],
+    "supported_models_reasoning": [
+      "gpt-6-astra/high requested for math under session-only human exception; gpt-6.1-sol/high for evidence; effective settings unobserved"
+    ]
+  },
+  "case_brief": {
+    "decision": "한 임계점 위 입력에서 정확실수 연장 정책의 최초 저활성 종료와 모든 실수 평형까지의 거리 하한을 인증한다",
+    "facts": [
+      "Prior exact fullstrip census and real160/native20000 unit completed",
+      "Current single real2048 inclusion/first-stop check accepted"
+    ],
+    "assumptions": [
+      "Pinned prior census/high-root theorem reused dependency, not1030-query rerun"
+    ],
+    "constraints": [
+      "One fixed score beta(hex0x1.277babda5a221p-5), exact drive4s, same firstON ordered7 graph/kernel/initialp=.5. Exactreal extension of binary64primitives; exact1-d and10*tau.",
+      "Prefixold160 reused, target160 transitions andnoearlystop/stablecounter directlyrechecked; completeB160/oldB159 history, no center/native initial substitution. Old11sample/native20000/census1030 notrerun.",
+      "One frozen candidate; Decimal80/grid30/FractionTaylor96, cap2048, new suffix161..2048 total1888. Combinedproducer+checker wall1800s, cooperative innerguards/directchild timeout; no retry/precision/grid/horizon/target adaptation.",
+      "First interval predicate overlap=>UNKNOWN and incompleteproof, never skip. Success iff firststable_decision<=2048 withrealgoalupper<.1 andequilibriumdistance lower>.85; native1848 ismotivation nottarget.",
+      "Oldequilibriumtheorem sourcepin reused: parameteraboveexactupper withinfamily, onlyhigh y>.9, y=x_p:0:1; goalg=tanh(2y+kg),0<k<.25 ->pgoal>.95. Newdistance usesREAL stopboxgoalupper, notnativep.",
+      "One fixedgraph synthetic math reanalysis; neither primitivequantization irrelevance, portablelibm/nativefirststop invariance, nativeeq/census, realfutureescape/normalform/globalbasin nororiginalcap160/fullEngine conclusion.",
+      "R081 closed3/4; native reruns/newnativecells/LLM/Cloud/API/install/operatingpoller/globalconfig/force0. SessionAstraexception onlywhenneeded mathreview; no usermodelglobalchange. GPGunlocknecessity reported ifobserved."
+    ],
+    "unknowns": [
+      "Primitive quantization irrelevance",
+      "Native first-stop invariance",
+      "Real future escape/asymptotic basin",
+      "Dot original advice"
+    ],
+    "success_criteria": [
+      "[AC-001] 격리 수학·근거 토론2 및 교차반박각1로 단일점/실수정책/의존성·한계 동결; 세션Astra예외와Dot미답 구분",
+      "[AC-002] 동일 raw/source/order7/kernel/exactbinaryprimitive 및 targetscore/drive와 이전prefix/census 핀을 결속하고 target old160전이·종료이력을 직접 재검산",
+      "[AC-003] 수치 전 코드·입력·cap2048/Decimal80/grid30/Taylor96/합산1800sec 동결; completeB160에서161부터1888개연속 suffix 포함을독립검산",
+      "[AC-004] 전체실수7state residual/patience/history/UNKNOWN/cap의최초정지를직접판정하고 anyfirststable_decision<=2048/goalupper<.1 및 모든실수평형거리>.85 여부를인증",
+      "[AC-005] prefix/splice/realstopUNKNOWN·반계수·history·counter·거리상한 경계의 meaningful격리mutation/negative controls를검증; native1848동일·미래escape·전체임계값미주장",
+      "[AC-006] 새5파일만; oldraw/product/CI/결과/R081closed3of4보존; GPGcommit/mainFF/branch정리/ordinarypush/remote5bytes/clean확인"
+    ],
+    "failure_modes": [
+      "Cut resets counter/history",
+      "UNKNOWN skipped",
+      "Native point substituted for real box",
+      "Low residual mistaken for root proximity"
+    ]
+  },
+  "run": {
+    "id": "ai-real-stop-20261014-r02",
+    "stage": "MEDIUM",
+    "strict": false,
+    "worker_cap": 2,
+    "workers": [
+      {
+        "id": "/root/real_stop_math",
+        "role": "실수 prefix·suffix·최초 종료와 평형 거리 증명 구성",
+        "status": "completed",
+        "is_judge": false,
+        "instantiated": true,
+        "requested_model": "gpt-6-astra",
+        "actual_model": null,
+        "requested_reasoning": "high",
+        "actual_reasoning": null,
+        "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+        "classification": "reviewer",
+        "blind_round1": true,
+        "context_isolated": true,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ]
+      },
+      {
+        "id": "/root/real_stop_evidence",
+        "role": "동일 원자료·정책 이력·한계와 핀",
+        "status": "completed",
+        "is_judge": false,
+        "instantiated": true,
+        "requested_model": "gpt-6.1-sol",
+        "actual_model": null,
+        "requested_reasoning": "high",
+        "actual_reasoning": null,
+        "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+        "classification": "reviewer",
+        "blind_round1": true,
+        "context_isolated": true,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ]
+      }
+    ],
+    "completed_worker_ids": [
+      "/root/real_stop_math",
+      "/root/real_stop_evidence"
+    ],
+    "reused_worker_ids": [],
+    "failures": [],
+    "fresh_judge_id": null,
+    "candidate_skill_sha256": null,
+    "assurance": "partially_independent",
+    "specialist_additions": [],
+    "redeliberations": [],
+    "judge_fallback": null,
+    "capability_shortfall": false
+  },
+  "panel_manifest": [
+    {
+      "id": "/root/real_stop_math",
+      "role": "실수 prefix·suffix·최초 종료와 평형 거리 증명 구성",
+      "status": "completed",
+      "is_judge": false,
+      "instantiated": true,
+      "requested_model": "gpt-6-astra",
+      "actual_model": null,
+      "requested_reasoning": "high",
+      "actual_reasoning": null,
+      "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+      "classification": "reviewer",
+      "blind_round1": true,
+      "context_isolated": true,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ]
+    },
+    {
+      "id": "/root/real_stop_evidence",
+      "role": "동일 원자료·정책 이력·한계와 핀",
+      "status": "completed",
+      "is_judge": false,
+      "instantiated": true,
+      "requested_model": "gpt-6.1-sol",
+      "actual_model": null,
+      "requested_reasoning": "high",
+      "actual_reasoning": null,
+      "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+      "classification": "reviewer",
+      "blind_round1": true,
+      "context_isolated": true,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ]
+    }
+  ],
+  "constraints": [
+    "One fixed score beta(hex0x1.277babda5a221p-5), exact drive4s, same firstON ordered7 graph/kernel/initialp=.5. Exactreal extension of binary64primitives; exact1-d and10*tau.",
+    "Prefixold160 reused, target160 transitions andnoearlystop/stablecounter directlyrechecked; completeB160/oldB159 history, no center/native initial substitution. Old11sample/native20000/census1030 notrerun.",
+    "One frozen candidate; Decimal80/grid30/FractionTaylor96, cap2048, new suffix161..2048 total1888. Combinedproducer+checker wall1800s, cooperative innerguards/directchild timeout; no retry/precision/grid/horizon/target adaptation.",
+    "First interval predicate overlap=>UNKNOWN and incompleteproof, never skip. Success iff firststable_decision<=2048 withrealgoalupper<.1 andequilibriumdistance lower>.85; native1848 ismotivation nottarget.",
+    "Oldequilibriumtheorem sourcepin reused: parameteraboveexactupper withinfamily, onlyhigh y>.9, y=x_p:0:1; goalg=tanh(2y+kg),0<k<.25 ->pgoal>.95. Newdistance usesREAL stopboxgoalupper, notnativep.",
+    "One fixedgraph synthetic math reanalysis; neither primitivequantization irrelevance, portablelibm/nativefirststop invariance, nativeeq/census, realfutureescape/normalform/globalbasin nororiginalcap160/fullEngine conclusion.",
+    "R081 closed3/4; native reruns/newnativecells/LLM/Cloud/API/install/operatingpoller/globalconfig/force0. SessionAstraexception onlywhenneeded mathreview; no usermodelglobalchange. GPGunlocknecessity reported ifobserved."
+  ],
+  "required_constraints": [
+    "One fixed score beta(hex0x1.277babda5a221p-5), exact drive4s, same firstON ordered7 graph/kernel/initialp=.5. Exactreal extension of binary64primitives; exact1-d and10*tau.",
+    "Prefixold160 reused, target160 transitions andnoearlystop/stablecounter directlyrechecked; completeB160/oldB159 history, no center/native initial substitution. Old11sample/native20000/census1030 notrerun.",
+    "One frozen candidate; Decimal80/grid30/FractionTaylor96, cap2048, new suffix161..2048 total1888. Combinedproducer+checker wall1800s, cooperative innerguards/directchild timeout; no retry/precision/grid/horizon/target adaptation.",
+    "First interval predicate overlap=>UNKNOWN and incompleteproof, never skip. Success iff firststable_decision<=2048 withrealgoalupper<.1 andequilibriumdistance lower>.85; native1848 ismotivation nottarget.",
+    "Oldequilibriumtheorem sourcepin reused: parameteraboveexactupper withinfamily, onlyhigh y>.9, y=x_p:0:1; goalg=tanh(2y+kg),0<k<.25 ->pgoal>.95. Newdistance usesREAL stopboxgoalupper, notnativep.",
+    "One fixedgraph synthetic math reanalysis; neither primitivequantization irrelevance, portablelibm/nativefirststop invariance, nativeeq/census, realfutureescape/normalform/globalbasin nororiginalcap160/fullEngine conclusion.",
+    "R081 closed3/4; native reruns/newnativecells/LLM/Cloud/API/install/operatingpoller/globalconfig/force0. SessionAstraexception onlywhenneeded mathreview; no usermodelglobalchange. GPGunlocknecessity reported ifobserved."
+  ],
+  "material_claims": [
+    {
+      "id": "binding",
+      "statement": "Same raw/source/ordered7/exact primitives and pinned prior160/census bound; old160 transitions/stop directly rechecked",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-real-stop-20261014-r02\\CHECK.actual.json",
+          "verification_status": "verified",
+          "verification_note": "Direct current verifier output checked; prior fullstrip theorem dependency pinned, not rerun"
+        }
+      ]
+    },
+    {
+      "id": "trajectory",
+      "statement": "One fixed real trajectory:160 rechecked+1888 new exact inclusions, total2048; no native execution",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-real-stop-20261014-r02\\CHECK.actual.json",
+          "verification_status": "verified",
+          "verification_note": "Direct current verifier output checked; prior fullstrip theorem dependency pinned, not rerun"
+        }
+      ]
+    },
+    {
+      "id": "stop",
+      "statement": "Whole history exact real first-stop decided; low witness and all real equilibrium distance reported using goal upper",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-real-stop-20261014-r02\\CHECK.actual.json",
+          "verification_status": "verified",
+          "verification_note": "Direct current verifier output checked; prior fullstrip theorem dependency pinned, not rerun"
+        }
+      ]
+    },
+    {
+      "id": "guards",
+      "statement": "Eight meaningful guard mutation pairs CONSISTENT and19 boundary controls PASS",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-real-stop-20261014-r02\\test-root\\proof-result.json",
+          "verification_status": "verified",
+          "verification_note": "Direct current verifier output checked; prior fullstrip theorem dependency pinned, not rerun"
+        }
+      ]
+    }
+  ],
+  "cross_examination": {
+    "decision": "run",
+    "reason": "Prefix recheck versus metadata, high-y premise, cap2048 and primitive/native arithmetic separation; whole history versus manual cut; earliest UNKNOWN and distance upper endpoint",
+    "trigger_items": [
+      {
+        "id": "T1",
+        "origin_reviewer": "/root/real_stop_math"
+      },
+      {
+        "id": "T2",
+        "origin_reviewer": "/root/real_stop_evidence"
+      }
+    ],
+    "selected_item_ids": [
+      "T1",
+      "T2"
+    ],
+    "coverage": [
+      {
+        "item_id": "T1",
+        "reviewer_ids": [
+          "/root/real_stop_evidence"
+        ]
+      },
+      {
+        "item_id": "T2",
+        "reviewer_ids": [
+          "/root/real_stop_math"
+        ]
+      }
+    ],
+    "followups": [
+      {
+        "reviewer_id": "/root/real_stop_evidence",
+        "item_ids": [
+          "T1"
+        ]
+      },
+      {
+        "reviewer_id": "/root/real_stop_math",
+        "item_ids": [
+          "T2"
+        ]
+      }
+    ]
+  },
+  "issue_ledger": [
+    {
+      "issue_id": "real-stop-composition",
+      "status": "CONFIRMED",
+      "rationale": "Both cross reviews accept fixed2048 horizon, direct160 recheck, full history stop and first UNKNOWN; current verifier/guards satisfy conditions",
+      "required_evidence": [
+        "D:\\codex\\리드\\ai-real-stop-20261014-r02\\CHECK.actual.json"
+      ],
+      "available_evidence": [
+        "D:\\codex\\리드\\ai-real-stop-20261014-r02\\CHECK.actual.json"
+      ]
+    }
+  ],
+  "axis_decisions": [
+    {
+      "axis": "Provenance",
+      "decision": "Pinned raw/kernel/primitives/target/census and prefix; no1030/native rerun",
+      "evidence_claim_ids": [
+        "binding"
+      ]
+    },
+    {
+      "axis": "Arithmetic",
+      "decision": "Decimal proposals checked by exact rational Taylor,160+1888 continuous",
+      "evidence_claim_ids": [
+        "trajectory"
+      ]
+    },
+    {
+      "axis": "Termination",
+      "decision": "All7 states/fullhistory/first UNKNOWN; goal-upper distance to any real equilibrium",
+      "evidence_claim_ids": [
+        "stop"
+      ]
+    },
+    {
+      "axis": "Scope",
+      "decision": "Eight mutation pairs/19 controls, only scoped5files",
+      "evidence_claim_ids": [
+        "guards"
+      ]
+    }
+  ],
+  "consensus_proposal": {
+    "status": "consensus",
+    "action": "Deliver single-point exact-real first-stop and equilibrium-distance certificate with primitive/native/future/generalization limits",
+    "supported_by_verified_claims": [
+      "binding",
+      "trajectory",
+      "stop",
+      "guards"
+    ],
+    "satisfied_constraints": [
+      "One fixed score beta(hex0x1.277babda5a221p-5), exact drive4s, same firstON ordered7 graph/kernel/initialp=.5. Exactreal extension of binary64primitives; exact1-d and10*tau.",
+      "Prefixold160 reused, target160 transitions andnoearlystop/stablecounter directlyrechecked; completeB160/oldB159 history, no center/native initial substitution. Old11sample/native20000/census1030 notrerun.",
+      "One frozen candidate; Decimal80/grid30/FractionTaylor96, cap2048, new suffix161..2048 total1888. Combinedproducer+checker wall1800s, cooperative innerguards/directchild timeout; no retry/precision/grid/horizon/target adaptation.",
+      "First interval predicate overlap=>UNKNOWN and incompleteproof, never skip. Success iff firststable_decision<=2048 withrealgoalupper<.1 andequilibriumdistance lower>.85; native1848 ismotivation nottarget.",
+      "Oldequilibriumtheorem sourcepin reused: parameteraboveexactupper withinfamily, onlyhigh y>.9, y=x_p:0:1; goalg=tanh(2y+kg),0<k<.25 ->pgoal>.95. Newdistance usesREAL stopboxgoalupper, notnativep.",
+      "One fixedgraph synthetic math reanalysis; neither primitivequantization irrelevance, portablelibm/nativefirststop invariance, nativeeq/census, realfutureescape/normalform/globalbasin nororiginalcap160/fullEngine conclusion.",
+      "R081 closed3/4; native reruns/newnativecells/LLM/Cloud/API/install/operatingpoller/globalconfig/force0. SessionAstraexception onlywhenneeded mathreview; no usermodelglobalchange. GPGunlocknecessity reported ifobserved."
+    ],
+    "axis_alignment": [
+      {
+        "axis": "Provenance",
+        "decision_ref": "Provenance"
+      },
+      {
+        "axis": "Arithmetic",
+        "decision_ref": "Arithmetic"
+      },
+      {
+        "axis": "Termination",
+        "decision_ref": "Termination"
+      },
+      {
+        "axis": "Scope",
+        "decision_ref": "Scope"
+      }
+    ],
+    "conditions": [],
+    "unresolved_dissent": [],
+    "no_consensus_reason": null,
+    "remaining_options": [],
+    "decision_owner": null
+  },
+  "observability": {
+    "wall_time": "NOT_OBSERVABLE",
+    "tokens": "NOT_OBSERVABLE",
+    "tool_calls": "NOT_OBSERVABLE",
+    "worker_count": 2
+  },
+  "method_notes": [
+    "MEDIUM2 blind Round1 and cross once each complete; no Judge/reserve/specialist/failure. Root integration partly independent.",
+    "Human session-only when-needed Astra exception applied to narrow proof-composition math reviewer; requested Astra/high1 and Sol6.1/high1, effective settings UNKNOWN. No global model change.",
+    "Evidence reviewer later reused as non-independent checker implementer, no producer read; this is not an extra independent reviewer/audit.",
+    "Code3/protocol frozen before numbers; one fixed candidate, no numeric retry. Oldtarget160 rechecked,1888 new suffix verified. Old1030 census/11sample/native20000 not rerun.",
+    "Whole real_stop history; no cut reset/UNKNOWN skipping/native goal substitution. Native1848 is motivation, not predetermined tick or equivalence claim.",
+    "Dot original reply NOT_OBSERVED; existing advice route retained, no duplicate question/transport. R081closed3of4 and environment limits retained."
+  ]
+}

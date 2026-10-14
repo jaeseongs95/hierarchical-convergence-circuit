@@ -1,0 +1,134 @@
+{
+  "schema": "HCCONRealStopProtocol.v1",
+  "source_commit": "92fb9cffd5326f76815d35511c12f04c23c93cbb",
+  "sources": [
+    {
+      "path": "src/hcr/dynamics.py",
+      "sha256": "a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc",
+      "bytes": 3848
+    },
+    {
+      "path": "src/hcr/model.py",
+      "sha256": "b10e41146036bbbe6e155cee84f3c03711d9bfdeef26c54439d679cc36d590dd",
+      "bytes": 12732
+    },
+    {
+      "path": "src/hcr/workspace.py",
+      "sha256": "65ac816b06d0e2fbb971adeecfd9e317f99fc7d43881ea17f99d71d35e3e1b1a",
+      "bytes": 11225
+    },
+    {
+      "path": "src/hcr/runtime.py",
+      "sha256": "1f71a2a2d5469f8c9532de421b71f16b8e62ec6bc8aa6184146f41a7990f34eb",
+      "bytes": 26026
+    },
+    {
+      "path": "tools/analysis/on_fixed_points.py",
+      "sha256": "6156e328499369da75fed5da451d814addfad06e4b4d0286babb1b18212c9d86",
+      "bytes": 9888
+    },
+    {
+      "path": "tools/analysis/check_on_basins.py",
+      "sha256": "7c9a9b9ae49495b561d0c6a7aaeddfaf7eaf6c892ef34ca261a668f44e0d5bb2",
+      "bytes": 23200
+    },
+    {
+      "path": "tools/analysis/check_on_native_stop.py",
+      "sha256": "654b468fa48d66d1f30d40b295e41e3aa3c0962de9c4175d840db5ddda5786c1",
+      "bytes": 25975
+    },
+    {
+      "path": "tools/analysis/check_on_critical_strip.py",
+      "sha256": "faf55c1886aaa12afc8455b37ee0d170a5af16f8d21e53c8f5c51bfbf928329d",
+      "bytes": 16009
+    },
+    {
+      "path": "tools/analysis/check_on_fold.py",
+      "sha256": "90b5038691c774b1705b868f03cfaa524d2216d115dbf23aab7a67cc96827264",
+      "bytes": 25726
+    },
+    {
+      "path": "experiments/exp-62-top-down/on-native-stop-protocol-20261014.json",
+      "sha256": "f24a4d53a0689c5cbd70d0140c41bbfcfa5322d08366519ea6fc2bf4f0e49aae",
+      "bytes": 6047
+    },
+    {
+      "path": "experiments/exp-62-top-down/on-native-stop-certificates-20261014.json",
+      "sha256": "50c65972e890e9883d200b34180f32a488a15dcf7bfcc00fcf661dabe4e0a7d5",
+      "bytes": 2237372
+    },
+    {
+      "path": "experiments/exp-62-top-down/on-critical-strip-protocol-20261013.json",
+      "sha256": "86112d643e22f7dad2094746b26c8878f1b78de3bec408d2076d3fad0c6e5871",
+      "bytes": 3148
+    },
+    {
+      "path": "experiments/exp-62-top-down/on-critical-strip-certificates-20261013.json",
+      "sha256": "1baa4cc77de6f430ba4df19bc6d8c05e2514d3b6dfeea64bb597151dbc249819",
+      "bytes": 968815
+    }
+  ],
+  "raw": [
+    {
+      "model_id": "swapped-s003-td1-off",
+      "path": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/evaluation/swapped-s003-td1-off/inference.json",
+      "sha256": "56ac3c9ccb28ade542bdcfb613e8bf4ca326c86b900aee8c05e2b9eefd566fc1",
+      "bytes": 234849
+    },
+    {
+      "model_id": "swapped-s004-td1-off",
+      "path": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/evaluation/swapped-s004-td1-off/inference.json",
+      "sha256": "97daaac49c5edac743bb4d856fd10ed319104d1df61d444ca5941fc92e6c5c64",
+      "bytes": 174744
+    }
+  ],
+  "state_order": [
+    "e:0",
+    "e:1",
+    "e:2",
+    "e:3",
+    "p:0:0",
+    "p:0:1",
+    "goal"
+  ],
+  "network_id": "network-8",
+  "initial_x": "0",
+  "sample_id": "above_near",
+  "score_hex": "0x1.277babda5a221p-5",
+  "drive_hex": "0x1.277babda5a221p-3",
+  "prefix_ticks": 160,
+  "first_suffix_tick": 161,
+  "policy": {
+    "id": "exactreal_extended",
+    "tolerance_hex": "0x1.0c6f7a0b5ed8dp-20",
+    "patience": 4,
+    "cap": 2048,
+    "margin_hex": "0x1.3333333333333p-2"
+  },
+  "arithmetic": {
+    "decimal_precision": 80,
+    "interval_grid_places": 30,
+    "taylor_degree": 96,
+    "exact_tanh_cache": false
+  },
+  "budget": {
+    "max_suffix_transitions": 1888,
+    "max_total_transitions": 2048,
+    "wall_time_seconds_combined": 1800,
+    "auto_retry": false,
+    "adaptive_precision": false,
+    "cap_escalation": false
+  },
+  "success": {
+    "required_status": "stable_decision",
+    "goal_p_upper_strict": "1/10",
+    "distance_to_all_real_equilibria_strict": "17/20",
+    "required_same_native_tick": false
+  },
+  "failure_policy": "First source/schema/inclusion/predicateUNKNOWN/budget failure preserved INCONCLUSIVE; decidedalternative outcome reported without retry",
+  "proof_dependency": "Prior fullstrip high-root/census theorem pinned; not rerun. Oldtarget160 transition/stop directlyrechecked here. No native replay.",
+  "scope_limits": [
+    "One fixedgraph synthetic math reanalysis; neither primitivequantization irrelevance, portablelibm/nativefirststop invariance, nativeeq/census, realfutureescape/normalform/globalbasin nororiginalcap160/fullEngine conclusion.",
+    "R081 closed3/4; native reruns/newnativecells/LLM/Cloud/API/install/operatingpoller/globalconfig/force0. SessionAstraexception onlywhenneeded mathreview; no usermodelglobalchange. GPGunlocknecessity reported ifobserved."
+  ]
+}
