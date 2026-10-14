@@ -5,6 +5,8 @@
 
 [현재 구조와 실행 안내](docs/current/REPOSITORY_GUIDE.ko.md) · [실험 색인](experiments/INDEX.ko.md) · [가설](theory/core-hypothesis.md) · [주장 기록](evidence/claims.yaml)
 
+최신 연구 판단: [2026-10-15 주장–증거 연결표](evidence/claim-evidence-links-20261015.ko.md)
+
 ## 실행과 자료 찾기
 
 `Run-HCR.cmd --list`는 실험과 보존 자료의 위치만 표시한다.

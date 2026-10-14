@@ -1,0 +1,287 @@
+{
+  "schema": "HCCClaimEvidenceLinks.v1",
+  "as_of": "2026-10-15",
+  "source_commit": "5b2d5eabf2f10a90971803cdd0c625b9b6f9933f",
+  "record_kind": "dated synthesis; no scientific execution or fresh proof validation",
+  "historical_registry_unchanged": "evidence/claims.yaml",
+  "source_pins": {
+    "theory": {
+      "path": "theory/core-hypothesis.md",
+      "bytes": 1458,
+      "sha256": "d1b735eee8f72c092c847c04e81a34972fa919be906311255faa797e58ec9302"
+    },
+    "claims": {
+      "path": "evidence/claims.yaml",
+      "bytes": 3638,
+      "sha256": "9cba0301d5942bbb2a18c952549cd93fc1d0dec71e5180f7f0c870c03433beba"
+    },
+    "exp44": {
+      "path": "experiments/exp-44-circuit-formation/RESULTS.ko.md",
+      "bytes": 7748,
+      "sha256": "a672e33b83f5120c99103d8c48c5e0e87fda82a7bac4901323643acc7618db42"
+    },
+    "exp45": {
+      "path": "experiments/exp-45-error-retention/RESULTS.ko.md",
+      "bytes": 8253,
+      "sha256": "4dcd57d0ddf1e3f10366710314f71c1568bdf990de47f6240421ded855334548"
+    },
+    "exp46": {
+      "path": "experiments/exp-46-information-boundary/RESULTS.ko.md",
+      "bytes": 6766,
+      "sha256": "2d463181f092a3eea097dc11831e7f357802842e5e984dd532e0e81fd84a5722"
+    },
+    "exp48": {
+      "path": "experiments/exp-48-observation-refresh/RESULTS.ko.md",
+      "bytes": 6004,
+      "sha256": "d8fef95e8d03ef0fb3316030bc73de8388929240ab0c4d87825c8bf059717663"
+    },
+    "exp50": {
+      "path": "experiments/exp-50-revision-factorization/RESULTS.ko.md",
+      "bytes": 5531,
+      "sha256": "21a2c2290e43b7c2bdb9ba96d2f7f555f232c4f57862436c70cb0b480f7a3437"
+    },
+    "exp52": {
+      "path": "experiments/exp-52-native-selection-boundary/RESULTS.ko.md",
+      "bytes": 5170,
+      "sha256": "cdea36b9be590d5f26b4bf1f0848b82de8ab64acd531f39600ce21c4d8aa1023"
+    },
+    "exp58": {
+      "path": "experiments/exp-58-equal-binding/results.ko.md",
+      "bytes": 4813,
+      "sha256": "ba31084a5b353f032df290291917dad84dcd4c5757e4db7aa69f1e154ea85345"
+    },
+    "exp59": {
+      "path": "experiments/exp-59-binding-order/results.ko.md",
+      "bytes": 8943,
+      "sha256": "6f2ee602aad791c8ffe3210ca0812914dd1f830dfe2cc67a900a45c315362646"
+    },
+    "exp62_design": {
+      "path": "experiments/exp-62-top-down/design.ko.md",
+      "bytes": 13388,
+      "sha256": "d5c072e8c694a6fc887c25480527c23a89741b3c56180f3df6ccbbf039d11645"
+    },
+    "fold": {
+      "path": "experiments/exp-62-top-down/on-critical-strip-certificates-20261013.json",
+      "bytes": 968815,
+      "sha256": "1baa4cc77de6f430ba4df19bc6d8c05e2514d3b6dfeea64bb597151dbc249819"
+    },
+    "real_stop": {
+      "path": "experiments/exp-62-top-down/on-real-stop-certificates-20261014.json",
+      "bytes": 1736261,
+      "sha256": "c4638c7a4dd9d644ed2899b4449c0d25ecbc24eb5240b40e584bf96ba5f0f0ad"
+    },
+    "real_escape": {
+      "path": "experiments/exp-62-top-down/on-real-escape-certificates-20261014.json",
+      "bytes": 4357667,
+      "sha256": "26dc951594bca98d371d2ae48f93ca3896b362725b6dc0984c5a7ec6b4b452e9"
+    },
+    "distance": {
+      "path": "experiments/exp-62-top-down/on-fixed-point-distance-entry-certificates-20261014.json",
+      "bytes": 7407523,
+      "sha256": "24d2a4dcb79a03e6735154fcba25e317305223696ef4896f1c3b158968672271"
+    },
+    "online": {
+      "path": "experiments/exp-62-top-down/on-online-convergence-gate-certificates-20261014.json",
+      "bytes": 280900,
+      "sha256": "126b1ef58eba1c6020d4e3512c0d2928ce703c327c86f0e8e5a1d722f5c6e609"
+    },
+    "dynamics": {
+      "path": "src/hcr/dynamics.py",
+      "bytes": 3848,
+      "sha256": "a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc"
+    },
+    "runtime": {
+      "path": "src/hcr/runtime.py",
+      "bytes": 26026,
+      "sha256": "1f71a2a2d5469f8c9532de421b71f16b8e62ec6bc8aa6184146f41a7990f34eb"
+    },
+    "world": {
+      "path": "experiments/exp-58-equal-binding/reference_world.json",
+      "bytes": 379,
+      "sha256": "041e12afda54ca228bda2e026332ade2a6a069c5d0fb6c442274dd4838d7374b"
+    },
+    "r081_partial": {
+      "path": "experiments/exp-62-top-down/partial-identifiability.json",
+      "bytes": 37038,
+      "sha256": "cd966229d3f5447a23bafbf46fe99208f83ac619269e21cbaaab2a4a810af566"
+    }
+  },
+  "claims": [
+    {
+      "id": "HCC-H01/H02",
+      "question": "계층 공통 primitive·cross-A 승격",
+      "status": "hypothesis",
+      "scope_and_result": "고정 수준의 동일 갱신식은 구현 선택이다. 수준별 baseline 대비 우위·승격 의미 보존의 직접 검증으로 올리지 않는다.",
+      "source_ids": [
+        "theory",
+        "dynamics"
+      ],
+      "evidence_level": "recorded source/result; this synthesis did not rerun verification"
+    },
+    {
+      "id": "HCC-H03/formation",
+      "question": "반복 검증 → 회로 형성·재사용",
+      "status": "observed",
+      "scope_and_result": "EXP44의 사전 정의 motif/3회 임계 규칙에서 형성·새 분기 topology reuse 관찰. 자율 graph 구조 발견은 미입증.",
+      "source_ids": [
+        "exp44"
+      ],
+      "evidence_level": "recorded source/result; this synthesis did not rerun verification"
+    },
+    {
+      "id": "HCC-H03/cost",
+      "question": "재사용 → 비용 감소",
+      "status": "mixed_scoped",
+      "scope_and_result": "EXP44 expansion 감소 지지, kernel ticks 감소 예측은 3쌍 모두 반증. EXP58에서도 expansion 감소/ticks 증가. 전체 가설의 전역 반증·walltime/에너지 우위로 확대하지 않는다.",
+      "source_ids": [
+        "exp44",
+        "exp58"
+      ],
+      "evidence_level": "recorded source/result; this synthesis did not rerun verification"
+    },
+    {
+      "id": "HCC-H04/revision",
+      "question": "오류 → 약화·재확장 → 지속 교정",
+      "status": "partially-supported",
+      "scope_and_result": "EXP45/50의 약화와 관측 교정은 분리된다. 같은 misleading 관측 재노출의 교정 유지 예측은 해당 조건에서 반증.",
+      "source_ids": [
+        "exp45",
+        "exp46",
+        "exp50"
+      ],
+      "evidence_level": "recorded source/result; this synthesis did not rerun verification"
+    },
+    {
+      "id": "HCC-H04/information",
+      "question": "재확장 → 새로운 구별 정보",
+      "status": "observed",
+      "scope_and_result": "EXP48은 동일 정보 baseline에서도 fresh 관측으로 세계를 구별했다. HCC 고유 이점·자율 관측 선택은 미입증.",
+      "source_ids": [
+        "exp48"
+      ],
+      "evidence_level": "recorded source/result; this synthesis did not rerun verification"
+    },
+    {
+      "id": "HCC-H05",
+      "question": "직관·명시적 추론의 두 실행 양식",
+      "status": "hypothesis",
+      "scope_and_result": "native 회로 선택·proof 경로 변화는 확인했지만 인간 직관이나 일반 추론의 설명력을 확인한 것은 아니다.",
+      "source_ids": [
+        "theory",
+        "exp58",
+        "exp59"
+      ],
+      "evidence_level": "recorded source/result; this synthesis did not rerun verification"
+    },
+    {
+      "id": "HCC-H06",
+      "question": "안정 오답과 오수렴",
+      "status": "partially-supported",
+      "scope_and_result": "EXP45/52의 안정 오답은 toy 조건에서 관찰. 실수 low-stop은 평형에서 먼 조기 종료이므로 실제 안정 attractor 오답과 같은 원인으로 묶지 않는다. 착시·인간 오류의 공통 기제는 가설.",
+      "source_ids": [
+        "exp45",
+        "exp52",
+        "real_stop"
+      ],
+      "evidence_level": "recorded source/result; this synthesis did not rerun verification"
+    },
+    {
+      "id": "HCC-H07",
+      "question": "강한 attractor의 속도–수정성 tradeoff",
+      "status": "derived-prediction",
+      "scope_and_result": "checkpoint 약화·선택 경계는 좁게 관찰했지만 순수 attractor 강도 개입/동일 총비용·정확도·수정성 tradeoff는 미입증.",
+      "source_ids": [
+        "theory",
+        "exp50",
+        "exp52"
+      ],
+      "evidence_level": "recorded source/result; this synthesis did not rerun verification"
+    },
+    {
+      "id": "HCC-H08",
+      "question": "판단 생성과 설명 복원 분리",
+      "status": "hypothesis",
+      "scope_and_result": "경로·proof·adoption 구별은 필요하지만 이 기록으로 판단 뒤 설명의 사후 생성이나 LLM 내부 경로를 확정하지 않는다.",
+      "source_ids": [
+        "theory",
+        "exp59"
+      ],
+      "evidence_level": "recorded source/result; this synthesis did not rerun verification"
+    },
+    {
+      "id": "DYN-FOLD",
+      "question": "첫 ON family의 평형 소멸",
+      "status": "certified_model",
+      "scope_and_result": "score 임계 enclosure [0.036068708258,0.036068713259]. 정확 fold 전/점/후 서로 다른 평형 3/2/1. enclosure 내부 uniform count UNKNOWN; native 임계값·전체 동역학 분기 미입증.",
+      "source_ids": [
+        "fold"
+      ],
+      "evidence_level": "recorded source/result; this synthesis did not rerun verification"
+    },
+    {
+      "id": "STOP-REAL",
+      "question": "작은 이동량 종료와 평형 근접성 분리",
+      "status": "certified_model",
+      "scope_and_result": "above_near 실수 궤적의 기존 확장 정책은 1848에서 low stop. 모든 평형까지 p∞ 거리 하한 0.873674578281281700994460954275. tick별 native 반올림은 이 low stop에 필수 아님. 원 cap160/native 종료 결과와 구별.",
+      "source_ids": [
+        "real_stop"
+      ],
+      "evidence_level": "recorded source/result; this synthesis did not rerun verification"
+    },
+    {
+      "id": "LIMIT-REAL",
+      "question": "동일 원 초기값의 장기 high 수렴",
+      "status": "certified_model",
+      "scope_and_result": "조기 종료를 무시한 고정 실수 궤적은 6144까지 high basin 진입·이후 수렴 인증. 6144는 최초 탈출시각 아님. 외부 정답·fullEngine 정책 인증 아님.",
+      "source_ids": [
+        "real_escape"
+      ],
+      "evidence_level": "recorded source/result; this synthesis did not rerun verification"
+    },
+    {
+      "id": "GATE-ONLINE",
+      "question": "현재 입력 수렴 인증과 최초성",
+      "status": "certified_model",
+      "scope_and_result": "known orbit에서 eps_p=1e-6/1e-8 거리 최초 진입은 5156/5171. 반경1e-5·성분 상계는 그 tick에서 인증하여 기존 고정 gate 지연5/2를0으로 줄임. 최초성은 기존 모든 선행 OUTSIDE 증명을 결합한 사후 판정.",
+      "source_ids": [
+        "distance",
+        "online"
+      ],
+      "evidence_level": "recorded source/result; this synthesis did not rerun verification"
+    },
+    {
+      "id": "GATE-UTILITY",
+      "question": "인증 → 외부 판단·총비용 개선",
+      "status": "unsupported",
+      "scope_and_result": "streaming B 생성/native libm/fullEngine/미지 graph/총비용·외부정답 개선은 미입증. 다음 정책 대조의 목표이며 결과가 아니다.",
+      "source_ids": [
+        "online",
+        "runtime",
+        "world"
+      ],
+      "evidence_level": "recorded source/result; this synthesis did not rerun verification"
+    },
+    {
+      "id": "R081-PARTIAL",
+      "question": "top_down 묶음 개입의 원 실행 경계",
+      "status": "partially-supported",
+      "scope_and_result": "원 R081은 CLOSED_BY_USER_AT_CELL3/native3of4. 관측된 .03 paired 효과와 미관측 .04 OFF를 구별하며 두 점 모두라는 universal 결과는 UNKNOWN. 누락 셀 재개는 계획에 없다.",
+      "source_ids": [
+        "r081_partial",
+        "exp62_design"
+      ],
+      "evidence_level": "recorded source/result; this synthesis did not rerun verification"
+    }
+  ],
+  "advice": {
+    "dot_original_reply": "NOT_OBSERVED",
+    "receipt_is_not_advice": true,
+    "on_reply": "verify original request/source binding; append dated amendment if interpretation changes"
+  },
+  "counts": {
+    "new_native_samples": 0,
+    "new_real_trajectory_runs": 0,
+    "new_independent_discovery_samples": 0
+  },
+  "next_question": "same graph, information and total resource budget matched termination-policy contrast; design only"
+}
