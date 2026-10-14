@@ -1,0 +1,406 @@
+{
+  "skill_version": "1.0.0",
+  "schema_version": "1.0",
+  "preflight": {
+    "required_capabilities": [
+      "two blind reviewers",
+      "raw/source read",
+      "separate Fraction verifier"
+    ],
+    "observed_capabilities": [
+      "two blind reviewers",
+      "raw/source read",
+      "separate Fraction verifier"
+    ],
+    "missing_capabilities": [],
+    "supported_models_reasoning": [
+      "gpt-6.1-sol/high schema supports; effective setting unobserved"
+    ]
+  },
+  "case_brief": {
+    "decision": "native 반올림과 residual·patience·160tick 종료 조건이 실수 임계구간 해석에 미치는 영향을 유한 표본과 정확 유한궤적 경계로 구분한다",
+    "facts": [
+      "Priorreal fullstrip fold/census completed; native stop/rounding outside old claim",
+      "Current finite prefix and native policy evidence accepted"
+    ],
+    "assumptions": [
+      "Local native productiontick trust boundary and prior pinned real census dependency"
+    ],
+    "constraints": [
+      "Fixed first ON ordered7state graph/rawkernel/initial p=.5; e1 score only. Bounded local replay is synthetic same-raw analysis, not new native R081 cell.",
+      "11 predefined binary64 scores; each one ignored-stop native trace cap20000 and exact real interval prefix160; interval grid30/Decimal80/FractionTaylor96; wall1800sec cooperative guard; one candidate/no auto retries or cap escalation.",
+      "Defaulttol1e-6/patience4/cap160, extended same/cap20000, strict tol1e-8/patience4/cap20000, impatient tol1e-6/patience1/cap20000 applied to same native trace.",
+      "Real model uses exact rational lifts of the same binary64 primitives and exact 1-d. Parameter4*score scaling exact in this normal range. Native arithmetic+libm effects combined; no universal exp accuracy or native threshold/census proof.",
+      "Exact real enclosure160 and platform-native continuation20000 have distinct strength; no long-horizon real proof, asymptotic native basin, full inference/latergraphs/LLM or causal generalization.",
+      "Old fullstrip1030query proof referenced by pinned completed artifact; not rerun or newly certified here. Exactcritical enclosure is not a uniform 2root region.",
+      "OriginalR081 closed3of4; no Cloud/API/install/global keys/config/operating poller changes/force push. Report necessary GPG user input."
+    ],
+    "unknowns": [
+      "uniform native threshold/census/asymptotic behavior",
+      "Dot original advice"
+    ],
+    "success_criteria": [
+      "[AC-001] 독립 토론2와 교차반박 후 표본·산술·종료·주장 강도를 동결하고 Dot 실제 원답 미관측을 유지한다",
+      "[AC-002] raw/source/kernel/ordered7state graph를 직접 결속하고 .03/.04 원자료 전체 first network tick을 현지 source로 재생해 bit fidelity를 판정한다",
+      "[AC-003] 수치 전 코드·입력·11score·160/20000 horizon·4policy 동결 후 정확 Fraction/Taylor checker로 real160 transition 전부 포함 및 native-real 차이 상계를 검증한다",
+      "[AC-004] 같은 native 궤적에서 최초 적법 stop·forced160·연장 및 stricter/impatient policy를 독립 재계산하고 표본별 종료 영향과 above-fold 저활성 stop의 평형 거리 한계를 판정한다",
+      "[AC-005] 7state residual·patience/reset·history/order·transition/source 경계의 의미있는 mutation/negative control을 검증하고 관측·인증·미인증을 구분한다",
+      "[AC-006] 새5파일만 변경하고 raw/product/CI/기존결과/R081closed3of4 보존; GPGcommit/mainFF/branch정리/ordinarypush/remote5bytes까지 확인한다"
+    ],
+    "failure_modes": [
+      "residual mistaken for root proximity",
+      "libm exp assumed portablecorrect",
+      "five states omitstopstates",
+      "finitegrid/horizon treateduniform"
+    ]
+  },
+  "run": {
+    "id": "ai-native-stop-20261014",
+    "stage": "MEDIUM",
+    "strict": false,
+    "worker_cap": 3,
+    "workers": [
+      {
+        "id": "/root/native_math_blind",
+        "role": "반올림·실수 유한경계·fold 해석",
+        "status": "completed",
+        "is_judge": false,
+        "instantiated": true,
+        "requested_model": "gpt-6.1-sol",
+        "actual_model": null,
+        "requested_reasoning": "high",
+        "actual_reasoning": null,
+        "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+        "classification": "reviewer",
+        "blind_round1": true,
+        "context_isolated": true,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ]
+      },
+      {
+        "id": "/root/native_stop_evidence",
+        "role": "native 종료·원자료·주장 강도",
+        "status": "completed",
+        "is_judge": false,
+        "instantiated": true,
+        "requested_model": "gpt-6.1-sol",
+        "actual_model": null,
+        "requested_reasoning": "high",
+        "actual_reasoning": null,
+        "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+        "classification": "reviewer",
+        "blind_round1": true,
+        "context_isolated": true,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ]
+      },
+      {
+        "id": "/root/native_round_math",
+        "role": "독립성 훼손으로 제외된 최초 수학 reviewer",
+        "status": "failed",
+        "is_judge": false,
+        "instantiated": true,
+        "requested_model": "gpt-6.1-sol",
+        "actual_model": null,
+        "requested_reasoning": "high",
+        "actual_reasoning": null,
+        "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+        "classification": "reviewer",
+        "blind_round1": false,
+        "context_isolated": true,
+        "participated_stages": [
+          "round1"
+        ]
+      }
+    ],
+    "completed_worker_ids": [
+      "/root/native_math_blind",
+      "/root/native_stop_evidence"
+    ],
+    "reused_worker_ids": [],
+    "failures": [
+      {
+        "worker_id": "/root/native_round_math",
+        "reason": "Coordinator prematurely exposed peer information before Round1 completion; interrupted/excluded and replaced with fresh math identity; later separately reused as non-panel checker implementer"
+      }
+    ],
+    "fresh_judge_id": null,
+    "candidate_skill_sha256": null,
+    "assurance": "partially_independent",
+    "specialist_additions": [],
+    "redeliberations": [],
+    "judge_fallback": null,
+    "capability_shortfall": false
+  },
+  "panel_manifest": [
+    {
+      "id": "/root/native_math_blind",
+      "role": "반올림·실수 유한경계·fold 해석",
+      "status": "completed",
+      "is_judge": false,
+      "instantiated": true,
+      "requested_model": "gpt-6.1-sol",
+      "actual_model": null,
+      "requested_reasoning": "high",
+      "actual_reasoning": null,
+      "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+      "classification": "reviewer",
+      "blind_round1": true,
+      "context_isolated": true,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ]
+    },
+    {
+      "id": "/root/native_stop_evidence",
+      "role": "native 종료·원자료·주장 강도",
+      "status": "completed",
+      "is_judge": false,
+      "instantiated": true,
+      "requested_model": "gpt-6.1-sol",
+      "actual_model": null,
+      "requested_reasoning": "high",
+      "actual_reasoning": null,
+      "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+      "classification": "reviewer",
+      "blind_round1": true,
+      "context_isolated": true,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ]
+    },
+    {
+      "id": "/root/native_round_math",
+      "role": "독립성 훼손으로 제외된 최초 수학 reviewer",
+      "status": "failed",
+      "is_judge": false,
+      "instantiated": true,
+      "requested_model": "gpt-6.1-sol",
+      "actual_model": null,
+      "requested_reasoning": "high",
+      "actual_reasoning": null,
+      "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+      "classification": "reviewer",
+      "blind_round1": false,
+      "context_isolated": true,
+      "participated_stages": [
+        "round1"
+      ]
+    }
+  ],
+  "constraints": [
+    "Fixed first ON ordered7state graph/rawkernel/initial p=.5; e1 score only. Bounded local replay is synthetic same-raw analysis, not new native R081 cell.",
+    "11 predefined binary64 scores; each one ignored-stop native trace cap20000 and exact real interval prefix160; interval grid30/Decimal80/FractionTaylor96; wall1800sec cooperative guard; one candidate/no auto retries or cap escalation.",
+    "Defaulttol1e-6/patience4/cap160, extended same/cap20000, strict tol1e-8/patience4/cap20000, impatient tol1e-6/patience1/cap20000 applied to same native trace.",
+    "Real model uses exact rational lifts of the same binary64 primitives and exact 1-d. Parameter4*score scaling exact in this normal range. Native arithmetic+libm effects combined; no universal exp accuracy or native threshold/census proof.",
+    "Exact real enclosure160 and platform-native continuation20000 have distinct strength; no long-horizon real proof, asymptotic native basin, full inference/latergraphs/LLM or causal generalization.",
+    "Old fullstrip1030query proof referenced by pinned completed artifact; not rerun or newly certified here. Exactcritical enclosure is not a uniform 2root region.",
+    "OriginalR081 closed3of4; no Cloud/API/install/global keys/config/operating poller changes/force push. Report necessary GPG user input."
+  ],
+  "required_constraints": [
+    "Fixed first ON ordered7state graph/rawkernel/initial p=.5; e1 score only. Bounded local replay is synthetic same-raw analysis, not new native R081 cell.",
+    "11 predefined binary64 scores; each one ignored-stop native trace cap20000 and exact real interval prefix160; interval grid30/Decimal80/FractionTaylor96; wall1800sec cooperative guard; one candidate/no auto retries or cap escalation.",
+    "Defaulttol1e-6/patience4/cap160, extended same/cap20000, strict tol1e-8/patience4/cap20000, impatient tol1e-6/patience1/cap20000 applied to same native trace.",
+    "Real model uses exact rational lifts of the same binary64 primitives and exact 1-d. Parameter4*score scaling exact in this normal range. Native arithmetic+libm effects combined; no universal exp accuracy or native threshold/census proof.",
+    "Exact real enclosure160 and platform-native continuation20000 have distinct strength; no long-horizon real proof, asymptotic native basin, full inference/latergraphs/LLM or causal generalization.",
+    "Old fullstrip1030query proof referenced by pinned completed artifact; not rerun or newly certified here. Exactcritical enclosure is not a uniform 2root region.",
+    "OriginalR081 closed3of4; no Cloud/API/install/global keys/config/operating poller changes/force push. Report necessary GPG user input."
+  ],
+  "material_claims": [
+    {
+      "id": "replay",
+      "statement": "raw source4/ordered7/native bit replay and independent firstlegal stop confirmed",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-native-stop-20261014-r01\\CHECK.actual.json",
+          "verification_status": "verified",
+          "verification_note": "Current direct source and actual verification output checked; native transitions trust pinned production source, no IEEE emulator claim"
+        }
+      ]
+    },
+    {
+      "id": "rounding",
+      "statement": "1760 exactreal transitions and1760 native-point defects independently checked, bound finite160",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-native-stop-20261014-r01\\CHECK.actual.json",
+          "verification_status": "verified",
+          "verification_note": "Current direct source and actual verification output checked; native transitions trust pinned production source, no IEEE emulator claim"
+        }
+      ]
+    },
+    {
+      "id": "stop",
+      "statement": "same trace native20000 four policy/horizon effects and conditional priorcensus distance lower computed",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-native-stop-20261014-r01\\CHECK.actual.json",
+          "verification_status": "verified",
+          "verification_note": "Current direct source and actual verification output checked; native transitions trust pinned production source, no IEEE emulator claim"
+        }
+      ]
+    },
+    {
+      "id": "guards",
+      "statement": "six mutationpairs consistent and17 controls passed",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-native-stop-20261014-r01\\test-root\\proof-result.json",
+          "verification_status": "verified",
+          "verification_note": "Current direct source and actual verification output checked; native transitions trust pinned production source, no IEEE emulator claim"
+        }
+      ]
+    }
+  ],
+  "cross_examination": {
+    "decision": "run",
+    "reason": "Necessary versus optional IEEE/libm proof, real160/native20000 strength split and nearfold residual/root-distance hidden premises",
+    "trigger_items": [
+      {
+        "id": "T1",
+        "origin_reviewer": "/root/native_math_blind"
+      },
+      {
+        "id": "T2",
+        "origin_reviewer": "/root/native_stop_evidence"
+      }
+    ],
+    "selected_item_ids": [
+      "T1",
+      "T2"
+    ],
+    "coverage": [
+      {
+        "item_id": "T1",
+        "reviewer_ids": [
+          "/root/native_stop_evidence"
+        ]
+      },
+      {
+        "item_id": "T2",
+        "reviewer_ids": [
+          "/root/native_math_blind"
+        ]
+      }
+    ],
+    "followups": [
+      {
+        "reviewer_id": "/root/native_stop_evidence",
+        "item_ids": [
+          "T1"
+        ]
+      },
+      {
+        "reviewer_id": "/root/native_math_blind",
+        "item_ids": [
+          "T2"
+        ]
+      }
+    ]
+  },
+  "issue_ledger": [
+    {
+      "issue_id": "proof-strength-split",
+      "status": "CONFIRMED",
+      "rationale": "Both cross reviews accept combined rounding+libm finite160 bounds and platform20000 observations; current source/raw/interval checks satisfy conditions",
+      "required_evidence": [
+        "D:\\codex\\리드\\ai-native-stop-20261014-r01\\CHECK.actual.json"
+      ],
+      "available_evidence": [
+        "D:\\codex\\리드\\ai-native-stop-20261014-r01\\CHECK.actual.json"
+      ]
+    }
+  ],
+  "axis_decisions": [
+    {
+      "axis": "Provenance",
+      "decision": "Same raw/source ordered7state graph, all endpointbits replayed",
+      "evidence_claim_ids": [
+        "replay"
+      ]
+    },
+    {
+      "axis": "Rounding",
+      "decision": "Finite160 exactreal inclusion and recorded nativepoint gap/defect; noportableexp claim",
+      "evidence_claim_ids": [
+        "rounding"
+      ]
+    },
+    {
+      "axis": "Termination",
+      "decision": "Sameplatform20000/4policy differences; small residual notroot-distance; no uniformthreshold",
+      "evidence_claim_ids": [
+        "stop"
+      ]
+    },
+    {
+      "axis": "Verification",
+      "decision": "Six guardmutationpairs and17 controls; frozen5files only",
+      "evidence_claim_ids": [
+        "guards"
+      ]
+    }
+  ],
+  "consensus_proposal": {
+    "status": "consensus",
+    "action": "Deliver finite native-rounding and stop effects research unit with exact-real160 versus native20000 strength boundary",
+    "supported_by_verified_claims": [
+      "replay",
+      "rounding",
+      "stop",
+      "guards"
+    ],
+    "satisfied_constraints": [
+      "Fixed first ON ordered7state graph/rawkernel/initial p=.5; e1 score only. Bounded local replay is synthetic same-raw analysis, not new native R081 cell.",
+      "11 predefined binary64 scores; each one ignored-stop native trace cap20000 and exact real interval prefix160; interval grid30/Decimal80/FractionTaylor96; wall1800sec cooperative guard; one candidate/no auto retries or cap escalation.",
+      "Defaulttol1e-6/patience4/cap160, extended same/cap20000, strict tol1e-8/patience4/cap20000, impatient tol1e-6/patience1/cap20000 applied to same native trace.",
+      "Real model uses exact rational lifts of the same binary64 primitives and exact 1-d. Parameter4*score scaling exact in this normal range. Native arithmetic+libm effects combined; no universal exp accuracy or native threshold/census proof.",
+      "Exact real enclosure160 and platform-native continuation20000 have distinct strength; no long-horizon real proof, asymptotic native basin, full inference/latergraphs/LLM or causal generalization.",
+      "Old fullstrip1030query proof referenced by pinned completed artifact; not rerun or newly certified here. Exactcritical enclosure is not a uniform 2root region.",
+      "OriginalR081 closed3of4; no Cloud/API/install/global keys/config/operating poller changes/force push. Report necessary GPG user input."
+    ],
+    "axis_alignment": [
+      {
+        "axis": "Provenance",
+        "decision_ref": "Provenance"
+      },
+      {
+        "axis": "Rounding",
+        "decision_ref": "Rounding"
+      },
+      {
+        "axis": "Termination",
+        "decision_ref": "Termination"
+      },
+      {
+        "axis": "Verification",
+        "decision_ref": "Verification"
+      }
+    ],
+    "conditions": [],
+    "unresolved_dissent": [],
+    "no_consensus_reason": null,
+    "remaining_options": [],
+    "decision_owner": null
+  },
+  "observability": {
+    "wall_time": "NOT_OBSERVABLE",
+    "tokens": "NOT_OBSERVABLE",
+    "tool_calls": "NOT_OBSERVABLE",
+    "worker_count": 3
+  },
+  "method_notes": [
+    "MEDIUM2 completed blindreviewers/crossonceeach; no Judge/reserve/specialist. Coordinator integrationpartlyindependent. RequestedSol6.1/high effectiveUNKNOWN.",
+    "First native_round_math prematurely exposed to peer info; interrupted/excluded, separatefresh native_math_blind replacement. Count3 instantiated reviewer identities, only2completed blind participants. Excludedworker later checkerimplementation outsidepanel, not extraindependentparticipant.",
+    "Root ownsproducer; separatelyauthored checker withoutproducerread; native source intentionallyreused not IEEE emulation. Evidence review subsequentnonindependentreuse.",
+    "One fixed scientificcandidate; protocol/3codeinput filesfroze before originalnumbers. Real160 exact and native20000 observed; sixguard mutations/17controls limitedcoverage. Old1030proof reused dependency notrerun.",
+    "Astra exception directlyauthorized onlythissession whenneeded, contextrevision15 readbackPASS; currentSolworkers unchanged, no Astra invocationneeded.",
+    "Dot actualoriginalreply NOT_OBSERVED; existing r2queue ispeerreported notadvice. No new nativecells/LLM/Cloud/API/install/operatingpoller/globalchanges."
+  ]
+}

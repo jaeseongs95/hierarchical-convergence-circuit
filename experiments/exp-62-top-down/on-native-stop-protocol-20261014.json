@@ -1,0 +1,200 @@
+{
+  "schema": "HCCONNativeStopProtocol.v1",
+  "source_commit": "2e7d0cdacae1b5ad0283ff3611c499d528dd32ae",
+  "sources": [
+    {
+      "path": "src/hcr/dynamics.py",
+      "sha256": "a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc",
+      "bytes": 3848
+    },
+    {
+      "path": "src/hcr/model.py",
+      "sha256": "b10e41146036bbbe6e155cee84f3c03711d9bfdeef26c54439d679cc36d590dd",
+      "bytes": 12732
+    },
+    {
+      "path": "src/hcr/workspace.py",
+      "sha256": "65ac816b06d0e2fbb971adeecfd9e317f99fc7d43881ea17f99d71d35e3e1b1a",
+      "bytes": 11225
+    },
+    {
+      "path": "src/hcr/runtime.py",
+      "sha256": "1f71a2a2d5469f8c9532de421b71f16b8e62ec6bc8aa6184146f41a7990f34eb",
+      "bytes": 26026
+    },
+    {
+      "path": "tools/analysis/on_fixed_points.py",
+      "sha256": "6156e328499369da75fed5da451d814addfad06e4b4d0286babb1b18212c9d86",
+      "bytes": 9888
+    },
+    {
+      "path": "tools/analysis/check_on_basins.py",
+      "sha256": "7c9a9b9ae49495b561d0c6a7aaeddfaf7eaf6c892ef34ca261a668f44e0d5bb2",
+      "bytes": 23200
+    },
+    {
+      "path": "experiments/exp-62-top-down/on-critical-strip-protocol-20261013.json",
+      "sha256": "86112d643e22f7dad2094746b26c8878f1b78de3bec408d2076d3fad0c6e5871",
+      "bytes": 3148
+    },
+    {
+      "path": "experiments/exp-62-top-down/on-critical-strip-certificates-20261013.json",
+      "sha256": "1baa4cc77de6f430ba4df19bc6d8c05e2514d3b6dfeea64bb597151dbc249819",
+      "bytes": 968815
+    },
+    {
+      "path": "experiments/exp-62-top-down/on-critical-strip-decision-20261013.json",
+      "sha256": "b78e8665d739fde10edc60ec1a9f257ea1732f8d7c91791ad5c4d385783affd0",
+      "bytes": 13985
+    }
+  ],
+  "raw": [
+    {
+      "model_id": "swapped-s003-td1-off",
+      "path": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/evaluation/swapped-s003-td1-off/inference.json",
+      "sha256": "56ac3c9ccb28ade542bdcfb613e8bf4ca326c86b900aee8c05e2b9eefd566fc1",
+      "bytes": 234849
+    },
+    {
+      "model_id": "swapped-s004-td1-off",
+      "path": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/evaluation/swapped-s004-td1-off/inference.json",
+      "sha256": "97daaac49c5edac743bb4d856fd10ed319104d1df61d444ca5941fc92e6c5c64",
+      "bytes": 174744
+    }
+  ],
+  "state_order": [
+    "e:0",
+    "e:1",
+    "e:2",
+    "e:3",
+    "p:0:0",
+    "p:0:1",
+    "goal"
+  ],
+  "network_id": "network-8",
+  "initial_p": "1/2",
+  "critical_score_outward12": [
+    "0.036068708258",
+    "0.036068713259"
+  ],
+  "scores": [
+    {
+      "id": "raw03",
+      "hex": "0x1.eb851eb851eb8p-6",
+      "decimal_display": "0.03",
+      "drive_hex": "0x1.eb851eb851eb8p-4"
+    },
+    {
+      "id": "below_wide",
+      "hex": "0x1.1eb851eb851ecp-5",
+      "decimal_display": "0.035",
+      "drive_hex": "0x1.1eb851eb851ecp-3"
+    },
+    {
+      "id": "below_near",
+      "hex": "0x1.2777776d1ce92p-5",
+      "decimal_display": "0.036067708258",
+      "drive_hex": "0x1.2777776d1ce92p-3"
+    },
+    {
+      "id": "bracket_lo",
+      "hex": "0x1.2779904c10ffep-5",
+      "decimal_display": "0.036068708258",
+      "drive_hex": "0x1.2779904c10ffep-3"
+    },
+    {
+      "id": "mid_prev",
+      "hex": "0x1.277991a3bb859p-5",
+      "decimal_display": "0.036068710758499996",
+      "drive_hex": "0x1.277991a3bb859p-3"
+    },
+    {
+      "id": "mid",
+      "hex": "0x1.277991a3bb85ap-5",
+      "decimal_display": "0.0360687107585",
+      "drive_hex": "0x1.277991a3bb85ap-3"
+    },
+    {
+      "id": "mid_next",
+      "hex": "0x1.277991a3bb85bp-5",
+      "decimal_display": "0.03606871075850001",
+      "drive_hex": "0x1.277991a3bb85bp-3"
+    },
+    {
+      "id": "bracket_hi",
+      "hex": "0x1.277992fb660b5p-5",
+      "decimal_display": "0.036068713259",
+      "drive_hex": "0x1.277992fb660b5p-3"
+    },
+    {
+      "id": "above_near",
+      "hex": "0x1.277babda5a221p-5",
+      "decimal_display": "0.036069713259",
+      "drive_hex": "0x1.277babda5a221p-3"
+    },
+    {
+      "id": "above_wide",
+      "hex": "0x1.2f1a9fbe76c8bp-5",
+      "decimal_display": "0.037",
+      "drive_hex": "0x1.2f1a9fbe76c8bp-3"
+    },
+    {
+      "id": "raw04",
+      "hex": "0x1.47ae147ae147bp-5",
+      "decimal_display": "0.04",
+      "drive_hex": "0x1.47ae147ae147bp-3"
+    }
+  ],
+  "arithmetic": {
+    "decimal_precision": 80,
+    "interval_grid_places": 30,
+    "taylor_degree": 96
+  },
+  "budget": {
+    "real_prefix_ticks": 160,
+    "native_forced_ticks": 20000,
+    "max_scores": 11,
+    "wall_time_seconds": 1800,
+    "auto_retry": false,
+    "cap_escalation": false
+  },
+  "policies": [
+    {
+      "id": "native160",
+      "tolerance_hex": "0x1.0c6f7a0b5ed8dp-20",
+      "patience": 4,
+      "cap": 160
+    },
+    {
+      "id": "extended",
+      "tolerance_hex": "0x1.0c6f7a0b5ed8dp-20",
+      "patience": 4,
+      "cap": 20000
+    },
+    {
+      "id": "strict",
+      "tolerance_hex": "0x1.5798ee2308c3ap-27",
+      "patience": 4,
+      "cap": 20000
+    },
+    {
+      "id": "impatient",
+      "tolerance_hex": "0x1.0c6f7a0b5ed8dp-20",
+      "patience": 1,
+      "cap": 20000
+    }
+  ],
+  "native_checkpoints": [
+    160,
+    1000,
+    10000,
+    20000
+  ],
+  "replay_requirement": "Both raw controls all first-network state/residual/stable values bitwise equal or fail fidelity gate; no tolerance promoted to raw-bit fidelity",
+  "failure_policy": "preserve first failure; no numeric retry, precision change, new grid, or budget escalation",
+  "limits": [
+    "Real model uses exact rational lifts of the same binary64 primitives and exact 1-d. Parameter4*score scaling exact in this normal range. Native arithmetic+libm effects combined; no universal exp accuracy or native threshold/census proof.",
+    "Exact real enclosure160 and platform-native continuation20000 have distinct strength; no long-horizon real proof, asymptotic native basin, full inference/latergraphs/LLM or causal generalization.",
+    "Old fullstrip1030query proof referenced by pinned completed artifact; not rerun or newly certified here. Exactcritical enclosure is not a uniform 2root region."
+  ]
+}
