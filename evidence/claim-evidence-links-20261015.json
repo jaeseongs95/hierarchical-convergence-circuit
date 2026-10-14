@@ -13,7 +13,8 @@
     "claims": {
       "path": "evidence/claims.yaml",
       "bytes": 3638,
-      "sha256": "9cba0301d5942bbb2a18c952549cd93fc1d0dec71e5180f7f0c870c03433beba"
+      "sha256": "9cba0301d5942bbb2a18c952549cd93fc1d0dec71e5180f7f0c870c03433beba",
+      "yaml_key": "claims"
     },
     "exp44": {
       "path": "experiments/exp-44-circuit-formation/RESULTS.ko.md",
@@ -63,27 +64,32 @@
     "fold": {
       "path": "experiments/exp-62-top-down/on-critical-strip-certificates-20261013.json",
       "bytes": 968815,
-      "sha256": "1baa4cc77de6f430ba4df19bc6d8c05e2514d3b6dfeea64bb597151dbc249819"
+      "sha256": "1baa4cc77de6f430ba4df19bc6d8c05e2514d3b6dfeea64bb597151dbc249819",
+      "json_pointer": "/scientific_result"
     },
     "real_stop": {
       "path": "experiments/exp-62-top-down/on-real-stop-certificates-20261014.json",
       "bytes": 1736261,
-      "sha256": "c4638c7a4dd9d644ed2899b4449c0d25ecbc24eb5240b40e584bf96ba5f0f0ad"
+      "sha256": "c4638c7a4dd9d644ed2899b4449c0d25ecbc24eb5240b40e584bf96ba5f0f0ad",
+      "json_pointer": "/scientific_result"
     },
     "real_escape": {
       "path": "experiments/exp-62-top-down/on-real-escape-certificates-20261014.json",
       "bytes": 4357667,
-      "sha256": "26dc951594bca98d371d2ae48f93ca3896b362725b6dc0984c5a7ec6b4b452e9"
+      "sha256": "26dc951594bca98d371d2ae48f93ca3896b362725b6dc0984c5a7ec6b4b452e9",
+      "json_pointer": "/scientific_result"
     },
     "distance": {
       "path": "experiments/exp-62-top-down/on-fixed-point-distance-entry-certificates-20261014.json",
       "bytes": 7407523,
-      "sha256": "24d2a4dcb79a03e6735154fcba25e317305223696ef4896f1c3b158968672271"
+      "sha256": "24d2a4dcb79a03e6735154fcba25e317305223696ef4896f1c3b158968672271",
+      "json_pointer": "/scientific_result"
     },
     "online": {
       "path": "experiments/exp-62-top-down/on-online-convergence-gate-certificates-20261014.json",
       "bytes": 280900,
-      "sha256": "126b1ef58eba1c6020d4e3512c0d2928ce703c327c86f0e8e5a1d722f5c6e609"
+      "sha256": "126b1ef58eba1c6020d4e3512c0d2928ce703c327c86f0e8e5a1d722f5c6e609",
+      "json_pointer": "/scientific_result"
     },
     "dynamics": {
       "path": "src/hcr/dynamics.py",
@@ -103,7 +109,8 @@
     "r081_partial": {
       "path": "experiments/exp-62-top-down/partial-identifiability.json",
       "bytes": 37038,
-      "sha256": "cd966229d3f5447a23bafbf46fe99208f83ac619269e21cbaaab2a4a810af566"
+      "sha256": "cd966229d3f5447a23bafbf46fe99208f83ac619269e21cbaaab2a4a810af566",
+      "json_pointer": "/identifiable_claims"
     }
   },
   "claims": [
