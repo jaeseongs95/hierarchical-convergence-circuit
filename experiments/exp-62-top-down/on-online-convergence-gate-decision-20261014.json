@@ -1,0 +1,366 @@
+{
+  "skill_version": "1.0.0",
+  "schema_version": "1.0",
+  "preflight": {
+    "required_capabilities": [
+      "two blind reviewers",
+      "raw/source read",
+      "separate Fraction verifier"
+    ],
+    "observed_capabilities": [
+      "two blind reviewers",
+      "raw/source read",
+      "separate Fraction verifier"
+    ],
+    "missing_capabilities": [],
+    "supported_models_reasoning": [
+      "gpt-6-astra/high requested for math under session-only human exception; gpt-6.1-sol/high for evidence; effective settings unobserved"
+    ]
+  },
+  "case_brief": {
+    "decision": "같은 실수 모델에서 현재 상태와 모델만 쓰는 수렴 인증의 지연을 줄이고 반경·성분별 오차상계의 효과를 구분한다",
+    "facts": [
+      "Sameacceptedrealorbit/currentboxes/previousactualfirst sealed",
+      "Current-only regional/componentcertificate replay completed"
+    ],
+    "assumptions": [
+      "Oldacceptedtrajectory/exclusionproofs trustedpinneddependencies"
+    ],
+    "constraints": [
+      "Same firstON/network8/above_near/ordered7/exactliftedbinary64 bGd/x0=0/p0=.5; exacteps_p1e-6/1e-8. Currentlocalcertificate nofuturestate/rootanchor inputs.",
+      "TrustedstoredrealB/provenance andoldactualfirst5156/5171 usedforsource/exclusion/comparison only, not newlocal numericalproof. Sourcecustody mayreadcompleteoldrecords; localpureproof numericalarguments onlycurrentB/model/frozenradius/eps.",
+      "Fresh currentregionHselfmap/Bstrictentry/uniformq<1 guarantees F invariant/sameorbitlimit. Nonnegativecomparison K/publicoutwardslopes andr=currentwholeB coordinateHresidual; qK∞<1 beforeinverse; exactsolve andpositivewitness, pscale1/2/damping cancellation.",
+      "Frozenradii1e-6/1e-5, scalar/vector2x2, selectedticks1848/5155/5156/5170/5171; no radius/weight/precision/box/timepostadaptation. Cases areselectedexperimentalqueries, not fullfreshfirstscan.",
+      "Onlineeligible means localtheorem needs onlyavailablecurrentstate, not productionstreamingimplementation. Earliestclaim combines soundlocalpositive andoldretrospectiveeverypredecessoroutside/samelimit; reportprovenance distinction.",
+      "Onecandidate absoluteUTC/monotonic180sec, max10freshregionproofs/5currentwholeBresiduals/65536scalarinvocations, partial=>INCONCLUSIVE/noautomaticretry/resume/reset. Budgetindependentcapsnotcompletionguarantee.",
+      "R081closed3of4/newnative/LLM/fullEngine/API/Cloud/install/operatingpoller/transport/globalkeys/config/forcepush/PR/deploy0. Preserve oldresearch/product/raw/CI. SessionneededAstra math only/effectiveUNKNOWN; actualPinentrywait notifyhuman. Dot原replyNOT_OBSERVED."
+    ],
+    "unknowns": [
+      "Realstreaming B enclosure generation/native/fullEngine/global",
+      "Dot originalreply"
+    ],
+    "success_criteria": [
+      "[AC-001] blind토론2/cross각1로 현재정보경계·positive comparison·반경/norm ablation·현재wholeB·최초성 통합의무를 동결하고 실제Dot원답 상태를 구분한다",
+      "[AC-002] same raw/model/ordered7/originalorbit 현재선택B와 기존actualfirst증명의 source/hash/model/epsilon/tick 결속; oldtrajectory/native/census 재실행0",
+      "[AC-003] 각 localcertificate는 currentB/model/frozenrecipe만으로 fresh strictselfmap/uniformcontraction/currentwholeB residual을 검산하고 positivecomparison inverse·scalar/vector 거리상계의 정확산술·damping/p 변환을 검증한다",
+      "[AC-004] radius/scalar-vector2x2 및 early-stop/predecessor/actualfirst 사례를 분리보고하고, 지연감소·zero-delay·최초성은 freshlocalpositive+trustedoldnegativecoverage와 same-limit 논증이 있을때만 보고하며 fullnewscan/productstreaming 주장0",
+      "[AC-005] comparison positivity/whole7/linear equation/scale/outward/equality/current-only isolation/invalidregion/partial/budget/source 핵심guard의 meaningful isolatedmutations 및boundarycontrols를 검증한다",
+      "[AC-006] new5files scope/GPGcommit/mainFF/branch정리/ordinarypush/remote5byteclean 및oldraw/product/CI/operating/R081closed 보존"
+    ],
+    "failure_modes": [
+      "Hiddenfutureinput",
+      "Inverseonly/negativeM",
+      "Radius/normconfounding",
+      "Sparseearliest inference"
+    ]
+  },
+  "run": {
+    "id": "ai-online-gate-20261014-r07",
+    "stage": "MEDIUM",
+    "strict": false,
+    "worker_cap": 2,
+    "workers": [
+      {
+        "id": "/root/online_gate_math",
+        "role": "positivecomparison·damping·local samelimit·permanence",
+        "status": "completed",
+        "is_judge": false,
+        "instantiated": true,
+        "requested_model": "gpt-6-astra",
+        "actual_model": null,
+        "requested_reasoning": "high",
+        "actual_reasoning": null,
+        "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+        "classification": "reviewer",
+        "blind_round1": true,
+        "context_isolated": true,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ]
+      },
+      {
+        "id": "/root/online_gate_evidence",
+        "role": "currentinput/helperglobals·sourcecustody·ablation·firstnessscope",
+        "status": "completed",
+        "is_judge": false,
+        "instantiated": true,
+        "requested_model": "gpt-6.1-sol",
+        "actual_model": null,
+        "requested_reasoning": "high",
+        "actual_reasoning": null,
+        "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+        "classification": "reviewer",
+        "blind_round1": true,
+        "context_isolated": true,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ]
+      }
+    ],
+    "completed_worker_ids": [
+      "/root/online_gate_math",
+      "/root/online_gate_evidence"
+    ],
+    "reused_worker_ids": [],
+    "failures": [],
+    "fresh_judge_id": null,
+    "candidate_skill_sha256": null,
+    "assurance": "partially_independent",
+    "specialist_additions": [],
+    "redeliberations": [],
+    "judge_fallback": null,
+    "capability_shortfall": false
+  },
+  "panel_manifest": [
+    {
+      "id": "/root/online_gate_math",
+      "role": "positivecomparison·damping·local samelimit·permanence",
+      "status": "completed",
+      "is_judge": false,
+      "instantiated": true,
+      "requested_model": "gpt-6-astra",
+      "actual_model": null,
+      "requested_reasoning": "high",
+      "actual_reasoning": null,
+      "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+      "classification": "reviewer",
+      "blind_round1": true,
+      "context_isolated": true,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ]
+    },
+    {
+      "id": "/root/online_gate_evidence",
+      "role": "currentinput/helperglobals·sourcecustody·ablation·firstnessscope",
+      "status": "completed",
+      "is_judge": false,
+      "instantiated": true,
+      "requested_model": "gpt-6.1-sol",
+      "actual_model": null,
+      "requested_reasoning": "high",
+      "actual_reasoning": null,
+      "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+      "classification": "reviewer",
+      "blind_round1": true,
+      "context_isolated": true,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ]
+    }
+  ],
+  "constraints": [
+    "Same firstON/network8/above_near/ordered7/exactliftedbinary64 bGd/x0=0/p0=.5; exacteps_p1e-6/1e-8. Currentlocalcertificate nofuturestate/rootanchor inputs.",
+    "TrustedstoredrealB/provenance andoldactualfirst5156/5171 usedforsource/exclusion/comparison only, not newlocal numericalproof. Sourcecustody mayreadcompleteoldrecords; localpureproof numericalarguments onlycurrentB/model/frozenradius/eps.",
+    "Fresh currentregionHselfmap/Bstrictentry/uniformq<1 guarantees F invariant/sameorbitlimit. Nonnegativecomparison K/publicoutwardslopes andr=currentwholeB coordinateHresidual; qK∞<1 beforeinverse; exactsolve andpositivewitness, pscale1/2/damping cancellation.",
+    "Frozenradii1e-6/1e-5, scalar/vector2x2, selectedticks1848/5155/5156/5170/5171; no radius/weight/precision/box/timepostadaptation. Cases areselectedexperimentalqueries, not fullfreshfirstscan.",
+    "Onlineeligible means localtheorem needs onlyavailablecurrentstate, not productionstreamingimplementation. Earliestclaim combines soundlocalpositive andoldretrospectiveeverypredecessoroutside/samelimit; reportprovenance distinction.",
+    "Onecandidate absoluteUTC/monotonic180sec, max10freshregionproofs/5currentwholeBresiduals/65536scalarinvocations, partial=>INCONCLUSIVE/noautomaticretry/resume/reset. Budgetindependentcapsnotcompletionguarantee.",
+    "R081closed3of4/newnative/LLM/fullEngine/API/Cloud/install/operatingpoller/transport/globalkeys/config/forcepush/PR/deploy0. Preserve oldresearch/product/raw/CI. SessionneededAstra math only/effectiveUNKNOWN; actualPinentrywait notifyhuman. Dot原replyNOT_OBSERVED."
+  ],
+  "required_constraints": [
+    "Same firstON/network8/above_near/ordered7/exactliftedbinary64 bGd/x0=0/p0=.5; exacteps_p1e-6/1e-8. Currentlocalcertificate nofuturestate/rootanchor inputs.",
+    "TrustedstoredrealB/provenance andoldactualfirst5156/5171 usedforsource/exclusion/comparison only, not newlocal numericalproof. Sourcecustody mayreadcompleteoldrecords; localpureproof numericalarguments onlycurrentB/model/frozenradius/eps.",
+    "Fresh currentregionHselfmap/Bstrictentry/uniformq<1 guarantees F invariant/sameorbitlimit. Nonnegativecomparison K/publicoutwardslopes andr=currentwholeB coordinateHresidual; qK∞<1 beforeinverse; exactsolve andpositivewitness, pscale1/2/damping cancellation.",
+    "Frozenradii1e-6/1e-5, scalar/vector2x2, selectedticks1848/5155/5156/5170/5171; no radius/weight/precision/box/timepostadaptation. Cases areselectedexperimentalqueries, not fullfreshfirstscan.",
+    "Onlineeligible means localtheorem needs onlyavailablecurrentstate, not productionstreamingimplementation. Earliestclaim combines soundlocalpositive andoldretrospectiveeverypredecessoroutside/samelimit; reportprovenance distinction.",
+    "Onecandidate absoluteUTC/monotonic180sec, max10freshregionproofs/5currentwholeBresiduals/65536scalarinvocations, partial=>INCONCLUSIVE/noautomaticretry/resume/reset. Budgetindependentcapsnotcompletionguarantee.",
+    "R081closed3of4/newnative/LLM/fullEngine/API/Cloud/install/operatingpoller/transport/globalkeys/config/forcepush/PR/deploy0. Preserve oldresearch/product/raw/CI. SessionneededAstra math only/effectiveUNKNOWN; actualPinentrywait notifyhuman. Dot原replyNOT_OBSERVED."
+  ],
+  "material_claims": [
+    {
+      "id": "binding",
+      "statement": "Same currentB/model/source/trustedoldactualfirst withoutoldtrajectory replay",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-online-gate-20261014-r07\\CHECK.actual.json",
+          "verification_status": "verified",
+          "verification_note": "Actualcurrentevidence read; oldacceptedphysics/exclusion explicitlytrustednotrerun"
+        }
+      ]
+    },
+    {
+      "id": "local",
+      "statement": "Current-only purelocalpayload/actualhelperglobals boundary; freshC Hselfmap/currentresidual/positivecomparison exactalgebra",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-online-gate-20261014-r07\\CHECK.actual.json",
+          "verification_status": "verified",
+          "verification_note": "Actualcurrentevidence read; oldacceptedphysics/exclusion explicitlytrustednotrerun"
+        }
+      ]
+    },
+    {
+      "id": "comparison",
+      "statement": "Frozen10cells radius/scalarvector outcomes withonlysupportedzero-delay orsampledpositive claims/oldoutside postjoin",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-online-gate-20261014-r07\\CHECK.actual.json",
+          "verification_status": "verified",
+          "verification_note": "Actualcurrentevidence read; oldacceptedphysics/exclusion explicitlytrustednotrerun"
+        }
+      ]
+    },
+    {
+      "id": "guards",
+      "statement": "Meaningfulisolatedmutationpairs CONSISTENT/current-only realhelper blockedIO/boundarycontrolsPASS",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-online-gate-20261014-r07\\test-root-r02\\proof-result.json",
+          "verification_status": "verified",
+          "verification_note": "Actualcurrentevidence read; oldacceptedphysics/exclusion explicitlytrustednotrerun"
+        }
+      ]
+    }
+  ],
+  "cross_examination": {
+    "decision": "run",
+    "reason": "Positiveinverse/coupledrounding andlocalhelperglobals/firstpermanent/sourcecustody hiddenpremises",
+    "trigger_items": [
+      {
+        "id": "T1",
+        "origin_reviewer": "/root/online_gate_math"
+      },
+      {
+        "id": "T2",
+        "origin_reviewer": "/root/online_gate_evidence"
+      }
+    ],
+    "selected_item_ids": [
+      "T1",
+      "T2"
+    ],
+    "coverage": [
+      {
+        "item_id": "T1",
+        "reviewer_ids": [
+          "/root/online_gate_evidence"
+        ]
+      },
+      {
+        "item_id": "T2",
+        "reviewer_ids": [
+          "/root/online_gate_math"
+        ]
+      }
+    ],
+    "followups": [
+      {
+        "reviewer_id": "/root/online_gate_evidence",
+        "item_ids": [
+          "T1"
+        ]
+      },
+      {
+        "reviewer_id": "/root/online_gate_math",
+        "item_ids": [
+          "T2"
+        ]
+      }
+    ]
+  },
+  "issue_ledger": [
+    {
+      "issue_id": "currentonly-positivecomparison-andfirst",
+      "status": "CONFIRMED",
+      "rationale": "Currentpurelocal/helperboundary andpositivecomparison theorem scopedseparatelyfromcustody/futureoldexclusion, actualablation evidencechecked",
+      "required_evidence": [
+        "D:\\codex\\리드\\ai-online-gate-20261014-r07\\CHECK.actual.json"
+      ],
+      "available_evidence": [
+        "D:\\codex\\리드\\ai-online-gate-20261014-r07\\CHECK.actual.json"
+      ]
+    }
+  ],
+  "axis_decisions": [
+    {
+      "axis": "Provenance",
+      "decision": "Sameorbit/currentstates/model/oldexclusiontrusted",
+      "evidence_claim_ids": [
+        "binding"
+      ]
+    },
+    {
+      "axis": "Onlineeligible",
+      "decision": "Localpureinput +actualhelperpath nofuturedata; notstreamingimplementation",
+      "evidence_claim_ids": [
+        "local"
+      ]
+    },
+    {
+      "axis": "Ablation",
+      "decision": "Two radii/twobounds/fivecases; onlysupportedzero-delay orsampledclaim",
+      "evidence_claim_ids": [
+        "comparison"
+      ]
+    },
+    {
+      "axis": "Verification",
+      "decision": "Meaningfulsyntheticmutation+actualhelperblockedIO/scope/GPGunitdelivery",
+      "evidence_claim_ids": [
+        "guards"
+      ]
+    }
+  ],
+  "consensus_proposal": {
+    "status": "consensus",
+    "action": "Deliver current-only localconvergence certificate research with componentbound/radius ablation andscoped delaycomparison",
+    "supported_by_verified_claims": [
+      "binding",
+      "local",
+      "comparison",
+      "guards"
+    ],
+    "satisfied_constraints": [
+      "Same firstON/network8/above_near/ordered7/exactliftedbinary64 bGd/x0=0/p0=.5; exacteps_p1e-6/1e-8. Currentlocalcertificate nofuturestate/rootanchor inputs.",
+      "TrustedstoredrealB/provenance andoldactualfirst5156/5171 usedforsource/exclusion/comparison only, not newlocal numericalproof. Sourcecustody mayreadcompleteoldrecords; localpureproof numericalarguments onlycurrentB/model/frozenradius/eps.",
+      "Fresh currentregionHselfmap/Bstrictentry/uniformq<1 guarantees F invariant/sameorbitlimit. Nonnegativecomparison K/publicoutwardslopes andr=currentwholeB coordinateHresidual; qK∞<1 beforeinverse; exactsolve andpositivewitness, pscale1/2/damping cancellation.",
+      "Frozenradii1e-6/1e-5, scalar/vector2x2, selectedticks1848/5155/5156/5170/5171; no radius/weight/precision/box/timepostadaptation. Cases areselectedexperimentalqueries, not fullfreshfirstscan.",
+      "Onlineeligible means localtheorem needs onlyavailablecurrentstate, not productionstreamingimplementation. Earliestclaim combines soundlocalpositive andoldretrospectiveeverypredecessoroutside/samelimit; reportprovenance distinction.",
+      "Onecandidate absoluteUTC/monotonic180sec, max10freshregionproofs/5currentwholeBresiduals/65536scalarinvocations, partial=>INCONCLUSIVE/noautomaticretry/resume/reset. Budgetindependentcapsnotcompletionguarantee.",
+      "R081closed3of4/newnative/LLM/fullEngine/API/Cloud/install/operatingpoller/transport/globalkeys/config/forcepush/PR/deploy0. Preserve oldresearch/product/raw/CI. SessionneededAstra math only/effectiveUNKNOWN; actualPinentrywait notifyhuman. Dot原replyNOT_OBSERVED."
+    ],
+    "axis_alignment": [
+      {
+        "axis": "Provenance",
+        "decision_ref": "Provenance"
+      },
+      {
+        "axis": "Onlineeligible",
+        "decision_ref": "Onlineeligible"
+      },
+      {
+        "axis": "Ablation",
+        "decision_ref": "Ablation"
+      },
+      {
+        "axis": "Verification",
+        "decision_ref": "Verification"
+      }
+    ],
+    "conditions": [],
+    "unresolved_dissent": [],
+    "no_consensus_reason": null,
+    "remaining_options": [],
+    "decision_owner": null
+  },
+  "observability": {
+    "wall_time": "NOT_OBSERVABLE",
+    "tokens": "NOT_OBSERVABLE",
+    "tool_calls": "NOT_OBSERVABLE",
+    "worker_count": 2
+  },
+  "method_notes": [
+    "MEDIUMtwoisolatedblind/crossonceeach; requestedAstra/high andSol6.1/high effectiveUNKNOWN/rootpartiallyindependent/noJudge/reserve/specialist.",
+    "Evidence reviewer laterauthorchecker singlewriter/no producerread, implementationreuse isnotnewindependentaudit.",
+    "Onefrozen candidate combined9.172s/counters{'binding_scalar_sanity': 1, 'scalar_calls': 299, 'fresh_region_proofs': 10, 'wholeB_residuals': 5, 'committed_cells': 10}; current10regions/5residuals only, no oldtrajectory/native/census rerun beyondbinding sanity.",
+    "Localproof inputs onlycurrent/model/recipe/eps withactual arithmetic path isolation; custodyreadssealedfuture. Oldactualoutside coverage onlypostcomparison, nofreshfullfirstscan/unseen performance/streamingproductclaim.",
+    "Initialsetupreplacement-order metadatafailure beforerepo/science corrected, recordpreserved; scientificcandidate retry0. Dot originalreplyNOT_OBSERVED; no operatingauthority expansion.",
+    "Pre-science custodyjournal externalpath eliminated in favor ofembeddedoriginalJSONLsha/bytes; samealgorithm/protocol/newcodebytes refrozen andtests repeatedonamendedbytes. Oldfreeze/testreceipts preserved.",
+    "Scientificchild exit0/CHECKaccepted/full10grid complete, then wrapperfinalprint failed KeyError comparison because actualfieldfirstness. ExistingSCIENCE/CHECK unchanged; aggregation correctedwithoutnumericrerun."
+  ]
+}
