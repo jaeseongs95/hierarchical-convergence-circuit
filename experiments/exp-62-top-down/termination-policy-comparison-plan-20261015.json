@@ -1,0 +1,331 @@
+{
+  "schema": "HCCTerminationPolicyComparisonDesign.v1",
+  "date": "2026-10-15",
+  "status": "DESIGN_ONLY_NOT_EXECUTED",
+  "source_commit": "5b2d5eabf2f10a90971803cdd0c625b9b6f9933f",
+  "scientific_execution_authorized_by_this_record": false,
+  "primary_question": "같은 first graph·현재 정보·공통 자원 상한에서 종료정책이 평형 근접성, 잠정 후보와 실제 비용을 어떻게 바꾸는가?",
+  "source_pins": [
+    {
+      "path": "src/hcr/dynamics.py",
+      "sha256": "a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc",
+      "bytes": 3848
+    },
+    {
+      "path": "src/hcr/runtime.py",
+      "sha256": "1f71a2a2d5469f8c9532de421b71f16b8e62ec6bc8aa6184146f41a7990f34eb",
+      "bytes": 26026
+    },
+    {
+      "path": "src/hcr/model.py",
+      "sha256": "b10e41146036bbbe6e155cee84f3c03711d9bfdeef26c54439d679cc36d590dd",
+      "bytes": 12732
+    },
+    {
+      "path": "src/hcr/evaluation/reference.py",
+      "sha256": "3f9a5d3e9b984d0756a429a1bf88c1b54ef83e442c20e02d9ee0e2e749281378",
+      "bytes": 6398
+    },
+    {
+      "path": "experiments/exp-62-top-down/frozen_spec.json",
+      "sha256": "405225d50349b0b14fefcc1cab650f6f2b7e766f73bcd3f7a4b3d8fb572ae6c5",
+      "bytes": 11047
+    },
+    {
+      "path": "experiments/exp-62-top-down/on-online-convergence-gate-protocol-20261014.json",
+      "sha256": "45321c82d20a145bb9b7a5484f4aba3118415358438d69d4751a83a6f25cb7c0",
+      "bytes": 12118
+    },
+    {
+      "path": "experiments/exp-62-top-down/on-online-convergence-gate-certificates-20261014.json",
+      "sha256": "126b1ef58eba1c6020d4e3512c0d2928ce703c327c86f0e8e5a1d722f5c6e609",
+      "bytes": 280900
+    },
+    {
+      "path": "experiments/exp-62-top-down/on-real-stop-certificates-20261014.json",
+      "sha256": "c4638c7a4dd9d644ed2899b4449c0d25ecbc24eb5240b40e584bf96ba5f0f0ad",
+      "bytes": 1736261
+    },
+    {
+      "path": "experiments/exp-62-top-down/on-fixed-point-distance-entry-certificates-20261014.json",
+      "sha256": "24d2a4dcb79a03e6735154fcba25e317305223696ef4896f1c3b158968672271",
+      "bytes": 7407523
+    },
+    {
+      "path": "HCR-Evidence/exp62/r081-20261003T132019Z-6b7e0ed896/evaluation/swapped-s003-td1-off/inference.json",
+      "sha256": "56ac3c9ccb28ade542bdcfb613e8bf4ca326c86b900aee8c05e2b9eefd566fc1",
+      "bytes": 234849
+    },
+    {
+      "path": "experiments/exp-58-equal-binding/reference_world.json",
+      "sha256": "041e12afda54ca228bda2e026332ade2a6a069c5d0fb6c442274dd4838d7374b",
+      "bytes": 379
+    }
+  ],
+  "model": {
+    "network": "network-8, first ON, swapped-s003-td1-off authored graph",
+    "program_source_pointer": "/execution/packet/document/events/8/payload/program",
+    "raw_model_changes": [
+      "e:1 drive only replaced by exact lift of above_near drive_hex"
+    ],
+    "sample_id": "above_near",
+    "score_hex": "0x1.277babda5a221p-5",
+    "drive_hex": "0x1.277babda5a221p-3",
+    "state_order": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "e:3",
+      "p:0:0",
+      "p:0:1",
+      "goal"
+    ],
+    "initial_x_exact": "0",
+    "initial_p_exact": "1/2",
+    "arithmetic": "exact-real map of lifted binary64 b/G/d, Fraction/Taylor outward enclosures; not native libm",
+    "top_down": true,
+    "circuits": false,
+    "judgment_prior": "route_only",
+    "graph_updates": 0,
+    "feedback": 0,
+    "learning": 0,
+    "new_observations": 0
+  },
+  "information": {
+    "common_available": [
+      "complete frozen authored public observation/topology/config/model",
+      "sequential current whole7 state enclosure and prior observed prefix",
+      "elapsed resource ledger"
+    ],
+    "available_is_not_processed": "same public information availability; graph processed coverage frozen, not artificially completed",
+    "forbidden_policy_inputs": [
+      "hidden truth/world file",
+      "future B",
+      "6144 anchor",
+      "root census",
+      "actual first5156/5171",
+      "retrospective outside certificates",
+      "selected-tick index",
+      "other arm outputs"
+    ],
+    "local_certificate_payload": [
+      "model",
+      "current_x_box",
+      "radius_x_exact",
+      "epsilon_p_exact"
+    ],
+    "supplier": "fresh x0-origin deterministic enclosure supplier; same algorithm/config for all arms; each arm charges its own supplier cost; shared replay only secondary offline diagnostic",
+    "output_then_truth": "seal policy outputs before evaluator reads hidden truth"
+  },
+  "policies": [
+    {
+      "id": "L",
+      "name": "legacy_residual_patience_lift_cadence16",
+      "residual_tolerance": "exact lift of binary64 1e-6",
+      "patience": 4,
+      "check_ticks": "16,32,...,6144",
+      "logic": "update full7 residual/reset/history/margin each tick; retain same stable-before-oscillation priority at check ticks only; overlapping threshold => INCONCLUSIVE; do not latch an earlier candidate",
+      "tick_cap": 6144,
+      "warning": "expanded real heuristic with cadence16, not actual native cap160 or original every-tick1848 stop"
+    },
+    {
+      "id": "F",
+      "name": "fixed_resource_budget",
+      "endpoint_definition": "last fully completed state at the first wall resource boundary or tick6144",
+      "logic": "no invented stable status; common diagnostic readout from last fully completed B, incomplete step ignored; not a required6144 endpoint baseline",
+      "tick_cap": 6144
+    },
+    {
+      "id": "C",
+      "name": "current_only_component_certificate",
+      "radius_x_exact": "1/100000",
+      "epsilon_p_exact": "1/1000000",
+      "check_ticks": "16,32,...,6144",
+      "logic": "fresh currentB selfmap/entry/uniform contraction/wholeB residual/positive comparison solve; CERTIFIED stops, NOT_CERTIFIED continues, arithmetic/source/budget failure => INCONCLUSIVE",
+      "tick_cap": 6144
+    }
+  ],
+  "enclosure_recipe": {
+    "grid_decimal_places": 30,
+    "taylor_degree": 96,
+    "proposal_decimal_precision": 80,
+    "full7_required": true,
+    "initial_box": "singleton exact x0",
+    "precision_radius_cadence_adaptation": false,
+    "stop_comparison": "outward interval comparisons, ambiguous=>INCONCLUSIVE",
+    "implementation_status": "NOT_IMPLEMENTED; deterministic supplier/checker pins must be frozen before execution"
+  },
+  "resource_envelope": {
+    "unit": "end-to-end wall seconds, same host single-thread/process-tree per arm; CPU seconds separately observed",
+    "policy_caps_seconds": [
+      180,
+      1800
+    ],
+    "evaluation_cap_seconds": 120,
+    "grace_seconds_per_cell": 10,
+    "setup_cap_seconds": 180,
+    "cell_count": 6,
+    "sequential_order": [
+      "180/L",
+      "180/F",
+      "180/C",
+      "1800/C",
+      "1800/F",
+      "1800/L"
+    ],
+    "whole_study_wall_ceiling_seconds": 6900,
+    "tick_cap_per_cell": 6144,
+    "includes_policy": [
+      "input/model acquisition and graph construction",
+      "fresh every-tick state/enclosure generation",
+      "residual/status/scheduler checks",
+      "current region and residual certificate operations",
+      "research readout and policy output seal"
+    ],
+    "evaluation_is_separate_equal_reserve": "120sec/cell includes hidden truth score and retrospective distance proof checks; incomplete evaluation stays missing",
+    "grace": "no scientific work after cap; best effort partial logging/termination, separate elapsed and hard process-tree deadline required",
+    "peak_memory": "record if observed else null; memory ceiling must be fixed in execution contract; no unobserved zero",
+    "not_completion_guarantee": true,
+    "known_cost_warning": "old selected-state 9.172 seconds excludes full x0 supplier; previous 6144 construction was much larger, no extrapolated completion claim",
+    "automatic_retry": false,
+    "no_budget_increase_after_results": true,
+    "cold_start": "each of six cells starts x0 independently; no 180->1800 resume",
+    "denominators": "3 per budget and 6 total; independent discovery samples0"
+  },
+  "world_contract": {
+    "kind": "prospective explicitly authored synthetic world; not automatic old-world inheritance",
+    "public_edge_ids": [
+      "e0",
+      "e1",
+      "e2",
+      "e3"
+    ],
+    "definition": "all four authored edges open; synthetic score above_near allowed misleading/weak measurement independent of truth",
+    "context": "new synthetic policy-diagnostic context, public IDs/topology fixed",
+    "truth_rule": "boolean reachability S→G and separate processed first-path reachability; do not use equilibrium/predicted outcomes to assign truth",
+    "host_write_after_feedback": false,
+    "policy_access": false,
+    "execution_requirement": "generate independent evaluator world artifact, verify edge coverage/topology and pin world/observation mapping before any arm",
+    "world_performance_generalization": false,
+    "hidden_truth": {
+      "e0": true,
+      "e1": true,
+      "e2": true,
+      "e3": true
+    }
+  },
+  "common_readout": {
+    "id": "frozen_graph_research_readout",
+    "goal_sign": "Bgoal entirely >=1/2 => True; entirely <1/2 => False; overlaps=>None",
+    "margin": "wholeB inf abs(2pgoal-1) >= exact lift binary64 .30 required; else None",
+    "status_independent": true,
+    "negative_partial_graph": "diagnostic False retained, coverage_required=True, adopted_value=NOT_MEASURED; no false adoption or host-completed coverage",
+    "positive_partial_graph": "diagnostic True retained; observed support path/proof validity separate, actual adopted_value=NOT_MEASURED",
+    "common_for_all_three_arms": true,
+    "native_Status_override": false
+  },
+  "metrics": [
+    "stop reason/tick/status/margin/diagnostic candidate",
+    "candidate coverage and conditional accuracy with all6 denominator",
+    "external synthetic-world candidate correctness true/false/null",
+    "fixedpoint distance INSIDE/OUTSIDE/AMBIGUOUS/NOT_EVALUATED",
+    "local certificate CERTIFIED/NOT_CERTIFIED/INCONCLUSIVE/NOT_REQUESTED",
+    "processed graph completeness/remaining frontier/coverage_required",
+    "proof validity/support gap/D_DAG where evaluable; no fabricated proof",
+    "actual adoption NOT_MEASURED in primary",
+    "policy/evaluation/setup/grace elapsed and CPU seconds",
+    "kernel ticks/group updates/signal transmissions/binding checks/Taylor calls/Fraction bit-length/region proofs/residual calls as separate counters",
+    "total physical time and per-phase ledger; energy null unless measured"
+  ],
+  "predictions": [
+    {
+      "id": "P1",
+      "claim": "small previous-tick movement+patience is sufficient for fixedpoint proximity",
+      "criterion": "L stop with evaluator lower distance >epsilon refutes on this input",
+      "known_development_evidence": "1848 low stop already known; rerun not independent discovery"
+    },
+    {
+      "id": "P2",
+      "claim": "component certificate supplies sound p∞ proximity",
+      "criterion": "every C CERTIFIED has independent validated upper distance<=epsilon; counterexample is soundness failure; unevaluated is UNKNOWN"
+    },
+    {
+      "id": "P3",
+      "claim": "C improves diagnostic correctness under same resource envelope",
+      "criterion": "paired C correct answer with L/F wrong or abstain; if no such contrast => not supported, do not select successful budget only"
+    },
+    {
+      "id": "P4",
+      "claim": "C has lower policy cost without unacceptable candidate-quality loss",
+      "criterion": "C answer/quality no worse than pair and measured policy elapsed lower; ticks alone insufficient; certification overhead or fewer completions can refute scoped improvement"
+    }
+  ],
+  "failure_rules": [
+    "runtime/schema/source integrity failure is measurement failure, not scientific false",
+    "budget incomplete remains denominator and records last complete B; no forced gate/readout",
+    "NOT_CERTIFIED not divergence or OUTSIDE",
+    "ambiguous distance not inside",
+    "exclude unfinished scoring from accuracy numerator but disclose all6/evaluable counts",
+    "no precision/radius/cadence/score/epsilon changes or automatic rerun"
+  ],
+  "extensions": {
+    "native_track": {
+      "status": "BLOCKED_CAPABILITY_NOT_EXECUTED",
+      "required": [
+        "native floatingpoint/libm enclosure source and soundness contract",
+        "fresh sequential B and all policy checks metered",
+        "no real-trajectory certification copied to native results"
+      ]
+    },
+    "full_engine_coverage_track": {
+      "status": "DESIGNED_EXTENSION_NOT_EXECUTION_READY",
+      "same_start": [
+        "first graph",
+        "public observation/topology",
+        "memory/config",
+        "initial state",
+        "public information access",
+        "resource envelope"
+      ],
+      "natural_post_start": [
+        "route/frontier/proof/graph changes are outcomes, not forcibly paired"
+      ],
+      "must_charge": [
+        "new graph construction",
+        "all further state generation",
+        "binding/pool/scheduler",
+        "per-graph re-certification",
+        "coverage",
+        "readout/proof/adoption/seal"
+      ],
+      "certificate_reuse": "invalidate at model/graph/drive change, re-certify fresh",
+      "required_freeze": [
+        "new execution/task authorization",
+        "controller adapter and evaluator code pins",
+        "all phases timing and cost ledger",
+        "common full-study numeric budget and hard process-tree watchdog",
+        "native arithmetic if actual Engine used",
+        "false requires true graph coverage, no forced correction"
+      ],
+      "accuracy_claim": "NOT_ESTABLISHED until actual fullEngine outputs independently scored"
+    }
+  },
+  "readiness": {
+    "design": "READY_FOR_REVIEW",
+    "implementation": "NOT_STARTED",
+    "execution": "NOT_AUTHORIZED_BY_THIS_RECORD",
+    "required_before_execution": [
+      "implement/pin sequential supplier and each policy/evaluator",
+      "freeze exactmodel/world/observation/processedgraph hashes",
+      "verify future/world leakage controls",
+      "demonstrate budget stopwatch/process-tree enforcement and partial-record preservation",
+      "independent source comparison without science pilot",
+      "new explicit bounded execution request"
+    ],
+    "prior_R081_status": "CLOSED_BY_USER_AT_CELL3/native3of4 unchanged"
+  },
+  "advice": {
+    "dot_original_reply": "NOT_OBSERVED",
+    "on_actual_reply": "original request/source binding checked then dated amendment; do not silently alter frozen design"
+  }
+}
