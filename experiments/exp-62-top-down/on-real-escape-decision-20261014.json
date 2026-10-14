@@ -1,0 +1,372 @@
+{
+  "skill_version": "1.0.0",
+  "schema_version": "1.0",
+  "preflight": {
+    "required_capabilities": [
+      "two blind reviewers",
+      "raw/source read",
+      "separate Fraction verifier"
+    ],
+    "observed_capabilities": [
+      "two blind reviewers",
+      "raw/source read",
+      "separate Fraction verifier"
+    ],
+    "missing_capabilities": [],
+    "supported_models_reasoning": [
+      "gpt-6-astra/high requested for math under session-only human exception; gpt-6.1-sol/high for evidence; effective settings unobserved"
+    ]
+  },
+  "case_brief": {
+    "decision": "동일 단일 입력의 무조건 실수 continuation이 조기 종료 이후 high 수축 basin에 진입하고 고정점으로 수렴함을 인증한다",
+    "facts": [
+      "Old2048 realproof andfirstlowstop1848 accepted",
+      "Current64chunk conditionalchecks plusfreshsamepointrootproof accepted"
+    ],
+    "assumptions": [
+      "Priorproofs andobservedchunk receipts trusteddependencies, nohostattestation"
+    ],
+    "constraints": [
+      "One above_near sample scorehex0x1.277babda5a221p-5 drivehex0x1.277babda5a221p-3; samefirstON network8 ordered7/kernel/p0=.5 exactliftedbinary64 F=(1-d)I+dH.",
+      "Accepted oldreal2048 proof dependency reused, completeB2048 unchanged; old2048/census1030/native20000 notrerun. Unconditional F continuation ignores oldstop1848, does not alter thatresult.",
+      "Cap6144/new4096, Decimal80/grid30/Taylor96/cacheOFF; onecandidate/fixedterminal midpoint±exact1e-6/rootgrid31/all7weights1; no adaptivecap/radius/weights/precision or numericretry.",
+      "64fixed chunks64ticks ranges2049..6144; eachactual checker success externally observed and atomicreceipt+journal committed; trusted proof dependencies, not receiptJSON-only/hostattestation. Recheckpins/chain/coverage4096 and terminalproof beforeCERTIFIED.",
+      "Single absolute UTC deadline1800s includesproducer/checker/overhead/downtime; no rebootreset. Resumeonly committedsuccessfulchunks plus neverstartednextchunk. Startedmissingreceipt/failure/ambiguousbudget =>INCONCLUSIVE; unfinishedchunk noautoretry.",
+      "Full7 strictterminalentry/Hselfinclusion/qH<1/qF<1/publicupper<1/domain(-1,1); yindex5>.9 andgoalxindex6>.9. Entry6144 iscertifiedupperbound, notfirstescape/firstentry. Censusdependency tieslocalroot toglobaluniquehigh, notnew1030 verification.",
+      "Single exactreal continuation theorem; no native/libm/primitivequantizationirrelevance/globalbasin/escapeonsetformula/originalcap160/fullEngine inference. Reboot timinghumanUNKNOWN; partialchunks saved, no completionguarantee.",
+      "R081closed3/4; newnative/LLM/Cloud/API/install/poller/globalconfig/force0. Session-neededAstra mathreviewonly, effectiveUNKNOWN; GPGinput notifyifobserved; DotactualreplyNOTOBSERVED."
+    ],
+    "unknowns": [
+      "Native convergence/firstescape/globalbasin/primitive quantization irrelevance",
+      "Dot original advice"
+    ],
+    "success_criteria": [
+      "[AC-001] 독립 수학·근거 토론2/cross각1 및 chunk 대안 이견을 기록하고 단일6144/중점반경/모델·주장 한계를 수치 전 동결",
+      "[AC-002] 동일 raw/source/order7/exactbGd/target 및 accepted old2048 proof·completeB2048를 핀으로 결속; 이전2048·1030·native 재실행0",
+      "[AC-003] 하나의 동결 후보2049..6144의4096 포함 전이를64개 고정64tick 검산으로 실제 관측·결속·연속 합성; absolute1800s/미완료자동재시도0",
+      "[AC-004] 같은7state F의 terminal 정확중점·반경1e-6/weights1 box에서 all7 strictentry·Hselfinclusion·qH/qF/publicupper<1·y와goalx>.9로 eventualhigh 수렴 인증",
+      "[AC-005] endpoint/sample/prefix/chain/executionreceipt/strictentry/high/contraction/candidate 경계를 격리 검사; 최초escape/native/fullEngine/전구간 주장0",
+      "[AC-006] 새5파일만, GPGcommit/mainFF/branch정리/ordinarypush/remote5bytes/clean; 기존raw·제품·결과·R081closed3/4 보존"
+    ],
+    "failure_modes": [
+      "Wrong B2048/center substitution",
+      "Receiptaccepted without actualexecution",
+      "Missingrange/deadlinereset",
+      "Localroot versus global/native claims"
+    ]
+  },
+  "run": {
+    "id": "ai-real-escape-20261014-r03",
+    "stage": "MEDIUM",
+    "strict": false,
+    "worker_cap": 2,
+    "workers": [
+      {
+        "id": "/root/escape_math",
+        "role": "Banach·동일 실수 궤적과 조건부 전이 증명 합성",
+        "status": "completed",
+        "is_judge": false,
+        "instantiated": true,
+        "requested_model": "gpt-6-astra",
+        "actual_model": null,
+        "requested_reasoning": "high",
+        "actual_reasoning": null,
+        "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+        "classification": "reviewer",
+        "blind_round1": true,
+        "context_isolated": true,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ]
+      },
+      {
+        "id": "/root/escape_evidence",
+        "role": "원자료·완전prefix·실제receipt·중단·주장 범위",
+        "status": "completed",
+        "is_judge": false,
+        "instantiated": true,
+        "requested_model": "gpt-6.1-sol",
+        "actual_model": null,
+        "requested_reasoning": "high",
+        "actual_reasoning": null,
+        "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+        "classification": "reviewer",
+        "blind_round1": true,
+        "context_isolated": true,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ]
+      }
+    ],
+    "completed_worker_ids": [
+      "/root/escape_math",
+      "/root/escape_evidence"
+    ],
+    "reused_worker_ids": [],
+    "failures": [],
+    "fresh_judge_id": null,
+    "candidate_skill_sha256": null,
+    "assurance": "partially_independent",
+    "specialist_additions": [],
+    "redeliberations": [],
+    "judge_fallback": null,
+    "capability_shortfall": false
+  },
+  "panel_manifest": [
+    {
+      "id": "/root/escape_math",
+      "role": "Banach·동일 실수 궤적과 조건부 전이 증명 합성",
+      "status": "completed",
+      "is_judge": false,
+      "instantiated": true,
+      "requested_model": "gpt-6-astra",
+      "actual_model": null,
+      "requested_reasoning": "high",
+      "actual_reasoning": null,
+      "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+      "classification": "reviewer",
+      "blind_round1": true,
+      "context_isolated": true,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ]
+    },
+    {
+      "id": "/root/escape_evidence",
+      "role": "원자료·완전prefix·실제receipt·중단·주장 범위",
+      "status": "completed",
+      "is_judge": false,
+      "instantiated": true,
+      "requested_model": "gpt-6.1-sol",
+      "actual_model": null,
+      "requested_reasoning": "high",
+      "actual_reasoning": null,
+      "fallback_reason": "Caller sees task_name only; effective settings unobserved",
+      "classification": "reviewer",
+      "blind_round1": true,
+      "context_isolated": true,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ]
+    }
+  ],
+  "constraints": [
+    "One above_near sample scorehex0x1.277babda5a221p-5 drivehex0x1.277babda5a221p-3; samefirstON network8 ordered7/kernel/p0=.5 exactliftedbinary64 F=(1-d)I+dH.",
+    "Accepted oldreal2048 proof dependency reused, completeB2048 unchanged; old2048/census1030/native20000 notrerun. Unconditional F continuation ignores oldstop1848, does not alter thatresult.",
+    "Cap6144/new4096, Decimal80/grid30/Taylor96/cacheOFF; onecandidate/fixedterminal midpoint±exact1e-6/rootgrid31/all7weights1; no adaptivecap/radius/weights/precision or numericretry.",
+    "64fixed chunks64ticks ranges2049..6144; eachactual checker success externally observed and atomicreceipt+journal committed; trusted proof dependencies, not receiptJSON-only/hostattestation. Recheckpins/chain/coverage4096 and terminalproof beforeCERTIFIED.",
+    "Single absolute UTC deadline1800s includesproducer/checker/overhead/downtime; no rebootreset. Resumeonly committedsuccessfulchunks plus neverstartednextchunk. Startedmissingreceipt/failure/ambiguousbudget =>INCONCLUSIVE; unfinishedchunk noautoretry.",
+    "Full7 strictterminalentry/Hselfinclusion/qH<1/qF<1/publicupper<1/domain(-1,1); yindex5>.9 andgoalxindex6>.9. Entry6144 iscertifiedupperbound, notfirstescape/firstentry. Censusdependency tieslocalroot toglobaluniquehigh, notnew1030 verification.",
+    "Single exactreal continuation theorem; no native/libm/primitivequantizationirrelevance/globalbasin/escapeonsetformula/originalcap160/fullEngine inference. Reboot timinghumanUNKNOWN; partialchunks saved, no completionguarantee.",
+    "R081closed3/4; newnative/LLM/Cloud/API/install/poller/globalconfig/force0. Session-neededAstra mathreviewonly, effectiveUNKNOWN; GPGinput notifyifobserved; DotactualreplyNOTOBSERVED."
+  ],
+  "required_constraints": [
+    "One above_near sample scorehex0x1.277babda5a221p-5 drivehex0x1.277babda5a221p-3; samefirstON network8 ordered7/kernel/p0=.5 exactliftedbinary64 F=(1-d)I+dH.",
+    "Accepted oldreal2048 proof dependency reused, completeB2048 unchanged; old2048/census1030/native20000 notrerun. Unconditional F continuation ignores oldstop1848, does not alter thatresult.",
+    "Cap6144/new4096, Decimal80/grid30/Taylor96/cacheOFF; onecandidate/fixedterminal midpoint±exact1e-6/rootgrid31/all7weights1; no adaptivecap/radius/weights/precision or numericretry.",
+    "64fixed chunks64ticks ranges2049..6144; eachactual checker success externally observed and atomicreceipt+journal committed; trusted proof dependencies, not receiptJSON-only/hostattestation. Recheckpins/chain/coverage4096 and terminalproof beforeCERTIFIED.",
+    "Single absolute UTC deadline1800s includesproducer/checker/overhead/downtime; no rebootreset. Resumeonly committedsuccessfulchunks plus neverstartednextchunk. Startedmissingreceipt/failure/ambiguousbudget =>INCONCLUSIVE; unfinishedchunk noautoretry.",
+    "Full7 strictterminalentry/Hselfinclusion/qH<1/qF<1/publicupper<1/domain(-1,1); yindex5>.9 andgoalxindex6>.9. Entry6144 iscertifiedupperbound, notfirstescape/firstentry. Censusdependency tieslocalroot toglobaluniquehigh, notnew1030 verification.",
+    "Single exactreal continuation theorem; no native/libm/primitivequantizationirrelevance/globalbasin/escapeonsetformula/originalcap160/fullEngine inference. Reboot timinghumanUNKNOWN; partialchunks saved, no completionguarantee.",
+    "R081closed3/4; newnative/LLM/Cloud/API/install/poller/globalconfig/force0. Session-neededAstra mathreviewonly, effectiveUNKNOWN; GPGinput notifyifobserved; DotactualreplyNOTOBSERVED."
+  ],
+  "material_claims": [
+    {
+      "id": "binding",
+      "statement": "Same exactmodel/old2048 completeB2048/currenttarget/raw/source/census pins bound withoutoldrerun",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-real-escape-20261014-r03\\CHECK.actual.json",
+          "verification_status": "verified",
+          "verification_note": "Currentdirect checker/root executionevidence observed; oldtheorems andactualchunk receipts explicitlytrusteddependencies, nothostattestation"
+        }
+      ]
+    },
+    {
+      "id": "continuation",
+      "statement": "64 actuallyobserved conditionalchecks cover4096 contiguous transitions2049..6144 andcompose underfixedabsolute1800 deadline",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-real-escape-20261014-r03\\CHECK.actual.json",
+          "verification_status": "verified",
+          "verification_note": "Currentdirect checker/root executionevidence observed; oldtheorems andactualchunk receipts explicitlytrusteddependencies, nothostattestation"
+        }
+      ]
+    },
+    {
+      "id": "convergence",
+      "statement": "Samepoint all7 terminal strictentry/Hselfinclusion/publicqH/qF<1/highy-goal =>eventualhigh convergence andgeometricerrorbound",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-real-escape-20261014-r03\\CHECK.actual.json",
+          "verification_status": "verified",
+          "verification_note": "Currentdirect checker/root executionevidence observed; oldtheorems andactualchunk receipts explicitlytrusteddependencies, nothostattestation"
+        }
+      ]
+    },
+    {
+      "id": "guards",
+      "statement": "11 mutationpairs CONSISTENT and24 controls PASS; originalnumericcandidate1/native0",
+      "provenance": [
+        {
+          "locator": "D:\\codex\\리드\\ai-real-escape-20261014-r03\\test-root\\proof-result.json",
+          "verification_status": "verified",
+          "verification_note": "Currentdirect checker/root executionevidence observed; oldtheorems andactualchunk receipts explicitlytrusteddependencies, nothostattestation"
+        }
+      ]
+    }
+  ],
+  "cross_examination": {
+    "decision": "run",
+    "reason": "Oldcompleteproof/model/counterfactual/highindices andfixedradius sufficiency; reboot-chunk provenance/composition/budget hiddenpremises",
+    "trigger_items": [
+      {
+        "id": "T1",
+        "origin_reviewer": "/root/escape_math"
+      },
+      {
+        "id": "T2",
+        "origin_reviewer": "/root/escape_evidence"
+      }
+    ],
+    "selected_item_ids": [
+      "T1",
+      "T2"
+    ],
+    "coverage": [
+      {
+        "item_id": "T1",
+        "reviewer_ids": [
+          "/root/escape_evidence"
+        ]
+      },
+      {
+        "item_id": "T2",
+        "reviewer_ids": [
+          "/root/escape_math"
+        ]
+      }
+    ],
+    "followups": [
+      {
+        "reviewer_id": "/root/escape_evidence",
+        "item_ids": [
+          "T1"
+        ]
+      },
+      {
+        "reviewer_id": "/root/escape_math",
+        "item_ids": [
+          "T2"
+        ]
+      }
+    ]
+  },
+  "issue_ledger": [
+    {
+      "issue_id": "chunk-vs-deferred-wholecheck",
+      "status": "CONFIRMED",
+      "rationale": "Evidenceprefersdeferwholecheck forsmallersurface; mathconditionallysupportschunks forpartialpreservation. Rootselects64fixedchunks underunknownreboot toprogresshumanrequest. Currentactualexecutions/chain/guards/freshrootproof satisfybothconditionalduties; nocompletionguarantee/assertedhostattestation",
+      "required_evidence": [
+        "D:\\codex\\리드\\ai-real-escape-20261014-r03\\CHECK.actual.json",
+        "D:\\codex\\리드\\ai-real-escape-20261014-r03\\CHECK.actual.json.chunks\\complete-ledger.json"
+      ],
+      "available_evidence": [
+        "D:\\codex\\리드\\ai-real-escape-20261014-r03\\CHECK.actual.json",
+        "D:\\codex\\리드\\ai-real-escape-20261014-r03\\CHECK.actual.json.chunks\\complete-ledger.json"
+      ]
+    }
+  ],
+  "axis_decisions": [
+    {
+      "axis": "Provenance",
+      "decision": "Old2048 trusteddependency andfullB2048 samepoint closure, censusglobalidentity only",
+      "evidence_claim_ids": [
+        "binding"
+      ]
+    },
+    {
+      "axis": "Execution",
+      "decision": "64 fixedconditionalproofs actuallychecked; rootobservedjournal/chain/absolutebudget; noJSON-onlyattestation",
+      "evidence_claim_ids": [
+        "continuation"
+      ]
+    },
+    {
+      "axis": "Dynamics",
+      "decision": "Banachlocalbox pluscertifiedentry =>same trajectory eventuallyhigh, originalstop1848 unchanged",
+      "evidence_claim_ids": [
+        "convergence"
+      ]
+    },
+    {
+      "axis": "Verification",
+      "decision": "11 mutationpairs/24 controls;5 scoped files, noold/native science rerun",
+      "evidence_claim_ids": [
+        "guards"
+      ]
+    }
+  ],
+  "consensus_proposal": {
+    "status": "consensus",
+    "action": "Deliver single exact-real unconditional trajectory high-basin convergence after premature low stopping, with explicit observedchunk dependency/trust boundaries",
+    "supported_by_verified_claims": [
+      "binding",
+      "continuation",
+      "convergence",
+      "guards"
+    ],
+    "satisfied_constraints": [
+      "One above_near sample scorehex0x1.277babda5a221p-5 drivehex0x1.277babda5a221p-3; samefirstON network8 ordered7/kernel/p0=.5 exactliftedbinary64 F=(1-d)I+dH.",
+      "Accepted oldreal2048 proof dependency reused, completeB2048 unchanged; old2048/census1030/native20000 notrerun. Unconditional F continuation ignores oldstop1848, does not alter thatresult.",
+      "Cap6144/new4096, Decimal80/grid30/Taylor96/cacheOFF; onecandidate/fixedterminal midpoint±exact1e-6/rootgrid31/all7weights1; no adaptivecap/radius/weights/precision or numericretry.",
+      "64fixed chunks64ticks ranges2049..6144; eachactual checker success externally observed and atomicreceipt+journal committed; trusted proof dependencies, not receiptJSON-only/hostattestation. Recheckpins/chain/coverage4096 and terminalproof beforeCERTIFIED.",
+      "Single absolute UTC deadline1800s includesproducer/checker/overhead/downtime; no rebootreset. Resumeonly committedsuccessfulchunks plus neverstartednextchunk. Startedmissingreceipt/failure/ambiguousbudget =>INCONCLUSIVE; unfinishedchunk noautoretry.",
+      "Full7 strictterminalentry/Hselfinclusion/qH<1/qF<1/publicupper<1/domain(-1,1); yindex5>.9 andgoalxindex6>.9. Entry6144 iscertifiedupperbound, notfirstescape/firstentry. Censusdependency tieslocalroot toglobaluniquehigh, notnew1030 verification.",
+      "Single exactreal continuation theorem; no native/libm/primitivequantizationirrelevance/globalbasin/escapeonsetformula/originalcap160/fullEngine inference. Reboot timinghumanUNKNOWN; partialchunks saved, no completionguarantee.",
+      "R081closed3/4; newnative/LLM/Cloud/API/install/poller/globalconfig/force0. Session-neededAstra mathreviewonly, effectiveUNKNOWN; GPGinput notifyifobserved; DotactualreplyNOTOBSERVED."
+    ],
+    "axis_alignment": [
+      {
+        "axis": "Provenance",
+        "decision_ref": "Provenance"
+      },
+      {
+        "axis": "Execution",
+        "decision_ref": "Execution"
+      },
+      {
+        "axis": "Dynamics",
+        "decision_ref": "Dynamics"
+      },
+      {
+        "axis": "Verification",
+        "decision_ref": "Verification"
+      }
+    ],
+    "conditions": [],
+    "unresolved_dissent": [],
+    "no_consensus_reason": null,
+    "remaining_options": [],
+    "decision_owner": null
+  },
+  "observability": {
+    "wall_time": "NOT_OBSERVABLE",
+    "tokens": "NOT_OBSERVABLE",
+    "tool_calls": "NOT_OBSERVABLE",
+    "worker_count": 2
+  },
+  "method_notes": [
+    "MEDIUM blind2/crossonceeach, rootpartlyindependent; noJudge/reserve/specialist/workerfailure.",
+    "Session-neededAstra/high math1 andexistingSol6.1/high evidence1, caller-visibleeffectiveUNKNOWN; no globalmodelchange. Evidenceworker later separatelywriteschecker withoutproducerread, nonindependentimplementationreuse.",
+    "Evidenceprefersdeferredwholecheck; mathsupportsconditionalchunks. Rootresolvedexecutionchoiceusinghumancontinuedtask/reboottimeUNKNOWN andexplicitimmutablejournals/deadline/noautoretry. Preferenceisnotanunresolvedtruthclaim.",
+    "One fixedcandidate/cap6144/radius1e-6/weights1/cacheOFF; actual64chunks*64 newtransitions; old2048/census1030 trustedreuse no recalculation. Freshsamepointrootproof checkedafterallreceipts.",
+    "Three externalharness/inputerrors preserved andcorrected; no scientific candidate retry.11successfulmutationpairs notrepeated; failednegativecontrolharness rerun afterimportfix.",
+    "Partialproofs survivecompletedchunk boundary only; starteduncommittedrange failclosed. UTCabsolute1800 notreset, downtimeincluded; nohostattestation/process-tree timeout claim.",
+    "Dot originalreply NOTOBSERVED; prior1bb delivered/received, reportpeerNOT_SENT; no newquestion/transport/R081native/Cloud/API/install/poller/globalchanges."
+  ]
+}
