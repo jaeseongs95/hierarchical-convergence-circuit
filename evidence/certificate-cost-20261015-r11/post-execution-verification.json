@@ -1,0 +1,14 @@
+{
+  "schema": "HCCCertificateCostPostcheck.v1",
+  "effective_contract_sha256": "87f4185b70225c249e79711b7b59a4828b5643eb156940fee2bf57c080943ed0",
+  "pre_custody_contract_sha256": "51cadb8d681ce9240131d07e89e7f799216803b2654d8feff4ff1d22cbcb2df7",
+  "precheck_document_sha256": "301ca45b568d623bd40a357d918ca3afd92899b4e0b978cb221fa901e0e2015b",
+  "precheck_hash_is_historical_not_current_effective_contract": true,
+  "all_code_pins_exact_across_custody_amendment": true,
+  "current_worktree_code_pins_exact": true,
+  "transport_only_change": ".gitattributes one exact LF rule for new launcher; restored original pinned launcher bytes",
+  "actual_verification_sha256": "8a3c3b331cff6f598645fe914c6b7b19c43b968146a1da8e35a3b79f2b8f9e97",
+  "same_success_certificate": true,
+  "all_C1_predicates_checked": 323,
+  "utc": "2026-10-15T04:16:46.784Z"
+}

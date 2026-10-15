@@ -1,0 +1,12 @@
+{
+  "schema": "HCCCertificateCostRawBundle.v1",
+  "path": "evidence/certificate-cost-20261015-r11/raw.zip",
+  "bytes": 25169734,
+  "sha256": "c1abe5e056e18f00cee3ddefbedd253f125d6e106fc03c7ee0ebb5891f7c1bc4",
+  "files": 16757,
+  "inventory_sha256": "ed90021b87d2b462902c3d1ca8e3b7c6a300c2d45c1d185da5e53479913b3451",
+  "all_members_crc_hash_size_checked": true,
+  "failure_record_limit": "prelaunch exec failure is a cooperative recorded summary, not a separate original raw terminal receipt",
+  "later_delivery_acceptance_not_in_archive": true,
+  "utc": "2026-10-15T04:18:03.950Z"
+}

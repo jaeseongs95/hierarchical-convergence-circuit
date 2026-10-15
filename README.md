@@ -53,3 +53,5 @@ R048/R049의 루트 실행기·README·manifest는 설치된 release의 상속·
 정리 작업의 신규 plan·전체 파일 해시 대조·구조 검산·마지막 회귀시험은
 `HCR-Evidence/repository-layout/layout-v3-*/`에 저장한다.
 기존 symlink 환경 skip은 pass로 바꾸지 않고, 이전 성공 기록과 같은 항목/사유인지 비교한다.
+
+- [동일 graph 인증 비용 대조(r11)](evidence/certificate-cost-20261015-r11/report.ko.md)
