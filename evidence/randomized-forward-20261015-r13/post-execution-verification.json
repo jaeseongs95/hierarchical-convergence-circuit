@@ -1,0 +1,53 @@
+{
+  "schema": "HCCRandomizedForwardPostcheck.v1",
+  "status": "PASS_INTEGRITY_ONLY",
+  "source_pins_exact": 18,
+  "verification_status": "PASS_INTEGRITY_ONLY",
+  "all4quality": false,
+  "wholecost_win": false,
+  "code_unchanged_after_draw": true,
+  "original_predicate_occurrences": 323,
+  "unique_original_predicates": 323,
+  "common_full7_equalities": 13847,
+  "verification_body_seconds": 410.9614882,
+  "verification_supervision_seconds": 411.5874014,
+  "charged_highres_wall_seconds": 6418.0067357,
+  "cap_seconds": 6900,
+  "exceeded": false,
+  "all_recorded_jobs_inactive": true,
+  "jobs": 11,
+  "scientific_retries": 0,
+  "coverage_by_variant": {
+    "C0": {
+      "planned": 2,
+      "attempted": 2,
+      "complete": 0,
+      "certified": 0,
+      "evaluated": 2,
+      "candidate_correct": 0,
+      "inside": 0,
+      "nominal_policy_cap_seconds": 1575,
+      "observed_spend_seconds": [
+        1575.0119214,
+        1575.0037498
+      ],
+      "completed_cost_mean_seconds": null
+    },
+    "C1": {
+      "planned": 2,
+      "attempted": 2,
+      "complete": 1,
+      "certified": 1,
+      "evaluated": 2,
+      "candidate_correct": 1,
+      "inside": 1,
+      "nominal_policy_cap_seconds": 1575,
+      "observed_spend_seconds": [
+        1276.7825306,
+        1575.0027715
+      ],
+      "completed_cost_mean_seconds": null
+    }
+  },
+  "utc": "2026-10-15T08:37:47.294Z"
+}

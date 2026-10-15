@@ -57,3 +57,5 @@ R048/R049의 루트 실행기·README·manifest는 설치된 release의 상속·
 - [동일 graph 인증 비용 대조(r11)](evidence/certificate-cost-20261015-r11/report.ko.md)
 
 - [동일 graph 전진 시간·C 전체 비용 교차 대조(r12)](evidence/forward-crossover-20261015-r12/report.ko.md)
+
+- [무작위 반복·전진 CPU 회계와 C 전체 비용(r13)](evidence/randomized-forward-20261015-r13/report.ko.md)
