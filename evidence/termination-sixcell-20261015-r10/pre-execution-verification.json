@@ -1,0 +1,29 @@
+{
+  "schema": "HCCPreExecutionVerification.v1",
+  "utc": "2026-10-15T01:23:29.607Z",
+  "source_pins_unchanged": true,
+  "self_test": {
+    "outcome": "24pass_1timing_failure",
+    "sha256": "b2c95a4bb3f4e1552105db7fef2e14aab7fc34a48da25a70f47112ff28677d4c",
+    "original_phase_cap_seconds": 0.8,
+    "failed_tick": 4,
+    "expected_pending_tick": 16,
+    "not_25_PASS": true
+  },
+  "timing_discriminator": {
+    "outcome": "PASS_synthetic_only",
+    "sha256": "f1e840b8d265243ca8aa43f1280235d3b396bc3032d4ec6d87113d9122b20977",
+    "only_synthetic_pending_cap_changed_to": 5,
+    "original_production_bytes_unchanged": true,
+    "first_fixture_preparation_failure_preserved": true
+  },
+  "guard": {
+    "result": "PASS_nested_owned_Jobs",
+    "sha256": "2dc1697c70fd3a1b94018fa45d746bdc869cdefef008eded894ad00698df7800",
+    "outer_deadline_itself_not_tested_for6900seconds": true,
+    "termination_confirmation_not_guaranteed_after_global_deadline": true
+  },
+  "root_disposition": "time-dependent test precondition diagnosed; fixed real6cell code/pins/caps preserved; proceed once; fullsuite failure not relabeled as PASS",
+  "cross_review": "validity reviewer read guard and original selftest; externalguard fairness no blocker; partial/denominator and wall overruns explicit",
+  "dot_original_answer": "NOT_OBSERVED"
+}

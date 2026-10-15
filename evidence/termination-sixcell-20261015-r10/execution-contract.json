@@ -1,0 +1,103 @@
+{
+  "schema": "HCCTerminationSixCellExecution.v1",
+  "status": "FROZEN_BEFORE_FIRST_CELL",
+  "frozen_utc": "2026-10-15T01:21:08.099Z",
+  "base_commit": "0adb9d359d680d029ec636afbf5e505723e6d7ee",
+  "plan_sha256": "09fce49f6d4e3e517b5b00a746f0d74d9964c9ee90a3950bc9b24bc5ccc5e958",
+  "implementation_sha256": "5efe99b923bdde001d85e18a0b4366d8adc689cdcfb0dcdc9793a7828f45aa30",
+  "source_pins": [
+    {
+      "path": "experiments/exp-62-top-down/termination-policy-comparison-plan-20261015.json",
+      "sha256": "09fce49f6d4e3e517b5b00a746f0d74d9964c9ee90a3950bc9b24bc5ccc5e958",
+      "bytes": 14381
+    },
+    {
+      "path": "tools/analysis/termination_compare_core.py",
+      "sha256": "73f496600b86eae3681d912a2853a313212ffeb416b6d3f87a70394b077d88c1",
+      "bytes": 9591
+    },
+    {
+      "path": "tools/analysis/test_termination_comparison.py",
+      "sha256": "60a194bc40cb9472065494adb0ea6ebcbd44587c3578ebe86ce4594c8e77d068",
+      "bytes": 22389
+    },
+    {
+      "path": "tools/analysis/termination_compare_runner.py",
+      "sha256": "ffed8c533a83639ebd28093de5607920421c17cd4d65d3f90a764cca70a9ffcc",
+      "bytes": 29644
+    },
+    {
+      "path": "tools/analysis/check_termination_comparison.py",
+      "sha256": "b4a8d84510bc295e39f5a7ba67e68c37a2d4dbd24500a73cc1e60268de20abe7",
+      "bytes": 11036
+    },
+    {
+      "path": "Run-HCR-Termination-Comparison.cmd",
+      "sha256": "a9d6edf6cf68ed8b18e73c7064a7f563bdeae3ee3a81319bac95c0c8f56edeca",
+      "bytes": 385
+    },
+    {
+      "path": "experiments/exp-62-top-down/termination-comparison-implementation-20261015.json",
+      "sha256": "5efe99b923bdde001d85e18a0b4366d8adc689cdcfb0dcdc9793a7828f45aa30",
+      "bytes": 6087
+    }
+  ],
+  "guard_sha256": "98ee79e931555771cf7f6accd2183f995a0d7394aeb5b49e5add15cc5f9f97e8",
+  "user_authorization": "2026-10-15 current direct request: actual6cells and workunit GPGcommit/push",
+  "sequence": [
+    "180/L",
+    "180/F",
+    "180/C",
+    "1800/C",
+    "1800/F",
+    "1800/L"
+  ],
+  "global_seconds": 6900,
+  "policy_seconds": [
+    180,
+    1800
+  ],
+  "evaluation_seconds_per_cell": 120,
+  "cleanup_seconds_per_cell": 10,
+  "setup_seconds": 180,
+  "cold_start": true,
+  "scientific_attempts_per_cell": 1,
+  "precision_radius_cadence_changes": false,
+  "automatic_retry": false,
+  "cell_job_committed_limit_bytes": 536870912,
+  "outer_job": "KILL_ON_JOB_CLOSE only; no aggregate memory ceiling",
+  "global_watchdog": "outer before-launch6900 seconds covers study coordinator and all descendants; earlier than inner6900 by acquisition overhead",
+  "physical_overrun": "termination requested at deadline; actual wall/cleanup overrun remains a violation, no extra science allowance or hard realtime guarantee",
+  "outer_counters": "includes inner tree; do not sum with per-cell CPU/peak",
+  "input_world": "setup pins complete publicinput/model/processed and independently authored allopen syntheticworld before first arm; world evaluator-only after seal",
+  "same_graph": "first old ON above_near graph, exact real7 model; source-bound sequential new orbit per arm, not native Engine",
+  "metrics": {
+    "denominators": {
+      "all": 6,
+      "per_budget": 3,
+      "per_policy_per_budget": 1
+    },
+    "eligible": "evaluation present, status not MEASUREMENT_FAILURE/CLEANUP_NOT_CONFIRMED/NOT_RUN/INCONCLUSIVE",
+    "coverage": "eligible answered/planned; raw diagnostic separately; timeout last-complete eligible when evaluation completes",
+    "conditional_accuracy": "eligible correct/eligible answered; null if noanswers",
+    "correct_over_planned": "eligible correct/planned",
+    "adoption": "NOT_MEASURED",
+    "full_engine_accuracy": "NOT_ESTABLISHED",
+    "independent_discovery_samples": 0
+  },
+  "predictions": {
+    "P1": "L actual heuristic stop and distanceOUTSIDE only; timeout not refutation",
+    "P2": "each C CERTIFIED requires distanceINSIDE and local recheck; no certifications => untested",
+    "P3": "both budgets paired C vsL/F correct/abstain/wrong, no successful-budget selection",
+    "P4": "quality/evaluability no worse and actual policywall lower; ticks alone insufficient"
+  },
+  "limits": [
+    "one selected graph; one authored allopen world; no negativecases/generalaccuracy/statisticalsignificance",
+    "fixedorder hostload/temperatureconfounded; no extra runs",
+    "sharednumericchecker and trusted old6144 anchor; no independentfullprefixreplay",
+    "partialgraphfalse requirescoverage; no hostcorrection/adoption/proof expansion"
+  ],
+  "on_global_stop": "preserve current raw/progress and all6denominator, reconstruct missing slots offline, never resume/retry",
+  "dot_original_advice": "NOT_OBSERVED in two latest coordinator turns; wholehistory not proven absent",
+  "on_dot_reply": "verify originalsourcebinding then dated amendment; never silently change active frozenstudy"
+}

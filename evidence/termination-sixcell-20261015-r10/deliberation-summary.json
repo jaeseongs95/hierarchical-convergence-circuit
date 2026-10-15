@@ -1,0 +1,56 @@
+{
+  "schema": "HCCDeliberationSummary.v1",
+  "level": "MEDIUM",
+  "execution_assurance": "degraded_ok",
+  "assurance": "partially_independent",
+  "coordination": "root integration, direct installed skills; no guarded workflow claim",
+  "reviewers": [
+    {
+      "id": "/root/sixcell_validity_r10",
+      "failure_function": "construct/statistical denominators and claim bounds"
+    },
+    {
+      "id": "/root/sixcell_budget_r10",
+      "failure_function": "process supervision/physical budget contract"
+    }
+  ],
+  "blind_round1": true,
+  "fork_turns": "none",
+  "model_effort": "inherited; actual runtime model/effort UNKNOWN",
+  "cross_examination": {
+    "executed": true,
+    "trigger": "singleview globalcoordinator supervision gap and fairness of new guard",
+    "coverage": "budgetreviewer checks validitydenominators; validityreviewer checks outerguard effects",
+    "resolution": "kill-only outerJob prevents newaggregate512MiB restriction; all6offlineaggregate preserves incomplete; deadlineoverrun explicit"
+  },
+  "source_verified": [
+    "runner.py lines94-220,313-494",
+    "checker.py lines68-177",
+    "plan exacthash and implementationpins"
+  ],
+  "guard_platform_test": {
+    "path": "GUARD-SELF-TEST.actual.json",
+    "sha256": "2dc1697c70fd3a1b94018fa45d746bdc869cdefef008eded894ad00698df7800",
+    "result": "PASS nestedJobs,outerkillonly,inner512MiB,childtimeoutactive0"
+  },
+  "consensus_proposal": "conditional_consensus",
+  "conditions": [
+    "freeze exactpins",
+    "singlecoldattempt6",
+    "no resulttuning/retry",
+    "separate diagnostic/eligible/adoption",
+    "outertermination and no false6900compliance"
+  ],
+  "material_unresolved": [
+    "actualoutcomesunknownbeforeexecution",
+    "Dot originalanswerNOT_OBSERVED"
+  ],
+  "fresh_judge": false,
+  "reserve_used": false,
+  "specialist_used": false,
+  "formal_evaluation_validity_audit": "NOT_PERFORMED: simulation study source review; no skill/model quality or release gate claim",
+  "failures": [
+    "first shellread blocked by sessionboardhook; boardupdated before mutations; no science launched"
+  ],
+  "no_raw_transcripts_or_host_attestation": true
+}
