@@ -1,0 +1,64 @@
+{
+  "schema": "HCCDeliberationSummary.v1",
+  "risk": "MEDIUM",
+  "execution_assurance": "degraded_ok",
+  "participants": [
+    {
+      "agent": "/root/forward_mechanisms_r13",
+      "role": "performance/measurement"
+    },
+    {
+      "agent": "/root/randomization_validity_r13",
+      "role": "randomization/budget"
+    }
+  ],
+  "blind": "two fresh fork_turns:none, readonly, no redelegation; each one conditional cross; coordinator integration",
+  "assurance": "partially_independent; later source followups reused same reviewers, not independent audit",
+  "actual_model_effort": "UNKNOWN inherited; no explicit model override",
+  "judge": null,
+  "reserve": null,
+  "specialist": null,
+  "consensus": [
+    "two independent blocked bit orders; no forced opposite ordering",
+    "same four1575/total6900/noF/noextra math",
+    "native rawCPU/cycles windows separate forwardpipeline andcertificate, unavailable explicit, residual unclipped",
+    "no hardware/frequency/descheduling-only claim; no host normalization, no historical correction",
+    "all4 quality/fullverification required wholecost descriptive outcome"
+  ],
+  "cross_triggers": [
+    "mixedforwardwindowscope/CPUalias andcost",
+    "drawfinalsource/debitcustody/no-redraw"
+  ],
+  "cross_resolution": [
+    "exact window and commonprefix boundaries; windows not samples; null auxiliary does notinvalidate QPC",
+    "immutable protocolfinalcodepins then1draw; receiptthroughclose debit; actualwatchdog reduced6900-debit"
+  ],
+  "source_findings": [
+    {
+      "issue": "draw debit raw timing not bound",
+      "resolution": "pinned timing rawQPC exact calculation checked"
+    },
+    {
+      "issue": "predraw protocol code pins not bound",
+      "resolution": "protocol codepins equals runtimecontract codepins"
+    },
+    {
+      "issue": "partial file count could mean completed windows",
+      "resolution": "renamed saved files notvalidated complete"
+    },
+    {
+      "issue": "inherited verification timer excludes supplement",
+      "resolution": "fullbody timer now includes supplement, old timer separatelynamed"
+    }
+  ],
+  "remaining_unknowns": [
+    "runtime variation underlyingcause",
+    "no independent proof of no discarded entropy outside observedrun"
+  ],
+  "dot": {
+    "original_question_id": "5f9cb043-ea81-42f1-87de-72faeebf5973",
+    "latest_one_turn_read": "no source-bound graph research advice observed; hasMore true",
+    "unknown_delivery_not_resent": true
+  },
+  "utc": "2026-10-15T06:46:55.895Z"
+}

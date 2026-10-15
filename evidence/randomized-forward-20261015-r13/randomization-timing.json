@@ -1,0 +1,9 @@
+{
+  "schema": "HCCDrawDebit.v1",
+  "draw_sha256": "0b5557529e73d2edd2e4a57417a4ded65b95fdf60584e8434292cfb6fde0a9cd",
+  "before_entropy_qpc_ns": 59698754362000,
+  "after_draw_receipt_qpc_ns": 59698767223600,
+  "debit_seconds": 0.0128616,
+  "boundary": "before entropy through closing immutable draw receipt; timing attestation and contract preparation outside draw interval",
+  "actual_watchdog_debit": true
+}

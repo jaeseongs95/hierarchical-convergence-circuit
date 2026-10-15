@@ -1,0 +1,20 @@
+{
+  "schema": "HCCRandomizedForwardPrecheck.v1",
+  "status": "PASS",
+  "contract_sha256": "3f88c7848e7855348a12b576b20540a37e6e44b01ce217c537d8276ba47262a9",
+  "code_pins": 18,
+  "old_tests": 5,
+  "new_tests": 14,
+  "science_cells_started": 0,
+  "engineering_proof": "CONSISTENT final isolated signed-residual clip mutation red/green",
+  "engineering_proof_sha256": "136f59cec5cd7fe9cb8095be1239bbee4c05a2ce494ecd438920381bf8ed1416",
+  "initial13testproof": "retained superseded after receiptbinding fixes; not current proof",
+  "actual_order": [
+    "C1",
+    "C0",
+    "C0",
+    "C1"
+  ],
+  "draw_debit_seconds": 0.0128616,
+  "utc": "2026-10-15T06:46:55.926Z"
+}

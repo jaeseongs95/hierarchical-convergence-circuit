@@ -9,3 +9,4 @@
 Run-HCR-Termination-Comparison.cmd text eol=lf
 Run-HCR-Certificate-Cost.cmd text eol=lf
 Run-HCR-Forward-Crossover.cmd text eol=lf
+Run-HCR-Randomized-Forward.cmd text eol=lf

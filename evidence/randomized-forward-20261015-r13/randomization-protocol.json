@@ -1,0 +1,138 @@
+{
+  "schema": "HCCBlockedRandomizationProtocol.v1",
+  "code_pins": [
+    {
+      "path": "experiments/exp-62-top-down/termination-policy-comparison-plan-20261015.json",
+      "sha256": "09fce49f6d4e3e517b5b00a746f0d74d9964c9ee90a3950bc9b24bc5ccc5e958",
+      "bytes": 14381
+    },
+    {
+      "path": "tools/analysis/termination_compare_core.py",
+      "sha256": "73f496600b86eae3681d912a2853a313212ffeb416b6d3f87a70394b077d88c1",
+      "bytes": 9591
+    },
+    {
+      "path": "tools/analysis/test_termination_comparison.py",
+      "sha256": "60a194bc40cb9472065494adb0ea6ebcbd44587c3578ebe86ce4594c8e77d068",
+      "bytes": 22389
+    },
+    {
+      "path": "tools/analysis/termination_compare_runner.py",
+      "sha256": "ffed8c533a83639ebd28093de5607920421c17cd4d65d3f90a764cca70a9ffcc",
+      "bytes": 29644
+    },
+    {
+      "path": "tools/analysis/check_termination_comparison.py",
+      "sha256": "b4a8d84510bc295e39f5a7ba67e68c37a2d4dbd24500a73cc1e60268de20abe7",
+      "bytes": 11036
+    },
+    {
+      "path": "Run-HCR-Termination-Comparison.cmd",
+      "sha256": "a9d6edf6cf68ed8b18e73c7064a7f563bdeae3ee3a81319bac95c0c8f56edeca",
+      "bytes": 385
+    },
+    {
+      "path": "experiments/exp-62-top-down/termination-comparison-implementation-20261015.json",
+      "sha256": "5efe99b923bdde001d85e18a0b4366d8adc689cdcfb0dcdc9793a7828f45aa30",
+      "bytes": 6087
+    },
+    {
+      "path": "tools/analysis/termination_certificate_cost.py",
+      "sha256": "1e3a8f26b901fda9834f03b5b470e9bac8d0045525f9bc4734180573b5c64beb",
+      "bytes": 12380
+    },
+    {
+      "path": "tools/analysis/test_certificate_cost.py",
+      "sha256": "32d9ba79744759d0ac468e672a661b8b0abf9287c63bc429c45440e154af08a0",
+      "bytes": 9468
+    },
+    {
+      "path": "Run-HCR-Certificate-Cost.cmd",
+      "sha256": "ec05adb6ab6a8badb6d76d24db98ee664e3fa3440efda4c9df7408855492449b",
+      "bytes": 375
+    },
+    {
+      "path": "evidence/certificate-cost-20261015-r11/execution-contract.json",
+      "bytes": 5949,
+      "sha256": "87f4185b70225c249e79711b7b59a4828b5643eb156940fee2bf57c080943ed0"
+    },
+    {
+      "path": "tools/analysis/termination_forward_crossover.py",
+      "bytes": 16929,
+      "sha256": "0940b99201dee994902e59af2577ba6487cf2d28d35bb8e17f2d30243b0ad97a"
+    },
+    {
+      "path": "tools/analysis/test_forward_crossover.py",
+      "bytes": 14336,
+      "sha256": "c66641426a10ae7b26a555668efaeee497c25912456d12e5bc833fa048e11d9a"
+    },
+    {
+      "path": "Run-HCR-Forward-Crossover.cmd",
+      "bytes": 292,
+      "sha256": "3ce83cead15111a30b84202326fc70a6ba9418ba85e85af51f0f809a759d77f5"
+    },
+    {
+      "path": "evidence/forward-crossover-20261015-r12/execution-contract.json",
+      "bytes": 7874,
+      "sha256": "352c9d7afec469e6580752e6370e2d9ab5e1676fd362f55e007f00f39aa6f0b4"
+    },
+    {
+      "path": "tools/analysis/termination_randomized_forward.py",
+      "bytes": 10156,
+      "sha256": "5ff741ae394a8279fd064b2cd7695e2e922e14eedca063ee5f201245904ebc58"
+    },
+    {
+      "path": "tools/analysis/test_randomized_forward.py",
+      "bytes": 10868,
+      "sha256": "aff5796e5153773456b6bd167791d0aefb7dc3dde9b2a34728545811da93c079"
+    },
+    {
+      "path": "Run-HCR-Randomized-Forward.cmd",
+      "bytes": 293,
+      "sha256": "58344be5ab457bfa05684f38b478bc0e40f0c1faf420e85f6bd00999ffde9150"
+    }
+  ],
+  "freeze_utc": "2026-10-15T06:46:55.849Z",
+  "allocation_space": [
+    [
+      "C0",
+      "C1",
+      "C0",
+      "C1"
+    ],
+    [
+      "C1",
+      "C0",
+      "C0",
+      "C1"
+    ],
+    [
+      "C0",
+      "C1",
+      "C1",
+      "C0"
+    ],
+    [
+      "C1",
+      "C0",
+      "C1",
+      "C0"
+    ]
+  ],
+  "entropy": "one os.urandom(32); first byte bit0=block1, bit1=block2; 0=C0,C1; 1=C1,C0",
+  "acceptance": "single draw, no rejection/no redraw regardless of result; no host-load-based launch selection",
+  "wholecost": "fourcomplete+allquality+fullverification; then mean of two adjacent C1-C0<0, descriptive only",
+  "reservations_seconds": 6860,
+  "outer_cap_seconds": 6900,
+  "draw_debit_from_unallocated40": true,
+  "CPU_windows": "start before first advance/stride128 boundary; end before cert; include persistence/history/wrappers. certificate separate excludes subsequent gate bookkeeping",
+  "common_prefix": "allfour have immutable complete window at same tick; NOT_RUN means no allfour prefix; open windows partial",
+  "diagnostics": "signed forward-window wall minus mainthreadCPU; whole residual is accounting remainder; no statistical window samples",
+  "forbidden": [
+    "redraw",
+    "extra numeric probe",
+    "GC/power/priority/affinity changes",
+    "posthoc host adjustment",
+    "historical runtime correction"
+  ]
+}

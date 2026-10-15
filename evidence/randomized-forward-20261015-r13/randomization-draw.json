@@ -1,0 +1,14 @@
+{
+  "schema": "HCCBlockedDraw.v1",
+  "protocol_sha256": "502aa75873722f994d65f3e53785de05934a18fd33b2875789d2905bab8d6bf8",
+  "seed_hex": "99d535d32dfc3e4d383260b4493ee4825b65b0e6dedd0efa4d4615798ce5b4f6",
+  "order": [
+    "C1",
+    "C0",
+    "C0",
+    "C1"
+  ],
+  "source": "os.urandom(32)",
+  "generated_utc": "2026-10-15T06:46:55.862Z",
+  "coordinator_statement": "exactly one entropy draw in this work; external proof of no discarded prior draws unavailable"
+}
