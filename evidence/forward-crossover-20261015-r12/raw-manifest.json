@@ -1,0 +1,11 @@
+{
+  "schema": "HCCForwardRawBundle.v1",
+  "path": "evidence/forward-crossover-20261015-r12/raw.zip",
+  "bytes": 23069124,
+  "sha256": "46f8262e0af428db58bbe8486a4d231da16c6612e78d5c1819214b919e15eb7d",
+  "files": 21050,
+  "inventory_sha256": "8e658bd486f70ba7e29860811f1f5b726bd7f806720ac90b13e5b905cd1fc6dc",
+  "all_members_crc_hash_size_checked": true,
+  "later_delivery_acceptance_not_in_archive": true,
+  "utc": "2026-10-15T06:23:25.838Z"
+}
