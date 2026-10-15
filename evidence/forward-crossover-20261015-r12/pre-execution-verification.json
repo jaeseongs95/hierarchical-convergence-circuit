@@ -1,0 +1,21 @@
+{
+  "schema": "HCCForwardPrecheck.v1",
+  "status": "PASS",
+  "contract_sha256": "352c9d7afec469e6580752e6370e2d9ab5e1676fd362f55e007f00f39aa6f0b4",
+  "code_pins_verified": 14,
+  "old_analytic_tests": 5,
+  "current_tests": 7,
+  "test_mutation": "CONSISTENT actual red then green, primary QPC->legacy substitution",
+  "engineering_proof_sha256": "58ab588182a8e9432ad1d132922c146763a91642b4af6812168c22230b146e5f",
+  "test_candidate_sources_match": true,
+  "historical_initial_engineering_receipt": "retained for pre-review candidate, superseded by final proof; not claimed current",
+  "source_followup_findings_addressed": 2,
+  "scientific_cells_started": 0,
+  "actual_order": [
+    "C0",
+    "C1",
+    "C1",
+    "C0"
+  ],
+  "utc": "2026-10-15T04:41:46.454Z"
+}

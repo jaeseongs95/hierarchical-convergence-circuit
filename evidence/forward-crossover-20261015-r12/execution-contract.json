@@ -1,0 +1,191 @@
+{
+  "schema": "HCCForwardCrossoverContract.v1",
+  "revision": 1,
+  "source_commit": "f12b01f62df30e1519040cf74f885e73b3ea58b8",
+  "plan_sha256": "09fce49f6d4e3e517b5b00a746f0d74d9964c9ee90a3950bc9b24bc5ccc5e958",
+  "implementation_sha256": "5efe99b923bdde001d85e18a0b4366d8adc689cdcfb0dcdc9793a7828f45aa30",
+  "code_pins": [
+    {
+      "path": "experiments/exp-62-top-down/termination-policy-comparison-plan-20261015.json",
+      "sha256": "09fce49f6d4e3e517b5b00a746f0d74d9964c9ee90a3950bc9b24bc5ccc5e958",
+      "bytes": 14381
+    },
+    {
+      "path": "tools/analysis/termination_compare_core.py",
+      "sha256": "73f496600b86eae3681d912a2853a313212ffeb416b6d3f87a70394b077d88c1",
+      "bytes": 9591
+    },
+    {
+      "path": "tools/analysis/test_termination_comparison.py",
+      "sha256": "60a194bc40cb9472065494adb0ea6ebcbd44587c3578ebe86ce4594c8e77d068",
+      "bytes": 22389
+    },
+    {
+      "path": "tools/analysis/termination_compare_runner.py",
+      "sha256": "ffed8c533a83639ebd28093de5607920421c17cd4d65d3f90a764cca70a9ffcc",
+      "bytes": 29644
+    },
+    {
+      "path": "tools/analysis/check_termination_comparison.py",
+      "sha256": "b4a8d84510bc295e39f5a7ba67e68c37a2d4dbd24500a73cc1e60268de20abe7",
+      "bytes": 11036
+    },
+    {
+      "path": "Run-HCR-Termination-Comparison.cmd",
+      "sha256": "a9d6edf6cf68ed8b18e73c7064a7f563bdeae3ee3a81319bac95c0c8f56edeca",
+      "bytes": 385
+    },
+    {
+      "path": "experiments/exp-62-top-down/termination-comparison-implementation-20261015.json",
+      "sha256": "5efe99b923bdde001d85e18a0b4366d8adc689cdcfb0dcdc9793a7828f45aa30",
+      "bytes": 6087
+    },
+    {
+      "path": "tools/analysis/termination_certificate_cost.py",
+      "sha256": "1e3a8f26b901fda9834f03b5b470e9bac8d0045525f9bc4734180573b5c64beb",
+      "bytes": 12380
+    },
+    {
+      "path": "tools/analysis/test_certificate_cost.py",
+      "sha256": "32d9ba79744759d0ac468e672a661b8b0abf9287c63bc429c45440e154af08a0",
+      "bytes": 9468
+    },
+    {
+      "path": "Run-HCR-Certificate-Cost.cmd",
+      "sha256": "ec05adb6ab6a8badb6d76d24db98ee664e3fa3440efda4c9df7408855492449b",
+      "bytes": 375
+    },
+    {
+      "path": "evidence/certificate-cost-20261015-r11/execution-contract.json",
+      "bytes": 5949,
+      "sha256": "87f4185b70225c249e79711b7b59a4828b5643eb156940fee2bf57c080943ed0"
+    },
+    {
+      "path": "tools/analysis/termination_forward_crossover.py",
+      "bytes": 16929,
+      "sha256": "0940b99201dee994902e59af2577ba6487cf2d28d35bb8e17f2d30243b0ad97a"
+    },
+    {
+      "path": "tools/analysis/test_forward_crossover.py",
+      "bytes": 14336,
+      "sha256": "c66641426a10ae7b26a555668efaeee497c25912456d12e5bc833fa048e11d9a"
+    },
+    {
+      "path": "Run-HCR-Forward-Crossover.cmd",
+      "bytes": 292,
+      "sha256": "3ce83cead15111a30b84202326fc70a6ba9418ba85e85af51f0f809a759d77f5"
+    }
+  ],
+  "order_seed": "d26679847a76bdc6cd5173cc52ac249f",
+  "order_selection": "Python random.Random(seed).choice of ABBA/BAAB before any study arithmetic",
+  "sequential_order": [
+    "C0",
+    "C1",
+    "C1",
+    "C0"
+  ],
+  "cell_ids": [
+    "01-C0",
+    "02-C1",
+    "03-C1",
+    "04-C0"
+  ],
+  "per_cell_policy_seconds": 1575,
+  "per_cell_evaluation_seconds": 10,
+  "per_cell_shared_cleanup_seconds": 10,
+  "setup_worker_seconds": 20,
+  "setup_cleanup_seconds": 10,
+  "verification_seconds": 450,
+  "outer_global_seconds": 6900,
+  "reservations_seconds": 6860,
+  "unallocated_seconds": 40,
+  "unused_budget_reallocation": false,
+  "cold_x0_process_per_cell": true,
+  "scientific_retries": 0,
+  "planned_denominator": 4,
+  "repeat_count_per_variant": 2,
+  "F_rerun": false,
+  "numerical_input_fields": [
+    "model",
+    "current_x_box",
+    "radius_x_exact",
+    "epsilon_p_exact"
+  ],
+  "model_grid_cadence_epsilon_radius_tickcap": "unchanged r09 input recipe; 6144 /16 /grid30 /1e-6 /1e-5",
+  "policy": "original r11 C0/C1 arithmetic and strict residual negative filter, default GC unchanged; cache0",
+  "information_barrier": "policy does not read old trajectory/result/anchor/world, clock or host values never enter numerical helper namespace",
+  "observer": "same passive Observer both arms; nested numeric wrapper, GC callbacks; stride128 boundary after preceding cadence; no extra arithmetic probe",
+  "primary_wholecost": "QPC around full owned policy phase including launch, process work, final trace, cleanup/check/report; highres-supervision file after bracket is shared overhead",
+  "primary_phase_wall": "perf_counter_ns callback body; numerical nested, GC nested, no double sum",
+  "legacy_phase_wall": "monotonic_ns same callback but wider clock-read bracket; legacy-QPC includes read skew, not pure quantization",
+  "cpu": "Job CPU and block single processCPU differences; callback CPU sums diagnostic with update/alias limits; no GC CPU measured",
+  "host": "low-frequency GetSystemTimes aggregate raw idle/kernel/user; no frequency/thermal/percore/background culprit inference",
+  "causal_estimand": "instrumented C1-C0 mean of two adjacent opposite-order pairs, plus both signs and all four cells; selected known graph only",
+  "win_rule": "all4 COMPLETE + full7/current original predicate/success bytes and firsttick + all4 correct INSIDE evaluator + supervised verification PASS, then paired mean C1-C0<0",
+  "failure_rule": "timeout/NOT_RUN/evalfailure/verificationfailure retained in denominator4; no wholecost win or complete predicate coverage if missing",
+  "postseal_verifier": "fresh original C0 predicate for each unique full payload; exact canonical bytes plus helper pins, SHA index only; no r11 answer cache",
+  "historical_forward_delta_seconds": 178.386,
+  "historical_cause": "NOT_IDENTIFIED; no retrospective QPC reconstruction",
+  "initial_clock_observation": {
+    "schema": "HCCClockOnlyPrecheck.v1",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "cpu_count": 16,
+    "clocks": {
+      "monotonic": {
+        "implementation": "GetTickCount64()",
+        "monotonic": true,
+        "adjustable": false,
+        "resolution": 0.015625
+      },
+      "perf_counter": {
+        "implementation": "QueryPerformanceCounter()",
+        "monotonic": true,
+        "adjustable": false,
+        "resolution": 1e-07
+      },
+      "process_time": {
+        "implementation": "GetProcessTimes()",
+        "monotonic": true,
+        "adjustable": false,
+        "resolution": 1e-07
+      },
+      "thread_time": {
+        "implementation": "GetThreadTimes()",
+        "monotonic": true,
+        "adjustable": false,
+        "resolution": 1e-07
+      }
+    },
+    "paired_reads": 200000,
+    "positive_changes": {
+      "perf_counter": 200000,
+      "monotonic": 6
+    },
+    "minimum_observed_positive_ns": {
+      "perf_counter": 300,
+      "monotonic": 15000000
+    },
+    "host_snapshot": {
+      "idle_100ns": 5988971250000,
+      "kernel_including_idle_100ns": 7034326875000,
+      "user_100ns": 1315723906250
+    },
+    "not_a_strict_error_bound": true,
+    "model_arithmetic_calls": 0,
+    "utc": "2026-10-15T04:41:45.435Z"
+  },
+  "read_overhead_and_all_observer_costs_charged": true,
+  "limits": [
+    "n2/arm descriptive, nonlinear drift/carryover uncontrolled",
+    "GC can mediate policy cost, do not subtract as host nuisance",
+    "coarse clock nominal resolution not strict accumulated error bound",
+    "no nonlinear prefix replay; shared pinned numeric helpers/accepted old anchor trusted",
+    "synthetic authored same world, independent discovery0; RSS/energy/frequency/temperature unknown",
+    "1575 cap only18.328s above historical C1, no completion guarantee"
+  ],
+  "external_sources": [
+    "https://docs.python.org/3.12/library/time.html",
+    "https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-getsystemtimes"
+  ],
+  "freeze_utc": "2026-10-15T04:41:46.431Z"
+}

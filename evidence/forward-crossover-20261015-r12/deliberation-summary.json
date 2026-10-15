@@ -1,0 +1,61 @@
+{
+  "schema": "HCCDeliberationSummary.v1",
+  "skill": "independent-deliberation-panel",
+  "risk": "MEDIUM",
+  "degraded_ok": true,
+  "participants": [
+    {
+      "role": "measurement/causality",
+      "agent": "/root/forward_causality_r12"
+    },
+    {
+      "role": "budget/crossover",
+      "agent": "/root/crossover_budget_r12"
+    }
+  ],
+  "method": "two fresh read-only blind reviews before implementation, one conditional cross each; coordinator synthesis; later same-agent source follow-up is NOT fresh independent audit",
+  "actual_model_and_effort": "UNKNOWN inherited; no explicit Astra override",
+  "judge": null,
+  "reserve": null,
+  "specialist": null,
+  "assurance": "partially_independent; coordinator implemented/integrated; prior blind then non-independent source reuse",
+  "initial_consensus": [
+    "same state/code/calls do not guarantee same runtime",
+    "old F-C0-C1 single order confounds policy and period",
+    "ABBA/BAAB four fresh cells, no F rerun",
+    "QPC primary plus legacy, nested arithmetic/GC, block CPU and host aggregate",
+    "4*1800 incompatible with6900;1575equal and6860reserved, no completion guarantee or unused cap recycling"
+  ],
+  "cross_conditions": [
+    "GC may mediate policy; leave default settings",
+    "do not infer arithmetic CPU from callback CPU sums",
+    "historical178.386 cause remainsunknown",
+    "exact postseal payload dedup permitted; no policy cache",
+    "allfour completion/quality required; keep failures denominator4, signs/mean reported"
+  ],
+  "source_followup_findings": [
+    {
+      "finding": "success callback then hardkill caused verifier assertfinal",
+      "resolution": "COMPLETE only success-byte check; added success-then-timeout regression"
+    },
+    {
+      "finding": "4policycomplete but evalmissing could label PASS",
+      "resolution": "PASS only when allfour quality; otherwise PASS_INTEGRITY_ONLY"
+    }
+  ],
+  "source_followup_limits": [
+    "GC CPU notmeasured; wall overlap only",
+    "clock brackets differ; report bracket read overhead",
+    "observer allocations/writes may alter runtime, same instrumented estimand only"
+  ],
+  "remaining_disagreements": [
+    "runtime cause cannot be identified before observations; no retrospective single-cause assignment"
+  ],
+  "dot": {
+    "research_advice": "NOT_OBSERVED in latest1-turn read with hasMoretrue",
+    "original_question_id": "5f9cb043-ea81-42f1-87de-72faeebf5973",
+    "delivery_unknown_not_resent": true,
+    "peer_operational_notices_not_research_advice": true
+  },
+  "utc": "2026-10-15T04:41:46.431Z"
+}
