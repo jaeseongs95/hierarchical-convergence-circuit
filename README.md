@@ -7,6 +7,8 @@
 
 최신 연구 판단: [2026-10-15 주장–증거 연결표](evidence/claim-evidence-links-20261015.ko.md)
 
+최신 비교 결과: [2026-10-15 같은 graph의 실제 6셀 종료정책 비교](evidence/termination-sixcell-20261015-r10/report.ko.md)
+
 ## 실행과 자료 찾기
 
 `Run-HCR.cmd --list`는 실험과 보존 자료의 위치만 표시한다.

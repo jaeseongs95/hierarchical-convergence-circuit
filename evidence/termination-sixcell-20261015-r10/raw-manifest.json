@@ -1,0 +1,21 @@
+{
+  "schema": "HCCRawBundle.v1",
+  "archive": "raw.zip",
+  "sha256": "58ac93ec33b21a905b48498e279dfd0c16ee4820cb8a58b13499651586bbcd6d",
+  "archive_bytes": 19232848,
+  "file_count": 15257,
+  "uncompressed_bytes": 60027718,
+  "inventory": "RAW-INVENTORY.json inside archive",
+  "inventory_sha256": "521874d123f6415f072fe04799735618cb6a250dcec1fd8215a63e2d968d8580",
+  "validated": "archive CRC and all inventory byte/hash checks PASS",
+  "raw_root_original": "D:\\codex\\리드\\ai-termination-sixcell-20261015-r10",
+  "absolute_paths": "original invocation/seal locators preserved; archive members relative, no in-place relocation or evidence rewriting",
+  "first_failures_preserved": [
+    "original selftest timingfailure",
+    "initial isolated timingfixture missingnumericdependency",
+    "180/L atomicrename WinError5 and unacknowledged state387",
+    "initial share7 probe assumptionfailure"
+  ],
+  "science": "single6cell attempted, no scientific retries or closedR081 resume",
+  "not_in_archive": "later post-run human report/delivery receipts remain separate; archive created after independent offline verification"
+}
