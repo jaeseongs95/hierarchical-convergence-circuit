@@ -1,0 +1,11 @@
+{
+  "schema": "HCCLauncherCustodyFix.v1",
+  "status": "CORRECTED_BEFORE_FIRST_SCIENTIFIC_CELL",
+  "failure": "initial push readback .cmd EOL mismatch; initial --execute refused before creating output/run",
+  "cause": "Git checkout text=auto transformation",
+  "fix": "one exact launcher LF attribute, original numerical code unchanged",
+  "previous_contract_sha256": "51cadb8d681ce9240131d07e89e7f799216803b2654d8feff4ff1d22cbcb2df7",
+  "current_contract_sha256": "87f4185b70225c249e79711b7b59a4828b5643eb156940fee2bf57c080943ed0",
+  "old_implementation_commit": "226f77ca512d1edde6961f011f3a6ab80817b6ca",
+  "scientific_retry_count": 0
+}

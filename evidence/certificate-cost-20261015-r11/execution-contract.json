@@ -113,9 +113,9 @@
     "actual collision reader unknown; no mutable observation"
   ],
   "observer": "enumerate state filenames and read only immutable sealed outputs; filename maximum not committed tick",
-  "freeze_utc": "2026-10-15T02:48:01.100Z",
-  "revision": 3,
-  "previous_preexecution_contract_sha256": "7ec902c56e7aa550e31594bdedcae11846198a0899d612abfbd97b607513dd2d",
+  "freeze_utc": "2026-10-15T02:50:25.209Z",
+  "revision": 4,
+  "previous_preexecution_contract_sha256": "51cadb8d681ce9240131d07e89e7f799216803b2654d8feff4ff1d22cbcb2df7",
   "preexecution_amendment": "review found all-cadence coverage needed independent tick-count/attempt/stop binding; added before science, no numeric policy change",
   "model_digest": "a56e4dc4616ac97d976957a48622f277a48ac5f265724b75f33f1670db7ffc26",
   "model_global_preactivation_bounds": [
@@ -128,5 +128,13 @@
     "80164073367194829/36028797018963968"
   ],
   "fixed_model_Taylor_domain_proof": "All valid current/region coordinates |x|<1 imply |b+Gx|<=row bound<49; exp_positive(2|u|)<98=degree96+2.",
-  "predicate_equivalence_scope": "fixed validated model where original arithmetic defined; not general exception behavior for arbitrary G"
+  "predicate_equivalence_scope": "fixed validated model where original arithmetic defined; not general exception behavior for arbitrary G",
+  "transport_pins": [
+    {
+      "path": ".gitattributes",
+      "sha256": "ea6a5f34ff5cd93f45124fd71094b072b67afe1c4bb7a8a3cf4118ad1e0bf4cc",
+      "bytes": 237
+    }
+  ],
+  "transport_correction": "new launcher exact LF rule; prelaunch failure0scientificcells; numerical code pins unchanged"
 }
