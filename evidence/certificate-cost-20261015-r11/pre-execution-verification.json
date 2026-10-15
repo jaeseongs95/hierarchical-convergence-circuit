@@ -1,0 +1,14 @@
+{
+  "schema": "HCCCertificateCostPrecheck.v1",
+  "analytic_tests": 5,
+  "analytic_status": "PASS",
+  "threshold_mutation_detected": true,
+  "mutation_test_bytes_exact": true,
+  "source_pins_checked": true,
+  "old_current_selftest": "r10 24PASS/1 .8sec pending C timing failure; synthetic5sec discriminator passed; original unchanged",
+  "selftest_science_samples": 0,
+  "freeze_sha256": "51cadb8d681ce9240131d07e89e7f799216803b2654d8feff4ff1d22cbcb2df7",
+  "coverage_review_fix": "independent tick count, attempt continuity, stop binding; partial verification explicit",
+  "fixed_model_Taylor_domain": true,
+  "model_digest": "a56e4dc4616ac97d976957a48622f277a48ac5f265724b75f33f1670db7ffc26"
+}

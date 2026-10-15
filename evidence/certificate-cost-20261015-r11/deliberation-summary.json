@@ -1,0 +1,68 @@
+{
+  "schema": "HCCDeliberationExecutionSummary.v1",
+  "not_canonical_attested_DecisionRecord": true,
+  "case": "C wall vs F and predicate-preserving certificate cost filter",
+  "risk": "MEDIUM",
+  "execution_assurance": "degraded_ok",
+  "assurance": "partially_independent",
+  "workers": [
+    {
+      "id": "/root/cert_cost_r11",
+      "role": "numeric cost/predicate invariants",
+      "blind_round1": true,
+      "fork_turns": "none",
+      "delegation_allowed": false
+    },
+    {
+      "id": "/root/cert_fairness_r11",
+      "role": "budget/causal validity",
+      "blind_round1": true,
+      "fork_turns": "none",
+      "delegation_allowed": false
+    }
+  ],
+  "actual_model_and_effort": "UNKNOWN inherited; no Astra override",
+  "fresh_judge": null,
+  "specialist": null,
+  "reserve_used": false,
+  "cross_examination": [
+    {
+      "id": "X1",
+      "reviewer": "/root/cert_fairness_r11",
+      "origin": "cost",
+      "trigger": "negative prefilter hidden premise/denominator fairness",
+      "outcome": "conditional accept strict upper-witness dominance; equality/geometry/context preserved; exact negative witness not equivalent"
+    },
+    {
+      "id": "X2",
+      "reviewer": "/root/cert_cost_r11",
+      "origin": "fairness",
+      "trigger": "6900 total vs repeated1800 cells; predicate coverage",
+      "outcome": "single3cell frozen, allcadence source fix, fixedmodel Taylor bound checked"
+    }
+  ],
+  "coordinator_verified": [
+    "r10 counters and source cost paths",
+    "v=r+Kv>=r logic",
+    "reservation180+3*(1800+120+10)+600=6570",
+    "analytic5PASS and isolated threshold mutation detected",
+    "allcadence completeness now tied to independent tick/attempt/stop",
+    "fixed model row bound<49"
+  ],
+  "consensus": "conditional_consensus",
+  "conditions": [
+    "allC1cadence original recheck",
+    "common full7 and successful certificate exact",
+    "observed wall only, no universal speed claim"
+  ],
+  "non_independent_followup": "existing cost reviewer reviewed candidate source; coordinator integrated, not fresh review",
+  "scope_notes": [
+    "No physics launched before frozen signed implementation",
+    "No new independent graph/discovery",
+    "No error-lower-bound interpretation",
+    "Generic exception equivalence not claimed"
+  ],
+  "dot": "prior original advice NOT_OBSERVED in latest2turn coverage; hasMore true; previous unknown status not resend; no new advice message sent",
+  "contract_sha256": "51cadb8d681ce9240131d07e89e7f799216803b2654d8feff4ff1d22cbcb2df7",
+  "utc": "2026-10-15T02:48:01.127Z"
+}

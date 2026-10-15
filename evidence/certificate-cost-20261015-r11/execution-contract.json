@@ -1,0 +1,132 @@
+{
+  "schema": "HCCCertificateCostExecutionContract.v1",
+  "source_commit": "34650ccb5444e2d4dd72a64e8b68989ddd972a27",
+  "plan_sha256": "09fce49f6d4e3e517b5b00a746f0d74d9964c9ee90a3950bc9b24bc5ccc5e958",
+  "implementation_sha256": "5efe99b923bdde001d85e18a0b4366d8adc689cdcfb0dcdc9793a7828f45aa30",
+  "code_pins": [
+    {
+      "path": "experiments/exp-62-top-down/termination-policy-comparison-plan-20261015.json",
+      "sha256": "09fce49f6d4e3e517b5b00a746f0d74d9964c9ee90a3950bc9b24bc5ccc5e958",
+      "bytes": 14381
+    },
+    {
+      "path": "tools/analysis/termination_compare_core.py",
+      "sha256": "73f496600b86eae3681d912a2853a313212ffeb416b6d3f87a70394b077d88c1",
+      "bytes": 9591
+    },
+    {
+      "path": "tools/analysis/test_termination_comparison.py",
+      "sha256": "60a194bc40cb9472065494adb0ea6ebcbd44587c3578ebe86ce4594c8e77d068",
+      "bytes": 22389
+    },
+    {
+      "path": "tools/analysis/termination_compare_runner.py",
+      "sha256": "ffed8c533a83639ebd28093de5607920421c17cd4d65d3f90a764cca70a9ffcc",
+      "bytes": 29644
+    },
+    {
+      "path": "tools/analysis/check_termination_comparison.py",
+      "sha256": "b4a8d84510bc295e39f5a7ba67e68c37a2d4dbd24500a73cc1e60268de20abe7",
+      "bytes": 11036
+    },
+    {
+      "path": "Run-HCR-Termination-Comparison.cmd",
+      "sha256": "a9d6edf6cf68ed8b18e73c7064a7f563bdeae3ee3a81319bac95c0c8f56edeca",
+      "bytes": 385
+    },
+    {
+      "path": "experiments/exp-62-top-down/termination-comparison-implementation-20261015.json",
+      "sha256": "5efe99b923bdde001d85e18a0b4366d8adc689cdcfb0dcdc9793a7828f45aa30",
+      "bytes": 6087
+    },
+    {
+      "path": "tools/analysis/termination_certificate_cost.py",
+      "sha256": "1e3a8f26b901fda9834f03b5b470e9bac8d0045525f9bc4734180573b5c64beb",
+      "bytes": 12380
+    },
+    {
+      "path": "tools/analysis/test_certificate_cost.py",
+      "sha256": "32d9ba79744759d0ac468e672a661b8b0abf9287c63bc429c45440e154af08a0",
+      "bytes": 9468
+    },
+    {
+      "path": "Run-HCR-Certificate-Cost.cmd",
+      "sha256": "ec05adb6ab6a8badb6d76d24db98ee664e3fa3440efda4c9df7408855492449b",
+      "bytes": 375
+    }
+  ],
+  "variants": [
+    "F",
+    "C0",
+    "C1"
+  ],
+  "sequential_order": [
+    "F",
+    "C0",
+    "C1"
+  ],
+  "order_seed": "4eeed86edb51cdb120dfb2a30ca262a8",
+  "order_selection": "one preregistered pseudorandom permutation; no balance/repeat claim",
+  "per_variant_policy_wall_seconds": 1800,
+  "evaluation_cap_seconds": 120,
+  "cleanup_cap_seconds": 10,
+  "setup_cap_seconds": 180,
+  "offline_verification_cap_seconds": 600,
+  "outer_global_wall_seconds": 6900,
+  "conservative_reserved_seconds": 6570,
+  "unallocated_seconds": 330,
+  "unused_budget_reallocation": false,
+  "cold_x0_per_variant": true,
+  "automatic_scientific_retries": false,
+  "model_grid_cadence_epsilon_radius_tickcap": "unchanged r09 input recipe; 6144 /16 /grid30 /1e-6 /1e-5",
+  "numerical_input_fields": [
+    "model",
+    "current_x_box",
+    "radius_x_exact",
+    "epsilon_p_exact"
+  ],
+  "intervention": "C1 computes unchanged current residual first; strict max(r)>2eps rejects original component predicate only; no actual error lower bound",
+  "negative_full_proof": "NOT_EVALUATED; full negative result not equivalent",
+  "proof": "valid K>=0,qK<1 => v=r+Kv>=r => max(r)>2eps implies max(v)/2>eps; invalid region cannot certify; equality falls through",
+  "successful_certificate": "unchanged local_certificate(payload,numeric,residual=same_current_witness)",
+  "cached_numeric_results": false,
+  "historical_oracle_in_policy": false,
+  "metrics": [
+    "policy physical wall",
+    "Job tree CPU",
+    "committed virtual peak (not RSS)",
+    "advance/certificate/persistence wall and CPU",
+    "certificate attempts/region/residual/Taylor counts"
+  ],
+  "falsification": [
+    "any skipped original CERTIFIED",
+    "different common full7/first certified/success certificate",
+    "no observed C1 wall reduction vs C0",
+    "no observed C1 wall reduction vs F"
+  ],
+  "postseal_verification": "all C1 cadence original predicate; all common full7; original evaluator world/anchor after seals; no nonlinear prefix replay",
+  "limitations": [
+    "one run per variant; host load uncontrolled",
+    "one selected known graph/all-open authored synthetic world; discovery0",
+    "trusted shared numeric helpers/old anchor",
+    "previous selftest24/25 timing failure not relabeled",
+    "actual collision reader unknown; no mutable observation"
+  ],
+  "observer": "enumerate state filenames and read only immutable sealed outputs; filename maximum not committed tick",
+  "freeze_utc": "2026-10-15T02:48:01.100Z",
+  "revision": 3,
+  "previous_preexecution_contract_sha256": "7ec902c56e7aa550e31594bdedcae11846198a0899d612abfbd97b607513dd2d",
+  "preexecution_amendment": "review found all-cadence coverage needed independent tick-count/attempt/stop binding; added before science, no numeric policy change",
+  "model_digest": "a56e4dc4616ac97d976957a48622f277a48ac5f265724b75f33f1670db7ffc26",
+  "model_global_preactivation_bounds": [
+    "164831746361760153/36028797018963968",
+    "12957375898033629/18014398509481984",
+    "152221667405122765/36028797018963968",
+    "94575592174780413/36028797018963968",
+    "92774152323832217/36028797018963968",
+    "236889340399688089/36028797018963968",
+    "80164073367194829/36028797018963968"
+  ],
+  "fixed_model_Taylor_domain_proof": "All valid current/region coordinates |x|<1 imply |b+Gx|<=row bound<49; exp_positive(2|u|)<98=degree96+2.",
+  "predicate_equivalence_scope": "fixed validated model where original arithmetic defined; not general exception behavior for arbitrary G"
+}
