@@ -1,0 +1,191 @@
+{
+  "contract_sha256": "5eb98d572397230da5d5ef11e94cbad2db868c82f7866b32df045f5011343e21",
+  "host": {
+    "affinity": [
+      0,
+      1
+    ],
+    "after_ns": 10062545899547,
+    "ancestors": {
+      "/sys/fs/cgroup": {
+        "cpu.max": {
+          "error": "FileNotFoundError",
+          "status": "UNAVAILABLE"
+        },
+        "cpu.stat": {
+          "status": "AVAILABLE",
+          "text": "usage_usec 78744104\nuser_usec 57779606\nsystem_usec 20964498\nnice_usec 1171000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n"
+        },
+        "memory.events": {
+          "error": "FileNotFoundError",
+          "status": "UNAVAILABLE"
+        },
+        "memory.max": {
+          "error": "FileNotFoundError",
+          "status": "UNAVAILABLE"
+        }
+      },
+      "/sys/fs/cgroup/user.slice": {
+        "cpu.max": {
+          "status": "AVAILABLE",
+          "text": "max 100000\n"
+        },
+        "cpu.stat": {
+          "status": "AVAILABLE",
+          "text": "usage_usec 34171057\nuser_usec 26432516\nsystem_usec 7738540\nnice_usec 674000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n"
+        },
+        "memory.events": {
+          "status": "AVAILABLE",
+          "text": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n"
+        },
+        "memory.max": {
+          "status": "AVAILABLE",
+          "text": "max\n"
+        }
+      },
+      "/sys/fs/cgroup/user.slice/user-1001.slice": {
+        "cpu.max": {
+          "status": "AVAILABLE",
+          "text": "max 100000\n"
+        },
+        "cpu.stat": {
+          "status": "AVAILABLE",
+          "text": "usage_usec 2007130\nuser_usec 1643964\nsystem_usec 363165\nnice_usec 0\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n"
+        },
+        "memory.events": {
+          "status": "AVAILABLE",
+          "text": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n"
+        },
+        "memory.max": {
+          "status": "AVAILABLE",
+          "text": "max\n"
+        }
+      },
+      "/sys/fs/cgroup/user.slice/user-1001.slice/session-36.scope": {
+        "cpu.max": {
+          "status": "AVAILABLE",
+          "text": "max 100000\n"
+        },
+        "cpu.stat": {
+          "status": "AVAILABLE",
+          "text": "usage_usec 1461004\nuser_usec 1238989\nsystem_usec 222015\nnice_usec 0\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n"
+        },
+        "memory.events": {
+          "status": "AVAILABLE",
+          "text": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n"
+        },
+        "memory.max": {
+          "status": "AVAILABLE",
+          "text": "max\n"
+        }
+      }
+    },
+    "before_ns": 10062545059216,
+    "cgroup": "0::/user.slice/user-1001.slice/session-36.scope",
+    "cpu": {
+      "cpu": [
+        5660,
+        117,
+        2040,
+        2002523,
+        775,
+        0,
+        55,
+        34,
+        0,
+        0
+      ],
+      "cpu0": [
+        2924,
+        100,
+        997,
+        1001160,
+        378,
+        0,
+        27,
+        20,
+        0,
+        0
+      ],
+      "cpu1": [
+        2736,
+        16,
+        1043,
+        1001363,
+        397,
+        0,
+        27,
+        14,
+        0,
+        0
+      ]
+    },
+    "load": [
+      0,
+      0,
+      0
+    ],
+    "memory_kib": {
+      "MemAvailable": 3211760,
+      "SwapFree": 0,
+      "SwapTotal": 0
+    },
+    "pressure": {
+      "cpu": {
+        "status": "AVAILABLE",
+        "text": "some avg10=0.00 avg60=0.00 avg300=0.00 total=11226501\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n"
+      },
+      "io": {
+        "status": "AVAILABLE",
+        "text": "some avg10=0.00 avg60=0.00 avg300=0.00 total=5983579\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=4716360\n"
+      },
+      "memory": {
+        "status": "AVAILABLE",
+        "text": "some avg10=0.00 avg60=0.00 avg300=0.00 total=366\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=51\n"
+      }
+    }
+  },
+  "hostname": "ip-172-26-4-106",
+  "preparation_seconds": 1.5509235549998266,
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "scientific_runs": 0,
+  "status": "PASS",
+  "tests": [
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "tools/analysis/test_server_crossover.py"
+      ],
+      "count": 4,
+      "expected": 4,
+      "returncode": 0,
+      "stderr": ".../usr/lib/python3.12/unittest/case.py:589: ResourceWarning: unclosed file <_io.TextIOWrapper name=3 encoding='UTF-8'>\n  if method() is not None:\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n/usr/lib/python3.12/unittest/case.py:589: ResourceWarning: unclosed file <_io.TextIOWrapper name=5 encoding='UTF-8'>\n  if method() is not None:\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n.\n----------------------------------------------------------------------\nRan 4 tests in 0.746s\n\nOK\n",
+      "stdout": ""
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "tools/analysis/test_certificate_cost.py"
+      ],
+      "count": 5,
+      "expected": 5,
+      "returncode": 0,
+      "stderr": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.397s\n\nOK\n",
+      "stdout": ""
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "tools/analysis/test_new_server_replication.py"
+      ],
+      "count": 1,
+      "expected": 1,
+      "returncode": 0,
+      "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.115s\n\nOK\n",
+      "stdout": ""
+    }
+  ]
+}

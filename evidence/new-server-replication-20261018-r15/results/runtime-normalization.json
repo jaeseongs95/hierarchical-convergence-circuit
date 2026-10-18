@@ -1,0 +1,24 @@
+{
+  "frozen_git_commit": "a8e57ecc1b923b10347ff4ea431a89c62c75bd35",
+  "archive_sha256": "95da8fdaf307f2d828d25a82fc412401feb1136139781cb2e60012ae12f7ab6c",
+  "entries": [
+    {
+      "path": "evidence/new-server-replication-20261018-r15/execution-contract.json",
+      "before_sha256": "5eb98d572397230da5d5ef11e94cbad2db868c82f7866b32df045f5011343e21",
+      "after_sha256": "b133afed0293c9b92d254454ee1ad91d689878e289bfa3b2288e22b538b0da6f",
+      "before_bytes": 5812,
+      "after_bytes": 5677
+    },
+    {
+      "path": "evidence/new-server-replication-20261018-r15/protocol.json",
+      "before_sha256": "5cd807e86a0d713d6dc4dc8be96ef7aedef7c32b3eae0b91d22543608f940158",
+      "after_sha256": "cba287468ed1d0e7771d8fd5023b91f17cdf499b5c41a2a80ada061a59578702",
+      "before_bytes": 1799,
+      "after_bytes": 1764
+    }
+  ],
+  "semantic_equality": true,
+  "code_or_values_changed": false,
+  "scientific_runs": 0,
+  "reason": "Authored JSON transferred with CRLF; signed Git blobs and local working copies are LF. Keep the transfer archive and PREPARED old hash as preparation provenance; normalize only these two owned JSON files and verify Git hashes before any formal draw."
+}

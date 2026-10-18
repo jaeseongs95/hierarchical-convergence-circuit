@@ -1,0 +1,13 @@
+{
+  "birth": {
+    "pgrp": 5011,
+    "pid": 5011,
+    "ppid": 5010,
+    "start_ticks": 1025266,
+    "state": "R"
+  },
+  "contract_sha256": "b133afed0293c9b92d254454ee1ad91d689878e289bfa3b2288e22b538b0da6f",
+  "freeze_commit": "a8e57ecc1b923b10347ff4ea431a89c62c75bd35",
+  "pid": 5011,
+  "preparation_contract_sha256": "5eb98d572397230da5d5ef11e94cbad2db868c82f7866b32df045f5011343e21"
+}

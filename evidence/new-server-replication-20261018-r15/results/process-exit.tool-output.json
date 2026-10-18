@@ -1,0 +1,24 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"failed\":true,\"texts\":[\"    PID    PPID    PGID STAT     ELAPSED COMMAND\\n\\n\\n[exit 1]\"]}"
+    }
+  ],
+  "structuredContent": {
+    "version": 1,
+    "captureSource": "redacted-adapter-outcome",
+    "sshCompleteness": "unknown",
+    "outputId": "0c73196b3013e2bc1cbc7449349df5a63a205938015b9188",
+    "executionId": "f23a22cc5c651f6e643dad5367de41b4cee78d50a55519e7",
+    "format": "json",
+    "offsetBytes": 0,
+    "bytes": 90,
+    "nextOffset": 90,
+    "eof": true,
+    "totalBytes": 90,
+    "sha256": "b93d391020275e3b5e5c56db1ca5564eae7600938f0d1133773e8f5b60e2bdde",
+    "expiresAt": 1792320425847
+  },
+  "isError": false
+}
