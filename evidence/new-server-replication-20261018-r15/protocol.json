@@ -1,0 +1,35 @@
+{
+  "schema": "HCCNewHostReplicationProtocol.v1",
+  "question": "새 AI Research SSH 서버에서도 동일 입력에서 C1의 전체비용 감소와 동일 품질이 재현되는가",
+  "scope": "같은 합성 입력·수치 코드·predicate·저장 방식, 새 서버 내부 대조만",
+  "design": "사전 고정 뒤 독립 fair bit 두 개를 한 번만 뽑아 인접 두 쌍, 4개 cold process 순차 실행",
+  "primary": "C1-C0 인접 두 차이와 평균. 네 셀 전부 완료·품질·검산 통과 전에는 ABSTAIN_INCOMPLETE_EVIDENCE",
+  "limits": {
+    "policy_seconds": 3000,
+    "planned": 4,
+    "global_seconds": 13100,
+    "verification_seconds": 900,
+    "retries": 0,
+    "pilots": 0,
+    "unused_reallocation": false
+  },
+  "environment": {
+    "connector": "AI Research SSH",
+    "expected_host": "ip-172-26-4-106",
+    "expected_uid": 1001,
+    "initial_available_kib": 3224928,
+    "disk_available": "151GiB",
+    "CPU": "2 logical / SMT as exposed by VM",
+    "RAM": "3790MiB",
+    "plan_type_or_price_verified": false
+  },
+  "interpretation": [
+    "r14와 표본 합산·순수 하드웨어 속도비·가격대비 성능 추정 없음",
+    "조건별2회·합성 입력·공유helper/anchor신뢰·VM/SMT간섭 한계 유지",
+    "새 알고리즘이나 일반AI/LLM 우위가 아닌 새호스트 재현성 관측"
+  ],
+  "implementation": "고정 r14 엔진 재사용. 새 adapter가 부모·자식의 SELF와 PUB만 함께 r15로 지정",
+  "authorization": "current-chat:user:2026-10-18:AI-Research-SSH-new-server-followup",
+  "runtime_root": "/home/mcpops/hcc-new-server-20261018-r15",
+  "preparation": "전송·합성 기능검사·경로 mutation은 배정 전에 별도 기록, 정식 성능 표본에 포함하지 않음"
+}
