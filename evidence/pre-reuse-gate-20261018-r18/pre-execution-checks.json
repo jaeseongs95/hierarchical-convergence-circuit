@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "syntax": true,
+  "config_identical_to_r17": true,
+  "public_input_checks": 7,
+  "case_checks": [
+    {
+      "case": "chain4_open",
+      "gate": {
+        "enabled": true,
+        "reason": "single_chain_two_macros",
+        "metadata_reads": 1,
+        "edge_records_read": 4,
+        "chain_links_followed": 4
+      },
+      "external_truth": true
+    },
+    {
+      "case": "chain4_blocked",
+      "gate": {
+        "enabled": false,
+        "reason": "measurement_not_certain_positive",
+        "metadata_reads": 1,
+        "edge_records_read": 4,
+        "chain_links_followed": 0
+      },
+      "external_truth": false
+    },
+    {
+      "case": "fan5_open",
+      "gate": {
+        "enabled": false,
+        "reason": "branching",
+        "metadata_reads": 1,
+        "edge_records_read": 3,
+        "chain_links_followed": 0
+      },
+      "external_truth": true
+    },
+    {
+      "case": "fan5_blocked",
+      "gate": {
+        "enabled": false,
+        "reason": "branching",
+        "metadata_reads": 1,
+        "edge_records_read": 3,
+        "chain_links_followed": 0
+      },
+      "external_truth": false
+    }
+  ],
+  "policy_checks": 12,
+  "cost_alias_checks": 1,
+  "synthetic_prefix_accounting_checks": 80,
+  "native_executions": 0,
+  "core_regression_run": false
+}

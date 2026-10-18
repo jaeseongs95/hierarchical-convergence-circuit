@@ -1,0 +1,18 @@
+{
+  "verified": true,
+  "source_files_verified": 73,
+  "selected_raw_hashes_verified": 3,
+  "completed_stages": 27,
+  "quality_evaluations": 16,
+  "actual_prefix_totals_recomputed": 16,
+  "gate_denials": 3,
+  "rejected_mutations": [
+    "value",
+    "proof",
+    "gate"
+  ],
+  "scope": "Local selected evidence hashes, source binding, quality rows and accounting formula independently checked. Training cost source journals and native replay were audited on server; full raw ZIP not received locally.",
+  "full_raw_zip_received_locally": false,
+  "full_raw_replay_locally": false,
+  "core_regression_suite_run": false
+}

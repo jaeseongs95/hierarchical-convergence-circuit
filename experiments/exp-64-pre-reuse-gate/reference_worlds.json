@@ -1,0 +1,44 @@
+{
+  "train-0": {
+    "e0": true,
+    "e1": true
+  },
+  "train-1": {
+    "e0": true,
+    "e1": true
+  },
+  "train-2": {
+    "e0": true,
+    "e1": true
+  },
+  "chain4_open": {
+    "e0": true,
+    "e1": true,
+    "e2": true,
+    "e3": true
+  },
+  "chain4_blocked": {
+    "e0": true,
+    "e1": true,
+    "e2": true,
+    "e3": false
+  },
+  "fan5_open": {
+    "e0": true,
+    "e1": true,
+    "e2": true,
+    "e3": true,
+    "e4": true,
+    "e5": true,
+    "e6": true
+  },
+  "fan5_blocked": {
+    "e0": true,
+    "e1": true,
+    "e2": true,
+    "e3": true,
+    "e4": true,
+    "e5": true,
+    "e6": false
+  }
+}
