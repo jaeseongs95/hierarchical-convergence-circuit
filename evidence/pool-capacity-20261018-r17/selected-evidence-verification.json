@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "source_files_hash_verified": 72,
+  "selected_result_sha256_matches_raw_manifest": true,
+  "summary_recomputed_from_full_raw_locally": false,
+  "local_native_executions": 0,
+  "actual_quality_cells": 12,
+  "prediction_deltas_recomputed": true,
+  "server_separate_replay_audit": true,
+  "server_mutations_rejected": [
+    "value",
+    "proof"
+  ],
+  "server_stages_exit0": 23,
+  "full_raw_local_copy": false,
+  "launcher_pid": 8788,
+  "launcher_absent_at_inspection": true
+}

@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "syntax": true,
+  "typed_config": true,
+  "config_identical_to_r16": true,
+  "public_input_checks": 7,
+  "case_checks": [
+    {
+      "case": "fan4_open",
+      "root_length2_bindings": 4,
+      "external_truth": true
+    },
+    {
+      "case": "fan4_blocked",
+      "root_length2_bindings": 4,
+      "external_truth": false
+    },
+    {
+      "case": "fan5_open",
+      "root_length2_bindings": 5,
+      "external_truth": true
+    },
+    {
+      "case": "fan5_blocked",
+      "root_length2_bindings": 5,
+      "external_truth": false
+    }
+  ],
+  "synthetic_trace_checks": 3,
+  "native_executions": 0,
+  "core_regression_run": false,
+  "development_failures": [
+    "First stdin precheck imported root hcr.py; explicit src-first sys.path fixed the check.",
+    "Second precheck called nonexistent Observation.validate; replaced with actual Topology.validate API. Both occurred before native/server execution."
+  ]
+}

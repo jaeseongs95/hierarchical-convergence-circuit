@@ -1,0 +1,17 @@
+{
+  "parent_commit": "32731f1f782ca160d3e8069605f36302f274b97f",
+  "ssh_target": "default",
+  "upload_request_id": "7c9feb5b0af8914bec7da3cd77672b8245807a7e668995a3",
+  "launch_request_id": "4c27ea470c1e4a525b765a6ef30cf318439658f4cdc5e7cf",
+  "launch_approval_mode": "owner",
+  "launch_pid": 8788,
+  "server_root": "/home/mcpops/hcc-pool-capacity-20261018-r17",
+  "raw_archive": "/home/mcpops/hcc-pool-capacity-20261018-r17/evidence.zip",
+  "raw_archive_sha256": "e7aa421f540b0695288d777277f0d56d13cded566f23680bd640fcc6a546c34e",
+  "raw_archive_bytes": 1687405,
+  "download_request_id": "0e798cbd00e834a96233e8ed09ae22e868e75aa3d44894f2",
+  "download_status": "ready_on_server_not_received",
+  "full_raw_local_copy": false,
+  "launcher_preparation_seconds": 0.015040013997349888,
+  "baseline_digest": "a87eadda925e91c2009087b65301f5814f3bf04df93451321508e7463b6fb986"
+}
