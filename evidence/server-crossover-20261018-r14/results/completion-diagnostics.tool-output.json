@@ -1,0 +1,24 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"failed\":false,\"texts\":[\"{\\\"all_four_quality\\\":true,\\\"canonical_success_certificates_checked\\\":4,\\\"fresh_unique_full_payloads\\\":323,\\\"full7_equalities\\\":15507,\\\"gate_occurrences\\\":1292,\\\"nonlinear_full_prefix_replay\\\":false,\\\"shared_helpers_and_accepted_anchor_trusted\\\":true,\\\"status\\\":\\\"PASS\\\"}\\n{\\\"pid\\\": 143490, \\\"birth\\\": {\\\"pid\\\": 143490, \\\"state\\\": \\\"R\\\", \\\"ppid\\\": 143489, \\\"pgrp\\\": 143490, \\\"start_ticks\\\": 23952920}, \\\"contract_sha256\\\": \\\"f286268fb079e1b9f6f58b9753a0e8b07d4deda7e0016fe2d6d1154c3f7b3c7d\\\"}\"]}"
+    }
+  ],
+  "structuredContent": {
+    "version": 1,
+    "captureSource": "redacted-adapter-outcome",
+    "sshCompleteness": "unknown",
+    "outputId": "2b6e761b4bbeebec480b11a4a6b5b1921b233de2046771c3",
+    "executionId": "499e2534261d8aeae13eff1e6f6bb610e9cf7476b1ed9c3c",
+    "format": "json",
+    "offsetBytes": 0,
+    "bytes": 521,
+    "nextOffset": 521,
+    "eof": true,
+    "totalBytes": 521,
+    "sha256": "7b22a4010b988bbe1dc6372e525578d3b882c90bbf4d74e12bf41645e7f43d6e",
+    "expiresAt": 1792310355842
+  },
+  "isError": false
+}

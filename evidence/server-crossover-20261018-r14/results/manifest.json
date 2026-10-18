@@ -1,0 +1,79 @@
+{
+  "schema": "HCCServerResultManifest.v1",
+  "files": [
+    {
+      "path": "01-C1/final.json",
+      "bytes": 11398,
+      "sha256": "3df7e7a5544cf0fa0d0b12d23c020502d7f0c31d3a76ae65f4fcd0806f400bd7"
+    },
+    {
+      "path": "01-C1/timings.json",
+      "bytes": 58305,
+      "sha256": "a1845ffc5b01f5c24cf25b13f5c6cad7622f937e8d7ad880dc4801404a31c0fb"
+    },
+    {
+      "path": "02-C0/final.json",
+      "bytes": 11398,
+      "sha256": "2ec96801f835b1c27b28d22c4a4ebc1ec5c3865542c72a3cf43294e1d8f7a2e5"
+    },
+    {
+      "path": "02-C0/timings.json",
+      "bytes": 51215,
+      "sha256": "63c1ec87657d3febc83352db93ac8aed9ed0d78ffca213480289ea54c8bdd057"
+    },
+    {
+      "path": "03-C1/final.json",
+      "bytes": 11398,
+      "sha256": "4a9435639571f948f0d7482309cd102ce17d137adab0ae49f98fbdbb23eb9816"
+    },
+    {
+      "path": "03-C1/timings.json",
+      "bytes": 58306,
+      "sha256": "4afc955015817858ecf13ff857474407f40e020bf3e69b70c79a3c87056a708d"
+    },
+    {
+      "path": "04-C0/final.json",
+      "bytes": 11398,
+      "sha256": "269897829ff9fb552f7cbc056a5065f8a06f3fa8a930103953aaa3a0fe98240d"
+    },
+    {
+      "path": "04-C0/timings.json",
+      "bytes": 51220,
+      "sha256": "07a51319998a144666e8c579074f5707a243023e6e183113c7df1f0fed392e25"
+    },
+    {
+      "path": "comparison.json",
+      "bytes": 64580,
+      "sha256": "5a0e58a931b1587e1ebfc5c9c96a66e5cefa9b6034f0a27e3b28c4d5d24c4a04"
+    },
+    {
+      "path": "completion-diagnostics.tool-output.json",
+      "bytes": 1206,
+      "sha256": "4a82f71351ba55ed571847748df1255a396d2b3c2c93419043db9a05d124bee1"
+    },
+    {
+      "path": "draw.json",
+      "bytes": 211,
+      "sha256": "eebaaa1221218fc8e9788407d612071b6ff2978ec6a6ef571eb7fcf92c4c42d7"
+    },
+    {
+      "path": "environment.json",
+      "bytes": 7106,
+      "sha256": "735892c28809bab21507e66db608fe04cfa8233e45777c62ca1420ebd3519f38"
+    },
+    {
+      "path": "process-exit.tool-output.json",
+      "bytes": 707,
+      "sha256": "91573be40366c6e11e6441fc64120aa0b05ee60b27b02c4b2b75595adca452df"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 254,
+      "sha256": "43a616f1861bcb565383dc1f1ca572cb62c3f0b18c1901c2d752343dfe31736c"
+    }
+  ],
+  "remote_root": "/home/mcpops/hcc-server-20261018-r14/run",
+  "raw_tick_states_local": false,
+  "source_freeze_commit": "7da1058704ad3a47fc6a5bcdd6307ece9b6ca8a8",
+  "remote_verifier_already_completed": true
+}
