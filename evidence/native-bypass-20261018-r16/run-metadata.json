@@ -1,0 +1,17 @@
+{
+  "server_root": "/home/mcpops/hcc-native-bypass-20261018-r16",
+  "archive_remote": "/home/mcpops/hcc-native-bypass-20261018-r16/evidence.zip",
+  "archive_sha256": "6e792abf0e4f2b3cf89c2f2441b4fd0cdeae45e41bd7dfa5ffe1ce8624e9849c",
+  "archive_bytes": 1317533,
+  "full_raw_local": false,
+  "download_ready_but_not_saved": true,
+  "download_request": "e0a2076042115a443828187d11a08f9765699579674e1b29",
+  "launch_request": "e91b072876e6512eee2453369660acece57c77bced16437d",
+  "launch_pid": 8625,
+  "launcher_pid_absent_after_completion": true,
+  "completed": true,
+  "total_seconds_including_seal": 4.8137686740010395,
+  "within_600_seconds": true,
+  "local_source_zip": "D:/codex/리드/ai-native-bypass-20261018-r16/server-source.zip",
+  "server_source_zip_sha256": "592ddad9c6f3c8717a425a4ef8f3f99c94534f025c153bd5347f11a78131fa40"
+}

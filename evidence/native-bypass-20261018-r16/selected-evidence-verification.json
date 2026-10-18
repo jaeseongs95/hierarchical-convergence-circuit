@@ -1,0 +1,12 @@
+{
+  "selected_raw_sha256_match": true,
+  "local_source_matches_server_manifest": true,
+  "source_files": 72,
+  "evaluations": 6,
+  "all_quality_checks_pass": true,
+  "prediction_deltas_recomputed": true,
+  "full_raw_archive_local": false,
+  "full_raw_archive_remote": "/home/mcpops/hcc-native-bypass-20261018-r16/evidence.zip",
+  "archive_sha256": "6e792abf0e4f2b3cf89c2f2441b4fd0cdeae45e41bd7dfa5ffe1ce8624e9849c",
+  "native_inferences_executed_locally": 0
+}

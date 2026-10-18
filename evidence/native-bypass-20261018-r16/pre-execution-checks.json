@@ -1,0 +1,13 @@
+{
+  "syntax": true,
+  "typed_config": true,
+  "independent_BFS_targets": [
+    true,
+    false
+  ],
+  "exact_two_paths": true,
+  "training_episode_ids_distinct": true,
+  "native_inferences": 0,
+  "new_dependencies": 0,
+  "initial_check_failure": "local check imported root hcr.py due sys.path insertion order; corrected src precedence; no native run"
+}

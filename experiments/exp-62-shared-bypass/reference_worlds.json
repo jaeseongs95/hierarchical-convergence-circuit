@@ -1,0 +1,30 @@
+{
+  "train-0": {
+    "e0": true,
+    "e1": true
+  },
+  "train-1": {
+    "e0": true,
+    "e1": true
+  },
+  "train-2": {
+    "e0": true,
+    "e1": true
+  },
+  "bypass_open": {
+    "e0": true,
+    "e1": true,
+    "e2": false,
+    "e3": true,
+    "e4": true,
+    "e5": true
+  },
+  "all_blocked": {
+    "e0": true,
+    "e1": true,
+    "e2": false,
+    "e3": true,
+    "e4": false,
+    "e5": true
+  }
+}
