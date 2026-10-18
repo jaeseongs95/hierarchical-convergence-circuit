@@ -1,0 +1,118 @@
+{
+  "schema": "HCCServerCrossoverContract.v1",
+  "source_commit": "f93e3d860a5b12d83625ddbbdacdae56a831f09c",
+  "target": "SSH Test Portal/default",
+  "code_pins": [
+    {
+      "path": "tools/analysis/termination_compare_core.py",
+      "bytes": 9591,
+      "sha256": "73f496600b86eae3681d912a2853a313212ffeb416b6d3f87a70394b077d88c1"
+    },
+    {
+      "path": "tools/analysis/termination_compare_runner.py",
+      "bytes": 29644,
+      "sha256": "ffed8c533a83639ebd28093de5607920421c17cd4d65d3f90a764cca70a9ffcc"
+    },
+    {
+      "path": "tools/analysis/termination_certificate_cost.py",
+      "bytes": 12380,
+      "sha256": "1e3a8f26b901fda9834f03b5b470e9bac8d0045525f9bc4734180573b5c64beb"
+    },
+    {
+      "path": "tools/analysis/termination_forward_crossover.py",
+      "bytes": 16929,
+      "sha256": "0940b99201dee994902e59af2577ba6487cf2d28d35bb8e17f2d30243b0ad97a"
+    },
+    {
+      "path": "tools/analysis/check_termination_comparison.py",
+      "bytes": 11036,
+      "sha256": "b4a8d84510bc295e39f5a7ba67e68c37a2d4dbd24500a73cc1e60268de20abe7"
+    },
+    {
+      "path": "tools/analysis/check_on_basins.py",
+      "bytes": 23200,
+      "sha256": "7c9a9b9ae49495b561d0c6a7aaeddfaf7eaf6c892ef34ca261a668f44e0d5bb2"
+    },
+    {
+      "path": "tools/analysis/check_on_fixed_points.py",
+      "bytes": 15448,
+      "sha256": "e23abd2a8fb4e881913a50cc0b810f187b0181ee8f0f712ec5d883fcaecd8663"
+    },
+    {
+      "path": "tools/analysis/check_on_convergence_gate.py",
+      "bytes": 23111,
+      "sha256": "0978b8da49213ca2a22fe4f7fc444cb989f72da0ff9bc52c61004ba7d9e10493"
+    },
+    {
+      "path": "tools/analysis/check_on_online_convergence_gate.py",
+      "bytes": 29642,
+      "sha256": "5258e7f3167e969117f6ed95ed7eb206d3f09ffe6867c4bd289626e5cbc2bf4c"
+    },
+    {
+      "path": "tools/analysis/termination_server_crossover.py",
+      "bytes": 20632,
+      "sha256": "3b394f9e9c5e7e97e17580bf0d34305bd48e2596ea732ce54a940a9f77237816"
+    },
+    {
+      "path": "tools/analysis/test_server_crossover.py",
+      "bytes": 5128,
+      "sha256": "bcc09cbce40b05d8ae4d797395822d0d8d8b37c0e0367a0cdba08e662c047058"
+    },
+    {
+      "path": "tools/analysis/test_certificate_cost.py",
+      "bytes": 9468,
+      "sha256": "32d9ba79744759d0ac468e672a661b8b0abf9287c63bc429c45440e154af08a0"
+    }
+  ],
+  "input_pins": [
+    {
+      "path": "evidence/server-crossover-20261018-r14/public-input.json",
+      "bytes": 95528,
+      "sha256": "bb22b9b3b7ab08c88f84bd0ff0c7920b7d9b1a4785f16588f8ceda88a1d06ed1"
+    },
+    {
+      "path": "evidence/server-crossover-20261018-r14/world.json",
+      "bytes": 206,
+      "sha256": "60594f06ca2b7446ff93d0f258296f2dd7d687b8524244620e3bbee1e8002dd0"
+    },
+    {
+      "path": "experiments/exp-62-top-down/on-fixed-point-distance-entry-certificates-20261014.json",
+      "bytes": 7407523,
+      "sha256": "24d2a4dcb79a03e6735154fcba25e317305223696ef4896f1c3b158968672271"
+    }
+  ],
+  "distance_reference": {
+    "path": "experiments/exp-62-top-down/on-fixed-point-distance-entry-certificates-20261014.json",
+    "sha256": "24d2a4dcb79a03e6735154fcba25e317305223696ef4896f1c3b158968672271",
+    "bytes": 7407523
+  },
+  "global_seconds": 13100,
+  "policy_seconds": 3000,
+  "evaluation_seconds": 15,
+  "cleanup_seconds": 10,
+  "verification_seconds": 900,
+  "preflight_seconds": 30,
+  "reservations_seconds": 13030,
+  "unallocated_seconds": 70,
+  "planned_cells": 4,
+  "independent_adjacent_blocks": 2,
+  "order_rule": "single os.urandom(32), independent first-byte bits 0/1; 0=C0,C1; 1=C1,C0",
+  "scientific_retries": 0,
+  "pilot_runs": 0,
+  "unused_reallocation": false,
+  "affinity": "inherit actual allowed mask unchanged",
+  "memory": "RLIMIT_AS 512MiB per child virtual address space; not Windows Job memory",
+  "CPU_backstop_seconds": [
+    3020,
+    3030
+  ],
+  "observer": "r12 body phases and every128tick blocks with Linux host snapshot; supervisor host samples every30s; all interference retained, never subtracted",
+  "numeric_policy": "unchanged pinned core.Arithmetic C0 / r11 screened_certificate C1; cadence16/grid30/6144/epsilon1e-6/radius1e-5, fsync+atomic ack unchanged",
+  "primary_cost": "supervisor owned phase before launch through child exit, reap, zero live group and end-host snapshot; supervision receipt serialization charged to outer shared overhead",
+  "quality_rule": "4/4 certified+candidate correct+distance INSIDE+complete gate/full7/fresh original verification or ABSTAIN_INCOMPLETE_EVIDENCE",
+  "environment_flags": "any host steal/PSI some.total/cgroup throttle delta >0; unavailable metrics explicit; identity change flag. Flags never exclude cells or trigger rerun; no flag does not certify no interference.",
+  "no_statistical_or_general_superiority": true,
+  "no_windows_retrospective_correction": true,
+  "termination_scope": "pinned nonspawning child, private session/group, PDEATHSIG plus parent handshake; no arbitrary escaping-tree guarantee",
+  "freeze_utc": "2026-10-18T02:45:55.874Z"
+}
