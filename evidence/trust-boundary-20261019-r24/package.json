@@ -1,0 +1,9 @@
+{
+  "bytes": 343218,
+  "design_sha256": "b5af1baf0d0cd05156bc1ea107bc2dcf303b73686dc0d101d24fe7391c2bf0b7",
+  "direction_sha256": "8b185c917934d4e4e049bd3eabc8ccdf6148c8964fcaf1d1e24d905ca4adbe9c",
+  "sha256": "dc83430846b8ce54b13d3ffe837ce3a234682636e392979f4b7a9e019fa56102",
+  "source_files": 107,
+  "source_manifest_sha256": "9f99111da48a4d66f8fd707c94c0d702e4416bec0a03acf59951db3a9bc6d3af",
+  "spec_sha256": "130dd200031ddf46c2295737d50b9c24c0f0c8ccf52dcbb6f0166dd884d70dc5"
+}

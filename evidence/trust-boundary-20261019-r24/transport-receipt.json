@@ -1,0 +1,83 @@
+{
+  "schema": "r24.transport-receipt.v1",
+  "connector": "AI Research SSH",
+  "profile": "aws-local",
+  "remote_root": "/home/mcpops/hcc-trust-boundary-20261019-r24",
+  "launch": {
+    "request_id": "ccec9883041b1493694fa6e6027b8b2ca7b9653f3a47e032",
+    "state": "completed",
+    "approval_mode": "owner",
+    "human_reply": "승인했어",
+    "question_item_id": "[\"request_user_input_async\",\"call_65bf51d6ca9f4113acc6b29172483780\",0]",
+    "approval_actor": null,
+    "approved_at": null,
+    "launcher_finished_at": 1792404376149,
+    "finished_at_semantics": "Launcher completion only; neither approval nor full analysis completion time"
+  },
+  "upload": {
+    "request_id": "c6acb30df82c8100c360909b5c53828575fa284d83fa8471",
+    "state": "completed",
+    "bytes": 343218,
+    "sha256": "dc83430846b8ce54b13d3ffe837ce3a234682636e392979f4b7a9e019fa56102"
+  },
+  "source": {
+    "local_pre_frozen_manifest_sha256": "9f99111da48a4d66f8fd707c94c0d702e4416bec0a03acf59951db3a9bc6d3af",
+    "local_source_files_verified": 107,
+    "pre_frozen_manifest_is_received_remote_manifest": false,
+    "server_reports_source_unchanged": true,
+    "remote_manifest_exact_bytes_verified": false,
+    "remote_postcheck_exact_bytes_verified": false,
+    "remote_source_lists_redacted": true,
+    "redacted_source_paths_reconstructed": false
+  },
+  "raw": {
+    "exact_json_files": [
+      "census.json",
+      "preparation.json",
+      "result.json",
+      "summary.json"
+    ],
+    "exact_json_digest_count": 4,
+    "manifest_entries": 11,
+    "stdout_stderr_listed": 6,
+    "stdout_stderr_received": 0,
+    "remote_postcheck_received_as_redacted_text": true,
+    "bulk_output_id": "5195004607ac48f9c95e05b2083829f6da112e274f2f713c",
+    "bulk_stdout_truncated": true,
+    "census_ranges": [
+      {
+        "output_id": "67b704f39902c50c9e47b200541b82a93b2f1613e3eb8d1b",
+        "offset": 0,
+        "bytes": 800000
+      },
+      {
+        "output_id": "7b98b7506a2ed0bef21cddbf09ad3e9f9dd2851490f15f70",
+        "offset": 800000,
+        "bytes": 612942
+      }
+    ],
+    "census_total_bytes": 1412942,
+    "census_full_sha256_matched_manifest": true,
+    "range_purpose": "Read complete unredacted census beyond stdout size cap; source path redactions left intact"
+  },
+  "evidence_zip": {
+    "request_id": "52518536e9eb1b48c23ee61117b6efb2e2f2afcea55a82a0",
+    "server_ready": true,
+    "received_locally": false,
+    "bytes": 300769,
+    "sha256": "716934b5a15ab7da6aa1b605cfc82e10c64831f6876ab0b9b645976ac987e07e"
+  },
+  "validation": {
+    "local_saved_replay": "SAVED_CENSUS_REPLAY_PASSED",
+    "new_native_calls": 0,
+    "new_performance_run": false,
+    "independent_implementation_audit": false,
+    "direction_panel_is_execution_approval": false
+  },
+  "limitations": [
+    "Remote source lists exact bytes unavailable because path redaction remains.",
+    "Six stdout/stderr files and complete evidence ZIP not received locally.",
+    "Source unchanged is a server report bound to frozen manifest digest, not an exact local post-source-list comparison.",
+    "Original R19 audit failure and missing complete original post-source rehash are preserved."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "axes": {
+    "cost": "ceiling only V4,I3-I4,T2",
+    "implementation": "tick-only fit V6,V8,T3",
+    "research_value": "conditional fit V3-V5",
+    "validity": "conditional fit V5-V8,T1-T2"
+  },
+  "chosen": "C: archived exact numeric transition census only",
+  "conditions": [
+    "source order/hash/count frozen",
+    "lossless complete key; prior initial/tick current",
+    "case_local vs counterfactual arm_stream separation",
+    "no cross-arm warmup or future preload",
+    "bitwise saved outputs; no approximate hit",
+    "original Cost/convergence unchanged; new native/train/measure0",
+    "management burden separate; no net-efficiency claim"
+  ],
+  "fresh_judge": "/root/r24_judge",
+  "implementation_audit": false,
+  "judge_source_scope": "V5-V8 code/report/receipt read directly by judge; V1-V4 relied on coordinator verified summary",
+  "ssh_approval": false,
+  "status": "conditional_consensus"
+}

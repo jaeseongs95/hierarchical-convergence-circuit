@@ -1,0 +1,10 @@
+{
+  "archived_census_executed": false,
+  "assertions": 27,
+  "new_native_settle_calls": 0,
+  "new_native_tick_calls": 0,
+  "new_world_measure_calls": 0,
+  "notice": "Synthetic repetition tests exercise contracts, not research hit counts.",
+  "status": "PURE_PREPARATION_PASSED",
+  "synthetic_transition_rows": 4
+}

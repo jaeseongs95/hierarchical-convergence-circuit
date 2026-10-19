@@ -1,0 +1,166 @@
+{
+  "axes": [
+    "연구 가치·비중복성",
+    "평가 타당성·정보 경계",
+    "구현 경계",
+    "비용·중단 기준"
+  ],
+  "candidate_C_conditions": [
+    "프로그램 group/link 순서 보존, config 전체, fullcurrent, drives, top_down의 손실 없는 key",
+    "각 source arm cold cache 분리·고정 실제 case/kernel/tick 순서·과거만 조회",
+    "원수명 case_local(cold매case)와 가상 arm_stream(cold매arm) 두 범위를 별도 분석, 중복합산 금지",
+    "hash collision은 key 원문 비교로 배제; next-state 저장값 bit 불일치면 후보 기각",
+    "scalar replay 허용오차는1e-15이나 key/hit 병합에는 적용 안함",
+    "동일settle/동일case 다른settle/교차case 적중과 동일전체kernel입력/그밖 기여를 교차 분리",
+    "CPU/wall은 분석 작업 비용, 가능한 group/signal 생략은 상한; 원 native Cost 부작용·convergence 복사/차감 금지",
+    "새 native tick/settle/학습/측정0; hit가 없거나 모두 의도된 완전입력 반복/가상 cross-process에만 의존하면 큰 구현으로 승격 안함"
+  ],
+  "case_brief": {
+    "alternatives": [
+      "A: 최근 source 오류 증거에 따른 적격 중단·회복",
+      "B: 안정된 초기 결과의 고정 추가 측정에 따른 교정/손상",
+      "C: r19 저장 전이의 완전 입력 exact 재사용 가능성과 비용 상한 선별"
+    ],
+    "constraints": [
+      "방향 토론 뒤 구현/실험",
+      "src·과거 연구 불변",
+      "새 유료자원·의존성·서비스 없음",
+      "AI Research SSH worker1·retry0·전체600초 이하",
+      "정답 누출 없음",
+      "연구 검산과 실제 효율 증거 구별"
+    ],
+    "decision": "r23 뒤 현재 구현·낮은 서버 자원으로 먼저 할 비중복 연구 과제 선택",
+    "success_criteria": [
+      "큰 목표인 품질 보존 실제 계산 절감과 연결",
+      "현재 코드와 수신 원자료로 관측 가능한 판별",
+      "비용·한계가 명시된 작은 실행"
+    ]
+  },
+  "cross_examination_summary": [
+    {
+      "finding": "C를 정보가치 있는 선별로 지지하되 arm별cold·미래예열금지·tick-only·bit exact·원실행 실패 공개·가능상한만 허용.",
+      "id": "T1",
+      "issue": "C가 단순 중복 분석인지, 평가 누출 없이 유효한가",
+      "origin": "r24_value",
+      "reviewer": "r24_validity"
+    },
+    {
+      "finding": "완전입력 중복기여를 분리하고 key/hash/조회/저장/복사비용을 남겨야 함. 근사병합 금지. 실제 효율/학습 비용회수 주장 금지.",
+      "id": "T2",
+      "issue": "C의 비용·의도된 반복 fixture 기여·부동소수 exact성",
+      "origin": "r24_value",
+      "reviewer": "r24_cost"
+    },
+    {
+      "finding": "조건부 C우선으로 권고 변경. tick-only는 history 불필요, settle 종료와 Cost 부작용 복사 금지. t current는 initial/직전tick. 원r19 case subprocess별수명이므로 동일settle/동일case/교차case 적중을 구분해야 함.",
+      "id": "T3",
+      "issue": "C의 실제 제어 경계와 key 충분성·cache 수명",
+      "origin": "r24_value",
+      "reviewer": "r24_architecture"
+    }
+  ],
+  "issue_ledger": [
+    {
+      "id": "I1",
+      "issue": "A는 source feature 오류 증거의 취득/시점/비용 계약부터 필요, oracle 조건부 중단기계와 운영 안전성은 다름.",
+      "status": "CONFIRMED"
+    },
+    {
+      "id": "I2",
+      "issue": "B의 식별불가능성 단순 재현은 중복; 새 실험이면 모든 stable 점검의 교정/손상/비용을 비교해야 함.",
+      "status": "CONFIRMED"
+    },
+    {
+      "id": "I3",
+      "issue": "C는 저장 tick 전이의 exact 중복 상한 분석으로 한정하면 src 제어 개입 불필요. native 계산 절감이나 learned circuit 성과로 부를 수 없음.",
+      "status": "CONFIRMED"
+    },
+    {
+      "id": "I4",
+      "issue": "실제 배포 캐시의 속도 순이득·현실 입력 반복률·학습 포함 손익분기는 이번 후보 자료만으로 관측 불가.",
+      "status": "NOT_OBSERVABLE"
+    }
+  ],
+  "method_notes": [
+    "4 blind reviewers fork_turns:none; configured gpt-6.1-sol/xhigh. Preferred Terra not exposed in collaboration model choices.",
+    "Reviewers prohibited from delegation, writes, new experiments and external messages.",
+    "No raw reviewer output or dialogue is included. Specialist/re-deliberation not used.",
+    "Fresh judge must be a new worker, not a reviewer. Directional judgment is not implementation audit or execution approval."
+  ],
+  "verified_material_claims": [
+    {
+      "id": "V1",
+      "sources": [
+        "experiments/exp-69-source-qualification/RESULTS.ko.md:29",
+        "evidence/source-qualification-20261019-r23/raw/summary.json:1"
+      ],
+      "statement": "r23 정답6동일/오답4→3이지만 기존 정답에서 새오답eval03·새보류eval05. 검증포함측정8→24. tick 차이-53은 eval05 -56과 eval06 +3이다.",
+      "verification": "Coordinator read RESULTS and the per-input raw summary in prior turn; no native calculation."
+    },
+    {
+      "id": "V2",
+      "sources": [
+        "tools/r23_source_qualification/policy.py:7",
+        "tools/r23_source_qualification/probe.py:22",
+        "experiments/exp-69-source-qualification/design.ko.md:43"
+      ],
+      "statement": "r23 qualification은 알려진 calibration feature labels로 집계하는 고정 출처선택이며 시간별 오류 중단 상태가 없다. 실제 label 취득 비용/진위는 미측정이다.",
+      "verification": "Coordinator read complete policy/probe/design."
+    },
+    {
+      "id": "V3",
+      "sources": [
+        "experiments/exp-65-substitution-cross-level/RESULTS.ko.md:45",
+        "experiments/exp-69-source-qualification/design.ko.md:36"
+      ],
+      "statement": "같은 공개 관측에 다른 hidden truth가 있는 paired world의 식별 경계는 r19~23에서 이미 확인됐다. 새 신호 없이 오답만 선택적 요청할 근거는 없다.",
+      "verification": "Coordinator read paired definitions, reference interpretation and gate code."
+    },
+    {
+      "id": "V4",
+      "sources": [
+        "experiments/exp-64-pre-reuse-gate/RESULTS.ko.md:26",
+        "experiments/exp-64-pre-reuse-gate/RESULTS.ko.md:70"
+      ],
+      "statement": "r18은 expansion 감소에도 tick/group 증가와 학습 포함 부담이 남았다. 같은 ON/OFF 행렬 재실행은 새 개입이 아니다.",
+      "verification": "Coordinator read original report."
+    },
+    {
+      "id": "V5",
+      "sources": [
+        "experiments/exp-65-substitution-cross-level/RESULTS.ko.md:7",
+        "experiments/exp-65-substitution-cross-level/RESULTS.ko.md:19",
+        "evidence/substitution-cross-level-20261019-r19/replay-receipt.json:1"
+      ],
+      "statement": "r19는 경계 생략형 local tick 정확대체만 반례로 기각했다. 전체 state cache는 기각하지 않았다. 로컬에18case,36settle,988tick이 있고 원격audit 실패와 수정된 저장 재생은 구분돼 있다.",
+      "verification": "Coordinator inspected original report, raw directory, saved receipt and current corrected verifier."
+    },
+    {
+      "id": "V6",
+      "sources": [
+        "src/hcr/dynamics.py:7",
+        "src/hcr/dynamics.py:32"
+      ],
+      "statement": "tick의 다음state는 순서 있는 Program·Config·full current·drives·top_down에 의존한다. settle의 종료는 stable/history/tick budget에도 의존한다.",
+      "verification": "Coordinator read entire dynamics.py and independent scalar recurrence."
+    },
+    {
+      "id": "V7",
+      "sources": [
+        "tools/r19_cross_level/probe.py:64",
+        "experiments/exp-65-substitution-cross-level/RESULTS.ko.md:45"
+      ],
+      "statement": "r19 bottom_up/coupled는 같은 case의 초기 계산을 공유하며 ambiguous_B/misleading_A는 ID 외 공개값이 같은 의도된 쌍이다.",
+      "verification": "Coordinator read execute, frozen case order, recorded fields."
+    },
+    {
+      "id": "V8",
+      "sources": [
+        "tools/r19_cross_level/probe.py:219",
+        "tools/r19_cross_level/probe.py:235"
+      ],
+      "statement": "원r19는 case별 stage subprocess를 새로 만든다. cross-case cache 수명은 원 process-local 구현과 다르다.",
+      "verification": "Coordinator read stage subprocess construction and case/arm loop. Census must separate original case-local scope from hypothetical arm-stream scope."
+    }
+  ]
+}

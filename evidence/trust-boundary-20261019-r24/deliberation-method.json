@@ -1,0 +1,81 @@
+{
+  "adaptive_redeliberations": 0,
+  "assurance": "independent",
+  "blind_reviewers": [
+    {
+      "failure_function": "research value and nonduplication",
+      "fork_turns": "none",
+      "id": "/root/r24_value",
+      "status": "completed"
+    },
+    {
+      "failure_function": "data leakage and evidential validity",
+      "fork_turns": "none",
+      "id": "/root/r24_validity",
+      "status": "completed"
+    },
+    {
+      "failure_function": "state lifetime and native contract boundaries",
+      "fork_turns": "none",
+      "id": "/root/r24_architecture",
+      "status": "completed"
+    },
+    {
+      "failure_function": "cost attribution and unnecessary scope",
+      "fork_turns": "none",
+      "id": "/root/r24_cost",
+      "status": "completed"
+    }
+  ],
+  "configured_model": "gpt-6.1-sol",
+  "configured_reasoning": "xhigh",
+  "cross_examination": {
+    "decision": "run",
+    "items": [
+      {
+        "followups": 1,
+        "id": "T1",
+        "origin": "/root/r24_value",
+        "reviewer": "/root/r24_validity"
+      },
+      {
+        "followups": 1,
+        "id": "T2",
+        "origin": "/root/r24_value",
+        "reviewer": "/root/r24_cost"
+      },
+      {
+        "followups": 1,
+        "id": "T3",
+        "origin": "/root/r24_value",
+        "reviewer": "/root/r24_architecture"
+      }
+    ],
+    "lifecycle_note": "T3 send_message reached a completed reviewer and did not trigger a turn; followup_task triggered the single actual cross-examination response. No extra reviewer was created.",
+    "reason": "Initial direction recommendations differed; concrete C needed independent tests of evidential, cost and lifetime assumptions."
+  },
+  "execution_assurance": "degraded_ok",
+  "external_peer_messages": 0,
+  "fresh_judge": {
+    "fork_turns": "none",
+    "id": "/root/r24_judge",
+    "participated_stages": [
+      "final_judge"
+    ],
+    "status": "completed"
+  },
+  "instantiated_workers": 5,
+  "model_fallback": "Preferred Terra reviewer was not exposed in collaboration model choices; available Sol supports isolated contexts and xhigh. No Astra escalation.",
+  "notes": [
+    "All workers explicitly prohibited delegation, writes, new experiments and external messages.",
+    "Only source-checked claims and condensed issue/cross-examination summaries were given to fresh Judge.",
+    "No raw reviewer output, transcript or internal chain of thought is stored in these artifacts.",
+    "Protocol isolation is observed at fork_turns/lifecycle level; provider internal isolation is not externally proven.",
+    "Direction decision is not an implementation audit, risk approval or SSH owner authorization.",
+    "Actual token consumption and provider-internal model state are not observed."
+  ],
+  "skill": "agent-governance-suite:independent-deliberation-panel",
+  "specialists_used": 0,
+  "stage": "HIGH",
+  "worker_cap": 8
+}

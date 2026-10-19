@@ -1,0 +1,79 @@
+{
+  "arms": [
+    "exact_transition_census"
+  ],
+  "boundaries": {
+    "actual_cost_or_convergence_not_modified": true,
+    "arm_stream_is_counterfactual": true,
+    "case_local_matches_original_subprocess_lifetime": true,
+    "no_approximate_keys": true,
+    "no_cross_arm_cache": true,
+    "no_future_preload": true
+  },
+  "cases": [
+    {
+      "key": "archived_r19"
+    }
+  ],
+  "expected_case_files": 18,
+  "expected_saved_settles": 36,
+  "expected_saved_ticks": 988,
+  "experiment": "EXP-70",
+  "key_encoding": "tagged types with float.hex; ordered lists; sorted mapping keys",
+  "key_fields": [
+    "program",
+    "config",
+    "current",
+    "drives",
+    "top_down",
+    "semantics_sha256"
+  ],
+  "limits": {
+    "automatic_retry": false,
+    "child_address_space_bytes": 536870912,
+    "child_file_bytes": 16777216,
+    "parent_address_space_bytes": 536870912,
+    "parent_file_bytes": 33554432,
+    "raw_bytes": 134217728,
+    "stage_seconds": 60,
+    "total_seconds": 600,
+    "workers": 1
+  },
+  "maximum_cache_entries": 2048,
+  "maximum_cache_payload_bytes": 16777216,
+  "maximum_measurement_requests": 0,
+  "maximum_native_settle_calls": 0,
+  "numeric_replay_absolute_tolerance_portable": 1e-15,
+  "numeric_replay_absolute_tolerance_server": 1e-15,
+  "old_source_postcheck_complete": false,
+  "original_raw_root": "evidence/substitution-cross-level-20261019-r19/raw",
+  "original_spec": "experiments/exp-65-substitution-cross-level/frozen_spec.json",
+  "original_status": "FAILED_AT_AUDIT",
+  "output_contract": "next-state numbers only; not Cost, trace, convergence or controller state",
+  "promotion_filter": "Only consider a future separate native experiment if case_local has a hit beyond same-complete-kernel repetitions; census never proves net efficiency.",
+  "purpose": "exact saved tick transition reuse census; no native cache implementation",
+  "run": "r24",
+  "scopes": [
+    "case_local",
+    "arm_stream"
+  ],
+  "source_arms": [
+    "bottom_up",
+    "coupled",
+    "separate_algorithms"
+  ],
+  "source_case_order": [
+    "clear_A_match",
+    "clear_B_match",
+    "ambiguous_A",
+    "ambiguous_B",
+    "misleading_A",
+    "strong_conflict"
+  ],
+  "top_down": true,
+  "training_calls": 0,
+  "transition_arms": [
+    "bottom_up",
+    "coupled"
+  ]
+}
