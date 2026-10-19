@@ -1,0 +1,54 @@
+{
+  "both_wrong_A": {
+    "category": true,
+    "relation": false
+  },
+  "clear_A": {
+    "category": true,
+    "relation": true
+  },
+  "declared_overlap_A": {
+    "category": true,
+    "relation": false
+  },
+  "feature_budget_A": {
+    "category": true,
+    "relation": false
+  },
+  "missing_aux_A": {
+    "category": true,
+    "relation": false
+  },
+  "no_information_A": {
+    "category": true,
+    "relation": false
+  },
+  "primary_flipped_A": {
+    "category": true,
+    "relation": false
+  },
+  "repair_aux_A": {
+    "category": true,
+    "relation": false
+  },
+  "request_budget_A": {
+    "category": true,
+    "relation": false
+  },
+  "stale_witness_A": {
+    "category": true,
+    "relation": false
+  },
+  "strong_primary_wrong_B": {
+    "category": false,
+    "relation": false
+  },
+  "weak_witness_A": {
+    "category": true,
+    "relation": false
+  },
+  "witness_flipped_A": {
+    "category": true,
+    "relation": false
+  }
+}

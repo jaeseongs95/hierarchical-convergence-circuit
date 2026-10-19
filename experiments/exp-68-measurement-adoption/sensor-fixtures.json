@@ -1,0 +1,288 @@
+{
+  "both_wrong_A": {
+    "primary_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "flipped",
+      "root_measurement_ids": [
+        "root:primary"
+      ]
+    },
+    "witness_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "flipped",
+      "root_measurement_ids": [
+        "root:witness"
+      ]
+    }
+  },
+  "clear_A": {
+    "primary_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:primary"
+      ]
+    },
+    "witness_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:witness"
+      ]
+    }
+  },
+  "declared_overlap_A": {
+    "primary_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "flipped",
+      "root_measurement_ids": [
+        "root:primary"
+      ]
+    },
+    "witness_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "flipped",
+      "root_measurement_ids": [
+        "root:primary"
+      ]
+    }
+  },
+  "feature_budget_A": {
+    "primary_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:primary"
+      ]
+    },
+    "witness_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:witness"
+      ]
+    }
+  },
+  "missing_aux_A": {
+    "primary_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:primary"
+      ]
+    },
+    "witness_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:witness"
+      ]
+    }
+  },
+  "no_information_A": {
+    "primary_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "no_information",
+      "root_measurement_ids": [
+        "root:primary"
+      ]
+    },
+    "witness_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:witness"
+      ]
+    }
+  },
+  "primary_flipped_A": {
+    "primary_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "flipped",
+      "root_measurement_ids": [
+        "root:primary"
+      ]
+    },
+    "witness_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:witness"
+      ]
+    }
+  },
+  "repair_aux_A": {
+    "primary_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:primary"
+      ]
+    },
+    "witness_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:witness"
+      ]
+    }
+  },
+  "request_budget_A": {
+    "primary_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:primary"
+      ]
+    },
+    "witness_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:witness"
+      ]
+    }
+  },
+  "stale_witness_A": {
+    "primary_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:primary"
+      ]
+    },
+    "witness_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "stale",
+      "root_measurement_ids": [
+        "root:witness"
+      ]
+    }
+  },
+  "strong_primary_wrong_B": {
+    "primary_sensor": {
+      "hidden_features": [
+        false,
+        false
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:primary"
+      ]
+    },
+    "witness_sensor": {
+      "hidden_features": [
+        false,
+        false
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:witness"
+      ]
+    }
+  },
+  "weak_witness_A": {
+    "primary_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:primary"
+      ]
+    },
+    "witness_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "weak",
+      "root_measurement_ids": [
+        "root:witness"
+      ]
+    }
+  },
+  "witness_flipped_A": {
+    "primary_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:primary"
+      ]
+    },
+    "witness_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "flipped",
+      "root_measurement_ids": [
+        "root:witness"
+      ]
+    }
+  }
+}

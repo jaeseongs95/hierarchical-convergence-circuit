@@ -1,0 +1,36 @@
+{
+  "study": "r22",
+  "experiment": "EXP-68",
+  "connector": "AI Research SSH",
+  "launchRequest": "d1196eed08a8ffd9f795eca805a15264afcf929a786728a3",
+  "approvalMode": "owner",
+  "executedResearchRuns": 1,
+  "automaticRetry": false,
+  "inputSubmissionFailure": {
+    "error": "INVALID_ARGUMENT",
+    "requestIdReturned": false,
+    "rootAbsenceConfirmed": true,
+    "correction": "Shorter single-line command/context, envelope1370 characters; frozen source and SHA/caps unchanged."
+  },
+  "uploadRequest": "c5d67cdcd1d13ee790c677998b9df3a8fde1fcc6f03445fa",
+  "sourceZipBytes": 256989,
+  "sourceZipSha256": "0297f0af7312897b1c4fde5f47036d3b6950e5988632eee707d43f823fa77ef1",
+  "sourceFiles": 82,
+  "sourceManifestSha256": "89a203fa1cffbe3d0b487c291ebc53174cce28a820aad3c644d847f94ba324d8",
+  "rawJsonExactDigestCount": 43,
+  "caseRecords": 39,
+  "rawReadPages": 34,
+  "sourceManifestExactBytesVerified": true,
+  "sourcePostcheckExactBytesVerified": true,
+  "redactedPayloads": false,
+  "downloadRequest": "82d373190db754088796ad7d5a3058151865129e3e7ca0c1",
+  "serverZipBytes": 179219,
+  "serverZipSha256": "ca6335b416fcc71335d4c2fa7eeb931e83818ac068a628865ad47f2d9af97de5",
+  "zipState": "server_file_ready_not_received_locally",
+  "limitations": [
+    "Full sealed ZIP not delivered to agent/device, no local comparison to ZIP interior.",
+    "Raw manifest received as text; 43 original raw JSON bytes match its hashes.",
+    "Completion generated after sealing and is not a raw-manifest entry.",
+    "Declared source/root separation is not physical authentication or empirical independence."
+  ]
+}

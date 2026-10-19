@@ -1,0 +1,12 @@
+{
+  "assertions": 208,
+  "cell_cap_rejection_functions_exercised": 3,
+  "global_cap_rejection_functions_exercised": 2,
+  "new_native_settle_calls": 0,
+  "new_world_measure_calls": 0,
+  "notice": "Stub cells/response formulas are preparation checks, not experimental observations.",
+  "numeric_tolerance": 1e-15,
+  "saved_record_max_absolute_error": 0.0,
+  "status": "PURE_PREPARATION_PASSED",
+  "stub_cells": 39
+}
