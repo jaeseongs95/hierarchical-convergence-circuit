@@ -1,0 +1,350 @@
+{
+  "arms": [
+    "no_query",
+    "after_abstention",
+    "primary_uncertainty"
+  ],
+  "base": {
+    "arms": [
+      "gated"
+    ],
+    "aux_min_abs_score": 0.8,
+    "aux_source_ids": [
+      "aux_sensor"
+    ],
+    "feedback_gain": 1.0,
+    "kernel": {
+      "damping": 0.45,
+      "evidence_gain": 4.0,
+      "inhibition": 0.2,
+      "learning_rate": 0.25,
+      "margin_threshold": 0.3,
+      "max_circuits": 16,
+      "max_edges": 8,
+      "max_groups": 32,
+      "max_observation_requests": 2,
+      "max_path_length": 4,
+      "max_paths": 4,
+      "max_search": 2048,
+      "max_ticks": 160,
+      "min_valid_episodes": 3,
+      "patience": 4,
+      "prior_gain": 0.0,
+      "relation_gain": 2.0,
+      "residual_tolerance": 1e-06,
+      "self_excitation": 0.25,
+      "temperature": 1.0,
+      "top_down_gain": 0.35,
+      "weakening": 0.2
+    }
+  },
+  "boundaries": {
+    "category_reference_read_by_policy": false,
+    "initial_inference_always_paid": true,
+    "native_revision_controller": false,
+    "native_world_measure": true,
+    "physical_sensor": false,
+    "requests_per_cell": 1,
+    "retain_old_aux_revision": true,
+    "training": false
+  },
+  "cases": [
+    {
+      "key": "clear_A",
+      "public": {
+        "budget": {
+          "feature_units": 2,
+          "requests": 1,
+          "revision_settles": 4
+        },
+        "observation": {
+          "aux": null,
+          "context": 1.0,
+          "id": "clear_A",
+          "measurement_ids": [
+            "f0",
+            "f1"
+          ],
+          "measurements": [
+            1.0,
+            0.8
+          ],
+          "revision": 0
+        }
+      }
+    },
+    {
+      "key": "aux_pair_A",
+      "public": {
+        "budget": {
+          "feature_units": 2,
+          "requests": 1,
+          "revision_settles": 4
+        },
+        "observation": {
+          "aux": {
+            "measurement_ids": [
+              "aux:0"
+            ],
+            "parents": [],
+            "revision": 0,
+            "score": -1.0,
+            "source_id": "aux_sensor"
+          },
+          "context": -1.0,
+          "id": "aux_pair_A",
+          "measurement_ids": [
+            "f0",
+            "f1"
+          ],
+          "measurements": [
+            0.0,
+            0.0
+          ],
+          "revision": 0
+        }
+      }
+    },
+    {
+      "key": "aux_pair_B",
+      "public": {
+        "budget": {
+          "feature_units": 2,
+          "requests": 1,
+          "revision_settles": 4
+        },
+        "observation": {
+          "aux": {
+            "measurement_ids": [
+              "aux:0"
+            ],
+            "parents": [],
+            "revision": 0,
+            "score": -1.0,
+            "source_id": "aux_sensor"
+          },
+          "context": -1.0,
+          "id": "aux_pair_B",
+          "measurement_ids": [
+            "f0",
+            "f1"
+          ],
+          "measurements": [
+            0.0,
+            0.0
+          ],
+          "revision": 0
+        }
+      }
+    },
+    {
+      "key": "missing_aux_A",
+      "public": {
+        "budget": {
+          "feature_units": 2,
+          "requests": 1,
+          "revision_settles": 4
+        },
+        "observation": {
+          "aux": null,
+          "context": -1.0,
+          "id": "missing_aux_A",
+          "measurement_ids": [
+            "f0",
+            "f1"
+          ],
+          "measurements": [
+            0.0,
+            0.0
+          ],
+          "revision": 0
+        }
+      }
+    },
+    {
+      "key": "feature_budget_A",
+      "public": {
+        "budget": {
+          "feature_units": 1,
+          "requests": 1,
+          "revision_settles": 4
+        },
+        "observation": {
+          "aux": {
+            "measurement_ids": [
+              "aux:0"
+            ],
+            "parents": [],
+            "revision": 0,
+            "score": -1.0,
+            "source_id": "aux_sensor"
+          },
+          "context": -1.0,
+          "id": "feature_budget_A",
+          "measurement_ids": [
+            "f0",
+            "f1"
+          ],
+          "measurements": [
+            0.0,
+            0.0
+          ],
+          "revision": 0
+        }
+      }
+    },
+    {
+      "key": "compute_budget_A",
+      "public": {
+        "budget": {
+          "feature_units": 2,
+          "requests": 1,
+          "revision_settles": 3
+        },
+        "observation": {
+          "aux": null,
+          "context": -1.0,
+          "id": "compute_budget_A",
+          "measurement_ids": [
+            "f0",
+            "f1"
+          ],
+          "measurements": [
+            0.0,
+            0.0
+          ],
+          "revision": 0
+        }
+      }
+    },
+    {
+      "key": "stale_reply_A",
+      "public": {
+        "budget": {
+          "feature_units": 2,
+          "requests": 1,
+          "revision_settles": 4
+        },
+        "observation": {
+          "aux": null,
+          "context": -1.0,
+          "id": "stale_reply_A",
+          "measurement_ids": [
+            "f0",
+            "f1"
+          ],
+          "measurements": [
+            0.0,
+            0.0
+          ],
+          "revision": 0
+        }
+      }
+    },
+    {
+      "key": "no_information_A",
+      "public": {
+        "budget": {
+          "feature_units": 2,
+          "requests": 1,
+          "revision_settles": 4
+        },
+        "observation": {
+          "aux": null,
+          "context": -1.0,
+          "id": "no_information_A",
+          "measurement_ids": [
+            "f0",
+            "f1"
+          ],
+          "measurements": [
+            0.0,
+            0.0
+          ],
+          "revision": 0
+        }
+      }
+    },
+    {
+      "key": "flipped_reply_A",
+      "public": {
+        "budget": {
+          "feature_units": 2,
+          "requests": 1,
+          "revision_settles": 4
+        },
+        "observation": {
+          "aux": null,
+          "context": -1.0,
+          "id": "flipped_reply_A",
+          "measurement_ids": [
+            "f0",
+            "f1"
+          ],
+          "measurements": [
+            0.0,
+            0.0
+          ],
+          "revision": 0
+        }
+      }
+    },
+    {
+      "key": "strong_primary_wrong_B",
+      "public": {
+        "budget": {
+          "feature_units": 2,
+          "requests": 1,
+          "revision_settles": 4
+        },
+        "observation": {
+          "aux": null,
+          "context": 1.0,
+          "id": "strong_primary_wrong_B",
+          "measurement_ids": [
+            "f0",
+            "f1"
+          ],
+          "measurements": [
+            1.0,
+            0.8
+          ],
+          "revision": 0
+        }
+      }
+    }
+  ],
+  "experiment": "EXP-67",
+  "limits": {
+    "automatic_retry": false,
+    "child_address_space_bytes": 536870912,
+    "child_file_bytes": 16777216,
+    "raw_bytes": 134217728,
+    "stage_seconds": 60,
+    "total_seconds": 600,
+    "workers": 1
+  },
+  "maximum_measurement_requests": 20,
+  "maximum_native_settle_calls": 200,
+  "numeric_replay_absolute_tolerance_portable": 1e-15,
+  "numeric_replay_absolute_tolerance_server": 0.0,
+  "parameter_search": false,
+  "predictions": {
+    "abstention_trigger_can_miss_them": true,
+    "bad_measurement_can_harm": true,
+    "no_information_or_stale_reply_not_success": true,
+    "primary_uncertainty_can_query_confident_aux_errors": true,
+    "strong_primary_error_can_remain": true
+  },
+  "request_quote": {
+    "feature_ids": [
+      "f0",
+      "f1"
+    ],
+    "feature_units": 2,
+    "revision_settle_reservation": 4,
+    "source_id": "primary_sensor"
+  },
+  "run": "r21",
+  "training_calls": 0
+}

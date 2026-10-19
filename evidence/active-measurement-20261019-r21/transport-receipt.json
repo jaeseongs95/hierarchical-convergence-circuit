@@ -1,0 +1,27 @@
+{
+  "study": "r21",
+  "experiment": "EXP-67",
+  "targetConnector": "AI Research SSH",
+  "launchRequest": "b1f27e4000edc955f2565072549ca015cffac945d0f24e37",
+  "approvalMode": "owner",
+  "remoteExecutionCount": 1,
+  "automaticRetry": false,
+  "sourceFiles": 78,
+  "sourceZipBytes": 248396,
+  "sourceZipSha256": "12a8fa8a5fc5e506cae9a2c21cd1b6f5f5368cabb93e9290092f39b5d293c68d",
+  "sourceManifestSha256": "f5c48cae4481237c9d11df58b76b250296d08f9f37786896157ed91111f5b98b",
+  "rawTransport": "read_command text; 36 bounded pages of case records; no redacted payloads",
+  "rawJsonExactDigestCount": 34,
+  "caseRecords": 30,
+  "sourceManifestExactDigestVerified": true,
+  "sourcePostcheckExactDigestVerified": true,
+  "downloadRequest": "b5282cdf7669e61eae29128ecd51d6c8d6525080f6a86705",
+  "serverEvidenceZipBytes": 176024,
+  "serverEvidenceZipSha256": "e60261e0b22f582a725c9ea28d928e4545ee491ddccf94c7860866d94907e19c",
+  "zipState": "server_file_ready_not_received_locally",
+  "limitations": [
+    "Full ZIP not delivered to agent/device; no direct comparison to ZIP interior.",
+    "Manifest itself transported as text; individual original JSON bytes verified against transported manifest.",
+    "No claim of physical sensor reliability or learning efficiency."
+  ]
+}

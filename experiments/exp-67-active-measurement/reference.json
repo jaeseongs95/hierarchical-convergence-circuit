@@ -1,0 +1,42 @@
+{
+  "aux_pair_A": {
+    "category": true,
+    "relation": false
+  },
+  "aux_pair_B": {
+    "category": false,
+    "relation": true
+  },
+  "clear_A": {
+    "category": true,
+    "relation": true
+  },
+  "compute_budget_A": {
+    "category": true,
+    "relation": false
+  },
+  "feature_budget_A": {
+    "category": true,
+    "relation": false
+  },
+  "flipped_reply_A": {
+    "category": true,
+    "relation": false
+  },
+  "missing_aux_A": {
+    "category": true,
+    "relation": false
+  },
+  "no_information_A": {
+    "category": true,
+    "relation": false
+  },
+  "stale_reply_A": {
+    "category": true,
+    "relation": false
+  },
+  "strong_primary_wrong_B": {
+    "category": false,
+    "relation": false
+  }
+}

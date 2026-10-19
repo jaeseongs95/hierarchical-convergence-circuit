@@ -1,0 +1,72 @@
+{
+  "aux_pair_A": {
+    "hidden_features": [
+      true,
+      true
+    ],
+    "mode": "valid"
+  },
+  "aux_pair_B": {
+    "hidden_features": [
+      false,
+      false
+    ],
+    "mode": "valid"
+  },
+  "clear_A": {
+    "hidden_features": [
+      true,
+      true
+    ],
+    "mode": "valid"
+  },
+  "compute_budget_A": {
+    "hidden_features": [
+      true,
+      true
+    ],
+    "mode": "valid"
+  },
+  "feature_budget_A": {
+    "hidden_features": [
+      true,
+      true
+    ],
+    "mode": "valid"
+  },
+  "flipped_reply_A": {
+    "hidden_features": [
+      true,
+      true
+    ],
+    "mode": "flipped"
+  },
+  "missing_aux_A": {
+    "hidden_features": [
+      true,
+      true
+    ],
+    "mode": "valid"
+  },
+  "no_information_A": {
+    "hidden_features": [
+      true,
+      true
+    ],
+    "mode": "no_information"
+  },
+  "stale_reply_A": {
+    "hidden_features": [
+      true,
+      true
+    ],
+    "mode": "stale"
+  },
+  "strong_primary_wrong_B": {
+    "hidden_features": [
+      false,
+      false
+    ],
+    "mode": "valid"
+  }
+}
