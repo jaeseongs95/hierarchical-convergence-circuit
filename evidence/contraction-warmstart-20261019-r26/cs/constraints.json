@@ -1,0 +1,139 @@
+{
+  "schemaVersion": "1.0.0",
+  "reportId": "CS-R26-CONSTRAINTS",
+  "requestDigest": "sha256:393c258da35d82816aca4956937c71441c7412eba3234271913d17b66188d13c",
+  "sourceSnapshotDigest": "sha256:2e4d7eb7c1329c61d6fddc4aef831413f43c2ae4f03f7346e20809dadc92392c",
+  "knowledgePackVersion": "0.1.0",
+  "knowledgePackDigest": "sha256:d8351d9aabb433403830fcffc3a2f2438b6d428711c93b6ded9eff002468c3d1",
+  "draftUse": {
+    "allowed": false,
+    "basis": "Only two validated rules selected."
+  },
+  "applicability": "applicable",
+  "applicabilityReason": "Initial-state reuse changes numerical behavior and adds input-screening costs.",
+  "selectedRules": [
+    {
+      "ruleId": "ALG-KEY-004",
+      "ruleDigest": "sha256:db77383ecb5f41ef3af5cb60769edaea507cac5cb25e28b88f249e84a062ba2e",
+      "applicabilityReason": "Track changed inputs and cached state provenance without treating warm state as cached output."
+    },
+    {
+      "ruleId": "PERF-MEASURE-001",
+      "ruleDigest": "sha256:ef11800e55663f1b719f62d3f812280fd6e56c6895eef3028b9db344a9d0a355",
+      "applicabilityReason": "Preserve full workload, gate cost and quality outcomes under frozen sequential inputs."
+    }
+  ],
+  "facts": [
+    {
+      "id": "FACT-NATIVE",
+      "statement": "native settle accepts initial state and resets history/stable counters. R26 preserves this controller.",
+      "evidenceRefs": [
+        "SRC-NATIVE"
+      ]
+    },
+    {
+      "id": "FACT-PRIOR",
+      "statement": "Prior uniform initial-state and A→B carry experiments exist; R26 adds current-input rational contraction screening for sequential changed drives.",
+      "evidenceRefs": [
+        "SRC-PRIOR",
+        "SRC-CARRY"
+      ]
+    },
+    {
+      "id": "FACT-COST",
+      "statement": "R25 exact tick shortcut preserved semantics but increased paired component time; gate and state storage costs must remain visible.",
+      "evidenceRefs": [
+        "SRC-R25"
+      ]
+    }
+  ],
+  "assumptions": [],
+  "invariants": [
+    {
+      "id": "INV-GATE",
+      "statement": "Gate reads current program/config/drives and fixed norm weights only. Exact rational arithmetic computes the documented real-valued derivative upper bound. Prior state comes only from a past stable result of the same arm/stream/source binding.",
+      "scope": "Four bounded authored streams, single worker; no cache across streams or arms",
+      "basisRefs": [
+        "FACT-NATIVE",
+        "FACT-PRIOR"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-SEMANTIC",
+      "statement": "Native recurrence/controller is unchanged; only initial state differs. All traces, readouts and Cost must replay from recorded inputs. Disagreement with reset is a research result, not an audit failure. Real-map contraction does not imply native bit equality or finite-stop answer equality.",
+      "scope": "72 native settles and saved scalar replay",
+      "basisRefs": [
+        "FACT-NATIVE",
+        "FACT-PRIOR"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-COST",
+      "statement": "Record gate-inclusive CPU/wall, physical native costs, private-state storage and frozen cell order. No adaptive repeats, learning/measurement work or statistical speed claim.",
+      "scope": "4 streams x6 cells x3 arms; 600 seconds maximum",
+      "basisRefs": [
+        "FACT-COST"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "PERF-MEASURE-001"
+      ]
+    }
+  ],
+  "designChoices": [
+    {
+      "id": "CHOICE-LOCAL",
+      "statement": "Reuse original native settle and a single prior state per stream/arm. Use Fraction with a fourth-order positive Taylor bound, avoiding transcendental floating certificate calculations.",
+      "rationale": "Small state space; preserve source and avoid a new cache framework.",
+      "basisRefs": [
+        "FACT-NATIVE",
+        "FACT-COST"
+      ]
+    }
+  ],
+  "verificationObligations": [
+    {
+      "id": "OB-GATE",
+      "invariantIds": [
+        "INV-GATE"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "python3.12-pure-boundary and AI Research SSH",
+      "failureOracle": "Rational gate mismatch, wrong source binding, future/cross-arm state or source-state mutation is accepted.",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-SEMANTIC",
+      "invariantIds": [
+        "INV-SEMANTIC"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Native trace/scalar recurrence, initial provenance, logical Cost or declared matrix cannot be reconstructed; altered state/initial/readout accepted.",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-COST",
+      "invariantIds": [
+        "INV-COST"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Workload/order/gate/total cost binding differs, invalid duration is accepted or quality disagreement is hidden. Negative efficiency is a valid outcome.",
+      "requirementLevel": "required"
+    }
+  ],
+  "requiredCapabilities": [
+    "cs-constraint-derivation",
+    "cs-implementation-review"
+  ],
+  "verdict": "READY"
+}

@@ -1,0 +1,10 @@
+{
+  "evidence/contraction-warmstart-20261019-r26/cs/constraints.json": "d7d58c7eded8cf4f1af02903406ce880f99c51038029ac65321ce33f81448d8d",
+  "experiments/exp-27-thought-carry/design.md": "cd11950de04c325dbfa965d8aaff750e2e9c68f915e907c0deaaa5c9eefd86b5",
+  "experiments/exp-38-initial-state/RESULTS.ko.md": "69dc28c115d268832497cfa6503cd2013d43fbaa7e9ce99156d744e5c4b1a6eb",
+  "experiments/exp-65-substitution-cross-level/frozen_spec.json": "7c8c72fed9b42e726a6ddbf0bdd0dfc3c465b37d03fffeb20de21de2925e5e13",
+  "experiments/exp-71-fixedpoint-elision/RESULTS.ko.md": "c4d39365f17220fb34c04c5b0db46adcc9b492d859cd5004ac20d9f26ae759a6",
+  "src/hcr/dynamics.py": "a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc",
+  "src/hcr/model.py": "b10e41146036bbbe6e155cee84f3c03711d9bfdeef26c54439d679cc36d590dd",
+  "tools/r19_cross_level/probe.py": "bb0159ba0c50505fc148322e0d0a17d53c184a0bdc7bed21b393120971eb5630"
+}

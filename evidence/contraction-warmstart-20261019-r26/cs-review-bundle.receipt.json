@@ -1,0 +1,8 @@
+{
+  "bytes": 102752,
+  "candidate": "sha256:3d645366146573bfcbf3d1b986d0e148879823d42f14097f9e375c12e9e10624",
+  "constraint": "sha256:555e459df426ce2ad8330764eaebf4c9b392297b9c5eb7acaf971e012b827f8d",
+  "independent_audit": false,
+  "scope": "Frozen six server Python files; saved replay helper is a later local-only verifier. Bundle includes actual seven raw JSON, source snapshots, frozen contracts, candidate and author review.",
+  "sha256": "54df12b847ab13e8d7b48a0e736c4d3e48d10adabc8e33c8cb41c1bd1141db71"
+}

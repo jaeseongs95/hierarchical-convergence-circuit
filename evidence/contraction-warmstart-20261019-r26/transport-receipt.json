@@ -1,0 +1,31 @@
+{
+  "auth_error_root_cause": "unconfirmed",
+  "capture_source": "redacted-adapter-outcome",
+  "exact_received_json": {
+    "preparation.json": "15a8b5f168a853855adf9e4bcc902c2e21e60491a67179656fb8fad293fc949f",
+    "result.json": "c10aaa5a1a2a35cfea9296e3464e04817f985a4d576c6576ca531564c7d29480",
+    "strong_negative_first.json": "66877d45a0e18febde2a96722b4780a77d5c58374bac0cf47368eb19cf6f2e62",
+    "strong_positive_first.json": "c76094912c4e2ac6c8abfa7c6f03d5b70fd04e31d480a578a17859d647a0b5cc",
+    "summary.json": "1c34a9b66600fc6b09c8bcbeeb88cb89798acf2624264fe6f946a3728f68968a",
+    "weak_negative_first.json": "32e0eb4cd4c28e6a18315e1489cee65cadc877278bf5f83949bed3c12f0b0000",
+    "weak_positive_first.json": "803f514dc4e109f4707ab6e6f777d9f5f2165c7d912e04b1babf4abf29db9298"
+  },
+  "finished_at_ms": 1792419020718,
+  "hash_assurance": "Seven received whole JSON files match the hashes in the same-channel server manifest, not independent attestation",
+  "launch_request_id": "52338b35ef20112d00f30e87bf77123f935675e61f968665",
+  "no_resubmission": true,
+  "observed_after_reauthentication": true,
+  "observed_approval_mode": "owner",
+  "observed_state": "completed",
+  "raw_manifest_entries": 20,
+  "raw_manifest_received_sha256": "384efb448d5ff4b3e09bd7b128aa158b3084fcb1ad70b5edfe944cc2d8b49847",
+  "raw_stdout_stderr_received": false,
+  "read_note": "One parallel read batch partially returned INVALID_ARGUMENT; subsequent read-only sequential retrieval succeeded. No research execution repeated.",
+  "remote_root": "/home/mcpops/hcc-contraction-warmstart-20261019-r26",
+  "remote_source_full_list_and_postcheck_received": false,
+  "remote_source_manifest_sha256": "4d3f59c50a161e0b00d49c28cf90964aecb09ba073898c273b2949df2fdca5f1",
+  "remote_source_unchanged": true,
+  "remote_zip_received": false,
+  "source_manifest_kind": "Sender pre-frozen copy, not a downloaded remote list",
+  "upstream_completeness": "unknown"
+}

@@ -1,0 +1,8 @@
+{
+  "assertions": 35,
+  "new_native_calls": 0,
+  "new_timing_runs": 0,
+  "real_math_bound_not_native_certificate": true,
+  "status": "PURE_POLICY_MATH_PASSED",
+  "synthetic_cells_not_research": 18
+}
