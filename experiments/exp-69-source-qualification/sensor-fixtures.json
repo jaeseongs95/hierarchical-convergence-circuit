@@ -1,0 +1,222 @@
+{
+  "eval_00": {
+    "primary_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:primary_sensor"
+      ]
+    },
+    "witness_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:witness_sensor"
+      ]
+    }
+  },
+  "eval_01": {
+    "primary_sensor": {
+      "hidden_features": [
+        false,
+        false
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:primary_sensor"
+      ]
+    },
+    "witness_sensor": {
+      "hidden_features": [
+        false,
+        false
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:witness_sensor"
+      ]
+    }
+  },
+  "eval_02": {
+    "primary_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "flipped",
+      "root_measurement_ids": [
+        "root:primary_sensor"
+      ]
+    },
+    "witness_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:witness_sensor"
+      ]
+    }
+  },
+  "eval_03": {
+    "primary_sensor": {
+      "hidden_features": [
+        false,
+        false
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:primary_sensor"
+      ]
+    },
+    "witness_sensor": {
+      "hidden_features": [
+        false,
+        false
+      ],
+      "mode": "flipped",
+      "root_measurement_ids": [
+        "root:witness_sensor"
+      ]
+    }
+  },
+  "eval_04": {
+    "primary_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "flipped",
+      "root_measurement_ids": [
+        "root:primary_sensor"
+      ]
+    },
+    "witness_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "flipped",
+      "root_measurement_ids": [
+        "root:witness_sensor"
+      ]
+    }
+  },
+  "eval_05": {
+    "primary_sensor": {
+      "hidden_features": [
+        false,
+        false
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:primary_sensor"
+      ]
+    },
+    "witness_sensor": {
+      "hidden_features": [
+        false,
+        false
+      ],
+      "mode": "stale",
+      "root_measurement_ids": [
+        "root:witness_sensor"
+      ]
+    }
+  },
+  "eval_06": {
+    "primary_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:primary_sensor"
+      ]
+    },
+    "witness_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "weak",
+      "root_measurement_ids": [
+        "root:witness_sensor"
+      ]
+    }
+  },
+  "eval_07": {
+    "primary_sensor": {
+      "hidden_features": [
+        false,
+        false
+      ],
+      "mode": "flipped",
+      "root_measurement_ids": [
+        "root:primary_sensor"
+      ]
+    },
+    "witness_sensor": {
+      "hidden_features": [
+        false,
+        false
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:witness_sensor"
+      ]
+    }
+  },
+  "eval_08": {
+    "primary_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:primary_sensor"
+      ]
+    },
+    "witness_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:witness_sensor"
+      ]
+    }
+  },
+  "eval_09": {
+    "primary_sensor": {
+      "hidden_features": [
+        false,
+        false
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:primary_sensor"
+      ]
+    },
+    "witness_sensor": {
+      "hidden_features": [
+        false,
+        false
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:witness_sensor"
+      ]
+    }
+  }
+}

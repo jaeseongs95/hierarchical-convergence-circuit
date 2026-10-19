@@ -1,0 +1,48 @@
+{
+  "connector": "AI Research SSH",
+  "target_id": "default",
+  "launch": {
+    "request_id": "08a40825bde099c8c092b6597931bc6e8fb80f74c41c47e6",
+    "state": "completed",
+    "approvalMode": "owner",
+    "createdAt": 1792401161668,
+    "finishedAt": 1792401215833,
+    "approval_actor": null,
+    "approvedAt": null,
+    "approval_time_note": "not supplied by tool; finishedAt is launcher completion",
+    "human_confirmation": "승인했어",
+    "human_confirmation_questionItemId": "[\"request_user_input_async\",\"call_cc01c04ff2404efea9d00cc49800acab\",0]"
+  },
+  "upload": {
+    "request_id": "b1b4342f761bacbcc8d092a3f9c2891395cddf17bb223e1c",
+    "state": "completed",
+    "sha256": "5ab90bb696c8d9b0a999c7250e8f390caa775ab1515e75b87adb601f23af55fd",
+    "bytes": 262320
+  },
+  "download": {
+    "request_id": "8dddf9e0db6e45fee658ccb7d8439fae6e9ffc268730fb01",
+    "state": "completed_server_ready",
+    "agent_or_device_received": false,
+    "server_zip_sha256": "65ae0853150c7e2381b0bacc1a7784e00b2e22ec0b19dcbb5e007ba54d8d47cc",
+    "server_zip_bytes": 188040
+  },
+  "raw_json": {
+    "received_count": 45,
+    "all_sha256_verified": true,
+    "redactions_observed": false,
+    "manifest_stdout_stderr_count": 84,
+    "stdout_stderr_received_count": 0
+  },
+  "read_commands": {
+    "raw_output_id": "164a4a0526bc2093c615967fb601cbf6949385c649488cd7",
+    "raw_output_eof_bytes": 666151,
+    "ssh_completeness_reported": "unknown",
+    "application_manifest_checks_passed": true,
+    "sha256sum_probe": "refused INVALID_ARGUMENT; no output or execution claimed; launch guarded ZIP hash"
+  },
+  "independent_audit": {
+    "requested": false,
+    "performed": false
+  },
+  "automatic_retry": false
+}

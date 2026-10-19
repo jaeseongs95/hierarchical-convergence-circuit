@@ -1,0 +1,1 @@
+{"assertions": 162, "child_limits": {"address_space": [536870912, 536870912], "file_size": [16777216, 16777216]}, "new_native_settle_calls": 0, "new_world_measure_calls": 0, "notice": "Stub and expected provider records are preparation checks only.", "numeric_tolerance": 0.0, "saved_record_max_absolute_error": 0.0, "status": "PURE_PREPARATION_PASSED", "stub_cells": 40}

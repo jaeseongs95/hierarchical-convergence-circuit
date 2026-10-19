@@ -1,0 +1,178 @@
+{
+  "cal_00": {
+    "primary_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:primary_sensor"
+      ]
+    },
+    "witness_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:witness_sensor"
+      ]
+    }
+  },
+  "cal_01": {
+    "primary_sensor": {
+      "hidden_features": [
+        false,
+        false
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:primary_sensor"
+      ]
+    },
+    "witness_sensor": {
+      "hidden_features": [
+        false,
+        false
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:witness_sensor"
+      ]
+    }
+  },
+  "cal_02": {
+    "primary_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "flipped",
+      "root_measurement_ids": [
+        "root:primary_sensor"
+      ]
+    },
+    "witness_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:witness_sensor"
+      ]
+    }
+  },
+  "cal_03": {
+    "primary_sensor": {
+      "hidden_features": [
+        false,
+        false
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:primary_sensor"
+      ]
+    },
+    "witness_sensor": {
+      "hidden_features": [
+        false,
+        false
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:witness_sensor"
+      ]
+    }
+  },
+  "cal_04": {
+    "primary_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:primary_sensor"
+      ]
+    },
+    "witness_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:witness_sensor"
+      ]
+    }
+  },
+  "cal_05": {
+    "primary_sensor": {
+      "hidden_features": [
+        false,
+        false
+      ],
+      "mode": "flipped",
+      "root_measurement_ids": [
+        "root:primary_sensor"
+      ]
+    },
+    "witness_sensor": {
+      "hidden_features": [
+        false,
+        false
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:witness_sensor"
+      ]
+    }
+  },
+  "cal_06": {
+    "primary_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:primary_sensor"
+      ]
+    },
+    "witness_sensor": {
+      "hidden_features": [
+        true,
+        true
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:witness_sensor"
+      ]
+    }
+  },
+  "cal_07": {
+    "primary_sensor": {
+      "hidden_features": [
+        false,
+        false
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:primary_sensor"
+      ]
+    },
+    "witness_sensor": {
+      "hidden_features": [
+        false,
+        false
+      ],
+      "mode": "valid",
+      "root_measurement_ids": [
+        "root:witness_sensor"
+      ]
+    }
+  }
+}

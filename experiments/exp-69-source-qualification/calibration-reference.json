@@ -1,0 +1,50 @@
+{
+  "cal_00": {
+    "feature_signs": [
+      true,
+      true
+    ]
+  },
+  "cal_01": {
+    "feature_signs": [
+      false,
+      false
+    ]
+  },
+  "cal_02": {
+    "feature_signs": [
+      true,
+      true
+    ]
+  },
+  "cal_03": {
+    "feature_signs": [
+      false,
+      false
+    ]
+  },
+  "cal_04": {
+    "feature_signs": [
+      true,
+      true
+    ]
+  },
+  "cal_05": {
+    "feature_signs": [
+      false,
+      false
+    ]
+  },
+  "cal_06": {
+    "feature_signs": [
+      true,
+      true
+    ]
+  },
+  "cal_07": {
+    "feature_signs": [
+      false,
+      false
+    ]
+  }
+}

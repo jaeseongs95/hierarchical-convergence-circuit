@@ -1,0 +1,42 @@
+{
+  "eval_00": {
+    "category": true,
+    "relation": false
+  },
+  "eval_01": {
+    "category": false,
+    "relation": false
+  },
+  "eval_02": {
+    "category": true,
+    "relation": true
+  },
+  "eval_03": {
+    "category": false,
+    "relation": true
+  },
+  "eval_04": {
+    "category": true,
+    "relation": false
+  },
+  "eval_05": {
+    "category": false,
+    "relation": false
+  },
+  "eval_06": {
+    "category": true,
+    "relation": false
+  },
+  "eval_07": {
+    "category": false,
+    "relation": true
+  },
+  "eval_08": {
+    "category": true,
+    "relation": true
+  },
+  "eval_09": {
+    "category": false,
+    "relation": false
+  }
+}

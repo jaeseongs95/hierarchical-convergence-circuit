@@ -1,0 +1,530 @@
+{
+  "acceptance_min_abs_score": 0.8,
+  "arms": [
+    "no_query",
+    "single_contract",
+    "corroborated",
+    "qualified_single"
+  ],
+  "base": {
+    "arms": [
+      "gated"
+    ],
+    "aux_min_abs_score": 0.8,
+    "aux_source_ids": [
+      "aux_sensor"
+    ],
+    "feedback_gain": 1.0,
+    "kernel": {
+      "damping": 0.45,
+      "evidence_gain": 4.0,
+      "inhibition": 0.2,
+      "learning_rate": 0.25,
+      "margin_threshold": 0.3,
+      "max_circuits": 16,
+      "max_edges": 8,
+      "max_groups": 32,
+      "max_observation_requests": 2,
+      "max_path_length": 4,
+      "max_paths": 4,
+      "max_search": 2048,
+      "max_ticks": 160,
+      "min_valid_episodes": 3,
+      "patience": 4,
+      "prior_gain": 0.0,
+      "relation_gain": 2.0,
+      "residual_tolerance": 1e-06,
+      "self_excitation": 0.25,
+      "temperature": 1.0,
+      "top_down_gain": 0.35,
+      "weakening": 0.2
+    }
+  },
+  "boundaries": {
+    "both_responses_requested_before_adoption": true,
+    "calibration_labels_only_in_qualification": true,
+    "calibration_native_measure_calls": 16,
+    "declared_provenance_does_not_prove_independence": true,
+    "evaluation_labels_not_in_policy": true,
+    "initial_inference_always_paid": true,
+    "invalid_or_unsupported_reply_abstains": true,
+    "native_revision_controller": false,
+    "physical_sensor": false,
+    "qualification_is_probability_calibration": false,
+    "request_predicate": "r21_initial_primary_stable_ambiguous",
+    "source_authentication": false,
+    "source_stationarity_assumed_not_proven": true,
+    "threshold_search": false,
+    "training_calls": 0,
+    "witness_only_gates_primary_not_averaged": true
+  },
+  "calibration": [
+    {
+      "key": "cal_00",
+      "public": {
+        "budget": {
+          "feature_units": 4,
+          "requests": 2,
+          "revision_settles": 4
+        },
+        "observation": {
+          "aux": null,
+          "context": 1.0,
+          "id": "cal_00",
+          "measurement_ids": [
+            "f0",
+            "f1"
+          ],
+          "measurements": [
+            0.0,
+            0.0
+          ],
+          "revision": 0
+        }
+      }
+    },
+    {
+      "key": "cal_01",
+      "public": {
+        "budget": {
+          "feature_units": 4,
+          "requests": 2,
+          "revision_settles": 4
+        },
+        "observation": {
+          "aux": null,
+          "context": 1.0,
+          "id": "cal_01",
+          "measurement_ids": [
+            "f0",
+            "f1"
+          ],
+          "measurements": [
+            0.0,
+            0.0
+          ],
+          "revision": 0
+        }
+      }
+    },
+    {
+      "key": "cal_02",
+      "public": {
+        "budget": {
+          "feature_units": 4,
+          "requests": 2,
+          "revision_settles": 4
+        },
+        "observation": {
+          "aux": null,
+          "context": 1.0,
+          "id": "cal_02",
+          "measurement_ids": [
+            "f0",
+            "f1"
+          ],
+          "measurements": [
+            0.0,
+            0.0
+          ],
+          "revision": 0
+        }
+      }
+    },
+    {
+      "key": "cal_03",
+      "public": {
+        "budget": {
+          "feature_units": 4,
+          "requests": 2,
+          "revision_settles": 4
+        },
+        "observation": {
+          "aux": null,
+          "context": 1.0,
+          "id": "cal_03",
+          "measurement_ids": [
+            "f0",
+            "f1"
+          ],
+          "measurements": [
+            0.0,
+            0.0
+          ],
+          "revision": 0
+        }
+      }
+    },
+    {
+      "key": "cal_04",
+      "public": {
+        "budget": {
+          "feature_units": 4,
+          "requests": 2,
+          "revision_settles": 4
+        },
+        "observation": {
+          "aux": null,
+          "context": -1.0,
+          "id": "cal_04",
+          "measurement_ids": [
+            "f0",
+            "f1"
+          ],
+          "measurements": [
+            0.0,
+            0.0
+          ],
+          "revision": 0
+        }
+      }
+    },
+    {
+      "key": "cal_05",
+      "public": {
+        "budget": {
+          "feature_units": 4,
+          "requests": 2,
+          "revision_settles": 4
+        },
+        "observation": {
+          "aux": null,
+          "context": -1.0,
+          "id": "cal_05",
+          "measurement_ids": [
+            "f0",
+            "f1"
+          ],
+          "measurements": [
+            0.0,
+            0.0
+          ],
+          "revision": 0
+        }
+      }
+    },
+    {
+      "key": "cal_06",
+      "public": {
+        "budget": {
+          "feature_units": 4,
+          "requests": 2,
+          "revision_settles": 4
+        },
+        "observation": {
+          "aux": null,
+          "context": -1.0,
+          "id": "cal_06",
+          "measurement_ids": [
+            "f0",
+            "f1"
+          ],
+          "measurements": [
+            0.0,
+            0.0
+          ],
+          "revision": 0
+        }
+      }
+    },
+    {
+      "key": "cal_07",
+      "public": {
+        "budget": {
+          "feature_units": 4,
+          "requests": 2,
+          "revision_settles": 4
+        },
+        "observation": {
+          "aux": null,
+          "context": -1.0,
+          "id": "cal_07",
+          "measurement_ids": [
+            "f0",
+            "f1"
+          ],
+          "measurements": [
+            0.0,
+            0.0
+          ],
+          "revision": 0
+        }
+      }
+    }
+  ],
+  "cases": [
+    {
+      "key": "eval_00",
+      "public": {
+        "budget": {
+          "feature_units": 4,
+          "requests": 2,
+          "revision_settles": 4
+        },
+        "observation": {
+          "aux": null,
+          "context": -1.0,
+          "id": "eval_00",
+          "measurement_ids": [
+            "f0",
+            "f1"
+          ],
+          "measurements": [
+            0.0,
+            0.0
+          ],
+          "revision": 0
+        }
+      }
+    },
+    {
+      "key": "eval_01",
+      "public": {
+        "budget": {
+          "feature_units": 4,
+          "requests": 2,
+          "revision_settles": 4
+        },
+        "observation": {
+          "aux": null,
+          "context": 1.0,
+          "id": "eval_01",
+          "measurement_ids": [
+            "f0",
+            "f1"
+          ],
+          "measurements": [
+            0.0,
+            0.0
+          ],
+          "revision": 0
+        }
+      }
+    },
+    {
+      "key": "eval_02",
+      "public": {
+        "budget": {
+          "feature_units": 4,
+          "requests": 2,
+          "revision_settles": 4
+        },
+        "observation": {
+          "aux": null,
+          "context": 1.0,
+          "id": "eval_02",
+          "measurement_ids": [
+            "f0",
+            "f1"
+          ],
+          "measurements": [
+            0.0,
+            0.0
+          ],
+          "revision": 0
+        }
+      }
+    },
+    {
+      "key": "eval_03",
+      "public": {
+        "budget": {
+          "feature_units": 4,
+          "requests": 2,
+          "revision_settles": 4
+        },
+        "observation": {
+          "aux": null,
+          "context": -1.0,
+          "id": "eval_03",
+          "measurement_ids": [
+            "f0",
+            "f1"
+          ],
+          "measurements": [
+            0.0,
+            0.0
+          ],
+          "revision": 0
+        }
+      }
+    },
+    {
+      "key": "eval_04",
+      "public": {
+        "budget": {
+          "feature_units": 4,
+          "requests": 2,
+          "revision_settles": 4
+        },
+        "observation": {
+          "aux": null,
+          "context": -1.0,
+          "id": "eval_04",
+          "measurement_ids": [
+            "f0",
+            "f1"
+          ],
+          "measurements": [
+            0.0,
+            0.0
+          ],
+          "revision": 0
+        }
+      }
+    },
+    {
+      "key": "eval_05",
+      "public": {
+        "budget": {
+          "feature_units": 4,
+          "requests": 2,
+          "revision_settles": 4
+        },
+        "observation": {
+          "aux": null,
+          "context": 1.0,
+          "id": "eval_05",
+          "measurement_ids": [
+            "f0",
+            "f1"
+          ],
+          "measurements": [
+            0.0,
+            0.0
+          ],
+          "revision": 0
+        }
+      }
+    },
+    {
+      "key": "eval_06",
+      "public": {
+        "budget": {
+          "feature_units": 4,
+          "requests": 2,
+          "revision_settles": 4
+        },
+        "observation": {
+          "aux": null,
+          "context": -1.0,
+          "id": "eval_06",
+          "measurement_ids": [
+            "f0",
+            "f1"
+          ],
+          "measurements": [
+            0.0,
+            0.0
+          ],
+          "revision": 0
+        }
+      }
+    },
+    {
+      "key": "eval_07",
+      "public": {
+        "budget": {
+          "feature_units": 2,
+          "requests": 1,
+          "revision_settles": 4
+        },
+        "observation": {
+          "aux": null,
+          "context": -1.0,
+          "id": "eval_07",
+          "measurement_ids": [
+            "f0",
+            "f1"
+          ],
+          "measurements": [
+            0.0,
+            0.0
+          ],
+          "revision": 0
+        }
+      }
+    },
+    {
+      "key": "eval_08",
+      "public": {
+        "budget": {
+          "feature_units": 4,
+          "requests": 2,
+          "revision_settles": 4
+        },
+        "observation": {
+          "aux": null,
+          "context": 1.0,
+          "id": "eval_08",
+          "measurement_ids": [
+            "f0",
+            "f1"
+          ],
+          "measurements": [
+            1.0,
+            0.8
+          ],
+          "revision": 0
+        }
+      }
+    },
+    {
+      "key": "eval_09",
+      "public": {
+        "budget": {
+          "feature_units": 4,
+          "requests": 2,
+          "revision_settles": 4
+        },
+        "observation": {
+          "aux": null,
+          "context": 1.0,
+          "id": "eval_09",
+          "measurement_ids": [
+            "f0",
+            "f1"
+          ],
+          "measurements": [
+            1.0,
+            0.8
+          ],
+          "revision": 0
+        }
+      }
+    }
+  ],
+  "experiment": "EXP-69",
+  "feature_ids": [
+    "f0",
+    "f1"
+  ],
+  "feature_units_per_request": 2,
+  "limits": {
+    "automatic_retry": false,
+    "child_address_space_bytes": 536870912,
+    "child_file_bytes": 16777216,
+    "parent_address_space_bytes": 536870912,
+    "parent_file_bytes": 33554432,
+    "raw_bytes": 134217728,
+    "stage_seconds": 60,
+    "total_seconds": 600,
+    "workers": 1
+  },
+  "maximum_measurement_requests": 64,
+  "maximum_native_settle_calls": 240,
+  "numeric_replay_absolute_tolerance_portable": 1e-15,
+  "numeric_replay_absolute_tolerance_server": 0.0,
+  "qualification": {
+    "feature_min_abs_score": 0.8,
+    "maximum_failures": 0,
+    "required_examples_per_source": 8,
+    "selection": "first_qualified_in_fixed_source_order"
+  },
+  "revision_settle_reservation": 4,
+  "run": "r23",
+  "sources": [
+    "primary_sensor",
+    "witness_sensor"
+  ]
+}
