@@ -1,0 +1,82 @@
+{
+  "schema": "r25.transport-receipt.v1",
+  "connector": "AI Research SSH",
+  "profile": "aws-local",
+  "remote_root": "/home/mcpops/hcc-fixedpoint-elision-20261019-r25",
+  "launch": {
+    "request_id": "c63e71feb66d5cd6480c147a88caf017945c79f1fdad684f",
+    "state": "completed",
+    "approval_mode": "owner",
+    "human_reply": "승인했어",
+    "question_item_id": "[\"request_user_input_async\",\"call_f3a6daf4311743b9a57b95f101058f9f\",0]",
+    "approval_actor": null,
+    "approved_at": null,
+    "launcher_finished_at": 1792411068488,
+    "finished_at_semantics": "Launcher completion only; neither owner approval nor full experiment completion time"
+  },
+  "upload": {
+    "request_id": "7f55c46db7eed529c91f56a33234c463ec294184fc6c5c9a",
+    "state": "completed",
+    "bytes": 374278,
+    "sha256": "8f921838d49a186b9f62c0724287bd4025490e0dc00a1e5edb10a732d9871e58"
+  },
+  "source": {
+    "local_pre_frozen_manifest_sha256": "0269e7a24524eadbcf7b502f87761575b51108847bf93f4eedbeb4c324be0a39",
+    "local_source_files_verified": 121,
+    "pre_frozen_manifest_is_received_remote_manifest": false,
+    "server_reports_source_unchanged": true,
+    "remote_manifest_exact_bytes_verified": false,
+    "remote_postcheck_exact_bytes_verified": false,
+    "remote_source_lists_redacted": true,
+    "redacted_paths_reconstructed": false
+  },
+  "raw": {
+    "exact_json_files": [
+      "correctness.json",
+      "timing.json",
+      "preparation.json",
+      "result.json",
+      "summary.json"
+    ],
+    "exact_json_digest_count": 5,
+    "manifest_entries": 12,
+    "stdout_stderr_listed": 6,
+    "stdout_stderr_received": 0,
+    "data_output_id": "ba602b56518293dba8a07ce1228a27b3cfb3db9742cab01b",
+    "data_pages": 35,
+    "data_bytes": 563592,
+    "correctness_bytes": 557277,
+    "timing_bytes": 6315,
+    "data_stdout_truncated": false,
+    "data_redacted": false,
+    "exact_file_digests_match": true,
+    "metadata_output_id": "d7c69e5f5e54ac9c83686809258fec6f9dc11d7b366c6e53",
+    "redacted_source_output_id": "5bb8ac3c84610d7ea9ae68da0ef31496a13cf20b7a1116f4",
+    "optional_failure_lookup": {
+      "output_id": "9577552a285718c088d61ffd17024fb30268022a345906a6",
+      "exit_code": 1,
+      "reason": "Completed experiment has no failure.json. The combined read returned source-postcheck plus missing-file stderr, preserved as text.",
+      "experiment_failure": false
+    }
+  },
+  "evidence_zip": {
+    "request_id": "17426916407c8f2ce8efca9cc6e293f52e7d0e870a08d060",
+    "server_ready": true,
+    "received_locally": false,
+    "bytes": 49120,
+    "sha256": "bc2772860b44e1f1229d0bf60f451acfa8b7aaf76788b76dce6a5cf2e9002e40"
+  },
+  "validation": {
+    "local_saved_replay": "SAVED_NATIVE_COMPONENT_REPLAY_PASSED",
+    "new_local_native_calls": 0,
+    "new_local_timing_runs": 0,
+    "cs_check_bundle": "PASS; binding/structure/digest consistency only",
+    "independent_implementation_audit": false,
+    "local_component_adoption": false
+  },
+  "limitations": [
+    "Remote source-list paths remain redacted; exact list bytes not locally verified.",
+    "Six stdout/stderr files and complete server evidence ZIP were not received locally.",
+    "Original R19 failed audit history and incomplete original source postcheck remain unchanged."
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "schemaVersion": "1.0.0",
+  "reportId": "CS-R25-CONSTRAINTS",
+  "requestDigest": "sha256:b5158628c8e3efc2026cd5fbfe3adc157229eb26abcf77def8b176b11d7cffd8",
+  "sourceSnapshotDigest": "sha256:1600378eac5e58f6ca946a8fb236d46ffad5a2cf6272bbc8d644376a876c8b63",
+  "knowledgePackVersion": "0.1.0",
+  "knowledgePackDigest": "sha256:d8351d9aabb433403830fcffc3a2f2438b6d428711c93b6ded9eff002468c3d1",
+  "draftUse": {
+    "allowed": false,
+    "basis": "validated ALG-KEY/PERF-MEASURE 두 규칙만 선택"
+  },
+  "applicability": "applicable",
+  "applicabilityReason": "순수 수치 갱신의 메모이제이션 정확성과 실제 성능이 연구 판단에 직접 영향을 준다.",
+  "selectedRules": [
+    {
+      "ruleId": "ALG-KEY-004",
+      "ruleDigest": "sha256:db77383ecb5f41ef3af5cb60769edaea507cac5cb25e28b88f249e84a062ba2e",
+      "applicabilityReason": "결과를 바꾸는 모든 인자의 수명을 settle 내부로 고정한다."
+    },
+    {
+      "ruleId": "PERF-MEASURE-001",
+      "ruleDigest": "sha256:ef11800e55663f1b719f62d3f812280fd6e56c6895eef3028b9db344a9d0a355",
+      "applicabilityReason": "의미 보존과 같은 부하의 전체 시간을 별도로 비교한다."
+    }
+  ],
+  "facts": [
+    {
+      "id": "FACT-NATIVE",
+      "statement": "native settle은 tick 다음에 residual/stable/observe/margin/history/budget을 처리한다. R25는 이 controller를 수정하지 않는다.",
+      "evidenceRefs": [
+        "SRC-NATIVE"
+      ]
+    },
+    {
+      "id": "FACT-R24",
+      "statement": "R24 원수명 hit18회는 같은 settle의 exact fixed-point 반복이며 일반 cache 순이득은 미입증이다.",
+      "evidenceRefs": [
+        "SRC-R24"
+      ]
+    }
+  ],
+  "assumptions": [],
+  "invariants": [
+    {
+      "id": "INV-EXACT",
+      "statement": "같은 settle의 불변 인자와 binary64 bit exact fixed point가 확인된 뒤에만 수치 계산을 생략한다. 근사값·signed zero·다른 invocation은 합치지 않는다.",
+      "scope": "연구용 단일 worker·내부 복사 인자·부작용 없는 기록 observer",
+      "basisRefs": [
+        "FACT-NATIVE",
+        "FACT-R24"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-SEMANTIC",
+      "statement": "controller·tick 이력·종료·최종 state·논리 Cost를 baseline과 동일하게 유지한다. 물리 산술 생략은 별도 ledger에 기록한다.",
+      "scope": "36 saved kernels와 준비 경계 사례",
+      "basisRefs": [
+        "FACT-NATIVE"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-COST",
+      "statement": "동일 부하의 고정 순서 paired timing에서 설치·검출·검증·logical charging·관측 비용을 포함하며 원시 CPU/wall을 보존한다.",
+      "scope": "동일 서버·7 paired blocks·block별4회36kernels·observer 포함 settle 경계",
+      "basisRefs": [
+        "FACT-R24",
+        "FACT-NATIVE"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "PERF-MEASURE-001"
+      ]
+    }
+  ],
+  "designChoices": [
+    {
+      "id": "CHOICE-LOCAL",
+      "statement": "실행 전용 wrapper만 추가하고 native settle/tick 원본은 보존한다. 매 settle closure를 폐기하고 전체 cache key 엔진을 만들지 않는다.",
+      "rationale": "원 자료의 기회는 exact fixed-point18회뿐이다.",
+      "basisRefs": [
+        "FACT-R24",
+        "FACT-NATIVE"
+      ]
+    }
+  ],
+  "verificationObligations": [
+    {
+      "id": "OB-EXACT",
+      "invariantIds": [
+        "INV-EXACT"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "python3.12-pure-boundary",
+      "failureOracle": "near-equal/sign-zero/타입/인자 수명/동적 observer 금지 경계가 무너지면 실패.",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-SEMANTIC",
+      "invariantIds": [
+        "INV-SEMANTIC"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "원36kernels 양 arm의 state/trace/convergence/logical Cost 중 bit exact 불일치 또는 변조 수용이면 실패.",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-COST",
+      "invariantIds": [
+        "INV-COST"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "고정7pair 누락·부하/호출 ledger 불일치·nonfinite 시간·기준 사후 변경이면 실패. 성능 기준 미충족은 유효한 음성 연구 결과다.",
+      "requirementLevel": "required"
+    }
+  ],
+  "requiredCapabilities": [
+    "cs-constraint-derivation",
+    "cs-implementation-review"
+  ],
+  "verdict": "READY"
+}

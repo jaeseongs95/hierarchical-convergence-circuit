@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "1.0.0",
+  "requestId": "CS-R25",
+  "mode": "derive",
+  "objective": "정확 고정점 이후 수치 산술 생략의 의미 보존 및 native 비용 대조",
+  "sourceSnapshotDigest": "sha256:1600378eac5e58f6ca946a8fb236d46ffad5a2cf6272bbc8d644376a876c8b63",
+  "sourceRefs": [
+    {
+      "id": "SRC-NATIVE",
+      "path": "source/dynamics.py",
+      "digest": "sha256:a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc"
+    },
+    {
+      "id": "SRC-R24",
+      "path": "source/r24-results.md",
+      "digest": "sha256:e0b096444a72c1d2510809153ca5c55dd405f3958192b10fac0937c247ee8612"
+    }
+  ],
+  "operationalFacts": [
+    {
+      "id": "FACT-NATIVE",
+      "statement": "native settle은 tick 다음에 residual/stable/observe/margin/history/budget을 처리한다. R25는 이 controller를 수정하지 않는다.",
+      "evidenceRefs": [
+        "SRC-NATIVE"
+      ]
+    },
+    {
+      "id": "FACT-R24",
+      "statement": "R24 원수명 hit18회는 같은 settle의 exact fixed-point 반복이며 일반 cache 순이득은 미입증이다.",
+      "evidenceRefs": [
+        "SRC-R24"
+      ]
+    }
+  ],
+  "existingContractRef": null
+}

@@ -1,0 +1,37 @@
+{
+  "adoption_max_median_ratio": 0.95,
+  "adoption_min_improved_pairs": 6,
+  "arms": [
+    "paired_native"
+  ],
+  "base": "5f675b68f2e6d5d244567e6cade3c3eb2cccf08a",
+  "cases": [
+    {
+      "key": "saved36"
+    }
+  ],
+  "comparison": "36 fixed archived kernel inputs; binary64 exact semantics; whole component timing including traces and setup",
+  "expected_logical_ticks": 57304,
+  "experiment": "EXP-71",
+  "independent_panel_this_run": false,
+  "limits": {
+    "automatic_retry": false,
+    "child_address_space_bytes": 536870912,
+    "child_file_bytes": 16777216,
+    "parent_address_space_bytes": 536870912,
+    "parent_file_bytes": 33554432,
+    "raw_bytes": 134217728,
+    "stage_seconds": 60,
+    "total_seconds": 600,
+    "workers": 1
+  },
+  "maximum_logical_ticks": 334080,
+  "maximum_measurement_requests": 0,
+  "maximum_native_settle_calls": 2088,
+  "production_integration": false,
+  "repeats_per_block": 4,
+  "run": "r25",
+  "scalar_tolerance": 1e-15,
+  "timing_pairs": 7,
+  "training_calls": 0
+}

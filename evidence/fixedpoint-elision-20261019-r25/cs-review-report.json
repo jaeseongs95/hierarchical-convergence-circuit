@@ -1,0 +1,129 @@
+{
+  "schemaVersion": "1.0.0",
+  "reviewId": "CS-R25-REVIEW",
+  "constraintReportDigest": "sha256:28cfa9b0e7e2ddf484ec93823841cb89c6db6c83e486ccd61046f9d32f8b5230",
+  "candidateDigest": "sha256:b3b0cb097bb268a9ede2bd88229cb8073606fdab0f0d90ac2dfbc1945323c8d1",
+  "reviewerActorRef": "R25 implementation author saved-result review; not independent or host-attested",
+  "findings": [
+    {
+      "id": "F-EXACT",
+      "invariantId": "INV-EXACT",
+      "status": "SATISFIED",
+      "evidenceRefs": [
+        "E-PREP"
+      ],
+      "reasoningSummary": "18 server pure-boundary checks passed, with signed-zero/near-float, binding changes, cold state, output copy and failure restoration checks."
+    },
+    {
+      "id": "F-SEMANTIC",
+      "invariantId": "INV-SEMANTIC",
+      "status": "SATISFIED",
+      "evidenceRefs": [
+        "E-TRACE",
+        "E-SUMMARY",
+        "E-RESULT"
+      ],
+      "reasoningSummary": "36 original/candidate pairs have binary64 exact traces, final state, convergence, readout and logical Cost; separate scalar replay and targeted mutations passed."
+    },
+    {
+      "id": "F-COST",
+      "invariantId": "INV-COST",
+      "status": "SATISFIED",
+      "evidenceRefs": [
+        "E-TIMING",
+        "E-SUMMARY",
+        "E-RESULT"
+      ],
+      "reasoningSummary": "Fixed seven paired blocks preserve workload/order and raw CPU/wall values including wrapper/trace costs. Candidate failed performance adoption criterion: valid negative outcome, not a violated measurement invariant."
+    }
+  ],
+  "verificationResults": [
+    {
+      "obligationId": "OB-EXACT",
+      "executionStatus": "EXECUTED",
+      "result": "PASS",
+      "targetDigest": "sha256:b3b0cb097bb268a9ede2bd88229cb8073606fdab0f0d90ac2dfbc1945323c8d1",
+      "environmentRef": "python3.12-pure-boundary",
+      "method": "dynamic-test",
+      "evidenceRefs": [
+        "E-PREP"
+      ]
+    },
+    {
+      "obligationId": "OB-SEMANTIC",
+      "executionStatus": "EXECUTED",
+      "result": "PASS",
+      "targetDigest": "sha256:b3b0cb097bb268a9ede2bd88229cb8073606fdab0f0d90ac2dfbc1945323c8d1",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "method": "dynamic-test",
+      "evidenceRefs": [
+        "E-TRACE",
+        "E-SUMMARY",
+        "E-RESULT"
+      ]
+    },
+    {
+      "obligationId": "OB-COST",
+      "executionStatus": "EXECUTED",
+      "result": "PASS",
+      "targetDigest": "sha256:b3b0cb097bb268a9ede2bd88229cb8073606fdab0f0d90ac2dfbc1945323c8d1",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "method": "dynamic-test",
+      "evidenceRefs": [
+        "E-TIMING",
+        "E-SUMMARY",
+        "E-RESULT"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E-PREP",
+      "path": "evidence/preparation.json",
+      "digest": "sha256:61a1d37d87d4c6e2b1f6706761a9ff8f5e3105816236c8e49af8e6bad59d6bbe",
+      "targetDigest": "sha256:b3b0cb097bb268a9ede2bd88229cb8073606fdab0f0d90ac2dfbc1945323c8d1",
+      "environmentRef": "python3.12-pure-boundary",
+      "kind": "dynamic-test",
+      "statement": "Exact received server JSON, hash checked against raw manifest; source121 locally frozen bytes verified. Not an independent audit."
+    },
+    {
+      "id": "E-TRACE",
+      "path": "evidence/correctness.json",
+      "digest": "sha256:c6db25f519fdf4e123187a3f3019867885494ffe4beaf5669093e63731e898b4",
+      "targetDigest": "sha256:b3b0cb097bb268a9ede2bd88229cb8073606fdab0f0d90ac2dfbc1945323c8d1",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Exact received server JSON, hash checked against raw manifest; source121 locally frozen bytes verified. Not an independent audit."
+    },
+    {
+      "id": "E-TIMING",
+      "path": "evidence/timing.json",
+      "digest": "sha256:1e1aca18d5e95c2e9a444adb07687fb0d91652e65905a0c72430de7790601f7d",
+      "targetDigest": "sha256:b3b0cb097bb268a9ede2bd88229cb8073606fdab0f0d90ac2dfbc1945323c8d1",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Exact received server JSON, hash checked against raw manifest; source121 locally frozen bytes verified. Not an independent audit."
+    },
+    {
+      "id": "E-SUMMARY",
+      "path": "evidence/summary.json",
+      "digest": "sha256:011d93379122c0764bcfe1b5d9ccc0d4db82c27af0478e4abbbdc2a7135862f9",
+      "targetDigest": "sha256:b3b0cb097bb268a9ede2bd88229cb8073606fdab0f0d90ac2dfbc1945323c8d1",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Exact received server JSON, hash checked against raw manifest; source121 locally frozen bytes verified. Not an independent audit."
+    },
+    {
+      "id": "E-RESULT",
+      "path": "evidence/result.json",
+      "digest": "sha256:73210b324af8aaf72d063c4097015551947d430735db5cf25ff7c80a987d73ea",
+      "targetDigest": "sha256:b3b0cb097bb268a9ede2bd88229cb8073606fdab0f0d90ac2dfbc1945323c8d1",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Exact received server JSON, hash checked against raw manifest; source121 locally frozen bytes verified. Not an independent audit."
+    }
+  ],
+  "blockingFindingIds": [],
+  "unverifiedRequiredObligationIds": [],
+  "verdict": "PASS"
+}
