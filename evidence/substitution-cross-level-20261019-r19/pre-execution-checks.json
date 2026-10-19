@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "syntax": true,
+  "program_contracts": 2,
+  "public_cases": 6,
+  "unique_measurement_context_pairs": 5,
+  "graph_differential_checks": 77400,
+  "cycle_regression": true,
+  "policy_boundary_checks": 6,
+  "separate_algorithm_checks": 6,
+  "native_settle_executions": 0,
+  "native_tick_executions": 0,
+  "core_regression_suite_run": false,
+  "reference_not_in_executor_inputs": true
+}

@@ -1,0 +1,1 @@
+{"arm": "separate_algorithms", "case": "strong_conflict", "category": true, "declared_baseline_operations": {"additions": 2, "comparisons": 3, "multiplications": 1}, "kernels": [], "promotions": [], "public": {"context": -1.0, "id": "strong_conflict", "measurements": [1.0, 0.8], "revision": 0}, "relation": false}

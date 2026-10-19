@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/home/mcpops/hcc-cross-level-20261019-r19/tools/r19_cross_level/probe.py", line 242, in <module>
+    elif args.phase=='audit':audit(out)
+                             ^^^^^^^^^^
+  File "/home/mcpops/hcc-cross-level-20261019-r19/tools/r19_cross_level/probe.py", line 173, in audit
+    e=read(out/(case['id']+'__'+arm+'.json'));audit_execution(e,case,arm,p)
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcpops/hcc-cross-level-20261019-r19/tools/r19_cross_level/probe.py", line 130, in audit_execution
+    require(k['program']==asdict(low if j%2==0 else high),'adapter program changed')
+  File "/home/mcpops/hcc-cross-level-20261019-r19/tools/r19_cross_level/probe.py", line 25, in require
+    if not ok:raise ValueError(msg)
+              ^^^^^^^^^^^^^^^^^^^^^
+ValueError: adapter program changed

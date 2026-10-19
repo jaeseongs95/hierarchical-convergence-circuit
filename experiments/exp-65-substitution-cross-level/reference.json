@@ -1,0 +1,26 @@
+{
+  "ambiguous_A": {
+    "category": true,
+    "relation": true
+  },
+  "ambiguous_B": {
+    "category": false,
+    "relation": true
+  },
+  "clear_A_match": {
+    "category": true,
+    "relation": true
+  },
+  "clear_B_match": {
+    "category": false,
+    "relation": true
+  },
+  "misleading_A": {
+    "category": true,
+    "relation": false
+  },
+  "strong_conflict": {
+    "category": true,
+    "relation": false
+  }
+}

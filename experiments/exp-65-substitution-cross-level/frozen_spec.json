@@ -1,0 +1,117 @@
+{
+  "adaptive_training_executions": 0,
+  "arms": [
+    "bottom_up",
+    "coupled",
+    "separate_algorithms"
+  ],
+  "candidates": [
+    "context-free local transition replacement"
+  ],
+  "cases": [
+    {
+      "context": 1.0,
+      "id": "clear_A_match",
+      "measurements": [
+        1.0,
+        0.8
+      ],
+      "revision": 0
+    },
+    {
+      "context": -1.0,
+      "id": "clear_B_match",
+      "measurements": [
+        -1.0,
+        -0.8
+      ],
+      "revision": 0
+    },
+    {
+      "context": 1.0,
+      "id": "ambiguous_A",
+      "measurements": [
+        0.0,
+        0.0
+      ],
+      "revision": 0
+    },
+    {
+      "context": -1.0,
+      "id": "ambiguous_B",
+      "measurements": [
+        0.0,
+        0.0
+      ],
+      "revision": 0
+    },
+    {
+      "context": -1.0,
+      "id": "misleading_A",
+      "measurements": [
+        0.0,
+        0.0
+      ],
+      "revision": 0
+    },
+    {
+      "context": -1.0,
+      "id": "strong_conflict",
+      "measurements": [
+        1.0,
+        0.8
+      ],
+      "revision": 0
+    }
+  ],
+  "coupling_rounds": 1,
+  "experiment": "EXP-65",
+  "feedback_gain": 1.0,
+  "kernel": {
+    "damping": 0.45,
+    "evidence_gain": 4.0,
+    "inhibition": 0.2,
+    "learning_rate": 0.25,
+    "margin_threshold": 0.3,
+    "max_circuits": 16,
+    "max_edges": 8,
+    "max_groups": 32,
+    "max_observation_requests": 2,
+    "max_path_length": 4,
+    "max_paths": 4,
+    "max_search": 2048,
+    "max_ticks": 160,
+    "min_valid_episodes": 3,
+    "patience": 4,
+    "prior_gain": 0.0,
+    "relation_gain": 2.0,
+    "residual_tolerance": 1e-06,
+    "self_excitation": 0.25,
+    "temperature": 1.0,
+    "top_down_gain": 0.35,
+    "weakening": 0.2
+  },
+  "limits": {
+    "automatic_retry": false,
+    "child_address_space_bytes": 536870912,
+    "per_stage_seconds": 60,
+    "raw_bytes": 134217728,
+    "total_seconds": 600,
+    "worker_limit": 1
+  },
+  "maximum_native_settle_calls": 36,
+  "parameter_search": false,
+  "predictions": {
+    "ambiguous_context_changes_lower": "test both signs",
+    "candidate_rejected": true,
+    "misleading_context_can_harm": true,
+    "no_generalization_or_efficiency_claim": true
+  },
+  "preparation_first": true,
+  "primary_questions": [
+    "Does omitted boundary state invalidate a context-free local replacement?",
+    "Can the same unchanged tick perform feature-template classification and a separate category-context agreement relation?",
+    "Does one public upper-hypothesis feedback round help ambiguous input and also propagate misleading context?"
+  ],
+  "run": "r19"
+}
