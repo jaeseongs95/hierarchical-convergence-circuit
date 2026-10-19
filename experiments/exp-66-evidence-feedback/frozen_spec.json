@@ -1,0 +1,307 @@
+{
+  "arms": [
+    "bottom_up",
+    "unconditional",
+    "gated"
+  ],
+  "aux_min_abs_score": 0.8,
+  "aux_source_ids": [
+    "aux_sensor"
+  ],
+  "cases": [
+    {
+      "key": "clear_A",
+      "public": {
+        "aux": null,
+        "context": 1.0,
+        "id": "clear_A",
+        "measurement_ids": [
+          "f0",
+          "f1"
+        ],
+        "measurements": [
+          1.0,
+          0.8
+        ],
+        "revision": 0
+      }
+    },
+    {
+      "key": "clear_B",
+      "public": {
+        "aux": null,
+        "context": -1.0,
+        "id": "clear_B",
+        "measurement_ids": [
+          "f0",
+          "f1"
+        ],
+        "measurements": [
+          -1.0,
+          -0.8
+        ],
+        "revision": 0
+      }
+    },
+    {
+      "key": "revision_0",
+      "public": {
+        "aux": null,
+        "context": -1.0,
+        "id": "revision_pair",
+        "measurement_ids": [
+          "f0",
+          "f1"
+        ],
+        "measurements": [
+          0.0,
+          0.0
+        ],
+        "revision": 0
+      }
+    },
+    {
+      "key": "derived_aux",
+      "public": {
+        "aux": {
+          "measurement_ids": [
+            "aux:0"
+          ],
+          "parents": [
+            "f0"
+          ],
+          "revision": 0,
+          "score": -1.0,
+          "source_id": "aux_sensor"
+        },
+        "context": -1.0,
+        "id": "derived_aux",
+        "measurement_ids": [
+          "f0",
+          "f1"
+        ],
+        "measurements": [
+          0.0,
+          0.0
+        ],
+        "revision": 0
+      }
+    },
+    {
+      "key": "independent_A",
+      "public": {
+        "aux": {
+          "measurement_ids": [
+            "aux:0"
+          ],
+          "parents": [],
+          "revision": 0,
+          "score": 1.0,
+          "source_id": "aux_sensor"
+        },
+        "context": 1.0,
+        "id": "independent_A",
+        "measurement_ids": [
+          "f0",
+          "f1"
+        ],
+        "measurements": [
+          0.0,
+          0.0
+        ],
+        "revision": 0
+      }
+    },
+    {
+      "key": "independent_B",
+      "public": {
+        "aux": {
+          "measurement_ids": [
+            "aux:0"
+          ],
+          "parents": [],
+          "revision": 0,
+          "score": -1.0,
+          "source_id": "aux_sensor"
+        },
+        "context": -1.0,
+        "id": "independent_B",
+        "measurement_ids": [
+          "f0",
+          "f1"
+        ],
+        "measurements": [
+          0.0,
+          0.0
+        ],
+        "revision": 0
+      }
+    },
+    {
+      "key": "conflicting_aux",
+      "public": {
+        "aux": {
+          "measurement_ids": [
+            "aux:0"
+          ],
+          "parents": [],
+          "revision": 0,
+          "score": 1.0,
+          "source_id": "aux_sensor"
+        },
+        "context": -1.0,
+        "id": "conflicting_aux",
+        "measurement_ids": [
+          "f0",
+          "f1"
+        ],
+        "measurements": [
+          0.0,
+          0.0
+        ],
+        "revision": 0
+      }
+    },
+    {
+      "key": "stale_aux",
+      "public": {
+        "aux": {
+          "measurement_ids": [
+            "aux:0"
+          ],
+          "parents": [],
+          "revision": 0,
+          "score": -1.0,
+          "source_id": "aux_sensor"
+        },
+        "context": -1.0,
+        "id": "stale_aux",
+        "measurement_ids": [
+          "f0",
+          "f1"
+        ],
+        "measurements": [
+          0.0,
+          0.0
+        ],
+        "revision": 1
+      }
+    },
+    {
+      "key": "independent_wrong",
+      "public": {
+        "aux": {
+          "measurement_ids": [
+            "aux:0"
+          ],
+          "parents": [],
+          "revision": 0,
+          "score": -1.0,
+          "source_id": "aux_sensor"
+        },
+        "context": -1.0,
+        "id": "independent_wrong",
+        "measurement_ids": [
+          "f0",
+          "f1"
+        ],
+        "measurements": [
+          0.0,
+          0.0
+        ],
+        "revision": 0
+      }
+    },
+    {
+      "key": "strong_conflict",
+      "public": {
+        "aux": {
+          "measurement_ids": [
+            "aux:0"
+          ],
+          "parents": [],
+          "revision": 0,
+          "score": -1.0,
+          "source_id": "aux_sensor"
+        },
+        "context": -1.0,
+        "id": "strong_conflict",
+        "measurement_ids": [
+          "f0",
+          "f1"
+        ],
+        "measurements": [
+          1.0,
+          0.8
+        ],
+        "revision": 0
+      }
+    },
+    {
+      "key": "revision_1",
+      "public": {
+        "aux": null,
+        "context": -1.0,
+        "id": "revision_pair",
+        "measurement_ids": [
+          "f0",
+          "f1"
+        ],
+        "measurements": [
+          1.0,
+          0.8
+        ],
+        "revision": 1
+      }
+    }
+  ],
+  "experiment": "EXP-66",
+  "feedback_gain": 1.0,
+  "kernel": {
+    "damping": 0.45,
+    "evidence_gain": 4.0,
+    "inhibition": 0.2,
+    "learning_rate": 0.25,
+    "margin_threshold": 0.3,
+    "max_circuits": 16,
+    "max_edges": 8,
+    "max_groups": 32,
+    "max_observation_requests": 2,
+    "max_path_length": 4,
+    "max_paths": 4,
+    "max_search": 2048,
+    "max_ticks": 160,
+    "min_valid_episodes": 3,
+    "patience": 4,
+    "prior_gain": 0.0,
+    "relation_gain": 2.0,
+    "residual_tolerance": 1e-06,
+    "self_excitation": 0.25,
+    "temperature": 1.0,
+    "top_down_gain": 0.35,
+    "weakening": 0.2
+  },
+  "limits": {
+    "automatic_retry": false,
+    "child_address_space_bytes": 536870912,
+    "raw_bytes": 134217728,
+    "stage_seconds": 60,
+    "total_seconds": 600,
+    "workers": 1
+  },
+  "maximum_native_settle_calls": 110,
+  "numeric_replay_absolute_tolerance_portable": 1e-15,
+  "numeric_replay_absolute_tolerance_server": 0.0,
+  "parameter_search": false,
+  "predictions": {
+    "cost_superiority": "measure; do not assume CPU savings",
+    "decided_lower_skips_feedback": true,
+    "fresh_disjoint_wrong_aux_can_still_harm": true,
+    "missing_shared_stale_conflicting_aux_abstains": true,
+    "revision_pair_is_fresh_input_processing_not_memory_learning": true
+  },
+  "run": "r20",
+  "source_independence_is_declared": true,
+  "statistical_reliability_established": false,
+  "training_calls": 0
+}

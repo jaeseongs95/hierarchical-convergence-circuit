@@ -1,0 +1,46 @@
+{
+  "clear_A": {
+    "category": true,
+    "relation": true
+  },
+  "clear_B": {
+    "category": false,
+    "relation": true
+  },
+  "conflicting_aux": {
+    "category": true,
+    "relation": false
+  },
+  "derived_aux": {
+    "category": true,
+    "relation": false
+  },
+  "independent_A": {
+    "category": true,
+    "relation": true
+  },
+  "independent_B": {
+    "category": false,
+    "relation": true
+  },
+  "independent_wrong": {
+    "category": true,
+    "relation": false
+  },
+  "revision_0": {
+    "category": true,
+    "relation": false
+  },
+  "revision_1": {
+    "category": true,
+    "relation": false
+  },
+  "stale_aux": {
+    "category": true,
+    "relation": false
+  },
+  "strong_conflict": {
+    "category": true,
+    "relation": false
+  }
+}

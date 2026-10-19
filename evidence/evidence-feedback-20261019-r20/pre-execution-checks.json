@@ -1,0 +1,10 @@
+{
+  "assertions": 104,
+  "native_settle_calls": 0,
+  "native_tick_calls": 0,
+  "notice": "Stub cells are orchestration checks, not experimental observations.",
+  "numeric_tolerance": 1e-15,
+  "saved_record_max_absolute_error": 1.6940658945086007e-21,
+  "status": "PURE_PREPARATION_PASSED",
+  "stub_cells": 33
+}
