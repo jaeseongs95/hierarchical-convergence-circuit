@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "1.0.0",
+  "requestId": "CS-R27",
+  "mode": "derive",
+  "objective": "Retrospective finite native terminal envelopes and conditional gate break-even",
+  "sourceSnapshotDigest": "sha256:37c38442d17d597e1a27b3e68dd9eae74e2f23f0adf07127d452f13b9861027c",
+  "sourceRefs": [
+    {
+      "id": "SRC-NATIVE",
+      "path": "source/dynamics.py",
+      "digest": "sha256:a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc"
+    },
+    {
+      "id": "SRC-R26",
+      "path": "source/r26-results.md",
+      "digest": "sha256:48b4ae86a833eac61a83201f9e76f0f0366ab6259ffe3ad846dc919423e8f299"
+    },
+    {
+      "id": "SRC-GATE",
+      "path": "source/r26-design.md",
+      "digest": "sha256:269621574629353b55003435795402351c757c255bfda43213b02bfe6b487421"
+    },
+    {
+      "id": "SRC-PRIOR",
+      "path": "source/prior-convergence-gate.py",
+      "digest": "sha256:30b756eafb578b78cd53e976191a708e33323504f1f30694c13cec6e0d01fab6"
+    }
+  ],
+  "operationalFacts": [
+    {
+      "id": "FACT-BOUND",
+      "statement": "R26 real-map contraction does not itself establish finite native quality. Saved native last steps permit point-specific exact rational defect bounds.",
+      "evidenceRefs": [
+        "SRC-NATIVE",
+        "SRC-GATE"
+      ]
+    },
+    {
+      "id": "FACT-NOVEL",
+      "statement": "Residual/contraction convergence analyses already exist. New scope is native R26 warm/reset terminal pairs plus observed one-step defects, not a new contraction theorem.",
+      "evidenceRefs": [
+        "SRC-PRIOR",
+        "SRC-R26"
+      ]
+    },
+    {
+      "id": "FACT-COST",
+      "statement": "R26 guarded reduced ticks8.20% but component CPU increased70.31%; stored timing alone only supports conditional break-even arithmetic.",
+      "evidenceRefs": [
+        "SRC-R26"
+      ]
+    }
+  ],
+  "existingContractRef": null
+}

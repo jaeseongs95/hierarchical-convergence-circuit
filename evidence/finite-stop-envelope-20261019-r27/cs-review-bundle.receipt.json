@@ -1,0 +1,8 @@
+{
+  "bytes": 73317,
+  "candidate": "sha256:beaf4308d4ab23590845204fe6d2db0c0bec94eb032a63ad3d37bc765f493d82",
+  "constraints": "sha256:50a98d9c9223fd446f82ef153cc6727a3b88d5e986c523f24009e2b84004048f",
+  "independent_audit": false,
+  "scope": "Frozen six server Python files, saved server JSON and author review. Post-freeze local replay helper is outside this candidate.",
+  "sha256": "f4714562bb214464e096400c008ccc5ace12466186e85f5e31fc5a668bcd2aae"
+}

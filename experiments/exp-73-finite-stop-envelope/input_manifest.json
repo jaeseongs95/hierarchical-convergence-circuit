@@ -1,0 +1,20 @@
+{
+  "evidence/contraction-warmstart-20261019-r26/raw/manifest.json": "384efb448d5ff4b3e09bd7b128aa158b3084fcb1ad70b5edfe944cc2d8b49847",
+  "evidence/contraction-warmstart-20261019-r26/raw/preparation.json": "15a8b5f168a853855adf9e4bcc902c2e21e60491a67179656fb8fad293fc949f",
+  "evidence/contraction-warmstart-20261019-r26/raw/result.json": "c10aaa5a1a2a35cfea9296e3464e04817f985a4d576c6576ca531564c7d29480",
+  "evidence/contraction-warmstart-20261019-r26/raw/strong_negative_first.json": "66877d45a0e18febde2a96722b4780a77d5c58374bac0cf47368eb19cf6f2e62",
+  "evidence/contraction-warmstart-20261019-r26/raw/strong_positive_first.json": "c76094912c4e2ac6c8abfa7c6f03d5b70fd04e31d480a578a17859d647a0b5cc",
+  "evidence/contraction-warmstart-20261019-r26/raw/summary.json": "1c34a9b66600fc6b09c8bcbeeb88cb89798acf2624264fe6f946a3728f68968a",
+  "evidence/contraction-warmstart-20261019-r26/raw/weak_negative_first.json": "32e0eb4cd4c28e6a18315e1489cee65cadc877278bf5f83949bed3c12f0b0000",
+  "evidence/contraction-warmstart-20261019-r26/raw/weak_positive_first.json": "803f514dc4e109f4707ab6e6f777d9f5f2165c7d912e04b1babf4abf29db9298",
+  "experiments/exp-72-contraction-warmstart/RESULTS.ko.md": "48b4ae86a833eac61a83201f9e76f0f0366ab6259ffe3ad846dc919423e8f299",
+  "experiments/exp-72-contraction-warmstart/frozen_spec.json": "510d7dc26a30e1bcdea7a57c5981d03d7654b752df9dd6d440b6b001af9c63ed",
+  "experiments/exp-72-contraction-warmstart/input_manifest.json": "e162afe844a832310425fdb609b1bc28224519d8bf8de27db75f2c512b712f39",
+  "experiments/exp-73-finite-stop-envelope/design.ko.md": "42504dadbe31751de2a5c40a2e829c3e02bf09eadcb2a54d05ff0a65efa7edcc",
+  "experiments/exp-73-finite-stop-envelope/frozen_spec.json": "5ec0063e3c680bce1f974d5924ae6fa938a3441e7b644f84929458cd957fc07a",
+  "src/hcr/dynamics.py": "a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc",
+  "tools/analysis/on_convergence_gate.py": "30b756eafb578b78cd53e976191a708e33323504f1f30694c13cec6e0d01fab6",
+  "tools/r26_contraction_warmstart/policy.py": "a3ef73619d56113a3d7b022041bf88351f1dfd4ea4b4fb3825a221620de5283f",
+  "tools/r26_contraction_warmstart/probe.py": "4eb132be1efc3ba3393c1edd043829c8e816f0d9fd2e52caca1208355b9b86fa",
+  "tools/r26_contraction_warmstart/verify.py": "901abf7d2563e0f4e2375b9be80663d502ba42c09e7cf1a945980d04da0681eb"
+}

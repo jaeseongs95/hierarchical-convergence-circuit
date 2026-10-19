@@ -1,0 +1,46 @@
+{
+  "arms": [
+    "saved_envelope"
+  ],
+  "base": "bad0c94e7c84f2018363756de898c577b5dcff27",
+  "cases": [
+    {
+      "key": "strong_positive_first"
+    },
+    {
+      "key": "strong_negative_first"
+    },
+    {
+      "key": "weak_positive_first"
+    },
+    {
+      "key": "weak_negative_first"
+    }
+  ],
+  "dyadic_bits": 192,
+  "exp_domain_cap": 16,
+  "exp_width_tolerance": "1e-40",
+  "experiment": "EXP-73",
+  "limits": {
+    "automatic_retry": false,
+    "child_address_space_bytes": 536870912,
+    "child_file_bytes": 16777216,
+    "parent_address_space_bytes": 536870912,
+    "parent_file_bytes": 33554432,
+    "raw_bytes": 134217728,
+    "stage_seconds": 60,
+    "total_seconds": 600,
+    "workers": 1
+  },
+  "maximum_logical_ticks": 0,
+  "maximum_measurement_requests": 0,
+  "maximum_native_settle_calls": 0,
+  "new_timing_runs": 0,
+  "production_adoption": false,
+  "retrospective_only": true,
+  "run": "r27",
+  "saved_pairs": 48,
+  "saved_records": 72,
+  "terms": 128,
+  "training_calls": 0
+}

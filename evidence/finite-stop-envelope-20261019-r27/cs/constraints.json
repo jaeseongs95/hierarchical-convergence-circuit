@@ -1,0 +1,140 @@
+{
+  "schemaVersion": "1.0.0",
+  "reportId": "CS-R27-CONSTRAINTS",
+  "requestDigest": "sha256:e109bee6b7efc765c2214f76dc9900558d20297ca23fe19ce8997825c2a9bcac",
+  "sourceSnapshotDigest": "sha256:37c38442d17d597e1a27b3e68dd9eae74e2f23f0adf07127d452f13b9861027c",
+  "knowledgePackVersion": "0.1.0",
+  "knowledgePackDigest": "sha256:d8351d9aabb433403830fcffc3a2f2438b6d428711c93b6ded9eff002468c3d1",
+  "draftUse": {
+    "allowed": false,
+    "basis": "Two validated rules only."
+  },
+  "applicability": "applicable",
+  "applicabilityReason": "Exact numerical enclosure and evidence/cost provenance determine whether finite records can be certified.",
+  "selectedRules": [
+    {
+      "ruleId": "ALG-KEY-004",
+      "ruleDigest": "sha256:db77383ecb5f41ef3af5cb60769edaea507cac5cb25e28b88f249e84a062ba2e",
+      "applicabilityReason": "Certificates reused only for the same program/config/drives/record; provenance must not be confused with permission."
+    },
+    {
+      "ruleId": "PERF-MEASURE-001",
+      "ruleDigest": "sha256:ef11800e55663f1b719f62d3f812280fd6e56c6895eef3028b9db344a9d0a355",
+      "applicabilityReason": "Bind all saved timing and fixed workload; do not infer causal or statistical speed from arithmetic."
+    }
+  ],
+  "facts": [
+    {
+      "id": "FACT-BOUND",
+      "statement": "R26 real-map contraction does not itself establish finite native quality. Saved native last steps permit point-specific exact rational defect bounds.",
+      "evidenceRefs": [
+        "SRC-NATIVE",
+        "SRC-GATE"
+      ]
+    },
+    {
+      "id": "FACT-NOVEL",
+      "statement": "Residual/contraction convergence analyses already exist. New scope is native R26 warm/reset terminal pairs plus observed one-step defects, not a new contraction theorem.",
+      "evidenceRefs": [
+        "SRC-PRIOR",
+        "SRC-R26"
+      ]
+    },
+    {
+      "id": "FACT-COST",
+      "statement": "R26 guarded reduced ticks8.20% but component CPU increased70.31%; stored timing alone only supports conditional break-even arithmetic.",
+      "evidenceRefs": [
+        "SRC-R26"
+      ]
+    }
+  ],
+  "assumptions": [],
+  "invariants": [
+    {
+      "id": "INV-BOUND",
+      "statement": "Dyadic outward-rounded positive Taylor exp enclosure and exact rational global q must support rho=(q*r+eta)/(1-q); q>=1 is inconclusive. Pair state tolerance and root-based readout margin are required. This certifies only observed finite records.",
+      "scope": "Fixed R26 saved72records/48pairs, total600s and no new native work",
+      "basisRefs": [
+        "FACT-BOUND",
+        "FACT-NOVEL"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-RECORD",
+      "statement": "All72 records and48 fixed pairs use unchanged hash-pinned R26 inputs and scalar replay. Native recurrence/training/measurement/benchmark calls are forbidden. Exact fallback requires the full typed/float-bit record identity.",
+      "scope": "Fixed R26 saved72records/48pairs, total600s and no new native work",
+      "basisRefs": [
+        "FACT-BOUND",
+        "FACT-NOVEL"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-COST",
+      "statement": "All4 streams and prefixes retain gate-inclusive saved CPU/wall. D=reset-(guarded-gate) is a conditional gate budget, never a measured optimized run or amortization benefit. Certification analysis costs remain separate.",
+      "scope": "Fixed R26 saved72records/48pairs, total600s and no new native work",
+      "basisRefs": [
+        "FACT-COST"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "PERF-MEASURE-001"
+      ]
+    }
+  ],
+  "designChoices": [
+    {
+      "id": "CHOICE-MINIMAL",
+      "statement": "Reuse R26 saved records and R22 bounded runner; Fraction plus dyadic192bit outward rounding, fixed128term Taylor and |z|<=16. Separate exact-term verifier; no new native runs or dependencies.",
+      "rationale": "Answer finite-quality feasibility before spending on runtime gate optimization.",
+      "basisRefs": [
+        "FACT-BOUND",
+        "FACT-COST"
+      ]
+    }
+  ],
+  "verificationObligations": [
+    {
+      "id": "OB-BOUND",
+      "invariantIds": [
+        "INV-BOUND"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Unsound exp enclosure, ignored native defect, q>=1 accepted, altered radius or false pair certificate.",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-RECORD",
+      "invariantIds": [
+        "INV-RECORD"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Changed input/source/record or missing/duplicate row accepted; native execution invoked; fallback with different record certified.",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-COST",
+      "invariantIds": [
+        "INV-COST"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Changed saved timing or denominator/sign misclassification accepted, gate double count, new timing or statistical speed/adoption claim.",
+      "requirementLevel": "required"
+    }
+  ],
+  "requiredCapabilities": [
+    "cs-constraint-derivation",
+    "cs-implementation-review"
+  ],
+  "verdict": "READY"
+}
