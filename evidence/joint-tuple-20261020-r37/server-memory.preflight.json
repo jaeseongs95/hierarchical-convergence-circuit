@@ -1,0 +1,10 @@
+{
+  "observation_kb": {
+    "MemTotal": 3881196,
+    "MemAvailable": 3073112,
+    "SwapTotal": 0,
+    "SwapFree": 0
+  },
+  "source_output": "cd9862276923c8b41a3b1292021702039e252ff335341894",
+  "point_observation_not_guarantee": true
+}

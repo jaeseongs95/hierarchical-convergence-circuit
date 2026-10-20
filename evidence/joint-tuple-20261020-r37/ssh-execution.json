@@ -1,0 +1,77 @@
+{
+  "completion": {
+    "completed": true,
+    "evidence_bytes": 4380645,
+    "evidence_sha256": "bbe67c6c69167bca4ab06ca58c5a5315e47b5c11e9205d435e702be50f69845e",
+    "seconds_including_seal": 242.63077976400382,
+    "within_wall_limit": true
+  },
+  "known_status": "COMPLETED_RAW_RECEIVED_LOCAL_REPLAY_PASS",
+  "launch": {
+    "maximum_measurement_requests": 0,
+    "maximum_native_settle_calls": 119824,
+    "native_training": 0,
+    "no_retry": true,
+    "parent_limits": {
+      "child_address_space_bytes": 536870912,
+      "child_file_bytes": 8388608,
+      "parent_address_space_bytes": 536870912,
+      "parent_file_bytes": 69206016,
+      "raw_bytes": 67108864,
+      "stage_seconds": 900,
+      "total_seconds": 960
+    },
+    "pid": 17870,
+    "preparation_seconds": 0.07431728200754151,
+    "root": "/home/mcpops/hcc-joint-tuple-20261020-r37",
+    "single_worker": true,
+    "total_wall_cap_seconds": 960
+  },
+  "native_rerun": false,
+  "received_json": 672,
+  "request": {
+    "approvalMode": "automatic",
+    "command": "python3 -B -E -c 'import hashlib,zipfile; p=\"/home/mcpops/hcc-joint-tuple-source-20261020-r37.zip\"; assert hashlib.sha256(open(p,\"rb\").read()).hexdigest()==\"732fd61784b2efddf309eeca868cf9ccf85a2da634058802df41dc768dd7642c\"; z=zipfile.ZipFile(p); exec(compile(z.read(\"bootstrap.py\"),\"bootstrap.py\",\"exec\"))'",
+    "commandClass": "destructive",
+    "createdAt": 1792478220595,
+    "decision": {
+      "commandNames": [
+        "python3"
+      ],
+      "decision": "execute",
+      "policyRevision": 7,
+      "reasonCode": "command_set",
+      "targetRevision": "4cab9f57b2fd6d81004278e51ea7918d2124972cc1ae968b1d463d3a7c80cd4e"
+    },
+    "expiresAt": 1792481820595,
+    "finishedAt": 1792478220895,
+    "id": "48e020dc71bcd92043d6ead17836bbdf39695b6ce2e76e65",
+    "kind": "command",
+    "operation": {
+      "command": "python3 -B -E -c 'import hashlib,zipfile; p=\"/home/mcpops/hcc-joint-tuple-source-20261020-r37.zip\"; assert hashlib.sha256(open(p,\"rb\").read()).hexdigest()==\"732fd61784b2efddf309eeca868cf9ccf85a2da634058802df41dc768dd7642c\"; z=zipfile.ZipFile(p); exec(compile(z.read(\"bootstrap.py\"),\"bootstrap.py\",\"exec\"))'",
+      "context": "Continue authorized R37 research on designated test server. Verify frozen archive hash, exclusively extract new /home/mcpops/hcc-joint-tuple-20261020-r37, launch one worker.126source files/95pinned inputs;1703local prep checks,8metadata and8codec/cache/bound mutations passed;local native0.1024conditions x joint/marginal/exact=3072evaluations,16sources,119824actual settle calls/max19171840ticks. Compare joint tuple correlations to explicit native marginal-product information-loss intervention; preserve all errors. R36 measured core/storage/audit/raw separately scaled plus selected3x safety factor: total960s/stage900s,ASparent/child512MiB,raw64MiB,file66/8MiB. No training,world measurement,network,sudo,services,new dependencies,production or existing-file replacement. Failure is retained; stop without retry,retuning or increased budget.",
+      "displayContext": "지정 테스트 서버의 새 R37 전용 폴더에서 joint tuple 보존과 native 주변곱 정보손실 대조군을 비교합니다. 해시 확인 후 작업자1개를 실행합니다. 소스126개·입력95개 고정, 준비1703검사·메타8개·저장경계 변조8개 통과, 로컬native0입니다. 1024조건×3방식=3072평가, 원천16개·수렴119824회/최대19171840tick입니다. R36실측을 항목별 스케일하고 선택한 안전계수3으로 전체960초·단계900초,주소공간각512MiB·원자료64MiB·파일66/8MiB를 제한합니다. 모든 오류를 보존합니다. 학습·세계측정·네트워크·sudo·서비스·의존성추가·운영변경·기존파일교체는 없습니다. 실패 시 재시도·재조정·예산상향 없이 중단합니다.",
+      "kind": "command"
+    },
+    "profile": "aws-local",
+    "result": {
+      "content": [],
+      "structuredContent": {
+        "output": {
+          "bytes": 507,
+          "captureSource": "redacted-adapter-outcome",
+          "executionId": "48e020dc71bcd92043d6ead17836bbdf39695b6ce2e76e65",
+          "expiresAt": 1792481820883,
+          "id": "403c5329e46978dfb2b69f85699e89d4725352e000b65bd6",
+          "sha256": "b74aa378e15cd287b074ad29a7e0e66d815f275c5d64079255f47acb9a8be22c",
+          "snapshotBytes": 573,
+          "sshCompleteness": "unknown",
+          "state": "ready",
+          "version": 1
+        }
+      }
+    },
+    "state": "completed",
+    "target": "mcpops@127.0.0.1:22"
+  }
+}

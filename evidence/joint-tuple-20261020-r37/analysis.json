@@ -1,0 +1,929 @@
+{
+  "arms": {
+    "exact_joint": {
+      "allocated_source_inclusive_cpu_seconds": 2.7255504466665856,
+      "cases": 1024,
+      "core_cpu_seconds": 2.60716243600028,
+      "first_failed_intermediates": {
+        "None": 1024
+      },
+      "groups": 0,
+      "incorrect_assertion": 0,
+      "intervention_eligibility_correct": 4096,
+      "intervention_strict_correct": 1024,
+      "kinds": {
+        "many": 704,
+        "none": 64,
+        "unique": 256
+      },
+      "links": 0,
+      "membership_correct": 0,
+      "membership_total": 0,
+      "pair_correct": 0,
+      "pair_total": 0,
+      "physical_native_calls": 0,
+      "pre_membership_correct": 4096,
+      "projection_correct": 0,
+      "projection_total": 0,
+      "reasons": {
+        "abstain_ambiguous": 440,
+        "abstain_inconsistent": 64,
+        "decided": 520
+      },
+      "record_wall_seconds": 2.6101159306417685,
+      "role_correct": 0,
+      "role_total": 0,
+      "source_inclusive_group_updates": 2640,
+      "source_inclusive_signal_transmissions": 4224,
+      "source_inclusive_ticks": 528,
+      "storage_cpu_seconds": 0.0014189239997590697,
+      "strict_correct": 1024,
+      "ticks": 0,
+      "tuple_eligibility_correct": 4096,
+      "tuple_total": 4096,
+      "unnecessary_abstention": 0
+    },
+    "native_joint": {
+      "allocated_source_inclusive_cpu_seconds": 109.68391655566668,
+      "cases": 1024,
+      "core_cpu_seconds": 79.5830478830001,
+      "first_failed_intermediates": {
+        "None": 1024
+      },
+      "groups": 21329264,
+      "incorrect_assertion": 0,
+      "intervention_eligibility_correct": 4096,
+      "intervention_strict_correct": 1024,
+      "kinds": {
+        "many": 704,
+        "none": 64,
+        "unique": 256
+      },
+      "links": 53318272,
+      "membership_correct": 8192,
+      "membership_total": 8192,
+      "pair_correct": 16384,
+      "pair_total": 16384,
+      "physical_native_calls": 59392,
+      "pre_membership_correct": 4096,
+      "projection_correct": 0,
+      "projection_total": 0,
+      "reasons": {
+        "abstain_ambiguous": 440,
+        "abstain_inconsistent": 64,
+        "decided": 520
+      },
+      "record_wall_seconds": 109.59609370148974,
+      "role_correct": 32768,
+      "role_total": 32768,
+      "source_inclusive_group_updates": 21331904,
+      "source_inclusive_signal_transmissions": 53322496,
+      "source_inclusive_ticks": 1809600,
+      "storage_cpu_seconds": 29.98389958600004,
+      "strict_correct": 1024,
+      "ticks": 1809072,
+      "tuple_eligibility_correct": 4096,
+      "tuple_total": 4096,
+      "unnecessary_abstention": 0
+    },
+    "native_marginal": {
+      "allocated_source_inclusive_cpu_seconds": 111.77399285566673,
+      "cases": 1024,
+      "core_cpu_seconds": 81.1258100059999,
+      "first_failed_intermediates": {
+        "None": 1024
+      },
+      "groups": 21723520,
+      "incorrect_assertion": 0,
+      "intervention_eligibility_correct": 4096,
+      "intervention_strict_correct": 1024,
+      "kinds": {
+        "many": 704,
+        "none": 64,
+        "unique": 256
+      },
+      "links": 54530432,
+      "membership_correct": 8192,
+      "membership_total": 8192,
+      "pair_correct": 16384,
+      "pair_total": 16384,
+      "physical_native_calls": 60416,
+      "pre_membership_correct": 4096,
+      "projection_correct": 4096,
+      "projection_total": 4096,
+      "reasons": {
+        "abstain_ambiguous": 520,
+        "abstain_inconsistent": 64,
+        "decided": 440
+      },
+      "record_wall_seconds": 111.67220113248914,
+      "role_correct": 32768,
+      "role_total": 32768,
+      "source_inclusive_group_updates": 21726160,
+      "source_inclusive_signal_transmissions": 54534656,
+      "source_inclusive_ticks": 1840208,
+      "storage_cpu_seconds": 30.5312137630003,
+      "strict_correct": 944,
+      "ticks": 1839680,
+      "tuple_eligibility_correct": 3584,
+      "tuple_total": 4096,
+      "unnecessary_abstention": 80
+    }
+  },
+  "complete_closed_relation_table_contract": true,
+  "computation_reused": false,
+  "conclusion": "Only finite complete2x2 typed relation tables; native marginal product is an explicit information-loss intervention and its full-oracle failures are not protocol failures. No learning/general CSP/calibration/efficiency/production claim.",
+  "distinct_joint_signatures": {
+    "exact_joint": 16,
+    "native_joint": 16,
+    "native_marginal": 10
+  },
+  "full_joint_pass": true,
+  "independent_statistical_samples": false,
+  "initial_fixed": 0.5,
+  "learning_calls": 0,
+  "metamorphic": {
+    "exact_joint": {
+      "invariant": 768,
+      "pairs": 768
+    },
+    "native_joint": {
+      "invariant": 768,
+      "pairs": 768
+    },
+    "native_marginal": {
+      "invariant": 768,
+      "pairs": 768
+    }
+  },
+  "mutations_rejected": [
+    "revision",
+    "source",
+    "variables",
+    "tuple",
+    "eligibility",
+    "messages",
+    "applied",
+    "state_hash",
+    "T_hash",
+    "value",
+    "selected",
+    "network_ref"
+  ],
+  "native_marginal_intervention_pass": true,
+  "per_arm_allocation": "source once per arm plus one third common overhead; explicit accounting assumption, not independent timing",
+  "phase_resources": {
+    "audit": {
+      "platform": "linux",
+      "ru_maxrss_raw": 50892,
+      "ru_maxrss_units": "platform-native getrusage; no conversion asserted",
+      "system_cpu_seconds": 0.214965,
+      "user_cpu_seconds": 17.310162
+    },
+    "preparation": {
+      "platform": "linux",
+      "ru_maxrss_raw": 27388,
+      "ru_maxrss_units": "platform-native getrusage; no conversion asserted",
+      "system_cpu_seconds": 0.015035,
+      "user_cpu_seconds": 0.18042899999999998
+    },
+    "work": {
+      "platform": "linux",
+      "ru_maxrss_raw": 49504,
+      "ru_maxrss_units": "platform-native getrusage; no conversion asserted",
+      "system_cpu_seconds": 0.128991,
+      "user_cpu_seconds": 223.968506
+    }
+  },
+  "physical_native_calls": 119824,
+  "physical_numeric_refs": 119808,
+  "physical_ticks": 3649280,
+  "production_adoption": false,
+  "same_marginals_counterexamples": {
+    "exact_joint": [
+      {
+        "c_mask": 6,
+        "case": "c0408",
+        "namespace": 0,
+        "normalized_eligible": [
+          1,
+          2
+        ],
+        "order": 0,
+        "reason": "decided",
+        "strict_correct": true,
+        "t_mask": 6,
+        "value": true
+      },
+      {
+        "c_mask": 6,
+        "case": "c0409",
+        "namespace": 0,
+        "normalized_eligible": [
+          1,
+          2
+        ],
+        "order": 1,
+        "reason": "decided",
+        "strict_correct": true,
+        "t_mask": 6,
+        "value": true
+      },
+      {
+        "c_mask": 6,
+        "case": "c0410",
+        "namespace": 1,
+        "normalized_eligible": [
+          1,
+          2
+        ],
+        "order": 0,
+        "reason": "decided",
+        "strict_correct": true,
+        "t_mask": 6,
+        "value": true
+      },
+      {
+        "c_mask": 6,
+        "case": "c0411",
+        "namespace": 1,
+        "normalized_eligible": [
+          1,
+          2
+        ],
+        "order": 1,
+        "reason": "decided",
+        "strict_correct": true,
+        "t_mask": 6,
+        "value": true
+      },
+      {
+        "c_mask": 6,
+        "case": "c0420",
+        "namespace": 0,
+        "normalized_eligible": [
+          1,
+          2
+        ],
+        "order": 0,
+        "reason": "decided",
+        "strict_correct": true,
+        "t_mask": 9,
+        "value": false
+      },
+      {
+        "c_mask": 6,
+        "case": "c0421",
+        "namespace": 0,
+        "normalized_eligible": [
+          1,
+          2
+        ],
+        "order": 1,
+        "reason": "decided",
+        "strict_correct": true,
+        "t_mask": 9,
+        "value": false
+      },
+      {
+        "c_mask": 6,
+        "case": "c0422",
+        "namespace": 1,
+        "normalized_eligible": [
+          1,
+          2
+        ],
+        "order": 0,
+        "reason": "decided",
+        "strict_correct": true,
+        "t_mask": 9,
+        "value": false
+      },
+      {
+        "c_mask": 6,
+        "case": "c0423",
+        "namespace": 1,
+        "normalized_eligible": [
+          1,
+          2
+        ],
+        "order": 1,
+        "reason": "decided",
+        "strict_correct": true,
+        "t_mask": 9,
+        "value": false
+      },
+      {
+        "c_mask": 9,
+        "case": "c0600",
+        "namespace": 0,
+        "normalized_eligible": [
+          0,
+          3
+        ],
+        "order": 0,
+        "reason": "decided",
+        "strict_correct": true,
+        "t_mask": 6,
+        "value": false
+      },
+      {
+        "c_mask": 9,
+        "case": "c0601",
+        "namespace": 0,
+        "normalized_eligible": [
+          0,
+          3
+        ],
+        "order": 1,
+        "reason": "decided",
+        "strict_correct": true,
+        "t_mask": 6,
+        "value": false
+      },
+      {
+        "c_mask": 9,
+        "case": "c0602",
+        "namespace": 1,
+        "normalized_eligible": [
+          0,
+          3
+        ],
+        "order": 0,
+        "reason": "decided",
+        "strict_correct": true,
+        "t_mask": 6,
+        "value": false
+      },
+      {
+        "c_mask": 9,
+        "case": "c0603",
+        "namespace": 1,
+        "normalized_eligible": [
+          0,
+          3
+        ],
+        "order": 1,
+        "reason": "decided",
+        "strict_correct": true,
+        "t_mask": 6,
+        "value": false
+      },
+      {
+        "c_mask": 9,
+        "case": "c0612",
+        "namespace": 0,
+        "normalized_eligible": [
+          0,
+          3
+        ],
+        "order": 0,
+        "reason": "decided",
+        "strict_correct": true,
+        "t_mask": 9,
+        "value": true
+      },
+      {
+        "c_mask": 9,
+        "case": "c0613",
+        "namespace": 0,
+        "normalized_eligible": [
+          0,
+          3
+        ],
+        "order": 1,
+        "reason": "decided",
+        "strict_correct": true,
+        "t_mask": 9,
+        "value": true
+      },
+      {
+        "c_mask": 9,
+        "case": "c0614",
+        "namespace": 1,
+        "normalized_eligible": [
+          0,
+          3
+        ],
+        "order": 0,
+        "reason": "decided",
+        "strict_correct": true,
+        "t_mask": 9,
+        "value": true
+      },
+      {
+        "c_mask": 9,
+        "case": "c0615",
+        "namespace": 1,
+        "normalized_eligible": [
+          0,
+          3
+        ],
+        "order": 1,
+        "reason": "decided",
+        "strict_correct": true,
+        "t_mask": 9,
+        "value": true
+      }
+    ],
+    "native_joint": [
+      {
+        "c_mask": 6,
+        "case": "c0408",
+        "namespace": 0,
+        "normalized_eligible": [
+          1,
+          2
+        ],
+        "order": 0,
+        "reason": "decided",
+        "strict_correct": true,
+        "t_mask": 6,
+        "value": true
+      },
+      {
+        "c_mask": 6,
+        "case": "c0409",
+        "namespace": 0,
+        "normalized_eligible": [
+          1,
+          2
+        ],
+        "order": 1,
+        "reason": "decided",
+        "strict_correct": true,
+        "t_mask": 6,
+        "value": true
+      },
+      {
+        "c_mask": 6,
+        "case": "c0410",
+        "namespace": 1,
+        "normalized_eligible": [
+          1,
+          2
+        ],
+        "order": 0,
+        "reason": "decided",
+        "strict_correct": true,
+        "t_mask": 6,
+        "value": true
+      },
+      {
+        "c_mask": 6,
+        "case": "c0411",
+        "namespace": 1,
+        "normalized_eligible": [
+          1,
+          2
+        ],
+        "order": 1,
+        "reason": "decided",
+        "strict_correct": true,
+        "t_mask": 6,
+        "value": true
+      },
+      {
+        "c_mask": 6,
+        "case": "c0420",
+        "namespace": 0,
+        "normalized_eligible": [
+          1,
+          2
+        ],
+        "order": 0,
+        "reason": "decided",
+        "strict_correct": true,
+        "t_mask": 9,
+        "value": false
+      },
+      {
+        "c_mask": 6,
+        "case": "c0421",
+        "namespace": 0,
+        "normalized_eligible": [
+          1,
+          2
+        ],
+        "order": 1,
+        "reason": "decided",
+        "strict_correct": true,
+        "t_mask": 9,
+        "value": false
+      },
+      {
+        "c_mask": 6,
+        "case": "c0422",
+        "namespace": 1,
+        "normalized_eligible": [
+          1,
+          2
+        ],
+        "order": 0,
+        "reason": "decided",
+        "strict_correct": true,
+        "t_mask": 9,
+        "value": false
+      },
+      {
+        "c_mask": 6,
+        "case": "c0423",
+        "namespace": 1,
+        "normalized_eligible": [
+          1,
+          2
+        ],
+        "order": 1,
+        "reason": "decided",
+        "strict_correct": true,
+        "t_mask": 9,
+        "value": false
+      },
+      {
+        "c_mask": 9,
+        "case": "c0600",
+        "namespace": 0,
+        "normalized_eligible": [
+          0,
+          3
+        ],
+        "order": 0,
+        "reason": "decided",
+        "strict_correct": true,
+        "t_mask": 6,
+        "value": false
+      },
+      {
+        "c_mask": 9,
+        "case": "c0601",
+        "namespace": 0,
+        "normalized_eligible": [
+          0,
+          3
+        ],
+        "order": 1,
+        "reason": "decided",
+        "strict_correct": true,
+        "t_mask": 6,
+        "value": false
+      },
+      {
+        "c_mask": 9,
+        "case": "c0602",
+        "namespace": 1,
+        "normalized_eligible": [
+          0,
+          3
+        ],
+        "order": 0,
+        "reason": "decided",
+        "strict_correct": true,
+        "t_mask": 6,
+        "value": false
+      },
+      {
+        "c_mask": 9,
+        "case": "c0603",
+        "namespace": 1,
+        "normalized_eligible": [
+          0,
+          3
+        ],
+        "order": 1,
+        "reason": "decided",
+        "strict_correct": true,
+        "t_mask": 6,
+        "value": false
+      },
+      {
+        "c_mask": 9,
+        "case": "c0612",
+        "namespace": 0,
+        "normalized_eligible": [
+          0,
+          3
+        ],
+        "order": 0,
+        "reason": "decided",
+        "strict_correct": true,
+        "t_mask": 9,
+        "value": true
+      },
+      {
+        "c_mask": 9,
+        "case": "c0613",
+        "namespace": 0,
+        "normalized_eligible": [
+          0,
+          3
+        ],
+        "order": 1,
+        "reason": "decided",
+        "strict_correct": true,
+        "t_mask": 9,
+        "value": true
+      },
+      {
+        "c_mask": 9,
+        "case": "c0614",
+        "namespace": 1,
+        "normalized_eligible": [
+          0,
+          3
+        ],
+        "order": 0,
+        "reason": "decided",
+        "strict_correct": true,
+        "t_mask": 9,
+        "value": true
+      },
+      {
+        "c_mask": 9,
+        "case": "c0615",
+        "namespace": 1,
+        "normalized_eligible": [
+          0,
+          3
+        ],
+        "order": 1,
+        "reason": "decided",
+        "strict_correct": true,
+        "t_mask": 9,
+        "value": true
+      }
+    ],
+    "native_marginal": [
+      {
+        "c_mask": 6,
+        "case": "c0408",
+        "namespace": 0,
+        "normalized_eligible": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "order": 0,
+        "reason": "abstain_ambiguous",
+        "strict_correct": false,
+        "t_mask": 6,
+        "value": null
+      },
+      {
+        "c_mask": 6,
+        "case": "c0409",
+        "namespace": 0,
+        "normalized_eligible": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "order": 1,
+        "reason": "abstain_ambiguous",
+        "strict_correct": false,
+        "t_mask": 6,
+        "value": null
+      },
+      {
+        "c_mask": 6,
+        "case": "c0410",
+        "namespace": 1,
+        "normalized_eligible": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "order": 0,
+        "reason": "abstain_ambiguous",
+        "strict_correct": false,
+        "t_mask": 6,
+        "value": null
+      },
+      {
+        "c_mask": 6,
+        "case": "c0411",
+        "namespace": 1,
+        "normalized_eligible": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "order": 1,
+        "reason": "abstain_ambiguous",
+        "strict_correct": false,
+        "t_mask": 6,
+        "value": null
+      },
+      {
+        "c_mask": 6,
+        "case": "c0420",
+        "namespace": 0,
+        "normalized_eligible": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "order": 0,
+        "reason": "abstain_ambiguous",
+        "strict_correct": false,
+        "t_mask": 9,
+        "value": null
+      },
+      {
+        "c_mask": 6,
+        "case": "c0421",
+        "namespace": 0,
+        "normalized_eligible": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "order": 1,
+        "reason": "abstain_ambiguous",
+        "strict_correct": false,
+        "t_mask": 9,
+        "value": null
+      },
+      {
+        "c_mask": 6,
+        "case": "c0422",
+        "namespace": 1,
+        "normalized_eligible": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "order": 0,
+        "reason": "abstain_ambiguous",
+        "strict_correct": false,
+        "t_mask": 9,
+        "value": null
+      },
+      {
+        "c_mask": 6,
+        "case": "c0423",
+        "namespace": 1,
+        "normalized_eligible": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "order": 1,
+        "reason": "abstain_ambiguous",
+        "strict_correct": false,
+        "t_mask": 9,
+        "value": null
+      },
+      {
+        "c_mask": 9,
+        "case": "c0600",
+        "namespace": 0,
+        "normalized_eligible": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "order": 0,
+        "reason": "abstain_ambiguous",
+        "strict_correct": false,
+        "t_mask": 6,
+        "value": null
+      },
+      {
+        "c_mask": 9,
+        "case": "c0601",
+        "namespace": 0,
+        "normalized_eligible": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "order": 1,
+        "reason": "abstain_ambiguous",
+        "strict_correct": false,
+        "t_mask": 6,
+        "value": null
+      },
+      {
+        "c_mask": 9,
+        "case": "c0602",
+        "namespace": 1,
+        "normalized_eligible": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "order": 0,
+        "reason": "abstain_ambiguous",
+        "strict_correct": false,
+        "t_mask": 6,
+        "value": null
+      },
+      {
+        "c_mask": 9,
+        "case": "c0603",
+        "namespace": 1,
+        "normalized_eligible": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "order": 1,
+        "reason": "abstain_ambiguous",
+        "strict_correct": false,
+        "t_mask": 6,
+        "value": null
+      },
+      {
+        "c_mask": 9,
+        "case": "c0612",
+        "namespace": 0,
+        "normalized_eligible": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "order": 0,
+        "reason": "abstain_ambiguous",
+        "strict_correct": false,
+        "t_mask": 9,
+        "value": null
+      },
+      {
+        "c_mask": 9,
+        "case": "c0613",
+        "namespace": 0,
+        "normalized_eligible": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "order": 1,
+        "reason": "abstain_ambiguous",
+        "strict_correct": false,
+        "t_mask": 9,
+        "value": null
+      },
+      {
+        "c_mask": 9,
+        "case": "c0614",
+        "namespace": 1,
+        "normalized_eligible": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "order": 0,
+        "reason": "abstain_ambiguous",
+        "strict_correct": false,
+        "t_mask": 9,
+        "value": null
+      },
+      {
+        "c_mask": 9,
+        "case": "c0615",
+        "namespace": 1,
+        "normalized_eligible": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "order": 1,
+        "reason": "abstain_ambiguous",
+        "strict_correct": false,
+        "t_mask": 9,
+        "value": null
+      }
+    ]
+  },
+  "scalar_max_absolute_error": 6.938893903907228e-18,
+  "seconds_including_seal": 242.63077976400382,
+  "server_scalar_max_error": 0.0,
+  "shared_work_overhead_cpu_seconds": 0.25059347299963974,
+  "source_group_updates": 2640,
+  "source_native_calls": 16,
+  "source_process_cpu_seconds": 0.03343792900000002,
+  "source_signal_transmissions": 4224,
+  "source_ticks": 528,
+  "statistical_speed_verdict": null,
+  "status": "R37_JOINT_TUPLE_OBSERVED",
+  "trace_storage_only_shared": true,
+  "unique_native_traces": 598,
+  "work_process_cpu_seconds": 224.11658400000002,
+  "world_measurement_calls": 0
+}

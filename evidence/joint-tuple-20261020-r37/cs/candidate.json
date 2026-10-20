@@ -1,0 +1,26 @@
+{
+  "files": [
+    {
+      "digest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path": "candidate/__init__.py"
+    },
+    {
+      "digest": "sha256:9e4550858f3b2ab3d68c5c8c9b43130af4f0d3bcc1eed8e09e8930a2c1dd55e8",
+      "path": "candidate/bootstrap.py"
+    },
+    {
+      "digest": "sha256:196ac28de421059eb3c553a6f6a1b19d4757c58e5770f8d517fe0ae03e682531",
+      "path": "candidate/probe.py"
+    },
+    {
+      "digest": "sha256:3cabd0c0c61393c2d3356981dd1c7eaf0f48e228c3bf5d8e05d558b1fb6a66af",
+      "path": "candidate/runtime.py"
+    },
+    {
+      "digest": "sha256:f6ec876968a972f3d5a0eb97c6978c72dbcae9b4d9d8ec6d1d15bbf6b0a1a2f3",
+      "path": "candidate/verify.py"
+    }
+  ],
+  "schemaVersion": "1.0.0",
+  "scopeSummary": "R37 complete2x2 joint tuple correlation versus native marginal projection/re-cross intervention;1024cases3arms,16fresh conditional sources,119824actualcalls. Existing Builder/kernel/fixedonehot reused; field-only numeric route, independent T and separate full/closure set oracles. No learning/general CSP/efficiency/production claim."
+}

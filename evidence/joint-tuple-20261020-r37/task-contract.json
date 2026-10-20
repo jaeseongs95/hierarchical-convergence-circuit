@@ -1,0 +1,119 @@
+{
+  "acceptanceCriteria": [
+    "[AC-001] R36 단일변수 한계를 근거로 두 변수의 상관관계 비중복 가설·폐쇄 관계표/완전domain 계약·의미/엔지니어링 결과별 다음 판단을 동결하고 기존 core/생성기를 보존한다.",
+    "[AC-002] 원천16개,16 C관계×16 T관계×이름2×순서2=1024조건을 native_joint/native_marginal/exact_joint 총3072평가로 실행한다. 필드 일치·pair AND·OR·주변 투영/재결합·분류/query는 native; host 역할 비교/feasible 계산/답 수리는 numeric 경로에서 금지한다.",
+    "[AC-003] joint의 최종/중간값·tuple eligibility, marginal의 개입 정합성과 full tuple 기준 정보손실을 별도로 채점한다. 동일 주변집합 대각/교차 반례·관계 구별·이름/순서 불변성 및 출처/변조를 검사하며 실패를 보존하고 재조정하지 않는다.",
+    "[AC-004] R36 실측으로 산출한 전체960초/단계900초,worker1/retry0,119824settles/19171840ticks,raw64MiB/AS각512MiB와경계cache를준수한다. 모든계산실행/저장만공유,비용·전체원자료SHA·수식·역할·sourceproof·controller검산을수행한다.",
+    "[AC-005] 신규 세 경로만 scope/index 확인 후 서명커밋·main FF·같은privateorigin push·SHA일치/clean을 확인한다."
+  ],
+  "authorization": {
+    "allowedActions": [
+      "R37 연구 전용 구현과 결과 문서 작성",
+      "제한된 AI Research SSH 후속 실험",
+      "서명커밋과 로컬 main 병합",
+      "같은 연구 저장소 원격 push"
+    ],
+    "approvalRequired": [],
+    "prohibitedActions": [
+      "기존 core 및 과거 연구 변경",
+      "새 의존성·유료자원·서비스·권한 확대",
+      "외부 peer 메시지 전송"
+    ]
+  },
+  "constraints": [
+    "신규3경로만;core/과거/user변경보존",
+    "R36실측별scale와선택안전계수3,운영중단선/통계보장구분",
+    "동결후native재실행/입력·generator·decoder·threshold재조정금지",
+    "완전2×2domain,초기.5,폐쇄관계목록전제;세계의부정증거·알수없는누락발견·학습·임의CSP·확률교정·효율우위·운영채택주장금지",
+    "numeric host는필드별encoding/공개domain tuple열거/metadata guard만;C/T참거짓은native계산",
+    "native_marginal은native投影/Cartesian재결합에의한명시적정보손실대조군;정확도실패를harness실패로덮지않음",
+    "source/graph생성·검증/계산/저장/프로세스/감사/봉인비용분리;저장공유를계산생략으로세지않음",
+    "dependency/paidresource/service/security변경/peer메시지없음"
+  ],
+  "decision": {
+    "complexity": "complex",
+    "hasConflicts": false
+  },
+  "objective": "두 변수의 같은 주변 후보집합과 다른 허용 tuple 관계를 구별하고, joint 정보 보존과 native 주변곱 정보손실 개입을 동일 tuple oracle로 비교한다",
+  "orchestration": {
+    "mcpAvailable": true,
+    "requested": false
+  },
+  "requiredCapabilities": [
+    "minimal-implementation",
+    "cs-implementation-review",
+    "change-scope-assurance"
+  ],
+  "riskLevel": "medium",
+  "schemaVersion": "1.0.0",
+  "scope": {
+    "excluded": [
+      "src/",
+      "tests/",
+      "tools/r19_cross_level/",
+      "tools/r20_evidence_feedback/",
+      "tools/r21_active_measurement/",
+      "tools/r22_measurement_adoption/",
+      "tools/r23_source_qualification/",
+      "experiments/exp-69-source-qualification/",
+      "evidence/source-qualification-20261019-r23/",
+      "tools/r24_trust_boundary/",
+      "experiments/exp-70-trust-boundary/",
+      "evidence/trust-boundary-20261019-r24/",
+      "tools/r25_fixedpoint_elision/",
+      "experiments/exp-71-fixedpoint-elision/",
+      "evidence/fixedpoint-elision-20261019-r25/",
+      "experiments/exp-72-contraction-warmstart/",
+      "tools/r26_contraction_warmstart/",
+      "evidence/contraction-warmstart-20261019-r26/",
+      "experiments/exp-73-finite-stop-envelope/",
+      "tools/r27_finite_stop_envelope/",
+      "evidence/finite-stop-envelope-20261019-r27/",
+      "experiments/exp-74-reuse-frontier/",
+      "tools/r28_reuse_frontier/",
+      "evidence/reuse-frontier-20261020-r28/",
+      "experiments/exp-75-research-direction/",
+      "tools/r29_research_direction/",
+      "evidence/research-direction-20261020-r29/",
+      "experiments/exp-76-spatial-sharing/",
+      "tools/r30_spatial_sharing/",
+      "evidence/spatial-sharing-20261020-r30/",
+      "experiments/exp-77-macro-control/",
+      "tools/r31_macro_control/",
+      "evidence/macro-control-20261020-r31/",
+      "experiments/exp-78-semantic-join/",
+      "tools/r32_semantic_join/",
+      "evidence/semantic-join-20261020-r32/",
+      "experiments/exp-79-typed-feedback/",
+      "tools/r33_typed_feedback/",
+      "evidence/typed-feedback-20261020-r33/",
+      "experiments/exp-80-feasible-state/",
+      "tools/r34_feasible_state/",
+      "evidence/feasible-state-20261020-r34/",
+      "experiments/exp-81-compositional-slot/",
+      "tools/r35_compositional_slot/",
+      "evidence/compositional-slot-20261020-r35/",
+      "experiments/exp-82-overlap-composition/",
+      "tools/r36_overlap_composition/",
+      "evidence/overlap-composition-20261020-r36/"
+    ],
+    "included": [
+      "experiments/exp-83-joint-tuple/",
+      "tools/r37_joint_tuple/",
+      "evidence/joint-tuple-20261020-r37/"
+    ]
+  },
+  "taskId": "ai-joint-tuple-r37",
+  "workUnits": [
+    {
+      "dependencies": [],
+      "id": "r37",
+      "objective": "두 변수의 같은 주변 후보집합과 다른 허용 tuple 관계를 구별하고, joint 정보 보존과 native 주변곱 정보손실 개입을 동일 tuple oracle로 비교한다",
+      "writeTargets": [
+        "experiments/exp-83-joint-tuple/",
+        "tools/r37_joint_tuple/",
+        "evidence/joint-tuple-20261020-r37/"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "all_native_tick_records_received": true,
+  "archive_received": false,
+  "raw_json_bytes": 14759997,
+  "raw_manifest_matched_files": 671,
+  "received_json": 672,
+  "same_channel_hashes_not_host_attestation": true,
+  "source_files": 126,
+  "source_unchanged": true,
+  "ssh_completeness": "upstream unknown; expected JSON names/count/size/SHA all matched",
+  "text_archive_transfer_attempted": false,
+  "transport_failures": [],
+  "unreceived_empty_logs": [
+    "audit.stderr",
+    "audit.stdout",
+    "preparation.stderr",
+    "preparation.stdout",
+    "work.stderr",
+    "work.stdout"
+  ]
+}

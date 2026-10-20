@@ -1,0 +1,68 @@
+{
+  "arms": 3,
+  "cases": 1024,
+  "child_address_space_bytes": 536870912,
+  "child_file_bytes": 8388608,
+  "encoded_cache_policy": "1272 x128KiB at most159MiB canonical payload, remaining353MiB for Python/source/batches within512MiB stop cap; not observed RSS guarantee",
+  "estimates_are_not_statistical_guarantees": true,
+  "evaluations": 3072,
+  "learning": 0,
+  "limits_are_operational_stop_boundaries": true,
+  "maximum_native_calls": 119824,
+  "maximum_ticks": 19171840,
+  "maximum_unique_trace_records": 1272,
+  "numeric_calls": 119808,
+  "parent_address_space_bytes": 536870912,
+  "parent_file_bytes": 69206016,
+  "planning_other_seconds": 20.98169739273738,
+  "planning_total_seconds": 308.72314649816485,
+  "planning_work_seconds": 287.7414491054275,
+  "raw_bytes": 67108864,
+  "raw_guard_policy": "2 x R36 received JSON x max(trace,record) ratio rounded32MiB; reserve2MiB for metadata",
+  "record_encoded_cache_max_bytes": 131072,
+  "retry": 0,
+  "rounding_seconds_policy": 60,
+  "safety_factor_policy": 3,
+  "saved_trace_cache_entries": 18,
+  "scaling_factors": {
+    "cases": 0.41025641025641024,
+    "numeric_calls": 2.6666666666666665,
+    "records": 0.6153846153846154,
+    "source": 0.5714285714285714,
+    "traces": 2.2795698924731185
+  },
+  "server_memory_observation": {
+    "observation_kb": {
+      "MemAvailable": 3073112,
+      "MemTotal": 3881196,
+      "SwapFree": 0,
+      "SwapTotal": 0
+    },
+    "point_observation_not_guarantee": true,
+    "source_output": "cd9862276923c8b41a3b1292021702039e252ff335341894"
+  },
+  "source_calls": 16,
+  "source_refs": {
+    "analysis.json": {
+      "path": "evidence/overlap-composition-20261020-r36/analysis.json",
+      "sha256": "b390458ba79ee5059ba35b8bf5b901f487193e1da68157f069a0ac58cca39de8"
+    },
+    "raw/result.json": {
+      "path": "evidence/overlap-composition-20261020-r36/raw/result.json",
+      "sha256": "49b3e752e1d53ce52accc18bbc1e4947fd65a63bcef63fececd1f34e4866a14a"
+    },
+    "receipt-verification.json": {
+      "path": "evidence/overlap-composition-20261020-r36/receipt-verification.json",
+      "sha256": "70cc19663b728051fa2a8cc31ea30de851c394d1a714722ef78fcd57b94cf8bf"
+    },
+    "server-completion.json": {
+      "path": "evidence/overlap-composition-20261020-r36/server-completion.json",
+      "sha256": "3fac839767152cf45c3e5aef01be4593fa075a4c2fc073d2c22b8947b3977cd0"
+    }
+  },
+  "stage_seconds": 900,
+  "total_seconds": 960,
+  "trace_bound_reason": "8 field equality +16 pair conjunction +128 candidate/ordered relation OR +32 projection +64 classifier +1024 query. Namespace field codes identical; input dimension/order and arm enumerate these bounds, not output-value assumptions.",
+  "worker": 1,
+  "world_measurement": 0
+}

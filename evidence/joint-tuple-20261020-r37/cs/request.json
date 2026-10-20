@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "1.0.0",
+  "requestId": "CS-R37",
+  "mode": "derive",
+  "objective": "Preserve joint tuple correlations versus native marginal projection with same-information exact oracle",
+  "sourceSnapshotDigest": "sha256:5e9c011ecd97392ffba12a081f457f0788085a5d3e2e83df6ca462438c856e0c",
+  "sourceRefs": [
+    {
+      "id": "SRC-CORE",
+      "path": "source/hypothesis.md",
+      "digest": "sha256:d1b735eee8f72c092c847c04e81a34972fa919be906311255faa797e58ec9302"
+    },
+    {
+      "id": "SRC-R32",
+      "path": "source/r35-runtime.py",
+      "digest": "sha256:2ed5316a500a290f7bf5e4ecc54abd72ad8fd54f6b801bd18ee00fca70bbb751"
+    },
+    {
+      "id": "SRC-R19",
+      "path": "source/r19-probe.py",
+      "digest": "sha256:bb0159ba0c50505fc148322e0d0a17d53c184a0bdc7bed21b393120971eb5630"
+    },
+    {
+      "id": "SRC-RESULT",
+      "path": "source/r36-results.md",
+      "digest": "sha256:66f92ee9601f68b886d6198e4b6aeb1955c0342839bfd55cf3da232ca683bc09"
+    },
+    {
+      "id": "SRC-KERNEL",
+      "path": "source/dynamics.py",
+      "digest": "sha256:a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc"
+    },
+    {
+      "id": "SRC-BUDGET",
+      "path": "source/budget.json",
+      "digest": "sha256:fc9e76f6652eb285cdc33d774ac7213b8bc11c64b16ac413b352037b33c015d0"
+    }
+  ],
+  "operationalFacts": [
+    {
+      "id": "FACT-GAP",
+      "statement": "R36 actual unary overlap and all intermediate/final outputs passed; two variables and joint tuple correlations were not tested. Diagonal and crossed relations share marginals but yield opposite universal queries.",
+      "evidenceRefs": [
+        "SRC-RESULT"
+      ]
+    },
+    {
+      "id": "FACT-KERNEL",
+      "statement": "Existing R35 Builder/equality/expression/feasible4/query4 and common native kernel support typed field comparisons and AND/OR. Public Cartesian domain enumeration is explicit; no numeric host tuple membership solving. Full-kernel+Config storage identity and bounded saved-data replay already implemented.",
+      "evidenceRefs": [
+        "SRC-KERNEL",
+        "SRC-R32",
+        "SRC-R19"
+      ]
+    },
+    {
+      "id": "FACT-BUDGET",
+      "statement": "R36 measured core/storage/audit/raw scaled separately for119808numeric+16source calls,3072records,1272upperunique. Planning287.741work/308.723total seconds, selected3x and60s rounding give900stage/960total,64MiBraw. Bounds are operational stops, not predictions or RSS guarantees.",
+      "evidenceRefs": [
+        "SRC-BUDGET"
+      ]
+    }
+  ],
+  "existingContractRef": null
+}
