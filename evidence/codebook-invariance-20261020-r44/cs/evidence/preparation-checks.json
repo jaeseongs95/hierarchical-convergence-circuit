@@ -1,0 +1,103 @@
+{
+  "actual_source_leaf_patterns": {
+    "C": [
+      [
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        true
+      ],
+      [
+        false,
+        true,
+        false
+      ],
+      [
+        false,
+        true,
+        true
+      ],
+      [
+        true,
+        false,
+        false
+      ],
+      [
+        true,
+        false,
+        true
+      ],
+      [
+        true,
+        true,
+        false
+      ],
+      [
+        true,
+        true,
+        true
+      ]
+    ],
+    "T": [
+      [
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        true
+      ],
+      [
+        false,
+        true,
+        false
+      ],
+      [
+        false,
+        true,
+        true
+      ],
+      [
+        true,
+        false,
+        false
+      ],
+      [
+        true,
+        false,
+        true
+      ],
+      [
+        true,
+        true,
+        false
+      ],
+      [
+        true,
+        true,
+        true
+      ]
+    ]
+  },
+  "checks": 1024,
+  "invalid_map_rejections": [
+    "duplicate",
+    "short",
+    "bool",
+    "range"
+  ],
+  "native_calls": 0,
+  "not_native_semantic_evidence": true,
+  "status": "PASS",
+  "symbolic_maps": 40320,
+  "symbolic_pairchecks": 2580480,
+  "encoder_drive_checks": 512,
+  "python_modules": 4,
+  "local_native_calls": 0
+}

@@ -1,0 +1,4892 @@
+{
+  "actual_pipeline_coverage": {
+    "bit_reverse": {
+      "actual_role_comparisons": 1536,
+      "bit_pair_patterns": 4,
+      "changed_ordered_tokenpair_hamming": 0,
+      "hamming_distance_histogram": {
+        "0": 768,
+        "1": 768
+      },
+      "ordered_code_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          4
+        ]
+      ]
+    },
+    "cnot01": {
+      "actual_role_comparisons": 1536,
+      "bit_pair_patterns": 4,
+      "changed_ordered_tokenpair_hamming": 32,
+      "hamming_distance_histogram": {
+        "0": 768,
+        "2": 768
+      },
+      "ordered_code_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          3
+        ]
+      ]
+    },
+    "cnot12": {
+      "actual_role_comparisons": 1536,
+      "bit_pair_patterns": 4,
+      "changed_ordered_tokenpair_hamming": 32,
+      "hamming_distance_histogram": {
+        "0": 768,
+        "1": 768
+      },
+      "ordered_code_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    "cnot20": {
+      "actual_role_comparisons": 1536,
+      "bit_pair_patterns": 4,
+      "changed_ordered_tokenpair_hamming": 32,
+      "hamming_distance_histogram": {
+        "0": 768,
+        "1": 768
+      },
+      "ordered_code_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    "cnot_chain": {
+      "actual_role_comparisons": 1536,
+      "bit_pair_patterns": 4,
+      "changed_ordered_tokenpair_hamming": 40,
+      "hamming_distance_histogram": {
+        "0": 768,
+        "3": 768
+      },
+      "ordered_code_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          7,
+          7
+        ]
+      ]
+    },
+    "identity": {
+      "actual_role_comparisons": 1536,
+      "bit_pair_patterns": 4,
+      "changed_ordered_tokenpair_hamming": 0,
+      "hamming_distance_histogram": {
+        "0": 768,
+        "1": 768
+      },
+      "ordered_code_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    "swap01": {
+      "actual_role_comparisons": 1536,
+      "bit_pair_patterns": 4,
+      "changed_ordered_tokenpair_hamming": 24,
+      "hamming_distance_histogram": {
+        "0": 768,
+        "1": 768
+      },
+      "ordered_code_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    "xor7": {
+      "actual_role_comparisons": 1536,
+      "bit_pair_patterns": 4,
+      "changed_ordered_tokenpair_hamming": 0,
+      "hamming_distance_histogram": {
+        "0": 768,
+        "1": 768
+      },
+      "ordered_code_pairs": [
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          7,
+          7
+        ]
+      ]
+    }
+  },
+  "actual_restricted_map_classes_per_base": [
+    6
+  ],
+  "cost": {
+    "core_cpu_seconds": 34.8685003709999,
+    "launcher_cpu_seconds": 0.156731942,
+    "observed_process_cpu_seconds": 54.297964576000005,
+    "parent_seal_process_cpu_seconds": 0.428131634,
+    "phase_cpu_seconds": {
+      "audit": 6.427968000000002,
+      "preparation": 0.576155,
+      "work": 46.708978
+    },
+    "phase_resources": {
+      "audit": {
+        "platform": "linux",
+        "ru_maxrss_raw": 38692,
+        "ru_maxrss_units": "platform-native getrusage; no conversion asserted",
+        "system_cpu_seconds": 0.09199199999999999,
+        "user_cpu_seconds": 6.323438
+      },
+      "preparation": {
+        "platform": "linux",
+        "ru_maxrss_raw": 46156,
+        "ru_maxrss_units": "platform-native getrusage; no conversion asserted",
+        "system_cpu_seconds": 0.030986999999999997,
+        "user_cpu_seconds": 0.533779
+      },
+      "work": {
+        "platform": "linux",
+        "ru_maxrss_raw": 38024,
+        "ru_maxrss_units": "platform-native getrusage; no conversion asserted",
+        "system_cpu_seconds": 0.058996999999999994,
+        "user_cpu_seconds": 46.629491
+      }
+    },
+    "remaining_preparation_source_role_work_audit_seal_launcher_cpu_seconds": 8.067796357000159,
+    "role_cpu_seconds": 0.23884172000000004,
+    "scope": "server finite run;record/source/role times subsets of observed process total,not additive again. Localdevelopment/packaging/MCP/peoplecostexcluded. No speed comparison or learning cost verdict.",
+    "seconds_including_seal": 54.29689307798981,
+    "source_cpu_seconds": 0.048822769000000016,
+    "storage_cpu_seconds": 11.36166784799995
+  },
+  "counts": {
+    "bit_reverse": {
+      "AST_correct": 512,
+      "AST_total": 512,
+      "cases": 128,
+      "groups": 1028796,
+      "links": 2641328,
+      "roles_correct": 1536,
+      "roles_total": 1536,
+      "strict": 128,
+      "ticks": 74684
+    },
+    "cnot01": {
+      "AST_correct": 512,
+      "AST_total": 512,
+      "cases": 128,
+      "groups": 1016508,
+      "links": 2609072,
+      "roles_correct": 1536,
+      "roles_total": 1536,
+      "strict": 128,
+      "ticks": 73916
+    },
+    "cnot12": {
+      "AST_correct": 512,
+      "AST_total": 512,
+      "cases": 128,
+      "groups": 1028796,
+      "links": 2641328,
+      "roles_correct": 1536,
+      "roles_total": 1536,
+      "strict": 128,
+      "ticks": 74684
+    },
+    "cnot20": {
+      "AST_correct": 512,
+      "AST_total": 512,
+      "cases": 128,
+      "groups": 1028796,
+      "links": 2641328,
+      "roles_correct": 1536,
+      "roles_total": 1536,
+      "strict": 128,
+      "ticks": 74684
+    },
+    "cnot_chain": {
+      "AST_correct": 512,
+      "AST_total": 512,
+      "cases": 128,
+      "groups": 991932,
+      "links": 2544560,
+      "roles_correct": 1536,
+      "roles_total": 1536,
+      "strict": 128,
+      "ticks": 72380
+    },
+    "identity": {
+      "AST_correct": 512,
+      "AST_total": 512,
+      "cases": 128,
+      "groups": 1028796,
+      "links": 2641328,
+      "roles_correct": 1536,
+      "roles_total": 1536,
+      "strict": 128,
+      "ticks": 74684
+    },
+    "swap01": {
+      "AST_correct": 512,
+      "AST_total": 512,
+      "cases": 128,
+      "groups": 1028796,
+      "links": 2641328,
+      "roles_correct": 1536,
+      "roles_total": 1536,
+      "strict": 128,
+      "ticks": 74684
+    },
+    "xor7": {
+      "AST_correct": 512,
+      "AST_total": 512,
+      "cases": 128,
+      "groups": 1028796,
+      "links": 2641328,
+      "roles_correct": 1536,
+      "roles_total": 1536,
+      "strict": 128,
+      "ticks": 74684
+    }
+  },
+  "exact": {
+    "cases": 128,
+    "strict": 128
+  },
+  "exhaustive_role_transfer_not_fullpipeline": true,
+  "finite_semantic_adoption": true,
+  "frozen_scalar_tolerance": 1e-14,
+  "independent_auditor": false,
+  "learning": 0,
+  "mapped_pairs_actual_code_changed": 640,
+  "mapped_pairs_actual_code_unchanged": 256,
+  "max_scalar_error": 1.3877787807814457e-17,
+  "mutation_rejections": [
+    "revision",
+    "origin",
+    "eligibility",
+    "coverage",
+    "selected",
+    "C_message",
+    "T_hash",
+    "value",
+    "network_ref",
+    "alternative_role",
+    "leaf_contract",
+    "C_predicate",
+    "C_target",
+    "T_predicate",
+    "T_target",
+    "candidate_subject",
+    "nonbijective_map",
+    "numeric_role_coverage"
+  ],
+  "no_speed_or_H03_claim": true,
+  "not_learned_codebook": true,
+  "paired_conditions": 896,
+  "paired_invariant": 896,
+  "pairs": [
+    {
+      "base_key": "c0029",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0029",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0029",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0029",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0029",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0029",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0029",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0034",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0034",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0034",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0034",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0034",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0034",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0034",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0065",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0065",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0065",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0065",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0065",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0065",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0065",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0070",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0070",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0070",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0070",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0070",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0070",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0070",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0101",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0101",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0101",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0101",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0101",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0101",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0101",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0106",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0106",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0106",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0106",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0106",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0106",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0106",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0137",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0137",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0137",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0137",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0137",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0137",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0137",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0142",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0142",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0142",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0142",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0142",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0142",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0142",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0173",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0173",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0173",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0173",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0173",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0173",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0173",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0178",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0178",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0178",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0178",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0178",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0178",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0178",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0209",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0209",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0209",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0209",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0209",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0209",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0209",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0214",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0214",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0214",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0214",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0214",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0214",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0214",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0245",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0245",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0245",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0245",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0245",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0245",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0245",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0250",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0250",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0250",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0250",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0250",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0250",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0250",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0281",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0281",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0281",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0281",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0281",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0281",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0281",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0286",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0286",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0286",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0286",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0286",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0286",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0286",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0317",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0317",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0317",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0317",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0317",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0317",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0317",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0322",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0322",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0322",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0322",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0322",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0322",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0322",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0353",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0353",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0353",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0353",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0353",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0353",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0353",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0358",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0358",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0358",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0358",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0358",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0358",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0358",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0389",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0389",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0389",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0389",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0389",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0389",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0389",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0394",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0394",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0394",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0394",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0394",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0394",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0394",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0425",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0425",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0425",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0425",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0425",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0425",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0425",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0430",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0430",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0430",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0430",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0430",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0430",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0430",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0461",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0461",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0461",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0461",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0461",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0461",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0461",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0466",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0466",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0466",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0466",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0466",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0466",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0466",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0497",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0497",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0497",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0497",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0497",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0497",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0497",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0502",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0502",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0502",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0502",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0502",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0502",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0502",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0533",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0533",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0533",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0533",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0533",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0533",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0533",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0538",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0538",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0538",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0538",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0538",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0538",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0538",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0569",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0569",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0569",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0569",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0569",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0569",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0569",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0574",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0574",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0574",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0574",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0574",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0574",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0574",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0605",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0605",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0605",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0605",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0605",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0605",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0605",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0610",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0610",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0610",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0610",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0610",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0610",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0610",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0641",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0641",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0641",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0641",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0641",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0641",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0641",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0646",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0646",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0646",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0646",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0646",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0646",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0646",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0677",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0677",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0677",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0677",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0677",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0677",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0677",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0682",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0682",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0682",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0682",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0682",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0682",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0682",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0713",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0713",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0713",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0713",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0713",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0713",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0713",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0718",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0718",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0718",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0718",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0718",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0718",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0718",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0749",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0749",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0749",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0749",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0749",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0749",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0749",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0754",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0754",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0754",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0754",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0754",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0754",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0754",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0785",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0785",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0785",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0785",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0785",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0785",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0785",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0790",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0790",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0790",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0790",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0790",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0790",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0790",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0821",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0821",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0821",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0821",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0821",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0821",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0821",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0826",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0826",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0826",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0826",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0826",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0826",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0826",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0857",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0857",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0857",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0857",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0857",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0857",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0857",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0862",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0862",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0862",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0862",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0862",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0862",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0862",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0893",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0893",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0893",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0893",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0893",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0893",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0893",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0898",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0898",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0898",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0898",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0898",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0898",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0898",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0929",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0929",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0929",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0929",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0929",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0929",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0929",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0934",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0934",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0934",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0934",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0934",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0934",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0934",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0965",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0965",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0965",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0965",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0965",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0965",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0965",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0970",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0970",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0970",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0970",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0970",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0970",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c0970",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1001",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1001",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1001",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1001",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1001",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1001",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1001",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1006",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1006",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1006",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1006",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1006",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1006",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1006",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1037",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1037",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1037",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1037",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1037",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1037",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1037",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1042",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1042",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1042",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1042",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1042",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1042",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1042",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1073",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1073",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1073",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1073",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1073",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1073",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1073",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1078",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1078",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1078",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1078",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1078",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1078",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1078",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1109",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1109",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1109",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1109",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1109",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1109",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1109",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1114",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1114",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1114",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1114",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1114",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1114",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1114",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1145",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1145",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1145",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1145",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1145",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1145",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1145",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1150",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1150",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1150",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1150",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1150",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1150",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1150",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1181",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1181",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1181",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1181",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1181",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1181",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1181",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1186",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1186",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1186",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1186",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1186",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1186",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1186",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1217",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1217",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1217",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1217",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1217",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1217",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1217",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1222",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1222",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1222",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1222",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1222",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1222",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1222",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1253",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1253",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1253",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1253",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1253",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1253",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1253",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1258",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1258",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1258",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1258",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1258",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1258",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1258",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1289",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1289",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1289",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1289",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1289",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1289",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1289",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1294",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1294",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1294",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1294",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1294",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1294",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1294",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1325",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1325",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1325",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1325",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1325",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1325",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1325",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1330",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1330",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1330",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1330",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1330",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1330",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1330",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1361",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1361",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1361",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1361",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1361",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1361",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1361",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1366",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1366",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1366",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1366",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1366",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1366",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1366",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1397",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1397",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1397",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1397",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1397",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1397",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1397",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1402",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1402",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1402",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1402",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1402",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1402",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1402",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1433",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1433",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1433",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1433",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1433",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1433",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1433",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1438",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1438",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1438",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1438",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1438",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1438",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1438",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1469",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1469",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1469",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1469",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1469",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1469",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1469",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1474",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1474",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1474",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1474",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1474",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1474",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1474",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1505",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1505",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1505",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1505",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1505",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1505",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1505",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1510",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1510",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1510",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1510",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1510",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1510",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1510",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1541",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1541",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1541",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1541",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1541",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1541",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1541",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1546",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1546",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1546",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1546",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1546",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1546",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1546",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1577",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1577",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1577",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1577",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1577",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1577",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1577",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1582",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1582",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1582",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1582",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1582",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1582",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1582",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1613",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1613",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1613",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1613",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1613",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1613",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1613",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1618",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1618",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1618",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1618",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1618",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1618",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1618",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1649",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1649",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1649",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1649",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1649",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1649",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1649",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1654",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1654",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1654",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1654",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1654",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1654",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1654",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1685",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1685",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1685",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1685",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1685",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1685",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1685",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1690",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1690",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1690",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1690",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1690",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1690",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1690",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1721",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1721",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1721",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1721",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1721",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1721",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1721",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1726",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1726",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1726",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1726",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1726",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1726",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1726",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1757",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1757",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1757",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1757",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1757",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1757",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1757",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1762",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1762",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1762",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1762",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1762",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1762",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1762",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1793",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1793",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1793",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1793",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1793",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1793",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1793",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1798",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1798",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1798",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1798",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1798",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1798",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1798",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1829",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1829",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1829",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1829",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1829",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1829",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1829",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1834",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1834",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1834",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1834",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1834",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1834",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1834",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1865",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1865",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1865",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1865",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1865",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1865",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1865",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1870",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1870",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1870",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1870",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1870",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1870",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1870",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1901",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1901",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1901",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1901",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1901",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1901",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1901",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1906",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1906",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1906",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1906",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1906",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1906",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1906",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1937",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1937",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1937",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1937",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1937",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1937",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1937",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1942",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1942",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1942",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1942",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1942",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1942",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1942",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1973",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1973",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1973",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1973",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1973",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1973",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1973",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1978",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1978",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1978",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1978",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1978",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1978",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c1978",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2009",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2009",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2009",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2009",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2009",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2009",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2009",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2014",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2014",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2014",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2014",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2014",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2014",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2014",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2045",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2045",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2045",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2045",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2045",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2045",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2045",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2050",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2050",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2050",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2050",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2050",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2050",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2050",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2081",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2081",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2081",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2081",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2081",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2081",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2081",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2086",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2086",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2086",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2086",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2086",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2086",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2086",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2117",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2117",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2117",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2117",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2117",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2117",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2117",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2122",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2122",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2122",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2122",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2122",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2122",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2122",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2153",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2153",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2153",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2153",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2153",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2153",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2153",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2158",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2158",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2158",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2158",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2158",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2158",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2158",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2189",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2189",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2189",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2189",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2189",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2189",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2189",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2194",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2194",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2194",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2194",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2194",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2194",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2194",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2225",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2225",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2225",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2225",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2225",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2225",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2225",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2230",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2230",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2230",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2230",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2230",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2230",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2230",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2261",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2261",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2261",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2261",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2261",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2261",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2261",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2266",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2266",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2266",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2266",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2266",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2266",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2266",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2297",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2297",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2297",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2297",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2297",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2297",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2297",
+      "map_name": "swap01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2302",
+      "map_name": "bit_reverse",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2302",
+      "map_name": "xor7",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2302",
+      "map_name": "cnot01",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2302",
+      "map_name": "cnot12",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2302",
+      "map_name": "cnot20",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2302",
+      "map_name": "cnot_chain",
+      "semantic_equal": true
+    },
+    {
+      "base_key": "c2302",
+      "map_name": "swap01",
+      "semantic_equal": true
+    }
+  ],
+  "physical_calls": 18524,
+  "production_adoption": false,
+  "quality_pass": true,
+  "role_coverage": {
+    "actual_numeric_inputs": 64,
+    "codebooks_role_only": 40320,
+    "first_counterexamples": [],
+    "full_pipeline_codebooks": 8,
+    "numeric_correct": 64,
+    "saved_lookup_checks": 2580480,
+    "scope": "all8token bijections role stage only, fixedProgramConfiginitial;not all fullpipeline executions",
+    "wrong": 0
+  },
+  "server_scalar_max_absolute_error": 0.0,
+  "source_calls": 28,
+  "statistical_speed_verdict": null,
+  "status": "AUDITED",
+  "ticks": 597348,
+  "unique_traces": 360,
+  "verdict": "FINITE_CODEBOOK_SEMANTIC_INVARIANCE_ACCEPTED",
+  "world_measurement": 0
+}

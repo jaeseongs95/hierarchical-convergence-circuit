@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "1.0.0",
+  "requestId": "CS-R44",
+  "mode": "derive",
+  "objective": "Verify finite token-codebook semantic invariance with exhaustive role drive coverage and actual typed full pipeline",
+  "sourceSnapshotDigest": "sha256:73c9be282c02a4a9769b330824911372d529c2b42551799692e73ee9fb30436a",
+  "sourceRefs": [
+    {
+      "id": "SRC-CORE",
+      "path": "source/hypothesis.md",
+      "digest": "sha256:d1b735eee8f72c092c847c04e81a34972fa919be906311255faa797e58ec9302"
+    },
+    {
+      "id": "SRC-R32",
+      "path": "source/r33-runtime.py",
+      "digest": "sha256:95820d0fcbf48290f677e9a995c7a3a4a6261a7fb5d2b256b59c998805a6a5d9"
+    },
+    {
+      "id": "SRC-R19",
+      "path": "source/r19-probe.py",
+      "digest": "sha256:bb0159ba0c50505fc148322e0d0a17d53c184a0bdc7bed21b393120971eb5630"
+    },
+    {
+      "id": "SRC-RESULT",
+      "path": "source/r43-results.md",
+      "digest": "sha256:f0cccfcb906ce3b0e4b1724a4b126bd30a8f53cffb4104cd50ecfddd7f40fb05"
+    },
+    {
+      "id": "SRC-ENCODER",
+      "path": "source/r35-runtime.py",
+      "digest": "sha256:2ed5316a500a290f7bf5e4ecc54abd72ad8fd54f6b801bd18ee00fca70bbb751"
+    },
+    {
+      "id": "SRC-SLOTS",
+      "path": "source/r36-runtime.py",
+      "digest": "sha256:8466a0ce93b182800eb447d00a5868f5273120057cbeec49c4fe3b4b51c0ffae"
+    },
+    {
+      "id": "SRC-KERNEL",
+      "path": "source/dynamics.py",
+      "digest": "sha256:a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc"
+    },
+    {
+      "id": "SRC-BUDGET",
+      "path": "source/budget.json",
+      "digest": "sha256:eaeca08b2dae758686f0e614df8978b662f86a70be0779bfd549539121e217f6"
+    },
+    {
+      "id": "SRC-DIRECTION",
+      "path": "source/direction.json",
+      "digest": "sha256:a19fcad2c905839364cba33e801cde95f72424b7504fbd1bfc07421da25b7c41"
+    }
+  ],
+  "operationalFacts": [
+    {
+      "id": "FACT-GAP",
+      "statement": "R43HIGH settles directionB codebook meaning. R35/36 namespaces preserved code correspondence;new intervention changes actual token-to-code positions/distances/polarities,not AST/core/learner.",
+      "evidenceRefs": [
+        "SRC-RESULT",
+        "SRC-DIRECTION",
+        "SRC-ENCODER"
+      ]
+    },
+    {
+      "id": "FACT-KERNEL",
+      "statement": "R35encode_role indexbased3bit,syntaxonlycompiler;R36typed2candidate/3leafguard/packet-onlyTconsumer. Passing inverse vocabulary realizes map without monkeypatch or core edit. Freshinitial.5 and all originalkerneltrace/Cost retained.",
+      "evidenceRefs": [
+        "SRC-ENCODER",
+        "SRC-SLOTS",
+        "SRC-R32",
+        "SRC-KERNEL"
+      ]
+    },
+    {
+      "id": "FACT-BUDGET",
+      "statement": "128base(8Cmask×8Tmask×2ASTpairs)×8maps=1024native +128exact;28freshsource+64role+18432upper=18524settles/max2963840ticks. Roleall40320bijections uses direct64numericdrive coverage;pipelineonly8maps.600total240stage/raw128/cache128MiB/AS512MiBeach/LRU18/worker1retry0.",
+      "evidenceRefs": [
+        "SRC-BUDGET"
+      ]
+    }
+  ],
+  "existingContractRef": null
+}

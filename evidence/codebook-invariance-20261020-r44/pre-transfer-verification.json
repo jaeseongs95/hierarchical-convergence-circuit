@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "archive_sha256": "5cb048559a0b354813293e91800c4fd73e2147815a6bb6633197d28589b26e25",
+  "bytes": 423027,
+  "source_files": 125,
+  "paths_expected_only": true,
+  "no_git_aws_ssh_env_or_credential_named_entries": true,
+  "not_a_secret_scan_or_permission_grant": true,
+  "all_archive_source_bytes_match_local": true,
+  "all_python_ast": true,
+  "local_native_calls": 0,
+  "upload_request_submitted": false,
+  "automatic_review_rejected_upload": true,
+  "rejection_reason": "Private research source ZIP external SSH transfer; explicit current R44 payload/destination approval required by automatic review.",
+  "no_bypass_or_retry": true
+}

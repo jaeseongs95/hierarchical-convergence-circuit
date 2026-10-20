@@ -1,0 +1,142 @@
+{
+  "acceptanceCriteria": [
+    "[AC-001] R43 B방향과 R35/R36의 code대응보존 이름변형과의 차이를 기록하고 8codebook/128basecase/64roleinput/전체40320bijection역할coverage·채택조건을 실행전동결한다.",
+    "[AC-002] AI Research SSH에서64role+28source+1024native×18=18524settles와128exact를 worker1/retry0로1회실행한다. localnative/학습/세계측정0이다.",
+    "[AC-003] 원래 Program/Config/initial.5/guard/controller/trace/Cost를 유지하고 mapping만바꾼다. 실제drives·typedsource·oracle·중간층·scalar/원장과896baseline대응의 의미를검산한다. codebook간trace동일은 요구하지않는다.",
+    "[AC-004] 모든의미축통과시에만8codebook/128basecase유한불변성을채택하며실패도음성으로닫는다. 역할64numericdrive coverage에서40320bijection의역할검사만전이하고전체pipeline일반화/학습/효율로확대하지않는다. 상한/전체실측비용/source/raw해시검산을보존한다.",
+    "[AC-005] 신규세경로scope/index확인후기존키서명·mainFF·작업branch삭제·동일privateoriginpush·SHAclean/병합후bytes/continuity를확인한다."
+  ],
+  "authorization": {
+    "allowedActions": [
+      "R44 codebook 의미불변성 연구 구현·실험·결과 문서 작성",
+      "제한된 AI Research SSH 후속 실험",
+      "서명커밋과 로컬 main 병합",
+      "같은 연구 저장소 원격 push"
+    ],
+    "approvalRequired": [],
+    "prohibitedActions": [
+      "기존 core 및 과거 연구 변경",
+      "새 의존성·유료자원·서비스·권한 확대",
+      "외부 peer 메시지 전송"
+    ]
+  },
+  "constraints": [
+    "신규세경로만;core/과거연구/user변경보존",
+    "8maps:identity,bit_reverse,xor7,CNOT0to1,CNOT1to2,CNOT2to0,CNOTchain,swap01nonlinear;mapping만변경하고의미/AST/Config/원천/순서는불변",
+    "R36canonical C/Tmask8×8×ASTpair(4,5)/(5,4)=128base;8codebooks1024native,exact128;native18524settles/max2963840ticks",
+    "role64inputs는모든3bitorderedpairs;all40320permutations×64semanticrolechecks는savedoutputlookup이며native생략이득아님;pipeline은8maps만실측",
+    "semantic quality/role/AST/selected_index/kind/value/reason모두통과해야유한채택;None일치만으로성공금지;negative도보존하고동결후재실행/튜닝0",
+    "worker1/retry0/stage240total600/raw128MiB/cache128MiB/record128KiB/unique<6000/LRU18/AS512MiBeach;운영중단선이며미래보장아님",
+    "비용은서버전체phase/parent/launcher와recordcore/storage를기록;속도비교·학습효율채택선없음,저장만공유하고모든native계산실행",
+    "authored인코딩연구;학습codebook/학습효율/H03/generalAI/production도입주장금지",
+    "새paid/deps/global/service/security/외부peer메시지0;기존동일privatepush승인지속",
+    "기존GPG/network제한은동일key/repo/origin의narrowescalation만;설정변경0"
+  ],
+  "decision": {
+    "complexity": "complex",
+    "hasConflicts": false
+  },
+  "objective": "R43 방향 결정의 후속: 의미/AST/Config/원천을 유지하고 token→3bit 일대일 codebook만 바꿔 역할 일치와 후속 의미 보존을 검증한다. 학습·속도 우위 주장은 하지 않는다.",
+  "orchestration": {
+    "mcpAvailable": true,
+    "requested": false
+  },
+  "requiredCapabilities": [
+    "minimal-implementation",
+    "cs-implementation-review",
+    "change-scope-assurance"
+  ],
+  "riskLevel": "medium",
+  "schemaVersion": "1.0.0",
+  "scope": {
+    "excluded": [
+      "src/",
+      "tests/",
+      "tools/r19_cross_level/",
+      "tools/r20_evidence_feedback/",
+      "tools/r21_active_measurement/",
+      "tools/r22_measurement_adoption/",
+      "tools/r23_source_qualification/",
+      "experiments/exp-69-source-qualification/",
+      "evidence/source-qualification-20261019-r23/",
+      "tools/r24_trust_boundary/",
+      "experiments/exp-70-trust-boundary/",
+      "evidence/trust-boundary-20261019-r24/",
+      "tools/r25_fixedpoint_elision/",
+      "experiments/exp-71-fixedpoint-elision/",
+      "evidence/fixedpoint-elision-20261019-r25/",
+      "experiments/exp-72-contraction-warmstart/",
+      "tools/r26_contraction_warmstart/",
+      "evidence/contraction-warmstart-20261019-r26/",
+      "experiments/exp-73-finite-stop-envelope/",
+      "tools/r27_finite_stop_envelope/",
+      "evidence/finite-stop-envelope-20261019-r27/",
+      "experiments/exp-74-reuse-frontier/",
+      "tools/r28_reuse_frontier/",
+      "evidence/reuse-frontier-20261020-r28/",
+      "experiments/exp-75-research-direction/",
+      "tools/r29_research_direction/",
+      "evidence/research-direction-20261020-r29/",
+      "experiments/exp-76-spatial-sharing/",
+      "tools/r30_spatial_sharing/",
+      "evidence/spatial-sharing-20261020-r30/",
+      "experiments/exp-77-macro-control/",
+      "tools/r31_macro_control/",
+      "evidence/macro-control-20261020-r31/",
+      "experiments/exp-78-semantic-join/",
+      "tools/r32_semantic_join/",
+      "evidence/semantic-join-20261020-r32/",
+      "experiments/exp-79-typed-feedback/",
+      "tools/r33_typed_feedback/",
+      "evidence/typed-feedback-20261020-r33/",
+      "experiments/exp-80-feasible-state/",
+      "tools/r34_feasible_state/",
+      "evidence/feasible-state-20261020-r34/",
+      "experiments/exp-81-compositional-slot/",
+      "tools/r35_compositional_slot/",
+      "evidence/compositional-slot-20261020-r35/",
+      "experiments/exp-82-overlap-composition/",
+      "tools/r36_overlap_composition/",
+      "evidence/overlap-composition-20261020-r36/",
+      "experiments/exp-83-joint-tuple/",
+      "tools/r37_joint_tuple/",
+      "evidence/joint-tuple-20261020-r37/",
+      "experiments/exp-84-shared-witness/",
+      "tools/r38_shared_witness/",
+      "evidence/shared-witness-20261020-r38/",
+      "experiments/exp-85-z-query/",
+      "tools/r39_z_query/",
+      "evidence/z-query-20261020-r39/",
+      "experiments/exp-86-factor-query/",
+      "tools/r40_factor_query/",
+      "evidence/factor-query-20261020-r40/",
+      "experiments/exp-87-producer-profile/",
+      "tools/r41_producer_profile/",
+      "evidence/producer-profile-20261020-r41/",
+      "experiments/exp-88-coarse-profile/",
+      "tools/r42_coarse_profile/",
+      "evidence/coarse-profile-20261020-r42/",
+      "experiments/exp-89-exp-once/",
+      "tools/r43_exp_once/",
+      "evidence/exp-once-20261020-r43/"
+    ],
+    "included": [
+      "experiments/exp-90-codebook-invariance/",
+      "tools/r44_codebook_invariance/",
+      "evidence/codebook-invariance-20261020-r44/"
+    ]
+  },
+  "taskId": "ai-codebook-invariance-r44",
+  "workUnits": [
+    {
+      "dependencies": [],
+      "id": "r44",
+      "objective": "R43 방향 결정의 후속: 의미/AST/Config/원천을 유지하고 token→3bit 일대일 codebook만 바꿔 역할 일치와 후속 의미 보존을 검증한다. 학습·속도 우위 주장은 하지 않는다.",
+      "writeTargets": [
+        "experiments/exp-90-codebook-invariance/",
+        "tools/r44_codebook_invariance/",
+        "evidence/codebook-invariance-20261020-r44/"
+      ]
+    }
+  ]
+}

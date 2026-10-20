@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0.0",
+  "requestRef": {
+    "path": "request.json",
+    "digest": "sha256:8ef38f3133cb2b9115599434475994f5a91bbe6721f02ca3a95473d3485f3806"
+  },
+  "requestDigest": "sha256:bd198efa59daddfb44d11355aceb8e5d206931ebfe530e0a1c4021a759e2c549",
+  "constraintReportRef": {
+    "path": "constraints.json",
+    "digest": "sha256:b3d6a1179abbf4bf14e94b00e3812e0a119c0a8d6c780c2d4de22ca5b044a34b"
+  },
+  "constraintReportDigest": "sha256:6f242c0ab28e72a9a24fc1f056ba9fc0e420dfb3ff3651d6b0dca34ad731a724",
+  "taskDigest": "sha256:8923e8ea8f0d63088d283e1b153ffa68fedc4c4b3cb2c1dd6cd0458d39a5e083",
+  "knowledgePackVersion": "0.1.0",
+  "knowledgePackDigest": "sha256:d8351d9aabb433403830fcffc3a2f2438b6d428711c93b6ded9eff002468c3d1",
+  "policyId": "R44-LOCAL-CONSTRAINTS",
+  "policyVersion": "1.0.0",
+  "policyDigest": "sha256:0d250e72a3f30af6d23522733ebc849f7c27385c61374e7a4fb6237343fd161f",
+  "mode": "enforce",
+  "requiredObligationIds": [
+    "OB-BOUNDARY",
+    "OB-SEMANTICS",
+    "OB-COST"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "adapter_redaction_detected": false,
+  "all_native_tick_records_received": true,
+  "archive_received": false,
+  "input_pins": 94,
+  "raw_json_bytes": 6059379,
+  "raw_manifest_matched_files": 406,
+  "received_json": 407,
+  "same_channel_not_host_attestation": true,
+  "source_files": 125,
+  "source_unchanged": true,
+  "ssh_completeness": "unknown upstream;all expectedJSON count/size/SHA directlymatched;manifest outsideitsownhash",
+  "transport_failures": [
+    {
+      "batch": 19,
+      "error_code": "INVALID_ARGUMENT",
+      "message": "Request refused or failed. Check authentication, state, limits and permissions.",
+      "native_rerun": false,
+      "output_reference_returned": false,
+      "overlapping_read_window": 2,
+      "root_cause_not_independently_proven": true,
+      "stage": "raw-receipt-read",
+      "subsequent_sequential_read_succeeded": true,
+      "successful_first_output_preserved": true
+    }
+  ],
+  "unreceived_empty_logs": [
+    "audit.stderr",
+    "audit.stdout",
+    "preparation.stderr",
+    "preparation.stdout",
+    "work.stderr",
+    "work.stdout"
+  ]
+}

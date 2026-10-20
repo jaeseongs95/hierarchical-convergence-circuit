@@ -1,0 +1,144 @@
+{
+  "schemaVersion": "1.0.0",
+  "reportId": "CS-R44-CONSTRAINTS-PREFREEZE-CLARIFIED",
+  "requestDigest": "sha256:bd198efa59daddfb44d11355aceb8e5d206931ebfe530e0a1c4021a759e2c549",
+  "sourceSnapshotDigest": "sha256:73c9be282c02a4a9769b330824911372d529c2b42551799692e73ee9fb30436a",
+  "knowledgePackVersion": "0.1.0",
+  "knowledgePackDigest": "sha256:d8351d9aabb433403830fcffc3a2f2438b6d428711c93b6ded9eff002468c3d1",
+  "draftUse": {
+    "allowed": false,
+    "basis": "Validated identity/reuse and matched measurement rules"
+  },
+  "applicability": "applicable",
+  "applicabilityReason": "Typed source reuse and causal feedback correctness need explicit identity and evidence accounting.",
+  "selectedRules": [
+    {
+      "ruleId": "ALG-KEY-004",
+      "ruleDigest": "sha256:db77383ecb5f41ef3af5cb60769edaea507cac5cb25e28b88f249e84a062ba2e",
+      "applicabilityReason": "Shared native source reuse and candidate-order routing require full source/role/revision/config binding; a selected revision may not silently change origin roles."
+    },
+    {
+      "ruleId": "PERF-MEASURE-001",
+      "ruleDigest": "sha256:ef11800e55663f1b719f62d3f812280fd6e56c6895eef3028b9db344a9d0a355",
+      "applicabilityReason": "Information-matched exact control and actual shared-source plus all roundtrip/serialization/process costs; semantic errors preclude efficiency adoption."
+    }
+  ],
+  "facts": [
+    {
+      "id": "FACT-GAP",
+      "statement": "R43HIGH settles directionB codebook meaning. R35/36 namespaces preserved code correspondence;new intervention changes actual token-to-code positions/distances/polarities,not AST/core/learner.",
+      "evidenceRefs": [
+        "SRC-RESULT",
+        "SRC-DIRECTION",
+        "SRC-ENCODER"
+      ]
+    },
+    {
+      "id": "FACT-KERNEL",
+      "statement": "R35encode_role indexbased3bit,syntaxonlycompiler;R36typed2candidate/3leafguard/packet-onlyTconsumer. Passing inverse vocabulary realizes map without monkeypatch or core edit. Freshinitial.5 and all originalkerneltrace/Cost retained.",
+      "evidenceRefs": [
+        "SRC-ENCODER",
+        "SRC-SLOTS",
+        "SRC-R32",
+        "SRC-KERNEL"
+      ]
+    },
+    {
+      "id": "FACT-BUDGET",
+      "statement": "128base(8Cmask×8Tmask×2ASTpairs)×8maps=1024native +128exact;28freshsource+64role+18432upper=18524settles/max2963840ticks. Roleall40320bijections uses direct64numericdrive coverage;pipelineonly8maps.600total240stage/raw128/cache128MiB/AS512MiBeach/LRU18/worker1retry0.",
+      "evidenceRefs": [
+        "SRC-BUDGET"
+      ]
+    }
+  ],
+  "assumptions": [],
+  "invariants": [
+    {
+      "id": "INV-BOUNDARY",
+      "statement": "Only token-to-code map changed:8predeclaredbijections inversevocabulary,allsource/roles/ASTConfig/initial/order/originalguards/settle/controller/history/Costunchanged. Invalidmapsreject. No host truth/repair/native cache. Authoredencodingnotlearned;noH03 orspeedclaim.",
+      "scope": "R44 eight codebooks/128basecases/64roleinputs/40320role-only mapping transfer",
+      "basisRefs": [
+        "FACT-GAP",
+        "FACT-KERNEL"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-SEMANTICS",
+      "statement": "64actualrolekernelinputs exhaust3bitorderedpairs. Saved roleoutputs transfer by explicit encoder indexing to40320mappings/2580480orderedtokenpairchecks only;pipeline128base×8maps withactualtypedsourceleaf8patterns and2ASTpairs fixed. Fullnativeoracle/intermediate/scalar/controller/sourceproof/cost replay;896mapped-baseline semanticpairs exceptcode/trace/hash;differentnumerictracesallowed. Anysemanticfailure recorded asvalidnegative withno retune/native replay.",
+      "scope": "R44 eight codebooks/128basecases/64roleinputs/40320role-only mapping transfer",
+      "basisRefs": [
+        "FACT-KERNEL",
+        "FACT-BUDGET"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-COST",
+      "statement": "18524settles/max2963840ticks/fixedstage240total600/worker1retry0/raw128MiB/cache128MiB/AS512MiBeach/record128KiB/LRU18/unique6000. Fullphysicalrefledger andallphase/parent/launcherCPUwall observed;storeonlydedupnevercomputationalreuse,no speed/learning costadoption claim. DirectsizeSHAallraw/sourcepins;upstreamunknown/samechannelnotattestation.",
+      "scope": "R44 eight codebooks/128basecases/64roleinputs/40320role-only mapping transfer",
+      "basisRefs": [
+        "FACT-BUDGET"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "PERF-MEASURE-001"
+      ]
+    }
+  ],
+  "designChoices": [
+    {
+      "id": "CHOICE-CODEMAP",
+      "statement": "Reuse unchanged R35/R36 pipeline by inverse vocabulary instead of patching runtime.",
+      "rationale": "One encoder parameter intervention retains all guards/typedconsumer;separate finite pipeline and exhaustive role coverage.",
+      "basisRefs": [
+        "FACT-GAP",
+        "FACT-KERNEL",
+        "FACT-BUDGET"
+      ]
+    }
+  ],
+  "verificationObligations": [
+    {
+      "id": "OB-BOUNDARY",
+      "invariantIds": [
+        "INV-BOUNDARY"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "nonbijection/unknown token accepted;AST/drive repair;source/role/config drift;hiddenoracle consumer",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-SEMANTICS",
+      "invariantIds": [
+        "INV-SEMANTICS"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "coverageinflation;onlyNonechecked;selected-codecomparedinsteadidentity;allmappingpipelineclaim;traceequalitymisrequired;scalarusedasmeaningoracle",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-COST",
+      "invariantIds": [
+        "INV-COST"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "uncappedcache/raw;missingphysicalcalls;savebytesdeemedcomputeskipping;posthocbudget/gate or rerun;costwinclaimwithoutcontract",
+      "requirementLevel": "required"
+    }
+  ],
+  "requiredCapabilities": [
+    "cs-constraint-derivation",
+    "cs-implementation-review"
+  ],
+  "verdict": "READY"
+}

@@ -1,0 +1,9 @@
+{
+  "direction": "experiments/exp-89-exp-once/DELIBERATION.ko.md",
+  "prior": "R35/R36 changed names preserving token-code correspondence. R44 changesactualcodeassignment/bitposition/polarity/Hamming distance while fixedsources/AST/Config;not R31learnedmacro efficiency or R43microoptimization.",
+  "source_pins": {
+    "experiments/exp-81-compositional-slot/RESULTS.ko.md": "71f0532a29c20e0ae309c3dd9acac93c6c98a660655f328d97a5c6c92c9eaa1c",
+    "experiments/exp-82-overlap-composition/RESULTS.ko.md": "66f92ee9601f68b886d6198e4b6aeb1955c0342839bfd55cf3da232ca683bc09",
+    "experiments/exp-89-exp-once/DELIBERATION.ko.md": "09ea80d5422d2cf416fd463ca34a155c570df3a778efa522dc5a2f9dc8f2761e"
+  }
+}

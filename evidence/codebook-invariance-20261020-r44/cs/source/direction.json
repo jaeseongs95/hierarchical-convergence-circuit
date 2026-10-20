@@ -1,0 +1,667 @@
+{
+  "axis_decisions": [
+    {
+      "axis": "Project direction",
+      "decision": "학습된 구조의 원계산 대체·품질·총비용은 장기 질문으로 유지;runtime성과는 별도 근거",
+      "evidence_claim_ids": [
+        "C1",
+        "C2",
+        "C3"
+      ]
+    },
+    {
+      "axis": "Immediate study",
+      "decision": "R43는 같은 음수 exp의 단일 재사용을 한 번 판별;codebook은 다음 방향검토 우선후보",
+      "evidence_claim_ids": [
+        "C4",
+        "C6",
+        "C7"
+      ]
+    },
+    {
+      "axis": "Correctness and cost",
+      "decision": "builtin/동일입력/fullbytes/controller/guard 보존;물리계수와timing분리,저장기분리,공통비용사전배분",
+      "evidence_claim_ids": [
+        "C5",
+        "C6",
+        "C8"
+      ]
+    },
+    {
+      "axis": "Stop and claims",
+      "decision": "각repr3반복 CPU<=.95wall<=1.05와품질/원장 모두맞아야 유한후보채택;미달시닫고H03승격금지",
+      "evidence_claim_ids": [
+        "C1",
+        "C2",
+        "C4"
+      ]
+    }
+  ],
+  "case_brief": {
+    "assumptions": [
+      "표준 builtin math.exp는 같은 유한입력/같은환경에서 결정적이다. 실제bytes·물리호출·총비용은 새 실행에서 검증한다."
+    ],
+    "constraints": [
+      "현재 엔진·과거 원자료 보존, 신규 연구 경로만 변경",
+      "지정 AI Research SSH·worker1/retry0·운영상한 동결·재실행 튜닝 금지",
+      "변경은 음수 분기의 동일 builtin math.exp 결과1회 재사용뿐",
+      "correctness exp계수/timing probe0, arm별저장기 분리·합계raw/cache상한",
+      "품질/fullbytes/원장과 source부터봉인까지 총비용·고정채택선 점수화",
+      "무학습 runtime성과를 H03학습효율·일반성·production근거로 승격하지 않음"
+    ],
+    "decision": "프로젝트 연구 방향과 다음 비중복 연구 한 과제 선택",
+    "facts": [
+      "핵심 가설은 가설이며 안정 수렴과 정답·압축의 검증 보존을 구별한다.",
+      "학습 산출물 연결 없는 runtime성과를 학습효율로 세지 않고 국소 gate·중복비용분해로 음성을 구제하지 않는다.",
+      "R31은 실제 learner/macro/primitive와 K1..4 학습포함 비용을 이미 비교했으며 비용 회수가 없었다.",
+      "R25/R30은 실제 산술 감소에도 전체 component/cold 비용이 증가했다.",
+      "R42는 낮은 observer 부담과 전체이력 동치만 확인했고 settle내부병목/제거가능비용/최적화효과는 확인하지 않았다.",
+      "원래 음수 sigmoid분기는 동일한 exp(z)를 두 번 호출한다. builtin결정성 아래 1회 재사용 후보가 있으나 bit동치·시간효과는 실험 대상이다.",
+      "기존 AST생성기·3bitencoder·실제8leaf패턴/6비동치AST 검사는 존재하며 codebook/동치AST 개입은 별도 질문이다.",
+      "Recorder는 동일 bytes 후발 참조의 파일쓰기를 생략하므로 공용 저장기로 standalone비용을 주장할 수 없다."
+    ],
+    "failure_modes": [
+      "microoptimization으로핵심가설대체",
+      "call감소를CPU감소로오인",
+      "sharedRecorder선작성효과",
+      "사후gate튜닝"
+    ],
+    "success_criteria": [
+      "현재구현으로실행가능·비중복·사전고정기준·실패보존",
+      "학습/일반성/성능 주장 경계 유지"
+    ],
+    "unknowns": [
+      "실제 bit동치/속도개선",
+      "실제 응용 수명",
+      "모든 codebook 의미불변성"
+    ]
+  },
+  "consensus_proposal": {
+    "action": "A: 음수 exp(z) 동일결과1회재사용만R43에서검증한다. 이후이계열을닫고다음방향검토에서codebookcoverage동결을우선한다.",
+    "axis_alignment": [
+      {
+        "axis": "Project direction",
+        "decision_ref": "Project direction"
+      },
+      {
+        "axis": "Immediate study",
+        "decision_ref": "Immediate study"
+      },
+      {
+        "axis": "Correctness and cost",
+        "decision_ref": "Correctness and cost"
+      },
+      {
+        "axis": "Stop and claims",
+        "decision_ref": "Stop and claims"
+      }
+    ],
+    "conditions": [
+      "builtin동일성/후보source단일변경/모든guard·FP순서·controller·trace·Cost보존",
+      "65고유입력×2correctness130settles+timing34560+source24=34714settles;directtick D 입력·수·상한최종봉인",
+      "timingprobe0·4arm저장기분리·합계raw128MiB/cache192MiB",
+      "모든비용배분동결·각repr3rep모두CPU<=.95wall<=1.05·품질/fullbytes/원장 통과",
+      "미달시native재실행/게이트변경/다른미세변경연속추가없이닫는다"
+    ],
+    "decision_owner": null,
+    "no_consensus_reason": null,
+    "remaining_options": [
+      "codebook coverage를동결한표현불변성검사",
+      "동치AST/top_down분리검사"
+    ],
+    "satisfied_constraints": [
+      "현재 엔진·과거 원자료 보존, 신규 연구 경로만 변경",
+      "지정 AI Research SSH·worker1/retry0·운영상한 동결·재실행 튜닝 금지",
+      "변경은 음수 분기의 동일 builtin math.exp 결과1회 재사용뿐",
+      "correctness exp계수/timing probe0, arm별저장기 분리·합계raw/cache상한",
+      "품질/fullbytes/원장과 source부터봉인까지 총비용·고정채택선 점수화",
+      "무학습 runtime성과를 H03학습효율·일반성·production근거로 승격하지 않음"
+    ],
+    "status": "conditional_consensus",
+    "supported_by_verified_claims": [
+      "C1",
+      "C2",
+      "C4",
+      "C5",
+      "C6",
+      "C8"
+    ],
+    "unresolved_dissent": [
+      {
+        "material": false,
+        "statement": "codebook이론관련성을먼저볼지,exp단일개입의비용정보를먼저볼지의우선순위선호는남음.실행금지계약결함아님."
+      }
+    ]
+  },
+  "constraints": [
+    "현재 엔진·과거 원자료 보존, 신규 연구 경로만 변경",
+    "지정 AI Research SSH·worker1/retry0·운영상한 동결·재실행 튜닝 금지",
+    "변경은 음수 분기의 동일 builtin math.exp 결과1회 재사용뿐",
+    "correctness exp계수/timing probe0, arm별저장기 분리·합계raw/cache상한",
+    "품질/fullbytes/원장과 source부터봉인까지 총비용·고정채택선 점수화",
+    "무학습 runtime성과를 H03학습효율·일반성·production근거로 승격하지 않음"
+  ],
+  "cross_examination": {
+    "coverage": [
+      {
+        "item_id": "T1",
+        "reviewer_ids": [
+          "/root/r43_semantics"
+        ]
+      },
+      {
+        "item_id": "T2",
+        "reviewer_ids": [
+          "/root/r43_semantics",
+          "/root/r43_theory",
+          "/root/r43_validity"
+        ]
+      },
+      {
+        "item_id": "T3",
+        "reviewer_ids": [
+          "/root/r43_theory",
+          "/root/r43_engineering"
+        ]
+      },
+      {
+        "item_id": "T4",
+        "reviewer_ids": [
+          "/root/r43_engineering"
+        ]
+      },
+      {
+        "item_id": "T5",
+        "reviewer_ids": [
+          "/root/r43_validity"
+        ]
+      }
+    ],
+    "decision": "run",
+    "followups": [
+      {
+        "item_ids": [
+          "T1",
+          "T2"
+        ],
+        "reviewer_id": "/root/r43_semantics"
+      },
+      {
+        "item_ids": [
+          "T2",
+          "T3"
+        ],
+        "reviewer_id": "/root/r43_theory"
+      },
+      {
+        "item_ids": [
+          "T2",
+          "T5"
+        ],
+        "reviewer_id": "/root/r43_validity"
+      },
+      {
+        "item_ids": [
+          "T3",
+          "T4"
+        ],
+        "reviewer_id": "/root/r43_engineering"
+      }
+    ],
+    "reason": "프로젝트 우선순위 충돌과저장비용경계·추가correctness호출누락위험",
+    "selected_item_ids": [
+      "T1",
+      "T2",
+      "T3",
+      "T4",
+      "T5"
+    ],
+    "trigger_items": [
+      {
+        "id": "T1",
+        "origin_reviewer": "/root/r43_theory"
+      },
+      {
+        "id": "T2",
+        "origin_reviewer": "/root/r43_engineering"
+      },
+      {
+        "id": "T3",
+        "origin_reviewer": "/root/r43_semantics"
+      },
+      {
+        "id": "T4",
+        "origin_reviewer": "/root/r43_validity"
+      },
+      {
+        "id": "T5",
+        "origin_reviewer": "/root/r43_theory"
+      }
+    ]
+  },
+  "issue_ledger": [
+    {
+      "available_evidence": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "issue_id": "I1",
+      "rationale": "microoptimization을학습효율로승격하면C1/C2위반;단한변경종결실험으로범위한정",
+      "required_evidence": [
+        "주장경계·중단계약"
+      ],
+      "status": "CONFIRMED"
+    },
+    {
+      "available_evidence": [
+        "C4",
+        "C6"
+      ],
+      "issue_id": "I2",
+      "rationale": "코드상중복호출C6확인. 실측bit보존·총비용은새실험질문이며성공전제아님",
+      "required_evidence": [
+        "frozen nativepairedresults/countledger/totalcost"
+      ],
+      "status": "PARTIALLY_SUPPORTED"
+    },
+    {
+      "available_evidence": [
+        "C7"
+      ],
+      "issue_id": "I3",
+      "rationale": "codebook/동치AST는가치있는별도질문,coverage와반례미확정. 즉시A실험의계약결함은아닌우선순위이견",
+      "required_evidence": [
+        "다음codebookcoverage계약"
+      ],
+      "status": "PARTIALLY_SUPPORTED"
+    },
+    {
+      "available_evidence": [
+        "C8"
+      ],
+      "issue_id": "I4",
+      "rationale": "동일bytes의선작성/후발참조비용차이를막으려면4arm저장기분리·합계상한필수",
+      "required_evidence": [
+        "실제저장기분리/합계상한/비용배분"
+      ],
+      "status": "CONFIRMED"
+    }
+  ],
+  "material_claims": [
+    {
+      "id": "C1",
+      "provenance": [
+        {
+          "locator": "theory/core-hypothesis.md",
+          "verification_note": "Coordinator directly read code/document; historical outcome claims not independent host attestation.",
+          "verification_status": "verified"
+        },
+        {
+          "locator": "evidence/claims.yaml",
+          "verification_note": "Coordinator directly read code/document; historical outcome claims not independent host attestation.",
+          "verification_status": "verified"
+        },
+        {
+          "locator": "formalism/invariants.md",
+          "verification_note": "Coordinator directly read code/document; historical outcome claims not independent host attestation.",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "핵심 가설은 가설이며 안정 수렴과 정답·압축의 검증 보존을 구별한다."
+    },
+    {
+      "id": "C2",
+      "provenance": [
+        {
+          "locator": "experiments/exp-75-research-direction/ROADMAP.ko.md",
+          "verification_note": "Coordinator directly read code/document; historical outcome claims not independent host attestation.",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "학습 산출물 연결 없는 runtime성과를 학습효율로 세지 않고 국소 gate·중복비용분해로 음성을 구제하지 않는다."
+    },
+    {
+      "id": "C3",
+      "provenance": [
+        {
+          "locator": "experiments/exp-77-macro-control/RESULTS.ko.md",
+          "verification_note": "Coordinator directly read code/document; historical outcome claims not independent host attestation.",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "R31은 실제 learner/macro/primitive와 K1..4 학습포함 비용을 이미 비교했으며 비용 회수가 없었다."
+    },
+    {
+      "id": "C4",
+      "provenance": [
+        {
+          "locator": "experiments/exp-71-fixedpoint-elision/RESULTS.ko.md",
+          "verification_note": "Coordinator directly read code/document; historical outcome claims not independent host attestation.",
+          "verification_status": "verified"
+        },
+        {
+          "locator": "experiments/exp-76-spatial-sharing/RESULTS.ko.md",
+          "verification_note": "Coordinator directly read code/document; historical outcome claims not independent host attestation.",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "R25/R30은 실제 산술 감소에도 전체 component/cold 비용이 증가했다."
+    },
+    {
+      "id": "C5",
+      "provenance": [
+        {
+          "locator": "experiments/exp-88-coarse-profile/RESULTS.ko.md",
+          "verification_note": "Coordinator directly read code/document; historical outcome claims not independent host attestation.",
+          "verification_status": "verified"
+        },
+        {
+          "locator": "evidence/coarse-profile-20261020-r42/analysis.json",
+          "verification_note": "Coordinator directly read code/document; historical outcome claims not independent host attestation.",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "R42는 낮은 observer 부담과 전체이력 동치만 확인했고 settle내부병목/제거가능비용/최적화효과는 확인하지 않았다."
+    },
+    {
+      "id": "C6",
+      "provenance": [
+        {
+          "locator": "src/hcr/dynamics.py",
+          "verification_note": "Coordinator directly read code/document; historical outcome claims not independent host attestation.",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "원래 음수 sigmoid분기는 동일한 exp(z)를 두 번 호출한다. builtin결정성 아래 1회 재사용 후보가 있으나 bit동치·시간효과는 실험 대상이다."
+    },
+    {
+      "id": "C7",
+      "provenance": [
+        {
+          "locator": "tools/r35_compositional_slot/compiler.py",
+          "verification_note": "Coordinator directly read code/document; historical outcome claims not independent host attestation.",
+          "verification_status": "verified"
+        },
+        {
+          "locator": "tools/r35_compositional_slot/runtime.py",
+          "verification_note": "Coordinator directly read code/document; historical outcome claims not independent host attestation.",
+          "verification_status": "verified"
+        },
+        {
+          "locator": "experiments/exp-82-overlap-composition/RESULTS.ko.md",
+          "verification_note": "Coordinator directly read code/document; historical outcome claims not independent host attestation.",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "기존 AST생성기·3bitencoder·실제8leaf패턴/6비동치AST 검사는 존재하며 codebook/동치AST 개입은 별도 질문이다."
+    },
+    {
+      "id": "C8",
+      "provenance": [
+        {
+          "locator": "tools/r36_overlap_composition/recording.py",
+          "verification_note": "Coordinator directly read code/document; historical outcome claims not independent host attestation.",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "Recorder는 동일 bytes 후발 참조의 파일쓰기를 생략하므로 공용 저장기로 standalone비용을 주장할 수 없다."
+    }
+  ],
+  "method_notes": [
+    "HIGH blind4관점+비원저자cross각1회+별도freshJudge완료;reserve/specialist/adaptive0",
+    "모델/effort는요청값만관측;동일provider여부/숨은컨텍스트격리외부인증아님",
+    "원문reviewer/Judge출력·내부prompt·CoT는record에저장하지않음",
+    "panel은방향선정절차이며구현최종독립감사가아님",
+    "Cross는 같은4reviewer의 followup_task 각1회로 실행했고 별도participant로 세지 않았다. canonical lifecycle은 completed5로 표현하며 phase/coverage에 재참여를 보존한다. 후속 제안 변경을 고려해 assurance는 보수적으로 partially_independent로 제한한다."
+  ],
+  "observability": {
+    "tokens": "NOT_OBSERVABLE",
+    "tool_calls": "NOT_OBSERVABLE",
+    "wall_time": "NOT_OBSERVABLE",
+    "worker_count": 5
+  },
+  "panel_manifest": [
+    {
+      "actual_model": "NOT_OBSERVABLE",
+      "actual_reasoning": "NOT_OBSERVABLE",
+      "blind_round1": true,
+      "classification": "reviewer",
+      "context_isolated": true,
+      "fallback_reason": "Terra preference unavailable; exposed Sol/xhigh requested. Provider internals not observed.",
+      "id": "/root/r43_theory",
+      "instantiated": true,
+      "is_judge": false,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ],
+      "requested_model": "gpt-6.1-sol",
+      "requested_reasoning": "xhigh",
+      "role": "Core Hypothesis Strategist",
+      "status": "completed"
+    },
+    {
+      "actual_model": "NOT_OBSERVABLE",
+      "actual_reasoning": "NOT_OBSERVABLE",
+      "blind_round1": true,
+      "classification": "reviewer",
+      "context_isolated": true,
+      "fallback_reason": "Terra preference unavailable; exposed Sol/xhigh requested. Provider internals not observed.",
+      "id": "/root/r43_semantics",
+      "instantiated": true,
+      "is_judge": false,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ],
+      "requested_model": "gpt-6.1-sol",
+      "requested_reasoning": "xhigh",
+      "role": "Semantic Contract Reviewer",
+      "status": "completed"
+    },
+    {
+      "actual_model": "NOT_OBSERVABLE",
+      "actual_reasoning": "NOT_OBSERVABLE",
+      "blind_round1": true,
+      "classification": "reviewer",
+      "context_isolated": true,
+      "fallback_reason": "Terra preference unavailable; exposed Sol/xhigh requested. Provider internals not observed.",
+      "id": "/root/r43_validity",
+      "instantiated": true,
+      "is_judge": false,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ],
+      "requested_model": "gpt-6.1-sol",
+      "requested_reasoning": "xhigh",
+      "role": "Experimental Validity Reviewer",
+      "status": "completed"
+    },
+    {
+      "actual_model": "NOT_OBSERVABLE",
+      "actual_reasoning": "NOT_OBSERVABLE",
+      "blind_round1": true,
+      "classification": "reviewer",
+      "context_isolated": true,
+      "fallback_reason": "Terra preference unavailable; exposed Sol/xhigh requested. Provider internals not observed.",
+      "id": "/root/r43_engineering",
+      "instantiated": true,
+      "is_judge": false,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ],
+      "requested_model": "gpt-6.1-sol",
+      "requested_reasoning": "xhigh",
+      "role": "Implementation and Total Cost Reviewer",
+      "status": "completed"
+    },
+    {
+      "actual_model": "NOT_OBSERVABLE",
+      "actual_reasoning": "NOT_OBSERVABLE",
+      "blind_round1": false,
+      "classification": "judge",
+      "context_isolated": true,
+      "fallback_reason": "Terra preference unavailable; exposed Sol/xhigh requested. Provider internals not observed.",
+      "id": "/root/r43_fresh_judge",
+      "instantiated": true,
+      "is_judge": true,
+      "participated_stages": [
+        "final_judge"
+      ],
+      "requested_model": "gpt-6.1-sol",
+      "requested_reasoning": "xhigh",
+      "role": "Fresh Judge",
+      "status": "completed"
+    }
+  ],
+  "preflight": {
+    "missing_capabilities": [],
+    "observed_capabilities": [
+      "four blind isolated reviewers",
+      "fresh separate Judge",
+      "local primary evidence access",
+      "claim cross-examination",
+      "fork_turns:none exposed; all five participants completed"
+    ],
+    "required_capabilities": [
+      "four blind isolated reviewers",
+      "fresh separate Judge",
+      "local primary evidence access",
+      "claim cross-examination"
+    ],
+    "supported_models_reasoning": [
+      "gpt-6.1-sol/xhigh"
+    ]
+  },
+  "required_constraints": [
+    "현재 엔진·과거 원자료 보존, 신규 연구 경로만 변경",
+    "지정 AI Research SSH·worker1/retry0·운영상한 동결·재실행 튜닝 금지",
+    "변경은 음수 분기의 동일 builtin math.exp 결과1회 재사용뿐",
+    "correctness exp계수/timing probe0, arm별저장기 분리·합계raw/cache상한",
+    "품질/fullbytes/원장과 source부터봉인까지 총비용·고정채택선 점수화",
+    "무학습 runtime성과를 H03학습효율·일반성·production근거로 승격하지 않음"
+  ],
+  "run": {
+    "assurance": "partially_independent",
+    "candidate_skill_sha256": null,
+    "capability_shortfall": false,
+    "completed_worker_ids": [
+      "/root/r43_theory",
+      "/root/r43_semantics",
+      "/root/r43_validity",
+      "/root/r43_engineering",
+      "/root/r43_fresh_judge"
+    ],
+    "failures": [],
+    "fresh_judge_id": "/root/r43_fresh_judge",
+    "id": "R43-direction-20261020",
+    "judge_fallback": null,
+    "redeliberations": [],
+    "reused_worker_ids": [],
+    "specialist_additions": [],
+    "stage": "HIGH",
+    "strict": false,
+    "worker_cap": 8,
+    "workers": [
+      {
+        "actual_model": "NOT_OBSERVABLE",
+        "actual_reasoning": "NOT_OBSERVABLE",
+        "blind_round1": true,
+        "classification": "reviewer",
+        "context_isolated": true,
+        "fallback_reason": "Terra preference unavailable; exposed Sol/xhigh requested. Provider internals not observed.",
+        "id": "/root/r43_theory",
+        "instantiated": true,
+        "is_judge": false,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ],
+        "requested_model": "gpt-6.1-sol",
+        "requested_reasoning": "xhigh",
+        "role": "Core Hypothesis Strategist",
+        "status": "completed"
+      },
+      {
+        "actual_model": "NOT_OBSERVABLE",
+        "actual_reasoning": "NOT_OBSERVABLE",
+        "blind_round1": true,
+        "classification": "reviewer",
+        "context_isolated": true,
+        "fallback_reason": "Terra preference unavailable; exposed Sol/xhigh requested. Provider internals not observed.",
+        "id": "/root/r43_semantics",
+        "instantiated": true,
+        "is_judge": false,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ],
+        "requested_model": "gpt-6.1-sol",
+        "requested_reasoning": "xhigh",
+        "role": "Semantic Contract Reviewer",
+        "status": "completed"
+      },
+      {
+        "actual_model": "NOT_OBSERVABLE",
+        "actual_reasoning": "NOT_OBSERVABLE",
+        "blind_round1": true,
+        "classification": "reviewer",
+        "context_isolated": true,
+        "fallback_reason": "Terra preference unavailable; exposed Sol/xhigh requested. Provider internals not observed.",
+        "id": "/root/r43_validity",
+        "instantiated": true,
+        "is_judge": false,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ],
+        "requested_model": "gpt-6.1-sol",
+        "requested_reasoning": "xhigh",
+        "role": "Experimental Validity Reviewer",
+        "status": "completed"
+      },
+      {
+        "actual_model": "NOT_OBSERVABLE",
+        "actual_reasoning": "NOT_OBSERVABLE",
+        "blind_round1": true,
+        "classification": "reviewer",
+        "context_isolated": true,
+        "fallback_reason": "Terra preference unavailable; exposed Sol/xhigh requested. Provider internals not observed.",
+        "id": "/root/r43_engineering",
+        "instantiated": true,
+        "is_judge": false,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ],
+        "requested_model": "gpt-6.1-sol",
+        "requested_reasoning": "xhigh",
+        "role": "Implementation and Total Cost Reviewer",
+        "status": "completed"
+      },
+      {
+        "actual_model": "NOT_OBSERVABLE",
+        "actual_reasoning": "NOT_OBSERVABLE",
+        "blind_round1": false,
+        "classification": "judge",
+        "context_isolated": true,
+        "fallback_reason": "Terra preference unavailable; exposed Sol/xhigh requested. Provider internals not observed.",
+        "id": "/root/r43_fresh_judge",
+        "instantiated": true,
+        "is_judge": true,
+        "participated_stages": [
+          "final_judge"
+        ],
+        "requested_model": "gpt-6.1-sol",
+        "requested_reasoning": "xhigh",
+        "role": "Fresh Judge",
+        "status": "completed"
+      }
+    ]
+  },
+  "schema_version": "1.0",
+  "skill_version": "1.0.0"
+}

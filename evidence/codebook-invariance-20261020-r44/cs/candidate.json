@@ -1,0 +1,22 @@
+{
+  "files": [
+    {
+      "digest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path": "candidate/__init__.py"
+    },
+    {
+      "digest": "sha256:ade0b3114c7c725c28666cd5e4f44f1763c8c40ccf8e1fb95f0797b9753e6acf",
+      "path": "candidate/bootstrap.py"
+    },
+    {
+      "digest": "sha256:e266a694ab4bfb0188b1cc1a67b42025a75e9f37f9c50e8951cc7fe15ddbd6e0",
+      "path": "candidate/probe.py"
+    },
+    {
+      "digest": "sha256:04c49265c5c064e4576234e4dce1070be57a84f9f338f0bd208b1771aee198fd",
+      "path": "candidate/verify.py"
+    }
+  ],
+  "schemaVersion": "1.0.0",
+  "scopeSummary": "R44 fixed8token-code bijections/128base/1024native+128exact,64numericroleinput and40320role-only mapping coverage. OriginalR35/R36 pipeline/guards/controller/trace unchanged. Authoredencoding,notlearning/speed/H03. 18524settles/2963840maxticks withboundedstorage/cost/rawverification."
+}
