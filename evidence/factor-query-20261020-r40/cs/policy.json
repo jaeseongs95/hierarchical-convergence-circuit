@@ -1,0 +1,7 @@
+{
+  "schemaVersion": "1.0.0",
+  "policyId": "R40-LOCAL-CONSTRAINTS",
+  "version": "1.0.0",
+  "mode": "enforce",
+  "allowDraft": false
+}

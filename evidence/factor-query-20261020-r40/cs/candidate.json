@@ -1,0 +1,26 @@
+{
+  "files": [
+    {
+      "digest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path": "candidate/__init__.py"
+    },
+    {
+      "digest": "sha256:0d1e5f427aef40cfe2f859a71c49640445327dc803823e8f2867393b46d8ada7",
+      "path": "candidate/bootstrap.py"
+    },
+    {
+      "digest": "sha256:01c4a45871374aba5e5086d2e33b1369dcd1a490d34dd61054b38e1542dd98b2",
+      "path": "candidate/probe.py"
+    },
+    {
+      "digest": "sha256:aa4d7d44da2ddc2da70f44db940294ac1562477ffb1fc2c0059ff2a3996c8d34",
+      "path": "candidate/runtime.py"
+    },
+    {
+      "digest": "sha256:17a07a2026d8755db803248fd5ec59d98747dd6b9ea93b66280bdc27769ca141",
+      "path": "candidate/verify.py"
+    }
+  ],
+  "schemaVersion": "1.0.0",
+  "scopeSummary": "R40freshproducerfullfactor12valuesversusjoint8slices/sameinformationexact.32contexts5workloads3repetitions3arms=1440records4608outputs/85848settles. Query-freeproducers,canonicalintegerqueryrouting,numericconsumeronly. Existingcore/compiler/caps unchanged;totalCPUgate<=.95in3pairedrepswithallqualityPASS,notstatistical/production/minimalityclaim."
+}

@@ -1,0 +1,49 @@
+{
+  "status": "STUDY_VALIDATED_GIT_PENDING",
+  "criteria": [
+    {
+      "id": "AC-001",
+      "status": "PASS",
+      "evidence": [
+        "DESIGN.ko.md",
+        "OUTCOMES.ko.md",
+        "budget.json"
+      ]
+    },
+    {
+      "id": "AC-002",
+      "status": "PASS",
+      "evidence": [
+        "raw/sources.json",
+        "raw/work-ledger.json",
+        "local-verification.json"
+      ]
+    },
+    {
+      "id": "AC-003",
+      "status": "PASS_QUALITY_AND_COST_RESULTS_SCORED",
+      "quality_pass": true,
+      "any_cost_candidate": false,
+      "evidence": [
+        "analysis.json"
+      ]
+    },
+    {
+      "id": "AC-004",
+      "status": "PASS_WITH_DISCLOSED_PUBLIC_METADATA_RESTORATION",
+      "evidence": [
+        "receipt-verification.json",
+        "local-verification.json",
+        "restoration-verification.json",
+        "cs/bundle-check.json"
+      ]
+    },
+    {
+      "id": "AC-005",
+      "status": "PENDING_EXTERNAL_GIT_FINALIZATION",
+      "qualification": "Precommitpoint-in-time receipt. Final scope/index/sign/main/privatepush/clean saved privately afterGit finalization toavoidself-reference."
+    }
+  ],
+  "independent_audit": false,
+  "production_adoption": false
+}

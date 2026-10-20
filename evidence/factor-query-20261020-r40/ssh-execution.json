@@ -1,0 +1,38 @@
+{
+  "approval_mode": "automatic",
+  "completion": {
+    "completed": true,
+    "evidence_bytes": 486563,
+    "evidence_sha256": "8a23542792e0a7e662c554fbbd6de321f5f5bcf0b9eda399f163a054110cae08",
+    "parent_process_cpu_seconds": 0.301594695,
+    "seconds_including_seal": 165.55435238801874,
+    "within_wall_limit": true
+  },
+  "known_status": "COMPLETED_RAW_RECEIVED_LOCAL_REPLAY_PASS",
+  "launch_receipt": {
+    "maximum_measurement_requests": 0,
+    "maximum_native_settle_calls": 85848,
+    "native_training": 0,
+    "no_retry": true,
+    "parent_limits": {
+      "child_address_space_bytes": 536870912,
+      "child_file_bytes": 8388608,
+      "parent_address_space_bytes": 536870912,
+      "parent_file_bytes": 136314880,
+      "raw_bytes": 134217728,
+      "stage_seconds": 420,
+      "total_seconds": 480
+    },
+    "pid": 18804,
+    "preparation_cpu_seconds": 0.073842714,
+    "preparation_seconds": 0.03361897199647501,
+    "root": "/home/mcpops/hcc-factor-query-20261020-r40",
+    "single_worker": true,
+    "total_wall_cap_seconds": 480
+  },
+  "launch_request": "e865da460c9d190cd906bec5dc870c1f7f53b9cd4dcb76bd",
+  "native_rerun": false,
+  "policy_revision": 8,
+  "received_json": 123,
+  "upload_request": "0989c8407560f986e473b44ee3ee279636c7db053ee64b1f"
+}

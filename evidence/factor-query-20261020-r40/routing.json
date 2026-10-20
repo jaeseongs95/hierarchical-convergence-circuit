@@ -1,0 +1,16 @@
+{
+  "delegation": false,
+  "deliberation": "R39alreadychosefactor/separatorfollowup;nowmatchedmeasurementcontract,noincompatiblepolicychoiceornewpanelneeded",
+  "execution": "direct",
+  "independent_audit": "No high-impactsecurity/payment/global/productionchange;notselected",
+  "steps": [
+    "task-contract",
+    "scope-baseline",
+    "CSderive",
+    "ponytail-implementation",
+    "preparation/freeze",
+    "AIResearchSSH",
+    "saved-data-replay/CSreview",
+    "scope/index/sign/main/privatepush"
+  ]
+}

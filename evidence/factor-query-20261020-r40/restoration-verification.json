@@ -1,0 +1,13 @@
+{
+  "adapter_raw_preserved": true,
+  "adapter_sha256": "7559b7ee0d350d1d27a0d8601410572143e29558eace050fc2b7d79480f0f60d",
+  "basis": "One public outcome-document path already fixed in local150source manifest; separate restored bytes match original server size/SHA. No numeric data changed or native replay.",
+  "file": "source-postcheck.json",
+  "known_public_path": "experiments/exp-86-factor-query/OUTCOMES.ko.md",
+  "raw_original_directly_received": false,
+  "restored_original": {
+    "bytes": 7188,
+    "sha256": "c8270ad902690ca37111e341d42fa0402fc0eb901ef6e4af1ceec69c27388d61"
+  },
+  "status": "KNOWN_PUBLIC_PATH_RESTORATION_HASH_VERIFIED"
+}

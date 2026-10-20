@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "1.0.0",
+  "requestId": "CS-R40",
+  "mode": "derive",
+  "objective": "Compare sealed full factor versus joint slice under matched fresh-producer query workloads and end-to-end accounting",
+  "sourceSnapshotDigest": "sha256:d628a817da861b38016fef0c944b0dac2b67aae9e131af41d931ada8214f6b49",
+  "sourceRefs": [
+    {
+      "id": "SRC-CORE",
+      "path": "source/hypothesis.md",
+      "digest": "sha256:d1b735eee8f72c092c847c04e81a34972fa919be906311255faa797e58ec9302"
+    },
+    {
+      "id": "SRC-R32",
+      "path": "source/r35-runtime.py",
+      "digest": "sha256:2ed5316a500a290f7bf5e4ecc54abd72ad8fd54f6b801bd18ee00fca70bbb751"
+    },
+    {
+      "id": "SRC-R19",
+      "path": "source/r19-probe.py",
+      "digest": "sha256:bb0159ba0c50505fc148322e0d0a17d53c184a0bdc7bed21b393120971eb5630"
+    },
+    {
+      "id": "SRC-RESULT",
+      "path": "source/r39-results.md",
+      "digest": "sha256:25c7acf8f6163bec638396c8c5ffa43402dcc05f57f435d267bd955f3e5f5525"
+    },
+    {
+      "id": "SRC-KERNEL",
+      "path": "source/dynamics.py",
+      "digest": "sha256:a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc"
+    },
+    {
+      "id": "SRC-BUDGET",
+      "path": "source/budget.json",
+      "digest": "sha256:1986e9d6b5aa2d7d33c673ab6d6263f66e03cd7b6b535261cee61b7f64f3f8c3"
+    }
+  ],
+  "operationalFacts": [
+    {
+      "id": "FACT-GAP",
+      "statement": "R39retainedjointconditionalZ160/160whileXY/Zmarginals136/160;factor12numericvalues retainsall3binaryrelations andmaytrade8upfronttriplekernelsfor2perconditionalquery. It is larger than8jointvalues,notcompression/minimality.",
+      "evidenceRefs": [
+        "SRC-RESULT"
+      ]
+    },
+    {
+      "id": "FACT-KERNEL",
+      "statement": "Existingnativefieldmembership/3leafAND/OR4/feasible2unchanged. CanonicalpublicXYslotandnumericconsumeronly. Freshquery-freeproduceroneperworkload;3matchedrepetitions/rotatingarmorder/noanswercache.",
+      "evidenceRefs": [
+        "SRC-KERNEL",
+        "SRC-R32",
+        "SRC-R19"
+      ]
+    },
+    {
+      "id": "FACT-BUDGET",
+      "statement": "R39measuredcostsseparatelyscaledto139.532164swork;selected3xsafety/60round gives420stage/480total.85824numeric+24source/13735680maxticks;memorycapsoperatingstopsnotguarantees.",
+      "evidenceRefs": [
+        "SRC-BUDGET"
+      ]
+    }
+  ],
+  "existingContractRef": null
+}

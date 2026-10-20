@@ -1,0 +1,82 @@
+{
+  "arm_records": 1440,
+  "arms": 3,
+  "canonical_cache_bytes": 201326592,
+  "child_address_space_bytes": 536870912,
+  "child_file_bytes": 8388608,
+  "distinct_contexts": 32,
+  "estimates_are_not_statistical_guarantees": true,
+  "learning": 0,
+  "limits_are_operational_stop_boundaries": true,
+  "maximum_native_calls": 85848,
+  "maximum_ticks": 13735680,
+  "maximum_unique_trace_records": 85824,
+  "metric_parts": 15,
+  "numeric_calls": 85824,
+  "parent_address_space_bytes": 536870912,
+  "parent_file_bytes": 136314880,
+  "per_workload_numeric_calls": {
+    "q1": {
+      "native_factor": 7776,
+      "native_joint": 8352
+    },
+    "q2": {
+      "native_factor": 8064,
+      "native_joint": 8448
+    },
+    "q4": {
+      "native_factor": 8640,
+      "native_joint": 8640
+    },
+    "q8": {
+      "native_factor": 9792,
+      "native_joint": 9024
+    },
+    "u1": {
+      "native_factor": 8544,
+      "native_joint": 8544
+    }
+  },
+  "physical_native_calls": 85848,
+  "planning_total_seconds": 142.2318350871238,
+  "planning_work_seconds": 139.5321639601272,
+  "query_outputs": 4608,
+  "raw_bytes": 134217728,
+  "record_encoded_cache_max_bytes": 131072,
+  "repetitions": 3,
+  "retry": 0,
+  "rounding_seconds_policy": 60,
+  "safety_factor_policy": 3,
+  "saved_trace_cache_entries": 18,
+  "scaling_factors": {
+    "exact_queries": 9.6,
+    "numeric_calls": 13.545454545454545,
+    "other_phase": 1,
+    "record_overhead": 15.0,
+    "source": 1
+  },
+  "source_calls": 24,
+  "source_refs": {
+    "analysis.json": {
+      "path": "evidence/z-query-20261020-r39/analysis.json",
+      "sha256": "0c17f9856f674cbd58e608243cc1e8923580e64b6b6049d3412103ea8b577fc0"
+    },
+    "raw/result.json": {
+      "path": "evidence/z-query-20261020-r39/raw/result.json",
+      "sha256": "a114e0d327363b792cf76a41e123536b46e9edc6e7204260e3702fa5d4e21b53"
+    },
+    "receipt-verification.json": {
+      "path": "evidence/z-query-20261020-r39/receipt-verification.json",
+      "sha256": "f50ec15e5881777c239416284470b2954220291ab942a8405d4949acef4ec954"
+    },
+    "server-completion.json": {
+      "path": "evidence/z-query-20261020-r39/server-completion.json",
+      "sha256": "e495f717da61288611633d6beb021c48ca5ce30991f57da650f50c83adcbd4e0"
+    }
+  },
+  "stage_seconds": 420,
+  "total_seconds": 480,
+  "worker": 1,
+  "workloads": 5,
+  "world_measurement": 0
+}

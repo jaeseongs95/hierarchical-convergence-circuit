@@ -1,0 +1,128 @@
+{
+  "acceptanceCriteria": [
+    "[AC-001] R39후속 비중복과제와32맥락/5독립부하/3반복/3arms,canonical공개slot/격리된numeric소비자/결과별판단/전체비용계약을동결하고core·과거변경을보존한다.",
+    "[AC-002] AI Research SSH에서24fresh원천과nativefieldmembership/3leafAND/OR4/feasible2를실제로실행한다. 각부하마다query미수신producer를새로1회봉인하며1440arm기록/4608출력을유지한다. host정답수리/답cache를금지한다.",
+    "[AC-003] full8triple독립oracle와모든역할·membership·triple·query입력·Zeligibility/kind/selected·출처/Program/drive/초기/봉인/물리참조를검산하고3반복/이름·순서불변성과공개경계변조를검사한다.",
+    "[AC-004] 실제85824numeric+24source=85848settle/최대13735680tick,worker1/retry0/단계420초/전체480초와raw/cache/AS상한을지킨다. 모든원자료sizeSHA·source·scalar/controller/cost를검산한다. 품질실패시비용채택금지,학습/세계측정/동결후native재실행0회다.",
+    "[AC-005] 신규세경로만scope/index검증후서명커밋·mainFF·작업branch삭제·같은비공개originpush·동일SHA/clean/병합후bytes를확인한다."
+  ],
+  "authorization": {
+    "allowedActions": [
+      "R40 연구 전용 구현과 결과 문서 작성",
+      "제한된 AI Research SSH 후속 실험",
+      "서명커밋과 로컬 main 병합",
+      "같은 연구 저장소 원격 push"
+    ],
+    "approvalRequired": [],
+    "prohibitedActions": [
+      "기존 core 및 과거 연구 변경",
+      "새 의존성·유료자원·서비스·권한 확대",
+      "외부 peer 메시지 전송"
+    ]
+  },
+  "constraints": [
+    "신규세경로만;기존core/과거결과/user변경보존",
+    "32선택폐쇄2×2×2맥락/initial.5/같은고정회로;큰domain/일반CSP/최소표현/학습/제품속도/운영채택주장금지",
+    "factor는R4/S4/U4총12수치로joint8수치보다작은표현이아님;host는공개canonical정수slot만배선하며원래fact/hash/case/mask/registry를consumer에전달금지",
+    "질의부하마다새producer로prefix비용을실제지불;3고정반복과회전arm순서,동일원천한번의공유비용·공통준비/검산/봉인을명시적으로배분하며가정과실제물리합계를구분",
+    "반복query도매번native실행;저장만fullkernel+Config exactbytes로공유;사후튜닝/native재시도0",
+    "외부peer메시지/새dependency/유료자원/security/globalconfig/service변경없음;사용자기존원격push승인유지",
+    "최신sandbox/network정책준수;실제GPG/네트워크차단시동일기존대상에한정한승인심사escalation가능;거부시사유명시",
+    "숫자raw원본sizeSHA필수;adapter가이미동결한공개metadata경로만가리면원시수신본보존후별도knownpath복원·원본hash일치명시,임의숫자나출처대체금지"
+  ],
+  "decision": {
+    "complexity": "complex",
+    "hasConflicts": false
+  },
+  "objective": "동일 조건부 Z 정보를 보존하는 factor와 joint slice를 비교하고, 질의1/2/4/8회·unary1회별 독립 생산·봉인·질의·저장·검산 총비용과 손익분기를 관측한다",
+  "orchestration": {
+    "mcpAvailable": true,
+    "requested": false
+  },
+  "requiredCapabilities": [
+    "minimal-implementation",
+    "cs-implementation-review",
+    "change-scope-assurance"
+  ],
+  "riskLevel": "medium",
+  "schemaVersion": "1.0.0",
+  "scope": {
+    "excluded": [
+      "src/",
+      "tests/",
+      "tools/r19_cross_level/",
+      "tools/r20_evidence_feedback/",
+      "tools/r21_active_measurement/",
+      "tools/r22_measurement_adoption/",
+      "tools/r23_source_qualification/",
+      "experiments/exp-69-source-qualification/",
+      "evidence/source-qualification-20261019-r23/",
+      "tools/r24_trust_boundary/",
+      "experiments/exp-70-trust-boundary/",
+      "evidence/trust-boundary-20261019-r24/",
+      "tools/r25_fixedpoint_elision/",
+      "experiments/exp-71-fixedpoint-elision/",
+      "evidence/fixedpoint-elision-20261019-r25/",
+      "experiments/exp-72-contraction-warmstart/",
+      "tools/r26_contraction_warmstart/",
+      "evidence/contraction-warmstart-20261019-r26/",
+      "experiments/exp-73-finite-stop-envelope/",
+      "tools/r27_finite_stop_envelope/",
+      "evidence/finite-stop-envelope-20261019-r27/",
+      "experiments/exp-74-reuse-frontier/",
+      "tools/r28_reuse_frontier/",
+      "evidence/reuse-frontier-20261020-r28/",
+      "experiments/exp-75-research-direction/",
+      "tools/r29_research_direction/",
+      "evidence/research-direction-20261020-r29/",
+      "experiments/exp-76-spatial-sharing/",
+      "tools/r30_spatial_sharing/",
+      "evidence/spatial-sharing-20261020-r30/",
+      "experiments/exp-77-macro-control/",
+      "tools/r31_macro_control/",
+      "evidence/macro-control-20261020-r31/",
+      "experiments/exp-78-semantic-join/",
+      "tools/r32_semantic_join/",
+      "evidence/semantic-join-20261020-r32/",
+      "experiments/exp-79-typed-feedback/",
+      "tools/r33_typed_feedback/",
+      "evidence/typed-feedback-20261020-r33/",
+      "experiments/exp-80-feasible-state/",
+      "tools/r34_feasible_state/",
+      "evidence/feasible-state-20261020-r34/",
+      "experiments/exp-81-compositional-slot/",
+      "tools/r35_compositional_slot/",
+      "evidence/compositional-slot-20261020-r35/",
+      "experiments/exp-82-overlap-composition/",
+      "tools/r36_overlap_composition/",
+      "evidence/overlap-composition-20261020-r36/",
+      "experiments/exp-83-joint-tuple/",
+      "tools/r37_joint_tuple/",
+      "evidence/joint-tuple-20261020-r37/",
+      "experiments/exp-84-shared-witness/",
+      "tools/r38_shared_witness/",
+      "evidence/shared-witness-20261020-r38/",
+      "experiments/exp-85-z-query/",
+      "tools/r39_z_query/",
+      "evidence/z-query-20261020-r39/"
+    ],
+    "included": [
+      "experiments/exp-86-factor-query/",
+      "tools/r40_factor_query/",
+      "evidence/factor-query-20261020-r40/"
+    ]
+  },
+  "taskId": "ai-factor-query-r40",
+  "workUnits": [
+    {
+      "dependencies": [],
+      "id": "r40",
+      "objective": "동일 조건부 Z 정보를 보존하는 factor와 joint slice를 비교하고, 질의1/2/4/8회·unary1회별 독립 생산·봉인·질의·저장·검산 총비용과 손익분기를 관측한다",
+      "writeTargets": [
+        "experiments/exp-86-factor-query/",
+        "tools/r40_factor_query/",
+        "evidence/factor-query-20261020-r40/"
+      ]
+    }
+  ]
+}

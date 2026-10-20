@@ -1,0 +1,61 @@
+{
+  "adapter_redaction_detected": true,
+  "adapter_restoration": {
+    "adapter_raw_preserved": true,
+    "adapter_sha256": "7559b7ee0d350d1d27a0d8601410572143e29558eace050fc2b7d79480f0f60d",
+    "basis": "One public outcome-document path already fixed in local150source manifest; separate restored bytes match original server size/SHA. No numeric data changed or native replay.",
+    "file": "source-postcheck.json",
+    "known_public_path": "experiments/exp-86-factor-query/OUTCOMES.ko.md",
+    "raw_original_directly_received": false,
+    "restored_original": {
+      "bytes": 7188,
+      "sha256": "c8270ad902690ca37111e341d42fa0402fc0eb901ef6e4af1ceec69c27388d61"
+    },
+    "status": "KNOWN_PUBLIC_PATH_RESTORATION_HASH_VERIFIED"
+  },
+  "all_native_tick_records_received": true,
+  "archive_received": false,
+  "arm_records_verified": 1440,
+  "independent_auditor": false,
+  "input_pins": 118,
+  "local_native_calls_added": 0,
+  "mutations_rejected": [
+    "revision",
+    "source",
+    "payload",
+    "payload_hash",
+    "seal",
+    "Rmessage",
+    "query_swap",
+    "eligibility",
+    "selected",
+    "prefix_count",
+    "network_ref",
+    "workload"
+  ],
+  "physical_numeric_refs_verified": 85824,
+  "query_outputs_verified": 4608,
+  "raw_json_bytes": 4509966,
+  "raw_manifest_matched_files": 121,
+  "received_json": 123,
+  "restored_original_manifest_entries": 1,
+  "same_channel_hashes_not_host_attestation": true,
+  "scalar_max_absolute_error": 2.7755575615628914e-17,
+  "server_vs_local_counts_exact": true,
+  "source_files": 150,
+  "source_unchanged": true,
+  "sources_verified": 24,
+  "ssh_completeness": "upstream unknown; expectedJSON names/count matched, allnumeric originals and othermetadata directsizeSHA; one known publicmetadata path restored with originalsizeSHA match if declared;manifest outside ownhash",
+  "status": "PASS",
+  "tolerance": 1e-14,
+  "transport_failures": [],
+  "unique_traces_losslessly_expanded": 82,
+  "unreceived_empty_logs": [
+    "audit.stderr",
+    "audit.stdout",
+    "preparation.stderr",
+    "preparation.stdout",
+    "work.stderr",
+    "work.stdout"
+  ]
+}
