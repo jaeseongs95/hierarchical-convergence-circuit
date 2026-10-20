@@ -1,0 +1,26 @@
+{
+  "files": [
+    {
+      "digest": "sha256:a5ac706c50a96141b3a42b5dd050786e722fffc48b83b34d7176cb7fdbd4b519",
+      "path": "candidate/__init__.py"
+    },
+    {
+      "digest": "sha256:eca48e5d5def2abfcc4177b56ea0f95449800c21f421017e0d45f4ce59120ea2",
+      "path": "candidate/bootstrap.py"
+    },
+    {
+      "digest": "sha256:38d5127b38e3a8a0e436f4e2fb56e24d02d31df69ffab11c1f82595a359ef4c5",
+      "path": "candidate/probe.py"
+    },
+    {
+      "digest": "sha256:22363b37b97e65bd1fdd0bebd4fc8db6718f01ec2e5dbd21a6150beb7547f29f",
+      "path": "candidate/runtime.py"
+    },
+    {
+      "digest": "sha256:c578b29dcf7bc86f5e9a561ece20e3a0c51eb3ddb4aaaa0a3d166404e3e2a4a6",
+      "path": "candidate/verify.py"
+    }
+  ],
+  "schemaVersion": "1.0.0",
+  "scopeSummary": "Five isolated R32 files:8actual native primitive lower sources; authored18group upper role-equality join via unchanged common kernel, scalar drive erasure and information-matched ordinary join;12queries x3arms, separate saved scalar/semantic/proof/count audit. No raw lower edges in upper consumer, learned compiler or native upper primitive proof claim."
+}

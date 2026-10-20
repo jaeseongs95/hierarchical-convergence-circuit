@@ -1,0 +1,137 @@
+{
+  "schemaVersion": "1.0.0",
+  "reportId": "CS-R32-CONSTRAINTS",
+  "requestDigest": "sha256:0cc3e80b7181860635b005d2f38b4f60938c2fe17ccd1689ef9b8df40979f533",
+  "sourceSnapshotDigest": "sha256:c731c1b374b58102d9eb50d90a1dd9527b4b881b33f408a05f8a4a38cd95cfbe",
+  "knowledgePackVersion": "0.1.0",
+  "knowledgePackDigest": "sha256:d8351d9aabb433403830fcffc3a2f2438b6d428711c93b6ded9eff002468c3d1",
+  "draftUse": {
+    "allowed": false,
+    "basis": "Validated binding and performance cards"
+  },
+  "applicability": "applicable",
+  "applicabilityReason": "A new semantic representation must be consumed by actual native operations and independently checked.",
+  "selectedRules": [
+    {
+      "ruleId": "ALG-KEY-004",
+      "ruleDigest": "sha256:db77383ecb5f41ef3af5cb60769edaea507cac5cb25e28b88f249e84a062ba2e",
+      "applicabilityReason": "Bind predicate, roles, source revision/confidence/proof to actual native lower record; preserve meaning when replacing raw graph with imported facts."
+    },
+    {
+      "ruleId": "PERF-MEASURE-001",
+      "ruleDigest": "sha256:ef11800e55663f1b719f62d3f812280fd6e56c6895eef3028b9db344a9d0a355",
+      "applicabilityReason": "Match information in conventional baseline, expose representation and shared-source costs; fixed actual use counts only."
+    }
+  ],
+  "facts": [
+    {
+      "id": "FACT-GAP",
+      "statement": "R19 upper uses scalar confidence/context; EXP27 typed relation/proof carry still executes complete native raw B graph. R31 requires actual upper role consumption and information-matched ordinary control.",
+      "evidenceRefs": [
+        "SRC-R31",
+        "SRC-EXP27",
+        "SRC-R19"
+      ]
+    },
+    {
+      "id": "FACT-PRIMITIVE",
+      "statement": "Same native synchronous tick/settle supports authored signed support/top_down AND/OR graphs with32group bound. Program metadata alone is not proof of rich semantic validity. No automatic A2 semantic compiler or learner claimed.",
+      "evidenceRefs": [
+        "SRC-KERNEL",
+        "SRC-MODEL",
+        "SRC-CORE",
+        "SRC-EXP5"
+      ]
+    }
+  ],
+  "assumptions": [],
+  "invariants": [
+    {
+      "id": "INV-BINDING",
+      "statement": "Eight actual positive native lower path proofs export typed predicate/subject/object/confidence with source and proof digests. Upper receives only packet fields and query vocabulary, never raw lower edges. Encoding is independent per symbol field, no cross-field equality/join/output calculation; native signed AND/OR graph computes3equalities and2premises. Packet validation checks provenance only. Actual role counterexamples are valid packets, not corruption tests.",
+      "scope": "R32 eight lower sources and twelve compositions xthree arms",
+      "basisRefs": [
+        "FACT-GAP",
+        "FACT-PRIMITIVE"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-SEMANTICS",
+      "statement": "Freeze12valid relation compositions in2namespaces; typed and scalar-erased share one authored18group Program and unchanged kernel. Scalar arm erases4fact-role values only, preserves query and confidences; general join has same rich information as typed arm. No training or fitted vocabulary; independently verify source primitive proofs, native scalar/controller/counts, actual role encoding, typed proof and expected truth. Preserve failure/abstention and distinguish handcrafted bounded sufficiency from learned/general/unique primitive claims.",
+      "scope": "R32 eight lower sources and twelve compositions xthree arms",
+      "basisRefs": [
+        "FACT-GAP",
+        "FACT-PRIMITIVE"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-COST",
+      "statement": "8lower+12typed+12scalar<=32settles5120ticks,36upperquestions including12ordinary joins with0uppernativecalls;600s/stage60s/worker1/retry0/learning0/World.measure0. Measure process costs including source materialization, validation/encoding/query and serialization; charge each actual used lower source once to each arm at real prefixesK1..12, not as independent repeated data. Preparation/audit/seal/host separate. No statistical timing or future amortization.",
+      "scope": "R32 eight lower sources and twelve compositions xthree arms",
+      "basisRefs": [
+        "FACT-GAP",
+        "FACT-PRIMITIVE"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "PERF-MEASURE-001"
+      ]
+    }
+  ],
+  "designChoices": [
+    {
+      "id": "CHOICE-MINIMAL",
+      "statement": "Reuse native lower primitive path and common settle; freeze one signed18group upper Program, fieldwise bipolar two-symbol encoder, and ordinary relational join. No core changes, services or new dependency.",
+      "rationale": "Directly tests role composition without a symbolic answer adapter or new general runtime.",
+      "basisRefs": [
+        "FACT-GAP",
+        "FACT-PRIMITIVE"
+      ]
+    }
+  ],
+  "verificationObligations": [
+    {
+      "id": "OB-BINDING",
+      "invariantIds": [
+        "INV-BINDING"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Forged source/role/revision/confidence/proof accepted, raw graph or answer leaks to upper, or semantic join computed in typed adapter.",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-SEMANTICS",
+      "invariantIds": [
+        "INV-SEMANTICS"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Answer repair, invalid semantic proof adopted, scalar information loss described as fair algorithm superiority, conventional success hidden, or generated grammar described as learned.",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-COST",
+      "invariantIds": [
+        "INV-COST"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Extra calls/retries or limits exceeded, hidden shared source cost, native counters conflated with interpreter operations, or timing/learning/generalization superiority without evidence.",
+      "requirementLevel": "required"
+    }
+  ],
+  "requiredCapabilities": [
+    "cs-constraint-derivation",
+    "cs-implementation-review"
+  ],
+  "verdict": "READY"
+}

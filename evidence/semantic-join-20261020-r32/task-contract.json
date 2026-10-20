@@ -1,0 +1,102 @@
+{
+  "acceptanceCriteria": [
+    "[AC-001] R31 후속 의미 소비 계약과 EXP27/R19 비중복을 고정한다. 상위는 하위 raw edge를 읽지 않고 인코더는 필드별 symbol 변환만 하며 결합 정답을 계산하지 않는다.",
+    "[AC-002] 실제 하위 native8원천의 같은 신뢰도/다른 역할 packet으로 고정12상위 질문을 typed 공통 kernel·역할소거·일반 검증 join 3군에서 비교하고 source/역할/proof 결속과 실패를 보존한다.",
+    "[AC-003] hand-authored 표현·연산·입력 정보량 차이, 의미 정답/논증·abstention·실제32settles 상한 및 원천 계산/검증/인코딩/직렬화 포함 실제K1..12 비용을 구분하며 학습/통계속도/일반화 우위는 주장하지 않는다.",
+    "[AC-004] AI Research SSH600초/단계60초/worker1/retry0/학습0/세계측정0/최대32settles5120ticks, 별도 scalar/controller/의미·논증·비용 검산과 표적 변조로 실제 소수 실험을 확인한다.",
+    "[AC-005] core·과거 연구·user 변경을 보존하고 범위/staged bytes 확인 뒤 서명커밋·main 병합·동일 private remote push한다."
+  ],
+  "authorization": {
+    "allowedActions": [
+      "R32 연구 전용 구현과 결과 문서 작성",
+      "제한된 AI Research SSH 후속 실험",
+      "서명커밋과 로컬 main 병합",
+      "같은 연구 저장소 원격 push"
+    ],
+    "approvalRequired": [],
+    "prohibitedActions": [
+      "기존 core 및 과거 연구 변경",
+      "새 의존성·유료자원·서비스·권한 확대",
+      "외부 peer 메시지 전송"
+    ]
+  },
+  "constraints": [
+    "core와 과거 연구 불변; 새 후보는 실험 전용 도구에 격리",
+    "AI Research SSH 전체600초/단계60초/worker1/retry0",
+    "결과 후 입력/판정/반복 수를 조정하지 않음",
+    "가설·구현·관측·일반화와 학습/준비 포함 총비용 분리",
+    "새 의존성/유료자원/외부 peer 메시지 없음",
+    "8lower source native+12typed+12scalar=최대32settles/5120ticks, 일반join12는추가native0; 총36질문평가/학습0/세계측정0; 새의미표현은수작업·고정 toy 범위"
+  ],
+  "decision": {
+    "complexity": "complex",
+    "hasConflicts": false
+  },
+  "objective": "같은 신뢰도의 하위 관계 역할이 상위 native 관계 결합에서 실제 소비되는지 scalar 소거/정보동일 일반 join과 고정 반례로 비교",
+  "orchestration": {
+    "mcpAvailable": true,
+    "requested": false
+  },
+  "requiredCapabilities": [
+    "minimal-implementation",
+    "cs-implementation-review",
+    "change-scope-assurance"
+  ],
+  "riskLevel": "medium",
+  "schemaVersion": "1.0.0",
+  "scope": {
+    "excluded": [
+      "src/",
+      "tests/",
+      "tools/r19_cross_level/",
+      "tools/r20_evidence_feedback/",
+      "tools/r21_active_measurement/",
+      "tools/r22_measurement_adoption/",
+      "tools/r23_source_qualification/",
+      "experiments/exp-69-source-qualification/",
+      "evidence/source-qualification-20261019-r23/",
+      "tools/r24_trust_boundary/",
+      "experiments/exp-70-trust-boundary/",
+      "evidence/trust-boundary-20261019-r24/",
+      "tools/r25_fixedpoint_elision/",
+      "experiments/exp-71-fixedpoint-elision/",
+      "evidence/fixedpoint-elision-20261019-r25/",
+      "experiments/exp-72-contraction-warmstart/",
+      "tools/r26_contraction_warmstart/",
+      "evidence/contraction-warmstart-20261019-r26/",
+      "experiments/exp-73-finite-stop-envelope/",
+      "tools/r27_finite_stop_envelope/",
+      "evidence/finite-stop-envelope-20261019-r27/",
+      "experiments/exp-74-reuse-frontier/",
+      "tools/r28_reuse_frontier/",
+      "evidence/reuse-frontier-20261020-r28/",
+      "experiments/exp-75-research-direction/",
+      "tools/r29_research_direction/",
+      "evidence/research-direction-20261020-r29/",
+      "experiments/exp-76-spatial-sharing/",
+      "tools/r30_spatial_sharing/",
+      "evidence/spatial-sharing-20261020-r30/",
+      "experiments/exp-77-macro-control/",
+      "tools/r31_macro_control/",
+      "evidence/macro-control-20261020-r31/"
+    ],
+    "included": [
+      "experiments/exp-78-semantic-join/",
+      "tools/r32_semantic_join/",
+      "evidence/semantic-join-20261020-r32/"
+    ]
+  },
+  "taskId": "ai-semantic-join-r32",
+  "workUnits": [
+    {
+      "dependencies": [],
+      "id": "r32",
+      "objective": "같은 신뢰도의 하위 관계 역할이 상위 native 관계 결합에서 실제 소비되는지 scalar 소거/정보동일 일반 join과 고정 반례로 비교",
+      "writeTargets": [
+        "experiments/exp-78-semantic-join/",
+        "tools/r32_semantic_join/",
+        "evidence/semantic-join-20261020-r32/"
+      ]
+    }
+  ]
+}

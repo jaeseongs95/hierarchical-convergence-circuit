@@ -1,0 +1,3401 @@
+{
+  "all_sources_same_confidence": true,
+  "all_stage_child_cpu_seconds": 6.495501000000001,
+  "audit_stage": {
+    "child_cpu_seconds": 0.28894300000000006,
+    "item": "",
+    "phase": "audit",
+    "raw_bytes": 863534,
+    "returncode": 0,
+    "wall_seconds": 0.31781290701474063
+  },
+  "completion": {
+    "completed": true,
+    "evidence_bytes": 244204,
+    "evidence_sha256": "8a71c6180c1f62de6fdaa9baf152403dad8bd980cf00706bd0f9d51bfb5844c3",
+    "seconds_including_seal": 8.028515759011498,
+    "within_600_seconds": true
+  },
+  "conflicting_truth_collisions": [
+    {
+      "cases": [
+        "n0_positive_reverse",
+        "n0_bad_both",
+        "n1_positive_reverse",
+        "n1_bad_both"
+      ],
+      "scalar_value": false,
+      "truths": {
+        "n0_bad_both": false,
+        "n0_positive_reverse": true,
+        "n1_bad_both": false,
+        "n1_positive_reverse": true
+      }
+    }
+  ],
+  "lower": [
+    {
+      "confidence": 0.9877449513800958,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 5,
+        "dynamic_links_created": 8,
+        "group_updates": 165,
+        "kernel_ticks": 33,
+        "memory_write_items": 0,
+        "normalization_ops": 165,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 4,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 264,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "src0_R0",
+      "numeric_replay_max_absolute_error": 0.0,
+      "strict_correct": true,
+      "ticks": 33
+    },
+    {
+      "confidence": 0.9877449513800958,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 5,
+        "dynamic_links_created": 8,
+        "group_updates": 165,
+        "kernel_ticks": 33,
+        "memory_write_items": 0,
+        "normalization_ops": 165,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 4,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 264,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "src0_R1",
+      "numeric_replay_max_absolute_error": 0.0,
+      "strict_correct": true,
+      "ticks": 33
+    },
+    {
+      "confidence": 0.9877449513800958,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 5,
+        "dynamic_links_created": 8,
+        "group_updates": 165,
+        "kernel_ticks": 33,
+        "memory_write_items": 0,
+        "normalization_ops": 165,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 4,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 264,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "src0_S0",
+      "numeric_replay_max_absolute_error": 0.0,
+      "strict_correct": true,
+      "ticks": 33
+    },
+    {
+      "confidence": 0.9877449513800958,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 5,
+        "dynamic_links_created": 8,
+        "group_updates": 165,
+        "kernel_ticks": 33,
+        "memory_write_items": 0,
+        "normalization_ops": 165,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 4,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 264,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "src0_S1",
+      "numeric_replay_max_absolute_error": 0.0,
+      "strict_correct": true,
+      "ticks": 33
+    },
+    {
+      "confidence": 0.9877449513800958,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 5,
+        "dynamic_links_created": 8,
+        "group_updates": 165,
+        "kernel_ticks": 33,
+        "memory_write_items": 0,
+        "normalization_ops": 165,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 4,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 264,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "src1_R0",
+      "numeric_replay_max_absolute_error": 0.0,
+      "strict_correct": true,
+      "ticks": 33
+    },
+    {
+      "confidence": 0.9877449513800958,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 5,
+        "dynamic_links_created": 8,
+        "group_updates": 165,
+        "kernel_ticks": 33,
+        "memory_write_items": 0,
+        "normalization_ops": 165,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 4,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 264,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "src1_R1",
+      "numeric_replay_max_absolute_error": 0.0,
+      "strict_correct": true,
+      "ticks": 33
+    },
+    {
+      "confidence": 0.9877449513800958,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 5,
+        "dynamic_links_created": 8,
+        "group_updates": 165,
+        "kernel_ticks": 33,
+        "memory_write_items": 0,
+        "normalization_ops": 165,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 4,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 264,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "src1_S0",
+      "numeric_replay_max_absolute_error": 0.0,
+      "strict_correct": true,
+      "ticks": 33
+    },
+    {
+      "confidence": 0.9877449513800958,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 5,
+        "dynamic_links_created": 8,
+        "group_updates": 165,
+        "kernel_ticks": 33,
+        "memory_write_items": 0,
+        "normalization_ops": 165,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 4,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 264,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "src1_S1",
+      "numeric_replay_max_absolute_error": 0.0,
+      "strict_correct": true,
+      "ticks": 33
+    }
+  ],
+  "numeric_replay_max_absolute_error": 1.6940658945086007e-21,
+  "physical_kernel_ticks": 1214,
+  "physical_native_settle_calls": 32,
+  "prefix_costs": [
+    {
+      "actual_query_uses": 1,
+      "arm": "typed",
+      "dependency_attributed_cpu_seconds": 0.4255920000000001,
+      "dependency_attributed_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 28,
+        "dynamic_links_created": 62,
+        "group_updates": 978,
+        "kernel_ticks": 102,
+        "memory_write_items": 0,
+        "normalization_ops": 978,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 8,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 2184,
+        "verification_checks": 0
+      },
+      "dependency_attributed_wall_seconds": 0.49887499603210017,
+      "eager_all8_source_cpu_seconds": 1.295559,
+      "eager_all8_source_wall_seconds": 1.4967010990076233,
+      "strict_correct": 1,
+      "used_lower_sources": [
+        "src0_R0",
+        "src0_S1"
+      ]
+    },
+    {
+      "actual_query_uses": 2,
+      "arm": "typed",
+      "dependency_attributed_cpu_seconds": 0.8502659999999997,
+      "dependency_attributed_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 56,
+        "dynamic_links_created": 124,
+        "group_updates": 1956,
+        "kernel_ticks": 204,
+        "memory_write_items": 0,
+        "normalization_ops": 1956,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 16,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 4368,
+        "verification_checks": 0
+      },
+      "dependency_attributed_wall_seconds": 0.9978712520096451,
+      "eager_all8_source_cpu_seconds": 1.4322369999999995,
+      "eager_all8_source_wall_seconds": 1.6632269720139448,
+      "strict_correct": 2,
+      "used_lower_sources": [
+        "src0_R0",
+        "src0_R1",
+        "src0_S0",
+        "src0_S1"
+      ]
+    },
+    {
+      "actual_query_uses": 3,
+      "arm": "typed",
+      "dependency_attributed_cpu_seconds": 0.9920140000000002,
+      "dependency_attributed_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 74,
+        "dynamic_links_created": 170,
+        "group_updates": 2532,
+        "kernel_ticks": 236,
+        "memory_write_items": 0,
+        "normalization_ops": 2532,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 16,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 5840,
+        "verification_checks": 0
+      },
+      "dependency_attributed_wall_seconds": 1.1646846990042832,
+      "eager_all8_source_cpu_seconds": 1.573985,
+      "eager_all8_source_wall_seconds": 1.8300404190085828,
+      "strict_correct": 3,
+      "used_lower_sources": [
+        "src0_R0",
+        "src0_R1",
+        "src0_S0",
+        "src0_S1"
+      ]
+    },
+    {
+      "actual_query_uses": 4,
+      "arm": "typed",
+      "dependency_attributed_cpu_seconds": 1.128781,
+      "dependency_attributed_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 92,
+        "dynamic_links_created": 216,
+        "group_updates": 3108,
+        "kernel_ticks": 268,
+        "memory_write_items": 0,
+        "normalization_ops": 3108,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 16,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 7312,
+        "verification_checks": 0
+      },
+      "dependency_attributed_wall_seconds": 1.3312886400090065,
+      "eager_all8_source_cpu_seconds": 1.710752,
+      "eager_all8_source_wall_seconds": 1.9966443600133061,
+      "strict_correct": 4,
+      "used_lower_sources": [
+        "src0_R0",
+        "src0_R1",
+        "src0_S0",
+        "src0_S1"
+      ]
+    },
+    {
+      "actual_query_uses": 5,
+      "arm": "typed",
+      "dependency_attributed_cpu_seconds": 1.265111,
+      "dependency_attributed_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 110,
+        "dynamic_links_created": 262,
+        "group_updates": 3684,
+        "kernel_ticks": 300,
+        "memory_write_items": 0,
+        "normalization_ops": 3684,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 16,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 8784,
+        "verification_checks": 0
+      },
+      "dependency_attributed_wall_seconds": 1.498180772032356,
+      "eager_all8_source_cpu_seconds": 1.847082,
+      "eager_all8_source_wall_seconds": 2.1635364920366555,
+      "strict_correct": 5,
+      "used_lower_sources": [
+        "src0_R0",
+        "src0_R1",
+        "src0_S0",
+        "src0_S1"
+      ]
+    },
+    {
+      "actual_query_uses": 6,
+      "arm": "typed",
+      "dependency_attributed_cpu_seconds": 1.4007059999999998,
+      "dependency_attributed_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 128,
+        "dynamic_links_created": 308,
+        "group_updates": 4242,
+        "kernel_ticks": 331,
+        "memory_write_items": 0,
+        "normalization_ops": 4242,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 16,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 10210,
+        "verification_checks": 0
+      },
+      "dependency_attributed_wall_seconds": 1.664998677035328,
+      "eager_all8_source_cpu_seconds": 1.9826769999999996,
+      "eager_all8_source_wall_seconds": 2.3303543970396277,
+      "strict_correct": 6,
+      "used_lower_sources": [
+        "src0_R0",
+        "src0_R1",
+        "src0_S0",
+        "src0_S1"
+      ]
+    },
+    {
+      "actual_query_uses": 7,
+      "arm": "typed",
+      "dependency_attributed_cpu_seconds": 1.8277519999999992,
+      "dependency_attributed_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 156,
+        "dynamic_links_created": 370,
+        "group_updates": 5220,
+        "kernel_ticks": 433,
+        "memory_write_items": 0,
+        "normalization_ops": 5220,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 24,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 12394,
+        "verification_checks": 0
+      },
+      "dependency_attributed_wall_seconds": 2.16449167006067,
+      "eager_all8_source_cpu_seconds": 2.119187999999999,
+      "eager_all8_source_wall_seconds": 2.497201311052777,
+      "strict_correct": 7,
+      "used_lower_sources": [
+        "src0_R0",
+        "src0_R1",
+        "src0_S0",
+        "src0_S1",
+        "src1_R0",
+        "src1_S1"
+      ]
+    },
+    {
+      "actual_query_uses": 8,
+      "arm": "typed",
+      "dependency_attributed_cpu_seconds": 2.256559999999998,
+      "dependency_attributed_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 184,
+        "dynamic_links_created": 432,
+        "group_updates": 6198,
+        "kernel_ticks": 535,
+        "memory_write_items": 0,
+        "normalization_ops": 6198,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 32,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 14578,
+        "verification_checks": 0
+      },
+      "dependency_attributed_wall_seconds": 2.6642547690426,
+      "eager_all8_source_cpu_seconds": 2.256559999999998,
+      "eager_all8_source_wall_seconds": 2.6642547690426,
+      "strict_correct": 8,
+      "used_lower_sources": [
+        "src0_R0",
+        "src0_R1",
+        "src0_S0",
+        "src0_S1",
+        "src1_R0",
+        "src1_R1",
+        "src1_S0",
+        "src1_S1"
+      ]
+    },
+    {
+      "actual_query_uses": 9,
+      "arm": "typed",
+      "dependency_attributed_cpu_seconds": 2.394304999999999,
+      "dependency_attributed_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 202,
+        "dynamic_links_created": 478,
+        "group_updates": 6774,
+        "kernel_ticks": 567,
+        "memory_write_items": 0,
+        "normalization_ops": 6774,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 32,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 16050,
+        "verification_checks": 0
+      },
+      "dependency_attributed_wall_seconds": 2.83132228103932,
+      "eager_all8_source_cpu_seconds": 2.394304999999999,
+      "eager_all8_source_wall_seconds": 2.83132228103932,
+      "strict_correct": 9,
+      "used_lower_sources": [
+        "src0_R0",
+        "src0_R1",
+        "src0_S0",
+        "src0_S1",
+        "src1_R0",
+        "src1_R1",
+        "src1_S0",
+        "src1_S1"
+      ]
+    },
+    {
+      "actual_query_uses": 10,
+      "arm": "typed",
+      "dependency_attributed_cpu_seconds": 2.533747999999999,
+      "dependency_attributed_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 220,
+        "dynamic_links_created": 524,
+        "group_updates": 7350,
+        "kernel_ticks": 599,
+        "memory_write_items": 0,
+        "normalization_ops": 7350,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 32,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 17522,
+        "verification_checks": 0
+      },
+      "dependency_attributed_wall_seconds": 2.9985494640422985,
+      "eager_all8_source_cpu_seconds": 2.533747999999999,
+      "eager_all8_source_wall_seconds": 2.9985494640422985,
+      "strict_correct": 10,
+      "used_lower_sources": [
+        "src0_R0",
+        "src0_R1",
+        "src0_S0",
+        "src0_S1",
+        "src1_R0",
+        "src1_R1",
+        "src1_S0",
+        "src1_S1"
+      ]
+    },
+    {
+      "actual_query_uses": 11,
+      "arm": "typed",
+      "dependency_attributed_cpu_seconds": 2.6701549999999994,
+      "dependency_attributed_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 238,
+        "dynamic_links_created": 570,
+        "group_updates": 7926,
+        "kernel_ticks": 631,
+        "memory_write_items": 0,
+        "normalization_ops": 7926,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 32,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 18994,
+        "verification_checks": 0
+      },
+      "dependency_attributed_wall_seconds": 3.1658422180335037,
+      "eager_all8_source_cpu_seconds": 2.6701549999999994,
+      "eager_all8_source_wall_seconds": 3.1658422180335037,
+      "strict_correct": 11,
+      "used_lower_sources": [
+        "src0_R0",
+        "src0_R1",
+        "src0_S0",
+        "src0_S1",
+        "src1_R0",
+        "src1_R1",
+        "src1_S0",
+        "src1_S1"
+      ]
+    },
+    {
+      "actual_query_uses": 12,
+      "arm": "typed",
+      "dependency_attributed_cpu_seconds": 2.806801999999999,
+      "dependency_attributed_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 256,
+        "dynamic_links_created": 616,
+        "group_updates": 8484,
+        "kernel_ticks": 662,
+        "memory_write_items": 0,
+        "normalization_ops": 8484,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 32,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 20420,
+        "verification_checks": 0
+      },
+      "dependency_attributed_wall_seconds": 3.333214653044706,
+      "eager_all8_source_cpu_seconds": 2.806801999999999,
+      "eager_all8_source_wall_seconds": 3.333214653044706,
+      "strict_correct": 12,
+      "used_lower_sources": [
+        "src0_R0",
+        "src0_R1",
+        "src0_S0",
+        "src0_S1",
+        "src1_R0",
+        "src1_R1",
+        "src1_S0",
+        "src1_S1"
+      ]
+    },
+    {
+      "actual_query_uses": 1,
+      "arm": "scalar_erased",
+      "dependency_attributed_cpu_seconds": 0.42710399999999993,
+      "dependency_attributed_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 28,
+        "dynamic_links_created": 62,
+        "group_updates": 1158,
+        "kernel_ticks": 112,
+        "memory_write_items": 0,
+        "normalization_ops": 1158,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 8,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 2644,
+        "verification_checks": 0
+      },
+      "dependency_attributed_wall_seconds": 0.4989501190138981,
+      "eager_all8_source_cpu_seconds": 1.2970709999999999,
+      "eager_all8_source_wall_seconds": 1.4967762219894212,
+      "strict_correct": 0,
+      "used_lower_sources": [
+        "src0_R0",
+        "src0_S1"
+      ]
+    },
+    {
+      "actual_query_uses": 2,
+      "arm": "scalar_erased",
+      "dependency_attributed_cpu_seconds": 0.8529240000000002,
+      "dependency_attributed_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 56,
+        "dynamic_links_created": 124,
+        "group_updates": 2316,
+        "kernel_ticks": 224,
+        "memory_write_items": 0,
+        "normalization_ops": 2316,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 16,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 5288,
+        "verification_checks": 0
+      },
+      "dependency_attributed_wall_seconds": 0.9978853349748533,
+      "eager_all8_source_cpu_seconds": 1.434895,
+      "eager_all8_source_wall_seconds": 1.663241054979153,
+      "strict_correct": 0,
+      "used_lower_sources": [
+        "src0_R0",
+        "src0_R1",
+        "src0_S0",
+        "src0_S1"
+      ]
+    },
+    {
+      "actual_query_uses": 3,
+      "arm": "scalar_erased",
+      "dependency_attributed_cpu_seconds": 0.9911250000000005,
+      "dependency_attributed_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 74,
+        "dynamic_links_created": 170,
+        "group_updates": 3144,
+        "kernel_ticks": 270,
+        "memory_write_items": 0,
+        "normalization_ops": 3144,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 16,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 7404,
+        "verification_checks": 0
+      },
+      "dependency_attributed_wall_seconds": 1.1645401289570145,
+      "eager_all8_source_cpu_seconds": 1.5730960000000003,
+      "eager_all8_source_wall_seconds": 1.8298958489613142,
+      "strict_correct": 1,
+      "used_lower_sources": [
+        "src0_R0",
+        "src0_R1",
+        "src0_S0",
+        "src0_S1"
+      ]
+    },
+    {
+      "actual_query_uses": 4,
+      "arm": "scalar_erased",
+      "dependency_attributed_cpu_seconds": 1.1282920000000005,
+      "dependency_attributed_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 92,
+        "dynamic_links_created": 216,
+        "group_updates": 3972,
+        "kernel_ticks": 316,
+        "memory_write_items": 0,
+        "normalization_ops": 3972,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 16,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 9520,
+        "verification_checks": 0
+      },
+      "dependency_attributed_wall_seconds": 1.331194935948588,
+      "eager_all8_source_cpu_seconds": 1.7102630000000003,
+      "eager_all8_source_wall_seconds": 1.9965506559528876,
+      "strict_correct": 2,
+      "used_lower_sources": [
+        "src0_R0",
+        "src0_R1",
+        "src0_S0",
+        "src0_S1"
+      ]
+    },
+    {
+      "actual_query_uses": 5,
+      "arm": "scalar_erased",
+      "dependency_attributed_cpu_seconds": 1.2653290000000004,
+      "dependency_attributed_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 110,
+        "dynamic_links_created": 262,
+        "group_updates": 4800,
+        "kernel_ticks": 362,
+        "memory_write_items": 0,
+        "normalization_ops": 4800,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 16,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 11636,
+        "verification_checks": 0
+      },
+      "dependency_attributed_wall_seconds": 1.497944367933087,
+      "eager_all8_source_cpu_seconds": 1.8473000000000002,
+      "eager_all8_source_wall_seconds": 2.1633000879373867,
+      "strict_correct": 3,
+      "used_lower_sources": [
+        "src0_R0",
+        "src0_R1",
+        "src0_S0",
+        "src0_S1"
+      ]
+    },
+    {
+      "actual_query_uses": 6,
+      "arm": "scalar_erased",
+      "dependency_attributed_cpu_seconds": 1.4022660000000007,
+      "dependency_attributed_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 128,
+        "dynamic_links_created": 308,
+        "group_updates": 5628,
+        "kernel_ticks": 408,
+        "memory_write_items": 0,
+        "normalization_ops": 5628,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 16,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 13752,
+        "verification_checks": 0
+      },
+      "dependency_attributed_wall_seconds": 1.6647067979210988,
+      "eager_all8_source_cpu_seconds": 1.9842370000000005,
+      "eager_all8_source_wall_seconds": 2.3300625179253984,
+      "strict_correct": 4,
+      "used_lower_sources": [
+        "src0_R0",
+        "src0_R1",
+        "src0_S0",
+        "src0_S1"
+      ]
+    },
+    {
+      "actual_query_uses": 7,
+      "arm": "scalar_erased",
+      "dependency_attributed_cpu_seconds": 1.829866,
+      "dependency_attributed_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 156,
+        "dynamic_links_created": 370,
+        "group_updates": 6786,
+        "kernel_ticks": 520,
+        "memory_write_items": 0,
+        "normalization_ops": 6786,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 24,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 16396,
+        "verification_checks": 0
+      },
+      "dependency_attributed_wall_seconds": 2.164197446923936,
+      "eager_all8_source_cpu_seconds": 2.121302,
+      "eager_all8_source_wall_seconds": 2.4969070879160427,
+      "strict_correct": 4,
+      "used_lower_sources": [
+        "src0_R0",
+        "src0_R1",
+        "src0_S0",
+        "src0_S1",
+        "src1_R0",
+        "src1_S1"
+      ]
+    },
+    {
+      "actual_query_uses": 8,
+      "arm": "scalar_erased",
+      "dependency_attributed_cpu_seconds": 2.2609440000000003,
+      "dependency_attributed_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 184,
+        "dynamic_links_created": 432,
+        "group_updates": 7944,
+        "kernel_ticks": 632,
+        "memory_write_items": 0,
+        "normalization_ops": 7944,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 32,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 19040,
+        "verification_checks": 0
+      },
+      "dependency_attributed_wall_seconds": 2.6639810508931987,
+      "eager_all8_source_cpu_seconds": 2.2609440000000003,
+      "eager_all8_source_wall_seconds": 2.6639810508931987,
+      "strict_correct": 4,
+      "used_lower_sources": [
+        "src0_R0",
+        "src0_R1",
+        "src0_S0",
+        "src0_S1",
+        "src1_R0",
+        "src1_R1",
+        "src1_S0",
+        "src1_S1"
+      ]
+    },
+    {
+      "actual_query_uses": 9,
+      "arm": "scalar_erased",
+      "dependency_attributed_cpu_seconds": 2.3989740000000004,
+      "dependency_attributed_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 202,
+        "dynamic_links_created": 478,
+        "group_updates": 8772,
+        "kernel_ticks": 678,
+        "memory_write_items": 0,
+        "normalization_ops": 8772,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 32,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 21156,
+        "verification_checks": 0
+      },
+      "dependency_attributed_wall_seconds": 2.8311077058897354,
+      "eager_all8_source_cpu_seconds": 2.3989740000000004,
+      "eager_all8_source_wall_seconds": 2.8311077058897354,
+      "strict_correct": 5,
+      "used_lower_sources": [
+        "src0_R0",
+        "src0_R1",
+        "src0_S0",
+        "src0_S1",
+        "src1_R0",
+        "src1_R1",
+        "src1_S0",
+        "src1_S1"
+      ]
+    },
+    {
+      "actual_query_uses": 10,
+      "arm": "scalar_erased",
+      "dependency_attributed_cpu_seconds": 2.5415140000000003,
+      "dependency_attributed_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 220,
+        "dynamic_links_created": 524,
+        "group_updates": 9600,
+        "kernel_ticks": 724,
+        "memory_write_items": 0,
+        "normalization_ops": 9600,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 32,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 23272,
+        "verification_checks": 0
+      },
+      "dependency_attributed_wall_seconds": 2.9984307178820018,
+      "eager_all8_source_cpu_seconds": 2.5415140000000003,
+      "eager_all8_source_wall_seconds": 2.9984307178820018,
+      "strict_correct": 6,
+      "used_lower_sources": [
+        "src0_R0",
+        "src0_R1",
+        "src0_S0",
+        "src0_S1",
+        "src1_R0",
+        "src1_R1",
+        "src1_S0",
+        "src1_S1"
+      ]
+    },
+    {
+      "actual_query_uses": 11,
+      "arm": "scalar_erased",
+      "dependency_attributed_cpu_seconds": 2.684546,
+      "dependency_attributed_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 238,
+        "dynamic_links_created": 570,
+        "group_updates": 10428,
+        "kernel_ticks": 770,
+        "memory_write_items": 0,
+        "normalization_ops": 10428,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 32,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 25388,
+        "verification_checks": 0
+      },
+      "dependency_attributed_wall_seconds": 3.166025922866538,
+      "eager_all8_source_cpu_seconds": 2.684546,
+      "eager_all8_source_wall_seconds": 3.166025922866538,
+      "strict_correct": 7,
+      "used_lower_sources": [
+        "src0_R0",
+        "src0_R1",
+        "src0_S0",
+        "src0_S1",
+        "src1_R0",
+        "src1_R1",
+        "src1_S0",
+        "src1_S1"
+      ]
+    },
+    {
+      "actual_query_uses": 12,
+      "arm": "scalar_erased",
+      "dependency_attributed_cpu_seconds": 2.824801000000001,
+      "dependency_attributed_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 256,
+        "dynamic_links_created": 616,
+        "group_updates": 11256,
+        "kernel_ticks": 816,
+        "memory_write_items": 0,
+        "normalization_ops": 11256,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 32,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 27504,
+        "verification_checks": 0
+      },
+      "dependency_attributed_wall_seconds": 3.333466740878066,
+      "eager_all8_source_cpu_seconds": 2.824801000000001,
+      "eager_all8_source_wall_seconds": 3.333466740878066,
+      "strict_correct": 8,
+      "used_lower_sources": [
+        "src0_R0",
+        "src0_R1",
+        "src0_S0",
+        "src0_S1",
+        "src1_R0",
+        "src1_R1",
+        "src1_S0",
+        "src1_S1"
+      ]
+    },
+    {
+      "actual_query_uses": 1,
+      "arm": "ordinary_join",
+      "dependency_attributed_cpu_seconds": 0.42072999999999994,
+      "dependency_attributed_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 10,
+        "dynamic_links_created": 16,
+        "group_updates": 330,
+        "kernel_ticks": 66,
+        "memory_write_items": 0,
+        "normalization_ops": 330,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 8,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 528,
+        "verification_checks": 0
+      },
+      "dependency_attributed_wall_seconds": 0.49894321901956573,
+      "eager_all8_source_cpu_seconds": 1.2906969999999998,
+      "eager_all8_source_wall_seconds": 1.4967693219950888,
+      "strict_correct": 1,
+      "used_lower_sources": [
+        "src0_R0",
+        "src0_S1"
+      ]
+    },
+    {
+      "actual_query_uses": 2,
+      "arm": "ordinary_join",
+      "dependency_attributed_cpu_seconds": 0.8416370000000001,
+      "dependency_attributed_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 20,
+        "dynamic_links_created": 32,
+        "group_updates": 660,
+        "kernel_ticks": 132,
+        "memory_write_items": 0,
+        "normalization_ops": 660,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 16,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 1056,
+        "verification_checks": 0
+      },
+      "dependency_attributed_wall_seconds": 0.9979703799763229,
+      "eager_all8_source_cpu_seconds": 1.4236079999999998,
+      "eager_all8_source_wall_seconds": 1.6633260999806225,
+      "strict_correct": 2,
+      "used_lower_sources": [
+        "src0_R0",
+        "src0_R1",
+        "src0_S0",
+        "src0_S1"
+      ]
+    },
+    {
+      "actual_query_uses": 3,
+      "arm": "ordinary_join",
+      "dependency_attributed_cpu_seconds": 0.9741119999999999,
+      "dependency_attributed_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 20,
+        "dynamic_links_created": 32,
+        "group_updates": 660,
+        "kernel_ticks": 132,
+        "memory_write_items": 0,
+        "normalization_ops": 660,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 16,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 1056,
+        "verification_checks": 0
+      },
+      "dependency_attributed_wall_seconds": 1.164566257968545,
+      "eager_all8_source_cpu_seconds": 1.5560829999999997,
+      "eager_all8_source_wall_seconds": 1.8299219779728446,
+      "strict_correct": 3,
+      "used_lower_sources": [
+        "src0_R0",
+        "src0_R1",
+        "src0_S0",
+        "src0_S1"
+      ]
+    },
+    {
+      "actual_query_uses": 4,
+      "arm": "ordinary_join",
+      "dependency_attributed_cpu_seconds": 1.1071439999999997,
+      "dependency_attributed_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 20,
+        "dynamic_links_created": 32,
+        "group_updates": 660,
+        "kernel_ticks": 132,
+        "memory_write_items": 0,
+        "normalization_ops": 660,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 16,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 1056,
+        "verification_checks": 0
+      },
+      "dependency_attributed_wall_seconds": 1.3312088389648125,
+      "eager_all8_source_cpu_seconds": 1.6891149999999995,
+      "eager_all8_source_wall_seconds": 1.9965645589691121,
+      "strict_correct": 4,
+      "used_lower_sources": [
+        "src0_R0",
+        "src0_R1",
+        "src0_S0",
+        "src0_S1"
+      ]
+    },
+    {
+      "actual_query_uses": 5,
+      "arm": "ordinary_join",
+      "dependency_attributed_cpu_seconds": 1.2418479999999998,
+      "dependency_attributed_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 20,
+        "dynamic_links_created": 32,
+        "group_updates": 660,
+        "kernel_ticks": 132,
+        "memory_write_items": 0,
+        "normalization_ops": 660,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 16,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 1056,
+        "verification_checks": 0
+      },
+      "dependency_attributed_wall_seconds": 1.4980293169792276,
+      "eager_all8_source_cpu_seconds": 1.8238189999999996,
+      "eager_all8_source_wall_seconds": 2.1633850369835272,
+      "strict_correct": 5,
+      "used_lower_sources": [
+        "src0_R0",
+        "src0_R1",
+        "src0_S0",
+        "src0_S1"
+      ]
+    },
+    {
+      "actual_query_uses": 6,
+      "arm": "ordinary_join",
+      "dependency_attributed_cpu_seconds": 1.374007,
+      "dependency_attributed_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 20,
+        "dynamic_links_created": 32,
+        "group_updates": 660,
+        "kernel_ticks": 132,
+        "memory_write_items": 0,
+        "normalization_ops": 660,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 16,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 1056,
+        "verification_checks": 0
+      },
+      "dependency_attributed_wall_seconds": 1.6648262099770363,
+      "eager_all8_source_cpu_seconds": 1.9559779999999998,
+      "eager_all8_source_wall_seconds": 2.330181929981336,
+      "strict_correct": 6,
+      "used_lower_sources": [
+        "src0_R0",
+        "src0_R1",
+        "src0_S0",
+        "src0_S1"
+      ]
+    },
+    {
+      "actual_query_uses": 7,
+      "arm": "ordinary_join",
+      "dependency_attributed_cpu_seconds": 1.7969979999999999,
+      "dependency_attributed_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 30,
+        "dynamic_links_created": 48,
+        "group_updates": 990,
+        "kernel_ticks": 198,
+        "memory_write_items": 0,
+        "normalization_ops": 990,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 24,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 1584,
+        "verification_checks": 0
+      },
+      "dependency_attributed_wall_seconds": 2.164415517996531,
+      "eager_all8_source_cpu_seconds": 2.088434,
+      "eager_all8_source_wall_seconds": 2.497125158988638,
+      "strict_correct": 7,
+      "used_lower_sources": [
+        "src0_R0",
+        "src0_R1",
+        "src0_S0",
+        "src0_S1",
+        "src1_R0",
+        "src1_S1"
+      ]
+    },
+    {
+      "actual_query_uses": 8,
+      "arm": "ordinary_join",
+      "dependency_attributed_cpu_seconds": 2.220474,
+      "dependency_attributed_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 40,
+        "dynamic_links_created": 64,
+        "group_updates": 1320,
+        "kernel_ticks": 264,
+        "memory_write_items": 0,
+        "normalization_ops": 1320,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 32,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 2112,
+        "verification_checks": 0
+      },
+      "dependency_attributed_wall_seconds": 2.6641040119866375,
+      "eager_all8_source_cpu_seconds": 2.220474,
+      "eager_all8_source_wall_seconds": 2.6641040119866375,
+      "strict_correct": 8,
+      "used_lower_sources": [
+        "src0_R0",
+        "src0_R1",
+        "src0_S0",
+        "src0_S1",
+        "src1_R0",
+        "src1_R1",
+        "src1_S0",
+        "src1_S1"
+      ]
+    },
+    {
+      "actual_query_uses": 9,
+      "arm": "ordinary_join",
+      "dependency_attributed_cpu_seconds": 2.3520940000000006,
+      "dependency_attributed_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 40,
+        "dynamic_links_created": 64,
+        "group_updates": 1320,
+        "kernel_ticks": 264,
+        "memory_write_items": 0,
+        "normalization_ops": 1320,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 32,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 2112,
+        "verification_checks": 0
+      },
+      "dependency_attributed_wall_seconds": 2.8310939579678234,
+      "eager_all8_source_cpu_seconds": 2.3520940000000006,
+      "eager_all8_source_wall_seconds": 2.8310939579678234,
+      "strict_correct": 9,
+      "used_lower_sources": [
+        "src0_R0",
+        "src0_R1",
+        "src0_S0",
+        "src0_S1",
+        "src1_R0",
+        "src1_R1",
+        "src1_S0",
+        "src1_S1"
+      ]
+    },
+    {
+      "actual_query_uses": 10,
+      "arm": "ordinary_join",
+      "dependency_attributed_cpu_seconds": 2.491005000000001,
+      "dependency_attributed_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 40,
+        "dynamic_links_created": 64,
+        "group_updates": 1320,
+        "kernel_ticks": 264,
+        "memory_write_items": 0,
+        "normalization_ops": 1320,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 32,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 2112,
+        "verification_checks": 0
+      },
+      "dependency_attributed_wall_seconds": 2.9986020129872486,
+      "eager_all8_source_cpu_seconds": 2.491005000000001,
+      "eager_all8_source_wall_seconds": 2.9986020129872486,
+      "strict_correct": 10,
+      "used_lower_sources": [
+        "src0_R0",
+        "src0_R1",
+        "src0_S0",
+        "src0_S1",
+        "src1_R0",
+        "src1_R1",
+        "src1_S0",
+        "src1_S1"
+      ]
+    },
+    {
+      "actual_query_uses": 11,
+      "arm": "ordinary_join",
+      "dependency_attributed_cpu_seconds": 2.6241040000000004,
+      "dependency_attributed_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 40,
+        "dynamic_links_created": 64,
+        "group_updates": 1320,
+        "kernel_ticks": 264,
+        "memory_write_items": 0,
+        "normalization_ops": 1320,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 32,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 2112,
+        "verification_checks": 0
+      },
+      "dependency_attributed_wall_seconds": 3.165853217971744,
+      "eager_all8_source_cpu_seconds": 2.6241040000000004,
+      "eager_all8_source_wall_seconds": 3.165853217971744,
+      "strict_correct": 11,
+      "used_lower_sources": [
+        "src0_R0",
+        "src0_R1",
+        "src0_S0",
+        "src0_S1",
+        "src1_R0",
+        "src1_R1",
+        "src1_S0",
+        "src1_S1"
+      ]
+    },
+    {
+      "actual_query_uses": 12,
+      "arm": "ordinary_join",
+      "dependency_attributed_cpu_seconds": 2.757809000000001,
+      "dependency_attributed_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 40,
+        "dynamic_links_created": 64,
+        "group_updates": 1320,
+        "kernel_ticks": 264,
+        "memory_write_items": 0,
+        "normalization_ops": 1320,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 32,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 2112,
+        "verification_checks": 0
+      },
+      "dependency_attributed_wall_seconds": 3.3331160769739654,
+      "eager_all8_source_cpu_seconds": 2.757809000000001,
+      "eager_all8_source_wall_seconds": 3.3331160769739654,
+      "strict_correct": 12,
+      "used_lower_sources": [
+        "src0_R0",
+        "src0_R1",
+        "src0_S0",
+        "src0_S1",
+        "src1_R0",
+        "src1_R1",
+        "src1_S0",
+        "src1_S1"
+      ]
+    }
+  ],
+  "preparation_stage": {
+    "child_cpu_seconds": 0.13253399999999999,
+    "item": "",
+    "phase": "preparation",
+    "raw_bytes": 224,
+    "returncode": 0,
+    "wall_seconds": 0.16636681099771522
+  },
+  "production_adoption": false,
+  "rows": [
+    {
+      "abstained": false,
+      "adapter_cost": {
+        "confidence_arithmetic": 6,
+        "erased_role_values": 0,
+        "symbol_lookups": 6
+      },
+      "arm": "typed",
+      "bridge_cost": {
+        "origin_sha256_calls": 4,
+        "packet_digest_calls": 16,
+        "packet_serialized_bytes": 952,
+        "packet_validations": 2,
+        "source_records_loaded": 2,
+        "source_serialized_bytes": 19640
+      },
+      "correct": true,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 18,
+        "dynamic_links_created": 46,
+        "group_updates": 648,
+        "kernel_ticks": 36,
+        "memory_write_items": 0,
+        "normalization_ops": 648,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 1656,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "n0_positive_forward",
+      "numeric_replay_max_absolute_error": 0.0,
+      "proof_valid": true,
+      "source_keys": [
+        "src0_R0",
+        "src0_S1"
+      ],
+      "strict_correct": true,
+      "truth": true,
+      "upper_native_settles": 1,
+      "value": true
+    },
+    {
+      "abstained": false,
+      "adapter_cost": {
+        "confidence_arithmetic": 6,
+        "erased_role_values": 4,
+        "symbol_lookups": 2
+      },
+      "arm": "scalar_erased",
+      "bridge_cost": {
+        "origin_sha256_calls": 4,
+        "packet_digest_calls": 16,
+        "packet_serialized_bytes": 952,
+        "packet_validations": 2,
+        "source_records_loaded": 2,
+        "source_serialized_bytes": 19640
+      },
+      "correct": false,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 18,
+        "dynamic_links_created": 46,
+        "group_updates": 828,
+        "kernel_ticks": 46,
+        "memory_write_items": 0,
+        "normalization_ops": 828,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 2116,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "n0_positive_forward",
+      "numeric_replay_max_absolute_error": 0.0,
+      "proof_valid": false,
+      "source_keys": [
+        "src0_R0",
+        "src0_S1"
+      ],
+      "strict_correct": false,
+      "truth": true,
+      "upper_native_settles": 1,
+      "value": false
+    },
+    {
+      "abstained": false,
+      "adapter_cost": {
+        "join_equalities": 3,
+        "premise_checks": 2
+      },
+      "arm": "ordinary_join",
+      "bridge_cost": {
+        "origin_sha256_calls": 4,
+        "packet_digest_calls": 16,
+        "packet_serialized_bytes": 952,
+        "packet_validations": 2,
+        "source_records_loaded": 2,
+        "source_serialized_bytes": 19640
+      },
+      "correct": true,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 0,
+        "dynamic_links_created": 0,
+        "group_updates": 0,
+        "kernel_ticks": 0,
+        "memory_write_items": 0,
+        "normalization_ops": 0,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 0,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "n0_positive_forward",
+      "numeric_replay_max_absolute_error": 0.0,
+      "proof_valid": true,
+      "source_keys": [
+        "src0_R0",
+        "src0_S1"
+      ],
+      "strict_correct": true,
+      "truth": true,
+      "upper_native_settles": 0,
+      "value": true
+    },
+    {
+      "abstained": false,
+      "adapter_cost": {
+        "confidence_arithmetic": 6,
+        "erased_role_values": 0,
+        "symbol_lookups": 6
+      },
+      "arm": "typed",
+      "bridge_cost": {
+        "origin_sha256_calls": 4,
+        "packet_digest_calls": 16,
+        "packet_serialized_bytes": 952,
+        "packet_validations": 2,
+        "source_records_loaded": 2,
+        "source_serialized_bytes": 19640
+      },
+      "correct": true,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 18,
+        "dynamic_links_created": 46,
+        "group_updates": 648,
+        "kernel_ticks": 36,
+        "memory_write_items": 0,
+        "normalization_ops": 648,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 1656,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "n0_positive_reverse",
+      "numeric_replay_max_absolute_error": 0.0,
+      "proof_valid": true,
+      "source_keys": [
+        "src0_R1",
+        "src0_S0"
+      ],
+      "strict_correct": true,
+      "truth": true,
+      "upper_native_settles": 1,
+      "value": true
+    },
+    {
+      "abstained": false,
+      "adapter_cost": {
+        "confidence_arithmetic": 6,
+        "erased_role_values": 4,
+        "symbol_lookups": 2
+      },
+      "arm": "scalar_erased",
+      "bridge_cost": {
+        "origin_sha256_calls": 4,
+        "packet_digest_calls": 16,
+        "packet_serialized_bytes": 952,
+        "packet_validations": 2,
+        "source_records_loaded": 2,
+        "source_serialized_bytes": 19640
+      },
+      "correct": false,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 18,
+        "dynamic_links_created": 46,
+        "group_updates": 828,
+        "kernel_ticks": 46,
+        "memory_write_items": 0,
+        "normalization_ops": 828,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 2116,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "n0_positive_reverse",
+      "numeric_replay_max_absolute_error": 0.0,
+      "proof_valid": false,
+      "source_keys": [
+        "src0_R1",
+        "src0_S0"
+      ],
+      "strict_correct": false,
+      "truth": true,
+      "upper_native_settles": 1,
+      "value": false
+    },
+    {
+      "abstained": false,
+      "adapter_cost": {
+        "join_equalities": 3,
+        "premise_checks": 2
+      },
+      "arm": "ordinary_join",
+      "bridge_cost": {
+        "origin_sha256_calls": 4,
+        "packet_digest_calls": 16,
+        "packet_serialized_bytes": 952,
+        "packet_validations": 2,
+        "source_records_loaded": 2,
+        "source_serialized_bytes": 19640
+      },
+      "correct": true,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 0,
+        "dynamic_links_created": 0,
+        "group_updates": 0,
+        "kernel_ticks": 0,
+        "memory_write_items": 0,
+        "normalization_ops": 0,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 0,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "n0_positive_reverse",
+      "numeric_replay_max_absolute_error": 0.0,
+      "proof_valid": true,
+      "source_keys": [
+        "src0_R1",
+        "src0_S0"
+      ],
+      "strict_correct": true,
+      "truth": true,
+      "upper_native_settles": 0,
+      "value": true
+    },
+    {
+      "abstained": false,
+      "adapter_cost": {
+        "confidence_arithmetic": 6,
+        "erased_role_values": 0,
+        "symbol_lookups": 6
+      },
+      "arm": "typed",
+      "bridge_cost": {
+        "origin_sha256_calls": 4,
+        "packet_digest_calls": 16,
+        "packet_serialized_bytes": 952,
+        "packet_validations": 2,
+        "source_records_loaded": 2,
+        "source_serialized_bytes": 19640
+      },
+      "correct": true,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 18,
+        "dynamic_links_created": 46,
+        "group_updates": 576,
+        "kernel_ticks": 32,
+        "memory_write_items": 0,
+        "normalization_ops": 576,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 1472,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "n0_bad_join",
+      "numeric_replay_max_absolute_error": 1.6940658945086007e-21,
+      "proof_valid": true,
+      "source_keys": [
+        "src0_R0",
+        "src0_S0"
+      ],
+      "strict_correct": true,
+      "truth": false,
+      "upper_native_settles": 1,
+      "value": false
+    },
+    {
+      "abstained": false,
+      "adapter_cost": {
+        "confidence_arithmetic": 6,
+        "erased_role_values": 4,
+        "symbol_lookups": 2
+      },
+      "arm": "scalar_erased",
+      "bridge_cost": {
+        "origin_sha256_calls": 4,
+        "packet_digest_calls": 16,
+        "packet_serialized_bytes": 952,
+        "packet_validations": 2,
+        "source_records_loaded": 2,
+        "source_serialized_bytes": 19640
+      },
+      "correct": true,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 18,
+        "dynamic_links_created": 46,
+        "group_updates": 828,
+        "kernel_ticks": 46,
+        "memory_write_items": 0,
+        "normalization_ops": 828,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 2116,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "n0_bad_join",
+      "numeric_replay_max_absolute_error": 0.0,
+      "proof_valid": true,
+      "source_keys": [
+        "src0_R0",
+        "src0_S0"
+      ],
+      "strict_correct": true,
+      "truth": false,
+      "upper_native_settles": 1,
+      "value": false
+    },
+    {
+      "abstained": false,
+      "adapter_cost": {
+        "join_equalities": 3,
+        "premise_checks": 2
+      },
+      "arm": "ordinary_join",
+      "bridge_cost": {
+        "origin_sha256_calls": 4,
+        "packet_digest_calls": 16,
+        "packet_serialized_bytes": 952,
+        "packet_validations": 2,
+        "source_records_loaded": 2,
+        "source_serialized_bytes": 19640
+      },
+      "correct": true,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 0,
+        "dynamic_links_created": 0,
+        "group_updates": 0,
+        "kernel_ticks": 0,
+        "memory_write_items": 0,
+        "normalization_ops": 0,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 0,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "n0_bad_join",
+      "numeric_replay_max_absolute_error": 0.0,
+      "proof_valid": true,
+      "source_keys": [
+        "src0_R0",
+        "src0_S0"
+      ],
+      "strict_correct": true,
+      "truth": false,
+      "upper_native_settles": 0,
+      "value": false
+    },
+    {
+      "abstained": false,
+      "adapter_cost": {
+        "confidence_arithmetic": 6,
+        "erased_role_values": 0,
+        "symbol_lookups": 6
+      },
+      "arm": "typed",
+      "bridge_cost": {
+        "origin_sha256_calls": 4,
+        "packet_digest_calls": 16,
+        "packet_serialized_bytes": 952,
+        "packet_validations": 2,
+        "source_records_loaded": 2,
+        "source_serialized_bytes": 19640
+      },
+      "correct": true,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 18,
+        "dynamic_links_created": 46,
+        "group_updates": 576,
+        "kernel_ticks": 32,
+        "memory_write_items": 0,
+        "normalization_ops": 576,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 1472,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "n0_bad_subject",
+      "numeric_replay_max_absolute_error": 1.6940658945086007e-21,
+      "proof_valid": true,
+      "source_keys": [
+        "src0_R0",
+        "src0_S1"
+      ],
+      "strict_correct": true,
+      "truth": false,
+      "upper_native_settles": 1,
+      "value": false
+    },
+    {
+      "abstained": false,
+      "adapter_cost": {
+        "confidence_arithmetic": 6,
+        "erased_role_values": 4,
+        "symbol_lookups": 2
+      },
+      "arm": "scalar_erased",
+      "bridge_cost": {
+        "origin_sha256_calls": 4,
+        "packet_digest_calls": 16,
+        "packet_serialized_bytes": 952,
+        "packet_validations": 2,
+        "source_records_loaded": 2,
+        "source_serialized_bytes": 19640
+      },
+      "correct": true,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 18,
+        "dynamic_links_created": 46,
+        "group_updates": 828,
+        "kernel_ticks": 46,
+        "memory_write_items": 0,
+        "normalization_ops": 828,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 2116,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "n0_bad_subject",
+      "numeric_replay_max_absolute_error": 0.0,
+      "proof_valid": true,
+      "source_keys": [
+        "src0_R0",
+        "src0_S1"
+      ],
+      "strict_correct": true,
+      "truth": false,
+      "upper_native_settles": 1,
+      "value": false
+    },
+    {
+      "abstained": false,
+      "adapter_cost": {
+        "join_equalities": 3,
+        "premise_checks": 2
+      },
+      "arm": "ordinary_join",
+      "bridge_cost": {
+        "origin_sha256_calls": 4,
+        "packet_digest_calls": 16,
+        "packet_serialized_bytes": 952,
+        "packet_validations": 2,
+        "source_records_loaded": 2,
+        "source_serialized_bytes": 19640
+      },
+      "correct": true,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 0,
+        "dynamic_links_created": 0,
+        "group_updates": 0,
+        "kernel_ticks": 0,
+        "memory_write_items": 0,
+        "normalization_ops": 0,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 0,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "n0_bad_subject",
+      "numeric_replay_max_absolute_error": 0.0,
+      "proof_valid": true,
+      "source_keys": [
+        "src0_R0",
+        "src0_S1"
+      ],
+      "strict_correct": true,
+      "truth": false,
+      "upper_native_settles": 0,
+      "value": false
+    },
+    {
+      "abstained": false,
+      "adapter_cost": {
+        "confidence_arithmetic": 6,
+        "erased_role_values": 0,
+        "symbol_lookups": 6
+      },
+      "arm": "typed",
+      "bridge_cost": {
+        "origin_sha256_calls": 4,
+        "packet_digest_calls": 16,
+        "packet_serialized_bytes": 952,
+        "packet_validations": 2,
+        "source_records_loaded": 2,
+        "source_serialized_bytes": 19640
+      },
+      "correct": true,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 18,
+        "dynamic_links_created": 46,
+        "group_updates": 576,
+        "kernel_ticks": 32,
+        "memory_write_items": 0,
+        "normalization_ops": 576,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 1472,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "n0_bad_object",
+      "numeric_replay_max_absolute_error": 1.6940658945086007e-21,
+      "proof_valid": true,
+      "source_keys": [
+        "src0_R0",
+        "src0_S1"
+      ],
+      "strict_correct": true,
+      "truth": false,
+      "upper_native_settles": 1,
+      "value": false
+    },
+    {
+      "abstained": false,
+      "adapter_cost": {
+        "confidence_arithmetic": 6,
+        "erased_role_values": 4,
+        "symbol_lookups": 2
+      },
+      "arm": "scalar_erased",
+      "bridge_cost": {
+        "origin_sha256_calls": 4,
+        "packet_digest_calls": 16,
+        "packet_serialized_bytes": 952,
+        "packet_validations": 2,
+        "source_records_loaded": 2,
+        "source_serialized_bytes": 19640
+      },
+      "correct": true,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 18,
+        "dynamic_links_created": 46,
+        "group_updates": 828,
+        "kernel_ticks": 46,
+        "memory_write_items": 0,
+        "normalization_ops": 828,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 2116,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "n0_bad_object",
+      "numeric_replay_max_absolute_error": 0.0,
+      "proof_valid": true,
+      "source_keys": [
+        "src0_R0",
+        "src0_S1"
+      ],
+      "strict_correct": true,
+      "truth": false,
+      "upper_native_settles": 1,
+      "value": false
+    },
+    {
+      "abstained": false,
+      "adapter_cost": {
+        "join_equalities": 3,
+        "premise_checks": 2
+      },
+      "arm": "ordinary_join",
+      "bridge_cost": {
+        "origin_sha256_calls": 4,
+        "packet_digest_calls": 16,
+        "packet_serialized_bytes": 952,
+        "packet_validations": 2,
+        "source_records_loaded": 2,
+        "source_serialized_bytes": 19640
+      },
+      "correct": true,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 0,
+        "dynamic_links_created": 0,
+        "group_updates": 0,
+        "kernel_ticks": 0,
+        "memory_write_items": 0,
+        "normalization_ops": 0,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 0,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "n0_bad_object",
+      "numeric_replay_max_absolute_error": 0.0,
+      "proof_valid": true,
+      "source_keys": [
+        "src0_R0",
+        "src0_S1"
+      ],
+      "strict_correct": true,
+      "truth": false,
+      "upper_native_settles": 0,
+      "value": false
+    },
+    {
+      "abstained": false,
+      "adapter_cost": {
+        "confidence_arithmetic": 6,
+        "erased_role_values": 0,
+        "symbol_lookups": 6
+      },
+      "arm": "typed",
+      "bridge_cost": {
+        "origin_sha256_calls": 4,
+        "packet_digest_calls": 16,
+        "packet_serialized_bytes": 952,
+        "packet_validations": 2,
+        "source_records_loaded": 2,
+        "source_serialized_bytes": 19640
+      },
+      "correct": true,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 18,
+        "dynamic_links_created": 46,
+        "group_updates": 558,
+        "kernel_ticks": 31,
+        "memory_write_items": 0,
+        "normalization_ops": 558,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 1426,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "n0_bad_both",
+      "numeric_replay_max_absolute_error": 0.0,
+      "proof_valid": true,
+      "source_keys": [
+        "src0_R0",
+        "src0_S1"
+      ],
+      "strict_correct": true,
+      "truth": false,
+      "upper_native_settles": 1,
+      "value": false
+    },
+    {
+      "abstained": false,
+      "adapter_cost": {
+        "confidence_arithmetic": 6,
+        "erased_role_values": 4,
+        "symbol_lookups": 2
+      },
+      "arm": "scalar_erased",
+      "bridge_cost": {
+        "origin_sha256_calls": 4,
+        "packet_digest_calls": 16,
+        "packet_serialized_bytes": 952,
+        "packet_validations": 2,
+        "source_records_loaded": 2,
+        "source_serialized_bytes": 19640
+      },
+      "correct": true,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 18,
+        "dynamic_links_created": 46,
+        "group_updates": 828,
+        "kernel_ticks": 46,
+        "memory_write_items": 0,
+        "normalization_ops": 828,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 2116,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "n0_bad_both",
+      "numeric_replay_max_absolute_error": 0.0,
+      "proof_valid": true,
+      "source_keys": [
+        "src0_R0",
+        "src0_S1"
+      ],
+      "strict_correct": true,
+      "truth": false,
+      "upper_native_settles": 1,
+      "value": false
+    },
+    {
+      "abstained": false,
+      "adapter_cost": {
+        "join_equalities": 3,
+        "premise_checks": 2
+      },
+      "arm": "ordinary_join",
+      "bridge_cost": {
+        "origin_sha256_calls": 4,
+        "packet_digest_calls": 16,
+        "packet_serialized_bytes": 952,
+        "packet_validations": 2,
+        "source_records_loaded": 2,
+        "source_serialized_bytes": 19640
+      },
+      "correct": true,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 0,
+        "dynamic_links_created": 0,
+        "group_updates": 0,
+        "kernel_ticks": 0,
+        "memory_write_items": 0,
+        "normalization_ops": 0,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 0,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "n0_bad_both",
+      "numeric_replay_max_absolute_error": 0.0,
+      "proof_valid": true,
+      "source_keys": [
+        "src0_R0",
+        "src0_S1"
+      ],
+      "strict_correct": true,
+      "truth": false,
+      "upper_native_settles": 0,
+      "value": false
+    },
+    {
+      "abstained": false,
+      "adapter_cost": {
+        "confidence_arithmetic": 6,
+        "erased_role_values": 0,
+        "symbol_lookups": 6
+      },
+      "arm": "typed",
+      "bridge_cost": {
+        "origin_sha256_calls": 4,
+        "packet_digest_calls": 16,
+        "packet_serialized_bytes": 948,
+        "packet_validations": 2,
+        "source_records_loaded": 2,
+        "source_serialized_bytes": 19632
+      },
+      "correct": true,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 18,
+        "dynamic_links_created": 46,
+        "group_updates": 648,
+        "kernel_ticks": 36,
+        "memory_write_items": 0,
+        "normalization_ops": 648,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 1656,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "n1_positive_forward",
+      "numeric_replay_max_absolute_error": 0.0,
+      "proof_valid": true,
+      "source_keys": [
+        "src1_R0",
+        "src1_S1"
+      ],
+      "strict_correct": true,
+      "truth": true,
+      "upper_native_settles": 1,
+      "value": true
+    },
+    {
+      "abstained": false,
+      "adapter_cost": {
+        "confidence_arithmetic": 6,
+        "erased_role_values": 4,
+        "symbol_lookups": 2
+      },
+      "arm": "scalar_erased",
+      "bridge_cost": {
+        "origin_sha256_calls": 4,
+        "packet_digest_calls": 16,
+        "packet_serialized_bytes": 948,
+        "packet_validations": 2,
+        "source_records_loaded": 2,
+        "source_serialized_bytes": 19632
+      },
+      "correct": false,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 18,
+        "dynamic_links_created": 46,
+        "group_updates": 828,
+        "kernel_ticks": 46,
+        "memory_write_items": 0,
+        "normalization_ops": 828,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 2116,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "n1_positive_forward",
+      "numeric_replay_max_absolute_error": 0.0,
+      "proof_valid": false,
+      "source_keys": [
+        "src1_R0",
+        "src1_S1"
+      ],
+      "strict_correct": false,
+      "truth": true,
+      "upper_native_settles": 1,
+      "value": false
+    },
+    {
+      "abstained": false,
+      "adapter_cost": {
+        "join_equalities": 3,
+        "premise_checks": 2
+      },
+      "arm": "ordinary_join",
+      "bridge_cost": {
+        "origin_sha256_calls": 4,
+        "packet_digest_calls": 16,
+        "packet_serialized_bytes": 948,
+        "packet_validations": 2,
+        "source_records_loaded": 2,
+        "source_serialized_bytes": 19632
+      },
+      "correct": true,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 0,
+        "dynamic_links_created": 0,
+        "group_updates": 0,
+        "kernel_ticks": 0,
+        "memory_write_items": 0,
+        "normalization_ops": 0,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 0,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "n1_positive_forward",
+      "numeric_replay_max_absolute_error": 0.0,
+      "proof_valid": true,
+      "source_keys": [
+        "src1_R0",
+        "src1_S1"
+      ],
+      "strict_correct": true,
+      "truth": true,
+      "upper_native_settles": 0,
+      "value": true
+    },
+    {
+      "abstained": false,
+      "adapter_cost": {
+        "confidence_arithmetic": 6,
+        "erased_role_values": 0,
+        "symbol_lookups": 6
+      },
+      "arm": "typed",
+      "bridge_cost": {
+        "origin_sha256_calls": 4,
+        "packet_digest_calls": 16,
+        "packet_serialized_bytes": 948,
+        "packet_validations": 2,
+        "source_records_loaded": 2,
+        "source_serialized_bytes": 19632
+      },
+      "correct": true,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 18,
+        "dynamic_links_created": 46,
+        "group_updates": 648,
+        "kernel_ticks": 36,
+        "memory_write_items": 0,
+        "normalization_ops": 648,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 1656,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "n1_positive_reverse",
+      "numeric_replay_max_absolute_error": 0.0,
+      "proof_valid": true,
+      "source_keys": [
+        "src1_R1",
+        "src1_S0"
+      ],
+      "strict_correct": true,
+      "truth": true,
+      "upper_native_settles": 1,
+      "value": true
+    },
+    {
+      "abstained": false,
+      "adapter_cost": {
+        "confidence_arithmetic": 6,
+        "erased_role_values": 4,
+        "symbol_lookups": 2
+      },
+      "arm": "scalar_erased",
+      "bridge_cost": {
+        "origin_sha256_calls": 4,
+        "packet_digest_calls": 16,
+        "packet_serialized_bytes": 948,
+        "packet_validations": 2,
+        "source_records_loaded": 2,
+        "source_serialized_bytes": 19632
+      },
+      "correct": false,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 18,
+        "dynamic_links_created": 46,
+        "group_updates": 828,
+        "kernel_ticks": 46,
+        "memory_write_items": 0,
+        "normalization_ops": 828,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 2116,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "n1_positive_reverse",
+      "numeric_replay_max_absolute_error": 0.0,
+      "proof_valid": false,
+      "source_keys": [
+        "src1_R1",
+        "src1_S0"
+      ],
+      "strict_correct": false,
+      "truth": true,
+      "upper_native_settles": 1,
+      "value": false
+    },
+    {
+      "abstained": false,
+      "adapter_cost": {
+        "join_equalities": 3,
+        "premise_checks": 2
+      },
+      "arm": "ordinary_join",
+      "bridge_cost": {
+        "origin_sha256_calls": 4,
+        "packet_digest_calls": 16,
+        "packet_serialized_bytes": 948,
+        "packet_validations": 2,
+        "source_records_loaded": 2,
+        "source_serialized_bytes": 19632
+      },
+      "correct": true,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 0,
+        "dynamic_links_created": 0,
+        "group_updates": 0,
+        "kernel_ticks": 0,
+        "memory_write_items": 0,
+        "normalization_ops": 0,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 0,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "n1_positive_reverse",
+      "numeric_replay_max_absolute_error": 0.0,
+      "proof_valid": true,
+      "source_keys": [
+        "src1_R1",
+        "src1_S0"
+      ],
+      "strict_correct": true,
+      "truth": true,
+      "upper_native_settles": 0,
+      "value": true
+    },
+    {
+      "abstained": false,
+      "adapter_cost": {
+        "confidence_arithmetic": 6,
+        "erased_role_values": 0,
+        "symbol_lookups": 6
+      },
+      "arm": "typed",
+      "bridge_cost": {
+        "origin_sha256_calls": 4,
+        "packet_digest_calls": 16,
+        "packet_serialized_bytes": 948,
+        "packet_validations": 2,
+        "source_records_loaded": 2,
+        "source_serialized_bytes": 19632
+      },
+      "correct": true,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 18,
+        "dynamic_links_created": 46,
+        "group_updates": 576,
+        "kernel_ticks": 32,
+        "memory_write_items": 0,
+        "normalization_ops": 576,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 1472,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "n1_bad_join",
+      "numeric_replay_max_absolute_error": 1.6940658945086007e-21,
+      "proof_valid": true,
+      "source_keys": [
+        "src1_R0",
+        "src1_S0"
+      ],
+      "strict_correct": true,
+      "truth": false,
+      "upper_native_settles": 1,
+      "value": false
+    },
+    {
+      "abstained": false,
+      "adapter_cost": {
+        "confidence_arithmetic": 6,
+        "erased_role_values": 4,
+        "symbol_lookups": 2
+      },
+      "arm": "scalar_erased",
+      "bridge_cost": {
+        "origin_sha256_calls": 4,
+        "packet_digest_calls": 16,
+        "packet_serialized_bytes": 948,
+        "packet_validations": 2,
+        "source_records_loaded": 2,
+        "source_serialized_bytes": 19632
+      },
+      "correct": true,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 18,
+        "dynamic_links_created": 46,
+        "group_updates": 828,
+        "kernel_ticks": 46,
+        "memory_write_items": 0,
+        "normalization_ops": 828,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 2116,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "n1_bad_join",
+      "numeric_replay_max_absolute_error": 0.0,
+      "proof_valid": true,
+      "source_keys": [
+        "src1_R0",
+        "src1_S0"
+      ],
+      "strict_correct": true,
+      "truth": false,
+      "upper_native_settles": 1,
+      "value": false
+    },
+    {
+      "abstained": false,
+      "adapter_cost": {
+        "join_equalities": 3,
+        "premise_checks": 2
+      },
+      "arm": "ordinary_join",
+      "bridge_cost": {
+        "origin_sha256_calls": 4,
+        "packet_digest_calls": 16,
+        "packet_serialized_bytes": 948,
+        "packet_validations": 2,
+        "source_records_loaded": 2,
+        "source_serialized_bytes": 19632
+      },
+      "correct": true,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 0,
+        "dynamic_links_created": 0,
+        "group_updates": 0,
+        "kernel_ticks": 0,
+        "memory_write_items": 0,
+        "normalization_ops": 0,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 0,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "n1_bad_join",
+      "numeric_replay_max_absolute_error": 0.0,
+      "proof_valid": true,
+      "source_keys": [
+        "src1_R0",
+        "src1_S0"
+      ],
+      "strict_correct": true,
+      "truth": false,
+      "upper_native_settles": 0,
+      "value": false
+    },
+    {
+      "abstained": false,
+      "adapter_cost": {
+        "confidence_arithmetic": 6,
+        "erased_role_values": 0,
+        "symbol_lookups": 6
+      },
+      "arm": "typed",
+      "bridge_cost": {
+        "origin_sha256_calls": 4,
+        "packet_digest_calls": 16,
+        "packet_serialized_bytes": 948,
+        "packet_validations": 2,
+        "source_records_loaded": 2,
+        "source_serialized_bytes": 19632
+      },
+      "correct": true,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 18,
+        "dynamic_links_created": 46,
+        "group_updates": 576,
+        "kernel_ticks": 32,
+        "memory_write_items": 0,
+        "normalization_ops": 576,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 1472,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "n1_bad_subject",
+      "numeric_replay_max_absolute_error": 1.6940658945086007e-21,
+      "proof_valid": true,
+      "source_keys": [
+        "src1_R0",
+        "src1_S1"
+      ],
+      "strict_correct": true,
+      "truth": false,
+      "upper_native_settles": 1,
+      "value": false
+    },
+    {
+      "abstained": false,
+      "adapter_cost": {
+        "confidence_arithmetic": 6,
+        "erased_role_values": 4,
+        "symbol_lookups": 2
+      },
+      "arm": "scalar_erased",
+      "bridge_cost": {
+        "origin_sha256_calls": 4,
+        "packet_digest_calls": 16,
+        "packet_serialized_bytes": 948,
+        "packet_validations": 2,
+        "source_records_loaded": 2,
+        "source_serialized_bytes": 19632
+      },
+      "correct": true,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 18,
+        "dynamic_links_created": 46,
+        "group_updates": 828,
+        "kernel_ticks": 46,
+        "memory_write_items": 0,
+        "normalization_ops": 828,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 2116,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "n1_bad_subject",
+      "numeric_replay_max_absolute_error": 0.0,
+      "proof_valid": true,
+      "source_keys": [
+        "src1_R0",
+        "src1_S1"
+      ],
+      "strict_correct": true,
+      "truth": false,
+      "upper_native_settles": 1,
+      "value": false
+    },
+    {
+      "abstained": false,
+      "adapter_cost": {
+        "join_equalities": 3,
+        "premise_checks": 2
+      },
+      "arm": "ordinary_join",
+      "bridge_cost": {
+        "origin_sha256_calls": 4,
+        "packet_digest_calls": 16,
+        "packet_serialized_bytes": 948,
+        "packet_validations": 2,
+        "source_records_loaded": 2,
+        "source_serialized_bytes": 19632
+      },
+      "correct": true,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 0,
+        "dynamic_links_created": 0,
+        "group_updates": 0,
+        "kernel_ticks": 0,
+        "memory_write_items": 0,
+        "normalization_ops": 0,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 0,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "n1_bad_subject",
+      "numeric_replay_max_absolute_error": 0.0,
+      "proof_valid": true,
+      "source_keys": [
+        "src1_R0",
+        "src1_S1"
+      ],
+      "strict_correct": true,
+      "truth": false,
+      "upper_native_settles": 0,
+      "value": false
+    },
+    {
+      "abstained": false,
+      "adapter_cost": {
+        "confidence_arithmetic": 6,
+        "erased_role_values": 0,
+        "symbol_lookups": 6
+      },
+      "arm": "typed",
+      "bridge_cost": {
+        "origin_sha256_calls": 4,
+        "packet_digest_calls": 16,
+        "packet_serialized_bytes": 948,
+        "packet_validations": 2,
+        "source_records_loaded": 2,
+        "source_serialized_bytes": 19632
+      },
+      "correct": true,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 18,
+        "dynamic_links_created": 46,
+        "group_updates": 576,
+        "kernel_ticks": 32,
+        "memory_write_items": 0,
+        "normalization_ops": 576,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 1472,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "n1_bad_object",
+      "numeric_replay_max_absolute_error": 1.6940658945086007e-21,
+      "proof_valid": true,
+      "source_keys": [
+        "src1_R0",
+        "src1_S1"
+      ],
+      "strict_correct": true,
+      "truth": false,
+      "upper_native_settles": 1,
+      "value": false
+    },
+    {
+      "abstained": false,
+      "adapter_cost": {
+        "confidence_arithmetic": 6,
+        "erased_role_values": 4,
+        "symbol_lookups": 2
+      },
+      "arm": "scalar_erased",
+      "bridge_cost": {
+        "origin_sha256_calls": 4,
+        "packet_digest_calls": 16,
+        "packet_serialized_bytes": 948,
+        "packet_validations": 2,
+        "source_records_loaded": 2,
+        "source_serialized_bytes": 19632
+      },
+      "correct": true,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 18,
+        "dynamic_links_created": 46,
+        "group_updates": 828,
+        "kernel_ticks": 46,
+        "memory_write_items": 0,
+        "normalization_ops": 828,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 2116,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "n1_bad_object",
+      "numeric_replay_max_absolute_error": 0.0,
+      "proof_valid": true,
+      "source_keys": [
+        "src1_R0",
+        "src1_S1"
+      ],
+      "strict_correct": true,
+      "truth": false,
+      "upper_native_settles": 1,
+      "value": false
+    },
+    {
+      "abstained": false,
+      "adapter_cost": {
+        "join_equalities": 3,
+        "premise_checks": 2
+      },
+      "arm": "ordinary_join",
+      "bridge_cost": {
+        "origin_sha256_calls": 4,
+        "packet_digest_calls": 16,
+        "packet_serialized_bytes": 948,
+        "packet_validations": 2,
+        "source_records_loaded": 2,
+        "source_serialized_bytes": 19632
+      },
+      "correct": true,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 0,
+        "dynamic_links_created": 0,
+        "group_updates": 0,
+        "kernel_ticks": 0,
+        "memory_write_items": 0,
+        "normalization_ops": 0,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 0,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "n1_bad_object",
+      "numeric_replay_max_absolute_error": 0.0,
+      "proof_valid": true,
+      "source_keys": [
+        "src1_R0",
+        "src1_S1"
+      ],
+      "strict_correct": true,
+      "truth": false,
+      "upper_native_settles": 0,
+      "value": false
+    },
+    {
+      "abstained": false,
+      "adapter_cost": {
+        "confidence_arithmetic": 6,
+        "erased_role_values": 0,
+        "symbol_lookups": 6
+      },
+      "arm": "typed",
+      "bridge_cost": {
+        "origin_sha256_calls": 4,
+        "packet_digest_calls": 16,
+        "packet_serialized_bytes": 948,
+        "packet_validations": 2,
+        "source_records_loaded": 2,
+        "source_serialized_bytes": 19632
+      },
+      "correct": true,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 18,
+        "dynamic_links_created": 46,
+        "group_updates": 558,
+        "kernel_ticks": 31,
+        "memory_write_items": 0,
+        "normalization_ops": 558,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 1426,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "n1_bad_both",
+      "numeric_replay_max_absolute_error": 0.0,
+      "proof_valid": true,
+      "source_keys": [
+        "src1_R0",
+        "src1_S1"
+      ],
+      "strict_correct": true,
+      "truth": false,
+      "upper_native_settles": 1,
+      "value": false
+    },
+    {
+      "abstained": false,
+      "adapter_cost": {
+        "confidence_arithmetic": 6,
+        "erased_role_values": 4,
+        "symbol_lookups": 2
+      },
+      "arm": "scalar_erased",
+      "bridge_cost": {
+        "origin_sha256_calls": 4,
+        "packet_digest_calls": 16,
+        "packet_serialized_bytes": 948,
+        "packet_validations": 2,
+        "source_records_loaded": 2,
+        "source_serialized_bytes": 19632
+      },
+      "correct": true,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 18,
+        "dynamic_links_created": 46,
+        "group_updates": 828,
+        "kernel_ticks": 46,
+        "memory_write_items": 0,
+        "normalization_ops": 828,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 2116,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "n1_bad_both",
+      "numeric_replay_max_absolute_error": 0.0,
+      "proof_valid": true,
+      "source_keys": [
+        "src1_R0",
+        "src1_S1"
+      ],
+      "strict_correct": true,
+      "truth": false,
+      "upper_native_settles": 1,
+      "value": false
+    },
+    {
+      "abstained": false,
+      "adapter_cost": {
+        "join_equalities": 3,
+        "premise_checks": 2
+      },
+      "arm": "ordinary_join",
+      "bridge_cost": {
+        "origin_sha256_calls": 4,
+        "packet_digest_calls": 16,
+        "packet_serialized_bytes": 948,
+        "packet_validations": 2,
+        "source_records_loaded": 2,
+        "source_serialized_bytes": 19632
+      },
+      "correct": true,
+      "cost": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 0,
+        "dynamic_links_created": 0,
+        "group_updates": 0,
+        "kernel_ticks": 0,
+        "memory_write_items": 0,
+        "normalization_ops": 0,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 0,
+        "verification_checks": 0,
+        "wall_seconds": 0.0
+      },
+      "key": "n1_bad_both",
+      "numeric_replay_max_absolute_error": 0.0,
+      "proof_valid": true,
+      "source_keys": [
+        "src1_R0",
+        "src1_S1"
+      ],
+      "strict_correct": true,
+      "truth": false,
+      "upper_native_settles": 0,
+      "value": false
+    }
+  ],
+  "same_confidence_hex": "0x1.f9b9b4cdeee90p-1",
+  "scalar_collision_groups": [
+    {
+      "cases": [
+        "n0_positive_forward",
+        "n1_positive_forward"
+      ],
+      "value": false
+    },
+    {
+      "cases": [
+        "n0_positive_reverse",
+        "n0_bad_both",
+        "n1_positive_reverse",
+        "n1_bad_both"
+      ],
+      "value": false
+    },
+    {
+      "cases": [
+        "n0_bad_join",
+        "n0_bad_object",
+        "n1_bad_join",
+        "n1_bad_object"
+      ],
+      "value": false
+    },
+    {
+      "cases": [
+        "n0_bad_subject",
+        "n1_bad_subject"
+      ],
+      "value": false
+    }
+  ],
+  "scope": "two symbols per namespace, two given positive relation facts, authored native upper graph; no learned semantic compiler, upper native route proof or cross-level feedback",
+  "source_process_cpu_seconds": 1.1576939999999998,
+  "source_process_wall_seconds": 1.330266056000255,
+  "source_total_cost": {
+    "binding_checks": 0,
+    "circuit_groups_instantiated": 0,
+    "compilation_items": 0,
+    "dynamic_groups_created": 40,
+    "dynamic_links_created": 64,
+    "group_updates": 1320,
+    "kernel_ticks": 264,
+    "memory_write_items": 0,
+    "normalization_ops": 1320,
+    "observation_requests": 0,
+    "proof_nodes_reconstructed": 32,
+    "recall_checks": 0,
+    "search_edge_checks": 0,
+    "signal_transmissions": 2112,
+    "verification_checks": 0
+  },
+  "stage_count": 46,
+  "stage_raw_peak_bytes": 863534,
+  "statistical_speed_verdict": null,
+  "status": "SAVED_RECORDS_VERIFIED",
+  "targeted_rejections": {
+    "confidence": "actual upper packet/query binding",
+    "cost": "kernel cost mismatch",
+    "drive": "fieldwise role encoding",
+    "origin": "actual upper packet/query binding",
+    "proof": "semantic proof references/terms",
+    "readout": "unrepaired numeric readout",
+    "revision": "actual upper packet/query binding",
+    "role": "actual upper packet/query binding",
+    "tick": "scalar replay tick mismatch"
+  },
+  "totals": {
+    "ordinary_join": {
+      "abstentions": 0,
+      "all_in_at_K12": {
+        "actual_query_uses": 12,
+        "arm": "ordinary_join",
+        "dependency_attributed_cpu_seconds": 2.757809000000001,
+        "dependency_attributed_native": {
+          "binding_checks": 0,
+          "circuit_groups_instantiated": 0,
+          "compilation_items": 0,
+          "dynamic_groups_created": 40,
+          "dynamic_links_created": 64,
+          "group_updates": 1320,
+          "kernel_ticks": 264,
+          "memory_write_items": 0,
+          "normalization_ops": 1320,
+          "observation_requests": 0,
+          "proof_nodes_reconstructed": 32,
+          "recall_checks": 0,
+          "search_edge_checks": 0,
+          "signal_transmissions": 2112,
+          "verification_checks": 0
+        },
+        "dependency_attributed_wall_seconds": 3.3331160769739654,
+        "eager_all8_source_cpu_seconds": 2.757809000000001,
+        "eager_all8_source_wall_seconds": 3.3331160769739654,
+        "strict_correct": 12,
+        "used_lower_sources": [
+          "src0_R0",
+          "src0_R1",
+          "src0_S0",
+          "src0_S1",
+          "src1_R0",
+          "src1_R1",
+          "src1_S0",
+          "src1_S1"
+        ]
+      },
+      "case_process_cpu_seconds": 1.6001150000000008,
+      "case_process_wall_seconds": 2.0028500209737103,
+      "strict_correct": 12,
+      "upper_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 0,
+        "dynamic_links_created": 0,
+        "group_updates": 0,
+        "kernel_ticks": 0,
+        "memory_write_items": 0,
+        "normalization_ops": 0,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 0,
+        "verification_checks": 0
+      },
+      "upper_native_settles": 0,
+      "wrong": 0
+    },
+    "scalar_erased": {
+      "abstentions": 0,
+      "all_in_at_K12": {
+        "actual_query_uses": 12,
+        "arm": "scalar_erased",
+        "dependency_attributed_cpu_seconds": 2.824801000000001,
+        "dependency_attributed_native": {
+          "binding_checks": 0,
+          "circuit_groups_instantiated": 0,
+          "compilation_items": 0,
+          "dynamic_groups_created": 256,
+          "dynamic_links_created": 616,
+          "group_updates": 11256,
+          "kernel_ticks": 816,
+          "memory_write_items": 0,
+          "normalization_ops": 11256,
+          "observation_requests": 0,
+          "proof_nodes_reconstructed": 32,
+          "recall_checks": 0,
+          "search_edge_checks": 0,
+          "signal_transmissions": 27504,
+          "verification_checks": 0
+        },
+        "dependency_attributed_wall_seconds": 3.333466740878066,
+        "eager_all8_source_cpu_seconds": 2.824801000000001,
+        "eager_all8_source_wall_seconds": 3.333466740878066,
+        "strict_correct": 8,
+        "used_lower_sources": [
+          "src0_R0",
+          "src0_R1",
+          "src0_S0",
+          "src0_S1",
+          "src1_R0",
+          "src1_R1",
+          "src1_S0",
+          "src1_S1"
+        ]
+      },
+      "case_process_cpu_seconds": 1.667107000000001,
+      "case_process_wall_seconds": 2.003200684877811,
+      "strict_correct": 8,
+      "upper_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 216,
+        "dynamic_links_created": 552,
+        "group_updates": 9936,
+        "kernel_ticks": 552,
+        "memory_write_items": 0,
+        "normalization_ops": 9936,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 25392,
+        "verification_checks": 0
+      },
+      "upper_native_settles": 12,
+      "wrong": 4
+    },
+    "typed": {
+      "abstentions": 0,
+      "all_in_at_K12": {
+        "actual_query_uses": 12,
+        "arm": "typed",
+        "dependency_attributed_cpu_seconds": 2.806801999999999,
+        "dependency_attributed_native": {
+          "binding_checks": 0,
+          "circuit_groups_instantiated": 0,
+          "compilation_items": 0,
+          "dynamic_groups_created": 256,
+          "dynamic_links_created": 616,
+          "group_updates": 8484,
+          "kernel_ticks": 662,
+          "memory_write_items": 0,
+          "normalization_ops": 8484,
+          "observation_requests": 0,
+          "proof_nodes_reconstructed": 32,
+          "recall_checks": 0,
+          "search_edge_checks": 0,
+          "signal_transmissions": 20420,
+          "verification_checks": 0
+        },
+        "dependency_attributed_wall_seconds": 3.333214653044706,
+        "eager_all8_source_cpu_seconds": 2.806801999999999,
+        "eager_all8_source_wall_seconds": 3.333214653044706,
+        "strict_correct": 12,
+        "used_lower_sources": [
+          "src0_R0",
+          "src0_R1",
+          "src0_S0",
+          "src0_S1",
+          "src1_R0",
+          "src1_R1",
+          "src1_S0",
+          "src1_S1"
+        ]
+      },
+      "case_process_cpu_seconds": 1.649107999999999,
+      "case_process_wall_seconds": 2.002948597044451,
+      "strict_correct": 12,
+      "upper_native": {
+        "binding_checks": 0,
+        "circuit_groups_instantiated": 0,
+        "compilation_items": 0,
+        "dynamic_groups_created": 216,
+        "dynamic_links_created": 552,
+        "group_updates": 7164,
+        "kernel_ticks": 398,
+        "memory_write_items": 0,
+        "normalization_ops": 7164,
+        "observation_requests": 0,
+        "proof_nodes_reconstructed": 0,
+        "recall_checks": 0,
+        "search_edge_checks": 0,
+        "signal_transmissions": 18308,
+        "verification_checks": 0
+      },
+      "upper_native_settles": 12,
+      "wrong": 0
+    }
+  }
+}

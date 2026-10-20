@@ -1,0 +1,14 @@
+{
+  "n0_bad_both": false,
+  "n0_bad_join": false,
+  "n0_bad_object": false,
+  "n0_bad_subject": false,
+  "n0_positive_forward": true,
+  "n0_positive_reverse": true,
+  "n1_bad_both": false,
+  "n1_bad_join": false,
+  "n1_bad_object": false,
+  "n1_bad_subject": false,
+  "n1_positive_forward": true,
+  "n1_positive_reverse": true
+}

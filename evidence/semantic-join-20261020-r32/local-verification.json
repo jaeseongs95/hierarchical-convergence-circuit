@@ -1,0 +1,29 @@
+{
+  "host_comparison_history": {
+    "differing_field": "numeric_replay_max_absolute_error only",
+    "fix": "Compare derived error statistic against frozen tolerance, retain exact outcome/count/source comparisons; candidate/server raw/thresholds unchanged",
+    "initial_failure": "AssertionError: exact equality of local/server derived summaries",
+    "local_error": 1.6940658945086007e-21,
+    "new_native_calls": 0,
+    "original_frozen_tolerance": 1e-14,
+    "server_error": 0.0
+  },
+  "native_inference_calls": 0,
+  "native_learning_calls": 0,
+  "numeric_replay_max_absolute_error": 1.6940658945086007e-21,
+  "saved_lower_sources": 8,
+  "saved_upper_queries": 36,
+  "server_summary_equal_except_replay_error_statistic": true,
+  "status": "PASS",
+  "targeted_rejections": {
+    "confidence": "actual upper packet/query binding",
+    "cost": "kernel cost mismatch",
+    "drive": "fieldwise role encoding",
+    "origin": "actual upper packet/query binding",
+    "proof": "semantic proof references/terms",
+    "readout": "unrepaired numeric readout",
+    "revision": "actual upper packet/query binding",
+    "role": "actual upper packet/query binding",
+    "tick": "scalar replay tick mismatch"
+  }
+}

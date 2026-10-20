@@ -1,0 +1,174 @@
+[
+  {
+    "names": [
+      "src0_R0.json",
+      "src0_R1.json",
+      "src0_S0.json",
+      "src0_S1.json"
+    ],
+    "ref": {
+      "version": 1,
+      "captureSource": "redacted-adapter-outcome",
+      "sshCompleteness": "unknown",
+      "id": "9a571cd03051c45f179ad3a7c89565da82704753996fe0b3",
+      "executionId": "742f9cc155acdc14f78a0cf828773c06ce05e7f5d3484f74",
+      "state": "ready",
+      "expiresAt": 1792466559829,
+      "bytes": 42908,
+      "snapshotBytes": 47221,
+      "sha256": "35aee0d3011fe7ff0a4b9f4a58ac2bf42b463f8fd86cc02ace1355b7c1d7cf8b"
+    }
+  },
+  {
+    "names": [
+      "src1_R0.json",
+      "src1_R1.json",
+      "src1_S0.json",
+      "src1_S1.json"
+    ],
+    "ref": {
+      "version": 1,
+      "captureSource": "redacted-adapter-outcome",
+      "sshCompleteness": "unknown",
+      "id": "ee5afa3d4178cb282c78584f62d90837ff3a1e2001a0c671",
+      "executionId": "b890e8cdb46e716b79f8c7af8e87c33a702aa3be599f5716",
+      "state": "ready",
+      "expiresAt": 1792466566990,
+      "bytes": 42892,
+      "snapshotBytes": 47205,
+      "sha256": "a47a5ee0ba7c0f6785f0de19e8c05d5b5469ffcbfceed6499f1f1594f1b1a453"
+    }
+  },
+  {
+    "names": [
+      "n0_positive_forward__typed.json",
+      "n0_positive_forward__scalar_erased.json",
+      "n0_positive_forward__ordinary_join.json",
+      "n0_positive_reverse__typed.json",
+      "n0_positive_reverse__scalar_erased.json",
+      "n0_positive_reverse__ordinary_join.json"
+    ],
+    "ref": {
+      "version": 1,
+      "captureSource": "redacted-adapter-outcome",
+      "sshCompleteness": "unknown",
+      "id": "d1b542dae47f49309316af071ae162269389b28964c4e9b0",
+      "executionId": "824ed5504d4eae0a020c97289f9c2f47b15f0f898eb3fd00",
+      "state": "ready",
+      "expiresAt": 1792466574637,
+      "bytes": 126007,
+      "snapshotBytes": 138006,
+      "sha256": "3ca4d0ea046d78fcba8af1739def728844a1f658e20d7892490ace80fd40061e"
+    }
+  },
+  {
+    "names": [
+      "n0_bad_join__typed.json",
+      "n0_bad_join__scalar_erased.json",
+      "n0_bad_join__ordinary_join.json",
+      "n0_bad_subject__typed.json",
+      "n0_bad_subject__scalar_erased.json",
+      "n0_bad_subject__ordinary_join.json"
+    ],
+    "ref": {
+      "version": 1,
+      "captureSource": "redacted-adapter-outcome",
+      "sshCompleteness": "unknown",
+      "id": "9e1e68468e6f08b61d09d4d96d256cac6b240ca556272b43",
+      "executionId": "68c28c95939f564974636fb7772b62741dbbe7b11ac02c89",
+      "state": "ready",
+      "expiresAt": 1792466581552,
+      "bytes": 121768,
+      "snapshotBytes": 133415,
+      "sha256": "6acd88fdf3d03d1b019c11bb0e9837e2fa0fc4e8b26ec378a24b71a29c77cef3"
+    }
+  },
+  {
+    "names": [
+      "n0_bad_object__typed.json",
+      "n0_bad_object__scalar_erased.json",
+      "n0_bad_object__ordinary_join.json",
+      "n0_bad_both__typed.json",
+      "n0_bad_both__scalar_erased.json",
+      "n0_bad_both__ordinary_join.json"
+    ],
+    "ref": {
+      "version": 1,
+      "captureSource": "redacted-adapter-outcome",
+      "sshCompleteness": "unknown",
+      "id": "a91df6ddb6e5acf34e9a83d2572ed76eb2f3b19ca18c1f62",
+      "executionId": "18f4d36ad12c26a20a2e4263b33f5148a712ea8708f686c2",
+      "state": "ready",
+      "expiresAt": 1792466596663,
+      "bytes": 121038,
+      "snapshotBytes": 132641,
+      "sha256": "d0f8d7bc2f6afb1d9a64262650be5f4b91af6fde104acef8b2e65ea65ba9f91b"
+    }
+  },
+  {
+    "names": [
+      "n1_positive_forward__typed.json",
+      "n1_positive_forward__scalar_erased.json",
+      "n1_positive_forward__ordinary_join.json",
+      "n1_positive_reverse__typed.json",
+      "n1_positive_reverse__scalar_erased.json",
+      "n1_positive_reverse__ordinary_join.json"
+    ],
+    "ref": {
+      "version": 1,
+      "captureSource": "redacted-adapter-outcome",
+      "sshCompleteness": "unknown",
+      "id": "db3c84a298e039a46cf8d0c6069e01d1da3053a4e483ec91",
+      "executionId": "6a7610a6d400bea9f4dfddd8e4ba962dacd9786322cec55d",
+      "state": "ready",
+      "expiresAt": 1792466604426,
+      "bytes": 125923,
+      "snapshotBytes": 137922,
+      "sha256": "2ba7f0818bc5a4b0c4dfd751172edbeef37b53f868e94d7ed9792d4944975a74"
+    }
+  },
+  {
+    "names": [
+      "n1_bad_join__typed.json",
+      "n1_bad_join__scalar_erased.json",
+      "n1_bad_join__ordinary_join.json",
+      "n1_bad_subject__typed.json",
+      "n1_bad_subject__scalar_erased.json",
+      "n1_bad_subject__ordinary_join.json"
+    ],
+    "ref": {
+      "version": 1,
+      "captureSource": "redacted-adapter-outcome",
+      "sshCompleteness": "unknown",
+      "id": "0168c1866895c5038a8c2cc2a1a601301c126e35a94d9b44",
+      "executionId": "6af6f8d27d98f61a2e5682f465287354d4840878b93fe872",
+      "state": "ready",
+      "expiresAt": 1792466628781,
+      "bytes": 121684,
+      "snapshotBytes": 133331,
+      "sha256": "be1a92daab455a21c42546637146c5dbabb44a8619ad0485388e68998624c377"
+    }
+  },
+  {
+    "names": [
+      "n1_bad_object__typed.json",
+      "n1_bad_object__scalar_erased.json",
+      "n1_bad_object__ordinary_join.json",
+      "n1_bad_both__typed.json",
+      "n1_bad_both__scalar_erased.json",
+      "n1_bad_both__ordinary_join.json"
+    ],
+    "ref": {
+      "version": 1,
+      "captureSource": "redacted-adapter-outcome",
+      "sshCompleteness": "unknown",
+      "id": "e17afb810b291c27fa84892fc36da9506328f7b463f5adad",
+      "executionId": "8b922eb6e3833dbe870c40633d910a4d98db6adcb7197fa9",
+      "state": "ready",
+      "expiresAt": 1792466635668,
+      "bytes": 120954,
+      "snapshotBytes": 132557,
+      "sha256": "186a95bf841067c20422f0c469b999c21d455abe388721982eb8125e0be793c4"
+    }
+  }
+]
