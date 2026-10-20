@@ -1,0 +1,9927 @@
+{
+  "arms": [
+    "full",
+    "frozen",
+    "exact"
+  ],
+  "base": "b8deff8bde97e4b85d1ab621333abdc2cb54eecc",
+  "cases": [
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.2,
+      "key": "c000",
+      "mode": "one0",
+      "namespace": 0,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.2,
+      "key": "c001",
+      "mode": "one0",
+      "namespace": 0,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.2,
+      "key": "c002",
+      "mode": "one0",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.2,
+      "key": "c003",
+      "mode": "one0",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.2,
+      "key": "c004",
+      "mode": "one0",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.2,
+      "key": "c005",
+      "mode": "one0",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.2,
+      "key": "c006",
+      "mode": "one1",
+      "namespace": 0,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.2,
+      "key": "c007",
+      "mode": "one1",
+      "namespace": 0,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.2,
+      "key": "c008",
+      "mode": "one1",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.2,
+      "key": "c009",
+      "mode": "one1",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.2,
+      "key": "c010",
+      "mode": "one1",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.2,
+      "key": "c011",
+      "mode": "one1",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.2,
+      "key": "c012",
+      "mode": "either",
+      "namespace": 0,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.2,
+      "key": "c013",
+      "mode": "either",
+      "namespace": 0,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.2,
+      "key": "c014",
+      "mode": "either",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.2,
+      "key": "c015",
+      "mode": "either",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.2,
+      "key": "c016",
+      "mode": "either",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.2,
+      "key": "c017",
+      "mode": "either",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.2,
+      "key": "c018",
+      "mode": "both",
+      "namespace": 0,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.2,
+      "key": "c019",
+      "mode": "both",
+      "namespace": 0,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.2,
+      "key": "c020",
+      "mode": "both",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.2,
+      "key": "c021",
+      "mode": "both",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.2,
+      "key": "c022",
+      "mode": "both",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.2,
+      "key": "c023",
+      "mode": "both",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.5,
+      "key": "c024",
+      "mode": "one0",
+      "namespace": 0,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.5,
+      "key": "c025",
+      "mode": "one0",
+      "namespace": 0,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.5,
+      "key": "c026",
+      "mode": "one0",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.5,
+      "key": "c027",
+      "mode": "one0",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.5,
+      "key": "c028",
+      "mode": "one0",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.5,
+      "key": "c029",
+      "mode": "one0",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.5,
+      "key": "c030",
+      "mode": "one1",
+      "namespace": 0,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.5,
+      "key": "c031",
+      "mode": "one1",
+      "namespace": 0,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.5,
+      "key": "c032",
+      "mode": "one1",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.5,
+      "key": "c033",
+      "mode": "one1",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.5,
+      "key": "c034",
+      "mode": "one1",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.5,
+      "key": "c035",
+      "mode": "one1",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.5,
+      "key": "c036",
+      "mode": "either",
+      "namespace": 0,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.5,
+      "key": "c037",
+      "mode": "either",
+      "namespace": 0,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.5,
+      "key": "c038",
+      "mode": "either",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.5,
+      "key": "c039",
+      "mode": "either",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.5,
+      "key": "c040",
+      "mode": "either",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.5,
+      "key": "c041",
+      "mode": "either",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.5,
+      "key": "c042",
+      "mode": "both",
+      "namespace": 0,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.5,
+      "key": "c043",
+      "mode": "both",
+      "namespace": 0,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.5,
+      "key": "c044",
+      "mode": "both",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.5,
+      "key": "c045",
+      "mode": "both",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.5,
+      "key": "c046",
+      "mode": "both",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.5,
+      "key": "c047",
+      "mode": "both",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.8,
+      "key": "c048",
+      "mode": "one0",
+      "namespace": 0,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.8,
+      "key": "c049",
+      "mode": "one0",
+      "namespace": 0,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.8,
+      "key": "c050",
+      "mode": "one0",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.8,
+      "key": "c051",
+      "mode": "one0",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.8,
+      "key": "c052",
+      "mode": "one0",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.8,
+      "key": "c053",
+      "mode": "one0",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.8,
+      "key": "c054",
+      "mode": "one1",
+      "namespace": 0,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.8,
+      "key": "c055",
+      "mode": "one1",
+      "namespace": 0,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.8,
+      "key": "c056",
+      "mode": "one1",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.8,
+      "key": "c057",
+      "mode": "one1",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.8,
+      "key": "c058",
+      "mode": "one1",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.8,
+      "key": "c059",
+      "mode": "one1",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.8,
+      "key": "c060",
+      "mode": "either",
+      "namespace": 0,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.8,
+      "key": "c061",
+      "mode": "either",
+      "namespace": 0,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.8,
+      "key": "c062",
+      "mode": "either",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.8,
+      "key": "c063",
+      "mode": "either",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.8,
+      "key": "c064",
+      "mode": "either",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.8,
+      "key": "c065",
+      "mode": "either",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.8,
+      "key": "c066",
+      "mode": "both",
+      "namespace": 0,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.8,
+      "key": "c067",
+      "mode": "both",
+      "namespace": 0,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.8,
+      "key": "c068",
+      "mode": "both",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.8,
+      "key": "c069",
+      "mode": "both",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.8,
+      "key": "c070",
+      "mode": "both",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R0",
+        "n0_R1"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.8,
+      "key": "c071",
+      "mode": "both",
+      "namespace": 0,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.2,
+      "key": "c072",
+      "mode": "one0",
+      "namespace": 0,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.2,
+      "key": "c073",
+      "mode": "one0",
+      "namespace": 0,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.2,
+      "key": "c074",
+      "mode": "one0",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.2,
+      "key": "c075",
+      "mode": "one0",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.2,
+      "key": "c076",
+      "mode": "one0",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.2,
+      "key": "c077",
+      "mode": "one0",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.2,
+      "key": "c078",
+      "mode": "one1",
+      "namespace": 0,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.2,
+      "key": "c079",
+      "mode": "one1",
+      "namespace": 0,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.2,
+      "key": "c080",
+      "mode": "one1",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.2,
+      "key": "c081",
+      "mode": "one1",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.2,
+      "key": "c082",
+      "mode": "one1",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.2,
+      "key": "c083",
+      "mode": "one1",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.2,
+      "key": "c084",
+      "mode": "either",
+      "namespace": 0,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.2,
+      "key": "c085",
+      "mode": "either",
+      "namespace": 0,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.2,
+      "key": "c086",
+      "mode": "either",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.2,
+      "key": "c087",
+      "mode": "either",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.2,
+      "key": "c088",
+      "mode": "either",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.2,
+      "key": "c089",
+      "mode": "either",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.2,
+      "key": "c090",
+      "mode": "both",
+      "namespace": 0,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.2,
+      "key": "c091",
+      "mode": "both",
+      "namespace": 0,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.2,
+      "key": "c092",
+      "mode": "both",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.2,
+      "key": "c093",
+      "mode": "both",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.2,
+      "key": "c094",
+      "mode": "both",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.2,
+      "key": "c095",
+      "mode": "both",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.5,
+      "key": "c096",
+      "mode": "one0",
+      "namespace": 0,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.5,
+      "key": "c097",
+      "mode": "one0",
+      "namespace": 0,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.5,
+      "key": "c098",
+      "mode": "one0",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.5,
+      "key": "c099",
+      "mode": "one0",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.5,
+      "key": "c100",
+      "mode": "one0",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.5,
+      "key": "c101",
+      "mode": "one0",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.5,
+      "key": "c102",
+      "mode": "one1",
+      "namespace": 0,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.5,
+      "key": "c103",
+      "mode": "one1",
+      "namespace": 0,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.5,
+      "key": "c104",
+      "mode": "one1",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.5,
+      "key": "c105",
+      "mode": "one1",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.5,
+      "key": "c106",
+      "mode": "one1",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.5,
+      "key": "c107",
+      "mode": "one1",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.5,
+      "key": "c108",
+      "mode": "either",
+      "namespace": 0,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.5,
+      "key": "c109",
+      "mode": "either",
+      "namespace": 0,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.5,
+      "key": "c110",
+      "mode": "either",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.5,
+      "key": "c111",
+      "mode": "either",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.5,
+      "key": "c112",
+      "mode": "either",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.5,
+      "key": "c113",
+      "mode": "either",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.5,
+      "key": "c114",
+      "mode": "both",
+      "namespace": 0,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.5,
+      "key": "c115",
+      "mode": "both",
+      "namespace": 0,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.5,
+      "key": "c116",
+      "mode": "both",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.5,
+      "key": "c117",
+      "mode": "both",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.5,
+      "key": "c118",
+      "mode": "both",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.5,
+      "key": "c119",
+      "mode": "both",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.8,
+      "key": "c120",
+      "mode": "one0",
+      "namespace": 0,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.8,
+      "key": "c121",
+      "mode": "one0",
+      "namespace": 0,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.8,
+      "key": "c122",
+      "mode": "one0",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.8,
+      "key": "c123",
+      "mode": "one0",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.8,
+      "key": "c124",
+      "mode": "one0",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.8,
+      "key": "c125",
+      "mode": "one0",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.8,
+      "key": "c126",
+      "mode": "one1",
+      "namespace": 0,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.8,
+      "key": "c127",
+      "mode": "one1",
+      "namespace": 0,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.8,
+      "key": "c128",
+      "mode": "one1",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.8,
+      "key": "c129",
+      "mode": "one1",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.8,
+      "key": "c130",
+      "mode": "one1",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.8,
+      "key": "c131",
+      "mode": "one1",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.8,
+      "key": "c132",
+      "mode": "either",
+      "namespace": 0,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.8,
+      "key": "c133",
+      "mode": "either",
+      "namespace": 0,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.8,
+      "key": "c134",
+      "mode": "either",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.8,
+      "key": "c135",
+      "mode": "either",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.8,
+      "key": "c136",
+      "mode": "either",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.8,
+      "key": "c137",
+      "mode": "either",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.8,
+      "key": "c138",
+      "mode": "both",
+      "namespace": 0,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": 0.125,
+        "beta": -0.125
+      },
+      "initial": 0.8,
+      "key": "c139",
+      "mode": "both",
+      "namespace": 0,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.8,
+      "key": "c140",
+      "mode": "both",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.0,
+        "beta": 0.0
+      },
+      "initial": 0.8,
+      "key": "c141",
+      "mode": "both",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.8,
+      "key": "c142",
+      "mode": "both",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n0_T0",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n0_R1",
+        "n0_R0"
+      ],
+      "context": [
+        "n0_S0",
+        "n0_S1"
+      ],
+      "evidence": {
+        "alpha": -0.125,
+        "beta": 0.125
+      },
+      "initial": 0.8,
+      "key": "c143",
+      "mode": "both",
+      "namespace": 0,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n0_T1",
+      "vocabulary": [
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.2,
+      "key": "c144",
+      "mode": "one0",
+      "namespace": 1,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.2,
+      "key": "c145",
+      "mode": "one0",
+      "namespace": 1,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.2,
+      "key": "c146",
+      "mode": "one0",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.2,
+      "key": "c147",
+      "mode": "one0",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.2,
+      "key": "c148",
+      "mode": "one0",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.2,
+      "key": "c149",
+      "mode": "one0",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.2,
+      "key": "c150",
+      "mode": "one1",
+      "namespace": 1,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.2,
+      "key": "c151",
+      "mode": "one1",
+      "namespace": 1,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.2,
+      "key": "c152",
+      "mode": "one1",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.2,
+      "key": "c153",
+      "mode": "one1",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.2,
+      "key": "c154",
+      "mode": "one1",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.2,
+      "key": "c155",
+      "mode": "one1",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.2,
+      "key": "c156",
+      "mode": "either",
+      "namespace": 1,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.2,
+      "key": "c157",
+      "mode": "either",
+      "namespace": 1,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.2,
+      "key": "c158",
+      "mode": "either",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.2,
+      "key": "c159",
+      "mode": "either",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.2,
+      "key": "c160",
+      "mode": "either",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.2,
+      "key": "c161",
+      "mode": "either",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.2,
+      "key": "c162",
+      "mode": "both",
+      "namespace": 1,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.2,
+      "key": "c163",
+      "mode": "both",
+      "namespace": 1,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.2,
+      "key": "c164",
+      "mode": "both",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.2,
+      "key": "c165",
+      "mode": "both",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.2,
+      "key": "c166",
+      "mode": "both",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.2,
+      "key": "c167",
+      "mode": "both",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.5,
+      "key": "c168",
+      "mode": "one0",
+      "namespace": 1,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.5,
+      "key": "c169",
+      "mode": "one0",
+      "namespace": 1,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.5,
+      "key": "c170",
+      "mode": "one0",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.5,
+      "key": "c171",
+      "mode": "one0",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.5,
+      "key": "c172",
+      "mode": "one0",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.5,
+      "key": "c173",
+      "mode": "one0",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.5,
+      "key": "c174",
+      "mode": "one1",
+      "namespace": 1,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.5,
+      "key": "c175",
+      "mode": "one1",
+      "namespace": 1,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.5,
+      "key": "c176",
+      "mode": "one1",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.5,
+      "key": "c177",
+      "mode": "one1",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.5,
+      "key": "c178",
+      "mode": "one1",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.5,
+      "key": "c179",
+      "mode": "one1",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.5,
+      "key": "c180",
+      "mode": "either",
+      "namespace": 1,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.5,
+      "key": "c181",
+      "mode": "either",
+      "namespace": 1,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.5,
+      "key": "c182",
+      "mode": "either",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.5,
+      "key": "c183",
+      "mode": "either",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.5,
+      "key": "c184",
+      "mode": "either",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.5,
+      "key": "c185",
+      "mode": "either",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.5,
+      "key": "c186",
+      "mode": "both",
+      "namespace": 1,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.5,
+      "key": "c187",
+      "mode": "both",
+      "namespace": 1,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.5,
+      "key": "c188",
+      "mode": "both",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.5,
+      "key": "c189",
+      "mode": "both",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.5,
+      "key": "c190",
+      "mode": "both",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.5,
+      "key": "c191",
+      "mode": "both",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.8,
+      "key": "c192",
+      "mode": "one0",
+      "namespace": 1,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.8,
+      "key": "c193",
+      "mode": "one0",
+      "namespace": 1,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.8,
+      "key": "c194",
+      "mode": "one0",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.8,
+      "key": "c195",
+      "mode": "one0",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.8,
+      "key": "c196",
+      "mode": "one0",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.8,
+      "key": "c197",
+      "mode": "one0",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.8,
+      "key": "c198",
+      "mode": "one1",
+      "namespace": 1,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.8,
+      "key": "c199",
+      "mode": "one1",
+      "namespace": 1,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.8,
+      "key": "c200",
+      "mode": "one1",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.8,
+      "key": "c201",
+      "mode": "one1",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.8,
+      "key": "c202",
+      "mode": "one1",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.8,
+      "key": "c203",
+      "mode": "one1",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.8,
+      "key": "c204",
+      "mode": "either",
+      "namespace": 1,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.8,
+      "key": "c205",
+      "mode": "either",
+      "namespace": 1,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.8,
+      "key": "c206",
+      "mode": "either",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.8,
+      "key": "c207",
+      "mode": "either",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.8,
+      "key": "c208",
+      "mode": "either",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.8,
+      "key": "c209",
+      "mode": "either",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.8,
+      "key": "c210",
+      "mode": "both",
+      "namespace": 1,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.8,
+      "key": "c211",
+      "mode": "both",
+      "namespace": 1,
+      "order": 0,
+      "prior": -0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.8,
+      "key": "c212",
+      "mode": "both",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.8,
+      "key": "c213",
+      "mode": "both",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.0,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.8,
+      "key": "c214",
+      "mode": "both",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R0",
+        "n1_R1"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.8,
+      "key": "c215",
+      "mode": "both",
+      "namespace": 1,
+      "order": 0,
+      "prior": 0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.2,
+      "key": "c216",
+      "mode": "one0",
+      "namespace": 1,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.2,
+      "key": "c217",
+      "mode": "one0",
+      "namespace": 1,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.2,
+      "key": "c218",
+      "mode": "one0",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.2,
+      "key": "c219",
+      "mode": "one0",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.2,
+      "key": "c220",
+      "mode": "one0",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.2,
+      "key": "c221",
+      "mode": "one0",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.2,
+      "key": "c222",
+      "mode": "one1",
+      "namespace": 1,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.2,
+      "key": "c223",
+      "mode": "one1",
+      "namespace": 1,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.2,
+      "key": "c224",
+      "mode": "one1",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.2,
+      "key": "c225",
+      "mode": "one1",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.2,
+      "key": "c226",
+      "mode": "one1",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.2,
+      "key": "c227",
+      "mode": "one1",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.2,
+      "key": "c228",
+      "mode": "either",
+      "namespace": 1,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.2,
+      "key": "c229",
+      "mode": "either",
+      "namespace": 1,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.2,
+      "key": "c230",
+      "mode": "either",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.2,
+      "key": "c231",
+      "mode": "either",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.2,
+      "key": "c232",
+      "mode": "either",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.2,
+      "key": "c233",
+      "mode": "either",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.2,
+      "key": "c234",
+      "mode": "both",
+      "namespace": 1,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.2,
+      "key": "c235",
+      "mode": "both",
+      "namespace": 1,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.2,
+      "key": "c236",
+      "mode": "both",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.2,
+      "key": "c237",
+      "mode": "both",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.2,
+      "key": "c238",
+      "mode": "both",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.2,
+      "key": "c239",
+      "mode": "both",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.5,
+      "key": "c240",
+      "mode": "one0",
+      "namespace": 1,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.5,
+      "key": "c241",
+      "mode": "one0",
+      "namespace": 1,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.5,
+      "key": "c242",
+      "mode": "one0",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.5,
+      "key": "c243",
+      "mode": "one0",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.5,
+      "key": "c244",
+      "mode": "one0",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.5,
+      "key": "c245",
+      "mode": "one0",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.5,
+      "key": "c246",
+      "mode": "one1",
+      "namespace": 1,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.5,
+      "key": "c247",
+      "mode": "one1",
+      "namespace": 1,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.5,
+      "key": "c248",
+      "mode": "one1",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.5,
+      "key": "c249",
+      "mode": "one1",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.5,
+      "key": "c250",
+      "mode": "one1",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.5,
+      "key": "c251",
+      "mode": "one1",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.5,
+      "key": "c252",
+      "mode": "either",
+      "namespace": 1,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.5,
+      "key": "c253",
+      "mode": "either",
+      "namespace": 1,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.5,
+      "key": "c254",
+      "mode": "either",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.5,
+      "key": "c255",
+      "mode": "either",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.5,
+      "key": "c256",
+      "mode": "either",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.5,
+      "key": "c257",
+      "mode": "either",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.5,
+      "key": "c258",
+      "mode": "both",
+      "namespace": 1,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.5,
+      "key": "c259",
+      "mode": "both",
+      "namespace": 1,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.5,
+      "key": "c260",
+      "mode": "both",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.5,
+      "key": "c261",
+      "mode": "both",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.5,
+      "key": "c262",
+      "mode": "both",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.5,
+      "key": "c263",
+      "mode": "both",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.8,
+      "key": "c264",
+      "mode": "one0",
+      "namespace": 1,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.8,
+      "key": "c265",
+      "mode": "one0",
+      "namespace": 1,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.8,
+      "key": "c266",
+      "mode": "one0",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.8,
+      "key": "c267",
+      "mode": "one0",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.8,
+      "key": "c268",
+      "mode": "one0",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.8,
+      "key": "c269",
+      "mode": "one0",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.8,
+      "key": "c270",
+      "mode": "one1",
+      "namespace": 1,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.8,
+      "key": "c271",
+      "mode": "one1",
+      "namespace": 1,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.8,
+      "key": "c272",
+      "mode": "one1",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.8,
+      "key": "c273",
+      "mode": "one1",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.8,
+      "key": "c274",
+      "mode": "one1",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.8,
+      "key": "c275",
+      "mode": "one1",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.8,
+      "key": "c276",
+      "mode": "either",
+      "namespace": 1,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.8,
+      "key": "c277",
+      "mode": "either",
+      "namespace": 1,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.8,
+      "key": "c278",
+      "mode": "either",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.8,
+      "key": "c279",
+      "mode": "either",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.8,
+      "key": "c280",
+      "mode": "either",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.8,
+      "key": "c281",
+      "mode": "either",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.8,
+      "key": "c282",
+      "mode": "both",
+      "namespace": 1,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": 0.125,
+        "jun": -0.125
+      },
+      "initial": 0.8,
+      "key": "c283",
+      "mode": "both",
+      "namespace": 1,
+      "order": 1,
+      "prior": -0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.8,
+      "key": "c284",
+      "mode": "both",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "full",
+        "frozen",
+        "exact"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.0,
+        "jun": 0.0
+      },
+      "initial": 0.8,
+      "key": "c285",
+      "mode": "both",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.0,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "frozen",
+        "exact",
+        "full"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.8,
+      "key": "c286",
+      "mode": "both",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n1_T0",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    },
+    {
+      "arms": [
+        "exact",
+        "full",
+        "frozen"
+      ],
+      "candidates": [
+        "n1_R1",
+        "n1_R0"
+      ],
+      "context": [
+        "n1_S0",
+        "n1_S1"
+      ],
+      "evidence": {
+        "iris": -0.125,
+        "jun": 0.125
+      },
+      "initial": 0.8,
+      "key": "c287",
+      "mode": "both",
+      "namespace": 1,
+      "order": 1,
+      "prior": 0.25,
+      "t": "n1_T1",
+      "vocabulary": [
+        "iris",
+        "jun"
+      ]
+    }
+  ],
+  "chunks": [
+    [
+      "c000",
+      "c001",
+      "c002",
+      "c003",
+      "c004",
+      "c005",
+      "c006",
+      "c007",
+      "c008",
+      "c009",
+      "c010",
+      "c011",
+      "c012",
+      "c013",
+      "c014",
+      "c015",
+      "c016",
+      "c017",
+      "c018",
+      "c019",
+      "c020",
+      "c021",
+      "c022",
+      "c023"
+    ],
+    [
+      "c024",
+      "c025",
+      "c026",
+      "c027",
+      "c028",
+      "c029",
+      "c030",
+      "c031",
+      "c032",
+      "c033",
+      "c034",
+      "c035",
+      "c036",
+      "c037",
+      "c038",
+      "c039",
+      "c040",
+      "c041",
+      "c042",
+      "c043",
+      "c044",
+      "c045",
+      "c046",
+      "c047"
+    ],
+    [
+      "c048",
+      "c049",
+      "c050",
+      "c051",
+      "c052",
+      "c053",
+      "c054",
+      "c055",
+      "c056",
+      "c057",
+      "c058",
+      "c059",
+      "c060",
+      "c061",
+      "c062",
+      "c063",
+      "c064",
+      "c065",
+      "c066",
+      "c067",
+      "c068",
+      "c069",
+      "c070",
+      "c071"
+    ],
+    [
+      "c072",
+      "c073",
+      "c074",
+      "c075",
+      "c076",
+      "c077",
+      "c078",
+      "c079",
+      "c080",
+      "c081",
+      "c082",
+      "c083",
+      "c084",
+      "c085",
+      "c086",
+      "c087",
+      "c088",
+      "c089",
+      "c090",
+      "c091",
+      "c092",
+      "c093",
+      "c094",
+      "c095"
+    ],
+    [
+      "c096",
+      "c097",
+      "c098",
+      "c099",
+      "c100",
+      "c101",
+      "c102",
+      "c103",
+      "c104",
+      "c105",
+      "c106",
+      "c107",
+      "c108",
+      "c109",
+      "c110",
+      "c111",
+      "c112",
+      "c113",
+      "c114",
+      "c115",
+      "c116",
+      "c117",
+      "c118",
+      "c119"
+    ],
+    [
+      "c120",
+      "c121",
+      "c122",
+      "c123",
+      "c124",
+      "c125",
+      "c126",
+      "c127",
+      "c128",
+      "c129",
+      "c130",
+      "c131",
+      "c132",
+      "c133",
+      "c134",
+      "c135",
+      "c136",
+      "c137",
+      "c138",
+      "c139",
+      "c140",
+      "c141",
+      "c142",
+      "c143"
+    ],
+    [
+      "c144",
+      "c145",
+      "c146",
+      "c147",
+      "c148",
+      "c149",
+      "c150",
+      "c151",
+      "c152",
+      "c153",
+      "c154",
+      "c155",
+      "c156",
+      "c157",
+      "c158",
+      "c159",
+      "c160",
+      "c161",
+      "c162",
+      "c163",
+      "c164",
+      "c165",
+      "c166",
+      "c167"
+    ],
+    [
+      "c168",
+      "c169",
+      "c170",
+      "c171",
+      "c172",
+      "c173",
+      "c174",
+      "c175",
+      "c176",
+      "c177",
+      "c178",
+      "c179",
+      "c180",
+      "c181",
+      "c182",
+      "c183",
+      "c184",
+      "c185",
+      "c186",
+      "c187",
+      "c188",
+      "c189",
+      "c190",
+      "c191"
+    ],
+    [
+      "c192",
+      "c193",
+      "c194",
+      "c195",
+      "c196",
+      "c197",
+      "c198",
+      "c199",
+      "c200",
+      "c201",
+      "c202",
+      "c203",
+      "c204",
+      "c205",
+      "c206",
+      "c207",
+      "c208",
+      "c209",
+      "c210",
+      "c211",
+      "c212",
+      "c213",
+      "c214",
+      "c215"
+    ],
+    [
+      "c216",
+      "c217",
+      "c218",
+      "c219",
+      "c220",
+      "c221",
+      "c222",
+      "c223",
+      "c224",
+      "c225",
+      "c226",
+      "c227",
+      "c228",
+      "c229",
+      "c230",
+      "c231",
+      "c232",
+      "c233",
+      "c234",
+      "c235",
+      "c236",
+      "c237",
+      "c238",
+      "c239"
+    ],
+    [
+      "c240",
+      "c241",
+      "c242",
+      "c243",
+      "c244",
+      "c245",
+      "c246",
+      "c247",
+      "c248",
+      "c249",
+      "c250",
+      "c251",
+      "c252",
+      "c253",
+      "c254",
+      "c255",
+      "c256",
+      "c257",
+      "c258",
+      "c259",
+      "c260",
+      "c261",
+      "c262",
+      "c263"
+    ],
+    [
+      "c264",
+      "c265",
+      "c266",
+      "c267",
+      "c268",
+      "c269",
+      "c270",
+      "c271",
+      "c272",
+      "c273",
+      "c274",
+      "c275",
+      "c276",
+      "c277",
+      "c278",
+      "c279",
+      "c280",
+      "c281",
+      "c282",
+      "c283",
+      "c284",
+      "c285",
+      "c286",
+      "c287"
+    ]
+  ],
+  "experiment": "EXP-79",
+  "feedback_is_compatibility_not_posterior": true,
+  "hard_context": true,
+  "kernel": {
+    "damping": 0.45,
+    "evidence_gain": 4.0,
+    "inhibition": 0.2,
+    "learning_rate": 0.25,
+    "margin_threshold": 0.3,
+    "max_circuits": 16,
+    "max_edges": 8,
+    "max_groups": 32,
+    "max_observation_requests": 2,
+    "max_path_length": 4,
+    "max_paths": 4,
+    "max_search": 2048,
+    "max_ticks": 160,
+    "min_valid_episodes": 3,
+    "patience": 4,
+    "prior_gain": 0.0,
+    "relation_gain": 2.0,
+    "residual_tolerance": 1e-06,
+    "self_excitation": 0.25,
+    "temperature": 1.0,
+    "top_down_gain": 0.35,
+    "weakening": 0.2
+  },
+  "limits": {
+    "automatic_retry": false,
+    "child_address_space_bytes": 268435456,
+    "child_file_bytes": 16777216,
+    "parent_address_space_bytes": 536870912,
+    "parent_file_bytes": 33554432,
+    "raw_bytes": 134217728,
+    "stage_seconds": 90,
+    "total_seconds": 1800,
+    "workers": 1
+  },
+  "maximum_logical_ticks": 462720,
+  "maximum_measurement_requests": 0,
+  "maximum_native_settle_calls": 2892,
+  "programs": {
+    "both": {
+      "edge_count": 2,
+      "groups": [
+        {
+          "bias": 0.0,
+          "id": "x",
+          "level": 0
+        },
+        {
+          "bias": 0.0,
+          "id": "y0",
+          "level": 0
+        },
+        {
+          "bias": 0.0,
+          "id": "y1",
+          "level": 0
+        },
+        {
+          "bias": -2.0,
+          "id": "p0",
+          "level": 1
+        },
+        {
+          "bias": -2.0,
+          "id": "n0",
+          "level": 1
+        },
+        {
+          "bias": 2.0,
+          "id": "eq0",
+          "level": 1
+        },
+        {
+          "bias": -2.0,
+          "id": "p1",
+          "level": 1
+        },
+        {
+          "bias": -2.0,
+          "id": "n1",
+          "level": 1
+        },
+        {
+          "bias": 2.0,
+          "id": "eq1",
+          "level": 1
+        },
+        {
+          "bias": -2.0,
+          "id": "goal",
+          "level": 1
+        }
+      ],
+      "links": [
+        {
+          "kind": "support",
+          "source": "x",
+          "target": "p0",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "p0",
+          "target": "x",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "y0",
+          "target": "p0",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "p0",
+          "target": "y0",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "x",
+          "target": "n0",
+          "weight": -2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "n0",
+          "target": "x",
+          "weight": -0.35
+        },
+        {
+          "kind": "support",
+          "source": "y0",
+          "target": "n0",
+          "weight": -2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "n0",
+          "target": "y0",
+          "weight": -0.35
+        },
+        {
+          "kind": "support",
+          "source": "p0",
+          "target": "eq0",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "eq0",
+          "target": "p0",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "n0",
+          "target": "eq0",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "eq0",
+          "target": "n0",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "x",
+          "target": "p1",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "p1",
+          "target": "x",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "y1",
+          "target": "p1",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "p1",
+          "target": "y1",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "x",
+          "target": "n1",
+          "weight": -2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "n1",
+          "target": "x",
+          "weight": -0.35
+        },
+        {
+          "kind": "support",
+          "source": "y1",
+          "target": "n1",
+          "weight": -2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "n1",
+          "target": "y1",
+          "weight": -0.35
+        },
+        {
+          "kind": "support",
+          "source": "p1",
+          "target": "eq1",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "eq1",
+          "target": "p1",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "n1",
+          "target": "eq1",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "eq1",
+          "target": "n1",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "eq0",
+          "target": "goal",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "goal",
+          "target": "eq0",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "eq1",
+          "target": "goal",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "goal",
+          "target": "eq1",
+          "weight": 0.35
+        }
+      ],
+      "paths": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "either": {
+      "edge_count": 2,
+      "groups": [
+        {
+          "bias": 0.0,
+          "id": "x",
+          "level": 0
+        },
+        {
+          "bias": 0.0,
+          "id": "y0",
+          "level": 0
+        },
+        {
+          "bias": 0.0,
+          "id": "y1",
+          "level": 0
+        },
+        {
+          "bias": -2.0,
+          "id": "p0",
+          "level": 1
+        },
+        {
+          "bias": -2.0,
+          "id": "n0",
+          "level": 1
+        },
+        {
+          "bias": 2.0,
+          "id": "eq0",
+          "level": 1
+        },
+        {
+          "bias": -2.0,
+          "id": "p1",
+          "level": 1
+        },
+        {
+          "bias": -2.0,
+          "id": "n1",
+          "level": 1
+        },
+        {
+          "bias": 2.0,
+          "id": "eq1",
+          "level": 1
+        },
+        {
+          "bias": 2.0,
+          "id": "goal",
+          "level": 1
+        }
+      ],
+      "links": [
+        {
+          "kind": "support",
+          "source": "x",
+          "target": "p0",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "p0",
+          "target": "x",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "y0",
+          "target": "p0",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "p0",
+          "target": "y0",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "x",
+          "target": "n0",
+          "weight": -2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "n0",
+          "target": "x",
+          "weight": -0.35
+        },
+        {
+          "kind": "support",
+          "source": "y0",
+          "target": "n0",
+          "weight": -2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "n0",
+          "target": "y0",
+          "weight": -0.35
+        },
+        {
+          "kind": "support",
+          "source": "p0",
+          "target": "eq0",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "eq0",
+          "target": "p0",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "n0",
+          "target": "eq0",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "eq0",
+          "target": "n0",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "x",
+          "target": "p1",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "p1",
+          "target": "x",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "y1",
+          "target": "p1",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "p1",
+          "target": "y1",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "x",
+          "target": "n1",
+          "weight": -2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "n1",
+          "target": "x",
+          "weight": -0.35
+        },
+        {
+          "kind": "support",
+          "source": "y1",
+          "target": "n1",
+          "weight": -2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "n1",
+          "target": "y1",
+          "weight": -0.35
+        },
+        {
+          "kind": "support",
+          "source": "p1",
+          "target": "eq1",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "eq1",
+          "target": "p1",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "n1",
+          "target": "eq1",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "eq1",
+          "target": "n1",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "eq0",
+          "target": "goal",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "goal",
+          "target": "eq0",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "eq1",
+          "target": "goal",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "goal",
+          "target": "eq1",
+          "weight": 0.35
+        }
+      ],
+      "paths": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "one": {
+      "edge_count": 2,
+      "groups": [
+        {
+          "bias": 0.0,
+          "id": "x",
+          "level": 0
+        },
+        {
+          "bias": 0.0,
+          "id": "y0",
+          "level": 0
+        },
+        {
+          "bias": -2.0,
+          "id": "p0",
+          "level": 1
+        },
+        {
+          "bias": -2.0,
+          "id": "n0",
+          "level": 1
+        },
+        {
+          "bias": 2.0,
+          "id": "goal",
+          "level": 1
+        }
+      ],
+      "links": [
+        {
+          "kind": "support",
+          "source": "x",
+          "target": "p0",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "p0",
+          "target": "x",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "y0",
+          "target": "p0",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "p0",
+          "target": "y0",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "x",
+          "target": "n0",
+          "weight": -2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "n0",
+          "target": "x",
+          "weight": -0.35
+        },
+        {
+          "kind": "support",
+          "source": "y0",
+          "target": "n0",
+          "weight": -2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "n0",
+          "target": "y0",
+          "weight": -0.35
+        },
+        {
+          "kind": "support",
+          "source": "p0",
+          "target": "goal",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "goal",
+          "target": "p0",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "n0",
+          "target": "goal",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "goal",
+          "target": "n0",
+          "weight": 0.35
+        }
+      ],
+      "paths": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "selector": {
+      "edge_count": 2,
+      "groups": [
+        {
+          "bias": 0.0,
+          "id": "local",
+          "level": 0
+        },
+        {
+          "bias": 0.0,
+          "id": "context",
+          "level": 0
+        },
+        {
+          "bias": 0.0,
+          "id": "goal",
+          "level": 1
+        }
+      ],
+      "links": [
+        {
+          "kind": "support",
+          "source": "local",
+          "target": "goal",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "goal",
+          "target": "local",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "context",
+          "target": "goal",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "goal",
+          "target": "context",
+          "weight": 0.35
+        }
+      ],
+      "paths": [
+        [
+          0,
+          1
+        ]
+      ]
+    }
+  },
+  "run": "r33",
+  "scalar_tolerance": 1e-14,
+  "schema": "hcr-r33-typed-feedback-v1",
+  "soft_prior_is_truth": false,
+  "sources": [
+    {
+      "key": "n0_R0",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "start_a",
+            "target": "n0_R0_mid"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "n0_R0_mid",
+            "target": "alpha"
+          }
+        ],
+        "episode_id": "r33-n0_R0",
+        "goal": "alpha",
+        "revision": 0,
+        "start": "start_a"
+      },
+      "predicate": "R"
+    },
+    {
+      "key": "n0_R1",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "start_a",
+            "target": "n0_R1_mid"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "n0_R1_mid",
+            "target": "beta"
+          }
+        ],
+        "episode_id": "r33-n0_R1",
+        "goal": "beta",
+        "revision": 0,
+        "start": "start_a"
+      },
+      "predicate": "R"
+    },
+    {
+      "key": "n0_S0",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "alpha",
+            "target": "n0_S0_mid"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "n0_S0_mid",
+            "target": "end_s"
+          }
+        ],
+        "episode_id": "r33-n0_S0",
+        "goal": "end_s",
+        "revision": 0,
+        "start": "alpha"
+      },
+      "predicate": "S"
+    },
+    {
+      "key": "n0_S1",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "beta",
+            "target": "n0_S1_mid"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "n0_S1_mid",
+            "target": "end_s"
+          }
+        ],
+        "episode_id": "r33-n0_S1",
+        "goal": "end_s",
+        "revision": 0,
+        "start": "beta"
+      },
+      "predicate": "S"
+    },
+    {
+      "key": "n0_T0",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "alpha",
+            "target": "n0_T0_mid"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "n0_T0_mid",
+            "target": "end_t"
+          }
+        ],
+        "episode_id": "r33-n0_T0",
+        "goal": "end_t",
+        "revision": 0,
+        "start": "alpha"
+      },
+      "predicate": "T"
+    },
+    {
+      "key": "n0_T1",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "beta",
+            "target": "n0_T1_mid"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "n0_T1_mid",
+            "target": "end_t"
+          }
+        ],
+        "episode_id": "r33-n0_T1",
+        "goal": "end_t",
+        "revision": 0,
+        "start": "beta"
+      },
+      "predicate": "T"
+    },
+    {
+      "key": "n1_R0",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "start_b",
+            "target": "n1_R0_mid"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "n1_R0_mid",
+            "target": "iris"
+          }
+        ],
+        "episode_id": "r33-n1_R0",
+        "goal": "iris",
+        "revision": 0,
+        "start": "start_b"
+      },
+      "predicate": "R"
+    },
+    {
+      "key": "n1_R1",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "start_b",
+            "target": "n1_R1_mid"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "n1_R1_mid",
+            "target": "jun"
+          }
+        ],
+        "episode_id": "r33-n1_R1",
+        "goal": "jun",
+        "revision": 0,
+        "start": "start_b"
+      },
+      "predicate": "R"
+    },
+    {
+      "key": "n1_S0",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "iris",
+            "target": "n1_S0_mid"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "n1_S0_mid",
+            "target": "tail_s"
+          }
+        ],
+        "episode_id": "r33-n1_S0",
+        "goal": "tail_s",
+        "revision": 0,
+        "start": "iris"
+      },
+      "predicate": "S"
+    },
+    {
+      "key": "n1_S1",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "jun",
+            "target": "n1_S1_mid"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "n1_S1_mid",
+            "target": "tail_s"
+          }
+        ],
+        "episode_id": "r33-n1_S1",
+        "goal": "tail_s",
+        "revision": 0,
+        "start": "jun"
+      },
+      "predicate": "S"
+    },
+    {
+      "key": "n1_T0",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "iris",
+            "target": "n1_T0_mid"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "n1_T0_mid",
+            "target": "tail_t"
+          }
+        ],
+        "episode_id": "r33-n1_T0",
+        "goal": "tail_t",
+        "revision": 0,
+        "start": "iris"
+      },
+      "predicate": "T"
+    },
+    {
+      "key": "n1_T1",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "jun",
+            "target": "n1_T1_mid"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "n1_T1_mid",
+            "target": "tail_t"
+          }
+        ],
+        "episode_id": "r33-n1_T1",
+        "goal": "tail_t",
+        "revision": 0,
+        "start": "jun"
+      },
+      "predicate": "T"
+    }
+  ],
+  "training_calls": 0,
+  "world_measure_calls": 0
+}

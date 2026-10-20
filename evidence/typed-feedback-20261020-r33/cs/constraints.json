@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "1.0.0",
+  "reportId": "CS-R33-CONSTRAINTS",
+  "requestDigest": "sha256:5afb985dd60305818cfe5efe1dad8a574bf74f00cae6327e4c37a001526f40ee",
+  "sourceSnapshotDigest": "sha256:a5afc1dfc7082e747e6a65d07e836ed06fe8f8df4d8c9822b5c55eee9e165892",
+  "knowledgePackVersion": "0.1.0",
+  "knowledgePackDigest": "sha256:d8351d9aabb433403830fcffc3a2f2438b6d428711c93b6ded9eff002468c3d1",
+  "draftUse": {
+    "allowed": false,
+    "basis": "Validated identity/reuse and matched measurement rules"
+  },
+  "applicability": "applicable",
+  "applicabilityReason": "Typed source reuse and causal feedback correctness need explicit identity and evidence accounting.",
+  "selectedRules": [
+    {
+      "ruleId": "ALG-KEY-004",
+      "ruleDigest": "sha256:db77383ecb5f41ef3af5cb60769edaea507cac5cb25e28b88f249e84a062ba2e",
+      "applicabilityReason": "Shared native source reuse and candidate-order routing require full source/role/revision/config binding; a selected revision may not silently change origin roles."
+    },
+    {
+      "ruleId": "PERF-MEASURE-001",
+      "ruleDigest": "sha256:ef11800e55663f1b719f62d3f812280fd6e56c6895eef3028b9db344a9d0a355",
+      "applicabilityReason": "Information-matched exact control and actual shared-source plus all roundtrip/serialization/process costs; semantic errors preclude efficiency adoption."
+    }
+  ],
+  "facts": [
+    {
+      "id": "FACT-GAP",
+      "statement": "R19 scalar feedback is completed; R32 authored roles are consumed only bottom-up. New test must route typed candidate-specific compatibility into native lower selection and a distinct T consumer without host semantic solving.",
+      "evidenceRefs": [
+        "SRC-R32",
+        "SRC-R19",
+        "SRC-RESULT"
+      ]
+    },
+    {
+      "id": "FACT-KERNEL",
+      "statement": "Common bounded synchronous kernel supports signed graphs; no truth or role equality inside tick. A fixed numeric selector is not inherently a sound hard-constraint solver. Record its negative outcomes without repair.",
+      "evidenceRefs": [
+        "SRC-KERNEL",
+        "SRC-CORE"
+      ]
+    }
+  ],
+  "assumptions": [],
+  "invariants": [
+    {
+      "id": "INV-BOUNDARY",
+      "statement": "Actual12native source path records retain roles/source/config/proof digests. Complete two-alternative slot packets are conditional hypotheses, not jointly asserted truths. Native role compatibility reads fields only and never lower confidence, preventing own-posterior feedback. Host copies two numeric messages by frozen candidate identity; native lower selects without role comparisons. Selection revision1 preserves source roles. Final T accepts only selected/unresolved lower packet,T,vocabulary,Config,initial; no C/messages/truth/case argument.",
+      "scope": "R33 frozen288cases3arms and12native shared sources",
+      "basisRefs": [
+        "FACT-GAP",
+        "FACT-KERNEL"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-SEMANTICS",
+      "statement": "Freeze288 inputs:4hard context forms x3soft priors x2T x2names x2candidate orders x3initial values; full/frozen/exact arms. Frozen is causal intervention, not strong algorithm baseline. Exact solver has all same information and returns hard feasible-set selection/query/abstention reasons. Numeric output not repaired; record ambiguity/inconsistency and query failures, condition-paired effects and later T consumption. Fixed one-pass authored grammar only, no learning/unique/generic iterative inference claim.",
+      "scope": "R33 frozen288cases3arms and12native shared sources",
+      "basisRefs": [
+        "FACT-GAP",
+        "FACT-KERNEL"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-COST",
+      "statement": "12sources+288x2x5numeric settles<=2892/462720ticks;864 evaluations,training0,World.measure0,worker1,retry0,total1800s/stage90s/raw128MiB. Preserve all native ticks, input/output/source SHA and process caps. Independent scalar/controller/cost/source-proof/semantic replay; full shared source once per arm plus graph/guard/message/encoding/readout/proof/serialization. Separate physical work, per-arm allocation, audit and prepare; no statistical speed claim or future amortization.",
+      "scope": "R33 frozen288cases3arms and12native shared sources",
+      "basisRefs": [
+        "FACT-GAP",
+        "FACT-KERNEL"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "PERF-MEASURE-001"
+      ]
+    }
+  ],
+  "designChoices": [
+    {
+      "id": "CHOICE-SERIAL",
+      "statement": "Reuse actual R32 lower and native common settle; authored5/10group role equality compatibility,3group lower selector, independent5group final T. Fixed scheduling, no general runtime/core changes/dependencies.",
+      "rationale": "Tests new typed roundtrip path and semantic failure boundaries without requiring joint/fixed-point superiority.",
+      "basisRefs": [
+        "FACT-GAP",
+        "FACT-KERNEL"
+      ]
+    }
+  ],
+  "verificationObligations": [
+    {
+      "id": "OB-BOUNDARY",
+      "invariantIds": [
+        "INV-BOUNDARY"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Role/source/order/revision spoof accepted; host role join/argmax/feasible filtering; final T reads C; feedback depends on lower confidence or accumulates old evidence.",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-SEMANTICS",
+      "invariantIds": [
+        "INV-SEMANTICS"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Missing cells, post-hoc decode/threshold/input retune, semantic failures dropped, ambiguity/empty set coerced to correct False, or exact success hidden.",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-COST",
+      "invariantIds": [
+        "INV-COST"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Exceeded calls/limits, duplicate evidence counted as independent, unreceived raw asserted complete, hidden bridge/source work or only native counters used to claim speed.",
+      "requirementLevel": "required"
+    }
+  ],
+  "requiredCapabilities": [
+    "cs-constraint-derivation",
+    "cs-implementation-review"
+  ],
+  "verdict": "READY"
+}

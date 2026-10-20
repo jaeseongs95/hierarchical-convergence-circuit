@@ -1,0 +1,26 @@
+{
+  "files": [
+    {
+      "digest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path": "candidate/__init__.py"
+    },
+    {
+      "digest": "sha256:764fd9281ad32a2b8e2118fb1895e657a64b9b88430e8b6422ecb43c930d572f",
+      "path": "candidate/bootstrap.py"
+    },
+    {
+      "digest": "sha256:f89f9eb5ddb25a316158d763a9e6b29b3ea528140c9c8124790042f8ca89b18b",
+      "path": "candidate/probe.py"
+    },
+    {
+      "digest": "sha256:95820d0fcbf48290f677e9a995c7a3a4a6261a7fb5d2b256b59c998805a6a5d9",
+      "path": "candidate/runtime.py"
+    },
+    {
+      "digest": "sha256:f3172ba682c1f1153232fe513811ffd99ec3a7ef128d145425caa15aef6a2e47",
+      "path": "candidate/verify.py"
+    }
+  ],
+  "schemaVersion": "1.0.0",
+  "scopeSummary": "R33 isolated serial typed conditional alternatives: actual native source proofs; external role-only compatibility messages; native selector with original prior plus one replacement feedback; independent final T consumer; full/frozen/exact factorial288cases, no core edits or learned/general inference claim."
+}

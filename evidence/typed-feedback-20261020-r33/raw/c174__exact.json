@@ -1,0 +1,1 @@
+{"arm": "exact", "bridge": {"independent_evidence_added": 0, "packet_bytes": 2385, "packet_hash_fields": 20, "source_hash_recomputations": 10, "source_record_bytes": 49100, "source_records_loaded": 5}, "case": "c174", "feasible": [1], "kernels": [], "reason": "decided", "role_equality_operations": 5, "selected_index": 1, "value": false}

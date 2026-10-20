@@ -1,0 +1,9 @@
+{
+  "id": "374816ca503583deaba47c7465d360d6e1b7418251bc0e82",
+  "state": "completed",
+  "approvalMode": "automatic",
+  "reasonCode": "command_set",
+  "native_reruns": 0,
+  "source_zip_sha256": "b8acca77896da4a93ecc6ec2d549ca99b57d13f4733fcc62e6d0ddf36bb232e6",
+  "raw_receipt": "881JSON raw bytes verified;30emptylogs and binary ZIP not received"
+}

@@ -1,0 +1,377 @@
+{
+  "axis_decisions": [
+    {
+      "axis": "Nonduplication",
+      "decision": "typed alternatives→native role compatibility→native lower selection→separate native T consumer; scalar one-feedback scheduling 자체는 새 기여 아님",
+      "evidence_claim_ids": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "axis": "Mechanism",
+      "decision": "serial fixed host scheduling, numeric field-only adapter, external compatibility feedback without lower posterior; frozen lower intervention and full-information exact solver",
+      "evidence_claim_ids": [
+        "C2",
+        "C4"
+      ]
+    },
+    {
+      "axis": "Validity",
+      "decision": "complete alternative set; hard-context feasible-set oracle; ambiguous/inconsistent and misleading soft priors remain distinct; no answer repair",
+      "evidence_claim_ids": [
+        "C2",
+        "C3"
+      ]
+    },
+    {
+      "axis": "Scale",
+      "decision": "288 factorial inputs×3arms, same source pool and full cost ledgers; within worker1/1800s caps; no speed superiority",
+      "evidence_claim_ids": [
+        "C3",
+        "C4"
+      ]
+    }
+  ],
+  "case_brief": {
+    "assumptions": [
+      "대안 후보 중 하나를 관계 슬롯에 결속한다는 공개 과제 문법; native primitive path validity는 세계 truth가 아님"
+    ],
+    "constraints": [
+      "동일 private 연구repo와 AI Research SSH만 사용",
+      "새 paid resource/dependency/service/권한/peer 메시지 없음",
+      "기존 core와 연구 보존",
+      "작은 규모를 강제하지 않고 판별 요인을 충분히 교차",
+      "실패 보존; 학습·효율·고유성·확률교정·일반화 주장 금지"
+    ],
+    "decision": "다음 R33의 비중복 과제·왕복 소비 경계·정보동일 대조·규모를 정한다.",
+    "facts": [
+      "R19는 이미 host 단일 scalar feedback 후 lower/upper 재실행을 수행했다.",
+      "R32는 확정 positive source export와 두 기호 role encoder, 단방향 upper 소비를 구현했다.",
+      "R32 typed/ordinary12of12, scalar8of12는 authored bounded sufficiency이며 우월성·학습 증거가 아니다.",
+      "native tick/settle는 signed support/top_down graph를 처리하며 role·truth를 읽지 않는다."
+    ],
+    "failure_modes": [
+      "host 역할 결합 정답 주입",
+      "자기 posterior를 독립 evidence로 재가산",
+      "모호·모순에서 확정 선택",
+      "별도 T가 최초 C를 직접 읽음"
+    ],
+    "success_criteria": [
+      "입력/판정/상한 동결, 실제 실행·원자료·반증 실패 보존",
+      "역방향 변화와 별도 후속소비를 분리 관측"
+    ],
+    "unknowns": [
+      "고정 numeric selector가 hard ambiguity/inconsistency를 안전하게 보류하는지 실행 전 미검증"
+    ]
+  },
+  "consensus_proposal": {
+    "action": "R33 typed 후보 왕복 소비의 충분성과 실패 경계를 288조건에서 수행",
+    "axis_alignment": [
+      {
+        "axis": "Nonduplication",
+        "decision_ref": "Nonduplication"
+      },
+      {
+        "axis": "Mechanism",
+        "decision_ref": "Mechanism"
+      },
+      {
+        "axis": "Validity",
+        "decision_ref": "Validity"
+      },
+      {
+        "axis": "Scale",
+        "decision_ref": "Scale"
+      }
+    ],
+    "conditions": [
+      "native/field-only 경계와 후속 T 입력을 코드로 검증",
+      "hard ambiguity/inconsistency 오답을 그대로 보존",
+      "실행 전 입력/상한 고정 후 결과에 따른 retune 금지"
+    ],
+    "decision_owner": null,
+    "no_consensus_reason": null,
+    "remaining_options": [],
+    "satisfied_constraints": [
+      "동일 private 연구repo와 AI Research SSH만 사용",
+      "새 paid resource/dependency/service/권한/peer 메시지 없음",
+      "기존 core와 연구 보존",
+      "작은 규모를 강제하지 않고 판별 요인을 충분히 교차",
+      "실패 보존; 학습·효율·고유성·확률교정·일반화 주장 금지"
+    ],
+    "status": "conditional_consensus",
+    "supported_by_verified_claims": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "unresolved_dissent": []
+  },
+  "constraints": [
+    "동일 private 연구repo와 AI Research SSH만 사용",
+    "새 paid resource/dependency/service/권한/peer 메시지 없음",
+    "기존 core와 연구 보존",
+    "작은 규모를 강제하지 않고 판별 요인을 충분히 교차",
+    "실패 보존; 학습·효율·고유성·확률교정·일반화 주장 금지"
+  ],
+  "cross_examination": {
+    "coverage": [
+      {
+        "item_id": "T1",
+        "reviewer_ids": [
+          "/root/r33_architecture"
+        ]
+      },
+      {
+        "item_id": "T2",
+        "reviewer_ids": [
+          "/root/r33_validity"
+        ]
+      }
+    ],
+    "decision": "run",
+    "followups": [
+      {
+        "item_ids": [
+          "T1"
+        ],
+        "reviewer_id": "/root/r33_architecture"
+      },
+      {
+        "item_ids": [
+          "T2"
+        ],
+        "reviewer_id": "/root/r33_validity"
+      }
+    ],
+    "reason": "serial one-pass 충분성·반복/joint 대조 필요성과 hard-context 평가라는 숨은 전제 점검",
+    "selected_item_ids": [
+      "T1",
+      "T2"
+    ],
+    "trigger_items": [
+      {
+        "id": "T1",
+        "origin_reviewer": "/root/r33_validity"
+      },
+      {
+        "id": "T2",
+        "origin_reviewer": "/root/r33_architecture"
+      }
+    ]
+  },
+  "issue_ledger": [
+    {
+      "available_evidence": [
+        "C1",
+        "C2",
+        "C4"
+      ],
+      "issue_id": "I1",
+      "rationale": "외생 맥락으로 두 후보를 한 번 전파하는 제한 주장은 serial 한 왕복으로 시험 가능. 반복전파 우위 주장에는 추가 대조가 필요.",
+      "required_evidence": [
+        "C1",
+        "C2",
+        "C4"
+      ],
+      "status": "CONFIRMED"
+    },
+    {
+      "available_evidence": [
+        "C2",
+        "C3"
+      ],
+      "issue_id": "I2",
+      "rationale": "feasible-set oracle와 독립 T 경계가 필요하며 decoder 실패는 수정하지 않고 음성 결과로 보존한다.",
+      "required_evidence": [
+        "C2",
+        "C3"
+      ],
+      "status": "CONFIRMED"
+    }
+  ],
+  "material_claims": [
+    {
+      "id": "C1",
+      "provenance": [
+        {
+          "locator": "experiments/exp-65-substitution-cross-level/design.ko.md",
+          "verification_note": "design 직접 읽기 및 probe.py execute 확인",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "R19는 이미 host 단일 scalar feedback 후 lower/upper 재실행을 수행했다."
+    },
+    {
+      "id": "C2",
+      "provenance": [
+        {
+          "locator": "tools/r32_semantic_join/runtime.py",
+          "verification_note": "export/encode/execute 직접 읽기",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "R32는 확정 positive source export와 두 기호 role encoder, 단방향 upper 소비를 구현했다."
+    },
+    {
+      "id": "C3",
+      "provenance": [
+        {
+          "locator": "experiments/exp-78-semantic-join/RESULTS.ko.md",
+          "verification_note": "완료 보고서 및 이전 회차 원자료 검증 확인",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "R32 typed/ordinary12of12, scalar8of12는 authored bounded sufficiency이며 우월성·학습 증거가 아니다."
+    },
+    {
+      "id": "C4",
+      "provenance": [
+        {
+          "locator": "src/hcr/dynamics.py",
+          "verification_note": "tick 전체 및 synchronous/stop/count 확인",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "native tick/settle는 signed support/top_down graph를 처리하며 role·truth를 읽지 않는다."
+    }
+  ],
+  "method_notes": [
+    "기본 degraded_ok, adaptive_review bounded reserve 미사용: 같은 자료를 추가 재요약할 material gap 없음. MEDIUM fresh Judge 사용자 요구 없음, Coordinator 통합.",
+    "fork_turns none 실제 두 reviewer round1 및 각1회 타관점 교차검토 완료. raw reviewer/chain-of-thought 미저장. 모델 provider 내부/격리 외부 attestation 없음.",
+    "사전검토는 연구 설계이며 구현 최종 독립 감사가 아니다."
+  ],
+  "observability": {
+    "tokens": "NOT_OBSERVABLE",
+    "tool_calls": "NOT_OBSERVABLE",
+    "wall_time": "NOT_OBSERVABLE",
+    "worker_count": 2
+  },
+  "panel_manifest": [
+    {
+      "actual_model": "NOT_OBSERVABLE",
+      "actual_reasoning": "NOT_OBSERVABLE",
+      "blind_round1": true,
+      "classification": "reviewer",
+      "context_isolated": true,
+      "fallback_reason": "선호 Terra 미노출; 호스트 지원 Sol xhigh 요청",
+      "id": "/root/r33_architecture",
+      "instantiated": true,
+      "is_judge": false,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ],
+      "requested_model": "gpt-6.1-sol",
+      "requested_reasoning": "xhigh",
+      "role": "semantic information-flow architecture",
+      "status": "completed"
+    },
+    {
+      "actual_model": "NOT_OBSERVABLE",
+      "actual_reasoning": "NOT_OBSERVABLE",
+      "blind_round1": true,
+      "classification": "reviewer",
+      "context_isolated": true,
+      "fallback_reason": "선호 Terra 미노출; 호스트 지원 Sol xhigh 요청",
+      "id": "/root/r33_validity",
+      "instantiated": true,
+      "is_judge": false,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ],
+      "requested_model": "gpt-6.1-sol",
+      "requested_reasoning": "xhigh",
+      "role": "falsifiability and matched-control validity",
+      "status": "completed"
+    }
+  ],
+  "preflight": {
+    "missing_capabilities": [],
+    "observed_capabilities": [
+      "collaboration fresh fork none spawn and completions",
+      "local source read",
+      "16 host concurrency slots exposed",
+      "two isolated blind reviewers",
+      "source read and provenance verification"
+    ],
+    "required_capabilities": [
+      "two isolated blind reviewers",
+      "source read and provenance verification"
+    ],
+    "supported_models_reasoning": [
+      "gpt-6.1-sol xhigh exposed fallback"
+    ]
+  },
+  "required_constraints": [
+    "동일 private 연구repo와 AI Research SSH만 사용",
+    "새 paid resource/dependency/service/권한/peer 메시지 없음",
+    "기존 core와 연구 보존",
+    "작은 규모를 강제하지 않고 판별 요인을 충분히 교차",
+    "실패 보존; 학습·효율·고유성·확률교정·일반화 주장 금지"
+  ],
+  "run": {
+    "assurance": "partially_independent",
+    "candidate_skill_sha256": null,
+    "capability_shortfall": false,
+    "completed_worker_ids": [
+      "/root/r33_architecture",
+      "/root/r33_validity"
+    ],
+    "failures": [],
+    "fresh_judge_id": null,
+    "id": "R33-DIRECTION-20261020",
+    "judge_fallback": null,
+    "redeliberations": [],
+    "reused_worker_ids": [],
+    "specialist_additions": [],
+    "stage": "MEDIUM",
+    "strict": false,
+    "worker_cap": 8,
+    "workers": [
+      {
+        "actual_model": "NOT_OBSERVABLE",
+        "actual_reasoning": "NOT_OBSERVABLE",
+        "blind_round1": true,
+        "classification": "reviewer",
+        "context_isolated": true,
+        "fallback_reason": "선호 Terra 미노출; 호스트 지원 Sol xhigh 요청",
+        "id": "/root/r33_architecture",
+        "instantiated": true,
+        "is_judge": false,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ],
+        "requested_model": "gpt-6.1-sol",
+        "requested_reasoning": "xhigh",
+        "role": "semantic information-flow architecture",
+        "status": "completed"
+      },
+      {
+        "actual_model": "NOT_OBSERVABLE",
+        "actual_reasoning": "NOT_OBSERVABLE",
+        "blind_round1": true,
+        "classification": "reviewer",
+        "context_isolated": true,
+        "fallback_reason": "선호 Terra 미노출; 호스트 지원 Sol xhigh 요청",
+        "id": "/root/r33_validity",
+        "instantiated": true,
+        "is_judge": false,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ],
+        "requested_model": "gpt-6.1-sol",
+        "requested_reasoning": "xhigh",
+        "role": "falsifiability and matched-control validity",
+        "status": "completed"
+      }
+    ]
+  },
+  "schema_version": "1.0",
+  "skill_version": "1.0.0"
+}

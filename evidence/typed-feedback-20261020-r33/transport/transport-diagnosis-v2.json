@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "1.0.0",
+  "requestArtifactDigest": "sha256:51af37147fdb4de24b9e570c12c090f5d0a82ae4a47b9fadf8f7881f5598c302",
+  "failureClusters": [
+    {
+      "fingerprint": "sha256:782503c3054f66b33c60718aa53ca86fa9d39b24d47e75cb98024f505e71674d",
+      "episodeIds": [
+        "parallel8-page"
+      ],
+      "operation": "read_command_output",
+      "stableFailureTuple": {
+        "code": "UNAVAILABLE",
+        "message": "Connection failed.",
+        "type": "mcp_network_error"
+      },
+      "environmentDigest": "sha256:ba8d63f7330e7280a608f594adeecd16f4c427ee25ef97dd6031b01b10878e17"
+    }
+  ],
+  "observations": [
+    {
+      "id": "OBS-001",
+      "statement": "Attempt parallel8-page failed during read_command_output in environment sha256:ba8d63f7330e7280a608f594adeecd16f4c427ee25ef97dd6031b01b10878e17.",
+      "evidenceRefs": [
+        "transport-error.json",
+        "transport-serial-observation.json"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "H-parallel",
+      "causalLayer": "timing",
+      "statement": "Parallel output requests contribute to intermittent connector failures; not established",
+      "supportingEvidence": [
+        "transport-error.json"
+      ],
+      "contradictingEvidence": [],
+      "state": "open"
+    },
+    {
+      "id": "H-intermittent",
+      "causalLayer": "dependency",
+      "statement": "Transport can fail intermittently independently of concurrency",
+      "supportingEvidence": [
+        "transport-error.json"
+      ],
+      "contradictingEvidence": [],
+      "state": "open"
+    },
+    {
+      "id": "H-invalid-output",
+      "causalLayer": "state",
+      "statement": "Saved output is permanently unavailable or invalid",
+      "supportingEvidence": [],
+      "contradictingEvidence": [
+        "transport-serial-observation.json"
+      ],
+      "state": "refuted"
+    }
+  ],
+  "nextDiscriminatingTest": {
+    "checkId": "serial-saved-r33-page-range",
+    "checkInput": {
+      "outputId": "4e824013070a2fb6f61969d46b9db5472aa3adb3c6357a20",
+      "offsets": [
+        131072,
+        147456,
+        163840,
+        180224,
+        196608
+      ],
+      "maxBytes": 16384,
+      "concurrency": 1
+    },
+    "question": "Does a previously failed saved-output range complete with sequential requests?",
+    "preconditions": [
+      "Experiment completed and target listing passes",
+      "Source and output immutable"
+    ],
+    "risk": "read-only",
+    "requiredAuthorization": [
+      "read-saved-r33-evidence"
+    ],
+    "outcomes": [
+      {
+        "observation": "All sequential pages succeed",
+        "supportsHypotheses": [
+          "H-parallel"
+        ],
+        "refutesHypotheses": []
+      },
+      {
+        "observation": "Sequential request returns same network failure",
+        "supportsHypotheses": [
+          "H-intermittent"
+        ],
+        "refutesHypotheses": [
+          "H-parallel"
+        ]
+      }
+    ],
+    "stopCondition": "Stop on first failure; preserve output reference and new error",
+    "informationGain": 4,
+    "cost": 1,
+    "inputDigest": "sha256:eb44ea673e425410bdf6cdfd8b917bdb5191f892e70e36e16ebf04945c3a4321"
+  },
+  "confirmedCause": null,
+  "recommendedNextAction": "Run serial-saved-r33-page-range within the recorded authorization boundary and capture the observed branch.",
+  "limitations": [],
+  "verdict": "NEXT_TEST"
+}

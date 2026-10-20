@@ -1,0 +1,207 @@
+{
+  "actual_source_eager_once_shared": true,
+  "allocated_source_once_per_arm": true,
+  "arms": {
+    "exact": {
+      "allocated_shared_batch_cpu_seconds": 0.437056356,
+      "allocated_source_cpu_seconds": 0.131675,
+      "allocated_source_inclusive_cpu_seconds": 2.2908398110000006,
+      "binding_correct": 288,
+      "cases": 288,
+      "group_updates": 0,
+      "measured_record_cpu_seconds": 1.7221084550000005,
+      "mode": {
+        "both": {
+          "binding_correct": 72,
+          "cases": 72,
+          "decisions": 0,
+          "strict_correct": 72,
+          "value_correct": 72
+        },
+        "either": {
+          "binding_correct": 72,
+          "cases": 72,
+          "decisions": 0,
+          "strict_correct": 72,
+          "value_correct": 72
+        },
+        "one0": {
+          "binding_correct": 72,
+          "cases": 72,
+          "decisions": 72,
+          "strict_correct": 72,
+          "value_correct": 72
+        },
+        "one1": {
+          "binding_correct": 72,
+          "cases": 72,
+          "decisions": 72,
+          "strict_correct": 72,
+          "value_correct": 72
+        }
+      },
+      "native_settles": 0,
+      "native_ticks": 0,
+      "query_value_correct": 288,
+      "record_wall_seconds": 1.722451135137817,
+      "role_equalities": 1440,
+      "serialized_record_bytes": 99648,
+      "signal_transmissions": 0,
+      "source_inclusive_group_updates": 1980,
+      "source_inclusive_signal_transmissions": 3168,
+      "source_inclusive_ticks": 396,
+      "strict_correct": 288
+    },
+    "frozen": {
+      "allocated_shared_batch_cpu_seconds": 0.437056356,
+      "allocated_source_cpu_seconds": 0.131675,
+      "allocated_source_inclusive_cpu_seconds": 3.752143224,
+      "binding_correct": 80,
+      "cases": 288,
+      "group_updates": 236768,
+      "measured_record_cpu_seconds": 3.183411868,
+      "mode": {
+        "both": {
+          "binding_correct": 8,
+          "cases": 72,
+          "decisions": 64,
+          "strict_correct": 0,
+          "value_correct": 8
+        },
+        "either": {
+          "binding_correct": 8,
+          "cases": 72,
+          "decisions": 64,
+          "strict_correct": 0,
+          "value_correct": 8
+        },
+        "one0": {
+          "binding_correct": 32,
+          "cases": 72,
+          "decisions": 64,
+          "strict_correct": 32,
+          "value_correct": 32
+        },
+        "one1": {
+          "binding_correct": 32,
+          "cases": 72,
+          "decisions": 64,
+          "strict_correct": 32,
+          "value_correct": 32
+        }
+      },
+      "native_settles": 1440,
+      "native_ticks": 45264,
+      "query_value_correct": 80,
+      "record_wall_seconds": 3.183957982051652,
+      "role_equalities": 0,
+      "serialized_record_bytes": 14499504,
+      "signal_transmissions": 547520,
+      "source_inclusive_group_updates": 238748,
+      "source_inclusive_signal_transmissions": 550688,
+      "source_inclusive_ticks": 45660,
+      "strict_correct": 64
+    },
+    "full": {
+      "allocated_shared_batch_cpu_seconds": 0.437056356,
+      "allocated_source_cpu_seconds": 0.131675,
+      "allocated_source_inclusive_cpu_seconds": 3.792384964999999,
+      "binding_correct": 160,
+      "cases": 288,
+      "group_updates": 239632,
+      "measured_record_cpu_seconds": 3.2236536089999994,
+      "mode": {
+        "both": {
+          "binding_correct": 8,
+          "cases": 72,
+          "decisions": 64,
+          "strict_correct": 0,
+          "value_correct": 8
+        },
+        "either": {
+          "binding_correct": 8,
+          "cases": 72,
+          "decisions": 64,
+          "strict_correct": 0,
+          "value_correct": 8
+        },
+        "one0": {
+          "binding_correct": 72,
+          "cases": 72,
+          "decisions": 72,
+          "strict_correct": 72,
+          "value_correct": 72
+        },
+        "one1": {
+          "binding_correct": 72,
+          "cases": 72,
+          "decisions": 72,
+          "strict_correct": 72,
+          "value_correct": 72
+        }
+      },
+      "native_settles": 1440,
+      "native_ticks": 46368,
+      "query_value_correct": 160,
+      "record_wall_seconds": 3.224106789857615,
+      "role_equalities": 0,
+      "serialized_record_bytes": 14711396,
+      "signal_transmissions": 550144,
+      "source_inclusive_group_updates": 241612,
+      "source_inclusive_signal_transmissions": 553312,
+      "source_inclusive_ticks": 46764,
+      "strict_correct": 144
+    }
+  },
+  "batch_process_cpu_seconds": 9.440343,
+  "conclusion": "Unique hard-context branch supports typed roundtrip and independent downstream role consumption. Ambiguous/inconsistent hard contexts expose unsafe commitment and missing abstention distinctions; no general adoption or learning/efficiency/uniqueness claim.",
+  "conditional_T_argument_semantics": {
+    "frozen": {
+      "decided": 256,
+      "valid": 256
+    },
+    "full": {
+      "decided": 272,
+      "valid": 272
+    }
+  },
+  "context_only_pairs": {
+    "frozen": {
+      "T_value_changes": 0,
+      "pairs": 72,
+      "selection_changes": 0
+    },
+    "full": {
+      "T_value_changes": 72,
+      "pairs": 72,
+      "selection_changes": 72
+    }
+  },
+  "learning_calls": 0,
+  "local_scalar_max_error": 2.220446049250313e-16,
+  "overhead_allocation": "equal thirds per arm; allocation assumption, not independent timing runs",
+  "physical_native_settles": 2892,
+  "physical_ticks": 92028,
+  "preparation_audit_seal_excluded_from_per_arm": true,
+  "production_adoption": false,
+  "semantic_mutations_rejected": [
+    "selected_role",
+    "revision",
+    "feedback",
+    "source",
+    "T_drive",
+    "value",
+    "kernel_count"
+  ],
+  "server_scalar_max_error": 0.0,
+  "shared_batch_overhead_cpu_seconds": 1.3111690679999999,
+  "soft_prior_is_truth": false,
+  "source_group_updates": 1980,
+  "source_native_settles": 12,
+  "source_process_cpu_seconds": 0.131675,
+  "source_signal_transmissions": 3168,
+  "source_ticks": 396,
+  "statistical_speed_verdict": null,
+  "status": "R33_ANALYZED_NEGATIVE_BOUNDARY_RETAINED",
+  "world_measurement_calls": 0
+}

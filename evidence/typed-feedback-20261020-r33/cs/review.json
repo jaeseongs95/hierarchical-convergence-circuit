@@ -1,0 +1,205 @@
+{
+  "schemaVersion": "1.0.0",
+  "reviewId": "CS-R33-REVIEW",
+  "constraintReportDigest": "sha256:5dee1c7669f2172259fb0ca338444779f5360a1f40c5903581b825065b0167f6",
+  "candidateDigest": "sha256:73d7cb7f37cbab3903e181938d0e124d0da56dbc9bcea3ef0e68fb29b8fdea08",
+  "reviewerActorRef": "R33 implementation author source and complete saved-data review; not independent audit",
+  "findings": [
+    {
+      "id": "F-BOUNDARY",
+      "invariantId": "INV-BOUNDARY",
+      "status": "SATISFIED",
+      "evidenceRefs": [
+        "E-0",
+        "E-1",
+        "E-2",
+        "E-3",
+        "E-4",
+        "E-5",
+        "E-6",
+        "E-7",
+        "E-8"
+      ],
+      "reasoningSummary": "12 actual native path sources and conditional alternative packets retain source/proof/config/roles. Full matrix packet/source/revision/message/Program/drive/T boundary verified from saved original ticks. Compatibility encodes only candidate object and external S subject, never lower confidence/posterior. Numeric differences and fixed native goal decoder route selection without host equality/filter/argmax. consume_t accepts only revised binding and T plus vocabulary/config/Program/initial, never first C or feedback. Candidate roles unchanged, selection revision1;7mutations rejected."
+    },
+    {
+      "id": "F-SEMANTICS",
+      "invariantId": "INV-SEMANTICS",
+      "status": "SATISFIED",
+      "evidenceRefs": [
+        "E-0",
+        "E-1",
+        "E-2",
+        "E-3",
+        "E-4",
+        "E-5",
+        "E-6",
+        "E-7",
+        "E-8"
+      ],
+      "reasoningSummary": "288inputs xfull/frozen/exact=864 outputs preserved under frozen prior/threshold/initial grammar. Independent set oracle and scalar replay pass; native semantic failures are explicitly retained, not repaired. Unique hard contexts full144of144 versus frozen64of144; exact288of288.72C-only pairs all change full lower selection and separateT value, none change frozen. Ambiguous/inconsistent contexts native strict0of144,128overcommit and16dynamic abstentions lacking hard reason. Study protocol passes while general selector adoption fails. No learned/general/joint/fixed-point/unique/efficiency claim."
+    },
+    {
+      "id": "F-COST",
+      "invariantId": "INV-COST",
+      "status": "SATISFIED",
+      "evidenceRefs": [
+        "E-0",
+        "E-1",
+        "E-2",
+        "E-3",
+        "E-4",
+        "E-5",
+        "E-6",
+        "E-7",
+        "E-8"
+      ],
+      "reasoningSummary": "Actual12source+1440full+1440frozen=2892settles92028ticks;15stages exit0/source98unchanged/13.493891s within1800/90s worker1/retry0/learning0/World.measure0. Received882JSON including manifest,881actual file SHA exact; all native ticks replayed.30empty stdout/stderr and serverZIP remain unreceived. Record CPU covers export/guard/encoding/graph/messages/selection/proof/serialization/writes; same actualsource process once allocated per arm and commonbatch overhead equal-thirds explicitly an accounting assumption, not independent timing runs. Separate physical work, prep/audit/seal, uncalibrated activation and no speed claim."
+    }
+  ],
+  "verificationResults": [
+    {
+      "obligationId": "OB-BOUNDARY",
+      "executionStatus": "EXECUTED",
+      "result": "PASS",
+      "targetDigest": "sha256:73d7cb7f37cbab3903e181938d0e124d0da56dbc9bcea3ef0e68fb29b8fdea08",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "method": "dynamic-test",
+      "evidenceRefs": [
+        "E-0",
+        "E-1",
+        "E-2",
+        "E-3",
+        "E-4",
+        "E-5",
+        "E-6",
+        "E-7",
+        "E-8"
+      ]
+    },
+    {
+      "obligationId": "OB-SEMANTICS",
+      "executionStatus": "EXECUTED",
+      "result": "PASS",
+      "targetDigest": "sha256:73d7cb7f37cbab3903e181938d0e124d0da56dbc9bcea3ef0e68fb29b8fdea08",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "method": "dynamic-test",
+      "evidenceRefs": [
+        "E-0",
+        "E-1",
+        "E-2",
+        "E-3",
+        "E-4",
+        "E-5",
+        "E-6",
+        "E-7",
+        "E-8"
+      ]
+    },
+    {
+      "obligationId": "OB-COST",
+      "executionStatus": "EXECUTED",
+      "result": "PASS",
+      "targetDigest": "sha256:73d7cb7f37cbab3903e181938d0e124d0da56dbc9bcea3ef0e68fb29b8fdea08",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "method": "dynamic-test",
+      "evidenceRefs": [
+        "E-0",
+        "E-1",
+        "E-2",
+        "E-3",
+        "E-4",
+        "E-5",
+        "E-6",
+        "E-7",
+        "E-8"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E-0",
+      "path": "evidence/sources.json",
+      "digest": "sha256:fe7457223f7b354d0008fcfebbb3278959254a96adedee604287f0bf00d3d0df",
+      "targetDigest": "sha256:73d7cb7f37cbab3903e181938d0e124d0da56dbc9bcea3ef0e68fb29b8fdea08",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Actual frozen R33 evidence with complete received JSON tick records and saved host replay. Same-channel raw SHA; no external attestation or independent audit."
+    },
+    {
+      "id": "E-1",
+      "path": "evidence/summary.json",
+      "digest": "sha256:e484e09ab22ae3a5b448229af3b67b30f80bf37e1d43f4d33dec836184cb857a",
+      "targetDigest": "sha256:73d7cb7f37cbab3903e181938d0e124d0da56dbc9bcea3ef0e68fb29b8fdea08",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Actual frozen R33 evidence with complete received JSON tick records and saved host replay. Same-channel raw SHA; no external attestation or independent audit."
+    },
+    {
+      "id": "E-2",
+      "path": "evidence/result.json",
+      "digest": "sha256:3e3ee3ab2a0853880371d23bceef536d21142a03dd551e9ce8b3565417bca1bf",
+      "targetDigest": "sha256:73d7cb7f37cbab3903e181938d0e124d0da56dbc9bcea3ef0e68fb29b8fdea08",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Actual frozen R33 evidence with complete received JSON tick records and saved host replay. Same-channel raw SHA; no external attestation or independent audit."
+    },
+    {
+      "id": "E-3",
+      "path": "evidence/source-postcheck.json",
+      "digest": "sha256:c5575a925211a0cad1c59850c0aed49dd63042d6f2d5e306e123effd1f467d9a",
+      "targetDigest": "sha256:73d7cb7f37cbab3903e181938d0e124d0da56dbc9bcea3ef0e68fb29b8fdea08",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Actual frozen R33 evidence with complete received JSON tick records and saved host replay. Same-channel raw SHA; no external attestation or independent audit."
+    },
+    {
+      "id": "E-4",
+      "path": "evidence/manifest.json",
+      "digest": "sha256:64ab655e871d16f449c723233eda9b70011194837d563e65e5fc14b46ee6e375",
+      "targetDigest": "sha256:73d7cb7f37cbab3903e181938d0e124d0da56dbc9bcea3ef0e68fb29b8fdea08",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Actual frozen R33 evidence with complete received JSON tick records and saved host replay. Same-channel raw SHA; no external attestation or independent audit."
+    },
+    {
+      "id": "E-5",
+      "path": "evidence/receipt-verification.json",
+      "digest": "sha256:3472536601b235fa33741da21d6ad5d35eaf67e3d301b5bb963b902ee9fff495",
+      "targetDigest": "sha256:73d7cb7f37cbab3903e181938d0e124d0da56dbc9bcea3ef0e68fb29b8fdea08",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Actual frozen R33 evidence with complete received JSON tick records and saved host replay. Same-channel raw SHA; no external attestation or independent audit."
+    },
+    {
+      "id": "E-6",
+      "path": "evidence/local-verification.json",
+      "digest": "sha256:e010f98c9084849fddd5c7a989d8bbec4597c7a343d144a118def980e36c2761",
+      "targetDigest": "sha256:73d7cb7f37cbab3903e181938d0e124d0da56dbc9bcea3ef0e68fb29b8fdea08",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Actual frozen R33 evidence with complete received JSON tick records and saved host replay. Same-channel raw SHA; no external attestation or independent audit."
+    },
+    {
+      "id": "E-7",
+      "path": "evidence/analysis.json",
+      "digest": "sha256:6d03541a22514cb1783b9b39668f44353414c9953191c7015590e6c43b5d93f8",
+      "targetDigest": "sha256:73d7cb7f37cbab3903e181938d0e124d0da56dbc9bcea3ef0e68fb29b8fdea08",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Actual frozen R33 evidence with complete received JSON tick records and saved host replay. Same-channel raw SHA; no external attestation or independent audit."
+    },
+    {
+      "id": "E-8",
+      "path": "evidence/preparation-checks.json",
+      "digest": "sha256:e3357dba12cffce26ac00eb6c333a3a35afefeef1a0cdff5ce595726d4b1688f",
+      "targetDigest": "sha256:73d7cb7f37cbab3903e181938d0e124d0da56dbc9bcea3ef0e68fb29b8fdea08",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Actual frozen R33 evidence with complete received JSON tick records and saved host replay. Same-channel raw SHA; no external attestation or independent audit."
+    }
+  ],
+  "blockingFindingIds": [],
+  "unverifiedRequiredObligationIds": [],
+  "verdict": "PASS"
+}

@@ -1,0 +1,24 @@
+{
+  "saved_output_id": "4e824013070a2fb6f61969d46b9db5472aa3adb3c6357a20",
+  "offset": 212992,
+  "maxBytes": 16384,
+  "concurrency": 1,
+  "isError": false,
+  "metadata": {
+    "version": 1,
+    "captureSource": "redacted-adapter-outcome",
+    "sshCompleteness": "unknown",
+    "outputId": "4e824013070a2fb6f61969d46b9db5472aa3adb3c6357a20",
+    "executionId": "c2eeeba921b46b023de3bd3c95936c6a7cd304bc963a63bf",
+    "format": "text",
+    "offsetBytes": 212992,
+    "bytes": 16384,
+    "nextOffset": 229376,
+    "eof": false,
+    "totalBytes": 552475,
+    "sha256": "d717613741ff8eeb494d8e7e9a87200bfdc892d9587e145e4550352387a08322",
+    "expiresAt": 1792470113171
+  },
+  "small512alsoPassed": true,
+  "listTargetsAlsoPassed": true
+}

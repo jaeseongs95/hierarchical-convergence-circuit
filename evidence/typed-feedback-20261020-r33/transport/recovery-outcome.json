@@ -1,0 +1,9 @@
+{
+  "experiment_reruns": 0,
+  "source_or_threshold_changes": 0,
+  "observed_error": "UNAVAILABLE / mcp_network_error / Connection failed.",
+  "root_cause": "UNRESOLVED",
+  "discriminating_observations": ["Target listing succeeded", "Same saved output serial512byte and16384byte pages succeeded", "Five sequential16384byte pages succeeded"],
+  "recovery": "Preserved output reference and received pages; resumed missing ranges with concurrency2. One early group lacking a persisted reference was read again while outputs remained valid; experiment was not rerun.",
+  "final_receipt": "882 JSON received;881 raw manifest entries SHA exact;30empty logs and binary archive unreceived."
+}

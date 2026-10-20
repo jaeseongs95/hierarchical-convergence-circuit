@@ -1,0 +1,105 @@
+{
+  "acceptanceCriteria": [
+    "[AC-001] MEDIUM 독립2관점과 교차반박으로 R19/R32와 다른 typed 후보 왕복 소비 계약과 주장 한계를 고정한다.",
+    "[AC-002] 실제 native 원천12개와 완결된 두 대안 후보를 사용하여 맥락4종×soft prior3종×별도T2종×이름2종×후보순서2종×초기상태3종=288조건을 full/frozen/exact 3군으로 실행한다. Host는 필드 인코딩·메시지 복사·고정 numeric decoder만 수행하며 role equality/교집합/정답수정은 numeric군에서 금지한다.",
+    "[AC-003] hard feasible-set의 유일·모호·모순 및 후속 query 참/거짓/보류를 별도 검사기로 판정하고 오답·보류 사유 실패를 그대로 남긴다. 외생 role compatibility만 feedback으로 쓰고 원래 lower evidence와 자기 posterior를 재가산하지 않는다.",
+    "[AC-004] AI Research SSH1800초/단계90초/worker1/retry0, 최대2892native settles/462720ticks, 학습0/세계측정0. 전체 native tick과 원천·메시지·선택·후속소비·공정한 source포함 실제비용을 기록하며 별도 scalar/의미/비용 replay와 표적 변조검사를 수행한다.",
+    "[AC-005] 새 세 경로만 변경하고 core·과거 연구·user 변경 보존, 범위/staged 확인·서명커밋·main FF·같은 private origin push 및 clean/SHA 일치를 확인한다."
+  ],
+  "authorization": {
+    "allowedActions": [
+      "R33 연구 전용 구현과 결과 문서 작성",
+      "제한된 AI Research SSH 후속 실험",
+      "서명커밋과 로컬 main 병합",
+      "같은 연구 저장소 원격 push"
+    ],
+    "approvalRequired": [],
+    "prohibitedActions": [
+      "기존 core 및 과거 연구 변경",
+      "새 의존성·유료자원·서비스·권한 확대",
+      "외부 peer 메시지 전송"
+    ]
+  },
+  "constraints": [
+    "core와 과거 연구 불변; 새 연구 세 경로에 격리",
+    "AI Research SSH 전체1800초/단계90초/worker1/retry0",
+    "입력/판정/반복수/한계는 실행 전 동결; 실패도 유효한 연구결과로 보존",
+    "학습0·세계측정0; 확률교정·학습·일반성·효율·고유성·반복수렴 주장은 하지 않음",
+    "새 의존성/유료자원/서비스/권한확대/외부 peer 메시지 없음",
+    "사용자가 작은 규모 제한 해제;288조건3군, native≤2892/462720ticks; raw≤128MiB; parent512MiB/child256MiB"
+  ],
+  "decision": {
+    "complexity": "complex",
+    "hasConflicts": false
+  },
+  "objective": "동일 typed 대안 후보에 대한 상위 역할 제약의 native 신호가 하위 선택을 바꾸고 별도 후속 native 판단에 소비되는 충분성 및 모호성·모순 실패 경계를 판별",
+  "orchestration": {
+    "mcpAvailable": true,
+    "requested": false
+  },
+  "requiredCapabilities": [
+    "minimal-implementation",
+    "cs-implementation-review",
+    "change-scope-assurance"
+  ],
+  "riskLevel": "medium",
+  "schemaVersion": "1.0.0",
+  "scope": {
+    "excluded": [
+      "src/",
+      "tests/",
+      "tools/r19_cross_level/",
+      "tools/r20_evidence_feedback/",
+      "tools/r21_active_measurement/",
+      "tools/r22_measurement_adoption/",
+      "tools/r23_source_qualification/",
+      "experiments/exp-69-source-qualification/",
+      "evidence/source-qualification-20261019-r23/",
+      "tools/r24_trust_boundary/",
+      "experiments/exp-70-trust-boundary/",
+      "evidence/trust-boundary-20261019-r24/",
+      "tools/r25_fixedpoint_elision/",
+      "experiments/exp-71-fixedpoint-elision/",
+      "evidence/fixedpoint-elision-20261019-r25/",
+      "experiments/exp-72-contraction-warmstart/",
+      "tools/r26_contraction_warmstart/",
+      "evidence/contraction-warmstart-20261019-r26/",
+      "experiments/exp-73-finite-stop-envelope/",
+      "tools/r27_finite_stop_envelope/",
+      "evidence/finite-stop-envelope-20261019-r27/",
+      "experiments/exp-74-reuse-frontier/",
+      "tools/r28_reuse_frontier/",
+      "evidence/reuse-frontier-20261020-r28/",
+      "experiments/exp-75-research-direction/",
+      "tools/r29_research_direction/",
+      "evidence/research-direction-20261020-r29/",
+      "experiments/exp-76-spatial-sharing/",
+      "tools/r30_spatial_sharing/",
+      "evidence/spatial-sharing-20261020-r30/",
+      "experiments/exp-77-macro-control/",
+      "tools/r31_macro_control/",
+      "evidence/macro-control-20261020-r31/",
+      "experiments/exp-78-semantic-join/",
+      "tools/r32_semantic_join/",
+      "evidence/semantic-join-20261020-r32/"
+    ],
+    "included": [
+      "experiments/exp-79-typed-feedback/",
+      "tools/r33_typed_feedback/",
+      "evidence/typed-feedback-20261020-r33/"
+    ]
+  },
+  "taskId": "ai-typed-feedback-r33",
+  "workUnits": [
+    {
+      "dependencies": [],
+      "id": "r33",
+      "objective": "동일 typed 대안 후보에 대한 상위 역할 제약의 native 신호가 하위 선택을 바꾸고 별도 후속 native 판단에 소비되는 충분성 및 모호성·모순 실패 경계를 판별",
+      "writeTargets": [
+        "experiments/exp-79-typed-feedback/",
+        "tools/r33_typed_feedback/",
+        "evidence/typed-feedback-20261020-r33/"
+      ]
+    }
+  ]
+}

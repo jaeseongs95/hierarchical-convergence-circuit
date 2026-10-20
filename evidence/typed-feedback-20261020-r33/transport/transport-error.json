@@ -1,0 +1,27 @@
+{
+  "cursor": 44,
+  "outputId": "4e824013070a2fb6f61969d46b9db5472aa3adb3c6357a20",
+  "offset": 212992,
+  "result": {
+    "status": "fulfilled",
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "McpServerError: Connection failed."
+        }
+      ],
+      "structuredContent": {
+        "error": "McpServerError: Connection failed.",
+        "error_code": "UNAVAILABLE",
+        "error_data": {
+          "type": "mcp_network_error",
+          "code": "network_error",
+          "message": "Connection failed.",
+          "url": "https://ssh-ai-mcp.jaeseong.dev/mcp"
+        }
+      },
+      "isError": true
+    }
+  }
+}

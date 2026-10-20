@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "1.0.0",
+  "requestId": "CS-R33",
+  "mode": "derive",
+  "objective": "Typed alternative feedback and downstream consumption with hard feasible-set failure boundary",
+  "sourceSnapshotDigest": "sha256:a5afc1dfc7082e747e6a65d07e836ed06fe8f8df4d8c9822b5c55eee9e165892",
+  "sourceRefs": [
+    {
+      "id": "SRC-CORE",
+      "path": "source/hypothesis.md",
+      "digest": "sha256:d1b735eee8f72c092c847c04e81a34972fa919be906311255faa797e58ec9302"
+    },
+    {
+      "id": "SRC-R32",
+      "path": "source/r32-runtime.py",
+      "digest": "sha256:22363b37b97e65bd1fdd0bebd4fc8db6718f01ec2e5dbd21a6150beb7547f29f"
+    },
+    {
+      "id": "SRC-R19",
+      "path": "source/r19-probe.py",
+      "digest": "sha256:bb0159ba0c50505fc148322e0d0a17d53c184a0bdc7bed21b393120971eb5630"
+    },
+    {
+      "id": "SRC-RESULT",
+      "path": "source/r32-results.md",
+      "digest": "sha256:8c77023516da077a9275b871f56404024b082e03d6822c62397d8c4d21627bba"
+    },
+    {
+      "id": "SRC-KERNEL",
+      "path": "source/dynamics.py",
+      "digest": "sha256:a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc"
+    }
+  ],
+  "operationalFacts": [
+    {
+      "id": "FACT-GAP",
+      "statement": "R19 scalar feedback is completed; R32 authored roles are consumed only bottom-up. New test must route typed candidate-specific compatibility into native lower selection and a distinct T consumer without host semantic solving.",
+      "evidenceRefs": [
+        "SRC-R32",
+        "SRC-R19",
+        "SRC-RESULT"
+      ]
+    },
+    {
+      "id": "FACT-KERNEL",
+      "statement": "Common bounded synchronous kernel supports signed graphs; no truth or role equality inside tick. A fixed numeric selector is not inherently a sound hard-constraint solver. Record its negative outcomes without repair.",
+      "evidenceRefs": [
+        "SRC-KERNEL",
+        "SRC-CORE"
+      ]
+    }
+  ],
+  "existingContractRef": null
+}

@@ -1,0 +1,15 @@
+{
+  "local_native_calls": 0,
+  "maximum_calls": 2892,
+  "native_calls": 0,
+  "numeric_adapters_do_not_call_oracle": true,
+  "parsed_python": [
+    "bootstrap.py",
+    "probe.py",
+    "runtime.py",
+    "verify.py",
+    "__init__.py"
+  ],
+  "status": "PASS",
+  "structural_checks": 308
+}

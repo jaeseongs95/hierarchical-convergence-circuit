@@ -1,0 +1,1 @@
+{"arm": "exact", "bridge": {"independent_evidence_added": 0, "packet_bytes": 2386, "packet_hash_fields": 20, "source_hash_recomputations": 10, "source_record_bytes": 49102, "source_records_loaded": 5}, "case": "c135", "feasible": [0, 1], "kernels": [], "reason": "abstain_ambiguous", "role_equality_operations": 6, "selected_index": null, "value": null}

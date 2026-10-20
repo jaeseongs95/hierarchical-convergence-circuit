@@ -1,0 +1,142 @@
+{
+  "schemaVersion": "1.0.0",
+  "objective": "Complete remaining R33 raw JSON receipt without rerunning experiment",
+  "expectedBehavior": "Saved-output page reads return exact requested bounded evidence ranges",
+  "episodes": [
+    {
+      "attemptId": "parallel8-page",
+      "operation": "read_command_output",
+      "stableFailureTuple": {
+        "code": "UNAVAILABLE",
+        "type": "mcp_network_error",
+        "message": "Connection failed."
+      },
+      "environmentDigest": "sha256:ba8d63f7330e7280a608f594adeecd16f4c427ee25ef97dd6031b01b10878e17",
+      "changeSummary": "Parallel group8 failed after earlier high-concurrency failure; list-targets and same-output serial512/16384 succeeded",
+      "evidenceRefs": [
+        "transport-error.json",
+        "transport-serial-observation.json"
+      ]
+    }
+  ],
+  "lastKnownGood": {
+    "receivedBatches": 44,
+    "totalBatches": 51
+  },
+  "constraints": [
+    "No native rerun or source/input changes",
+    "Keep saved output ID and received pages; stop serial test on one failure"
+  ],
+  "authorization": {
+    "allowedChecks": [
+      "read-saved-r33-evidence",
+      "serial-saved-r33-page-range"
+    ],
+    "approvalRequired": [],
+    "prohibitedChecks": [
+      "native-rerun",
+      "change-server-policy"
+    ]
+  },
+  "evidenceBindings": [
+    {
+      "evidenceRef": "transport-error.json",
+      "artifactDigest": "sha256:0bc9f97385df3803ec783050b4cf40183b009aecb5107bdf6bfc7468809b4a0e",
+      "hypothesisIds": [
+        "H-parallel",
+        "H-intermittent"
+      ],
+      "relation": "supports"
+    },
+    {
+      "evidenceRef": "transport-serial-observation.json",
+      "artifactDigest": "sha256:1fcbb790fd8fcf6fba712b3dacd0560de989e87187a56749c70d13b816ca8b89",
+      "hypothesisIds": [
+        "H-invalid-output"
+      ],
+      "relation": "refutes"
+    }
+  ],
+  "attemptedChecks": [],
+  "candidateHypotheses": [
+    {
+      "id": "H-parallel",
+      "causalLayer": "timing",
+      "statement": "Parallel output requests contribute to intermittent connector failures; not established",
+      "supportingEvidence": [
+        "transport-error.json"
+      ],
+      "contradictingEvidence": [],
+      "state": "open"
+    },
+    {
+      "id": "H-intermittent",
+      "causalLayer": "dependency",
+      "statement": "Transport can fail intermittently independently of concurrency",
+      "supportingEvidence": [
+        "transport-error.json"
+      ],
+      "contradictingEvidence": [],
+      "state": "open"
+    },
+    {
+      "id": "H-invalid-output",
+      "causalLayer": "state",
+      "statement": "Saved output is permanently unavailable or invalid",
+      "supportingEvidence": [],
+      "contradictingEvidence": [
+        "transport-serial-observation.json"
+      ],
+      "state": "refuted"
+    }
+  ],
+  "candidateTests": [
+    {
+      "checkId": "serial-saved-r33-page-range",
+      "checkInput": {
+        "outputId": "4e824013070a2fb6f61969d46b9db5472aa3adb3c6357a20",
+        "offsets": [
+          131072,
+          147456,
+          163840,
+          180224,
+          196608
+        ],
+        "maxBytes": 16384,
+        "concurrency": 1
+      },
+      "question": "Does a previously failed saved-output range complete with sequential requests?",
+      "preconditions": [
+        "Experiment completed and target listing passes",
+        "Source and output immutable"
+      ],
+      "risk": "read-only",
+      "requiredAuthorization": [
+        "read-saved-r33-evidence"
+      ],
+      "outcomes": [
+        {
+          "observation": "All sequential pages succeed",
+          "supportsHypotheses": [
+            "H-parallel"
+          ],
+          "refutesHypotheses": []
+        },
+        {
+          "observation": "Sequential request returns same network failure",
+          "supportsHypotheses": [
+            "H-intermittent"
+          ],
+          "refutesHypotheses": [
+            "H-parallel"
+          ]
+        }
+      ],
+      "stopCondition": "Stop on first failure; preserve output reference and new error",
+      "informationGain": 4,
+      "cost": 1,
+      "inputDigest": "sha256:eb44ea673e425410bdf6cdfd8b917bdb5191f892e70e36e16ebf04945c3a4321"
+    }
+  ],
+  "accessBlockers": []
+}

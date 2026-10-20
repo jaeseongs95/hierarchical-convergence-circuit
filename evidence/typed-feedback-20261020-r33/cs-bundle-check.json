@@ -1,0 +1,8 @@
+{
+  "verdict": "PASS",
+  "checkedRawFiles": 21,
+  "requiredObligationCount": 3,
+  "candidateDigest": "sha256:73d7cb7f37cbab3903e181938d0e124d0da56dbc9bcea3ef0e68fb29b8fdea08",
+  "constraintReportDigest": "sha256:5dee1c7669f2172259fb0ca338444779f5360a1f40c5903581b825065b0167f6",
+  "assurance": "Author study-protocol review and supplied-policy bundle consistency; not independent audit or selector adoption."
+}
