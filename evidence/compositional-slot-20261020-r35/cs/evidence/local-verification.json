@@ -1,0 +1,36 @@
+{
+  "case_arms_verified": 1728,
+  "external_host_attestation": false,
+  "independent_auditor": false,
+  "local_native_calls_added": 0,
+  "physical_numeric_call_refs_verified": 19008,
+  "raw_manifest_matched_files": 536,
+  "received_json": 537,
+  "scalar_max_absolute_error": 1.1102230246251565e-16,
+  "server_vs_local_meaning_counts_exact": true,
+  "source_unchanged": 105,
+  "sources_verified": 24,
+  "status": "PASS",
+  "targeted_mutations_rejected": [
+    "revision",
+    "origin",
+    "eligibility",
+    "coverage",
+    "selected",
+    "C_message",
+    "T_hash",
+    "value",
+    "network_ref",
+    "alternative_role"
+  ],
+  "tolerance": 1e-14,
+  "unique_traces_losslessly_expanded": 518,
+  "unreceived_empty_logs": [
+    "audit.stderr",
+    "audit.stdout",
+    "preparation.stderr",
+    "preparation.stdout",
+    "work.stderr",
+    "work.stdout"
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "1.0.0",
+  "reportId": "CS-R35-CONSTRAINTS",
+  "requestDigest": "sha256:079f9cd8f161a204283e7823ae59b36139d574e1e377daada9b79e9bb4732b35",
+  "sourceSnapshotDigest": "sha256:b2efe4894267d20e0af5c82df36f6df2ea2e81294947155f9cf87c27ccc03001",
+  "knowledgePackVersion": "0.1.0",
+  "knowledgePackDigest": "sha256:d8351d9aabb433403830fcffc3a2f2438b6d428711c93b6ded9eff002468c3d1",
+  "draftUse": {
+    "allowed": false,
+    "basis": "Validated identity/reuse and matched measurement rules"
+  },
+  "applicability": "applicable",
+  "applicabilityReason": "Typed source reuse and causal feedback correctness need explicit identity and evidence accounting.",
+  "selectedRules": [
+    {
+      "ruleId": "ALG-KEY-004",
+      "ruleDigest": "sha256:db77383ecb5f41ef3af5cb60769edaea507cac5cb25e28b88f249e84a062ba2e",
+      "applicabilityReason": "Shared native source reuse and candidate-order routing require full source/role/revision/config binding; a selected revision may not silently change origin roles."
+    },
+    {
+      "ruleId": "PERF-MEASURE-001",
+      "ruleDigest": "sha256:ef11800e55663f1b719f62d3f812280fd6e56c6895eef3028b9db344a9d0a355",
+      "applicabilityReason": "Information-matched exact control and actual shared-source plus all roundtrip/serialization/process costs; semantic errors preclude efficiency adoption."
+    }
+  ],
+  "facts": [
+    {
+      "id": "FACT-GAP",
+      "statement": "R34 preserves both eligibility channels and solves full/exact576of576 on authored two-candidate grammar, but variable candidate count and new constraint compositions are unverified. Exact was cheaper; no efficiency premise.",
+      "evidenceRefs": [
+        "SRC-R32",
+        "SRC-RESULT"
+      ]
+    },
+    {
+      "id": "FACT-KERNEL",
+      "statement": "Unchanged native Program supports<=32groups. Syntax-driven3bit equality, Boolean AST, variable-cardinality and universal query builders can be bounded without host semantic solving. Coverage is externally declared metadata, not inferred discovery.",
+      "evidenceRefs": [
+        "SRC-KERNEL",
+        "SRC-CORE",
+        "SRC-R19"
+      ]
+    }
+  ],
+  "assumptions": [],
+  "invariants": [
+    {
+      "id": "INV-BOUNDARY",
+      "statement": "24actual native primitive path origins export conditional typed source/config/proof/roles. One3bit field encoder and syntax-only equality/AST/cardinality/query builders serve observed candidate counts1..4. Graph shape depends on grammar and count, not evaluated role equality/truth/case/reference. Numeric adapter only encodes fields/messages and fixed native one-hot decodes. Revised eligibility+native coverage activation packet reaches final consumer without first C. Source/revision/program/config/vocabulary binding preserved; no host feasible-set solving or output repair.",
+      "scope": "R35 frozen864cases2arms and24native sources",
+      "basisRefs": [
+        "FACT-GAP",
+        "FACT-KERNEL"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-SEMANTICS",
+      "statement": "Freeze864cases:base domain2/3/4 x6C AST x6T AST x2names x2orders x2declaredcoverage,initial.5. In incomplete cases the largest endpoint candidate is omitted before order permutation and coverage is explicitly false. Native/exact share actual observed sources, AST and coverage contract. Decode none/unique/many/incomplete and true/false/empty/mixed/incomplete query. Set oracle separately checks results and conservative incomplete policy. Preserve all failures. New AST/size structural engineering test is not learned zero-shot generalization, unknown omission detection, arbitrary CSP, calibration, uniqueness or efficiency proof.",
+      "scope": "R35 frozen864cases2arms and24native sources",
+      "basisRefs": [
+        "FACT-GAP",
+        "FACT-KERNEL"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-COST",
+      "statement": "24source+19008numeric=19032actualsettles/max3045120ticks,1728evals,1800s/stage600s/worker1/retry0/learning0/World.measure0/raw128MiB. Graph construction+validation/source export+guard+native execution+packet/serialization/storage and process overhead accounted separately. All calls actually executed, storage-only sharing needs full kernel+Config digest and equality; all references charged. Saved-data lossless expansion/scalar/controller/source/case/semantic replay and targeted mutations. Same-information exact baseline; no single-run speed superiority claim.",
+      "scope": "R35 frozen864cases2arms and24native sources",
+      "basisRefs": [
+        "FACT-GAP",
+        "FACT-KERNEL"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "PERF-MEASURE-001"
+      ]
+    }
+  ],
+  "designChoices": [
+    {
+      "id": "CHOICE-COMPOSE",
+      "statement": "Reuse native kernel, source proof/export and lossless storage/replay. Add count/syntax-based builders for3bit role equality, sixAST,1..4candidate states and universal query with explicit incomplete gate; no new core/library.",
+      "rationale": "Tests the R34 fixed two-candidate boundary without a host symbolic answer adapter or information-poor baseline.",
+      "basisRefs": [
+        "FACT-GAP",
+        "FACT-KERNEL"
+      ]
+    }
+  ],
+  "verificationObligations": [
+    {
+      "id": "OB-BOUNDARY",
+      "invariantIds": [
+        "INV-BOUNDARY"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Case-specific answer graphs, host equality/truth adapter, changed roles, first C leaks to final T, missing native calls or incomplete flag treated as discovered knowledge.",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-SEMANTICS",
+      "invariantIds": [
+        "INV-SEMANTICS"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Missing cells, hidden truth as complete flag, incorrect incomplete certainty, retuned source/decoder/threshold or negative conditions silently repaired.",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-COST",
+      "invariantIds": [
+        "INV-COST"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Lost call/config/source identity, actual compute reused while claiming all calls, hidden graph-generation/source/storage cost or incomplete evidence claimed received.",
+      "requirementLevel": "required"
+    }
+  ],
+  "requiredCapabilities": [
+    "cs-constraint-derivation",
+    "cs-implementation-review"
+  ],
+  "verdict": "READY"
+}

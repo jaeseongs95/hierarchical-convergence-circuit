@@ -1,0 +1,112 @@
+{
+  "acceptanceCriteria": [
+    "[AC-001] R34의 두 후보 고정문법 경계를 근거로 가변 후보수·제약 AST·명시적 완전성 계약을 동결하고 기존 core/연구를 보존한다. 학습·일반 CSP·누락 자동 발견 주장 없이 syntax 기반 단일 생성 규칙으로 검사한다.",
+    "[AC-002] 실제 native 원천24개와864조건(기준후보수2/3/4×C AST6×T AST6×이름2×순서2×완전성2)을 native/exact 총1728평가로 비교한다. 같은3bit 필드 인코딩과 AST 생성 규칙을 사용하며 numeric host의 role equality/해집합 계산/정답 수리는 금지한다.",
+    "[AC-003] none/unique/many/incomplete 및 query true/false/ambiguous/inconsistent/incomplete를 분리해 같은 hard 정보의 exact와 비교한다. 완전성은 외부 계약정보이고 알려지지 않은 누락 검출 증거가 아니다. 모든 native 실패와 보류를 보존한다.",
+    "[AC-004] AI Research SSH 전체1800초/단계600초/worker1/retry0/학습0/세계측정0/최대19032settles3045120ticks를 지킨다. 실제 계산은 모두 수행하고 동일 trace 저장만 공유한다. 원천·생성·검증·기록 포함 비용과 독립 수식/역할/의미/원자료 해시·변조 검산을 수행한다.",
+    "[AC-005] 새 세 경로만 최종scope/index 검증 후 서명커밋·main FF·같은 private origin push·SHA일치/clean을 확인한다."
+  ],
+  "authorization": {
+    "allowedActions": [
+      "R35 연구 전용 구현과 결과 문서 작성",
+      "제한된 AI Research SSH 후속 실험",
+      "서명커밋과 로컬 main 병합",
+      "같은 연구 저장소 원격 push"
+    ],
+    "approvalRequired": [],
+    "prohibitedActions": [
+      "기존 core 및 과거 연구 변경",
+      "새 의존성·유료자원·서비스·권한 확대",
+      "외부 peer 메시지 전송"
+    ]
+  },
+  "constraints": [
+    "신규3경로만; core/과거/user변경 보존",
+    "1800s/stage600s/worker1/retry0/parent512MiB/child256MiB/raw128MiB",
+    "실행 전 source/input/generator/decoder/threshold 동결, 사후 retune/native재실행 금지",
+    "학습/World.measure0; 일반CSP/학습/확률교정/효율우위/누락자동탐지/운영도입 주장금지",
+    "같은 원천/AST/외부 complete flag의 exact 대조; complete flag는 신뢰된 연구 입력 계약이며 스스로 발견한 사실 아님",
+    "모든 물리 native 호출 기록; 손실없는 동일trace STORAGE공유만, 실제 계산 재사용 아님",
+    "새dependency/paidresource/service/권한변경/peer메시지 없음"
+  ],
+  "decision": {
+    "complexity": "complex",
+    "hasConflicts": false
+  },
+  "objective": "동일 syntax 기반 생성 규칙의 native 해집합 인터페이스가 가변 후보수·제약 조합과 명시된 불완전 후보 계약에서 의미와 안전 보류를 보존하는지 검증",
+  "orchestration": {
+    "mcpAvailable": true,
+    "requested": false
+  },
+  "requiredCapabilities": [
+    "minimal-implementation",
+    "cs-implementation-review",
+    "change-scope-assurance"
+  ],
+  "riskLevel": "medium",
+  "schemaVersion": "1.0.0",
+  "scope": {
+    "excluded": [
+      "src/",
+      "tests/",
+      "tools/r19_cross_level/",
+      "tools/r20_evidence_feedback/",
+      "tools/r21_active_measurement/",
+      "tools/r22_measurement_adoption/",
+      "tools/r23_source_qualification/",
+      "experiments/exp-69-source-qualification/",
+      "evidence/source-qualification-20261019-r23/",
+      "tools/r24_trust_boundary/",
+      "experiments/exp-70-trust-boundary/",
+      "evidence/trust-boundary-20261019-r24/",
+      "tools/r25_fixedpoint_elision/",
+      "experiments/exp-71-fixedpoint-elision/",
+      "evidence/fixedpoint-elision-20261019-r25/",
+      "experiments/exp-72-contraction-warmstart/",
+      "tools/r26_contraction_warmstart/",
+      "evidence/contraction-warmstart-20261019-r26/",
+      "experiments/exp-73-finite-stop-envelope/",
+      "tools/r27_finite_stop_envelope/",
+      "evidence/finite-stop-envelope-20261019-r27/",
+      "experiments/exp-74-reuse-frontier/",
+      "tools/r28_reuse_frontier/",
+      "evidence/reuse-frontier-20261020-r28/",
+      "experiments/exp-75-research-direction/",
+      "tools/r29_research_direction/",
+      "evidence/research-direction-20261020-r29/",
+      "experiments/exp-76-spatial-sharing/",
+      "tools/r30_spatial_sharing/",
+      "evidence/spatial-sharing-20261020-r30/",
+      "experiments/exp-77-macro-control/",
+      "tools/r31_macro_control/",
+      "evidence/macro-control-20261020-r31/",
+      "experiments/exp-78-semantic-join/",
+      "tools/r32_semantic_join/",
+      "evidence/semantic-join-20261020-r32/",
+      "experiments/exp-79-typed-feedback/",
+      "tools/r33_typed_feedback/",
+      "evidence/typed-feedback-20261020-r33/",
+      "experiments/exp-80-feasible-state/",
+      "tools/r34_feasible_state/",
+      "evidence/feasible-state-20261020-r34/"
+    ],
+    "included": [
+      "experiments/exp-81-compositional-slot/",
+      "tools/r35_compositional_slot/",
+      "evidence/compositional-slot-20261020-r35/"
+    ]
+  },
+  "taskId": "ai-compositional-slot-r35",
+  "workUnits": [
+    {
+      "dependencies": [],
+      "id": "r35",
+      "objective": "동일 syntax 기반 생성 규칙의 native 해집합 인터페이스가 가변 후보수·제약 조합과 명시된 불완전 후보 계약에서 의미와 안전 보류를 보존하는지 검증",
+      "writeTargets": [
+        "experiments/exp-81-compositional-slot/",
+        "tools/r35_compositional_slot/",
+        "evidence/compositional-slot-20261020-r35/"
+      ]
+    }
+  ]
+}

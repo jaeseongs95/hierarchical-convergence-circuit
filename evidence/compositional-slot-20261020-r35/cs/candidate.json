@@ -1,0 +1,30 @@
+{
+  "files": [
+    {
+      "digest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path": "candidate/__init__.py"
+    },
+    {
+      "digest": "sha256:264de919f7114af73386ad6cbc05ac135b73ce40e8f793b45fc24bc536e56e7b",
+      "path": "candidate/bootstrap.py"
+    },
+    {
+      "digest": "sha256:c167508ee664aa23a6cdafcda652b6e5f0d6292157d09099f3073cc4e78e933e",
+      "path": "candidate/compiler.py"
+    },
+    {
+      "digest": "sha256:8d1b650969f5a3520153a8d11fc34e380d54254e60797acc21d12879f3bb35f7",
+      "path": "candidate/probe.py"
+    },
+    {
+      "digest": "sha256:2ed5316a500a290f7bf5e4ecc54abd72ad8fd54f6b801bd18ee00fca70bbb751",
+      "path": "candidate/runtime.py"
+    },
+    {
+      "digest": "sha256:df4c6bace73752e44b7baa928eb59cdd42949fe6bef1dd2718717bee0d7af1dc",
+      "path": "candidate/verify.py"
+    }
+  ],
+  "schemaVersion": "1.0.0",
+  "scopeSummary": "R35 syntax/count-based native3bit role matching and Boolean AST/cardinality/query construction,864inputs x native/exact,24native source origins, explicit coverage contract. All19032nativecalls executed with lossless storage sharing only; no core edits/learning/general CSP/efficiency/unknown omission discovery claim."
+}

@@ -1,0 +1,2334 @@
+{
+  "actual_source_eager_once_shared": true,
+  "allocated_source_once_per_arm": true,
+  "arms": {
+    "exact": {
+      "AST_matrix": {
+        "0": {
+          "0": {
+            "cases": 24,
+            "decisions": 12,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "unique": 12
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 12,
+              "decided": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "unique": 12
+            },
+            "value_correct": 24
+          },
+          "1": {
+            "cases": 24,
+            "decisions": 12,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "unique": 12
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 12,
+              "decided": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "unique": 12
+            },
+            "value_correct": 24
+          },
+          "2": {
+            "cases": 24,
+            "decisions": 12,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "unique": 12
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 12,
+              "decided": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "unique": 12
+            },
+            "value_correct": 24
+          },
+          "3": {
+            "cases": 24,
+            "decisions": 12,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "unique": 12
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 12,
+              "decided": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "unique": 12
+            },
+            "value_correct": 24
+          },
+          "4": {
+            "cases": 24,
+            "decisions": 12,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "unique": 12
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 12,
+              "decided": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "unique": 12
+            },
+            "value_correct": 24
+          },
+          "5": {
+            "cases": 24,
+            "decisions": 12,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "unique": 12
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 12,
+              "decided": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "unique": 12
+            },
+            "value_correct": 24
+          }
+        },
+        "1": {
+          "0": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 12,
+              "abstain_incomplete": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "value_correct": 24
+          },
+          "1": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 12,
+              "abstain_incomplete": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "value_correct": 24
+          },
+          "2": {
+            "cases": 24,
+            "decisions": 12,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 12,
+              "decided": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "value_correct": 24
+          },
+          "3": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 12,
+              "abstain_incomplete": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "value_correct": 24
+          },
+          "4": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 12,
+              "abstain_incomplete": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "value_correct": 24
+          },
+          "5": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 12,
+              "abstain_incomplete": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "value_correct": 24
+          }
+        },
+        "2": {
+          "0": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "none": 12
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 12,
+              "abstain_inconsistent": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "none": 12
+            },
+            "value_correct": 24
+          },
+          "1": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "none": 12
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 12,
+              "abstain_inconsistent": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "none": 12
+            },
+            "value_correct": 24
+          },
+          "2": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "none": 12
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 12,
+              "abstain_inconsistent": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "none": 12
+            },
+            "value_correct": 24
+          },
+          "3": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "none": 12
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 12,
+              "abstain_inconsistent": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "none": 12
+            },
+            "value_correct": 24
+          },
+          "4": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "none": 12
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 12,
+              "abstain_inconsistent": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "none": 12
+            },
+            "value_correct": 24
+          },
+          "5": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "none": 12
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 12,
+              "abstain_inconsistent": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "none": 12
+            },
+            "value_correct": 24
+          }
+        },
+        "3": {
+          "0": {
+            "cases": 24,
+            "decisions": 4,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 8,
+              "unique": 4
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 8,
+              "abstain_incomplete": 12,
+              "decided": 4
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 8,
+              "unique": 4
+            },
+            "value_correct": 24
+          },
+          "1": {
+            "cases": 24,
+            "decisions": 8,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 8,
+              "unique": 4
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 4,
+              "abstain_incomplete": 12,
+              "decided": 8
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 8,
+              "unique": 4
+            },
+            "value_correct": 24
+          },
+          "2": {
+            "cases": 24,
+            "decisions": 12,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 8,
+              "unique": 4
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 12,
+              "decided": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 8,
+              "unique": 4
+            },
+            "value_correct": 24
+          },
+          "3": {
+            "cases": 24,
+            "decisions": 4,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 8,
+              "unique": 4
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 8,
+              "abstain_incomplete": 12,
+              "decided": 4
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 8,
+              "unique": 4
+            },
+            "value_correct": 24
+          },
+          "4": {
+            "cases": 24,
+            "decisions": 8,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 8,
+              "unique": 4
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 4,
+              "abstain_incomplete": 12,
+              "decided": 8
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 8,
+              "unique": 4
+            },
+            "value_correct": 24
+          },
+          "5": {
+            "cases": 24,
+            "decisions": 12,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 8,
+              "unique": 4
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 12,
+              "decided": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 8,
+              "unique": 4
+            },
+            "value_correct": 24
+          }
+        },
+        "4": {
+          "0": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 12,
+              "abstain_incomplete": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "value_correct": 24
+          },
+          "1": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 12,
+              "abstain_incomplete": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "value_correct": 24
+          },
+          "2": {
+            "cases": 24,
+            "decisions": 12,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 12,
+              "decided": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "value_correct": 24
+          },
+          "3": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 12,
+              "abstain_incomplete": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "value_correct": 24
+          },
+          "4": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 12,
+              "abstain_incomplete": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "value_correct": 24
+          },
+          "5": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 12,
+              "abstain_incomplete": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "value_correct": 24
+          }
+        },
+        "5": {
+          "0": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 12,
+              "abstain_incomplete": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "value_correct": 24
+          },
+          "1": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 12,
+              "abstain_incomplete": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "value_correct": 24
+          },
+          "2": {
+            "cases": 24,
+            "decisions": 12,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 12,
+              "decided": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "value_correct": 24
+          },
+          "3": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 12,
+              "abstain_incomplete": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "value_correct": 24
+          },
+          "4": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 12,
+              "abstain_incomplete": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "value_correct": 24
+          },
+          "5": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 12,
+              "abstain_incomplete": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "value_correct": 24
+          }
+        }
+      },
+      "allocated_source_inclusive_cpu_seconds": 4.67717289300004,
+      "cases": 864,
+      "complete": {
+        "cases": 432,
+        "decisions": 156,
+        "kind_correct": 432,
+        "observed_kinds": {
+          "many": 264,
+          "none": 72,
+          "unique": 96
+        },
+        "observed_reasons": {
+          "abstain_ambiguous": 204,
+          "abstain_inconsistent": 72,
+          "decided": 156
+        },
+        "reason_correct": 432,
+        "strict_correct": 432,
+        "truth_kinds": {
+          "many": 264,
+          "none": 72,
+          "unique": 96
+        },
+        "value_correct": 432
+      },
+      "core_cpu_seconds": 4.543134450999958,
+      "decisions": 156,
+      "domain_size": {
+        "2": {
+          "complete": {
+            "cases": 144,
+            "decisions": 60,
+            "kind_correct": 144,
+            "observed_kinds": {
+              "many": 72,
+              "none": 24,
+              "unique": 48
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 60,
+              "abstain_inconsistent": 24,
+              "decided": 60
+            },
+            "reason_correct": 144,
+            "strict_correct": 144,
+            "truth_kinds": {
+              "many": 72,
+              "none": 24,
+              "unique": 48
+            },
+            "value_correct": 144
+          },
+          "incomplete": {
+            "cases": 144,
+            "decisions": 0,
+            "kind_correct": 144,
+            "observed_kinds": {
+              "incomplete": 144
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 144
+            },
+            "reason_correct": 144,
+            "strict_correct": 144,
+            "truth_kinds": {
+              "incomplete": 144
+            },
+            "value_correct": 144
+          }
+        },
+        "3": {
+          "complete": {
+            "cases": 144,
+            "decisions": 52,
+            "kind_correct": 144,
+            "observed_kinds": {
+              "many": 96,
+              "none": 24,
+              "unique": 24
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 68,
+              "abstain_inconsistent": 24,
+              "decided": 52
+            },
+            "reason_correct": 144,
+            "strict_correct": 144,
+            "truth_kinds": {
+              "many": 96,
+              "none": 24,
+              "unique": 24
+            },
+            "value_correct": 144
+          },
+          "incomplete": {
+            "cases": 144,
+            "decisions": 0,
+            "kind_correct": 144,
+            "observed_kinds": {
+              "incomplete": 144
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 144
+            },
+            "reason_correct": 144,
+            "strict_correct": 144,
+            "truth_kinds": {
+              "incomplete": 144
+            },
+            "value_correct": 144
+          }
+        },
+        "4": {
+          "complete": {
+            "cases": 144,
+            "decisions": 44,
+            "kind_correct": 144,
+            "observed_kinds": {
+              "many": 96,
+              "none": 24,
+              "unique": 24
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 76,
+              "abstain_inconsistent": 24,
+              "decided": 44
+            },
+            "reason_correct": 144,
+            "strict_correct": 144,
+            "truth_kinds": {
+              "many": 96,
+              "none": 24,
+              "unique": 24
+            },
+            "value_correct": 144
+          },
+          "incomplete": {
+            "cases": 144,
+            "decisions": 0,
+            "kind_correct": 144,
+            "observed_kinds": {
+              "incomplete": 144
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 144
+            },
+            "reason_correct": 144,
+            "strict_correct": 144,
+            "truth_kinds": {
+              "incomplete": 144
+            },
+            "value_correct": 144
+          }
+        }
+      },
+      "group_updates": 0,
+      "incomplete": {
+        "cases": 432,
+        "decisions": 0,
+        "kind_correct": 432,
+        "observed_kinds": {
+          "incomplete": 432
+        },
+        "observed_reasons": {
+          "abstain_incomplete": 432
+        },
+        "reason_correct": 432,
+        "strict_correct": 432,
+        "truth_kinds": {
+          "incomplete": 432
+        },
+        "value_correct": 432
+      },
+      "kind_correct": 864,
+      "native_ticks": 0,
+      "observed_kinds": {
+        "incomplete": 432,
+        "many": 264,
+        "none": 72,
+        "unique": 96
+      },
+      "observed_reasons": {
+        "abstain_ambiguous": 204,
+        "abstain_incomplete": 432,
+        "abstain_inconsistent": 72,
+        "decided": 156
+      },
+      "physical_native_calls": 0,
+      "reason_correct": 864,
+      "record_wall_seconds": 4.546063683112152,
+      "signal_transmissions": 0,
+      "source_inclusive_group_updates": 3960,
+      "source_inclusive_signal_transmissions": 6336,
+      "source_inclusive_ticks": 792,
+      "storage_cpu_seconds": 0.001191288000092966,
+      "strict_correct": 864,
+      "truth_kinds": {
+        "incomplete": 432,
+        "many": 264,
+        "none": 72,
+        "unique": 96
+      },
+      "value_correct": 864
+    },
+    "native": {
+      "AST_matrix": {
+        "0": {
+          "0": {
+            "cases": 24,
+            "decisions": 12,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "unique": 12
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 12,
+              "decided": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "unique": 12
+            },
+            "value_correct": 24
+          },
+          "1": {
+            "cases": 24,
+            "decisions": 12,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "unique": 12
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 12,
+              "decided": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "unique": 12
+            },
+            "value_correct": 24
+          },
+          "2": {
+            "cases": 24,
+            "decisions": 12,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "unique": 12
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 12,
+              "decided": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "unique": 12
+            },
+            "value_correct": 24
+          },
+          "3": {
+            "cases": 24,
+            "decisions": 12,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "unique": 12
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 12,
+              "decided": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "unique": 12
+            },
+            "value_correct": 24
+          },
+          "4": {
+            "cases": 24,
+            "decisions": 12,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "unique": 12
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 12,
+              "decided": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "unique": 12
+            },
+            "value_correct": 24
+          },
+          "5": {
+            "cases": 24,
+            "decisions": 12,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "unique": 12
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 12,
+              "decided": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "unique": 12
+            },
+            "value_correct": 24
+          }
+        },
+        "1": {
+          "0": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 12,
+              "abstain_incomplete": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "value_correct": 24
+          },
+          "1": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 12,
+              "abstain_incomplete": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "value_correct": 24
+          },
+          "2": {
+            "cases": 24,
+            "decisions": 12,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 12,
+              "decided": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "value_correct": 24
+          },
+          "3": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 12,
+              "abstain_incomplete": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "value_correct": 24
+          },
+          "4": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 12,
+              "abstain_incomplete": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "value_correct": 24
+          },
+          "5": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 12,
+              "abstain_incomplete": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "value_correct": 24
+          }
+        },
+        "2": {
+          "0": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "none": 12
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 12,
+              "abstain_inconsistent": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "none": 12
+            },
+            "value_correct": 24
+          },
+          "1": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "none": 12
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 12,
+              "abstain_inconsistent": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "none": 12
+            },
+            "value_correct": 24
+          },
+          "2": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "none": 12
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 12,
+              "abstain_inconsistent": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "none": 12
+            },
+            "value_correct": 24
+          },
+          "3": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "none": 12
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 12,
+              "abstain_inconsistent": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "none": 12
+            },
+            "value_correct": 24
+          },
+          "4": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "none": 12
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 12,
+              "abstain_inconsistent": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "none": 12
+            },
+            "value_correct": 24
+          },
+          "5": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "none": 12
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 12,
+              "abstain_inconsistent": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "none": 12
+            },
+            "value_correct": 24
+          }
+        },
+        "3": {
+          "0": {
+            "cases": 24,
+            "decisions": 4,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 8,
+              "unique": 4
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 8,
+              "abstain_incomplete": 12,
+              "decided": 4
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 8,
+              "unique": 4
+            },
+            "value_correct": 24
+          },
+          "1": {
+            "cases": 24,
+            "decisions": 8,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 8,
+              "unique": 4
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 4,
+              "abstain_incomplete": 12,
+              "decided": 8
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 8,
+              "unique": 4
+            },
+            "value_correct": 24
+          },
+          "2": {
+            "cases": 24,
+            "decisions": 12,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 8,
+              "unique": 4
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 12,
+              "decided": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 8,
+              "unique": 4
+            },
+            "value_correct": 24
+          },
+          "3": {
+            "cases": 24,
+            "decisions": 4,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 8,
+              "unique": 4
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 8,
+              "abstain_incomplete": 12,
+              "decided": 4
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 8,
+              "unique": 4
+            },
+            "value_correct": 24
+          },
+          "4": {
+            "cases": 24,
+            "decisions": 8,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 8,
+              "unique": 4
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 4,
+              "abstain_incomplete": 12,
+              "decided": 8
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 8,
+              "unique": 4
+            },
+            "value_correct": 24
+          },
+          "5": {
+            "cases": 24,
+            "decisions": 12,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 8,
+              "unique": 4
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 12,
+              "decided": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 8,
+              "unique": 4
+            },
+            "value_correct": 24
+          }
+        },
+        "4": {
+          "0": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 12,
+              "abstain_incomplete": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "value_correct": 24
+          },
+          "1": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 12,
+              "abstain_incomplete": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "value_correct": 24
+          },
+          "2": {
+            "cases": 24,
+            "decisions": 12,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 12,
+              "decided": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "value_correct": 24
+          },
+          "3": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 12,
+              "abstain_incomplete": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "value_correct": 24
+          },
+          "4": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 12,
+              "abstain_incomplete": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "value_correct": 24
+          },
+          "5": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 12,
+              "abstain_incomplete": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "value_correct": 24
+          }
+        },
+        "5": {
+          "0": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 12,
+              "abstain_incomplete": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "value_correct": 24
+          },
+          "1": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 12,
+              "abstain_incomplete": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "value_correct": 24
+          },
+          "2": {
+            "cases": 24,
+            "decisions": 12,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 12,
+              "decided": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "value_correct": 24
+          },
+          "3": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 12,
+              "abstain_incomplete": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "value_correct": 24
+          },
+          "4": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 12,
+              "abstain_incomplete": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "value_correct": 24
+          },
+          "5": {
+            "cases": 24,
+            "decisions": 0,
+            "kind_correct": 24,
+            "observed_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 12,
+              "abstain_incomplete": 12
+            },
+            "reason_correct": 24,
+            "strict_correct": 24,
+            "truth_kinds": {
+              "incomplete": 12,
+              "many": 12
+            },
+            "value_correct": 24
+          }
+        }
+      },
+      "allocated_source_inclusive_cpu_seconds": 46.62709010599996,
+      "cases": 864,
+      "complete": {
+        "cases": 432,
+        "decisions": 156,
+        "kind_correct": 432,
+        "observed_kinds": {
+          "many": 264,
+          "none": 72,
+          "unique": 96
+        },
+        "observed_reasons": {
+          "abstain_ambiguous": 204,
+          "abstain_inconsistent": 72,
+          "decided": 156
+        },
+        "reason_correct": 432,
+        "strict_correct": 432,
+        "truth_kinds": {
+          "many": 264,
+          "none": 72,
+          "unique": 96
+        },
+        "value_correct": 432
+      },
+      "core_cpu_seconds": 34.29856876299995,
+      "decisions": 156,
+      "domain_size": {
+        "2": {
+          "complete": {
+            "cases": 144,
+            "decisions": 60,
+            "kind_correct": 144,
+            "observed_kinds": {
+              "many": 72,
+              "none": 24,
+              "unique": 48
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 60,
+              "abstain_inconsistent": 24,
+              "decided": 60
+            },
+            "reason_correct": 144,
+            "strict_correct": 144,
+            "truth_kinds": {
+              "many": 72,
+              "none": 24,
+              "unique": 48
+            },
+            "value_correct": 144
+          },
+          "incomplete": {
+            "cases": 144,
+            "decisions": 0,
+            "kind_correct": 144,
+            "observed_kinds": {
+              "incomplete": 144
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 144
+            },
+            "reason_correct": 144,
+            "strict_correct": 144,
+            "truth_kinds": {
+              "incomplete": 144
+            },
+            "value_correct": 144
+          }
+        },
+        "3": {
+          "complete": {
+            "cases": 144,
+            "decisions": 52,
+            "kind_correct": 144,
+            "observed_kinds": {
+              "many": 96,
+              "none": 24,
+              "unique": 24
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 68,
+              "abstain_inconsistent": 24,
+              "decided": 52
+            },
+            "reason_correct": 144,
+            "strict_correct": 144,
+            "truth_kinds": {
+              "many": 96,
+              "none": 24,
+              "unique": 24
+            },
+            "value_correct": 144
+          },
+          "incomplete": {
+            "cases": 144,
+            "decisions": 0,
+            "kind_correct": 144,
+            "observed_kinds": {
+              "incomplete": 144
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 144
+            },
+            "reason_correct": 144,
+            "strict_correct": 144,
+            "truth_kinds": {
+              "incomplete": 144
+            },
+            "value_correct": 144
+          }
+        },
+        "4": {
+          "complete": {
+            "cases": 144,
+            "decisions": 44,
+            "kind_correct": 144,
+            "observed_kinds": {
+              "many": 96,
+              "none": 24,
+              "unique": 24
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 76,
+              "abstain_inconsistent": 24,
+              "decided": 44
+            },
+            "reason_correct": 144,
+            "strict_correct": 144,
+            "truth_kinds": {
+              "many": 96,
+              "none": 24,
+              "unique": 24
+            },
+            "value_correct": 144
+          },
+          "incomplete": {
+            "cases": 144,
+            "decisions": 0,
+            "kind_correct": 144,
+            "observed_kinds": {
+              "incomplete": 144
+            },
+            "observed_reasons": {
+              "abstain_incomplete": 144
+            },
+            "reason_correct": 144,
+            "strict_correct": 144,
+            "truth_kinds": {
+              "incomplete": 144
+            },
+            "value_correct": 144
+          }
+        }
+      },
+      "group_updates": 8208272,
+      "incomplete": {
+        "cases": 432,
+        "decisions": 0,
+        "kind_correct": 432,
+        "observed_kinds": {
+          "incomplete": 432
+        },
+        "observed_reasons": {
+          "abstain_incomplete": 432
+        },
+        "reason_correct": 432,
+        "strict_correct": 432,
+        "truth_kinds": {
+          "incomplete": 432
+        },
+        "value_correct": 432
+      },
+      "kind_correct": 864,
+      "native_ticks": 597688,
+      "observed_kinds": {
+        "incomplete": 432,
+        "many": 264,
+        "none": 72,
+        "unique": 96
+      },
+      "observed_reasons": {
+        "abstain_ambiguous": 204,
+        "abstain_incomplete": 432,
+        "abstain_inconsistent": 72,
+        "decided": 156
+      },
+      "physical_native_calls": 19008,
+      "reason_correct": 864,
+      "record_wall_seconds": 46.50139672248042,
+      "signal_transmissions": 21055240,
+      "source_inclusive_group_updates": 8212232,
+      "source_inclusive_signal_transmissions": 21061576,
+      "source_inclusive_ticks": 598480,
+      "storage_cpu_seconds": 12.195674189000025,
+      "strict_correct": 864,
+      "truth_kinds": {
+        "incomplete": 432,
+        "many": 264,
+        "none": 72,
+        "unique": 96
+      },
+      "value_correct": 864
+    }
+  },
+  "computation_reused": false,
+  "conclusion": "One syntax/count-based graph construction preserves native states and universal query semantics on the frozen matrix. Several of six AST forms are equivalent because actual leaf predicates are mutually exclusive; native experiment does not realize all Boolean leaf patterns. Explicit incomplete metadata tests conservative abstention, not discovery of unknown missing candidates. Exact matches all conditions. No learned/general CSP/efficiency/uniqueness/calibration/production claim.",
+  "coverage_is_external_trusted_contract": true,
+  "graph_construction_validation_in_core_cpu": true,
+  "incomplete_policy_is_conservative_not_optimal_information_inference": true,
+  "independent_samples": false,
+  "initial_fixed": 0.5,
+  "learning_calls": 0,
+  "local_scalar_max_error": 1.1102230246251565e-16,
+  "overhead_allocation": "equal halves per arm; explicit accounting assumption, not independent timing runs",
+  "physical_native_calls": 19032,
+  "physical_numeric_trace_references": 19008,
+  "physical_ticks": 598480,
+  "preparation_audit_seal_excluded_from_per_arm": true,
+  "production_adoption": false,
+  "semantic_coverage": {
+    "2": {
+      "C": {
+        "actual_leaf_pattern_count": 2,
+        "actual_leaf_patterns": [
+          [
+            false,
+            true,
+            false
+          ],
+          [
+            true,
+            false,
+            false
+          ]
+        ],
+        "all_boolean_leaf_patterns": 8,
+        "both_leaf0_leaf1_true_covered": false,
+        "distinct_AST_meanings": 4,
+        "feasible_indices_by_AST": {
+          "0": [
+            0
+          ],
+          "1": [
+            0,
+            1
+          ],
+          "2": [],
+          "3": [
+            1
+          ],
+          "4": [
+            0,
+            1
+          ],
+          "5": [
+            0,
+            1
+          ]
+        },
+        "semantic_equivalence_groups": [
+          [
+            0
+          ],
+          [
+            1,
+            4,
+            5
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ]
+      },
+      "T": {
+        "actual_leaf_pattern_count": 2,
+        "actual_leaf_patterns": [
+          [
+            false,
+            false,
+            true
+          ],
+          [
+            true,
+            false,
+            false
+          ]
+        ],
+        "all_boolean_leaf_patterns": 8,
+        "both_leaf0_leaf1_true_covered": false,
+        "distinct_AST_meanings": 3,
+        "feasible_indices_by_AST": {
+          "0": [
+            1
+          ],
+          "1": [
+            1
+          ],
+          "2": [],
+          "3": [
+            0
+          ],
+          "4": [
+            1
+          ],
+          "5": [
+            1
+          ]
+        },
+        "semantic_equivalence_groups": [
+          [
+            0,
+            1,
+            4,
+            5
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ]
+      }
+    },
+    "3": {
+      "C": {
+        "actual_leaf_pattern_count": 3,
+        "actual_leaf_patterns": [
+          [
+            false,
+            false,
+            true
+          ],
+          [
+            false,
+            true,
+            false
+          ],
+          [
+            true,
+            false,
+            false
+          ]
+        ],
+        "all_boolean_leaf_patterns": 8,
+        "both_leaf0_leaf1_true_covered": false,
+        "distinct_AST_meanings": 4,
+        "feasible_indices_by_AST": {
+          "0": [
+            0
+          ],
+          "1": [
+            0,
+            1
+          ],
+          "2": [],
+          "3": [
+            1,
+            2
+          ],
+          "4": [
+            0,
+            1
+          ],
+          "5": [
+            0,
+            1
+          ]
+        },
+        "semantic_equivalence_groups": [
+          [
+            0
+          ],
+          [
+            1,
+            4,
+            5
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ]
+      },
+      "T": {
+        "actual_leaf_pattern_count": 3,
+        "actual_leaf_patterns": [
+          [
+            false,
+            false,
+            true
+          ],
+          [
+            false,
+            true,
+            false
+          ],
+          [
+            true,
+            false,
+            false
+          ]
+        ],
+        "all_boolean_leaf_patterns": 8,
+        "both_leaf0_leaf1_true_covered": false,
+        "distinct_AST_meanings": 4,
+        "feasible_indices_by_AST": {
+          "0": [
+            1
+          ],
+          "1": [
+            1,
+            2
+          ],
+          "2": [],
+          "3": [
+            0,
+            2
+          ],
+          "4": [
+            1,
+            2
+          ],
+          "5": [
+            1,
+            2
+          ]
+        },
+        "semantic_equivalence_groups": [
+          [
+            0
+          ],
+          [
+            1,
+            4,
+            5
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ]
+      }
+    },
+    "4": {
+      "C": {
+        "actual_leaf_pattern_count": 4,
+        "actual_leaf_patterns": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            true
+          ],
+          [
+            false,
+            true,
+            false
+          ],
+          [
+            true,
+            false,
+            false
+          ]
+        ],
+        "all_boolean_leaf_patterns": 8,
+        "both_leaf0_leaf1_true_covered": false,
+        "distinct_AST_meanings": 5,
+        "feasible_indices_by_AST": {
+          "0": [
+            0
+          ],
+          "1": [
+            0,
+            1
+          ],
+          "2": [],
+          "3": [
+            1,
+            2,
+            3
+          ],
+          "4": [
+            0,
+            1
+          ],
+          "5": [
+            0,
+            1,
+            3
+          ]
+        },
+        "semantic_equivalence_groups": [
+          [
+            0
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ],
+          [
+            5
+          ]
+        ]
+      },
+      "T": {
+        "actual_leaf_pattern_count": 4,
+        "actual_leaf_patterns": [
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            true
+          ],
+          [
+            false,
+            true,
+            false
+          ],
+          [
+            true,
+            false,
+            false
+          ]
+        ],
+        "all_boolean_leaf_patterns": 8,
+        "both_leaf0_leaf1_true_covered": false,
+        "distinct_AST_meanings": 5,
+        "feasible_indices_by_AST": {
+          "0": [
+            1
+          ],
+          "1": [
+            1,
+            2
+          ],
+          "2": [],
+          "3": [
+            0,
+            2,
+            3
+          ],
+          "4": [
+            1,
+            2
+          ],
+          "5": [
+            1,
+            2,
+            3
+          ]
+        },
+        "semantic_equivalence_groups": [
+          [
+            0
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ],
+          [
+            5
+          ]
+        ]
+      }
+    }
+  },
+  "semantic_mutations_rejected": [
+    "revision",
+    "origin",
+    "eligibility",
+    "coverage",
+    "selected",
+    "C_message",
+    "T_hash",
+    "value",
+    "network_ref",
+    "alternative_role"
+  ],
+  "server_scalar_max_error": 0.0,
+  "shared_work_overhead_cpu_seconds": 0.17929830999997876,
+  "six_syntax_forms_are_not_six_independent_semantic_tasks": true,
+  "source_group_updates": 3960,
+  "source_native_calls": 24,
+  "source_process_cpu_seconds": 0.043197999000000015,
+  "source_signal_transmissions": 6336,
+  "source_ticks": 792,
+  "statistical_speed_verdict": null,
+  "status": "R35_COMPOSITIONAL_SLOT_BOUNDED_PASS",
+  "storage_cost_first_writer_dependent": true,
+  "trace_storage_only_shared": true,
+  "unique_native_traces": 518,
+  "unknown_omission_detection": false,
+  "work_process_cpu_seconds": 51.261065,
+  "world_measurement_calls": 0
+}
