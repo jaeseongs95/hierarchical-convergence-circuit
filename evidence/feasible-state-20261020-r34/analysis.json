@@ -1,0 +1,1040 @@
+{
+  "actual_source_eager_once_shared": true,
+  "allocated_source_once_per_arm": true,
+  "arms": {
+    "delta": {
+      "allocated_source_inclusive_cpu_seconds": 8.043183281999964,
+      "cases": 576,
+      "core_cpu_seconds": 6.331136219999972,
+      "decisions": 432,
+      "group_updates": 996480,
+      "kind_correct": 432,
+      "matrix": {
+        "both": {
+          "both": {
+            "cases": 36,
+            "decisions": 36,
+            "kind_correct": 0,
+            "observed_kinds": {
+              "many": 36
+            },
+            "observed_reasons": {
+              "decided": 36
+            },
+            "reason_correct": 0,
+            "strict_correct": 0,
+            "value_correct": 0
+          },
+          "either": {
+            "cases": 36,
+            "decisions": 36,
+            "kind_correct": 0,
+            "observed_kinds": {
+              "many": 36
+            },
+            "observed_reasons": {
+              "decided": 36
+            },
+            "reason_correct": 0,
+            "strict_correct": 0,
+            "value_correct": 0
+          },
+          "one0": {
+            "cases": 36,
+            "decisions": 0,
+            "kind_correct": 0,
+            "observed_kinds": {
+              "many": 36
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 36
+            },
+            "reason_correct": 0,
+            "strict_correct": 0,
+            "value_correct": 36
+          },
+          "one1": {
+            "cases": 36,
+            "decisions": 0,
+            "kind_correct": 0,
+            "observed_kinds": {
+              "many": 36
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 36
+            },
+            "reason_correct": 0,
+            "strict_correct": 0,
+            "value_correct": 36
+          }
+        },
+        "either": {
+          "both": {
+            "cases": 36,
+            "decisions": 36,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "many": 36
+            },
+            "observed_reasons": {
+              "decided": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          },
+          "either": {
+            "cases": 36,
+            "decisions": 36,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "many": 36
+            },
+            "observed_reasons": {
+              "decided": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          },
+          "one0": {
+            "cases": 36,
+            "decisions": 0,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "many": 36
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          },
+          "one1": {
+            "cases": 36,
+            "decisions": 0,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "many": 36
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          }
+        },
+        "one0": {
+          "both": {
+            "cases": 36,
+            "decisions": 36,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "u0": 18,
+              "u1": 18
+            },
+            "observed_reasons": {
+              "decided": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          },
+          "either": {
+            "cases": 36,
+            "decisions": 36,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "u0": 18,
+              "u1": 18
+            },
+            "observed_reasons": {
+              "decided": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          },
+          "one0": {
+            "cases": 36,
+            "decisions": 36,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "u0": 18,
+              "u1": 18
+            },
+            "observed_reasons": {
+              "decided": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          },
+          "one1": {
+            "cases": 36,
+            "decisions": 36,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "u0": 18,
+              "u1": 18
+            },
+            "observed_reasons": {
+              "decided": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          }
+        },
+        "one1": {
+          "both": {
+            "cases": 36,
+            "decisions": 36,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "u0": 18,
+              "u1": 18
+            },
+            "observed_reasons": {
+              "decided": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          },
+          "either": {
+            "cases": 36,
+            "decisions": 36,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "u0": 18,
+              "u1": 18
+            },
+            "observed_reasons": {
+              "decided": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          },
+          "one0": {
+            "cases": 36,
+            "decisions": 36,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "u0": 18,
+              "u1": 18
+            },
+            "observed_reasons": {
+              "decided": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          },
+          "one1": {
+            "cases": 36,
+            "decisions": 36,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "u0": 18,
+              "u1": 18
+            },
+            "observed_reasons": {
+              "decided": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          }
+        }
+      },
+      "mode": {
+        "both": {
+          "cases": 144,
+          "decisions": 72,
+          "kind_correct": 0,
+          "observed_kinds": {
+            "many": 144
+          },
+          "observed_reasons": {
+            "abstain_ambiguous": 72,
+            "decided": 72
+          },
+          "reason_correct": 0,
+          "strict_correct": 0,
+          "value_correct": 72
+        },
+        "either": {
+          "cases": 144,
+          "decisions": 72,
+          "kind_correct": 144,
+          "observed_kinds": {
+            "many": 144
+          },
+          "observed_reasons": {
+            "abstain_ambiguous": 72,
+            "decided": 72
+          },
+          "reason_correct": 144,
+          "strict_correct": 144,
+          "value_correct": 144
+        },
+        "one0": {
+          "cases": 144,
+          "decisions": 144,
+          "kind_correct": 144,
+          "observed_kinds": {
+            "u0": 72,
+            "u1": 72
+          },
+          "observed_reasons": {
+            "decided": 144
+          },
+          "reason_correct": 144,
+          "strict_correct": 144,
+          "value_correct": 144
+        },
+        "one1": {
+          "cases": 144,
+          "decisions": 144,
+          "kind_correct": 144,
+          "observed_kinds": {
+            "u0": 72,
+            "u1": 72
+          },
+          "observed_reasons": {
+            "decided": 144
+          },
+          "reason_correct": 144,
+          "strict_correct": 144,
+          "value_correct": 144
+        }
+      },
+      "native_ticks": 114240,
+      "observed_kinds": {
+        "many": 288,
+        "u0": 144,
+        "u1": 144
+      },
+      "observed_reasons": {
+        "abstain_ambiguous": 144,
+        "decided": 432
+      },
+      "physical_native_calls": 3456,
+      "reason_correct": 432,
+      "record_wall_seconds": 7.964823580667144,
+      "signal_transmissions": 2768640,
+      "source_inclusive_group_updates": 998460,
+      "source_inclusive_signal_transmissions": 2771808,
+      "source_inclusive_ticks": 114636,
+      "storage_cpu_seconds": 1.6317274879999726,
+      "strict_correct": 432,
+      "value_correct": 504
+    },
+    "exact": {
+      "allocated_source_inclusive_cpu_seconds": 2.2460229920000407,
+      "cases": 576,
+      "core_cpu_seconds": 2.164923629000019,
+      "decisions": 360,
+      "group_updates": 0,
+      "kind_correct": 576,
+      "matrix": {
+        "both": {
+          "both": {
+            "cases": 36,
+            "decisions": 0,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "none": 36
+            },
+            "observed_reasons": {
+              "abstain_inconsistent": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          },
+          "either": {
+            "cases": 36,
+            "decisions": 0,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "none": 36
+            },
+            "observed_reasons": {
+              "abstain_inconsistent": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          },
+          "one0": {
+            "cases": 36,
+            "decisions": 0,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "none": 36
+            },
+            "observed_reasons": {
+              "abstain_inconsistent": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          },
+          "one1": {
+            "cases": 36,
+            "decisions": 0,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "none": 36
+            },
+            "observed_reasons": {
+              "abstain_inconsistent": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          }
+        },
+        "either": {
+          "both": {
+            "cases": 36,
+            "decisions": 36,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "many": 36
+            },
+            "observed_reasons": {
+              "decided": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          },
+          "either": {
+            "cases": 36,
+            "decisions": 36,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "many": 36
+            },
+            "observed_reasons": {
+              "decided": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          },
+          "one0": {
+            "cases": 36,
+            "decisions": 0,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "many": 36
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          },
+          "one1": {
+            "cases": 36,
+            "decisions": 0,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "many": 36
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          }
+        },
+        "one0": {
+          "both": {
+            "cases": 36,
+            "decisions": 36,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "u0": 18,
+              "u1": 18
+            },
+            "observed_reasons": {
+              "decided": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          },
+          "either": {
+            "cases": 36,
+            "decisions": 36,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "u0": 18,
+              "u1": 18
+            },
+            "observed_reasons": {
+              "decided": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          },
+          "one0": {
+            "cases": 36,
+            "decisions": 36,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "u0": 18,
+              "u1": 18
+            },
+            "observed_reasons": {
+              "decided": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          },
+          "one1": {
+            "cases": 36,
+            "decisions": 36,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "u0": 18,
+              "u1": 18
+            },
+            "observed_reasons": {
+              "decided": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          }
+        },
+        "one1": {
+          "both": {
+            "cases": 36,
+            "decisions": 36,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "u0": 18,
+              "u1": 18
+            },
+            "observed_reasons": {
+              "decided": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          },
+          "either": {
+            "cases": 36,
+            "decisions": 36,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "u0": 18,
+              "u1": 18
+            },
+            "observed_reasons": {
+              "decided": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          },
+          "one0": {
+            "cases": 36,
+            "decisions": 36,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "u0": 18,
+              "u1": 18
+            },
+            "observed_reasons": {
+              "decided": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          },
+          "one1": {
+            "cases": 36,
+            "decisions": 36,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "u0": 18,
+              "u1": 18
+            },
+            "observed_reasons": {
+              "decided": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          }
+        }
+      },
+      "mode": {
+        "both": {
+          "cases": 144,
+          "decisions": 0,
+          "kind_correct": 144,
+          "observed_kinds": {
+            "none": 144
+          },
+          "observed_reasons": {
+            "abstain_inconsistent": 144
+          },
+          "reason_correct": 144,
+          "strict_correct": 144,
+          "value_correct": 144
+        },
+        "either": {
+          "cases": 144,
+          "decisions": 72,
+          "kind_correct": 144,
+          "observed_kinds": {
+            "many": 144
+          },
+          "observed_reasons": {
+            "abstain_ambiguous": 72,
+            "decided": 72
+          },
+          "reason_correct": 144,
+          "strict_correct": 144,
+          "value_correct": 144
+        },
+        "one0": {
+          "cases": 144,
+          "decisions": 144,
+          "kind_correct": 144,
+          "observed_kinds": {
+            "u0": 72,
+            "u1": 72
+          },
+          "observed_reasons": {
+            "decided": 144
+          },
+          "reason_correct": 144,
+          "strict_correct": 144,
+          "value_correct": 144
+        },
+        "one1": {
+          "cases": 144,
+          "decisions": 144,
+          "kind_correct": 144,
+          "observed_kinds": {
+            "u0": 72,
+            "u1": 72
+          },
+          "observed_reasons": {
+            "decided": 144
+          },
+          "reason_correct": 144,
+          "strict_correct": 144,
+          "value_correct": 144
+        }
+      },
+      "native_ticks": 0,
+      "observed_kinds": {
+        "many": 144,
+        "none": 144,
+        "u0": 144,
+        "u1": 144
+      },
+      "observed_reasons": {
+        "abstain_ambiguous": 72,
+        "abstain_inconsistent": 144,
+        "decided": 360
+      },
+      "physical_native_calls": 0,
+      "reason_correct": 576,
+      "record_wall_seconds": 2.166676397115225,
+      "signal_transmissions": 0,
+      "source_inclusive_group_updates": 1980,
+      "source_inclusive_signal_transmissions": 3168,
+      "source_inclusive_ticks": 396,
+      "storage_cpu_seconds": 0.0007797890000018071,
+      "strict_correct": 576,
+      "value_correct": 576
+    },
+    "full": {
+      "allocated_source_inclusive_cpu_seconds": 7.834176015999996,
+      "cases": 576,
+      "core_cpu_seconds": 6.16629849100001,
+      "decisions": 360,
+      "group_updates": 946032,
+      "kind_correct": 576,
+      "matrix": {
+        "both": {
+          "both": {
+            "cases": 36,
+            "decisions": 0,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "none": 36
+            },
+            "observed_reasons": {
+              "abstain_inconsistent": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          },
+          "either": {
+            "cases": 36,
+            "decisions": 0,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "none": 36
+            },
+            "observed_reasons": {
+              "abstain_inconsistent": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          },
+          "one0": {
+            "cases": 36,
+            "decisions": 0,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "none": 36
+            },
+            "observed_reasons": {
+              "abstain_inconsistent": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          },
+          "one1": {
+            "cases": 36,
+            "decisions": 0,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "none": 36
+            },
+            "observed_reasons": {
+              "abstain_inconsistent": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          }
+        },
+        "either": {
+          "both": {
+            "cases": 36,
+            "decisions": 36,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "many": 36
+            },
+            "observed_reasons": {
+              "decided": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          },
+          "either": {
+            "cases": 36,
+            "decisions": 36,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "many": 36
+            },
+            "observed_reasons": {
+              "decided": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          },
+          "one0": {
+            "cases": 36,
+            "decisions": 0,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "many": 36
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          },
+          "one1": {
+            "cases": 36,
+            "decisions": 0,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "many": 36
+            },
+            "observed_reasons": {
+              "abstain_ambiguous": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          }
+        },
+        "one0": {
+          "both": {
+            "cases": 36,
+            "decisions": 36,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "u0": 18,
+              "u1": 18
+            },
+            "observed_reasons": {
+              "decided": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          },
+          "either": {
+            "cases": 36,
+            "decisions": 36,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "u0": 18,
+              "u1": 18
+            },
+            "observed_reasons": {
+              "decided": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          },
+          "one0": {
+            "cases": 36,
+            "decisions": 36,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "u0": 18,
+              "u1": 18
+            },
+            "observed_reasons": {
+              "decided": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          },
+          "one1": {
+            "cases": 36,
+            "decisions": 36,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "u0": 18,
+              "u1": 18
+            },
+            "observed_reasons": {
+              "decided": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          }
+        },
+        "one1": {
+          "both": {
+            "cases": 36,
+            "decisions": 36,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "u0": 18,
+              "u1": 18
+            },
+            "observed_reasons": {
+              "decided": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          },
+          "either": {
+            "cases": 36,
+            "decisions": 36,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "u0": 18,
+              "u1": 18
+            },
+            "observed_reasons": {
+              "decided": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          },
+          "one0": {
+            "cases": 36,
+            "decisions": 36,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "u0": 18,
+              "u1": 18
+            },
+            "observed_reasons": {
+              "decided": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          },
+          "one1": {
+            "cases": 36,
+            "decisions": 36,
+            "kind_correct": 36,
+            "observed_kinds": {
+              "u0": 18,
+              "u1": 18
+            },
+            "observed_reasons": {
+              "decided": 36
+            },
+            "reason_correct": 36,
+            "strict_correct": 36,
+            "value_correct": 36
+          }
+        }
+      },
+      "mode": {
+        "both": {
+          "cases": 144,
+          "decisions": 0,
+          "kind_correct": 144,
+          "observed_kinds": {
+            "none": 144
+          },
+          "observed_reasons": {
+            "abstain_inconsistent": 144
+          },
+          "reason_correct": 144,
+          "strict_correct": 144,
+          "value_correct": 144
+        },
+        "either": {
+          "cases": 144,
+          "decisions": 72,
+          "kind_correct": 144,
+          "observed_kinds": {
+            "many": 144
+          },
+          "observed_reasons": {
+            "abstain_ambiguous": 72,
+            "decided": 72
+          },
+          "reason_correct": 144,
+          "strict_correct": 144,
+          "value_correct": 144
+        },
+        "one0": {
+          "cases": 144,
+          "decisions": 144,
+          "kind_correct": 144,
+          "observed_kinds": {
+            "u0": 72,
+            "u1": 72
+          },
+          "observed_reasons": {
+            "decided": 144
+          },
+          "reason_correct": 144,
+          "strict_correct": 144,
+          "value_correct": 144
+        },
+        "one1": {
+          "cases": 144,
+          "decisions": 144,
+          "kind_correct": 144,
+          "observed_kinds": {
+            "u0": 72,
+            "u1": 72
+          },
+          "observed_reasons": {
+            "decided": 144
+          },
+          "reason_correct": 144,
+          "strict_correct": 144,
+          "value_correct": 144
+        }
+      },
+      "native_ticks": 107472,
+      "observed_kinds": {
+        "many": 144,
+        "none": 144,
+        "u0": 144,
+        "u1": 144
+      },
+      "observed_reasons": {
+        "abstain_ambiguous": 72,
+        "abstain_inconsistent": 144,
+        "decided": 360
+      },
+      "physical_native_calls": 3456,
+      "reason_correct": 576,
+      "record_wall_seconds": 7.755810696049593,
+      "signal_transmissions": 2624064,
+      "source_inclusive_group_updates": 948012,
+      "source_inclusive_signal_transmissions": 2627232,
+      "source_inclusive_ticks": 107868,
+      "storage_cpu_seconds": 1.5875579509999662,
+      "strict_correct": 576,
+      "value_correct": 576
+    }
+  },
+  "computation_reused": false,
+  "conclusion": "Preserving both native compatibility channels supports unique/multiple/empty feasible-slot states and universal downstream queries on this fixed two-candidate grammar. Common-mode erasure loses inconsistent-context state. Exact solver matches all conditions with no native upper calls, so no general algorithm, learning, efficiency, uniqueness or probability calibration claim.",
+  "independent_samples": false,
+  "learning_calls": 0,
+  "local_scalar_max_error": 3.3306690738754696e-16,
+  "overhead_allocation": "equal thirds per arm; explicit accounting assumption, not independent timing runs",
+  "physical_native_calls": 6924,
+  "physical_numeric_trace_references": 6912,
+  "physical_ticks": 222108,
+  "preparation_audit_seal_excluded_from_per_arm": true,
+  "production_adoption": false,
+  "semantic_mutations_rejected": [
+    "revision",
+    "source",
+    "eligibility",
+    "selected",
+    "message",
+    "T_hash",
+    "value",
+    "network_ref"
+  ],
+  "server_scalar_max_error": 0.0,
+  "shared_work_overhead_cpu_seconds": 0.15395078700005982,
+  "soft_prior_is_metadata_excluded_from_hard_feasibility": true,
+  "source_group_updates": 1980,
+  "source_native_calls": 12,
+  "source_process_cpu_seconds": 0.029002645000000007,
+  "source_signal_transmissions": 3168,
+  "source_ticks": 396,
+  "statistical_speed_verdict": null,
+  "status": "R34_FEASIBLE_STATE_BOUNDED_PASS",
+  "storage_cost_first_writer_dependent": true,
+  "trace_storage_only_shared": true,
+  "unique_native_traces": 219,
+  "work_process_cpu_seconds": 18.065376999999998,
+  "world_measurement_calls": 0
+}

@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "1.0.0",
+  "requestId": "CS-R34",
+  "mode": "derive",
+  "objective": "Native feasible-set state and universal downstream query, full-channel vs common-mode erasure",
+  "sourceSnapshotDigest": "sha256:6e73f47f473b4333f546d5163fbb8951ca5a29ba78a0f3c849e57a494126fa0e",
+  "sourceRefs": [
+    {
+      "id": "SRC-CORE",
+      "path": "source/hypothesis.md",
+      "digest": "sha256:d1b735eee8f72c092c847c04e81a34972fa919be906311255faa797e58ec9302"
+    },
+    {
+      "id": "SRC-R32",
+      "path": "source/r33-runtime.py",
+      "digest": "sha256:95820d0fcbf48290f677e9a995c7a3a4a6261a7fb5d2b256b59c998805a6a5d9"
+    },
+    {
+      "id": "SRC-R19",
+      "path": "source/r19-probe.py",
+      "digest": "sha256:bb0159ba0c50505fc148322e0d0a17d53c184a0bdc7bed21b393120971eb5630"
+    },
+    {
+      "id": "SRC-RESULT",
+      "path": "source/r33-results.md",
+      "digest": "sha256:507a36c1aa0c5cd04618dbb7f1c6c1d6a69b3f8cda2e453c02645cff13f08276"
+    },
+    {
+      "id": "SRC-KERNEL",
+      "path": "source/dynamics.py",
+      "digest": "sha256:a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc"
+    }
+  ],
+  "operationalFacts": [
+    {
+      "id": "FACT-GAP",
+      "statement": "R33 typed roundtrip is sufficient in144unique-context cases but fails strict ambiguity/inconsistency in144cases; selector retains only compatibility difference. New task preserves both feasibility channels and answers a later query over all permitted bindings.",
+      "evidenceRefs": [
+        "SRC-R32",
+        "SRC-RESULT"
+      ]
+    },
+    {
+      "id": "FACT-KERNEL",
+      "statement": "Unchanged signed bounded common kernel supports authored Boolean circuits. Complete two-alternative hard feasible semantics is a finite engineering test, not learned/general inference. Identical trace storage may be shared only with all actual calls retained.",
+      "evidenceRefs": [
+        "SRC-KERNEL",
+        "SRC-CORE",
+        "SRC-R19"
+      ]
+    }
+  ],
+  "existingContractRef": null
+}

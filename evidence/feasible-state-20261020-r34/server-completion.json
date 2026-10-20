@@ -1,0 +1,7 @@
+{
+  "completed": true,
+  "evidence_bytes": 1212370,
+  "evidence_sha256": "53111b3316da8ca2afe25a82df228aa97d089f39e844d73900e167f53d293a01",
+  "seconds_including_seal": 19.65479825201328,
+  "within_wall_limit": true
+}

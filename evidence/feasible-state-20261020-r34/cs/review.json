@@ -1,0 +1,235 @@
+{
+  "schemaVersion": "1.0.0",
+  "reviewId": "CS-R34-REVIEW",
+  "constraintReportDigest": "sha256:752c57fe88e62128cfd26010c7ec4ba9e4f7f42a8260d9951bb65b5a3e47f05a",
+  "candidateDigest": "sha256:0cb653e4f6bbd68189215bfe199ab066d745865b63a160b5d10ba05e12761330",
+  "reviewerActorRef": "R34 implementation author source and saved-data review; not independent audit",
+  "findings": [
+    {
+      "id": "F-BOUNDARY",
+      "invariantId": "INV-BOUNDARY",
+      "status": "SATISFIED",
+      "evidenceRefs": [
+        "E-0",
+        "E-1",
+        "E-2",
+        "E-3",
+        "E-4",
+        "E-5",
+        "E-6",
+        "E-7",
+        "E-8",
+        "E-9",
+        "E-10"
+      ],
+      "reasoningSummary": "Frozen candidate5files unchanged;12actual native path origins carry primitive proof/config/source roles. All1728case-arm records are checked against original field encodings, full versus delta-only pair, native Program/drive/initial, revision1, source references, packet and T digests. Seven-group feasible classifier and15group universal query use unchanged signed native kernel and fixed one-hot decoder. consume_t signature excludes C, messages, case, truth and softprior; no host semantic equality/filter/argmax/repair on numeric route. Conditional source proof is not world truth.8semantic mutations rejected."
+    },
+    {
+      "id": "F-SEMANTICS",
+      "invariantId": "INV-SEMANTICS",
+      "status": "SATISFIED",
+      "evidenceRefs": [
+        "E-0",
+        "E-1",
+        "E-2",
+        "E-3",
+        "E-4",
+        "E-5",
+        "E-6",
+        "E-7",
+        "E-8",
+        "E-9",
+        "E-10"
+      ],
+      "reasoningSummary": "Full and information-matched exact each strict576/576. Delta strict432/576 and value504/576; all144empty-context cases are misclassified many,72wrong determinate answers and72wrong ambiguity reasons retained. Full correctly handles144multiple bindings:72unanimous T true/false decisions and72mixed abstentions;144empty bindings inconsistent abstention. All576C/T/name/order/initial/metadata cells retained. Softprior deliberately excluded from hard inference, no claimed weighted prior robustness. Post-run retuning/native rerun0; finite authored two-candidate grammar sufficiency only, no learned/general/unique/efficiency adoption."
+    },
+    {
+      "id": "F-COST",
+      "invariantId": "INV-COST",
+      "status": "SATISFIED",
+      "evidenceRefs": [
+        "E-0",
+        "E-1",
+        "E-2",
+        "E-3",
+        "E-4",
+        "E-5",
+        "E-6",
+        "E-7",
+        "E-8",
+        "E-9",
+        "E-10"
+      ],
+      "reasoningSummary": "Physical12source+3456full+3456delta=6924settles222108ticks,3stages exit0/source98unchanged,19.654798252s within1800s/stage600s worker1/retry0/learning0/World.measure0. All6912numeric calls executed and referenced;219identical trace storage records losslessly expanded with full-kernel+Config digest, scalar/controller/count replay max3.3306690738754696e-16 within frozen tolerance. Received238JSON/237manifest SHA and byte sizes exact; only sixempty logs and ZIP not received. Core CPU includes source export/guard/encoding/graph/packet operations; recording/storage separated, first-writer dependent. Source once per arm and sharedwork overhead equal-thirds are accounting assumptions, not independent performance runs. Exact upper-native0 and lower coreCPU; no speed superiority claim."
+    }
+  ],
+  "verificationResults": [
+    {
+      "obligationId": "OB-BOUNDARY",
+      "executionStatus": "EXECUTED",
+      "result": "PASS",
+      "targetDigest": "sha256:0cb653e4f6bbd68189215bfe199ab066d745865b63a160b5d10ba05e12761330",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "method": "dynamic-test",
+      "evidenceRefs": [
+        "E-0",
+        "E-1",
+        "E-2",
+        "E-3",
+        "E-4",
+        "E-5",
+        "E-6",
+        "E-7",
+        "E-8",
+        "E-9",
+        "E-10"
+      ]
+    },
+    {
+      "obligationId": "OB-SEMANTICS",
+      "executionStatus": "EXECUTED",
+      "result": "PASS",
+      "targetDigest": "sha256:0cb653e4f6bbd68189215bfe199ab066d745865b63a160b5d10ba05e12761330",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "method": "dynamic-test",
+      "evidenceRefs": [
+        "E-0",
+        "E-1",
+        "E-2",
+        "E-3",
+        "E-4",
+        "E-5",
+        "E-6",
+        "E-7",
+        "E-8",
+        "E-9",
+        "E-10"
+      ]
+    },
+    {
+      "obligationId": "OB-COST",
+      "executionStatus": "EXECUTED",
+      "result": "PASS",
+      "targetDigest": "sha256:0cb653e4f6bbd68189215bfe199ab066d745865b63a160b5d10ba05e12761330",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "method": "dynamic-test",
+      "evidenceRefs": [
+        "E-0",
+        "E-1",
+        "E-2",
+        "E-3",
+        "E-4",
+        "E-5",
+        "E-6",
+        "E-7",
+        "E-8",
+        "E-9",
+        "E-10"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E-0",
+      "path": "evidence/sources.json",
+      "digest": "sha256:8b1c2b33f9b84cd0ccde565e35ae9136092ac30d1b44f91641ffb4f9d6ecd60c",
+      "targetDigest": "sha256:0cb653e4f6bbd68189215bfe199ab066d745865b63a160b5d10ba05e12761330",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen R34 actual evidence; full received JSON native tick records and separate host scalar/semantic replay. Same-channel hashes, no independent host attestation or independent auditor."
+    },
+    {
+      "id": "E-1",
+      "path": "evidence/summary.json",
+      "digest": "sha256:a00694fe86555e25a0643f1bafcfb6cb7b2312cc5309866f1a106ec74bf52e84",
+      "targetDigest": "sha256:0cb653e4f6bbd68189215bfe199ab066d745865b63a160b5d10ba05e12761330",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen R34 actual evidence; full received JSON native tick records and separate host scalar/semantic replay. Same-channel hashes, no independent host attestation or independent auditor."
+    },
+    {
+      "id": "E-2",
+      "path": "evidence/result.json",
+      "digest": "sha256:da653cb3679c57a5327b915f8f0776dd51223151afc825c2fcea5686f71441bf",
+      "targetDigest": "sha256:0cb653e4f6bbd68189215bfe199ab066d745865b63a160b5d10ba05e12761330",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen R34 actual evidence; full received JSON native tick records and separate host scalar/semantic replay. Same-channel hashes, no independent host attestation or independent auditor."
+    },
+    {
+      "id": "E-3",
+      "path": "evidence/source-postcheck.json",
+      "digest": "sha256:5eaf90ea3c3d7f8aa6c3dfd61df4194fdfbd628b312218fe7a80b7ad7fa21cd7",
+      "targetDigest": "sha256:0cb653e4f6bbd68189215bfe199ab066d745865b63a160b5d10ba05e12761330",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen R34 actual evidence; full received JSON native tick records and separate host scalar/semantic replay. Same-channel hashes, no independent host attestation or independent auditor."
+    },
+    {
+      "id": "E-4",
+      "path": "evidence/manifest.json",
+      "digest": "sha256:b22afb849cd6c9ad2b50d34381d4ce1c91401cc6a5cad2e43b81c2eaa24bd326",
+      "targetDigest": "sha256:0cb653e4f6bbd68189215bfe199ab066d745865b63a160b5d10ba05e12761330",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen R34 actual evidence; full received JSON native tick records and separate host scalar/semantic replay. Same-channel hashes, no independent host attestation or independent auditor."
+    },
+    {
+      "id": "E-5",
+      "path": "evidence/work-ledger.json",
+      "digest": "sha256:17c302060e1e8e333bc4717ea115fb7cee07adfb69f6a8fd1afe1e3a5c9c2d52",
+      "targetDigest": "sha256:0cb653e4f6bbd68189215bfe199ab066d745865b63a160b5d10ba05e12761330",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen R34 actual evidence; full received JSON native tick records and separate host scalar/semantic replay. Same-channel hashes, no independent host attestation or independent auditor."
+    },
+    {
+      "id": "E-6",
+      "path": "evidence/receipt-verification.json",
+      "digest": "sha256:931ba38144dfad42da944bac22add43ff02bd817db13f8aadde14a275e5a9dbf",
+      "targetDigest": "sha256:0cb653e4f6bbd68189215bfe199ab066d745865b63a160b5d10ba05e12761330",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen R34 actual evidence; full received JSON native tick records and separate host scalar/semantic replay. Same-channel hashes, no independent host attestation or independent auditor."
+    },
+    {
+      "id": "E-7",
+      "path": "evidence/local-verification.json",
+      "digest": "sha256:f4741ed451624c0a04d5f6e189df3070b4cfd3ae02af6f43d41a2b1e54436d1d",
+      "targetDigest": "sha256:0cb653e4f6bbd68189215bfe199ab066d745865b63a160b5d10ba05e12761330",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen R34 actual evidence; full received JSON native tick records and separate host scalar/semantic replay. Same-channel hashes, no independent host attestation or independent auditor."
+    },
+    {
+      "id": "E-8",
+      "path": "evidence/analysis.json",
+      "digest": "sha256:9c30988c050629140ad21fb5301bb8e5e1dd561b72c90128c72be8b129a9b304",
+      "targetDigest": "sha256:0cb653e4f6bbd68189215bfe199ab066d745865b63a160b5d10ba05e12761330",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen R34 actual evidence; full received JSON native tick records and separate host scalar/semantic replay. Same-channel hashes, no independent host attestation or independent auditor."
+    },
+    {
+      "id": "E-9",
+      "path": "evidence/preparation-checks.json",
+      "digest": "sha256:1754e0c9f0cb5775509ecfa6eb898d46d249593c6ae036910d3c8e8a217aba66",
+      "targetDigest": "sha256:0cb653e4f6bbd68189215bfe199ab066d745865b63a160b5d10ba05e12761330",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen R34 actual evidence; full received JSON native tick records and separate host scalar/semantic replay. Same-channel hashes, no independent host attestation or independent auditor."
+    },
+    {
+      "id": "E-10",
+      "path": "evidence/server-completion.json",
+      "digest": "sha256:69789aa1ea3a13022b04112252ff35d5e8797d864c01ec46f01c3db4b60d71d4",
+      "targetDigest": "sha256:0cb653e4f6bbd68189215bfe199ab066d745865b63a160b5d10ba05e12761330",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen R34 actual evidence; full received JSON native tick records and separate host scalar/semantic replay. Same-channel hashes, no independent host attestation or independent auditor."
+    }
+  ],
+  "blockingFindingIds": [],
+  "unverifiedRequiredObligationIds": [],
+  "verdict": "PASS"
+}

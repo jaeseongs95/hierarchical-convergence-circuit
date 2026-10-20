@@ -1,0 +1,13 @@
+{
+  "checks": 616,
+  "native_calls": 0,
+  "status": "PASS",
+  "lossless_codec_fixture_and_rejection": 2,
+  "parsed_python": [
+    "bootstrap.py",
+    "probe.py",
+    "runtime.py",
+    "verify.py",
+    "__init__.py"
+  ]
+}

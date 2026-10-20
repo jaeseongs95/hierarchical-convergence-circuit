@@ -1,0 +1,27 @@
+{
+  "all_native_tick_records_received": true,
+  "archive_received": false,
+  "metadata_failures": [
+    {
+      "effect": "request rejected before execution; read filename lists split to <=24 names; actual experiment not rerun",
+      "error": "INVALID_ARGUMENT command maxLength 2000",
+      "stage": "raw read request"
+    }
+  ],
+  "raw_json_bytes": 4249051,
+  "raw_manifest_matched_files": 237,
+  "received_json": 238,
+  "same_channel_hashes_not_host_attestation": true,
+  "source_files": 98,
+  "source_unchanged": true,
+  "ssh_completeness": "unknown upstream adapter may cap output; expected JSON name/count/size/SHA all matched",
+  "text_archive_transfer_attempted": false,
+  "unreceived_empty_logs": [
+    "audit.stderr",
+    "audit.stdout",
+    "preparation.stderr",
+    "preparation.stdout",
+    "work.stderr",
+    "work.stdout"
+  ]
+}

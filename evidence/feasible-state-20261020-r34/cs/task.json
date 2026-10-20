@@ -1,0 +1,109 @@
+{
+  "acceptanceCriteria": [
+    "[AC-001] R33의 공통성분 손실·잘못된 확정 반례를 근거로 새 native 해집합 상태와 후속 모든해 query 계약을 동결한다. 기존 연구/core는 바꾸지 않는다.",
+    "[AC-002] native 원천12개와576입력(맥락4×후속T4×이름2×순서2×initial3×softprior3)을 full-pair/delta-only/exact 3군1728평가로 비교한다. numeric adapter는 필드 인코딩·신호전달·고정 native 출력 decoder만 수행하고 semantic role equality/해집합/정답수정은 금지한다.",
+    "[AC-003] 유일/복수/해없음과 후속 query True/False/ambiguous/inconsistent를 분리한다. 복수해라도 query 일치 시 답할 수 있어야 한다는 가설을 검사하며 실패는 그대로 보존한다. softprior는 hard constraint가 아니므로 하드 허용집합을 덮어쓰지 않는다.",
+    "[AC-004] AI Research SSH1800초/단계600초/worker1/retry0/학습0/세계측정0/최대6924settles1107840ticks. 모든 물리 native 호출의 기록을 보존하되 완전동일 trace 저장만 config 포함 content key로 중복 제거하고 실제 계산은 생략하지 않는다. 별도 scalar/controller/역할/의미/비용 검산·해시·표적 변조를 수행하고 원천포함 비용을 분리한다.",
+    "[AC-005] 새 세 경로만 scope/staged 검증 후 서명커밋·main FF·같은 private origin push·SHA일치/clean을 확인한다."
+  ],
+  "authorization": {
+    "allowedActions": [
+      "R34 연구 전용 구현과 결과 문서 작성",
+      "제한된 AI Research SSH 후속 실험",
+      "서명커밋과 로컬 main 병합",
+      "같은 연구 저장소 원격 push"
+    ],
+    "approvalRequired": [],
+    "prohibitedActions": [
+      "기존 core 및 과거 연구 변경",
+      "새 의존성·유료자원·서비스·권한 확대",
+      "외부 peer 메시지 전송"
+    ]
+  },
+  "constraints": [
+    "신규 세 경로만; core/과거 연구/user변경 보존",
+    "전체1800초/단계600초/worker1/retry0, parent512MiB/child256MiB/raw128MiB",
+    "실행 전 source/input/decoder/threshold/상한 고정, semantic 실패 보존·사후 retune 금지",
+    "학습/World.measure0, 자동 의미학습·일반 CSP·효율·고유성·확률교정 주장 금지",
+    "같은 typed/hard 정보의 exact baseline; softprior는 선호일 뿐 hard truth 아님",
+    "완전 동일 trace 저장만 공유; 각 native 호출은 실제로 수행·비용기록. artifact 저장 재사용을 계산 절약으로 주장하지 않음",
+    "새 의존성/paid자원/service/권한확대/외부 peer메시지 없음"
+  ],
+  "decision": {
+    "complexity": "complex",
+    "hasConflicts": false
+  },
+  "objective": "native 후보 허용 신호의 공통성분을 보존해 유일/복수/해없음과 모든 가능한 결속에 대한 후속 query 판단을 구분하는 충분성·실패 경계 검증",
+  "orchestration": {
+    "mcpAvailable": true,
+    "requested": false
+  },
+  "requiredCapabilities": [
+    "minimal-implementation",
+    "cs-implementation-review",
+    "change-scope-assurance"
+  ],
+  "riskLevel": "medium",
+  "schemaVersion": "1.0.0",
+  "scope": {
+    "excluded": [
+      "src/",
+      "tests/",
+      "tools/r19_cross_level/",
+      "tools/r20_evidence_feedback/",
+      "tools/r21_active_measurement/",
+      "tools/r22_measurement_adoption/",
+      "tools/r23_source_qualification/",
+      "experiments/exp-69-source-qualification/",
+      "evidence/source-qualification-20261019-r23/",
+      "tools/r24_trust_boundary/",
+      "experiments/exp-70-trust-boundary/",
+      "evidence/trust-boundary-20261019-r24/",
+      "tools/r25_fixedpoint_elision/",
+      "experiments/exp-71-fixedpoint-elision/",
+      "evidence/fixedpoint-elision-20261019-r25/",
+      "experiments/exp-72-contraction-warmstart/",
+      "tools/r26_contraction_warmstart/",
+      "evidence/contraction-warmstart-20261019-r26/",
+      "experiments/exp-73-finite-stop-envelope/",
+      "tools/r27_finite_stop_envelope/",
+      "evidence/finite-stop-envelope-20261019-r27/",
+      "experiments/exp-74-reuse-frontier/",
+      "tools/r28_reuse_frontier/",
+      "evidence/reuse-frontier-20261020-r28/",
+      "experiments/exp-75-research-direction/",
+      "tools/r29_research_direction/",
+      "evidence/research-direction-20261020-r29/",
+      "experiments/exp-76-spatial-sharing/",
+      "tools/r30_spatial_sharing/",
+      "evidence/spatial-sharing-20261020-r30/",
+      "experiments/exp-77-macro-control/",
+      "tools/r31_macro_control/",
+      "evidence/macro-control-20261020-r31/",
+      "experiments/exp-78-semantic-join/",
+      "tools/r32_semantic_join/",
+      "evidence/semantic-join-20261020-r32/",
+      "experiments/exp-79-typed-feedback/",
+      "tools/r33_typed_feedback/",
+      "evidence/typed-feedback-20261020-r33/"
+    ],
+    "included": [
+      "experiments/exp-80-feasible-state/",
+      "tools/r34_feasible_state/",
+      "evidence/feasible-state-20261020-r34/"
+    ]
+  },
+  "taskId": "ai-feasible-state-r34",
+  "workUnits": [
+    {
+      "dependencies": [],
+      "id": "r34",
+      "objective": "native 후보 허용 신호의 공통성분을 보존해 유일/복수/해없음과 모든 가능한 결속에 대한 후속 query 판단을 구분하는 충분성·실패 경계 검증",
+      "writeTargets": [
+        "experiments/exp-80-feasible-state/",
+        "tools/r34_feasible_state/",
+        "evidence/feasible-state-20261020-r34/"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "files": [
+    {
+      "digest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path": "candidate/__init__.py"
+    },
+    {
+      "digest": "sha256:57d66569e7fac6217a0a8c3fbb9bbbe486036ff0e6294e07b334e998df20b00d",
+      "path": "candidate/bootstrap.py"
+    },
+    {
+      "digest": "sha256:e135ea3cec8efa8854c798e2ee52baf9c14d996cac2db4f9f327bc5d7e3bd62a",
+      "path": "candidate/probe.py"
+    },
+    {
+      "digest": "sha256:357982ac2169f889e404e5163266e33ea3b62fc3450e454b7c8fd2c817484d72",
+      "path": "candidate/runtime.py"
+    },
+    {
+      "digest": "sha256:b6d2fe26d259f852798cad4c00f95c76540988dda8f9eee989a95ca1e76bb2b1",
+      "path": "candidate/verify.py"
+    }
+  ],
+  "schemaVersion": "1.0.0",
+  "scopeSummary": "R34 isolated full-pair vs common-mode erasure with identical native7group feasible-state and15group universal-query graphs,576cases x3arms, actual sources12, lossless trace storage sharing only; no core edits or learned/general inference claim."
+}

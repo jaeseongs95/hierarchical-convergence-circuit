@@ -1,0 +1,52 @@
+{
+  "criteria": [
+    {
+      "evidence": [
+        "experiments/exp-80-feasible-state/DESIGN.ko.md",
+        "frozen_spec.json",
+        "source_manifest.pre-frozen.json"
+      ],
+      "id": "AC-001",
+      "status": "PASS"
+    },
+    {
+      "evidence": [
+        "raw/sources.json",
+        "raw/batch00.json through batch11.json",
+        "local-verification.json",
+        "cs/review.json"
+      ],
+      "id": "AC-002",
+      "status": "PASS"
+    },
+    {
+      "evidence": [
+        "analysis.json",
+        "raw/summary.json"
+      ],
+      "id": "AC-003",
+      "qualification": "full strict576/576,delta failure144 retained; finite authored grammar only",
+      "status": "PASS"
+    },
+    {
+      "evidence": [
+        "receipt-verification.json",
+        "local-verification.json",
+        "raw/result.json",
+        "analysis.json",
+        "cs/bundle-check.json"
+      ],
+      "id": "AC-004",
+      "status": "PASS"
+    },
+    {
+      "evidence": [],
+      "id": "AC-005",
+      "qualification": "final scope/stagedbytes/sign/mainFF/privatepush/clean verified after this report; no premature completion claim",
+      "status": "PENDING_EXTERNAL_GIT_FINALIZATION"
+    }
+  ],
+  "independent_audit": false,
+  "production_adoption": false,
+  "status": "STUDY_VALIDATED_GIT_PENDING"
+}
