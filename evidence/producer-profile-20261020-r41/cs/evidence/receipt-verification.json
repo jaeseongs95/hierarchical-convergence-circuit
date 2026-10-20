@@ -1,0 +1,22 @@
+{
+  "adapter_redaction_detected": false,
+  "all_native_tick_records_received": true,
+  "archive_received": false,
+  "input_pins": 128,
+  "raw_json_bytes": 2562646,
+  "raw_manifest_matched_files": 87,
+  "received_json": 88,
+  "same_channel_hashes_not_host_attestation": true,
+  "source_files": 161,
+  "source_unchanged": true,
+  "ssh_completeness": "upstream unknown;all expectedJSON names/count/size/SHA directly matched;manifest outside its ownhash",
+  "transport_failures": [],
+  "unreceived_empty_logs": [
+    "audit.stderr",
+    "audit.stdout",
+    "preparation.stderr",
+    "preparation.stdout",
+    "work.stderr",
+    "work.stdout"
+  ]
+}

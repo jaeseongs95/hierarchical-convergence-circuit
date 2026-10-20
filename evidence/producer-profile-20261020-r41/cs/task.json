@@ -1,0 +1,133 @@
+{
+  "acceptanceCriteria": [
+    "[AC-001] R25/R30/R40과중복을확인하고기존R40q4의32맥락·3반복·3arms·비계측/계측2mode계약과상호배타CPU원장/우선판정조건을동결한다. 기존core와연구파일을보존한다.",
+    "[AC-002] AI Research SSH에서24fresh원천과34560numeric=34584실제수렴을실행하며576기록/2304출력을보존한다. 원본R40실행과계측형을교차배치하고모든수치함수/검사/trace기록을호출한다. 최적화·생략·답cache·학습·세계측정0회다.",
+    "[AC-003] 독립fulloracle/모든중간층·출처·Program·drive·initial·봉인·controller·physicalrefs를검산한다. 288짝의모든kernel정규bytes/판단이동일하고임시프로세스binding복원이확인되어야한다. phase원장의배타합/호출수/tick수와변조거부를확인한다.",
+    "[AC-004] 단계240초/전체300초·worker1/retry0/raw128MiB/cache192MiB/AS각512MiB상한을지키고전체JSON/source크기SHA·scalar·비용을검산한다. 각arm의3짝반복coreCPU계측/비계측비<=1.10일때만내부비중을해석하며,동일최대배타범주가3반복모두30%이상일때만후속조사우선후보로남긴다. 실패시관측만보고하고튜닝/재실행금지.",
+    "[AC-005] 신규세경로만scope/index확인후기존키서명커밋·mainFF·작업branch삭제·동일비공개originpush·SHA일치/clean/병합후bytes를확인한다."
+  ],
+  "authorization": {
+    "allowedActions": [
+      "R41 연구 전용 계측 구현과 결과 문서 작성",
+      "제한된 AI Research SSH 후속 실험",
+      "서명커밋과 로컬 main 병합",
+      "같은 연구 저장소 원격 push"
+    ],
+    "approvalRequired": [],
+    "prohibitedActions": [
+      "기존 core 및 과거 연구 변경",
+      "새 의존성·유료자원·서비스·권한 확대",
+      "외부 peer 메시지 전송"
+    ]
+  },
+  "constraints": [
+    "신규세경로만,기존core/과거결과/user변경보존;원본R40기능·설정·임계값·초기상태불변",
+    "계측은singleworker연구process안의가역적binding으로만수행;함수원본은항상호출하고예외/정상모두finally복원;서비스/전역설정/키/권한변경없음",
+    "copy한kernel외피의data-producing행은원본과같으며Program구축/settle/결과구성주변에timer만넣는다. 실제수식·검사·tick·trace관찰·카운터를생략하거나추가추론하지않는다",
+    "동일정보exact도양mode로실행;원천비용/기록저장/감사/봉인/프로세스전체는별도보존. 세부phase는계측된core의배타CPU이며standalone제품비용/순수신경산술/통계적속도우위가아님",
+    "계측교란10%/최대범주30%는사전선택한기술판별선으로유의확률이나효율채택조건이아님;근거부족/동치실패면내부비중으로최적화결론금지",
+    "폐쇄2×2×2선택32맥락/q4/3반복의관측만;일반CSP/학습/최소표현/운영도입주장금지",
+    "localnative0/동결후native재실행·사후튜닝0;저장만fullkernel+Config exactbytes공유;숫자raw/기대hash교체금지",
+    "외부peer전송/새dependency/유료자원/security/globalconfig변경없음;사용자기존동일비공개push승인유지",
+    "알려진sandboxGPG/네트워크차단에는동일키·origin에한정한자동심사escalation가능;거부시사유명시",
+    "adapter가동결공개metadata경로를가리면수신본보존후별도knownpath복원원본sizeSHA일치만허용,숫자/출처대체금지"
+  ],
+  "decision": {
+    "complexity": "complex",
+    "hasConflicts": false
+  },
+  "objective": "R40의q4실행을바꾸지않고생산/입력/회로생성·검증/tick/제어/결과직렬화·해시비용을계측한다. 비계측짝의전체trace·판단동치와계측부담을확인한뒤비용조사우선후보를판정한다",
+  "orchestration": {
+    "mcpAvailable": true,
+    "requested": false
+  },
+  "requiredCapabilities": [
+    "minimal-implementation",
+    "cs-implementation-review",
+    "change-scope-assurance"
+  ],
+  "riskLevel": "medium",
+  "schemaVersion": "1.0.0",
+  "scope": {
+    "excluded": [
+      "src/",
+      "tests/",
+      "tools/r19_cross_level/",
+      "tools/r20_evidence_feedback/",
+      "tools/r21_active_measurement/",
+      "tools/r22_measurement_adoption/",
+      "tools/r23_source_qualification/",
+      "experiments/exp-69-source-qualification/",
+      "evidence/source-qualification-20261019-r23/",
+      "tools/r24_trust_boundary/",
+      "experiments/exp-70-trust-boundary/",
+      "evidence/trust-boundary-20261019-r24/",
+      "tools/r25_fixedpoint_elision/",
+      "experiments/exp-71-fixedpoint-elision/",
+      "evidence/fixedpoint-elision-20261019-r25/",
+      "experiments/exp-72-contraction-warmstart/",
+      "tools/r26_contraction_warmstart/",
+      "evidence/contraction-warmstart-20261019-r26/",
+      "experiments/exp-73-finite-stop-envelope/",
+      "tools/r27_finite_stop_envelope/",
+      "evidence/finite-stop-envelope-20261019-r27/",
+      "experiments/exp-74-reuse-frontier/",
+      "tools/r28_reuse_frontier/",
+      "evidence/reuse-frontier-20261020-r28/",
+      "experiments/exp-75-research-direction/",
+      "tools/r29_research_direction/",
+      "evidence/research-direction-20261020-r29/",
+      "experiments/exp-76-spatial-sharing/",
+      "tools/r30_spatial_sharing/",
+      "evidence/spatial-sharing-20261020-r30/",
+      "experiments/exp-77-macro-control/",
+      "tools/r31_macro_control/",
+      "evidence/macro-control-20261020-r31/",
+      "experiments/exp-78-semantic-join/",
+      "tools/r32_semantic_join/",
+      "evidence/semantic-join-20261020-r32/",
+      "experiments/exp-79-typed-feedback/",
+      "tools/r33_typed_feedback/",
+      "evidence/typed-feedback-20261020-r33/",
+      "experiments/exp-80-feasible-state/",
+      "tools/r34_feasible_state/",
+      "evidence/feasible-state-20261020-r34/",
+      "experiments/exp-81-compositional-slot/",
+      "tools/r35_compositional_slot/",
+      "evidence/compositional-slot-20261020-r35/",
+      "experiments/exp-82-overlap-composition/",
+      "tools/r36_overlap_composition/",
+      "evidence/overlap-composition-20261020-r36/",
+      "experiments/exp-83-joint-tuple/",
+      "tools/r37_joint_tuple/",
+      "evidence/joint-tuple-20261020-r37/",
+      "experiments/exp-84-shared-witness/",
+      "tools/r38_shared_witness/",
+      "evidence/shared-witness-20261020-r38/",
+      "experiments/exp-85-z-query/",
+      "tools/r39_z_query/",
+      "evidence/z-query-20261020-r39/",
+      "experiments/exp-86-factor-query/",
+      "tools/r40_factor_query/",
+      "evidence/factor-query-20261020-r40/"
+    ],
+    "included": [
+      "experiments/exp-87-producer-profile/",
+      "tools/r41_producer_profile/",
+      "evidence/producer-profile-20261020-r41/"
+    ]
+  },
+  "taskId": "ai-producer-profile-r41",
+  "workUnits": [
+    {
+      "dependencies": [],
+      "id": "r41",
+      "objective": "R40의q4실행을바꾸지않고생산/입력/회로생성·검증/tick/제어/결과직렬화·해시비용을계측한다. 비계측짝의전체trace·판단동치와계측부담을확인한뒤비용조사우선후보를판정한다",
+      "writeTargets": [
+        "experiments/exp-87-producer-profile/",
+        "tools/r41_producer_profile/",
+        "evidence/producer-profile-20261020-r41/"
+      ]
+    }
+  ]
+}

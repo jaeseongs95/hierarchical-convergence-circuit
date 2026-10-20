@@ -1,0 +1,16 @@
+{
+  "delegation": false,
+  "deliberation": "R40alreadyselectedprefixcostattribution;measurementcontractwithnofunctionaloptimization,noadditionaldirectionpanelneeded",
+  "execution": "direct",
+  "independent_audit": "No production/security/payment/global-setting change;author verification disclosed",
+  "steps": [
+    "task-contract",
+    "scope-baseline",
+    "CSderive",
+    "ponytail-instrumentation",
+    "preparation/freeze",
+    "AIResearchSSH",
+    "saved-data-replay/CSreview",
+    "scope/index/sign/main/privatepush"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "base": "5f3d15c677543ff26a4180598e116a50c4d1a278",
+  "bytes": 425712,
+  "design_sha256": "d0a179c9e263bdc95215cab79a50cd96bcdea9573e75884bbd8bf0f1abec03b6",
+  "evaluations": 576,
+  "maximum_logical_ticks": 5533440,
+  "maximum_native_settle_calls": 34584,
+  "query_outputs": 2304,
+  "sha256": "e1e0c3ed63d125516b0a9ddda930f24ce6e6f570a925f269303dc074b04f7253",
+  "source_files": 161,
+  "source_manifest_sha256": "07949f403e62e6a7933a633f1fb0b530eb4ae1c9feec5ad9dc8f587e93c5f9c4",
+  "sources": 24,
+  "spec_sha256": "cd1043b1e9d5662c69661b456f8b0fb66afa9760680201474cea5c23ae0a524d",
+  "total_seconds": 300,
+  "training": 0,
+  "world_measurement": 0
+}

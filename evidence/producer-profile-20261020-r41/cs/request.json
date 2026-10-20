@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "1.0.0",
+  "requestId": "CS-R41",
+  "mode": "derive",
+  "objective": "Observe unchangedR40producer/kernelphaseswithpairednoninstrumentedcontrol,exacttraceidentityandexclusiveCPUledger",
+  "sourceSnapshotDigest": "sha256:22eab61d2e16dbd13939582d8cb21cf7832fe6e2e07a4841eeca892ab87c2efc",
+  "sourceRefs": [
+    {
+      "id": "SRC-CORE",
+      "path": "source/hypothesis.md",
+      "digest": "sha256:d1b735eee8f72c092c847c04e81a34972fa919be906311255faa797e58ec9302"
+    },
+    {
+      "id": "SRC-R32",
+      "path": "source/r33-runtime.py",
+      "digest": "sha256:95820d0fcbf48290f677e9a995c7a3a4a6261a7fb5d2b256b59c998805a6a5d9"
+    },
+    {
+      "id": "SRC-R19",
+      "path": "source/r19-probe.py",
+      "digest": "sha256:bb0159ba0c50505fc148322e0d0a17d53c184a0bdc7bed21b393120971eb5630"
+    },
+    {
+      "id": "SRC-RESULT",
+      "path": "source/r40-results.md",
+      "digest": "sha256:ff44235352b0cdb576b15068fe4397ce30a43b5476f3b8dd02408a196bb7731d"
+    },
+    {
+      "id": "SRC-KERNEL",
+      "path": "source/dynamics.py",
+      "digest": "sha256:a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc"
+    },
+    {
+      "id": "SRC-BUDGET",
+      "path": "source/budget.json",
+      "digest": "sha256:c4c68056176a45621340c7422c9d584f59acc2cd3454c45c95adf22e0db93fe9"
+    }
+  ],
+  "operationalFacts": [
+    {
+      "id": "FACT-GAP",
+      "statement": "R40all3arms1536/1536butno5%totalcostgatepass. Producerprefixincludesexportguard/docs/kernelbuild/validate/tick/controller/plain/digestwithoutinternaltiming;R25arithmeticelision/R30spatialsharingdidnotattributethisR40pipeline.",
+      "evidenceRefs": [
+        "SRC-RESULT"
+      ]
+    },
+    {
+      "id": "FACT-KERNEL",
+      "statement": "OriginalR33kernelbuildsProgram,executesunchangedsettlewithProgram.validateandtick,thenplain/digest/convergence/costrender. R41timesonlytheseexistingcallswithsameinputs,restores12process-localbindings,usesR40q4entryandstrictcanonicalkernel-recordpairing.",
+      "evidenceRefs": [
+        "SRC-R32",
+        "SRC-KERNEL"
+      ]
+    },
+    {
+      "id": "FACT-BUDGET",
+      "statement": "R40q4actualcostscaledforplain+profiledhalfwithselected1.25planningfactor;work65.161155s/3xsafety60round->240stage/300total.34560numeric+24source=34584calls/max5533440ticks;capsoperatingstopsnotguarantees.",
+      "evidenceRefs": [
+        "SRC-BUDGET"
+      ]
+    }
+  ],
+  "existingContractRef": null
+}

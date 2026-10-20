@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "1.0.0",
+  "reportId": "CS-R41-CONSTRAINTS",
+  "requestDigest": "sha256:8dd7440b99d5c5ae7d4d41c05bd4dcc19e773366468a1f89780100bbe12da27a",
+  "sourceSnapshotDigest": "sha256:22eab61d2e16dbd13939582d8cb21cf7832fe6e2e07a4841eeca892ab87c2efc",
+  "knowledgePackVersion": "0.1.0",
+  "knowledgePackDigest": "sha256:d8351d9aabb433403830fcffc3a2f2438b6d428711c93b6ded9eff002468c3d1",
+  "draftUse": {
+    "allowed": false,
+    "basis": "Validated identity/reuse and matched measurement rules"
+  },
+  "applicability": "applicable",
+  "applicabilityReason": "Typed source reuse and causal feedback correctness need explicit identity and evidence accounting.",
+  "selectedRules": [
+    {
+      "ruleId": "ALG-KEY-004",
+      "ruleDigest": "sha256:db77383ecb5f41ef3af5cb60769edaea507cac5cb25e28b88f249e84a062ba2e",
+      "applicabilityReason": "Shared native source reuse and candidate-order routing require full source/role/revision/config binding; a selected revision may not silently change origin roles."
+    },
+    {
+      "ruleId": "PERF-MEASURE-001",
+      "ruleDigest": "sha256:ef11800e55663f1b719f62d3f812280fd6e56c6895eef3028b9db344a9d0a355",
+      "applicabilityReason": "Information-matched exact control and actual shared-source plus all roundtrip/serialization/process costs; semantic errors preclude efficiency adoption."
+    }
+  ],
+  "facts": [
+    {
+      "id": "FACT-GAP",
+      "statement": "R40all3arms1536/1536butno5%totalcostgatepass. Producerprefixincludesexportguard/docs/kernelbuild/validate/tick/controller/plain/digestwithoutinternaltiming;R25arithmeticelision/R30spatialsharingdidnotattributethisR40pipeline.",
+      "evidenceRefs": [
+        "SRC-RESULT"
+      ]
+    },
+    {
+      "id": "FACT-KERNEL",
+      "statement": "OriginalR33kernelbuildsProgram,executesunchangedsettlewithProgram.validateandtick,thenplain/digest/convergence/costrender. R41timesonlytheseexistingcallswithsameinputs,restores12process-localbindings,usesR40q4entryandstrictcanonicalkernel-recordpairing.",
+      "evidenceRefs": [
+        "SRC-R32",
+        "SRC-KERNEL"
+      ]
+    },
+    {
+      "id": "FACT-BUDGET",
+      "statement": "R40q4actualcostscaledforplain+profiledhalfwithselected1.25planningfactor;work65.161155s/3xsafety60round->240stage/300total.34560numeric+24source=34584calls/max5533440ticks;capsoperatingstopsnotguarantees.",
+      "evidenceRefs": [
+        "SRC-BUDGET"
+      ]
+    }
+  ],
+  "assumptions": [],
+  "invariants": [
+    {
+      "id": "INV-BOUNDARY",
+      "statement": "R40q4only32contexts×3repetitions×3arms×2modes=576records2304outputs/24freshsources. Query-freeproducer/numeric-onlyconsumer/fullsourceProgramdriveinitialsealbindingsunchanged. Instrumentedkernelonlywrapsoriginaldata-producingrows,validation/tick/digestalwayscalloriginalfunctions.12temporarysingle-processbindingsrestorednormal/exception/nestedrejection;noengine-source/globalconfigurationchange,noextraanswerchannel.",
+      "scope": "R41 frozenq4/32contexts3repetitions3arms2modes and24native sources",
+      "basisRefs": [
+        "FACT-GAP",
+        "FACT-KERNEL"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-SEMANTICS",
+      "statement": "Independentfull8tripleoracleandeveryrole/pair/membership/triple/queryinput/eligibility/kind/selectedchecked.288pairedrecordscanonicalequalexceptmode/twoCPUfields;everybackingkernel+Configcanonicalbyteexactbeforestoragecoalescing andafterlosslessexpansion. Scalar/controller/proof/costandnamespace/order/repetition invariance. Savedrecordandphasepartition/callcount/restoration/pairmutantsrejected. No retune/native replay/generalCSP/learning.",
+      "scope": "R41 frozenq4/32contexts3repetitions3arms2modes and24native sources",
+      "basisRefs": [
+        "FACT-GAP",
+        "FACT-KERNEL"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-COST",
+      "statement": "34584actualcalls/max5533440ticks,worker1/retry0,240stage/300total/raw128MiB/cache192MiB/record128KiB/AS512MiBeach/LRU18. Nestedprocess_time_ns inclusive-childpartitionexactandnonnegative;sourceguard/docs/contract/membership/encoding/kernelbuild/validate/tick/controller/resultplain/digest/residualandobserversupportexposed. For eacharm,all3grouprepsprofile/plaincore<=1.10beforeinterpretinginternalshare;same-largestexclusivecomponent>=.30in3repsbeforelabelingfollowuppriority. Selectedtechnicalgates/notstatisticalorproductionefficiency. Coreclockstopboundary/remainingmetadataandstorage-audit-prepare-parentcostsreportedseparately;allraw/sourceSHA-sizeverified.",
+      "scope": "R41 frozenq4/32contexts3repetitions3arms2modes and24native sources",
+      "basisRefs": [
+        "FACT-KERNEL",
+        "FACT-BUDGET"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "PERF-MEASURE-001"
+      ]
+    }
+  ],
+  "designChoices": [
+    {
+      "id": "CHOICE-OBSERVATION",
+      "statement": "ObserveexistingR40q4withmatchedplain/profiledpairs;nooptimization.",
+      "rationale": "SeparatesmeasurementdisturbanceandoriginalCPUcomponentsbeforeanycache/elisioncandidate;allfourXYslotskeepoffdiagonalpositivecontrol.",
+      "basisRefs": [
+        "FACT-GAP",
+        "FACT-KERNEL",
+        "FACT-BUDGET"
+      ]
+    }
+  ],
+  "verificationObligations": [
+    {
+      "id": "OB-BOUNDARY",
+      "invariantIds": [
+        "INV-BOUNDARY"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Skippednumeric/validationcalls;wrongProgram/config/role;observeraffectsanswers;bindingremainsinstalled;cross-modeinputdiff.",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-SEMANTICS",
+      "invariantIds": [
+        "INV-SEMANTICS"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Timingobserverchangesanysavednativebit/readout;finalkindmasksintermediatefault;timefieldsremovedbeyonddeclaredtwo;pairingrefsnotboundtocompletekernelbytes.",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-COST",
+      "invariantIds": [
+        "INV-COST"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Doublecountednestedphases/clockresolutionignored;observeroverheadnotcalibratedbutrankclaimed;omittedresidualsetup-restorationcost;unreceivednumericrawcalledcomplete.",
+      "requirementLevel": "required"
+    }
+  ],
+  "requiredCapabilities": [
+    "cs-constraint-derivation",
+    "cs-implementation-review"
+  ],
+  "verdict": "READY"
+}
