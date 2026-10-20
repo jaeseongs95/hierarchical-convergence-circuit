@@ -1,0 +1,21 @@
+{
+  "distinction": "R41 observed fine-grained native overhead >10% and withheld priority. R42 removes tick/Program.validate/digest probes in a new contract, retaining original computation, 288whole-byte pairs and unchanged10%gate. settle is now a whole coarse phase; no internaltick/controller/digest rank claimed. R25/R30/R40 results remain unchanged.",
+  "prior": [
+    {
+      "path": "experiments/exp-71-fixedpoint-elision/RESULTS.ko.md",
+      "sha256": "c4d39365f17220fb34c04c5b0db46adcc9b492d859cd5004ac20d9f26ae759a6"
+    },
+    {
+      "path": "experiments/exp-76-spatial-sharing/RESULTS.ko.md",
+      "sha256": "7a93849ef49da91a8eabf80ebbd13bd0d4e342bd57a19a6072c3670390af1771"
+    },
+    {
+      "path": "experiments/exp-86-factor-query/RESULTS.ko.md",
+      "sha256": "ff44235352b0cdb576b15068fe4397ce30a43b5476f3b8dd02408a196bb7731d"
+    },
+    {
+      "path": "experiments/exp-87-producer-profile/RESULTS.ko.md",
+      "sha256": "e8dcd40ffb149505e5deb264f960bd26d458b1607114946da74727a29dd5d0f2"
+    }
+  ]
+}

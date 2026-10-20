@@ -1,0 +1,1248 @@
+{
+  "audit_residual_cpu_seconds": 0.5989535050000043,
+  "by_mode": {
+    "plain": {
+      "counts": {
+        "exact_joint": {
+          "all_records_correct": 96,
+          "eligible_correct": 768,
+          "groups": 0,
+          "links": 0,
+          "membership_correct": 0,
+          "membership_total": 0,
+          "pair_correct": 0,
+          "pair_total": 0,
+          "physical_native_calls": 0,
+          "prefix_calls": 0,
+          "queries": 384,
+          "query_input_correct": 0,
+          "query_input_total": 0,
+          "records": 96,
+          "role_correct": 0,
+          "role_total": 0,
+          "strict_correct": 384,
+          "ticks": 0,
+          "triple_correct": 0,
+          "triple_total": 0,
+          "workloads": {
+            "q4": {
+              "eligible_correct": 768,
+              "groups": 0,
+              "links": 0,
+              "membership_correct": 0,
+              "membership_total": 0,
+              "pair_correct": 0,
+              "pair_total": 0,
+              "physical_native_calls": 0,
+              "prefix_calls": 0,
+              "queries": 384,
+              "query_input_correct": 0,
+              "query_input_total": 0,
+              "records": 96,
+              "role_correct": 0,
+              "role_total": 0,
+              "strict_correct": 384,
+              "ticks": 0,
+              "triple_correct": 0,
+              "triple_total": 0
+            }
+          }
+        },
+        "native_factor": {
+          "all_records_correct": 96,
+          "eligible_correct": 768,
+          "groups": 2812608,
+          "links": 6791280,
+          "membership_correct": 1152,
+          "membership_total": 1152,
+          "pair_correct": 2112,
+          "pair_total": 2112,
+          "physical_native_calls": 8640,
+          "prefix_calls": 7488,
+          "queries": 384,
+          "query_input_correct": 768,
+          "query_input_total": 768,
+          "records": 96,
+          "role_correct": 4224,
+          "role_total": 4224,
+          "strict_correct": 384,
+          "ticks": 260856,
+          "triple_correct": 768,
+          "triple_total": 768,
+          "workloads": {
+            "q4": {
+              "eligible_correct": 768,
+              "groups": 2812608,
+              "links": 6791280,
+              "membership_correct": 1152,
+              "membership_total": 1152,
+              "pair_correct": 2112,
+              "pair_total": 2112,
+              "physical_native_calls": 8640,
+              "prefix_calls": 7488,
+              "queries": 384,
+              "query_input_correct": 768,
+              "query_input_total": 768,
+              "records": 96,
+              "role_correct": 4224,
+              "role_total": 4224,
+              "strict_correct": 384,
+              "ticks": 260856,
+              "triple_correct": 768,
+              "triple_total": 768
+            }
+          }
+        },
+        "native_joint": {
+          "all_records_correct": 96,
+          "eligible_correct": 768,
+          "groups": 2812608,
+          "links": 6791280,
+          "membership_correct": 1152,
+          "membership_total": 1152,
+          "pair_correct": 2112,
+          "pair_total": 2112,
+          "physical_native_calls": 8640,
+          "prefix_calls": 8256,
+          "queries": 384,
+          "query_input_correct": 768,
+          "query_input_total": 768,
+          "records": 96,
+          "role_correct": 4224,
+          "role_total": 4224,
+          "strict_correct": 384,
+          "ticks": 260856,
+          "triple_correct": 768,
+          "triple_total": 768,
+          "workloads": {
+            "q4": {
+              "eligible_correct": 768,
+              "groups": 2812608,
+              "links": 6791280,
+              "membership_correct": 1152,
+              "membership_total": 1152,
+              "pair_correct": 2112,
+              "pair_total": 2112,
+              "physical_native_calls": 8640,
+              "prefix_calls": 8256,
+              "queries": 384,
+              "query_input_correct": 768,
+              "query_input_total": 768,
+              "records": 96,
+              "role_correct": 4224,
+              "role_total": 4224,
+              "strict_correct": 384,
+              "ticks": 260856,
+              "triple_correct": 768,
+              "triple_total": 768
+            }
+          }
+        }
+      },
+      "metamorphic": {
+        "exact_joint": {
+          "invariant": 72,
+          "question_pairs": 288,
+          "record_pairs": 72
+        },
+        "native_factor": {
+          "invariant": 72,
+          "question_pairs": 288,
+          "record_pairs": 72
+        },
+        "native_joint": {
+          "invariant": 72,
+          "question_pairs": 288,
+          "record_pairs": 72
+        }
+      },
+      "repetition": {
+        "exact_joint": {
+          "invariant": 64,
+          "record_pairs": 64
+        },
+        "native_factor": {
+          "invariant": 64,
+          "record_pairs": 64
+        },
+        "native_joint": {
+          "invariant": 64,
+          "record_pairs": 64
+        }
+      }
+    },
+    "profiled": {
+      "counts": {
+        "exact_joint": {
+          "all_records_correct": 96,
+          "eligible_correct": 768,
+          "groups": 0,
+          "links": 0,
+          "membership_correct": 0,
+          "membership_total": 0,
+          "pair_correct": 0,
+          "pair_total": 0,
+          "physical_native_calls": 0,
+          "prefix_calls": 0,
+          "queries": 384,
+          "query_input_correct": 0,
+          "query_input_total": 0,
+          "records": 96,
+          "role_correct": 0,
+          "role_total": 0,
+          "strict_correct": 384,
+          "ticks": 0,
+          "triple_correct": 0,
+          "triple_total": 0,
+          "workloads": {
+            "q4": {
+              "eligible_correct": 768,
+              "groups": 0,
+              "links": 0,
+              "membership_correct": 0,
+              "membership_total": 0,
+              "pair_correct": 0,
+              "pair_total": 0,
+              "physical_native_calls": 0,
+              "prefix_calls": 0,
+              "queries": 384,
+              "query_input_correct": 0,
+              "query_input_total": 0,
+              "records": 96,
+              "role_correct": 0,
+              "role_total": 0,
+              "strict_correct": 384,
+              "ticks": 0,
+              "triple_correct": 0,
+              "triple_total": 0
+            }
+          }
+        },
+        "native_factor": {
+          "all_records_correct": 96,
+          "eligible_correct": 768,
+          "groups": 2812608,
+          "links": 6791280,
+          "membership_correct": 1152,
+          "membership_total": 1152,
+          "pair_correct": 2112,
+          "pair_total": 2112,
+          "physical_native_calls": 8640,
+          "prefix_calls": 7488,
+          "queries": 384,
+          "query_input_correct": 768,
+          "query_input_total": 768,
+          "records": 96,
+          "role_correct": 4224,
+          "role_total": 4224,
+          "strict_correct": 384,
+          "ticks": 260856,
+          "triple_correct": 768,
+          "triple_total": 768,
+          "workloads": {
+            "q4": {
+              "eligible_correct": 768,
+              "groups": 2812608,
+              "links": 6791280,
+              "membership_correct": 1152,
+              "membership_total": 1152,
+              "pair_correct": 2112,
+              "pair_total": 2112,
+              "physical_native_calls": 8640,
+              "prefix_calls": 7488,
+              "queries": 384,
+              "query_input_correct": 768,
+              "query_input_total": 768,
+              "records": 96,
+              "role_correct": 4224,
+              "role_total": 4224,
+              "strict_correct": 384,
+              "ticks": 260856,
+              "triple_correct": 768,
+              "triple_total": 768
+            }
+          }
+        },
+        "native_joint": {
+          "all_records_correct": 96,
+          "eligible_correct": 768,
+          "groups": 2812608,
+          "links": 6791280,
+          "membership_correct": 1152,
+          "membership_total": 1152,
+          "pair_correct": 2112,
+          "pair_total": 2112,
+          "physical_native_calls": 8640,
+          "prefix_calls": 8256,
+          "queries": 384,
+          "query_input_correct": 768,
+          "query_input_total": 768,
+          "records": 96,
+          "role_correct": 4224,
+          "role_total": 4224,
+          "strict_correct": 384,
+          "ticks": 260856,
+          "triple_correct": 768,
+          "triple_total": 768,
+          "workloads": {
+            "q4": {
+              "eligible_correct": 768,
+              "groups": 2812608,
+              "links": 6791280,
+              "membership_correct": 1152,
+              "membership_total": 1152,
+              "pair_correct": 2112,
+              "pair_total": 2112,
+              "physical_native_calls": 8640,
+              "prefix_calls": 8256,
+              "queries": 384,
+              "query_input_correct": 768,
+              "query_input_total": 768,
+              "records": 96,
+              "role_correct": 4224,
+              "role_total": 4224,
+              "strict_correct": 384,
+              "ticks": 260856,
+              "triple_correct": 768,
+              "triple_total": 768
+            }
+          }
+        }
+      },
+      "metamorphic": {
+        "exact_joint": {
+          "invariant": 72,
+          "question_pairs": 288,
+          "record_pairs": 72
+        },
+        "native_factor": {
+          "invariant": 72,
+          "question_pairs": 288,
+          "record_pairs": 72
+        },
+        "native_joint": {
+          "invariant": 72,
+          "question_pairs": 288,
+          "record_pairs": 72
+        }
+      },
+      "repetition": {
+        "exact_joint": {
+          "invariant": 64,
+          "record_pairs": 64
+        },
+        "native_factor": {
+          "invariant": 64,
+          "record_pairs": 64
+        },
+        "native_joint": {
+          "invariant": 64,
+          "record_pairs": 64
+        }
+      }
+    }
+  },
+  "clock": {
+    "adjustable": false,
+    "implementation": "clock_gettime(CLOCK_PROCESS_CPUTIME_ID)",
+    "monotonic": true,
+    "resolution": 1e-09
+  },
+  "component_scope": "Exclusive component totals cover allq4core,notproducer-only causal attribution. Producer/consumer inclusive anchors overlap with nested components;neveraddinclusiveandexclusive. Childwrapperbookkeepingchargedtoparentresidual;profilingbiasnotremoved.",
+  "computation_reused": false,
+  "conclusion": "Diagnosticobserveronly;selected32closed2valuecontexts/q4/3pairedreps. Wholetraceidentityandcalibrationgatesbeforeboundedfollowuppriority. Notproof of uninstrumentedcomponentrank,optimizationeffect,learning/generalCSP orproductionefficiency.",
+  "core_cpu_seconds": 42.172104636,
+  "group_metrics": [
+    {
+      "arm": "native_joint",
+      "contexts": 32,
+      "core_cpu_ns": 3420495861,
+      "core_cpu_seconds": 3.420495861,
+      "exclusive_components_ns": null,
+      "inclusive_components_ns": null,
+      "largest_labels": [],
+      "largest_share": null,
+      "mode": "plain",
+      "record_audit_cpu_seconds": 0.6512728720000005,
+      "record_wall_seconds": 4.767253130907193,
+      "repetition": 0,
+      "storage_cpu_seconds": 1.3461043480000008
+    },
+    {
+      "arm": "native_joint",
+      "contexts": 32,
+      "core_cpu_ns": 3439485512,
+      "core_cpu_seconds": 3.439485512,
+      "exclusive_components_ns": null,
+      "inclusive_components_ns": null,
+      "largest_labels": [],
+      "largest_share": null,
+      "mode": "plain",
+      "record_audit_cpu_seconds": 0.6478191980000019,
+      "record_wall_seconds": 4.754390114016132,
+      "repetition": 1,
+      "storage_cpu_seconds": 1.3143561039999945
+    },
+    {
+      "arm": "native_joint",
+      "contexts": 32,
+      "core_cpu_ns": 3410508080,
+      "core_cpu_seconds": 3.41050808,
+      "exclusive_components_ns": null,
+      "inclusive_components_ns": null,
+      "largest_labels": [],
+      "largest_share": null,
+      "mode": "plain",
+      "record_audit_cpu_seconds": 0.6475800679999999,
+      "record_wall_seconds": 4.733122591016581,
+      "repetition": 2,
+      "storage_cpu_seconds": 1.3217173330000094
+    },
+    {
+      "arm": "native_joint",
+      "contexts": 32,
+      "core_cpu_ns": 3492828671,
+      "core_cpu_seconds": 3.492828671,
+      "exclusive_components_ns": {
+        "consumer": 2682299,
+        "contract_validate": 1811074,
+        "core": 15477650,
+        "document_build": 10388644,
+        "encode_role": 10008776,
+        "kernel": 47328761,
+        "membership": 16629733,
+        "producer": 5147720,
+        "profile_support": 996618,
+        "program_build": 111112960,
+        "result_materialize": 865682123,
+        "settle": 2296990003,
+        "source_export_guard": 108572310
+      },
+      "inclusive_components_ns": {
+        "consumer": 170185901,
+        "contract_validate": 1811074,
+        "core": 3491832053,
+        "document_build": 10388644,
+        "encode_role": 10008776,
+        "kernel": 3321113847,
+        "membership": 3042813313,
+        "producer": 3191265311,
+        "program_build": 111112960,
+        "result_materialize": 865682123,
+        "settle": 2296990003,
+        "source_export_guard": 108572310
+      },
+      "largest_labels": [
+        "settle"
+      ],
+      "largest_share": 0.6576303103760225,
+      "mode": "profiled",
+      "record_audit_cpu_seconds": 0.6457961320000007,
+      "record_wall_seconds": 4.825933287938824,
+      "repetition": 0,
+      "storage_cpu_seconds": 1.3321985320000047
+    },
+    {
+      "arm": "native_joint",
+      "contexts": 32,
+      "core_cpu_ns": 3504186006,
+      "core_cpu_seconds": 3.504186006,
+      "exclusive_components_ns": {
+        "consumer": 2685410,
+        "contract_validate": 1787331,
+        "core": 15429696,
+        "document_build": 10443871,
+        "encode_role": 9988849,
+        "kernel": 47370745,
+        "membership": 16547612,
+        "producer": 5181272,
+        "profile_support": 920162,
+        "program_build": 106897893,
+        "result_materialize": 871364239,
+        "settle": 2306543844,
+        "source_export_guard": 109025082
+      },
+      "inclusive_components_ns": {
+        "consumer": 169285437,
+        "contract_validate": 1787331,
+        "core": 3503265844,
+        "document_build": 10443871,
+        "encode_role": 9988849,
+        "kernel": 3332176721,
+        "membership": 3045607918,
+        "producer": 3203171213,
+        "program_build": 106897893,
+        "result_materialize": 871364239,
+        "settle": 2306543844,
+        "source_export_guard": 109025082
+      },
+      "largest_labels": [
+        "settle"
+      ],
+      "largest_share": 0.658225288283969,
+      "mode": "profiled",
+      "record_audit_cpu_seconds": 0.6484193699999983,
+      "record_wall_seconds": 4.822450103063602,
+      "repetition": 1,
+      "storage_cpu_seconds": 1.3175614889999956
+    },
+    {
+      "arm": "native_joint",
+      "contexts": 32,
+      "core_cpu_ns": 3491806121,
+      "core_cpu_seconds": 3.491806121,
+      "exclusive_components_ns": {
+        "consumer": 2640086,
+        "contract_validate": 1836981,
+        "core": 15320856,
+        "document_build": 10329981,
+        "encode_role": 9908419,
+        "kernel": 47229694,
+        "membership": 16578167,
+        "producer": 5096310,
+        "profile_support": 930412,
+        "program_build": 116005656,
+        "result_materialize": 854506525,
+        "settle": 2303228861,
+        "source_export_guard": 108194173
+      },
+      "inclusive_components_ns": {
+        "consumer": 169335494,
+        "contract_validate": 1836981,
+        "core": 3490875709,
+        "document_build": 10329981,
+        "encode_role": 9908419,
+        "kernel": 3320970736,
+        "membership": 3042915130,
+        "producer": 3191714235,
+        "program_build": 116005656,
+        "result_materialize": 854506525,
+        "settle": 2303228861,
+        "source_export_guard": 108194173
+      },
+      "largest_labels": [
+        "settle"
+      ],
+      "largest_share": 0.659609606371957,
+      "mode": "profiled",
+      "record_audit_cpu_seconds": 0.643927211000002,
+      "record_wall_seconds": 4.812787068018224,
+      "repetition": 2,
+      "storage_cpu_seconds": 1.3202414320000173
+    },
+    {
+      "arm": "native_factor",
+      "contexts": 32,
+      "core_cpu_ns": 3431870877,
+      "core_cpu_seconds": 3.431870877,
+      "exclusive_components_ns": null,
+      "inclusive_components_ns": null,
+      "largest_labels": [],
+      "largest_share": null,
+      "mode": "plain",
+      "record_audit_cpu_seconds": 0.651390073,
+      "record_wall_seconds": 4.752843435970135,
+      "repetition": 0,
+      "storage_cpu_seconds": 1.320156645
+    },
+    {
+      "arm": "native_factor",
+      "contexts": 32,
+      "core_cpu_ns": 3425515960,
+      "core_cpu_seconds": 3.42551596,
+      "exclusive_components_ns": null,
+      "inclusive_components_ns": null,
+      "largest_labels": [],
+      "largest_share": null,
+      "mode": "plain",
+      "record_audit_cpu_seconds": 0.6596173229999991,
+      "record_wall_seconds": 4.742170295066899,
+      "repetition": 1,
+      "storage_cpu_seconds": 1.3158476599999922
+    },
+    {
+      "arm": "native_factor",
+      "contexts": 32,
+      "core_cpu_ns": 3415047637,
+      "core_cpu_seconds": 3.415047637,
+      "exclusive_components_ns": null,
+      "inclusive_components_ns": null,
+      "largest_labels": [],
+      "largest_share": null,
+      "mode": "plain",
+      "record_audit_cpu_seconds": 0.6553196689999989,
+      "record_wall_seconds": 4.732960517023457,
+      "repetition": 2,
+      "storage_cpu_seconds": 1.3161422809999834
+    },
+    {
+      "arm": "native_factor",
+      "contexts": 32,
+      "core_cpu_ns": 3482504925,
+      "core_cpu_seconds": 3.482504925,
+      "exclusive_components_ns": {
+        "consumer": 4756821,
+        "contract_validate": 1836428,
+        "core": 16530999,
+        "document_build": 10301945,
+        "encode_role": 9868812,
+        "kernel": 47261506,
+        "membership": 16578079,
+        "producer": 3566433,
+        "profile_support": 1008770,
+        "program_build": 108509178,
+        "result_materialize": 851201856,
+        "settle": 2302157290,
+        "source_export_guard": 108926808
+      },
+      "inclusive_components_ns": {
+        "consumer": 316867426,
+        "contract_validate": 1836428,
+        "core": 3481496155,
+        "document_build": 10301945,
+        "encode_role": 9868812,
+        "kernel": 3309129830,
+        "membership": 3023466116,
+        "producer": 3032901232,
+        "program_build": 108509178,
+        "result_materialize": 851201856,
+        "settle": 2302157290,
+        "source_export_guard": 108926808
+      },
+      "largest_labels": [
+        "settle"
+      ],
+      "largest_share": 0.6610636135711998,
+      "mode": "profiled",
+      "record_audit_cpu_seconds": 0.6541526310000015,
+      "record_wall_seconds": 4.8050100410182495,
+      "repetition": 0,
+      "storage_cpu_seconds": 1.3198160959999963
+    },
+    {
+      "arm": "native_factor",
+      "contexts": 32,
+      "core_cpu_ns": 3481503129,
+      "core_cpu_seconds": 3.481503129,
+      "exclusive_components_ns": {
+        "consumer": 4748964,
+        "contract_validate": 1843601,
+        "core": 16608396,
+        "document_build": 10304366,
+        "encode_role": 9928929,
+        "kernel": 47784120,
+        "membership": 16594158,
+        "producer": 3640848,
+        "profile_support": 1012407,
+        "program_build": 107222149,
+        "result_materialize": 853407019,
+        "settle": 2296963238,
+        "source_export_guard": 111444934
+      },
+      "inclusive_components_ns": {
+        "consumer": 311837337,
+        "contract_validate": 1843601,
+        "core": 3480490722,
+        "document_build": 10304366,
+        "encode_role": 9928929,
+        "kernel": 3305376526,
+        "membership": 3024811240,
+        "producer": 3034300845,
+        "program_build": 107222149,
+        "result_materialize": 853407019,
+        "settle": 2296963238,
+        "source_export_guard": 111444934
+      },
+      "largest_labels": [
+        "settle"
+      ],
+      "largest_share": 0.659761934110271,
+      "mode": "profiled",
+      "record_audit_cpu_seconds": 0.656678037999999,
+      "record_wall_seconds": 4.839186313998653,
+      "repetition": 1,
+      "storage_cpu_seconds": 1.3384637719999901
+    },
+    {
+      "arm": "native_factor",
+      "contexts": 32,
+      "core_cpu_ns": 3509384926,
+      "core_cpu_seconds": 3.509384926,
+      "exclusive_components_ns": {
+        "consumer": 4765465,
+        "contract_validate": 1840769,
+        "core": 16593504,
+        "document_build": 10452826,
+        "encode_role": 9948241,
+        "kernel": 47547071,
+        "membership": 16653226,
+        "producer": 3641945,
+        "profile_support": 1006093,
+        "program_build": 111895877,
+        "result_materialize": 867772535,
+        "settle": 2308354003,
+        "source_export_guard": 108913371
+      },
+      "inclusive_components_ns": {
+        "consumer": 316724162,
+        "contract_validate": 1840769,
+        "core": 3508378833,
+        "document_build": 10452826,
+        "encode_role": 9948241,
+        "kernel": 3335569486,
+        "membership": 3050212256,
+        "producer": 3059724981,
+        "program_build": 111895877,
+        "result_materialize": 867772535,
+        "settle": 2308354003,
+        "source_export_guard": 108913371
+      },
+      "largest_labels": [
+        "settle"
+      ],
+      "largest_share": 0.6577659765670287,
+      "mode": "profiled",
+      "record_audit_cpu_seconds": 0.6621159949999971,
+      "record_wall_seconds": 4.830652689037379,
+      "repetition": 2,
+      "storage_cpu_seconds": 1.3204815890000035
+    },
+    {
+      "arm": "exact_joint",
+      "contexts": 32,
+      "core_cpu_ns": 110249850,
+      "core_cpu_seconds": 0.11024985,
+      "exclusive_components_ns": null,
+      "inclusive_components_ns": null,
+      "largest_labels": [],
+      "largest_share": null,
+      "mode": "plain",
+      "record_audit_cpu_seconds": 0.002046517000000858,
+      "record_wall_seconds": 0.11048126299283467,
+      "repetition": 0,
+      "storage_cpu_seconds": 6.426800000547406e-05
+    },
+    {
+      "arm": "exact_joint",
+      "contexts": 32,
+      "core_cpu_ns": 110695614,
+      "core_cpu_seconds": 0.110695614,
+      "exclusive_components_ns": null,
+      "inclusive_components_ns": null,
+      "largest_labels": [],
+      "largest_share": null,
+      "mode": "plain",
+      "record_audit_cpu_seconds": 0.002031323000001972,
+      "record_wall_seconds": 0.1109352019848302,
+      "repetition": 1,
+      "storage_cpu_seconds": 6.438300001221364e-05
+    },
+    {
+      "arm": "exact_joint",
+      "contexts": 32,
+      "core_cpu_ns": 110457866,
+      "core_cpu_seconds": 0.110457866,
+      "exclusive_components_ns": null,
+      "inclusive_components_ns": null,
+      "largest_labels": [],
+      "largest_share": null,
+      "mode": "plain",
+      "record_audit_cpu_seconds": 0.0019997479999993573,
+      "record_wall_seconds": 0.11070141303935088,
+      "repetition": 2,
+      "storage_cpu_seconds": 6.547300004910994e-05
+    },
+    {
+      "arm": "exact_joint",
+      "contexts": 32,
+      "core_cpu_ns": 112088883,
+      "core_cpu_seconds": 0.112088883,
+      "exclusive_components_ns": {
+        "consumer": 0,
+        "contract_validate": 1076219,
+        "core": 1441295,
+        "document_build": 0,
+        "encode_role": 0,
+        "kernel": 0,
+        "membership": 0,
+        "producer": 0,
+        "profile_support": 841017,
+        "program_build": 0,
+        "result_materialize": 0,
+        "settle": 0,
+        "source_export_guard": 108730352
+      },
+      "inclusive_components_ns": {
+        "consumer": 0,
+        "contract_validate": 1076219,
+        "core": 111247866,
+        "document_build": 0,
+        "encode_role": 0,
+        "kernel": 0,
+        "membership": 0,
+        "producer": 0,
+        "program_build": 0,
+        "result_materialize": 0,
+        "settle": 0,
+        "source_export_guard": 108730352
+      },
+      "largest_labels": [
+        "source_export_guard"
+      ],
+      "largest_share": 0.9700368947382587,
+      "mode": "profiled",
+      "record_audit_cpu_seconds": 0.0023770390000004693,
+      "record_wall_seconds": 0.11239975309581496,
+      "repetition": 0,
+      "storage_cpu_seconds": 5.8410999992042356e-05
+    },
+    {
+      "arm": "exact_joint",
+      "contexts": 32,
+      "core_cpu_ns": 111897195,
+      "core_cpu_seconds": 0.111897195,
+      "exclusive_components_ns": {
+        "consumer": 0,
+        "contract_validate": 1091070,
+        "core": 1468159,
+        "document_build": 0,
+        "encode_role": 0,
+        "kernel": 0,
+        "membership": 0,
+        "producer": 0,
+        "profile_support": 832061,
+        "program_build": 0,
+        "result_materialize": 0,
+        "settle": 0,
+        "source_export_guard": 108505905
+      },
+      "inclusive_components_ns": {
+        "consumer": 0,
+        "contract_validate": 1091070,
+        "core": 111065134,
+        "document_build": 0,
+        "encode_role": 0,
+        "kernel": 0,
+        "membership": 0,
+        "producer": 0,
+        "program_build": 0,
+        "result_materialize": 0,
+        "settle": 0,
+        "source_export_guard": 108505905
+      },
+      "largest_labels": [
+        "source_export_guard"
+      ],
+      "largest_share": 0.9696928059724822,
+      "mode": "profiled",
+      "record_audit_cpu_seconds": 0.002383833999997975,
+      "record_wall_seconds": 0.11219898800482042,
+      "repetition": 1,
+      "storage_cpu_seconds": 5.927499999458519e-05
+    },
+    {
+      "arm": "exact_joint",
+      "contexts": 32,
+      "core_cpu_ns": 111577523,
+      "core_cpu_seconds": 0.111577523,
+      "exclusive_components_ns": {
+        "consumer": 0,
+        "contract_validate": 1100940,
+        "core": 1446017,
+        "document_build": 0,
+        "encode_role": 0,
+        "kernel": 0,
+        "membership": 0,
+        "producer": 0,
+        "profile_support": 833841,
+        "program_build": 0,
+        "result_materialize": 0,
+        "settle": 0,
+        "source_export_guard": 108196725
+      },
+      "inclusive_components_ns": {
+        "consumer": 0,
+        "contract_validate": 1100940,
+        "core": 110743682,
+        "document_build": 0,
+        "encode_role": 0,
+        "kernel": 0,
+        "membership": 0,
+        "producer": 0,
+        "program_build": 0,
+        "result_materialize": 0,
+        "settle": 0,
+        "source_export_guard": 108196725
+      },
+      "largest_labels": [
+        "source_export_guard"
+      ],
+      "largest_share": 0.9697000084864763,
+      "mode": "profiled",
+      "record_audit_cpu_seconds": 0.002409453999999478,
+      "record_wall_seconds": 0.11190650597563945,
+      "repetition": 2,
+      "storage_cpu_seconds": 5.9221000007880775e-05
+    }
+  ],
+  "interpretation": {
+    "exact_joint": {
+      "calibration_pass": true,
+      "followup_priority": "source_export_guard",
+      "overhead_ratio_max": 1.0166805941232573,
+      "overhead_ratio_median": 1.0108548203183552,
+      "overhead_ratio_min": 1.0101365076163973,
+      "predeclared_overhead_ratio_max": 1.1,
+      "predeclared_priority_share_min": 0.3,
+      "priority_interpretation_allowed": true,
+      "production_adoption": false,
+      "quality_and_pairing_pass": true,
+      "repetitions": [
+        {
+          "consumer_inclusive_share": 0.0,
+          "exclusive_share": {
+            "consumer": 0.0,
+            "contract_validate": 0.009601478498095123,
+            "core": 0.01285850087381101,
+            "document_build": 0.0,
+            "encode_role": 0.0,
+            "kernel": 0.0,
+            "membership": 0.0,
+            "producer": 0.0,
+            "profile_support": 0.007503125889835123,
+            "program_build": 0.0,
+            "result_materialize": 0.0,
+            "settle": 0.0,
+            "source_export_guard": 0.9700368947382587
+          },
+          "largest_labels": [
+            "source_export_guard"
+          ],
+          "largest_share": 0.9700368947382587,
+          "plain_core_seconds": 0.11024985,
+          "producer_inclusive_share": 0.0,
+          "profiled_core_seconds": 0.112088883,
+          "profiled_over_plain": 1.0166805941232573,
+          "repetition": 0
+        },
+        {
+          "consumer_inclusive_share": 0.0,
+          "exclusive_share": {
+            "consumer": 0.0,
+            "contract_validate": 0.00975064656446482,
+            "core": 0.013120605927610607,
+            "document_build": 0.0,
+            "encode_role": 0.0,
+            "kernel": 0.0,
+            "membership": 0.0,
+            "producer": 0.0,
+            "profile_support": 0.007435941535442421,
+            "program_build": 0.0,
+            "result_materialize": 0.0,
+            "settle": 0.0,
+            "source_export_guard": 0.9696928059724822
+          },
+          "largest_labels": [
+            "source_export_guard"
+          ],
+          "largest_share": 0.9696928059724822,
+          "plain_core_seconds": 0.110695614,
+          "producer_inclusive_share": 0.0,
+          "profiled_core_seconds": 0.111897195,
+          "profiled_over_plain": 1.0108548203183552,
+          "repetition": 1
+        },
+        {
+          "consumer_inclusive_share": 0.0,
+          "exclusive_share": {
+            "consumer": 0.0,
+            "contract_validate": 0.009867041052703779,
+            "core": 0.012959751759321634,
+            "document_build": 0.0,
+            "encode_role": 0.0,
+            "kernel": 0.0,
+            "membership": 0.0,
+            "producer": 0.0,
+            "profile_support": 0.007473198701498329,
+            "program_build": 0.0,
+            "result_materialize": 0.0,
+            "settle": 0.0,
+            "source_export_guard": 0.9697000084864763
+          },
+          "largest_labels": [
+            "source_export_guard"
+          ],
+          "largest_share": 0.9697000084864763,
+          "plain_core_seconds": 0.110457866,
+          "producer_inclusive_share": 0.0,
+          "profiled_core_seconds": 0.111577523,
+          "profiled_over_plain": 1.0101365076163973,
+          "repetition": 2
+        }
+      ],
+      "same_largest_component": true
+    },
+    "native_factor": {
+      "calibration_pass": true,
+      "followup_priority": "settle",
+      "overhead_ratio_max": 1.0276240038287934,
+      "overhead_ratio_median": 1.0163441565164975,
+      "overhead_ratio_min": 1.0147540655854344,
+      "predeclared_overhead_ratio_max": 1.1,
+      "predeclared_priority_share_min": 0.3,
+      "priority_interpretation_allowed": true,
+      "production_adoption": false,
+      "quality_and_pairing_pass": true,
+      "repetitions": [
+        {
+          "consumer_inclusive_share": 0.09098836407244995,
+          "exclusive_share": {
+            "consumer": 0.001365919389187942,
+            "contract_validate": 0.0005273296203594026,
+            "core": 0.004746870243119613,
+            "document_build": 0.0029581996929982806,
+            "encode_role": 0.0028338257123929267,
+            "kernel": 0.013571123951820398,
+            "membership": 0.004760389247690727,
+            "producer": 0.0010240999156663074,
+            "profile_support": 0.00028966793205611904,
+            "program_build": 0.03115837029290059,
+            "result_materialize": 0.24442229783781283,
+            "settle": 0.6610636135711998,
+            "source_export_guard": 0.03127829259279511
+          },
+          "largest_labels": [
+            "settle"
+          ],
+          "largest_share": 0.6610636135711998,
+          "plain_core_seconds": 3.431870877,
+          "producer_inclusive_share": 0.8708964659971012,
+          "profiled_core_seconds": 3.482504925,
+          "profiled_over_plain": 1.0147540655854344,
+          "repetition": 0
+        },
+        {
+          "consumer_inclusive_share": 0.08956974198945206,
+          "exclusive_share": {
+            "consumer": 0.0013640556460921681,
+            "contract_validate": 0.0005295416754456692,
+            "core": 0.004770467061096816,
+            "document_build": 0.002959746298708554,
+            "encode_role": 0.0028519086819984874,
+            "kernel": 0.013725140615836568,
+            "membership": 0.004766377448227765,
+            "producer": 0.0010457689868702685,
+            "profile_support": 0.00029079594717779155,
+            "program_build": 0.03079765981161064,
+            "result_materialize": 0.24512602384049156,
+            "settle": 0.659761934110271,
+            "source_export_guard": 0.03201057987617279
+          },
+          "largest_labels": [
+            "settle"
+          ],
+          "largest_share": 0.659761934110271,
+          "plain_core_seconds": 3.42551596,
+          "producer_inclusive_share": 0.871549078823189,
+          "profiled_core_seconds": 3.481503129,
+          "profiled_over_plain": 1.0163441565164975,
+          "repetition": 1
+        },
+        {
+          "consumer_inclusive_share": 0.09025061903397484,
+          "exclusive_share": {
+            "consumer": 0.0013579202910156912,
+            "contract_validate": 0.0005245275279899575,
+            "core": 0.004728322583556911,
+            "document_build": 0.0029785350482809934,
+            "encode_role": 0.0028347534424897113,
+            "kernel": 0.01354854825064579,
+            "membership": 0.004745340380481249,
+            "producer": 0.0010377730219953648,
+            "profile_support": 0.00028668641976152374,
+            "program_build": 0.03188475455371008,
+            "result_materialize": 0.24727197309446697,
+            "settle": 0.6577659765670287,
+            "source_export_guard": 0.03103488881857698
+          },
+          "largest_labels": [
+            "settle"
+          ],
+          "largest_share": 0.6577659765670287,
+          "plain_core_seconds": 3.415047637,
+          "producer_inclusive_share": 0.8718693006091746,
+          "profiled_core_seconds": 3.509384926,
+          "profiled_over_plain": 1.0276240038287934,
+          "repetition": 2
+        }
+      ],
+      "same_largest_component": true
+    },
+    "native_joint": {
+      "calibration_pass": true,
+      "followup_priority": "settle",
+      "overhead_ratio_max": 1.023837516021953,
+      "overhead_ratio_median": 1.0211468783882267,
+      "overhead_ratio_min": 1.018811096535882,
+      "predeclared_overhead_ratio_max": 1.1,
+      "predeclared_priority_share_min": 0.3,
+      "priority_interpretation_allowed": true,
+      "production_adoption": false,
+      "quality_and_pairing_pass": true,
+      "repetitions": [
+        {
+          "consumer_inclusive_share": 0.04872437701081846,
+          "exclusive_share": {
+            "consumer": 0.0007679446238718761,
+            "contract_validate": 0.0005185121202871619,
+            "core": 0.004431265160099803,
+            "document_build": 0.0029742781506158795,
+            "encode_role": 0.0028655215994704024,
+            "kernel": 0.013550266977867464,
+            "membership": 0.004761107562495727,
+            "producer": 0.0014737968806601107,
+            "profile_support": 0.0002853326326237088,
+            "program_build": 0.031811740702468595,
+            "result_materialize": 0.24784557289841372,
+            "settle": 0.6576303103760225,
+            "source_export_guard": 0.031084350315103104
+          },
+          "largest_labels": [
+            "settle"
+          ],
+          "largest_share": 0.6576303103760225,
+          "plain_core_seconds": 3.420495861,
+          "producer_inclusive_share": 0.913662137938858,
+          "profiled_core_seconds": 3.492828671,
+          "profiled_over_plain": 1.0211468783882267,
+          "repetition": 0
+        },
+        {
+          "consumer_inclusive_share": 0.04830948948204892,
+          "exclusive_share": {
+            "consumer": 0.0007663434519177747,
+            "contract_validate": 0.0005100559721828876,
+            "core": 0.004403218314775725,
+            "document_build": 0.0029803985810449582,
+            "encode_role": 0.0028505475973297978,
+            "kernel": 0.013518330624826998,
+            "membership": 0.004722241334126257,
+            "producer": 0.0014785950263851376,
+            "profile_support": 0.00026258937123328037,
+            "program_build": 0.030505770189414996,
+            "result_materialize": 0.24866380880125002,
+            "settle": 0.658225288283969,
+            "source_export_guard": 0.031112812451543133
+          },
+          "largest_labels": [
+            "settle"
+          ],
+          "largest_share": 0.658225288283969,
+          "plain_core_seconds": 3.439485512,
+          "producer_inclusive_share": 0.9140985117557712,
+          "profiled_core_seconds": 3.504186006,
+          "profiled_over_plain": 1.018811096535882,
+          "repetition": 1
+        },
+        {
+          "consumer_inclusive_share": 0.04849510199939305,
+          "exclusive_share": {
+            "consumer": 0.0007560803516902937,
+            "contract_validate": 0.0005260833323340176,
+            "core": 0.004387659414381329,
+            "document_build": 0.00295834895811502,
+            "encode_role": 0.00283762003291362,
+            "kernel": 0.013525863797522108,
+            "membership": 0.00474773410250288,
+            "producer": 0.0014595054316877405,
+            "profile_support": 0.00026645580188557093,
+            "program_build": 0.03322225002766699,
+            "result_materialize": 0.24471763190428292,
+            "settle": 0.659609606371957,
+            "source_export_guard": 0.030985160473060526
+          },
+          "largest_labels": [
+            "settle"
+          ],
+          "largest_share": 0.659609606371957,
+          "plain_core_seconds": 3.41050808,
+          "producer_inclusive_share": 0.9140582622284715,
+          "profiled_core_seconds": 3.491806121,
+          "profiled_over_plain": 1.023837516021953,
+          "repetition": 2
+        }
+      ],
+      "same_largest_component": true
+    }
+  },
+  "launcher_receipt_cpu_seconds": 0.075901347,
+  "learning_calls": 0,
+  "mutations_rejected": [
+    "revision",
+    "source",
+    "payload",
+    "payload_hash",
+    "seal",
+    "Rmessage",
+    "query_swap",
+    "eligibility",
+    "selected",
+    "prefix_count",
+    "network_ref",
+    "workload",
+    "timer_negative",
+    "restoration",
+    "partition",
+    "settle_count",
+    "support",
+    "paired_kernel_bytes"
+  ],
+  "observed_process_cpu_seconds": 67.318239679,
+  "paired_records_exact": 288,
+  "parent_seal_process_cpu_seconds": 0.209000332,
+  "phase_cpu_seconds": {
+    "audit": 8.436290000000003,
+    "preparation": 0.316492,
+    "work": 58.280556
+  },
+  "phase_resources": {
+    "audit": {
+      "platform": "linux",
+      "ru_maxrss_raw": 36176,
+      "ru_maxrss_units": "platform-native getrusage; no conversion asserted",
+      "system_cpu_seconds": 0.11000499999999999,
+      "user_cpu_seconds": 8.313416
+    },
+    "preparation": {
+      "platform": "linux",
+      "ru_maxrss_raw": 23792,
+      "ru_maxrss_units": "platform-native getrusage; no conversion asserted",
+      "system_cpu_seconds": 0.010983999999999999,
+      "user_cpu_seconds": 0.29458
+    },
+    "work": {
+      "platform": "linux",
+      "ru_maxrss_raw": 29956,
+      "ru_maxrss_units": "platform-native getrusage; no conversion asserted",
+      "system_cpu_seconds": 0.082994,
+      "user_cpu_seconds": 58.18458
+    }
+  },
+  "physical_native_calls": 34584,
+  "physical_numeric_refs": 34560,
+  "physical_ticks": 1044216,
+  "production_adoption": false,
+  "profile_ledgers_verified": 288,
+  "quality_pass": true,
+  "scalar_max_absolute_error": 1.734723475976807e-18,
+  "seconds_including_seal": 67.3605431059841,
+  "source_process_cpu_seconds": 0.041941575999999994,
+  "source_ticks": 792,
+  "statistical_speed_verdict": null,
+  "status": "R42_MATCHED_OBSERVER_PHASES_OBSERVED",
+  "storage_cpu_seconds": 15.88345831200005,
+  "trace_storage_only_shared": true,
+  "unique_native_traces": 65,
+  "work_residual_cpu_seconds": 0.18305147599994775,
+  "world_measurement_calls": 0
+}

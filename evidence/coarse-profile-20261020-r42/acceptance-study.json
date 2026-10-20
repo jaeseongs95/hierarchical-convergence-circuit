@@ -1,0 +1,52 @@
+{
+  "criteria": [
+    {
+      "evidence": [
+        "DESIGN.ko.md",
+        "OUTCOMES.ko.md",
+        "nonduplication.json"
+      ],
+      "id": "AC-001",
+      "status": "PASS"
+    },
+    {
+      "evidence": [
+        "raw/work-ledger.json",
+        "local-verification.json"
+      ],
+      "id": "AC-002",
+      "status": "PASS"
+    },
+    {
+      "id": "AC-003",
+      "pairs": 288,
+      "status": "PASS_QUALITY_EXACT_PAIR_LEDGER"
+    },
+    {
+      "id": "AC-004",
+      "interpretation": {
+        "exact_joint": {
+          "calibration_pass": true,
+          "followup_priority": "source_export_guard"
+        },
+        "native_factor": {
+          "calibration_pass": true,
+          "followup_priority": "settle"
+        },
+        "native_joint": {
+          "calibration_pass": true,
+          "followup_priority": "settle"
+        }
+      },
+      "status": "PASS_CALIBRATION_OUTCOMES_SCORED"
+    },
+    {
+      "id": "AC-005",
+      "qualification": "Precommit point-in-time; final Git proof private after push to avoid selfreference.",
+      "status": "PENDING_EXTERNAL_GIT_FINALIZATION"
+    }
+  ],
+  "independent_audit": false,
+  "production_adoption": false,
+  "status": "STUDY_VALIDATED_GIT_PENDING"
+}

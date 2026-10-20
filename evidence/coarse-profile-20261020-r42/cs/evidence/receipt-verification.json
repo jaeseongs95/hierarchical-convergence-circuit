@@ -1,0 +1,43 @@
+{
+  "adapter_redaction_detected": false,
+  "all_native_tick_records_received": true,
+  "archive_received": false,
+  "input_pins": 129,
+  "raw_json_bytes": 2518952,
+  "raw_manifest_matched_files": 87,
+  "received_json": 88,
+  "same_channel_hashes_not_host_attestation": true,
+  "source_files": 162,
+  "source_unchanged": true,
+  "ssh_completeness": "upstream unknown;all expectedJSON names/count/size/SHA directly matched;manifest outside its ownhash",
+  "transport_failures": [
+    {
+      "error": "completion/result/manifest/summary not yet created; later read after completion succeeded",
+      "native_rerun": false,
+      "operation": "completion read before finished"
+    },
+    {
+      "change": "remaining unread files in new size-bounded batches<=240000bytes; no native replay or expected SHA changes",
+      "complete_files_preserved": [
+        "audit-metrics.json",
+        "audit-resources.json",
+        "batch00.json",
+        "batch01.json",
+        "batch02.json",
+        "batch03.json"
+      ],
+      "error": "upstream adapter truncated multi-file output before requested9files complete",
+      "native_rerun": false,
+      "operation": "raw first batch",
+      "outputId": "264189eca2ecf18f1b36c349107cfad04c230b37b29edfdc"
+    }
+  ],
+  "unreceived_empty_logs": [
+    "audit.stderr",
+    "audit.stdout",
+    "preparation.stderr",
+    "preparation.stdout",
+    "work.stderr",
+    "work.stdout"
+  ]
+}

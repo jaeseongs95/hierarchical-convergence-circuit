@@ -1,0 +1,26 @@
+{
+  "files": [
+    {
+      "digest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path": "candidate/__init__.py"
+    },
+    {
+      "digest": "sha256:bf26ae0387f30d3b6c557c4c06c12d9dd382732fe78eae7d0ed7ae7e3e37a33c",
+      "path": "candidate/bootstrap.py"
+    },
+    {
+      "digest": "sha256:50806eac11d2351ffa095d5a816f66b49d6e17a26dd5eec3fba4d4dade09528e",
+      "path": "candidate/probe.py"
+    },
+    {
+      "digest": "sha256:3977e6b75663b612a8a76b2477a805e344e6c520709e9e9f3ff19d4306de9a1f",
+      "path": "candidate/runtime.py"
+    },
+    {
+      "digest": "sha256:b43d312995cbc6eef8b9a42594e01a4e82f0cd38e58cc97cdffeb3c7bf38f4df",
+      "path": "candidate/verify.py"
+    }
+  ],
+  "schemaVersion": "1.0.0",
+  "scopeSummary": "R42coarse-observesunchangedR40q4:32contexts3repetitions3arms2modes=576records2304outputs/34584settles.9reversibleprocess-localbindings/noProgramvalidate-tick-digestprobes/nestedexclusiveCPUledger.288pairedcompletekernel/recordbyteequivalence,allfulloracle/layers. Instrumentoverhead<=1.10ineach3repbeforeinterpretation;stablelargestcomponent>=.30beforefollowuppriority.Nooptimization,learning,productionefficiencyclaim."
+}

@@ -1,0 +1,76 @@
+{
+  "adapter_redaction_detected": false,
+  "all_native_tick_records_received": true,
+  "archive_received": false,
+  "arm_records_verified": 576,
+  "independent_auditor": false,
+  "input_pins": 129,
+  "local_native_calls_added": 0,
+  "mutations_rejected": [
+    "revision",
+    "source",
+    "payload",
+    "payload_hash",
+    "seal",
+    "Rmessage",
+    "query_swap",
+    "eligibility",
+    "selected",
+    "prefix_count",
+    "network_ref",
+    "workload",
+    "timer_negative",
+    "restoration",
+    "partition",
+    "settle_count",
+    "support",
+    "paired_kernel_bytes"
+  ],
+  "paired_full_records_exact": 288,
+  "physical_numeric_refs_verified": 34560,
+  "profile_ledgers_verified": 288,
+  "query_outputs_verified": 2304,
+  "raw_json_bytes": 2518952,
+  "raw_manifest_matched_files": 87,
+  "received_json": 88,
+  "same_channel_hashes_not_host_attestation": true,
+  "scalar_max_absolute_error": 1.734723475976807e-18,
+  "server_vs_local_counts_exact": true,
+  "source_files": 162,
+  "source_unchanged": true,
+  "sources_verified": 24,
+  "ssh_completeness": "upstream unknown;all expectedJSON names/count/size/SHA directly matched;manifest outside its ownhash",
+  "status": "PASS",
+  "tolerance": 1e-14,
+  "transport_failures": [
+    {
+      "error": "completion/result/manifest/summary not yet created; later read after completion succeeded",
+      "native_rerun": false,
+      "operation": "completion read before finished"
+    },
+    {
+      "change": "remaining unread files in new size-bounded batches<=240000bytes; no native replay or expected SHA changes",
+      "complete_files_preserved": [
+        "audit-metrics.json",
+        "audit-resources.json",
+        "batch00.json",
+        "batch01.json",
+        "batch02.json",
+        "batch03.json"
+      ],
+      "error": "upstream adapter truncated multi-file output before requested9files complete",
+      "native_rerun": false,
+      "operation": "raw first batch",
+      "outputId": "264189eca2ecf18f1b36c349107cfad04c230b37b29edfdc"
+    }
+  ],
+  "unique_traces_losslessly_expanded": 65,
+  "unreceived_empty_logs": [
+    "audit.stderr",
+    "audit.stdout",
+    "preparation.stderr",
+    "preparation.stdout",
+    "work.stderr",
+    "work.stdout"
+  ]
+}

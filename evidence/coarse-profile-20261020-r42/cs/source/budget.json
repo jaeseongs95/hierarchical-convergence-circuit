@@ -1,0 +1,56 @@
+{
+  "arm_records": 576,
+  "arms": 3,
+  "canonical_cache_bytes": 201326592,
+  "child_address_space_bytes": 536870912,
+  "child_file_bytes": 8388608,
+  "distinct_contexts": 32,
+  "estimates_are_not_statistical_guarantees": true,
+  "learning": 0,
+  "limits_are_operational_stop_boundaries": true,
+  "matched_record_pairs": 288,
+  "maximum_native_calls": 34584,
+  "maximum_ticks": 5533440,
+  "maximum_unique_trace_records": 34560,
+  "metric_parts": 6,
+  "modes": 2,
+  "numeric_calls": 34560,
+  "parent_address_space_bytes": 536870912,
+  "parent_file_bytes": 136314880,
+  "physical_native_calls": 34584,
+  "planning_total_seconds": 85.82908564099196,
+  "planning_work_seconds": 76.79689125,
+  "profiled_half_planning_factor": 1.25,
+  "query_outputs": 2304,
+  "raw_bytes": 134217728,
+  "record_encoded_cache_max_bytes": 131072,
+  "repetitions": 3,
+  "retry": 0,
+  "rounding_seconds_policy": 60,
+  "safety_factor_policy": 3,
+  "saved_trace_cache_entries": 18,
+  "source_calls": 24,
+  "source_refs": {
+    "analysis.json": {
+      "path": "evidence/producer-profile-20261020-r41/analysis.json",
+      "sha256": "6f607ecc8c098e1ae99fc426b92d89fcedae9ff253d1022485aab682b02a6a51"
+    },
+    "raw/result.json": {
+      "path": "evidence/producer-profile-20261020-r41/raw/result.json",
+      "sha256": "bd0be807384cb9c0a8adeda5bd9a12366ad3c21aae4ea7553683f0a32f1a7d37"
+    },
+    "receipt-verification.json": {
+      "path": "evidence/producer-profile-20261020-r41/receipt-verification.json",
+      "sha256": "bade477c6d00083ed5b14b6f10d9a5548b0d147cce0a86ed79d9b7985ae6a14b"
+    },
+    "server-completion.json": {
+      "path": "evidence/producer-profile-20261020-r41/server-completion.json",
+      "sha256": "51fec115b557ee6233a7ff230de1f9a96711146f3a105c3d4d4db800ab833c30"
+    }
+  },
+  "stage_seconds": 240,
+  "total_seconds": 300,
+  "worker": 1,
+  "workloads": 1,
+  "world_measurement": 0
+}

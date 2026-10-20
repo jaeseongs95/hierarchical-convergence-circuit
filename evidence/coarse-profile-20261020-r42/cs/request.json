@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "1.0.0",
+  "requestId": "CS-R42",
+  "mode": "derive",
+  "objective": "Validate coarseR40observer with removed lowlevel probes, exactfulltracepairs and unchanged10%disturbancegate",
+  "sourceSnapshotDigest": "sha256:b6898a3e028b7351e14c3af98661065cfdc9a5aee9efeac9fbbac095efaa0d57",
+  "sourceRefs": [
+    {
+      "id": "SRC-CORE",
+      "path": "source/hypothesis.md",
+      "digest": "sha256:d1b735eee8f72c092c847c04e81a34972fa919be906311255faa797e58ec9302"
+    },
+    {
+      "id": "SRC-R32",
+      "path": "source/r33-runtime.py",
+      "digest": "sha256:95820d0fcbf48290f677e9a995c7a3a4a6261a7fb5d2b256b59c998805a6a5d9"
+    },
+    {
+      "id": "SRC-R19",
+      "path": "source/r19-probe.py",
+      "digest": "sha256:bb0159ba0c50505fc148322e0d0a17d53c184a0bdc7bed21b393120971eb5630"
+    },
+    {
+      "id": "SRC-RESULT",
+      "path": "source/r41-results.md",
+      "digest": "sha256:e8dcd40ffb149505e5deb264f960bd26d458b1607114946da74727a29dd5d0f2"
+    },
+    {
+      "id": "SRC-KERNEL",
+      "path": "source/dynamics.py",
+      "digest": "sha256:a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc"
+    },
+    {
+      "id": "SRC-BUDGET",
+      "path": "source/budget.json",
+      "digest": "sha256:9145848eb0317a01253ad533e28f28255ac4e4a44ddbbc5e9ac8fe1f378c27f9"
+    }
+  ],
+  "operationalFacts": [
+    {
+      "id": "FACT-GAP",
+      "statement": "R41 exact record/kernel bytepairs288andquality2304PASS but native observer core overhead14.14%joint/13.93%factor exceeds frozen10%gate. Coarser observer is selected followup, not rescue or retune of R41.",
+      "evidenceRefs": [
+        "SRC-RESULT"
+      ]
+    },
+    {
+      "id": "FACT-KERNEL",
+      "statement": "OriginalR33kernel Programbuild/settle including validate+tick/codecplain+digest unchanged. R42removes Program.validate/digest/dynamics.tick probes;9temporaryresearchruntimebindings restore normal/exception;no engine/source/globalsettingschange.",
+      "evidenceRefs": [
+        "SRC-R32",
+        "SRC-KERNEL"
+      ]
+    },
+    {
+      "id": "FACT-BUDGET",
+      "statement": "R41 measured work61.437513CPU seconds times selected1.25planningfactor=76.796891s;other phases retained;3xsafety60sround:240stage/300total.34584physicalsettles/max5533440ticks;stopsnotguarantees.",
+      "evidenceRefs": [
+        "SRC-BUDGET"
+      ]
+    }
+  ],
+  "existingContractRef": null
+}

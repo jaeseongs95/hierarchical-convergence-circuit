@@ -1,0 +1,38 @@
+{
+  "approval_mode": "automatic",
+  "completion": {
+    "completed": true,
+    "evidence_bytes": 338251,
+    "evidence_sha256": "7269b07ec4a3f71c3ccbb8758665e3f4a3a927983578b9c2e4aa8453906432e0",
+    "parent_process_cpu_seconds": 0.209000332,
+    "seconds_including_seal": 67.3605431059841,
+    "within_wall_limit": true
+  },
+  "known_status": "COMPLETED_RAW_RECEIVED_LOCAL_REPLAY_PASS",
+  "launch_receipt": {
+    "maximum_measurement_requests": 0,
+    "maximum_native_settle_calls": 34584,
+    "native_training": 0,
+    "no_retry": true,
+    "parent_limits": {
+      "child_address_space_bytes": 536870912,
+      "child_file_bytes": 8388608,
+      "parent_address_space_bytes": 536870912,
+      "parent_file_bytes": 136314880,
+      "raw_bytes": 134217728,
+      "stage_seconds": 240,
+      "total_seconds": 300
+    },
+    "pid": 19005,
+    "preparation_cpu_seconds": 0.075901347,
+    "preparation_seconds": 0.035640771995531395,
+    "root": "/home/mcpops/hcc-coarse-profile-20261020-r42",
+    "single_worker": true,
+    "total_wall_cap_seconds": 300
+  },
+  "launch_request": "266a3e6d0d909080702d44b64f1da2dd4918d4f4793462a4",
+  "native_rerun": false,
+  "policy_revision": 8,
+  "received_json": 88,
+  "upload_request": "31091004583398e75040be51ae5a636fd7fca253dbfc706e"
+}

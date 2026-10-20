@@ -1,0 +1,73 @@
+{
+  "actual_local_native_calls": 0,
+  "canonical_cache_bytes_checked": true,
+  "consumer_isolation_mutations_rejected": [
+    "hidden_source",
+    "hidden_message",
+    "payload_shape",
+    "payload_range",
+    "payload_nan",
+    "query_case",
+    "query_slot_bool",
+    "query_slot_oob",
+    "query_kind",
+    "representation"
+  ],
+  "factor_consumer_isolation_mutations_rejected": [
+    "hidden_source",
+    "hidden_message",
+    "missing_factor",
+    "extra_factor",
+    "row_length",
+    "payload_range",
+    "payload_nan",
+    "payload_bool",
+    "query_case",
+    "query_slot_bool",
+    "query_slot_oob",
+    "query_kind"
+  ],
+  "metadata_mutations_rejected": [
+    "predicate",
+    "Y_role",
+    "Z_role",
+    "revision",
+    "duplicate",
+    "domain_overlap",
+    "vocabulary",
+    "layout"
+  ],
+  "preparation": {
+    "arm_records": 576,
+    "boolean_stub_not_numeric_validation": true,
+    "checks": 503,
+    "contexts": 32,
+    "modes": 2,
+    "native_calls": 0,
+    "nested_observer_rejected": true,
+    "normal_and_exception_binding_restoration": true,
+    "program_groups": {
+      "feasible": 11,
+      "or0": 1,
+      "or1": 2,
+      "or2": 3,
+      "or3": 4,
+      "or4": 5,
+      "pair": 4,
+      "role": 16,
+      "triple": 5
+    },
+    "query_outputs": 2304,
+    "repetitions": 3,
+    "simulated_numeric_invocations": 5760,
+    "status": "PASS",
+    "synthetic_timer_partition": true,
+    "synthetic_wrapper_pairs": 9
+  },
+  "python_ast_utf8_lf_files": 5,
+  "saved_trace_LRU_max_entries": 18,
+  "status": "PASS",
+  "synthetic_codec_roundtrip": 2,
+  "synthetic_mutations_rejected": 9,
+  "synthetic_storage_unique": 2
+}
