@@ -1,0 +1,67 @@
+{
+  "arm_records": 96,
+  "arms": 3,
+  "canonical_cache_bytes": 201326592,
+  "child_address_space_bytes": 536870912,
+  "child_file_bytes": 8388608,
+  "contexts": 32,
+  "estimates_are_not_statistical_guarantees": true,
+  "evaluations": 96,
+  "expected_compact_eligibility_correct": 296,
+  "expected_compact_extra_z": 24,
+  "expected_compact_full_strict": 136,
+  "expected_unary_correct": 32,
+  "learning": 0,
+  "limits_are_operational_stop_boundaries": true,
+  "max_ticks": 1017600,
+  "maximum_native_calls": 6360,
+  "maximum_ticks": 1017600,
+  "maximum_unique_trace_records": 6336,
+  "metric_parts": 1,
+  "minimum_stage_policy_seconds": 120,
+  "numeric_calls": 6336,
+  "parent_address_space_bytes": 536870912,
+  "parent_file_bytes": 136314880,
+  "physical_native_calls": 6360,
+  "planning_total_seconds": 44.80588510745851,
+  "planning_work_seconds": 10.844602830473649,
+  "question_outputs": 480,
+  "questions": 160,
+  "raw_bytes": 134217728,
+  "record_encoded_cache_max_bytes": 131072,
+  "retry": 0,
+  "rounding_seconds_policy": 60,
+  "safety_factor_policy": 3,
+  "saved_trace_cache_entries": 18,
+  "scaling_factors": {
+    "exact_questions": 0.2631578947368421,
+    "numeric_calls": 0.05263157894736842,
+    "other_phase": 1,
+    "record_overhead": 0.05263157894736842,
+    "source": 1
+  },
+  "source_calls": 24,
+  "source_refs": {
+    "analysis.json": {
+      "path": "evidence/shared-witness-20261020-r38/analysis.json",
+      "sha256": "4f92adb0aafb8f1f78d26809d9e47717addf1c4145ce13c2337fbd3c80980b7b"
+    },
+    "raw/result.json": {
+      "path": "evidence/shared-witness-20261020-r38/raw/result.json",
+      "sha256": "a218328a2d468bddfb0295feb62388edc8610685970cd7c429647aa8136e9f25"
+    },
+    "receipt-verification.json": {
+      "path": "evidence/shared-witness-20261020-r38/receipt-verification.json",
+      "sha256": "31c9719f97322417d363d8145904f218eb2b49a96f01755ad22f42d46de6c6ad"
+    },
+    "server-completion.json": {
+      "path": "evidence/shared-witness-20261020-r38/server-completion.json",
+      "sha256": "c81b05b22c857fd3b7a7e73d3c72f655518f7bb4190aa238de6ef5db541c7af3"
+    }
+  },
+  "stage_seconds": 120,
+  "storage_caps_basis": "Reuse R38 independently enforced raw128MiB/cache192MiB/record128KiB/AS512MiB stop caps. Unique<=6336 physical numeric calls is a logical count upper bound; cache byte cap is separate and may stop before that count. Actual size/convergence of new composition is not guaranteed.",
+  "total_seconds": 180,
+  "worker": 1,
+  "world_measurement": 0
+}

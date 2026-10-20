@@ -1,0 +1,26 @@
+{
+  "files": [
+    {
+      "digest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path": "candidate/__init__.py"
+    },
+    {
+      "digest": "sha256:47567c5771c5561c4a27529dbf53d0e0b1837073828f8885bf6ba7561ddcc04e",
+      "path": "candidate/bootstrap.py"
+    },
+    {
+      "digest": "sha256:6546780c73eab0f13838aa348a46c643a92fb7a1902861ef32cce7c98b3fc431",
+      "path": "candidate/probe.py"
+    },
+    {
+      "digest": "sha256:5b94df4191ff8abb6dad30591613f6740ce1e1a2d181a719e105c8b7cedb3e1a",
+      "path": "candidate/runtime.py"
+    },
+    {
+      "digest": "sha256:29fadfa05d3c3eb781b75e676aab391405c28299ff7b235cba8c3140d610e1e5",
+      "path": "candidate/verify.py"
+    }
+  ],
+  "schemaVersion": "1.0.0",
+  "scopeSummary": "R39 sealed conditionalZ state:32discriminatingcontexts/160contextquerypairs/480outputs,24freshsources/6360physicalcalls. Joint2x4slices vs nativeXY4/Z2marginalerasure and same-information symbolic exact. Existing core/compiler/caps unchanged; producer hasnoquery and isolated consumer seesnumericpayload/publicslot/fixedcfg/docs/initialonly. No minimumrepresentation/generalCSP/learning/efficiency claim."
+}

@@ -1,0 +1,12 @@
+{
+  "adapter_raw_preserved": true,
+  "all144_source_flags_match_local_pins": true,
+  "basis": "The public document path is already in the frozen local144file manifest; one placeholder substitution exactly matches original server manifest size/SHA. This is metadata restoration, not a new native run or host attestation.",
+  "known_path": "experiments/exp-85-z-query/DELIBERATION.ko.md",
+  "raw_original_directly_received": false,
+  "restored_original": {
+    "bytes": 6753,
+    "sha256": "f667b05bb8f477c372e14a14daae04c366f329fa26621d7a4680e9dbe27df18c"
+  },
+  "status": "KNOWN_PUBLIC_PATH_RESTORATION_HASH_VERIFIED"
+}

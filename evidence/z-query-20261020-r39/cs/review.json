@@ -1,0 +1,280 @@
+{
+  "schemaVersion": "1.0.0",
+  "reviewId": "CS-R39-REVIEW",
+  "constraintReportDigest": "sha256:5f588ef84dad8c0456ef8da244b9f1e10f16b8d375dfa9505091730aeb6a1926",
+  "candidateDigest": "sha256:289c55a8103f4e85eaf92a8ade750a774b98784204c96fd85446123160c617c2",
+  "reviewerActorRef": "R39 implementation author source and saved-data review; not independent audit",
+  "findings": [
+    {
+      "id": "F-BOUNDARY",
+      "invariantId": "INV-BOUNDARY",
+      "status": "SATISFIED",
+      "evidenceRefs": [
+        "E-0",
+        "E-1",
+        "E-2",
+        "E-3",
+        "E-4",
+        "E-5",
+        "E-6",
+        "E-7",
+        "E-8",
+        "E-9",
+        "E-10",
+        "E-11",
+        "E-12",
+        "E-13"
+      ],
+      "reasoningSummary": "Frozen5modules/144local source files unchanged.24fresh conditional path sources,closed complete2value domains and32contexts. Query-free producer sealed once before5queries,consumer takes numericpayload/publicqueryslot/representation/fixedcfg/docs/initial only;no facts,masks,case,rawmessages,hashregistry. Public slot routing is not host fact solving. Full Program/drive/initial/source/ref/seal bindings checked.12saved-record,8metadata,10consumer-isolation,9storage guard mutations rejected. One public source-postcheck path redacted by SSH adapter;143remaining flags and all local144pins verified,known public path restored in a separate artifact and matches original size/SHA; never claimed directly received original bytes."
+    },
+    {
+      "id": "F-SEMANTICS",
+      "invariantId": "INV-SEMANTICS",
+      "status": "SATISFIED",
+      "evidenceRefs": [
+        "E-0",
+        "E-1",
+        "E-2",
+        "E-3",
+        "E-4",
+        "E-5",
+        "E-6",
+        "E-7",
+        "E-8",
+        "E-9",
+        "E-10",
+        "E-11",
+        "E-12",
+        "E-13"
+      ],
+      "reasoningSummary": "32contexts/160context-querypairs/480outputs. Joint full strict160/160,Zeligibility320/320;compact full136/160,extraZ24/missing0,intervention160/160. Every role/pair/membership/triple/projection/queryinput layer correct. Unary32/32each,conditional joint128/128 versuscompact104/128.24context/120questionpairs invariant perarm. Same marginal semantic support with oppositeconditionalZ plusoffdiagonal control. No rawpacket identity,minimumrepresentation,informationtheory,generalCSP,learning,calibration,efficiency orproduction claim."
+    },
+    {
+      "id": "F-COST",
+      "invariantId": "INV-COST",
+      "status": "SATISFIED",
+      "evidenceRefs": [
+        "E-0",
+        "E-1",
+        "E-2",
+        "E-3",
+        "E-4",
+        "E-5",
+        "E-6",
+        "E-7",
+        "E-8",
+        "E-9",
+        "E-10",
+        "E-11",
+        "E-12",
+        "E-13"
+      ],
+      "reasoningSummary": "24source+6336numeric=6360physicalcalls/190552ticks in13.058401126996614s;3exit0 within120stage/180total. Raw128MiB/cache192MiB/AS512MiBeach/record128KiB/LRU18/logicalunique<=6336 operating stops checked. All calculations run,fullkernel+Config exactbytes share storageonly.131unique traces/6336refs verified,maxscalarerror2.7755575615628914e-17. Source/core/generation-validation/storage/common/preparation/audit/seal separatelyreported;sourceonceperarm and commonthirds accounting assumptions.143JSONreceived,141manifestentries originalsize/hash matched;manifest itselfoutsideitsownhash,one metadatafile originalsize/SHA matched by known-public-path restoration,6emptylogs/ZIPnotreceived. Same-channelhashesnotattestation,authorreviewnotindependentaudit."
+    }
+  ],
+  "verificationResults": [
+    {
+      "obligationId": "OB-BOUNDARY",
+      "executionStatus": "EXECUTED",
+      "result": "PASS",
+      "targetDigest": "sha256:289c55a8103f4e85eaf92a8ade750a774b98784204c96fd85446123160c617c2",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "method": "dynamic-test",
+      "evidenceRefs": [
+        "E-0",
+        "E-1",
+        "E-2",
+        "E-3",
+        "E-4",
+        "E-5",
+        "E-6",
+        "E-7",
+        "E-8",
+        "E-9",
+        "E-10",
+        "E-11",
+        "E-12",
+        "E-13"
+      ]
+    },
+    {
+      "obligationId": "OB-SEMANTICS",
+      "executionStatus": "EXECUTED",
+      "result": "PASS",
+      "targetDigest": "sha256:289c55a8103f4e85eaf92a8ade750a774b98784204c96fd85446123160c617c2",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "method": "dynamic-test",
+      "evidenceRefs": [
+        "E-0",
+        "E-1",
+        "E-2",
+        "E-3",
+        "E-4",
+        "E-5",
+        "E-6",
+        "E-7",
+        "E-8",
+        "E-9",
+        "E-10",
+        "E-11",
+        "E-12",
+        "E-13"
+      ]
+    },
+    {
+      "obligationId": "OB-COST",
+      "executionStatus": "EXECUTED",
+      "result": "PASS",
+      "targetDigest": "sha256:289c55a8103f4e85eaf92a8ade750a774b98784204c96fd85446123160c617c2",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "method": "dynamic-test",
+      "evidenceRefs": [
+        "E-0",
+        "E-1",
+        "E-2",
+        "E-3",
+        "E-4",
+        "E-5",
+        "E-6",
+        "E-7",
+        "E-8",
+        "E-9",
+        "E-10",
+        "E-11",
+        "E-12",
+        "E-13"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E-0",
+      "path": "evidence/sources.json",
+      "digest": "sha256:f9cd7357e5aa8c0375f3fd680feef2e522e4f837fcb9112313ceaf6853ecefad",
+      "targetDigest": "sha256:289c55a8103f4e85eaf92a8ade750a774b98784204c96fd85446123160c617c2",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen R39 and saved numeric traces replayed by implementation author. Source-postcheck metadata contains one adapter-redacted public document path; original size/SHA matched after restoring the one known public path from the frozen local source manifest; adapter raw preserved. No host attestation or independent audit."
+    },
+    {
+      "id": "E-1",
+      "path": "evidence/summary.json",
+      "digest": "sha256:ccbd57496ab96ae97c0401976ee7a7ffbf85cdd6e900972a25ccb7168993e24f",
+      "targetDigest": "sha256:289c55a8103f4e85eaf92a8ade750a774b98784204c96fd85446123160c617c2",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen R39 and saved numeric traces replayed by implementation author. Source-postcheck metadata contains one adapter-redacted public document path; original size/SHA matched after restoring the one known public path from the frozen local source manifest; adapter raw preserved. No host attestation or independent audit."
+    },
+    {
+      "id": "E-2",
+      "path": "evidence/result.json",
+      "digest": "sha256:a114e0d327363b792cf76a41e123536b46e9edc6e7204260e3702fa5d4e21b53",
+      "targetDigest": "sha256:289c55a8103f4e85eaf92a8ade750a774b98784204c96fd85446123160c617c2",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen R39 and saved numeric traces replayed by implementation author. Source-postcheck metadata contains one adapter-redacted public document path; original size/SHA matched after restoring the one known public path from the frozen local source manifest; adapter raw preserved. No host attestation or independent audit."
+    },
+    {
+      "id": "E-3",
+      "path": "evidence/source-postcheck.json",
+      "digest": "sha256:f44b617217cc5c9f276a2adcd43f4a7160eed07c944ac6be63f5140e7d4d4a89",
+      "targetDigest": "sha256:289c55a8103f4e85eaf92a8ade750a774b98784204c96fd85446123160c617c2",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen R39 and saved numeric traces replayed by implementation author. Source-postcheck metadata contains one adapter-redacted public document path; original size/SHA matched after restoring the one known public path from the frozen local source manifest; adapter raw preserved. No host attestation or independent audit."
+    },
+    {
+      "id": "E-4",
+      "path": "evidence/manifest.json",
+      "digest": "sha256:b5456fb5198f8ab11cb0b0901a226ff7ba59e077765800aa9338129a1095f2ab",
+      "targetDigest": "sha256:289c55a8103f4e85eaf92a8ade750a774b98784204c96fd85446123160c617c2",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen R39 and saved numeric traces replayed by implementation author. Source-postcheck metadata contains one adapter-redacted public document path; original size/SHA matched after restoring the one known public path from the frozen local source manifest; adapter raw preserved. No host attestation or independent audit."
+    },
+    {
+      "id": "E-5",
+      "path": "evidence/work-ledger.json",
+      "digest": "sha256:f2e9463955f73988646c6b242de88ac0ca60107bcdbce704db5d75ba86bad69c",
+      "targetDigest": "sha256:289c55a8103f4e85eaf92a8ade750a774b98784204c96fd85446123160c617c2",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen R39 and saved numeric traces replayed by implementation author. Source-postcheck metadata contains one adapter-redacted public document path; original size/SHA matched after restoring the one known public path from the frozen local source manifest; adapter raw preserved. No host attestation or independent audit."
+    },
+    {
+      "id": "E-6",
+      "path": "evidence/receipt-verification.json",
+      "digest": "sha256:f50ec15e5881777c239416284470b2954220291ab942a8405d4949acef4ec954",
+      "targetDigest": "sha256:289c55a8103f4e85eaf92a8ade750a774b98784204c96fd85446123160c617c2",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen R39 and saved numeric traces replayed by implementation author. Source-postcheck metadata contains one adapter-redacted public document path; original size/SHA matched after restoring the one known public path from the frozen local source manifest; adapter raw preserved. No host attestation or independent audit."
+    },
+    {
+      "id": "E-7",
+      "path": "evidence/local-verification.json",
+      "digest": "sha256:076b6a930161b0b2e81d1dfc17b5e3261481e5131f10035bbb72fda399992c95",
+      "targetDigest": "sha256:289c55a8103f4e85eaf92a8ade750a774b98784204c96fd85446123160c617c2",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen R39 and saved numeric traces replayed by implementation author. Source-postcheck metadata contains one adapter-redacted public document path; original size/SHA matched after restoring the one known public path from the frozen local source manifest; adapter raw preserved. No host attestation or independent audit."
+    },
+    {
+      "id": "E-8",
+      "path": "evidence/analysis.json",
+      "digest": "sha256:0c17f9856f674cbd58e608243cc1e8923580e64b6b6049d3412103ea8b577fc0",
+      "targetDigest": "sha256:289c55a8103f4e85eaf92a8ade750a774b98784204c96fd85446123160c617c2",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen R39 and saved numeric traces replayed by implementation author. Source-postcheck metadata contains one adapter-redacted public document path; original size/SHA matched after restoring the one known public path from the frozen local source manifest; adapter raw preserved. No host attestation or independent audit."
+    },
+    {
+      "id": "E-9",
+      "path": "evidence/preparation-checks.json",
+      "digest": "sha256:7c8da755782075ae4758ce780e923df94bcd2431b23fa028e2728c0e3baf835e",
+      "targetDigest": "sha256:289c55a8103f4e85eaf92a8ade750a774b98784204c96fd85446123160c617c2",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen R39 and saved numeric traces replayed by implementation author. Source-postcheck metadata contains one adapter-redacted public document path; original size/SHA matched after restoring the one known public path from the frozen local source manifest; adapter raw preserved. No host attestation or independent audit."
+    },
+    {
+      "id": "E-10",
+      "path": "evidence/server-completion.json",
+      "digest": "sha256:e495f717da61288611633d6beb021c48ca5ce30991f57da650f50c83adcbd4e0",
+      "targetDigest": "sha256:289c55a8103f4e85eaf92a8ade750a774b98784204c96fd85446123160c617c2",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen R39 and saved numeric traces replayed by implementation author. Source-postcheck metadata contains one adapter-redacted public document path; original size/SHA matched after restoring the one known public path from the frozen local source manifest; adapter raw preserved. No host attestation or independent audit."
+    },
+    {
+      "id": "E-11",
+      "path": "evidence/preparation.json",
+      "digest": "sha256:a6b85cbd0d6a16476152553b0bf8ffdebffb70f75bb0d8f8f35fdc554725c51a",
+      "targetDigest": "sha256:289c55a8103f4e85eaf92a8ade750a774b98784204c96fd85446123160c617c2",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen R39 and saved numeric traces replayed by implementation author. Source-postcheck metadata contains one adapter-redacted public document path; original size/SHA matched after restoring the one known public path from the frozen local source manifest; adapter raw preserved. No host attestation or independent audit."
+    },
+    {
+      "id": "E-12",
+      "path": "evidence/restoration-verification.json",
+      "digest": "sha256:6766cd300a8cc13476611241f0f1bc0d30ef4e69f287cecb800b8f26b78cbd18",
+      "targetDigest": "sha256:289c55a8103f4e85eaf92a8ade750a774b98784204c96fd85446123160c617c2",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen R39 and saved numeric traces replayed by implementation author. Source-postcheck metadata contains one adapter-redacted public document path; original size/SHA matched after restoring the one known public path from the frozen local source manifest; adapter raw preserved. No host attestation or independent audit."
+    },
+    {
+      "id": "E-13",
+      "path": "evidence/restored-source-postcheck.json",
+      "digest": "sha256:f667b05bb8f477c372e14a14daae04c366f329fa26621d7a4680e9dbe27df18c",
+      "targetDigest": "sha256:289c55a8103f4e85eaf92a8ade750a774b98784204c96fd85446123160c617c2",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen R39 and saved numeric traces replayed by implementation author. Source-postcheck metadata contains one adapter-redacted public document path; original size/SHA matched after restoring the one known public path from the frozen local source manifest; adapter raw preserved. No host attestation or independent audit."
+    }
+  ],
+  "blockingFindingIds": [],
+  "unverifiedRequiredObligationIds": [],
+  "verdict": "PASS"
+}

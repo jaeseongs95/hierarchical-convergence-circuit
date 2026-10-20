@@ -1,0 +1,142 @@
+{
+  "schemaVersion": "1.0.0",
+  "reportId": "CS-R39-CONSTRAINTS",
+  "requestDigest": "sha256:e3efc5a9d06fe5dd1ae6523b18acf4c6ac8cf3b9bcc4b804a537374b2b04b9f0",
+  "sourceSnapshotDigest": "sha256:bfaeabc0fb47747be6e42d3833f6616698d8e578ac41127b3c76a9e1a7fe95ba",
+  "knowledgePackVersion": "0.1.0",
+  "knowledgePackDigest": "sha256:d8351d9aabb433403830fcffc3a2f2438b6d428711c93b6ded9eff002468c3d1",
+  "draftUse": {
+    "allowed": false,
+    "basis": "Validated identity/reuse and matched measurement rules"
+  },
+  "applicability": "applicable",
+  "applicabilityReason": "Typed source reuse and causal feedback correctness need explicit identity and evidence accounting.",
+  "selectedRules": [
+    {
+      "ruleId": "ALG-KEY-004",
+      "ruleDigest": "sha256:db77383ecb5f41ef3af5cb60769edaea507cac5cb25e28b88f249e84a062ba2e",
+      "applicabilityReason": "Shared native source reuse and candidate-order routing require full source/role/revision/config binding; a selected revision may not silently change origin roles."
+    },
+    {
+      "ruleId": "PERF-MEASURE-001",
+      "ruleDigest": "sha256:ef11800e55663f1b719f62d3f812280fd6e56c6895eef3028b9db344a9d0a355",
+      "applicabilityReason": "Information-matched exact control and actual shared-source plus all roundtrip/serialization/process costs; semantic errors preclude efficiency adoption."
+    }
+  ],
+  "facts": [
+    {
+      "id": "FACT-GAP",
+      "statement": "R38 preserves XY but erases Z; returned raw metadata/messages cannot be a permitted query information path. Same XY and Z marginals can support opposite conditional Z answers, including offdiagonal routing controls.",
+      "evidenceRefs": [
+        "SRC-RESULT"
+      ]
+    },
+    {
+      "id": "FACT-KERNEL",
+      "statement": "Existing3leafAND expression5groups/feasible2 11groups and R37nativefieldmembership can form2x4joint slices. Consumer may routepublicXYindex but never solvefacts orreadsource/hashregistry. All computations run andfullkernel+Config exactstorageidentity retained.",
+      "evidenceRefs": [
+        "SRC-KERNEL",
+        "SRC-R32",
+        "SRC-R19"
+      ]
+    },
+    {
+      "id": "FACT-BUDGET",
+      "statement": "R38measuredcostsscaledseparatelyyield10.844603work/44.805885totalplanningseconds;selected3x/60round/minstage120 yields120stage180total.6336numeric+24source/max1017600ticks;raw128MiB/cache192MiB/AS512MiBeachareoperatingstopsnotpredictions.",
+      "evidenceRefs": [
+        "SRC-BUDGET"
+      ]
+    }
+  ],
+  "assumptions": [],
+  "invariants": [
+    {
+      "id": "INV-BOUNDARY",
+      "statement": "32discriminatingcontexts with24freshconditional sources andcompleteclosed2value domains. Nativefieldmembership/tripleAND/projection/conditionalAND/feasible2;hostroutingpublicslotonly,noargmax/factsolve/repair. Producerreceivesnoqueryandsealsonceforall5. Consumeronlynumericpayload/queryslot/representation/fixedcfg/docs/initial;rawmessages/sourcehash/facts/registry/case/mask inaccessible. AllProgram/drive/initial/source/packet/seal/ref bindingverified.",
+      "scope": "R39 frozen32contexts5queries3arms and24native sources",
+      "basisRefs": [
+        "FACT-GAP",
+        "FACT-KERNEL"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-SEMANTICS",
+      "statement": "8tablesxnamespace2xorder2=32contexts/160contextquerypairs/480armanswers. Fulltriple set oracle and separatePXYxPZ productoracle. Scoreallrole/pair/membership/triple/projection/queryinput/finalZeligibility/kind/selected;unaryvsconditional and24context/120questionnormalizedpairsperarm. Oppositeconditionalcollisionwhilemarginalssame andoffdiagonalpositive control. Onlydeclaredmargin-supportcollision,norawpacket/informationtheory/minimumrepresentation claim. Allerrorspreservedwithoutretune.",
+      "scope": "R39 frozen32contexts5queries3arms and24native sources",
+      "basisRefs": [
+        "FACT-GAP",
+        "FACT-KERNEL"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-COST",
+      "statement": "6360actualsettles/max1017600ticks,120stage180total,worker1/retry0/raw128MiB/AS512MiBeach/file130and8MiB/cache192MiB/record128KiB/unique<=6336/LRU18. Actualallcomputations/noanswercache,storageonlysharedbyexactbytes. WholeJSON/sourceSHA-size/scalar/controller/ref/proof/cost/resourceverified;partial/inflightretainedonfailure/noautomaticnative retry. Learned0/worldmeasure0/noefficiencyorproductionclaim.",
+      "scope": "R39 frozen32contexts5queries3arms and24native sources",
+      "basisRefs": [
+        "FACT-KERNEL",
+        "FACT-BUDGET"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "PERF-MEASURE-001"
+      ]
+    }
+  ],
+  "designChoices": [
+    {
+      "id": "CHOICE-Z-SLICES",
+      "statement": "Joint2x4slice state or nativeXY4/Z2projection; querysealedproducer throughisolated publicslot consumer.",
+      "rationale": "Separates unaryZ preservation fromconditionalcorrelationloss withoutcorechange/candidatecapextension;8discriminatingtables includeoffdiagonalpositive paths.",
+      "basisRefs": [
+        "FACT-GAP",
+        "FACT-KERNEL",
+        "FACT-BUDGET"
+      ]
+    }
+  ],
+  "verificationObligations": [
+    {
+      "id": "OB-BOUNDARY",
+      "invariantIds": [
+        "INV-BOUNDARY"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "WrongRapplication orZrole;queryadapter solvesanswer;source/hash sidechannel;querydependentproducer;causal mismatch.",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-SEMANTICS",
+      "invariantIds": [
+        "INV-SEMANTICS"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Unarysuccess overclaimedconditionalpreservation;missedoffdiagonalswap;correctfinalkind hideseligibility/intermediateerror;productloss calledprotocolfailure.",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-COST",
+      "invariantIds": [
+        "INV-COST"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Unreceivedraw claimedcomplete,unaccountedcall/cost,capoverflow,posthocretune orsourceexpectationreplacement.",
+      "requirementLevel": "required"
+    }
+  ],
+  "requiredCapabilities": [
+    "cs-constraint-derivation",
+    "cs-implementation-review"
+  ],
+  "verdict": "READY"
+}

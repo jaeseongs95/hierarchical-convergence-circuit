@@ -1,0 +1,4818 @@
+{
+  "arms": {
+    "exact_joint": {
+      "all_contexts_correct": 32,
+      "allocated_source_inclusive_cpu_seconds": 0.19884228366667064,
+      "contexts": 32,
+      "core_cpu_seconds": 0.11154522400000333,
+      "eligible_correct": 320,
+      "extra_z": 0,
+      "first_failed_intermediates": {
+        "None": 32
+      },
+      "groups": 0,
+      "intervention_eligible_correct": 320,
+      "intervention_strict_correct": 160,
+      "kinds": {
+        "many": 20,
+        "none": 84,
+        "unique": 56
+      },
+      "links": 0,
+      "membership_correct": 0,
+      "membership_total": 0,
+      "missing_z": 0,
+      "pair_correct": 0,
+      "pair_total": 0,
+      "physical_native_calls": 0,
+      "projection_correct": 0,
+      "projection_total": 0,
+      "queries": 160,
+      "query_families": {
+        "conditional": {
+          "intervention_strict_correct": 128,
+          "strict_correct": 128,
+          "total": 128
+        },
+        "unary": {
+          "intervention_strict_correct": 32,
+          "strict_correct": 32,
+          "total": 32
+        }
+      },
+      "query_input_correct": 0,
+      "query_input_total": 0,
+      "record_wall_seconds": 0.1116517859918531,
+      "role_correct": 0,
+      "role_total": 0,
+      "source_inclusive_group_updates": 3960,
+      "source_inclusive_signal_transmissions": 6336,
+      "source_inclusive_ticks": 792,
+      "storage_cpu_seconds": 5.010500000024454e-05,
+      "strict_correct": 160,
+      "ticks": 0,
+      "triple_correct": 0,
+      "triple_total": 0
+    },
+    "native_compact": {
+      "all_contexts_correct": 20,
+      "allocated_source_inclusive_cpu_seconds": 5.2366698806666605,
+      "contexts": 32,
+      "core_cpu_seconds": 3.680475664999996,
+      "eligible_correct": 296,
+      "extra_z": 24,
+      "first_failed_intermediates": {
+        "None": 32
+      },
+      "groups": 995604,
+      "intervention_eligible_correct": 320,
+      "intervention_strict_correct": 160,
+      "kinds": {
+        "many": 44,
+        "none": 84,
+        "unique": 32
+      },
+      "links": 2349120,
+      "membership_correct": 384,
+      "membership_total": 384,
+      "missing_z": 0,
+      "pair_correct": 704,
+      "pair_total": 704,
+      "physical_native_calls": 3360,
+      "projection_correct": 192,
+      "projection_total": 192,
+      "queries": 160,
+      "query_families": {
+        "conditional": {
+          "intervention_strict_correct": 128,
+          "strict_correct": 104,
+          "total": 128
+        },
+        "unary": {
+          "intervention_strict_correct": 32,
+          "strict_correct": 32,
+          "total": 32
+        }
+      },
+      "query_input_correct": 576,
+      "query_input_total": 576,
+      "record_wall_seconds": 5.15003761992557,
+      "role_correct": 1408,
+      "role_total": 1408,
+      "source_inclusive_group_updates": 999564,
+      "source_inclusive_signal_transmissions": 2355456,
+      "source_inclusive_ticks": 100796,
+      "storage_cpu_seconds": 1.4689472609999978,
+      "strict_correct": 136,
+      "ticks": 100004,
+      "triple_correct": 256,
+      "triple_total": 256
+    },
+    "native_joint": {
+      "all_contexts_correct": 32,
+      "allocated_source_inclusive_cpu_seconds": 5.0085543076666665,
+      "contexts": 32,
+      "core_cpu_seconds": 3.5054315619999996,
+      "eligible_correct": 320,
+      "extra_z": 0,
+      "first_failed_intermediates": {
+        "None": 32
+      },
+      "groups": 957964,
+      "intervention_eligible_correct": 320,
+      "intervention_strict_correct": 160,
+      "kinds": {
+        "many": 20,
+        "none": 84,
+        "unique": 56
+      },
+      "links": 2307552,
+      "membership_correct": 384,
+      "membership_total": 384,
+      "missing_z": 0,
+      "pair_correct": 704,
+      "pair_total": 704,
+      "physical_native_calls": 2976,
+      "projection_correct": 0,
+      "projection_total": 0,
+      "queries": 160,
+      "query_families": {
+        "conditional": {
+          "intervention_strict_correct": 128,
+          "strict_correct": 128,
+          "total": 128
+        },
+        "unary": {
+          "intervention_strict_correct": 32,
+          "strict_correct": 32,
+          "total": 32
+        }
+      },
+      "query_input_correct": 384,
+      "query_input_total": 384,
+      "record_wall_seconds": 4.9217619630508125,
+      "role_correct": 1408,
+      "role_total": 1408,
+      "source_inclusive_group_updates": 961924,
+      "source_inclusive_signal_transmissions": 2313888,
+      "source_inclusive_ticks": 90548,
+      "storage_cpu_seconds": 1.4158757909999997,
+      "strict_correct": 160,
+      "ticks": 89756,
+      "triple_correct": 256,
+      "triple_total": 256
+    }
+  },
+  "complete_closed_relation_table_contract": true,
+  "computation_reused": false,
+  "conclusion": "Only8selected2x2x2tables and5declaredqueries; fixedmargin-supportpayload collision,notrawpacket identity/informationtheory/minimumrepresentation/generalCSP/learning/efficiency/production.",
+  "conditional_collision": [
+    {
+      "arm": "native_joint",
+      "case": "c0000",
+      "namespace": 0,
+      "order": 0,
+      "queries": [
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          },
+          "query_index": 0,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 1,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 2,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          },
+          "query_index": 3,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "unary",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 4,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          }
+        }
+      ],
+      "r_mask": 9,
+      "s_mask": 9,
+      "semantic_payload_signature": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "u_mask": 9
+    },
+    {
+      "arm": "native_compact",
+      "case": "c0000",
+      "namespace": 0,
+      "order": 0,
+      "queries": [
+        {
+          "eligible_correct": 1,
+          "extra_z": 1,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 0,
+          "strict_correct": false,
+          "truth": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 1,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 2,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 1,
+          "extra_z": 1,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 3,
+          "strict_correct": false,
+          "truth": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "unary",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 4,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          }
+        }
+      ],
+      "r_mask": 9,
+      "s_mask": 9,
+      "semantic_payload_signature": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "u_mask": 9
+    },
+    {
+      "arm": "exact_joint",
+      "case": "c0000",
+      "namespace": 0,
+      "order": 0,
+      "queries": [
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          },
+          "query_index": 0,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 1,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 2,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          },
+          "query_index": 3,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "unary",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 4,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          }
+        }
+      ],
+      "r_mask": 9,
+      "s_mask": 9,
+      "semantic_payload_signature": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "u_mask": 9
+    },
+    {
+      "arm": "native_compact",
+      "case": "c0001",
+      "namespace": 0,
+      "order": 1,
+      "queries": [
+        {
+          "eligible_correct": 1,
+          "extra_z": 1,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 0,
+          "strict_correct": false,
+          "truth": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 1,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 2,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 1,
+          "extra_z": 1,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 3,
+          "strict_correct": false,
+          "truth": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "unary",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 4,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          }
+        }
+      ],
+      "r_mask": 9,
+      "s_mask": 9,
+      "semantic_payload_signature": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "u_mask": 9
+    },
+    {
+      "arm": "exact_joint",
+      "case": "c0001",
+      "namespace": 0,
+      "order": 1,
+      "queries": [
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          },
+          "query_index": 0,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 1,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 2,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          },
+          "query_index": 3,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "unary",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 4,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          }
+        }
+      ],
+      "r_mask": 9,
+      "s_mask": 9,
+      "semantic_payload_signature": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "u_mask": 9
+    },
+    {
+      "arm": "native_joint",
+      "case": "c0001",
+      "namespace": 0,
+      "order": 1,
+      "queries": [
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          },
+          "query_index": 0,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 1,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 2,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          },
+          "query_index": 3,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "unary",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 4,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          }
+        }
+      ],
+      "r_mask": 9,
+      "s_mask": 9,
+      "semantic_payload_signature": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "u_mask": 9
+    },
+    {
+      "arm": "exact_joint",
+      "case": "c0002",
+      "namespace": 1,
+      "order": 0,
+      "queries": [
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          },
+          "query_index": 0,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 1,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 2,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          },
+          "query_index": 3,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "unary",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 4,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          }
+        }
+      ],
+      "r_mask": 9,
+      "s_mask": 9,
+      "semantic_payload_signature": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "u_mask": 9
+    },
+    {
+      "arm": "native_joint",
+      "case": "c0002",
+      "namespace": 1,
+      "order": 0,
+      "queries": [
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          },
+          "query_index": 0,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 1,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 2,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          },
+          "query_index": 3,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "unary",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 4,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          }
+        }
+      ],
+      "r_mask": 9,
+      "s_mask": 9,
+      "semantic_payload_signature": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "u_mask": 9
+    },
+    {
+      "arm": "native_compact",
+      "case": "c0002",
+      "namespace": 1,
+      "order": 0,
+      "queries": [
+        {
+          "eligible_correct": 1,
+          "extra_z": 1,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 0,
+          "strict_correct": false,
+          "truth": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 1,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 2,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 1,
+          "extra_z": 1,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 3,
+          "strict_correct": false,
+          "truth": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "unary",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 4,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          }
+        }
+      ],
+      "r_mask": 9,
+      "s_mask": 9,
+      "semantic_payload_signature": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "u_mask": 9
+    },
+    {
+      "arm": "native_joint",
+      "case": "c0003",
+      "namespace": 1,
+      "order": 1,
+      "queries": [
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          },
+          "query_index": 0,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 1,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 2,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          },
+          "query_index": 3,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "unary",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 4,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          }
+        }
+      ],
+      "r_mask": 9,
+      "s_mask": 9,
+      "semantic_payload_signature": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "u_mask": 9
+    },
+    {
+      "arm": "native_compact",
+      "case": "c0003",
+      "namespace": 1,
+      "order": 1,
+      "queries": [
+        {
+          "eligible_correct": 1,
+          "extra_z": 1,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 0,
+          "strict_correct": false,
+          "truth": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 1,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 2,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 1,
+          "extra_z": 1,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 3,
+          "strict_correct": false,
+          "truth": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "unary",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 4,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          }
+        }
+      ],
+      "r_mask": 9,
+      "s_mask": 9,
+      "semantic_payload_signature": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "u_mask": 9
+    },
+    {
+      "arm": "exact_joint",
+      "case": "c0003",
+      "namespace": 1,
+      "order": 1,
+      "queries": [
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          },
+          "query_index": 0,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 1,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 2,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          },
+          "query_index": 3,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "unary",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 4,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          }
+        }
+      ],
+      "r_mask": 9,
+      "s_mask": 9,
+      "semantic_payload_signature": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "u_mask": 9
+    },
+    {
+      "arm": "native_compact",
+      "case": "c0004",
+      "namespace": 0,
+      "order": 0,
+      "queries": [
+        {
+          "eligible_correct": 1,
+          "extra_z": 1,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 0,
+          "strict_correct": false,
+          "truth": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 1,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 2,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 1,
+          "extra_z": 1,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 3,
+          "strict_correct": false,
+          "truth": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "unary",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 4,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          }
+        }
+      ],
+      "r_mask": 9,
+      "s_mask": 6,
+      "semantic_payload_signature": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "u_mask": 6
+    },
+    {
+      "arm": "exact_joint",
+      "case": "c0004",
+      "namespace": 0,
+      "order": 0,
+      "queries": [
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          },
+          "query_index": 0,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 1,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 2,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          },
+          "query_index": 3,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "unary",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 4,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          }
+        }
+      ],
+      "r_mask": 9,
+      "s_mask": 6,
+      "semantic_payload_signature": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "u_mask": 6
+    },
+    {
+      "arm": "native_joint",
+      "case": "c0004",
+      "namespace": 0,
+      "order": 0,
+      "queries": [
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          },
+          "query_index": 0,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 1,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 2,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          },
+          "query_index": 3,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "unary",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 4,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          }
+        }
+      ],
+      "r_mask": 9,
+      "s_mask": 6,
+      "semantic_payload_signature": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "u_mask": 6
+    },
+    {
+      "arm": "exact_joint",
+      "case": "c0005",
+      "namespace": 0,
+      "order": 1,
+      "queries": [
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          },
+          "query_index": 0,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 1,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 2,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          },
+          "query_index": 3,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "unary",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 4,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          }
+        }
+      ],
+      "r_mask": 9,
+      "s_mask": 6,
+      "semantic_payload_signature": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "u_mask": 6
+    },
+    {
+      "arm": "native_joint",
+      "case": "c0005",
+      "namespace": 0,
+      "order": 1,
+      "queries": [
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          },
+          "query_index": 0,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 1,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 2,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          },
+          "query_index": 3,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "unary",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 4,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          }
+        }
+      ],
+      "r_mask": 9,
+      "s_mask": 6,
+      "semantic_payload_signature": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "u_mask": 6
+    },
+    {
+      "arm": "native_compact",
+      "case": "c0005",
+      "namespace": 0,
+      "order": 1,
+      "queries": [
+        {
+          "eligible_correct": 1,
+          "extra_z": 1,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 0,
+          "strict_correct": false,
+          "truth": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 1,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 2,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 1,
+          "extra_z": 1,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 3,
+          "strict_correct": false,
+          "truth": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "unary",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 4,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          }
+        }
+      ],
+      "r_mask": 9,
+      "s_mask": 6,
+      "semantic_payload_signature": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "u_mask": 6
+    },
+    {
+      "arm": "native_joint",
+      "case": "c0006",
+      "namespace": 1,
+      "order": 0,
+      "queries": [
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          },
+          "query_index": 0,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 1,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 2,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          },
+          "query_index": 3,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "unary",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 4,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          }
+        }
+      ],
+      "r_mask": 9,
+      "s_mask": 6,
+      "semantic_payload_signature": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "u_mask": 6
+    },
+    {
+      "arm": "native_compact",
+      "case": "c0006",
+      "namespace": 1,
+      "order": 0,
+      "queries": [
+        {
+          "eligible_correct": 1,
+          "extra_z": 1,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 0,
+          "strict_correct": false,
+          "truth": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 1,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 2,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 1,
+          "extra_z": 1,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 3,
+          "strict_correct": false,
+          "truth": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "unary",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 4,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          }
+        }
+      ],
+      "r_mask": 9,
+      "s_mask": 6,
+      "semantic_payload_signature": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "u_mask": 6
+    },
+    {
+      "arm": "exact_joint",
+      "case": "c0006",
+      "namespace": 1,
+      "order": 0,
+      "queries": [
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          },
+          "query_index": 0,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 1,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 2,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          },
+          "query_index": 3,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "unary",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 4,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          }
+        }
+      ],
+      "r_mask": 9,
+      "s_mask": 6,
+      "semantic_payload_signature": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "u_mask": 6
+    },
+    {
+      "arm": "native_compact",
+      "case": "c0007",
+      "namespace": 1,
+      "order": 1,
+      "queries": [
+        {
+          "eligible_correct": 1,
+          "extra_z": 1,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 0,
+          "strict_correct": false,
+          "truth": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 1,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 2,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 1,
+          "extra_z": 1,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 3,
+          "strict_correct": false,
+          "truth": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "unary",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 4,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          }
+        }
+      ],
+      "r_mask": 9,
+      "s_mask": 6,
+      "semantic_payload_signature": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "u_mask": 6
+    },
+    {
+      "arm": "exact_joint",
+      "case": "c0007",
+      "namespace": 1,
+      "order": 1,
+      "queries": [
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          },
+          "query_index": 0,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 1,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 2,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          },
+          "query_index": 3,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "unary",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 4,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          }
+        }
+      ],
+      "r_mask": 9,
+      "s_mask": 6,
+      "semantic_payload_signature": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "u_mask": 6
+    },
+    {
+      "arm": "native_joint",
+      "case": "c0007",
+      "namespace": 1,
+      "order": 1,
+      "queries": [
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          },
+          "query_index": 0,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              true
+            ],
+            "kind": "unique",
+            "selected_index": 1
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 1,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          },
+          "query_index": 2,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              false,
+              false
+            ],
+            "kind": "none",
+            "selected_index": null
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "conditional",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          },
+          "query_index": 3,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              false
+            ],
+            "kind": "unique",
+            "selected_index": 0
+          }
+        },
+        {
+          "eligible_correct": 2,
+          "extra_z": 0,
+          "intervention": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "intervention_eligible_correct": 2,
+          "intervention_strict_correct": true,
+          "kind": "unary",
+          "missing_z": 0,
+          "observed": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          },
+          "query_index": 4,
+          "strict_correct": true,
+          "truth": {
+            "eligible": [
+              true,
+              true
+            ],
+            "kind": "many",
+            "selected_index": null
+          }
+        }
+      ],
+      "r_mask": 9,
+      "s_mask": 6,
+      "semantic_payload_signature": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "u_mask": 6
+    }
+  ],
+  "full_joint_pass": true,
+  "independent_statistical_samples": false,
+  "initial_fixed": 0.5,
+  "learning_calls": 0,
+  "metamorphic": {
+    "exact_joint": {
+      "context_pairs": 24,
+      "invariant": 24,
+      "question_pairs": 120
+    },
+    "native_compact": {
+      "context_pairs": 24,
+      "invariant": 24,
+      "question_pairs": 120
+    },
+    "native_joint": {
+      "context_pairs": 24,
+      "invariant": 24,
+      "question_pairs": 120
+    }
+  },
+  "mutations_rejected": [
+    "revision",
+    "source",
+    "payload",
+    "payload_hash",
+    "seal_hash",
+    "triple",
+    "R_message",
+    "query_slot_swap",
+    "query_eligibility",
+    "selected",
+    "prefix_count",
+    "network_ref"
+  ],
+  "native_compact_intervention_pass": true,
+  "per_arm_allocation": "Sourceonceperarm pluscommonone-third is explicit accounting assumption,notindependenttiming.",
+  "phase_resources": {
+    "audit": {
+      "platform": "linux",
+      "ru_maxrss_raw": 27332,
+      "ru_maxrss_units": "platform-native getrusage; no conversion asserted",
+      "system_cpu_seconds": 0.027004,
+      "user_cpu_seconds": 2.088297
+    },
+    "preparation": {
+      "platform": "linux",
+      "ru_maxrss_raw": 23840,
+      "ru_maxrss_units": "platform-native getrusage; no conversion asserted",
+      "system_cpu_seconds": 0.013975999999999999,
+      "user_cpu_seconds": 0.281535
+    },
+    "work": {
+      "platform": "linux",
+      "ru_maxrss_raw": 30192,
+      "ru_maxrss_units": "platform-native getrusage; no conversion asserted",
+      "system_cpu_seconds": 0.034996,
+      "user_cpu_seconds": 10.310867
+    }
+  },
+  "physical_native_calls": 6360,
+  "physical_numeric_refs": 6336,
+  "physical_ticks": 190552,
+  "production_adoption": false,
+  "scalar_max_absolute_error": 2.7755575615628914e-17,
+  "seconds_including_seal": 13.058401126996614,
+  "server_scalar_max_error": 0.0,
+  "shared_work_overhead_cpu_seconds": 0.13373615600000122,
+  "source_group_updates": 3960,
+  "source_native_calls": 24,
+  "source_process_cpu_seconds": 0.042668236,
+  "source_signal_transmissions": 6336,
+  "source_ticks": 792,
+  "statistical_speed_verdict": null,
+  "status": "R39_SEALED_CONDITIONAL_Z_OBSERVED",
+  "trace_storage_only_shared": true,
+  "unique_native_traces": 131,
+  "work_process_cpu_seconds": 10.35873,
+  "world_measurement_calls": 0
+}

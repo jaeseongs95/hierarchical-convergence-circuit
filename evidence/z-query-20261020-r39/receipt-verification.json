@@ -1,0 +1,38 @@
+{
+  "adapter_redaction": {
+    "adapter_bytes": 6735,
+    "adapter_sha256": "f44b617217cc5c9f276a2adcd43f4a7160eed07c944ac6be63f5140e7d4d4a89",
+    "expected_original": {
+      "bytes": 6753,
+      "sha256": "f667b05bb8f477c372e14a14daae04c366f329fa26621d7a4680e9dbe27df18c"
+    },
+    "file": "source-postcheck.json",
+    "masked_public_path": "experiments/exp-85-z-query/DELIBERATION.ko.md",
+    "numeric_trace_files_affected": false,
+    "original_bytes_restored_by_known_public_path": true,
+    "other143_source_flags_match_local_pins": true,
+    "restoration_evidence": "restoration-verification.json",
+    "restored_manifest_match": true,
+    "unverifiable_original_bytes": false
+  },
+  "all_native_tick_records_received": true,
+  "archive_received": false,
+  "raw_json_bytes": 1392416,
+  "raw_manifest_matched_files": 141,
+  "received_json": 143,
+  "same_channel_hashes_not_host_attestation": true,
+  "source_files": 144,
+  "source_unchanged": true,
+  "ssh_completeness": "upstream unknown;141manifestentries directly matched;one metadata entry restored from known public path and matches original size/SHA;manifest outside its own hash",
+  "text_archive_transfer_attempted": false,
+  "transport_failures": [],
+  "transport_recovery": "One metadata file re-read confirmed adapter redaction; no command/native replay.",
+  "unreceived_empty_logs": [
+    "audit.stderr",
+    "audit.stdout",
+    "preparation.stderr",
+    "preparation.stdout",
+    "work.stderr",
+    "work.stdout"
+  ]
+}

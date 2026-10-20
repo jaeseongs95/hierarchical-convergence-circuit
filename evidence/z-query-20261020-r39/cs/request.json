@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "1.0.0",
+  "requestId": "CS-R39",
+  "mode": "derive",
+  "objective": "Preserve conditionalZ state versus nativeXY/Zmarginal information erasure",
+  "sourceSnapshotDigest": "sha256:bfaeabc0fb47747be6e42d3833f6616698d8e578ac41127b3c76a9e1a7fe95ba",
+  "sourceRefs": [
+    {
+      "id": "SRC-CORE",
+      "path": "source/hypothesis.md",
+      "digest": "sha256:d1b735eee8f72c092c847c04e81a34972fa919be906311255faa797e58ec9302"
+    },
+    {
+      "id": "SRC-R32",
+      "path": "source/r35-runtime.py",
+      "digest": "sha256:2ed5316a500a290f7bf5e4ecc54abd72ad8fd54f6b801bd18ee00fca70bbb751"
+    },
+    {
+      "id": "SRC-R19",
+      "path": "source/r19-probe.py",
+      "digest": "sha256:bb0159ba0c50505fc148322e0d0a17d53c184a0bdc7bed21b393120971eb5630"
+    },
+    {
+      "id": "SRC-RESULT",
+      "path": "source/r38-results.md",
+      "digest": "sha256:62b488c0016e3aac5b1ccf900c9c6eba0dad8cf51334e3c7988d273523265570"
+    },
+    {
+      "id": "SRC-KERNEL",
+      "path": "source/dynamics.py",
+      "digest": "sha256:a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc"
+    },
+    {
+      "id": "SRC-BUDGET",
+      "path": "source/budget.json",
+      "digest": "sha256:375309c43ba5691f9c3f2c9446da41bde68c1deb65c64252cd1938b07e014022"
+    }
+  ],
+  "operationalFacts": [
+    {
+      "id": "FACT-GAP",
+      "statement": "R38 preserves XY but erases Z; returned raw metadata/messages cannot be a permitted query information path. Same XY and Z marginals can support opposite conditional Z answers, including offdiagonal routing controls.",
+      "evidenceRefs": [
+        "SRC-RESULT"
+      ]
+    },
+    {
+      "id": "FACT-KERNEL",
+      "statement": "Existing3leafAND expression5groups/feasible2 11groups and R37nativefieldmembership can form2x4joint slices. Consumer may routepublicXYindex but never solvefacts orreadsource/hashregistry. All computations run andfullkernel+Config exactstorageidentity retained.",
+      "evidenceRefs": [
+        "SRC-KERNEL",
+        "SRC-R32",
+        "SRC-R19"
+      ]
+    },
+    {
+      "id": "FACT-BUDGET",
+      "statement": "R38measuredcostsscaledseparatelyyield10.844603work/44.805885totalplanningseconds;selected3x/60round/minstage120 yields120stage180total.6336numeric+24source/max1017600ticks;raw128MiB/cache192MiB/AS512MiBeachareoperatingstopsnotpredictions.",
+      "evidenceRefs": [
+        "SRC-BUDGET"
+      ]
+    }
+  ],
+  "existingContractRef": null
+}

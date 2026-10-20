@@ -1,0 +1,127 @@
+{
+  "acceptanceCriteria": [
+    "[AC-001] MEDIUM 토론의 두 blind 관점·비원저자 교차검토와 직접 근거를 반영해 비중복 Z질의·slice/주변집합 개입·consumer격리·조건부 주장·판별표·결과별 다음 판단을 동결하고 기존 core/연구를 보존한다.",
+    "[AC-002] 8판별표×이름2×순서2=32context, 각5질의×3arms=480출력을 AI Research SSH에서 실행한다. 원천24와 native필드membership/3leafAND/projection/후속AND/feasible2를 실제 실행하고 host 정답수리를 금지한다.",
+    "[AC-003] 모든 producer는 질의전에1회 봉인하며 numericconsumer는선언수치payload/publicslot/fixedcfg/docs/initial만받는다. 모든층·Zeligibility2/kind/selected·unary/conditional·별도full/productoracle·collision·24정규화변형·저장변조를검산하며정보손실과구현오류를분리한다.",
+    "[AC-004] 24source+6336numeric=6360settle/최대1017600ticks,worker1/retry0,단계120초/전체180초,raw128MiB/cache192MiB/AS각512MiB상한을지킨다. 전체JSON/SHA/source/scalar/controller/물리참조/비용검산·학습0·세계측정0·동결후native재실행0을확인한다.",
+    "[AC-005] 신규세경로만scope/index확인뒤서명커밋·mainFF·같은privateoriginpush·SHA일치/mainclean·병합후bytes를확인한다."
+  ],
+  "authorization": {
+    "allowedActions": [
+      "R39 연구 전용 구현과 결과 문서 작성",
+      "제한된 AI Research SSH 후속 실험",
+      "서명커밋과 로컬 main 병합",
+      "같은 연구 저장소 원격 push"
+    ],
+    "approvalRequired": [],
+    "prohibitedActions": [
+      "기존 core 및 과거 연구 변경",
+      "새 의존성·유료자원·서비스·권한 확대",
+      "외부 peer 메시지 전송"
+    ]
+  },
+  "constraints": [
+    "신규3경로만;core/과거/user변경보존",
+    "토론MEDIUM:격리blindreviewer2/Coordinatort통합,전문가·freshJudge미요구;교차검토와직접증거확인;임의독립감사주장금지",
+    "producer는query미수신/원래fact역할비교는native;consumer는numericpayload와공개slot만;provenancehash는guard밖조회나답분기에사용금지",
+    "rawpacket동일성/일반정보론적불가능성아님;고정margin의허용의미payload collision과고정native판독만",
+    "32판별context/명시폐쇄2×2×2domain/initial.5;전수표/일반CSP/학습/최소표현/효율/운영채택주장금지",
+    "모든numeric계산실행/저장만공유;동결뒤native재실행/retune/기대해시교체금지",
+    "R38실측별스케일/선택안전계수3/단계최소120초와동일메모리운영중단선;새composition완료·속도·RSS보장아님",
+    "최신workspace-write·제한네트워크준수;자동심사거부시원인과영향명시;기존사용자승인중복질문금지",
+    "새dependency/유료자원/service/security변경/외부peer전송없음"
+  ],
+  "decision": {
+    "complexity": "complex",
+    "hasConflicts": false
+  },
+  "objective": "질의 전에 봉인한 Z별 XY slice와 XY/Z 주변집합이 후속 XY조건부 Z 허용집합을 보존하는지 비교하고 unary 성공과 상관정보 손실을 분리한다",
+  "orchestration": {
+    "mcpAvailable": true,
+    "requested": false
+  },
+  "requiredCapabilities": [
+    "minimal-implementation",
+    "cs-implementation-review",
+    "change-scope-assurance",
+    "independent-deliberation"
+  ],
+  "riskLevel": "medium",
+  "schemaVersion": "1.0.0",
+  "scope": {
+    "excluded": [
+      "src/",
+      "tests/",
+      "tools/r19_cross_level/",
+      "tools/r20_evidence_feedback/",
+      "tools/r21_active_measurement/",
+      "tools/r22_measurement_adoption/",
+      "tools/r23_source_qualification/",
+      "experiments/exp-69-source-qualification/",
+      "evidence/source-qualification-20261019-r23/",
+      "tools/r24_trust_boundary/",
+      "experiments/exp-70-trust-boundary/",
+      "evidence/trust-boundary-20261019-r24/",
+      "tools/r25_fixedpoint_elision/",
+      "experiments/exp-71-fixedpoint-elision/",
+      "evidence/fixedpoint-elision-20261019-r25/",
+      "experiments/exp-72-contraction-warmstart/",
+      "tools/r26_contraction_warmstart/",
+      "evidence/contraction-warmstart-20261019-r26/",
+      "experiments/exp-73-finite-stop-envelope/",
+      "tools/r27_finite_stop_envelope/",
+      "evidence/finite-stop-envelope-20261019-r27/",
+      "experiments/exp-74-reuse-frontier/",
+      "tools/r28_reuse_frontier/",
+      "evidence/reuse-frontier-20261020-r28/",
+      "experiments/exp-75-research-direction/",
+      "tools/r29_research_direction/",
+      "evidence/research-direction-20261020-r29/",
+      "experiments/exp-76-spatial-sharing/",
+      "tools/r30_spatial_sharing/",
+      "evidence/spatial-sharing-20261020-r30/",
+      "experiments/exp-77-macro-control/",
+      "tools/r31_macro_control/",
+      "evidence/macro-control-20261020-r31/",
+      "experiments/exp-78-semantic-join/",
+      "tools/r32_semantic_join/",
+      "evidence/semantic-join-20261020-r32/",
+      "experiments/exp-79-typed-feedback/",
+      "tools/r33_typed_feedback/",
+      "evidence/typed-feedback-20261020-r33/",
+      "experiments/exp-80-feasible-state/",
+      "tools/r34_feasible_state/",
+      "evidence/feasible-state-20261020-r34/",
+      "experiments/exp-81-compositional-slot/",
+      "tools/r35_compositional_slot/",
+      "evidence/compositional-slot-20261020-r35/",
+      "experiments/exp-82-overlap-composition/",
+      "tools/r36_overlap_composition/",
+      "evidence/overlap-composition-20261020-r36/",
+      "experiments/exp-83-joint-tuple/",
+      "tools/r37_joint_tuple/",
+      "evidence/joint-tuple-20261020-r37/",
+      "experiments/exp-84-shared-witness/",
+      "tools/r38_shared_witness/",
+      "evidence/shared-witness-20261020-r38/"
+    ],
+    "included": [
+      "experiments/exp-85-z-query/",
+      "tools/r39_z_query/",
+      "evidence/z-query-20261020-r39/"
+    ]
+  },
+  "taskId": "ai-z-query-r39",
+  "workUnits": [
+    {
+      "dependencies": [],
+      "id": "r39",
+      "objective": "질의 전에 봉인한 Z별 XY slice와 XY/Z 주변집합이 후속 XY조건부 Z 허용집합을 보존하는지 비교하고 unary 성공과 상관정보 손실을 분리한다",
+      "writeTargets": [
+        "experiments/exp-85-z-query/",
+        "tools/r39_z_query/",
+        "evidence/z-query-20261020-r39/"
+      ]
+    }
+  ]
+}

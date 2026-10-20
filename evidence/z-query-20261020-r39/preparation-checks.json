@@ -1,0 +1,57 @@
+{
+  "actual_local_native_calls": 0,
+  "canonical_cache_bytes_checked": true,
+  "consumer_isolation_mutations_rejected": [
+    "hidden_source",
+    "hidden_message",
+    "payload_shape",
+    "payload_range",
+    "payload_nan",
+    "query_case",
+    "query_slot_bool",
+    "query_slot_oob",
+    "query_kind",
+    "representation"
+  ],
+  "metadata_mutations_rejected": [
+    "predicate",
+    "Y_role",
+    "Z_role",
+    "revision",
+    "duplicate",
+    "domain_overlap",
+    "vocabulary",
+    "layout"
+  ],
+  "preparation": {
+    "arm_records": 96,
+    "boolean_stub_not_numeric_validation": true,
+    "checks": 599,
+    "contexts": 32,
+    "expected_compact_eligible_correct": 296,
+    "expected_compact_full_strict": 136,
+    "expected_compact_unary_correct": 32,
+    "native_calls": 0,
+    "program_groups": {
+      "feasible": 11,
+      "or0": 1,
+      "or1": 2,
+      "or2": 3,
+      "or3": 4,
+      "or4": 5,
+      "pair": 4,
+      "role": 16,
+      "triple": 5
+    },
+    "question_outputs": 480,
+    "questions": 160,
+    "simulated_numeric_invocations": 6336,
+    "status": "PASS"
+  },
+  "python_ast_utf8_lf_files": 5,
+  "saved_trace_LRU_max_entries": 18,
+  "status": "PASS",
+  "synthetic_codec_roundtrip": 2,
+  "synthetic_mutations_rejected": 9,
+  "synthetic_storage_unique": 2
+}

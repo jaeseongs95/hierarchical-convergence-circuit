@@ -1,0 +1,394 @@
+{
+  "axis_decisions": [
+    {
+      "axis": "Meaning",
+      "decision": "NativeZslices versus nativeXY/Zmarginals; full and product oracles separate, payload collision only at declared support semantics.",
+      "evidence_claim_ids": [
+        "C1",
+        "C3"
+      ]
+    },
+    {
+      "axis": "Feasibility",
+      "decision": "Use publicslot0..3 plusunary,feasible2 and existingAND/OR; seal producer once beforeall5queries, nofact/hash access by consumer.",
+      "evidence_claim_ids": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "axis": "CoverageCost",
+      "decision": "Select32discriminating contexts with offdiagonal positive controls; avoid518context extension and claims to exhaustive/general efficiency.",
+      "evidence_claim_ids": [
+        "C3",
+        "C4",
+        "C5"
+      ]
+    }
+  ],
+  "case_brief": {
+    "assumptions": [
+      "각변수2값disjointdomain/완전폐쇄관계표/initial.5",
+      "publicXYslot은query의정의이며정답선택이아니다"
+    ],
+    "constraints": [
+      "core/과거자료보존",
+      "numericconsumer는수치payload/publicslot/fixedcfg/docs/initial만",
+      "producer는query전에1회봉인",
+      "hosttruthsolve/argmax/정답수리금지",
+      "학습0/세계측정0/동결후native재실행·retune금지",
+      "같은privateoriginpush허용;새유료자원/dependency/외부peer전송금지"
+    ],
+    "decision": "XY조건부Z의허용집합을보존하는유한상태표현과주변집합손실대조를비교할R39을정한다",
+    "facts": [
+      "R38은XY로투영한상태와실제native원자료를보존하며후속Z질의는시험하지않았다",
+      "R35compiler는후보4/32group상한을갖고3leafAND와feasible2를생성할수있다"
+    ],
+    "failure_modes": [
+      "누락Z정보를rawfacts/hash조회로복구",
+      "R적용없는SANDU상태를triple로오인",
+      "unary성공을conditional충분성으로확대",
+      "숫자tiny차이를무제한정보채널로가정"
+    ],
+    "success_criteria": [
+      "fullZeligibility/kind/selectedindex와모든중간층검산",
+      "compact개입oracle정합성과full정보손실분리",
+      "단계상한/전체원자료SHA/scalar/controller/cost검산"
+    ],
+    "unknowns": [
+      "새native3leafAND의연속수치수렴과정확성",
+      "한정된질의군을넘는최소표현/일반CSP/효율/학습은미관측"
+    ]
+  },
+  "consensus_proposal": {
+    "action": "Proceed with one frozen32context/5query R39 comparing joint slices, native marginal information erasure, and same-information exact control.",
+    "axis_alignment": [
+      {
+        "axis": "Meaning",
+        "decision_ref": "Meaning"
+      },
+      {
+        "axis": "Feasibility",
+        "decision_ref": "Feasibility"
+      },
+      {
+        "axis": "CoverageCost",
+        "decision_ref": "CoverageCost"
+      }
+    ],
+    "conditions": [
+      "Implement explicit consumer isolation/seal-before-query and verify all causal/intermediate/full/product outcomes; native correctness remains unobserved until experiment.",
+      "No minimum-representation/generalCSP/learning/efficiency claim; failures preserved withoutretune orsame-runretry."
+    ],
+    "decision_owner": null,
+    "no_consensus_reason": null,
+    "remaining_options": [
+      "Factor/separator representation is a later design alternative, not an additional current arm."
+    ],
+    "satisfied_constraints": [
+      "core/과거자료보존",
+      "numericconsumer는수치payload/publicslot/fixedcfg/docs/initial만",
+      "producer는query전에1회봉인",
+      "hosttruthsolve/argmax/정답수리금지",
+      "학습0/세계측정0/동결후native재실행·retune금지",
+      "같은privateoriginpush허용;새유료자원/dependency/외부peer전송금지"
+    ],
+    "status": "conditional_consensus",
+    "supported_by_verified_claims": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "unresolved_dissent": []
+  },
+  "constraints": [
+    "core/과거자료보존",
+    "numericconsumer는수치payload/publicslot/fixedcfg/docs/initial만",
+    "producer는query전에1회봉인",
+    "hosttruthsolve/argmax/정답수리금지",
+    "학습0/세계측정0/동결후native재실행·retune금지",
+    "같은privateoriginpush허용;새유료자원/dependency/외부peer전송금지"
+  ],
+  "cross_examination": {
+    "coverage": [
+      {
+        "item_id": "T1",
+        "reviewer_ids": [
+          "/root/r39_feasibility"
+        ]
+      },
+      {
+        "item_id": "T2",
+        "reviewer_ids": [
+          "/root/r39_semantics"
+        ]
+      }
+    ],
+    "decision": "run",
+    "followups": [
+      {
+        "item_ids": [
+          "T1"
+        ],
+        "reviewer_id": "/root/r39_feasibility"
+      },
+      {
+        "item_ids": [
+          "T2"
+        ],
+        "reviewer_id": "/root/r39_semantics"
+      }
+    ],
+    "reason": "T1 addresses hidden source/activation information leakage; T2 checks whether the proposed compact matrix covers real native routing failures.",
+    "selected_item_ids": [
+      "T1",
+      "T2"
+    ],
+    "trigger_items": [
+      {
+        "id": "T1",
+        "origin_reviewer": "/root/r39_semantics"
+      },
+      {
+        "id": "T2",
+        "origin_reviewer": "/root/r39_feasibility"
+      }
+    ]
+  },
+  "issue_ledger": [
+    {
+      "available_evidence": [
+        "C1",
+        "C3"
+      ],
+      "issue_id": "I-PAYLOAD",
+      "rationale": "C1:rawmessages/hashpaths must be excluded from numeric consumer; fixedreadout does not establish rawpacket equality.",
+      "required_evidence": [
+        "consumer signature and causal audit"
+      ],
+      "status": "CONFIRMED"
+    },
+    {
+      "available_evidence": [
+        "C3",
+        "C4"
+      ],
+      "issue_id": "I-SLOTS",
+      "rationale": "C3/C4:original7tablesneverpositivelyexerciseoffdiagonalXY;8th(6,9,6)addedbeforecontractfreeze.",
+      "required_evidence": [
+        "all4publicslotspositive with oppositeZ"
+      ],
+      "status": "CONFIRMED"
+    },
+    {
+      "available_evidence": [
+        "C2",
+        "C5"
+      ],
+      "issue_id": "I-NATIVE",
+      "rationale": "New3leafAND/nativequery composition not run; successful Boolean framing is not a native result.",
+      "required_evidence": [
+        "frozenAIResearchSSH execution andfullraw replay"
+      ],
+      "status": "UNRESOLVED"
+    }
+  ],
+  "material_claims": [
+    {
+      "id": "C1",
+      "provenance": [
+        {
+          "locator": "D:/codex/리드/ai-research-resume-20261008-r01/repository/tools/r38_shared_witness/runtime.py",
+          "verification_note": "Read functions combine/execute and binding/return fields directly. SHA256:7036dc4c0dae4391e31999dffce8b3e2f59b47e3060b5685b254e310cf04aa26",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "R38 producer returns original messages/intermediate but its binding meaning is XY eligibility; consumer must not recover source information from those fields."
+    },
+    {
+      "id": "C2",
+      "provenance": [
+        {
+          "locator": "D:/codex/리드/ai-research-resume-20261008-r01/repository/tools/r35_compositional_slot/compiler.py",
+          "verification_note": "Direct generation with frozen R38 Config asserted5/11; no native settle. SHA256:c167508ee664aa23a6cdafcda652b6e5f0d6292157d09099f3073cc4e78e933e",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "Existing expression supports 3leafAND in5groups and feasible2 in11groups under unchanged32group bound."
+    },
+    {
+      "id": "C3",
+      "provenance": [
+        {
+          "locator": "D:/codex/리드/ai-z-query-20261020-r39/symbolic-plan.json",
+          "verification_note": "Independent explicit8triple enumeration in frame.py verified before implementation, native0. SHA256:97bc757afc5ed23cd758296a5c10d65c4e632d483f03fe2dcd21edfaa68d86d8",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "R9/S9/U9 andR9/S6/U6 have identical XY andZ supports but opposite singletonZ atXY00; R6/S9/U6 has offdiagonal oppositeZ atXY01/10."
+    },
+    {
+      "id": "C4",
+      "provenance": [
+        {
+          "locator": "D:/codex/리드/ai-z-query-20261020-r39/symbolic-plan.json",
+          "verification_note": "All symbolic counts directly recomputed; native observations not yet made. SHA256:97bc757afc5ed23cd758296a5c10d65c4e632d483f03fe2dcd21edfaa68d86d8",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "Final selected8tables xnamespace2xorder2 comprise32contexts/160context-query pairs/480arm outputs,6336numeric+24source and predictedcompactfull136/160."
+    },
+    {
+      "id": "C5",
+      "provenance": [
+        {
+          "locator": "D:/codex/리드/ai-research-resume-20261008-r01/repository/evidence/shared-witness-20261020-r38/analysis.json",
+          "verification_note": "Read previous completed analysis/result and new budget source SHA/scaling; no new server experiment yet. SHA256:4f92adb0aafb8f1f78d26809d9e47717addf1c4145ce13c2337fbd3c80980b7b",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "R38 received full native data with229.941487s andsource24; new composition costs are not guaranteed by that prior measurement."
+    }
+  ],
+  "method_notes": [
+    "MEDIUM/degraded_ok/bounded adaptive(default), actual2isolatedreviewers andCoordinatorintegration; freshJudge not requested/required and not instantiated. No specialist/adaptive redeliberation admitted.",
+    "Bothsame reviewer IDs each received one cross-exam followup,notadditionalindependentparticipants. Endstatuscompleted; historicalcrossreuse captured in participated_stages/cross_examination,notterminal reused status.",
+    "No rawreviewer/Judge outputs,internalprompts,transcripts,private reasoning orother session contents stored. References and verified claim summaries only.",
+    "Schema verification checks record consistency,notexternal identity/isolation ortruth. Implementation/budget approval notconferred by panel."
+  ],
+  "observability": {
+    "tokens": "NOT_OBSERVABLE",
+    "tool_calls": "NOT_OBSERVABLE",
+    "wall_time": "NOT_OBSERVABLE",
+    "worker_count": 2
+  },
+  "panel_manifest": [
+    {
+      "actual_model": null,
+      "actual_reasoning": null,
+      "blind_round1": true,
+      "classification": "reviewer",
+      "context_isolated": true,
+      "fallback_reason": "Preferred Terra is not advertised by host; inherited host configuration with no explicit override. Exact runtime identity/effort not separately reported.",
+      "id": "/root/r39_semantics",
+      "instantiated": true,
+      "is_judge": false,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ],
+      "requested_model": "inherit",
+      "requested_reasoning": "inherit",
+      "role": "Semantic information and quantifier contract",
+      "status": "completed"
+    },
+    {
+      "actual_model": null,
+      "actual_reasoning": null,
+      "blind_round1": true,
+      "classification": "reviewer",
+      "context_isolated": true,
+      "fallback_reason": "Preferred Terra is not advertised by host; inherited host configuration with no explicit override. Exact runtime identity/effort not separately reported.",
+      "id": "/root/r39_feasibility",
+      "instantiated": true,
+      "is_judge": false,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ],
+      "requested_model": "inherit",
+      "requested_reasoning": "inherit",
+      "role": "Implementation, resource and evidence validity",
+      "status": "completed"
+    }
+  ],
+  "preflight": {
+    "missing_capabilities": [],
+    "observed_capabilities": [
+      "isolated blindreviewers2",
+      "local source verification",
+      "fork_turns:none",
+      "2actualspawnedworkers/completed",
+      "collaboration16total slots observed"
+    ],
+    "required_capabilities": [
+      "isolated blindreviewers2",
+      "local source verification"
+    ],
+    "supported_models_reasoning": [
+      "Inherited host configuration; no explicit model/effort override",
+      "Preferred Terra not advertised; exact actual runtime model/effort not separately observable"
+    ]
+  },
+  "required_constraints": [
+    "core/과거자료보존",
+    "numericconsumer는수치payload/publicslot/fixedcfg/docs/initial만",
+    "producer는query전에1회봉인",
+    "hosttruthsolve/argmax/정답수리금지",
+    "학습0/세계측정0/동결후native재실행·retune금지",
+    "같은privateoriginpush허용;새유료자원/dependency/외부peer전송금지"
+  ],
+  "run": {
+    "assurance": "partially_independent",
+    "candidate_skill_sha256": null,
+    "capability_shortfall": false,
+    "completed_worker_ids": [
+      "/root/r39_semantics",
+      "/root/r39_feasibility"
+    ],
+    "failures": [],
+    "fresh_judge_id": null,
+    "id": "r39-direction-20261020",
+    "judge_fallback": null,
+    "redeliberations": [],
+    "reused_worker_ids": [],
+    "specialist_additions": [],
+    "stage": "MEDIUM",
+    "strict": false,
+    "worker_cap": 8,
+    "workers": [
+      {
+        "actual_model": null,
+        "actual_reasoning": null,
+        "blind_round1": true,
+        "classification": "reviewer",
+        "context_isolated": true,
+        "fallback_reason": "Preferred Terra is not advertised by host; inherited host configuration with no explicit override. Exact runtime identity/effort not separately reported.",
+        "id": "/root/r39_semantics",
+        "instantiated": true,
+        "is_judge": false,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ],
+        "requested_model": "inherit",
+        "requested_reasoning": "inherit",
+        "role": "Semantic information and quantifier contract",
+        "status": "completed"
+      },
+      {
+        "actual_model": null,
+        "actual_reasoning": null,
+        "blind_round1": true,
+        "classification": "reviewer",
+        "context_isolated": true,
+        "fallback_reason": "Preferred Terra is not advertised by host; inherited host configuration with no explicit override. Exact runtime identity/effort not separately reported.",
+        "id": "/root/r39_feasibility",
+        "instantiated": true,
+        "is_judge": false,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ],
+        "requested_model": "inherit",
+        "requested_reasoning": "inherit",
+        "role": "Implementation, resource and evidence validity",
+        "status": "completed"
+      }
+    ]
+  },
+  "schema_version": "1.0",
+  "skill_version": "1.0.0"
+}

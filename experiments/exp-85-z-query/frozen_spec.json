@@ -1,0 +1,4101 @@
+{
+  "arms": [
+    "native_joint",
+    "native_compact",
+    "exact_joint"
+  ],
+  "base": "e788cfc0edfb6ef025ef9aa0d80f7bb8b9b45332",
+  "budget": {
+    "arm_records": 96,
+    "arms": 3,
+    "canonical_cache_bytes": 201326592,
+    "child_address_space_bytes": 536870912,
+    "child_file_bytes": 8388608,
+    "contexts": 32,
+    "estimates_are_not_statistical_guarantees": true,
+    "evaluations": 96,
+    "expected_compact_eligibility_correct": 296,
+    "expected_compact_extra_z": 24,
+    "expected_compact_full_strict": 136,
+    "expected_unary_correct": 32,
+    "learning": 0,
+    "limits_are_operational_stop_boundaries": true,
+    "max_ticks": 1017600,
+    "maximum_native_calls": 6360,
+    "maximum_ticks": 1017600,
+    "maximum_unique_trace_records": 6336,
+    "metric_parts": 1,
+    "minimum_stage_policy_seconds": 120,
+    "numeric_calls": 6336,
+    "parent_address_space_bytes": 536870912,
+    "parent_file_bytes": 136314880,
+    "physical_native_calls": 6360,
+    "planning_total_seconds": 44.80588510745851,
+    "planning_work_seconds": 10.844602830473649,
+    "question_outputs": 480,
+    "questions": 160,
+    "raw_bytes": 134217728,
+    "record_encoded_cache_max_bytes": 131072,
+    "retry": 0,
+    "rounding_seconds_policy": 60,
+    "safety_factor_policy": 3,
+    "saved_trace_cache_entries": 18,
+    "scaling_factors": {
+      "exact_questions": 0.2631578947368421,
+      "numeric_calls": 0.05263157894736842,
+      "other_phase": 1,
+      "record_overhead": 0.05263157894736842,
+      "source": 1
+    },
+    "source_calls": 24,
+    "source_refs": {
+      "analysis.json": {
+        "path": "evidence/shared-witness-20261020-r38/analysis.json",
+        "sha256": "4f92adb0aafb8f1f78d26809d9e47717addf1c4145ce13c2337fbd3c80980b7b"
+      },
+      "raw/result.json": {
+        "path": "evidence/shared-witness-20261020-r38/raw/result.json",
+        "sha256": "a218328a2d468bddfb0295feb62388edc8610685970cd7c429647aa8136e9f25"
+      },
+      "receipt-verification.json": {
+        "path": "evidence/shared-witness-20261020-r38/receipt-verification.json",
+        "sha256": "31c9719f97322417d363d8145904f218eb2b49a96f01755ad22f42d46de6c6ad"
+      },
+      "server-completion.json": {
+        "path": "evidence/shared-witness-20261020-r38/server-completion.json",
+        "sha256": "c81b05b22c857fd3b7a7e73d3c72f655518f7bb4190aa238de6ef5db541c7af3"
+      }
+    },
+    "stage_seconds": 120,
+    "storage_caps_basis": "Reuse R38 independently enforced raw128MiB/cache192MiB/record128KiB/AS512MiB stop caps. Unique<=6336 physical numeric calls is a logical count upper bound; cache byte cap is separate and may stop before that count. Actual size/convergence of new composition is not guaranteed.",
+    "total_seconds": 180,
+    "worker": 1,
+    "world_measurement": 0
+  },
+  "cases": [
+    {
+      "arms": [
+        "native_joint",
+        "native_compact",
+        "exact_joint"
+      ],
+      "complete": true,
+      "domains": {
+        "X": [
+          "n0_X0",
+          "n0_X1"
+        ],
+        "Y": [
+          "n0_Y0",
+          "n0_Y1"
+        ],
+        "Z": [
+          "n0_Z0",
+          "n0_Z1"
+        ]
+      },
+      "initial": 0.5,
+      "key": "c0000",
+      "namespace": 0,
+      "order": 0,
+      "queries": [
+        {
+          "kind": "conditional",
+          "slot": 0
+        },
+        {
+          "kind": "conditional",
+          "slot": 1
+        },
+        {
+          "kind": "conditional",
+          "slot": 2
+        },
+        {
+          "kind": "conditional",
+          "slot": 3
+        },
+        {
+          "kind": "unary",
+          "slot": null
+        }
+      ],
+      "r_mask": 9,
+      "relation_tables_complete": true,
+      "relations": {
+        "R": [
+          "n0_R_0",
+          "n0_R_3"
+        ],
+        "S": [
+          "n0_S_0",
+          "n0_S_3"
+        ],
+        "U": [
+          "n0_U_0",
+          "n0_U_3"
+        ]
+      },
+      "s_mask": 9,
+      "u_mask": 9,
+      "vocabulary": [
+        "n0_X0",
+        "n0_X1",
+        "n0_Y0",
+        "n0_Y1",
+        "n0_Z0",
+        "n0_Z1",
+        "n0_aux6",
+        "n0_aux7"
+      ]
+    },
+    {
+      "arms": [
+        "native_compact",
+        "exact_joint",
+        "native_joint"
+      ],
+      "complete": true,
+      "domains": {
+        "X": [
+          "n0_X0",
+          "n0_X1"
+        ],
+        "Y": [
+          "n0_Y0",
+          "n0_Y1"
+        ],
+        "Z": [
+          "n0_Z0",
+          "n0_Z1"
+        ]
+      },
+      "initial": 0.5,
+      "key": "c0001",
+      "namespace": 0,
+      "order": 1,
+      "queries": [
+        {
+          "kind": "conditional",
+          "slot": 3
+        },
+        {
+          "kind": "conditional",
+          "slot": 2
+        },
+        {
+          "kind": "conditional",
+          "slot": 1
+        },
+        {
+          "kind": "conditional",
+          "slot": 0
+        },
+        {
+          "kind": "unary",
+          "slot": null
+        }
+      ],
+      "r_mask": 9,
+      "relation_tables_complete": true,
+      "relations": {
+        "R": [
+          "n0_R_3",
+          "n0_R_0"
+        ],
+        "S": [
+          "n0_S_3",
+          "n0_S_0"
+        ],
+        "U": [
+          "n0_U_3",
+          "n0_U_0"
+        ]
+      },
+      "s_mask": 9,
+      "u_mask": 9,
+      "vocabulary": [
+        "n0_X0",
+        "n0_X1",
+        "n0_Y0",
+        "n0_Y1",
+        "n0_Z0",
+        "n0_Z1",
+        "n0_aux6",
+        "n0_aux7"
+      ]
+    },
+    {
+      "arms": [
+        "exact_joint",
+        "native_joint",
+        "native_compact"
+      ],
+      "complete": true,
+      "domains": {
+        "X": [
+          "n1_X0",
+          "n1_X1"
+        ],
+        "Y": [
+          "n1_Y0",
+          "n1_Y1"
+        ],
+        "Z": [
+          "n1_Z0",
+          "n1_Z1"
+        ]
+      },
+      "initial": 0.5,
+      "key": "c0002",
+      "namespace": 1,
+      "order": 0,
+      "queries": [
+        {
+          "kind": "conditional",
+          "slot": 0
+        },
+        {
+          "kind": "conditional",
+          "slot": 1
+        },
+        {
+          "kind": "conditional",
+          "slot": 2
+        },
+        {
+          "kind": "conditional",
+          "slot": 3
+        },
+        {
+          "kind": "unary",
+          "slot": null
+        }
+      ],
+      "r_mask": 9,
+      "relation_tables_complete": true,
+      "relations": {
+        "R": [
+          "n1_R_0",
+          "n1_R_3"
+        ],
+        "S": [
+          "n1_S_0",
+          "n1_S_3"
+        ],
+        "U": [
+          "n1_U_0",
+          "n1_U_3"
+        ]
+      },
+      "s_mask": 9,
+      "u_mask": 9,
+      "vocabulary": [
+        "n1_X0",
+        "n1_X1",
+        "n1_Y0",
+        "n1_Y1",
+        "n1_Z0",
+        "n1_Z1",
+        "n1_aux6",
+        "n1_aux7"
+      ]
+    },
+    {
+      "arms": [
+        "native_joint",
+        "native_compact",
+        "exact_joint"
+      ],
+      "complete": true,
+      "domains": {
+        "X": [
+          "n1_X0",
+          "n1_X1"
+        ],
+        "Y": [
+          "n1_Y0",
+          "n1_Y1"
+        ],
+        "Z": [
+          "n1_Z0",
+          "n1_Z1"
+        ]
+      },
+      "initial": 0.5,
+      "key": "c0003",
+      "namespace": 1,
+      "order": 1,
+      "queries": [
+        {
+          "kind": "conditional",
+          "slot": 3
+        },
+        {
+          "kind": "conditional",
+          "slot": 2
+        },
+        {
+          "kind": "conditional",
+          "slot": 1
+        },
+        {
+          "kind": "conditional",
+          "slot": 0
+        },
+        {
+          "kind": "unary",
+          "slot": null
+        }
+      ],
+      "r_mask": 9,
+      "relation_tables_complete": true,
+      "relations": {
+        "R": [
+          "n1_R_3",
+          "n1_R_0"
+        ],
+        "S": [
+          "n1_S_3",
+          "n1_S_0"
+        ],
+        "U": [
+          "n1_U_3",
+          "n1_U_0"
+        ]
+      },
+      "s_mask": 9,
+      "u_mask": 9,
+      "vocabulary": [
+        "n1_X0",
+        "n1_X1",
+        "n1_Y0",
+        "n1_Y1",
+        "n1_Z0",
+        "n1_Z1",
+        "n1_aux6",
+        "n1_aux7"
+      ]
+    },
+    {
+      "arms": [
+        "native_compact",
+        "exact_joint",
+        "native_joint"
+      ],
+      "complete": true,
+      "domains": {
+        "X": [
+          "n0_X0",
+          "n0_X1"
+        ],
+        "Y": [
+          "n0_Y0",
+          "n0_Y1"
+        ],
+        "Z": [
+          "n0_Z0",
+          "n0_Z1"
+        ]
+      },
+      "initial": 0.5,
+      "key": "c0004",
+      "namespace": 0,
+      "order": 0,
+      "queries": [
+        {
+          "kind": "conditional",
+          "slot": 0
+        },
+        {
+          "kind": "conditional",
+          "slot": 1
+        },
+        {
+          "kind": "conditional",
+          "slot": 2
+        },
+        {
+          "kind": "conditional",
+          "slot": 3
+        },
+        {
+          "kind": "unary",
+          "slot": null
+        }
+      ],
+      "r_mask": 9,
+      "relation_tables_complete": true,
+      "relations": {
+        "R": [
+          "n0_R_0",
+          "n0_R_3"
+        ],
+        "S": [
+          "n0_S_1",
+          "n0_S_2"
+        ],
+        "U": [
+          "n0_U_1",
+          "n0_U_2"
+        ]
+      },
+      "s_mask": 6,
+      "u_mask": 6,
+      "vocabulary": [
+        "n0_X0",
+        "n0_X1",
+        "n0_Y0",
+        "n0_Y1",
+        "n0_Z0",
+        "n0_Z1",
+        "n0_aux6",
+        "n0_aux7"
+      ]
+    },
+    {
+      "arms": [
+        "exact_joint",
+        "native_joint",
+        "native_compact"
+      ],
+      "complete": true,
+      "domains": {
+        "X": [
+          "n0_X0",
+          "n0_X1"
+        ],
+        "Y": [
+          "n0_Y0",
+          "n0_Y1"
+        ],
+        "Z": [
+          "n0_Z0",
+          "n0_Z1"
+        ]
+      },
+      "initial": 0.5,
+      "key": "c0005",
+      "namespace": 0,
+      "order": 1,
+      "queries": [
+        {
+          "kind": "conditional",
+          "slot": 3
+        },
+        {
+          "kind": "conditional",
+          "slot": 2
+        },
+        {
+          "kind": "conditional",
+          "slot": 1
+        },
+        {
+          "kind": "conditional",
+          "slot": 0
+        },
+        {
+          "kind": "unary",
+          "slot": null
+        }
+      ],
+      "r_mask": 9,
+      "relation_tables_complete": true,
+      "relations": {
+        "R": [
+          "n0_R_3",
+          "n0_R_0"
+        ],
+        "S": [
+          "n0_S_2",
+          "n0_S_1"
+        ],
+        "U": [
+          "n0_U_2",
+          "n0_U_1"
+        ]
+      },
+      "s_mask": 6,
+      "u_mask": 6,
+      "vocabulary": [
+        "n0_X0",
+        "n0_X1",
+        "n0_Y0",
+        "n0_Y1",
+        "n0_Z0",
+        "n0_Z1",
+        "n0_aux6",
+        "n0_aux7"
+      ]
+    },
+    {
+      "arms": [
+        "native_joint",
+        "native_compact",
+        "exact_joint"
+      ],
+      "complete": true,
+      "domains": {
+        "X": [
+          "n1_X0",
+          "n1_X1"
+        ],
+        "Y": [
+          "n1_Y0",
+          "n1_Y1"
+        ],
+        "Z": [
+          "n1_Z0",
+          "n1_Z1"
+        ]
+      },
+      "initial": 0.5,
+      "key": "c0006",
+      "namespace": 1,
+      "order": 0,
+      "queries": [
+        {
+          "kind": "conditional",
+          "slot": 0
+        },
+        {
+          "kind": "conditional",
+          "slot": 1
+        },
+        {
+          "kind": "conditional",
+          "slot": 2
+        },
+        {
+          "kind": "conditional",
+          "slot": 3
+        },
+        {
+          "kind": "unary",
+          "slot": null
+        }
+      ],
+      "r_mask": 9,
+      "relation_tables_complete": true,
+      "relations": {
+        "R": [
+          "n1_R_0",
+          "n1_R_3"
+        ],
+        "S": [
+          "n1_S_1",
+          "n1_S_2"
+        ],
+        "U": [
+          "n1_U_1",
+          "n1_U_2"
+        ]
+      },
+      "s_mask": 6,
+      "u_mask": 6,
+      "vocabulary": [
+        "n1_X0",
+        "n1_X1",
+        "n1_Y0",
+        "n1_Y1",
+        "n1_Z0",
+        "n1_Z1",
+        "n1_aux6",
+        "n1_aux7"
+      ]
+    },
+    {
+      "arms": [
+        "native_compact",
+        "exact_joint",
+        "native_joint"
+      ],
+      "complete": true,
+      "domains": {
+        "X": [
+          "n1_X0",
+          "n1_X1"
+        ],
+        "Y": [
+          "n1_Y0",
+          "n1_Y1"
+        ],
+        "Z": [
+          "n1_Z0",
+          "n1_Z1"
+        ]
+      },
+      "initial": 0.5,
+      "key": "c0007",
+      "namespace": 1,
+      "order": 1,
+      "queries": [
+        {
+          "kind": "conditional",
+          "slot": 3
+        },
+        {
+          "kind": "conditional",
+          "slot": 2
+        },
+        {
+          "kind": "conditional",
+          "slot": 1
+        },
+        {
+          "kind": "conditional",
+          "slot": 0
+        },
+        {
+          "kind": "unary",
+          "slot": null
+        }
+      ],
+      "r_mask": 9,
+      "relation_tables_complete": true,
+      "relations": {
+        "R": [
+          "n1_R_3",
+          "n1_R_0"
+        ],
+        "S": [
+          "n1_S_2",
+          "n1_S_1"
+        ],
+        "U": [
+          "n1_U_2",
+          "n1_U_1"
+        ]
+      },
+      "s_mask": 6,
+      "u_mask": 6,
+      "vocabulary": [
+        "n1_X0",
+        "n1_X1",
+        "n1_Y0",
+        "n1_Y1",
+        "n1_Z0",
+        "n1_Z1",
+        "n1_aux6",
+        "n1_aux7"
+      ]
+    },
+    {
+      "arms": [
+        "exact_joint",
+        "native_joint",
+        "native_compact"
+      ],
+      "complete": true,
+      "domains": {
+        "X": [
+          "n0_X0",
+          "n0_X1"
+        ],
+        "Y": [
+          "n0_Y0",
+          "n0_Y1"
+        ],
+        "Z": [
+          "n0_Z0",
+          "n0_Z1"
+        ]
+      },
+      "initial": 0.5,
+      "key": "c0008",
+      "namespace": 0,
+      "order": 0,
+      "queries": [
+        {
+          "kind": "conditional",
+          "slot": 0
+        },
+        {
+          "kind": "conditional",
+          "slot": 1
+        },
+        {
+          "kind": "conditional",
+          "slot": 2
+        },
+        {
+          "kind": "conditional",
+          "slot": 3
+        },
+        {
+          "kind": "unary",
+          "slot": null
+        }
+      ],
+      "r_mask": 9,
+      "relation_tables_complete": true,
+      "relations": {
+        "R": [
+          "n0_R_0",
+          "n0_R_3"
+        ],
+        "S": [
+          "n0_S_0",
+          "n0_S_2"
+        ],
+        "U": [
+          "n0_U_0",
+          "n0_U_2"
+        ]
+      },
+      "s_mask": 5,
+      "u_mask": 5,
+      "vocabulary": [
+        "n0_X0",
+        "n0_X1",
+        "n0_Y0",
+        "n0_Y1",
+        "n0_Z0",
+        "n0_Z1",
+        "n0_aux6",
+        "n0_aux7"
+      ]
+    },
+    {
+      "arms": [
+        "native_joint",
+        "native_compact",
+        "exact_joint"
+      ],
+      "complete": true,
+      "domains": {
+        "X": [
+          "n0_X0",
+          "n0_X1"
+        ],
+        "Y": [
+          "n0_Y0",
+          "n0_Y1"
+        ],
+        "Z": [
+          "n0_Z0",
+          "n0_Z1"
+        ]
+      },
+      "initial": 0.5,
+      "key": "c0009",
+      "namespace": 0,
+      "order": 1,
+      "queries": [
+        {
+          "kind": "conditional",
+          "slot": 3
+        },
+        {
+          "kind": "conditional",
+          "slot": 2
+        },
+        {
+          "kind": "conditional",
+          "slot": 1
+        },
+        {
+          "kind": "conditional",
+          "slot": 0
+        },
+        {
+          "kind": "unary",
+          "slot": null
+        }
+      ],
+      "r_mask": 9,
+      "relation_tables_complete": true,
+      "relations": {
+        "R": [
+          "n0_R_3",
+          "n0_R_0"
+        ],
+        "S": [
+          "n0_S_2",
+          "n0_S_0"
+        ],
+        "U": [
+          "n0_U_2",
+          "n0_U_0"
+        ]
+      },
+      "s_mask": 5,
+      "u_mask": 5,
+      "vocabulary": [
+        "n0_X0",
+        "n0_X1",
+        "n0_Y0",
+        "n0_Y1",
+        "n0_Z0",
+        "n0_Z1",
+        "n0_aux6",
+        "n0_aux7"
+      ]
+    },
+    {
+      "arms": [
+        "native_compact",
+        "exact_joint",
+        "native_joint"
+      ],
+      "complete": true,
+      "domains": {
+        "X": [
+          "n1_X0",
+          "n1_X1"
+        ],
+        "Y": [
+          "n1_Y0",
+          "n1_Y1"
+        ],
+        "Z": [
+          "n1_Z0",
+          "n1_Z1"
+        ]
+      },
+      "initial": 0.5,
+      "key": "c0010",
+      "namespace": 1,
+      "order": 0,
+      "queries": [
+        {
+          "kind": "conditional",
+          "slot": 0
+        },
+        {
+          "kind": "conditional",
+          "slot": 1
+        },
+        {
+          "kind": "conditional",
+          "slot": 2
+        },
+        {
+          "kind": "conditional",
+          "slot": 3
+        },
+        {
+          "kind": "unary",
+          "slot": null
+        }
+      ],
+      "r_mask": 9,
+      "relation_tables_complete": true,
+      "relations": {
+        "R": [
+          "n1_R_0",
+          "n1_R_3"
+        ],
+        "S": [
+          "n1_S_0",
+          "n1_S_2"
+        ],
+        "U": [
+          "n1_U_0",
+          "n1_U_2"
+        ]
+      },
+      "s_mask": 5,
+      "u_mask": 5,
+      "vocabulary": [
+        "n1_X0",
+        "n1_X1",
+        "n1_Y0",
+        "n1_Y1",
+        "n1_Z0",
+        "n1_Z1",
+        "n1_aux6",
+        "n1_aux7"
+      ]
+    },
+    {
+      "arms": [
+        "exact_joint",
+        "native_joint",
+        "native_compact"
+      ],
+      "complete": true,
+      "domains": {
+        "X": [
+          "n1_X0",
+          "n1_X1"
+        ],
+        "Y": [
+          "n1_Y0",
+          "n1_Y1"
+        ],
+        "Z": [
+          "n1_Z0",
+          "n1_Z1"
+        ]
+      },
+      "initial": 0.5,
+      "key": "c0011",
+      "namespace": 1,
+      "order": 1,
+      "queries": [
+        {
+          "kind": "conditional",
+          "slot": 3
+        },
+        {
+          "kind": "conditional",
+          "slot": 2
+        },
+        {
+          "kind": "conditional",
+          "slot": 1
+        },
+        {
+          "kind": "conditional",
+          "slot": 0
+        },
+        {
+          "kind": "unary",
+          "slot": null
+        }
+      ],
+      "r_mask": 9,
+      "relation_tables_complete": true,
+      "relations": {
+        "R": [
+          "n1_R_3",
+          "n1_R_0"
+        ],
+        "S": [
+          "n1_S_2",
+          "n1_S_0"
+        ],
+        "U": [
+          "n1_U_2",
+          "n1_U_0"
+        ]
+      },
+      "s_mask": 5,
+      "u_mask": 5,
+      "vocabulary": [
+        "n1_X0",
+        "n1_X1",
+        "n1_Y0",
+        "n1_Y1",
+        "n1_Z0",
+        "n1_Z1",
+        "n1_aux6",
+        "n1_aux7"
+      ]
+    },
+    {
+      "arms": [
+        "native_joint",
+        "native_compact",
+        "exact_joint"
+      ],
+      "complete": true,
+      "domains": {
+        "X": [
+          "n0_X0",
+          "n0_X1"
+        ],
+        "Y": [
+          "n0_Y0",
+          "n0_Y1"
+        ],
+        "Z": [
+          "n0_Z0",
+          "n0_Z1"
+        ]
+      },
+      "initial": 0.5,
+      "key": "c0012",
+      "namespace": 0,
+      "order": 0,
+      "queries": [
+        {
+          "kind": "conditional",
+          "slot": 0
+        },
+        {
+          "kind": "conditional",
+          "slot": 1
+        },
+        {
+          "kind": "conditional",
+          "slot": 2
+        },
+        {
+          "kind": "conditional",
+          "slot": 3
+        },
+        {
+          "kind": "unary",
+          "slot": null
+        }
+      ],
+      "r_mask": 9,
+      "relation_tables_complete": true,
+      "relations": {
+        "R": [
+          "n0_R_0",
+          "n0_R_3"
+        ],
+        "S": [
+          "n0_S_1",
+          "n0_S_3"
+        ],
+        "U": [
+          "n0_U_1",
+          "n0_U_3"
+        ]
+      },
+      "s_mask": 10,
+      "u_mask": 10,
+      "vocabulary": [
+        "n0_X0",
+        "n0_X1",
+        "n0_Y0",
+        "n0_Y1",
+        "n0_Z0",
+        "n0_Z1",
+        "n0_aux6",
+        "n0_aux7"
+      ]
+    },
+    {
+      "arms": [
+        "native_compact",
+        "exact_joint",
+        "native_joint"
+      ],
+      "complete": true,
+      "domains": {
+        "X": [
+          "n0_X0",
+          "n0_X1"
+        ],
+        "Y": [
+          "n0_Y0",
+          "n0_Y1"
+        ],
+        "Z": [
+          "n0_Z0",
+          "n0_Z1"
+        ]
+      },
+      "initial": 0.5,
+      "key": "c0013",
+      "namespace": 0,
+      "order": 1,
+      "queries": [
+        {
+          "kind": "conditional",
+          "slot": 3
+        },
+        {
+          "kind": "conditional",
+          "slot": 2
+        },
+        {
+          "kind": "conditional",
+          "slot": 1
+        },
+        {
+          "kind": "conditional",
+          "slot": 0
+        },
+        {
+          "kind": "unary",
+          "slot": null
+        }
+      ],
+      "r_mask": 9,
+      "relation_tables_complete": true,
+      "relations": {
+        "R": [
+          "n0_R_3",
+          "n0_R_0"
+        ],
+        "S": [
+          "n0_S_3",
+          "n0_S_1"
+        ],
+        "U": [
+          "n0_U_3",
+          "n0_U_1"
+        ]
+      },
+      "s_mask": 10,
+      "u_mask": 10,
+      "vocabulary": [
+        "n0_X0",
+        "n0_X1",
+        "n0_Y0",
+        "n0_Y1",
+        "n0_Z0",
+        "n0_Z1",
+        "n0_aux6",
+        "n0_aux7"
+      ]
+    },
+    {
+      "arms": [
+        "exact_joint",
+        "native_joint",
+        "native_compact"
+      ],
+      "complete": true,
+      "domains": {
+        "X": [
+          "n1_X0",
+          "n1_X1"
+        ],
+        "Y": [
+          "n1_Y0",
+          "n1_Y1"
+        ],
+        "Z": [
+          "n1_Z0",
+          "n1_Z1"
+        ]
+      },
+      "initial": 0.5,
+      "key": "c0014",
+      "namespace": 1,
+      "order": 0,
+      "queries": [
+        {
+          "kind": "conditional",
+          "slot": 0
+        },
+        {
+          "kind": "conditional",
+          "slot": 1
+        },
+        {
+          "kind": "conditional",
+          "slot": 2
+        },
+        {
+          "kind": "conditional",
+          "slot": 3
+        },
+        {
+          "kind": "unary",
+          "slot": null
+        }
+      ],
+      "r_mask": 9,
+      "relation_tables_complete": true,
+      "relations": {
+        "R": [
+          "n1_R_0",
+          "n1_R_3"
+        ],
+        "S": [
+          "n1_S_1",
+          "n1_S_3"
+        ],
+        "U": [
+          "n1_U_1",
+          "n1_U_3"
+        ]
+      },
+      "s_mask": 10,
+      "u_mask": 10,
+      "vocabulary": [
+        "n1_X0",
+        "n1_X1",
+        "n1_Y0",
+        "n1_Y1",
+        "n1_Z0",
+        "n1_Z1",
+        "n1_aux6",
+        "n1_aux7"
+      ]
+    },
+    {
+      "arms": [
+        "native_joint",
+        "native_compact",
+        "exact_joint"
+      ],
+      "complete": true,
+      "domains": {
+        "X": [
+          "n1_X0",
+          "n1_X1"
+        ],
+        "Y": [
+          "n1_Y0",
+          "n1_Y1"
+        ],
+        "Z": [
+          "n1_Z0",
+          "n1_Z1"
+        ]
+      },
+      "initial": 0.5,
+      "key": "c0015",
+      "namespace": 1,
+      "order": 1,
+      "queries": [
+        {
+          "kind": "conditional",
+          "slot": 3
+        },
+        {
+          "kind": "conditional",
+          "slot": 2
+        },
+        {
+          "kind": "conditional",
+          "slot": 1
+        },
+        {
+          "kind": "conditional",
+          "slot": 0
+        },
+        {
+          "kind": "unary",
+          "slot": null
+        }
+      ],
+      "r_mask": 9,
+      "relation_tables_complete": true,
+      "relations": {
+        "R": [
+          "n1_R_3",
+          "n1_R_0"
+        ],
+        "S": [
+          "n1_S_3",
+          "n1_S_1"
+        ],
+        "U": [
+          "n1_U_3",
+          "n1_U_1"
+        ]
+      },
+      "s_mask": 10,
+      "u_mask": 10,
+      "vocabulary": [
+        "n1_X0",
+        "n1_X1",
+        "n1_Y0",
+        "n1_Y1",
+        "n1_Z0",
+        "n1_Z1",
+        "n1_aux6",
+        "n1_aux7"
+      ]
+    },
+    {
+      "arms": [
+        "native_compact",
+        "exact_joint",
+        "native_joint"
+      ],
+      "complete": true,
+      "domains": {
+        "X": [
+          "n0_X0",
+          "n0_X1"
+        ],
+        "Y": [
+          "n0_Y0",
+          "n0_Y1"
+        ],
+        "Z": [
+          "n0_Z0",
+          "n0_Z1"
+        ]
+      },
+      "initial": 0.5,
+      "key": "c0016",
+      "namespace": 0,
+      "order": 0,
+      "queries": [
+        {
+          "kind": "conditional",
+          "slot": 0
+        },
+        {
+          "kind": "conditional",
+          "slot": 1
+        },
+        {
+          "kind": "conditional",
+          "slot": 2
+        },
+        {
+          "kind": "conditional",
+          "slot": 3
+        },
+        {
+          "kind": "unary",
+          "slot": null
+        }
+      ],
+      "r_mask": 9,
+      "relation_tables_complete": true,
+      "relations": {
+        "R": [
+          "n0_R_0",
+          "n0_R_3"
+        ],
+        "S": [
+          "n0_S_0",
+          "n0_S_3"
+        ],
+        "U": [
+          "n0_U_1",
+          "n0_U_2"
+        ]
+      },
+      "s_mask": 9,
+      "u_mask": 6,
+      "vocabulary": [
+        "n0_X0",
+        "n0_X1",
+        "n0_Y0",
+        "n0_Y1",
+        "n0_Z0",
+        "n0_Z1",
+        "n0_aux6",
+        "n0_aux7"
+      ]
+    },
+    {
+      "arms": [
+        "exact_joint",
+        "native_joint",
+        "native_compact"
+      ],
+      "complete": true,
+      "domains": {
+        "X": [
+          "n0_X0",
+          "n0_X1"
+        ],
+        "Y": [
+          "n0_Y0",
+          "n0_Y1"
+        ],
+        "Z": [
+          "n0_Z0",
+          "n0_Z1"
+        ]
+      },
+      "initial": 0.5,
+      "key": "c0017",
+      "namespace": 0,
+      "order": 1,
+      "queries": [
+        {
+          "kind": "conditional",
+          "slot": 3
+        },
+        {
+          "kind": "conditional",
+          "slot": 2
+        },
+        {
+          "kind": "conditional",
+          "slot": 1
+        },
+        {
+          "kind": "conditional",
+          "slot": 0
+        },
+        {
+          "kind": "unary",
+          "slot": null
+        }
+      ],
+      "r_mask": 9,
+      "relation_tables_complete": true,
+      "relations": {
+        "R": [
+          "n0_R_3",
+          "n0_R_0"
+        ],
+        "S": [
+          "n0_S_3",
+          "n0_S_0"
+        ],
+        "U": [
+          "n0_U_2",
+          "n0_U_1"
+        ]
+      },
+      "s_mask": 9,
+      "u_mask": 6,
+      "vocabulary": [
+        "n0_X0",
+        "n0_X1",
+        "n0_Y0",
+        "n0_Y1",
+        "n0_Z0",
+        "n0_Z1",
+        "n0_aux6",
+        "n0_aux7"
+      ]
+    },
+    {
+      "arms": [
+        "native_joint",
+        "native_compact",
+        "exact_joint"
+      ],
+      "complete": true,
+      "domains": {
+        "X": [
+          "n1_X0",
+          "n1_X1"
+        ],
+        "Y": [
+          "n1_Y0",
+          "n1_Y1"
+        ],
+        "Z": [
+          "n1_Z0",
+          "n1_Z1"
+        ]
+      },
+      "initial": 0.5,
+      "key": "c0018",
+      "namespace": 1,
+      "order": 0,
+      "queries": [
+        {
+          "kind": "conditional",
+          "slot": 0
+        },
+        {
+          "kind": "conditional",
+          "slot": 1
+        },
+        {
+          "kind": "conditional",
+          "slot": 2
+        },
+        {
+          "kind": "conditional",
+          "slot": 3
+        },
+        {
+          "kind": "unary",
+          "slot": null
+        }
+      ],
+      "r_mask": 9,
+      "relation_tables_complete": true,
+      "relations": {
+        "R": [
+          "n1_R_0",
+          "n1_R_3"
+        ],
+        "S": [
+          "n1_S_0",
+          "n1_S_3"
+        ],
+        "U": [
+          "n1_U_1",
+          "n1_U_2"
+        ]
+      },
+      "s_mask": 9,
+      "u_mask": 6,
+      "vocabulary": [
+        "n1_X0",
+        "n1_X1",
+        "n1_Y0",
+        "n1_Y1",
+        "n1_Z0",
+        "n1_Z1",
+        "n1_aux6",
+        "n1_aux7"
+      ]
+    },
+    {
+      "arms": [
+        "native_compact",
+        "exact_joint",
+        "native_joint"
+      ],
+      "complete": true,
+      "domains": {
+        "X": [
+          "n1_X0",
+          "n1_X1"
+        ],
+        "Y": [
+          "n1_Y0",
+          "n1_Y1"
+        ],
+        "Z": [
+          "n1_Z0",
+          "n1_Z1"
+        ]
+      },
+      "initial": 0.5,
+      "key": "c0019",
+      "namespace": 1,
+      "order": 1,
+      "queries": [
+        {
+          "kind": "conditional",
+          "slot": 3
+        },
+        {
+          "kind": "conditional",
+          "slot": 2
+        },
+        {
+          "kind": "conditional",
+          "slot": 1
+        },
+        {
+          "kind": "conditional",
+          "slot": 0
+        },
+        {
+          "kind": "unary",
+          "slot": null
+        }
+      ],
+      "r_mask": 9,
+      "relation_tables_complete": true,
+      "relations": {
+        "R": [
+          "n1_R_3",
+          "n1_R_0"
+        ],
+        "S": [
+          "n1_S_3",
+          "n1_S_0"
+        ],
+        "U": [
+          "n1_U_2",
+          "n1_U_1"
+        ]
+      },
+      "s_mask": 9,
+      "u_mask": 6,
+      "vocabulary": [
+        "n1_X0",
+        "n1_X1",
+        "n1_Y0",
+        "n1_Y1",
+        "n1_Z0",
+        "n1_Z1",
+        "n1_aux6",
+        "n1_aux7"
+      ]
+    },
+    {
+      "arms": [
+        "exact_joint",
+        "native_joint",
+        "native_compact"
+      ],
+      "complete": true,
+      "domains": {
+        "X": [
+          "n0_X0",
+          "n0_X1"
+        ],
+        "Y": [
+          "n0_Y0",
+          "n0_Y1"
+        ],
+        "Z": [
+          "n0_Z0",
+          "n0_Z1"
+        ]
+      },
+      "initial": 0.5,
+      "key": "c0020",
+      "namespace": 0,
+      "order": 0,
+      "queries": [
+        {
+          "kind": "conditional",
+          "slot": 0
+        },
+        {
+          "kind": "conditional",
+          "slot": 1
+        },
+        {
+          "kind": "conditional",
+          "slot": 2
+        },
+        {
+          "kind": "conditional",
+          "slot": 3
+        },
+        {
+          "kind": "unary",
+          "slot": null
+        }
+      ],
+      "r_mask": 1,
+      "relation_tables_complete": true,
+      "relations": {
+        "R": [
+          "n0_R_0"
+        ],
+        "S": [
+          "n0_S_0"
+        ],
+        "U": [
+          "n0_U_0"
+        ]
+      },
+      "s_mask": 1,
+      "u_mask": 1,
+      "vocabulary": [
+        "n0_X0",
+        "n0_X1",
+        "n0_Y0",
+        "n0_Y1",
+        "n0_Z0",
+        "n0_Z1",
+        "n0_aux6",
+        "n0_aux7"
+      ]
+    },
+    {
+      "arms": [
+        "native_joint",
+        "native_compact",
+        "exact_joint"
+      ],
+      "complete": true,
+      "domains": {
+        "X": [
+          "n0_X0",
+          "n0_X1"
+        ],
+        "Y": [
+          "n0_Y0",
+          "n0_Y1"
+        ],
+        "Z": [
+          "n0_Z0",
+          "n0_Z1"
+        ]
+      },
+      "initial": 0.5,
+      "key": "c0021",
+      "namespace": 0,
+      "order": 1,
+      "queries": [
+        {
+          "kind": "conditional",
+          "slot": 3
+        },
+        {
+          "kind": "conditional",
+          "slot": 2
+        },
+        {
+          "kind": "conditional",
+          "slot": 1
+        },
+        {
+          "kind": "conditional",
+          "slot": 0
+        },
+        {
+          "kind": "unary",
+          "slot": null
+        }
+      ],
+      "r_mask": 1,
+      "relation_tables_complete": true,
+      "relations": {
+        "R": [
+          "n0_R_0"
+        ],
+        "S": [
+          "n0_S_0"
+        ],
+        "U": [
+          "n0_U_0"
+        ]
+      },
+      "s_mask": 1,
+      "u_mask": 1,
+      "vocabulary": [
+        "n0_X0",
+        "n0_X1",
+        "n0_Y0",
+        "n0_Y1",
+        "n0_Z0",
+        "n0_Z1",
+        "n0_aux6",
+        "n0_aux7"
+      ]
+    },
+    {
+      "arms": [
+        "native_compact",
+        "exact_joint",
+        "native_joint"
+      ],
+      "complete": true,
+      "domains": {
+        "X": [
+          "n1_X0",
+          "n1_X1"
+        ],
+        "Y": [
+          "n1_Y0",
+          "n1_Y1"
+        ],
+        "Z": [
+          "n1_Z0",
+          "n1_Z1"
+        ]
+      },
+      "initial": 0.5,
+      "key": "c0022",
+      "namespace": 1,
+      "order": 0,
+      "queries": [
+        {
+          "kind": "conditional",
+          "slot": 0
+        },
+        {
+          "kind": "conditional",
+          "slot": 1
+        },
+        {
+          "kind": "conditional",
+          "slot": 2
+        },
+        {
+          "kind": "conditional",
+          "slot": 3
+        },
+        {
+          "kind": "unary",
+          "slot": null
+        }
+      ],
+      "r_mask": 1,
+      "relation_tables_complete": true,
+      "relations": {
+        "R": [
+          "n1_R_0"
+        ],
+        "S": [
+          "n1_S_0"
+        ],
+        "U": [
+          "n1_U_0"
+        ]
+      },
+      "s_mask": 1,
+      "u_mask": 1,
+      "vocabulary": [
+        "n1_X0",
+        "n1_X1",
+        "n1_Y0",
+        "n1_Y1",
+        "n1_Z0",
+        "n1_Z1",
+        "n1_aux6",
+        "n1_aux7"
+      ]
+    },
+    {
+      "arms": [
+        "exact_joint",
+        "native_joint",
+        "native_compact"
+      ],
+      "complete": true,
+      "domains": {
+        "X": [
+          "n1_X0",
+          "n1_X1"
+        ],
+        "Y": [
+          "n1_Y0",
+          "n1_Y1"
+        ],
+        "Z": [
+          "n1_Z0",
+          "n1_Z1"
+        ]
+      },
+      "initial": 0.5,
+      "key": "c0023",
+      "namespace": 1,
+      "order": 1,
+      "queries": [
+        {
+          "kind": "conditional",
+          "slot": 3
+        },
+        {
+          "kind": "conditional",
+          "slot": 2
+        },
+        {
+          "kind": "conditional",
+          "slot": 1
+        },
+        {
+          "kind": "conditional",
+          "slot": 0
+        },
+        {
+          "kind": "unary",
+          "slot": null
+        }
+      ],
+      "r_mask": 1,
+      "relation_tables_complete": true,
+      "relations": {
+        "R": [
+          "n1_R_0"
+        ],
+        "S": [
+          "n1_S_0"
+        ],
+        "U": [
+          "n1_U_0"
+        ]
+      },
+      "s_mask": 1,
+      "u_mask": 1,
+      "vocabulary": [
+        "n1_X0",
+        "n1_X1",
+        "n1_Y0",
+        "n1_Y1",
+        "n1_Z0",
+        "n1_Z1",
+        "n1_aux6",
+        "n1_aux7"
+      ]
+    },
+    {
+      "arms": [
+        "native_joint",
+        "native_compact",
+        "exact_joint"
+      ],
+      "complete": true,
+      "domains": {
+        "X": [
+          "n0_X0",
+          "n0_X1"
+        ],
+        "Y": [
+          "n0_Y0",
+          "n0_Y1"
+        ],
+        "Z": [
+          "n0_Z0",
+          "n0_Z1"
+        ]
+      },
+      "initial": 0.5,
+      "key": "c0024",
+      "namespace": 0,
+      "order": 0,
+      "queries": [
+        {
+          "kind": "conditional",
+          "slot": 0
+        },
+        {
+          "kind": "conditional",
+          "slot": 1
+        },
+        {
+          "kind": "conditional",
+          "slot": 2
+        },
+        {
+          "kind": "conditional",
+          "slot": 3
+        },
+        {
+          "kind": "unary",
+          "slot": null
+        }
+      ],
+      "r_mask": 1,
+      "relation_tables_complete": true,
+      "relations": {
+        "R": [
+          "n0_R_0"
+        ],
+        "S": [
+          "n0_S_0",
+          "n0_S_1"
+        ],
+        "U": [
+          "n0_U_0",
+          "n0_U_1"
+        ]
+      },
+      "s_mask": 3,
+      "u_mask": 3,
+      "vocabulary": [
+        "n0_X0",
+        "n0_X1",
+        "n0_Y0",
+        "n0_Y1",
+        "n0_Z0",
+        "n0_Z1",
+        "n0_aux6",
+        "n0_aux7"
+      ]
+    },
+    {
+      "arms": [
+        "native_compact",
+        "exact_joint",
+        "native_joint"
+      ],
+      "complete": true,
+      "domains": {
+        "X": [
+          "n0_X0",
+          "n0_X1"
+        ],
+        "Y": [
+          "n0_Y0",
+          "n0_Y1"
+        ],
+        "Z": [
+          "n0_Z0",
+          "n0_Z1"
+        ]
+      },
+      "initial": 0.5,
+      "key": "c0025",
+      "namespace": 0,
+      "order": 1,
+      "queries": [
+        {
+          "kind": "conditional",
+          "slot": 3
+        },
+        {
+          "kind": "conditional",
+          "slot": 2
+        },
+        {
+          "kind": "conditional",
+          "slot": 1
+        },
+        {
+          "kind": "conditional",
+          "slot": 0
+        },
+        {
+          "kind": "unary",
+          "slot": null
+        }
+      ],
+      "r_mask": 1,
+      "relation_tables_complete": true,
+      "relations": {
+        "R": [
+          "n0_R_0"
+        ],
+        "S": [
+          "n0_S_1",
+          "n0_S_0"
+        ],
+        "U": [
+          "n0_U_1",
+          "n0_U_0"
+        ]
+      },
+      "s_mask": 3,
+      "u_mask": 3,
+      "vocabulary": [
+        "n0_X0",
+        "n0_X1",
+        "n0_Y0",
+        "n0_Y1",
+        "n0_Z0",
+        "n0_Z1",
+        "n0_aux6",
+        "n0_aux7"
+      ]
+    },
+    {
+      "arms": [
+        "exact_joint",
+        "native_joint",
+        "native_compact"
+      ],
+      "complete": true,
+      "domains": {
+        "X": [
+          "n1_X0",
+          "n1_X1"
+        ],
+        "Y": [
+          "n1_Y0",
+          "n1_Y1"
+        ],
+        "Z": [
+          "n1_Z0",
+          "n1_Z1"
+        ]
+      },
+      "initial": 0.5,
+      "key": "c0026",
+      "namespace": 1,
+      "order": 0,
+      "queries": [
+        {
+          "kind": "conditional",
+          "slot": 0
+        },
+        {
+          "kind": "conditional",
+          "slot": 1
+        },
+        {
+          "kind": "conditional",
+          "slot": 2
+        },
+        {
+          "kind": "conditional",
+          "slot": 3
+        },
+        {
+          "kind": "unary",
+          "slot": null
+        }
+      ],
+      "r_mask": 1,
+      "relation_tables_complete": true,
+      "relations": {
+        "R": [
+          "n1_R_0"
+        ],
+        "S": [
+          "n1_S_0",
+          "n1_S_1"
+        ],
+        "U": [
+          "n1_U_0",
+          "n1_U_1"
+        ]
+      },
+      "s_mask": 3,
+      "u_mask": 3,
+      "vocabulary": [
+        "n1_X0",
+        "n1_X1",
+        "n1_Y0",
+        "n1_Y1",
+        "n1_Z0",
+        "n1_Z1",
+        "n1_aux6",
+        "n1_aux7"
+      ]
+    },
+    {
+      "arms": [
+        "native_joint",
+        "native_compact",
+        "exact_joint"
+      ],
+      "complete": true,
+      "domains": {
+        "X": [
+          "n1_X0",
+          "n1_X1"
+        ],
+        "Y": [
+          "n1_Y0",
+          "n1_Y1"
+        ],
+        "Z": [
+          "n1_Z0",
+          "n1_Z1"
+        ]
+      },
+      "initial": 0.5,
+      "key": "c0027",
+      "namespace": 1,
+      "order": 1,
+      "queries": [
+        {
+          "kind": "conditional",
+          "slot": 3
+        },
+        {
+          "kind": "conditional",
+          "slot": 2
+        },
+        {
+          "kind": "conditional",
+          "slot": 1
+        },
+        {
+          "kind": "conditional",
+          "slot": 0
+        },
+        {
+          "kind": "unary",
+          "slot": null
+        }
+      ],
+      "r_mask": 1,
+      "relation_tables_complete": true,
+      "relations": {
+        "R": [
+          "n1_R_0"
+        ],
+        "S": [
+          "n1_S_1",
+          "n1_S_0"
+        ],
+        "U": [
+          "n1_U_1",
+          "n1_U_0"
+        ]
+      },
+      "s_mask": 3,
+      "u_mask": 3,
+      "vocabulary": [
+        "n1_X0",
+        "n1_X1",
+        "n1_Y0",
+        "n1_Y1",
+        "n1_Z0",
+        "n1_Z1",
+        "n1_aux6",
+        "n1_aux7"
+      ]
+    },
+    {
+      "arms": [
+        "native_compact",
+        "exact_joint",
+        "native_joint"
+      ],
+      "complete": true,
+      "domains": {
+        "X": [
+          "n0_X0",
+          "n0_X1"
+        ],
+        "Y": [
+          "n0_Y0",
+          "n0_Y1"
+        ],
+        "Z": [
+          "n0_Z0",
+          "n0_Z1"
+        ]
+      },
+      "initial": 0.5,
+      "key": "c0028",
+      "namespace": 0,
+      "order": 0,
+      "queries": [
+        {
+          "kind": "conditional",
+          "slot": 0
+        },
+        {
+          "kind": "conditional",
+          "slot": 1
+        },
+        {
+          "kind": "conditional",
+          "slot": 2
+        },
+        {
+          "kind": "conditional",
+          "slot": 3
+        },
+        {
+          "kind": "unary",
+          "slot": null
+        }
+      ],
+      "r_mask": 6,
+      "relation_tables_complete": true,
+      "relations": {
+        "R": [
+          "n0_R_1",
+          "n0_R_2"
+        ],
+        "S": [
+          "n0_S_0",
+          "n0_S_3"
+        ],
+        "U": [
+          "n0_U_1",
+          "n0_U_2"
+        ]
+      },
+      "s_mask": 9,
+      "u_mask": 6,
+      "vocabulary": [
+        "n0_X0",
+        "n0_X1",
+        "n0_Y0",
+        "n0_Y1",
+        "n0_Z0",
+        "n0_Z1",
+        "n0_aux6",
+        "n0_aux7"
+      ]
+    },
+    {
+      "arms": [
+        "exact_joint",
+        "native_joint",
+        "native_compact"
+      ],
+      "complete": true,
+      "domains": {
+        "X": [
+          "n0_X0",
+          "n0_X1"
+        ],
+        "Y": [
+          "n0_Y0",
+          "n0_Y1"
+        ],
+        "Z": [
+          "n0_Z0",
+          "n0_Z1"
+        ]
+      },
+      "initial": 0.5,
+      "key": "c0029",
+      "namespace": 0,
+      "order": 1,
+      "queries": [
+        {
+          "kind": "conditional",
+          "slot": 3
+        },
+        {
+          "kind": "conditional",
+          "slot": 2
+        },
+        {
+          "kind": "conditional",
+          "slot": 1
+        },
+        {
+          "kind": "conditional",
+          "slot": 0
+        },
+        {
+          "kind": "unary",
+          "slot": null
+        }
+      ],
+      "r_mask": 6,
+      "relation_tables_complete": true,
+      "relations": {
+        "R": [
+          "n0_R_2",
+          "n0_R_1"
+        ],
+        "S": [
+          "n0_S_3",
+          "n0_S_0"
+        ],
+        "U": [
+          "n0_U_2",
+          "n0_U_1"
+        ]
+      },
+      "s_mask": 9,
+      "u_mask": 6,
+      "vocabulary": [
+        "n0_X0",
+        "n0_X1",
+        "n0_Y0",
+        "n0_Y1",
+        "n0_Z0",
+        "n0_Z1",
+        "n0_aux6",
+        "n0_aux7"
+      ]
+    },
+    {
+      "arms": [
+        "native_joint",
+        "native_compact",
+        "exact_joint"
+      ],
+      "complete": true,
+      "domains": {
+        "X": [
+          "n1_X0",
+          "n1_X1"
+        ],
+        "Y": [
+          "n1_Y0",
+          "n1_Y1"
+        ],
+        "Z": [
+          "n1_Z0",
+          "n1_Z1"
+        ]
+      },
+      "initial": 0.5,
+      "key": "c0030",
+      "namespace": 1,
+      "order": 0,
+      "queries": [
+        {
+          "kind": "conditional",
+          "slot": 0
+        },
+        {
+          "kind": "conditional",
+          "slot": 1
+        },
+        {
+          "kind": "conditional",
+          "slot": 2
+        },
+        {
+          "kind": "conditional",
+          "slot": 3
+        },
+        {
+          "kind": "unary",
+          "slot": null
+        }
+      ],
+      "r_mask": 6,
+      "relation_tables_complete": true,
+      "relations": {
+        "R": [
+          "n1_R_1",
+          "n1_R_2"
+        ],
+        "S": [
+          "n1_S_0",
+          "n1_S_3"
+        ],
+        "U": [
+          "n1_U_1",
+          "n1_U_2"
+        ]
+      },
+      "s_mask": 9,
+      "u_mask": 6,
+      "vocabulary": [
+        "n1_X0",
+        "n1_X1",
+        "n1_Y0",
+        "n1_Y1",
+        "n1_Z0",
+        "n1_Z1",
+        "n1_aux6",
+        "n1_aux7"
+      ]
+    },
+    {
+      "arms": [
+        "native_compact",
+        "exact_joint",
+        "native_joint"
+      ],
+      "complete": true,
+      "domains": {
+        "X": [
+          "n1_X0",
+          "n1_X1"
+        ],
+        "Y": [
+          "n1_Y0",
+          "n1_Y1"
+        ],
+        "Z": [
+          "n1_Z0",
+          "n1_Z1"
+        ]
+      },
+      "initial": 0.5,
+      "key": "c0031",
+      "namespace": 1,
+      "order": 1,
+      "queries": [
+        {
+          "kind": "conditional",
+          "slot": 3
+        },
+        {
+          "kind": "conditional",
+          "slot": 2
+        },
+        {
+          "kind": "conditional",
+          "slot": 1
+        },
+        {
+          "kind": "conditional",
+          "slot": 0
+        },
+        {
+          "kind": "unary",
+          "slot": null
+        }
+      ],
+      "r_mask": 6,
+      "relation_tables_complete": true,
+      "relations": {
+        "R": [
+          "n1_R_2",
+          "n1_R_1"
+        ],
+        "S": [
+          "n1_S_3",
+          "n1_S_0"
+        ],
+        "U": [
+          "n1_U_2",
+          "n1_U_1"
+        ]
+      },
+      "s_mask": 9,
+      "u_mask": 6,
+      "vocabulary": [
+        "n1_X0",
+        "n1_X1",
+        "n1_Y0",
+        "n1_Y1",
+        "n1_Z0",
+        "n1_Z1",
+        "n1_aux6",
+        "n1_aux7"
+      ]
+    }
+  ],
+  "computation_reused": false,
+  "experiment": "EXP-85",
+  "kernel": {
+    "damping": 0.45,
+    "evidence_gain": 4.0,
+    "inhibition": 0.2,
+    "learning_rate": 0.25,
+    "margin_threshold": 0.3,
+    "max_circuits": 16,
+    "max_edges": 8,
+    "max_groups": 32,
+    "max_observation_requests": 2,
+    "max_path_length": 4,
+    "max_paths": 4,
+    "max_search": 2048,
+    "max_ticks": 160,
+    "min_valid_episodes": 3,
+    "patience": 4,
+    "prior_gain": 0.0,
+    "relation_gain": 2.0,
+    "residual_tolerance": 1e-06,
+    "self_excitation": 0.25,
+    "temperature": 1.0,
+    "top_down_gain": 0.35,
+    "weakening": 0.2
+  },
+  "limits": {
+    "child_address_space_bytes": 536870912,
+    "child_file_bytes": 8388608,
+    "parent_address_space_bytes": 536870912,
+    "parent_file_bytes": 136314880,
+    "raw_bytes": 134217728,
+    "stage_seconds": 120,
+    "total_seconds": 180
+  },
+  "maximum_logical_ticks": 1017600,
+  "maximum_measurement_requests": 0,
+  "maximum_native_settle_calls": 6360,
+  "programs": {
+    "feasible": {
+      "edge_count": 2,
+      "groups": [
+        {
+          "bias": 0.0,
+          "id": "e0",
+          "level": 0
+        },
+        {
+          "bias": 0.0,
+          "id": "e1",
+          "level": 0
+        },
+        {
+          "bias": 0.0,
+          "id": "complete",
+          "level": 0
+        },
+        {
+          "bias": 2.0,
+          "id": "goal",
+          "level": 1
+        },
+        {
+          "bias": -2.0,
+          "id": "pair0_1",
+          "level": 1
+        },
+        {
+          "bias": 0.0,
+          "id": "at_least_two",
+          "level": 1
+        },
+        {
+          "bias": -2.0,
+          "id": "one",
+          "level": 1
+        },
+        {
+          "bias": -2.0,
+          "id": "none",
+          "level": 1
+        },
+        {
+          "bias": -2.0,
+          "id": "unique",
+          "level": 1
+        },
+        {
+          "bias": -2.0,
+          "id": "many",
+          "level": 1
+        },
+        {
+          "bias": -0.0,
+          "id": "incomplete",
+          "level": 1
+        }
+      ],
+      "links": [
+        {
+          "kind": "support",
+          "source": "e0",
+          "target": "goal",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "goal",
+          "target": "e0",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "e1",
+          "target": "goal",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "goal",
+          "target": "e1",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "e0",
+          "target": "pair0_1",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "pair0_1",
+          "target": "e0",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "e1",
+          "target": "pair0_1",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "pair0_1",
+          "target": "e1",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "pair0_1",
+          "target": "at_least_two",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "at_least_two",
+          "target": "pair0_1",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "goal",
+          "target": "one",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "one",
+          "target": "goal",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "at_least_two",
+          "target": "one",
+          "weight": -2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "one",
+          "target": "at_least_two",
+          "weight": -0.35
+        },
+        {
+          "kind": "support",
+          "source": "complete",
+          "target": "none",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "none",
+          "target": "complete",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "goal",
+          "target": "none",
+          "weight": -2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "none",
+          "target": "goal",
+          "weight": -0.35
+        },
+        {
+          "kind": "support",
+          "source": "complete",
+          "target": "unique",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "unique",
+          "target": "complete",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "one",
+          "target": "unique",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "unique",
+          "target": "one",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "complete",
+          "target": "many",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "many",
+          "target": "complete",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "at_least_two",
+          "target": "many",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "many",
+          "target": "at_least_two",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "complete",
+          "target": "incomplete",
+          "weight": -2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "incomplete",
+          "target": "complete",
+          "weight": -0.35
+        }
+      ],
+      "paths": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "or0": {
+      "edge_count": 2,
+      "groups": [
+        {
+          "bias": -2.0,
+          "id": "goal",
+          "level": 1
+        }
+      ],
+      "links": [],
+      "paths": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "or1": {
+      "edge_count": 2,
+      "groups": [
+        {
+          "bias": 0.0,
+          "id": "m0",
+          "level": 0
+        },
+        {
+          "bias": 0.0,
+          "id": "goal",
+          "level": 1
+        }
+      ],
+      "links": [
+        {
+          "kind": "support",
+          "source": "m0",
+          "target": "goal",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "goal",
+          "target": "m0",
+          "weight": 0.35
+        }
+      ],
+      "paths": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "or2": {
+      "edge_count": 2,
+      "groups": [
+        {
+          "bias": 0.0,
+          "id": "m0",
+          "level": 0
+        },
+        {
+          "bias": 0.0,
+          "id": "m1",
+          "level": 0
+        },
+        {
+          "bias": 2.0,
+          "id": "goal",
+          "level": 1
+        }
+      ],
+      "links": [
+        {
+          "kind": "support",
+          "source": "m0",
+          "target": "goal",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "goal",
+          "target": "m0",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "m1",
+          "target": "goal",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "goal",
+          "target": "m1",
+          "weight": 0.35
+        }
+      ],
+      "paths": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "or3": {
+      "edge_count": 2,
+      "groups": [
+        {
+          "bias": 0.0,
+          "id": "m0",
+          "level": 0
+        },
+        {
+          "bias": 0.0,
+          "id": "m1",
+          "level": 0
+        },
+        {
+          "bias": 0.0,
+          "id": "m2",
+          "level": 0
+        },
+        {
+          "bias": 4.0,
+          "id": "goal",
+          "level": 1
+        }
+      ],
+      "links": [
+        {
+          "kind": "support",
+          "source": "m0",
+          "target": "goal",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "goal",
+          "target": "m0",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "m1",
+          "target": "goal",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "goal",
+          "target": "m1",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "m2",
+          "target": "goal",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "goal",
+          "target": "m2",
+          "weight": 0.35
+        }
+      ],
+      "paths": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "or4": {
+      "edge_count": 2,
+      "groups": [
+        {
+          "bias": 0.0,
+          "id": "m0",
+          "level": 0
+        },
+        {
+          "bias": 0.0,
+          "id": "m1",
+          "level": 0
+        },
+        {
+          "bias": 0.0,
+          "id": "m2",
+          "level": 0
+        },
+        {
+          "bias": 0.0,
+          "id": "m3",
+          "level": 0
+        },
+        {
+          "bias": 6.0,
+          "id": "goal",
+          "level": 1
+        }
+      ],
+      "links": [
+        {
+          "kind": "support",
+          "source": "m0",
+          "target": "goal",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "goal",
+          "target": "m0",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "m1",
+          "target": "goal",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "goal",
+          "target": "m1",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "m2",
+          "target": "goal",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "goal",
+          "target": "m2",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "m3",
+          "target": "goal",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "goal",
+          "target": "m3",
+          "weight": 0.35
+        }
+      ],
+      "paths": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "pair": {
+      "edge_count": 2,
+      "groups": [
+        {
+          "bias": 0.0,
+          "id": "m0",
+          "level": 0
+        },
+        {
+          "bias": 0.0,
+          "id": "m1",
+          "level": 0
+        },
+        {
+          "bias": 0.0,
+          "id": "m2",
+          "level": 0
+        },
+        {
+          "bias": -2.0,
+          "id": "goal",
+          "level": 1
+        }
+      ],
+      "links": [
+        {
+          "kind": "support",
+          "source": "m0",
+          "target": "goal",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "goal",
+          "target": "m0",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "m1",
+          "target": "goal",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "goal",
+          "target": "m1",
+          "weight": 0.35
+        }
+      ],
+      "paths": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "role": {
+      "edge_count": 2,
+      "groups": [
+        {
+          "bias": 0.0,
+          "id": "x0",
+          "level": 0
+        },
+        {
+          "bias": 0.0,
+          "id": "x1",
+          "level": 0
+        },
+        {
+          "bias": 0.0,
+          "id": "x2",
+          "level": 0
+        },
+        {
+          "bias": 0.0,
+          "id": "y0",
+          "level": 0
+        },
+        {
+          "bias": 0.0,
+          "id": "y1",
+          "level": 0
+        },
+        {
+          "bias": 0.0,
+          "id": "y2",
+          "level": 0
+        },
+        {
+          "bias": -2.0,
+          "id": "pos0",
+          "level": 1
+        },
+        {
+          "bias": -2.0,
+          "id": "neg0",
+          "level": 1
+        },
+        {
+          "bias": 2.0,
+          "id": "eq0",
+          "level": 1
+        },
+        {
+          "bias": -2.0,
+          "id": "pos1",
+          "level": 1
+        },
+        {
+          "bias": -2.0,
+          "id": "neg1",
+          "level": 1
+        },
+        {
+          "bias": 2.0,
+          "id": "eq1",
+          "level": 1
+        },
+        {
+          "bias": -2.0,
+          "id": "pos2",
+          "level": 1
+        },
+        {
+          "bias": -2.0,
+          "id": "neg2",
+          "level": 1
+        },
+        {
+          "bias": 2.0,
+          "id": "eq2",
+          "level": 1
+        },
+        {
+          "bias": -4.0,
+          "id": "goal",
+          "level": 1
+        }
+      ],
+      "links": [
+        {
+          "kind": "support",
+          "source": "x0",
+          "target": "pos0",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "pos0",
+          "target": "x0",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "y0",
+          "target": "pos0",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "pos0",
+          "target": "y0",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "x0",
+          "target": "neg0",
+          "weight": -2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "neg0",
+          "target": "x0",
+          "weight": -0.35
+        },
+        {
+          "kind": "support",
+          "source": "y0",
+          "target": "neg0",
+          "weight": -2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "neg0",
+          "target": "y0",
+          "weight": -0.35
+        },
+        {
+          "kind": "support",
+          "source": "pos0",
+          "target": "eq0",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "eq0",
+          "target": "pos0",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "neg0",
+          "target": "eq0",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "eq0",
+          "target": "neg0",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "x1",
+          "target": "pos1",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "pos1",
+          "target": "x1",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "y1",
+          "target": "pos1",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "pos1",
+          "target": "y1",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "x1",
+          "target": "neg1",
+          "weight": -2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "neg1",
+          "target": "x1",
+          "weight": -0.35
+        },
+        {
+          "kind": "support",
+          "source": "y1",
+          "target": "neg1",
+          "weight": -2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "neg1",
+          "target": "y1",
+          "weight": -0.35
+        },
+        {
+          "kind": "support",
+          "source": "pos1",
+          "target": "eq1",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "eq1",
+          "target": "pos1",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "neg1",
+          "target": "eq1",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "eq1",
+          "target": "neg1",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "x2",
+          "target": "pos2",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "pos2",
+          "target": "x2",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "y2",
+          "target": "pos2",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "pos2",
+          "target": "y2",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "x2",
+          "target": "neg2",
+          "weight": -2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "neg2",
+          "target": "x2",
+          "weight": -0.35
+        },
+        {
+          "kind": "support",
+          "source": "y2",
+          "target": "neg2",
+          "weight": -2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "neg2",
+          "target": "y2",
+          "weight": -0.35
+        },
+        {
+          "kind": "support",
+          "source": "pos2",
+          "target": "eq2",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "eq2",
+          "target": "pos2",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "neg2",
+          "target": "eq2",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "eq2",
+          "target": "neg2",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "eq0",
+          "target": "goal",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "goal",
+          "target": "eq0",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "eq1",
+          "target": "goal",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "goal",
+          "target": "eq1",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "eq2",
+          "target": "goal",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "goal",
+          "target": "eq2",
+          "weight": 0.35
+        }
+      ],
+      "paths": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "triple": {
+      "edge_count": 2,
+      "groups": [
+        {
+          "bias": 0.0,
+          "id": "m0",
+          "level": 0
+        },
+        {
+          "bias": 0.0,
+          "id": "m1",
+          "level": 0
+        },
+        {
+          "bias": 0.0,
+          "id": "m2",
+          "level": 0
+        },
+        {
+          "bias": -2.0,
+          "id": "op3",
+          "level": 1
+        },
+        {
+          "bias": -2.0,
+          "id": "goal",
+          "level": 1
+        }
+      ],
+      "links": [
+        {
+          "kind": "support",
+          "source": "m1",
+          "target": "op3",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "op3",
+          "target": "m1",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "m2",
+          "target": "op3",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "op3",
+          "target": "m2",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "m0",
+          "target": "goal",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "goal",
+          "target": "m0",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "op3",
+          "target": "goal",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "goal",
+          "target": "op3",
+          "weight": 0.35
+        }
+      ],
+      "paths": [
+        [
+          0,
+          1
+        ]
+      ]
+    }
+  },
+  "run": "r39",
+  "scalar_tolerance": 1e-14,
+  "schema": "hcr-r39-z-query-v1",
+  "sources": [
+    {
+      "key": "n0_R_0",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "n0_X0",
+            "target": "n0_R_0_mid"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "n0_R_0_mid",
+            "target": "n0_Y0"
+          }
+        ],
+        "episode_id": "r39-n0_R_0",
+        "goal": "n0_Y0",
+        "revision": 0,
+        "start": "n0_X0"
+      },
+      "predicate": "R"
+    },
+    {
+      "key": "n0_R_1",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "n0_X0",
+            "target": "n0_R_1_mid"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "n0_R_1_mid",
+            "target": "n0_Y1"
+          }
+        ],
+        "episode_id": "r39-n0_R_1",
+        "goal": "n0_Y1",
+        "revision": 0,
+        "start": "n0_X0"
+      },
+      "predicate": "R"
+    },
+    {
+      "key": "n0_R_2",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "n0_X1",
+            "target": "n0_R_2_mid"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "n0_R_2_mid",
+            "target": "n0_Y0"
+          }
+        ],
+        "episode_id": "r39-n0_R_2",
+        "goal": "n0_Y0",
+        "revision": 0,
+        "start": "n0_X1"
+      },
+      "predicate": "R"
+    },
+    {
+      "key": "n0_R_3",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "n0_X1",
+            "target": "n0_R_3_mid"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "n0_R_3_mid",
+            "target": "n0_Y1"
+          }
+        ],
+        "episode_id": "r39-n0_R_3",
+        "goal": "n0_Y1",
+        "revision": 0,
+        "start": "n0_X1"
+      },
+      "predicate": "R"
+    },
+    {
+      "key": "n0_S_0",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "n0_Y0",
+            "target": "n0_S_0_mid"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "n0_S_0_mid",
+            "target": "n0_Z0"
+          }
+        ],
+        "episode_id": "r39-n0_S_0",
+        "goal": "n0_Z0",
+        "revision": 0,
+        "start": "n0_Y0"
+      },
+      "predicate": "S"
+    },
+    {
+      "key": "n0_S_1",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "n0_Y0",
+            "target": "n0_S_1_mid"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "n0_S_1_mid",
+            "target": "n0_Z1"
+          }
+        ],
+        "episode_id": "r39-n0_S_1",
+        "goal": "n0_Z1",
+        "revision": 0,
+        "start": "n0_Y0"
+      },
+      "predicate": "S"
+    },
+    {
+      "key": "n0_S_2",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "n0_Y1",
+            "target": "n0_S_2_mid"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "n0_S_2_mid",
+            "target": "n0_Z0"
+          }
+        ],
+        "episode_id": "r39-n0_S_2",
+        "goal": "n0_Z0",
+        "revision": 0,
+        "start": "n0_Y1"
+      },
+      "predicate": "S"
+    },
+    {
+      "key": "n0_S_3",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "n0_Y1",
+            "target": "n0_S_3_mid"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "n0_S_3_mid",
+            "target": "n0_Z1"
+          }
+        ],
+        "episode_id": "r39-n0_S_3",
+        "goal": "n0_Z1",
+        "revision": 0,
+        "start": "n0_Y1"
+      },
+      "predicate": "S"
+    },
+    {
+      "key": "n0_U_0",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "n0_X0",
+            "target": "n0_U_0_mid"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "n0_U_0_mid",
+            "target": "n0_Z0"
+          }
+        ],
+        "episode_id": "r39-n0_U_0",
+        "goal": "n0_Z0",
+        "revision": 0,
+        "start": "n0_X0"
+      },
+      "predicate": "U"
+    },
+    {
+      "key": "n0_U_1",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "n0_X0",
+            "target": "n0_U_1_mid"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "n0_U_1_mid",
+            "target": "n0_Z1"
+          }
+        ],
+        "episode_id": "r39-n0_U_1",
+        "goal": "n0_Z1",
+        "revision": 0,
+        "start": "n0_X0"
+      },
+      "predicate": "U"
+    },
+    {
+      "key": "n0_U_2",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "n0_X1",
+            "target": "n0_U_2_mid"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "n0_U_2_mid",
+            "target": "n0_Z0"
+          }
+        ],
+        "episode_id": "r39-n0_U_2",
+        "goal": "n0_Z0",
+        "revision": 0,
+        "start": "n0_X1"
+      },
+      "predicate": "U"
+    },
+    {
+      "key": "n0_U_3",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "n0_X1",
+            "target": "n0_U_3_mid"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "n0_U_3_mid",
+            "target": "n0_Z1"
+          }
+        ],
+        "episode_id": "r39-n0_U_3",
+        "goal": "n0_Z1",
+        "revision": 0,
+        "start": "n0_X1"
+      },
+      "predicate": "U"
+    },
+    {
+      "key": "n1_R_0",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "n1_X0",
+            "target": "n1_R_0_mid"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "n1_R_0_mid",
+            "target": "n1_Y0"
+          }
+        ],
+        "episode_id": "r39-n1_R_0",
+        "goal": "n1_Y0",
+        "revision": 0,
+        "start": "n1_X0"
+      },
+      "predicate": "R"
+    },
+    {
+      "key": "n1_R_1",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "n1_X0",
+            "target": "n1_R_1_mid"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "n1_R_1_mid",
+            "target": "n1_Y1"
+          }
+        ],
+        "episode_id": "r39-n1_R_1",
+        "goal": "n1_Y1",
+        "revision": 0,
+        "start": "n1_X0"
+      },
+      "predicate": "R"
+    },
+    {
+      "key": "n1_R_2",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "n1_X1",
+            "target": "n1_R_2_mid"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "n1_R_2_mid",
+            "target": "n1_Y0"
+          }
+        ],
+        "episode_id": "r39-n1_R_2",
+        "goal": "n1_Y0",
+        "revision": 0,
+        "start": "n1_X1"
+      },
+      "predicate": "R"
+    },
+    {
+      "key": "n1_R_3",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "n1_X1",
+            "target": "n1_R_3_mid"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "n1_R_3_mid",
+            "target": "n1_Y1"
+          }
+        ],
+        "episode_id": "r39-n1_R_3",
+        "goal": "n1_Y1",
+        "revision": 0,
+        "start": "n1_X1"
+      },
+      "predicate": "R"
+    },
+    {
+      "key": "n1_S_0",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "n1_Y0",
+            "target": "n1_S_0_mid"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "n1_S_0_mid",
+            "target": "n1_Z0"
+          }
+        ],
+        "episode_id": "r39-n1_S_0",
+        "goal": "n1_Z0",
+        "revision": 0,
+        "start": "n1_Y0"
+      },
+      "predicate": "S"
+    },
+    {
+      "key": "n1_S_1",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "n1_Y0",
+            "target": "n1_S_1_mid"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "n1_S_1_mid",
+            "target": "n1_Z1"
+          }
+        ],
+        "episode_id": "r39-n1_S_1",
+        "goal": "n1_Z1",
+        "revision": 0,
+        "start": "n1_Y0"
+      },
+      "predicate": "S"
+    },
+    {
+      "key": "n1_S_2",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "n1_Y1",
+            "target": "n1_S_2_mid"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "n1_S_2_mid",
+            "target": "n1_Z0"
+          }
+        ],
+        "episode_id": "r39-n1_S_2",
+        "goal": "n1_Z0",
+        "revision": 0,
+        "start": "n1_Y1"
+      },
+      "predicate": "S"
+    },
+    {
+      "key": "n1_S_3",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "n1_Y1",
+            "target": "n1_S_3_mid"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "n1_S_3_mid",
+            "target": "n1_Z1"
+          }
+        ],
+        "episode_id": "r39-n1_S_3",
+        "goal": "n1_Z1",
+        "revision": 0,
+        "start": "n1_Y1"
+      },
+      "predicate": "S"
+    },
+    {
+      "key": "n1_U_0",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "n1_X0",
+            "target": "n1_U_0_mid"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "n1_U_0_mid",
+            "target": "n1_Z0"
+          }
+        ],
+        "episode_id": "r39-n1_U_0",
+        "goal": "n1_Z0",
+        "revision": 0,
+        "start": "n1_X0"
+      },
+      "predicate": "U"
+    },
+    {
+      "key": "n1_U_1",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "n1_X0",
+            "target": "n1_U_1_mid"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "n1_U_1_mid",
+            "target": "n1_Z1"
+          }
+        ],
+        "episode_id": "r39-n1_U_1",
+        "goal": "n1_Z1",
+        "revision": 0,
+        "start": "n1_X0"
+      },
+      "predicate": "U"
+    },
+    {
+      "key": "n1_U_2",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "n1_X1",
+            "target": "n1_U_2_mid"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "n1_U_2_mid",
+            "target": "n1_Z0"
+          }
+        ],
+        "episode_id": "r39-n1_U_2",
+        "goal": "n1_Z0",
+        "revision": 0,
+        "start": "n1_X1"
+      },
+      "predicate": "U"
+    },
+    {
+      "key": "n1_U_3",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1.0,
+            "source": "n1_X1",
+            "target": "n1_U_3_mid"
+          },
+          {
+            "id": "e1",
+            "score": 1.0,
+            "source": "n1_U_3_mid",
+            "target": "n1_Z1"
+          }
+        ],
+        "episode_id": "r39-n1_U_3",
+        "goal": "n1_Z1",
+        "revision": 0,
+        "start": "n1_X1"
+      },
+      "predicate": "U"
+    }
+  ],
+  "storage_codec": "lossless-array-trace-v1",
+  "storage_only_shared": true,
+  "training": 0,
+  "world_measurement": 0
+}

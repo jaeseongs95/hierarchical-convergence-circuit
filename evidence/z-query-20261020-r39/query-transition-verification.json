@@ -1,0 +1,11 @@
+{
+  "compact_failed_transitions": [
+    {
+      "truth": "unique",
+      "observed": "many",
+      "count": 24
+    }
+  ],
+  "all_failed_queries": 24,
+  "source": "All480queryoutputs replayed andP/local-rows.json derived; this artifact summarizes only failed compact queries."
+}
