@@ -1,0 +1,23 @@
+{
+  "observation_kb": {
+    "MemTotal": 3881196,
+    "MemAvailable": 3067528,
+    "SwapTotal": 0
+  },
+  "point_observation_only": true,
+  "output": {
+    "version": 1,
+    "captureSource": "redacted-adapter-outcome",
+    "sshCompleteness": "unknown",
+    "outputId": "ca221f5df96ccbc5c34b604a695c72c02530b9b09bc2026d",
+    "executionId": "74e77c696e9f03d85b1382c5b1b3d12f0a5c59ccc786d97a",
+    "format": "text",
+    "offsetBytes": 0,
+    "bytes": 1671,
+    "nextOffset": 1671,
+    "eof": true,
+    "totalBytes": 1671,
+    "sha256": "776abbd0a0777084a963503a0d3cee6e96007215473c4a559620f12594e1deb3",
+    "expiresAt": 1792485328035
+  }
+}

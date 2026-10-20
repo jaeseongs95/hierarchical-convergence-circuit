@@ -1,0 +1,40 @@
+{
+  "actual_local_native_calls": 0,
+  "canonical_cache_bytes_checked": true,
+  "metadata_mutations_rejected": [
+    "predicate",
+    "Y_role",
+    "Z_role",
+    "revision",
+    "duplicate",
+    "domain_overlap",
+    "vocabulary",
+    "layout"
+  ],
+  "preparation": {
+    "boolean_stub_not_numeric_validation": true,
+    "checks": 1959,
+    "expected_split_eligibility_correct": 2280,
+    "expected_split_false_consistency": 76,
+    "expected_split_full_strict": 476,
+    "full_table_cases": 608,
+    "native_calls": 0,
+    "program_groups": {
+      "feasible": 18,
+      "or0": 1,
+      "or1": 2,
+      "or2": 3,
+      "or3": 4,
+      "or4": 5,
+      "pair": 4,
+      "role": 16
+    },
+    "status": "PASS"
+  },
+  "python_ast_utf8_lf_files": 6,
+  "saved_trace_LRU_max_entries": 18,
+  "status": "PASS",
+  "synthetic_codec_roundtrip": 2,
+  "synthetic_mutations_rejected": 9,
+  "synthetic_storage_unique": 2
+}

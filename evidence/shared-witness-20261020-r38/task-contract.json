@@ -1,0 +1,122 @@
+{
+  "acceptanceCriteria": [
+    "[AC-001] R37 두 변수 한계 다음으로 R(X,Y),S(Y,Z),U(X,Z)의 같은 Z 결합과 독립 증인 완화의 비중복 반례·폐쇄 관계표·완전 domain·결과별 다음 판단을 동결한다. 기존 core/생성기를 보존한다.",
+    "[AC-002] R은 대각/교차 2종, S/U는 각각16종 전체의512조건과 critical32조건의 이름/순서3변형96조건, 총608×3arms=1824평가를 AI Research SSH에서 실행한다.24원천·필드 일치·멤버십·공유/독립 증인 AND/OR·분류는 native이고 host 정답 수리는 금지한다.",
+    "[AC-003] 완전8개 triple의 별도 set oracle와 XY 투영을 비교한다. 모든 중간층·eligibility·kind/selection·양립성·독립 증인 oracle 정합성과 full 정보손실·변형96쌍·저장변조를 분리 채점하고 의미 실패를 보존한다.",
+    "[AC-004] 24source+120384numeric=120408실제수렴/19265280최대ticks,worker1/retry0,전체780초/단계720초,raw128MiB/cache192MiB/AS각512MiB 운영상한을 준수한다. 전체JSON SHA/출처·scalar·controller·물리참조·학습0/세계측정0·전체비용을 검산한다.",
+    "[AC-005] 신규 세 경로만 scope/index 확인 후 서명커밋·main FF·같은 private origin push·SHA일치/clean을 확인한다."
+  ],
+  "authorization": {
+    "allowedActions": [
+      "R38 연구 전용 구현과 결과 문서 작성",
+      "제한된 AI Research SSH 후속 실험",
+      "서명커밋과 로컬 main 병합",
+      "같은 연구 저장소 원격 push"
+    ],
+    "approvalRequired": [],
+    "prohibitedActions": [
+      "기존 core 및 과거 연구 변경",
+      "새 의존성·유료자원·서비스·권한 확대",
+      "외부 peer 메시지 전송"
+    ]
+  },
+  "constraints": [
+    "신규3경로만;core/과거/user변경보존",
+    "R37 실측 call/record/source비례 계획과 선택 안전계수3; 새 composition 비용 불확실·운영중단선/예측/통계보장 구분",
+    "동결후 native재실행/입력·generator·decoder·threshold재조정 금지",
+    "세 변수 각2값, 초기.5, 명시적 폐쇄관계표 전제; 임의CSP/학습/세계부정증거/효율/운영채택 주장 금지",
+    "numeric host는 공개domain 열거·필드별 encoding·metadata guard; truth와증인결합은native AND/OR",
+    "native_split는 각 관계의 Z를 독립 존재양화하는 정보손실개입; 해당oracle 정합성과 fulloracle 실패를분리",
+    "모든numeric 계산실행/저장만공유; source/생성·검증/계산/저장/프로세스/감사/봉인비용 분리",
+    "dependency/paidresource/service/security변경/peer메시지 없음"
+  ],
+  "decision": {
+    "complexity": "complex",
+    "hasConflicts": false
+  },
+  "objective": "공유 변수 Z를 같은 증인으로 묶은 세 이항관계의 전역 양립성을 native로 판정하고 독립 증인 완화가 만드는 거짓 허용을 분리 검증한다",
+  "orchestration": {
+    "mcpAvailable": true,
+    "requested": false
+  },
+  "requiredCapabilities": [
+    "minimal-implementation",
+    "cs-implementation-review",
+    "change-scope-assurance"
+  ],
+  "riskLevel": "medium",
+  "schemaVersion": "1.0.0",
+  "scope": {
+    "excluded": [
+      "src/",
+      "tests/",
+      "tools/r19_cross_level/",
+      "tools/r20_evidence_feedback/",
+      "tools/r21_active_measurement/",
+      "tools/r22_measurement_adoption/",
+      "tools/r23_source_qualification/",
+      "experiments/exp-69-source-qualification/",
+      "evidence/source-qualification-20261019-r23/",
+      "tools/r24_trust_boundary/",
+      "experiments/exp-70-trust-boundary/",
+      "evidence/trust-boundary-20261019-r24/",
+      "tools/r25_fixedpoint_elision/",
+      "experiments/exp-71-fixedpoint-elision/",
+      "evidence/fixedpoint-elision-20261019-r25/",
+      "experiments/exp-72-contraction-warmstart/",
+      "tools/r26_contraction_warmstart/",
+      "evidence/contraction-warmstart-20261019-r26/",
+      "experiments/exp-73-finite-stop-envelope/",
+      "tools/r27_finite_stop_envelope/",
+      "evidence/finite-stop-envelope-20261019-r27/",
+      "experiments/exp-74-reuse-frontier/",
+      "tools/r28_reuse_frontier/",
+      "evidence/reuse-frontier-20261020-r28/",
+      "experiments/exp-75-research-direction/",
+      "tools/r29_research_direction/",
+      "evidence/research-direction-20261020-r29/",
+      "experiments/exp-76-spatial-sharing/",
+      "tools/r30_spatial_sharing/",
+      "evidence/spatial-sharing-20261020-r30/",
+      "experiments/exp-77-macro-control/",
+      "tools/r31_macro_control/",
+      "evidence/macro-control-20261020-r31/",
+      "experiments/exp-78-semantic-join/",
+      "tools/r32_semantic_join/",
+      "evidence/semantic-join-20261020-r32/",
+      "experiments/exp-79-typed-feedback/",
+      "tools/r33_typed_feedback/",
+      "evidence/typed-feedback-20261020-r33/",
+      "experiments/exp-80-feasible-state/",
+      "tools/r34_feasible_state/",
+      "evidence/feasible-state-20261020-r34/",
+      "experiments/exp-81-compositional-slot/",
+      "tools/r35_compositional_slot/",
+      "evidence/compositional-slot-20261020-r35/",
+      "experiments/exp-82-overlap-composition/",
+      "tools/r36_overlap_composition/",
+      "evidence/overlap-composition-20261020-r36/",
+      "experiments/exp-83-joint-tuple/",
+      "tools/r37_joint_tuple/",
+      "evidence/joint-tuple-20261020-r37/"
+    ],
+    "included": [
+      "experiments/exp-84-shared-witness/",
+      "tools/r38_shared_witness/",
+      "evidence/shared-witness-20261020-r38/"
+    ]
+  },
+  "taskId": "ai-shared-witness-r38",
+  "workUnits": [
+    {
+      "dependencies": [],
+      "id": "r38",
+      "objective": "공유 변수 Z를 같은 증인으로 묶은 세 이항관계의 전역 양립성을 native로 판정하고 독립 증인 완화가 만드는 거짓 허용을 분리 검증한다",
+      "writeTargets": [
+        "experiments/exp-84-shared-witness/",
+        "tools/r38_shared_witness/",
+        "evidence/shared-witness-20261020-r38/"
+      ]
+    }
+  ]
+}

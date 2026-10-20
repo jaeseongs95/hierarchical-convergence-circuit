@@ -1,0 +1,30 @@
+{
+  "all_native_tick_records_received": true,
+  "archive_received": false,
+  "raw_json_bytes": 13219729,
+  "raw_manifest_matched_files": 1157,
+  "received_json": 1158,
+  "same_channel_hashes_not_host_attestation": true,
+  "source_files": 135,
+  "source_unchanged": true,
+  "ssh_completeness": "upstream unknown; expected JSON names/count/size/SHA all matched",
+  "text_archive_transfer_attempted": false,
+  "transport_failures": [
+    {
+      "cursor": 47,
+      "error": "UNAVAILABLE: Connection failed",
+      "native_rerun": false,
+      "offset": 114688,
+      "outputId": "b1778202e408a5dabd2d84915acee4a2636aeea4a55d4015"
+    }
+  ],
+  "transport_recovery": "Retained successful pages; only missing page of the same output ID retried, no command/native replay.",
+  "unreceived_empty_logs": [
+    "audit.stderr",
+    "audit.stdout",
+    "preparation.stderr",
+    "preparation.stdout",
+    "work.stderr",
+    "work.stdout"
+  ]
+}

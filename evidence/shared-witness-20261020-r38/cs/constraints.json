@@ -1,0 +1,142 @@
+{
+  "schemaVersion": "1.0.0",
+  "reportId": "CS-R38-CONSTRAINTS",
+  "requestDigest": "sha256:921c415e6797703b7bc930e2bf7519897a8c3ef7428a4437d5954578699d378b",
+  "sourceSnapshotDigest": "sha256:43ffb2a049b285b0232febd541e1357fc6ae9ded682249c8366707e36de0c723",
+  "knowledgePackVersion": "0.1.0",
+  "knowledgePackDigest": "sha256:d8351d9aabb433403830fcffc3a2f2438b6d428711c93b6ded9eff002468c3d1",
+  "draftUse": {
+    "allowed": false,
+    "basis": "Validated identity/reuse and matched measurement rules"
+  },
+  "applicability": "applicable",
+  "applicabilityReason": "Typed source reuse and causal feedback correctness need explicit identity and evidence accounting.",
+  "selectedRules": [
+    {
+      "ruleId": "ALG-KEY-004",
+      "ruleDigest": "sha256:db77383ecb5f41ef3af5cb60769edaea507cac5cb25e28b88f249e84a062ba2e",
+      "applicabilityReason": "Shared native source reuse and candidate-order routing require full source/role/revision/config binding; a selected revision may not silently change origin roles."
+    },
+    {
+      "ruleId": "PERF-MEASURE-001",
+      "ruleDigest": "sha256:ef11800e55663f1b719f62d3f812280fd6e56c6895eef3028b9db344a9d0a355",
+      "applicabilityReason": "Information-matched exact control and actual shared-source plus all roundtrip/serialization/process costs; semantic errors preclude efficiency adoption."
+    }
+  ],
+  "facts": [
+    {
+      "id": "FACT-GAP",
+      "statement": "R37 preserves one binary relation, but no three-factor shared variable witness/global consistency was tested. R=S=equality and U=inequality are locally nonempty with full marginals but no common triple.",
+      "evidenceRefs": [
+        "SRC-RESULT"
+      ]
+    },
+    {
+      "id": "FACT-KERNEL",
+      "statement": "R37 fieldwise native membership and R35 pair AND/OR/feasible4 allow fixed 2x2x2 triangle elimination without changing core. Numeric combine receives only numeric tables/order; exact control is explicitly symbolic. All computations run; full kernel+config storage only deduplicated.",
+      "evidenceRefs": [
+        "SRC-KERNEL",
+        "SRC-R32",
+        "SRC-R19"
+      ]
+    },
+    {
+      "id": "FACT-BUDGET",
+      "statement": "R37 measured costs scale to120384numeric+24source,1824outputs; selected3x/60s rounding yields720stage/780total. raw128MiB/cache192MiB/8192unique/512MiBAS are operational stops, not predictions or proven finite unique bounds.",
+      "evidenceRefs": [
+        "SRC-BUDGET"
+      ]
+    }
+  ],
+  "assumptions": [],
+  "invariants": [
+    {
+      "id": "INV-BOUNDARY",
+      "statement": "24fresh conditional sources R(X,Y)/S(Y,Z)/U(X,Z). Complete typed2-value domains are external assumptions. All role equalities/membership/shared witness AND-OR/independent witness relaxation/feasible classification native. Combine numeric tables/order only; no facts/case/mask/oracle. Exact control explicit. Verify source roles/revision/fullprogram/drives/initial/packet and no host repair.",
+      "scope": "R38 frozen608cases3arms and24native sources",
+      "basisRefs": [
+        "FACT-GAP",
+        "FACT-KERNEL"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-SEMANTICS",
+      "statement": "Freeze512canonical R{6,9}x16Sx16U plus32critical triples x3namespace/order variants=608cases x3arms. Full8-triple independent set oracle and separate split-witness relaxation oracle. Score all intermediate layers, XYeligibility,kind,selection,consistency and96normalized variants; exact opposite-cycle counterexample. Keep semantic failures without retuning. Only XY projection retained; no claim to preserve later Z queries.",
+      "scope": "R38 frozen608cases3arms and24native sources",
+      "basisRefs": [
+        "FACT-GAP",
+        "FACT-KERNEL"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-COST",
+      "statement": "120408actual settles/max19265280ticks,720stage/780total,worker1/retry0/raw128MiB/AS512MiBeach/file130and8MiB/cache192MiB/record128KiB/8192unique/LRU18. Exact bytes collision and bounded writer checks. No compute reuse, learning, world measure or efficiency claim. All rawJSON SHA,size/source/scalar/controller/references/cost/resources verified; engineering failure preserves partial/inflight and no blind retry.",
+      "scope": "R38 frozen608cases3arms and24native sources",
+      "basisRefs": [
+        "FACT-KERNEL",
+        "FACT-BUDGET"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "PERF-MEASURE-001"
+      ]
+    }
+  ],
+  "designChoices": [
+    {
+      "id": "CHOICE-WITNESS",
+      "statement": "Native fixed AND/OR elimination over same public Z index; split witness intervention; full triple exact control.",
+      "rationale": "Distinguish global inconsistency from local nonempty factors without increasing candidate cap or changing core.",
+      "basisRefs": [
+        "FACT-GAP",
+        "FACT-KERNEL",
+        "FACT-BUDGET"
+      ]
+    }
+  ],
+  "verificationObligations": [
+    {
+      "id": "OB-BOUNDARY",
+      "invariantIds": [
+        "INV-BOUNDARY"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Wrong shared Z identity, hidden symbolic solve, metadata or causal proof mismatch.",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-SEMANTICS",
+      "invariantIds": [
+        "INV-SEMANTICS"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Correct final consistency hides bad eligibility/composition; relaxation loss confused with implementation error; missing matrix or posthoc changes.",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-COST",
+      "invariantIds": [
+        "INV-COST"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Unaccounted cost/calls, cache/raw overflow, incomplete receipt claimed complete, native rerun or false adoption.",
+      "requirementLevel": "required"
+    }
+  ],
+  "requiredCapabilities": [
+    "cs-constraint-derivation",
+    "cs-implementation-review"
+  ],
+  "verdict": "READY"
+}

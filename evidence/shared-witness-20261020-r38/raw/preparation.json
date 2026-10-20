@@ -1,0 +1,1 @@
+{"boolean_stub_not_numeric_validation": true, "checks": 1959, "expected_split_eligibility_correct": 2280, "expected_split_false_consistency": 76, "expected_split_full_strict": 476, "full_table_cases": 608, "native_calls": 0, "program_groups": {"feasible": 18, "or0": 1, "or1": 2, "or2": 3, "or3": 4, "or4": 5, "pair": 4, "role": 16}, "status": "PASS"}

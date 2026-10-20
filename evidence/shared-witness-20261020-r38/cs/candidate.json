@@ -1,0 +1,30 @@
+{
+  "files": [
+    {
+      "digest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path": "candidate/__init__.py"
+    },
+    {
+      "digest": "sha256:8c4f0dcfe68c2fcf0e967a6a9d92ee45819080ecfc34cd00fc17ff00ae0933ce",
+      "path": "candidate/bootstrap.py"
+    },
+    {
+      "digest": "sha256:3d91431eb01045c033e628849584935a371fdab98ca25864116cc162c4a7b2cd",
+      "path": "candidate/probe.py"
+    },
+    {
+      "digest": "sha256:b38ed708ca1f34279d230d666415fc8930604e671ee3581cf1a8ab44157b4b1d",
+      "path": "candidate/recording.py"
+    },
+    {
+      "digest": "sha256:7036dc4c0dae4391e31999dffce8b3e2f59b47e3060b5685b254e310cf04aa26",
+      "path": "candidate/runtime.py"
+    },
+    {
+      "digest": "sha256:312c5bd24e5bd49780a4bcc5768cdc297be667f97d2fb929d92550392462498c",
+      "path": "candidate/verify.py"
+    }
+  ],
+  "schemaVersion": "1.0.0",
+  "scopeSummary": "R38 finite triangle same shared Z witness vs independent witness relaxation,608conditions/1824outputs/24sources/120408physicalcalls. Existing field native equality/AND/OR/feasible4 and kernel unchanged; full triple symbolic control, numeric combiner tables only. No learning/generalCSP/efficiency/production claim."
+}

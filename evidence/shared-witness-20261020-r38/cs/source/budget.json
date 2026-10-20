@@ -1,0 +1,49 @@
+{
+  "arms": 3,
+  "canonical_cache_bytes": 201326592,
+  "cases": 608,
+  "child_address_space_bytes": 536870912,
+  "child_file_bytes": 8388608,
+  "estimates_are_not_statistical_guarantees": true,
+  "evaluations": 1824,
+  "learning": 0,
+  "limits_are_operational_stop_boundaries": true,
+  "maximum_native_calls": 120408,
+  "maximum_ticks": 19265280,
+  "maximum_unique_trace_records": 8192,
+  "numeric_calls": 120384,
+  "parent_address_space_bytes": 536870912,
+  "parent_file_bytes": 136314880,
+  "planning_total_seconds": 242.54869325127092,
+  "planning_work_seconds": 224.03449748726712,
+  "raw_bytes": 134217728,
+  "record_encoded_cache_max_bytes": 131072,
+  "retry": 0,
+  "rounding_seconds_policy": 60,
+  "safety_factor_policy": 3,
+  "saved_trace_cache_entries": 18,
+  "source_calls": 24,
+  "source_refs": {
+    "analysis.json": {
+      "path": "evidence/joint-tuple-20261020-r37/analysis.json",
+      "sha256": "43bbb9f4994b116b46a3089f74882d478b9e37983f68339ea313227b9e39441c"
+    },
+    "raw/result.json": {
+      "path": "evidence/joint-tuple-20261020-r37/raw/result.json",
+      "sha256": "66d9cd0e5e3768055d7d0bb6ef0fa12a8da838f4748f84fcdd3a0d74f8694378"
+    },
+    "receipt-verification.json": {
+      "path": "evidence/joint-tuple-20261020-r37/receipt-verification.json",
+      "sha256": "6aa7b37f295eeb6b0084fdd4f968ee14a82f9060dbd042e9a0cb151e52ad33c8"
+    },
+    "server-completion.json": {
+      "path": "evidence/joint-tuple-20261020-r37/server-completion.json",
+      "sha256": "f4382b84fdca8b4bd61e0c15e539fca0988b8d8f3398b5dba6ffb1b9a404093a"
+    }
+  },
+  "stage_seconds": 720,
+  "storage_caps_basis": "R37 received about15MB for119808numeric calls;120384calls have new composition drives. Deliberate operational ceilings raw128MiB/cache192MiB/8192records leave headroom within observed3.88GB host and512MiB child AS. These are selected stop boundaries, NOT proven unique bounds or predictions.",
+  "total_seconds": 780,
+  "worker": 1,
+  "world_measurement": 0
+}

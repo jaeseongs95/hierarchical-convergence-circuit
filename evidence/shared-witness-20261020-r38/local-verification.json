@@ -1,0 +1,54 @@
+{
+  "all_native_tick_records_received": true,
+  "archive_received": false,
+  "case_arms_verified": 1824,
+  "independent_auditor": false,
+  "local_native_calls_added": 0,
+  "mutations_rejected": [
+    "revision",
+    "shared_witness",
+    "source",
+    "variables",
+    "eligibility",
+    "S_message",
+    "witness",
+    "applied",
+    "state_hash",
+    "consistent",
+    "selected",
+    "network_ref"
+  ],
+  "physical_numeric_refs_verified": 120384,
+  "raw_json_bytes": 13219729,
+  "raw_manifest_matched_files": 1157,
+  "received_json": 1158,
+  "same_channel_hashes_not_host_attestation": true,
+  "scalar_max_absolute_error": 1.1102230246251565e-16,
+  "server_vs_local_meaning_counts_exact": true,
+  "source_files": 135,
+  "source_unchanged": true,
+  "sources_verified": 24,
+  "ssh_completeness": "upstream unknown; expected JSON names/count/size/SHA all matched",
+  "status": "PASS",
+  "text_archive_transfer_attempted": false,
+  "tolerance": 1e-14,
+  "transport_failures": [
+    {
+      "cursor": 47,
+      "error": "UNAVAILABLE: Connection failed",
+      "native_rerun": false,
+      "offset": 114688,
+      "outputId": "b1778202e408a5dabd2d84915acee4a2636aeea4a55d4015"
+    }
+  ],
+  "transport_recovery": "Retained successful pages; only missing page of the same output ID retried, no command/native replay.",
+  "unique_traces_losslessly_expanded": 1110,
+  "unreceived_empty_logs": [
+    "audit.stderr",
+    "audit.stdout",
+    "preparation.stderr",
+    "preparation.stdout",
+    "work.stderr",
+    "work.stdout"
+  ]
+}

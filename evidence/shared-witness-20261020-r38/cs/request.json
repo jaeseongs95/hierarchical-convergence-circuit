@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "1.0.0",
+  "requestId": "CS-R38",
+  "mode": "derive",
+  "objective": "Retain common Z witness in finite triangle versus separate existential relaxation",
+  "sourceSnapshotDigest": "sha256:43ffb2a049b285b0232febd541e1357fc6ae9ded682249c8366707e36de0c723",
+  "sourceRefs": [
+    {
+      "id": "SRC-CORE",
+      "path": "source/hypothesis.md",
+      "digest": "sha256:d1b735eee8f72c092c847c04e81a34972fa919be906311255faa797e58ec9302"
+    },
+    {
+      "id": "SRC-R32",
+      "path": "source/r35-runtime.py",
+      "digest": "sha256:2ed5316a500a290f7bf5e4ecc54abd72ad8fd54f6b801bd18ee00fca70bbb751"
+    },
+    {
+      "id": "SRC-R19",
+      "path": "source/r19-probe.py",
+      "digest": "sha256:bb0159ba0c50505fc148322e0d0a17d53c184a0bdc7bed21b393120971eb5630"
+    },
+    {
+      "id": "SRC-RESULT",
+      "path": "source/r37-results.md",
+      "digest": "sha256:673225ff919ed86c6a09453c6d3a248eba3ceec8c1d77006383e9bfa2c492aa6"
+    },
+    {
+      "id": "SRC-KERNEL",
+      "path": "source/dynamics.py",
+      "digest": "sha256:a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc"
+    },
+    {
+      "id": "SRC-BUDGET",
+      "path": "source/budget.json",
+      "digest": "sha256:7bbe9d3fb434b9052b6868d5922b480845fa103b887ad458982cc2a803b8352b"
+    }
+  ],
+  "operationalFacts": [
+    {
+      "id": "FACT-GAP",
+      "statement": "R37 preserves one binary relation, but no three-factor shared variable witness/global consistency was tested. R=S=equality and U=inequality are locally nonempty with full marginals but no common triple.",
+      "evidenceRefs": [
+        "SRC-RESULT"
+      ]
+    },
+    {
+      "id": "FACT-KERNEL",
+      "statement": "R37 fieldwise native membership and R35 pair AND/OR/feasible4 allow fixed 2x2x2 triangle elimination without changing core. Numeric combine receives only numeric tables/order; exact control is explicitly symbolic. All computations run; full kernel+config storage only deduplicated.",
+      "evidenceRefs": [
+        "SRC-KERNEL",
+        "SRC-R32",
+        "SRC-R19"
+      ]
+    },
+    {
+      "id": "FACT-BUDGET",
+      "statement": "R37 measured costs scale to120384numeric+24source,1824outputs; selected3x/60s rounding yields720stage/780total. raw128MiB/cache192MiB/8192unique/512MiBAS are operational stops, not predictions or proven finite unique bounds.",
+      "evidenceRefs": [
+        "SRC-BUDGET"
+      ]
+    }
+  ],
+  "existingContractRef": null
+}
