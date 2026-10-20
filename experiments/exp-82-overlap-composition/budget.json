@@ -1,0 +1,67 @@
+{
+  "arms": 2,
+  "canonical_cases": 2304,
+  "cases": 2496,
+  "child_address_space_bytes": 536870912,
+  "child_file_bytes": 8388608,
+  "encoded_cache_policy": "finite2692record bound x128KiB canonical payload <=336.5MiB;512MiB process stop cap with remaining175.5MiB for Python/source/batches; not observed RSS guarantee",
+  "estimates_are_not_statistical_guarantees": true,
+  "evaluations": 4992,
+  "file_limit_reason": "child JSON chunks are bounded128rows;8MiB per-file stop; parent ZIP <=raw+2MiB headers for<4096entries/name<=128B",
+  "learning": 0,
+  "limits_are_operational_stop_boundaries": true,
+  "maximum_native_calls": 44956,
+  "maximum_ticks": 7192960,
+  "maximum_unique_trace_records": 2692,
+  "metamorphic_cases": 192,
+  "numeric_calls": 44928,
+  "parent_address_space_bytes": 536870912,
+  "parent_file_bytes": 102760448,
+  "planning_other_seconds": 13.581822499647842,
+  "planning_total_seconds": 171.72742529119645,
+  "planning_work_seconds": 158.1456027915486,
+  "raw_bytes": 100663296,
+  "raw_guard_policy": "2 x scaled R35 received JSON using max(case,unique-trace) factor, rounded up32MiB; stop boundary, not size guarantee",
+  "record_encoded_cache_max_bytes": 131072,
+  "retry": 0,
+  "rounding_seconds_policy": 60,
+  "safety_factor_policy": 3,
+  "saved_trace_cache_entries": 18,
+  "saved_trace_cache_reason": "one complete numeric evaluation needs18native references; full-trace audit cache bounded to one evaluation",
+  "scaling_factors": {
+    "calls": 2.3636363636363638,
+    "cases": 2.888888888888889,
+    "source": 1.1666666666666667,
+    "traces": 5.196911196911197
+  },
+  "server_memory_observation_kb": {
+    "MemAvailable": 3103196,
+    "MemTotal": 3881196,
+    "SwapFree": 0,
+    "SwapTotal": 0
+  },
+  "source_calls": 28,
+  "source_refs": {
+    "analysis.json": {
+      "path": "evidence/compositional-slot-20261020-r35/analysis.json",
+      "sha256": "5077bda66808c578faa1b10232d4e83947058e08ae686497cd544e202e4018ea"
+    },
+    "raw/result.json": {
+      "path": "evidence/compositional-slot-20261020-r35/raw/result.json",
+      "sha256": "66f04d53925babc64d203d9976afdc1626a161d322646447fa71d6899580d439"
+    },
+    "receipt-verification.json": {
+      "path": "evidence/compositional-slot-20261020-r35/receipt-verification.json",
+      "sha256": "16f29b66b018eb590bb5ae145bff1d63e0fd5bc64dd9bd42c0b3fa047706444b"
+    },
+    "server-completion.json": {
+      "path": "evidence/compositional-slot-20261020-r35/server-completion.json",
+      "sha256": "f0c1f803aea6b9ed2e79eecc56164c21eb668e04c4a1efa946f90e58fa505211"
+    }
+  },
+  "stage_seconds": 480,
+  "total_seconds": 540,
+  "trace_bound_reason": "role4 + six ASTs x2candidate codes x8patterns96 + classifier at most8patterns x6AST x2orders96 + at most one query record per2496numeric cases",
+  "worker": 1,
+  "world_measurement": 0
+}

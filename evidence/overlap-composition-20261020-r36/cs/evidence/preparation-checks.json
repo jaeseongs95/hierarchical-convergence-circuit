@@ -1,0 +1,125 @@
+{
+  "actual_local_native_calls": 0,
+  "canonical_cache_bytes_checked": true,
+  "preparation": {
+    "actual_source_leaf_patterns": {
+      "C": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          true
+        ],
+        [
+          false,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true
+        ],
+        [
+          true,
+          false,
+          false
+        ],
+        [
+          true,
+          false,
+          true
+        ],
+        [
+          true,
+          true,
+          false
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "T": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          true
+        ],
+        [
+          false,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true
+        ],
+        [
+          true,
+          false,
+          false
+        ],
+        [
+          true,
+          false,
+          true
+        ],
+        [
+          true,
+          true,
+          false
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ]
+    },
+    "checks": 2648,
+    "native_calls": 0,
+    "program_groups": {
+      "expr0": 4,
+      "expr1": 4,
+      "expr2": 4,
+      "expr3": 4,
+      "expr4": 6,
+      "expr5": 6,
+      "feasible1": 9,
+      "feasible2": 11,
+      "feasible3": 14,
+      "feasible4": 18,
+      "query1": 13,
+      "query2": 17,
+      "query3": 21,
+      "query4": 25,
+      "role": 16
+    },
+    "six_distinct_symbolic_functions": true,
+    "slot_guard_mutations_rejected": [
+      "C_predicate",
+      "C_target",
+      "T_predicate",
+      "R_subject"
+    ],
+    "status": "PASS"
+  },
+  "python_ast_utf8_lf_files": 6,
+  "saved_trace_LRU_max_entries": 18,
+  "status": "PASS",
+  "synthetic_codec_roundtrip": 2,
+  "synthetic_mutations_rejected": 8,
+  "synthetic_storage_unique": 2
+}

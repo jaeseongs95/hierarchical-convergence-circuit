@@ -1,0 +1,30 @@
+{
+  "files": [
+    {
+      "digest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path": "candidate/__init__.py"
+    },
+    {
+      "digest": "sha256:2b64467fdabd91e69239891e94335af2cacd820071e2f3596c70f29b8bcc943f",
+      "path": "candidate/bootstrap.py"
+    },
+    {
+      "digest": "sha256:3bb063586ac3d0c626d8df8c6b9fba94d8c1a087fc3be4cf9d13350f244f6670",
+      "path": "candidate/probe.py"
+    },
+    {
+      "digest": "sha256:7cbba19e977535fd0b23901c03d1e9c4c4b3215115703ab02c168f6b859d8aa8",
+      "path": "candidate/recording.py"
+    },
+    {
+      "digest": "sha256:8466a0ce93b182800eb447d00a5868f5273120057cbeec49c4fe3b4b51c0ffae",
+      "path": "candidate/runtime.py"
+    },
+    {
+      "digest": "sha256:cbf727fcaf4a921b7afb39d9cccb7fab0eb13d1354e6de74fbfd6284f524b77c",
+      "path": "candidate/verify.py"
+    }
+  ],
+  "schemaVersion": "1.0.0",
+  "scopeSummary": "R36 overlapping typed predicates and targets realize all8Boolean leaf patterns across2496inputs xnative/exact with unchanged R35 generator/kernel/decoder.28fresh origins,44956actual native calls, bounded canonical-byte storage and saved-data LRU18, split39record/metric chunks. No host role solving, retuning, learning/general CSP/efficiency/production claim."
+}

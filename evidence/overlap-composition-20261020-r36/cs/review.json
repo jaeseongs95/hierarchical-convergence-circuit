@@ -1,0 +1,250 @@
+{
+  "schemaVersion": "1.0.0",
+  "reviewId": "CS-R36-REVIEW",
+  "constraintReportDigest": "sha256:ec5045d3d97f458a973787c5f1df9b91e6aac661fe8c080f3ea60c18d03b0d43",
+  "candidateDigest": "sha256:3f48d3b58885a6ce31ede3f87f76e59906d610d1578283462e0d0d0079949023",
+  "reviewerActorRef": "R36 implementation author source and saved-data review; not independent audit",
+  "findings": [
+    {
+      "id": "F-BOUNDARY",
+      "invariantId": "INV-BOUNDARY",
+      "status": "SATISFIED",
+      "evidenceRefs": [
+        "E-0",
+        "E-1",
+        "E-2",
+        "E-3",
+        "E-4",
+        "E-5",
+        "E-6",
+        "E-7",
+        "E-8",
+        "E-9",
+        "E-10",
+        "E-11"
+      ],
+      "reasoningSummary": "Frozen6candidate modules and120source files unchanged. Reuse R35 syntax/count builder, common kernel, runtime and fixed decoder.28fresh native path origins bind distinct predicate/target channels and independently aliased subjects. Host guard validates declared predicate/target/candidate subject metadata only; substantive endpoint equality remains native3bit matcher. No mask/case/answer inputs or host role solving on numeric route. Final T consumer excludes first C/oracle. All4992records checked against source proof/config/origin/role/order/Program/drive/initial/AST/contract/packet/revision/T.16semantic and slot mutations rejected. Conditional support and false join compatibility are not world truth or calibrated probability."
+    },
+    {
+      "id": "F-SEMANTICS",
+      "invariantId": "INV-SEMANTICS",
+      "status": "SATISFIED",
+      "evidenceRefs": [
+        "E-0",
+        "E-1",
+        "E-2",
+        "E-3",
+        "E-4",
+        "E-5",
+        "E-6",
+        "E-7",
+        "E-8",
+        "E-9",
+        "E-10",
+        "E-11"
+      ],
+      "reasoningSummary": "Canonical8Cpatterns x8Tpatterns x6C_AST x6T_AST2304 plus192namespace/order sentinels=2496inputs. Both native and same-information exact2496strict correct; native roles29952/29952 and AST9984/9984 separately correct. C/T each six distinct native truth vectors match all48expected bits;192normalized state/selected endpoint/value/reason invariant pairs. Actual overlapping source patterns close R35 exclusivity gap. Two candidates complete/initial.5 only; second candidate complements first leaf mask. No arbitrary independent multi-candidate pattern coverage, missing-candidate detection, multi-variable CSP, learning, calibration, statistical speed or production claim. No postfreeze retuning/native rerun."
+    },
+    {
+      "id": "F-COST",
+      "invariantId": "INV-COST",
+      "status": "SATISFIED",
+      "evidenceRefs": [
+        "E-0",
+        "E-1",
+        "E-2",
+        "E-3",
+        "E-4",
+        "E-5",
+        "E-6",
+        "E-7",
+        "E-8",
+        "E-9",
+        "E-10",
+        "E-11"
+      ],
+      "reasoningSummary": "28source+44928numeric=44956actual calls/1442910ticks.3stages exit0/132.38870639700326s,worker1/retry0,within derived540s total/480s stage;source120unchanged;learning0/world0. Explicit R35 scaling and selected safety factors are planning/stop boundaries, not guarantees.646JSON/645manifest SHA+size exact and558unique lossless traces;44928physical references verified, scalar/controller maxerror1.1102230246251565e-16. Canonical fullkernel+Config exact-byte collision check/bounds, saved-data LRU18. No computation skipped; storage sharing only. Separate graph generation/validation/core/storage/source/common overhead/audit/seal; per-arm source allocation and common overhead equal halves explicit assumptions. Six empty logs and ZIP not received. Resource maxima kept as platform-native getrusage raw values. OAuth interruption recovered by reading same completed run, not rerunning."
+    }
+  ],
+  "verificationResults": [
+    {
+      "obligationId": "OB-BOUNDARY",
+      "executionStatus": "EXECUTED",
+      "result": "PASS",
+      "targetDigest": "sha256:3f48d3b58885a6ce31ede3f87f76e59906d610d1578283462e0d0d0079949023",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "method": "dynamic-test",
+      "evidenceRefs": [
+        "E-0",
+        "E-1",
+        "E-2",
+        "E-3",
+        "E-4",
+        "E-5",
+        "E-6",
+        "E-7",
+        "E-8",
+        "E-9",
+        "E-10",
+        "E-11"
+      ]
+    },
+    {
+      "obligationId": "OB-SEMANTICS",
+      "executionStatus": "EXECUTED",
+      "result": "PASS",
+      "targetDigest": "sha256:3f48d3b58885a6ce31ede3f87f76e59906d610d1578283462e0d0d0079949023",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "method": "dynamic-test",
+      "evidenceRefs": [
+        "E-0",
+        "E-1",
+        "E-2",
+        "E-3",
+        "E-4",
+        "E-5",
+        "E-6",
+        "E-7",
+        "E-8",
+        "E-9",
+        "E-10",
+        "E-11"
+      ]
+    },
+    {
+      "obligationId": "OB-COST",
+      "executionStatus": "EXECUTED",
+      "result": "PASS",
+      "targetDigest": "sha256:3f48d3b58885a6ce31ede3f87f76e59906d610d1578283462e0d0d0079949023",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "method": "dynamic-test",
+      "evidenceRefs": [
+        "E-0",
+        "E-1",
+        "E-2",
+        "E-3",
+        "E-4",
+        "E-5",
+        "E-6",
+        "E-7",
+        "E-8",
+        "E-9",
+        "E-10",
+        "E-11"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E-0",
+      "path": "evidence/sources.json",
+      "digest": "sha256:8922be9b1fc3821fedf9a749ce1052469613b943584ab84a23faa6cb1bea172c",
+      "targetDigest": "sha256:3f48d3b58885a6ce31ede3f87f76e59906d610d1578283462e0d0d0079949023",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Actual frozen R36 source and full saved traces with separate host scalar/controller/semantic replay; same-channel hashes, not external host attestation or independent audit."
+    },
+    {
+      "id": "E-1",
+      "path": "evidence/summary.json",
+      "digest": "sha256:9c4fa56faddb43bffd4c8515f96b12b745f4c09c44a7c29dca03077c16e07589",
+      "targetDigest": "sha256:3f48d3b58885a6ce31ede3f87f76e59906d610d1578283462e0d0d0079949023",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Actual frozen R36 source and full saved traces with separate host scalar/controller/semantic replay; same-channel hashes, not external host attestation or independent audit."
+    },
+    {
+      "id": "E-2",
+      "path": "evidence/result.json",
+      "digest": "sha256:49b3e752e1d53ce52accc18bbc1e4947fd65a63bcef63fececd1f34e4866a14a",
+      "targetDigest": "sha256:3f48d3b58885a6ce31ede3f87f76e59906d610d1578283462e0d0d0079949023",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Actual frozen R36 source and full saved traces with separate host scalar/controller/semantic replay; same-channel hashes, not external host attestation or independent audit."
+    },
+    {
+      "id": "E-3",
+      "path": "evidence/source-postcheck.json",
+      "digest": "sha256:9c2120b6791da9cec8ad879ddc251f9e5e403ebdedd8ee090128f4391a139ce6",
+      "targetDigest": "sha256:3f48d3b58885a6ce31ede3f87f76e59906d610d1578283462e0d0d0079949023",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Actual frozen R36 source and full saved traces with separate host scalar/controller/semantic replay; same-channel hashes, not external host attestation or independent audit."
+    },
+    {
+      "id": "E-4",
+      "path": "evidence/manifest.json",
+      "digest": "sha256:ff4c1f3ffc14235489056246692c34d0784d5e2250985fb06faa2b7c24909338",
+      "targetDigest": "sha256:3f48d3b58885a6ce31ede3f87f76e59906d610d1578283462e0d0d0079949023",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Actual frozen R36 source and full saved traces with separate host scalar/controller/semantic replay; same-channel hashes, not external host attestation or independent audit."
+    },
+    {
+      "id": "E-5",
+      "path": "evidence/work-ledger.json",
+      "digest": "sha256:9fcb962a3ec7c34fa7cf3a6209bebe6c7ab27095a401494ede0ffbdbe96cb426",
+      "targetDigest": "sha256:3f48d3b58885a6ce31ede3f87f76e59906d610d1578283462e0d0d0079949023",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Actual frozen R36 source and full saved traces with separate host scalar/controller/semantic replay; same-channel hashes, not external host attestation or independent audit."
+    },
+    {
+      "id": "E-6",
+      "path": "evidence/receipt-verification.json",
+      "digest": "sha256:70cc19663b728051fa2a8cc31ea30de851c394d1a714722ef78fcd57b94cf8bf",
+      "targetDigest": "sha256:3f48d3b58885a6ce31ede3f87f76e59906d610d1578283462e0d0d0079949023",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Actual frozen R36 source and full saved traces with separate host scalar/controller/semantic replay; same-channel hashes, not external host attestation or independent audit."
+    },
+    {
+      "id": "E-7",
+      "path": "evidence/local-verification.json",
+      "digest": "sha256:b7d793c5481e9310e88f4a70a71ace6c900919080ecc37ddf0341054735561cb",
+      "targetDigest": "sha256:3f48d3b58885a6ce31ede3f87f76e59906d610d1578283462e0d0d0079949023",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Actual frozen R36 source and full saved traces with separate host scalar/controller/semantic replay; same-channel hashes, not external host attestation or independent audit."
+    },
+    {
+      "id": "E-8",
+      "path": "evidence/analysis.json",
+      "digest": "sha256:b390458ba79ee5059ba35b8bf5b901f487193e1da68157f069a0ac58cca39de8",
+      "targetDigest": "sha256:3f48d3b58885a6ce31ede3f87f76e59906d610d1578283462e0d0d0079949023",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Actual frozen R36 source and full saved traces with separate host scalar/controller/semantic replay; same-channel hashes, not external host attestation or independent audit."
+    },
+    {
+      "id": "E-9",
+      "path": "evidence/preparation-checks.json",
+      "digest": "sha256:3089ebc44ba021c0f707290ff20d5e273e0ffaa3031c02d56a61754a1d2bf6b7",
+      "targetDigest": "sha256:3f48d3b58885a6ce31ede3f87f76e59906d610d1578283462e0d0d0079949023",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Actual frozen R36 source and full saved traces with separate host scalar/controller/semantic replay; same-channel hashes, not external host attestation or independent audit."
+    },
+    {
+      "id": "E-10",
+      "path": "evidence/server-completion.json",
+      "digest": "sha256:3fac839767152cf45c3e5aef01be4593fa075a4c2fc073d2c22b8947b3977cd0",
+      "targetDigest": "sha256:3f48d3b58885a6ce31ede3f87f76e59906d610d1578283462e0d0d0079949023",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Actual frozen R36 source and full saved traces with separate host scalar/controller/semantic replay; same-channel hashes, not external host attestation or independent audit."
+    },
+    {
+      "id": "E-11",
+      "path": "evidence/preparation.json",
+      "digest": "sha256:3154cfbfaa79467174eea192cafa107ffbd8a1cf676078e2a8f75d5cd8600a89",
+      "targetDigest": "sha256:3f48d3b58885a6ce31ede3f87f76e59906d610d1578283462e0d0d0079949023",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Actual frozen R36 source and full saved traces with separate host scalar/controller/semantic replay; same-channel hashes, not external host attestation or independent audit."
+    }
+  ],
+  "blockingFindingIds": [],
+  "unverifiedRequiredObligationIds": [],
+  "verdict": "PASS"
+}

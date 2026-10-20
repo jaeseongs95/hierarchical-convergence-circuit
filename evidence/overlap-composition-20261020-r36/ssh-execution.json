@@ -1,0 +1,79 @@
+{
+  "authentication_error": {
+    "error_code": "UNAUTHORIZED",
+    "reason": "oauth_token_invalid_grant"
+  },
+  "authentication_resolved": true,
+  "completion": {
+    "completed": true,
+    "evidence_bytes": 3574316,
+    "evidence_sha256": "054955d695fb17b27cbb33f5f93ecac47aec431075fea8b6816fa19fba495baf",
+    "seconds_including_seal": 132.38870639700326,
+    "within_wall_limit": true
+  },
+  "known_status": "COMPLETED_RAW_RECEIVED_LOCAL_REPLAY_PASS",
+  "launch": {
+    "maximum_measurement_requests": 0,
+    "maximum_native_settle_calls": 44956,
+    "native_training": 0,
+    "no_retry": true,
+    "parent_limits": {
+      "child_address_space_bytes": 536870912,
+      "child_file_bytes": 8388608,
+      "parent_address_space_bytes": 536870912,
+      "parent_file_bytes": 102760448,
+      "raw_bytes": 100663296,
+      "stage_seconds": 480,
+      "total_seconds": 540
+    },
+    "pid": 17474,
+    "preparation_seconds": 0.18069540700525977,
+    "root": "/home/mcpops/hcc-overlap-composition-20261020-r36",
+    "single_worker": true,
+    "total_wall_cap_seconds": 540
+  },
+  "launch_output": {
+    "bytes": 516,
+    "captureSource": "redacted-adapter-outcome",
+    "eof": true,
+    "executionId": "d37dc9ea559e2b46e8746b3697fb99fd648b8669b8cd201d",
+    "expiresAt": 1792478459507,
+    "format": "text",
+    "nextOffset": 516,
+    "offsetBytes": 0,
+    "outputId": "a53ee7d9b450f38e397dff4662e8e5d2ebba2fb1a9f9f658",
+    "sha256": "d4cd5387348ae79e899b4cdccc68fc7023bc35c28148ec1a7e7e2376c2e46eac",
+    "sshCompleteness": "unknown",
+    "totalBytes": 516,
+    "version": 1
+  },
+  "native_rerun": false,
+  "received_json": 646,
+  "request": {
+    "approvalMode": "automatic",
+    "command": "python3 -B -E -c 'import hashlib,zipfile; p=\"/home/mcpops/hcc-overlap-composition-source-20261020-r36.zip\"; assert hashlib.sha256(open(p,\"rb\").read()).hexdigest()==\"cb323011f9aaa9cf946498dd1fb279c099a156f793a93e5c04d4ed29930cd94e\"; z=zipfile.ZipFile(p); exec(compile(z.read(\"bootstrap.py\"),\"bootstrap.py\",\"exec\"))'",
+    "commandClass": "destructive",
+    "createdAt": 1792474859098,
+    "decision": {
+      "commandNames": [
+        "python3"
+      ],
+      "decision": "execute",
+      "policyRevision": 7,
+      "reasonCode": "command_set",
+      "targetRevision": "4cab9f57b2fd6d81004278e51ea7918d2124972cc1ae968b1d463d3a7c80cd4e"
+    },
+    "expiresAt": 1792478459098,
+    "id": "d37dc9ea559e2b46e8746b3697fb99fd648b8669b8cd201d",
+    "kind": "command",
+    "operation": {
+      "command": "python3 -B -E -c 'import hashlib,zipfile; p=\"/home/mcpops/hcc-overlap-composition-source-20261020-r36.zip\"; assert hashlib.sha256(open(p,\"rb\").read()).hexdigest()==\"cb323011f9aaa9cf946498dd1fb279c099a156f793a93e5c04d4ed29930cd94e\"; z=zipfile.ZipFile(p); exec(compile(z.read(\"bootstrap.py\"),\"bootstrap.py\",\"exec\"))'",
+      "context": "Continue authorized R36 research on the designated test server. Verify frozen ZIP hash then exclusively extract /home/mcpops/hcc-overlap-composition-20261020-r36 and launch one worker. 120 source files/87 pinned inputs; local 2648 preparation checks, 4 slot guards and 8 codec/cache mutations passed; local native calls 0. 2496 conditions x native/exact =4992 evaluations; 28 sources; at most44956 settle calls/7192960 ticks. Limits derived from measured R35 scaling with explicit safety factor3: total540s/stage480s, parent/child AS512MiB, raw96MiB, parent file98MiB/child8MiB. No training, world measurement, network, sudo, services, new dependencies, production changes or existing-file replacement. Preserve failures and stop; no retry, retuning or budget increase.",
+      "displayContext": "지정 테스트 서버에서 R36을 이어갑니다. ZIP 해시 확인 후 새 전용 폴더에만 배치하고 작업자 1개를 실행합니다. 120개 소스·87개 입력 고정, 준비 검사 2648개·slot 검사 4개·저장 경계 변조 검사 8개 통과, 로컬 native 실행 0회입니다. 2496조건을 두 방식으로 평가하고 원천 28개, 수렴 최대44956회·7192960tick입니다. R35 실측과 안전계수3으로 전체540초·단계480초, 주소공간 각512MiB·원자료96MiB·파일98/8MiB 상한을 정했습니다. 학습·세계측정·네트워크·sudo·서비스·의존성 추가·운영 변경·기존 파일 교체는 없습니다. 실패를 보존하고 중단하며 재시도·재조정·상한 증가는 하지 않습니다.",
+      "kind": "command"
+    },
+    "profile": "aws-local",
+    "state": "running",
+    "target": "mcpops@127.0.0.1:22"
+  }
+}

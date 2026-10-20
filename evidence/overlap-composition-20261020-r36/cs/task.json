@@ -1,0 +1,115 @@
+{
+  "acceptanceCriteria": [
+    "[AC-001] R35 leaf 배타성과 AST 의미중복 한계를 근거로 겹치는 서로 다른 관계/목표의 원천, 전체8패턴 및 결과별 판별 계획을 동결하고 기존 generator/kernel/연구를 보존한다.",
+    "[AC-002] 실제 native 원천28개, canonical2304+이름/순서변형192=2496조건을 native/exact 총4992평가로 비교한다. 같은 hard typed 정보와 R35 생성기/decoder를 사용하고 numeric host 역할 비교/해집합 계산/정답 수리는 금지한다.",
+    "[AC-003] 최종 상태/선택/값/사유 및 중간 역할/AST 출력을 채점하고 C/T에서6AST가8패턴에 대해 서로 구별되는지 검사한다. 원천 predicate/목표의 slot 계약을 확인하고 불합격은 그대로 보존한다. 단일변수/완전domain/initial.5/학습0의 범위를 넘겨 주장하지 않는다.",
+    "[AC-004] R35 raw와 명시적 계산으로 정한 전체540초/단계480초/worker1/retry0,최대44956settles7192960ticks,raw96MiB/parent-child각512MiB를 지킨다. 실제 모든 호출을 수행하고 동일trace 저장만 공유한다. 경계형 cache와 분할기록, 원천/생성/검증/저장 비용 및 전체원자료 SHA/수식/역할/의미/변조 검산을 수행한다.",
+    "[AC-005] 신규 세 경로만 scope/index 검증 뒤 서명커밋·main FF·같은 private origin push·SHA일치/clean을 확인한다."
+  ],
+  "authorization": {
+    "allowedActions": [
+      "R36 연구 전용 구현과 결과 문서 작성",
+      "제한된 AI Research SSH 후속 실험",
+      "서명커밋과 로컬 main 병합",
+      "같은 연구 저장소 원격 push"
+    ],
+    "approvalRequired": [],
+    "prohibitedActions": [
+      "기존 core 및 과거 연구 변경",
+      "새 의존성·유료자원·서비스·권한 확대",
+      "외부 peer 메시지 전송"
+    ]
+  },
+  "constraints": [
+    "신규3경로만; core/이전연구/user변경 보존",
+    "540s/stage480s/worker1/retry0/ASparent-child512MiB/raw96MiB/fileparent98MiB-child8MiB;budget.json는실측과선택한안전계수를구분",
+    "source/input/generator/decoder/threshold 봉인후 retune/native재실행 금지",
+    "학습/World.measure0; arbitrary CSP/다변수/학습/확률교정/효율우위/운영도입 주장 금지",
+    "실제 모든native계산 수행;동일kernel+Config정확일치 STORAGE만공유;runtimecanonicalbytescache≤2692×128KiB, saved trace LRU18",
+    "같은typed관계·목표·AST·완전domain의exact대조;단순predicate/목표slot metadata검사를semantic role solving으로혼동하지않음",
+    "새dependency/paidresource/service/권한확대/peer메시지 없음"
+  ],
+  "decision": {
+    "complexity": "complex",
+    "hasConflicts": false
+  },
+  "objective": "겹치는 typed 관계 원천으로 실제8개 Boolean leaf 패턴을 실현하고 동일 native 생성기에서 중간 논리식·최종 해집합 query 의미가 보존·구별되는지 검증",
+  "orchestration": {
+    "mcpAvailable": true,
+    "requested": false
+  },
+  "requiredCapabilities": [
+    "minimal-implementation",
+    "cs-implementation-review",
+    "change-scope-assurance"
+  ],
+  "riskLevel": "medium",
+  "schemaVersion": "1.0.0",
+  "scope": {
+    "excluded": [
+      "src/",
+      "tests/",
+      "tools/r19_cross_level/",
+      "tools/r20_evidence_feedback/",
+      "tools/r21_active_measurement/",
+      "tools/r22_measurement_adoption/",
+      "tools/r23_source_qualification/",
+      "experiments/exp-69-source-qualification/",
+      "evidence/source-qualification-20261019-r23/",
+      "tools/r24_trust_boundary/",
+      "experiments/exp-70-trust-boundary/",
+      "evidence/trust-boundary-20261019-r24/",
+      "tools/r25_fixedpoint_elision/",
+      "experiments/exp-71-fixedpoint-elision/",
+      "evidence/fixedpoint-elision-20261019-r25/",
+      "experiments/exp-72-contraction-warmstart/",
+      "tools/r26_contraction_warmstart/",
+      "evidence/contraction-warmstart-20261019-r26/",
+      "experiments/exp-73-finite-stop-envelope/",
+      "tools/r27_finite_stop_envelope/",
+      "evidence/finite-stop-envelope-20261019-r27/",
+      "experiments/exp-74-reuse-frontier/",
+      "tools/r28_reuse_frontier/",
+      "evidence/reuse-frontier-20261020-r28/",
+      "experiments/exp-75-research-direction/",
+      "tools/r29_research_direction/",
+      "evidence/research-direction-20261020-r29/",
+      "experiments/exp-76-spatial-sharing/",
+      "tools/r30_spatial_sharing/",
+      "evidence/spatial-sharing-20261020-r30/",
+      "experiments/exp-77-macro-control/",
+      "tools/r31_macro_control/",
+      "evidence/macro-control-20261020-r31/",
+      "experiments/exp-78-semantic-join/",
+      "tools/r32_semantic_join/",
+      "evidence/semantic-join-20261020-r32/",
+      "experiments/exp-79-typed-feedback/",
+      "tools/r33_typed_feedback/",
+      "evidence/typed-feedback-20261020-r33/",
+      "experiments/exp-80-feasible-state/",
+      "tools/r34_feasible_state/",
+      "evidence/feasible-state-20261020-r34/",
+      "experiments/exp-81-compositional-slot/",
+      "tools/r35_compositional_slot/",
+      "evidence/compositional-slot-20261020-r35/"
+    ],
+    "included": [
+      "experiments/exp-82-overlap-composition/",
+      "tools/r36_overlap_composition/",
+      "evidence/overlap-composition-20261020-r36/"
+    ]
+  },
+  "taskId": "ai-overlap-composition-r36",
+  "workUnits": [
+    {
+      "dependencies": [],
+      "id": "r36",
+      "objective": "겹치는 typed 관계 원천으로 실제8개 Boolean leaf 패턴을 실현하고 동일 native 생성기에서 중간 논리식·최종 해집합 query 의미가 보존·구별되는지 검증",
+      "writeTargets": [
+        "experiments/exp-82-overlap-composition/",
+        "tools/r36_overlap_composition/",
+        "evidence/overlap-composition-20261020-r36/"
+      ]
+    }
+  ]
+}

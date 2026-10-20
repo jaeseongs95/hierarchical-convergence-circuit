@@ -1,0 +1,144 @@
+{
+  "schemaVersion": "1.0.0",
+  "reportId": "CS-R36-CONSTRAINTS",
+  "requestDigest": "sha256:10e18d21378a8cfe305ba33ce6cc9f99463a517aefacabbdcee967b7e06abe16",
+  "sourceSnapshotDigest": "sha256:fb4ec426cb374e7e155deabe542483bc5bbe34dbbe86492a1f570c231e69bdf3",
+  "knowledgePackVersion": "0.1.0",
+  "knowledgePackDigest": "sha256:d8351d9aabb433403830fcffc3a2f2438b6d428711c93b6ded9eff002468c3d1",
+  "draftUse": {
+    "allowed": false,
+    "basis": "Validated identity/reuse and matched measurement rules"
+  },
+  "applicability": "applicable",
+  "applicabilityReason": "Typed source reuse and causal feedback correctness need explicit identity and evidence accounting.",
+  "selectedRules": [
+    {
+      "ruleId": "ALG-KEY-004",
+      "ruleDigest": "sha256:db77383ecb5f41ef3af5cb60769edaea507cac5cb25e28b88f249e84a062ba2e",
+      "applicabilityReason": "Shared native source reuse and candidate-order routing require full source/role/revision/config binding; a selected revision may not silently change origin roles."
+    },
+    {
+      "ruleId": "PERF-MEASURE-001",
+      "ruleDigest": "sha256:ef11800e55663f1b719f62d3f812280fd6e56c6895eef3028b9db344a9d0a355",
+      "applicabilityReason": "Information-matched exact control and actual shared-source plus all roundtrip/serialization/process costs; semantic errors preclude efficiency adoption."
+    }
+  ],
+  "facts": [
+    {
+      "id": "FACT-GAP",
+      "statement": "R35 fixed matrix864of864, but actual3leafs mutually exclusive, C six ASTs have4/4/5 distinct meanings on domain2/3/4, T3/4/5. Native does not realize both leaf0 and1 true. New study uses distinct predicate/goal channels and aliases their subjects to realize all8patterns.",
+      "evidenceRefs": [
+        "SRC-R32",
+        "SRC-RESULT"
+      ]
+    },
+    {
+      "id": "FACT-KERNEL",
+      "statement": "Reuse unchanged R35 compiler/runtime/core and exact solver. Numeric graph sees only per-field codes and native messages. Predicate/target slot metadata guard is schema binding, not host role truth solving. Record storage full-kernel+Config identity and saved-trace LRU can be bounded independently of actual compute.",
+      "evidenceRefs": [
+        "SRC-KERNEL",
+        "SRC-CORE",
+        "SRC-R19"
+      ]
+    },
+    {
+      "id": "FACT-BUDGET",
+      "statement": "Budget source has frozen R35 raw hashes, explicit native/case/unique-trace/source scaling, selected3x time safety factor and60s rounding:planning171.727s,work158.146s;540s global/480s stage. Raw96MiB from2x scaled received JSON rounded32MiB. ASparent/child512MiB on observed3,103,196kB MemAvailable; operational caps not predictions or measured RSS guarantees.",
+      "evidenceRefs": [
+        "SRC-BUDGET"
+      ]
+    }
+  ],
+  "assumptions": [],
+  "invariants": [
+    {
+      "id": "INV-BOUNDARY",
+      "statement": "28actual native conditional path origins bind predicate/subject/target/proof/config/revision. C leaf predicatesP0/P1/P2 and distinct targets, TQ0/Q1/Q2 and distinct targets prevent duplicate-proposition overlap. Schema guards check declared metadata slots only. Unchanged R35 generator, per-field3bit encoder, native runtime and fixed decoder; no host candidate-object vs fact-subject comparison/feasible solve/answer repair on numeric route. Final T consumer excludes first C/oracle. All source/drive/program/packet/AST/contract hashes audited.",
+      "scope": "R36 frozen2496cases2arms and28native sources",
+      "basisRefs": [
+        "FACT-GAP",
+        "FACT-KERNEL"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-SEMANTICS",
+      "statement": "Freeze canonical8Cpatterns x8Tpatterns x6C_AST x6T_AST=2304, plus64deterministic pattern-pair sentinels x3namespace/order variants192;total2496native/exact4992outputs,2candidates/completeTrue/initial.5. Score role12 and AST4 intermediates per numeric case separately from final strict state/selection/value/reason. Compare six native truth vectors on all8patterns in C/T; check metaphoric normalized binding invariance. Keep all errors, abstentions and first failed stage; no post-run rerun/retune. Single-variable finite authored grammar only, not learning/arbitrary CSP/efficiency/production proof.",
+      "scope": "R36 frozen2496cases2arms and28native sources",
+      "basisRefs": [
+        "FACT-GAP",
+        "FACT-KERNEL"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-COST",
+      "statement": "28source+44928numeric=44956physicalsettles/max7192960ticks. Budget.json derives operational540s/stage480s/worker1/retry0/raw96MiB/ASparent-child512MiB/file98/8MiB,learning0/World.measure0. Work cache stores canonical fullkernel+Config bytes <=2692records x128KiB with exact-byte collision check; no compute skipped. Saved-data full-trace LRU18boundsoneevaluation. Batch128records/39chunks and separate metrics avoid oversized transfer files. Separate source/generation/validation/compute/recording/common overhead/audit/seal, full SHA/scalar/controller/source/role/meaning/mutations. Resource or provenance failure => engineering inconclusive, no semantic conclusion or automatic retry.",
+      "scope": "R36 frozen2496cases2arms and28native sources",
+      "basisRefs": [
+        "FACT-GAP",
+        "FACT-KERNEL",
+        "FACT-BUDGET"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "PERF-MEASURE-001"
+      ]
+    }
+  ],
+  "designChoices": [
+    {
+      "id": "CHOICE-OVERLAP",
+      "statement": "Keep R35 mathematical pipeline and change only typed source overlap plus metadata guard; score all intermediate stages. Bound storage as canonical bytes and saved-data reads with LRU18. Same-info exact is sufficient control.",
+      "rationale": "Directly closes R35 actual-pattern gap without stronger model/decoder or larger candidate domains. Every sent execution has predeclared semantic versus engineering outcomes.",
+      "basisRefs": [
+        "FACT-GAP",
+        "FACT-KERNEL",
+        "FACT-BUDGET"
+      ]
+    }
+  ],
+  "verificationObligations": [
+    {
+      "id": "OB-BOUNDARY",
+      "invariantIds": [
+        "INV-BOUNDARY"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Wrong predicate/target accepted, role-solving adapter, changed generator/threshold or hidden mask/truth supplied to native consumer.",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-SEMANTICS",
+      "invariantIds": [
+        "INV-SEMANTICS"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Actual leaf patterns still exclusive, intermediate errors masked by final correctness, native ASTs collapse, missing cells or post-hoc conditions changed.",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-COST",
+      "invariantIds": [
+        "INV-COST"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Arbitrary copied timeout, omitted bound/cost/call, canonical identity loss, unreceived evidence claimed received, cache storage called computational reuse, or failure rerun without new information.",
+      "requirementLevel": "required"
+    }
+  ],
+  "requiredCapabilities": [
+    "cs-constraint-derivation",
+    "cs-implementation-review"
+  ],
+  "verdict": "READY"
+}
