@@ -1,0 +1,368 @@
+{
+  "arms": [
+    "one"
+  ],
+  "base": "b88c44f9a69522504d848200286ac8c42351d15e",
+  "base_spec": "experiments/exp-72-contraction-warmstart/frozen_spec.json",
+  "base_spec_sha256": "510d7dc26a30e1bcdea7a57c5981d03d7654b752df9dd6d440b6b001af9c63ed",
+  "block_order": [
+    [
+      [
+        "reset",
+        "legacy_guarded",
+        "compiled_guarded"
+      ],
+      false
+    ],
+    [
+      [
+        "compiled_guarded",
+        "legacy_guarded",
+        "reset"
+      ],
+      true
+    ],
+    [
+      [
+        "legacy_guarded",
+        "reset",
+        "compiled_guarded"
+      ],
+      true
+    ],
+    [
+      [
+        "compiled_guarded",
+        "reset",
+        "legacy_guarded"
+      ],
+      false
+    ]
+  ],
+  "cases": [
+    {
+      "block": 0,
+      "key": "b0_strong_positive_first_reset",
+      "policy": "reset",
+      "stream": "strong_positive_first"
+    },
+    {
+      "block": 0,
+      "key": "b0_strong_positive_first_legacy_guarded",
+      "policy": "legacy_guarded",
+      "stream": "strong_positive_first"
+    },
+    {
+      "block": 0,
+      "key": "b0_strong_positive_first_compiled_guarded",
+      "policy": "compiled_guarded",
+      "stream": "strong_positive_first"
+    },
+    {
+      "block": 0,
+      "key": "b0_strong_negative_first_reset",
+      "policy": "reset",
+      "stream": "strong_negative_first"
+    },
+    {
+      "block": 0,
+      "key": "b0_strong_negative_first_legacy_guarded",
+      "policy": "legacy_guarded",
+      "stream": "strong_negative_first"
+    },
+    {
+      "block": 0,
+      "key": "b0_strong_negative_first_compiled_guarded",
+      "policy": "compiled_guarded",
+      "stream": "strong_negative_first"
+    },
+    {
+      "block": 0,
+      "key": "b0_weak_positive_first_reset",
+      "policy": "reset",
+      "stream": "weak_positive_first"
+    },
+    {
+      "block": 0,
+      "key": "b0_weak_positive_first_legacy_guarded",
+      "policy": "legacy_guarded",
+      "stream": "weak_positive_first"
+    },
+    {
+      "block": 0,
+      "key": "b0_weak_positive_first_compiled_guarded",
+      "policy": "compiled_guarded",
+      "stream": "weak_positive_first"
+    },
+    {
+      "block": 0,
+      "key": "b0_weak_negative_first_reset",
+      "policy": "reset",
+      "stream": "weak_negative_first"
+    },
+    {
+      "block": 0,
+      "key": "b0_weak_negative_first_legacy_guarded",
+      "policy": "legacy_guarded",
+      "stream": "weak_negative_first"
+    },
+    {
+      "block": 0,
+      "key": "b0_weak_negative_first_compiled_guarded",
+      "policy": "compiled_guarded",
+      "stream": "weak_negative_first"
+    },
+    {
+      "block": 1,
+      "key": "b1_weak_negative_first_compiled_guarded",
+      "policy": "compiled_guarded",
+      "stream": "weak_negative_first"
+    },
+    {
+      "block": 1,
+      "key": "b1_weak_negative_first_legacy_guarded",
+      "policy": "legacy_guarded",
+      "stream": "weak_negative_first"
+    },
+    {
+      "block": 1,
+      "key": "b1_weak_negative_first_reset",
+      "policy": "reset",
+      "stream": "weak_negative_first"
+    },
+    {
+      "block": 1,
+      "key": "b1_weak_positive_first_compiled_guarded",
+      "policy": "compiled_guarded",
+      "stream": "weak_positive_first"
+    },
+    {
+      "block": 1,
+      "key": "b1_weak_positive_first_legacy_guarded",
+      "policy": "legacy_guarded",
+      "stream": "weak_positive_first"
+    },
+    {
+      "block": 1,
+      "key": "b1_weak_positive_first_reset",
+      "policy": "reset",
+      "stream": "weak_positive_first"
+    },
+    {
+      "block": 1,
+      "key": "b1_strong_negative_first_compiled_guarded",
+      "policy": "compiled_guarded",
+      "stream": "strong_negative_first"
+    },
+    {
+      "block": 1,
+      "key": "b1_strong_negative_first_legacy_guarded",
+      "policy": "legacy_guarded",
+      "stream": "strong_negative_first"
+    },
+    {
+      "block": 1,
+      "key": "b1_strong_negative_first_reset",
+      "policy": "reset",
+      "stream": "strong_negative_first"
+    },
+    {
+      "block": 1,
+      "key": "b1_strong_positive_first_compiled_guarded",
+      "policy": "compiled_guarded",
+      "stream": "strong_positive_first"
+    },
+    {
+      "block": 1,
+      "key": "b1_strong_positive_first_legacy_guarded",
+      "policy": "legacy_guarded",
+      "stream": "strong_positive_first"
+    },
+    {
+      "block": 1,
+      "key": "b1_strong_positive_first_reset",
+      "policy": "reset",
+      "stream": "strong_positive_first"
+    },
+    {
+      "block": 2,
+      "key": "b2_weak_negative_first_legacy_guarded",
+      "policy": "legacy_guarded",
+      "stream": "weak_negative_first"
+    },
+    {
+      "block": 2,
+      "key": "b2_weak_negative_first_reset",
+      "policy": "reset",
+      "stream": "weak_negative_first"
+    },
+    {
+      "block": 2,
+      "key": "b2_weak_negative_first_compiled_guarded",
+      "policy": "compiled_guarded",
+      "stream": "weak_negative_first"
+    },
+    {
+      "block": 2,
+      "key": "b2_weak_positive_first_legacy_guarded",
+      "policy": "legacy_guarded",
+      "stream": "weak_positive_first"
+    },
+    {
+      "block": 2,
+      "key": "b2_weak_positive_first_reset",
+      "policy": "reset",
+      "stream": "weak_positive_first"
+    },
+    {
+      "block": 2,
+      "key": "b2_weak_positive_first_compiled_guarded",
+      "policy": "compiled_guarded",
+      "stream": "weak_positive_first"
+    },
+    {
+      "block": 2,
+      "key": "b2_strong_negative_first_legacy_guarded",
+      "policy": "legacy_guarded",
+      "stream": "strong_negative_first"
+    },
+    {
+      "block": 2,
+      "key": "b2_strong_negative_first_reset",
+      "policy": "reset",
+      "stream": "strong_negative_first"
+    },
+    {
+      "block": 2,
+      "key": "b2_strong_negative_first_compiled_guarded",
+      "policy": "compiled_guarded",
+      "stream": "strong_negative_first"
+    },
+    {
+      "block": 2,
+      "key": "b2_strong_positive_first_legacy_guarded",
+      "policy": "legacy_guarded",
+      "stream": "strong_positive_first"
+    },
+    {
+      "block": 2,
+      "key": "b2_strong_positive_first_reset",
+      "policy": "reset",
+      "stream": "strong_positive_first"
+    },
+    {
+      "block": 2,
+      "key": "b2_strong_positive_first_compiled_guarded",
+      "policy": "compiled_guarded",
+      "stream": "strong_positive_first"
+    },
+    {
+      "block": 3,
+      "key": "b3_strong_positive_first_compiled_guarded",
+      "policy": "compiled_guarded",
+      "stream": "strong_positive_first"
+    },
+    {
+      "block": 3,
+      "key": "b3_strong_positive_first_reset",
+      "policy": "reset",
+      "stream": "strong_positive_first"
+    },
+    {
+      "block": 3,
+      "key": "b3_strong_positive_first_legacy_guarded",
+      "policy": "legacy_guarded",
+      "stream": "strong_positive_first"
+    },
+    {
+      "block": 3,
+      "key": "b3_strong_negative_first_compiled_guarded",
+      "policy": "compiled_guarded",
+      "stream": "strong_negative_first"
+    },
+    {
+      "block": 3,
+      "key": "b3_strong_negative_first_reset",
+      "policy": "reset",
+      "stream": "strong_negative_first"
+    },
+    {
+      "block": 3,
+      "key": "b3_strong_negative_first_legacy_guarded",
+      "policy": "legacy_guarded",
+      "stream": "strong_negative_first"
+    },
+    {
+      "block": 3,
+      "key": "b3_weak_positive_first_compiled_guarded",
+      "policy": "compiled_guarded",
+      "stream": "weak_positive_first"
+    },
+    {
+      "block": 3,
+      "key": "b3_weak_positive_first_reset",
+      "policy": "reset",
+      "stream": "weak_positive_first"
+    },
+    {
+      "block": 3,
+      "key": "b3_weak_positive_first_legacy_guarded",
+      "policy": "legacy_guarded",
+      "stream": "weak_positive_first"
+    },
+    {
+      "block": 3,
+      "key": "b3_weak_negative_first_compiled_guarded",
+      "policy": "compiled_guarded",
+      "stream": "weak_negative_first"
+    },
+    {
+      "block": 3,
+      "key": "b3_weak_negative_first_reset",
+      "policy": "reset",
+      "stream": "weak_negative_first"
+    },
+    {
+      "block": 3,
+      "key": "b3_weak_negative_first_legacy_guarded",
+      "policy": "legacy_guarded",
+      "stream": "weak_negative_first"
+    }
+  ],
+  "experiment": "EXP-74",
+  "limits": {
+    "automatic_retry": false,
+    "child_address_space_bytes": 536870912,
+    "child_file_bytes": 16777216,
+    "parent_address_space_bytes": 536870912,
+    "parent_file_bytes": 33554432,
+    "raw_bytes": 134217728,
+    "stage_seconds": 60,
+    "total_seconds": 600,
+    "workers": 1
+  },
+  "maximum_logical_ticks": 46080,
+  "maximum_measurement_requests": 0,
+  "maximum_native_settle_calls": 288,
+  "minimum_resolved_difference_seconds": 1e-06,
+  "policy_names": [
+    "reset",
+    "legacy_guarded",
+    "compiled_guarded"
+  ],
+  "predicate_profile_sha256": "38bdf88173204dccf77058e9eb5be03361623bc560630163f42e6b9ac6642dbd",
+  "predicate_sources": {
+    "codec": "src/hcr/codec.py",
+    "compiler": "tools/r28_reuse_frontier/predicate.py",
+    "gate_verifier": "tools/r26_contraction_warmstart/verify.py",
+    "legacy_gate": "tools/r26_contraction_warmstart/policy.py",
+    "model": "src/hcr/model.py",
+    "native": "src/hcr/dynamics.py",
+    "program_template": "tools/r19_cross_level/probe.py"
+  },
+  "production_adoption": false,
+  "run": "r28",
+  "scalar_tolerance": 1e-15,
+  "terminal_state_tolerance": 0.0001,
+  "training_calls": 0
+}

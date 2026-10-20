@@ -1,0 +1,273 @@
+{
+  "arms": [
+    "three_policies"
+  ],
+  "arms_order": [
+    "reset",
+    "carry",
+    "guarded"
+  ],
+  "base": "a97c2f26f61da2107873e678d622c7bbd2d01443",
+  "cases": [
+    {
+      "key": "strong_positive_first"
+    },
+    {
+      "key": "strong_negative_first"
+    },
+    {
+      "key": "weak_positive_first"
+    },
+    {
+      "key": "weak_negative_first"
+    }
+  ],
+  "contraction_threshold": {
+    "denominator": 20,
+    "numerator": 19
+  },
+  "dynamics_sha256": "a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc",
+  "experiment": "EXP-72",
+  "kernel": {
+    "damping": 0.45,
+    "evidence_gain": 4.0,
+    "inhibition": 0.2,
+    "learning_rate": 0.25,
+    "margin_threshold": 0.3,
+    "max_circuits": 16,
+    "max_edges": 8,
+    "max_groups": 32,
+    "max_observation_requests": 2,
+    "max_path_length": 4,
+    "max_paths": 4,
+    "max_search": 2048,
+    "max_ticks": 160,
+    "min_valid_episodes": 3,
+    "patience": 4,
+    "prior_gain": 0.0,
+    "relation_gain": 2.0,
+    "residual_tolerance": 1e-06,
+    "self_excitation": 0.25,
+    "temperature": 1.0,
+    "top_down_gain": 0.35,
+    "weakening": 0.2
+  },
+  "limits": {
+    "automatic_retry": false,
+    "child_address_space_bytes": 536870912,
+    "child_file_bytes": 16777216,
+    "parent_address_space_bytes": 536870912,
+    "parent_file_bytes": 33554432,
+    "raw_bytes": 134217728,
+    "stage_seconds": 60,
+    "total_seconds": 600,
+    "workers": 1
+  },
+  "maximum_logical_ticks": 11520,
+  "maximum_measurement_requests": 0,
+  "maximum_native_settle_calls": 72,
+  "production_adoption": false,
+  "run": "r26",
+  "scalar_tolerance": 1e-15,
+  "streams": [
+    {
+      "cells": [
+        {
+          "key": "step0",
+          "scores": [
+            1.0,
+            0.8
+          ]
+        },
+        {
+          "key": "step1",
+          "scores": [
+            0.8,
+            0.6
+          ]
+        },
+        {
+          "key": "step2",
+          "scores": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "key": "step3",
+          "scores": [
+            -1.0,
+            -0.8
+          ]
+        },
+        {
+          "key": "step4",
+          "scores": [
+            -0.8,
+            -0.6
+          ]
+        },
+        {
+          "key": "step5",
+          "scores": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "key": "strong_positive_first",
+      "order_offset": 0
+    },
+    {
+      "cells": [
+        {
+          "key": "step0",
+          "scores": [
+            -1.0,
+            -0.8
+          ]
+        },
+        {
+          "key": "step1",
+          "scores": [
+            -0.8,
+            -0.6
+          ]
+        },
+        {
+          "key": "step2",
+          "scores": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "key": "step3",
+          "scores": [
+            1.0,
+            0.8
+          ]
+        },
+        {
+          "key": "step4",
+          "scores": [
+            0.8,
+            0.6
+          ]
+        },
+        {
+          "key": "step5",
+          "scores": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "key": "strong_negative_first",
+      "order_offset": 1
+    },
+    {
+      "cells": [
+        {
+          "key": "step0",
+          "scores": [
+            0.2,
+            0.15
+          ]
+        },
+        {
+          "key": "step1",
+          "scores": [
+            0.15,
+            0.1
+          ]
+        },
+        {
+          "key": "step2",
+          "scores": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "key": "step3",
+          "scores": [
+            -0.2,
+            -0.15
+          ]
+        },
+        {
+          "key": "step4",
+          "scores": [
+            -0.15,
+            -0.1
+          ]
+        },
+        {
+          "key": "step5",
+          "scores": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "key": "weak_positive_first",
+      "order_offset": 2
+    },
+    {
+      "cells": [
+        {
+          "key": "step0",
+          "scores": [
+            -0.2,
+            -0.15
+          ]
+        },
+        {
+          "key": "step1",
+          "scores": [
+            -0.15,
+            -0.1
+          ]
+        },
+        {
+          "key": "step2",
+          "scores": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "key": "step3",
+          "scores": [
+            0.2,
+            0.15
+          ]
+        },
+        {
+          "key": "step4",
+          "scores": [
+            0.15,
+            0.1
+          ]
+        },
+        {
+          "key": "step5",
+          "scores": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "key": "weak_negative_first",
+      "order_offset": 0
+    }
+  ],
+  "terminal_state_tolerance": 0.0001,
+  "training_calls": 0,
+  "weights": {
+    "f0": 1,
+    "f1": 1,
+    "goal": 8
+  }
+}

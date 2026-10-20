@@ -1,0 +1,17 @@
+{
+  "status": "ARCHIVED_SYNTHETIC_AUDIT_CHECKED",
+  "source": "R26 archived records repeated into synthetic R28-shaped jobs; timing values synthetic",
+  "native_executions": 0,
+  "new_timing_runs": 0,
+  "checked_correspondences": 96,
+  "targeted_rejections": {
+    "gate": "gate oracle",
+    "initial": "initial choice",
+    "trace": "scalar trace",
+    "cost": "native cost",
+    "cache": "cache provenance",
+    "timing": "timing inclusion",
+    "missing_job": "job matrix"
+  },
+  "scalar_max_absolute_error": 1.3877787807814457e-17
+}

@@ -1,0 +1,23 @@
+{
+  "exact_pairs": 96,
+  "frozen_source_files": 151,
+  "native_settle_calls_performed_locally": 0,
+  "new_timing_runs_locally": 0,
+  "production_adoption": false,
+  "quality_pairs": 96,
+  "received_manifest_matched_files": 52,
+  "scalar_max_absolute_error": 1.3877787807814457e-17,
+  "server_native_settle_calls": 288,
+  "server_stages": 50,
+  "source_unchanged_report": true,
+  "status": "LOCAL_SAVED_RAW_REPLAY_PASS",
+  "targeted_rejections": {
+    "cache": "cache provenance",
+    "cost": "native cost",
+    "gate": "gate oracle",
+    "initial": "initial choice",
+    "missing_job": "job matrix",
+    "timing": "timing inclusion",
+    "trace": "scalar trace"
+  }
+}

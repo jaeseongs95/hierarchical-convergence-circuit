@@ -1,0 +1,606 @@
+{
+  "axis_decisions": [
+    {
+      "axis": "novelty",
+      "decision": "사후 분석 다음으로 exact runtime predicate compiler 비용을 관측",
+      "evidence_claim_ids": [
+        "C4",
+        "C5"
+      ]
+    },
+    {
+      "axis": "semantics",
+      "decision": "Boolean만 교체, choose/cache/native는 유지",
+      "evidence_claim_ids": [
+        "C1",
+        "C3",
+        "C6"
+      ]
+    },
+    {
+      "axis": "proof",
+      "decision": "전체 단조성/고정 goal과 인접 float 최소성의 연결을 실행 전 증명",
+      "evidence_claim_ids": [
+        "C2"
+      ]
+    },
+    {
+      "axis": "cost_lifetime",
+      "decision": "stream별 cold6에 compile/verify 포함, 수명 확대 없음",
+      "evidence_claim_ids": [
+        "C3",
+        "C5"
+      ]
+    },
+    {
+      "axis": "protocol",
+      "decision": "3arms×4streams×4blocks×6cells=288settles/46080ticks",
+      "evidence_claim_ids": [
+        "C3"
+      ]
+    },
+    {
+      "axis": "acceptance",
+      "decision": "타입/bit 동치와 관측 품질을 통과하고4block CPU/wall 모두 양 baseline보다 작아야 개선 관측",
+      "evidence_claim_ids": [
+        "C1",
+        "C4",
+        "C5"
+      ]
+    }
+  ],
+  "case_brief": {
+    "assumptions": [],
+    "constraints": [
+      "core와 이전 연구 불변",
+      "AI Research SSH600초/단계60초/worker1/retry0",
+      "원래6입력 수명·새 의존성과 유료자원 없음",
+      "동치와 관측 품질·비용 및 미래 품질을 구별",
+      "실행 후 반복·입력·판정 조정 없음"
+    ],
+    "decision": "R27 다음 비중복 작은 연구와 실행 전 수용 조건 결정",
+    "facts": [
+      "choose는 eligible Boolean만 소비하며 source/binding/status/state 검사 순서를 지켜야 한다.",
+      "R26 동일 input row의 q는 |drive|에 비증가하고 goal row는 약.87625이다. 임계 float와 predecessor를 정확한 Fraction으로 직접 재계산했다.",
+      "R26은 stream별6입력과 arm별 빈 state로 시작한다. 같은 선택/initial/native/cache 귀납이 가능하다.",
+      "R27은 저장72기록/48쌍의 사후 인증이며 미래 입력 native/reset 품질의 증명이 아니다.",
+      "저장 gate-free CPU headroom.135951ms/약2.08%와 m35/42는 조건부 산술이며 실제 compiler 비용은 관측되지 않았다.",
+      "native는 initial을 복사하고 convergence history를 재설정하며 link 순서/topdown이 실행을 정한다."
+    ],
+    "failure_modes": [
+      "정책 변경의 성능 혼입",
+      "compile비용 누락",
+      "사후 인증을 사전 품질 보장으로 오인"
+    ],
+    "success_criteria": [
+      "사전 동치 유도/검사 후288회 고정 서버실험",
+      "불일치/비용 음성도 그대로 보고"
+    ],
+    "unknowns": [
+      "전체 predicate 동치 유도",
+      "실제 cold 비용",
+      "미래 입력 reset 품질"
+    ]
+  },
+  "consensus_proposal": {
+    "action": "source-bound exact eligible Boolean compiler의 의미 보존과 cold6 비용 검증",
+    "axis_alignment": [
+      {
+        "axis": "novelty",
+        "decision_ref": "novelty"
+      },
+      {
+        "axis": "semantics",
+        "decision_ref": "semantics"
+      },
+      {
+        "axis": "proof",
+        "decision_ref": "proof"
+      },
+      {
+        "axis": "cost_lifetime",
+        "decision_ref": "cost_lifetime"
+      },
+      {
+        "axis": "protocol",
+        "decision_ref": "protocol"
+      },
+      {
+        "axis": "acceptance",
+        "decision_ref": "acceptance"
+      }
+    ],
+    "conditions": [
+      "전체 단조성/인접 float 유도와 별도 검증을 native 실행 전 완료",
+      "288settles/46080ticks/600초 고정",
+      "의미·품질·비용의 분리와 음성 결과 보존"
+    ],
+    "decision_owner": null,
+    "no_consensus_reason": null,
+    "remaining_options": [],
+    "satisfied_constraints": [
+      "core와 이전 연구 불변",
+      "AI Research SSH600초/단계60초/worker1/retry0",
+      "원래6입력 수명·새 의존성과 유료자원 없음",
+      "동치와 관측 품질·비용 및 미래 품질을 구별",
+      "실행 후 반복·입력·판정 조정 없음"
+    ],
+    "status": "conditional_consensus",
+    "supported_by_verified_claims": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "unresolved_dissent": []
+  },
+  "constraints": [
+    "core와 이전 연구 불변",
+    "AI Research SSH600초/단계60초/worker1/retry0",
+    "원래6입력 수명·새 의존성과 유료자원 없음",
+    "동치와 관측 품질·비용 및 미래 품질을 구별",
+    "실행 후 반복·입력·판정 조정 없음"
+  ],
+  "cross_examination": {
+    "coverage": [
+      {
+        "item_id": "T1",
+        "reviewer_ids": [
+          "/root/r28_architecture"
+        ]
+      },
+      {
+        "item_id": "T2",
+        "reviewer_ids": [
+          "/root/r28_math"
+        ]
+      },
+      {
+        "item_id": "T3",
+        "reviewer_ids": [
+          "/root/r28_validity"
+        ]
+      },
+      {
+        "item_id": "T4",
+        "reviewer_ids": [
+          "/root/r28_cost"
+        ]
+      }
+    ],
+    "decision": "run",
+    "followups": [
+      {
+        "item_ids": [
+          "T1"
+        ],
+        "reviewer_id": "/root/r28_architecture"
+      },
+      {
+        "item_ids": [
+          "T2"
+        ],
+        "reviewer_id": "/root/r28_math"
+      },
+      {
+        "item_ids": [
+          "T3"
+        ],
+        "reviewer_id": "/root/r28_validity"
+      },
+      {
+        "item_ids": [
+          "T4"
+        ],
+        "reviewer_id": "/root/r28_cost"
+      }
+    ],
+    "reason": "동치 범위/전향 품질 선행조건/정책 혼입/실제 수명과 비용 문턱 충돌을 비원저자가 검토",
+    "selected_item_ids": [
+      "T1",
+      "T2",
+      "T3",
+      "T4"
+    ],
+    "trigger_items": [
+      {
+        "id": "T1",
+        "origin_reviewer": "/root/r28_math"
+      },
+      {
+        "id": "T2",
+        "origin_reviewer": "/root/r28_validity"
+      },
+      {
+        "id": "T3",
+        "origin_reviewer": "/root/r28_cost"
+      },
+      {
+        "id": "T4",
+        "origin_reviewer": "/root/r28_architecture"
+      }
+    ]
+  },
+  "issue_ledger": [
+    {
+      "available_evidence": [
+        "C2"
+      ],
+      "issue_id": "I1",
+      "rationale": "Judge 시점 전체 binary64 동치 유도는 실행 전 해소 조건이었다. 이후 preparation 근거는 별도 proof 문서와 pure checks에 보존.",
+      "required_evidence": [
+        "단조성+동일 row+goal고정+인접float검산"
+      ],
+      "status": "UNRESOLVED"
+    },
+    {
+      "available_evidence": [
+        "C5"
+      ],
+      "issue_id": "I2",
+      "rationale": "실제 compiler cold 비용은 아직 실행하지 않음.",
+      "required_evidence": [
+        "원격 고정 실행"
+      ],
+      "status": "NOT_OBSERVABLE"
+    },
+    {
+      "available_evidence": [
+        "C4"
+      ],
+      "issue_id": "I3",
+      "rationale": "미래 입력 reset/native 품질은 이번 주장 밖.",
+      "required_evidence": [
+        "별도 미래 연구"
+      ],
+      "status": "UNRESOLVED"
+    },
+    {
+      "available_evidence": [
+        "C1"
+      ],
+      "issue_id": "I4",
+      "rationale": "Boolean 동치가 full gate metadata 동치를 뜻한다는 해석을 기각.",
+      "required_evidence": [
+        "실제 소비 경계"
+      ],
+      "status": "REFUTED"
+    },
+    {
+      "available_evidence": [
+        "C3"
+      ],
+      "issue_id": "I5",
+      "rationale": "실제 재사용 수명은 stream별6입력.",
+      "required_evidence": [
+        "R26 runner"
+      ],
+      "status": "CONFIRMED"
+    }
+  ],
+  "material_claims": [
+    {
+      "id": "C1",
+      "provenance": [
+        {
+          "locator": "tools/r26_contraction_warmstart/policy.py",
+          "verification_note": "Coordinator가 원문을 읽음; SHA256=a3ef73619d56113a3d7b022041bf88351f1dfd4ea4b4fb3825a221620de5283f",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "choose는 eligible Boolean만 소비하며 source/binding/status/state 검사 순서를 지켜야 한다."
+    },
+    {
+      "id": "C2",
+      "provenance": [
+        {
+          "locator": "tools/r26_contraction_warmstart/policy.py",
+          "verification_note": "Coordinator가 원문을 읽음; SHA256=a3ef73619d56113a3d7b022041bf88351f1dfd4ea4b4fb3825a221620de5283f",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "R26 동일 input row의 q는 |drive|에 비증가하고 goal row는 약.87625이다. 임계 float와 predecessor를 정확한 Fraction으로 직접 재계산했다."
+    },
+    {
+      "id": "C3",
+      "provenance": [
+        {
+          "locator": "tools/r26_contraction_warmstart/probe.py",
+          "verification_note": "Coordinator가 원문을 읽음; SHA256=4eb132be1efc3ba3393c1edd043829c8e816f0d9fd2e52caca1208355b9b86fa",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "R26은 stream별6입력과 arm별 빈 state로 시작한다. 같은 선택/initial/native/cache 귀납이 가능하다."
+    },
+    {
+      "id": "C4",
+      "provenance": [
+        {
+          "locator": "experiments/exp-73-finite-stop-envelope/RESULTS.ko.md",
+          "verification_note": "Coordinator가 원문을 읽음; SHA256=a96026e181148e42541c4a72623092749e7f70257dd1ff7f61a5d16e2a551019",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "R27은 저장72기록/48쌍의 사후 인증이며 미래 입력 native/reset 품질의 증명이 아니다."
+    },
+    {
+      "id": "C5",
+      "provenance": [
+        {
+          "locator": "experiments/exp-73-finite-stop-envelope/RESULTS.ko.md",
+          "verification_note": "Coordinator가 원문을 읽음; SHA256=a96026e181148e42541c4a72623092749e7f70257dd1ff7f61a5d16e2a551019",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "저장 gate-free CPU headroom.135951ms/약2.08%와 m35/42는 조건부 산술이며 실제 compiler 비용은 관측되지 않았다."
+    },
+    {
+      "id": "C6",
+      "provenance": [
+        {
+          "locator": "src/hcr/dynamics.py",
+          "verification_note": "Coordinator가 원문을 읽음; SHA256=a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "native는 initial을 복사하고 convergence history를 재설정하며 link 순서/topdown이 실행을 정한다."
+    }
+  ],
+  "method_notes": [
+    "4blind failure functions +4non-origin one-shot cross-examinations +fresh Judge. Reserve/specialist not instantiated;adaptive stage unused.",
+    "Judge received sanitized verified claims/cross summaries/issues/axes, not raw outputs; Judge did not personally reread sources.",
+    "Assurance describes observed protocol, not provider isolation attestation.",
+    "Cross summaries: T1: source/config/ordered program/norm/topdown/drive domain 결속과 Boolean 전용 경계로 한정하면 가능. choose 예외 순서 보존. T2: box가 임계 경계를 가로지르면 정책 변경이 섞일 수 있음. exact predicate를 선택. T3: 기존 정책 동치 비용 연구에 미래 reset 품질의 전영역 증명을 선행 요구할 필요 없음. T4: 저장 자료만으로 실제 compiler 비용 판정 불가. cold6·고정4block,5%문턱/수명연장 제외.",
+    "Local board update returned MCP_UNAVAILABLE; tool explicitly allowed next gated call."
+  ],
+  "observability": {
+    "tokens": "NOT_OBSERVABLE",
+    "tool_calls": "NOT_OBSERVABLE",
+    "wall_time": "NOT_OBSERVABLE",
+    "worker_count": 5
+  },
+  "panel_manifest": [
+    {
+      "actual_model": "NOT_OBSERVABLE",
+      "actual_reasoning": "NOT_OBSERVABLE",
+      "blind_round1": true,
+      "classification": "reviewer",
+      "context_isolated": true,
+      "fallback_reason": "Terra preference unavailable; exposed Sol/xhigh requested.",
+      "id": "/root/r28_math",
+      "instantiated": true,
+      "is_judge": false,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ],
+      "requested_model": "gpt-6.1-sol",
+      "requested_reasoning": "xhigh",
+      "role": "수학적 동치/수치 경계",
+      "status": "completed"
+    },
+    {
+      "actual_model": "NOT_OBSERVABLE",
+      "actual_reasoning": "NOT_OBSERVABLE",
+      "blind_round1": true,
+      "classification": "reviewer",
+      "context_isolated": true,
+      "fallback_reason": "Terra preference unavailable; exposed Sol/xhigh requested.",
+      "id": "/root/r28_validity",
+      "instantiated": true,
+      "is_judge": false,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ],
+      "requested_model": "gpt-6.1-sol",
+      "requested_reasoning": "xhigh",
+      "role": "실험 타당성/비중복성",
+      "status": "completed"
+    },
+    {
+      "actual_model": "NOT_OBSERVABLE",
+      "actual_reasoning": "NOT_OBSERVABLE",
+      "blind_round1": true,
+      "classification": "reviewer",
+      "context_isolated": true,
+      "fallback_reason": "Terra preference unavailable; exposed Sol/xhigh requested.",
+      "id": "/root/r28_cost",
+      "instantiated": true,
+      "is_judge": false,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ],
+      "requested_model": "gpt-6.1-sol",
+      "requested_reasoning": "xhigh",
+      "role": "총비용/정보가치",
+      "status": "completed"
+    },
+    {
+      "actual_model": "NOT_OBSERVABLE",
+      "actual_reasoning": "NOT_OBSERVABLE",
+      "blind_round1": true,
+      "classification": "reviewer",
+      "context_isolated": true,
+      "fallback_reason": "Terra preference unavailable; exposed Sol/xhigh requested.",
+      "id": "/root/r28_architecture",
+      "instantiated": true,
+      "is_judge": false,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ],
+      "requested_model": "gpt-6.1-sol",
+      "requested_reasoning": "xhigh",
+      "role": "구조/수명/최소 변경",
+      "status": "completed"
+    },
+    {
+      "actual_model": "NOT_OBSERVABLE",
+      "actual_reasoning": "NOT_OBSERVABLE",
+      "blind_round1": false,
+      "classification": "judge",
+      "context_isolated": true,
+      "fallback_reason": "Terra preference unavailable; exposed Sol/xhigh requested.",
+      "id": "/root/r28_judge",
+      "instantiated": true,
+      "is_judge": true,
+      "participated_stages": [
+        "final_judge"
+      ],
+      "requested_model": "gpt-6.1-sol",
+      "requested_reasoning": "xhigh",
+      "role": "fresh axis Judge",
+      "status": "completed"
+    }
+  ],
+  "preflight": {
+    "missing_capabilities": [],
+    "observed_capabilities": [
+      "4 blind reviewers",
+      "separate fresh Judge",
+      "read-only source evidence",
+      "fork_turns:none spawned4reviewers then freshJudge",
+      "all5 completed;4non-origin cross followups completed",
+      "local source accessible"
+    ],
+    "required_capabilities": [
+      "4 blind reviewers",
+      "separate fresh Judge",
+      "read-only source evidence"
+    ],
+    "supported_models_reasoning": [
+      "gpt-6.1-sol/xhigh exposed; actual provider internals NOT_OBSERVABLE"
+    ]
+  },
+  "required_constraints": [
+    "core와 이전 연구 불변",
+    "AI Research SSH600초/단계60초/worker1/retry0",
+    "원래6입력 수명·새 의존성과 유료자원 없음",
+    "동치와 관측 품질·비용 및 미래 품질을 구별",
+    "실행 후 반복·입력·판정 조정 없음"
+  ],
+  "run": {
+    "assurance": "independent",
+    "candidate_skill_sha256": null,
+    "capability_shortfall": false,
+    "completed_worker_ids": [
+      "/root/r28_math",
+      "/root/r28_validity",
+      "/root/r28_cost",
+      "/root/r28_architecture",
+      "/root/r28_judge"
+    ],
+    "failures": [],
+    "fresh_judge_id": "/root/r28_judge",
+    "id": "R28-HIGH-20261020",
+    "judge_fallback": null,
+    "redeliberations": [],
+    "reused_worker_ids": [],
+    "specialist_additions": [],
+    "stage": "HIGH",
+    "strict": false,
+    "worker_cap": 8,
+    "workers": [
+      {
+        "actual_model": "NOT_OBSERVABLE",
+        "actual_reasoning": "NOT_OBSERVABLE",
+        "blind_round1": true,
+        "classification": "reviewer",
+        "context_isolated": true,
+        "fallback_reason": "Terra preference unavailable; exposed Sol/xhigh requested.",
+        "id": "/root/r28_math",
+        "instantiated": true,
+        "is_judge": false,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ],
+        "requested_model": "gpt-6.1-sol",
+        "requested_reasoning": "xhigh",
+        "role": "수학적 동치/수치 경계",
+        "status": "completed"
+      },
+      {
+        "actual_model": "NOT_OBSERVABLE",
+        "actual_reasoning": "NOT_OBSERVABLE",
+        "blind_round1": true,
+        "classification": "reviewer",
+        "context_isolated": true,
+        "fallback_reason": "Terra preference unavailable; exposed Sol/xhigh requested.",
+        "id": "/root/r28_validity",
+        "instantiated": true,
+        "is_judge": false,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ],
+        "requested_model": "gpt-6.1-sol",
+        "requested_reasoning": "xhigh",
+        "role": "실험 타당성/비중복성",
+        "status": "completed"
+      },
+      {
+        "actual_model": "NOT_OBSERVABLE",
+        "actual_reasoning": "NOT_OBSERVABLE",
+        "blind_round1": true,
+        "classification": "reviewer",
+        "context_isolated": true,
+        "fallback_reason": "Terra preference unavailable; exposed Sol/xhigh requested.",
+        "id": "/root/r28_cost",
+        "instantiated": true,
+        "is_judge": false,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ],
+        "requested_model": "gpt-6.1-sol",
+        "requested_reasoning": "xhigh",
+        "role": "총비용/정보가치",
+        "status": "completed"
+      },
+      {
+        "actual_model": "NOT_OBSERVABLE",
+        "actual_reasoning": "NOT_OBSERVABLE",
+        "blind_round1": true,
+        "classification": "reviewer",
+        "context_isolated": true,
+        "fallback_reason": "Terra preference unavailable; exposed Sol/xhigh requested.",
+        "id": "/root/r28_architecture",
+        "instantiated": true,
+        "is_judge": false,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ],
+        "requested_model": "gpt-6.1-sol",
+        "requested_reasoning": "xhigh",
+        "role": "구조/수명/최소 변경",
+        "status": "completed"
+      },
+      {
+        "actual_model": "NOT_OBSERVABLE",
+        "actual_reasoning": "NOT_OBSERVABLE",
+        "blind_round1": false,
+        "classification": "judge",
+        "context_isolated": true,
+        "fallback_reason": "Terra preference unavailable; exposed Sol/xhigh requested.",
+        "id": "/root/r28_judge",
+        "instantiated": true,
+        "is_judge": true,
+        "participated_stages": [
+          "final_judge"
+        ],
+        "requested_model": "gpt-6.1-sol",
+        "requested_reasoning": "xhigh",
+        "role": "fresh axis Judge",
+        "status": "completed"
+      }
+    ]
+  },
+  "schema_version": "1.0",
+  "skill_version": "1.0.0"
+}

@@ -1,0 +1,12 @@
+{
+  "experiments/exp-72-contraction-warmstart/frozen_spec.json": "510d7dc26a30e1bcdea7a57c5981d03d7654b752df9dd6d440b6b001af9c63ed",
+  "experiments/exp-72-contraction-warmstart/input_manifest.json": "e162afe844a832310425fdb609b1bc28224519d8bf8de27db75f2c512b712f39",
+  "experiments/exp-73-finite-stop-envelope/RESULTS.ko.md": "a96026e181148e42541c4a72623092749e7f70257dd1ff7f61a5d16e2a551019",
+  "src/hcr/codec.py": "23008b00d7c7ba32036170b56ffc08e000062c1bcd7793f546148c3c087a1d4e",
+  "src/hcr/dynamics.py": "a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc",
+  "src/hcr/model.py": "b10e41146036bbbe6e155cee84f3c03711d9bfdeef26c54439d679cc36d590dd",
+  "tools/r19_cross_level/probe.py": "bb0159ba0c50505fc148322e0d0a17d53c184a0bdc7bed21b393120971eb5630",
+  "tools/r26_contraction_warmstart/policy.py": "a3ef73619d56113a3d7b022041bf88351f1dfd4ea4b4fb3825a221620de5283f",
+  "tools/r26_contraction_warmstart/verify.py": "901abf7d2563e0f4e2375b9be80663d502ba42c09e7cf1a945980d04da0681eb",
+  "tools/r28_reuse_frontier/predicate.py": "928cd788431fac6d20ce8f476a84d88de99a31f679cd165501f41c7e00407012"
+}

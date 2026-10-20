@@ -1,0 +1,142 @@
+{
+  "schemaVersion": "1.0.0",
+  "reportId": "CS-R28-CONSTRAINTS",
+  "requestDigest": "sha256:97d9eff65523951d8837dbf6b22b80190fc6b1f85f9e08a45dd09fdf60deea91",
+  "sourceSnapshotDigest": "sha256:56a6969b93e0efa1b51cfc3895bfe629a20e15214360b884712c55c269b9316f",
+  "knowledgePackVersion": "0.1.0",
+  "knowledgePackDigest": "sha256:d8351d9aabb433403830fcffc3a2f2438b6d428711c93b6ded9eff002468c3d1",
+  "draftUse": {
+    "allowed": false,
+    "basis": "Two validated rules only."
+  },
+  "applicability": "applicable",
+  "applicabilityReason": "Predicate specialization, state lifetime and measured cost affect equivalence and adoption.",
+  "selectedRules": [
+    {
+      "ruleId": "ALG-KEY-004",
+      "ruleDigest": "sha256:db77383ecb5f41ef3af5cb60769edaea507cac5cb25e28b88f249e84a062ba2e",
+      "applicabilityReason": "Source/config/ordered program/weights/flags and finite drive domain determine equivalence."
+    },
+    {
+      "ruleId": "PERF-MEASURE-001",
+      "ruleDigest": "sha256:ef11800e55663f1b719f62d3f812280fd6e56c6895eef3028b9db344a9d0a355",
+      "applicabilityReason": "Fixed cold6 workload, all compiler and verification overhead, separate process and lifecycle costs."
+    }
+  ],
+  "facts": [
+    {
+      "id": "FACT-BOOLEAN",
+      "statement": "choose consumes eligible only. The original Fraction screen is not a prospective native/reset-quality proof.",
+      "evidenceRefs": [
+        "SRC-POLICY",
+        "SRC-RESULT"
+      ]
+    },
+    {
+      "id": "FACT-LIFE",
+      "statement": "Original stream has6inputs and empty arm-private state; native copies initial and resets convergence history.",
+      "evidenceRefs": [
+        "SRC-PROBE",
+        "SRC-SPEC",
+        "SRC-NATIVE"
+      ]
+    },
+    {
+      "id": "FACT-COST",
+      "statement": "Stored gate-free headroom is conditional arithmetic, not an optimized runtime measurement.",
+      "evidenceRefs": [
+        "SRC-RESULT"
+      ]
+    }
+  ],
+  "assumptions": [],
+  "invariants": [
+    {
+      "id": "INV-PREDICATE",
+      "statement": "Before native execution, prove monotone identical input rows and inactive goal row; derive threshold from source by at most63 bit-order bisections and independently verify adjacent binary64 endpoints. Reject unsupported bindings/domain. Boolean only, never full certificate replacement.",
+      "scope": "Source-bound legacy gate, fixed R26 streams and R28 native cost probe",
+      "basisRefs": [
+        "FACT-BOOLEAN"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-SEMANTICS",
+      "statement": "Preserve original choose validation order, arm-private empty cache per6cell lifecycle, and unchanged native kernel. All96 legacy/compiled cell pairs must have identical typed/bit choices, initials, kernel and cache transitions. Reset quality is observed only.",
+      "scope": "Source-bound legacy gate, fixed R26 streams and R28 native cost probe",
+      "basisRefs": [
+        "FACT-BOOLEAN",
+        "FACT-LIFE"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-COST",
+      "statement": "Freeze288settles/46080ticks,4blocks/4streams/3arms. Include config/program/source binding, compile, verification, lookup, state and result construction in cold6. No cross-lifecycle compiler or state reuse. Report full case-process CPU/wall separately including imports/serialization. Require all4block CPU/wall improvements over both baselines; no statistical generalization or production adoption.",
+      "scope": "Source-bound legacy gate, fixed R26 streams and R28 native cost probe",
+      "basisRefs": [
+        "FACT-LIFE",
+        "FACT-COST"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "PERF-MEASURE-001"
+      ]
+    }
+  ],
+  "designChoices": [
+    {
+      "id": "CHOICE-MINIMAL",
+      "statement": "Standard-library binary64 bit-order search, closed immutable context, unchanged choose/native and existing bounded R22 process runner. No stored artifact/cache service.",
+      "rationale": "Separate implementation cost from changes in the original reuse policy.",
+      "basisRefs": [
+        "FACT-BOOLEAN",
+        "FACT-LIFE",
+        "FACT-COST"
+      ]
+    }
+  ],
+  "verificationObligations": [
+    {
+      "id": "OB-PREDICATE",
+      "invariantIds": [
+        "INV-PREDICATE"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Boundary/gate mutant accepted; monotonicity or source binding false; metadata passed as a full certificate.",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-SEMANTICS",
+      "invariantIds": [
+        "INV-SEMANTICS"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Wrong gate, source, initial, cache, trace, stop or work counter accepted; extra native/training/measurement call.",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-COST",
+      "invariantIds": [
+        "INV-COST"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Cold overhead omitted, timing/counters invalid, favourable subset or extra repetitions, native execution exceeds caps.",
+      "requirementLevel": "required"
+    }
+  ],
+  "requiredCapabilities": [
+    "cs-constraint-derivation",
+    "cs-implementation-review"
+  ],
+  "verdict": "READY"
+}

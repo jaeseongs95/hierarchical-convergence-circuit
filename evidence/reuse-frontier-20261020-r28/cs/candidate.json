@@ -1,0 +1,30 @@
+{
+  "files": [
+    {
+      "digest": "sha256:cb04ccc4d1b9527a8e7112d8c9924aab9b573927c5cf417f3e662522f36276be",
+      "path": "candidate/__init__.py"
+    },
+    {
+      "digest": "sha256:f7fdcbc08d3fdcbdcd43bbb724c68abda18f57ca53156a2aee289777d6fc64fb",
+      "path": "candidate/bootstrap.py"
+    },
+    {
+      "digest": "sha256:928cd788431fac6d20ce8f476a84d88de99a31f679cd165501f41c7e00407012",
+      "path": "candidate/predicate.py"
+    },
+    {
+      "digest": "sha256:5f0ac2663aab284d1e9c044327242cb226685d656caf8dc4ac6c3e822ed3514a",
+      "path": "candidate/probe.py"
+    },
+    {
+      "digest": "sha256:b37efe9996893044be07ecf6c182993123e0d090a53b4088d6ee4e24566ca7c8",
+      "path": "candidate/selfcheck.py"
+    },
+    {
+      "digest": "sha256:91c052329d1a3b91318856b834e03f9308eae759ce120670dd5d3c3e10dfed90",
+      "path": "candidate/verify.py"
+    }
+  ],
+  "schemaVersion": "1.0.0",
+  "scopeSummary": "Six R28 Python files: exact Boolean specialization, unchanged choose/native, cold6 fixed288settle probe. Implementation and server proof pending."
+}
