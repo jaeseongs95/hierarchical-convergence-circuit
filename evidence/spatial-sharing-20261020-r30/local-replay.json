@@ -1,0 +1,26 @@
+{
+  "actual_arithmetic_reduction_pairs": 12,
+  "actual_groups_saved": 1566,
+  "actual_links_saved": 3268,
+  "exact_pairs": 32,
+  "frozen_source_files": 223,
+  "kernel_ticks": 2240,
+  "native_settle_calls_performed_locally": 0,
+  "new_timing_runs_locally": 0,
+  "production_adoption": false,
+  "received_manifest_matched_files": 36,
+  "scalar_max_absolute_error": 5.551115123125783e-17,
+  "server_native_settle_calls": 64,
+  "status": "LOCAL_SAVED_SCALAR_CONTROLLER_COST_AUDIT_PASS",
+  "targeted_rejections": {
+    "binding": "arm binding",
+    "cost": "actual arithmetic cost",
+    "missing_pair": "fixed32pair matrix",
+    "partition": "partition coverage",
+    "readout": "scalar readout",
+    "restoration": "restoration ledger",
+    "state_order": "full state order",
+    "timing": "cold timing inclusion",
+    "trace": "scalar trace"
+  }
+}

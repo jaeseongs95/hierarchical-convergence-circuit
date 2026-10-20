@@ -1,0 +1,30 @@
+{
+  "files": [
+    {
+      "digest": "sha256:efd3cd99905c89acac61abacdb093df454b62010caf4d910c015810819614ed0",
+      "path": "candidate/__init__.py"
+    },
+    {
+      "digest": "sha256:4483a49ed0da35956d641ecbcb9f9a90df3a8ed58db735ea0747ea3f13ed902e",
+      "path": "candidate/bootstrap.py"
+    },
+    {
+      "digest": "sha256:d1f699696fad1ba7b2a404ff2af171813b1605645152e31b0978aa9d8a7af03f",
+      "path": "candidate/probe.py"
+    },
+    {
+      "digest": "sha256:22e1864249db69c11d5bc08e66699ab955dd39a2a74c251d31be34686c3d41b0",
+      "path": "candidate/runtime.py"
+    },
+    {
+      "digest": "sha256:71224aa699e8224f94bb61470f4f17889a21c451e44f7266134cdf82d64f2956",
+      "path": "candidate/selfcheck.py"
+    },
+    {
+      "digest": "sha256:e3abbe666bffb1e64b5e29975e756a5761426c04251e92ecc1a04327bc878615",
+      "path": "candidate/verify.py"
+    }
+  ],
+  "schemaVersion": "1.0.0",
+  "scopeSummary": "Six isolated R30 files: query-local representative tick and full restoration using unchanged native settle,32pairs/64settles max; cold preparation and execution cost, no learned efficiency or statistical speed claim."
+}

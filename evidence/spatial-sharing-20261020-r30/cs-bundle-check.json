@@ -1,0 +1,14 @@
+{
+  "assurance": "Structural and semantic consistency plus raw-file digests. Not proof of test execution, source correctness, policy authority, independent audit, or MCP all-path enforcement.",
+  "canProceedUnderSuppliedPolicy": true,
+  "candidateDigest": "sha256:1d58c705a9e8c24ab640e1e51c6973153adbe63eb7c78dbe3b316f4b77ba614a",
+  "checkedRawFiles": 49,
+  "constraintReportDigest": "sha256:f90e16da3ef870d0ee2f8175b30ca3eed0f843131d8e4698b6790c05f4b2ed9d",
+  "kind": "cs-bundle-check",
+  "knowledgePackDigest": "sha256:d8351d9aabb433403830fcffc3a2f2438b6d428711c93b6ded9eff002468c3d1",
+  "mode": "enforce",
+  "requiredObligationCount": 3,
+  "schemaEngine": "ags-ajv2020",
+  "schemaVersion": "1.0.0",
+  "verdict": "PASS"
+}

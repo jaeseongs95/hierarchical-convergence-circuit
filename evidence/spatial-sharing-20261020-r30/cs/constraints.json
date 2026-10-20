@@ -1,0 +1,142 @@
+{
+  "schemaVersion": "1.0.0",
+  "reportId": "CS-R30-CONSTRAINTS",
+  "requestDigest": "sha256:ecdce3fd2d201f98acc3c2b72a8557ccb941ef31f07880feee956d4f29880733",
+  "sourceSnapshotDigest": "sha256:fe561dc1276cb4fc04760704c38047d7faa38ce651e1cb760f42b4c2f1f4bf69",
+  "knowledgePackVersion": "0.1.0",
+  "knowledgePackDigest": "sha256:d8351d9aabb433403830fcffc3a2f2438b6d428711c93b6ded9eff002468c3d1",
+  "draftUse": {
+    "allowed": false,
+    "basis": "Two validated rules only"
+  },
+  "applicability": "applicable",
+  "applicabilityReason": "Shared runtime arithmetic skipping must preserve full native observations and account for preparation cost.",
+  "selectedRules": [
+    {
+      "ruleId": "ALG-KEY-004",
+      "ruleDigest": "sha256:db77383ecb5f41ef3af5cb60769edaea507cac5cb25e28b88f249e84a062ba2e",
+      "applicabilityReason": "Preserve source/input/config/ordered-edge binding before skipping arithmetic."
+    },
+    {
+      "ruleId": "PERF-MEASURE-001",
+      "ruleDigest": "sha256:ef11800e55663f1b719f62d3f812280fd6e56c6895eef3028b9db344a9d0a355",
+      "applicabilityReason": "Compare identical fixed query workloads including compile, verification, restoration and serialization; timing descriptive only without repetitions."
+    }
+  ],
+  "facts": [
+    {
+      "id": "FACT-SHARING",
+      "statement": "R29 found source-bound ordered-row sharing in12of32queries. Local labels and ordered incoming classes preserve feedback. This is an opportunity, not runtime execution evidence.",
+      "evidenceRefs": [
+        "SRC-PARTITION",
+        "SRC-VERIFY",
+        "SRC-RESULT"
+      ]
+    },
+    {
+      "id": "FACT-CONTROLLER",
+      "statement": "Native synchronous tick computes ordered per-target sums, uniform group updates, then settle computes full-state residual/history/stability/readout. Source is immutable.",
+      "evidenceRefs": [
+        "SRC-NATIVE"
+      ]
+    },
+    {
+      "id": "FACT-COST",
+      "statement": "A1 admission is fixed32queries with maximum64settles, complete restored state and preparation costs. No statistical speed claim without replication; learning is absent.",
+      "evidenceRefs": [
+        "SRC-SPEC",
+        "SRC-RESULT"
+      ]
+    }
+  ],
+  "assumptions": [],
+  "invariants": [
+    {
+      "id": "INV-BINDING",
+      "statement": "R29 exact32queries and191source pins reused; new candidate compiled per query after independent ordered-row proof. Validate actual program/config/drives/initial/native SHA before compilation, no hidden inputs or cross-query plan reuse.",
+      "scope": "A1 fixed4Programs x8conditions,64settles maximum",
+      "basisRefs": [
+        "FACT-SHARING",
+        "FACT-CONTROLLER"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-SEMANTICS",
+      "statement": "Keep original native settle controller; representative tick restores all nodes in original dictionary order and preserves ordered incoming sums including duplicates/feedback.32pairs fullstate/tick/residual/stable/convergence/readout bit identical, independent scalar/controller replay and actual reduced operation counts required.",
+      "scope": "A1 fixed4Programs x8conditions,64settles maximum",
+      "basisRefs": [
+        "FACT-SHARING",
+        "FACT-CONTROLLER"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-COST",
+      "statement": "Maximum64settles/10240ticks; total600s/stage60s/worker1/retry0/train0/World.measure0. Per-query cold timings include input/program/config/source binding, partition+independent verify+index construction, settle+restoration+trace+serialization; preserve actual operation and alias copy ledgers. Pair order alternates, each query once. No statistical speed, learned efficiency or production adoption.",
+      "scope": "A1 fixed4Programs x8conditions,64settles maximum",
+      "basisRefs": [
+        "FACT-COST"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "PERF-MEASURE-001"
+      ]
+    }
+  ],
+  "designChoices": [
+    {
+      "id": "CHOICE-MINIMAL",
+      "statement": "Reuse R29 partition/verifier and original settle via temporary tick substitution; restore full node dictionary every tick; independent saved scalar/controller replay. Existing R22 bounded runner.",
+      "rationale": "Tests arithmetic replacement with minimal new surface and no core mutation.",
+      "basisRefs": [
+        "FACT-SHARING",
+        "FACT-CONTROLLER",
+        "FACT-COST"
+      ]
+    }
+  ],
+  "verificationObligations": [
+    {
+      "id": "OB-BINDING",
+      "invariantIds": [
+        "INV-BINDING"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Wrong binding, source/config/drive/initial/edge order or nonmaximal partition accepted.",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-SEMANTICS",
+      "invariantIds": [
+        "INV-SEMANTICS"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Any fulltrace/readout/control bit mismatch, cost/restoration inconsistency or transformed original source accepted.",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-COST",
+      "invariantIds": [
+        "INV-COST"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Missing stage/query, exceeded calls/ticks, negative/omitted timing components, projected operations reported as actual savings, unsupported adoption or retries.",
+      "requirementLevel": "required"
+    }
+  ],
+  "requiredCapabilities": [
+    "cs-constraint-derivation",
+    "cs-implementation-review"
+  ],
+  "verdict": "READY"
+}

@@ -1,0 +1,156 @@
+{
+  "alias_copy_slots": 1566,
+  "all_stage_child_cpu_seconds": 5.828411000000001,
+  "arithmetic": {
+    "native": {
+      "group_updates": 8926,
+      "kernel_ticks": 1120,
+      "normalization_ops": 8926,
+      "signal_transmissions": 18116
+    },
+    "shared": {
+      "group_updates": 7360,
+      "kernel_ticks": 1120,
+      "normalization_ops": 7360,
+      "signal_transmissions": 14848
+    }
+  },
+  "by_program": {
+    "chain2": {
+      "arithmetic": {
+        "native": {
+          "group_updates": 1510,
+          "kernel_ticks": 302,
+          "normalization_ops": 1510,
+          "signal_transmissions": 2416
+        },
+        "shared": {
+          "group_updates": 1510,
+          "kernel_ticks": 302,
+          "normalization_ops": 1510,
+          "signal_transmissions": 2416
+        }
+      },
+      "cold_seconds": {
+        "native": {
+          "cpu": 0.01401980199999997,
+          "wall": 0.014019227004610002
+        },
+        "shared": {
+          "cpu": 0.016838155999999993,
+          "wall": 0.016837328963447362
+        }
+      },
+      "pairs": 8
+    },
+    "lower": {
+      "arithmetic": {
+        "native": {
+          "group_updates": 576,
+          "kernel_ticks": 192,
+          "normalization_ops": 576,
+          "signal_transmissions": 768
+        },
+        "shared": {
+          "group_updates": 488,
+          "kernel_ticks": 192,
+          "normalization_ops": 488,
+          "signal_transmissions": 680
+        }
+      },
+      "cold_seconds": {
+        "native": {
+          "cpu": 0.008265845000000022,
+          "wall": 0.008264273987151682
+        },
+        "shared": {
+          "cpu": 0.010525539,
+          "wall": 0.010523776029003784
+        }
+      },
+      "pairs": 8
+    },
+    "shared_bypass": {
+      "arithmetic": {
+        "native": {
+          "group_updates": 5565,
+          "kernel_ticks": 371,
+          "normalization_ops": 5565,
+          "signal_transmissions": 11872
+        },
+        "shared": {
+          "group_updates": 4221,
+          "kernel_ticks": 371,
+          "normalization_ops": 4221,
+          "signal_transmissions": 8960
+        }
+      },
+      "cold_seconds": {
+        "native": {
+          "cpu": 0.03625452600000004,
+          "wall": 0.036262976995203644
+        },
+        "shared": {
+          "cpu": 0.041349527999999997,
+          "wall": 0.041349672013893723
+        }
+      },
+      "pairs": 8
+    },
+    "upper": {
+      "arithmetic": {
+        "native": {
+          "group_updates": 1275,
+          "kernel_ticks": 255,
+          "normalization_ops": 1275,
+          "signal_transmissions": 3060
+        },
+        "shared": {
+          "group_updates": 1141,
+          "kernel_ticks": 255,
+          "normalization_ops": 1141,
+          "signal_transmissions": 2792
+        }
+      },
+      "cold_seconds": {
+        "native": {
+          "cpu": 0.013614767000000028,
+          "wall": 0.013613307004561648
+        },
+        "shared": {
+          "cpu": 0.016581740999999983,
+          "wall": 0.01658023105119355
+        }
+      },
+      "pairs": 8
+    }
+  },
+  "case_stage_child_cpu_seconds": 5.048884000000001,
+  "cold_totals": {
+    "native": {
+      "cpu": 0.07215494000000006,
+      "wall": 0.07215978499152698
+    },
+    "shared": {
+      "cpu": 0.08529496399999997,
+      "wall": 0.08529100805753842
+    }
+  },
+  "full_state_output_slots": {
+    "native": 8926,
+    "shared": 8926
+  },
+  "learned_compression_tested": false,
+  "production_adoption": false,
+  "ratio_of_cold_sums": {
+    "cpu": 1.1821084460745155,
+    "wall": 1.1819742543239744
+  },
+  "seconds_including_seal": 6.60746817899053,
+  "shared_preparation_seconds": {
+    "cpu": 0.016694094000000104,
+    "wall": 0.0166977719636634
+  },
+  "statistical_speed_verdict": null,
+  "status": "A1_COLD_COST_DESCRIPTIVE_ONLY"
+}
