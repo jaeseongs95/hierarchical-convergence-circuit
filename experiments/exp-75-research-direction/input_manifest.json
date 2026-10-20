@@ -1,0 +1,20 @@
+{
+  "docs/HCR_MASTER_ROADMAP.ko.md": "5c4051b20ea31b174f0d3da513dcbea0ea62ff389f59f036652040596145cdba",
+  "docs/research-principles.md": "e75df471fc0e0f50f369d8fdb5ebc64619a9963bf9919faf2de38e6ecf066347",
+  "evidence/claim-evidence-links-20261015.ko.md": "7a4a68f168c8fb6b6d3e0ef97ebc5c47fdae6be23af86149ccd6abe2eb98d4c5",
+  "evidence/claims.yaml": "9cba0301d5942bbb2a18c952549cd93fc1d0dec71e5180f7f0c870c03433beba",
+  "evidence/new-server-replication-20261018-r15/report.ko.md": "23f776ef4f1d7a19bc53e8f562b0ac0607db6037d5152e3e0673c86c4d13dfc7",
+  "experiments/exp-25-reuse-contribution/design.md": "ed3a06bcb39ff320e010e6cd8556928ccd5ddfe59d229303462c88df6dfb9753",
+  "experiments/exp-26-direct-support/design.md": "f65326da27f8112a5011ca1a73de0dd84966c790347577c6c92c6577bae83914",
+  "experiments/exp-27-thought-carry/design.md": "cd11950de04c325dbfa965d8aaff750e2e9c68f915e907c0deaaa5c9eefd86b5",
+  "experiments/exp-64-pre-reuse-gate/RESULTS.ko.md": "551f3cd9f322b49d5c966dd92b494624ede7a1171dd0e560044fd4a713185c3f",
+  "experiments/exp-65-substitution-cross-level/RESULTS.ko.md": "8fac00938633ef4fff3157d55037d38e53d3fcc5519dd27615898c3ba9ae59a5",
+  "experiments/exp-72-contraction-warmstart/frozen_spec.json": "510d7dc26a30e1bcdea7a57c5981d03d7654b752df9dd6d440b6b001af9c63ed",
+  "experiments/exp-74-reuse-frontier/RESULTS.ko.md": "c42f2ffd9f87b643935003db9af22145ba5c8883de06d8445c3fdc6726a41b53",
+  "src/hcr/compiler.py": "14c736ef826bb979d15a5f00901bb3acfb3c0b102157437ccf80d40bad690d59",
+  "src/hcr/dynamics.py": "a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc",
+  "src/hcr/model.py": "b10e41146036bbbe6e155cee84f3c03711d9bfdeef26c54439d679cc36d590dd",
+  "src/hcr/workspace.py": "65ac816b06d0e2fbb971adeecfd9e317f99fc7d43881ea17f99d71d35e3e1b1a",
+  "theory/core-hypothesis.md": "d1b735eee8f72c092c847c04e81a34972fa919be906311255faa797e58ec9302",
+  "tools/r19_cross_level/probe.py": "bb0159ba0c50505fc148322e0d0a17d53c184a0bdc7bed21b393120971eb5630"
+}

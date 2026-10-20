@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "1.0.0",
+  "requestId": "CS-R29",
+  "mode": "derive",
+  "objective": "A0 static structural quotient opportunity census",
+  "sourceSnapshotDigest": "sha256:56a6969b93e0efa1b51cfc3895bfe629a20e15214360b884712c55c269b9316f",
+  "sourceRefs": [
+    {
+      "id": "SRC-NATIVE",
+      "path": "source/dynamics.py",
+      "digest": "sha256:a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc"
+    },
+    {
+      "id": "SRC-POLICY",
+      "path": "source/policy.py",
+      "digest": "sha256:a3ef73619d56113a3d7b022041bf88351f1dfd4ea4b4fb3825a221620de5283f"
+    },
+    {
+      "id": "SRC-PROBE",
+      "path": "source/probe.py",
+      "digest": "sha256:4eb132be1efc3ba3393c1edd043829c8e816f0d9fd2e52caca1208355b9b86fa"
+    },
+    {
+      "id": "SRC-SPEC",
+      "path": "source/spec.json",
+      "digest": "sha256:510d7dc26a30e1bcdea7a57c5981d03d7654b752df9dd6d440b6b001af9c63ed"
+    },
+    {
+      "id": "SRC-RESULT",
+      "path": "source/results.md",
+      "digest": "sha256:a96026e181148e42541c4a72623092749e7f70257dd1ff7f61a5d16e2a551019"
+    }
+  ],
+  "operationalFacts": [
+    {
+      "id": "FACT-BOOLEAN",
+      "statement": "A0 is a static sufficient-condition census of spatial row equivalence, not learned compression or runtime performance.",
+      "evidenceRefs": [
+        "SRC-POLICY",
+        "SRC-RESULT"
+      ]
+    },
+    {
+      "id": "FACT-LIFE",
+      "statement": "Native tick uses ordered incoming accumulation and per-group state; all feedback and initial/drive bits affect invariant equivalence.",
+      "evidenceRefs": [
+        "SRC-NATIVE",
+        "SRC-SPEC"
+      ]
+    },
+    {
+      "id": "FACT-COST",
+      "statement": "R28 cold6 cost failure cannot be rescued by static opportunity counts; new native and timing benchmarks remain zero.",
+      "evidenceRefs": [
+        "SRC-RESULT"
+      ]
+    }
+  ],
+  "existingContractRef": null
+}

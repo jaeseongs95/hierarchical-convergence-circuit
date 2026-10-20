@@ -1,0 +1,1171 @@
+{
+  "arms": [
+    "static"
+  ],
+  "asymmetric_ids": {
+    "chain2": "e:0",
+    "lower": "f0",
+    "shared_bypass": "e:1",
+    "upper": "promoted"
+  },
+  "base": "444ebf4eb96dec8df4a281432f401b53acf01f6e",
+  "cases": [
+    {
+      "key": "chain2"
+    },
+    {
+      "key": "shared_bypass"
+    },
+    {
+      "key": "lower"
+    },
+    {
+      "key": "upper"
+    }
+  ],
+  "conditions": [
+    {
+      "drives": {
+        "chain2": {
+          "e:0": 4.0,
+          "e:1": 4.0,
+          "goal": 0.0
+        },
+        "lower": {
+          "f0": 4.0,
+          "f1": 4.0,
+          "goal": 0.0
+        },
+        "shared_bypass": {
+          "e:0": 4.0,
+          "e:1": 4.0,
+          "e:2": 4.0,
+          "e:3": 4.0,
+          "e:4": 4.0,
+          "e:5": 4.0,
+          "goal": 0.0
+        },
+        "upper": {
+          "context": 4.0,
+          "goal": 0.0,
+          "promoted": 4.0
+        }
+      },
+      "initial": {
+        "chain2": {
+          "e:0": 0.5,
+          "e:1": 0.5,
+          "goal": 0.5,
+          "p:0:0": 0.5,
+          "p:0:1": 0.5
+        },
+        "lower": {
+          "f0": 0.5,
+          "f1": 0.5,
+          "goal": 0.5
+        },
+        "shared_bypass": {
+          "e:0": 0.5,
+          "e:1": 0.5,
+          "e:2": 0.5,
+          "e:3": 0.5,
+          "e:4": 0.5,
+          "e:5": 0.5,
+          "goal": 0.5,
+          "p:0:0": 0.5,
+          "p:0:1": 0.5,
+          "p:0:2": 0.5,
+          "p:0:3": 0.5,
+          "p:1:0": 0.5,
+          "p:1:1": 0.5,
+          "p:1:2": 0.5,
+          "p:1:3": 0.5
+        },
+        "upper": {
+          "context": 0.5,
+          "goal": 0.5,
+          "match_A": 0.5,
+          "match_B": 0.5,
+          "promoted": 0.5
+        }
+      },
+      "key": "positive_equal"
+    },
+    {
+      "drives": {
+        "chain2": {
+          "e:0": -4.0,
+          "e:1": -4.0,
+          "goal": 0.0
+        },
+        "lower": {
+          "f0": -4.0,
+          "f1": -4.0,
+          "goal": 0.0
+        },
+        "shared_bypass": {
+          "e:0": -4.0,
+          "e:1": -4.0,
+          "e:2": -4.0,
+          "e:3": -4.0,
+          "e:4": -4.0,
+          "e:5": -4.0,
+          "goal": 0.0
+        },
+        "upper": {
+          "context": -4.0,
+          "goal": 0.0,
+          "promoted": -4.0
+        }
+      },
+      "initial": {
+        "chain2": {
+          "e:0": 0.5,
+          "e:1": 0.5,
+          "goal": 0.5,
+          "p:0:0": 0.5,
+          "p:0:1": 0.5
+        },
+        "lower": {
+          "f0": 0.5,
+          "f1": 0.5,
+          "goal": 0.5
+        },
+        "shared_bypass": {
+          "e:0": 0.5,
+          "e:1": 0.5,
+          "e:2": 0.5,
+          "e:3": 0.5,
+          "e:4": 0.5,
+          "e:5": 0.5,
+          "goal": 0.5,
+          "p:0:0": 0.5,
+          "p:0:1": 0.5,
+          "p:0:2": 0.5,
+          "p:0:3": 0.5,
+          "p:1:0": 0.5,
+          "p:1:1": 0.5,
+          "p:1:2": 0.5,
+          "p:1:3": 0.5
+        },
+        "upper": {
+          "context": 0.5,
+          "goal": 0.5,
+          "match_A": 0.5,
+          "match_B": 0.5,
+          "promoted": 0.5
+        }
+      },
+      "key": "negative_equal"
+    },
+    {
+      "drives": {
+        "chain2": {
+          "e:0": 0.0,
+          "e:1": 0.0,
+          "goal": 0.0
+        },
+        "lower": {
+          "f0": 0.0,
+          "f1": 0.0,
+          "goal": 0.0
+        },
+        "shared_bypass": {
+          "e:0": 0.0,
+          "e:1": 0.0,
+          "e:2": 0.0,
+          "e:3": 0.0,
+          "e:4": 0.0,
+          "e:5": 0.0,
+          "goal": 0.0
+        },
+        "upper": {
+          "context": 0.0,
+          "goal": 0.0,
+          "promoted": 0.0
+        }
+      },
+      "initial": {
+        "chain2": {
+          "e:0": 0.5,
+          "e:1": 0.5,
+          "goal": 0.5,
+          "p:0:0": 0.5,
+          "p:0:1": 0.5
+        },
+        "lower": {
+          "f0": 0.5,
+          "f1": 0.5,
+          "goal": 0.5
+        },
+        "shared_bypass": {
+          "e:0": 0.5,
+          "e:1": 0.5,
+          "e:2": 0.5,
+          "e:3": 0.5,
+          "e:4": 0.5,
+          "e:5": 0.5,
+          "goal": 0.5,
+          "p:0:0": 0.5,
+          "p:0:1": 0.5,
+          "p:0:2": 0.5,
+          "p:0:3": 0.5,
+          "p:1:0": 0.5,
+          "p:1:1": 0.5,
+          "p:1:2": 0.5,
+          "p:1:3": 0.5
+        },
+        "upper": {
+          "context": 0.5,
+          "goal": 0.5,
+          "match_A": 0.5,
+          "match_B": 0.5,
+          "promoted": 0.5
+        }
+      },
+      "key": "neutral"
+    },
+    {
+      "drives": {
+        "chain2": {
+          "e:0": 0.4,
+          "e:1": 0.4,
+          "goal": 0.0
+        },
+        "lower": {
+          "f0": 0.4,
+          "f1": 0.4,
+          "goal": 0.0
+        },
+        "shared_bypass": {
+          "e:0": 0.4,
+          "e:1": 0.4,
+          "e:2": 0.4,
+          "e:3": 0.4,
+          "e:4": 0.4,
+          "e:5": 0.4,
+          "goal": 0.0
+        },
+        "upper": {
+          "context": 0.4,
+          "goal": 0.0,
+          "promoted": 0.4
+        }
+      },
+      "initial": {
+        "chain2": {
+          "e:0": 0.5,
+          "e:1": 0.5,
+          "goal": 0.5,
+          "p:0:0": 0.5,
+          "p:0:1": 0.5
+        },
+        "lower": {
+          "f0": 0.5,
+          "f1": 0.5,
+          "goal": 0.5
+        },
+        "shared_bypass": {
+          "e:0": 0.5,
+          "e:1": 0.5,
+          "e:2": 0.5,
+          "e:3": 0.5,
+          "e:4": 0.5,
+          "e:5": 0.5,
+          "goal": 0.5,
+          "p:0:0": 0.5,
+          "p:0:1": 0.5,
+          "p:0:2": 0.5,
+          "p:0:3": 0.5,
+          "p:1:0": 0.5,
+          "p:1:1": 0.5,
+          "p:1:2": 0.5,
+          "p:1:3": 0.5
+        },
+        "upper": {
+          "context": 0.5,
+          "goal": 0.5,
+          "match_A": 0.5,
+          "match_B": 0.5,
+          "promoted": 0.5
+        }
+      },
+      "key": "weak_equal"
+    },
+    {
+      "drives": {
+        "chain2": {
+          "e:0": 3.2,
+          "e:1": 4.0,
+          "goal": 0.0
+        },
+        "lower": {
+          "f0": 3.2,
+          "f1": 4.0,
+          "goal": 0.0
+        },
+        "shared_bypass": {
+          "e:0": 4.0,
+          "e:1": 3.2,
+          "e:2": 4.0,
+          "e:3": 4.0,
+          "e:4": 4.0,
+          "e:5": 4.0,
+          "goal": 0.0
+        },
+        "upper": {
+          "context": 4.0,
+          "goal": 0.0,
+          "promoted": 3.2
+        }
+      },
+      "initial": {
+        "chain2": {
+          "e:0": 0.5,
+          "e:1": 0.5,
+          "goal": 0.5,
+          "p:0:0": 0.5,
+          "p:0:1": 0.5
+        },
+        "lower": {
+          "f0": 0.5,
+          "f1": 0.5,
+          "goal": 0.5
+        },
+        "shared_bypass": {
+          "e:0": 0.5,
+          "e:1": 0.5,
+          "e:2": 0.5,
+          "e:3": 0.5,
+          "e:4": 0.5,
+          "e:5": 0.5,
+          "goal": 0.5,
+          "p:0:0": 0.5,
+          "p:0:1": 0.5,
+          "p:0:2": 0.5,
+          "p:0:3": 0.5,
+          "p:1:0": 0.5,
+          "p:1:1": 0.5,
+          "p:1:2": 0.5,
+          "p:1:3": 0.5
+        },
+        "upper": {
+          "context": 0.5,
+          "goal": 0.5,
+          "match_A": 0.5,
+          "match_B": 0.5,
+          "promoted": 0.5
+        }
+      },
+      "key": "positive_asymmetric"
+    },
+    {
+      "drives": {
+        "chain2": {
+          "e:0": -4.0,
+          "e:1": 4.0,
+          "goal": 0.0
+        },
+        "lower": {
+          "f0": -4.0,
+          "f1": 4.0,
+          "goal": 0.0
+        },
+        "shared_bypass": {
+          "e:0": 4.0,
+          "e:1": -4.0,
+          "e:2": 4.0,
+          "e:3": 4.0,
+          "e:4": 4.0,
+          "e:5": 4.0,
+          "goal": 0.0
+        },
+        "upper": {
+          "context": 4.0,
+          "goal": 0.0,
+          "promoted": -4.0
+        }
+      },
+      "initial": {
+        "chain2": {
+          "e:0": 0.5,
+          "e:1": 0.5,
+          "goal": 0.5,
+          "p:0:0": 0.5,
+          "p:0:1": 0.5
+        },
+        "lower": {
+          "f0": 0.5,
+          "f1": 0.5,
+          "goal": 0.5
+        },
+        "shared_bypass": {
+          "e:0": 0.5,
+          "e:1": 0.5,
+          "e:2": 0.5,
+          "e:3": 0.5,
+          "e:4": 0.5,
+          "e:5": 0.5,
+          "goal": 0.5,
+          "p:0:0": 0.5,
+          "p:0:1": 0.5,
+          "p:0:2": 0.5,
+          "p:0:3": 0.5,
+          "p:1:0": 0.5,
+          "p:1:1": 0.5,
+          "p:1:2": 0.5,
+          "p:1:3": 0.5
+        },
+        "upper": {
+          "context": 0.5,
+          "goal": 0.5,
+          "match_A": 0.5,
+          "match_B": 0.5,
+          "promoted": 0.5
+        }
+      },
+      "key": "mixed_sign"
+    },
+    {
+      "drives": {
+        "chain2": {
+          "e:0": 3.9999999999999996,
+          "e:1": 4.0,
+          "goal": 0.0
+        },
+        "lower": {
+          "f0": 3.9999999999999996,
+          "f1": 4.0,
+          "goal": 0.0
+        },
+        "shared_bypass": {
+          "e:0": 4.0,
+          "e:1": 3.9999999999999996,
+          "e:2": 4.0,
+          "e:3": 4.0,
+          "e:4": 4.0,
+          "e:5": 4.0,
+          "goal": 0.0
+        },
+        "upper": {
+          "context": 4.0,
+          "goal": 0.0,
+          "promoted": 3.9999999999999996
+        }
+      },
+      "initial": {
+        "chain2": {
+          "e:0": 0.5,
+          "e:1": 0.5,
+          "goal": 0.5,
+          "p:0:0": 0.5,
+          "p:0:1": 0.5
+        },
+        "lower": {
+          "f0": 0.5,
+          "f1": 0.5,
+          "goal": 0.5
+        },
+        "shared_bypass": {
+          "e:0": 0.5,
+          "e:1": 0.5,
+          "e:2": 0.5,
+          "e:3": 0.5,
+          "e:4": 0.5,
+          "e:5": 0.5,
+          "goal": 0.5,
+          "p:0:0": 0.5,
+          "p:0:1": 0.5,
+          "p:0:2": 0.5,
+          "p:0:3": 0.5,
+          "p:1:0": 0.5,
+          "p:1:1": 0.5,
+          "p:1:2": 0.5,
+          "p:1:3": 0.5
+        },
+        "upper": {
+          "context": 0.5,
+          "goal": 0.5,
+          "match_A": 0.5,
+          "match_B": 0.5,
+          "promoted": 0.5
+        }
+      },
+      "key": "one_ulp"
+    },
+    {
+      "drives": {
+        "chain2": {
+          "e:0": 4.0,
+          "e:1": 4.0,
+          "goal": 0.0
+        },
+        "lower": {
+          "f0": 4.0,
+          "f1": 4.0,
+          "goal": 0.0
+        },
+        "shared_bypass": {
+          "e:0": 4.0,
+          "e:1": 4.0,
+          "e:2": 4.0,
+          "e:3": 4.0,
+          "e:4": 4.0,
+          "e:5": 4.0,
+          "goal": 0.0
+        },
+        "upper": {
+          "context": 4.0,
+          "goal": 0.0,
+          "promoted": 4.0
+        }
+      },
+      "initial": {
+        "chain2": {
+          "e:0": 0.25,
+          "e:1": 0.5,
+          "goal": 0.5,
+          "p:0:0": 0.5,
+          "p:0:1": 0.5
+        },
+        "lower": {
+          "f0": 0.25,
+          "f1": 0.5,
+          "goal": 0.5
+        },
+        "shared_bypass": {
+          "e:0": 0.5,
+          "e:1": 0.25,
+          "e:2": 0.5,
+          "e:3": 0.5,
+          "e:4": 0.5,
+          "e:5": 0.5,
+          "goal": 0.5,
+          "p:0:0": 0.5,
+          "p:0:1": 0.5,
+          "p:0:2": 0.5,
+          "p:0:3": 0.5,
+          "p:1:0": 0.5,
+          "p:1:1": 0.5,
+          "p:1:2": 0.5,
+          "p:1:3": 0.5
+        },
+        "upper": {
+          "context": 0.5,
+          "goal": 0.5,
+          "match_A": 0.5,
+          "match_B": 0.5,
+          "promoted": 0.25
+        }
+      },
+      "key": "initial_asymmetric"
+    }
+  ],
+  "experiment": "EXP-75",
+  "future_A1_maximum_settles": 64,
+  "input_ids": {
+    "chain2": [
+      "e:0",
+      "e:1"
+    ],
+    "lower": [
+      "f0",
+      "f1"
+    ],
+    "shared_bypass": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "e:3",
+      "e:4",
+      "e:5"
+    ],
+    "upper": [
+      "promoted",
+      "context"
+    ]
+  },
+  "kernel": {
+    "damping": 0.45,
+    "evidence_gain": 4.0,
+    "inhibition": 0.2,
+    "learning_rate": 0.25,
+    "margin_threshold": 0.3,
+    "max_circuits": 16,
+    "max_edges": 8,
+    "max_groups": 32,
+    "max_observation_requests": 2,
+    "max_path_length": 4,
+    "max_paths": 4,
+    "max_search": 2048,
+    "max_ticks": 160,
+    "min_valid_episodes": 3,
+    "patience": 4,
+    "prior_gain": 0.0,
+    "relation_gain": 2.0,
+    "residual_tolerance": 1e-06,
+    "self_excitation": 0.25,
+    "temperature": 1.0,
+    "top_down_gain": 0.35,
+    "weakening": 0.2
+  },
+  "limits": {
+    "automatic_retry": false,
+    "child_address_space_bytes": 536870912,
+    "child_file_bytes": 16777216,
+    "parent_address_space_bytes": 536870912,
+    "parent_file_bytes": 33554432,
+    "raw_bytes": 134217728,
+    "stage_seconds": 60,
+    "total_seconds": 600,
+    "workers": 1
+  },
+  "maximum_logical_ticks": 0,
+  "maximum_measurement_requests": 0,
+  "maximum_native_settle_calls": 0,
+  "maximum_static_queries": 32,
+  "native_source_sha256": "a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc",
+  "new_timing_runs": 0,
+  "production_adoption": false,
+  "programs": {
+    "chain2": {
+      "edge_count": 2,
+      "groups": [
+        {
+          "bias": 0.0,
+          "id": "e:0",
+          "level": 0
+        },
+        {
+          "bias": 0.0,
+          "id": "e:1",
+          "level": 0
+        },
+        {
+          "bias": -0.0,
+          "id": "p:0:0",
+          "level": 1
+        },
+        {
+          "bias": -2.0,
+          "id": "p:0:1",
+          "level": 1
+        },
+        {
+          "bias": 0.0,
+          "id": "goal",
+          "level": 1
+        }
+      ],
+      "links": [
+        {
+          "kind": "support",
+          "source": "e:0",
+          "target": "p:0:0",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "p:0:0",
+          "target": "e:0",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "e:1",
+          "target": "p:0:1",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "p:0:1",
+          "target": "e:1",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "p:0:0",
+          "target": "p:0:1",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "p:0:1",
+          "target": "p:0:0",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "p:0:1",
+          "target": "goal",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "goal",
+          "target": "p:0:1",
+          "weight": 0.35
+        }
+      ],
+      "paths": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "lower": {
+      "edge_count": 2,
+      "groups": [
+        {
+          "bias": 0.0,
+          "id": "f0",
+          "level": 0
+        },
+        {
+          "bias": 0.0,
+          "id": "f1",
+          "level": 0
+        },
+        {
+          "bias": 0.0,
+          "id": "goal",
+          "level": 1
+        }
+      ],
+      "links": [
+        {
+          "kind": "support",
+          "source": "f0",
+          "target": "goal",
+          "weight": 2.0
+        },
+        {
+          "kind": "support",
+          "source": "f1",
+          "target": "goal",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "goal",
+          "target": "f0",
+          "weight": 0.35
+        },
+        {
+          "kind": "top_down",
+          "source": "goal",
+          "target": "f1",
+          "weight": 0.35
+        }
+      ],
+      "paths": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "shared_bypass": {
+      "edge_count": 6,
+      "groups": [
+        {
+          "bias": 0.0,
+          "id": "e:0",
+          "level": 0
+        },
+        {
+          "bias": 0.0,
+          "id": "e:1",
+          "level": 0
+        },
+        {
+          "bias": 0.0,
+          "id": "e:2",
+          "level": 0
+        },
+        {
+          "bias": 0.0,
+          "id": "e:3",
+          "level": 0
+        },
+        {
+          "bias": 0.0,
+          "id": "e:4",
+          "level": 0
+        },
+        {
+          "bias": 0.0,
+          "id": "e:5",
+          "level": 0
+        },
+        {
+          "bias": -0.0,
+          "id": "p:0:0",
+          "level": 1
+        },
+        {
+          "bias": -2.0,
+          "id": "p:0:1",
+          "level": 1
+        },
+        {
+          "bias": -2.0,
+          "id": "p:0:2",
+          "level": 1
+        },
+        {
+          "bias": -2.0,
+          "id": "p:0:3",
+          "level": 1
+        },
+        {
+          "bias": -0.0,
+          "id": "p:1:0",
+          "level": 1
+        },
+        {
+          "bias": -2.0,
+          "id": "p:1:1",
+          "level": 1
+        },
+        {
+          "bias": -2.0,
+          "id": "p:1:2",
+          "level": 1
+        },
+        {
+          "bias": -2.0,
+          "id": "p:1:3",
+          "level": 1
+        },
+        {
+          "bias": 2.0,
+          "id": "goal",
+          "level": 1
+        }
+      ],
+      "links": [
+        {
+          "kind": "support",
+          "source": "e:0",
+          "target": "p:0:0",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "p:0:0",
+          "target": "e:0",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "e:1",
+          "target": "p:0:1",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "p:0:1",
+          "target": "e:1",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "p:0:0",
+          "target": "p:0:1",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "p:0:1",
+          "target": "p:0:0",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "e:2",
+          "target": "p:0:2",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "p:0:2",
+          "target": "e:2",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "p:0:1",
+          "target": "p:0:2",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "p:0:2",
+          "target": "p:0:1",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "e:5",
+          "target": "p:0:3",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "p:0:3",
+          "target": "e:5",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "p:0:2",
+          "target": "p:0:3",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "p:0:3",
+          "target": "p:0:2",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "e:0",
+          "target": "p:1:0",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "p:1:0",
+          "target": "e:0",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "e:3",
+          "target": "p:1:1",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "p:1:1",
+          "target": "e:3",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "p:1:0",
+          "target": "p:1:1",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "p:1:1",
+          "target": "p:1:0",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "e:4",
+          "target": "p:1:2",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "p:1:2",
+          "target": "e:4",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "p:1:1",
+          "target": "p:1:2",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "p:1:2",
+          "target": "p:1:1",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "e:5",
+          "target": "p:1:3",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "p:1:3",
+          "target": "e:5",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "p:1:2",
+          "target": "p:1:3",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "p:1:3",
+          "target": "p:1:2",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "p:0:3",
+          "target": "goal",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "goal",
+          "target": "p:0:3",
+          "weight": 0.35
+        },
+        {
+          "kind": "support",
+          "source": "p:1:3",
+          "target": "goal",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "goal",
+          "target": "p:1:3",
+          "weight": 0.35
+        }
+      ],
+      "paths": [
+        [
+          0,
+          1,
+          2,
+          5
+        ],
+        [
+          0,
+          3,
+          4,
+          5
+        ]
+      ]
+    },
+    "upper": {
+      "edge_count": 2,
+      "groups": [
+        {
+          "bias": 0.0,
+          "id": "promoted",
+          "level": 0
+        },
+        {
+          "bias": 0.0,
+          "id": "context",
+          "level": 0
+        },
+        {
+          "bias": -2.0,
+          "id": "match_A",
+          "level": 1
+        },
+        {
+          "bias": -2.0,
+          "id": "match_B",
+          "level": 1
+        },
+        {
+          "bias": 2.0,
+          "id": "goal",
+          "level": 1
+        }
+      ],
+      "links": [
+        {
+          "kind": "support",
+          "source": "promoted",
+          "target": "match_A",
+          "weight": 2.0
+        },
+        {
+          "kind": "support",
+          "source": "context",
+          "target": "match_A",
+          "weight": 2.0
+        },
+        {
+          "kind": "support",
+          "source": "promoted",
+          "target": "match_B",
+          "weight": -2.0
+        },
+        {
+          "kind": "support",
+          "source": "context",
+          "target": "match_B",
+          "weight": -2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "match_A",
+          "target": "promoted",
+          "weight": 0.35
+        },
+        {
+          "kind": "top_down",
+          "source": "match_A",
+          "target": "context",
+          "weight": 0.35
+        },
+        {
+          "kind": "top_down",
+          "source": "match_B",
+          "target": "promoted",
+          "weight": -0.35
+        },
+        {
+          "kind": "top_down",
+          "source": "match_B",
+          "target": "context",
+          "weight": -0.35
+        },
+        {
+          "kind": "support",
+          "source": "match_A",
+          "target": "goal",
+          "weight": 2.0
+        },
+        {
+          "kind": "support",
+          "source": "match_B",
+          "target": "goal",
+          "weight": 2.0
+        },
+        {
+          "kind": "top_down",
+          "source": "goal",
+          "target": "match_A",
+          "weight": 0.35
+        },
+        {
+          "kind": "top_down",
+          "source": "goal",
+          "target": "match_B",
+          "weight": 0.35
+        }
+      ],
+      "paths": [
+        [
+          0,
+          1
+        ]
+      ]
+    }
+  },
+  "run": "r29",
+  "stage": "A0_STATIC_ONLY",
+  "training_calls": 0
+}

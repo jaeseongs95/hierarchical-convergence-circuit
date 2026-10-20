@@ -1,0 +1,647 @@
+{
+  "axis_decisions": [
+    {
+      "axis": "claims",
+      "decision": "큰 가설 유지, 현재 학습 회로의 효율 우위 주장은 보류",
+      "evidence_claim_ids": [
+        "C1",
+        "C2",
+        "C4",
+        "C5"
+      ]
+    },
+    {
+      "axis": "portfolio",
+      "decision": "A0 계속; B compiledplan/H07/H01-H02는 사전 계약 후 재검토; 국소 gate 연장·중복 비용분해 중단",
+      "evidence_claim_ids": [
+        "C3",
+        "C6",
+        "C7",
+        "C9"
+      ]
+    },
+    {
+      "axis": "first_study",
+      "decision": "A0 정적4Program×8drive/initial, 보존 충분조건과 규칙 내 최대 기회 판별",
+      "evidence_claim_ids": [
+        "C2",
+        "C10"
+      ]
+    },
+    {
+      "axis": "runtime_gate",
+      "decision": "기회0이면 종료; 양성이어도 A1계약·최대64settles·경로bit검증·총비용 측정 전 실제 성능 미판정",
+      "evidence_claim_ids": [
+        "C5",
+        "C10"
+      ]
+    },
+    {
+      "axis": "learning_gate",
+      "decision": "실제 계산 대체 뒤 learner 산출물·현실 수명·총비용 회수 연결 필요, 없으면 별도 compiler 연구로 한정",
+      "evidence_claim_ids": [
+        "C1",
+        "C4",
+        "C8"
+      ]
+    }
+  ],
+  "case_brief": {
+    "assumptions": [],
+    "constraints": [
+      "core와 과거 연구 불변; 새 도구만 격리",
+      "AI Research SSH600초/단계60초/worker1/retry0",
+      "첫 과제는 A0정적32조건; native/학습/측정/benchmark0",
+      "사후 입력·판정·반복수 변경과 가상 수명 상각 없음",
+      "가설·구현·관측·실제 성능·학습 효율의 주장 경계 구별"
+    ],
+    "decision": "전체 연구 방향과 다음 비중복 첫 연구 결정",
+    "facts": [
+      "H01/H02/H03/H07은 서로 다른 가설이며 학습된 압축의 비용 우위는 아직 가설이다.",
+      "현재 motif 학습 뒤 macro를 적용해도 adaptive_network는 primitive 판단 Program을 재구성한다.",
+      "EXP25/26은 ON/OFF와 pool/decision 분해를 이미 시험했고 EXP27 proof_memo도 있다. 단순 비용 분해 반복은 새 대조가 아니다.",
+      "실제 학습 회로의 EXP62~64는 expansion 감소와 tick 증가, EXP64 실제K1..4 학습비용 미회수를 관측했다.",
+      "R24~28의 미시적 재사용/사후 인증/Boolean 변환은 학습0이다. R28 cold6는 exact96에도 비용 실패이며24입력4반복이다.",
+      "R19는 두 수작업 Program·직접 알고리즘을 이미 대조했고 외부 feedback 경계 생략 반례와 정보 식별 한계를 명시한다.",
+      "EXP07은 draft이며 반증 조건을 실행 전에 정하도록 남겨두었다. kernel 자기이득과 learned strength는 별개다.",
+      "R15의 다른 장시간 합성 workload는 C1전체시간 약7.99%단축을 기술 관측했다. 조건2회이고 작은symbolic로 이전하지 않는다.",
+      "R23 calibration은 기존 정답에서 새 오답과 보류를 만들고 요청도8→24회였다.",
+      "Native tick은 원래 순서의 incoming 누적과 group별 자기갱신을 수행한다. 경계 feedback/중복link/float bit와 controller를 분리할 수 없다."
+    ],
+    "failure_modes": [
+      "또 다른 gate 튜닝으로 중심 가설 회피",
+      "무학습 micro실험을 학습 효율로 확대",
+      "동일 개발fixture를 일반화로 계수",
+      "실수식 동치를 native bit 동치로 오인"
+    ],
+    "success_criteria": [
+      "전체 주장/포트폴리오와 중단gate 명시",
+      "A0 source-bound32조건 실제분석·별도검산",
+      "양성/음성/미판정 분리"
+    ],
+    "unknowns": [
+      "32조건의 구조 공유 기회",
+      "공유 runtime 의미·총비용",
+      "학습 산출물과 연결",
+      "맞춘 crossA 계약"
+    ]
+  },
+  "consensus_proposal": {
+    "action": "전체 방향을 재정렬하고 A0 정적 구조 공유 기회32조건만 먼저 분석",
+    "axis_alignment": [
+      {
+        "axis": "claims",
+        "decision_ref": "claims"
+      },
+      {
+        "axis": "portfolio",
+        "decision_ref": "portfolio"
+      },
+      {
+        "axis": "first_study",
+        "decision_ref": "first_study"
+      },
+      {
+        "axis": "runtime_gate",
+        "decision_ref": "runtime_gate"
+      },
+      {
+        "axis": "learning_gate",
+        "decision_ref": "learning_gate"
+      }
+    ],
+    "conditions": [
+      "정확한4Program/8drive/initial bit와 순서를 실행 전 동결",
+      "순서·중복·feedback·level/goal·bias/drive/initial 충분조건을 두 방법으로 검산",
+      "양성은 A1 계약 심사만 허용, 성능·학습효율 채택 아님",
+      "0기회·불명·상한 초과는 종료, 사후 입력 추가 없음"
+    ],
+    "decision_owner": null,
+    "no_consensus_reason": null,
+    "remaining_options": [],
+    "satisfied_constraints": [
+      "core와 과거 연구 불변; 새 도구만 격리",
+      "AI Research SSH600초/단계60초/worker1/retry0",
+      "첫 과제는 A0정적32조건; native/학습/측정/benchmark0",
+      "사후 입력·판정·반복수 변경과 가상 수명 상각 없음",
+      "가설·구현·관측·실제 성능·학습 효율의 주장 경계 구별"
+    ],
+    "status": "conditional_consensus",
+    "supported_by_verified_claims": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "unresolved_dissent": []
+  },
+  "constraints": [
+    "core와 과거 연구 불변; 새 도구만 격리",
+    "AI Research SSH600초/단계60초/worker1/retry0",
+    "첫 과제는 A0정적32조건; native/학습/측정/benchmark0",
+    "사후 입력·판정·반복수 변경과 가상 수명 상각 없음",
+    "가설·구현·관측·실제 성능·학습 효율의 주장 경계 구별"
+  ],
+  "cross_examination": {
+    "coverage": [
+      {
+        "item_id": "T1",
+        "reviewer_ids": [
+          "/root/r29_strategy"
+        ]
+      },
+      {
+        "item_id": "T2",
+        "reviewer_ids": [
+          "/root/r29_resources"
+        ]
+      },
+      {
+        "item_id": "T3",
+        "reviewer_ids": [
+          "/root/r29_architecture"
+        ]
+      },
+      {
+        "item_id": "T4",
+        "reviewer_ids": [
+          "/root/r29_validity"
+        ]
+      }
+    ],
+    "decision": "run",
+    "followups": [
+      {
+        "item_ids": [
+          "T1"
+        ],
+        "reviewer_id": "/root/r29_strategy"
+      },
+      {
+        "item_ids": [
+          "T2"
+        ],
+        "reviewer_id": "/root/r29_resources"
+      },
+      {
+        "item_ids": [
+          "T3"
+        ],
+        "reviewer_id": "/root/r29_architecture"
+      },
+      {
+        "item_ids": [
+          "T4"
+        ],
+        "reviewer_id": "/root/r29_validity"
+      }
+    ],
+    "reason": "공간 대체·일반compiler·kernel강도·crossA 우선순위와 식별조건 충돌",
+    "selected_item_ids": [
+      "T1",
+      "T2",
+      "T3",
+      "T4"
+    ],
+    "trigger_items": [
+      {
+        "id": "T1",
+        "origin_reviewer": "/root/r29_architecture"
+      },
+      {
+        "id": "T2",
+        "origin_reviewer": "/root/r29_validity"
+      },
+      {
+        "id": "T3",
+        "origin_reviewer": "/root/r29_resources"
+      },
+      {
+        "id": "T4",
+        "origin_reviewer": "/root/r29_strategy"
+      }
+    ]
+  },
+  "issue_ledger": [
+    {
+      "available_evidence": [
+        "C1",
+        "C2",
+        "C4"
+      ],
+      "issue_id": "I-H03",
+      "rationale": "학습에 의한 총계산 절감은 보류",
+      "required_evidence": [
+        "학습→대체→실제 수명/총비용 연결"
+      ],
+      "status": "UNRESOLVED"
+    },
+    {
+      "available_evidence": [
+        "C10"
+      ],
+      "issue_id": "I-OPPORTUNITY",
+      "rationale": "A0실제32조건 결과 미실행",
+      "required_evidence": [
+        "봉인한 source census와 별도 검산"
+      ],
+      "status": "NOT_OBSERVABLE"
+    },
+    {
+      "available_evidence": [
+        "C5",
+        "C10"
+      ],
+      "issue_id": "I-RUNTIME",
+      "rationale": "A1runtime을 구현/실행하지 않음",
+      "required_evidence": [
+        "별도 A1계약과 경로/비용검사"
+      ],
+      "status": "NOT_OBSERVABLE"
+    },
+    {
+      "available_evidence": [
+        "C7"
+      ],
+      "issue_id": "I-CONSTRUCT",
+      "rationale": "H07 kernel g와 learned strength 구별 필요",
+      "required_evidence": [
+        "구성개념과 차별예측"
+      ],
+      "status": "CONFIRMED"
+    }
+  ],
+  "material_claims": [
+    {
+      "id": "C1",
+      "provenance": [
+        {
+          "locator": "evidence/claims.yaml",
+          "verification_note": "Coordinator 원문 확인; SHA256=9cba0301d5942bbb2a18c952549cd93fc1d0dec71e5180f7f0c870c03433beba",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "H01/H02/H03/H07은 서로 다른 가설이며 학습된 압축의 비용 우위는 아직 가설이다."
+    },
+    {
+      "id": "C2",
+      "provenance": [
+        {
+          "locator": "src/hcr/workspace.py",
+          "verification_note": "Coordinator 원문 확인; SHA256=65ac816b06d0e2fbb971adeecfd9e317f99fc7d43881ea17f99d71d35e3e1b1a",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "현재 motif 학습 뒤 macro를 적용해도 adaptive_network는 primitive 판단 Program을 재구성한다."
+    },
+    {
+      "id": "C3",
+      "provenance": [
+        {
+          "locator": "experiments/exp-26-direct-support/design.md",
+          "verification_note": "Coordinator 원문 확인; SHA256=f65326da27f8112a5011ca1a73de0dd84966c790347577c6c92c6577bae83914",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "EXP25/26은 ON/OFF와 pool/decision 분해를 이미 시험했고 EXP27 proof_memo도 있다. 단순 비용 분해 반복은 새 대조가 아니다."
+    },
+    {
+      "id": "C4",
+      "provenance": [
+        {
+          "locator": "experiments/exp-64-pre-reuse-gate/RESULTS.ko.md",
+          "verification_note": "Coordinator 원문 확인; SHA256=551f3cd9f322b49d5c966dd92b494624ede7a1171dd0e560044fd4a713185c3f",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "실제 학습 회로의 EXP62~64는 expansion 감소와 tick 증가, EXP64 실제K1..4 학습비용 미회수를 관측했다."
+    },
+    {
+      "id": "C5",
+      "provenance": [
+        {
+          "locator": "experiments/exp-74-reuse-frontier/RESULTS.ko.md",
+          "verification_note": "Coordinator 원문 확인; SHA256=c42f2ffd9f87b643935003db9af22145ba5c8883de06d8445c3fdc6726a41b53",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "R24~28의 미시적 재사용/사후 인증/Boolean 변환은 학습0이다. R28 cold6는 exact96에도 비용 실패이며24입력4반복이다."
+    },
+    {
+      "id": "C6",
+      "provenance": [
+        {
+          "locator": "experiments/exp-65-substitution-cross-level/RESULTS.ko.md",
+          "verification_note": "Coordinator 원문 확인; SHA256=8fac00938633ef4fff3157d55037d38e53d3fcc5519dd27615898c3ba9ae59a5",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "R19는 두 수작업 Program·직접 알고리즘을 이미 대조했고 외부 feedback 경계 생략 반례와 정보 식별 한계를 명시한다."
+    },
+    {
+      "id": "C7",
+      "provenance": [
+        {
+          "locator": "experiments/exp-07-attractor-revisability/design.md",
+          "verification_note": "Coordinator 원문 확인; SHA256=e93713353dabc73f7855eb4040131bcd7861eaab4a4e7e54a506f24635e48d23",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "EXP07은 draft이며 반증 조건을 실행 전에 정하도록 남겨두었다. kernel 자기이득과 learned strength는 별개다."
+    },
+    {
+      "id": "C8",
+      "provenance": [
+        {
+          "locator": "evidence/new-server-replication-20261018-r15/report.ko.md",
+          "verification_note": "Coordinator 원문 확인; SHA256=23f776ef4f1d7a19bc53e8f562b0ac0607db6037d5152e3e0673c86c4d13dfc7",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "R15의 다른 장시간 합성 workload는 C1전체시간 약7.99%단축을 기술 관측했다. 조건2회이고 작은symbolic로 이전하지 않는다."
+    },
+    {
+      "id": "C9",
+      "provenance": [
+        {
+          "locator": "experiments/exp-69-source-qualification/RESULTS.ko.md",
+          "verification_note": "Coordinator 원문 확인; SHA256=28cfa119f33a264eb2f69a922d882303ad81d08e1752fba430d2d1fb27623b33",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "R23 calibration은 기존 정답에서 새 오답과 보류를 만들고 요청도8→24회였다."
+    },
+    {
+      "id": "C10",
+      "provenance": [
+        {
+          "locator": "src/hcr/dynamics.py",
+          "verification_note": "Coordinator 원문 확인; SHA256=a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "Native tick은 원래 순서의 incoming 누적과 group별 자기갱신을 수행한다. 경계 feedback/중복link/float bit와 controller를 분리할 수 없다."
+    }
+  ],
+  "method_notes": [
+    "4blind 실패관점+4non-origin 교차검토+별도 freshJudge 완료. Reserve/specialist/adaptive 추가0.",
+    "Judge는 정제 dossier로 판정했고 원문을 직접 재검증했다고 표현하지 않음. Provider 내부 모델·격리외부증명 NOT_OBSERVABLE.",
+    "각 교차검토는 기존reviewer follow-up1회이며 새 독립 participant가 아님.",
+    "A/B/C의 실제 우열에는 합의 없음. 이번 conditional consensus는 A0 준비 gate에 한정.",
+    "T1: 공간 quotient는 R25 시간 고정점 반복과 다름. 전체 row/feedback/순서/bit와 복원비용 필요. 학습0은 H03 학습효율 증거 아님. T2: H07은 선행 state 생성비용과 g0/hysteresis 차별예측 필요. kernel g와 learned strength를 구별. T3: H01/H02 새24입력은 recurrence/capacity/승격 유일 정보경로 계약 없으면 R19 반복 위험. T4: conventional plan은 잠재적으로 새 전방 대조이나 같은 경험·선택 규칙 필요. 수작업 scheduler 승리를 H03 판정으로 확대하지 않음."
+  ],
+  "observability": {
+    "tokens": "NOT_OBSERVABLE",
+    "tool_calls": "NOT_OBSERVABLE",
+    "wall_time": "NOT_OBSERVABLE",
+    "worker_count": 5
+  },
+  "panel_manifest": [
+    {
+      "actual_model": "NOT_OBSERVABLE",
+      "actual_reasoning": "NOT_OBSERVABLE",
+      "blind_round1": true,
+      "classification": "reviewer",
+      "context_isolated": true,
+      "fallback_reason": "Terra unavailable; exposed Sol/xhigh requested.",
+      "id": "/root/r29_architecture",
+      "instantiated": true,
+      "is_judge": false,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ],
+      "requested_model": "gpt-6.1-sol",
+      "requested_reasoning": "xhigh",
+      "role": "계산구조/실제 대체 경계",
+      "status": "completed"
+    },
+    {
+      "actual_model": "NOT_OBSERVABLE",
+      "actual_reasoning": "NOT_OBSERVABLE",
+      "blind_round1": true,
+      "classification": "reviewer",
+      "context_isolated": true,
+      "fallback_reason": "Terra unavailable; exposed Sol/xhigh requested.",
+      "id": "/root/r29_validity",
+      "instantiated": true,
+      "is_judge": false,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ],
+      "requested_model": "gpt-6.1-sol",
+      "requested_reasoning": "xhigh",
+      "role": "반증/식별력/일반화",
+      "status": "completed"
+    },
+    {
+      "actual_model": "NOT_OBSERVABLE",
+      "actual_reasoning": "NOT_OBSERVABLE",
+      "blind_round1": true,
+      "classification": "reviewer",
+      "context_isolated": true,
+      "fallback_reason": "Terra unavailable; exposed Sol/xhigh requested.",
+      "id": "/root/r29_resources",
+      "instantiated": true,
+      "is_judge": false,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ],
+      "requested_model": "gpt-6.1-sol",
+      "requested_reasoning": "xhigh",
+      "role": "자원/기회비용/workload",
+      "status": "completed"
+    },
+    {
+      "actual_model": "NOT_OBSERVABLE",
+      "actual_reasoning": "NOT_OBSERVABLE",
+      "blind_round1": true,
+      "classification": "reviewer",
+      "context_isolated": true,
+      "fallback_reason": "Terra unavailable; exposed Sol/xhigh requested.",
+      "id": "/root/r29_strategy",
+      "instantiated": true,
+      "is_judge": false,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ],
+      "requested_model": "gpt-6.1-sol",
+      "requested_reasoning": "xhigh",
+      "role": "연구 고착/우선순위/비중복",
+      "status": "completed"
+    },
+    {
+      "actual_model": "NOT_OBSERVABLE",
+      "actual_reasoning": "NOT_OBSERVABLE",
+      "blind_round1": false,
+      "classification": "judge",
+      "context_isolated": true,
+      "fallback_reason": "Terra unavailable; exposed Sol/xhigh requested.",
+      "id": "/root/r29_judge",
+      "instantiated": true,
+      "is_judge": true,
+      "participated_stages": [
+        "final_judge"
+      ],
+      "requested_model": "gpt-6.1-sol",
+      "requested_reasoning": "xhigh",
+      "role": "fresh axis Judge",
+      "status": "completed"
+    }
+  ],
+  "preflight": {
+    "missing_capabilities": [],
+    "observed_capabilities": [
+      "4 blind reviewers",
+      "separate fresh Judge",
+      "read-only source evidence",
+      "fork_turns:none spawned4reviewers then freshJudge",
+      "all5 completed;4non-origin cross followups completed",
+      "local source accessible"
+    ],
+    "required_capabilities": [
+      "4 blind reviewers",
+      "separate fresh Judge",
+      "read-only source evidence"
+    ],
+    "supported_models_reasoning": [
+      "gpt-6.1-sol/xhigh exposed; actual provider internals NOT_OBSERVABLE"
+    ]
+  },
+  "required_constraints": [
+    "core와 과거 연구 불변; 새 도구만 격리",
+    "AI Research SSH600초/단계60초/worker1/retry0",
+    "첫 과제는 A0정적32조건; native/학습/측정/benchmark0",
+    "사후 입력·판정·반복수 변경과 가상 수명 상각 없음",
+    "가설·구현·관측·실제 성능·학습 효율의 주장 경계 구별"
+  ],
+  "run": {
+    "assurance": "independent",
+    "candidate_skill_sha256": null,
+    "capability_shortfall": false,
+    "completed_worker_ids": [
+      "/root/r29_architecture",
+      "/root/r29_validity",
+      "/root/r29_resources",
+      "/root/r29_strategy",
+      "/root/r29_judge"
+    ],
+    "failures": [],
+    "fresh_judge_id": "/root/r29_judge",
+    "id": "R29-HIGH-20261020",
+    "judge_fallback": null,
+    "redeliberations": [],
+    "reused_worker_ids": [],
+    "specialist_additions": [],
+    "stage": "HIGH",
+    "strict": false,
+    "worker_cap": 8,
+    "workers": [
+      {
+        "actual_model": "NOT_OBSERVABLE",
+        "actual_reasoning": "NOT_OBSERVABLE",
+        "blind_round1": true,
+        "classification": "reviewer",
+        "context_isolated": true,
+        "fallback_reason": "Terra unavailable; exposed Sol/xhigh requested.",
+        "id": "/root/r29_architecture",
+        "instantiated": true,
+        "is_judge": false,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ],
+        "requested_model": "gpt-6.1-sol",
+        "requested_reasoning": "xhigh",
+        "role": "계산구조/실제 대체 경계",
+        "status": "completed"
+      },
+      {
+        "actual_model": "NOT_OBSERVABLE",
+        "actual_reasoning": "NOT_OBSERVABLE",
+        "blind_round1": true,
+        "classification": "reviewer",
+        "context_isolated": true,
+        "fallback_reason": "Terra unavailable; exposed Sol/xhigh requested.",
+        "id": "/root/r29_validity",
+        "instantiated": true,
+        "is_judge": false,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ],
+        "requested_model": "gpt-6.1-sol",
+        "requested_reasoning": "xhigh",
+        "role": "반증/식별력/일반화",
+        "status": "completed"
+      },
+      {
+        "actual_model": "NOT_OBSERVABLE",
+        "actual_reasoning": "NOT_OBSERVABLE",
+        "blind_round1": true,
+        "classification": "reviewer",
+        "context_isolated": true,
+        "fallback_reason": "Terra unavailable; exposed Sol/xhigh requested.",
+        "id": "/root/r29_resources",
+        "instantiated": true,
+        "is_judge": false,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ],
+        "requested_model": "gpt-6.1-sol",
+        "requested_reasoning": "xhigh",
+        "role": "자원/기회비용/workload",
+        "status": "completed"
+      },
+      {
+        "actual_model": "NOT_OBSERVABLE",
+        "actual_reasoning": "NOT_OBSERVABLE",
+        "blind_round1": true,
+        "classification": "reviewer",
+        "context_isolated": true,
+        "fallback_reason": "Terra unavailable; exposed Sol/xhigh requested.",
+        "id": "/root/r29_strategy",
+        "instantiated": true,
+        "is_judge": false,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ],
+        "requested_model": "gpt-6.1-sol",
+        "requested_reasoning": "xhigh",
+        "role": "연구 고착/우선순위/비중복",
+        "status": "completed"
+      },
+      {
+        "actual_model": "NOT_OBSERVABLE",
+        "actual_reasoning": "NOT_OBSERVABLE",
+        "blind_round1": false,
+        "classification": "judge",
+        "context_isolated": true,
+        "fallback_reason": "Terra unavailable; exposed Sol/xhigh requested.",
+        "id": "/root/r29_judge",
+        "instantiated": true,
+        "is_judge": true,
+        "participated_stages": [
+          "final_judge"
+        ],
+        "requested_model": "gpt-6.1-sol",
+        "requested_reasoning": "xhigh",
+        "role": "fresh axis Judge",
+        "status": "completed"
+      }
+    ]
+  },
+  "schema_version": "1.0",
+  "skill_version": "1.0.0"
+}

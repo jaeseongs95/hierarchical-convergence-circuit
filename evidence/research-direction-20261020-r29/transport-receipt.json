@@ -1,0 +1,41 @@
+{
+  "approval_mode": "owner",
+  "channel": "redacted-adapter-outcome",
+  "evidence_zip_received": false,
+  "full_remote_source_bytes_received": false,
+  "new_execution_requests": 1,
+  "received_files": {
+    "chain2.json": "2b346664142d3a1e03597294c0a997f9942c6792e48302762b0d29750b6a1a3a",
+    "lower.json": "9585400c28a83475af9027394fbc708493b88c192ac05f814f5fe49d78f735d6",
+    "preparation.json": "708cf8fe6cae1ad62ecf197915e7ab3dc17409e699878ade1bcf720a5fc08d9e",
+    "result.json": "0ee9ff1ae295b510c30b51df175a8f80faa85b3842810e3964f26d792f19f31a",
+    "shared_bypass.json": "f09d5cb0d0c6cff3fe9ac354fe7242c128f3b23b5259896ebd24cebea9006d07",
+    "source-postcheck.json": "97612c155744ff0bcc12cbc76e4f385e2d28a9300a733670576e0908c4f31338",
+    "summary.json": "1cfebee12efb36733284fe6cbfa8abf97b88c667eefe634805be926aeb1d81bb",
+    "upper.json": "aa42c185358dcc25917a0dc5d6ff03c5d1c31433f888c1902309115f084d6efc"
+  },
+  "received_manifest_sha256": "60b18c00b0a2ba548ce0a3f67091c17116a3daed4f4c0c8c25e3dc0a0ff75661",
+  "reported_server_evidence_zip": "dccc6767ffae7f49e2f133812a893452c2e435e32127cdf3a3ef73523ff11c26",
+  "reported_server_evidence_zip_bytes": 11218,
+  "request_id": "e56574fa13c663842c68d3b59443075e17f8f2c0b555b726",
+  "source_pin": "20e9e07b8c6e6a0afe67adb0e78a2edcae40178c4b98ef692fabab1ad137f9b8",
+  "source_server_postcheck_received": true,
+  "source_verified_locally": true,
+  "ssh_completeness": "unknown; received JSON matches same-channel manifest, not independent server attestation",
+  "unreceived_manifest_entries": [
+    "audit-.stderr",
+    "audit-.stdout",
+    "case-chain2__static.stderr",
+    "case-chain2__static.stdout",
+    "case-lower__static.stderr",
+    "case-lower__static.stdout",
+    "case-shared_bypass__static.stderr",
+    "case-shared_bypass__static.stdout",
+    "case-upper__static.stderr",
+    "case-upper__static.stdout",
+    "preparation-.stderr",
+    "preparation-.stdout"
+  ],
+  "upload_bytes": 572913,
+  "upload_sha256": "f64d49b8b5cfb11d323fb3b51ab1a9fea4040d4f751dd7be45e94d5984f8ce83"
+}

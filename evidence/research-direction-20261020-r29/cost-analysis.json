@@ -1,0 +1,58 @@
+{
+  "all_stage_child_cpu_seconds": 0.8387910000000001,
+  "native_inference_cost_measured": false,
+  "projected_operations_are_not_measured_savings": true,
+  "runtime_speed_verdict": null,
+  "seconds_including_seal": 1.1791880949749611,
+  "stages": [
+    {
+      "child_cpu_seconds": 0.138077,
+      "item": "",
+      "phase": "preparation",
+      "raw_bytes": 808,
+      "returncode": 0,
+      "wall_seconds": 0.1663720099895727
+    },
+    {
+      "child_cpu_seconds": 0.13308499999999995,
+      "item": "chain2__static",
+      "phase": "case",
+      "raw_bytes": 9997,
+      "returncode": 0,
+      "wall_seconds": 0.16618283599382266
+    },
+    {
+      "child_cpu_seconds": 0.14266199999999998,
+      "item": "shared_bypass__static",
+      "phase": "case",
+      "raw_bytes": 20029,
+      "returncode": 0,
+      "wall_seconds": 0.166349557985086
+    },
+    {
+      "child_cpu_seconds": 0.140949,
+      "item": "lower__static",
+      "phase": "case",
+      "raw_bytes": 29009,
+      "returncode": 0,
+      "wall_seconds": 0.16665749999810942
+    },
+    {
+      "child_cpu_seconds": 0.14067000000000007,
+      "item": "upper__static",
+      "phase": "case",
+      "raw_bytes": 38317,
+      "returncode": 0,
+      "wall_seconds": 0.16668063300312497
+    },
+    {
+      "child_cpu_seconds": 0.1433480000000001,
+      "item": "",
+      "phase": "audit",
+      "raw_bytes": 55863,
+      "returncode": 0,
+      "wall_seconds": 0.16633759101387113
+    }
+  ],
+  "status": "STATIC_ANALYSIS_EXECUTION_COST_ONLY"
+}

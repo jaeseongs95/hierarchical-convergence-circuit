@@ -1,0 +1,9 @@
+{
+  "bytes": 38772,
+  "candidate": "sha256:250017fbf4036e1f99e189b46650fe3d6df2b076e7fb2b38b0dda9acf8b0c07c",
+  "constraint": "sha256:08be88affa863002fd612a686ce1b5990b59229840ccbfc15fd2e6827d6d2298",
+  "independent": false,
+  "runtime_adoption": false,
+  "sha256": "40265f4947e20eff6d0deaccb6086536bf78e3e7ecc139dd4ae31dba7ff4427b",
+  "verdict": "PASS"
+}

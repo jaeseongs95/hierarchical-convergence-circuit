@@ -1,0 +1,182 @@
+{
+  "schemaVersion": "1.0.0",
+  "reviewId": "CS-R29-REVIEW",
+  "constraintReportDigest": "sha256:08be88affa863002fd612a686ce1b5990b59229840ccbfc15fd2e6827d6d2298",
+  "candidateDigest": "sha256:250017fbf4036e1f99e189b46650fe3d6df2b076e7fb2b38b0dda9acf8b0c07c",
+  "reviewerActorRef": "R29 implementation author source/saved-static-result review; not independent or host-attested",
+  "findings": [
+    {
+      "id": "F-PREDICATE",
+      "invariantId": "INV-PREDICATE",
+      "status": "SATISFIED",
+      "evidenceRefs": [
+        "E-2",
+        "E-0",
+        "E-4",
+        "E-1",
+        "E-7",
+        "E-6",
+        "E-5"
+      ],
+      "reasoningSummary": "Source review of synchronous ordered accumulation plus binary64 local labels establishes a sufficient closed relation, including duplicate links and feedback. Producer monotone refinement is checked by separate pair elimination for full relation classes, coverage and ordered representatives. Server synthetic fixture passes11targeted rejections, including false-negative singleton, false-positive merge, edge order and ledger. Raw32queries reverified locally with5result mutations rejected. This is maximality only under the conservative ordered-row rule, not native runtime equivalence."
+    },
+    {
+      "id": "F-SEMANTICS",
+      "invariantId": "INV-SEMANTICS",
+      "status": "SATISFIED",
+      "evidenceRefs": [
+        "E-0",
+        "E-4",
+        "E-1",
+        "E-7",
+        "E-6",
+        "E-3",
+        "E-5"
+      ],
+      "reasoningSummary": "Exactly4existing source Programs x8frozen conditions =32queries bound to native/source/config/drive/initial.191source files unchanged locally and server-postcheck. Source review finds only graph construction/partition/verification/serialization; native tick/settle/recorded and World.measure are forbidden, learning is not called. Reported native/train/measurement/new benchmark flags all0. Positive opportunity12queries; no new inputs, retries or runtime adapter."
+    },
+    {
+      "id": "F-COST",
+      "invariantId": "INV-COST",
+      "status": "SATISFIED",
+      "evidenceRefs": [
+        "E-0",
+        "E-4",
+        "E-1",
+        "E-7",
+        "E-6",
+        "E-3"
+      ],
+      "reasoningSummary": "Six stages exit0, worker1/retry0, seal1.179188s within600s, stage max0.166681s within60s; reported AS512MiB/file caps matched and raw peak55863bytes.32projected group updates and64link operations omitted across one imagined tick per query, with restoration slots retained; actual native operations0. Stage childCPU0.838791s is static analysis cost only, no runtime speed verdict, production adoption or learned compression claim. Positive only admits separately contracted A1; A1 not executed."
+    }
+  ],
+  "verificationResults": [
+    {
+      "obligationId": "OB-PREDICATE",
+      "executionStatus": "EXECUTED",
+      "result": "PASS",
+      "targetDigest": "sha256:250017fbf4036e1f99e189b46650fe3d6df2b076e7fb2b38b0dda9acf8b0c07c",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "method": "dynamic-test",
+      "evidenceRefs": [
+        "E-2",
+        "E-0",
+        "E-4",
+        "E-1",
+        "E-7",
+        "E-6",
+        "E-5"
+      ]
+    },
+    {
+      "obligationId": "OB-SEMANTICS",
+      "executionStatus": "EXECUTED",
+      "result": "PASS",
+      "targetDigest": "sha256:250017fbf4036e1f99e189b46650fe3d6df2b076e7fb2b38b0dda9acf8b0c07c",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "method": "dynamic-test",
+      "evidenceRefs": [
+        "E-0",
+        "E-4",
+        "E-1",
+        "E-7",
+        "E-6",
+        "E-3",
+        "E-5"
+      ]
+    },
+    {
+      "obligationId": "OB-COST",
+      "executionStatus": "EXECUTED",
+      "result": "PASS",
+      "targetDigest": "sha256:250017fbf4036e1f99e189b46650fe3d6df2b076e7fb2b38b0dda9acf8b0c07c",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "method": "dynamic-test",
+      "evidenceRefs": [
+        "E-0",
+        "E-4",
+        "E-1",
+        "E-7",
+        "E-6",
+        "E-3"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E-0",
+      "path": "evidence/chain2.json",
+      "digest": "sha256:2b346664142d3a1e03597294c0a997f9942c6792e48302762b0d29750b6a1a3a",
+      "targetDigest": "sha256:250017fbf4036e1f99e189b46650fe3d6df2b076e7fb2b38b0dda9acf8b0c07c",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Received R29 static analysis server JSON;8files matched same-channel manifest and local saved static audit. Frozen191source and server postcheck matched. No native inference or independent host attestation."
+    },
+    {
+      "id": "E-1",
+      "path": "evidence/lower.json",
+      "digest": "sha256:9585400c28a83475af9027394fbc708493b88c192ac05f814f5fe49d78f735d6",
+      "targetDigest": "sha256:250017fbf4036e1f99e189b46650fe3d6df2b076e7fb2b38b0dda9acf8b0c07c",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Received R29 static analysis server JSON;8files matched same-channel manifest and local saved static audit. Frozen191source and server postcheck matched. No native inference or independent host attestation."
+    },
+    {
+      "id": "E-2",
+      "path": "evidence/preparation.json",
+      "digest": "sha256:708cf8fe6cae1ad62ecf197915e7ab3dc17409e699878ade1bcf720a5fc08d9e",
+      "targetDigest": "sha256:250017fbf4036e1f99e189b46650fe3d6df2b076e7fb2b38b0dda9acf8b0c07c",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Received R29 static analysis server JSON;8files matched same-channel manifest and local saved static audit. Frozen191source and server postcheck matched. No native inference or independent host attestation."
+    },
+    {
+      "id": "E-3",
+      "path": "evidence/result.json",
+      "digest": "sha256:0ee9ff1ae295b510c30b51df175a8f80faa85b3842810e3964f26d792f19f31a",
+      "targetDigest": "sha256:250017fbf4036e1f99e189b46650fe3d6df2b076e7fb2b38b0dda9acf8b0c07c",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Received R29 static analysis server JSON;8files matched same-channel manifest and local saved static audit. Frozen191source and server postcheck matched. No native inference or independent host attestation."
+    },
+    {
+      "id": "E-4",
+      "path": "evidence/shared_bypass.json",
+      "digest": "sha256:f09d5cb0d0c6cff3fe9ac354fe7242c128f3b23b5259896ebd24cebea9006d07",
+      "targetDigest": "sha256:250017fbf4036e1f99e189b46650fe3d6df2b076e7fb2b38b0dda9acf8b0c07c",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Received R29 static analysis server JSON;8files matched same-channel manifest and local saved static audit. Frozen191source and server postcheck matched. No native inference or independent host attestation."
+    },
+    {
+      "id": "E-5",
+      "path": "evidence/source-postcheck.json",
+      "digest": "sha256:97612c155744ff0bcc12cbc76e4f385e2d28a9300a733670576e0908c4f31338",
+      "targetDigest": "sha256:250017fbf4036e1f99e189b46650fe3d6df2b076e7fb2b38b0dda9acf8b0c07c",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Received R29 static analysis server JSON;8files matched same-channel manifest and local saved static audit. Frozen191source and server postcheck matched. No native inference or independent host attestation."
+    },
+    {
+      "id": "E-6",
+      "path": "evidence/summary.json",
+      "digest": "sha256:1cfebee12efb36733284fe6cbfa8abf97b88c667eefe634805be926aeb1d81bb",
+      "targetDigest": "sha256:250017fbf4036e1f99e189b46650fe3d6df2b076e7fb2b38b0dda9acf8b0c07c",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Received R29 static analysis server JSON;8files matched same-channel manifest and local saved static audit. Frozen191source and server postcheck matched. No native inference or independent host attestation."
+    },
+    {
+      "id": "E-7",
+      "path": "evidence/upper.json",
+      "digest": "sha256:aa42c185358dcc25917a0dc5d6ff03c5d1c31433f888c1902309115f084d6efc",
+      "targetDigest": "sha256:250017fbf4036e1f99e189b46650fe3d6df2b076e7fb2b38b0dda9acf8b0c07c",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Received R29 static analysis server JSON;8files matched same-channel manifest and local saved static audit. Frozen191source and server postcheck matched. No native inference or independent host attestation."
+    }
+  ],
+  "blockingFindingIds": [],
+  "unverifiedRequiredObligationIds": [],
+  "verdict": "PASS"
+}

@@ -1,0 +1,26 @@
+{
+  "actual_runtime_equivalence_tested": false,
+  "admit_A1_contract": true,
+  "frozen_source_files": 191,
+  "learned_compression_tested": false,
+  "native_settle_calls_performed_locally": 0,
+  "new_timing_runs_locally": 0,
+  "production_adoption": false,
+  "received_manifest_matched_files": 8,
+  "runtime_savings_measured": false,
+  "status": "LOCAL_SAVED_STATIC_AUDIT_PASS",
+  "targeted_rejections": {
+    "binding": "frozen query binding",
+    "coverage": "partition coverage",
+    "ledger": "projected work ledger",
+    "missing_query": "program matrix",
+    "scope": "scope flags"
+  },
+  "totals": {
+    "nontrivial_classes": 32,
+    "opportunity_queries": 12,
+    "projected_group_updates_omitted_per_one_tick_per_query": 32,
+    "projected_links_omitted_per_one_tick_per_query": 64,
+    "queries": 32
+  }
+}

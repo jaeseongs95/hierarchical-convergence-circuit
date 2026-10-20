@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "1.0.0",
+  "reportId": "CS-R29-CONSTRAINTS",
+  "requestDigest": "sha256:20d2a69aa429120220be33045ba36dbd5f6c703446f78646f5a7cfdbe660c4f2",
+  "sourceSnapshotDigest": "sha256:56a6969b93e0efa1b51cfc3895bfe629a20e15214360b884712c55c269b9316f",
+  "knowledgePackVersion": "0.1.0",
+  "knowledgePackDigest": "sha256:d8351d9aabb433403830fcffc3a2f2438b6d428711c93b6ded9eff002468c3d1",
+  "draftUse": {
+    "allowed": false,
+    "basis": "Two validated rules only."
+  },
+  "applicability": "applicable",
+  "applicabilityReason": "Predicate specialization, state lifetime and measured cost affect equivalence and adoption.",
+  "selectedRules": [
+    {
+      "ruleId": "ALG-KEY-004",
+      "ruleDigest": "sha256:db77383ecb5f41ef3af5cb60769edaea507cac5cb25e28b88f249e84a062ba2e",
+      "applicabilityReason": "Source/config/ordered program/weights/flags and finite drive domain determine equivalence."
+    },
+    {
+      "ruleId": "PERF-MEASURE-001",
+      "ruleDigest": "sha256:ef11800e55663f1b719f62d3f812280fd6e56c6895eef3028b9db344a9d0a355",
+      "applicabilityReason": "Fixed cold6 workload, all compiler and verification overhead, separate process and lifecycle costs."
+    }
+  ],
+  "facts": [
+    {
+      "id": "FACT-BOOLEAN",
+      "statement": "A0 is a static sufficient-condition census of spatial row equivalence, not learned compression or runtime performance.",
+      "evidenceRefs": [
+        "SRC-POLICY",
+        "SRC-RESULT"
+      ]
+    },
+    {
+      "id": "FACT-LIFE",
+      "statement": "Native tick uses ordered incoming accumulation and per-group state; all feedback and initial/drive bits affect invariant equivalence.",
+      "evidenceRefs": [
+        "SRC-NATIVE",
+        "SRC-SPEC"
+      ]
+    },
+    {
+      "id": "FACT-COST",
+      "statement": "R28 cold6 cost failure cannot be rescued by static opportunity counts; new native and timing benchmarks remain zero.",
+      "evidenceRefs": [
+        "SRC-RESULT"
+      ]
+    }
+  ],
+  "assumptions": [],
+  "invariants": [
+    {
+      "id": "INV-PREDICATE",
+      "statement": "Stable partition labels bind group level/goal role, bias/drive/initial bits and ordered incoming weight/kind/source classes. A separate pair-elimination verifier must establish closure and maximality within this sufficient-condition relation; preserve duplicate edges and feedback. No numerical or speed claim from counts.",
+      "scope": "Fixed4Programs32conditions; A0 only",
+      "basisRefs": [
+        "FACT-BOOLEAN",
+        "FACT-LIFE"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-SEMANTICS",
+      "statement": "Exactly4source Programs x8frozen drive/initial inputs, full source/input digests. A0 invokes no native tick/settle/training/World.measure or benchmark. No added inputs after census.",
+      "scope": "Fixed4Programs32conditions; A0 only",
+      "basisRefs": [
+        "FACT-BOOLEAN",
+        "FACT-LIFE"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-COST",
+      "statement": "Total600s/stage60s/worker1/retry0, bounded standard-library static analysis. Record analysis work and projected arithmetic elimination/restoration separately; no actual speed/adoption/generalization or learned H03 claim. All-zero opportunity closes A; positive only admits separately contracted A1.",
+      "scope": "Fixed4Programs32conditions; A0 only",
+      "basisRefs": [
+        "FACT-COST"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "PERF-MEASURE-001"
+      ]
+    }
+  ],
+  "designChoices": [
+    {
+      "id": "CHOICE-MINIMAL",
+      "statement": "Stable color refinement plus independent pair-elimination closure/maximality checks. Existing bounded R22 runner. No native execution or runtime adapter.",
+      "rationale": "Test if spatial arithmetic sharing has a source-bound opportunity before implementing a runtime optimization.",
+      "basisRefs": [
+        "FACT-BOOLEAN",
+        "FACT-LIFE",
+        "FACT-COST"
+      ]
+    }
+  ],
+  "verificationObligations": [
+    {
+      "id": "OB-PREDICATE",
+      "invariantIds": [
+        "INV-PREDICATE"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Invalid or nonmaximal equivalence class, reordered or omitted incoming edges, wrong binding or savings ledger accepted.",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-SEMANTICS",
+      "invariantIds": [
+        "INV-SEMANTICS"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Missing/duplicate condition, changed source/input or native/training/measurement invocation accepted.",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-COST",
+      "invariantIds": [
+        "INV-COST"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Projected savings reported as runtime improvement, unsupported adoption, limit violations or extra retries.",
+      "requirementLevel": "required"
+    }
+  ],
+  "requiredCapabilities": [
+    "cs-constraint-derivation",
+    "cs-implementation-review"
+  ],
+  "verdict": "READY"
+}

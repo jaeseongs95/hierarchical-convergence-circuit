@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0.0",
+  "requestRef": {
+    "path": "request.json",
+    "digest": "sha256:c57867f885e4d020c845235715312dbdf7e22d32602e89a707c150e4e1739623"
+  },
+  "requestDigest": "sha256:20d2a69aa429120220be33045ba36dbd5f6c703446f78646f5a7cfdbe660c4f2",
+  "constraintReportRef": {
+    "path": "constraints.json",
+    "digest": "sha256:b4f0b564dac9165159ed1df6984fb7b54ff0759665eb96652032a6c848e34891"
+  },
+  "constraintReportDigest": "sha256:08be88affa863002fd612a686ce1b5990b59229840ccbfc15fd2e6827d6d2298",
+  "taskDigest": "sha256:2b628d366689abe1573f17adc217c2c8298538e27e6a89c44aafdf594bbd449a",
+  "knowledgePackVersion": "0.1.0",
+  "knowledgePackDigest": "sha256:d8351d9aabb433403830fcffc3a2f2438b6d428711c93b6ded9eff002468c3d1",
+  "policyId": "R29-LOCAL-CONSTRAINTS",
+  "policyVersion": "1.0.0",
+  "policyDigest": "sha256:1f4c6b67e2ae2456f8e109e3769ab1e8199cbc82a8faaa8c46b4ffd76811f95a",
+  "mode": "enforce",
+  "requiredObligationIds": [
+    "OB-PREDICATE",
+    "OB-SEMANTICS",
+    "OB-COST"
+  ]
+}

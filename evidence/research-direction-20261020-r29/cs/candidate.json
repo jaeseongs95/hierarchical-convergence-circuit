@@ -1,0 +1,30 @@
+{
+  "files": [
+    {
+      "digest": "sha256:94e3f13a15ca059bc6ebdef2795a494e0ee39918302e4522424543a11ac89a9d",
+      "path": "candidate/__init__.py"
+    },
+    {
+      "digest": "sha256:ae7c24034bf0eb2ba50c979a6ecaede0f30d1939d1905754e72c132ea511341b",
+      "path": "candidate/bootstrap.py"
+    },
+    {
+      "digest": "sha256:40dac786b00c2dd9211d3fc27eff76680f70d84532bfbfa7de408bd9d81c34c2",
+      "path": "candidate/partition.py"
+    },
+    {
+      "digest": "sha256:3b1c5e8b5279a4ef1d9b38e1378ec3af635703556cd6b687963e767bbc50cfe6",
+      "path": "candidate/probe.py"
+    },
+    {
+      "digest": "sha256:92113d4372de066833874751221106a43e7cf81feeb0c3c7584ae4ce1f6a48c2",
+      "path": "candidate/selfcheck.py"
+    },
+    {
+      "digest": "sha256:17e22c501449e25c09592e86a3aae131871fe6bffbaee852d6f655fa91642a5f",
+      "path": "candidate/verify.py"
+    }
+  ],
+  "schemaVersion": "1.0.0",
+  "scopeSummary": "Six R29 Python files: A-0 static ordered-row sharing census; four Programs x eight queries; native/train/measurement/timing zero. Server proof pending."
+}
