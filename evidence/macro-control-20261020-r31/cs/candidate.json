@@ -1,0 +1,34 @@
+{
+  "files": [
+    {
+      "digest": "sha256:e117c5882b9b4e24b0dbf7c950eac9d2b23c39706e9867e271aaa79a797a75cb",
+      "path": "candidate/__init__.py"
+    },
+    {
+      "digest": "sha256:5924a41ca4094157d2a588c5cc5b98957238c294b51b4041151c4231dfbee296",
+      "path": "candidate/bootstrap.py"
+    },
+    {
+      "digest": "sha256:3e0b6e800db71511879bf98f64844b92e0b4aa0550c73f732bb2e33c6e780768",
+      "path": "candidate/macro.py"
+    },
+    {
+      "digest": "sha256:e7b09ad87186e32470f7a84aa298978d074af488948b0aecc391203b893aa7ce",
+      "path": "candidate/probe.py"
+    },
+    {
+      "digest": "sha256:4eeb414280ae117686cb9e08da87094f933616b2151048c2540dc696ffa61d49",
+      "path": "candidate/runtime.py"
+    },
+    {
+      "digest": "sha256:6f7c08b614e612c5150f24c735daecc0cfd8fb54d199dfa802ca111791572b56",
+      "path": "candidate/selfcheck.py"
+    },
+    {
+      "digest": "sha256:05eb991a841be1d0d85f862dc7e949f74274adc390c2c261c98180e493356534",
+      "path": "candidate/verify.py"
+    }
+  ],
+  "schemaVersion": "1.0.0",
+  "scopeSummary": "Seven isolated R31 files: actual native3episode learner; same learned path certificate and bounded matching conventional positive-evidence macro; unchanged primitive final network; fixed4cases x3arms, separate saved-event audit, no native checkpoint claims."
+}

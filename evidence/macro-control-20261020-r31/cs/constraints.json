@@ -1,0 +1,143 @@
+{
+  "schemaVersion": "1.0.0",
+  "reportId": "CS-R31-CONSTRAINTS",
+  "requestDigest": "sha256:26a6ee9fe7fa3108e8c8ebc7351f2c899678e3a844b59c5c19db0f2b6317b3e6",
+  "sourceSnapshotDigest": "sha256:780c0dcb6dec79259ba87f4b0d3528d37b471b956031bf19571943f05e3ba7c2",
+  "knowledgePackVersion": "0.1.0",
+  "knowledgePackDigest": "sha256:d8351d9aabb433403830fcffc3a2f2438b6d428711c93b6ded9eff002468c3d1",
+  "draftUse": {
+    "allowed": false,
+    "basis": "Validated binding and performance cards only"
+  },
+  "applicability": "applicable",
+  "applicabilityReason": "Replacing a learned pool changes graph expansion and performance correctness.",
+  "selectedRules": [
+    {
+      "ruleId": "ALG-KEY-004",
+      "ruleDigest": "sha256:db77383ecb5f41ef3af5cb60769edaea507cac5cb25e28b88f249e84a062ba2e",
+      "applicabilityReason": "Preserve actual observation/revision/role/memory/version/primitive proof binding when replacing activation pool with conventional applicability."
+    },
+    {
+      "ruleId": "PERF-MEASURE-001",
+      "ruleDigest": "sha256:ef11800e55663f1b719f62d3f812280fd6e56c6895eef3028b9db344a9d0a355",
+      "applicabilityReason": "Same experiences, fixed actual use count, account training/reference/feedback and macro matching/preparation costs; no timing replication."
+    }
+  ],
+  "facts": [
+    {
+      "id": "FACT-CONSUMER",
+      "statement": "Native learned path motifs supply certified multi-edge candidates to workspace.apply, which retains interior side branches; final route_only decision network remains primitive.",
+      "evidenceRefs": [
+        "SRC-ACTIVATION",
+        "SRC-EXPANSION",
+        "SRC-WORKSPACE",
+        "SRC-IDENTITY"
+      ]
+    },
+    {
+      "id": "FACT-LEARNING",
+      "statement": "Correct True primitive proof compiles authored path grammar after3episodes; incorrect feedback weakens used circuits only. Current implementation lacks persistent false exception representation.",
+      "evidenceRefs": [
+        "SRC-LEARNING",
+        "SRC-PATTERN"
+      ]
+    },
+    {
+      "id": "FACT-COST",
+      "statement": "R18 fixes3training and4evaluation observations; new conventional verified-macro control adds a mechanism alternative, not another ON/OFF gate. Same real experiences and explicit preparation/training costs required.",
+      "evidenceRefs": [
+        "SRC-R18"
+      ]
+    }
+  ],
+  "assumptions": [],
+  "invariants": [
+    {
+      "id": "INV-BINDING",
+      "statement": "Conventional control consumes exactly actual3episode learned motif document, with same bounded DFS/capacity/role binding and native side-branch-preserving application. Only public score>0 applicability, longest then lexicographic ranking; no truth/case/answer access. No stored answers. Native pool and primitive remain unchanged.",
+      "scope": "R31 fixed3training and4cases x3arms",
+      "basisRefs": [
+        "FACT-CONSUMER",
+        "FACT-LEARNING"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-SEMANTICS",
+      "statement": "Freeze4observations x3arms with primitive final decision/proof in all arms and no judgment prior. Independently replay native scalar/controller, scan/macro eligibility, selection, workspace graph, final readout/proof, operation counts and actual learner transitions. Distinguish selection-policy effects from pool-only cost when chosen expansions differ.",
+      "scope": "R31 fixed3training and4cases x3arms",
+      "basisRefs": [
+        "FACT-CONSUMER",
+        "FACT-LEARNING"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-COST",
+      "statement": "3training/12evaluation, max8advances/session, max240settles/38400ticks, total600s/stage60s/worker1/retry0/World.measure0. Actual prefix K1..4 cost includes shared init+training/reference/feedback for both learned arms, their own per-evaluation preparation/matching and serialization; primitive init only. Audit/orchestration/seal separate. No extrapolated break-even, statistical speed or production adoption.",
+      "scope": "R31 fixed3training and4cases x3arms",
+      "basisRefs": [
+        "FACT-COST"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "PERF-MEASURE-001"
+      ]
+    }
+  ],
+  "designChoices": [
+    {
+      "id": "CHOICE-MINIMAL",
+      "statement": "Three real native positive learning episodes; one source-derived deterministic pool replacement in isolated research processes, unchanged native workspace/final network and separate saved-event audit. No core modification or checkpoint impersonation.",
+      "rationale": "Adds missing ordinary macro explanation control with actual learned input, no new semantic runtime.",
+      "basisRefs": [
+        "FACT-CONSUMER",
+        "FACT-LEARNING",
+        "FACT-COST"
+      ]
+    }
+  ],
+  "verificationObligations": [
+    {
+      "id": "OB-BINDING",
+      "invariantIds": [
+        "INV-BINDING"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Wrong source/config/memory/revision/role, missing fallback/side branch, oracle applicability or forged native checkpoint accepted.",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-SEMANTICS",
+      "invariantIds": [
+        "INV-SEMANTICS"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Any unauthorized readout repair, hidden truth use, mismatched trace/route/proof/memory transition/cost accepted; theory claims from unsupported correction/cross-A tests.",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-COST",
+      "invariantIds": [
+        "INV-COST"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "Missing stage, exceeded budget, omitted training or macro work, timing superiority from single run, or projected savings represented as observed.",
+      "requirementLevel": "required"
+    }
+  ],
+  "requiredCapabilities": [
+    "cs-constraint-derivation",
+    "cs-implementation-review"
+  ],
+  "verdict": "READY"
+}

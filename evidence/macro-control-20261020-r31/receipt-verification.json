@@ -1,0 +1,59 @@
+{
+  "evidence_zip_received": false,
+  "exact_hash_matches": 22,
+  "external_host_attestation": false,
+  "mismatches": {
+    "source-postcheck.json": {
+      "declared": "e1daeb5432fcf2cb2597e246de7b1d8b8db80b31438a1e446a23f04ce0540f62",
+      "received": "cd724b4a453d56b0ca7d3dbed39eae7e14d044313309309ecd124d19073c033a"
+    }
+  },
+  "received_manifest_json_entries": 23,
+  "redaction": {
+    "canonical_reconstruction_matches_declared_sha": true,
+    "known_frozen_source": "theory/source/HCC_habit_fixed_schema_20260917.md",
+    "received_raw_unchanged": true,
+    "reconstruction_path": "source-postcheck.canonical-reconstruction.json",
+    "returned": "[REDACTED:entropy:45].md",
+    "unique_key_correspondence": true
+  },
+  "ssh_completeness": "unknown",
+  "unreceived_manifest_entries": [
+    "audit-.stderr",
+    "audit-.stdout",
+    "case-chain4_blocked__hcr.stderr",
+    "case-chain4_blocked__hcr.stdout",
+    "case-chain4_blocked__macro.stderr",
+    "case-chain4_blocked__macro.stdout",
+    "case-chain4_blocked__primitive.stderr",
+    "case-chain4_blocked__primitive.stdout",
+    "case-chain4_open__hcr.stderr",
+    "case-chain4_open__hcr.stdout",
+    "case-chain4_open__macro.stderr",
+    "case-chain4_open__macro.stdout",
+    "case-chain4_open__primitive.stderr",
+    "case-chain4_open__primitive.stdout",
+    "case-fan5_blocked__hcr.stderr",
+    "case-fan5_blocked__hcr.stdout",
+    "case-fan5_blocked__macro.stderr",
+    "case-fan5_blocked__macro.stdout",
+    "case-fan5_blocked__primitive.stderr",
+    "case-fan5_blocked__primitive.stdout",
+    "case-fan5_open__hcr.stderr",
+    "case-fan5_open__hcr.stdout",
+    "case-fan5_open__macro.stderr",
+    "case-fan5_open__macro.stdout",
+    "case-fan5_open__primitive.stderr",
+    "case-fan5_open__primitive.stdout",
+    "init-.stderr",
+    "init-.stdout",
+    "preparation-.stderr",
+    "preparation-.stdout",
+    "train-0.stderr",
+    "train-0.stdout",
+    "train-1.stderr",
+    "train-1.stdout",
+    "train-2.stderr",
+    "train-2.stdout"
+  ]
+}

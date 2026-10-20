@@ -1,0 +1,117 @@
+[
+  {
+    "names": [
+      "train0.json",
+      "train1.json",
+      "train2.json"
+    ],
+    "ref": {
+      "version": 1,
+      "captureSource": "redacted-adapter-outcome",
+      "sshCompleteness": "unknown",
+      "id": "0454fdaa283b1d6d851a3dd7189679da3de2ce4bf83091cb",
+      "executionId": "3f25668ca82d6610e88bc5c28aa7dfae240dda22475c0a7b",
+      "state": "ready",
+      "expiresAt": 1792464692241,
+      "bytes": 130802,
+      "snapshotBytes": 144510,
+      "sha256": "565f31e6c6945118b2a774c6f39fb5b517d01e8a639c038ef43e6e9181b31724"
+    }
+  },
+  {
+    "names": [
+      "chain4_open__hcr.json",
+      "chain4_open__macro.json",
+      "chain4_open__primitive.json"
+    ],
+    "ref": {
+      "version": 1,
+      "captureSource": "redacted-adapter-outcome",
+      "sshCompleteness": "unknown",
+      "id": "2681fd2b6b118995b91aecd1c91bdf3e810e73ca39a5b60b",
+      "executionId": "6ea3d7ea17803f08a8481e5dc1892b13ed7c3f76a5bbbad2",
+      "state": "ready",
+      "expiresAt": 1792464697954,
+      "bytes": 208796,
+      "snapshotBytes": 229554,
+      "sha256": "9823fd5804cad9e2ccfc325cd5d0fc6b61bc8dd7565fbea4aaf73c1e7258bfbd"
+    }
+  },
+  {
+    "names": [
+      "chain4_blocked__hcr.json",
+      "chain4_blocked__macro.json",
+      "chain4_blocked__primitive.json"
+    ],
+    "ref": {
+      "version": 1,
+      "captureSource": "redacted-adapter-outcome",
+      "sshCompleteness": "unknown",
+      "id": "26eb453ede7e3ab7447c3feed579b1ffd0b98113e807380d",
+      "executionId": "de6a125318b1f1afa1941fab13cf6d9bb0dfa4f6f2c5b9ca",
+      "state": "ready",
+      "expiresAt": 1792464714472,
+      "bytes": 201016,
+      "snapshotBytes": 220898,
+      "sha256": "283837e58a6b8cb3ed828fb8472ed9dcea9b597d0d129dc0f2fe1935d37c1fc6"
+    }
+  },
+  {
+    "names": [
+      "fan5_open__hcr.json",
+      "fan5_open__macro.json",
+      "fan5_open__primitive.json"
+    ],
+    "ref": {
+      "version": 1,
+      "captureSource": "redacted-adapter-outcome",
+      "sshCompleteness": "unknown",
+      "id": "83e1b25109021aebfe1111cf492d3ca23f0a0b39891e3060",
+      "executionId": "9be6f50c633196d86d5cab95dcdd951e0047821452415fe4",
+      "state": "ready",
+      "expiresAt": 1792464723328,
+      "bytes": 193728,
+      "snapshotBytes": 212962,
+      "sha256": "1daac3188d4cb5eb01de2aa0bb262de108bb807071406c5026ce0761949c0c27"
+    }
+  },
+  {
+    "names": [
+      "fan5_blocked__hcr.json",
+      "fan5_blocked__macro.json",
+      "fan5_blocked__primitive.json"
+    ],
+    "ref": {
+      "version": 1,
+      "captureSource": "redacted-adapter-outcome",
+      "sshCompleteness": "unknown",
+      "id": "c12c08a4d6e1a7a43614da04554d194f2bb415e22467fdd4",
+      "executionId": "d65e74888249a8bc76e1c96da424497e9d904c78c5b46dc4",
+      "state": "ready",
+      "expiresAt": 1792464731117,
+      "bytes": 193056,
+      "snapshotBytes": 212262,
+      "sha256": "f2e63da5a18e0d604a53355359a2434f2367fa7a4b358a7e42d8fc5535e7b381"
+    }
+  },
+  {
+    "names": [
+      "memory0.json",
+      "memory1.json",
+      "memory2.json",
+      "memory3.json"
+    ],
+    "ref": {
+      "version": 1,
+      "captureSource": "redacted-adapter-outcome",
+      "sshCompleteness": "unknown",
+      "id": "2351a90fd7841daf55a930072141d5154afca983754a1cfd",
+      "executionId": "67e6e296c3bd3e21e1422645eedfa62ac19d4c8c785dfe1c",
+      "state": "ready",
+      "expiresAt": 1792464753540,
+      "bytes": 7805,
+      "snapshotBytes": 8864,
+      "sha256": "60237fb2312bbf7768f70e7510684594a47b39c06965ee021314795be441607b"
+    }
+  }
+]

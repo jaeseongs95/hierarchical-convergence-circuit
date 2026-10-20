@@ -1,0 +1,11 @@
+{
+  "initial_failure": "AttributeError: 'AdaptiveConfig' object has no attribute 'relation_gain'",
+  "cause": "synthetic fixture passed AdaptiveConfig to make_pattern expecting Config",
+  "fix": "pass cfg.kernel",
+  "native_calls_in_failed_check": 0,
+  "rerun": "40 structural checks PASS",
+  "auxiliary_cli_errors": [
+    "task validator positional argument rejected; corrected --input",
+    "baseline --help interpreted as input filename; then used required positional input"
+  ]
+}

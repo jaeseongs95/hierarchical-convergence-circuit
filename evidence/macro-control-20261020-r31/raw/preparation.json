@@ -1,0 +1,1 @@
+{"checks": 40, "child_limits": {"address_space": [536870912, 536870912], "file_size": [16777216, 16777216]}, "learning_calls": 0, "native_inference_calls": 0, "native_settle_calls": 0, "status": "STRUCTURAL_CHECKS_PASSED"}

@@ -1,0 +1,17 @@
+{
+  "native_inference_calls": 0,
+  "native_learning_calls": 0,
+  "numeric_replay_max_absolute_error": 0.0,
+  "saved_sessions": 15,
+  "server_summary_rows_equal": true,
+  "status": "PASS",
+  "targeted_rejections": {
+    "cost": "decision binding",
+    "input_revision": "research input binding",
+    "macro_eligible": "conventional applicability",
+    "memory_version": "same experience and immutable inference",
+    "selection": "candidate ordering and fallback",
+    "side_branch": "side branch and role preservation",
+    "tick": "scalar trace"
+  }
+}

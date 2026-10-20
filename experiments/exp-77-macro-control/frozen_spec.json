@@ -1,0 +1,356 @@
+{
+  "arms": [
+    "hcr",
+    "macro",
+    "primitive"
+  ],
+  "base": "91fdd5d8832f8e5eb1bec1ad95691485ce722a49",
+  "cases": [
+    {
+      "key": "chain4_open",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1,
+            "source": "S",
+            "target": "A"
+          },
+          {
+            "id": "e1",
+            "score": 1,
+            "source": "A",
+            "target": "B"
+          },
+          {
+            "id": "e2",
+            "score": 1,
+            "source": "B",
+            "target": "C"
+          },
+          {
+            "id": "e3",
+            "score": 1,
+            "source": "C",
+            "target": "G"
+          }
+        ],
+        "episode_id": "r18-chain4_open",
+        "goal": "G",
+        "revision": 0,
+        "start": "S"
+      }
+    },
+    {
+      "key": "chain4_blocked",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1,
+            "source": "S",
+            "target": "A"
+          },
+          {
+            "id": "e1",
+            "score": 1,
+            "source": "A",
+            "target": "B"
+          },
+          {
+            "id": "e2",
+            "score": 1,
+            "source": "B",
+            "target": "C"
+          },
+          {
+            "id": "e3",
+            "score": -1,
+            "source": "C",
+            "target": "G"
+          }
+        ],
+        "episode_id": "r18-chain4_blocked",
+        "goal": "G",
+        "revision": 0,
+        "start": "S"
+      }
+    },
+    {
+      "key": "fan5_open",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1,
+            "source": "S",
+            "target": "A"
+          },
+          {
+            "id": "e1",
+            "score": 1,
+            "source": "A",
+            "target": "B1"
+          },
+          {
+            "id": "e2",
+            "score": 1,
+            "source": "A",
+            "target": "B2"
+          },
+          {
+            "id": "e3",
+            "score": 1,
+            "source": "A",
+            "target": "B3"
+          },
+          {
+            "id": "e4",
+            "score": 1,
+            "source": "A",
+            "target": "B4"
+          },
+          {
+            "id": "e5",
+            "score": 1,
+            "source": "A",
+            "target": "B5"
+          },
+          {
+            "id": "e6",
+            "score": 1,
+            "source": "B5",
+            "target": "G"
+          }
+        ],
+        "episode_id": "r18-fan5_open",
+        "goal": "G",
+        "revision": 0,
+        "start": "S"
+      }
+    },
+    {
+      "key": "fan5_blocked",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1,
+            "source": "S",
+            "target": "A"
+          },
+          {
+            "id": "e1",
+            "score": 1,
+            "source": "A",
+            "target": "B1"
+          },
+          {
+            "id": "e2",
+            "score": 1,
+            "source": "A",
+            "target": "B2"
+          },
+          {
+            "id": "e3",
+            "score": 1,
+            "source": "A",
+            "target": "B3"
+          },
+          {
+            "id": "e4",
+            "score": 1,
+            "source": "A",
+            "target": "B4"
+          },
+          {
+            "id": "e5",
+            "score": 1,
+            "source": "A",
+            "target": "B5"
+          },
+          {
+            "id": "e6",
+            "score": -1,
+            "source": "B5",
+            "target": "G"
+          }
+        ],
+        "episode_id": "r18-fan5_blocked",
+        "goal": "G",
+        "revision": 0,
+        "start": "S"
+      }
+    }
+  ],
+  "config": {
+    "activation_threshold": 0.55,
+    "circuit_inhibition": 0.15,
+    "kernel": {
+      "damping": 0.45,
+      "evidence_gain": 4.0,
+      "inhibition": 0.2,
+      "learning_rate": 0.25,
+      "margin_threshold": 0.3,
+      "max_circuits": 16,
+      "max_edges": 8,
+      "max_groups": 32,
+      "max_observation_requests": 2,
+      "max_path_length": 4,
+      "max_paths": 4,
+      "max_search": 2048,
+      "max_ticks": 160,
+      "min_valid_episodes": 3,
+      "patience": 4,
+      "prior_gain": 0.0,
+      "relation_gain": 2.0,
+      "residual_tolerance": 1e-06,
+      "self_excitation": 0.25,
+      "temperature": 1.0,
+      "top_down_gain": 0.35,
+      "weakening": 0.2
+    },
+    "max_binding_checks": 1024,
+    "max_expansions": 64,
+    "max_frontier": 32,
+    "max_pool_candidates": 4,
+    "mismatch_threshold": 0.8,
+    "pattern_lengths": [
+      2
+    ]
+  },
+  "cost_contract": {
+    "actual_use_prefixes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "primary": "parent stage CPU/wall includes import, input/memory load, source checks, execution, trace/JSON/file writes",
+    "separate": "preparation/audit/seal/host orchestration",
+    "timing_verdict": "descriptive only; no independent replication or break-even extrapolation",
+    "training": "shared actual init+3training including reference/feedback charged once to each learned arm; primitive init only"
+  },
+  "evaluation_calls": 12,
+  "execution_order": [
+    "chain4_open__hcr",
+    "chain4_open__macro",
+    "chain4_open__primitive",
+    "chain4_blocked__macro",
+    "chain4_blocked__primitive",
+    "chain4_blocked__hcr",
+    "fan5_open__primitive",
+    "fan5_open__hcr",
+    "fan5_open__macro",
+    "fan5_blocked__hcr",
+    "fan5_blocked__macro",
+    "fan5_blocked__primitive"
+  ],
+  "experiment": "EXP-77",
+  "limits": {
+    "automatic_retry": false,
+    "child_address_space_bytes": 536870912,
+    "child_file_bytes": 16777216,
+    "parent_address_space_bytes": 536870912,
+    "parent_file_bytes": 33554432,
+    "raw_bytes": 134217728,
+    "stage_seconds": 60,
+    "total_seconds": 600,
+    "workers": 1
+  },
+  "macro_policy": {
+    "eligible": "all bound current public scores exist and are >0",
+    "matching": "same bounded topology DFS, complete or discard, common candidate/group/path/binding allowance",
+    "ranking": "constant1, longer first, edge tuple, circuit id",
+    "version": "positive-evidence-bound-path-v1"
+  },
+  "max_advances_per_session": 8,
+  "max_kernel_ticks_per_session": 2560,
+  "maximum_logical_ticks": 38400,
+  "maximum_measurement_requests": 0,
+  "maximum_native_settle_calls": 240,
+  "quality_contract": "strict correct = adopted correct value + valid primitive proof + truthful assumptions; compare equal quality only",
+  "run": "r31",
+  "scalar_tolerance": 1e-14,
+  "schema": "hcr-r31-macro-control-v1",
+  "training": [
+    {
+      "id": "train-0",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1,
+            "source": "0S",
+            "target": "0A"
+          },
+          {
+            "id": "e1",
+            "score": 1,
+            "source": "0A",
+            "target": "0G"
+          }
+        ],
+        "episode_id": "r18-train-0",
+        "goal": "0G",
+        "revision": 0,
+        "start": "0S"
+      }
+    },
+    {
+      "id": "train-1",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1,
+            "source": "1S",
+            "target": "1A"
+          },
+          {
+            "id": "e1",
+            "score": 1,
+            "source": "1A",
+            "target": "1G"
+          }
+        ],
+        "episode_id": "r18-train-1",
+        "goal": "1G",
+        "revision": 0,
+        "start": "1S"
+      }
+    },
+    {
+      "id": "train-2",
+      "observation": {
+        "edges": [
+          {
+            "id": "e0",
+            "score": 1,
+            "source": "2S",
+            "target": "2A"
+          },
+          {
+            "id": "e1",
+            "score": 1,
+            "source": "2A",
+            "target": "2G"
+          }
+        ],
+        "episode_id": "r18-train-2",
+        "goal": "2G",
+        "revision": 0,
+        "start": "2S"
+      }
+    }
+  ],
+  "training_calls": 3,
+  "unsupported_claims": [
+    "independent learning algorithms",
+    "persistent correction",
+    "cross-A semantics",
+    "statistical speed",
+    "production adoption"
+  ],
+  "world_measure_calls": 0
+}

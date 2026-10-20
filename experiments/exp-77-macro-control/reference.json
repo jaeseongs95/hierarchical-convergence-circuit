@@ -1,0 +1,48 @@
+{
+  "cases": {
+    "chain4_blocked": {
+      "e0": true,
+      "e1": true,
+      "e2": true,
+      "e3": false
+    },
+    "chain4_open": {
+      "e0": true,
+      "e1": true,
+      "e2": true,
+      "e3": true
+    },
+    "fan5_blocked": {
+      "e0": true,
+      "e1": true,
+      "e2": true,
+      "e3": true,
+      "e4": true,
+      "e5": true,
+      "e6": false
+    },
+    "fan5_open": {
+      "e0": true,
+      "e1": true,
+      "e2": true,
+      "e3": true,
+      "e4": true,
+      "e5": true,
+      "e6": true
+    }
+  },
+  "training": {
+    "0": {
+      "e0": true,
+      "e1": true
+    },
+    "1": {
+      "e0": true,
+      "e1": true
+    },
+    "2": {
+      "e0": true,
+      "e1": true
+    }
+  }
+}

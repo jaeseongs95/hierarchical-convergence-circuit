@@ -1,0 +1,421 @@
+{
+  "schemaVersion": "1.0.0",
+  "reviewId": "CS-R31-REVIEW",
+  "constraintReportDigest": "sha256:cf922061811bfa6a681fc70015e304b4c7c01cbc8a4215cb310d76af98b907f6",
+  "candidateDigest": "sha256:1686760ddb510a79e698d48faef323542507af62d33f3255f6eea8c5e9fe1cbc",
+  "reviewerActorRef": "R31 implementation author source/saved-result review; not independent or host-attested",
+  "findings": [
+    {
+      "id": "F-BINDING",
+      "invariantId": "INV-BINDING",
+      "status": "SATISFIED",
+      "evidenceRefs": [
+        "E-0",
+        "E-1",
+        "E-2",
+        "E-3",
+        "E-4",
+        "E-5",
+        "E-6",
+        "E-7",
+        "E-8",
+        "E-9",
+        "E-10",
+        "E-11",
+        "E-20",
+        "E-21",
+        "E-22",
+        "E-23",
+        "E-24",
+        "E-19"
+      ],
+      "reasoningSummary": "Actual native3positive episodes form one path2 certificate, independently checked via expected_learning. Both learned arms receive identical resulting memory, primitive receives actual empty memory. Ordinary control copies source-bounded matching/capacity/group allowance and current role/revision binding; sign-only applicability has no world/case/answer parameter. Native workspace preserves interior side branches and native primitive final network. No core mutation/checkpoint impersonation.40structural checks and semantic input/memory/selection/binding mutations reject. One transport filename redaction recorded with known frozen pin, exact reconstruction SHA, original redacted bytes preserved; no false receipt claim."
+    },
+    {
+      "id": "F-SEMANTICS",
+      "invariantId": "INV-SEMANTICS",
+      "status": "SATISFIED",
+      "evidenceRefs": [
+        "E-0",
+        "E-1",
+        "E-2",
+        "E-3",
+        "E-4",
+        "E-5",
+        "E-6",
+        "E-7",
+        "E-8",
+        "E-9",
+        "E-10",
+        "E-11",
+        "E-20",
+        "E-21",
+        "E-22",
+        "E-19",
+        "E-24",
+        "E-25"
+      ],
+      "reasoningSummary": "Source review and saved-event replay confirm unchanged native final numeric/proof calculation, pool class restored in finally, route_only/prior_gain0. All12evaluations strict-correct, HCR/macro choose same expansions in4of4cases. Separate topology DFS, pool/decision grammar, graph edits with side branches, scalar/controller/readout/proof/cost and three actual learning transitions pass; server and local scalar error0 within1e-14. Seven resealed raw semantic mutants reject. Result is same learned motif execution-policy control, not independent learning algorithms, richer cross-A or persistent correction evidence."
+    },
+    {
+      "id": "F-COST",
+      "invariantId": "INV-COST",
+      "status": "SATISFIED",
+      "evidenceRefs": [
+        "E-0",
+        "E-1",
+        "E-2",
+        "E-3",
+        "E-4",
+        "E-5",
+        "E-6",
+        "E-7",
+        "E-8",
+        "E-9",
+        "E-10",
+        "E-11",
+        "E-20",
+        "E-21",
+        "E-22",
+        "E-19",
+        "E-17",
+        "E-25"
+      ],
+      "reasoningSummary": "3training/12evaluation,21actualsettles/717ticks,18stages exit0; seal4.400064s under600s, maxstage0.316984s under60s;worker1/retry0,AS512MiB,file32/16MiB and raw956940bytes observed,World.measure0. HCR/macro/primitive evaluation expansions14/14/22; ticks338/140/140; groups3172/1396/1396; links3948/1968/1968. Macro includes151binding operations and12extra public-score checks, not free. Same shared actual init+train/reference/feedback charged once per learned arm; primitive init only. ActualK4 stage CPU1.605399/1.566166/0.928257s and wall1.881600/1.681195/1.032375s include per-process imports/source/memory/preparation/execution/serialization/writes; audit/preparation/seal/host separately. NoK>4 extrapolation, retuning, timing replication, statistical speed or production adoption."
+    }
+  ],
+  "verificationResults": [
+    {
+      "obligationId": "OB-BINDING",
+      "executionStatus": "EXECUTED",
+      "result": "PASS",
+      "targetDigest": "sha256:1686760ddb510a79e698d48faef323542507af62d33f3255f6eea8c5e9fe1cbc",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "method": "dynamic-test",
+      "evidenceRefs": [
+        "E-0",
+        "E-1",
+        "E-2",
+        "E-3",
+        "E-4",
+        "E-5",
+        "E-6",
+        "E-7",
+        "E-8",
+        "E-9",
+        "E-10",
+        "E-11",
+        "E-20",
+        "E-21",
+        "E-22",
+        "E-23",
+        "E-24",
+        "E-19"
+      ]
+    },
+    {
+      "obligationId": "OB-SEMANTICS",
+      "executionStatus": "EXECUTED",
+      "result": "PASS",
+      "targetDigest": "sha256:1686760ddb510a79e698d48faef323542507af62d33f3255f6eea8c5e9fe1cbc",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "method": "dynamic-test",
+      "evidenceRefs": [
+        "E-0",
+        "E-1",
+        "E-2",
+        "E-3",
+        "E-4",
+        "E-5",
+        "E-6",
+        "E-7",
+        "E-8",
+        "E-9",
+        "E-10",
+        "E-11",
+        "E-20",
+        "E-21",
+        "E-22",
+        "E-19",
+        "E-24",
+        "E-25"
+      ]
+    },
+    {
+      "obligationId": "OB-COST",
+      "executionStatus": "EXECUTED",
+      "result": "PASS",
+      "targetDigest": "sha256:1686760ddb510a79e698d48faef323542507af62d33f3255f6eea8c5e9fe1cbc",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "method": "dynamic-test",
+      "evidenceRefs": [
+        "E-0",
+        "E-1",
+        "E-2",
+        "E-3",
+        "E-4",
+        "E-5",
+        "E-6",
+        "E-7",
+        "E-8",
+        "E-9",
+        "E-10",
+        "E-11",
+        "E-20",
+        "E-21",
+        "E-22",
+        "E-19",
+        "E-17",
+        "E-25"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E-0",
+      "path": "evidence/chain4_blocked__hcr.json",
+      "digest": "sha256:a313c0fc35724d0b6de2adfb3ae85e0b40dd658079172477da7e44d0ea101045",
+      "targetDigest": "sha256:1686760ddb510a79e698d48faef323542507af62d33f3255f6eea8c5e9fe1cbc",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen-candidate R31 saved records and received/local verification.22of23 received manifest JSON entries match exact SHA; one source-postcheck filename was entropy-redacted, retained unchanged with separate known-pin canonical reconstruction matching declared SHA. Source269 locally unchanged; local saved scalar/graph/cost/learning replay. Not independent audit or host attestation."
+    },
+    {
+      "id": "E-1",
+      "path": "evidence/chain4_blocked__macro.json",
+      "digest": "sha256:5d5efa5d1aa0f8b356b853bd73d76ff78710254aced0bedf017ea30bbf9e8605",
+      "targetDigest": "sha256:1686760ddb510a79e698d48faef323542507af62d33f3255f6eea8c5e9fe1cbc",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen-candidate R31 saved records and received/local verification.22of23 received manifest JSON entries match exact SHA; one source-postcheck filename was entropy-redacted, retained unchanged with separate known-pin canonical reconstruction matching declared SHA. Source269 locally unchanged; local saved scalar/graph/cost/learning replay. Not independent audit or host attestation."
+    },
+    {
+      "id": "E-2",
+      "path": "evidence/chain4_blocked__primitive.json",
+      "digest": "sha256:8a1daaa04c09b4f8e1a45bf9caa8e5061aa00b182ab54e1ba3844315bf5fd90d",
+      "targetDigest": "sha256:1686760ddb510a79e698d48faef323542507af62d33f3255f6eea8c5e9fe1cbc",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen-candidate R31 saved records and received/local verification.22of23 received manifest JSON entries match exact SHA; one source-postcheck filename was entropy-redacted, retained unchanged with separate known-pin canonical reconstruction matching declared SHA. Source269 locally unchanged; local saved scalar/graph/cost/learning replay. Not independent audit or host attestation."
+    },
+    {
+      "id": "E-3",
+      "path": "evidence/chain4_open__hcr.json",
+      "digest": "sha256:758b193e248839a7dc512aa603bce7dda83dc3dc11e719bbcdb142d9c207f481",
+      "targetDigest": "sha256:1686760ddb510a79e698d48faef323542507af62d33f3255f6eea8c5e9fe1cbc",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen-candidate R31 saved records and received/local verification.22of23 received manifest JSON entries match exact SHA; one source-postcheck filename was entropy-redacted, retained unchanged with separate known-pin canonical reconstruction matching declared SHA. Source269 locally unchanged; local saved scalar/graph/cost/learning replay. Not independent audit or host attestation."
+    },
+    {
+      "id": "E-4",
+      "path": "evidence/chain4_open__macro.json",
+      "digest": "sha256:d6e09c04bc7b0aa978dcc382ecbf4b08f9592095223644ec7679ad5101e78e65",
+      "targetDigest": "sha256:1686760ddb510a79e698d48faef323542507af62d33f3255f6eea8c5e9fe1cbc",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen-candidate R31 saved records and received/local verification.22of23 received manifest JSON entries match exact SHA; one source-postcheck filename was entropy-redacted, retained unchanged with separate known-pin canonical reconstruction matching declared SHA. Source269 locally unchanged; local saved scalar/graph/cost/learning replay. Not independent audit or host attestation."
+    },
+    {
+      "id": "E-5",
+      "path": "evidence/chain4_open__primitive.json",
+      "digest": "sha256:846d190b91b3621d56cde96df4d921fee0d359aac87b1ba4e7cf221b175a1016",
+      "targetDigest": "sha256:1686760ddb510a79e698d48faef323542507af62d33f3255f6eea8c5e9fe1cbc",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen-candidate R31 saved records and received/local verification.22of23 received manifest JSON entries match exact SHA; one source-postcheck filename was entropy-redacted, retained unchanged with separate known-pin canonical reconstruction matching declared SHA. Source269 locally unchanged; local saved scalar/graph/cost/learning replay. Not independent audit or host attestation."
+    },
+    {
+      "id": "E-6",
+      "path": "evidence/fan5_blocked__hcr.json",
+      "digest": "sha256:512f47a1b6d013b3973a9a8f64e25800e59b6c3eef385d161943099aded74bf5",
+      "targetDigest": "sha256:1686760ddb510a79e698d48faef323542507af62d33f3255f6eea8c5e9fe1cbc",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen-candidate R31 saved records and received/local verification.22of23 received manifest JSON entries match exact SHA; one source-postcheck filename was entropy-redacted, retained unchanged with separate known-pin canonical reconstruction matching declared SHA. Source269 locally unchanged; local saved scalar/graph/cost/learning replay. Not independent audit or host attestation."
+    },
+    {
+      "id": "E-7",
+      "path": "evidence/fan5_blocked__macro.json",
+      "digest": "sha256:61b35ef500deb6bb4564074df8625fbe4bb99d21fbcca2e4ddc77ed18a9f4fb7",
+      "targetDigest": "sha256:1686760ddb510a79e698d48faef323542507af62d33f3255f6eea8c5e9fe1cbc",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen-candidate R31 saved records and received/local verification.22of23 received manifest JSON entries match exact SHA; one source-postcheck filename was entropy-redacted, retained unchanged with separate known-pin canonical reconstruction matching declared SHA. Source269 locally unchanged; local saved scalar/graph/cost/learning replay. Not independent audit or host attestation."
+    },
+    {
+      "id": "E-8",
+      "path": "evidence/fan5_blocked__primitive.json",
+      "digest": "sha256:7c7a47c5354e90925d15ba14b9b8fcc0c91b2c51b5c9662082042413002873ca",
+      "targetDigest": "sha256:1686760ddb510a79e698d48faef323542507af62d33f3255f6eea8c5e9fe1cbc",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen-candidate R31 saved records and received/local verification.22of23 received manifest JSON entries match exact SHA; one source-postcheck filename was entropy-redacted, retained unchanged with separate known-pin canonical reconstruction matching declared SHA. Source269 locally unchanged; local saved scalar/graph/cost/learning replay. Not independent audit or host attestation."
+    },
+    {
+      "id": "E-9",
+      "path": "evidence/fan5_open__hcr.json",
+      "digest": "sha256:5adbbe65afa3efab444dc33a1a7296a02ee9e5dbffb9dd9d4537ff5d4c387c66",
+      "targetDigest": "sha256:1686760ddb510a79e698d48faef323542507af62d33f3255f6eea8c5e9fe1cbc",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen-candidate R31 saved records and received/local verification.22of23 received manifest JSON entries match exact SHA; one source-postcheck filename was entropy-redacted, retained unchanged with separate known-pin canonical reconstruction matching declared SHA. Source269 locally unchanged; local saved scalar/graph/cost/learning replay. Not independent audit or host attestation."
+    },
+    {
+      "id": "E-10",
+      "path": "evidence/fan5_open__macro.json",
+      "digest": "sha256:69b248ce3352fba75daeb682e4e89558e88a2dbe32f9f4782c95ffb6cf0cdc07",
+      "targetDigest": "sha256:1686760ddb510a79e698d48faef323542507af62d33f3255f6eea8c5e9fe1cbc",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen-candidate R31 saved records and received/local verification.22of23 received manifest JSON entries match exact SHA; one source-postcheck filename was entropy-redacted, retained unchanged with separate known-pin canonical reconstruction matching declared SHA. Source269 locally unchanged; local saved scalar/graph/cost/learning replay. Not independent audit or host attestation."
+    },
+    {
+      "id": "E-11",
+      "path": "evidence/fan5_open__primitive.json",
+      "digest": "sha256:33884fe1175264180b3838859dccb5f685d428a64e563f25bc64c166b291f25e",
+      "targetDigest": "sha256:1686760ddb510a79e698d48faef323542507af62d33f3255f6eea8c5e9fe1cbc",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen-candidate R31 saved records and received/local verification.22of23 received manifest JSON entries match exact SHA; one source-postcheck filename was entropy-redacted, retained unchanged with separate known-pin canonical reconstruction matching declared SHA. Source269 locally unchanged; local saved scalar/graph/cost/learning replay. Not independent audit or host attestation."
+    },
+    {
+      "id": "E-12",
+      "path": "evidence/memory0.json",
+      "digest": "sha256:afac0b81a3b4fedd51a964c3ed30c5a1268bfe35860a00d58ee482f941f1405d",
+      "targetDigest": "sha256:1686760ddb510a79e698d48faef323542507af62d33f3255f6eea8c5e9fe1cbc",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen-candidate R31 saved records and received/local verification.22of23 received manifest JSON entries match exact SHA; one source-postcheck filename was entropy-redacted, retained unchanged with separate known-pin canonical reconstruction matching declared SHA. Source269 locally unchanged; local saved scalar/graph/cost/learning replay. Not independent audit or host attestation."
+    },
+    {
+      "id": "E-13",
+      "path": "evidence/memory1.json",
+      "digest": "sha256:bdc34394b5ffd7135a7b75828410c024428b6395b05e33b81c3dd075e1593186",
+      "targetDigest": "sha256:1686760ddb510a79e698d48faef323542507af62d33f3255f6eea8c5e9fe1cbc",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen-candidate R31 saved records and received/local verification.22of23 received manifest JSON entries match exact SHA; one source-postcheck filename was entropy-redacted, retained unchanged with separate known-pin canonical reconstruction matching declared SHA. Source269 locally unchanged; local saved scalar/graph/cost/learning replay. Not independent audit or host attestation."
+    },
+    {
+      "id": "E-14",
+      "path": "evidence/memory2.json",
+      "digest": "sha256:c7539b167785484fae26b057c43037b1ce20c830fdde7e16962d553c680e9483",
+      "targetDigest": "sha256:1686760ddb510a79e698d48faef323542507af62d33f3255f6eea8c5e9fe1cbc",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen-candidate R31 saved records and received/local verification.22of23 received manifest JSON entries match exact SHA; one source-postcheck filename was entropy-redacted, retained unchanged with separate known-pin canonical reconstruction matching declared SHA. Source269 locally unchanged; local saved scalar/graph/cost/learning replay. Not independent audit or host attestation."
+    },
+    {
+      "id": "E-15",
+      "path": "evidence/memory3.json",
+      "digest": "sha256:e4f41d4c4f740cea699419e9bf0e3f9941b354713d93cc026b94f1df1e8644d8",
+      "targetDigest": "sha256:1686760ddb510a79e698d48faef323542507af62d33f3255f6eea8c5e9fe1cbc",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen-candidate R31 saved records and received/local verification.22of23 received manifest JSON entries match exact SHA; one source-postcheck filename was entropy-redacted, retained unchanged with separate known-pin canonical reconstruction matching declared SHA. Source269 locally unchanged; local saved scalar/graph/cost/learning replay. Not independent audit or host attestation."
+    },
+    {
+      "id": "E-16",
+      "path": "evidence/preparation.json",
+      "digest": "sha256:8024dc844be79dc703b3b0b349043652e799fdc85214eca11dc5338571639d2a",
+      "targetDigest": "sha256:1686760ddb510a79e698d48faef323542507af62d33f3255f6eea8c5e9fe1cbc",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen-candidate R31 saved records and received/local verification.22of23 received manifest JSON entries match exact SHA; one source-postcheck filename was entropy-redacted, retained unchanged with separate known-pin canonical reconstruction matching declared SHA. Source269 locally unchanged; local saved scalar/graph/cost/learning replay. Not independent audit or host attestation."
+    },
+    {
+      "id": "E-17",
+      "path": "evidence/result.json",
+      "digest": "sha256:6e00511ccb2eb6a4781beec41769a57d57033892f6e01584ad75cbdb8808fbb0",
+      "targetDigest": "sha256:1686760ddb510a79e698d48faef323542507af62d33f3255f6eea8c5e9fe1cbc",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen-candidate R31 saved records and received/local verification.22of23 received manifest JSON entries match exact SHA; one source-postcheck filename was entropy-redacted, retained unchanged with separate known-pin canonical reconstruction matching declared SHA. Source269 locally unchanged; local saved scalar/graph/cost/learning replay. Not independent audit or host attestation."
+    },
+    {
+      "id": "E-18",
+      "path": "evidence/source-postcheck.json",
+      "digest": "sha256:cd724b4a453d56b0ca7d3dbed39eae7e14d044313309309ecd124d19073c033a",
+      "targetDigest": "sha256:1686760ddb510a79e698d48faef323542507af62d33f3255f6eea8c5e9fe1cbc",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen-candidate R31 saved records and received/local verification.22of23 received manifest JSON entries match exact SHA; one source-postcheck filename was entropy-redacted, retained unchanged with separate known-pin canonical reconstruction matching declared SHA. Source269 locally unchanged; local saved scalar/graph/cost/learning replay. Not independent audit or host attestation."
+    },
+    {
+      "id": "E-19",
+      "path": "evidence/summary.json",
+      "digest": "sha256:b95a1091805d8ca9e0748ba335ca2f3952ac79bcfe51e08408de161c8703bc70",
+      "targetDigest": "sha256:1686760ddb510a79e698d48faef323542507af62d33f3255f6eea8c5e9fe1cbc",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen-candidate R31 saved records and received/local verification.22of23 received manifest JSON entries match exact SHA; one source-postcheck filename was entropy-redacted, retained unchanged with separate known-pin canonical reconstruction matching declared SHA. Source269 locally unchanged; local saved scalar/graph/cost/learning replay. Not independent audit or host attestation."
+    },
+    {
+      "id": "E-20",
+      "path": "evidence/train0.json",
+      "digest": "sha256:b89bf734902e96e38753ba0cc843e461adef09d268a34b03f53a975d68387032",
+      "targetDigest": "sha256:1686760ddb510a79e698d48faef323542507af62d33f3255f6eea8c5e9fe1cbc",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen-candidate R31 saved records and received/local verification.22of23 received manifest JSON entries match exact SHA; one source-postcheck filename was entropy-redacted, retained unchanged with separate known-pin canonical reconstruction matching declared SHA. Source269 locally unchanged; local saved scalar/graph/cost/learning replay. Not independent audit or host attestation."
+    },
+    {
+      "id": "E-21",
+      "path": "evidence/train1.json",
+      "digest": "sha256:acfa4f94af31dbcca892ba423562ce1b62c11e95e60ff61c189c39c25b33a236",
+      "targetDigest": "sha256:1686760ddb510a79e698d48faef323542507af62d33f3255f6eea8c5e9fe1cbc",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen-candidate R31 saved records and received/local verification.22of23 received manifest JSON entries match exact SHA; one source-postcheck filename was entropy-redacted, retained unchanged with separate known-pin canonical reconstruction matching declared SHA. Source269 locally unchanged; local saved scalar/graph/cost/learning replay. Not independent audit or host attestation."
+    },
+    {
+      "id": "E-22",
+      "path": "evidence/train2.json",
+      "digest": "sha256:20d6aa6f20595ec05f877b377d711f622e8bd22283184f22001b4602ca33c775",
+      "targetDigest": "sha256:1686760ddb510a79e698d48faef323542507af62d33f3255f6eea8c5e9fe1cbc",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen-candidate R31 saved records and received/local verification.22of23 received manifest JSON entries match exact SHA; one source-postcheck filename was entropy-redacted, retained unchanged with separate known-pin canonical reconstruction matching declared SHA. Source269 locally unchanged; local saved scalar/graph/cost/learning replay. Not independent audit or host attestation."
+    },
+    {
+      "id": "E-23",
+      "path": "evidence/receipt-verification.json",
+      "digest": "sha256:32de68f5575bd732d12fe79b4da2ed7200243ae590f61dbec7173749e490a90d",
+      "targetDigest": "sha256:1686760ddb510a79e698d48faef323542507af62d33f3255f6eea8c5e9fe1cbc",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen-candidate R31 saved records and received/local verification.22of23 received manifest JSON entries match exact SHA; one source-postcheck filename was entropy-redacted, retained unchanged with separate known-pin canonical reconstruction matching declared SHA. Source269 locally unchanged; local saved scalar/graph/cost/learning replay. Not independent audit or host attestation."
+    },
+    {
+      "id": "E-24",
+      "path": "evidence/local-verification.json",
+      "digest": "sha256:4e53e6e6ba663932200707a56774e0d76a34bc63a8832dc5dede91ce848fbd67",
+      "targetDigest": "sha256:1686760ddb510a79e698d48faef323542507af62d33f3255f6eea8c5e9fe1cbc",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen-candidate R31 saved records and received/local verification.22of23 received manifest JSON entries match exact SHA; one source-postcheck filename was entropy-redacted, retained unchanged with separate known-pin canonical reconstruction matching declared SHA. Source269 locally unchanged; local saved scalar/graph/cost/learning replay. Not independent audit or host attestation."
+    },
+    {
+      "id": "E-25",
+      "path": "evidence/analysis.json",
+      "digest": "sha256:7b41d726873fda4a85c26012f058910cc7e5e8ad27050ff49ca5ec542e7ca1e9",
+      "targetDigest": "sha256:1686760ddb510a79e698d48faef323542507af62d33f3255f6eea8c5e9fe1cbc",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen-candidate R31 saved records and received/local verification.22of23 received manifest JSON entries match exact SHA; one source-postcheck filename was entropy-redacted, retained unchanged with separate known-pin canonical reconstruction matching declared SHA. Source269 locally unchanged; local saved scalar/graph/cost/learning replay. Not independent audit or host attestation."
+    },
+    {
+      "id": "E-26",
+      "path": "evidence/source-postcheck.canonical-reconstruction.json",
+      "digest": "sha256:e1daeb5432fcf2cb2597e246de7b1d8b8db80b31438a1e446a23f04ce0540f62",
+      "targetDigest": "sha256:1686760ddb510a79e698d48faef323542507af62d33f3255f6eea8c5e9fe1cbc",
+      "environmentRef": "AI Research SSH linux python3.12",
+      "kind": "dynamic-test",
+      "statement": "Frozen-candidate R31 saved records and received/local verification.22of23 received manifest JSON entries match exact SHA; one source-postcheck filename was entropy-redacted, retained unchanged with separate known-pin canonical reconstruction matching declared SHA. Source269 locally unchanged; local saved scalar/graph/cost/learning replay. Not independent audit or host attestation."
+    }
+  ],
+  "blockingFindingIds": [],
+  "unverifiedRequiredObligationIds": [],
+  "verdict": "PASS"
+}

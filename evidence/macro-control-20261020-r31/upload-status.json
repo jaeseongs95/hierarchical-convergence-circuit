@@ -1,0 +1,53 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"id\":\"9e596f2950178553ca3385a654eb170a51d39937b730eaff\",\"kind\":\"upload\",\"operation\":{\"kind\":\"upload\",\"artifactId\":\"3fc66958498db20a39880d488ec4227e3b73fee73bca90d1\",\"remotePath\":\"/home/mcpops/hcc-macro-control-source-20261020-r31.zip\",\"fileName\":\"server-source.zip\",\"size\":745890,\"sha256\":\"fb443800a47dd868ca5b56ff924aac52e7166659f10a7fa74e2b10e3976f2563\",\"overwrite\":false,\"elevate\":false},\"decision\":{\"decision\":\"execute\",\"reasonCode\":\"upload_policy\",\"policyRevision\":7,\"targetRevision\":\"4cab9f57b2fd6d81004278e51ea7918d2124972cc1ae968b1d463d3a7c80cd4e\"},\"profile\":\"aws-local\",\"commandClass\":\"safe\",\"target\":\"mcpops@127.0.0.1:22\",\"state\":\"completed\",\"approvalMode\":\"automatic\",\"createdAt\":1792460968328,\"expiresAt\":1792464568328,\"finishedAt\":1792460969553,\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"Upload completed\"}],\"structuredContent\":{\"published\":true,\"size\":745890,\"sha256\":\"fb443800a47dd868ca5b56ff924aac52e7166659f10a7fa74e2b10e3976f2563\",\"uid\":1001,\"gid\":1001,\"mode\":\"0o600\"}}}"
+    }
+  ],
+  "structuredContent": {
+    "id": "9e596f2950178553ca3385a654eb170a51d39937b730eaff",
+    "kind": "upload",
+    "operation": {
+      "kind": "upload",
+      "artifactId": "3fc66958498db20a39880d488ec4227e3b73fee73bca90d1",
+      "remotePath": "/home/mcpops/hcc-macro-control-source-20261020-r31.zip",
+      "fileName": "server-source.zip",
+      "size": 745890,
+      "sha256": "fb443800a47dd868ca5b56ff924aac52e7166659f10a7fa74e2b10e3976f2563",
+      "overwrite": false,
+      "elevate": false
+    },
+    "decision": {
+      "decision": "execute",
+      "reasonCode": "upload_policy",
+      "policyRevision": 7,
+      "targetRevision": "4cab9f57b2fd6d81004278e51ea7918d2124972cc1ae968b1d463d3a7c80cd4e"
+    },
+    "profile": "aws-local",
+    "commandClass": "safe",
+    "target": "mcpops@127.0.0.1:22",
+    "state": "completed",
+    "approvalMode": "automatic",
+    "createdAt": 1792460968328,
+    "expiresAt": 1792464568328,
+    "finishedAt": 1792460969553,
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Upload completed"
+        }
+      ],
+      "structuredContent": {
+        "published": true,
+        "size": 745890,
+        "sha256": "fb443800a47dd868ca5b56ff924aac52e7166659f10a7fa74e2b10e3976f2563",
+        "uid": 1001,
+        "gid": 1001,
+        "mode": "0o600"
+      }
+    }
+  },
+  "isError": false
+}

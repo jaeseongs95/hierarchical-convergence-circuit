@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "requestId": "CS-R31",
+  "mode": "derive",
+  "objective": "Same-experience learned recurrent pool versus deterministic verified path macro versus primitive",
+  "sourceSnapshotDigest": "sha256:780c0dcb6dec79259ba87f4b0d3528d37b471b956031bf19571943f05e3ba7c2",
+  "sourceRefs": [
+    {
+      "id": "SRC-ACTIVATION",
+      "path": "source/activation.py",
+      "digest": "sha256:c35fadb824de51563c03fb23b0656564f7d4d3ea8c228ac74ee803a419e64df5"
+    },
+    {
+      "id": "SRC-EXPANSION",
+      "path": "source/expansion.py",
+      "digest": "sha256:57d0dbadb2e8d15a5e79bf346fb249fca4b2918c6367d501a82c6f712a8198ad"
+    },
+    {
+      "id": "SRC-WORKSPACE",
+      "path": "source/workspace.py",
+      "digest": "sha256:65ac816b06d0e2fbb971adeecfd9e317f99fc7d43881ea17f99d71d35e3e1b1a"
+    },
+    {
+      "id": "SRC-IDENTITY",
+      "path": "source/identity.py",
+      "digest": "sha256:1e0e950af9c7c3bcc47d076c4d501cbfbf8a9e2367dce2578a013a7011a8c49c"
+    },
+    {
+      "id": "SRC-LEARNING",
+      "path": "source/learning.py",
+      "digest": "sha256:48f073ff8b0317ae25f2b8425fd2ad9c682b61abf53fcf6e0a1370583199cbbe"
+    },
+    {
+      "id": "SRC-PATTERN",
+      "path": "source/patterns.py",
+      "digest": "sha256:9fe59886e9af29d152cbc08f68f4838c5faaf9da313541039887c0836531b23a"
+    },
+    {
+      "id": "SRC-R18",
+      "path": "source/frozen_spec.json",
+      "digest": "sha256:b4eba53c3abf91db1dab68aa159d4a8b45c609acf5883e90fc00ef8778b08a4a"
+    }
+  ],
+  "operationalFacts": [
+    {
+      "id": "FACT-CONSUMER",
+      "statement": "Native learned path motifs supply certified multi-edge candidates to workspace.apply, which retains interior side branches; final route_only decision network remains primitive.",
+      "evidenceRefs": [
+        "SRC-ACTIVATION",
+        "SRC-EXPANSION",
+        "SRC-WORKSPACE",
+        "SRC-IDENTITY"
+      ]
+    },
+    {
+      "id": "FACT-LEARNING",
+      "statement": "Correct True primitive proof compiles authored path grammar after3episodes; incorrect feedback weakens used circuits only. Current implementation lacks persistent false exception representation.",
+      "evidenceRefs": [
+        "SRC-LEARNING",
+        "SRC-PATTERN"
+      ]
+    },
+    {
+      "id": "FACT-COST",
+      "statement": "R18 fixes3training and4evaluation observations; new conventional verified-macro control adds a mechanism alternative, not another ON/OFF gate. Same real experiences and explicit preparation/training costs required.",
+      "evidenceRefs": [
+        "SRC-R18"
+      ]
+    }
+  ],
+  "existingContractRef": null
+}

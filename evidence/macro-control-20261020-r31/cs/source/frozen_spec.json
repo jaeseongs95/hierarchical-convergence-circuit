@@ -1,0 +1,363 @@
+{
+  "schema": "hcr-r18-pre-reuse-gate-v1",
+  "parent_commit": "4f9704e25d1a736c7f4bfbf0f4ac3eba5bfce442",
+  "config": {
+    "activation_threshold": 0.55,
+    "circuit_inhibition": 0.15,
+    "kernel": {
+      "damping": 0.45,
+      "evidence_gain": 4.0,
+      "inhibition": 0.2,
+      "learning_rate": 0.25,
+      "margin_threshold": 0.3,
+      "max_circuits": 16,
+      "max_edges": 8,
+      "max_groups": 32,
+      "max_observation_requests": 2,
+      "max_path_length": 4,
+      "max_paths": 4,
+      "max_search": 2048,
+      "max_ticks": 160,
+      "min_valid_episodes": 3,
+      "patience": 4,
+      "prior_gain": 0.0,
+      "relation_gain": 2.0,
+      "residual_tolerance": 1e-06,
+      "self_excitation": 0.25,
+      "temperature": 1.0,
+      "top_down_gain": 0.35,
+      "weakening": 0.2
+    },
+    "max_binding_checks": 1024,
+    "max_expansions": 64,
+    "max_frontier": 32,
+    "max_pool_candidates": 4,
+    "mismatch_threshold": 0.8,
+    "pattern_lengths": [
+      2
+    ]
+  },
+  "limits": {
+    "max_advances_per_session": 16,
+    "max_kernel_ticks_per_session": 5120
+  },
+  "training": [
+    {
+      "id": "train-0",
+      "observation": {
+        "episode_id": "r18-train-0",
+        "revision": 0,
+        "start": "0S",
+        "goal": "0G",
+        "edges": [
+          {
+            "id": "e0",
+            "source": "0S",
+            "target": "0A",
+            "score": 1
+          },
+          {
+            "id": "e1",
+            "source": "0A",
+            "target": "0G",
+            "score": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "train-1",
+      "observation": {
+        "episode_id": "r18-train-1",
+        "revision": 0,
+        "start": "1S",
+        "goal": "1G",
+        "edges": [
+          {
+            "id": "e0",
+            "source": "1S",
+            "target": "1A",
+            "score": 1
+          },
+          {
+            "id": "e1",
+            "source": "1A",
+            "target": "1G",
+            "score": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "train-2",
+      "observation": {
+        "episode_id": "r18-train-2",
+        "revision": 0,
+        "start": "2S",
+        "goal": "2G",
+        "edges": [
+          {
+            "id": "e0",
+            "source": "2S",
+            "target": "2A",
+            "score": 1
+          },
+          {
+            "id": "e1",
+            "source": "2A",
+            "target": "2G",
+            "score": 1
+          }
+        ]
+      }
+    }
+  ],
+  "cases": [
+    {
+      "id": "chain4_open",
+      "expected_open": true,
+      "expected_gate": true,
+      "observation": {
+        "episode_id": "r18-chain4_open",
+        "revision": 0,
+        "start": "S",
+        "goal": "G",
+        "edges": [
+          {
+            "id": "e0",
+            "source": "S",
+            "target": "A",
+            "score": 1
+          },
+          {
+            "id": "e1",
+            "source": "A",
+            "target": "B",
+            "score": 1
+          },
+          {
+            "id": "e2",
+            "source": "B",
+            "target": "C",
+            "score": 1
+          },
+          {
+            "id": "e3",
+            "source": "C",
+            "target": "G",
+            "score": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "chain4_blocked",
+      "expected_open": false,
+      "expected_gate": false,
+      "observation": {
+        "episode_id": "r18-chain4_blocked",
+        "revision": 0,
+        "start": "S",
+        "goal": "G",
+        "edges": [
+          {
+            "id": "e0",
+            "source": "S",
+            "target": "A",
+            "score": 1
+          },
+          {
+            "id": "e1",
+            "source": "A",
+            "target": "B",
+            "score": 1
+          },
+          {
+            "id": "e2",
+            "source": "B",
+            "target": "C",
+            "score": 1
+          },
+          {
+            "id": "e3",
+            "source": "C",
+            "target": "G",
+            "score": -1
+          }
+        ]
+      }
+    },
+    {
+      "id": "fan5_open",
+      "fanout": 5,
+      "expected_open": true,
+      "observation": {
+        "episode_id": "r18-fan5_open",
+        "revision": 0,
+        "start": "S",
+        "goal": "G",
+        "edges": [
+          {
+            "id": "e0",
+            "source": "S",
+            "target": "A",
+            "score": 1
+          },
+          {
+            "id": "e1",
+            "source": "A",
+            "target": "B1",
+            "score": 1
+          },
+          {
+            "id": "e2",
+            "source": "A",
+            "target": "B2",
+            "score": 1
+          },
+          {
+            "id": "e3",
+            "source": "A",
+            "target": "B3",
+            "score": 1
+          },
+          {
+            "id": "e4",
+            "source": "A",
+            "target": "B4",
+            "score": 1
+          },
+          {
+            "id": "e5",
+            "source": "A",
+            "target": "B5",
+            "score": 1
+          },
+          {
+            "id": "e6",
+            "source": "B5",
+            "target": "G",
+            "score": 1
+          }
+        ]
+      },
+      "expected_gate": false
+    },
+    {
+      "id": "fan5_blocked",
+      "fanout": 5,
+      "expected_open": false,
+      "observation": {
+        "episode_id": "r18-fan5_blocked",
+        "revision": 0,
+        "start": "S",
+        "goal": "G",
+        "edges": [
+          {
+            "id": "e0",
+            "source": "S",
+            "target": "A",
+            "score": 1
+          },
+          {
+            "id": "e1",
+            "source": "A",
+            "target": "B1",
+            "score": 1
+          },
+          {
+            "id": "e2",
+            "source": "A",
+            "target": "B2",
+            "score": 1
+          },
+          {
+            "id": "e3",
+            "source": "A",
+            "target": "B3",
+            "score": 1
+          },
+          {
+            "id": "e4",
+            "source": "A",
+            "target": "B4",
+            "score": 1
+          },
+          {
+            "id": "e5",
+            "source": "A",
+            "target": "B5",
+            "score": 1
+          },
+          {
+            "id": "e6",
+            "source": "B5",
+            "target": "G",
+            "score": -1
+          }
+        ]
+      },
+      "expected_gate": false
+    }
+  ],
+  "arms": [
+    "always_on",
+    "pregated",
+    "learned_off",
+    "unlearned_off"
+  ],
+  "order": "case-major; arm order rotated once per case, fixed before execution",
+  "native_training_limit": 3,
+  "native_evaluation_limit": 16,
+  "total_server_wall_limit_seconds": 600,
+  "numeric_workers": 1,
+  "hypotheses": {
+    "quality": "all sixteen cells adopt independent truth with valid truthful proof",
+    "gate": "only chain4_open allowed, before constructing native session; other cases use primitive execution with zero native recall/binding/pool",
+    "transparency": "native integer cost of pregated equals always_on when allowed and learned_off when denied; OFF and unlearned OFF equal",
+    "total_cost": "T(init+train+external_reference+feedback)+actual prefix K=1..4 inference process costs, plus separately counted gate features; lower cost than no-learning OFF is exploratory, never required"
+  },
+  "stop": "No retries, threshold fitting, changes after outcomes or extra confirmation batch. Retain failures and negative results.",
+  "execution_order": [
+    "chain4_open__always_on",
+    "chain4_open__pregated",
+    "chain4_open__learned_off",
+    "chain4_open__unlearned_off",
+    "chain4_blocked__pregated",
+    "chain4_blocked__learned_off",
+    "chain4_blocked__unlearned_off",
+    "chain4_blocked__always_on",
+    "fan5_open__learned_off",
+    "fan5_open__unlearned_off",
+    "fan5_open__always_on",
+    "fan5_open__pregated",
+    "fan5_blocked__unlearned_off",
+    "fan5_blocked__always_on",
+    "fan5_blocked__pregated",
+    "fan5_blocked__learned_off"
+  ],
+  "policy": {
+    "version": "positive-single-chain-two-macros-v1",
+    "information": [
+      "current observation endpoints/edges/scores",
+      "nonempty compiled-memory flag",
+      "frozen motif length2"
+    ],
+    "allow": "all scores exactly +1, the entire edge set is one simple start-to-goal chain, length at least twice motif length",
+    "decision_boundary": "once per session before AdaptiveSession construction/recall/binding/pool; reject delegates to unchanged primitive pipeline"
+  },
+  "cost_contract": {
+    "actual_use_counts": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "training_charge": "same observed shared init+train/reference/feedback cost charged once to each learned strategy; unlearned_off charged init only",
+    "native_cost": "sum training inference decision costs plus feedback costs plus evaluation decision costs; aliases excluded; units not combined",
+    "runtime_cost": "sum actual parent-observed process stage wall and child user+system CPU; includes gate/import/packet storage; do not add gate wall again",
+    "excluded_shared_cost": "source preparation, orchestration outside stages, audit and archive sealing reported separately",
+    "gate_cost": "edge_records_read, chain_links_followed, metadata_reads, wall and CPU measured separately; not zero-cost; not an instruction count",
+    "interpretation": "one shared training run, four actual uses per strategy; prefix accounting is not independent end-to-end replication; no K>4 extrapolation"
+  }
+}

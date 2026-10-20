@@ -1,0 +1,54 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"id\":\"81072e1dd30bab5f282b8b81e252c26d2ec159b4949683dc\",\"kind\":\"command\",\"operation\":{\"kind\":\"command\",\"command\":\"python3 -B -E -c 'import hashlib,zipfile,sys;p=\\\"/home/mcpops/hcc-macro-control-source-20261020-r31.zip\\\";z=zipfile.ZipFile(p) if hashlib.sha256(open(p,\\\"rb\\\").read()).hexdigest()==\\\"fb443800a47dd868ca5b56ff924aac52e7166659f10a7fa74e2b10e3976f2563\\\" else sys.exit(\\\"source ZIP digest\\\");exec(z.read(\\\"bootstrap.py\\\"))'\",\"context\":\"User asks to proceed from completed HIGH project direction discussion. R31 design gate chooses same-experience conventional verified-macro control over unsupported richer cross-A/correction tasks.269source files pinned;40structural checks passed; zero local native work. In a new exclusive directory, perform3real native training inferences with external reference/feedback, then fixed4observations x3arms: learned numeric pool, ordinary positive-evidence bound-path macro from identical learned certificate, and no-learning primitive. Same bounded matching, role/revision and side-branch preservation; unchanged primitive final network/proof, no hidden truth in policy. Temporary class replacement in isolated worker restored in finally, core unchanged. Separate saved scalar/controller/graph/cost/learning audit and7semantic mutations.18stages, total600s/stage60s/worker1/retry0, AS512MiB/files32/16MiB/raw128MiB, max240settles/38400ticks; World.measure0. Charge shared actual training/reference/feedback to both learned arms; actual K1..4 only. No statistical speed, persistent correction, cross-A generalization or production adoption. Stop on failure; no sudo,deletion,services,permissions,network,new dependencies or paid resources.\",\"displayContext\":\"R31: 같은 실제 학습 경험의 회로·일반 macro·primitive를 비교합니다. 새 전용 폴더, 학습3회·평가12회, 최대240settles/38400ticks, 전체600초/단계60초/worker1/retry0입니다. 최종 primitive 판단·증명은 그대로 두고 역할/분기·수치·학습전이·실제 총비용을 검산합니다. 세계측정0회, 결과 후 조정·통계속도·production채택 없음. 기존 연구/core/서비스/권한/유료자원은 변경하지 않습니다.\"},\"command\":\"python3 -B -E -c 'import hashlib,zipfile,sys;p=\\\"/home/mcpops/hcc-macro-control-source-20261020-r31.zip\\\";z=zipfile.ZipFile(p) if hashlib.sha256(open(p,\\\"rb\\\").read()).hexdigest()==\\\"fb443800a47dd868ca5b56ff924aac52e7166659f10a7fa74e2b10e3976f2563\\\" else sys.exit(\\\"source ZIP digest\\\");exec(z.read(\\\"bootstrap.py\\\"))'\",\"decision\":{\"policyRevision\":7,\"targetRevision\":\"4cab9f57b2fd6d81004278e51ea7918d2124972cc1ae968b1d463d3a7c80cd4e\",\"reasonCode\":\"command_set\",\"commandNames\":[\"python3\"],\"decision\":\"execute\"},\"profile\":\"aws-local\",\"commandClass\":\"destructive\",\"target\":\"mcpops@127.0.0.1:22\",\"state\":\"completed\",\"approvalMode\":\"automatic\",\"createdAt\":1792461010909,\"expiresAt\":1792464610909,\"finishedAt\":1792461011187,\"result\":{\"content\":[],\"structuredContent\":{\"output\":{\"version\":1,\"captureSource\":\"redacted-adapter-outcome\",\"sshCompleteness\":\"unknown\",\"id\":\"52dc6542aeaf12012609d8a727bd47be21917562ed38e85f\",\"executionId\":\"81072e1dd30bab5f282b8b81e252c26d2ec159b4949683dc\",\"state\":\"ready\",\"expiresAt\":1792464611175,\"bytes\":546,\"snapshotBytes\":616,\"sha256\":\"09a8fd5b83f9625e3952ec9912a3c87b12ec6d22c4522d93ab608b3da73297cc\"}}}}"
+    }
+  ],
+  "structuredContent": {
+    "id": "81072e1dd30bab5f282b8b81e252c26d2ec159b4949683dc",
+    "kind": "command",
+    "operation": {
+      "kind": "command",
+      "command": "python3 -B -E -c 'import hashlib,zipfile,sys;p=\"/home/mcpops/hcc-macro-control-source-20261020-r31.zip\";z=zipfile.ZipFile(p) if hashlib.sha256(open(p,\"rb\").read()).hexdigest()==\"fb443800a47dd868ca5b56ff924aac52e7166659f10a7fa74e2b10e3976f2563\" else sys.exit(\"source ZIP digest\");exec(z.read(\"bootstrap.py\"))'",
+      "context": "User asks to proceed from completed HIGH project direction discussion. R31 design gate chooses same-experience conventional verified-macro control over unsupported richer cross-A/correction tasks.269source files pinned;40structural checks passed; zero local native work. In a new exclusive directory, perform3real native training inferences with external reference/feedback, then fixed4observations x3arms: learned numeric pool, ordinary positive-evidence bound-path macro from identical learned certificate, and no-learning primitive. Same bounded matching, role/revision and side-branch preservation; unchanged primitive final network/proof, no hidden truth in policy. Temporary class replacement in isolated worker restored in finally, core unchanged. Separate saved scalar/controller/graph/cost/learning audit and7semantic mutations.18stages, total600s/stage60s/worker1/retry0, AS512MiB/files32/16MiB/raw128MiB, max240settles/38400ticks; World.measure0. Charge shared actual training/reference/feedback to both learned arms; actual K1..4 only. No statistical speed, persistent correction, cross-A generalization or production adoption. Stop on failure; no sudo,deletion,services,permissions,network,new dependencies or paid resources.",
+      "displayContext": "R31: 같은 실제 학습 경험의 회로·일반 macro·primitive를 비교합니다. 새 전용 폴더, 학습3회·평가12회, 최대240settles/38400ticks, 전체600초/단계60초/worker1/retry0입니다. 최종 primitive 판단·증명은 그대로 두고 역할/분기·수치·학습전이·실제 총비용을 검산합니다. 세계측정0회, 결과 후 조정·통계속도·production채택 없음. 기존 연구/core/서비스/권한/유료자원은 변경하지 않습니다."
+    },
+    "command": "python3 -B -E -c 'import hashlib,zipfile,sys;p=\"/home/mcpops/hcc-macro-control-source-20261020-r31.zip\";z=zipfile.ZipFile(p) if hashlib.sha256(open(p,\"rb\").read()).hexdigest()==\"fb443800a47dd868ca5b56ff924aac52e7166659f10a7fa74e2b10e3976f2563\" else sys.exit(\"source ZIP digest\");exec(z.read(\"bootstrap.py\"))'",
+    "decision": {
+      "policyRevision": 7,
+      "targetRevision": "4cab9f57b2fd6d81004278e51ea7918d2124972cc1ae968b1d463d3a7c80cd4e",
+      "reasonCode": "command_set",
+      "commandNames": [
+        "python3"
+      ],
+      "decision": "execute"
+    },
+    "profile": "aws-local",
+    "commandClass": "destructive",
+    "target": "mcpops@127.0.0.1:22",
+    "state": "completed",
+    "approvalMode": "automatic",
+    "createdAt": 1792461010909,
+    "expiresAt": 1792464610909,
+    "finishedAt": 1792461011187,
+    "result": {
+      "content": [],
+      "structuredContent": {
+        "output": {
+          "version": 1,
+          "captureSource": "redacted-adapter-outcome",
+          "sshCompleteness": "unknown",
+          "id": "52dc6542aeaf12012609d8a727bd47be21917562ed38e85f",
+          "executionId": "81072e1dd30bab5f282b8b81e252c26d2ec159b4949683dc",
+          "state": "ready",
+          "expiresAt": 1792464611175,
+          "bytes": 546,
+          "snapshotBytes": 616,
+          "sha256": "09a8fd5b83f9625e3952ec9912a3c87b12ec6d22c4522d93ab608b3da73297cc"
+        }
+      }
+    }
+  },
+  "isError": false
+}
