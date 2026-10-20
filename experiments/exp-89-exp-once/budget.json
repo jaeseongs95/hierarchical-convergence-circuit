@@ -1,0 +1,54 @@
+{
+  "arm_records": 480,
+  "canonical_cache_bytes": 201326592,
+  "caps_are_operating_stops_not_guarantees": true,
+  "child_address_space_bytes": 536870912,
+  "child_file_bytes": 8388608,
+  "control_settles": 4,
+  "correctness_settles": 130,
+  "direct_tick_invocations": 36,
+  "distinct_contexts": 32,
+  "learning": 0,
+  "maximum_logical_ticks": 5554916,
+  "maximum_native_settle_calls": 34718,
+  "maximum_unique_trace_records": 1000,
+  "native_record_pairs": 192,
+  "numeric_calls": 34560,
+  "parent_address_space_bytes": 536870912,
+  "parent_file_bytes": 136314880,
+  "physical_native_settle_calls": 34718,
+  "planning_factor": 1.25,
+  "planning_total_seconds": 82.2887846432846,
+  "planning_work_seconds": 73.20879753730048,
+  "query_outputs": 1920,
+  "raw_bytes": 134217728,
+  "record_encoded_cache_max_bytes": 131072,
+  "repetitions": 3,
+  "retry": 0,
+  "rounding_seconds": 60,
+  "safety_factor": 3,
+  "saved_trace_cache_entries": 18,
+  "source_calls": 24,
+  "source_refs": {
+    "analysis.json": {
+      "path": "evidence/coarse-profile-20261020-r42/analysis.json",
+      "sha256": "275355ddbc3c8aa1f2c858081cf9e2e303209b5b15ad2b759cf4afbda0e89033"
+    },
+    "raw/result.json": {
+      "path": "evidence/coarse-profile-20261020-r42/raw/result.json",
+      "sha256": "eed5db6c1f2a8bbe21fd3c0b17eeeb6afa6931ab4c4c94f4a5c0ba5bf9ba0bd7"
+    },
+    "receipt-verification.json": {
+      "path": "evidence/coarse-profile-20261020-r42/receipt-verification.json",
+      "sha256": "5a6bde748363d57a787faf2294e0cc73f8de079e69d64925b75ea382ea39e0d5"
+    },
+    "server-completion.json": {
+      "path": "evidence/coarse-profile-20261020-r42/server-completion.json",
+      "sha256": "ab69eae4e9f631fefd8b332fb8b36fd526b49c8ac7f33620af461f239cf5fd23"
+    }
+  },
+  "stage_seconds": 240,
+  "total_seconds": 300,
+  "worker": 1,
+  "world_measurement": 0
+}

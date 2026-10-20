@@ -1,0 +1,26 @@
+{
+  "files": [
+    {
+      "digest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path": "candidate/__init__.py"
+    },
+    {
+      "digest": "sha256:55319ba6c6dacee8623b47d259cbcf8e95de1f0c1a681ecbd3dab60d41811bb6",
+      "path": "candidate/bootstrap.py"
+    },
+    {
+      "digest": "sha256:a4b4375886341d73fa1b2c3a457e5d12276208f7e4f9fa1728cd6d857297d7bc",
+      "path": "candidate/probe.py"
+    },
+    {
+      "digest": "sha256:2159db2d313de9d3ca8aba35196e7028ff053567790f1192c5707abd31a2befa",
+      "path": "candidate/runtime.py"
+    },
+    {
+      "digest": "sha256:cc6f1f591b6e7d29911869a34fe06db443bcf214baf726e7f0d50e82c89fc45d",
+      "path": "candidate/verify.py"
+    }
+  ],
+  "schemaVersion": "1.0.0",
+  "scopeSummary": "R43one negativebuiltinexpresult reuseonly.480records1920outputs192nativefullbytepairs/34718settles including130counted+4control/36directtickinvocations. Originalguards/FPorder/settle/controller/trace/Costunchanged. Countedexpseparatefromprobe0timing.4independentstoresaggregatecaps.Eachreprall3allocatedtotalCPU<=.95wall<=1.05beforefinitecostadoption;allcommoncostsincluded.NoH03/learningclaim,one-studytermination."
+}

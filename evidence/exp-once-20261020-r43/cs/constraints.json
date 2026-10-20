@@ -1,0 +1,142 @@
+{
+  "schemaVersion": "1.0.0",
+  "reportId": "CS-R43-CONSTRAINTS-PREFREEZE-CLARIFIED",
+  "requestDigest": "sha256:41a9acb58958859fb41c50ae9904a8a2bfdd0fc3af9f89383d5bed79fe6e10d0",
+  "sourceSnapshotDigest": "sha256:512e5a4c3e8dff74fcdaa9067e75fda4df4b98972ab0c61292626f059327442d",
+  "knowledgePackVersion": "0.1.0",
+  "knowledgePackDigest": "sha256:d8351d9aabb433403830fcffc3a2f2438b6d428711c93b6ded9eff002468c3d1",
+  "draftUse": {
+    "allowed": false,
+    "basis": "Validated identity/reuse and matched measurement rules"
+  },
+  "applicability": "applicable",
+  "applicabilityReason": "Typed source reuse and causal feedback correctness need explicit identity and evidence accounting.",
+  "selectedRules": [
+    {
+      "ruleId": "ALG-KEY-004",
+      "ruleDigest": "sha256:db77383ecb5f41ef3af5cb60769edaea507cac5cb25e28b88f249e84a062ba2e",
+      "applicabilityReason": "Shared native source reuse and candidate-order routing require full source/role/revision/config binding; a selected revision may not silently change origin roles."
+    },
+    {
+      "ruleId": "PERF-MEASURE-001",
+      "ruleDigest": "sha256:ef11800e55663f1b719f62d3f812280fd6e56c6895eef3028b9db344a9d0a355",
+      "applicabilityReason": "Information-matched exact control and actual shared-source plus all roundtrip/serialization/process costs; semantic errors preclude efficiency adoption."
+    }
+  ],
+  "facts": [
+    {
+      "id": "FACT-GAP",
+      "statement": "HIGH4blind/cross/freshJudge conditionalconsensus choosesone identicalnegativeexp reuse. R25/R30countreductiondidnotensurecostbenefit;R31learner/macro/primitivealreadytested;R42observernotoptimization. NoH03learned-efficiencyclaim.",
+      "evidenceRefs": [
+        "SRC-CORE",
+        "SRC-RESULT",
+        "SRC-DIRECTION"
+      ]
+    },
+    {
+      "id": "FACT-KERNEL",
+      "statement": "Native tick negative branch computes identicalmath.exp(z)twice. R43candidateonlyreusesoneez;allguards/otherFPorder/settle/controller/history/observer/logicalCostretained. Correctness-onlyexpwrapper/timingprobe0;ticktemporarybindingrestoresfinally.",
+      "evidenceRefs": [
+        "SRC-R32",
+        "SRC-KERNEL"
+      ]
+    },
+    {
+      "id": "FACT-BUDGET",
+      "statement": "Timing480records1920outputs192nativepairs/34560calls+24source+130counted+4control=34718settles,maximum5554880settleticks+36direct=5554916. Fourisolatedstoragecachesaggregate192MiB/raw128MiB;R42measuredcost+170guard-equivalentcallplanning*1.25/3xsafety/60round240stage300total.",
+      "evidenceRefs": [
+        "SRC-BUDGET"
+      ]
+    }
+  ],
+  "assumptions": [],
+  "invariants": [
+    {
+      "id": "INV-BOUNDARY",
+      "statement": "R40q4same32contexts3reps and5cells(jointbaseline/exponce,factorbaseline/exponce,exactbaseline). Freshsource24/initial.5/sameProgramConfigdrives/typedsourceproofs andqueryfreeproducer/numericconsumer. Onlyone duplicatednegativebuiltinexp result reuse,positivebranch/FPorder/allguards/nativecontroller/history/trace/costremain.1temporarytickbindingnormalexceptionfinallyrestore/nestingguard. Noenginefile/globalconfigurationchange.",
+      "scope": "R43 q4/32contexts3repetitions5cells/65countedpairs2controlpairs36directinvocations and24native sources",
+      "basisRefs": [
+        "FACT-GAP",
+        "FACT-KERNEL"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-SEMANTICS",
+      "statement": "192nativepairsfullrecordexceptmode/twodeclaredCPUfields/refnames,andexpandedkernel+Configcanonicalbytesexactwithstatekeyorderchecked.65prioruniqueinputs×2countedkernel/4controlsettles/36directtickboundaries. ActualexpbaselineG+Nnegative/candidateG;allgroups/link/ticksunchanged.Independentfulloracle/intermediatelayers/scalar/controller/sourceproofs andmutationrejects;negzero/tiny/underflow/nonfinite/identity/error/controlstatuses.",
+      "scope": "R43 q4/32contexts3repetitions5cells/65countedpairs2controlpairs36directinvocations and24native sources",
+      "basisRefs": [
+        "FACT-KERNEL"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-COST",
+      "statement": "34718settles/5554916maxticks/stage240total300/worker1retry0/raw128MiB/cache192MiB/AS512MiBeach/LRU18/record128KiB aggregatebounds. FourRecordercaches independent lifecycle/globalprefixIDs;perrecordcore/storage/auditCPU+wall plusallcommonprep/counted/source/work-auditresidual/parentseal/launcherCPU equal15armrep allocation;wholewallcompletionminusmeasuredcommonresidual15way,no bootstrapwalldoublecount. For eachrepr all3 totalCPUcandidate/base<=.95 andwall<=1.05 plusquality/bytes/ledger beforeboundedcostadoption;negativeclosewithnoretune/replay. Allsource/rawsizeSHAverified.",
+      "scope": "R43 q4/32contexts3repetitions5cells/65countedpairs2controlpairs36directinvocations and24native sources",
+      "basisRefs": [
+        "FACT-GAP",
+        "FACT-BUDGET"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "PERF-MEASURE-001"
+      ]
+    }
+  ],
+  "designChoices": [
+    {
+      "id": "CHOICE-SINGLE-EXP",
+      "statement": "Oneinvocationlocalduplicateexpresultreuseonly,no learning/compressionclaim.",
+      "rationale": "Directlyidentifiableduplicateworkwithno newcache/plan/setup assumptions;separatephysicalandwholecostoutcomes.",
+      "basisRefs": [
+        "FACT-GAP",
+        "FACT-KERNEL",
+        "FACT-BUDGET"
+      ]
+    }
+  ],
+  "verificationObligations": [
+    {
+      "id": "OB-BOUNDARY",
+      "invariantIds": [
+        "INV-BOUNDARY"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "extraexpression/guard/controllerchange;probeintiming;foreignpatch orbindingnotrestored;hiddenanswerchannel/cross-invocationcache",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-SEMANTICS",
+      "invariantIds": [
+        "INV-SEMANTICS"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "samehashwithoutbytescomparison;counterclaimnotactual;finalanswerhidesintermediateerror;scalar toleranceusedforbitpairs;invalidinputpathchanges",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-COST",
+      "invariantIds": [
+        "INV-COST"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "sharedfirstwriterstorageadvantage;fourcachecapsmultiplybudget;countedprobeartificialtimingsaving;missingcorrectness/source/guard/auditsealcost;posthocgateorcasechoice",
+      "requirementLevel": "required"
+    }
+  ],
+  "requiredCapabilities": [
+    "cs-constraint-derivation",
+    "cs-implementation-review"
+  ],
+  "verdict": "READY"
+}

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0.0",
+  "requestId": "CS-R43",
+  "mode": "derive",
+  "objective": "Validate onlynegativebuiltinexp reuse withactualphysicalcallcountandunprobedfreshfullcost/wholetracepairs",
+  "sourceSnapshotDigest": "sha256:512e5a4c3e8dff74fcdaa9067e75fda4df4b98972ab0c61292626f059327442d",
+  "sourceRefs": [
+    {
+      "id": "SRC-CORE",
+      "path": "source/hypothesis.md",
+      "digest": "sha256:d1b735eee8f72c092c847c04e81a34972fa919be906311255faa797e58ec9302"
+    },
+    {
+      "id": "SRC-R32",
+      "path": "source/r33-runtime.py",
+      "digest": "sha256:95820d0fcbf48290f677e9a995c7a3a4a6261a7fb5d2b256b59c998805a6a5d9"
+    },
+    {
+      "id": "SRC-R19",
+      "path": "source/r19-probe.py",
+      "digest": "sha256:bb0159ba0c50505fc148322e0d0a17d53c184a0bdc7bed21b393120971eb5630"
+    },
+    {
+      "id": "SRC-RESULT",
+      "path": "source/r42-results.md",
+      "digest": "sha256:d5624dfd14ae6cb0481f147b506c3a50583271807c97a8b0191107617792f6ed"
+    },
+    {
+      "id": "SRC-KERNEL",
+      "path": "source/dynamics.py",
+      "digest": "sha256:a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc"
+    },
+    {
+      "id": "SRC-BUDGET",
+      "path": "source/budget.json",
+      "digest": "sha256:e751a2b5c1bb6bed6be9ddb6ddae353cabb6435a58e0feb1a2896e3f2db0acee"
+    },
+    {
+      "id": "SRC-DIRECTION",
+      "path": "source/direction.json",
+      "digest": "sha256:a19fcad2c905839364cba33e801cde95f72424b7504fbd1bfc07421da25b7c41"
+    }
+  ],
+  "operationalFacts": [
+    {
+      "id": "FACT-GAP",
+      "statement": "HIGH4blind/cross/freshJudge conditionalconsensus choosesone identicalnegativeexp reuse. R25/R30countreductiondidnotensurecostbenefit;R31learner/macro/primitivealreadytested;R42observernotoptimization. NoH03learned-efficiencyclaim.",
+      "evidenceRefs": [
+        "SRC-CORE",
+        "SRC-RESULT",
+        "SRC-DIRECTION"
+      ]
+    },
+    {
+      "id": "FACT-KERNEL",
+      "statement": "Native tick negative branch computes identicalmath.exp(z)twice. R43candidateonlyreusesoneez;allguards/otherFPorder/settle/controller/history/observer/logicalCostretained. Correctness-onlyexpwrapper/timingprobe0;ticktemporarybindingrestoresfinally.",
+      "evidenceRefs": [
+        "SRC-R32",
+        "SRC-KERNEL"
+      ]
+    },
+    {
+      "id": "FACT-BUDGET",
+      "statement": "Timing480records1920outputs192nativepairs/34560calls+24source+130counted+4control=34718settles,maximum5554880settleticks+36direct=5554916. Fourisolatedstoragecachesaggregate192MiB/raw128MiB;R42measuredcost+170guard-equivalentcallplanning*1.25/3xsafety/60round240stage300total.",
+      "evidenceRefs": [
+        "SRC-BUDGET"
+      ]
+    }
+  ],
+  "existingContractRef": null
+}

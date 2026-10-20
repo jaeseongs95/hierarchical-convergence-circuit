@@ -1,0 +1,1 @@
+{"arm_records": 480, "boolean_stub_not_numeric_validation": true, "checks": 503, "contexts": 32, "direct_tick_invocations": 36, "native_calls": 0, "prior_unique_inputs": 65, "query_outputs": 1920, "repetitions": 3, "simulated_numeric_invocations": 5760, "single_source_substitution": true, "status": "PASS"}

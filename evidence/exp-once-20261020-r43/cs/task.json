@@ -1,0 +1,139 @@
+{
+  "acceptanceCriteria": [
+    "[AC-001] HIGH4관점blind·교차검토·별도Judge 판정과 원자료를 연결하고 R25/R30/R31/R42 비중복·단일변경·판정·비용배분·상한을 동결한다.",
+    "[AC-002] 지정 AI Research SSH에서 worker1/retry0로 source24+timing34560+correctness130+control4=34718settles와 directtick36회를 실행한다.480기록1920출력192쌍을 보존하고 timing exp계수probe는0이다.",
+    "[AC-003] 원래 모든 guard·FP순서·controller·trace·Cost를 보존한다.192짝의 확장한 전체kernel+Config bytes 및 반환기록,65입력두군의 실제exp호출G+N→G,경계/오류/복원·원장·변조거부·독립oracle/scalar/controller를 검산한다.",
+    "[AC-004] 4개 독립저장기 합계raw128MiB/cache192MiB·단계240초/전체300초·AS각512MiB를 적용한다.원천·countedpass·설치/검증·계산·trace·직렬화·저장·감사·준비·봉인을 빠짐없이 회계한다.각native표현3반복모두 배분총CPU비<=.95와wall비<=1.05를 만족해야 유한비용채택이다.미달이면음성으로닫는다.",
+    "[AC-005] 신규세경로만scope/index확인후기존키서명커밋·mainFF·작업branch삭제·동일비공개originpush·SHAclean/병합후bytes·continuity를 확인한다."
+  ],
+  "authorization": {
+    "allowedActions": [
+      "R43 단일 exp 재사용 연구 구현·방향 토론 및 결과 문서 작성",
+      "제한된 AI Research SSH 후속 실험",
+      "서명커밋과 로컬 main 병합",
+      "같은 연구 저장소 원격 push"
+    ],
+    "approvalRequired": [],
+    "prohibitedActions": [
+      "기존 core 및 과거 연구 변경",
+      "새 의존성·유료자원·서비스·권한 확대",
+      "외부 peer 메시지 전송"
+    ]
+  },
+  "constraints": [
+    "신규세경로만;원래엔진·과거raw·user변경보존",
+    "후보는동일builtinmath.exp(z)음수분기1회재사용만;양수분기·다른산술·guard·원래settle/controller/history/observe/Cost 불변",
+    "countedcorrectness와probe0timing분리;fullcanonicalbytes비교를scalar허용오차로완화금지",
+    "baseline/candidate×joint/factor4Recorder독립수명;cache192MiB와raw128MiB는합계;원래조건외답cache/학습/세계측정0",
+    "counted130+control4+timing34560+source24=34718settles,max5554880settleticks+direct36=5554916ticks;worker1/retry0/동결뒤튜닝·native재실행0",
+    "총비용CPU는core/storage/perrecordaudit외모든실측phase+parent+launcher잔여를15arm-rep그룹에동일배분한다. wall은completion전체에서측정된core/storage/auditwall을뺀잔여를15등분하며이미포함된bootstrapwall을중복가산하지않는다",
+    "각repr3rep모두CPU<=.95wall<=1.05·모든품질/bytes/원장통과가유한채택선이며통계적유의성·제품채택·학습효율증명아님",
+    "이번runtime과제로미세최적화계열종료;H03학습효율근거로합산금지;다음방향검토에서codebookcoverage를우선후보로검토",
+    "외부peer전송·paid/deps/services/globalconfig/security변경없음;기존동일비공개push승인유지",
+    "이미확인된sandboxGPGlock/network제한은동일키·origin에한정한escalation으로처리,전역설정변경금지"
+  ],
+  "decision": {
+    "complexity": "complex",
+    "hasConflicts": false
+  },
+  "objective": "HIGH 방향 판정에 따라 음수 sigmoid의 동일 exp(z) 결과1회 재사용만 연구 경로에서 비교한다. 전체 계산 이력과 실제 물리호출·fresh 총비용을 검증하고 미세최적화 계열을 닫는다.",
+  "orchestration": {
+    "mcpAvailable": true,
+    "requested": false
+  },
+  "requiredCapabilities": [
+    "minimal-implementation",
+    "cs-implementation-review",
+    "change-scope-assurance"
+  ],
+  "riskLevel": "medium",
+  "schemaVersion": "1.0.0",
+  "scope": {
+    "excluded": [
+      "src/",
+      "tests/",
+      "tools/r19_cross_level/",
+      "tools/r20_evidence_feedback/",
+      "tools/r21_active_measurement/",
+      "tools/r22_measurement_adoption/",
+      "tools/r23_source_qualification/",
+      "experiments/exp-69-source-qualification/",
+      "evidence/source-qualification-20261019-r23/",
+      "tools/r24_trust_boundary/",
+      "experiments/exp-70-trust-boundary/",
+      "evidence/trust-boundary-20261019-r24/",
+      "tools/r25_fixedpoint_elision/",
+      "experiments/exp-71-fixedpoint-elision/",
+      "evidence/fixedpoint-elision-20261019-r25/",
+      "experiments/exp-72-contraction-warmstart/",
+      "tools/r26_contraction_warmstart/",
+      "evidence/contraction-warmstart-20261019-r26/",
+      "experiments/exp-73-finite-stop-envelope/",
+      "tools/r27_finite_stop_envelope/",
+      "evidence/finite-stop-envelope-20261019-r27/",
+      "experiments/exp-74-reuse-frontier/",
+      "tools/r28_reuse_frontier/",
+      "evidence/reuse-frontier-20261020-r28/",
+      "experiments/exp-75-research-direction/",
+      "tools/r29_research_direction/",
+      "evidence/research-direction-20261020-r29/",
+      "experiments/exp-76-spatial-sharing/",
+      "tools/r30_spatial_sharing/",
+      "evidence/spatial-sharing-20261020-r30/",
+      "experiments/exp-77-macro-control/",
+      "tools/r31_macro_control/",
+      "evidence/macro-control-20261020-r31/",
+      "experiments/exp-78-semantic-join/",
+      "tools/r32_semantic_join/",
+      "evidence/semantic-join-20261020-r32/",
+      "experiments/exp-79-typed-feedback/",
+      "tools/r33_typed_feedback/",
+      "evidence/typed-feedback-20261020-r33/",
+      "experiments/exp-80-feasible-state/",
+      "tools/r34_feasible_state/",
+      "evidence/feasible-state-20261020-r34/",
+      "experiments/exp-81-compositional-slot/",
+      "tools/r35_compositional_slot/",
+      "evidence/compositional-slot-20261020-r35/",
+      "experiments/exp-82-overlap-composition/",
+      "tools/r36_overlap_composition/",
+      "evidence/overlap-composition-20261020-r36/",
+      "experiments/exp-83-joint-tuple/",
+      "tools/r37_joint_tuple/",
+      "evidence/joint-tuple-20261020-r37/",
+      "experiments/exp-84-shared-witness/",
+      "tools/r38_shared_witness/",
+      "evidence/shared-witness-20261020-r38/",
+      "experiments/exp-85-z-query/",
+      "tools/r39_z_query/",
+      "evidence/z-query-20261020-r39/",
+      "experiments/exp-86-factor-query/",
+      "tools/r40_factor_query/",
+      "evidence/factor-query-20261020-r40/",
+      "experiments/exp-87-producer-profile/",
+      "tools/r41_producer_profile/",
+      "evidence/producer-profile-20261020-r41/",
+      "experiments/exp-88-coarse-profile/",
+      "tools/r42_coarse_profile/",
+      "evidence/coarse-profile-20261020-r42/"
+    ],
+    "included": [
+      "experiments/exp-89-exp-once/",
+      "tools/r43_exp_once/",
+      "evidence/exp-once-20261020-r43/"
+    ]
+  },
+  "taskId": "ai-exp-once-r43",
+  "workUnits": [
+    {
+      "dependencies": [],
+      "id": "r43",
+      "objective": "HIGH 방향 판정에 따라 음수 sigmoid의 동일 exp(z) 결과1회 재사용만 연구 경로에서 비교한다. 전체 계산 이력과 실제 물리호출·fresh 총비용을 검증하고 미세최적화 계열을 닫는다.",
+      "writeTargets": [
+        "experiments/exp-89-exp-once/",
+        "tools/r43_exp_once/",
+        "evidence/exp-once-20261020-r43/"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,689 @@
+{
+  "by_mode": {
+    "baseline": {
+      "counts": {
+        "exact_joint": {
+          "all_records_correct": 96,
+          "eligible_correct": 768,
+          "groups": 0,
+          "links": 0,
+          "membership_correct": 0,
+          "membership_total": 0,
+          "pair_correct": 0,
+          "pair_total": 0,
+          "physical_native_calls": 0,
+          "prefix_calls": 0,
+          "queries": 384,
+          "query_input_correct": 0,
+          "query_input_total": 0,
+          "records": 96,
+          "role_correct": 0,
+          "role_total": 0,
+          "strict_correct": 384,
+          "ticks": 0,
+          "triple_correct": 0,
+          "triple_total": 0,
+          "workloads": {
+            "q4": {
+              "eligible_correct": 768,
+              "groups": 0,
+              "links": 0,
+              "membership_correct": 0,
+              "membership_total": 0,
+              "pair_correct": 0,
+              "pair_total": 0,
+              "physical_native_calls": 0,
+              "prefix_calls": 0,
+              "queries": 384,
+              "query_input_correct": 0,
+              "query_input_total": 0,
+              "records": 96,
+              "role_correct": 0,
+              "role_total": 0,
+              "strict_correct": 384,
+              "ticks": 0,
+              "triple_correct": 0,
+              "triple_total": 0
+            }
+          }
+        },
+        "native_factor": {
+          "all_records_correct": 96,
+          "eligible_correct": 768,
+          "groups": 2812608,
+          "links": 6791280,
+          "membership_correct": 1152,
+          "membership_total": 1152,
+          "pair_correct": 2112,
+          "pair_total": 2112,
+          "physical_native_calls": 8640,
+          "prefix_calls": 7488,
+          "queries": 384,
+          "query_input_correct": 768,
+          "query_input_total": 768,
+          "records": 96,
+          "role_correct": 4224,
+          "role_total": 4224,
+          "strict_correct": 384,
+          "ticks": 260856,
+          "triple_correct": 768,
+          "triple_total": 768,
+          "workloads": {
+            "q4": {
+              "eligible_correct": 768,
+              "groups": 2812608,
+              "links": 6791280,
+              "membership_correct": 1152,
+              "membership_total": 1152,
+              "pair_correct": 2112,
+              "pair_total": 2112,
+              "physical_native_calls": 8640,
+              "prefix_calls": 7488,
+              "queries": 384,
+              "query_input_correct": 768,
+              "query_input_total": 768,
+              "records": 96,
+              "role_correct": 4224,
+              "role_total": 4224,
+              "strict_correct": 384,
+              "ticks": 260856,
+              "triple_correct": 768,
+              "triple_total": 768
+            }
+          }
+        },
+        "native_joint": {
+          "all_records_correct": 96,
+          "eligible_correct": 768,
+          "groups": 2812608,
+          "links": 6791280,
+          "membership_correct": 1152,
+          "membership_total": 1152,
+          "pair_correct": 2112,
+          "pair_total": 2112,
+          "physical_native_calls": 8640,
+          "prefix_calls": 8256,
+          "queries": 384,
+          "query_input_correct": 768,
+          "query_input_total": 768,
+          "records": 96,
+          "role_correct": 4224,
+          "role_total": 4224,
+          "strict_correct": 384,
+          "ticks": 260856,
+          "triple_correct": 768,
+          "triple_total": 768,
+          "workloads": {
+            "q4": {
+              "eligible_correct": 768,
+              "groups": 2812608,
+              "links": 6791280,
+              "membership_correct": 1152,
+              "membership_total": 1152,
+              "pair_correct": 2112,
+              "pair_total": 2112,
+              "physical_native_calls": 8640,
+              "prefix_calls": 8256,
+              "queries": 384,
+              "query_input_correct": 768,
+              "query_input_total": 768,
+              "records": 96,
+              "role_correct": 4224,
+              "role_total": 4224,
+              "strict_correct": 384,
+              "ticks": 260856,
+              "triple_correct": 768,
+              "triple_total": 768
+            }
+          }
+        }
+      },
+      "metamorphic": {
+        "exact_joint": {
+          "invariant": 72,
+          "question_pairs": 288,
+          "record_pairs": 72
+        },
+        "native_factor": {
+          "invariant": 72,
+          "question_pairs": 288,
+          "record_pairs": 72
+        },
+        "native_joint": {
+          "invariant": 72,
+          "question_pairs": 288,
+          "record_pairs": 72
+        }
+      },
+      "repetition": {
+        "exact_joint": {
+          "invariant": 64,
+          "record_pairs": 64
+        },
+        "native_factor": {
+          "invariant": 64,
+          "record_pairs": 64
+        },
+        "native_joint": {
+          "invariant": 64,
+          "record_pairs": 64
+        }
+      }
+    },
+    "exp_once": {
+      "counts": {
+        "native_factor": {
+          "all_records_correct": 96,
+          "eligible_correct": 768,
+          "groups": 2812608,
+          "links": 6791280,
+          "membership_correct": 1152,
+          "membership_total": 1152,
+          "pair_correct": 2112,
+          "pair_total": 2112,
+          "physical_native_calls": 8640,
+          "prefix_calls": 7488,
+          "queries": 384,
+          "query_input_correct": 768,
+          "query_input_total": 768,
+          "records": 96,
+          "role_correct": 4224,
+          "role_total": 4224,
+          "strict_correct": 384,
+          "ticks": 260856,
+          "triple_correct": 768,
+          "triple_total": 768,
+          "workloads": {
+            "q4": {
+              "eligible_correct": 768,
+              "groups": 2812608,
+              "links": 6791280,
+              "membership_correct": 1152,
+              "membership_total": 1152,
+              "pair_correct": 2112,
+              "pair_total": 2112,
+              "physical_native_calls": 8640,
+              "prefix_calls": 7488,
+              "queries": 384,
+              "query_input_correct": 768,
+              "query_input_total": 768,
+              "records": 96,
+              "role_correct": 4224,
+              "role_total": 4224,
+              "strict_correct": 384,
+              "ticks": 260856,
+              "triple_correct": 768,
+              "triple_total": 768
+            }
+          }
+        },
+        "native_joint": {
+          "all_records_correct": 96,
+          "eligible_correct": 768,
+          "groups": 2812608,
+          "links": 6791280,
+          "membership_correct": 1152,
+          "membership_total": 1152,
+          "pair_correct": 2112,
+          "pair_total": 2112,
+          "physical_native_calls": 8640,
+          "prefix_calls": 8256,
+          "queries": 384,
+          "query_input_correct": 768,
+          "query_input_total": 768,
+          "records": 96,
+          "role_correct": 4224,
+          "role_total": 4224,
+          "strict_correct": 384,
+          "ticks": 260856,
+          "triple_correct": 768,
+          "triple_total": 768,
+          "workloads": {
+            "q4": {
+              "eligible_correct": 768,
+              "groups": 2812608,
+              "links": 6791280,
+              "membership_correct": 1152,
+              "membership_total": 1152,
+              "pair_correct": 2112,
+              "pair_total": 2112,
+              "physical_native_calls": 8640,
+              "prefix_calls": 8256,
+              "queries": 384,
+              "query_input_correct": 768,
+              "query_input_total": 768,
+              "records": 96,
+              "role_correct": 4224,
+              "role_total": 4224,
+              "strict_correct": 384,
+              "ticks": 260856,
+              "triple_correct": 768,
+              "triple_total": 768
+            }
+          }
+        }
+      },
+      "metamorphic": {
+        "native_factor": {
+          "invariant": 72,
+          "question_pairs": 288,
+          "record_pairs": 72
+        },
+        "native_joint": {
+          "invariant": 72,
+          "question_pairs": 288,
+          "record_pairs": 72
+        }
+      },
+      "repetition": {
+        "native_factor": {
+          "invariant": 64,
+          "record_pairs": 64
+        },
+        "native_joint": {
+          "invariant": 64,
+          "record_pairs": 64
+        }
+      }
+    }
+  },
+  "clock": {
+    "adjustable": false,
+    "implementation": "clock_gettime(CLOCK_PROCESS_CPUTIME_ID)",
+    "monotonic": true,
+    "resolution": 1e-09
+  },
+  "common_cpu_seconds": 44.63738772699999,
+  "common_wall_seconds": 44.632734380740715,
+  "completed_direct_tick_operations": 24,
+  "computation_reused": false,
+  "conclusion": "Single finite builtin-exp implementation comparison;not H03 learning/compression/generalCSP/production evidence. No core adoption/retry/retune.",
+  "controller_pairs": 2,
+  "core_cpu_seconds": 41.667808081,
+  "correctness_exp_baseline": 26093,
+  "correctness_exp_once": 16136,
+  "cost_scope": "Finite run observed total allocated equally15armrep groups;not independently launched pergroup process cost. Bootstrapwall already included;not added twice. Probe only correctness;timing calls derived from directly counted unique input coverage.",
+  "counted_kernel_pairs": 65,
+  "direct": {
+    "groups_per_arm": 14,
+    "invocations": 36,
+    "negative_per_arm": 5,
+    "rejected_before_tick_operations": 12,
+    "successful_tick_operations": 24
+  },
+  "direct_tick_invocations": 36,
+  "finite_technical_cost_adoption": false,
+  "group_metrics": [
+    {
+      "arm": "native_joint",
+      "common_cpu_seconds": 2.9758258484666658,
+      "common_wall_seconds": 2.975515625382714,
+      "contexts": 32,
+      "core_cpu_seconds": 3.447429973,
+      "measured_record_wall_seconds": 5.523639763830354,
+      "mode": "baseline",
+      "record_audit_cpu_seconds": 0.6949990329999988,
+      "repetition": 0,
+      "storage_cpu_seconds": 1.3806423650000001,
+      "total_cpu_seconds": 8.498897219466665,
+      "total_wall_seconds": 8.499155389213069
+    },
+    {
+      "arm": "native_joint",
+      "common_cpu_seconds": 2.9758258484666658,
+      "common_wall_seconds": 2.975515625382714,
+      "contexts": 32,
+      "core_cpu_seconds": 3.436805868,
+      "measured_record_wall_seconds": 5.462266604911462,
+      "mode": "baseline",
+      "record_audit_cpu_seconds": 0.6944154830000007,
+      "repetition": 1,
+      "storage_cpu_seconds": 1.3305321230000118,
+      "total_cpu_seconds": 8.437579322466679,
+      "total_wall_seconds": 8.437782230294175
+    },
+    {
+      "arm": "native_joint",
+      "common_cpu_seconds": 2.9758258484666658,
+      "common_wall_seconds": 2.975515625382714,
+      "contexts": 32,
+      "core_cpu_seconds": 3.499183111,
+      "measured_record_wall_seconds": 5.520140073001254,
+      "mode": "baseline",
+      "record_audit_cpu_seconds": 0.6955475760000018,
+      "repetition": 2,
+      "storage_cpu_seconds": 1.3248401309999807,
+      "total_cpu_seconds": 8.495396666466648,
+      "total_wall_seconds": 8.495655698383969
+    },
+    {
+      "arm": "native_joint",
+      "common_cpu_seconds": 2.9758258484666658,
+      "common_wall_seconds": 2.975515625382714,
+      "contexts": 32,
+      "core_cpu_seconds": 3.438702318,
+      "measured_record_wall_seconds": 5.5215105510793965,
+      "mode": "exp_once",
+      "record_audit_cpu_seconds": 0.7030293250000004,
+      "repetition": 0,
+      "storage_cpu_seconds": 1.378581712000003,
+      "total_cpu_seconds": 8.496139203466669,
+      "total_wall_seconds": 8.49702617646211
+    },
+    {
+      "arm": "native_joint",
+      "common_cpu_seconds": 2.9758258484666658,
+      "common_wall_seconds": 2.975515625382714,
+      "contexts": 32,
+      "core_cpu_seconds": 3.438373475,
+      "measured_record_wall_seconds": 5.465403171074388,
+      "mode": "exp_once",
+      "record_audit_cpu_seconds": 0.6939480570000001,
+      "repetition": 1,
+      "storage_cpu_seconds": 1.3325396810000179,
+      "total_cpu_seconds": 8.440687061466685,
+      "total_wall_seconds": 8.440918796457101
+    },
+    {
+      "arm": "native_joint",
+      "common_cpu_seconds": 2.9758258484666658,
+      "common_wall_seconds": 2.975515625382714,
+      "contexts": 32,
+      "core_cpu_seconds": 3.428133936,
+      "measured_record_wall_seconds": 5.4563105801156135,
+      "mode": "exp_once",
+      "record_audit_cpu_seconds": 0.7039034279999976,
+      "repetition": 2,
+      "storage_cpu_seconds": 1.3237549090000158,
+      "total_cpu_seconds": 8.431618121466679,
+      "total_wall_seconds": 8.431826205498329
+    },
+    {
+      "arm": "native_factor",
+      "common_cpu_seconds": 2.9758258484666658,
+      "common_wall_seconds": 2.975515625382714,
+      "contexts": 32,
+      "core_cpu_seconds": 3.451996521,
+      "measured_record_wall_seconds": 5.534869501039042,
+      "mode": "baseline",
+      "record_audit_cpu_seconds": 0.6990769550000001,
+      "repetition": 0,
+      "storage_cpu_seconds": 1.3832187800000049,
+      "total_cpu_seconds": 8.51011810446667,
+      "total_wall_seconds": 8.510385126421756
+    },
+    {
+      "arm": "native_factor",
+      "common_cpu_seconds": 2.9758258484666658,
+      "common_wall_seconds": 2.975515625382714,
+      "contexts": 32,
+      "core_cpu_seconds": 3.442820173,
+      "measured_record_wall_seconds": 5.4649906580186824,
+      "mode": "baseline",
+      "record_audit_cpu_seconds": 0.6938448239999997,
+      "repetition": 1,
+      "storage_cpu_seconds": 1.327779064000005,
+      "total_cpu_seconds": 8.44026990946667,
+      "total_wall_seconds": 8.440506283401398
+    },
+    {
+      "arm": "native_factor",
+      "common_cpu_seconds": 2.9758258484666658,
+      "common_wall_seconds": 2.975515625382714,
+      "contexts": 32,
+      "core_cpu_seconds": 3.444442097,
+      "measured_record_wall_seconds": 5.469006986978112,
+      "mode": "baseline",
+      "record_audit_cpu_seconds": 0.6965591780000029,
+      "repetition": 2,
+      "storage_cpu_seconds": 1.3276051770000024,
+      "total_cpu_seconds": 8.444432300466671,
+      "total_wall_seconds": 8.444522612360826
+    },
+    {
+      "arm": "native_factor",
+      "common_cpu_seconds": 2.9758258484666658,
+      "common_wall_seconds": 2.975515625382714,
+      "contexts": 32,
+      "core_cpu_seconds": 3.431703777,
+      "measured_record_wall_seconds": 5.513744873189842,
+      "mode": "exp_once",
+      "record_audit_cpu_seconds": 0.7007841410000012,
+      "repetition": 0,
+      "storage_cpu_seconds": 1.3807254450000048,
+      "total_cpu_seconds": 8.489039211466672,
+      "total_wall_seconds": 8.489260498572555
+    },
+    {
+      "arm": "native_factor",
+      "common_cpu_seconds": 2.9758258484666658,
+      "common_wall_seconds": 2.975515625382714,
+      "contexts": 32,
+      "core_cpu_seconds": 3.44256738,
+      "measured_record_wall_seconds": 5.465227360960784,
+      "mode": "exp_once",
+      "record_audit_cpu_seconds": 0.6936194879999986,
+      "repetition": 1,
+      "storage_cpu_seconds": 1.3285332380000057,
+      "total_cpu_seconds": 8.44054595446667,
+      "total_wall_seconds": 8.440742986343498
+    },
+    {
+      "arm": "native_factor",
+      "common_cpu_seconds": 2.9758258484666658,
+      "common_wall_seconds": 2.975515625382714,
+      "contexts": 32,
+      "core_cpu_seconds": 3.429379474,
+      "measured_record_wall_seconds": 5.452047858019277,
+      "mode": "exp_once",
+      "record_audit_cpu_seconds": 0.6957152270000009,
+      "repetition": 2,
+      "storage_cpu_seconds": 1.3265246979999716,
+      "total_cpu_seconds": 8.427445247466638,
+      "total_wall_seconds": 8.427563483401991
+    },
+    {
+      "arm": "exact_joint",
+      "common_cpu_seconds": 2.9758258484666658,
+      "common_wall_seconds": 2.975515625382714,
+      "contexts": 32,
+      "core_cpu_seconds": 0.112035927,
+      "measured_record_wall_seconds": 0.11442050093570769,
+      "mode": "baseline",
+      "record_audit_cpu_seconds": 0.002291543000000562,
+      "repetition": 0,
+      "storage_cpu_seconds": 7.364799999565186e-05,
+      "total_cpu_seconds": 3.090226966466662,
+      "total_wall_seconds": 3.0899361263184217
+    },
+    {
+      "arm": "exact_joint",
+      "common_cpu_seconds": 2.9758258484666658,
+      "common_wall_seconds": 2.975515625382714,
+      "contexts": 32,
+      "core_cpu_seconds": 0.112070172,
+      "measured_record_wall_seconds": 0.1144184730197601,
+      "mode": "baseline",
+      "record_audit_cpu_seconds": 0.002278521999999228,
+      "repetition": 1,
+      "storage_cpu_seconds": 7.163599999415737e-05,
+      "total_cpu_seconds": 3.0902461784666593,
+      "total_wall_seconds": 3.089934098402474
+    },
+    {
+      "arm": "exact_joint",
+      "common_cpu_seconds": 2.9758258484666658,
+      "common_wall_seconds": 2.975515625382714,
+      "contexts": 32,
+      "core_cpu_seconds": 0.112163879,
+      "measured_record_wall_seconds": 0.11455146210741288,
+      "mode": "baseline",
+      "record_audit_cpu_seconds": 0.0023012440000025336,
+      "repetition": 2,
+      "storage_cpu_seconds": 7.322099999385046e-05,
+      "total_cpu_seconds": 3.0903641924666623,
+      "total_wall_seconds": 3.090067087490127
+    }
+  ],
+  "interpretation": {
+    "native_factor": {
+      "cost_gate_pass": false,
+      "production_adoption": false,
+      "quality_pass": true,
+      "repetitions": [
+        {
+          "core_cpu_ratio": 0.9941214471461515,
+          "cpu_pass": false,
+          "repetition": 0,
+          "total_cpu_ratio": 0.9975230786763188,
+          "total_wall_ratio": 0.9975177823875895,
+          "wall_pass": true
+        },
+        {
+          "core_cpu_ratio": 0.9999265738588432,
+          "cpu_pass": false,
+          "repetition": 1,
+          "total_cpu_ratio": 1.0000327057076326,
+          "total_wall_ratio": 1.0000280436900528,
+          "wall_pass": true
+        },
+        {
+          "core_cpu_ratio": 0.9956269774390695,
+          "cpu_pass": false,
+          "repetition": 2,
+          "total_cpu_ratio": 0.9979883724097007,
+          "total_wall_ratio": 0.9979917006872585,
+          "wall_pass": true
+        }
+      ]
+    },
+    "native_joint": {
+      "cost_gate_pass": false,
+      "production_adoption": false,
+      "quality_pass": true,
+      "repetitions": [
+        {
+          "core_cpu_ratio": 0.9974683590186444,
+          "cpu_pass": false,
+          "repetition": 0,
+          "total_cpu_ratio": 0.9996754854272529,
+          "total_wall_ratio": 0.9997494794890254,
+          "wall_pass": true
+        },
+        {
+          "core_cpu_ratio": 1.0004561232319218,
+          "cpu_pass": false,
+          "repetition": 1,
+          "total_cpu_ratio": 1.0003683211595689,
+          "total_wall_ratio": 1.0003717287407188,
+          "wall_pass": true
+        },
+        {
+          "core_cpu_ratio": 0.9796954967070314,
+          "cpu_pass": false,
+          "repetition": 2,
+          "total_cpu_ratio": 0.9924925759792101,
+          "total_wall_ratio": 0.9924868079461151,
+          "wall_pass": true
+        }
+      ]
+    }
+  },
+  "launcher_receipt_cpu_seconds": 0.093039246,
+  "learning_calls": 0,
+  "mutations_rejected": [
+    "revision",
+    "source",
+    "payload",
+    "payload_hash",
+    "seal",
+    "Rmessage",
+    "query_swap",
+    "eligibility",
+    "selected",
+    "prefix_count",
+    "network_ref",
+    "workload",
+    "actual_exp_count",
+    "restore",
+    "group_ledger",
+    "counted_tick_state",
+    "paired_kernel_bytes"
+  ],
+  "next_direction": "End microoptimization series; prioritize frozen codebook coverage/semantic invariance direction review, not repeatedR31learningbaseline.",
+  "observed_process_cpu_seconds": 110.82300566,
+  "paired_records_exact": 192,
+  "parent_seal_process_cpu_seconds": 0.347527414,
+  "phase_cpu_seconds": {
+    "audit": 51.34955500000001,
+    "correctness": 0.6809669999999999,
+    "preparation": 0.313337,
+    "work": 58.038579999999996
+  },
+  "phase_resources": {
+    "audit": {
+      "platform": "linux",
+      "ru_maxrss_raw": 43152,
+      "ru_maxrss_units": "platform-native getrusage; no conversion asserted",
+      "system_cpu_seconds": 0.499946,
+      "user_cpu_seconds": 50.83639
+    },
+    "correctness": {
+      "platform": "linux",
+      "ru_maxrss_raw": 25096,
+      "ru_maxrss_units": "platform-native getrusage; no conversion asserted",
+      "system_cpu_seconds": 0.02199,
+      "user_cpu_seconds": 0.64772
+    },
+    "preparation": {
+      "platform": "linux",
+      "ru_maxrss_raw": 24184,
+      "ru_maxrss_units": "platform-native getrusage; no conversion asserted",
+      "system_cpu_seconds": 0.014019,
+      "user_cpu_seconds": 0.28840499999999997
+    },
+    "work": {
+      "platform": "linux",
+      "ru_maxrss_raw": 32440,
+      "ru_maxrss_units": "platform-native getrusage; no conversion asserted",
+      "system_cpu_seconds": 0.033997,
+      "user_cpu_seconds": 57.99109
+    }
+  },
+  "physical_native_calls": 34718,
+  "physical_numeric_refs": 34560,
+  "physical_settle_ticks": 1048028,
+  "production_adoption": false,
+  "quality_pass": true,
+  "record_audit_cpu_seconds": 8.372314024000005,
+  "rejected_before_tick_operations": 12,
+  "scalar_max_absolute_error": 1.734723475976807e-18,
+  "seconds_including_seal": 110.8252827990218,
+  "source_process_cpu_seconds": 0.04142531600000002,
+  "source_ticks": 792,
+  "statistical_speed_verdict": null,
+  "status": "R43_EXP_CALLS_REMOVED_COST_NOT_ADOPTED",
+  "storage_cpu_seconds": 16.14549582800001,
+  "timing_exp_calls_derived": {
+    "native_factor/baseline": {
+      "baseline_exp_calls": 4378776,
+      "exp_once_exp_calls": 2812608
+    },
+    "native_factor/exp_once": {
+      "baseline_exp_calls": 4378776,
+      "exp_once_exp_calls": 2812608
+    },
+    "native_joint/baseline": {
+      "baseline_exp_calls": 4378776,
+      "exp_once_exp_calls": 2812608
+    },
+    "native_joint/exp_once": {
+      "baseline_exp_calls": 4378776,
+      "exp_once_exp_calls": 2812608
+    }
+  },
+  "total_tick_invocations": 1048064,
+  "trace_storage_only_shared": true,
+  "unique_native_traces": 260,
+  "world_measurement_calls": 0
+}

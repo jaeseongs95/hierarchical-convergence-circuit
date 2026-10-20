@@ -1,0 +1,21 @@
+{
+  "pid": 19100,
+  "root": "/home/mcpops/hcc-exp-once-20261020-r43",
+  "total_wall_cap_seconds": 300,
+  "maximum_native_settle_calls": 34718,
+  "maximum_measurement_requests": 0,
+  "native_training": 0,
+  "single_worker": true,
+  "no_retry": true,
+  "parent_limits": {
+    "child_address_space_bytes": 536870912,
+    "child_file_bytes": 8388608,
+    "parent_address_space_bytes": 536870912,
+    "parent_file_bytes": 136314880,
+    "raw_bytes": 134217728,
+    "stage_seconds": 240,
+    "total_seconds": 300
+  },
+  "preparation_cpu_seconds": 0.093039246,
+  "preparation_seconds": 0.051338796998606995
+}

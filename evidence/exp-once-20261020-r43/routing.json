@@ -1,0 +1,16 @@
+{
+  "delegation": "panelonly5;noimplementationdelegation",
+  "deliberation": "HIGH4blind+cross4+freshJudgecomplete/partially_independent/conditional_consensus",
+  "execution": "direct",
+  "independent_audit": "authorverificationdisclosed;nohighimpactproduction/security/globalsettingchange",
+  "steps": [
+    "task-contract",
+    "baseline",
+    "CSderive",
+    "ponytail-singleexpression",
+    "prepare/freeze",
+    "designatedSSH",
+    "savedreplay/authorCS/report",
+    "scope/index/sign/main/privatepush"
+  ]
+}

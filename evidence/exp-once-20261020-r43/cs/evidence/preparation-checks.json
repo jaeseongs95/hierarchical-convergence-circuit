@@ -1,0 +1,70 @@
+{
+  "actual_local_native_calls": 0,
+  "canonical_cache_bytes_checked": true,
+  "consumer_isolation_mutations_rejected": [
+    "hidden_source",
+    "hidden_message",
+    "payload_shape",
+    "payload_range",
+    "payload_nan",
+    "query_case",
+    "query_slot_bool",
+    "query_slot_oob",
+    "query_kind",
+    "representation"
+  ],
+  "cs_prefreeze_scope_clarified": true,
+  "factor_consumer_isolation_mutations_rejected": [
+    "hidden_source",
+    "hidden_message",
+    "missing_factor",
+    "extra_factor",
+    "row_length",
+    "payload_range",
+    "payload_nan",
+    "payload_bool",
+    "query_case",
+    "query_slot_bool",
+    "query_slot_oob",
+    "query_kind"
+  ],
+  "final_source_ast_files": 5,
+  "four_phase_matrix_and_timing_builtin_checks": true,
+  "four_store_isolation": {
+    "aggregate_cache_bytes": 14148,
+    "files": 4,
+    "identical_content_written_four_times": true,
+    "native_calls": 0,
+    "physical_fake_add_calls": 8
+  },
+  "metadata_mutations_rejected": [
+    "predicate",
+    "Y_role",
+    "Z_role",
+    "revision",
+    "duplicate",
+    "domain_overlap",
+    "vocabulary",
+    "layout"
+  ],
+  "preparation": {
+    "arm_records": 480,
+    "boolean_stub_not_numeric_validation": true,
+    "checks": 503,
+    "contexts": 32,
+    "direct_tick_invocations": 36,
+    "native_calls": 0,
+    "prior_unique_inputs": 65,
+    "query_outputs": 1920,
+    "repetitions": 3,
+    "simulated_numeric_invocations": 5760,
+    "single_source_substitution": true,
+    "status": "PASS"
+  },
+  "python_ast_utf8_lf_files": 5,
+  "saved_trace_LRU_max_entries": 18,
+  "status": "PASS",
+  "synthetic_codec_roundtrip": 2,
+  "synthetic_mutations_rejected": 9,
+  "synthetic_storage_unique": 2
+}

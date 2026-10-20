@@ -1,0 +1,16 @@
+{
+  "evidence/claims.yaml": "9cba0301d5942bbb2a18c952549cd93fc1d0dec71e5180f7f0c870c03433beba",
+  "evidence/coarse-profile-20261020-r42/analysis.json": "275355ddbc3c8aa1f2c858081cf9e2e303209b5b15ad2b759cf4afbda0e89033",
+  "experiments/exp-71-fixedpoint-elision/RESULTS.ko.md": "c4d39365f17220fb34c04c5b0db46adcc9b492d859cd5004ac20d9f26ae759a6",
+  "experiments/exp-75-research-direction/ROADMAP.ko.md": "128cfa23b929391fac91594cb9fe55e3236074f9d72dec342fce72ce6a07484f",
+  "experiments/exp-76-spatial-sharing/RESULTS.ko.md": "7a93849ef49da91a8eabf80ebbd13bd0d4e342bd57a19a6072c3670390af1771",
+  "experiments/exp-77-macro-control/RESULTS.ko.md": "f3d8d69f7c73325e01b46e35f5c188857e343838d0340ef02d4db76edf029f8e",
+  "experiments/exp-82-overlap-composition/RESULTS.ko.md": "66f92ee9601f68b886d6198e4b6aeb1955c0342839bfd55cf3da232ca683bc09",
+  "experiments/exp-88-coarse-profile/RESULTS.ko.md": "d5624dfd14ae6cb0481f147b506c3a50583271807c97a8b0191107617792f6ed",
+  "formalism/invariants.md": "44565af0c8b2f0ecf7f174e9dea7464bb51e664e163f3866a9ca789802b229b9",
+  "src/hcr/dynamics.py": "a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc",
+  "theory/core-hypothesis.md": "d1b735eee8f72c092c847c04e81a34972fa919be906311255faa797e58ec9302",
+  "tools/r35_compositional_slot/compiler.py": "c167508ee664aa23a6cdafcda652b6e5f0d6292157d09099f3073cc4e78e933e",
+  "tools/r35_compositional_slot/runtime.py": "2ed5316a500a290f7bf5e4ecc54abd72ad8fd54f6b801bd18ee00fca70bbb751",
+  "tools/r36_overlap_composition/recording.py": "7cbba19e977535fd0b23901c03d1e9c4c4b3215115703ab02c168f6b859d8aa8"
+}
