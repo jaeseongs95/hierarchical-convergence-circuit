@@ -1,0 +1,9 @@
+{
+  "approved_by": "current user",
+  "user_text": "너가 인수인계받은 내용을 기반으로 해서 연구를 진행해줘. 연구 서버는 ssh-ai-mcp 를 사용하면 돼.",
+  "scope": "frozen R45 ZIP 136 files 502715 bytes SHA a387e8a34bcdf7fd11050542e1ed5a1ba4140b46d93886593e805c4039e38ded transfer to designated AI Research SSH (ssh-ai-mcp) and once-only 600s bounded experiment",
+  "upload_id": "e1a53f8647b6088b3bb537934802ec3abb1c496836fef642",
+  "transfer_id": "c05395a6fbe4271a749c46a2146d6e79c51058b3e68864a1",
+  "approval_mode": "automatic",
+  "upload_completed": true
+}

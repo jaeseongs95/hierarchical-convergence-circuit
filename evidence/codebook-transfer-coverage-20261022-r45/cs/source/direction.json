@@ -1,0 +1,368 @@
+{
+  "axis_decisions": [
+    {
+      "axis": "Coverage",
+      "decision": "56개 원천(8개 토큰 전체의 R/P0..2/Q0..2)과 128개 base × 8개 코드북(1024 native + 128 exact)을 고정해 모든 base에서 제한 대응 8/8(무변경 0/896)과 코드북당 64/64 ordered 코드쌍 소비를 달성한다.",
+      "evidence_claim_ids": [
+        "C1",
+        "C3"
+      ]
+    },
+    {
+      "axis": "TransferSufficiency",
+      "decision": "64개 역할 입력의 4개 Hamming 동치류 분해를 검산하고, 6 AST × 4^3 = 384개 expr 전수 전이 및 feasible2(16)·query2(64) 극값 구간 경계를 별도 실행·검산한다.",
+      "evidence_claim_ids": [
+        "C2",
+        "C4"
+      ]
+    },
+    {
+      "axis": "BudgetAndNonDuplication",
+      "decision": "원천 56 + 역할 64 + expr 전이 384 + 극값 경계 80 + 상위 파이프라인 18,432 = 총 19,016회 native settle을 단일 worker/재시도0/단계240초·전체600초 상한으로 AI Research SSH에서 1회 실행한다.",
+      "evidence_claim_ids": [
+        "C3",
+        "C4"
+      ]
+    }
+  ],
+  "case_brief": {
+    "assumptions": [
+      "공통 엔진(src/hcr/dynamics.py, model.py)과 R35/R36 생성기·실행기·초기상태 0.5는 수정하지 않는다."
+    ],
+    "constraints": [
+      "현재 엔진(src/hcr/)·과거 원자료 보존 및 신규 R45 세 경로만 변경",
+      "지정 AI Research SSH(ssh-ai-mcp)·worker1/retry0·운영상한 동결·동결 후 재실행/튜닝 금지",
+      "실제 파이프라인에서 8개 토큰 전체와 64개 ordered 코드쌍을 모두 소비하고 128개 base 모두 제한 대응 8/8 구별 달성",
+      "역할 64 입력의 4개 Hamming 동치류와 expr 6×4^3=384 전수 전이 및 feasible2/query2 극값 경계(16+64)를 분리 검산하고 64^n 전체 열거로 과장하지 않음",
+      "학습0·세계측정0·R31 학습비용 음성 및 R43 미세최적화 미채택 보존·속도/H03/일반AI 주장 금지"
+    ],
+    "decision": "R44/EXP-90 이후 비중복 후속 연구 R45/EXP-91의 질문·전체 토큰 공간 coverage·역할→후속 계산 유한 전이 계약 및 예산 확정",
+    "facts": [
+      "R44는 2개 토큰(amber/cobalt)만 실제 파이프라인에 등장해 8개 전역 bijection이 base당 6개 제한 대응으로 축약됐고(256짝 불변/640짝 변경), 코드북당 4개 ordered 코드쌍과 단일 비영 Hamming 거리만 소비했다.",
+      "equality(cfg)는 비트 위치·극성 대칭이므로 initial=0.5에서 64개 ordered 3-bit 입력쌍의 수렴 상태 state['goal']과 tick 수는 오직 Hamming 거리 d in {0,1,2,3}에 의해서만 결정되는 4개 동치류(d=0: 35tick, d=1: 32tick, d=2: 31tick, d=3: 29tick)로 나뉜다.",
+      "R44에서 cnot01(73,916 tick)과 cnot_chain(72,380 tick)의 상위 tick 감소(-768, -2304)는 768개 불일치 역할 비교가 d=1(32tick)에서 d=2(31tick), d=3(29tick)으로 이동한 것과 정수 단위로 정확히 일치한다.",
+      "evaluate()는 이산 adopted가 아니라 연속 스칼라 4*(2*goal-1)을 expr에 전달하므로, 40,320개 bijection에 대한 expr 단계의 전수 입력 공간은 6 AST × 4^3 = 384개의 Hamming 거리 삼중쌍이다."
+    ],
+    "failure_modes": [
+      "base당 2토큰만 사용해 제한 대응이 다시 6개나 4개로 축약되는 실패",
+      "역할 단계의 이산 adopted만 확인하고 연속 스칼라 후속 전이를 생략하거나 64^n 전체 열거로 과장하는 실패",
+      "서버/로컬 부동소수 오차 통계(max_scalar_error)에 완전 동일성을 요구하거나 SSH 겹친 읽기로 전송 오류가 발생하는 실패"
+    ],
+    "success_criteria": [
+      "모든 128개 base에서 제한 대응 8/8 구별(무변경 0짝) 및 코드북당 64/64 ordered 코드쌍 소비 확인",
+      "64개 역할 동치류(4종) → 384개 expr 전수 전이 → 80개 feasible2/query2 극값 경계 및 1024 native + 128 exact 전수 검산 통과"
+    ],
+    "unknowns": [
+      "이종 비영 Hamming 거리(d in {1,2,3})가 섞인 384개 expr 입력과 feasible2/query2 극값 경계 및 8토큰·64쌍 파이프라인 전체에서 실제 수치 수렴과 의미 불변성이 유지되는지 여부"
+    ]
+  },
+  "consensus_proposal": {
+    "action": "R45 / EXP-91 (exp-91-codebook-transfer-coverage) 동결 실행: 8토큰·64코드쌍 완전 파이프라인 coverage 및 역할→expr 전수 전이(384)·feasible2/query2 극값 경계(80) 분리 검증",
+    "axis_alignment": [
+      {
+        "axis": "Coverage",
+        "decision_ref": "Coverage"
+      },
+      {
+        "axis": "TransferSufficiency",
+        "decision_ref": "TransferSufficiency"
+      },
+      {
+        "axis": "BudgetAndNonDuplication",
+        "decision_ref": "BudgetAndNonDuplication"
+      }
+    ],
+    "conditions": [
+      "실제 서버 실행 및 저장 원자료 재생 검산에서 모든 의미·동치류·극값 경계가 통과해야 채택하며, 실패 시 튜닝·재실행 없이 음성 결과로 보존한다."
+    ],
+    "decision_owner": null,
+    "no_consensus_reason": null,
+    "remaining_options": [
+      "학습 산출물과 실제 원계산 대체를 연결하는 후속 과제는 R31 음성 대조를 보존하는 별도 계약으로 분리한다."
+    ],
+    "satisfied_constraints": [
+      "현재 엔진(src/hcr/)·과거 원자료 보존 및 신규 R45 세 경로만 변경",
+      "지정 AI Research SSH(ssh-ai-mcp)·worker1/retry0·운영상한 동결·동결 후 재실행/튜닝 금지",
+      "실제 파이프라인에서 8개 토큰 전체와 64개 ordered 코드쌍을 모두 소비하고 128개 base 모두 제한 대응 8/8 구별 달성",
+      "역할 64 입력의 4개 Hamming 동치류와 expr 6×4^3=384 전수 전이 및 feasible2/query2 극값 경계(16+64)를 분리 검산하고 64^n 전체 열거로 과장하지 않음",
+      "학습0·세계측정0·R31 학습비용 음성 및 R43 미세최적화 미채택 보존·속도/H03/일반AI 주장 금지"
+    ],
+    "status": "conditional_consensus",
+    "supported_by_verified_claims": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "unresolved_dissent": []
+  },
+  "constraints": [
+    "현재 엔진(src/hcr/)·과거 원자료 보존 및 신규 R45 세 경로만 변경",
+    "지정 AI Research SSH(ssh-ai-mcp)·worker1/retry0·운영상한 동결·동결 후 재실행/튜닝 금지",
+    "실제 파이프라인에서 8개 토큰 전체와 64개 ordered 코드쌍을 모두 소비하고 128개 base 모두 제한 대응 8/8 구별 달성",
+    "역할 64 입력의 4개 Hamming 동치류와 expr 6×4^3=384 전수 전이 및 feasible2/query2 극값 경계(16+64)를 분리 검산하고 64^n 전체 열거로 과장하지 않음",
+    "학습0·세계측정0·R31 학습비용 음성 및 R43 미세최적화 미채택 보존·속도/H03/일반AI 주장 금지"
+  ],
+  "cross_examination": {
+    "coverage": [
+      {
+        "item_id": "T1",
+        "reviewer_ids": [
+          "33d0e25a-f8a0-4fdd-abfe-ba649734cab5"
+        ]
+      },
+      {
+        "item_id": "T2",
+        "reviewer_ids": [
+          "1960553a-9924-468f-93ae-2ea8b25ae730"
+        ]
+      }
+    ],
+    "decision": "run",
+    "followups": [
+      {
+        "item_ids": [
+          "T1",
+          "T2"
+        ],
+        "reviewer_id": "33d0e25a-f8a0-4fdd-abfe-ba649734cab5"
+      },
+      {
+        "item_ids": [
+          "T1",
+          "T2"
+        ],
+        "reviewer_id": "1960553a-9924-468f-93ae-2ea8b25ae730"
+      }
+    ],
+    "reason": "T1은 후보 쌍만 나눴을 때 단일 base 내 제한 대응이 4~6개로 축약되는 문제를 검증하고, T2는 연속 스칼라 전이에서 전수 expr(384)과 극값 feasible2/query2(80)의 경계를 확정하기 위해 실행함.",
+    "selected_item_ids": [
+      "T1",
+      "T2"
+    ],
+    "trigger_items": [
+      {
+        "id": "T1",
+        "origin_reviewer": "1960553a-9924-468f-93ae-2ea8b25ae730"
+      },
+      {
+        "id": "T2",
+        "origin_reviewer": "33d0e25a-f8a0-4fdd-abfe-ba649734cab5"
+      }
+    ]
+  },
+  "issue_ledger": [
+    {
+      "available_evidence": [
+        "C1",
+        "C3"
+      ],
+      "issue_id": "I-PER-BASE-8CLASS",
+      "rationale": "단순 2토큰 분할은 base별 제한 대응이 4~6개로 남으므로, (0,6),(1,2),(3,5),(4,7) 후보 쌍과 1-토큰 앵커 및 xor_offsets=[7,1,2,4]를 사용해 모든 128개 base에서 제한 대응 8/8 구별을 달성함.",
+      "required_evidence": [
+        "128 base active token set verification"
+      ],
+      "status": "CONFIRMED"
+    },
+    {
+      "available_evidence": [
+        "C2",
+        "C4"
+      ],
+      "issue_id": "I-TRANSFER-BOUNDARY",
+      "rationale": "role(64) -> expr(384)은 4개 Hamming 동치류에 의해 40,320개 bijection 전수 전이가 성립하고, feasible2(16)/query2(64)는 expr 출력의 [min,max] 극값 구간 경계 검사로 수행하며 64^n 전체 열거로 부르지 않음.",
+      "required_evidence": [
+        "64 role + 384 expr + 80 extremal envelope settles and saved audit"
+      ],
+      "status": "CONFIRMED"
+    }
+  ],
+  "material_claims": [
+    {
+      "id": "C1",
+      "provenance": [
+        {
+          "locator": "experiments/exp-90-codebook-invariance/RESULTS.ko.md",
+          "verification_note": "Coordinator directly verified lines 13-29 and 50-52.",
+          "verification_status": "verified"
+        },
+        {
+          "locator": "evidence/codebook-invariance-20261020-r44/analysis.json",
+          "verification_note": "Coordinator directly verified actual_pipeline_coverage and actual_restricted_map_classes_per_base=[6].",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "R44는 base당 2개 토큰만 파이프라인에서 사용해 8개 코드북이 6개 제한 대응으로 축약됐고 코드북당 4개 ordered 코드쌍만 소비했다."
+    },
+    {
+      "id": "C2",
+      "provenance": [
+        {
+          "locator": "tools/r35_compositional_slot/compiler.py",
+          "verification_note": "Directly inspected symmetric 3-bit equality graph construction in lines 20-26.",
+          "verification_status": "verified"
+        },
+        {
+          "locator": "evidence/codebook-invariance-20261020-r44/raw/n000.json",
+          "verification_note": "Directly verified settled traces n000(d=0,35t), n001(d=1,32t), n003(d=2,31t), n007(d=3,29t).",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "equality(cfg)의 64개 ordered 3-bit 입력은 Hamming 거리 d in {0,1,2,3}에 따라 정확히 4개의 terminal state['goal'] 동치류와 tick 수(35, 32, 31, 29)를 형성하며, R44의 코드북별 상위 tick 차이(-768, -2304)는 이 역할 단계 tick 차이로 정확히 설명된다."
+    },
+    {
+      "id": "C3",
+      "provenance": [
+        {
+          "locator": "experiments/exp-90-codebook-invariance/frozen_spec.json",
+          "verification_note": "Directly verified all 8 codebook permutations and tested all 128 base active token sets.",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "네 후보 토큰 쌍 (0,6),(1,2),(3,5),(4,7)과 1-토큰 구별 확장 앵커 및 비동시-7 마스크 배치(xor_offsets=[7,1,2,4])를 결합한 128개 base는 모든 단일 base에서 제한 대응 8/8 구별(무변경 0짝)을 보장하고, 코드북마다 64/64 ordered 코드쌍과 이종 비영 Hamming 거리 삼중쌍을 모두 실현한다."
+    },
+    {
+      "id": "C4",
+      "provenance": [
+        {
+          "locator": "tools/r35_compositional_slot/runtime.py",
+          "verification_note": "Directly verified evaluate(), promote(), and consume_t() continuous drive wiring in lines 12-36.",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "역할 출력 4개 동치류 G={g0,g1,g2,g3}로부터 6개 AST의 모든 4^3=64 입력 삼중쌍을 실행하는 384회 settle은 40,320개 모든 3-bit bijection이 유도하는 role->expr 단계의 유한 입력 공간을 전수 포괄하며, feasible2(16회)와 query2(64회)는 384회 expr 결과의 극값 구간 경계 검사로 분리해 정직하게 검증할 수 있다."
+    }
+  ],
+  "method_notes": [
+    "MEDIUM / degraded_ok 기본 경로로 2명의 격리된 blind reviewer(33d0e25a, 1960553a)와 각 1회 교차검토 후 Coordinator가 원자료 대조를 거쳐 통합함.",
+    "원시 reviewer 출력·내부 프롬프트·CoT는 저장하지 않으며 검증된 주장과 출처만 기록함."
+  ],
+  "observability": {
+    "tokens": "NOT_OBSERVABLE",
+    "tool_calls": "NOT_OBSERVABLE",
+    "wall_time": "NOT_OBSERVABLE",
+    "worker_count": 2
+  },
+  "panel_manifest": [
+    {
+      "actual_model": "NOT_OBSERVABLE",
+      "actual_reasoning": "NOT_OBSERVABLE",
+      "blind_round1": true,
+      "classification": "reviewer",
+      "context_isolated": true,
+      "fallback_reason": "Terra preference not advertised by host; inherited host configuration used.",
+      "id": "33d0e25a-f8a0-4fdd-abfe-ba649734cab5",
+      "instantiated": true,
+      "is_judge": false,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ],
+      "requested_model": "inherit",
+      "requested_reasoning": "inherit",
+      "role": "Semantics and Coverage Reviewer",
+      "status": "completed"
+    },
+    {
+      "actual_model": "NOT_OBSERVABLE",
+      "actual_reasoning": "NOT_OBSERVABLE",
+      "blind_round1": true,
+      "classification": "reviewer",
+      "context_isolated": true,
+      "fallback_reason": "Terra preference not advertised by host; inherited host configuration used.",
+      "id": "1960553a-9924-468f-93ae-2ea8b25ae730",
+      "instantiated": true,
+      "is_judge": false,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ],
+      "requested_model": "inherit",
+      "requested_reasoning": "inherit",
+      "role": "Contract and Cost Reviewer",
+      "status": "completed"
+    }
+  ],
+  "preflight": {
+    "missing_capabilities": [],
+    "observed_capabilities": [
+      "two blind isolated reviewers",
+      "local primary evidence access",
+      "claim cross-examination"
+    ],
+    "required_capabilities": [
+      "two blind isolated reviewers",
+      "local primary evidence access",
+      "claim cross-examination"
+    ],
+    "supported_models_reasoning": "NOT_OBSERVABLE"
+  },
+  "required_constraints": [
+    "현재 엔진(src/hcr/)·과거 원자료 보존 및 신규 R45 세 경로만 변경",
+    "지정 AI Research SSH(ssh-ai-mcp)·worker1/retry0·운영상한 동결·동결 후 재실행/튜닝 금지",
+    "실제 파이프라인에서 8개 토큰 전체와 64개 ordered 코드쌍을 모두 소비하고 128개 base 모두 제한 대응 8/8 구별 달성",
+    "역할 64 입력의 4개 Hamming 동치류와 expr 6×4^3=384 전수 전이 및 feasible2/query2 극값 경계(16+64)를 분리 검산하고 64^n 전체 열거로 과장하지 않음",
+    "학습0·세계측정0·R31 학습비용 음성 및 R43 미세최적화 미채택 보존·속도/H03/일반AI 주장 금지"
+  ],
+  "run": {
+    "assurance": "partially_independent",
+    "candidate_skill_sha256": null,
+    "capability_shortfall": false,
+    "completed_worker_ids": [
+      "33d0e25a-f8a0-4fdd-abfe-ba649734cab5",
+      "1960553a-9924-468f-93ae-2ea8b25ae730"
+    ],
+    "failures": [],
+    "fresh_judge_id": null,
+    "id": "R45-direction-20261022",
+    "judge_fallback": null,
+    "redeliberations": [],
+    "reused_worker_ids": [],
+    "specialist_additions": [],
+    "stage": "MEDIUM",
+    "strict": false,
+    "worker_cap": 8,
+    "workers": [
+      {
+        "actual_model": "NOT_OBSERVABLE",
+        "actual_reasoning": "NOT_OBSERVABLE",
+        "blind_round1": true,
+        "classification": "reviewer",
+        "context_isolated": true,
+        "fallback_reason": "Terra preference not advertised by host; inherited host configuration used.",
+        "id": "33d0e25a-f8a0-4fdd-abfe-ba649734cab5",
+        "instantiated": true,
+        "is_judge": false,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ],
+        "requested_model": "inherit",
+        "requested_reasoning": "inherit",
+        "role": "Semantics and Coverage Reviewer",
+        "status": "completed"
+      },
+      {
+        "actual_model": "NOT_OBSERVABLE",
+        "actual_reasoning": "NOT_OBSERVABLE",
+        "blind_round1": true,
+        "classification": "reviewer",
+        "context_isolated": true,
+        "fallback_reason": "Terra preference not advertised by host; inherited host configuration used.",
+        "id": "1960553a-9924-468f-93ae-2ea8b25ae730",
+        "instantiated": true,
+        "is_judge": false,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ],
+        "requested_model": "inherit",
+        "requested_reasoning": "inherit",
+        "role": "Contract and Cost Reviewer",
+        "status": "completed"
+      }
+    ]
+  },
+  "schema_version": "1.0",
+  "skill_version": "1.0.0"
+}

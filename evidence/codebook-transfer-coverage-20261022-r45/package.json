@@ -1,0 +1,23 @@
+{
+  "base": "b059f37c862db13722f97b55b7c203e89270eb94",
+  "bytes": 502715,
+  "deliberation_sha256": "49cb03b962ae6fa9b1c23e5b9f25e688733187bb51906af1f6e4e5a699742259",
+  "design_sha256": "9e6ec9d8155d2f86fe5b3062f341cb69c79e06f4bdf4f971c68ae0399dc2c637",
+  "evaluations": 1152,
+  "exact_evaluations": 128,
+  "expr_transfer_calls": 384,
+  "extremal_envelope_calls": 80,
+  "maximum_logical_ticks": 3042560,
+  "maximum_native_settle_calls": 19016,
+  "native_evaluations": 1024,
+  "outcomes_sha256": "b3e82823f532b4be32bf324a2313e0cb18b5a93f0ad34409e3d5583eeb0ce2f8",
+  "role_calls": 64,
+  "sha256": "a387e8a34bcdf7fd11050542e1ed5a1ba4140b46d93886593e805c4039e38ded",
+  "source_files": 136,
+  "source_manifest_sha256": "aa3e6e5c2369e991ea6f9efe754ca556f6ee41ee2cbc3c48c2cabae7a941b673",
+  "sources": 56,
+  "spec_sha256": "d79a9f3841a03dc33b72f36ebe1f9c9dad38ea2ec1c9ff91c046e14cb4a424ff",
+  "total_seconds": 600,
+  "training": 0,
+  "world_measurement": 0
+}

@@ -1,0 +1,29 @@
+{
+  "approval_mode": "automatic",
+  "completion": {
+    "completed": false,
+    "evidence_bytes": 4619220,
+    "evidence_sha256": "425d276049128cfba73a9f0ac13a3e7238db8b902fa6a3f120cf65de179b1460",
+    "parent_process_cpu_seconds": 0.683972185,
+    "seconds_including_seal": 58.81725123999058,
+    "within_wall_limit": true
+  },
+  "decision": {
+    "commandNames": [
+      "python3"
+    ],
+    "decision": "execute",
+    "policyRevision": 8,
+    "reasonCode": "command_set",
+    "targetRevision": "4cab9f57b2fd6d81004278e51ea7918d2124972cc1ae968b1d463d3a7c80cd4e"
+  },
+  "known_status": "WORK_COMPLETED_AUDIT_MUTATION_FIXTURE_KEYERROR_LOCAL_REPLAY_PASS",
+  "native_rerun": false,
+  "received_json": 1082,
+  "received_nonempty_files": 1083,
+  "request_id": "e36bc88e6ee01c1edb286d32d28508f4dadad82c34fd6b8e",
+  "request_key": "r45-transfer-coverage-20261022-a387e8a34bcd",
+  "target": "AI Research SSH default/aws-local",
+  "upload_job_id": "e1a53f8647b6088b3bb537934802ec3abb1c496836fef642",
+  "upload_transfer_id": "c05395a6fbe4271a749c46a2146d6e79c51058b3e68864a1"
+}

@@ -1,0 +1,21 @@
+{
+  "canonical_cache_bytes": 134217728,
+  "child_address_space_bytes": 536870912,
+  "child_file_bytes": 8388608,
+  "learning": 0,
+  "maximum_logical_ticks": 3042560,
+  "maximum_measurement_requests": 0,
+  "maximum_native_settle_calls": 19016,
+  "maximum_unique_trace_records": 6000,
+  "parent_address_space_bytes": 536870912,
+  "parent_file_bytes": 136314880,
+  "physical_native_settle_calls": 19016,
+  "raw_bytes": 134217728,
+  "reason": "R44 actual 18524 settles completed in 54.30s; R45 adds 28 sources + 384 expr transfer + 80 extremal envelope settles (+492 settles, +2.66% to 19016 settles, max ticks 19016*160=3042560). 240s stage / 600s total conservative stop boundaries, not forecast. Raw/cache/AS caps independently enforced.",
+  "record_encoded_cache_max_bytes": 131072,
+  "retry": 0,
+  "stage_seconds": 240,
+  "total_seconds": 600,
+  "worker": 1,
+  "world_measurement": 0
+}

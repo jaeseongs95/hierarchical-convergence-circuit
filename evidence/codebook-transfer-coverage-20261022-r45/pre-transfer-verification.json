@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "archive_sha256": "a387e8a34bcdf7fd11050542e1ed5a1ba4140b46d93886593e805c4039e38ded",
+  "bytes": 502715,
+  "source_files": 136,
+  "paths_expected_only": true,
+  "no_git_aws_ssh_env_or_credential_named_entries": true,
+  "not_a_secret_scan_or_permission_grant": true,
+  "all_archive_source_bytes_match_local": true,
+  "all_python_ast": true,
+  "local_native_calls": 0,
+  "remote_zip": "/home/mcpops/hcc-codebook-transfer-coverage-source-20261022-r45.zip",
+  "remote_root": "/home/mcpops/hcc-codebook-transfer-coverage-20261022-r45"
+}

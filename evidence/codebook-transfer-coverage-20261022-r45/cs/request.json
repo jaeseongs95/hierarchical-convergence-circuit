@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0.0",
+  "requestId": "CS-R45",
+  "mode": "derive",
+  "objective": "Verify 8-token / 64-pair full pipeline codebook coverage (8/8 restricted classes per base) and separate 4-class Hamming role->expr exhaustive transfer (384) and feasible2/query2 extremal envelope (80)",
+  "sourceSnapshotDigest": "sha256:d15543e5b9d894104be9bbbb8e6c30f8f5f76520c053f61d6e850c46ba3fb0f1",
+  "sourceRefs": [
+    {
+      "id": "SRC-CORE",
+      "path": "source/hypothesis.md",
+      "digest": "sha256:d1b735eee8f72c092c847c04e81a34972fa919be906311255faa797e58ec9302"
+    },
+    {
+      "id": "SRC-R32",
+      "path": "source/r33-runtime.py",
+      "digest": "sha256:95820d0fcbf48290f677e9a995c7a3a4a6261a7fb5d2b256b59c998805a6a5d9"
+    },
+    {
+      "id": "SRC-R19",
+      "path": "source/r19-probe.py",
+      "digest": "sha256:bb0159ba0c50505fc148322e0d0a17d53c184a0bdc7bed21b393120971eb5630"
+    },
+    {
+      "id": "SRC-RESULT",
+      "path": "source/r44-results.md",
+      "digest": "sha256:ef87b118ceddb3edbdba93d4f39c9f9f0abae974b01b33861f58f872cb14289b"
+    },
+    {
+      "id": "SRC-ENCODER",
+      "path": "source/r35-runtime.py",
+      "digest": "sha256:2ed5316a500a290f7bf5e4ecc54abd72ad8fd54f6b801bd18ee00fca70bbb751"
+    },
+    {
+      "id": "SRC-COMPILER",
+      "path": "source/r35-compiler.py",
+      "digest": "sha256:c167508ee664aa23a6cdafcda652b6e5f0d6292157d09099f3073cc4e78e933e"
+    },
+    {
+      "id": "SRC-SLOTS",
+      "path": "source/r36-runtime.py",
+      "digest": "sha256:8466a0ce93b182800eb447d00a5868f5273120057cbeec49c4fe3b4b51c0ffae"
+    },
+    {
+      "id": "SRC-KERNEL",
+      "path": "source/dynamics.py",
+      "digest": "sha256:a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc"
+    },
+    {
+      "id": "SRC-BUDGET",
+      "path": "source/budget.json",
+      "digest": "sha256:7a7a27fcc3bd5cdfff5a3850e5ba3e4b9da1e85997478d109e0fa8c7f3ce07f6"
+    },
+    {
+      "id": "SRC-DIRECTION",
+      "path": "source/direction.json",
+      "digest": "sha256:06a7a79f4f3f4f2200fd8d008600d0ed86b10c1148297d40fdec534afc914b29"
+    }
+  ],
+  "operationalFacts": [
+    {
+      "id": "FACT-GAP",
+      "statement": "R44 used only 2 active tokens per base case (collapsing 8 global bijections to 6 restricted classes and 4 ordered code pairs per map) and only checked discrete role adoption across 40320 bijections without separating continuous scalar transfer into downstream expr/feasible/query.",
+      "evidenceRefs": [
+        "SRC-RESULT",
+        "SRC-DIRECTION",
+        "SRC-ENCODER"
+      ]
+    },
+    {
+      "id": "FACT-KERNEL",
+      "statement": "R35 equality(cfg) is symmetric across bit positions and polarities so 64 ordered 3-bit inputs partition into exactly 4 terminal state[\"goal\"] equivalence classes by Hamming distance d in {0,1,2,3}. Passing inverse vocabulary to unchanged R36 execute preserves all guards/typed consumer/initial 0.5/Cost without monkeypatch.",
+      "evidenceRefs": [
+        "SRC-ENCODER",
+        "SRC-COMPILER",
+        "SRC-SLOTS",
+        "SRC-R32",
+        "SRC-KERNEL"
+      ]
+    },
+    {
+      "id": "FACT-BUDGET",
+      "statement": "56 fresh lower sources + 64 role inputs + 384 expr exhaustive Hamming-triple (6x4^3) settles + 80 feasible2/query2 extremal envelope settles + 128 base x 8 maps x 18 = 18432 upper settles = 19016 total native settles (+ 128 exact). 600s total / 240s stage / raw 128MiB / cache 128MiB / AS 512MiB / LRU 18 / worker 1 / retry 0.",
+      "evidenceRefs": [
+        "SRC-BUDGET"
+      ]
+    }
+  ],
+  "existingContractRef": null
+}

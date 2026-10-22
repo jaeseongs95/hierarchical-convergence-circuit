@@ -1,0 +1,80 @@
+{
+  "adapter_redaction_detected": true,
+  "all_native_tick_records_received": true,
+  "archive_received": false,
+  "exact_conditions_verified": 128,
+  "expr_transfer_conditions_verified": 384,
+  "extremal_envelope_conditions_verified": 80,
+  "frozen_scalar_tolerance": 1e-14,
+  "in_vocabulary_incomplete_tokenpair_mutation_rejected": true,
+  "independent_auditor": false,
+  "input_pins": 101,
+  "local_native_calls_added": 0,
+  "mapped_baseline_semantic_pairs": 896,
+  "mutations_rejected": [
+    "revision",
+    "origin",
+    "eligibility",
+    "coverage",
+    "selected",
+    "C_message",
+    "T_hash",
+    "value",
+    "network_ref",
+    "alternative_role",
+    "leaf_contract",
+    "C_predicate",
+    "C_target",
+    "T_predicate",
+    "T_target",
+    "candidate_subject",
+    "nonbijective_map",
+    "numeric_role_coverage",
+    "incomplete_tokenpair_coverage",
+    "collapsed_restricted_codebook",
+    "downstream_transfer_table_tamper"
+  ],
+  "native_conditions_verified": 1024,
+  "nonrole_stage_ticks_invariant_across_codebooks": true,
+  "paired_invariant": 896,
+  "raw_json_bytes": 11766595,
+  "raw_manifest_matched_files": 1082,
+  "raw_total_bytes": 11767721,
+  "received_json": 1082,
+  "received_nonempty_files": 1083,
+  "restored_files": [
+    "source-postcheck.json"
+  ],
+  "restored_keys": [
+    "experiments/exp-91-codebook-transfer-coverage/DELIBERATION.ko.md",
+    "experiments/exp-91-codebook-transfer-coverage/OUTCOMES.ko.md"
+  ],
+  "restored_original_manifest_entries": 1,
+  "role_numeric_inputs_verified": 64,
+  "same_channel_not_host_attestation": true,
+  "scalar_max_absolute_error": 1.1102230246251565e-16,
+  "semantic_adoption": true,
+  "server_audit_failure_cause": "In tools/r45_codebook_transfer_coverage/verify.py line 236, synthetic mutation #19 assigned candidate source key 'n0_R_0' (whose subject is node 'n0_start_a', not an 8-token vocabulary member) into bad_p['cases'][0]['context'], raising KeyError('n0_start_a') inside check_matrix_coverage where only ValueError was caught. All 19,016 native settles, 1,034 unique traces, 1,152 evaluations, 64 role inputs, 384 expr transfers, 80 extremal envelopes, and 18 prior mutations passed before line 236. Frozen source and raw server files were left completely unmodified; local saved-data replay verified both the exact unmodified KeyError reproduction and all 21 mutation rejections.",
+  "server_audit_stage_returncode": 1,
+  "server_work_stage_returncode": 0,
+  "source_files": 136,
+  "source_unchanged": true,
+  "ssh_completeness": "unknown upstream; all 1081 non-empty files + manifest directly matched original manifest size/SHA (1 file restored from entropy redaction on two known .ko.md keys and verified against manifest SHA-256); manifest outside its own hash",
+  "status": "PASS",
+  "transport_failures": [
+    {
+      "expected_bytes": 6989,
+      "expected_sha256": "51944e2b901e306fea123838d39bb439ab45da44f3eb64f36d340bde63a64c9a",
+      "file": "source-postcheck.json",
+      "received_bytes": 6919,
+      "received_sha256": "e5748ac94c2b40729ed0cd82028629c50c949a81b5620f4bab12091dc4b81b45"
+    }
+  ],
+  "unreceived_empty_logs": [
+    "audit.stdout",
+    "preparation.stderr",
+    "preparation.stdout",
+    "work.stderr",
+    "work.stdout"
+  ]
+}

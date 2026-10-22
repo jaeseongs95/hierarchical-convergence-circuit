@@ -1,0 +1,39 @@
+{
+  "adapter_redaction_detected": true,
+  "all_native_tick_records_received": true,
+  "archive_received": false,
+  "input_pins": 101,
+  "raw_json_bytes": 11766595,
+  "raw_manifest_matched_files": 1082,
+  "raw_total_bytes": 11767721,
+  "received_json": 1082,
+  "received_nonempty_files": 1083,
+  "restored_files": [
+    "source-postcheck.json"
+  ],
+  "restored_keys": [
+    "experiments/exp-91-codebook-transfer-coverage/DELIBERATION.ko.md",
+    "experiments/exp-91-codebook-transfer-coverage/OUTCOMES.ko.md"
+  ],
+  "restored_original_manifest_entries": 1,
+  "same_channel_not_host_attestation": true,
+  "source_files": 136,
+  "source_unchanged": true,
+  "ssh_completeness": "unknown upstream; all 1081 non-empty files + manifest directly matched original manifest size/SHA (1 file restored from entropy redaction on two known .ko.md keys and verified against manifest SHA-256); manifest outside its own hash",
+  "transport_failures": [
+    {
+      "expected_bytes": 6989,
+      "expected_sha256": "51944e2b901e306fea123838d39bb439ab45da44f3eb64f36d340bde63a64c9a",
+      "file": "source-postcheck.json",
+      "received_bytes": 6919,
+      "received_sha256": "e5748ac94c2b40729ed0cd82028629c50c949a81b5620f4bab12091dc4b81b45"
+    }
+  ],
+  "unreceived_empty_logs": [
+    "audit.stdout",
+    "preparation.stderr",
+    "preparation.stdout",
+    "work.stderr",
+    "work.stdout"
+  ]
+}

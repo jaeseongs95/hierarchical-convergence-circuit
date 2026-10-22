@@ -1,0 +1,144 @@
+{
+  "acceptanceCriteria": [
+    "[AC-001] MEDIUM 방향 토론(DELIBERATION.ko.md, decision-record.json)으로 R44의 2토큰/6제한대응 한계와 역할→후속 연속 스칼라 전이 질문을 분리하고, 56원천·128base(제한대응 8/8)·64역할·384expr 전수전이·80극값경계·채택조건을 실행 전 동결한다.",
+    "[AC-002] AI Research SSH(ssh-ai-mcp)에서 56원천+64역할+384expr+80극값경계+1024native×18=19,016 settles와 128 exact를 worker1/retry0로 1회 실행한다. local native/학습/세계측정 0이다.",
+    "[AC-003] 원래 Program/Config/initial 0.5/guard/controller/trace/Cost와 R36 execute를 유지한다. 128개 모든 base에서 제한대응 8/8(무변경 0/896), 코드북당 64/64 ordered 코드쌍, 이종 비영 Hamming 삼중쌍, 896짝 의미 불변성을 검산한다.",
+    "[AC-004] 역할 64입력의 4개 Hamming 동치류(d=0,1,2,3) 분해, 6 AST×4^3=384 expr 전수 전이(40,320 bijection의 role->expr 전수 커버), feasible2(16)·query2(64) 극값 구간 경계 및 단계별 tick 귀속을 분리 검산하고 64^n 전체 열거·학습·속도·H03로 확대하지 않는다.",
+    "[AC-005] 신규 세 경로 scope/index 확인 후 로컬 브랜치 커밋·main FF 병합·작업 브랜치 삭제·SHA/clean/병합 후 bytes 및 continuity를 확인한다."
+  ],
+  "authorization": {
+    "allowedActions": [
+      "R45 8토큰 전체 coverage 및 역할-후속 전이 충분조건 연구 구현·실험·결과 문서 작성",
+      "제한된 AI Research SSH 후속 실험",
+      "서명커밋과 로컬 main 병합",
+      "같은 연구 저장소 원격 push"
+    ],
+    "approvalRequired": [],
+    "prohibitedActions": [
+      "기존 core 및 과거 연구 변경",
+      "새 의존성·유료자원·서비스·권한 확대",
+      "외부 peer 메시지 전송"
+    ]
+  },
+  "constraints": [
+    "신규 세 경로만 변경; core/과거 연구/사용자 변경 보존",
+    "8 maps: identity, bit_reverse, xor7, cnot01, cnot12, cnot20, cnot_chain, swap01; 56원천(8토큰 전체 R/P0..2/Q0..2)과 128 base×8 maps=1024 native + 128 exact",
+    "모든 128개 base에서 활성 토큰 집합이 8개 코드북을 8/8 구별(mapped_pairs_actual_code_unchanged=0, changed=896)하고 각 코드북이 64/64 ordered 코드쌍과 이종 Hamming 삼중쌍을 모두 소비",
+    "역할 64입력→4개 Hamming 동치류(d=0..3)→expr 6×4^3=384 전수 전이(40,320 bijection의 role->expr 전수 포괄)와 feasible2(16)/query2(64) 극값 구간 경계를 분리 검산; 64^n 전체 열거 과장 금지",
+    "semantic quality/role/AST/selected_index/kind/value/reason 및 전이·극값 경계 모두 통과해야 유한 채택; 변조 21종 거부; 동결 후 재실행/튜닝 0",
+    "worker1/retry0/stage240/total600/raw128MiB/cache128MiB/record128KiB/unique<6000/LRU18/AS512MiB; 운영 중단선이며 미래 보장 아님",
+    "서버 전체 phase/parent/launcher 및 record core/storage 비용 기록; 속도 비교·학습 효율 채택선 없음, 저장만 공유하고 모든 19,016회 native 계산 실제 실행",
+    "authored 인코딩 연구; 학습 codebook/학습 효율/H03/general AI/production 도입 주장 금지; R31 및 R43 음성 대조 보존",
+    "타 세션 트랜스크립트 열람 금지, JEV 업무 중복 인수 금지, 외부 peer 메시지 전송 금지"
+  ],
+  "decision": {
+    "complexity": "complex",
+    "hasConflicts": false
+  },
+  "objective": "R44 후속(R45/EXP-91): 실제 파이프라인에서 8개 토큰 전체와 64개 ordered 코드쌍을 모두 소비해 모든 128개 base에서 제한 대응 8/8 구별을 달성하고, 역할 64입력의 4개 Hamming 동치류 분해와 expr 6×4^3=384 전수 전이 및 feasible2/query2 극값 구간 경계(16+64)를 분리 검증한다. 학습·속도 우위·64^n 전체 열거 주장은 하지 않는다.",
+  "orchestration": {
+    "mcpAvailable": true,
+    "requested": false
+  },
+  "requiredCapabilities": [
+    "minimal-implementation",
+    "cs-implementation-review",
+    "change-scope-assurance"
+  ],
+  "riskLevel": "medium",
+  "schemaVersion": "1.0.0",
+  "scope": {
+    "excluded": [
+      "src/",
+      "tests/",
+      "tools/r19_cross_level/",
+      "tools/r20_evidence_feedback/",
+      "tools/r21_active_measurement/",
+      "tools/r22_measurement_adoption/",
+      "tools/r23_source_qualification/",
+      "experiments/exp-69-source-qualification/",
+      "evidence/source-qualification-20261019-r23/",
+      "tools/r24_trust_boundary/",
+      "experiments/exp-70-trust-boundary/",
+      "evidence/trust-boundary-20261019-r24/",
+      "tools/r25_fixedpoint_elision/",
+      "experiments/exp-71-fixedpoint-elision/",
+      "evidence/fixedpoint-elision-20261019-r25/",
+      "experiments/exp-72-contraction-warmstart/",
+      "tools/r26_contraction_warmstart/",
+      "evidence/contraction-warmstart-20261019-r26/",
+      "experiments/exp-73-finite-stop-envelope/",
+      "tools/r27_finite_stop_envelope/",
+      "evidence/finite-stop-envelope-20261019-r27/",
+      "experiments/exp-74-reuse-frontier/",
+      "tools/r28_reuse_frontier/",
+      "evidence/reuse-frontier-20261020-r28/",
+      "experiments/exp-75-research-direction/",
+      "tools/r29_research_direction/",
+      "evidence/research-direction-20261020-r29/",
+      "experiments/exp-76-spatial-sharing/",
+      "tools/r30_spatial_sharing/",
+      "evidence/spatial-sharing-20261020-r30/",
+      "experiments/exp-77-macro-control/",
+      "tools/r31_macro_control/",
+      "evidence/macro-control-20261020-r31/",
+      "experiments/exp-78-semantic-join/",
+      "tools/r32_semantic_join/",
+      "evidence/semantic-join-20261020-r32/",
+      "experiments/exp-79-typed-feedback/",
+      "tools/r33_typed_feedback/",
+      "evidence/typed-feedback-20261020-r33/",
+      "experiments/exp-80-feasible-state/",
+      "tools/r34_feasible_state/",
+      "evidence/feasible-state-20261020-r34/",
+      "experiments/exp-81-compositional-slot/",
+      "tools/r35_compositional_slot/",
+      "evidence/compositional-slot-20261020-r35/",
+      "experiments/exp-82-overlap-composition/",
+      "tools/r36_overlap_composition/",
+      "evidence/overlap-composition-20261020-r36/",
+      "experiments/exp-83-joint-tuple/",
+      "tools/r37_joint_tuple/",
+      "evidence/joint-tuple-20261020-r37/",
+      "experiments/exp-84-shared-witness/",
+      "tools/r38_shared_witness/",
+      "evidence/shared-witness-20261020-r38/",
+      "experiments/exp-85-z-query/",
+      "tools/r39_z_query/",
+      "evidence/z-query-20261020-r39/",
+      "experiments/exp-86-factor-query/",
+      "tools/r40_factor_query/",
+      "evidence/factor-query-20261020-r40/",
+      "experiments/exp-87-producer-profile/",
+      "tools/r41_producer_profile/",
+      "evidence/producer-profile-20261020-r41/",
+      "experiments/exp-88-coarse-profile/",
+      "tools/r42_coarse_profile/",
+      "evidence/coarse-profile-20261020-r42/",
+      "experiments/exp-89-exp-once/",
+      "tools/r43_exp_once/",
+      "evidence/exp-once-20261020-r43/",
+      "experiments/exp-90-codebook-invariance/",
+      "tools/r44_codebook_invariance/",
+      "evidence/codebook-invariance-20261020-r44/"
+    ],
+    "included": [
+      "experiments/exp-91-codebook-transfer-coverage/",
+      "tools/r45_codebook_transfer_coverage/",
+      "evidence/codebook-transfer-coverage-20261022-r45/"
+    ]
+  },
+  "taskId": "ai-codebook-transfer-coverage-r45",
+  "workUnits": [
+    {
+      "dependencies": [],
+      "id": "r45",
+      "objective": "R44 후속(R45/EXP-91): 실제 파이프라인에서 8개 토큰 전체와 64개 ordered 코드쌍을 모두 소비해 모든 128개 base에서 제한 대응 8/8 구별을 달성하고, 역할 64입력의 4개 Hamming 동치류 분해와 expr 6×4^3=384 전수 전이 및 feasible2/query2 극값 구간 경계(16+64)를 분리 검증한다. 학습·속도 우위·64^n 전체 열거 주장은 하지 않는다.",
+      "writeTargets": [
+        "experiments/exp-91-codebook-transfer-coverage/",
+        "tools/r45_codebook_transfer_coverage/",
+        "evidence/codebook-transfer-coverage-20261022-r45/"
+      ]
+    }
+  ]
+}

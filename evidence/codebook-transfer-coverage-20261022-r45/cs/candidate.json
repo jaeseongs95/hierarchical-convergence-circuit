@@ -1,0 +1,22 @@
+{
+  "files": [
+    {
+      "digest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path": "candidate/__init__.py"
+    },
+    {
+      "digest": "sha256:269db05ce0b2dc745cf5a8c114bb233987ed7b8f428c7dc1cd4961859703490e",
+      "path": "candidate/bootstrap.py"
+    },
+    {
+      "digest": "sha256:7ae575238d20d79128af4e328ea21e2a545a74b4bbbf1598845c9c3317297523",
+      "path": "candidate/probe.py"
+    },
+    {
+      "digest": "sha256:7ec7f9b0ac314dd9c4a78bb3df59b4c23a6217637fea8e0a53833e93c99ae28c",
+      "path": "candidate/verify.py"
+    }
+  ],
+  "schemaVersion": "1.0.0",
+  "scopeSummary": "R45 8-token / 64-pair full pipeline codebook coverage (8/8 restricted classes per base, 56 sources, 1024 native + 128 exact) and separated 4-class Hamming role partition (64) + exhaustive expr transfer (384) + extremal feasible2/query2 envelope (80). Original R35/R36 pipeline/guards/controller/trace unchanged. Authored encoding, not learning/speed/H03. 19016 settles / 3042560 max ticks with bounded storage/cost/raw verification."
+}

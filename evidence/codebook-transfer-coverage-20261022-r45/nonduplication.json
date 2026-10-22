@@ -1,0 +1,9 @@
+{
+  "direction": "experiments/exp-91-codebook-transfer-coverage/DELIBERATION.ko.md",
+  "prior": "R44 tested 8 bijections on 2 active tokens (collapsing to 6 restricted classes and 4 code pairs per map) and only role-stage adoption lookup. R45 exercises all 8 tokens and all 64 ordered code pairs in every codebook with 8/8 restricted classes on every base case, and separates 4-class Hamming role partition + 384 exhaustive expr transfer + 80 extremal feasible2/query2 envelope checks; not R31 learned macro cost or R43 micro-optimization.",
+  "source_pins": {
+    "experiments/exp-77-macro-control/RESULTS.ko.md": "f3d8d69f7c73325e01b46e35f5c188857e343838d0340ef02d4db76edf029f8e",
+    "experiments/exp-89-exp-once/RESULTS.ko.md": "f0cccfcb906ce3b0e4b1724a4b126bd30a8f53cffb4104cd50ecfddd7f40fb05",
+    "experiments/exp-90-codebook-invariance/RESULTS.ko.md": "ef87b118ceddb3edbdba93d4f39c9f9f0abae974b01b33861f58f872cb14289b"
+  }
+}
