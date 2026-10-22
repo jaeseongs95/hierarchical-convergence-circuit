@@ -1,0 +1,378 @@
+{
+  "axis_decisions": [
+    {
+      "axis": "Coverage",
+      "decision": "8개 어휘 토큰 전체(amber..coral, 코드 0..7)를 균등 소비하는 대칭 4-cohort 도메인 분할(생략 쌍 {5,6}, {3,4}, {1,2}, {0,7}; 48개 원천)과 16개 base(8 판별 마스크 삼중쌍 × 2 order) × 8개 코드북 = 128개 mapped context 및 3개 봉인 표현(native_joint, native_factor, native_compact) + exact_joint를 고정해 모든 base에서 제한 대응 8/8 구별(무변경 0/336), 모든 코드북의 d in {0,1,2,3} 실현, 상위 파이프라인의 16/16 ordered Hamming 쌍 실현을 달성한다.",
+      "evidence_claim_ids": [
+        "C1",
+        "C3"
+      ]
+    },
+    {
+      "axis": "TransferSufficiency",
+      "decision": "역할 64입력의 4개 Hamming 동치류 분해 -> role->pair 16개(4^2) 전수 전이(40,320개 bijection 전수 포괄) -> or0..4(121회)·triple(64회)·projection(or2 16 + or4 256 = 272회)·consume(pair 16 + feasible2 16 = 32회) 총 569회 6단계 연속 스칼라 전이 프로브를 분리 실행·검산하고, 비선형 코드북에서 연속 봉인 payload(payload_sha256)가 섭동될 때도 비역할 단계 tick 불변과 소비자 판정·정보 손실 경계(native_compact 96/640 unique->many 보류)가 보존되는지 검증한다.",
+      "evidence_claim_ids": [
+        "C2",
+        "C4"
+      ]
+    },
+    {
+      "axis": "BudgetAndNonDuplication",
+      "decision": "원천 48 + 6단계 전이 프로브 569 + 상위 파이프라인 38,272(native_joint 11,904 + native_factor 12,928 + native_compact 13,440) = 총 38,889회 물리 native settle을 worker=1, retry=0, 단계 240초/전체 600초 상한으로 AI Research SSH에서 1회 실행하며, preparation 단계에서 22개 합성 변조 거부 스위트를 사전 검증한다.",
+      "evidence_claim_ids": [
+        "C3",
+        "C4"
+      ]
+    }
+  ],
+  "case_brief": {
+    "assumptions": [
+      "공통 엔진(src/hcr/dynamics.py, model.py)과 기존 R37~R45 실행기(tools/r37..r45)는 수정하지 않으며, R39/R40 runtime.execute를 직접 재사용한다."
+    ],
+    "constraints": [
+      "현재 엔진(src/hcr/)·과거 원자료 보존 및 신규 R46 세 경로만 변경",
+      "지정 AI Research SSH(ssh-ai-mcp)·worker1/retry0·운영상한 동결·동결 후 재실행/튜닝 금지",
+      "실제 다변수 관계형 파이프라인에서 8개 토큰 전체(보조 슬롯 6,7 포함)와 16개 ordered Hamming 거리 쌍을 소비하고 16개 base 모두 제한 대응 8/8 구별 달성",
+      "6단계 전이 프로브(role 64 -> pair 16 전수 -> or0..4 121 -> triple 64 -> projection 272 -> consume 32 = 569회)와 봉인 연속 payload의 코드북 섭동 하 소비자 불변성을 분리 검산하고 64^n 전체 열거로 과장하지 않음",
+      "학습0·세계측정0·R31 학습비용 음성·R40 비용 채택 보류·R43 미세최적화 미채택 보존 및 preparation 단계의 합성 변조 사전 검증"
+    ],
+    "decision": "R45/EXP-91 이후 비중복 후속 연구 R46/EXP-92의 질문·다변수 관계형 봉인 payload 파이프라인의 8토큰/16 Hamming쌍 coverage·6단계 유한 전이 충분조건 및 예산 확정",
+    "facts": [
+      "R44와 R45는 단일 변수 unary AST 파이프라인(r35/r36, 깊이 3)에서만 코드북 불변성과 전이 조건을 검증했다.",
+      "R37~R43의 다변수 관계형 파이프라인(r37/r38/r39/r40)은 8토큰 어휘 중 6개(코드 0..5)만 사용하고 aux6, aux7(코드 6,7)을 한 번도 소비하지 않았으며, 모든 도메인 X={0,1}, Y={2,3}, Z={4,5}의 내부 XOR이 1로 고정되어 불일치 역할 비교의 100%가 Hamming 거리 d=1에서만 발생했고 pair 게이트는 16개 (d1,d2) 조합 중 4개({0,1}^2)만 경험했다.",
+      "r39/r40에서 생산자(produce)는 role -> pair -> or0..4 -> triple/projection을 거쳐 연속 부동소수점 배열(slices 8개, factors 12개, xy/z 6개)을 payload_sha256으로 봉인해 어휘/도메인 접근이 차단된 소비자(consume)에게 전달하므로, 비등거리 코드북(cnot01, cnot12, cnot20, cnot_chain, swap01)이 d in {1,2,3}을 바꾸면 봉인된 연속 payload 값과 payload_sha256 자체가 코드북마다 달라진다.",
+      "R45에서는 preparation()이 verify.py의 합성 변조 스위트를 사전 실행하지 않아 서버 audit 단계에서 어휘 밖 키 조회 KeyError가 발생했으므로, R46에서는 preparation()에서 모의 번들로 22개 변조 거부를 사전 검증해야 한다."
+    ],
+    "failure_modes": [
+      "고정 도메인 X=(0,1), Y=(2,3), Z=(4,5)를 그대로 써서 cnot12/cnot20/swap01에서 Hamming 변화가 0이 되거나 {0,1} 동시 생략으로 swap01과 identity의 제한 사상이 축약되는 실패",
+      "r39(order=1 역순 슬롯)와 r40(order=0 정규화 슬롯)의 질의 인덱싱 차이를 정렬하지 않아 order=1에서 허위 불일치가 발생하는 실패",
+      "비선형 코드북 간에 원시 부동소수 payload_sha256 동일성을 잘못 요구하거나 preparation에서 변조 거부 스위트를 사전 실행하지 않는 실패"
+    ],
+    "success_criteria": [
+      "모든 16개 base에서 제한 대응 8/8 구별(무변경 0/336 native 쌍), 8개 토큰 전체 균등 참여(각 3/4 cohort), 코드북별 d in {0,1,2,3} 전체 실현 및 상위 파이프라인 16/16 ordered Hamming 쌍 소비 확인",
+      "569회 6단계 전이 프로브(role 64 + pair 16 + or0..4 121 + triple 64 + projection 272 + consume 32)와 384 native + 128 exact(2,560 질의) 전수 검산, 비역할 단계 tick 불변 및 native_compact 96/640 조건부 보류 경계 보존 통과"
+    ],
+    "unknowns": [
+      "비등거리 코드북 섭동으로 봉인된 연속 payload(slices, factors, xy/z)의 부동소수점 값과 payload_sha256이 실제로 변할 때, 6단계 관계형 체인의 비역할 단계 tick 불변과 격리된 소비자의 질의 판정(native_joint/native_factor 640/640 정합 및 native_compact 96/640 조건부 unique->many 보류)이 오차 없이 보존되는지 여부"
+    ]
+  },
+  "consensus_proposal": {
+    "action": "R46 / EXP-92 (exp-92-relational-codebook-transfer) 동결 실행: 다변수 관계형 봉인 payload 파이프라인(r39/r40)의 8토큰·16 Hamming쌍 완전 coverage 및 6단계 연속 스칼라 전이 충분조건(569 settles) 분리 검증",
+    "axis_alignment": [
+      {
+        "axis": "Coverage",
+        "decision_ref": "Coverage"
+      },
+      {
+        "axis": "TransferSufficiency",
+        "decision_ref": "TransferSufficiency"
+      },
+      {
+        "axis": "BudgetAndNonDuplication",
+        "decision_ref": "BudgetAndNonDuplication"
+      }
+    ],
+    "conditions": [
+      "실제 서버 실행 및 저장 원자료 재생 검산에서 모든 의미·전이·봉인·보류 경계가 통과해야 채택하며, 실패 시 튜닝·재실행 없이 음성 결과로 보존한다."
+    ],
+    "decision_owner": null,
+    "no_consensus_reason": null,
+    "remaining_options": [
+      "학습 산출물과 실제 원계산 대체를 연결하는 후속 과제는 R31 음성 대조를 보존하는 별도 계약으로 분리한다."
+    ],
+    "satisfied_constraints": [
+      "현재 엔진(src/hcr/)·과거 원자료 보존 및 신규 R46 세 경로만 변경",
+      "지정 AI Research SSH(ssh-ai-mcp)·worker1/retry0·운영상한 동결·동결 후 재실행/튜닝 금지",
+      "실제 다변수 관계형 파이프라인에서 8개 토큰 전체(보조 슬롯 6,7 포함)와 16개 ordered Hamming 거리 쌍을 소비하고 16개 base 모두 제한 대응 8/8 구별 달성",
+      "6단계 전이 프로브(role 64 -> pair 16 전수 -> or0..4 121 -> triple 64 -> projection 272 -> consume 32 = 569회)와 봉인 연속 payload의 코드북 섭동 하 소비자 불변성을 분리 검산하고 64^n 전체 열거로 과장하지 않음",
+      "학습0·세계측정0·R31 학습비용 음성·R40 비용 채택 보류·R43 미세최적화 미채택 보존 및 preparation 단계의 합성 변조 사전 검증"
+    ],
+    "status": "conditional_consensus",
+    "supported_by_verified_claims": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "unresolved_dissent": []
+  },
+  "constraints": [
+    "현재 엔진(src/hcr/)·과거 원자료 보존 및 신규 R46 세 경로만 변경",
+    "지정 AI Research SSH(ssh-ai-mcp)·worker1/retry0·운영상한 동결·동결 후 재실행/튜닝 금지",
+    "실제 다변수 관계형 파이프라인에서 8개 토큰 전체(보조 슬롯 6,7 포함)와 16개 ordered Hamming 거리 쌍을 소비하고 16개 base 모두 제한 대응 8/8 구별 달성",
+    "6단계 전이 프로브(role 64 -> pair 16 전수 -> or0..4 121 -> triple 64 -> projection 272 -> consume 32 = 569회)와 봉인 연속 payload의 코드북 섭동 하 소비자 불변성을 분리 검산하고 64^n 전체 열거로 과장하지 않음",
+    "학습0·세계측정0·R31 학습비용 음성·R40 비용 채택 보류·R43 미세최적화 미채택 보존 및 preparation 단계의 합성 변조 사전 검증"
+  ],
+  "cross_examination": {
+    "coverage": [
+      {
+        "item_id": "T1",
+        "reviewer_ids": [
+          "3dbc1505-07f0-4951-af89-5025d79abc46"
+        ]
+      },
+      {
+        "item_id": "T2",
+        "reviewer_ids": [
+          "004d994e-2af6-4b57-b0b2-a0f816b88df7"
+        ]
+      }
+    ],
+    "decision": "run",
+    "followups": [
+      {
+        "item_ids": [
+          "T1",
+          "T2"
+        ],
+        "reviewer_id": "3dbc1505-07f0-4951-af89-5025d79abc46"
+      },
+      {
+        "item_ids": [
+          "T1",
+          "T2"
+        ],
+        "reviewer_id": "004d994e-2af6-4b57-b0b2-a0f816b88df7"
+      }
+    ],
+    "reason": "T1은 2-cohort와 4-cohort 도메인 구성 중 swap01 섭동 및 16/16 Hamming 쌍·비둘기집 원리 경계를 검증하고, T2는 r39/r40 무수정 재사용 시 order=1 질의 슬롯 정렬과 or0..4/or4(256) 569회 전이 프로브 및 사전 변조 게이트를 확정하기 위해 실행함.",
+    "selected_item_ids": [
+      "T1",
+      "T2"
+    ],
+    "trigger_items": [
+      {
+        "id": "T1",
+        "origin_reviewer": "004d994e-2af6-4b57-b0b2-a0f816b88df7"
+      },
+      {
+        "id": "T2",
+        "origin_reviewer": "3dbc1505-07f0-4951-af89-5025d79abc46"
+      }
+    ]
+  },
+  "issue_ledger": [
+    {
+      "available_evidence": [
+        "C1",
+        "C3"
+      ],
+      "issue_id": "I-RELATIONAL-4COHORT-8CLASS",
+      "rationale": "고정 도메인(0,1),(2,3),(4,5)이나 단순 2-cohort는 16/16 Hamming 쌍을 덮지 못하거나 X=(0,1)에서 swap01이 무섭동이 되므로, 생략 쌍이 {5,6},{3,4},{1,2},{0,7}로 분할되고 0과 1을 항상 다른 도메인에 분리하는 대칭 4-cohort를 채택해 8/8 제한 대응 구별과 16/16 Hamming 쌍을 달성함.",
+      "required_evidence": [
+        "16 base active token & 8-codebook restricted map verification"
+      ],
+      "status": "CONFIRMED"
+    },
+    {
+      "available_evidence": [
+        "C2",
+        "C4"
+      ],
+      "issue_id": "I-SEALED-PAYLOAD-6STAGE-TRANSFER",
+      "rationale": "r39/r40 무수정 호출 시 order in {0,1}에서 r39(slot=3-i)와 r40(slot=i)의 canonical 질의 인덱스를 정렬하고, role(64)->pair(16)->or0..4(121)->triple(64)->projection(272)->consume(32) 총 569회 전이 프로브와 22개 합성 변조 사전 게이트를 결합해 봉인 payload 섭동 하 의미 불변성을 검증함.",
+      "required_evidence": [
+        "569 stage-transfer settles and 384 native + 128 exact saved audit"
+      ],
+      "status": "CONFIRMED"
+    }
+  ],
+  "material_claims": [
+    {
+      "id": "C1",
+      "provenance": [
+        {
+          "locator": "experiments/exp-85-z-query/frozen_spec.json",
+          "verification_note": "Coordinator directly verified lines 83-95 and 141-150 showing fixed domains (0,1),(2,3),(4,5) and unused aux6,aux7.",
+          "verification_status": "verified"
+        },
+        {
+          "locator": "tools/r37_joint_tuple/runtime.py",
+          "verification_note": "Coordinator directly verified validate() and membership() in lines 22-37 showing within-domain role comparisons only.",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "R37~R43의 다변수 관계형 파이프라인은 8토큰 어휘 중 6개(코드 0..5)만 사용하고 aux6, aux7(코드 6,7)을 소비하지 않았으며, 모든 도메인 내부 XOR이 1(0^1=2^3=4^5=1)로 고정되어 불일치 역할 비교의 100%가 Hamming 거리 d=1에서만 일어났고 pair 게이트는 16개 (d1,d2) 조합 중 4개({0,1}^2)만 경험했다."
+    },
+    {
+      "id": "C2",
+      "provenance": [
+        {
+          "locator": "tools/r39_z_query/runtime.py",
+          "verification_note": "Directly inspected produce() and consume() in lines 22-55.",
+          "verification_status": "verified"
+        },
+        {
+          "locator": "tools/r40_factor_query/runtime.py",
+          "verification_note": "Directly inspected produce() and consume() in lines 13-47.",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "r39(native_joint, native_compact)와 r40(native_factor)은 생산자(produce)가 role->pair->or0..4->triple/projection의 연속 state['goal'] 스칼라 배열을 payload_sha256으로 봉인해 어휘·도메인 접근이 차단된 소비자(consume)에게 전달하므로, 비등거리 코드북이 Hamming 거리를 바꾸면 봉인된 연속 payload 수치와 payload_sha256 자체가 코드북마다 달라진다."
+    },
+    {
+      "id": "C3",
+      "provenance": [
+        {
+          "locator": "tools/r38_shared_witness/runtime.py",
+          "verification_note": "Directly verified 6-token disjoint domain contract in lines 20-22.",
+          "verification_status": "verified"
+        },
+        {
+          "locator": "experiments/exp-91-codebook-transfer-coverage/frozen_spec.json",
+          "verification_note": "Directly verified the 8 3-bit codebooks and tested Cohort 0..3 properties.",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "생략 쌍이 {5,6},{3,4},{1,2},{0,7}인 대칭 4-cohort(C0: X=[0,2],Y=[1,4],Z=[3,7]; C1: X=[0,6],Y=[2,5],Z=[1,7]; C2: X=[0,7],Y=[5,6],Z=[3,4]; C3: X=[2,3],Y=[1,6],Z=[4,5])는 8개 토큰을 각 3/4 cohort에서 균등 소비하고, 모든 cohort에서 0과 1을 분리해 16개 base 전체에서 제한 대응 8/8 구별(무변경 0/336)과 코드북별 d in {0,1,2,3} 및 상위 파이프라인 16/16 ordered Hamming 쌍 소비를 보장한다."
+    },
+    {
+      "id": "C4",
+      "provenance": [
+        {
+          "locator": "tools/r39_z_query/probe.py",
+          "verification_note": "Directly verified query slot normalization and native call accounting in lines 40-75.",
+          "verification_status": "verified"
+        },
+        {
+          "locator": "tools/r45_codebook_transfer_coverage/verify.py",
+          "verification_note": "Directly verified mutation rejection logic and stage-transfer verification in lines 20-245.",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "role(64) -> pair(16 전수, 40,320개 bijection 포괄) -> or0..4(121) -> triple(64) -> projection(272) -> consume(32)의 569회 전이 프로브와 128 case × 3 native arm(38,272회) + 48회 원천 = 총 38,889회 물리 settle은 단일 SSH 실행 예산 안에서 6단계 관계형 파이프라인의 코드북 전이 충분조건과 정보 손실 경계를 완전 검증한다."
+    }
+  ],
+  "method_notes": [
+    "MEDIUM / degraded_ok 기본 경로로 2명의 격리된 blind reviewer(3dbc1505, 004d994e)와 각 1회 교차검토 후 Coordinator가 원자료 대조를 거쳐 통합함.",
+    "원시 reviewer 출력·내부 프롬프트·CoT는 저장하지 않으며 검증된 주장과 출처만 기록함."
+  ],
+  "observability": {
+    "tokens": "NOT_OBSERVABLE",
+    "tool_calls": "NOT_OBSERVABLE",
+    "wall_time": "NOT_OBSERVABLE",
+    "worker_count": 2
+  },
+  "panel_manifest": [
+    {
+      "actual_model": "NOT_OBSERVABLE",
+      "actual_reasoning": "NOT_OBSERVABLE",
+      "blind_round1": true,
+      "classification": "reviewer",
+      "context_isolated": true,
+      "fallback_reason": "Terra preference not advertised by host; inherited host configuration used.",
+      "id": "3dbc1505-07f0-4951-af89-5025d79abc46",
+      "instantiated": true,
+      "is_judge": false,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ],
+      "requested_model": "inherit",
+      "requested_reasoning": "inherit",
+      "role": "Relational Semantics Reviewer",
+      "status": "completed"
+    },
+    {
+      "actual_model": "NOT_OBSERVABLE",
+      "actual_reasoning": "NOT_OBSERVABLE",
+      "blind_round1": true,
+      "classification": "reviewer",
+      "context_isolated": true,
+      "fallback_reason": "Terra preference not advertised by host; inherited host configuration used.",
+      "id": "004d994e-2af6-4b57-b0b2-a0f816b88df7",
+      "instantiated": true,
+      "is_judge": false,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ],
+      "requested_model": "inherit",
+      "requested_reasoning": "inherit",
+      "role": "Contract and Budget Reviewer",
+      "status": "completed"
+    }
+  ],
+  "preflight": {
+    "missing_capabilities": [],
+    "observed_capabilities": [
+      "two blind isolated reviewers",
+      "local primary evidence access",
+      "claim cross-examination"
+    ],
+    "required_capabilities": [
+      "two blind isolated reviewers",
+      "local primary evidence access",
+      "claim cross-examination"
+    ],
+    "supported_models_reasoning": "NOT_OBSERVABLE"
+  },
+  "required_constraints": [
+    "현재 엔진(src/hcr/)·과거 원자료 보존 및 신규 R46 세 경로만 변경",
+    "지정 AI Research SSH(ssh-ai-mcp)·worker1/retry0·운영상한 동결·동결 후 재실행/튜닝 금지",
+    "실제 다변수 관계형 파이프라인에서 8개 토큰 전체(보조 슬롯 6,7 포함)와 16개 ordered Hamming 거리 쌍을 소비하고 16개 base 모두 제한 대응 8/8 구별 달성",
+    "6단계 전이 프로브(role 64 -> pair 16 전수 -> or0..4 121 -> triple 64 -> projection 272 -> consume 32 = 569회)와 봉인 연속 payload의 코드북 섭동 하 소비자 불변성을 분리 검산하고 64^n 전체 열거로 과장하지 않음",
+    "학습0·세계측정0·R31 학습비용 음성·R40 비용 채택 보류·R43 미세최적화 미채택 보존 및 preparation 단계의 합성 변조 사전 검증"
+  ],
+  "run": {
+    "assurance": "partially_independent",
+    "candidate_skill_sha256": null,
+    "capability_shortfall": false,
+    "completed_worker_ids": [
+      "3dbc1505-07f0-4951-af89-5025d79abc46",
+      "004d994e-2af6-4b57-b0b2-a0f816b88df7"
+    ],
+    "failures": [],
+    "fresh_judge_id": null,
+    "id": "R46-direction-20261022",
+    "judge_fallback": null,
+    "redeliberations": [],
+    "reused_worker_ids": [],
+    "specialist_additions": [],
+    "stage": "MEDIUM",
+    "strict": false,
+    "worker_cap": 8,
+    "workers": [
+      {
+        "actual_model": "NOT_OBSERVABLE",
+        "actual_reasoning": "NOT_OBSERVABLE",
+        "blind_round1": true,
+        "classification": "reviewer",
+        "context_isolated": true,
+        "fallback_reason": "Terra preference not advertised by host; inherited host configuration used.",
+        "id": "3dbc1505-07f0-4951-af89-5025d79abc46",
+        "instantiated": true,
+        "is_judge": false,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ],
+        "requested_model": "inherit",
+        "requested_reasoning": "inherit",
+        "role": "Relational Semantics Reviewer",
+        "status": "completed"
+      },
+      {
+        "actual_model": "NOT_OBSERVABLE",
+        "actual_reasoning": "NOT_OBSERVABLE",
+        "blind_round1": true,
+        "classification": "reviewer",
+        "context_isolated": true,
+        "fallback_reason": "Terra preference not advertised by host; inherited host configuration used.",
+        "id": "004d994e-2af6-4b57-b0b2-a0f816b88df7",
+        "instantiated": true,
+        "is_judge": false,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ],
+        "requested_model": "inherit",
+        "requested_reasoning": "inherit",
+        "role": "Contract and Budget Reviewer",
+        "status": "completed"
+      }
+    ]
+  },
+  "schema_version": "1.0",
+  "skill_version": "1.0.0"
+}

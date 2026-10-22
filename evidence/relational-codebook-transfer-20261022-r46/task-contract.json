@@ -1,0 +1,147 @@
+{
+  "acceptanceCriteria": [
+    "[AC-001] MEDIUM 방향 토론(DELIBERATION.ko.md, decision-record.json)으로 R37~R43 관계형 파이프라인의 6토큰/d=1 축약 한계와 봉인 연속 payload의 6단계 전이 질문을 분리하고, 48원천·16base(대칭 4-cohort, 제한대응 8/8)·569회 6단계 전이 프로브·128case×4arm(384 native + 128 exact)·채택조건을 실행 전 동결한다.",
+    "[AC-002] AI Research SSH(ssh-ai-mcp)에서 48원천+569전이프로브+38,272상위파이프라인=38,889 settles와 128 exact(총 512 평가, 2,560 질의)를 worker1/retry0로 1회 실행한다. local native/학습/세계측정 0이다.",
+    "[AC-003] 원래 Program/Config/initial 0.5/guard/controller/trace/Cost와 R39/R40 runtime.execute를 무수정 유지한다. 16개 모든 base에서 제한대응 8/8(무변경 0/336 native 쌍), 8개 토큰 전체 균등 소비(각 3/4 cohort), 코드북당 d in {0,1,2,3} 전수 실현 및 상위 파이프라인 16/16 ordered Hamming 쌍 실현, 336짝(1,680 질의짝) 의미 불변성과 native_compact 96/640 조건부 보류 경계 보존을 검산한다.",
+    "[AC-004] 역할 64입력의 4개 Hamming 동치류 분해, role->pair 16(4^2) 전수 전이(40,320 bijection 전수 포괄), or0..4(121)·triple(64)·projection(272)·consume(32) 극값 경계 및 비역할 단계 tick 완전 불변(차이 0)을 분리 검산하고 64^n 전체 열거·학습·속도·H03로 확대하지 않는다.",
+    "[AC-005] 신규 세 경로 scope/index 확인 후 로컬 브랜치 커밋·main FF 병합·작업 브랜치 삭제·SHA/clean/병합 후 bytes 및 continuity를 확인한다."
+  ],
+  "authorization": {
+    "allowedActions": [
+      "R46 다변수 관계형 봉인 상태 코드북 전이 및 6단계 충분조건 연구 구현·실험·결과 문서 작성",
+      "제한된 AI Research SSH 후속 실험",
+      "서명커밋과 로컬 main 병합",
+      "같은 연구 저장소 원격 push"
+    ],
+    "approvalRequired": [],
+    "prohibitedActions": [
+      "기존 core 및 과거 연구 변경",
+      "새 의존성·유료자원·서비스·권한 확대",
+      "외부 peer 메시지 전송"
+    ]
+  },
+  "constraints": [
+    "신규 세 경로만 변경; core/과거 연구/사용자 변경 보존",
+    "8 maps: identity, bit_reverse, xor7, cnot01, cnot12, cnot20, cnot_chain, swap01; 대칭 4-cohort 48원천과 16 base×8 maps=128 case × 4 arm(native_joint, native_factor, native_compact, exact_joint = 384 native + 128 exact)",
+    "모든 16개 base에서 활성 6토큰 집합이 8개 코드북을 8/8 구별(mapped_pairs_actual_code_unchanged=0, changed=336)하고 8개 토큰 전체와 16/16 ordered Hamming 쌍 및 모든 코드북의 d in {0,1,2,3}을 소비",
+    "role(64)->pair(16 전수)->or0..4(121)->triple(64)->projection(272)->consume(32) 총 569회 6단계 전이 프로브와 비역할 단계 tick 불변을 분리 검산; 64^n 전체 열거 과장 금지",
+    "semantic quality/role/pair/membership/triple/projection/query_input/feasible 및 봉인 불변·전이 경계 모두 통과해야 유한 채택; 22종 합성 변조를 preparation에서 사전 검증 후 감사에서 거부; 동결 후 재실행/튜닝 0",
+    "worker1/retry0/stage240/total600/raw128MiB/cache128MiB/record128KiB/unique<6000/LRU18/AS512MiB; 운영 중단선이며 미래 보장 아님",
+    "서버 전체 phase/parent/launcher 및 record core/storage 비용 기록; 속도 비교·학습 효율 채택선 없음, 저장만 공유하고 모든 38,889회 native 계산 실제 실행",
+    "authored 인코딩 연구; 학습 codebook/학습 효율/H03/general AI/production 도입 주장 금지; R31·R40·R43 음성/보류 대조 보존",
+    "타 세션 트랜스크립트 열람 금지, JEV 업무 중복 인수 금지, 외부 peer 메시지 전송 금지"
+  ],
+  "decision": {
+    "complexity": "complex",
+    "hasConflicts": false
+  },
+  "objective": "R45 후속(R46/EXP-92): 다변수 관계형 봉인 상태 파이프라인(r39/r40)에서 대칭 4-cohort(48원천)로 8개 토큰 전체(보조 슬롯 6,7 포함)와 16개 ordered Hamming 거리 쌍을 모두 소비해 모든 16개 base에서 제한 대응 8/8 구별을 달성하고, 6단계 연속 스칼라 전이 프로브(role 64 + pair 16 전수 + or0..4 121 + triple 64 + projection 272 + consume 32 = 569회) 및 봉인 연속 payload 섭동 하 비역할 단계 tick 불변과 소비자 판정·보류 경계(native_compact 96/640 unique->many) 보존을 분리 검증한다. 학습·속도 우위·64^n 전체 열거 주장은 하지 않는다.",
+  "orchestration": {
+    "mcpAvailable": true,
+    "requested": false
+  },
+  "requiredCapabilities": [
+    "minimal-implementation",
+    "cs-implementation-review",
+    "change-scope-assurance"
+  ],
+  "riskLevel": "medium",
+  "schemaVersion": "1.0.0",
+  "scope": {
+    "excluded": [
+      "src/",
+      "tests/",
+      "tools/r19_cross_level/",
+      "tools/r20_evidence_feedback/",
+      "tools/r21_active_measurement/",
+      "tools/r22_measurement_adoption/",
+      "tools/r23_source_qualification/",
+      "experiments/exp-69-source-qualification/",
+      "evidence/source-qualification-20261019-r23/",
+      "tools/r24_trust_boundary/",
+      "experiments/exp-70-trust-boundary/",
+      "evidence/trust-boundary-20261019-r24/",
+      "tools/r25_fixedpoint_elision/",
+      "experiments/exp-71-fixedpoint-elision/",
+      "evidence/fixedpoint-elision-20261019-r25/",
+      "experiments/exp-72-contraction-warmstart/",
+      "tools/r26_contraction_warmstart/",
+      "evidence/contraction-warmstart-20261019-r26/",
+      "experiments/exp-73-finite-stop-envelope/",
+      "tools/r27_finite_stop_envelope/",
+      "evidence/finite-stop-envelope-20261019-r27/",
+      "experiments/exp-74-reuse-frontier/",
+      "tools/r28_reuse_frontier/",
+      "evidence/reuse-frontier-20261020-r28/",
+      "experiments/exp-75-research-direction/",
+      "tools/r29_research_direction/",
+      "evidence/research-direction-20261020-r29/",
+      "experiments/exp-76-spatial-sharing/",
+      "tools/r30_spatial_sharing/",
+      "evidence/spatial-sharing-20261020-r30/",
+      "experiments/exp-77-macro-control/",
+      "tools/r31_macro_control/",
+      "evidence/macro-control-20261020-r31/",
+      "experiments/exp-78-semantic-join/",
+      "tools/r32_semantic_join/",
+      "evidence/semantic-join-20261020-r32/",
+      "experiments/exp-79-typed-feedback/",
+      "tools/r33_typed_feedback/",
+      "evidence/typed-feedback-20261020-r33/",
+      "experiments/exp-80-feasible-state/",
+      "tools/r34_feasible_state/",
+      "evidence/feasible-state-20261020-r34/",
+      "experiments/exp-81-compositional-slot/",
+      "tools/r35_compositional_slot/",
+      "evidence/compositional-slot-20261020-r35/",
+      "experiments/exp-82-overlap-composition/",
+      "tools/r36_overlap_composition/",
+      "evidence/overlap-composition-20261020-r36/",
+      "experiments/exp-83-joint-tuple/",
+      "tools/r37_joint_tuple/",
+      "evidence/joint-tuple-20261020-r37/",
+      "experiments/exp-84-shared-witness/",
+      "tools/r38_shared_witness/",
+      "evidence/shared-witness-20261020-r38/",
+      "experiments/exp-85-z-query/",
+      "tools/r39_z_query/",
+      "evidence/z-query-20261020-r39/",
+      "experiments/exp-86-factor-query/",
+      "tools/r40_factor_query/",
+      "evidence/factor-query-20261020-r40/",
+      "experiments/exp-87-producer-profile/",
+      "tools/r41_producer_profile/",
+      "evidence/producer-profile-20261020-r41/",
+      "experiments/exp-88-coarse-profile/",
+      "tools/r42_coarse_profile/",
+      "evidence/coarse-profile-20261020-r42/",
+      "experiments/exp-89-exp-once/",
+      "tools/r43_exp_once/",
+      "evidence/exp-once-20261020-r43/",
+      "experiments/exp-90-codebook-invariance/",
+      "tools/r44_codebook_invariance/",
+      "evidence/codebook-invariance-20261020-r44/",
+      "experiments/exp-91-codebook-transfer-coverage/",
+      "tools/r45_codebook_transfer_coverage/",
+      "evidence/codebook-transfer-coverage-20261022-r45/"
+    ],
+    "included": [
+      "experiments/exp-92-relational-codebook-transfer/",
+      "tools/r46_relational_codebook_transfer/",
+      "evidence/relational-codebook-transfer-20261022-r46/"
+    ]
+  },
+  "taskId": "ai-relational-codebook-transfer-r46",
+  "workUnits": [
+    {
+      "dependencies": [],
+      "id": "r46",
+      "objective": "R45 후속(R46/EXP-92): 다변수 관계형 봉인 상태 파이프라인(r39/r40)에서 대칭 4-cohort(48원천)로 8개 토큰 전체(보조 슬롯 6,7 포함)와 16개 ordered Hamming 거리 쌍을 모두 소비해 모든 16개 base에서 제한 대응 8/8 구별을 달성하고, 6단계 연속 스칼라 전이 프로브(role 64 + pair 16 전수 + or0..4 121 + triple 64 + projection 272 + consume 32 = 569회) 및 봉인 연속 payload 섭동 하 비역할 단계 tick 불변과 소비자 판정·보류 경계(native_compact 96/640 unique->many) 보존을 분리 검증한다. 학습·속도 우위·64^n 전체 열거 주장은 하지 않는다.",
+      "writeTargets": [
+        "experiments/exp-92-relational-codebook-transfer/",
+        "tools/r46_relational_codebook_transfer/",
+        "evidence/relational-codebook-transfer-20261022-r46/"
+      ]
+    }
+  ]
+}

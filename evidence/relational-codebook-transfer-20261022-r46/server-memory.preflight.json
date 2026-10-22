@@ -1,0 +1,10 @@
+{
+  "bytes": {
+    "MemAvailable": 3276414976,
+    "MemTotal": 3974340608,
+    "SwapFree": 0,
+    "SwapTotal": 0
+  },
+  "disk_available_bytes": 160614875136,
+  "point_observation_not_guarantee": true
+}

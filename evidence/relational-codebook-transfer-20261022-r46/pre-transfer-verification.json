@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "archive_sha256": "8cb96c20ea208147da046c1498ea6b869927be3f5369a8aa97660c4a84de05ef",
+  "bytes": 633612,
+  "source_files": 160,
+  "paths_expected_only": true,
+  "no_git_aws_ssh_env_or_credential_named_entries": true,
+  "not_a_secret_scan_or_permission_grant": true,
+  "all_archive_source_bytes_match_local": true,
+  "all_python_ast": true,
+  "local_native_calls": 0,
+  "remote_zip": "/home/mcpops/hcc-relational-codebook-transfer-source-20261022-r46.zip",
+  "remote_root": "/home/mcpops/hcc-relational-codebook-transfer-20261022-r46"
+}

@@ -1,0 +1,21 @@
+{
+  "canonical_cache_bytes": 134217728,
+  "child_address_space_bytes": 536870912,
+  "child_file_bytes": 8388608,
+  "learning": 0,
+  "maximum_logical_ticks": 6222240,
+  "maximum_measurement_requests": 0,
+  "maximum_native_settle_calls": 38889,
+  "maximum_unique_trace_records": 6000,
+  "parent_address_space_bytes": 536870912,
+  "parent_file_bytes": 136314880,
+  "physical_native_settle_calls": 38889,
+  "raw_bytes": 134217728,
+  "reason": "R39 (6360 settles in 10.38s) + R40 (85848 settles in 143.5s) + R45 (19016 settles in 58.82s). R46 executes 48 sources + 569 stage-transfer settles (role 64 + pair 16 + or0..4 121 + triple 64 + projection 272 + consume 32) + 38272 upper relational pipeline settles (128 cases across native_joint 11904, native_factor 12928, native_compact 13440) = 38889 physical native settles (max ticks 38889*160=6222240). 240s stage / 600s total conservative stop boundaries, not forecast. Raw/cache/AS caps independently enforced.",
+  "record_encoded_cache_max_bytes": 131072,
+  "retry": 0,
+  "stage_seconds": 240,
+  "total_seconds": 600,
+  "worker": 1,
+  "world_measurement": 0
+}

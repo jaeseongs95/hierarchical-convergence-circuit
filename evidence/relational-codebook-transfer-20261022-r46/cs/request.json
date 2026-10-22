@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "1.0.0",
+  "requestId": "CS-R46",
+  "mode": "derive",
+  "objective": "Verify 8-token / 16-Hamming-pair relational sealed-payload codebook coverage (8/8 restricted classes per base) and separate 6-stage continuous transfer probe (569 settles) across r39/r40",
+  "sourceSnapshotDigest": "sha256:3905930d6176c2cca25c582470eb97b0e95de32b2cc63af85a73a960c535c1ff",
+  "sourceRefs": [
+    {
+      "id": "SRC-CORE",
+      "path": "source/hypothesis.md",
+      "digest": "sha256:128cfa23b929391fac91594cb9fe55e3236074f9d72dec342fce72ce6a07484f"
+    },
+    {
+      "id": "SRC-R32",
+      "path": "source/r33-runtime.py",
+      "digest": "sha256:95820d0fcbf48290f677e9a995c7a3a4a6261a7fb5d2b256b59c998805a6a5d9"
+    },
+    {
+      "id": "SRC-R19",
+      "path": "source/r19-probe.py",
+      "digest": "sha256:bb0159ba0c50505fc148322e0d0a17d53c184a0bdc7bed21b393120971eb5630"
+    },
+    {
+      "id": "SRC-RESULT",
+      "path": "source/r45-results.md",
+      "digest": "sha256:bde20ae284eaa99d9d87e8ff47013ca3e160c13cf746b36ce99f29de345a411a"
+    },
+    {
+      "id": "SRC-R37",
+      "path": "source/r37-runtime.py",
+      "digest": "sha256:3cabd0c0c61393c2d3356981dd1c7eaf0f48e228c3bf5d8e05d558b1fb6a66af"
+    },
+    {
+      "id": "SRC-R38",
+      "path": "source/r38-runtime.py",
+      "digest": "sha256:7036dc4c0dae4391e31999dffce8b3e2f59b47e3060b5685b254e310cf04aa26"
+    },
+    {
+      "id": "SRC-R39",
+      "path": "source/r39-runtime.py",
+      "digest": "sha256:5b94df4191ff8abb6dad30591613f6740ce1e1a2d181a719e105c8b7cedb3e1a"
+    },
+    {
+      "id": "SRC-R40",
+      "path": "source/r40-runtime.py",
+      "digest": "sha256:aa4d7d44da2ddc2da70f44db940294ac1562477ffb1fc2c0059ff2a3996c8d34"
+    },
+    {
+      "id": "SRC-KERNEL",
+      "path": "source/dynamics.py",
+      "digest": "sha256:a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc"
+    },
+    {
+      "id": "SRC-BUDGET",
+      "path": "source/budget.json",
+      "digest": "sha256:8f01f9a4b7484bc3915cfa65f7b061d03ffacb56906631b9dd2e97887690d986"
+    },
+    {
+      "id": "SRC-DIRECTION",
+      "path": "source/direction.json",
+      "digest": "sha256:3d8495b51d5a3e9bb4932211591c649900fb299cf7ca3c7f84f4e98fdef6ee9c"
+    }
+  ],
+  "operationalFacts": [
+    {
+      "id": "FACT-GAP",
+      "statement": "R37-R43 relational pipelines used only 6 of 8 tokens (omitting codes 6,7) and fixed intra-domain XORs to 1 (0^1=2^3=4^5=1), so 100% of mismatch role comparisons occurred at Hamming distance d=1 and pair gates only saw 4 of 16 (d1,d2) pairs ({0,1}^2).",
+      "evidenceRefs": [
+        "SRC-RESULT",
+        "SRC-DIRECTION",
+        "SRC-R37",
+        "SRC-R38"
+      ]
+    },
+    {
+      "id": "FACT-KERNEL",
+      "statement": "In r39/r40, produce() seals continuous floating-point arrays (slices, factors, xy/z) with payload_sha256 before isolated consume(). Symmetric 4-cohort domains (omitting {5,6},{3,4},{1,2},{0,7}) activate all 8 tokens, induce 8/8 distinct restricted maps per base, and expose all 16/16 Hamming pairs while reusing unmodified r39/r40 runtime.execute.",
+      "evidenceRefs": [
+        "SRC-R37",
+        "SRC-R38",
+        "SRC-R39",
+        "SRC-R40",
+        "SRC-R32",
+        "SRC-KERNEL"
+      ]
+    },
+    {
+      "id": "FACT-BUDGET",
+      "statement": "48 fresh lower sources + 569 6-stage transfer probe settles (role 64 + pair 16 + or0..4 121 + triple 64 + projection 272 + consume 32) + 128 cases across 3 native arms (38272 settles) = 38889 total physical native settles (+ 128 exact). 600s total / 240s stage / raw 128MiB / cache 128MiB / AS 512MiB / LRU 18 / worker 1 / retry 0.",
+      "evidenceRefs": [
+        "SRC-BUDGET"
+      ]
+    }
+  ],
+  "existingContractRef": null
+}

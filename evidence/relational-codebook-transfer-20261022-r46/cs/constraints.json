@@ -1,0 +1,147 @@
+{
+  "schemaVersion": "1.0.0",
+  "reportId": "CS-R46-CONSTRAINTS-PREFREEZE",
+  "requestDigest": "sha256:49744ea5596eebfcbe4ec7190555bd9d5868087b6dc8b0c18a0172558515541f",
+  "sourceSnapshotDigest": "sha256:3905930d6176c2cca25c582470eb97b0e95de32b2cc63af85a73a960c535c1ff",
+  "knowledgePackVersion": "0.1.0",
+  "knowledgePackDigest": "sha256:d8351d9aabb433403830fcffc3a2f2438b6d428711c93b6ded9eff002468c3d1",
+  "draftUse": {
+    "allowed": false,
+    "basis": "Validated identity/reuse and matched measurement rules"
+  },
+  "applicability": "applicable",
+  "applicabilityReason": "8-token 4-cohort relational source routing, sealed continuous payload codebook perturbation, 6-stage Hamming transfer probe, and bounded 38889-settle execution require explicit identity and evidence accounting.",
+  "selectedRules": [
+    {
+      "ruleId": "ALG-KEY-004",
+      "ruleDigest": "sha256:db77383ecb5f41ef3af5cb60769edaea507cac5cb25e28b88f249e84a062ba2e",
+      "applicabilityReason": "Shared native 48-source reuse, 8-token 4-cohort domain routing, order-normalized query slot alignment between r39 and r40, and sealed payload immutability require full source/role/revision/config binding without host truth repair."
+    },
+    {
+      "ruleId": "PERF-MEASURE-001",
+      "ruleDigest": "sha256:ef11800e55663f1b719f62d3f812280fd6e56c6895eef3028b9db344a9d0a355",
+      "applicabilityReason": "Information-matched exact control and complete accounting of source, 6-stage transfer probe, upper relational pipeline, storage, audit, and seal costs without efficiency or R40 cost-adoption overclaims."
+    }
+  ],
+  "facts": [
+    {
+      "id": "FACT-GAP",
+      "statement": "R37-R43 relational pipelines used only 6 of 8 tokens (omitting codes 6,7) and fixed intra-domain XORs to 1 (0^1=2^3=4^5=1), so 100% of mismatch role comparisons occurred at Hamming distance d=1 and pair gates only saw 4 of 16 (d1,d2) pairs ({0,1}^2).",
+      "evidenceRefs": [
+        "SRC-RESULT",
+        "SRC-DIRECTION",
+        "SRC-R37",
+        "SRC-R38"
+      ]
+    },
+    {
+      "id": "FACT-KERNEL",
+      "statement": "In r39/r40, produce() seals continuous floating-point arrays (slices, factors, xy/z) with payload_sha256 before isolated consume(). Symmetric 4-cohort domains (omitting {5,6},{3,4},{1,2},{0,7}) activate all 8 tokens, induce 8/8 distinct restricted maps per base, and expose all 16/16 Hamming pairs while reusing unmodified r39/r40 runtime.execute.",
+      "evidenceRefs": [
+        "SRC-R37",
+        "SRC-R38",
+        "SRC-R39",
+        "SRC-R40",
+        "SRC-R32",
+        "SRC-KERNEL"
+      ]
+    },
+    {
+      "id": "FACT-BUDGET",
+      "statement": "48 fresh lower sources + 569 6-stage transfer probe settles (role 64 + pair 16 + or0..4 121 + triple 64 + projection 272 + consume 32) + 128 cases across 3 native arms (38272 settles) = 38889 total physical native settles (+ 128 exact). 600s total / 240s stage / raw 128MiB / cache 128MiB / AS 512MiB / LRU 18 / worker 1 / retry 0.",
+      "evidenceRefs": [
+        "SRC-BUDGET"
+      ]
+    }
+  ],
+  "assumptions": [],
+  "invariants": [
+    {
+      "id": "INV-BOUNDARY",
+      "statement": "Only token-to-code map, order-aligned query slots, and grounded 48-source 8-token 4-cohort inputs are supplied to unchanged r39/r40 execute; core/learner/AST/Config/initial 0.5/guards/controller/history/Cost are unchanged. Every base case must induce 8/8 distinct restricted maps (0 unchanged pairs), all 8 tokens must be balanced across 3/4 cohorts, and invalid maps or collapsed coverage reject.",
+      "scope": "R46 48 sources / 16 base (4 cohorts, 8/8 restricted classes, 16/16 Hamming pairs) / 569 6-stage transfer probe / 38889 settles",
+      "basisRefs": [
+        "FACT-GAP",
+        "FACT-KERNEL"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-SEMANTICS",
+      "statement": "64 role inputs partition into 4 Hamming classes d in {0,1,2,3}; 16 pair settles exhaust all 4^2 Hamming-pair drives for all 40320 bijections; or0..4(121), triple(64), projection(272), and consume(32) audit the 6-stage extremal scalar envelope without claiming 64^n enumeration. Across all 128 cases x 3 native arms + 128 exact (2560 queries, 336 paired comparisons), sealed payload immutability within each evaluation, non-role stage tick invariance across codebooks, 100% truth accuracy for native_joint/native_factor, and exact 96/640 conditional unique->many abstention boundary for native_compact are replayed from saved traces; 22 mutations are pre-verified in preparation and rejected in audit.",
+      "scope": "R46 48 sources / 16 base (4 cohorts, 8/8 restricted classes, 16/16 Hamming pairs) / 569 6-stage transfer probe / 38889 settles",
+      "basisRefs": [
+        "FACT-KERNEL",
+        "FACT-BUDGET"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-COST",
+      "statement": "38889 actual settles / max 6222240 ticks / fixed stage 240s total 600s / worker 1 retry 0 / raw 128MiB / cache 128MiB / AS 512MiB each / record 128KiB / LRU 18 / unique 6000. Full physical ref ledger and all phase/parent/launcher CPU and wall observed; storage-only dedup never skips computation; no speed or learning cost adoption claim. Direct size/SHA of all raw and source pins.",
+      "scope": "R46 48 sources / 16 base (4 cohorts, 8/8 restricted classes, 16/16 Hamming pairs) / 569 6-stage transfer probe / 38889 settles",
+      "basisRefs": [
+        "FACT-BUDGET"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "PERF-MEASURE-001"
+      ]
+    }
+  ],
+  "designChoices": [
+    {
+      "id": "CHOICE-RELATIONAL-4COHORT-TRANSFER",
+      "statement": "Use symmetric 4-cohort domains omitting {5,6},{3,4},{1,2},{0,7} across 48 grounded sources with unmodified r39/r40 execute across native_joint, native_factor, native_compact, and exact_joint, plus a 569-settle 6-stage transfer probe and 22-mutation pre-freeze check.",
+      "rationale": "Guarantees 8/8 restricted maps per base, balanced 8-token activation, all d in {0,1,2,3} per codebook, and 16/16 Hamming pairs while testing all three sealed payload schemas (slices, factors, xy/z) in 38889 physical settles.",
+      "basisRefs": [
+        "FACT-GAP",
+        "FACT-KERNEL",
+        "FACT-BUDGET"
+      ]
+    }
+  ],
+  "verificationObligations": [
+    {
+      "id": "OB-BOUNDARY",
+      "invariantIds": [
+        "INV-BOUNDARY"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "nonbijection/unknown token accepted; restricted map classes < 8; incomplete 8-token or 16-Hamming-pair coverage; AST/drive repair; source/role/config/seal drift; hidden oracle consumer",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-SEMANTICS",
+      "invariantIds": [
+        "INV-SEMANTICS"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "role Hamming classes not exact; pair 16 or 6-stage 569 transfer failure; 64^n overclaim; non-role stage ticks vary across codebooks; sealed payload mutated during consume; native_compact abstention boundary drift; any of 22 mutations accepted",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-COST",
+      "invariantIds": [
+        "INV-COST"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "uncapped cache/raw; missing physical calls; storage dedup counted as compute skipping; posthoc budget/gate or rerun; cost win claim without contract",
+      "requirementLevel": "required"
+    }
+  ],
+  "requiredCapabilities": [
+    "cs-constraint-derivation",
+    "cs-implementation-review"
+  ],
+  "verdict": "READY"
+}

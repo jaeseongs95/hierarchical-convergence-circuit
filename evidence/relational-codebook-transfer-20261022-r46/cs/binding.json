@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0.0",
+  "requestRef": {
+    "path": "request.json",
+    "digest": "sha256:17871fdfab426328d4153f908cffe6140327d4709b69e4fe883e6573f53dfa3e"
+  },
+  "requestDigest": "sha256:49744ea5596eebfcbe4ec7190555bd9d5868087b6dc8b0c18a0172558515541f",
+  "constraintReportRef": {
+    "path": "constraints.json",
+    "digest": "sha256:b357bc55329d746378481cc814d269d727ec93a5468de33ae39ba32926ac91e9"
+  },
+  "constraintReportDigest": "sha256:5b3430f19d19816441cb8bdc8f6f963d95c15aa4feba40532e68313cb05e594d",
+  "taskDigest": "sha256:d06b1de2212242d3408221583b0a794e4136dbd831c2a4ed5efc2568c8a05c75",
+  "knowledgePackVersion": "0.1.0",
+  "knowledgePackDigest": "sha256:d8351d9aabb433403830fcffc3a2f2438b6d428711c93b6ded9eff002468c3d1",
+  "policyId": "R46-LOCAL-CONSTRAINTS",
+  "policyVersion": "1.0.0",
+  "policyDigest": "sha256:4f2deea4a485d13b640487bd74fea93142ba9b02c9fd89397a6abe12e15cad9d",
+  "mode": "enforce",
+  "requiredObligationIds": [
+    "OB-BOUNDARY",
+    "OB-SEMANTICS",
+    "OB-COST"
+  ]
+}

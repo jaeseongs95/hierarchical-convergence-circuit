@@ -1,0 +1,12 @@
+{
+  "direction": "experiments/exp-92-relational-codebook-transfer/DELIBERATION.ko.md",
+  "prior": "R39 and R40 tested relational z-query and factor-query on 6 fixed tokens (aux6/aux7 unused, 100% mismatch Hamming distance d=1, only 4/16 Hamming pairs) under identity codebook only; R44 and R45 tested 8 codebooks on unary depth-3 AST (r35/r36) without relational pair/or/triple/projection stages or sealed continuous payload handoff. R46 activates all 8 tokens across 4 symmetric cohorts and 16/16 Hamming pairs in the depth-6 relational producer-consumer pipeline (r39/r40) across 8 codebooks, separating 6-stage transfer (569 settles) and continuous sealed-payload perturbation from consumer semantic invariance; not R31 learned macro cost or R43 micro-optimization.",
+  "source_pins": {
+    "experiments/exp-77-macro-control/RESULTS.ko.md": "f3d8d69f7c73325e01b46e35f5c188857e343838d0340ef02d4db76edf029f8e",
+    "experiments/exp-85-z-query/RESULTS.ko.md": "25c7acf8f6163bec638396c8c5ffa43402dcc05f57f435d267bd955f3e5f5525",
+    "experiments/exp-86-factor-query/RESULTS.ko.md": "ff44235352b0cdb576b15068fe4397ce30a43b5476f3b8dd02408a196bb7731d",
+    "experiments/exp-89-exp-once/RESULTS.ko.md": "f0cccfcb906ce3b0e4b1724a4b126bd30a8f53cffb4104cd50ecfddd7f40fb05",
+    "experiments/exp-90-codebook-invariance/RESULTS.ko.md": "ef87b118ceddb3edbdba93d4f39c9f9f0abae974b01b33861f58f872cb14289b",
+    "experiments/exp-91-codebook-transfer-coverage/RESULTS.ko.md": "bde20ae284eaa99d9d87e8ff47013ca3e160c13cf746b36ce99f29de345a411a"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "files": [
+    {
+      "digest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path": "candidate/__init__.py"
+    },
+    {
+      "digest": "sha256:2b469a91370f7a5b6eba7fd1c34098f19052effb861ac9d6f5714864efc38031",
+      "path": "candidate/bootstrap.py"
+    },
+    {
+      "digest": "sha256:c0d925b3fec2039eaf902d6ac660eba40d9e8cfd1fd11c4f85eaf2dd6200fd1e",
+      "path": "candidate/probe.py"
+    },
+    {
+      "digest": "sha256:afcb178056d551d45a4099e40aa7c2ac132dc416e15b35640b6f518f42f60759",
+      "path": "candidate/verify.py"
+    }
+  ],
+  "schemaVersion": "1.0.0",
+  "scopeSummary": "R46 8-token / 16-Hamming-pair relational sealed-payload codebook coverage (4 cohorts, 48 sources, 8/8 restricted classes per base, 128 cases x 4 arms = 384 native + 128 exact) and separated 6-stage continuous transfer probe (569 settles). Original R37-R40 pipeline/guards/controller/trace unchanged. Authored encoding, not learning/speed/H03. 38889 settles / 6222240 max ticks with bounded storage/cost/raw verification."
+}

@@ -1,0 +1,29 @@
+{
+  "approval_mode": "automatic",
+  "completion": {
+    "completed": true,
+    "evidence_bytes": 2393637,
+    "evidence_sha256": "f099b46acb8633ca71d51acb8a3408742dc234fb5bb9f3a81e43137239b0db1b",
+    "parent_process_cpu_seconds": 0.493110466,
+    "seconds_including_seal": 72.68406292700092,
+    "within_wall_limit": true
+  },
+  "decision": {
+    "commandNames": [
+      "python3"
+    ],
+    "decision": "execute",
+    "policyRevision": 8,
+    "reasonCode": "command_set",
+    "targetRevision": "4cab9f57b2fd6d81004278e51ea7918d2124972cc1ae968b1d463d3a7c80cd4e"
+  },
+  "known_status": "COMPLETED_ALL_THREE_STAGES_ZERO_EXIT_LOCAL_REPLAY_PASS",
+  "native_rerun": false,
+  "received_json": 975,
+  "received_nonempty_files": 975,
+  "request_id": "dafa939088cbc010b30953863c7d9be67a245e448b83081d",
+  "request_key": "r46-relational-codebook-20261022-8cb96c20ea20",
+  "target": "AI Research SSH default/aws-local",
+  "upload_job_id": "408b64409c185051c0306e63003f0b028d866ec7ced79e9f",
+  "upload_transfer_id": "bb7c6c5ad650a8f3c8da4b0878daad8d1614ca0df73141f9"
+}
