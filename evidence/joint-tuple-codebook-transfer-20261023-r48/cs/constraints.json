@@ -1,0 +1,147 @@
+{
+  "schemaVersion": "1.0.0",
+  "reportId": "CS-R48-CONSTRAINTS-PREFREEZE",
+  "requestDigest": "sha256:c75987fb48031cf467edefbf4ae4c08ca84246602bb4aeceb1b6a6b0ba657b6c",
+  "sourceSnapshotDigest": "sha256:16f9e4237198cc34db3f8f12e80660db9edccfe7b014d30b1138031710945b99",
+  "knowledgePackVersion": "0.1.0",
+  "knowledgePackDigest": "sha256:d8351d9aabb433403830fcffc3a2f2438b6d428711c93b6ded9eff002468c3d1",
+  "draftUse": {
+    "allowed": false,
+    "basis": "Validated identity/reuse and matched measurement rules"
+  },
+  "applicability": "applicable",
+  "applicabilityReason": "Relational 4-tuple sealed-binding routing, 8-codebook invariance, and 33753-settle execution require explicit identity and evidence accounting.",
+  "selectedRules": [
+    {
+      "ruleId": "ALG-KEY-004",
+      "ruleDigest": "sha256:db77383ecb5f41ef3af5cb60769edaea507cac5cb25e28b88f249e84a062ba2e",
+      "applicabilityReason": "Shared native 112-source reuse, 2-variable 4-tuple slot routing, and sealed hcr-r37-joint-tuple-v1 consumer handoff require full source/role/revision/config binding without host truth repair."
+    },
+    {
+      "ruleId": "PERF-MEASURE-001",
+      "ruleDigest": "sha256:ef11800e55663f1b719f62d3f812280fd6e56c6895eef3028b9db344a9d0a355",
+      "applicabilityReason": "Information-matched exact_joint control and complete accounting of source, role, 6-stage transfer envelope, upper pipeline, storage, audit, and seal costs without efficiency overclaims."
+    }
+  ],
+  "facts": [
+    {
+      "id": "FACT-GAP",
+      "statement": "R37 tested 4-tuple joint vs marginal-closure correlation erasure under only 4/8 tokens per namespace ({0,1,2,3} or {4,5,6,7}), where cnot20 collapses to identity, 100% of mismatch role comparisons had Hamming distance d=1, and only 8/64 ordered code pairs and 4/16 Hamming pairs occurred. R46 tested relational codebook transfer only on n=2 Z-candidates (feasible2), and R47 tested capacity n=1..4 only on the single-variable unary AST pipeline.",
+      "evidenceRefs": [
+        "SRC-R37-RESULT",
+        "SRC-R46-RESULT",
+        "SRC-R47-RESULT",
+        "SRC-DIRECTION",
+        "SRC-R37"
+      ]
+    },
+    {
+      "id": "FACT-KERNEL",
+      "statement": "In R37, membership(alternatives, relation) feeds 4x|R| pair gates into or0..4; native_marginal applies a 3-layer bipartite marginal re-cross network projection0/1 (f0..3 -> p00,p01,p10,p11 -> e0..3 -> goal) that collapses 16 joint signatures to 10 closure signatures; feasible4 seals hcr-r37-joint-tuple-v1 binding (eligibility 4 floats + coverage_activation 1 float + state_sha256); isolated consume_t evaluates T(X,Y) and feeds 9 continuous drives (e0..3, t0..3, complete) into query4.",
+      "evidenceRefs": [
+        "SRC-ENCODER",
+        "SRC-COMPILER",
+        "SRC-R37",
+        "SRC-R32",
+        "SRC-KERNEL"
+      ]
+    },
+    {
+      "id": "FACT-BUDGET",
+      "statement": "112 lower sources (56 C + 56 T) + 809 stage-transfer settles (64 role + 16 pair + 121 or0..4 + 32 projection0/1 + 64 feasible4 + 512 query4) + 32832 upper settles (16288 native_joint + 16544 native_marginal) = 33753 native settles (+ 256 exact_joint = 768 evaluations, 12 batches x 64). 600s total / 240s stage / raw 128MiB / cache 128MiB / AS 512MiB / worker 1 / retry 0.",
+      "evidenceRefs": [
+        "SRC-BUDGET"
+      ]
+    }
+  ],
+  "assumptions": [],
+  "invariants": [
+    {
+      "id": "INV-BOUNDARY",
+      "statement": "Only token-to-code map and grounded 112-source 8-token inputs across 32 base cases (Part I 16 c_mask=0..15, Part II 8 diagonal/anti-diagonal, Part III 8 L-shaped) are supplied to unchanged R37 execute; core/learner/AST/Config/initial 0.5/guards/controller/history/Cost are unchanged. Every one of the 32 base cases must induce 8/8 distinct restricted maps (0 unchanged pairs), and each codebook must exercise all 64 ordered code pairs, all 16 ordered Hamming pairs, and all 56 cross-domain fact pairs.",
+      "scope": "R48 112 sources / 32 base across Parts I-III (8/8 restricted classes, 64/64 code pairs, 16/16 Hamming pairs, 56/56 fact pairs) / 809 transfer / 33753 settles",
+      "basisRefs": [
+        "FACT-GAP",
+        "FACT-KERNEL"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-SEMANTICS",
+      "statement": "64 actual role inputs partition into 4 exact Hamming distance classes d in {0,1,2,3}; 16 pair settles exhaust all 4^2 Hamming-pair drives for all 40320 bijections; 121 or0..4, 32 projection0/1 (collapsing 16 masks to 10 closure signatures with inner p00..p11/e0..e3 margins), 64 feasible4 (32 direct_or + 32 via_projection), and 512 query4 settles audit worst-case inner-margin [false_max, true_min] bounds without claiming 64^n enumeration. Full 256 native_joint (256/256 truth) + 256 native_marginal (256/256 closure, 128/256 truth, 128 abstentions, 0 false assertions) + 256 exact_joint + 448 paired semantic invariance and 6-stage tick attribution replayed from saved traces; 25 mutations rejected catching ValueError only.",
+      "scope": "R48 112 sources / 32 base across Parts I-III (8/8 restricted classes, 64/64 code pairs, 16/16 Hamming pairs, 56/56 fact pairs) / 809 transfer / 33753 settles",
+      "basisRefs": [
+        "FACT-KERNEL",
+        "FACT-BUDGET"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-COST",
+      "statement": "33753 actual settles (33641 recorded + 112 sources) / max 5400480 ticks / fixed stage 240s total 600s / worker 1 retry 0 / raw 128MiB / cache 128MiB / AS 512MiB each / record 128KiB / unique 6000. Full physical ref ledger and all phase/parent/launcher CPU and wall observed; storage-only dedup never skips computation; no speed or learning cost adoption claim. Direct size/SHA of all raw and source pins.",
+      "scope": "R48 112 sources / 32 base across Parts I-III (8/8 restricted classes, 64/64 code pairs, 16/16 Hamming pairs, 56/56 fact pairs) / 809 transfer / 33753 settles",
+      "basisRefs": [
+        "FACT-BUDGET"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "PERF-MEASURE-001"
+      ]
+    }
+  ],
+  "designChoices": [
+    {
+      "id": "CHOICE-JOINT-TUPLE-TRANSFER",
+      "statement": "Construct 32 base cases (16 Part I c_mask=0..15 complete lattice + 8 Part II diagonal/anti-diagonal counterexamples + 8 Part III L-shaped counterexamples) with 32 distinguishing 4-token cohorts across 112 grounded sources and 809 separate stage-transfer settles (64 role + 16 pair + 121 or0..4 + 32 projection0/1 + 64 feasible4 + 512 query4).",
+      "rationale": "Guarantees 8/8 restricted maps per base, 64/64 ordered code pairs, 16/16 ordered Hamming pairs, and 56/56 cross-domain fact pairs per codebook, 16/16 joint vs 10/16 marginal-closure signatures, and 128 correlation-loss abstentions with 0 false assertions within 33753 settles.",
+      "basisRefs": [
+        "FACT-GAP",
+        "FACT-KERNEL",
+        "FACT-BUDGET"
+      ]
+    }
+  ],
+  "verificationObligations": [
+    {
+      "id": "OB-BOUNDARY",
+      "invariantIds": [
+        "INV-BOUNDARY"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "nonbijection/unknown token accepted; restricted map classes < 8; ordered code pairs < 64; ordered Hamming pairs < 16; cross-domain fact pairs < 56; source/role/config drift; hidden oracle consumer",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-SEMANTICS",
+      "invariantIds": [
+        "INV-SEMANTICS"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "role Hamming classes not exact within tolerance; pair 16 transfer failure; or0..4 (121), projection0/1 (32), feasible4 (64), or query4 (512) extremal envelope failure; 64^n overclaim; false assertion in native_marginal; mutation suite catching KeyError instead of ValueError",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-COST",
+      "invariantIds": [
+        "INV-COST"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "uncapped cache/raw; missing physical calls; storage dedup counted as compute skipping; posthoc budget/gate or rerun; cost win claim without contract",
+      "requirementLevel": "required"
+    }
+  ],
+  "requiredCapabilities": [
+    "cs-constraint-derivation",
+    "cs-implementation-review"
+  ],
+  "verdict": "READY"
+}

@@ -1,0 +1,14 @@
+{
+  "all_archive_source_bytes_match_local": true,
+  "all_python_ast": true,
+  "archive_sha256": "a2640187089a16694bf5b5c02e6273bb97012b680802bbb6535838c31a07e6f9",
+  "bytes": 734982,
+  "local_native_calls": 0,
+  "no_git_aws_ssh_env_or_credential_named_entries": true,
+  "not_a_secret_scan_or_permission_grant": true,
+  "paths_expected_only": true,
+  "remote_root": "/home/mcpops/hcc-joint-tuple-codebook-transfer-20261023-r48",
+  "remote_zip": "/home/mcpops/hcc-joint-tuple-codebook-transfer-source-20261023-r48.zip",
+  "source_files": 163,
+  "status": "PASS"
+}

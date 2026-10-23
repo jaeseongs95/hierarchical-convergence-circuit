@@ -1,0 +1,13 @@
+{
+  "direction": "experiments/exp-94-joint-tuple-codebook-transfer/DELIBERATION.ko.md",
+  "prior": "R37 tested 4-tuple joint vs marginal-closure correlation erasure under only 4/8 tokens per namespace ({0,1,2,3} or {4,5,6,7}), where cnot20 collapses to identity, 100% of mismatch role comparisons had Hamming distance d=1, and only 8/64 ordered code pairs and 4/16 Hamming pairs occurred. R46 tested relational codebook transfer only on n=2 Z-candidates (feasible2), and R47 tested capacity n=1..4 only on the single-variable unary AST pipeline. R48 exercises all 8 tokens, all 64 ordered code pairs, all 16 ordered Hamming pairs, and all 56 cross-domain fact pairs per codebook across 32 base cases (16 Part I c_mask=0..15 lattice, 8 Part II diagonal/anti-diagonal counterexamples, 8 Part III L-shaped counterexamples; 768 evaluations) with 8/8 restricted map classes per base and 809-settle 6-stage transfer (64 role + 16 pair + 121 or0..4 + 32 projection0/1 + 64 feasible4 + 512 query4); not R31 learned macro cost or R43 micro-optimization.",
+  "source_pins": {
+    "experiments/exp-77-macro-control/RESULTS.ko.md": "f3d8d69f7c73325e01b46e35f5c188857e343838d0340ef02d4db76edf029f8e",
+    "experiments/exp-83-joint-tuple/RESULTS.ko.md": "673225ff919ed86c6a09453c6d3a248eba3ceec8c1d77006383e9bfa2c492aa6",
+    "experiments/exp-89-exp-once/RESULTS.ko.md": "f0cccfcb906ce3b0e4b1724a4b126bd30a8f53cffb4104cd50ecfddd7f40fb05",
+    "experiments/exp-90-codebook-invariance/RESULTS.ko.md": "ef87b118ceddb3edbdba93d4f39c9f9f0abae974b01b33861f58f872cb14289b",
+    "experiments/exp-91-codebook-transfer-coverage/RESULTS.ko.md": "bde20ae284eaa99d9d87e8ff47013ca3e160c13cf746b36ce99f29de345a411a",
+    "experiments/exp-92-relational-codebook-transfer/RESULTS.ko.md": "0a0d13e7bd37826565f78cdb5d0ee67a5e06924bfdfcd891f19881326c3570c6",
+    "experiments/exp-93-capacity-codebook-transfer/RESULTS.ko.md": "cd0d49b5de7332e768845c36113dc343d4d7f2c154f6d89580bfa1d738839008"
+  }
+}

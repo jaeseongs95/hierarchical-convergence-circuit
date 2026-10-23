@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0.0",
+  "scopeSummary": "R48 4-tuple joint-tuple vs marginal-closure 8-token / 64-code-pair / 16-Hamming-pair / 8-codebook invariance (8/8 restricted classes per base, 112 sources, 512 native + 256 exact) and separated 4-class Hamming role partition (64) + exhaustive pair transfer (16) + extremal or0..4 (121), projection0/1 (32), feasible4 (64), and query4 (512) envelope. Original R37 pipeline/guards/controller/trace unchanged. Authored encoding, not learning/speed/H03. 33753 settles / 5400480 max ticks with bounded storage/cost/raw verification.",
+  "files": [
+    {
+      "path": "candidate/__init__.py",
+      "digest": "sha256:82a0abaf8f68279f7a0b27f402c3d567b6c913b850be04e25c46538e67f8bb65"
+    },
+    {
+      "path": "candidate/bootstrap.py",
+      "digest": "sha256:6f40f8a896b8ea361d7d972f28c19a1f372903be5f353a59b64cab97d8867fb0"
+    },
+    {
+      "path": "candidate/probe.py",
+      "digest": "sha256:419048075ad74570e9afb823bba2828620057ec637222f3cdf39ae965446d684"
+    },
+    {
+      "path": "candidate/verify.py",
+      "digest": "sha256:7012a8bb3eb56e533058c1e2fcbdfbfd35786df605139ebb296a459e2df165e4"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "adapter_redaction_detected": true,
+  "all_native_tick_records_received": true,
+  "archive_received": false,
+  "input_pins": 127,
+  "raw_json_bytes": 22218612,
+  "raw_manifest_matched_files": 1460,
+  "raw_total_bytes": 22218612,
+  "received_json": 1461,
+  "received_nonempty_files": 1461,
+  "restored_files": [
+    "source-postcheck.json"
+  ],
+  "restored_keys": [
+    "evidence/joint-tuple-codebook-transfer-20261023-r48/cs/binding.json",
+    "evidence/joint-tuple-codebook-transfer-20261023-r48/cs/candidate/verify.py",
+    "evidence/joint-tuple-codebook-transfer-20261023-r48/cs/policy.json",
+    "evidence/joint-tuple-codebook-transfer-20261023-r48/cs/source/dynamics.py",
+    "evidence/joint-tuple-codebook-transfer-20261023-r48/cs/source/hypothesis.md",
+    "evidence/joint-tuple-codebook-transfer-20261023-r48/cs/source/r35-compiler.py",
+    "experiments/exp-93-capacity-codebook-transfer/RESULTS.ko.md",
+    "experiments/exp-94-joint-tuple-codebook-transfer/DELIBERATION.ko.md",
+    "experiments/exp-94-joint-tuple-codebook-transfer/DESIGN.ko.md"
+  ],
+  "restored_original_manifest_entries": 1,
+  "same_channel_not_host_attestation": true,
+  "source_files": 163,
+  "source_unchanged": true,
+  "ssh_completeness": "unknown upstream; all 1460 non-empty files + manifest directly matched original manifest size/SHA (1 files restored from adapter entropy redaction on known path strings and verified against manifest SHA-256); manifest outside its own hash",
+  "transport_failures": [
+    {
+      "expected_bytes": 8775,
+      "expected_sha256": "26dbfad6e53052131c27c1d774003cae3a03c06a2484db738ac431ef6a7a2b7d",
+      "file": "source-postcheck.json",
+      "received_bytes": 8385,
+      "received_sha256": "555974814e3d00cbe353ff52d0c5405a38a0e0d710cb4f2c4055e52136f7cd07"
+    }
+  ],
+  "unreceived_empty_logs": [
+    "audit.stderr",
+    "audit.stdout",
+    "preparation.stderr",
+    "preparation.stdout",
+    "work.stderr",
+    "work.stdout"
+  ]
+}

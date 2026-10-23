@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0.0",
+  "requestId": "CS-R48",
+  "mode": "derive",
+  "objective": "Verify 8-token / 64-code-pair / 16-Hamming-pair / 8-codebook invariance (8/8 restricted classes per base) and 809-settle 6-stage continuous transfer (64 role, 16 pair, 121 or0..4, 32 projection0/1, 64 feasible4, 512 query4) across the R37 4-tuple joint-tuple vs marginal-closure producer-consumer pipeline",
+  "sourceSnapshotDigest": "sha256:16f9e4237198cc34db3f8f12e80660db9edccfe7b014d30b1138031710945b99",
+  "sourceRefs": [
+    {
+      "id": "SRC-CORE",
+      "path": "source/hypothesis.md",
+      "digest": "sha256:d1b735eee8f72c092c847c04e81a34972fa919be906311255faa797e58ec9302"
+    },
+    {
+      "id": "SRC-R32",
+      "path": "source/r33-runtime.py",
+      "digest": "sha256:95820d0fcbf48290f677e9a995c7a3a4a6261a7fb5d2b256b59c998805a6a5d9"
+    },
+    {
+      "id": "SRC-R19",
+      "path": "source/r19-probe.py",
+      "digest": "sha256:bb0159ba0c50505fc148322e0d0a17d53c184a0bdc7bed21b393120971eb5630"
+    },
+    {
+      "id": "SRC-R37-RESULT",
+      "path": "source/r37-results.md",
+      "digest": "sha256:673225ff919ed86c6a09453c6d3a248eba3ceec8c1d77006383e9bfa2c492aa6"
+    },
+    {
+      "id": "SRC-R46-RESULT",
+      "path": "source/r46-results.md",
+      "digest": "sha256:0a0d13e7bd37826565f78cdb5d0ee67a5e06924bfdfcd891f19881326c3570c6"
+    },
+    {
+      "id": "SRC-R47-RESULT",
+      "path": "source/r47-results.md",
+      "digest": "sha256:cd0d49b5de7332e768845c36113dc343d4d7f2c154f6d89580bfa1d738839008"
+    },
+    {
+      "id": "SRC-ENCODER",
+      "path": "source/r35-runtime.py",
+      "digest": "sha256:2ed5316a500a290f7bf5e4ecc54abd72ad8fd54f6b801bd18ee00fca70bbb751"
+    },
+    {
+      "id": "SRC-COMPILER",
+      "path": "source/r35-compiler.py",
+      "digest": "sha256:c167508ee664aa23a6cdafcda652b6e5f0d6292157d09099f3073cc4e78e933e"
+    },
+    {
+      "id": "SRC-R37",
+      "path": "source/r37-runtime.py",
+      "digest": "sha256:3cabd0c0c61393c2d3356981dd1c7eaf0f48e228c3bf5d8e05d558b1fb6a66af"
+    },
+    {
+      "id": "SRC-KERNEL",
+      "path": "source/dynamics.py",
+      "digest": "sha256:a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc"
+    },
+    {
+      "id": "SRC-BUDGET",
+      "path": "source/budget.json",
+      "digest": "sha256:2c6a229f65a6b36eb0d7395d279ed1596a2e2b1eb58f5745416018278d4f33c9"
+    },
+    {
+      "id": "SRC-DIRECTION",
+      "path": "source/direction.json",
+      "digest": "sha256:ed2a7c2cc9df48238c380a6ff8496a55ca4a75d965f6dab9267073f9de610afa"
+    }
+  ],
+  "operationalFacts": [
+    {
+      "id": "FACT-GAP",
+      "statement": "R37 tested 4-tuple joint vs marginal-closure correlation erasure under only 4/8 tokens per namespace ({0,1,2,3} or {4,5,6,7}), where cnot20 collapses to identity, 100% of mismatch role comparisons had Hamming distance d=1, and only 8/64 ordered code pairs and 4/16 Hamming pairs occurred. R46 tested relational codebook transfer only on n=2 Z-candidates (feasible2), and R47 tested capacity n=1..4 only on the single-variable unary AST pipeline.",
+      "evidenceRefs": [
+        "SRC-R37-RESULT",
+        "SRC-R46-RESULT",
+        "SRC-R47-RESULT",
+        "SRC-DIRECTION",
+        "SRC-R37"
+      ]
+    },
+    {
+      "id": "FACT-KERNEL",
+      "statement": "In R37, membership(alternatives, relation) feeds 4x|R| pair gates into or0..4; native_marginal applies a 3-layer bipartite marginal re-cross network projection0/1 (f0..3 -> p00,p01,p10,p11 -> e0..3 -> goal) that collapses 16 joint signatures to 10 closure signatures; feasible4 seals hcr-r37-joint-tuple-v1 binding (eligibility 4 floats + coverage_activation 1 float + state_sha256); isolated consume_t evaluates T(X,Y) and feeds 9 continuous drives (e0..3, t0..3, complete) into query4.",
+      "evidenceRefs": [
+        "SRC-ENCODER",
+        "SRC-COMPILER",
+        "SRC-R37",
+        "SRC-R32",
+        "SRC-KERNEL"
+      ]
+    },
+    {
+      "id": "FACT-BUDGET",
+      "statement": "112 lower sources (56 C + 56 T) + 809 stage-transfer settles (64 role + 16 pair + 121 or0..4 + 32 projection0/1 + 64 feasible4 + 512 query4) + 32832 upper settles (16288 native_joint + 16544 native_marginal) = 33753 native settles (+ 256 exact_joint = 768 evaluations, 12 batches x 64). 600s total / 240s stage / raw 128MiB / cache 128MiB / AS 512MiB / worker 1 / retry 0.",
+      "evidenceRefs": [
+        "SRC-BUDGET"
+      ]
+    }
+  ],
+  "existingContractRef": null
+}

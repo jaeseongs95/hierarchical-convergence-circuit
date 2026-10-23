@@ -1,0 +1,16 @@
+{
+  "experiment": "EXP-94",
+  "finite_semantic_adoption": true,
+  "independent_auditor": false,
+  "mutations_rejected": 25,
+  "paired_conditions": 448,
+  "paired_invariant": 448,
+  "physical_calls": 33753,
+  "raw_manifest_matched_files": 1460,
+  "round": "R48",
+  "source_unchanged": true,
+  "status": "PASS_RESEARCH_DELIVERABLES_PRECOMMIT_TIMEPOINT",
+  "ticks": 1020630,
+  "unique_traces": 1428,
+  "verdict": "FINITE_8TOKEN_JOINT_TUPLE_CODEBOOK_TRANSFER_ACCEPTED"
+}

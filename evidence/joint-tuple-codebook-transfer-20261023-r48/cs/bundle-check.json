@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "1.0.0",
+  "kind": "cs-bundle-check",
+  "verdict": "PASS",
+  "canProceedUnderSuppliedPolicy": true,
+  "mode": "enforce",
+  "schemaEngine": "ags-ajv2020",
+  "knowledgePackDigest": "sha256:d8351d9aabb433403830fcffc3a2f2438b6d428711c93b6ded9eff002468c3d1",
+  "candidateDigest": "sha256:d6da42f33d14f6e2259388c24f67678f8d88b77564ca3be91dd4023ba08ddf46",
+  "constraintReportDigest": "sha256:ebeb494ebdb7b8e68c403564a4c5deddcb5f362b3d4cbdf0933f62bf56be90a4",
+  "checkedRawFiles": 46,
+  "requiredObligationCount": 3,
+  "assurance": "Structural and semantic consistency plus raw-file digests. Not proof of test execution, source correctness, policy authority, independent audit, or MCP all-path enforcement."
+}

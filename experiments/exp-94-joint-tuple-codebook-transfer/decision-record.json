@@ -1,0 +1,369 @@
+{
+  "axis_decisions": [
+    {
+      "axis": "RelationalTupleCoverageAndSignatures",
+      "decision": "112개 정방향 이항 관계 원천(C_{i}_{j}, T_{i}_{j}, i != j in 0..7)과 32개 base(b00..b31: Part I 16개 c_mask=0..15 완전 격자 + Part II 8개 c_mask in {6,9}×t_mask in {6,9}×order in {0,1} 대각/반대각 동등 주변곱 반례 + Part III 8개 c_mask in {7,11,13,14} L자형 3-튜플 상관 손실 반례) × 8개 코드북 × 3개 팔(native_joint, native_marginal, exact_joint = 512 native + 256 exact = 768 평가)을 동결해, 모든 32개 base에서 제한 사상 8/8 구별(무변경 0/448 native 쌍), 모든 코드북에서 64/64 ordered 코드쌍 및 16/16 ordered Hamming쌍 실현, 56/56 교차 도메인 쌍 활성, 그리고 native_joint 16/16 서명 대 native_marginal 10/16 폐포 서명 및 보편 질의(qtrue/qfalse/empty/mixed) 전 구간을 검증한다.",
+      "evidence_claim_ids": [
+        "C1",
+        "C3"
+      ]
+    },
+    {
+      "axis": "MarginalClosureAndQuery4TransferSufficiency",
+      "decision": "role(64회: 4개 Hamming 동치류) -> pair(16회: 4^2 전수 전이, 40,320개 전단사 동치류 수준 645,120 조합 오답 0) -> or0..4(121회: 항수 L=0..4 극값 모서리) -> projection0/1(16+16=32회: 3층 주변곱 재교차 내부 상태 e0..e3 최악 경계) -> feasible4(32+32=64회: or0..4 직접 입력 및 projection0/1 경유 입력 최악 내부 마진 2^5 모서리) -> query4(512회: feasible4 최악 eligibility/coverage 및 T-소속 최악 경계 주입 2^9 전수 모서리) 총 809회 6단계 전이 프로브를 분리 실행·검산하고, 비등거리 코드북에서 봉인 연속 binding(state_sha256, binding_sha256)이 섭동될 때도 비역할 5개 단계(pair, membership, projection, feasible4, query4) tick 완전 불변과 448짝 이산 의미 불변 및 정보 경계(native_joint 256/256 대 native_marginal 128/256 full strict·256/256 폐포 strict·128/256 기권·0/256 오확정)가 유지되는지 검산한다.",
+      "evidence_claim_ids": [
+        "C2",
+        "C4"
+      ]
+    },
+    {
+      "axis": "BudgetAndNonDuplication",
+      "decision": "원천 112 + 6단계 전이 프로브 809(64+16+121+32+64+512) + 상위 파이프라인 32,832(native_joint 16,288 + native_marginal 16,544) = 총 33,753회 물리 native settle을 worker=1, retry=0, 단계 240초/전체 600초 상한으로 AI Research SSH(ssh-ai-mcp)에서 1회 실행하며, preparation 단계에서 768개 무변조 모의 레코드 전수 audit 통과 후 ValueError 전용 25개 합성 변조 거부 스위트를 사전 검증한다.",
+      "evidence_claim_ids": [
+        "C3",
+        "C4"
+      ]
+    }
+  ],
+  "case_brief": {
+    "assumptions": [
+      "공통 엔진(src/hcr/dynamics.py, model.py)과 기존 R35~R47 실행기(tools/r35..r47)는 수정하지 않으며, tools.r37_joint_tuple.runtime.execute 및 verify.audit를 직접 재사용한다."
+    ],
+    "constraints": [
+      "현재 엔진(src/hcr/)·과거 원자료 보존 및 신규 R48 세 경로만 변경",
+      "지정 AI Research SSH(ssh-ai-mcp)·worker1/retry0·운영상한 동결·동결 후 재실행/튜닝 금지",
+      "실제 이항 관계 4-튜플 생산-소비 파이프라인(r37)에서 모든 32개 base의 제한 대응 8/8 구별, 모든 코드북의 64/64 ordered 코드쌍 및 16/16 ordered Hamming쌍 실현, 56/56 교차 도메인 쌍 활성 달성",
+      "6단계 전이 프로브(role 64 -> pair 16 전수 -> or0..4 121 -> projection0/1 32 -> feasible4 64 -> query4 512 = 809회)와 native_joint(16 서명, 256/256 strict) 대 native_marginal(10 폐포 서명, 128/256 full strict, 256/256 폐포 strict, 128/256 기권, 0/256 오확정) 정보 경계 코드북 불변성을 분리 검산하고 64^n 전체 열거로 과장하지 않음",
+      "학습0·세계측정0·R31 학습비용 음성·R40 비용 채택 보류·R43 미세최적화 미채택 보존 및 preparation 단계의 무변조 audit(768건) + 25개 합성 변조 사전 검증"
+    ],
+    "decision": "R47/EXP-93 이후 비중복 후속 연구 R48/EXP-94의 질문·이항 관계 4-튜플 결합 보존 대 주변곱 폐포(projection0/1 -> feasible4 -> 봉인 binding -> consume_t -> query4) 파이프라인의 8토큰/64코드쌍/16-Hamming쌍 coverage·809회 6단계 전이 충분조건 및 예산 확정",
+    "facts": [
+      "R37(exp-83-joint-tuple)은 이항 관계 C(X,Y)와 T(X,Y) 위에서 3층 주변곱 재교차 회로(projection0/1: f0..3 -> p00..p11 -> e0..3 -> goal), 4-튜플 분류기(feasible4), 봉인 hcr-r37-joint-tuple-v1 binding, 격리 소비기(consume_t -> query4)를 정의했으나, namespace당 4/8 토큰({0,1,2,3}: cnot20 고정점 집합)만 사용해 8/64 코드쌍만 노출되었고 불일치 역할 비교의 100%가 Hamming 거리 d=1(d=2,3 0회, pair Hamming쌍 4/16)에 갇혀 있었다.",
+      "R46(exp-92)은 R39/R40 3변수 조건부 Z 파이프라인만 검증해 소비기가 n=2 후보(feasible2)만 분류했고(feasible4, query4, projection0/1 미포함), 4개 코호트만 사용해 비등거리 코드북에서 13/16~14/16 Hamming쌍과 24/64 코드쌍만 실현되었다.",
+      "R47(exp-93)은 단항 AST(expr0..5) 파이프라인에서만 feasible1..4와 query1..4를 검증해, 관계형 소속(role -> pair -> or0..4)과 3층 주변곱 재교차(projection0/1 내부 상태 e0..e3 추출) 및 봉인 4-튜플 binding을 건너는 consume_t -> query4 경로는 8토큰 코드북 섭동 하에서 한 번도 검증되지 않았다.",
+      "tools/r37_joint_tuple/verify.py:52는 c['namespace'], c['c_mask'], c['t_mask'], c['order'], c['key']를 직접 참조하고 59행 mutations()가 except (ValueError,KeyError)를 사용하므로, R47의 audit KeyError 교훈을 반영해 모든 케이스에 namespace 필드를 포함하고 preparation()에서 무변조 모의 레코드 768건 전수 audit와 ValueError 전용 25개 변조 검사를 강제해야 한다."
+    ],
+    "failure_modes": [
+      "swap01=[1,0,2,3,4,5,6,7]의 고정점 부분집합(0과 1을 포함하지 않는 15개 4-토큰 부분집합)이나 Bad_5 부분집합을 코호트로 선택해 특정 base에서 제한 사상이 7/8 이하로 축약되는 실패",
+      "19개 미만의 코호트만 배치해 비등거리 코드북에서 64/64 ordered 코드쌍이나 16/16 ordered Hamming쌍 중 일부가 누락되는 실패",
+      "preparation()에서 무변조 레코드에 대한 verify.audit 호출을 생략하거나 KeyError를 변조 거부로 오인해 서버 audit 단계에서 예외가 발생하는 실패"
+    ],
+    "success_criteria": [
+      "모든 32개 base에서 제한 사상 8/8 구별(무변경 0/448 native 쌍), 모든 코드북에서 64/64 ordered 코드쌍 및 16/16 ordered Hamming쌍 전수 실현, 56/56 교차 도메인 쌍 활성, native_joint 16/16 서명 대 native_marginal 10/16 폐포 서명 및 대각/반대각·L자형 반례 정보 경계 보존 확인",
+      "809회 6단계 전이 프로브(role 64 + pair 16 + or0..4 121 + projection0/1 32 + feasible4 64 + query4 512)와 512 native + 256 exact(768 평가) 전수 검산, 비역할 단계(pair, membership, projection, feasible4, query4) tick 불변 및 448짝 의미 불변 통과"
+    ],
+    "unknowns": [
+      "비등거리 코드북 섭동이 role -> pair -> or0..4 및 3층 주변곱 재교차 커널(projection0/1의 내부 상태 e0..e3)을 거쳐 봉인된 hcr-r37-joint-tuple-v1 binding(eligibility 4개, coverage_activation 1개, state_sha256)과 격리 소비기 consume_t(T 소속 4개 -> query4 25그룹)로 전파될 때, 448짝 이산 의미 불변과 정보 경계(native_joint 256/256 대 native_marginal 128/256 full·256/256 폐포·128/256 기권·0/256 오확정) 및 비역할 5개 단계 tick 불변이 실제로 100% 유지되는지 여부"
+    ]
+  },
+  "consensus_proposal": {
+    "action": "R48 / EXP-94 (exp-94-joint-tuple-codebook-transfer) 동결 실행: 이항 관계 4-튜플 결합 보존 대 주변곱 폐포(projection0/1 -> feasible4 -> 봉인 binding -> consume_t -> query4) 파이프라인의 8토큰·64코드쌍·16-Hamming쌍 완전 coverage 및 809회 6단계 전이 충분조건 분리 검증",
+    "axis_alignment": [
+      {
+        "axis": "RelationalTupleCoverageAndSignatures",
+        "decision_ref": "RelationalTupleCoverageAndSignatures"
+      },
+      {
+        "axis": "MarginalClosureAndQuery4TransferSufficiency",
+        "decision_ref": "MarginalClosureAndQuery4TransferSufficiency"
+      },
+      {
+        "axis": "BudgetAndNonDuplication",
+        "decision_ref": "BudgetAndNonDuplication"
+      }
+    ],
+    "conditions": [
+      "실제 서버 실행 및 저장 원자료 재생 검산에서 모든 코드북의 의미·서명·정보 경계·6단계 전이·비역할 tick 불변이 통과해야 채택하며, 실패 시 튜닝·재실행 없이 음성 결과로 보존한다."
+    ],
+    "decision_owner": null,
+    "no_consensus_reason": null,
+    "remaining_options": [
+      "학습 산출물과 실제 원계산 대체를 연결하는 후속 과제는 R31 음성 대조를 보존하는 별도 계약으로 분리한다."
+    ],
+    "satisfied_constraints": [
+      "현재 엔진(src/hcr/)·과거 원자료 보존 및 신규 R48 세 경로만 변경",
+      "지정 AI Research SSH(ssh-ai-mcp)·worker1/retry0·운영상한 동결·동결 후 재실행/튜닝 금지",
+      "실제 이항 관계 4-튜플 생산-소비 파이프라인(r37)에서 모든 32개 base의 제한 대응 8/8 구별, 모든 코드북의 64/64 ordered 코드쌍 및 16/16 ordered Hamming쌍 실현, 56/56 교차 도메인 쌍 활성 달성",
+      "6단계 전이 프로브(role 64 -> pair 16 전수 -> or0..4 121 -> projection0/1 32 -> feasible4 64 -> query4 512 = 809회)와 native_joint(16 서명, 256/256 strict) 대 native_marginal(10 폐포 서명, 128/256 full strict, 256/256 폐포 strict, 128/256 기권, 0/256 오확정) 정보 경계 코드북 불변성을 분리 검산하고 64^n 전체 열거로 과장하지 않음",
+      "학습0·세계측정0·R31 학습비용 음성·R40 비용 채택 보류·R43 미세최적화 미채택 보존 및 preparation 단계의 무변조 audit(768건) + 25개 합성 변조 사전 검증"
+    ],
+    "status": "conditional_consensus",
+    "supported_by_verified_claims": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "unresolved_dissent": []
+  },
+  "constraints": [
+    "현재 엔진(src/hcr/)·과거 원자료 보존 및 신규 R48 세 경로만 변경",
+    "지정 AI Research SSH(ssh-ai-mcp)·worker1/retry0·운영상한 동결·동결 후 재실행/튜닝 금지",
+    "실제 이항 관계 4-튜플 생산-소비 파이프라인(r37)에서 모든 32개 base의 제한 대응 8/8 구별, 모든 코드북의 64/64 ordered 코드쌍 및 16/16 ordered Hamming쌍 실현, 56/56 교차 도메인 쌍 활성 달성",
+    "6단계 전이 프로브(role 64 -> pair 16 전수 -> or0..4 121 -> projection0/1 32 -> feasible4 64 -> query4 512 = 809회)와 native_joint(16 서명, 256/256 strict) 대 native_marginal(10 폐포 서명, 128/256 full strict, 256/256 폐포 strict, 128/256 기권, 0/256 오확정) 정보 경계 코드북 불변성을 분리 검산하고 64^n 전체 열거로 과장하지 않음",
+    "학습0·세계측정0·R31 학습비용 음성·R40 비용 채택 보류·R43 미세최적화 미채택 보존 및 preparation 단계의 무변조 audit(768건) + 25개 합성 변조 사전 검증"
+  ],
+  "cross_examination": {
+    "coverage": [
+      {
+        "item_id": "T1",
+        "reviewer_ids": [
+          "c60689fe-4cbc-4c3d-9000-d4a468bc0992"
+        ]
+      },
+      {
+        "item_id": "T2",
+        "reviewer_ids": [
+          "c60689fe-4cbc-4c3d-9000-d4a468bc0992"
+        ]
+      }
+    ],
+    "decision": "run",
+    "followups": [
+      {
+        "item_ids": [
+          "T1",
+          "T2"
+        ],
+        "reviewer_id": "c60689fe-4cbc-4c3d-9000-d4a468bc0992"
+      }
+    ],
+    "reason": "T1은 swap01=[1,0,2,3,4,5,6,7]의 고정점 부분집합(|S cap {0,1}|=0인 15개 부분집합) 제외 조건과 300개 유효 코호트 중 23-코호트 100% 커버를 포함한 32-코호트 배정으로 모든 코드북에서 64/64 코드쌍·16/16 Hamming쌍·base별 8/8 제한 사상을 확정하기 위해, T2는 Part I/II/III 32-base 행렬과 feasible4 팔별 내부 마진 경계 분리(32+32=64회)를 포함한 809회 6단계 전이 프로브를 확정하기 위해 실행함.",
+    "selected_item_ids": [
+      "T1",
+      "T2"
+    ],
+    "trigger_items": [
+      {
+        "id": "T1",
+        "origin_reviewer": "5ee7fbdd-dc05-45a4-93ea-2a39a1f606e8"
+      },
+      {
+        "id": "T2",
+        "origin_reviewer": "5ee7fbdd-dc05-45a4-93ea-2a39a1f606e8"
+      }
+    ]
+  },
+  "issue_ledger": [
+    {
+      "available_evidence": [
+        "C1",
+        "C3"
+      ],
+      "issue_id": "I-COHORT-SWAP01-AND-64PAIR-16HAMMING",
+      "rationale": "swap01이 {2..7}을 고정하므로 |S cap {0,1}| >= 1 및 Bad_5 제외를 만족하는 50개 4-토큰 부분집합(300개 순서 코호트)에서 23-코호트 완전 커버를 포함하는 32-코호트 스케줄을 b00..b31에 배정해, 모든 32개 base의 8/8 제한 사상 구별과 모든 코드북의 64/64 코드쌍 및 16/16 Hamming쌍을 동시에 달성함.",
+      "required_evidence": [
+        "32 base 8-class restricted map, per-codebook 64/64 ordered code pairs and 16/16 Hamming pairs, and 16 joint vs 10 marginal signatures verification"
+      ],
+      "status": "CONFIRMED"
+    },
+    {
+      "available_evidence": [
+        "C2",
+        "C4"
+      ],
+      "issue_id": "I-PROJECTION-QUERY4-ENVELOPE-AND-AUDIT-GUARD",
+      "rationale": "projection0/1(32회)과 feasible4(or0..4 직접 32회 + projection0/1 경유 32회 = 64회) 및 query4(512회)를 포함한 809회 6단계 전이 프로브와 함께, R47 KeyError 교훈을 반영해 preparation()에서 768개 무변조 모의 레코드 전수 audit 및 ValueError 전용 25개 합성 변조 사전 게이트를 결합함.",
+      "required_evidence": [
+        "809 stage-transfer settles and 512 native + 256 exact saved audit with 25 ValueError-only mutation rejections"
+      ],
+      "status": "CONFIRMED"
+    }
+  ],
+  "material_claims": [
+    {
+      "id": "C1",
+      "provenance": [
+        {
+          "locator": "experiments/exp-83-joint-tuple/RESULTS.ko.md",
+          "verification_note": "Coordinator directly verified lines 9-44 showing R37 used 4 tokens per namespace ({0,1,2,3} or {4,5,6,7}), 8/64 ordered code pairs, d=1 only, and 16 joint vs 10 marginal signatures.",
+          "verification_status": "verified"
+        },
+        {
+          "locator": "experiments/exp-92-relational-codebook-transfer/RESULTS.ko.md",
+          "verification_note": "Coordinator directly verified lines 7-34 showing R46 only tested feasible2 (n=2 Z-candidates) and realized 13/16-14/16 Hamming pairs under CNOT codebooks.",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "기존 R37은 namespace당 4/8 토큰({0,1,2,3}: cnot20 고정점 집합)과 d=1 비교만 사용해 8/64 코드쌍과 4/16 Hamming쌍에 갇혀 있었으며, R46은 n=2(feasible2)만 검증하고 R47은 단항 AST(expr0..5)만 검증해 이항 관계 4-튜플 주변곱 폐포(projection0/1 -> feasible4 -> 봉인 binding -> consume_t -> query4)의 코드북 전이는 미검증 상태다."
+    },
+    {
+      "id": "C2",
+      "provenance": [
+        {
+          "locator": "tools/r37_joint_tuple/runtime.py",
+          "verification_note": "Coordinator directly verified projection(layout, cfg), promote(), consume_t(), and execute() in lines 9-73.",
+          "verification_status": "verified"
+        },
+        {
+          "locator": "tools/r37_joint_tuple/verify.py",
+          "verification_note": "Coordinator directly verified oracle(), audit(), mutations(), and summarize() in lines 9-73, including required keys c_mask, t_mask, namespace, order on line 52.",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "tools/r37_joint_tuple/runtime.py의 native_marginal은 3층 주변곱 재교차 네트워크(projection0/1)의 내부 상태 e0..e3을 추출해 feasible4에 전달하고, consume_t는 봉인된 hcr-r37-joint-tuple-v1 binding(eligibility 4개, coverage_activation 1개)과 T 소속 스칼라 4개를 query4(25그룹)에 결합하므로, 비등거리 코드북 섭동 하에서 6단계 전이와 정보 경계 보존 검증이 필수적이다."
+    },
+    {
+      "id": "C3",
+      "provenance": [
+        {
+          "locator": "experiments/exp-91-codebook-transfer-coverage/frozen_spec.json",
+          "verification_note": "Coordinator directly verified the 8 frozen 3-bit codebooks and verified that 50 of 70 4-token subsets (300 ordered cohorts) yield 8/8 distinct restricted map classes.",
+          "verification_status": "verified"
+        },
+        {
+          "locator": "tools/r37_joint_tuple/probe.py",
+          "verification_note": "Coordinator directly verified preparation(), work(), and audit_all() in lines 10-71.",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "|S cap {0,1}| >= 1 및 Bad_5 제외를 만족하는 300개 유효 코호트 중 23-코호트 커버를 포함한 32-코호트 스케줄을 32개 base(Part I 16개 c_mask=0..15 + Part II 8개 대각/반대각 반례 + Part III 8개 L자형 3-튜플 반례)에 배정하면, 모든 32개 base의 8/8 제한 사상 구별(무변경 0/448)과 모든 코드북의 64/64 ordered 코드쌍 및 16/16 ordered Hamming쌍 실현이 보장된다."
+    },
+    {
+      "id": "C4",
+      "provenance": [
+        {
+          "locator": "tools/r46_relational_codebook_transfer/probe.py",
+          "verification_note": "Coordinator directly verified role(64), pair(16), and or0..4(121) transfer probes in lines 30-95.",
+          "verification_status": "verified"
+        },
+        {
+          "locator": "tools/r47_capacity_codebook_transfer/probe.py",
+          "verification_note": "Coordinator directly verified feasible4(32) and query4(512) inner-margin corner probes in lines 55-93.",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "role(64) + pair(16) + or0..4(121) + projection0/1(32) + feasible4(64) + query4(512) = 809회 6단계 전이 프로브와 상위 파이프라인 32,832회(512 native 평가) + 원천 112회 = 총 33,753회 물리 settle(512 native + 256 exact = 768 평가)은 단일 SSH 실행 예산 안에서 관계형 4-튜플 코드북 전이 충분조건과 25개 합성 변조 거부를 완전 검증한다."
+    }
+  ],
+  "method_notes": [
+    "MEDIUM / degraded_ok 기본 경로로 2명의 격리된 blind reviewer(c60689fe, 5ee7fbdd)와 Stage 4 교차검토(T1, T2) 후 Coordinator가 원자료 대조를 거쳐 통합함.",
+    "원시 reviewer 출력·내부 프롬프트·CoT는 저장하지 않으며 검증된 주장과 출처만 기록함."
+  ],
+  "observability": {
+    "tokens": "NOT_OBSERVABLE",
+    "tool_calls": "NOT_OBSERVABLE",
+    "wall_time": "NOT_OBSERVABLE",
+    "worker_count": 2
+  },
+  "panel_manifest": [
+    {
+      "actual_model": "NOT_OBSERVABLE",
+      "actual_reasoning": "NOT_OBSERVABLE",
+      "blind_round1": true,
+      "classification": "reviewer",
+      "context_isolated": true,
+      "fallback_reason": "Terra preference not advertised by host; inherited host configuration used.",
+      "id": "c60689fe-4cbc-4c3d-9000-d4a468bc0992",
+      "instantiated": true,
+      "is_judge": false,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ],
+      "requested_model": "inherit",
+      "requested_reasoning": "inherit",
+      "role": "Relational Tuple Semantics Reviewer",
+      "status": "completed"
+    },
+    {
+      "actual_model": "NOT_OBSERVABLE",
+      "actual_reasoning": "NOT_OBSERVABLE",
+      "blind_round1": true,
+      "classification": "reviewer",
+      "context_isolated": true,
+      "fallback_reason": "Terra preference not advertised by host; inherited host configuration used.",
+      "id": "5ee7fbdd-dc05-45a4-93ea-2a39a1f606e8",
+      "instantiated": true,
+      "is_judge": false,
+      "participated_stages": [
+        "round1"
+      ],
+      "requested_model": "inherit",
+      "requested_reasoning": "inherit",
+      "role": "Contract and Budget Reviewer",
+      "status": "completed"
+    }
+  ],
+  "preflight": {
+    "missing_capabilities": [],
+    "observed_capabilities": [
+      "two blind isolated reviewers",
+      "local primary evidence access",
+      "claim cross-examination"
+    ],
+    "required_capabilities": [
+      "two blind isolated reviewers",
+      "local primary evidence access",
+      "claim cross-examination"
+    ],
+    "supported_models_reasoning": "NOT_OBSERVABLE"
+  },
+  "required_constraints": [
+    "현재 엔진(src/hcr/)·과거 원자료 보존 및 신규 R48 세 경로만 변경",
+    "지정 AI Research SSH(ssh-ai-mcp)·worker1/retry0·운영상한 동결·동결 후 재실행/튜닝 금지",
+    "실제 이항 관계 4-튜플 생산-소비 파이프라인(r37)에서 모든 32개 base의 제한 대응 8/8 구별, 모든 코드북의 64/64 ordered 코드쌍 및 16/16 ordered Hamming쌍 실현, 56/56 교차 도메인 쌍 활성 달성",
+    "6단계 전이 프로브(role 64 -> pair 16 전수 -> or0..4 121 -> projection0/1 32 -> feasible4 64 -> query4 512 = 809회)와 native_joint(16 서명, 256/256 strict) 대 native_marginal(10 폐포 서명, 128/256 full strict, 256/256 폐포 strict, 128/256 기권, 0/256 오확정) 정보 경계 코드북 불변성을 분리 검산하고 64^n 전체 열거로 과장하지 않음",
+    "학습0·세계측정0·R31 학습비용 음성·R40 비용 채택 보류·R43 미세최적화 미채택 보존 및 preparation 단계의 무변조 audit(768건) + 25개 합성 변조 사전 검증"
+  ],
+  "run": {
+    "assurance": "partially_independent",
+    "candidate_skill_sha256": null,
+    "capability_shortfall": false,
+    "completed_worker_ids": [
+      "c60689fe-4cbc-4c3d-9000-d4a468bc0992",
+      "5ee7fbdd-dc05-45a4-93ea-2a39a1f606e8"
+    ],
+    "failures": [],
+    "fresh_judge_id": null,
+    "id": "R48-direction-20261023",
+    "judge_fallback": null,
+    "redeliberations": [],
+    "reused_worker_ids": [],
+    "specialist_additions": [],
+    "stage": "MEDIUM",
+    "strict": false,
+    "worker_cap": 8,
+    "workers": [
+      {
+        "actual_model": "NOT_OBSERVABLE",
+        "actual_reasoning": "NOT_OBSERVABLE",
+        "blind_round1": true,
+        "classification": "reviewer",
+        "context_isolated": true,
+        "fallback_reason": "Terra preference not advertised by host; inherited host configuration used.",
+        "id": "c60689fe-4cbc-4c3d-9000-d4a468bc0992",
+        "instantiated": true,
+        "is_judge": false,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ],
+        "requested_model": "inherit",
+        "requested_reasoning": "inherit",
+        "role": "Relational Tuple Semantics Reviewer",
+        "status": "completed"
+      },
+      {
+        "actual_model": "NOT_OBSERVABLE",
+        "actual_reasoning": "NOT_OBSERVABLE",
+        "blind_round1": true,
+        "classification": "reviewer",
+        "context_isolated": true,
+        "fallback_reason": "Terra preference not advertised by host; inherited host configuration used.",
+        "id": "5ee7fbdd-dc05-45a4-93ea-2a39a1f606e8",
+        "instantiated": true,
+        "is_judge": false,
+        "participated_stages": [
+          "round1"
+        ],
+        "requested_model": "inherit",
+        "requested_reasoning": "inherit",
+        "role": "Contract and Budget Reviewer",
+        "status": "completed"
+      }
+    ]
+  },
+  "schema_version": "1.0",
+  "skill_version": "1.0.0"
+}

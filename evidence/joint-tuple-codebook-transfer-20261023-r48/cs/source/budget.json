@@ -1,0 +1,23 @@
+{
+  "canonical_cache_bytes": 134217728,
+  "child_address_space_bytes": 536870912,
+  "child_file_bytes": 8388608,
+  "learning": 0,
+  "maximum_logical_ticks": 5400480,
+  "maximum_measurement_requests": 0,
+  "maximum_native_settle_calls": 33753,
+  "maximum_unique_trace_records": 6000,
+  "parent_address_space_bytes": 536870912,
+  "parent_file_bytes": 136314880,
+  "physical_native_settle_calls": 33753,
+  "physical_recorded_settle_calls": 33641,
+  "raw_bytes": 134217728,
+  "reason": "112 lower sources + 809 stage-transfer settles (64 role + 16 pair + 121 or0..4 + 32 projection0/1 + 64 feasible4 + 512 query4) + 32832 upper settles (16288 native_joint + 16544 native_marginal) = 33753 native settles (max ticks 33753*160=5400480). 240s stage / 600s total conservative stop boundaries.",
+  "record_encoded_cache_max_bytes": 131072,
+  "retry": 0,
+  "saved_trace_cache_entries": 18,
+  "stage_seconds": 240,
+  "total_seconds": 600,
+  "worker": 1,
+  "world_measurement": 0
+}

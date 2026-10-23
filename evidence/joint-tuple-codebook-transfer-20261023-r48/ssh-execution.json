@@ -1,0 +1,29 @@
+{
+  "approval_mode": "automatic",
+  "completion": {
+    "completed": true,
+    "evidence_bytes": 7775508,
+    "evidence_sha256": "75eb9f9756bf39a07363b5305e1f0236a6cef48a9949362cc231957bee0658d3",
+    "parent_cpu_seconds_including_seal": 1.059923,
+    "seconds_including_seal": 80.6737136390002,
+    "within_wall_limit": true
+  },
+  "decision": {
+    "commandNames": [
+      "python3"
+    ],
+    "decision": "execute",
+    "policyRevision": 8,
+    "reasonCode": "command_set",
+    "targetRevision": "4cab9f57b2fd6d81004278e51ea7918d2124972cc1ae968b1d463d3a7c80cd4e"
+  },
+  "known_status": "COMPLETED",
+  "native_rerun": false,
+  "received_json": 1461,
+  "received_nonempty_files": 1461,
+  "request_id": "5703d3f3bb85b703b2513944022e7e77ae457fe0440faf8c",
+  "request_key": "r48-exp94-bootstrap-launch-20261023-v1",
+  "target": "AI Research SSH default/aws-local",
+  "upload_job_id": "1e4bc23640cc319d38b4ab1436c9689d6364c446a48deaeb",
+  "upload_transfer_id": "54df43b68a299901d699db90cb0a1bcf6ca02f96592b3753"
+}
