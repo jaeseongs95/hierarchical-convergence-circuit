@@ -1,0 +1,29 @@
+{
+  "approval_mode": "automatic",
+  "completion": {
+    "completed": false,
+    "evidence_bytes": 13524693,
+    "evidence_sha256": "dcf084277e9713815f0c117c1ddc02e687bb33b12bde06407a110fd70b2a4e26",
+    "parent_cpu_seconds_including_seal": 1.5949389999999999,
+    "seconds_including_seal": 80.51602940101293,
+    "within_wall_limit": true
+  },
+  "decision": {
+    "commandNames": [
+      "python3"
+    ],
+    "decision": "execute",
+    "policyRevision": 8,
+    "reasonCode": "command_set",
+    "targetRevision": "4cab9f57b2fd6d81004278e51ea7918d2124972cc1ae968b1d463d3a7c80cd4e"
+  },
+  "known_status": "WORK_COMPLETED_AUDIT_CASE_METADATA_KEYERROR_LOCAL_REPLAY_PASS",
+  "native_rerun": false,
+  "received_json": 2405,
+  "received_nonempty_files": 2406,
+  "request_id": "628c8e9654c8c754f5af6cbe2bd896c94dd9ed4ff82b41d3",
+  "request_key": "r47-capacity-codebook-20261023-7f79b2d14d4f",
+  "target": "AI Research SSH default/aws-local",
+  "upload_job_id": "053de7dc2488afa1d3c63a2ada39cd79c85b3bd5a5f2f910",
+  "upload_transfer_id": "79a836b5d0cddf98d5fef4bea8cf59fa5e21cfcae5eb7556"
+}

@@ -1,0 +1,101 @@
+{
+  "actionDigest": "sha256:c2609988bf8f7689d994d294a5cc1bf34c4b0e4eb37ee5c2ab1efa93f222ecf0",
+  "approval": {
+    "evidenceRefs": [],
+    "required": false,
+    "status": "not-required"
+  },
+  "blastRadius": {
+    "affectedTargets": 2,
+    "affectedUsers": 1,
+    "description": "Creates new ZIP and exclusive directory on designated AI Research SSH without modifying existing directories.",
+    "external": false
+  },
+  "checks": [
+    {
+      "checkId": "target-specificity",
+      "evidenceRefs": [],
+      "message": "모든 대상이 구체적으로 식별됐습니다.",
+      "state": "passed"
+    },
+    {
+      "checkId": "scope-match",
+      "evidenceRefs": [
+        "D:\\gemini\\리드\\ai-capacity-codebook-20261023-r47\\task-envelope.json"
+      ],
+      "message": "대상이 작업 범위 안에 있습니다.",
+      "state": "passed"
+    },
+    {
+      "checkId": "authorization-match",
+      "evidenceRefs": [
+        "D:\\gemini\\리드\\ai-capacity-codebook-20261023-r47\\contract-validation.json"
+      ],
+      "message": "행동, 대상과 환경이 허용 범위에 있습니다.",
+      "state": "passed"
+    },
+    {
+      "checkId": "current-state",
+      "evidenceRefs": [
+        "D:\\gemini\\리드\\ai-capacity-codebook-20261023-r47\\pre-transfer-verification.json"
+      ],
+      "message": "현재 fingerprint가 예상값과 일치합니다.",
+      "state": "passed"
+    },
+    {
+      "checkId": "approval",
+      "evidenceRefs": [],
+      "message": "승인 상태: not-required",
+      "state": "passed"
+    },
+    {
+      "checkId": "recovery",
+      "evidenceRefs": [
+        "D:\\gemini\\리드\\ai-capacity-codebook-20261023-r47\\server-source.zip",
+        "D:\\gemini\\리드\\ai-capacity-codebook-20261023-r47\\pre-transfer-verification.json",
+        "D:\\gemini\\리드\\ai-capacity-codebook-20261023-r47\\local-preparation.json"
+      ],
+      "message": "복구 또는 명시적 비가역성 수용 근거가 있습니다.",
+      "state": "passed"
+    },
+    {
+      "checkId": "blast-radius",
+      "evidenceRefs": [],
+      "message": "예상 영향 범위가 모든 대상을 포함합니다.",
+      "state": "passed"
+    }
+  ],
+  "classification": {
+    "actionClass": "other",
+    "dataLossPotential": false,
+    "externalImpact": false,
+    "permissionImpact": false,
+    "reversibility": "reversible"
+  },
+  "invalidationTriggers": [
+    "action 또는 planned tool 변경",
+    "target 또는 environment 변경",
+    "current-state evidence 또는 fingerprint 변경",
+    "scope 또는 authorization 변경",
+    "승인 evidence의 만료 또는 범위 변경",
+    "복구 계획 변경",
+    "예상 blast radius 변경"
+  ],
+  "observedAt": "2026-10-23T00:04:17.658Z",
+  "operationId": "r47-ssh-upload-and-single-run",
+  "recovery": {
+    "available": true,
+    "evidenceRefs": [
+      "D:\\gemini\\리드\\ai-capacity-codebook-20261023-r47\\server-source.zip",
+      "D:\\gemini\\리드\\ai-capacity-codebook-20261023-r47\\pre-transfer-verification.json",
+      "D:\\gemini\\리드\\ai-capacity-codebook-20261023-r47\\local-preparation.json"
+    ],
+    "irreversibilityAccepted": false,
+    "restoreTested": true
+  },
+  "schemaVersion": "1.0.0",
+  "targetDigest": "sha256:7b534b2bebacc1172a9670e3444f160b97c768e3423be73ecb296fe767d07c99",
+  "unresolved": [],
+  "validUntil": "2026-10-23T00:19:17.658Z",
+  "verdict": "READY"
+}

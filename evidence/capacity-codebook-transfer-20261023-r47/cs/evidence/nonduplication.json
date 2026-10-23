@@ -1,0 +1,13 @@
+{
+  "direction": "experiments/exp-93-capacity-codebook-transfer/DELIBERATION.ko.md",
+  "prior": "R35 tested feasible1..4 and query1..4 under mutually exclusive leaves that collapsed the 6 ASTs to 3/6-5/6 functions (with AST 2 producing 0 feasible solutions) and omitted n=1(complete=True) and n=4(complete=False). R36, R44, and R45 restricted overlapping-leaf and 8-codebook testing to n=2, complete=True only, and R46 relational consumer used only feasible2. R47 exercises all 4 capacities n in {1,2,3,4} across 40 base cases per capacity (160 base cases, 1280 native + 160 exact = 1440 evaluations) with 6/6 distinct AST functions per capacity, 8/8 restricted map classes per base, 64/64 ordered pairs per codebook, complete |F| in {0..4} / unanimous-vs-split query / complete=False abstention coverage, and 1188-settle 4-capacity stage transfer (64 role + 384 expr + 60 feasible1..4 + 680 query1..4); not R31 learned macro cost or R43 micro-optimization.",
+  "source_pins": {
+    "experiments/exp-77-macro-control/RESULTS.ko.md": "f3d8d69f7c73325e01b46e35f5c188857e343838d0340ef02d4db76edf029f8e",
+    "experiments/exp-81-compositional-slot/RESULTS.ko.md": "71f0532a29c20e0ae309c3dd9acac93c6c98a660655f328d97a5c6c92c9eaa1c",
+    "experiments/exp-82-overlap-composition/RESULTS.ko.md": "66f92ee9601f68b886d6198e4b6aeb1955c0342839bfd55cf3da232ca683bc09",
+    "experiments/exp-89-exp-once/RESULTS.ko.md": "f0cccfcb906ce3b0e4b1724a4b126bd30a8f53cffb4104cd50ecfddd7f40fb05",
+    "experiments/exp-90-codebook-invariance/RESULTS.ko.md": "ef87b118ceddb3edbdba93d4f39c9f9f0abae974b01b33861f58f872cb14289b",
+    "experiments/exp-91-codebook-transfer-coverage/RESULTS.ko.md": "bde20ae284eaa99d9d87e8ff47013ca3e160c13cf746b36ce99f29de345a411a",
+    "experiments/exp-92-relational-codebook-transfer/RESULTS.ko.md": "0a0d13e7bd37826565f78cdb5d0ee67a5e06924bfdfcd891f19881326c3570c6"
+  }
+}

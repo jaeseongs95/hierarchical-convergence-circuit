@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0.0",
+  "requestId": "CS-R47",
+  "mode": "derive",
+  "objective": "Verify variable-capacity (n=1..4) overlapping-AST (6/6 distinct per capacity), 8-token / 64-pair / 8-codebook invariance (8/8 restricted classes per base) and 1188-settle 4-capacity stage transfer (64 role, 384 expr, 60 feasible1..4, 680 query1..4)",
+  "sourceSnapshotDigest": "sha256:fa050c4a07f041ae415ca0566b4f25a489ecfb1ad3faf3ae51fa7115ffabb49e",
+  "sourceRefs": [
+    {
+      "id": "SRC-CORE",
+      "path": "source/hypothesis.md",
+      "digest": "sha256:d1b735eee8f72c092c847c04e81a34972fa919be906311255faa797e58ec9302"
+    },
+    {
+      "id": "SRC-R32",
+      "path": "source/r33-runtime.py",
+      "digest": "sha256:95820d0fcbf48290f677e9a995c7a3a4a6261a7fb5d2b256b59c998805a6a5d9"
+    },
+    {
+      "id": "SRC-R19",
+      "path": "source/r19-probe.py",
+      "digest": "sha256:bb0159ba0c50505fc148322e0d0a17d53c184a0bdc7bed21b393120971eb5630"
+    },
+    {
+      "id": "SRC-R35-RESULT",
+      "path": "source/r35-results.md",
+      "digest": "sha256:71f0532a29c20e0ae309c3dd9acac93c6c98a660655f328d97a5c6c92c9eaa1c"
+    },
+    {
+      "id": "SRC-R45-RESULT",
+      "path": "source/r45-results.md",
+      "digest": "sha256:bde20ae284eaa99d9d87e8ff47013ca3e160c13cf746b36ce99f29de345a411a"
+    },
+    {
+      "id": "SRC-R46-RESULT",
+      "path": "source/r46-results.md",
+      "digest": "sha256:0a0d13e7bd37826565f78cdb5d0ee67a5e06924bfdfcd891f19881326c3570c6"
+    },
+    {
+      "id": "SRC-ENCODER",
+      "path": "source/r35-runtime.py",
+      "digest": "sha256:2ed5316a500a290f7bf5e4ecc54abd72ad8fd54f6b801bd18ee00fca70bbb751"
+    },
+    {
+      "id": "SRC-COMPILER",
+      "path": "source/r35-compiler.py",
+      "digest": "sha256:c167508ee664aa23a6cdafcda652b6e5f0d6292157d09099f3073cc4e78e933e"
+    },
+    {
+      "id": "SRC-SLOTS",
+      "path": "source/r36-runtime.py",
+      "digest": "sha256:8466a0ce93b182800eb447d00a5868f5273120057cbeec49c4fe3b4b51c0ffae"
+    },
+    {
+      "id": "SRC-KERNEL",
+      "path": "source/dynamics.py",
+      "digest": "sha256:a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc"
+    },
+    {
+      "id": "SRC-BUDGET",
+      "path": "source/budget.json",
+      "digest": "sha256:11ad8338430b7eb676c89b475fd86a6648c3f55a07806385ba563efe429a0515"
+    },
+    {
+      "id": "SRC-DIRECTION",
+      "path": "source/direction.json",
+      "digest": "sha256:debb1be2c95f0e2c12c6ea02685b6cd9ced235a7ba7cd549dd936df3d92946b3"
+    }
+  ],
+  "operationalFacts": [
+    {
+      "id": "FACT-GAP",
+      "statement": "R35 tested feasible1..4 and query1..4 under mutually exclusive leaves that collapsed the 6 ASTs to 3/6-5/6 functions (with AST 2 producing 0 feasible solutions) and omitted n=1(complete=True) and n=4(complete=False). R36, R44, and R45 restricted overlapping-leaf and 8-codebook testing to n=2, complete=True only, and R46 relational consumer used only feasible2.",
+      "evidenceRefs": [
+        "SRC-R35-RESULT",
+        "SRC-R45-RESULT",
+        "SRC-R46-RESULT",
+        "SRC-DIRECTION",
+        "SRC-COMPILER"
+      ]
+    },
+    {
+      "id": "FACT-KERNEL",
+      "statement": "R35 equality(cfg) partitions 64 ordered 3-bit inputs into 4 Hamming equivalence classes d in {0,1,2,3}, feeding 6x4^3=384 exhaustive expr settles. Across capacities n in {1,2,3,4}, feasible_n has C(n,2) in {0,1,3,6} pairwise inhibition nodes (pair_i_j -> at_least_two) with 2^{n+1} Boolean corners (4+8+16+32=60), and query_n has 2^{2n+1} Boolean corners (8+32+128+512=680) driven by capacity-stratified inner-margin [false_max, true_min] bounds.",
+      "evidenceRefs": [
+        "SRC-ENCODER",
+        "SRC-COMPILER",
+        "SRC-SLOTS",
+        "SRC-R32",
+        "SRC-KERNEL"
+      ]
+    },
+    {
+      "id": "FACT-BUDGET",
+      "statement": "56 lower sources + 1188 stage-transfer settles (64 role + 384 expr + 60 feasible1..4 + 680 query1..4) + 28160 upper settles across n in {1,2,3,4} (320x10 + 320x18 + 320x26 + 320x34) = 29404 native settles (+ 160 exact = 1440 evaluations, 18 batches x 80). 600s total / 240s stage / raw 128MiB / cache 128MiB / AS 512MiB / worker 1 / retry 0.",
+      "evidenceRefs": [
+        "SRC-BUDGET"
+      ]
+    }
+  ],
+  "existingContractRef": null
+}

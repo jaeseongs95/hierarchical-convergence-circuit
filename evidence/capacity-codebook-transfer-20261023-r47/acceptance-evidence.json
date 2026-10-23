@@ -1,0 +1,16 @@
+{
+  "experiment": "EXP-93",
+  "finite_semantic_adoption": true,
+  "independent_auditor": false,
+  "mutations_rejected": 25,
+  "paired_conditions": 1120,
+  "paired_invariant": 1120,
+  "physical_calls": 29404,
+  "raw_manifest_matched_files": 2405,
+  "round": "R47",
+  "source_unchanged": true,
+  "status": "PASS_RESEARCH_DELIVERABLES_PRECOMMIT_TIMEPOINT",
+  "ticks": 915408,
+  "unique_traces": 2360,
+  "verdict": "FINITE_8TOKEN_CAPACITY_CODEBOOK_TRANSFER_ACCEPTED"
+}

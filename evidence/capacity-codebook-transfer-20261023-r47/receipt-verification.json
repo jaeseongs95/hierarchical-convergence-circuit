@@ -1,0 +1,56 @@
+{
+  "adapter_redaction_detected": true,
+  "all_native_tick_records_received": true,
+  "archive_received": false,
+  "input_pins": 109,
+  "raw_json_bytes": 34413630,
+  "raw_manifest_matched_files": 2405,
+  "raw_total_bytes": 34415422,
+  "received_json": 2405,
+  "received_nonempty_files": 2406,
+  "restored_files": [
+    "audit.stderr",
+    "failure.json",
+    "source-postcheck.json"
+  ],
+  "restored_keys": [
+    "evidence/capacity-codebook-transfer-20261023-r47/cs/source/r35-compiler.py",
+    "experiments/exp-93-capacity-codebook-transfer/DELIBERATION.ko.md",
+    "experiments/exp-93-capacity-codebook-transfer/DESIGN.ko.md"
+  ],
+  "restored_original_manifest_entries": 3,
+  "same_channel_not_host_attestation": true,
+  "source_files": 145,
+  "source_unchanged": true,
+  "ssh_completeness": "unknown upstream; all 2405 non-empty files + manifest directly matched original manifest size/SHA (3 files restored from adapter entropy redaction on known path strings and verified against manifest SHA-256); manifest outside its own hash",
+  "transport_failures": [
+    {
+      "expected_bytes": 1792,
+      "expected_sha256": "41de65f8eb8dfc5332df8203a0495ae30401211e1184e32ca7ded3f681152fd1",
+      "file": "audit.stderr",
+      "received_bytes": 1565,
+      "received_sha256": "f5f09db0f8de6c860138dd013638cd9f4b4880ee4551f1b9fbb47fbd4faf5e36"
+    },
+    {
+      "expected_bytes": 511,
+      "expected_sha256": "4a88963387ce17d7e113246b5aaaad803e8b35fd6ead394d5d51259f017d8e31",
+      "file": "failure.json",
+      "received_bytes": 448,
+      "received_sha256": "1ffb2d91d25800b90a98223186a25949ef234dbde2ca83b1c425c5cf5bac771e"
+    },
+    {
+      "expected_bytes": 7597,
+      "expected_sha256": "0059ca5ed8226c91337a150affbb6d6e6122af69db278951d9556124f11c22f3",
+      "file": "source-postcheck.json",
+      "received_bytes": 7479,
+      "received_sha256": "9bfa4dbe7940c56522191221c788ab98990e4f4d18cdd6d4990fe7bea99346b3"
+    }
+  ],
+  "unreceived_empty_logs": [
+    "audit.stdout",
+    "preparation.stderr",
+    "preparation.stdout",
+    "work.stderr",
+    "work.stdout"
+  ]
+}

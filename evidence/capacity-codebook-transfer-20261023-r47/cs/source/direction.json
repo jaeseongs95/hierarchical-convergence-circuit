@@ -1,0 +1,376 @@
+{
+  "axis_decisions": [
+    {
+      "axis": "CapacityAndOverlapCoverage",
+      "decision": "56개 원천(8토큰 × {R, P0..2, Q0..2})과 가변 후보 용량 n in {1,2,3,4} × 40 base(= 160 base; 각 용량당 Part I 24개 6 AST×4 상보 마스크 완전 격자 + Part II 8개 다중해/보편질의 분할 + Part III 8개 complete=False 보류 대조) × 8개 코드북(1,280 native + 160 exact = 1,440 평가)을 동결해, 모든 160개 base에서 제한 사상 8/8 구별(무변경 0/1,120쌍), 모든 코드북의 64/64 ordered 코드쌍 및 d in {0,1,2,3} 실현, 그리고 모든 용량 n in {1,2,3,4}에서 6/6 서로 다른 AST 의미와 |F| in {0..4}(none/unique/many/incomplete) 및 보편 질의(qtrue/qfalse/empty/mixed/incomplete) 전 구간을 검증한다.",
+      "evidence_claim_ids": [
+        "C1",
+        "C3"
+      ]
+    },
+    {
+      "axis": "MultiCandidateTransferSufficiency",
+      "decision": "role(64회: 4개 Hamming 동치류) -> expr0..5(384회: 6×4^3 전수 전이, 40,320개 전단사 동치류 수준 15,482,880 조합 오답 0) -> feasible1..4(4+8+16+32=60회: 용량별 2^{n+1} 내부 마진 최악 경계) -> query1..4(8+32+128+512=680회: 용량별 feasible{n} 최악 경계 주입 2^{2n+1} 전수 모서리) 총 1,188회 4-용량 단계별 전이 프로브를 분리 실행·검산하고, 비등거리 코드북에서 feasible(n)의 n개 하향 피드백으로 연속 eligibility(state_sha256)가 섭동될 때도 비역할 단계(expr, feasible1..4, query1..4) tick 완전 불변과 이산 의미 불변이 유지되는지 검산한다.",
+      "evidence_claim_ids": [
+        "C2",
+        "C4"
+      ]
+    },
+    {
+      "axis": "BudgetAndNonDuplication",
+      "decision": "원천 56 + 단계별 전이 프로브 1,188(64+384+60+680) + 상위 파이프라인 28,160(n=1: 3,200 + n=2: 5,760 + n=3: 8,320 + n=4: 10,880) = 총 29,404회 물리 native settle을 worker=1, retry=0, 단계 240초/전체 600초 상한으로 AI Research SSH(ssh-ai-mcp)에서 1회 실행하며, preparation 단계에서 모의 번들로 25개 합성 변조 거부 스위트를 사전 검증한다.",
+      "evidence_claim_ids": [
+        "C3",
+        "C4"
+      ]
+    }
+  ],
+  "case_brief": {
+    "assumptions": [
+      "공통 엔진(src/hcr/dynamics.py, model.py)과 기존 R35~R46 실행기(tools/r35..r46)는 수정하지 않으며, tools.r35_compositional_slot.runtime.execute를 직접 재사용한다."
+    ],
+    "constraints": [
+      "현재 엔진(src/hcr/)·과거 원자료 보존 및 신규 R47 세 경로만 변경",
+      "지정 AI Research SSH(ssh-ai-mcp)·worker1/retry0·운영상한 동결·동결 후 재실행/튜닝 금지",
+      "실제 가변 후보 용량(n in {1,2,3,4}) 파이프라인에서 8개 토큰 전체와 64/64 ordered 코드쌍을 소비하고 160개 base 모두 제한 대응 8/8 구별 및 용량별 6/6 서로 다른 AST 의미 달성",
+      "4-용량 단계별 전이 프로브(role 64 -> expr0..5 384 전수 -> feasible1..4 60 -> query1..4 680 = 1,188회)와 다중 후보 경쟁(feasible3/4 쌍별 억제 및 query3/4 만장일치/분할/미완결 보류) 코드북 불변성을 분리 검산하고 64^n 전체 열거로 과장하지 않음",
+      "학습0·세계측정0·R31 학습비용 음성·R40 비용 채택 보류·R43 미세최적화 미채택 보존 및 preparation 단계의 25개 합성 변조 사전 검증"
+    ],
+    "decision": "R46/EXP-92 이후 비중복 후속 연구 R47/EXP-93의 질문·가변 후보 용량(n in {1,2,3,4}) 중첩 AST 및 다중해/미완결 보편 질의 파이프라인의 8토큰/64코드쌍 coverage·1,188회 단계별 전이 충분조건 및 예산 확정",
+    "facts": [
+      "R35(exp-81-compositional-slot)는 compiler.py로 feasible1..4(9,11,14,18 그룹; C(n,2) in {0,1,3,6}개 쌍별 억제 노드)와 query1..4(13,17,21,25 그룹)를 정의했으나, C/T leaf가 서로 배타적이어서 2/8, 3/8, 4/8 leaf 패턴만 실현되고 6개 AST가 3/6, 4/6, 5/6 의미로 축약되었으며(AST 2 해집합 0건), 관측 n=1은 complete=False에서만, n=4는 complete=True에서만 실행되었다.",
+      "R36(exp-82-overlap-composition), R44(exp-90), R45(exp-91)는 중첩 leaf와 8토큰 코드북 전이를 오직 n=2, complete=True(feasible2, query2)로만 고정해 검증했으며, R46(exp-92)의 관계형 소비기도 feasible2(Z 후보 2개)만 사용했다.",
+      "feasible(n)에서 각 후보 e_i는 1(goal) + (n-1)(pair_{i}_{j}) = n개의 하향 피드백 링크를 받으며, feasible4에서는 6개 쌍별 교집합 노드(pair0_1..pair2_3)가 6-입력 OR(at_least_two, bias +10.0)를 구동하므로 비등거리 코드북이 role/expr 스칼라를 섭동시킬 때 다중 후보(|F| in {2,3,4}) 억제 경계와 query3/4의 만장일치(qtrue/qfalse) 대 비대칭 분할(3:1, 2:2, 1:3 -> mixed) 및 complete=False(incomplete) 경계의 불변성은 미검증 상태다.",
+      "r36/verify.py와 r45/verify.py는 네트워크 슬라이스를 n=2(ks[:8], ks[8], ks[9:-1], ks[17])로 하드코딩했으므로, R47에서는 n = len(candidates) in {1,2,3,4}로 일반화하고 preparation()에서 25개 합성 변조 스위트를 사전 검증해야 한다."
+    ],
+    "failure_modes": [
+      "단순 배타적 leaf나 일부 AST 쌍만 배치해 특정 용량 n에서 6개 AST 중 일부가 다시 같은 진리벡터/해집합으로 축약되는 실패",
+      "n=1 또는 n=2 base에서 활성 토큰 집합이 구별 앵커({1,6}, {1,7}, {0,3,5}, {0,3,6}, {0,5,6})를 빠뜨려 8개 코드북의 제한 사상이 8개 미만으로 축약되는 실패",
+      "r36/r45의 n=2 고정 슬라이스 인덱싱을 그대로 쓰거나 preparation에서 25개 합성 변조 거부 스위트를 사전 실행하지 않는 실패"
+    ],
+    "success_criteria": [
+      "모든 160개 base(용량 n=1..4 각 40개)에서 제한 사상 8/8 구별(무변경 0/1,120 native 쌍), 코드북별 64/64 ordered 코드쌍 및 d in {0,1,2,3} 전수 실현, 용량별 6/6 서로 다른 AST 의미 및 |F| in {0..4}·보편 질의(qtrue/qfalse/empty/mixed/incomplete) 전 구간 실현 확인",
+      "1,188회 4-용량 단계별 전이 프로브(role 64 + expr 384 + feasible1..4 60 + query1..4 680)와 1,280 native + 160 exact(1,440 평가) 전수 검산, 비역할 단계(expr, feasible, query) tick 불변 및 1,120짝 의미 불변 통과"
+    ],
+    "unknowns": [
+      "비등거리 코드북 섭동이 n in {3,4}의 다중 하향 피드백(feasible3/4의 3개·6개 pair_i_j 노드)을 통해 연속 eligibility 스칼라와 state_sha256을 변화시킬 때, query3/4(21, 25 그룹)의 만장일치(3:0, 4:0, 0:3, 0:4) 대 비대칭 분할(2:1, 1:2, 3:1, 2:2, 1:3) 판정과 비역할 단계 tick 불변이 100% 보존되는지 여부"
+    ]
+  },
+  "consensus_proposal": {
+    "action": "R47 / EXP-93 (exp-93-capacity-codebook-transfer) 동결 실행: 가변 후보 용량(n in {1,2,3,4}) 중첩 AST 및 다중해/미완결 보편 질의 파이프라인의 8토큰·64코드쌍 완전 coverage 및 1,188회 단계별 전이 충분조건 분리 검증",
+    "axis_alignment": [
+      {
+        "axis": "CapacityAndOverlapCoverage",
+        "decision_ref": "CapacityAndOverlapCoverage"
+      },
+      {
+        "axis": "MultiCandidateTransferSufficiency",
+        "decision_ref": "MultiCandidateTransferSufficiency"
+      },
+      {
+        "axis": "BudgetAndNonDuplication",
+        "decision_ref": "BudgetAndNonDuplication"
+      }
+    ],
+    "conditions": [
+      "실제 서버 실행 및 저장 원자료 재생 검산에서 모든 용량(n=1..4)의 의미·AST 구별·전이·보류 경계가 통과해야 채택하며, 실패 시 튜닝·재실행 없이 음성 결과로 보존한다."
+    ],
+    "decision_owner": null,
+    "no_consensus_reason": null,
+    "remaining_options": [
+      "학습 산출물과 실제 원계산 대체를 연결하는 후속 과제는 R31 음성 대조를 보존하는 별도 계약으로 분리한다."
+    ],
+    "satisfied_constraints": [
+      "현재 엔진(src/hcr/)·과거 원자료 보존 및 신규 R47 세 경로만 변경",
+      "지정 AI Research SSH(ssh-ai-mcp)·worker1/retry0·운영상한 동결·동결 후 재실행/튜닝 금지",
+      "실제 가변 후보 용량(n in {1,2,3,4}) 파이프라인에서 8개 토큰 전체와 64/64 ordered 코드쌍을 소비하고 160개 base 모두 제한 대응 8/8 구별 및 용량별 6/6 서로 다른 AST 의미 달성",
+      "4-용량 단계별 전이 프로브(role 64 -> expr0..5 384 전수 -> feasible1..4 60 -> query1..4 680 = 1,188회)와 다중 후보 경쟁(feasible3/4 쌍별 억제 및 query3/4 만장일치/분할/미완결 보류) 코드북 불변성을 분리 검산하고 64^n 전체 열거로 과장하지 않음",
+      "학습0·세계측정0·R31 학습비용 음성·R40 비용 채택 보류·R43 미세최적화 미채택 보존 및 preparation 단계의 25개 합성 변조 사전 검증"
+    ],
+    "status": "conditional_consensus",
+    "supported_by_verified_claims": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "unresolved_dissent": []
+  },
+  "constraints": [
+    "현재 엔진(src/hcr/)·과거 원자료 보존 및 신규 R47 세 경로만 변경",
+    "지정 AI Research SSH(ssh-ai-mcp)·worker1/retry0·운영상한 동결·동결 후 재실행/튜닝 금지",
+    "실제 가변 후보 용량(n in {1,2,3,4}) 파이프라인에서 8개 토큰 전체와 64/64 ordered 코드쌍을 소비하고 160개 base 모두 제한 대응 8/8 구별 및 용량별 6/6 서로 다른 AST 의미 달성",
+    "4-용량 단계별 전이 프로브(role 64 -> expr0..5 384 전수 -> feasible1..4 60 -> query1..4 680 = 1,188회)와 다중 후보 경쟁(feasible3/4 쌍별 억제 및 query3/4 만장일치/분할/미완결 보류) 코드북 불변성을 분리 검산하고 64^n 전체 열거로 과장하지 않음",
+    "학습0·세계측정0·R31 학습비용 음성·R40 비용 채택 보류·R43 미세최적화 미채택 보존 및 preparation 단계의 25개 합성 변조 사전 검증"
+  ],
+  "cross_examination": {
+    "coverage": [
+      {
+        "item_id": "T1",
+        "reviewer_ids": [
+          "6c9b3829-5f04-4dc5-8a70-f0c3f4df37e7"
+        ]
+      },
+      {
+        "item_id": "T2",
+        "reviewer_ids": [
+          "47a1c7ad-105e-4a61-ac39-d1705d916c68"
+        ]
+      }
+    ],
+    "decision": "run",
+    "followups": [
+      {
+        "item_ids": [
+          "T1"
+        ],
+        "reviewer_id": "6c9b3829-5f04-4dc5-8a70-f0c3f4df37e7"
+      },
+      {
+        "item_ids": [
+          "T2"
+        ],
+        "reviewer_id": "47a1c7ad-105e-4a61-ac39-d1705d916c68"
+      }
+    ],
+    "reason": "T1은 용량별 40개 base(총 160개 base, 29,404 settles) 안에서 6개 AST 전체의 8개 leaf 패턴(48/48 셀) 구별과 다중해(|F|=2,3,4) 만장일치/분할 및 complete=False 구성을 확정하기 위해, T2는 feasible{n}->query{n} 용량별 최악 경계 주입과 25개 합성 변조 스위트 및 1,440 평가 구성을 확정하기 위해 실행함.",
+    "selected_item_ids": [
+      "T1",
+      "T2"
+    ],
+    "trigger_items": [
+      {
+        "id": "T1",
+        "origin_reviewer": "47a1c7ad-105e-4a61-ac39-d1705d916c68"
+      },
+      {
+        "id": "T2",
+        "origin_reviewer": "6c9b3829-5f04-4dc5-8a70-f0c3f4df37e7"
+      }
+    ]
+  },
+  "issue_ledger": [
+    {
+      "available_evidence": [
+        "C1",
+        "C3"
+      ],
+      "issue_id": "I-CAPACITY-OVERLAP-6AST-8CLASS",
+      "rationale": "R35의 배타적 leaf 축약(3/6~5/6)과 R36/R45의 n=2, complete=True 제약을 동시에 해결하기 위해, 각 용량 n in {1,2,3,4}의 40개 base를 Part I(24개: 6 AST × 4 상보 마스크 격자) + Part II(8개: 다중해 |F| in {0..4} 및 만장일치/분할 질의) + Part III(8개: complete=False 미완결 보류)로 구성하고 구별 앵커 토큰을 배치해 160/160 base 8/8 제한 사상 구별과 64/64 코드쌍을 보장함.",
+      "required_evidence": [
+        "160 base 8-class restricted map, 64/64 ordered pair, and per-capacity 6/6 AST distinction verification"
+      ],
+      "status": "CONFIRMED"
+    },
+    {
+      "available_evidence": [
+        "C2",
+        "C4"
+      ],
+      "issue_id": "I-MULTICANDIDATE-ENVELOPE-AND-AUDIT",
+      "rationale": "feasible1..4(60회)의 용량별 최악 내부 마진 경계를 query1..4(680회)에 주입하는 1,188회 단계별 전이 프로브와 일반화된 n-후보 감사 슬라이싱(ks[:4n], ks[4n], ks[4n+1:8n+1], ks[8n+1]) 및 25개 합성 변조 사전 게이트를 결합함.",
+      "required_evidence": [
+        "1,188 stage-transfer settles and 1,280 native + 160 exact saved audit with 25 mutation rejections"
+      ],
+      "status": "CONFIRMED"
+    }
+  ],
+  "material_claims": [
+    {
+      "id": "C1",
+      "provenance": [
+        {
+          "locator": "evidence/compositional-slot-20261020-r35/analysis.json",
+          "verification_note": "Coordinator directly verified lines 2002-2100 showing both_leaf0_leaf1_true_covered=false, distinct_AST_meanings in {3,4,5}, and AST 2 empty feasible set across R35.",
+          "verification_status": "verified"
+        },
+        {
+          "locator": "tools/r36_overlap_composition/runtime.py",
+          "verification_note": "Coordinator directly verified lines 6-17 showing hardcoded len(candidates)==2 and complete=True in R36/R44/R45.",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "R35는 배타적 leaf로 인해 6개 AST가 3/6~5/6 의미로 축약되고 n=1(complete=True)과 n=4(complete=False)를 실행하지 않았으며, R36·R44·R45는 중첩 leaf와 8토큰 코드북 전이를 오직 n=2, complete=True(feasible2, query2)에서만 검증했다."
+    },
+    {
+      "id": "C2",
+      "provenance": [
+        {
+          "locator": "tools/r35_compositional_slot/compiler.py",
+          "verification_note": "Coordinator directly verified feasible(n) and query(n) in lines 40-61 showing C(n,2) pairwise conjunction nodes and n top-down feedback links per candidate.",
+          "verification_status": "verified"
+        },
+        {
+          "locator": "tools/r35_compositional_slot/runtime.py",
+          "verification_note": "Coordinator directly verified promote(), consume_t(), and execute() in lines 20-60 showing 8n+2 native calls and continuous eligibility handoff.",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "tools/r35_compositional_slot/compiler.py의 feasible(n)은 C(n,2) in {0,1,3,6}개의 쌍별 억제 노드(pair_{i}_{j})와 후보당 n개의 하향 피드백을 가지며 query(n)은 최대 25개 그룹(n=4)으로 다중 허용 후보(|F| in {2,3,4})의 만장일치(qtrue/qfalse)와 분할(mixed) 및 미완결(incomplete)을 판정하므로, 비등거리 코드북 섭동 하 다중 용량 전이 검증이 필수적이다."
+    },
+    {
+      "id": "C3",
+      "provenance": [
+        {
+          "locator": "experiments/exp-91-codebook-transfer-coverage/frozen_spec.json",
+          "verification_note": "Coordinator directly verified the 8 frozen 3-bit codebooks and distinguishing token anchor subsets.",
+          "verification_status": "verified"
+        },
+        {
+          "locator": "tools/r36_overlap_composition/verify.py",
+          "verification_note": "Coordinator directly verified distinctions() and audit() in lines 25-69.",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "56개 원천과 용량 n in {1,2,3,4}별 40개 base(Part I 24개 6 AST×4 상보 마스크 격자 + Part II 8개 다중해/보편질의 분할 + Part III 8개 complete=False 보류, 총 160개 base)에 구별 앵커({1,6},{1,7},{0,3,5},{0,3,6},{0,5,6})와 짝수/홀수 패리티 코호트([0,3,5,6],[1,2,4,7])를 배치하면, 160개 모든 base에서 제한 사상 8/8 구별(무변경 0/1,120), 코드북별 64/64 ordered 코드쌍, 용량별 6/6 AST 의미 구별 및 모든 |F| in {0..4}·질의 판정 구간 실현이 보장된다."
+    },
+    {
+      "id": "C4",
+      "provenance": [
+        {
+          "locator": "tools/r45_codebook_transfer_coverage/probe.py",
+          "verification_note": "Coordinator directly verified role(64) and expr(384) transfer probes in lines 57-110.",
+          "verification_status": "verified"
+        },
+        {
+          "locator": "tools/r35_compositional_slot/verify.py",
+          "verification_note": "Coordinator directly verified general n-candidate slice indexing (ks[:4n], ks[4n], ks[4n+1:-1], ks[-1]) in lines 26-53.",
+          "verification_status": "verified"
+        }
+      ],
+      "statement": "role(64) + expr0..5(384) + feasible1..4(4+8+16+32=60) + query1..4(8+32+128+512=680) = 1,188회 단계별 전이 프로브와 상위 파이프라인 28,160회(n=1..4 각 320 native 평가) + 원천 56회 = 총 29,404회 물리 settle(1,280 native + 160 exact = 1,440 평가)은 단일 SSH 실행 예산 안에서 4-용량 코드북 전이 충분조건과 25개 합성 변조 거부를 완전 검증한다."
+    }
+  ],
+  "method_notes": [
+    "MEDIUM / degraded_ok 기본 경로로 2명의 격리된 blind reviewer(6c9b3829, 47a1c7ad)와 각 1회 교차검토 후 Coordinator가 원자료 대조를 거쳐 통합함.",
+    "원시 reviewer 출력·내부 프롬프트·CoT는 저장하지 않으며 검증된 주장과 출처만 기록함."
+  ],
+  "observability": {
+    "tokens": "NOT_OBSERVABLE",
+    "tool_calls": "NOT_OBSERVABLE",
+    "wall_time": "NOT_OBSERVABLE",
+    "worker_count": 2
+  },
+  "panel_manifest": [
+    {
+      "actual_model": "NOT_OBSERVABLE",
+      "actual_reasoning": "NOT_OBSERVABLE",
+      "blind_round1": true,
+      "classification": "reviewer",
+      "context_isolated": true,
+      "fallback_reason": "Terra preference not advertised by host; inherited host configuration used.",
+      "id": "6c9b3829-5f04-4dc5-8a70-f0c3f4df37e7",
+      "instantiated": true,
+      "is_judge": false,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ],
+      "requested_model": "inherit",
+      "requested_reasoning": "inherit",
+      "role": "Capacity and Semantics Reviewer",
+      "status": "completed"
+    },
+    {
+      "actual_model": "NOT_OBSERVABLE",
+      "actual_reasoning": "NOT_OBSERVABLE",
+      "blind_round1": true,
+      "classification": "reviewer",
+      "context_isolated": true,
+      "fallback_reason": "Terra preference not advertised by host; inherited host configuration used.",
+      "id": "47a1c7ad-105e-4a61-ac39-d1705d916c68",
+      "instantiated": true,
+      "is_judge": false,
+      "participated_stages": [
+        "round1",
+        "cross_examination"
+      ],
+      "requested_model": "inherit",
+      "requested_reasoning": "inherit",
+      "role": "Contract and Budget Reviewer",
+      "status": "completed"
+    }
+  ],
+  "preflight": {
+    "missing_capabilities": [],
+    "observed_capabilities": [
+      "two blind isolated reviewers",
+      "local primary evidence access",
+      "claim cross-examination"
+    ],
+    "required_capabilities": [
+      "two blind isolated reviewers",
+      "local primary evidence access",
+      "claim cross-examination"
+    ],
+    "supported_models_reasoning": "NOT_OBSERVABLE"
+  },
+  "required_constraints": [
+    "현재 엔진(src/hcr/)·과거 원자료 보존 및 신규 R47 세 경로만 변경",
+    "지정 AI Research SSH(ssh-ai-mcp)·worker1/retry0·운영상한 동결·동결 후 재실행/튜닝 금지",
+    "실제 가변 후보 용량(n in {1,2,3,4}) 파이프라인에서 8개 토큰 전체와 64/64 ordered 코드쌍을 소비하고 160개 base 모두 제한 대응 8/8 구별 및 용량별 6/6 서로 다른 AST 의미 달성",
+    "4-용량 단계별 전이 프로브(role 64 -> expr0..5 384 전수 -> feasible1..4 60 -> query1..4 680 = 1,188회)와 다중 후보 경쟁(feasible3/4 쌍별 억제 및 query3/4 만장일치/분할/미완결 보류) 코드북 불변성을 분리 검산하고 64^n 전체 열거로 과장하지 않음",
+    "학습0·세계측정0·R31 학습비용 음성·R40 비용 채택 보류·R43 미세최적화 미채택 보존 및 preparation 단계의 25개 합성 변조 사전 검증"
+  ],
+  "run": {
+    "assurance": "partially_independent",
+    "candidate_skill_sha256": null,
+    "capability_shortfall": false,
+    "completed_worker_ids": [
+      "6c9b3829-5f04-4dc5-8a70-f0c3f4df37e7",
+      "47a1c7ad-105e-4a61-ac39-d1705d916c68"
+    ],
+    "failures": [],
+    "fresh_judge_id": null,
+    "id": "R47-direction-20261023",
+    "judge_fallback": null,
+    "redeliberations": [],
+    "reused_worker_ids": [],
+    "specialist_additions": [],
+    "stage": "MEDIUM",
+    "strict": false,
+    "worker_cap": 8,
+    "workers": [
+      {
+        "actual_model": "NOT_OBSERVABLE",
+        "actual_reasoning": "NOT_OBSERVABLE",
+        "blind_round1": true,
+        "classification": "reviewer",
+        "context_isolated": true,
+        "fallback_reason": "Terra preference not advertised by host; inherited host configuration used.",
+        "id": "6c9b3829-5f04-4dc5-8a70-f0c3f4df37e7",
+        "instantiated": true,
+        "is_judge": false,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ],
+        "requested_model": "inherit",
+        "requested_reasoning": "inherit",
+        "role": "Capacity and Semantics Reviewer",
+        "status": "completed"
+      },
+      {
+        "actual_model": "NOT_OBSERVABLE",
+        "actual_reasoning": "NOT_OBSERVABLE",
+        "blind_round1": true,
+        "classification": "reviewer",
+        "context_isolated": true,
+        "fallback_reason": "Terra preference not advertised by host; inherited host configuration used.",
+        "id": "47a1c7ad-105e-4a61-ac39-d1705d916c68",
+        "instantiated": true,
+        "is_judge": false,
+        "participated_stages": [
+          "round1",
+          "cross_examination"
+        ],
+        "requested_model": "inherit",
+        "requested_reasoning": "inherit",
+        "role": "Contract and Budget Reviewer",
+        "status": "completed"
+      }
+    ]
+  },
+  "schema_version": "1.0",
+  "skill_version": "1.0.0"
+}

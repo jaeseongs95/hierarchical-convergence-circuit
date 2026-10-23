@@ -1,0 +1,117 @@
+{
+  "adapter_redaction_detected": true,
+  "all_native_tick_records_received": true,
+  "archive_received": false,
+  "exact_conditions_verified": 160,
+  "expr_transfer_conditions_verified": 384,
+  "feasible_envelope_conditions_verified": 60,
+  "frozen_scalar_tolerance": 1e-09,
+  "independent_auditor": false,
+  "input_pins": 109,
+  "local_native_calls_added": 0,
+  "mapped_baseline_semantic_pairs": 1120,
+  "mutations_rejected": [
+    "revision",
+    "origin",
+    "eligibility",
+    "coverage",
+    "selected",
+    "C_message",
+    "T_hash",
+    "value",
+    "network_ref",
+    "alternative_role",
+    "leaf_contract",
+    "C_predicate",
+    "C_target",
+    "T_predicate",
+    "T_target",
+    "candidate_subject",
+    "nonbijective_map",
+    "inverse_vocab_mismatch",
+    "capacity_mismatch",
+    "incomplete_policy_bypass",
+    "numeric_role_coverage",
+    "incomplete_tokenpair_coverage",
+    "collapsed_restricted_codebook",
+    "expr_transfer_table_tamper",
+    "capacity_envelope_tamper"
+  ],
+  "native_conditions_verified": 1280,
+  "nonrole_stage_ticks_invariant_across_codebooks": true,
+  "paired_invariant": 1120,
+  "query_envelope_conditions_verified": 680,
+  "raw_json_bytes": 34413630,
+  "raw_manifest_matched_files": 2405,
+  "raw_total_bytes": 34415422,
+  "received_json": 2405,
+  "received_nonempty_files": 2406,
+  "restored_files": [
+    "audit.stderr",
+    "failure.json",
+    "source-postcheck.json"
+  ],
+  "restored_keys": [
+    "evidence/capacity-codebook-transfer-20261023-r47/cs/source/r35-compiler.py",
+    "experiments/exp-93-capacity-codebook-transfer/DELIBERATION.ko.md",
+    "experiments/exp-93-capacity-codebook-transfer/DESIGN.ko.md"
+  ],
+  "restored_original_manifest_entries": 3,
+  "role_numeric_inputs_verified": 64,
+  "same_channel_not_host_attestation": true,
+  "scalar_max_absolute_error": 1.1102230246251565e-16,
+  "semantic_adoption": true,
+  "server_audit_failure_cause": "In tools/r35_compositional_slot/verify.py line 53, audit() returns dict(..., base_n=c['base_n'], namespace=c['namespace'], ...) after completing all trace/drive/contract/scalar checks on an unmutated record. Because R47 frozen_spec.json named the capacity field 'capacity' without duplicating 'base_n' and 'namespace' (and preparation() only invoked audit() on mutated records that raised ValueError before line 53), the server audit stage raised KeyError('base_n') at the return dict of the first record after preparation and work (all 29,404 native settles, 1,440 evaluations, and all trace files) had already completed with returncode 0. Frozen source and raw server files were left completely unmodified; local saved-data replay verified both the exact unmodified KeyError('base_n') reproduction and 100% pass across all 1,440 evaluations, 1,188 stage-transfer settles, and 25 mutation rejections.",
+  "server_audit_stage_returncode": 1,
+  "server_preparation_stage_returncode": 0,
+  "server_work_stage_returncode": 0,
+  "source_files": 145,
+  "source_unchanged": true,
+  "ssh_completeness": "unknown upstream; all 2405 non-empty files + manifest directly matched original manifest size/SHA (3 files restored from adapter entropy redaction on known path strings and verified against manifest SHA-256); manifest outside its own hash",
+  "stage_transfer_conditions_verified": 1188,
+  "state_perturbation": {
+    "isometric_eligibility_max_abs_diff": 0.0,
+    "isometric_pairs": 320,
+    "isometric_state_sha256_equal": 320,
+    "nonisometric_eligibility_max_abs_diff": 9.196363737196123e-08,
+    "nonisometric_eligibility_max_abs_diff_by_capacity": {
+      "1": 1.1532405030934001e-08,
+      "2": 1.1900266943143823e-08,
+      "3": 1.1210534056615984e-08,
+      "4": 9.196363737196123e-08
+    },
+    "nonisometric_pairs": 800,
+    "nonisometric_state_sha256_changed": 648
+  },
+  "status": "PASS",
+  "transport_failures": [
+    {
+      "expected_bytes": 1792,
+      "expected_sha256": "41de65f8eb8dfc5332df8203a0495ae30401211e1184e32ca7ded3f681152fd1",
+      "file": "audit.stderr",
+      "received_bytes": 1565,
+      "received_sha256": "f5f09db0f8de6c860138dd013638cd9f4b4880ee4551f1b9fbb47fbd4faf5e36"
+    },
+    {
+      "expected_bytes": 511,
+      "expected_sha256": "4a88963387ce17d7e113246b5aaaad803e8b35fd6ead394d5d51259f017d8e31",
+      "file": "failure.json",
+      "received_bytes": 448,
+      "received_sha256": "1ffb2d91d25800b90a98223186a25949ef234dbde2ca83b1c425c5cf5bac771e"
+    },
+    {
+      "expected_bytes": 7597,
+      "expected_sha256": "0059ca5ed8226c91337a150affbb6d6e6122af69db278951d9556124f11c22f3",
+      "file": "source-postcheck.json",
+      "received_bytes": 7479,
+      "received_sha256": "9bfa4dbe7940c56522191221c788ab98990e4f4d18cdd6d4990fe7bea99346b3"
+    }
+  ],
+  "unreceived_empty_logs": [
+    "audit.stdout",
+    "preparation.stderr",
+    "preparation.stdout",
+    "work.stderr",
+    "work.stdout"
+  ]
+}

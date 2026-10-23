@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0.0",
+  "scopeSummary": "R47 variable-capacity (n=1..4) overlapping-AST (6/6 distinct per capacity), 8-token / 64-pair / 8-codebook invariance (8/8 restricted classes per base, 56 sources, 1280 native + 160 exact) and separated 4-class Hamming role partition (64) + exhaustive expr transfer (384) + extremal feasible1..4 (60) and query1..4 (680) envelope. Original R35 pipeline/guards/controller/trace unchanged. Authored encoding, not learning/speed/H03. 29404 settles / 4704640 max ticks with bounded storage/cost/raw verification.",
+  "files": [
+    {
+      "path": "candidate/__init__.py",
+      "digest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "candidate/bootstrap.py",
+      "digest": "sha256:ef3fe36d46cdbe5632d39e25df90d166e40334372f34c99aed4747623cc192b0"
+    },
+    {
+      "path": "candidate/probe.py",
+      "digest": "sha256:d3867e36da993cd2a806234084d518101bfeb05b1545a8a0896ae91edf101031"
+    },
+    {
+      "path": "candidate/verify.py",
+      "digest": "sha256:f084301d593835cf8aeb021e069643114d2bdea3231ba59190f1e8aa5477889f"
+    }
+  ]
+}

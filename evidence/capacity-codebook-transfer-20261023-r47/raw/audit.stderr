@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/home/mcpops/hcc-capacity-codebook-transfer-20261023-r47/tools/r47_capacity_codebook_transfer/probe.py", line 263, in <module>
+    else:audit_all()
+         ^^^^^^^^^^^
+  File "/home/mcpops/hcc-capacity-codebook-transfer-20261023-r47/tools/r47_capacity_codebook_transfer/probe.py", line 220, in audit_all
+    summary,_=bundle(OUT,inputs());put(OUT/'summary.json',summary)
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcpops/hcc-capacity-codebook-transfer-20261023-r47/tools/r47_capacity_codebook_transfer/verify.py", line 370, in bundle
+    rows=[audit(r,cases[r['case']],packets,p,networks) for r in records]
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcpops/hcc-capacity-codebook-transfer-20261023-r47/tools/r47_capacity_codebook_transfer/verify.py", line 76, in audit
+    row=r35_audit(r,c,packets,p,networks)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcpops/hcc-capacity-codebook-transfer-20261023-r47/tools/r35_compositional_slot/verify.py", line 53, in audit
+    return dict(case=c['key'],arm=arm,n=n,base_n=c['base_n'],complete=c['complete'],c_expr=c['c_expr'],t_expr=c['t_expr'],namespace=c['namespace'],order=c['order'],kind=r['kind'],value=r['value'],reason=r['reason'],selected_index=r['selected_index'],truth=truth,strict_correct=all(r[k]==truth[k] for k in ['kind','selected_index','value','reason']),value_correct=r['value']==truth['value'],kind_correct=r['kind']==truth['kind'],reason_correct=r['reason']==truth['reason'],physical_native_calls=len(ks),ticks=sum(k['cost']['kernel_ticks'] for k in ks),groups=sum(k['cost']['group_updates'] for k in ks),links=sum(k['cost']['signal_transmissions'] for k in ks))
+                                                 ~^^^^^^^^^^
+KeyError: 'base_n'

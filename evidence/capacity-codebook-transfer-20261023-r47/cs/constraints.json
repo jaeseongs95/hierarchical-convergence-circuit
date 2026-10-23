@@ -1,0 +1,147 @@
+{
+  "schemaVersion": "1.0.0",
+  "reportId": "CS-R47-CONSTRAINTS-PREFREEZE",
+  "requestDigest": "sha256:6a0ea2b8ff9968fa58860f10900474392f3013c39f1866f11c61ae31342a1f5e",
+  "sourceSnapshotDigest": "sha256:fa050c4a07f041ae415ca0566b4f25a489ecfb1ad3faf3ae51fa7115ffabb49e",
+  "knowledgePackVersion": "0.1.0",
+  "knowledgePackDigest": "sha256:d8351d9aabb433403830fcffc3a2f2438b6d428711c93b6ded9eff002468c3d1",
+  "draftUse": {
+    "allowed": false,
+    "basis": "Validated identity/reuse and matched measurement rules"
+  },
+  "applicability": "applicable",
+  "applicabilityReason": "Variable-capacity (n=1..4) overlapping-AST routing, 8-codebook invariance, and 29404-settle execution require explicit identity and evidence accounting.",
+  "selectedRules": [
+    {
+      "ruleId": "ALG-KEY-004",
+      "ruleDigest": "sha256:db77383ecb5f41ef3af5cb60769edaea507cac5cb25e28b88f249e84a062ba2e",
+      "applicabilityReason": "Shared native 56-source reuse, variable-capacity candidate/leaf slot routing, and capacity-stratified envelope indexing require full source/role/revision/config binding without host truth repair."
+    },
+    {
+      "ruleId": "PERF-MEASURE-001",
+      "ruleDigest": "sha256:ef11800e55663f1b719f62d3f812280fd6e56c6895eef3028b9db344a9d0a355",
+      "applicabilityReason": "Information-matched exact control and complete accounting of source, role, transfer envelope, upper pipeline, storage, audit, and seal costs without efficiency overclaims."
+    }
+  ],
+  "facts": [
+    {
+      "id": "FACT-GAP",
+      "statement": "R35 tested feasible1..4 and query1..4 under mutually exclusive leaves that collapsed the 6 ASTs to 3/6-5/6 functions (with AST 2 producing 0 feasible solutions) and omitted n=1(complete=True) and n=4(complete=False). R36, R44, and R45 restricted overlapping-leaf and 8-codebook testing to n=2, complete=True only, and R46 relational consumer used only feasible2.",
+      "evidenceRefs": [
+        "SRC-R35-RESULT",
+        "SRC-R45-RESULT",
+        "SRC-R46-RESULT",
+        "SRC-DIRECTION",
+        "SRC-COMPILER"
+      ]
+    },
+    {
+      "id": "FACT-KERNEL",
+      "statement": "R35 equality(cfg) partitions 64 ordered 3-bit inputs into 4 Hamming equivalence classes d in {0,1,2,3}, feeding 6x4^3=384 exhaustive expr settles. Across capacities n in {1,2,3,4}, feasible_n has C(n,2) in {0,1,3,6} pairwise inhibition nodes (pair_i_j -> at_least_two) with 2^{n+1} Boolean corners (4+8+16+32=60), and query_n has 2^{2n+1} Boolean corners (8+32+128+512=680) driven by capacity-stratified inner-margin [false_max, true_min] bounds.",
+      "evidenceRefs": [
+        "SRC-ENCODER",
+        "SRC-COMPILER",
+        "SRC-SLOTS",
+        "SRC-R32",
+        "SRC-KERNEL"
+      ]
+    },
+    {
+      "id": "FACT-BUDGET",
+      "statement": "56 lower sources + 1188 stage-transfer settles (64 role + 384 expr + 60 feasible1..4 + 680 query1..4) + 28160 upper settles across n in {1,2,3,4} (320x10 + 320x18 + 320x26 + 320x34) = 29404 native settles (+ 160 exact = 1440 evaluations, 18 batches x 80). 600s total / 240s stage / raw 128MiB / cache 128MiB / AS 512MiB / worker 1 / retry 0.",
+      "evidenceRefs": [
+        "SRC-BUDGET"
+      ]
+    }
+  ],
+  "assumptions": [],
+  "invariants": [
+    {
+      "id": "INV-BOUNDARY",
+      "statement": "Only token-to-code map and grounded 56-source 8-token inputs across capacities n in {1,2,3,4} and complete in {True,False} are supplied to unchanged R35 execute; core/learner/AST/Config/initial 0.5/guards/controller/history/Cost are unchanged. Every one of the 160 base cases must induce 8/8 distinct restricted maps (0 unchanged pairs), each codebook must exercise all 64 ordered code pairs, and each capacity n in {1..4} must realize 6/6 distinct AST functions.",
+      "scope": "R47 56 sources / 160 base across n=1..4 (8/8 restricted classes, 64/64 code pairs, 6/6 ASTs per n) / 1188 transfer / 29404 settles",
+      "basisRefs": [
+        "FACT-GAP",
+        "FACT-KERNEL"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-SEMANTICS",
+      "statement": "64 actual role inputs partition into 4 exact Hamming distance classes d in {0,1,2,3}; 384 expr settles exhaust all 6x4^3 Hamming-triple drives for all 40320 bijections at the expr stage; 60 feasible1..4(4+8+16+32) and 680 query1..4(8+32+128+512) settles audit the capacity-stratified [false_max, true_min] extremal scalar bounds across n=1..4 without claiming 64^n enumeration. Full 1280 native + 160 exact + 1120 paired semantic invariance across none/unique/many(|F|=2,3,4)/incomplete and qtrue/qfalse/mixed/empty/incomplete, plus stage-by-stage tick attribution, replayed from saved traces; 25 mutations rejected.",
+      "scope": "R47 56 sources / 160 base across n=1..4 (8/8 restricted classes, 64/64 code pairs, 6/6 ASTs per n) / 1188 transfer / 29404 settles",
+      "basisRefs": [
+        "FACT-KERNEL",
+        "FACT-BUDGET"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "ALG-KEY-004"
+      ]
+    },
+    {
+      "id": "INV-COST",
+      "statement": "29404 actual settles (29348 recorded + 56 sources) / max 4704640 ticks / fixed stage 240s total 600s / worker 1 retry 0 / raw 128MiB / cache 128MiB / AS 512MiB each / record 128KiB / unique 6000. Full physical ref ledger and all phase/parent/launcher CPU and wall observed; storage-only dedup never skips computation; no speed or learning cost adoption claim. Direct size/SHA of all raw and source pins.",
+      "scope": "R47 56 sources / 160 base across n=1..4 (8/8 restricted classes, 64/64 code pairs, 6/6 ASTs per n) / 1188 transfer / 29404 settles",
+      "basisRefs": [
+        "FACT-BUDGET"
+      ],
+      "requirementLevel": "required-invariant",
+      "ruleIds": [
+        "PERF-MEASURE-001"
+      ]
+    }
+  ],
+  "designChoices": [
+    {
+      "id": "CHOICE-CAPACITY-TRANSFER",
+      "statement": "Construct 40 base cases per capacity n in {1,2,3,4} (24 Part I ASTxcomplementary-mask + 8 Part II multi-solution/query regimes + 8 Part III complete=False abstention = 160 base cases) with distinguishing token cohorts and separate 1188 stage-transfer settles (64 role + 384 expr + 60 feasible1..4 + 680 query1..4).",
+      "rationale": "Guarantees 8/8 restricted maps per base, 64/64 ordered pairs per map, 6/6 distinct ASTs per capacity n=1..4, and complete coverage of |F| in {0..4}, unanimous/split query, and incomplete abstention within 29404 settles.",
+      "basisRefs": [
+        "FACT-GAP",
+        "FACT-KERNEL",
+        "FACT-BUDGET"
+      ]
+    }
+  ],
+  "verificationObligations": [
+    {
+      "id": "OB-BOUNDARY",
+      "invariantIds": [
+        "INV-BOUNDARY"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "nonbijection/unknown token accepted; restricted map classes < 8; ordered code pairs < 64; AST functions < 6 per capacity; AST/drive repair; source/role/config drift; hidden oracle consumer",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-SEMANTICS",
+      "invariantIds": [
+        "INV-SEMANTICS"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "role Hamming classes not exact within tolerance; expr 384 transfer failure; feasible1..4 (60) or query1..4 (680) extremal envelope failure; 64^n overclaim; selected-code compared instead of identity; incomplete policy bypass; scalar tolerance used as meaning oracle",
+      "requirementLevel": "required"
+    },
+    {
+      "id": "OB-COST",
+      "invariantIds": [
+        "INV-COST"
+      ],
+      "method": "dynamic-test",
+      "requiredEnvironment": "AI Research SSH linux python3.12",
+      "failureOracle": "uncapped cache/raw; missing physical calls; storage dedup counted as compute skipping; posthoc budget/gate or rerun; cost win claim without contract",
+      "requirementLevel": "required"
+    }
+  ],
+  "requiredCapabilities": [
+    "cs-constraint-derivation",
+    "cs-implementation-review"
+  ],
+  "verdict": "READY"
+}

@@ -1,0 +1,83 @@
+{
+  "checks": 2132,
+  "matrix_coverage": {
+    "base_cases_by_capacity": {
+      "1": 40,
+      "2": 40,
+      "3": 40,
+      "4": 40
+    },
+    "hamming_classes_per_map": {
+      "bit_reverse": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "cnot01": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "cnot12": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "cnot20": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "cnot_chain": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "identity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "swap01": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "xor7": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "mapped_pairs_actual_code_changed": 1120,
+    "mapped_pairs_actual_code_unchanged": 0,
+    "ordered_code_pairs_per_map": {
+      "bit_reverse": 64,
+      "cnot01": 64,
+      "cnot12": 64,
+      "cnot20": 64,
+      "cnot_chain": 64,
+      "identity": 64,
+      "swap01": 64,
+      "xor7": 64
+    },
+    "restricted_map_classes_per_base": [
+      8
+    ]
+  },
+  "native_calls": 0,
+  "not_native_semantic_evidence": true,
+  "pre_verified_mutations": 25,
+  "simulated_recorded_invocations": 29348,
+  "status": "PASS",
+  "symbolic_maps": 40320,
+  "symbolic_pairchecks": 2580480
+}
