@@ -1,0 +1,374 @@
+{
+ "analysis_sha256": "ce3dc75f27c59a671eff8cc386ef9c9c39f62e6286ec54db67d916298b03dc33",
+ "discrete_against_recording": {
+  "checked": 658,
+  "equal": 658
+ },
+ "exploratory": {
+  "highest_unflagged_non_target_ticks_total": 68,
+  "lowest_target_ticks_total": 70,
+  "off_true_iff_e1_positive": true,
+  "target_goal_min_when_true": 0.7335897959499196,
+  "ticks_total_and_min_score_flag_same_test_cells": true
+ },
+ "failures": [],
+ "float_diagnostic_against_recording": {
+  "cells_with_difference": 0,
+  "max_activation_abs_diff": 0.0,
+  "max_goal_abs_diff": 0.0
+ },
+ "host": {
+  "libc": [
+   "glibc",
+   "2.39"
+  ],
+  "machine": "x86_64",
+  "platform": "Linux-6.18.44-fc-v726-x86_64-with-glibc2.39",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]"
+ },
+ "independent_auditor": false,
+ "memory_documents_rebuilt_equal": true,
+ "recomputed": {
+  "T-a": {
+   "goal_margin": {
+    "auc": 0.432520325203252,
+    "flagged": 209,
+    "recall": 1.0,
+    "reuse_preserved": 0.0
+   },
+   "min_score": {
+    "auc": 0.9826558265582656,
+    "flagged": 49,
+    "recall": 1.0,
+    "reuse_preserved": 0.975609756097561
+   },
+   "pool_margin": {
+    "auc": 0.432520325203252,
+    "flagged": 209,
+    "recall": 1.0,
+    "reuse_preserved": 0.0
+   },
+   "prior": {
+    "auc": 0.8605013550135502,
+    "flagged": 137,
+    "recall": 1.0,
+    "reuse_preserved": 0.4390243902439024
+   },
+   "ticks_decision": {
+    "auc": 0.9762872628726287,
+    "flagged": 49,
+    "recall": 1.0,
+    "reuse_preserved": 0.975609756097561
+   },
+   "ticks_pool": {
+    "auc": 0.975609756097561,
+    "flagged": 49,
+    "recall": 1.0,
+    "reuse_preserved": 0.975609756097561
+   },
+   "ticks_total": {
+    "auc": 0.975609756097561,
+    "flagged": 49,
+    "recall": 1.0,
+    "reuse_preserved": 0.975609756097561
+   },
+   "uncertainty": {
+    "auc": 0.8772357723577235,
+    "flagged": 125,
+    "recall": 1.0,
+    "reuse_preserved": 0.5121951219512195
+   }
+  },
+  "T-b": {
+   "goal_margin": {
+    "auc": 0.521875,
+    "flagged": 112,
+    "recall": 1.0,
+    "reuse_preserved": 0.0
+   },
+   "min_score": {
+    "auc": 1.0,
+    "flagged": 32,
+    "recall": 1.0,
+    "reuse_preserved": 1.0
+   },
+   "pool_margin": {
+    "auc": 0.521875,
+    "flagged": 112,
+    "recall": 1.0,
+    "reuse_preserved": 0.0
+   },
+   "prior": {
+    "auc": 0.8419921875,
+    "flagged": 90,
+    "recall": 1.0,
+    "reuse_preserved": 0.275
+   },
+   "ticks_decision": {
+    "auc": 1.0,
+    "flagged": 32,
+    "recall": 1.0,
+    "reuse_preserved": 1.0
+   },
+   "ticks_pool": {
+    "auc": 1.0,
+    "flagged": 32,
+    "recall": 1.0,
+    "reuse_preserved": 1.0
+   },
+   "ticks_total": {
+    "auc": 1.0,
+    "flagged": 32,
+    "recall": 1.0,
+    "reuse_preserved": 1.0
+   },
+   "uncertainty": {
+    "auc": 0.844921875,
+    "flagged": 70,
+    "recall": 1.0,
+    "reuse_preserved": 0.525
+   }
+  },
+  "T-c": {
+   "goal_margin": {
+    "auc": 0.4,
+    "flagged": 27,
+    "recall": 1.0,
+    "reuse_preserved": 0.0
+   },
+   "min_score": {
+    "auc": 1.0,
+    "flagged": 7,
+    "recall": 1.0,
+    "reuse_preserved": 1.0
+   },
+   "pool_margin": {
+    "auc": 0.4,
+    "flagged": 27,
+    "recall": 1.0,
+    "reuse_preserved": 0.0
+   },
+   "prior": {
+    "auc": 0.9035714285714286,
+    "flagged": 16,
+    "recall": 1.0,
+    "reuse_preserved": 0.55
+   },
+   "ticks_decision": {
+    "auc": 1.0,
+    "flagged": 7,
+    "recall": 1.0,
+    "reuse_preserved": 1.0
+   },
+   "ticks_pool": {
+    "auc": 0.9928571428571429,
+    "flagged": 9,
+    "recall": 1.0,
+    "reuse_preserved": 0.9
+   },
+   "ticks_total": {
+    "auc": 1.0,
+    "flagged": 7,
+    "recall": 1.0,
+    "reuse_preserved": 1.0
+   },
+   "uncertainty": {
+    "auc": 0.9071428571428571,
+    "flagged": 13,
+    "recall": 1.0,
+    "reuse_preserved": 0.7
+   }
+  },
+  "calibration": {
+   "goal_margin": {
+    "auc": 0.30125195618153366,
+    "flagged": 89,
+    "recall": 1.0,
+    "reuse_preserved": 0.0
+   },
+   "min_score": {
+    "auc": 0.9886541471048513,
+    "flagged": 19,
+    "recall": 1.0,
+    "reuse_preserved": 0.9859154929577465
+   },
+   "pool_margin": {
+    "auc": 0.2996870109546166,
+    "flagged": 89,
+    "recall": 1.0,
+    "reuse_preserved": 0.0
+   },
+   "prior": {
+    "auc": 0.9017996870109546,
+    "flagged": 43,
+    "recall": 1.0,
+    "reuse_preserved": 0.647887323943662
+   },
+   "ticks_decision": {
+    "auc": 0.986697965571205,
+    "flagged": 19,
+    "recall": 1.0,
+    "reuse_preserved": 0.9859154929577465
+   },
+   "ticks_pool": {
+    "auc": 0.9776995305164319,
+    "flagged": 26,
+    "recall": 1.0,
+    "reuse_preserved": 0.8873239436619719
+   },
+   "ticks_total": {
+    "auc": 0.9859154929577465,
+    "flagged": 19,
+    "recall": 1.0,
+    "reuse_preserved": 0.9859154929577465
+   },
+   "uncertainty": {
+    "auc": 0.9287949921752738,
+    "flagged": 40,
+    "recall": 1.0,
+    "reuse_preserved": 0.6901408450704225
+   }
+  },
+  "test_all": {
+   "goal_margin": {
+    "auc": 0.4651424963924964,
+    "flagged": 348,
+    "recall": 1.0,
+    "reuse_preserved": 0.0
+   },
+   "min_score": {
+    "auc": 0.9897186147186147,
+    "flagged": 88,
+    "recall": 1.0,
+    "reuse_preserved": 0.9848484848484849
+   },
+   "pool_margin": {
+    "auc": 0.46442099567099565,
+    "flagged": 348,
+    "recall": 1.0,
+    "reuse_preserved": 0.0
+   },
+   "prior": {
+    "auc": 0.8599386724386724,
+    "flagged": 243,
+    "recall": 1.0,
+    "reuse_preserved": 0.3977272727272727
+   },
+   "ticks_decision": {
+    "auc": 0.9859758297258298,
+    "flagged": 88,
+    "recall": 1.0,
+    "reuse_preserved": 0.9848484848484849
+   },
+   "ticks_pool": {
+    "auc": 0.9842622655122655,
+    "flagged": 90,
+    "recall": 1.0,
+    "reuse_preserved": 0.9772727272727273
+   },
+   "ticks_total": {
+    "auc": 0.9848484848484849,
+    "flagged": 88,
+    "recall": 1.0,
+    "reuse_preserved": 0.9848484848484849
+   },
+   "uncertainty": {
+    "auc": 0.8661165223665224,
+    "flagged": 208,
+    "recall": 1.0,
+    "reuse_preserved": 0.5303030303030303
+   }
+  },
+  "test_weak_e0": {
+   "goal_margin": {
+    "auc": 0.4717905045773898,
+    "flagged": 321,
+    "recall": 1.0,
+    "reuse_preserved": 0.0
+   },
+   "min_score": {
+    "auc": 0.9889291036832021,
+    "flagged": 81,
+    "recall": 1.0,
+    "reuse_preserved": 0.9836065573770492
+   },
+   "pool_margin": {
+    "auc": 0.47115179902065146,
+    "flagged": 321,
+    "recall": 1.0,
+    "reuse_preserved": 0.0
+   },
+   "prior": {
+    "auc": 0.8555993187140728,
+    "flagged": 227,
+    "recall": 1.0,
+    "reuse_preserved": 0.38524590163934425
+   },
+   "ticks_decision": {
+    "auc": 0.9847242921013413,
+    "flagged": 81,
+    "recall": 1.0,
+    "reuse_preserved": 0.9836065573770492
+   },
+   "ticks_pool": {
+    "auc": 0.9836065573770492,
+    "flagged": 81,
+    "recall": 1.0,
+    "reuse_preserved": 0.9836065573770492
+   },
+   "ticks_total": {
+    "auc": 0.9836065573770492,
+    "flagged": 81,
+    "recall": 1.0,
+    "reuse_preserved": 0.9836065573770492
+   },
+   "uncertainty": {
+    "auc": 0.8633170108579945,
+    "flagged": 195,
+    "recall": 1.0,
+    "reuse_preserved": 0.5163934426229508
+   }
+  }
+ },
+ "recorded_host": {
+  "libc": [
+   "glibc",
+   "2.39"
+  ],
+  "machine": "x86_64",
+  "platform": "Linux-6.18.44-fc-v726-x86_64-with-glibc2.39",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]"
+ },
+ "schema": "hcr-r51-slowdown-signal-verification-v1",
+ "status": "PASS",
+ "thresholds": {
+  "goal_margin": -0.9994700481627619,
+  "min_score": -0.0,
+  "pool_margin": -0.9997324928403932,
+  "prior": 0.8250000000000001,
+  "ticks_decision": 35,
+  "ticks_pool": 35,
+  "ticks_total": 70,
+  "uncertainty": 0.7
+ },
+ "verdicts": {
+  "local": {
+   "P1": "supported",
+   "P2": "supported",
+   "P3": "falsified",
+   "P4": "falsified",
+   "P5": "falsified",
+   "P6": "supported"
+  },
+  "reading_local": "SLOWDOWN_REDUNDANT_HERE",
+  "reading_recorded": "SLOWDOWN_REDUNDANT_HERE",
+  "recorded": {
+   "P1": "supported",
+   "P2": "supported",
+   "P3": "falsified",
+   "P4": "falsified",
+   "P5": "falsified",
+   "P6": "supported"
+  }
+ }
+}

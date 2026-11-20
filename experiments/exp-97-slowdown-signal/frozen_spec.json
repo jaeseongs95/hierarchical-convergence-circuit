@@ -1,0 +1,191 @@
+{
+  "calibration": {
+    "e0_tenths": [
+      10
+    ],
+    "e1_tenths": [
+      -10,
+      -9,
+      -8,
+      -7,
+      -6,
+      -5,
+      -4,
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "memories": [
+      3,
+      4,
+      5,
+      6,
+      9,
+      12,
+      20
+    ]
+  },
+  "decision_margin_auc": 0.05,
+  "expected_counts": {
+    "calibration_on": 147,
+    "off": 85,
+    "test_on": 426,
+    "training_episodes": 20
+  },
+  "experiment": "EXP-97",
+  "input_baselines": [
+    "uncertainty",
+    "min_score",
+    "prior"
+  ],
+  "limits": {
+    "determinism_reruns": 1,
+    "primary_runs": 1,
+    "retry": 0,
+    "revision_requests": 0,
+    "worker": 1,
+    "world_measurement": 0
+  },
+  "policy": "legacy",
+  "primary_signal": "ticks_total",
+  "round": "R51",
+  "schema": "hcr-r51-slowdown-signal-v1",
+  "signals": [
+    "ticks_total",
+    "ticks_pool",
+    "ticks_decision",
+    "goal_margin",
+    "pool_margin",
+    "uncertainty",
+    "min_score",
+    "prior"
+  ],
+  "test": {
+    "T-a": {
+      "e0_tenths": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "e1_tenths": [
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "memories": [
+        3,
+        6,
+        9,
+        20
+      ]
+    },
+    "T-b": {
+      "e0_tenths": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "e1_tenths": [
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "memories": [
+        8,
+        15
+      ]
+    },
+    "T-c": {
+      "e0_tenths": [
+        10
+      ],
+      "e1_tenths": [
+        -10,
+        -9,
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "memories": [
+        8,
+        15
+      ]
+    }
+  },
+  "threshold_rule": "minimum signal value over calibration target cells; flag when signal >= threshold",
+  "training": {
+    "episodes": 20,
+    "judgment_prior": "legacy",
+    "mode": "train",
+    "scores": [
+      0.92,
+      0.92
+    ],
+    "snapshots": [
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      12,
+      15,
+      20
+    ]
+  }
+}
