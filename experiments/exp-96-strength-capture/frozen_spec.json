@@ -1,0 +1,146 @@
+{
+  "control_c0": {
+    "expected": {
+      "b3@0.022": {
+        "0.6": 0.9939711377690879,
+        "0.8": 0.9938918635122408,
+        "1.0": 0.9938074999629096
+      },
+      "b3@0.11": {
+        "0.6": 0.9946031190005065,
+        "0.8": 0.9942212668099926,
+        "1.0": 0.9938074999629096
+      }
+    },
+    "policy": "route_only",
+    "source": "experiments/exp-53-selection-input-range/RESULTS.ko.md"
+  },
+  "escape": {
+    "e1": [
+      0.0,
+      -0.2
+    ],
+    "max_episodes": 6,
+    "memories": [
+      3,
+      6,
+      9,
+      20
+    ],
+    "mode": "adapt",
+    "policy": "legacy"
+  },
+  "evaluation": {
+    "e0": 1.0,
+    "e1_tenths": [
+      -10,
+      -9,
+      -8,
+      -7,
+      -6,
+      -5,
+      -4,
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "off_memories": [
+      3,
+      20
+    ],
+    "policies": [
+      "legacy",
+      "route_only"
+    ],
+    "world_hidden": [
+      true,
+      false
+    ]
+  },
+  "expected_counts": {
+    "escape_series": 8,
+    "post_escape_evaluations": 8,
+    "training_episodes": 20,
+    "width_evaluations": 672
+  },
+  "experiment": "EXP-96",
+  "limits": {
+    "determinism_reruns": 1,
+    "primary_runs": 1,
+    "retry": 0,
+    "revision_requests": 0,
+    "worker": 1,
+    "world_measurement": 0
+  },
+  "round": "R50",
+  "schema": "hcr-r50-strength-capture-v1",
+  "synthetic": [
+    {
+      "base": 3,
+      "name": "b3@0.11",
+      "strength_expr": "0.55*0.2"
+    },
+    {
+      "base": 3,
+      "name": "b3@0.022",
+      "strength_expr": "0.55*0.2*0.2"
+    },
+    {
+      "base": 3,
+      "name": "b3@s6",
+      "strength_expr": "s6"
+    },
+    {
+      "base": 3,
+      "name": "b3@s20",
+      "strength_expr": "s20"
+    },
+    {
+      "base": 3,
+      "name": "b3@p6",
+      "strength_expr": "s6*(6/7)/(3/4)"
+    },
+    {
+      "base": 20,
+      "name": "b20@0.55",
+      "strength_expr": "0.55"
+    },
+    {
+      "base": 20,
+      "name": "b20@s6",
+      "strength_expr": "s6"
+    }
+  ],
+  "tolerances": {
+    "p5_activation": 1e-09
+  },
+  "training": {
+    "episodes": 20,
+    "judgment_prior": "legacy",
+    "mode": "train",
+    "scores": [
+      0.92,
+      0.92
+    ],
+    "snapshots": [
+      3,
+      4,
+      5,
+      6,
+      9,
+      12,
+      20
+    ]
+  }
+}
