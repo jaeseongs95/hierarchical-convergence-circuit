@@ -1,0 +1,108 @@
+{
+  "schema": "hcr-r55-fabric-stage1-v1",
+  "round": "R55",
+  "experiment": "EXP-101",
+  "world": {
+    "places": 64,
+    "degree": 3,
+    "open_permille": 800
+  },
+  "tasks": {
+    "routes": 4,
+    "route_min": 4,
+    "route_max": 6,
+    "eval_unrelated": 30,
+    "eval_false": 30,
+    "episodes": 400,
+    "background_permille": 200
+  },
+  "learning": {
+    "eta": 0.25,
+    "decay": 0.01,
+    "floor": 0.01,
+    "weaken": 0.2,
+    "delay": "linear",
+    "tie": "farthest",
+    "conduct": "faster"
+  },
+  "capacity": 4,
+  "latent_targets": 8,
+  "sensitivity": {
+    "capacity2": {
+      "capacity": 2
+    },
+    "capacity8": {
+      "capacity": 8
+    },
+    "tie_nearest": {
+      "tie": "nearest"
+    },
+    "delay_step": {
+      "delay": "step"
+    }
+  },
+  "checkpoints": [
+    0,
+    25,
+    50,
+    100,
+    200,
+    400
+  ],
+  "seeds": {
+    "calibration": [
+      1000,
+      1001,
+      1002,
+      1003,
+      1004,
+      1005,
+      1006,
+      1007,
+      1008,
+      1009
+    ],
+    "evaluation": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ]
+  },
+  "kill": {
+    "k1_min_reduction": 0.2,
+    "k3_max_increase": 0.1
+  },
+  "tail_episodes": 100,
+  "limits": {
+    "primary_runs": 1,
+    "determinism_reruns": 1,
+    "retry": 0
+  }
+}

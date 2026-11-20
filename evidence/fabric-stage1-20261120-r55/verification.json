@@ -1,0 +1,106 @@
+{
+ "analysis_sha256": "8810d1d6c807a4a4d78ecc5b23d2fa7c2c980a6328c5519f0a108ea9194ae6db",
+ "closed_form_B0_B1_against_recording": {
+  "checked": 360,
+  "equal": 360
+ },
+ "fabric_B2_B3_cells_against_recording": {
+  "checked": 3240,
+  "equal": 3240
+ },
+ "failures": [],
+ "host": {
+  "machine": "x86_64",
+  "platform": "Linux-6.18.44-fc-v726-x86_64-with-glibc2.39",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]"
+ },
+ "independent_auditor": false,
+ "kill": {
+  "K1": true,
+  "K2": true,
+  "K3": false,
+  "K4": true
+ },
+ "predictions": {
+  "P1": "supported",
+  "P2": "supported",
+  "P3": "supported",
+  "P4": "supported",
+  "P5": "supported",
+  "P6": "supported",
+  "P7": "supported",
+  "P8": "supported"
+ },
+ "recorded_host": {
+  "machine": "x86_64",
+  "platform": "Linux-6.18.44-fc-v726-x86_64-with-glibc2.39",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]"
+ },
+ "schema": "hcr-r55-fabric-stage1-verification-v1",
+ "statistics": {
+  "fabric_false": [
+   0.18904693170727366,
+   0.17054870123659924,
+   0.20754516217794808
+  ],
+  "fabric_held": [
+   -0.26952569649310676,
+   -0.30288071375616465,
+   -0.2361706792300489
+  ],
+  "fabric_held_comp": [
+   -0.41070468918940345,
+   -0.476437756880616,
+   -0.3449716214981909
+  ],
+  "fabric_held_sub": [
+   -0.19224690958087426,
+   -0.24469088856080215,
+   -0.13980293060094637
+  ],
+  "fabric_held_vs_memo": [
+   -0.27830390413552314,
+   -0.31104489100424026,
+   -0.245562917266806
+  ],
+  "fabric_latent_held": [
+   -0.18103114105807686,
+   -0.21416365116340494,
+   -0.14789863095274877
+  ],
+  "fabric_latent_kill": {
+   "K1": false,
+   "K3": true
+  },
+  "fabric_latent_unrelated": [
+   0.041111057154202026,
+   0.02887833735601701,
+   0.05334377695238704
+  ],
+  "fabric_unrelated": [
+   0.18453461966689405,
+   0.1607057065709999,
+   0.2083635327627882
+  ],
+  "nested_mean": 29.666666666666668,
+  "sensitivity": {
+   "capacity2": {
+    "K1": true,
+    "K3": false
+   },
+   "capacity8": {
+    "K1": true,
+    "K3": false
+   },
+   "delay_step": {
+    "K1": true,
+    "K3": false
+   },
+   "tie_nearest": {
+    "K1": true,
+    "K3": false
+   }
+  }
+ },
+ "status": "PASS"
+}

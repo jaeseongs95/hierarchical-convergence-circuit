@@ -1,0 +1,8 @@
+{
+  "tools/r55_fabric/fabric.py": "6d2e50393e68457db6a252df29c9ce602592e3ca58e782bb432f56fa723def50",
+  "tools/r55_fabric/world.py": "e5172e8202e3aea8b6db954cf6090fa1f6db800aa56ded6222ede392ec655572",
+  "tools/r55_fabric/probe.py": "2461fdf76fa5d5e5b840da75a1ef87a4a3dc82cd07574f403d0e404443815409",
+  "tools/r55_fabric/stage0.py": "5c296993a958835e513b551b73a431fd147029a411cd9a68bbc6f2896c994aef",
+  "experiments/exp-100-fabric-direction/DIRECTION.ko.md": "8bdbe25e1c1016e2c6708744dc84a0084823e1f94e6449850a7d953a3f05f549",
+  "experiments/exp-101-fabric-stage1/frozen_spec.json": "da829fb4a04b854be0be64cfadddf08811829e12faa373ead7907ca0918ab3cf"
+}

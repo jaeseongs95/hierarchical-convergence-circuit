@@ -1,0 +1,26 @@
+{
+ "counts": {
+  "checked": 964,
+  "equal": 964
+ },
+ "engine": {
+  "checked": 60,
+  "engine_undecided": 21,
+  "engine_undecided_where_fabric_false": 21,
+  "equal": 39
+ },
+ "line": {
+  "deep_break_habit_true": true,
+  "deep_break_none_false": true,
+  "deep_break_strong_race_true": true,
+  "deep_break_verify_false": true,
+  "deep_break_weak_race_false": true,
+  "first_link_break_strong_race_false": true,
+  "open_world_all_modes_true": true,
+  "strong_shortcut_has_delay_one": true,
+  "strong_shortcut_sites": true,
+  "strong_store_launches_only_the_conducting_one": true,
+  "weak_shortcut_does_not_conduct": true
+ },
+ "status": "PASS"
+}
