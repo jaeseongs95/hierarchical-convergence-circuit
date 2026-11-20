@@ -1,0 +1,35 @@
+{
+ "all_non_timing_fields_equal": true,
+ "fields_equal": {
+  "config_signature": true,
+  "design_sha256": true,
+  "environment": true,
+  "feedback_consumed": true,
+  "frozen_spec_sha256": true,
+  "input_manifest_sha256": true,
+  "memories": true,
+  "off_rows": true,
+  "revision_requests": true,
+  "rows": true,
+  "rows_sha256": true,
+  "schema": true,
+  "summary": true,
+  "world_measurement": true
+ },
+ "primary": {
+  "cost": {
+   "cpu_seconds": 28.339065847999997,
+   "wall_seconds": 28.746098424999985
+  },
+  "rows_sha256": "e876d1515c9e6a19a424e696083ea5d3491ac174700f6b6db40dba6753e26183"
+ },
+ "purpose": "same command re-run once on the same host; not a new condition or sample",
+ "rerun": {
+  "cost": {
+   "cpu_seconds": 26.974365086,
+   "wall_seconds": 27.265200991
+  },
+  "rows_sha256": "e876d1515c9e6a19a424e696083ea5d3491ac174700f6b6db40dba6753e26183"
+ },
+ "schema": "hcr-r52-determinism-v1"
+}
