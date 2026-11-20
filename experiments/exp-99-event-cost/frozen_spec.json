@@ -1,0 +1,76 @@
+{
+  "schema": "hcr-r53-event-cost-v1",
+  "round": "R53",
+  "experiment": "EXP-99",
+  "thetas": [
+    0.0,
+    1e-06,
+    0.0001,
+    0.001,
+    0.01
+  ],
+  "primary_theta_rule": "largest grid theta at which every Part A and Part B inference keeps all native network outcomes; 0 if none above 0",
+  "part_a": {
+    "source": "experiments/exp-44-circuit-formation/frozen_spec.json",
+    "policy": "route_only",
+    "training_mode": "train",
+    "memories": [
+      0,
+      3
+    ],
+    "use_circuits": [
+      false,
+      true
+    ],
+    "anchors": {
+      "circuits": 1,
+      "strength": 0.55,
+      "post_ticks_off_on": {
+        "renamed-control": [
+          33,
+          68
+        ],
+        "new-branch-open": [
+          38,
+          105
+        ],
+        "new-branch-cut": [
+          34,
+          95
+        ]
+      }
+    }
+  },
+  "part_b": {
+    "episodes": 12,
+    "formed_after": 3,
+    "lengths": [
+      2,
+      4
+    ],
+    "score": 0.92,
+    "policies": [
+      "route_only",
+      "legacy"
+    ],
+    "use_circuits": [
+      true,
+      false
+    ],
+    "mode": "train"
+  },
+  "expected_counts": {
+    "part_a_eval": 12,
+    "part_b_inferences": 96
+  },
+  "reading_min_pairs": 2,
+  "p2_min_ratio": 0.9,
+  "limits": {
+    "primary_runs": 1,
+    "determinism_reruns": 1,
+    "retry": 0,
+    "worker": 1,
+    "world_measurement": 0,
+    "revision_requests": 0
+  }
+}

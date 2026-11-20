@@ -1,0 +1,20 @@
+{
+  "experiments/exp-44-circuit-formation/RESULTS.ko.md": "a672e33b83f5120c99103d8c48c5e0e87fda82a7bac4901323643acc7618db42",
+  "experiments/exp-44-circuit-formation/frozen_spec.json": "4881be303831fbc3c5cca1cc8df03ade44da8c061bb39dc9b679d616bf11a57e",
+  "src/hcr/activation.py": "c35fadb824de51563c03fb23b0656564f7d4d3ea8c228ac74ee803a419e64df5",
+  "src/hcr/circuits.py": "4325900b76292568267c535d8cb7ab157ec2c81a9c841ea1d136df4047c2fd5b",
+  "src/hcr/codec.py": "23008b00d7c7ba32036170b56ffc08e000062c1bcd7793f546148c3c087a1d4e",
+  "src/hcr/compiler.py": "14c736ef826bb979d15a5f00901bb3acfb3c0b102157437ccf80d40bad690d59",
+  "src/hcr/dynamics.py": "a70c5cb17889ee1aee3f205efa54fe207bbad5beac98a0b9d4ce3a3fcf6b59bc",
+  "src/hcr/expansion.py": "57d0dbadb2e8d15a5e79bf346fb249fca4b2918c6367d501a82c6f712a8198ad",
+  "src/hcr/learning.py": "48f073ff8b0317ae25f2b8425fd2ad9c682b61abf53fcf6e0a1370583199cbbe",
+  "src/hcr/model.py": "b10e41146036bbbe6e155cee84f3c03711d9bfdeef26c54439d679cc36d590dd",
+  "src/hcr/patterns.py": "9fe59886e9af29d152cbc08f68f4838c5faaf9da313541039887c0836531b23a",
+  "src/hcr/prior_policy.py": "6191c43b7d6cfe471a3bf0c0f6c182e08c284094cfe6100a5089e817cfe3ef2d",
+  "src/hcr/proof.py": "b95af178a4894c2a36ae13d971c0e003fe6ba18794e0ddbbc041ab28e06c831d",
+  "src/hcr/runtime.py": "1f71a2a2d5469f8c9532de421b71f16b8e62ec6bc8aa6184146f41a7990f34eb",
+  "src/hcr/sessions.py": "b3bb379d4d7ec5b8afa835d9d3c349f3b7ef908383a51880ae7e9cd2de10f844",
+  "src/hcr/tasks/toy_world.py": "77fe48c1a164717e9f6c4ca94ba6e242a98df98a4d4331956f0b0fd01e845a59",
+  "src/hcr/workspace.py": "65ac816b06d0e2fbb971adeecfd9e317f99fc7d43881ea17f99d71d35e3e1b1a",
+  "tools/r53_event_cost/core.py": "ad1cb35f4774883ee2c350a1e5b857d576e6f96cd3747f7803721eee79028020"
+}

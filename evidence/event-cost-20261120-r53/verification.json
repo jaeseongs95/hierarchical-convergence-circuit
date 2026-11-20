@@ -1,0 +1,155 @@
+{
+ "analysis_sha256": "ae7ade54785290eb663a6f0ad35f60e694beea6f4a692c62d30ef369275bb228",
+ "discrete_against_recording": {
+  "checked": 111,
+  "equal": 111
+ },
+ "failures": [],
+ "host": {
+  "libc": [
+   "glibc",
+   "2.39"
+  ],
+  "machine": "x86_64",
+  "platform": "Linux-6.18.44-fc-v726-x86_64-with-glibc2.39",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]"
+ },
+ "independent_auditor": false,
+ "part_a_post_pairs_local": [
+  {
+   "by_theta": {
+    "0.0": {
+     "off": 261,
+     "on": 605,
+     "on_pool": 344
+    },
+    "0.0001": {
+     "off": 144,
+     "on": 337,
+     "on_pool": 193
+    },
+    "0.001": {
+     "off": 114,
+     "on": 269,
+     "on_pool": 155
+    },
+    "0.01": {
+     "off": 82,
+     "on": 197,
+     "on_pool": 115
+    },
+    "1e-06": {
+     "off": 212,
+     "on": 485,
+     "on_pool": 273
+    }
+   },
+   "case": "renamed-control"
+  },
+  {
+   "by_theta": {
+    "0.0": {
+     "off": 605,
+     "on": 1643,
+     "on_pool": 1038
+    },
+    "0.0001": {
+     "off": 335,
+     "on": 936,
+     "on_pool": 601
+    },
+    "0.001": {
+     "off": 272,
+     "on": 751,
+     "on_pool": 479
+    },
+    "0.01": {
+     "off": 204,
+     "on": 555,
+     "on_pool": 351
+    },
+    "1e-06": {
+     "off": 464,
+     "on": 1321,
+     "on_pool": 857
+    }
+   },
+   "case": "new-branch-open"
+  },
+  {
+   "by_theta": {
+    "0.0": {
+     "off": 541,
+     "on": 1519,
+     "on_pool": 978
+    },
+    "0.0001": {
+     "off": 302,
+     "on": 861,
+     "on_pool": 559
+    },
+    "0.001": {
+     "off": 226,
+     "on": 668,
+     "on_pool": 442
+    },
+    "0.01": {
+     "off": 162,
+     "on": 477,
+     "on_pool": 315
+    },
+    "1e-06": {
+     "off": 442,
+     "on": 1248,
+     "on_pool": 806
+    }
+   },
+   "case": "new-branch-cut"
+  }
+ ],
+ "recorded_host": {
+  "libc": [
+   "glibc",
+   "2.39"
+  ],
+  "machine": "x86_64",
+  "platform": "Linux-6.18.44-fc-v726-x86_64-with-glibc2.39",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]"
+ },
+ "schema": "hcr-r53-event-cost-verification-v1",
+ "status": "PASS",
+ "theta0_counts_from_native_states_against_recording": {
+  "checked": 111,
+  "equal": 111
+ },
+ "theta_positive_diagnostic_against_recording": {
+  "inferences_with_count_difference": 0,
+  "max_abs_link_event_difference": 0,
+  "max_state_abs_diff_to_native": 0.01442928401001764
+ },
+ "verdicts": {
+  "local": {
+   "P3": "falsified",
+   "P4": "supported",
+   "P5": "supported",
+   "P6": "supported"
+  },
+  "primary_theta_local": "0.01",
+  "primary_theta_recorded": "0.01",
+  "reading_by_theta_local": {
+   "0.0": "SELECTION_COST",
+   "0.0001": "SELECTION_COST",
+   "0.001": "SELECTION_COST",
+   "0.01": "SELECTION_COST",
+   "1e-06": "SELECTION_COST"
+  },
+  "reading_local": "SELECTION_COST",
+  "reading_recorded": "SELECTION_COST",
+  "recorded": {
+   "P3": "falsified",
+   "P4": "supported",
+   "P5": "supported",
+   "P6": "supported"
+  }
+ }
+}

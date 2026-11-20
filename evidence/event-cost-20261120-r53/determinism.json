@@ -1,0 +1,8 @@
+{
+ "equal": true,
+ "note": "second run in a fresh process on the same host; not committed",
+ "rows_sha256_first": "5f2dcc47785d0c42aabfc6009014ccb3c0fa08cf7bd7254a3fbaf7e8d3294710",
+ "rows_sha256_second": "5f2dcc47785d0c42aabfc6009014ccb3c0fa08cf7bd7254a3fbaf7e8d3294710",
+ "schema": "hcr-r53-determinism-v1",
+ "summary_equal": true
+}
