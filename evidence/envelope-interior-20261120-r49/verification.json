@@ -1,0 +1,107 @@
+{
+ "analysis_sha256": "ce2798ddcb67b10ac7365ee117453c39621ed06aaf22a592be54de81b4f68084",
+ "containment_direction_exploratory": {
+  "feasible_coverage": {
+   "benign_max": 7.050693362486982e-12,
+   "benign_values": 16,
+   "harmful_max": 0.0,
+   "harmful_values": 0,
+   "unclassified": 0
+  },
+  "feasible_eligibility": {
+   "benign_max": 2.6917294736632883e-06,
+   "benign_values": 800,
+   "harmful_max": 0.0,
+   "harmful_values": 0,
+   "unclassified": 0
+  },
+  "membership_messages": {
+   "benign_max": 0.0,
+   "benign_values": 0,
+   "harmful_max": 0.0,
+   "harmful_values": 0,
+   "unclassified": 0
+  },
+  "projection_outputs": {
+   "benign_max": 2.0028423364237824e-13,
+   "benign_values": 64,
+   "harmful_max": 1.5429620914275688e-09,
+   "harmful_values": 32,
+   "unclassified": 0
+  }
+ },
+ "containment_recount": {
+  "feasible_records_outside": 200,
+  "messages_outside": 0,
+  "projection_records": 256,
+  "projection_records_outside": 48
+ },
+ "failures": [],
+ "independent_auditor": false,
+ "interior_direction_exploratory": {
+  "feasible/envelope": {
+   "complete_false": {
+    "benign": 9.464085466920694e-16,
+    "harmful": 1.7957098481791167e-19
+   },
+   "complete_true": {
+    "benign": 7.050693362486982e-12,
+    "harmful": 3.409417193012132e-11
+   },
+   "e_false": {
+    "benign": 2.6917294736457903e-06,
+    "harmful": 7.45532380540823e-11
+   },
+   "e_true": {
+    "benign": 1.5894161670138018e-06,
+    "harmful": 1.5006995646160703e-11
+   }
+  },
+  "or/envelope": {
+   "goal_false": {
+    "benign": 0.0,
+    "harmful": 0.0
+   },
+   "goal_true": {
+    "benign": 0.0,
+    "harmful": 0.0
+   }
+  },
+  "projection/envelope": {
+   "e_false": {
+    "benign": 8.375691836598996e-14,
+    "harmful": 1.7644865629717899e-07
+   },
+   "e_true": {
+    "benign": 1.5881185255750552e-11,
+    "harmful": 2.0525346977606773e-09
+   }
+  }
+ },
+ "largest_harmful_excess_anywhere": 1.7644865629717899e-07,
+ "min_decision_slack": {
+  "feasible/envelope": 0.34897529861545873,
+  "feasible/inflated": 0.34895876904318446,
+  "or/envelope": 0.33828705727202335,
+  "projection/envelope": 0.32805014112352765,
+  "projection/inflated": 0.3280500396202077,
+  "query/envelope": 0.3373757779409968,
+  "query/inflated": 0.3373750835802056
+ },
+ "reference_boxes_rebuilt_equal": {
+  "coverage": true,
+  "eligibility": true,
+  "membership": true,
+  "pair": true,
+  "projection": true
+ },
+ "schema": "hcr-r49-envelope-interior-verification-v1",
+ "slack_to_harmful_excess_ratio": 1859181.2853915875,
+ "smallest_decision_slack_anywhere": 0.3280500396202077,
+ "status": "PASS",
+ "witness_replay": {
+  "bitwise_equal": 80,
+  "checked": 80,
+  "excess_equal": 80
+ }
+}

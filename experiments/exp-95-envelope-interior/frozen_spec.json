@@ -1,0 +1,46 @@
+{
+  "arms": [
+    "envelope",
+    "inflated"
+  ],
+  "counterexample_cap_per_stage": 40,
+  "expected_settles": {
+    "control": 809,
+    "feasible_per_arm": 5184,
+    "or_exhaustive": 69905,
+    "projection_per_arm": 2592,
+    "query_per_arm": 8192,
+    "total": 102650
+  },
+  "experiment": "EXP-95",
+  "inflation_delta": 0.001,
+  "initial": 0.5,
+  "levels": [
+    "lo",
+    "mid",
+    "hi"
+  ],
+  "limits": {
+    "determinism_reruns": 1,
+    "learning": 0,
+    "primary_runs": 1,
+    "retry": 0,
+    "worker": 1,
+    "world_measurement": 0
+  },
+  "query_assignments": {
+    "fixed": [
+      "r48_corner",
+      "all_mid",
+      "opposite_corner"
+    ],
+    "random_count": 13,
+    "seed_format": "r49-query-{pattern}"
+  },
+  "reference": {
+    "raw": "evidence/joint-tuple-codebook-transfer-20261023-r48/raw",
+    "spec": "experiments/exp-94-joint-tuple-codebook-transfer/frozen_spec.json"
+  },
+  "round": "R49",
+  "schema": "hcr-r49-envelope-interior-v1"
+}

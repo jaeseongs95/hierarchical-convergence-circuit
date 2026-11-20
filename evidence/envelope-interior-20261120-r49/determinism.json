@@ -1,0 +1,44 @@
+{
+ "all_non_timing_fields_equal": true,
+ "fields_equal": {
+  "containment": true,
+  "control": true,
+  "design_sha256": true,
+  "environment": true,
+  "frozen_spec_sha256": true,
+  "input_manifest_sha256": true,
+  "interior": true,
+  "learning": true,
+  "new_native_settles": true,
+  "reference_boxes": true,
+  "row_stream": true,
+  "schema": true,
+  "smoke": true,
+  "thresholds": true,
+  "verdict": true,
+  "world_measurement": true
+ },
+ "primary": {
+  "analysis_sha256": "ce2798ddcb67b10ac7365ee117453c39621ed06aaf22a592be54de81b4f68084",
+  "cost": {
+   "cpu_seconds": 113.183249218,
+   "wall_seconds": 114.33068258200001
+  },
+  "row_stream": {
+   "rows": 101841,
+   "sha256": "ee4d5ab0e52f84589332e303ac36bda65a829df9465f8349a8b9ea5aa30360b1"
+  }
+ },
+ "purpose": "same command re-run once on the same host; not a new condition or sample",
+ "rerun": {
+  "cost": {
+   "cpu_seconds": 113.341922767,
+   "wall_seconds": 114.67743163399996
+  },
+  "row_stream": {
+   "rows": 101841,
+   "sha256": "ee4d5ab0e52f84589332e303ac36bda65a829df9465f8349a8b9ea5aa30360b1"
+  }
+ },
+ "schema": "hcr-r49-determinism-v1"
+}
