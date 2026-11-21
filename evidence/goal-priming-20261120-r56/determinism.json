@@ -1,0 +1,16 @@
+{
+ "evaluation": {
+  "equal": true,
+  "rows_sha256_first": "a884a6459e048ece6a4372a25a49b679dde5fb248609d258e6eb6873a9118649",
+  "rows_sha256_second": "a884a6459e048ece6a4372a25a49b679dde5fb248609d258e6eb6873a9118649",
+  "summary_equal": true
+ },
+ "note": "second run in a fresh process on the same host; not committed",
+ "r55_evaluation": {
+  "equal": true,
+  "rows_sha256_first": "ff28c6a149d476feb3862dd1ab81ea4920666cb9d4a04f01a558740989a36876",
+  "rows_sha256_second": "ff28c6a149d476feb3862dd1ab81ea4920666cb9d4a04f01a558740989a36876",
+  "summary_equal": true
+ },
+ "schema": "hcr-r56-determinism-v1"
+}

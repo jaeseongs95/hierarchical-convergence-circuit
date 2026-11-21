@@ -1,0 +1,9 @@
+{
+  "tools/r55_fabric/fabric.py": "6d2e50393e68457db6a252df29c9ce602592e3ca58e782bb432f56fa723def50",
+  "tools/r55_fabric/world.py": "e5172e8202e3aea8b6db954cf6090fa1f6db800aa56ded6222ede392ec655572",
+  "tools/r56_gated/gated.py": "007247261f972a8b3b3dee0777d9c1679559513708550f51b08d2e926ee4f23f",
+  "tools/r56_gated/probe.py": "df5cc5d79c01d7c9faa2302f487a09d5124cbbcecd662598f39bf4e7ecded0b2",
+  "experiments/exp-101-fabric-stage1/frozen_spec.json": "da829fb4a04b854be0be64cfadddf08811829e12faa373ead7907ca0918ab3cf",
+  "experiments/exp-101-fabric-stage1/RESULTS.ko.md": "9f701fe407d29552d443f65268b4e155be1b77b94e074597b1e4abcbc37e2d6d",
+  "experiments/exp-102-goal-priming/frozen_spec.json": "a847caeab6380ebb3404a59b8117da2a1ceca82c2932de6b15cd8ade22d66956"
+}

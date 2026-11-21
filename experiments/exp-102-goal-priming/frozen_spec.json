@@ -1,0 +1,171 @@
+{
+  "schema": "hcr-r56-goal-priming-v1",
+  "round": "R56",
+  "experiment": "EXP-102",
+  "world": {
+    "places": 64,
+    "degree": 3,
+    "open_permille": 800
+  },
+  "tasks": {
+    "routes": 4,
+    "route_min": 4,
+    "route_max": 6,
+    "eval_unrelated": 30,
+    "eval_false": 30,
+    "episodes": 400,
+    "background_permille": 200
+  },
+  "learning": {
+    "eta": 0.25,
+    "decay": 0.01,
+    "floor": 0.01,
+    "weaken": 0.2,
+    "delay": "linear",
+    "tie": "farthest",
+    "conduct": "faster"
+  },
+  "capacity": 4,
+  "tag_capacity": 8,
+  "tail_episodes": 100,
+  "primary": "fabric_primed",
+  "systems": {
+    "fabric_ungated": {
+      "mode": "race",
+      "gate": "none"
+    },
+    "fabric_primed": {
+      "mode": "race",
+      "gate": "primed"
+    },
+    "control_goal_match": {
+      "mode": "race",
+      "gate": "match"
+    },
+    "B3_habit": {
+      "mode": "habit",
+      "gate": "none"
+    },
+    "B3_habit_primed": {
+      "mode": "habit",
+      "gate": "primed"
+    },
+    "B2_verify": {
+      "mode": "verify",
+      "gate": "none"
+    },
+    "B2_verify_primed": {
+      "mode": "verify",
+      "gate": "primed"
+    },
+    "sens_tags4": {
+      "mode": "race",
+      "gate": "primed",
+      "tag_capacity": 4
+    },
+    "sens_tags16": {
+      "mode": "race",
+      "gate": "primed",
+      "tag_capacity": 16
+    },
+    "sens_delay_step": {
+      "mode": "race",
+      "gate": "primed",
+      "params": {
+        "delay": "step"
+      }
+    },
+    "sens_capacity2": {
+      "mode": "race",
+      "gate": "primed",
+      "capacity": 2
+    }
+  },
+  "seeds": {
+    "calibration": [
+      1000,
+      1001,
+      1002,
+      1003,
+      1004,
+      1005,
+      1006,
+      1007,
+      1008,
+      1009
+    ],
+    "evaluation": [
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129
+    ],
+    "r55_evaluation": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ]
+  },
+  "kill": {
+    "k1_min_reduction": 0.2,
+    "k3_max_increase": 0.1
+  },
+  "limits": {
+    "primary_runs": 1,
+    "determinism_reruns": 1,
+    "retry": 0
+  }
+}
